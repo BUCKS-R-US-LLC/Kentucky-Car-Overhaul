@@ -1,8 +1,8 @@
 module Base
 {
-	model IFAV
+	model BlazerSC
 	{
-		mesh = vehicles/Vehicle_IFAV|body_mesh,
+		mesh = vehicles/Vehicle_BlazerSC|body_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 		texture = vehicles/Vehicle_IFAVWheel,
 		shader = vehiclewheel,
 	}
-	vehicle BlazerK5
+	vehicle BlazerK5SC
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -88,7 +88,7 @@ module Base
 
 		model
 		{
-			file = IFAV,
+			file = BlazerSC,
 			scale = 0.6300,
 			offset = 0.0635 0.1905 0.0794,
 		}
