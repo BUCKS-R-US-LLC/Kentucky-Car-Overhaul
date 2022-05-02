@@ -2,7 +2,7 @@ module Base
 {
 	model BlazerSC
 	{
-		mesh = vehicles/Vehicle_BlazerSC|body_mesh,
+		mesh = vehicles/Vehicle_BlazerK5_SC,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -121,8 +121,13 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = MercedesHorn,
+			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
 		}
 
 		extents = 2.5079 3.0794 6.5714,
@@ -188,7 +193,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -228,44 +233,6 @@ module Base
 			}
 		}
 
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.6032 1.2698 -2.6190,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -2.6190,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontRight,
-			}
-		}
-
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.5714 1.2698 -2.6190,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 1.9841 -0.1905 -2.5873,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
 		area Engine
 		{
 			xywh = 0.0000 4.6032 4.0000 2.0000,
@@ -284,16 +251,6 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.1905 0.9683 2.0000 2.0000,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.1905 -2.3016 2.0000 2.0000,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.3175 -2.3016 2.0000 2.0000,
 		}
 
 		area GasTank
@@ -326,15 +283,8 @@ module Base
 			xywh = -0.0159 -1.4444 5.9048 2.4444,
 		}
 
-		area convertible
-		{
-			xywh = -0.0159 2.8889 5.9048 2.4444,
-		}
-
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearRight,
-		template = Seat/part/SeatRearLeft,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -529,19 +479,7 @@ module Base
 		}
 
 		template = WindshieldChassis/part/windshieldextra,
-		template = Bar/part/ExtraBumper,
-		template = Canvas/part/SoftTop,
-		template = Canvas/part/SoftTop2,
-		template = Canvas/part/RearSheet,
 		template = TrunkDoor,
-
-		part RearSheet
-		{
-			container
-			{
-				capacity = 40,
-			}
-		}
 
 		part TrunkDoor
 		{
