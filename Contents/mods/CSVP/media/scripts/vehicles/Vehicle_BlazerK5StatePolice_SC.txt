@@ -7,76 +7,76 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model IFAVfront
+	model BlazerSCfront
 	{
-		mesh = vehicles/Vehicle_IFAV|Windshield_obj,
+		mesh = vehicles/Vehicle_BlazerSC|Windshield_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontWindshieldBone 1.0,
 	}
-	model IFAVwindowfrontright
+	model BlazerSCwindowfrontright
 	{
-		mesh = vehicles/Vehicle_IFAV|WindowFrontRight_obj,
+		mesh = vehicles/Vehicle_BlazerSC|WindowFrontRight_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = WindowRightFrontBone 1.0,
 	}
-	model IFAVwindowfrontleft
+	model BlazerSCwindowfrontleft
 	{
-		mesh = vehicles/Vehicle_IFAV|WindowFrontLeft_obj,
+		mesh = vehicles/Vehicle_BlazerSC|WindowFrontLeft_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = WindowLeftFrontBone 1.0,
 	}
-	model IFAV_door_left
+	model BlazerSC_door_left
 	{
-		mesh = vehicles/Vehicle_IFAV|DoorFrontLeft_obj,
+		mesh = vehicles/Vehicle_BlazerSC|DoorFrontLeft_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = DoorLeftFrontBone 1.0,
 	}
-	model IFAV_door_right
+	model BlazerSC_door_right
 	{
-		mesh = vehicles/Vehicle_IFAV|DoorFrontRight_obj,
+		mesh = vehicles/Vehicle_BlazerSC|DoorFrontRight_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = DoorRightFrontBone 1.0,
 	}
-	model IFAVTrunk
+	model BlazerSCTrunk
 	{
-		mesh = vehicles/Vehicle_IFAV|DoorTrunk_obj,
+		mesh = vehicles/Vehicle_BlazerSC|DoorTrunk_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = DoorTrunkBone 1.0,
 	}
-	model IFAVDoorfrontwheelleft
+	model BlazerSCDoorfrontwheelleft
 	{
 		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_IFAVWheel,
+		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
-	model IFAVDoorfrontwheelright
+	model BlazerSCDoorfrontwheelright
 	{
 		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_IFAVWheel,
+		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
-	model IFAVDoorbackwheelleft
+	model BlazerSCDoorbackwheelleft
 	{
 		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_IFAVWheel,
+		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
-	model IFAVDoorbackwheelright
+	model BlazerSCDoorbackwheelright
 	{
 		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_IFAVWheel,
+		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
 	vehicle BlazerK5SC
@@ -95,36 +95,21 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/Vehicle_IFAV,
+			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_State,
 		}
 
 		skin
 		{
-			texture = Vehicles/Vehicle_IFAVwithGreen,
+			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateW,
 		}
 
-		skin
-		{
-			texture = Vehicles/Vehicle_IFAV_RedMERDC,
-		}
-
-		skin
-		{
-			texture = Vehicles/Vehicle_IFAV_RedMERDCwithSand,
-		}
-
-		skin
-		{
-			texture = Vehicles/Vehicle_IFAV_WinVerdantMERDC,
-		}
-
-		textureRust = Vehicles/Vehicle_IFAV_rust,
-		textureMask = Vehicles/Vehicle_IFAV_mask,
-		textureLights = Vehicles/Vehicle_IFAV_lights,
-		textureDamage1Shell = Vehicles/Vehicle_IFAV_damage,
-		textureDamage2Shell= Vehicles/Vehicle_IFAV_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_IFAV_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_IFAV_blood2,
+		textureRust = Vehicles/Vehicle_BlazerSC_rust,
+		textureMask = Vehicles/Vehicle_BlazerSC_mask,
+		textureLights = Vehicles/Vehicle_BlazerSC_lights,
+		textureDamage1Shell = Vehicles/Vehicle_BlazerSC_damage,
+		textureDamage2Shell= Vehicles/Vehicle_BlazerSC_damage2,
+		textureDamage1Overlay = Vehicles/Vehicle_BlazerSC_blood,
+		textureDamage2Overlay = Vehicles/Vehicle_BlazerSC_blood2,
 
 		sound
 		{
@@ -395,7 +380,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = IFAVfront,
+				file = BlazerSCfront,
 			}
 
 			parent = windshieldextra,
@@ -420,7 +405,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.IFAVWindshield,
+			itemType = Base.BlazerSCWindshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -432,7 +417,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = IFAVwindowfrontright,
+				file = BlazerSCwindowfrontright,
 			}
 
 			anim ClosedToOpen
@@ -449,7 +434,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = IFAVwindowfrontleft,
+				file = BlazerSCwindowfrontleft,
 			}
 
 			anim ClosedToOpen
@@ -466,7 +451,7 @@ module Base
 		{
 			model Default
 			{
-				file = IFAV_door_right,
+				file = BlazerSC_door_right,
 			}
 
 			anim Close
@@ -497,14 +482,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.IFAVDoor,
+			itemType = Base.BlazerSCDoor,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = IFAV_door_left,
+				file = BlazerSC_door_left,
 			}
 
 			anim Close
@@ -535,7 +520,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.IFAVDoor,
+			itemType = Base.BlazerSCDoor,
 		}
 
 		template = WindshieldChassis/part/windshieldextra,
@@ -567,7 +552,7 @@ module Base
 
 			model Default
 			{
-				file = IFAVTrunk,
+				file = BlazerSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -610,7 +595,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = IFAVDoorfrontwheelleft,
+				file = BlazerSCDoorfrontwheelleft,
 			}
 		}
 
@@ -618,7 +603,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = IFAVDoorfrontwheelright,
+				file = BlazerSCDoorfrontwheelright,
 			}
 		}
 
@@ -626,7 +611,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = IFAVDoorbackwheelleft,
+				file = BlazerSCDoorbackwheelleft,
 			}
 		}
 
@@ -634,7 +619,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = IFAVDoorbackwheelright,
+				file = BlazerSCDoorbackwheelright,
 			}
 		}
 
