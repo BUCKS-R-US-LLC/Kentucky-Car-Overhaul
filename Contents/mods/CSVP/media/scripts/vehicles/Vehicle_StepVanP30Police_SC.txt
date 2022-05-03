@@ -1,0 +1,733 @@
+module Base
+{
+	model StepVanP30Police
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model BlazerSCfront
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontWindshieldBone 1.0,
+	}
+	model BlazerSCwindowfrontright
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|WindowFrontRight_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = WindowRightFrontBone 1.0,
+	}
+	model BlazerSCwindowfrontleft
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|WindowFrontLeft_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = WindowLeftFrontBone 1.0,
+	}
+	model BlazerSC_door_left
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|DoorFrontLeft_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = DoorLeftFrontBone 1.0,
+	}
+	model BlazerSC_door_right
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|DoorFrontRight_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = DoorRightFrontBone 1.0,
+	}
+	model BlazerSCTrunk
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|DoorTrunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = DoorTrunkBone 1.0,
+	}
+	model BlazerSCDoorfrontwheelleft
+	{
+		mesh = vehicles/Vehicle_GWagen_LeftWheel,
+		texture = vehicles/Vehicle_StepVanP30_SCWheel,
+		shader = vehiclewheel,
+	}
+	model BlazerSCDoorfrontwheelright
+	{
+		mesh = vehicles/Vehicle_GWagen_RightWheel,
+		texture = vehicles/Vehicle_StepVanP30_SCWheel,
+		shader = vehiclewheel,
+	}
+	model BlazerSCDoorbackwheelleft
+	{
+		mesh = vehicles/Vehicle_GWagen_LeftWheel,
+		texture = vehicles/Vehicle_StepVanP30_SCWheel,
+		shader = vehiclewheel,
+	}
+	model BlazerSCDoorbackwheelright
+	{
+		mesh = vehicles/Vehicle_GWagen_RightWheel,
+		texture = vehicles/Vehicle_StepVanP30_SCWheel,
+		shader = vehiclewheel,
+	}
+	vehicle StepVanP30PoliceSC
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = StepVanP30Police,
+			scale = 0.6300,
+			offset = 0.0635 0.1905 0.0794,
+		}
+
+		skin
+		{
+			texture = Vehicles/StepVanP30/Vehicle_StepVanP30Police_SC,
+		}
+
+		textureRust = Vehicles/Vehicle_StepVanP30_SC_rust,
+		textureMask = Vehicles/Vehicle_StepVanP30_SC_mask,
+		textureLights = Vehicles/Vehicle_StepVanP30_SC_lights,
+		textureDamage1Shell = Vehicles/Vehicle_StepVanP30_SC_damage,
+		textureDamage2Shell= Vehicles/Vehicle_StepVanP30_SC_damage2,
+		textureDamage1Overlay = Vehicles/Vehicle_StepVanP30_SC_blood,
+		textureDamage2Overlay = Vehicles/Vehicle_StepVanP30_SC_blood2,
+
+		sound
+		{
+			backSignal = VehicleBackUpBeeper,
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehiclegnitionFailStepVan,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+		}
+
+		extents = 3.2063 3.0794 8.6984,
+		mass = 1500,
+		physicsChassisShape = 3.1746 3.0794 8.3810,
+		centerOfMassOffset = 0.0635 1.5556 -0.6508,
+		shadowExtents = 3.2617 8.8180,
+		shadowOffset = 0.0635 -0.6921,
+		engineForce = 8500,
+		maxSpeed = 50f,
+		engineLoudness = 130,
+		engineQuality = 85,
+		gearRatioCount = 3,
+		gearRatioR = 3,
+		gearRatio1 = 11,
+		gearRatio2 = 8,
+		gearRatio3 = 4,
+		gearRatio4 = 2,
+		brakingForce = 60,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 6,
+		isSmallVehicle = false,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = -1.0000 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = 1.0000 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -1.0317 0.0794 -2.1270,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 1.0317 0.0794 -2.1270,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat6,
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.7460 1.8730 0.5714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3492 -0.5714 1.5556,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.7460 1.7778 0.5714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3492 -0.5714 1.5556,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			position inside
+			{
+				offset = 0.7460 1.7778 -1.2381,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		passenger MiddleRight
+		{
+			position inside
+			{
+				offset = -0.7937 1.7778 -1.3333,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.7937 1.7778 -3.2540,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.8095 1.7778 -3.2540,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.0159 -0.5873 -5.7302,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.6032 4.0000 2.0000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.2222 0.7778 1.1111 1.1111,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.0952 0.7778 1.1111 1.1111,
+		}
+
+		area SeatMiddleLeft
+		{
+			xywh = 0.8095 0.0000 0.4762 0.4762,
+		}
+
+		area SeatMiddleRight
+		{
+			xywh = -0.8095 0.0000 0.4762 0.4762,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 0.0635 -5.3810 3.2063 1.3016,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.8095 -1.3968 0.4762 0.4762,
+		}
+
+		area GasTank
+		{
+			xywh = 2.2381 -3.4444 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.0000 3.0000 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.0000 3.0000 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 2.0000 -1.0000 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -2.0000 -1.0000 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = BlazerSCfront,
+			}
+
+			parent = windshieldextra,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.BlazerSCWindshield,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = BlazerSCwindowfrontright,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = WindowFrontRightClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = BlazerSCwindowfrontleft,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = WindowFrontLeftClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = BlazerSC_door_right,
+			}
+
+			anim Close
+			{
+				anim = WindowFrontRightClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = WindowFrontRightClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = WindowFrontRightClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = WindowFrontRightClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.BlazerSCDoor,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = BlazerSC_door_left,
+			}
+
+			anim Close
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorLeftFrontClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.BlazerSCDoor,
+		}
+
+		template = Windshield/part/Windshield,
+
+		part Windshield*
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = BlazerSCTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = DTClosing1,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = DTClosing1,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = DTClosing1,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DTClosing1,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part SCInteriorArmory
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.SCInteriorArmory,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.SCInteriorArmory,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SCInteriorArmory
+		{
+			area = SeatMiddleRight,
+			itemType = Base.SCInteriorArmory,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.SCInteriorArmory,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerSCDoorfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerSCDoorfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerSCDoorbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerSCDoorbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = 0.0794 2.0159 -0.7143,
+			extents = 3.1111 3.5714 8.6825,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.0000 -5.1270,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 3.6032,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
