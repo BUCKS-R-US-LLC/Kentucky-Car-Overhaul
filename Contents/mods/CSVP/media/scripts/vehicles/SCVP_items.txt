@@ -66,6 +66,71 @@ module Base
         WorldStaticModel = K5TrunkLidSC_WorldItem,
     }
 
+        item P30DoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Door,
+        Icon	=	BlazerSCDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30_WorldItem,
+    }
+
+        item P30WindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	P30 Windshield,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30WindshieldSC_WorldItem,
+    }
+
+        item P30SideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P3D0 SIde Window,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30SideWindowSC_WorldItem,
+    }
+
+        item P30HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P30 Hood,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30HoodSC_WorldItem,
+    }
+
+        item P30RearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Doors,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30TrunkLidSC_WorldItem,
+    }
+
        	item SCInteriorArmory
     {
         Weight    =    30,
