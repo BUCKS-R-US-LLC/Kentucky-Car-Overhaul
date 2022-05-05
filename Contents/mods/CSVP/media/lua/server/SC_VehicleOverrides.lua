@@ -1,4 +1,4 @@
-if not getActivatedMods():contains("STEVVPL") and getActivatedMods():contains("STEV") then
+if not getActivatedMods():contains("SCVP") then
 
 function stzo_stev_override()
 
