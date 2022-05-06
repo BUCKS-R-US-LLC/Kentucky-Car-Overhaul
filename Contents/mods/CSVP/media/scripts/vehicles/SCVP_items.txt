@@ -76,7 +76,7 @@ module Base
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30_WorldItem,
+        WorldStaticModel = P30DoorSC_WorldItem,
     }
 
         item P30WindshieldSC2
@@ -97,7 +97,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= P3D0 SIde Window,
+        DisplayName	= P30 SIde Window,
         Icon	=	BlazerSCWindshield,
         VehicleType =   1,
         ConditionMax = 100,
@@ -128,7 +128,72 @@ module Base
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30TrunkLidSC_WorldItem,
+        WorldStaticModel = P30RearDoorsSC_WorldItem,
+    }
+
+        item P72DoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P72 Door,
+        Icon	=	BlazerSCDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72DoorSC_WorldItem,
+    }
+
+        item P72WindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	P72 Windshield,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72WindshieldSC_WorldItem,
+    }
+
+        item P72SideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P72 SIde Window,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72SideWindowSC_WorldItem,
+    }
+
+        item P72HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P72 Hood,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72HoodSC_WorldItem,
+    }
+
+        item P72RearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P72 Rear Doors,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72RearDoorsSC_WorldItem,
     }
 
        	item SCInteriorArmory
