@@ -1,8 +1,8 @@
 module Base
 {
-	model BlazerSC
+	model Caprice9C1
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC,
+		mesh = vehicles/Vehicle_Caprice9C1_SC,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerStatePolice
+	vehicle SC_Caprice9C1StatePolice
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -88,24 +88,14 @@ module Base
 
 		model
 		{
-			file = BlazerSC,
+			file = Caprice9C1,
 			scale = 0.6300,
 			offset = 0.0635 0.1905 0.0794,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_State,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateW,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateB,
+			texture = Vehicles/Caprice9C1/Vehicle_Caprice9C1SC,
 		}
 
 		textureRust = Vehicles/Vehicle_BlazerSC_rust,
