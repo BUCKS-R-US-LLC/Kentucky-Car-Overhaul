@@ -79,7 +79,7 @@ module Base
 		texture = vehicles/Vehicle_BlazerSCWheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerStatePolice
+	vehicle PickUpVanLightsPolice
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -131,16 +131,21 @@ module Base
 		}
 
 		extents = 2.5079 3.0794 6.5714,
-		mass = 1000,
+		mass = 1500,
 		physicsChassisShape = 2.5079 3.0794 6.5714,
 		centerOfMassOffset = 0.0635 1.5556 0.0000,
 		shadowExtents = 2.8807 6.5799,
 		shadowOffset = 0.0635 0.1492,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 80,
+		engineForce = 8500,
+		maxSpeed = 50f,
+		engineLoudness = 130,
+		engineQuality = 85,
+		gearRatioCount = 3,
+		gearRatioR = 3,
+		gearRatio1 = 11,
+		gearRatio2 = 8,
+		gearRatio3 = 4,
+		gearRatio4 = 2,
 		brakingForce = 60,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
