@@ -2,9 +2,101 @@ module Base
 {
 	model CrownP72
 	{
-		mesh = vehicles/Vehicle_CrownP72_SC,
+		mesh = vehicles/Vehicle_CrownP72_SC|body_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
+		scale = 1,
+	}
+	model CrownP72Windshield
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownP72FrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model CrownP72FrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model CrownP72RearRightWindow
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model CrownP72RearLeftWindow
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model CrownP72FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model CrownP72FrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model CrownP72RearRightDoor
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model CrownP72RearLeftDoor
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model CrownP72Trunk
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|Trunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model CrownP72Hood
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|Hood_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model CrownP72RearWindshield
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearWindshield_obj,
+		shader = vehicle,
 		scale = 1,
 	}
 	model CrownP72Doorfrontwheelleft
@@ -272,10 +364,8 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CrownP72front,
+				file = CrownP72Windshield,
 			}
-
-			parent = windshieldextra,
 
 			window
 			{
@@ -302,19 +392,23 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = CrownP72windowfrontright,
+				file = CrownP72FrontRightWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
 
@@ -326,12 +420,12 @@ module Base
 		{
 			model windowFL
 			{
-				file = CrownP72windowfrontleft,
+				file = CrownP72FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = WindowFrontLeftClosing,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
@@ -339,37 +433,71 @@ module Base
 			area = SeatFrontLeft,
 		}
 
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = CrownP72RearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = CrownP72RearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+		}
+
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = CrownP72_door_right,
+				file = CrownP72FrontRightDoor,
 			}
 
 			anim Close
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -381,33 +509,33 @@ module Base
 		{
 			model Default
 			{
-				file = CrownP72_door_left,
+				file = CrownP72FrontLeftDoor,
 			}
 
 			anim Close
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -415,7 +543,83 @@ module Base
 			itemType = Base.CrownP72Door,
 		}
 
-		template = WindshieldChassis/part/windshieldextra,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = CrownP72RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CrownP72Door,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = CrownP72RearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CrownP72Door,
+		}
+
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -440,28 +644,28 @@ module Base
 
 			anim Close
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}

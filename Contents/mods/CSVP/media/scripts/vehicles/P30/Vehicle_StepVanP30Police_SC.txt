@@ -2,10 +2,82 @@ module Base
 {
 	model StepVanP30Police
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC,
+		mesh = vehicles/Vehicle_StepVanP30_SC|body_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
+	}
+	model StepVanP30Windshield
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model StepVanP30FrontRightWindow
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model StepVanP30FrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model StepVanP30FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model StepVanP30FrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model StepVanP30RearRightDoor
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|RearDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model StepVanP30Trunk
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|Trunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model StepVanP30Hood
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|Hood_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model StepVanP30RearWindshield
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|RearWindshield_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model StepVanP30Doorfrontwheelleft
 	{
@@ -309,6 +381,11 @@ module Base
 
 		part EngineDoor
 		{
+			model engineDoor
+			{
+				file = StepVanP30Hood,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -336,10 +413,8 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = StepVanP30front,
+				file = StepVanP30Windshield,
 			}
-
-			parent = windshieldextra,
 
 			window
 			{
@@ -373,13 +448,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = StepVanP30windowfrontright,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = WindowFrontRightClosing,
-				animate = FALSE,
+				file = StepVanP30FrontRightWindow,
 			}
 
 			parent = DoorFrontRight,
@@ -390,13 +459,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = StepVanP30windowfrontleft,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = WindowFrontLeftClosing,
-				animate = FALSE,
+				file = StepVanP30FrontLeftWindow,
 			}
 
 			parent = DoorFrontLeft,
@@ -407,33 +470,33 @@ module Base
 		{
 			model Default
 			{
-				file = StepVanP30_door_right,
+				file = StepVanP30FrontRightDoor,
 			}
 
 			anim Close
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -445,39 +508,79 @@ module Base
 		{
 			model Default
 			{
-				file = StepVanP30_door_left,
+				file = StepVanP30FrontLeftDoor,
 			}
 
 			anim Close
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 
 			itemType = Base.StepVanP30Door,
 		}
+
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = StepVanP30RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.Caprice9C1Door,
+		}
+
 
 		template = Windshield/part/Windshield,
 
@@ -491,55 +594,6 @@ module Base
 			table uninstall
 			{
 				recipes = Intermediate Mechanics,
-			}
-		}
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = StepVanP30Trunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = DTClosing1,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = DTClosing1,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = DTClosing1,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = DTClosing1,
-				reverse = TRUE,
-				animate = FALSE,
 			}
 		}
 

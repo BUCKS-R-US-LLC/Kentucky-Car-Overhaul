@@ -2,12 +2,73 @@ module Base
 {
 	model BlazerSC
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC,
+		mesh = vehicles/Vehicle_BlazerK5_SC|body_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
-
+	model BlazerSCWindshield
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model BlazerSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model BlazerSCFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model BlazerSCFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model BlazerSCFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model BlazerSCTrunk
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|Trunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model BlazerSCHood
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|Hood_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model BlazerSCRearWindshield
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|RearWindshield_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearWindshieldBone 1.0,
+	}
 	model BlazerSCDoorfrontwheelleft
 	{
 		mesh = vehicles/Vehicle_GWagen_LeftWheel,
@@ -274,10 +335,40 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCfront,
+				file = BlazerSCWindshield,
 			}
 
-			parent = windshieldextra,
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.BlazerSCWindshield,
+		}
+
+		part RearWindshield
+		{
+			model windshieldRear
+			{
+				file = BlazerSCRearWindshield,
+			}
+
+			parent = TrunkDoor,
 
 			window
 			{
@@ -311,12 +402,12 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCwindowfrontright,
+				file = BlazerSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
 
@@ -328,12 +419,12 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCwindowfrontleft,
+				file = BlazerSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = WindowFrontLeftClosing,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
@@ -345,33 +436,33 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSC_door_right,
+				file = BlazerSCFrontRightDoor,
 			}
 
 			anim Close
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = WindowFrontRightClosing,
+				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -383,33 +474,33 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSC_door_left,
+				file = BlazerSCFrontLeftDoor,
 			}
 
 			anim Close
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DoorLeftFrontClosing,
+				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -417,7 +508,6 @@ module Base
 			itemType = Base.BlazerSCDoor,
 		}
 
-		template = WindshieldChassis/part/windshieldextra,
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -442,28 +532,28 @@ module Base
 
 			anim Close
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DTClosing1,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
