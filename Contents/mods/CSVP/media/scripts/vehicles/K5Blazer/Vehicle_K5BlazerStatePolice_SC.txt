@@ -7,76 +7,28 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCfront
-	{
-		mesh = vehicles/Vehicle_BlazerSC|Windshield_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontWindshieldBone 1.0,
-	}
-	model BlazerSCwindowfrontright
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontRight_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowRightFrontBone 1.0,
-	}
-	model BlazerSCwindowfrontleft
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontLeft_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_left
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontLeft_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_right
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontRight_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorRightFrontBone 1.0,
-	}
-	model BlazerSCTrunk
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorTrunk_obj,
-		shader = vehicle,
-		scale = 1,
-		static = FALSE,
-		boneWeight = DoorTrunkBone 1.0,
-	}
 	model BlazerSCDoorfrontwheelleft
 	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_BlazerK5_Wheel,
+		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerSCDoorfrontwheelright
 	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_BlazerK5_Wheel,
+		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerSCDoorbackwheelleft
 	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_BlazerK5_Wheel,
+		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerSCDoorbackwheelright
 	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_BlazerK5_Wheel,
+		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_K5BlazerStatePolice
@@ -90,7 +42,7 @@ module Base
 		{
 			file = BlazerSC,
 			scale = 0.6300,
-			offset = 0.0635 0.1905 0.0794,
+			offset = 0.0635 0.1905 0.0000,
 		}
 
 		skin
@@ -134,8 +86,8 @@ module Base
 		mass = 1000,
 		physicsChassisShape = 2.5079 3.0794 6.5714,
 		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 6.5799,
-		shadowOffset = 0.0635 0.1492,
+		shadowExtents = 2.8807 6.5482,
+		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -606,7 +558,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0794 1.3175 0.0476,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}

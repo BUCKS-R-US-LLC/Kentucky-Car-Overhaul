@@ -1,85 +1,37 @@
 module Base
 {
-	model BlazerSC
+	model CrownP72
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC,
+		mesh = vehicles/Vehicle_CrownP72_SC,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCfront
+	model CrownP72Doorfrontwheelleft
 	{
-		mesh = vehicles/Vehicle_BlazerSC|Windshield_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontWindshieldBone 1.0,
-	}
-	model BlazerSCwindowfrontright
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontRight_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowRightFrontBone 1.0,
-	}
-	model BlazerSCwindowfrontleft
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontLeft_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_left
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontLeft_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_right
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontRight_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorRightFrontBone 1.0,
-	}
-	model BlazerSCTrunk
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorTrunk_obj,
-		shader = vehicle,
-		scale = 1,
-		static = FALSE,
-		boneWeight = DoorTrunkBone 1.0,
-	}
-	model BlazerSCDoorfrontwheelleft
-	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_CrownP72_LeftWheel,
+		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerSCDoorfrontwheelright
+	model CrownP72Doorfrontwheelright
 	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_CrownP72_RightWheel,
+		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerSCDoorbackwheelleft
+	model CrownP72Doorbackwheelleft
 	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_CrownP72_LeftWheel,
+		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerSCDoorbackwheelright
+	model CrownP72Doorbackwheelright
 	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
+		mesh = vehicles/Vehicle_CrownP72_RightWheel,
+		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerStatePolice
+	vehicle SC_CrownP72LVPD
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -88,33 +40,23 @@ module Base
 
 		model
 		{
-			file = BlazerSC,
+			file = CrownP72,
 			scale = 0.6300,
-			offset = 0.0635 0.1905 0.0794,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_State,
+			texture = Vehicles/CrownP72/Vehicle_CrownP72SC_LVPD,
 		}
 
-		skin
-		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateW,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateB,
-		}
-
-		textureRust = Vehicles/Vehicle_BlazerSC_rust,
-		textureMask = Vehicles/Vehicle_BlazerSC_mask,
-		textureLights = Vehicles/Vehicle_BlazerSC_lights,
-		textureDamage1Shell = Vehicles/Vehicle_BlazerSC_damage,
-		textureDamage2Shell= Vehicles/Vehicle_BlazerSC_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_BlazerSC_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_BlazerSC_blood2,
+		textureRust = Vehicles/Vehicle_CrownP72_rust,
+		textureMask = Vehicles/Vehicle_CrownP72_mask,
+		textureLights = Vehicles/Vehicle_CrownP72_lights,
+		textureDamage1Shell = Vehicles/Vehicle_CrownP72_damage,
+		textureDamage2Shell= Vehicles/Vehicle_CrownP72_damage2,
+		textureDamage1Overlay = Vehicles/Vehicle_CrownP72_blood,
+		textureDamage2Overlay = Vehicles/Vehicle_CrownP72_blood2,
 
 		sound
 		{
@@ -130,22 +72,17 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 2.5079 3.0794 6.5714,
-		mass = 1500,
-		physicsChassisShape = 2.5079 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 6.5799,
-		shadowOffset = 0.0635 0.1492,
-		engineForce = 8500,
-		maxSpeed = 50f,
-		engineLoudness = 130,
-		engineQuality = 85,
-		gearRatioCount = 3,
-		gearRatioR = 3,
-		gearRatio1 = 11,
-		gearRatio2 = 8,
-		gearRatio3 = 4,
-		gearRatio4 = 2,
+		extents = 3.0159 3.0794 8.1905,
+		mass = 1000,
+		physicsChassisShape = 2.5079 3.0794 8.1905,
+		centerOfMassOffset = 0.0000 1.5397 -0.1111,
+		shadowExtents = 2.8490 8.1830,
+		shadowOffset = 0.0635 -0.1047,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 80,
 		brakingForce = 60,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
@@ -164,7 +101,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.0000 0.0794 2.1587,
+			offset = -1.2222 0.0794 2.3810,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -172,7 +109,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0000 0.0794 2.1587,
+			offset = 1.2222 0.0794 2.3810,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -180,7 +117,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0317 0.0794 -2.1270,
+			offset = -1.2222 0.0794 -2.1270,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +125,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0317 0.0794 -2.1270,
+			offset = 1.2540 0.0794 -2.1270,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -202,7 +139,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 0.9683 0.0159,
+				offset = 0.6190 0.6190 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -221,7 +158,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.6349 0.6190 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -255,27 +192,27 @@ module Base
 
 		area GasTank
 		{
-			xywh = -1.7937 -3.0159 1.0794 0.5714,
+			xywh = -2.0476 -3.0159 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.0000 0.0000 0.0000,
+			xywh = 1.5079 2.3810 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.0000 0.0000 0.0000,
+			xywh = -1.5238 2.3810 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 1.5238 -3.1746 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -1.5397 -3.1746 0.0000 0.0000,
 		}
 
 		area RearSheet
@@ -335,7 +272,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCfront,
+				file = CrownP72front,
 			}
 
 			parent = windshieldextra,
@@ -360,7 +297,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.BlazerSCWindshield,
+			itemType = Base.CrownP72Windshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -372,7 +309,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCwindowfrontright,
+				file = CrownP72windowfrontright,
 			}
 
 			anim ClosedToOpen
@@ -389,7 +326,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCwindowfrontleft,
+				file = CrownP72windowfrontleft,
 			}
 
 			anim ClosedToOpen
@@ -406,7 +343,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSC_door_right,
+				file = CrownP72_door_right,
 			}
 
 			anim Close
@@ -437,14 +374,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BlazerSCDoor,
+			itemType = Base.CrownP72Door,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BlazerSC_door_left,
+				file = CrownP72_door_left,
 			}
 
 			anim Close
@@ -475,7 +412,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BlazerSCDoor,
+			itemType = Base.CrownP72Door,
 		}
 
 		template = WindshieldChassis/part/windshieldextra,
@@ -495,7 +432,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = CrownP72Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -538,7 +475,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorfrontwheelleft,
+				file = CrownP72Doorfrontwheelleft,
 			}
 		}
 
@@ -546,7 +483,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorfrontwheelright,
+				file = CrownP72Doorfrontwheelright,
 			}
 		}
 
@@ -554,7 +491,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorbackwheelleft,
+				file = CrownP72Doorbackwheelleft,
 			}
 		}
 
@@ -562,7 +499,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorbackwheelright,
+				file = CrownP72Doorbackwheelright,
 			}
 		}
 
@@ -611,8 +548,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.0952 -0.0952,
+			extents = 3.0476 1.8571 8.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

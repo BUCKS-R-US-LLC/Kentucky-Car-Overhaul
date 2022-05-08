@@ -7,54 +7,7 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCfront
-	{
-		mesh = vehicles/Vehicle_BlazerSC|Windshield_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontWindshieldBone 1.0,
-	}
-	model BlazerSCwindowfrontright
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontRight_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowRightFrontBone 1.0,
-	}
-	model BlazerSCwindowfrontleft
-	{
-		mesh = vehicles/Vehicle_BlazerSC|WindowFrontLeft_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_left
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontLeft_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorLeftFrontBone 1.0,
-	}
-	model BlazerSC_door_right
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorFrontRight_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorRightFrontBone 1.0,
-	}
-	model BlazerSCTrunk
-	{
-		mesh = vehicles/Vehicle_BlazerSC|DoorTrunk_obj,
-		shader = vehicle,
-		scale = 1,
-		static = FALSE,
-		boneWeight = DoorTrunkBone 1.0,
-	}
+
 	model BlazerSCDoorfrontwheelleft
 	{
 		mesh = vehicles/Vehicle_GWagen_LeftWheel,
