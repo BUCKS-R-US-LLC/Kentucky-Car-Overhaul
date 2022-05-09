@@ -2,7 +2,7 @@ module Base
 {
 	model StepVanP30Police
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|body_mesh,
+		mesh = vehicles/Vehicle_StepVanP30_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -408,6 +408,7 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
@@ -436,11 +437,42 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.StepVanP30Windshield,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = StepVanP30RearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			parent = DoorRearRight,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -501,7 +533,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.StepVanP30Door,
 		}
 
 		part DoorFrontLeft
@@ -539,7 +570,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.StepVanP30Door,
 		}
 
 
@@ -578,23 +608,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.Caprice9C1Door,
-		}
-
-
-		template = Windshield/part/Windshield,
-
-		part Windshield*
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
 		}
 
 		part SCInteriorArmory
