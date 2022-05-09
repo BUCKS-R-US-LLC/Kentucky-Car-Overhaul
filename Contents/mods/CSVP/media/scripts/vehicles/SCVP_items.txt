@@ -4,14 +4,14 @@ module Base
         item K5DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
+        Weight	=	10.0,0
         Type	=	Normal,
         DisplayName	=	K5 Blazer Door,
-        Icon	=	BlazerSCDoor,
+        Icon	=	K5Door,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5DoorSC_WorldItem,
+        WorldStaticModel = K5Door_WorldItem,
     }
 
         item K5WindshieldSC2
@@ -20,11 +20,11 @@ module Base
         Weight	=	20.0,
         Type	=	Normal,
         DisplayName	=	K5 Blazer Windshield,
-        Icon	=	BlazerSCWindshield,
+        Icon	=	K5Windshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5WindshieldSC_WorldItem,
+        WorldStaticModel = K5Windshield_WorldItem,
     }
 
         item K5SideWindowSC2
@@ -33,11 +33,11 @@ module Base
         Weight	=	5.0,
         Type	=	Normal,
         DisplayName	=	K5 Blazer SIde Window,
-        Icon	=	BlazerSCWindshield,
+        Icon	=	K5SideWindow,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5SideWindowSC_WorldItem,
+        WorldStaticModel = K5SideWindow_WorldItem,
     }
 
         item K5HoodSC2
@@ -46,11 +46,11 @@ module Base
         Weight	=	5.0,
         Type	=	Normal,
         DisplayName	=	K5 Blazer Hood,
-        Icon	=	BlazerSCRearTop,
+        Icon	=	K5Hood,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5HoodSC_WorldItem,
+        WorldStaticModel = K5Hood_WorldItem,
     }
 
         item K5TrunkLidSC2
@@ -59,11 +59,11 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	K5 Blazer Trunk Lid,
-        Icon	=	BlazerSCRearTop,
+        Icon	=	K5TrunkLid,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5TrunkLidSC_WorldItem,
+        WorldStaticModel = K5TrunkLid_WorldItem,
     }
 
         item P30DoorSC2
@@ -72,11 +72,11 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= P30 Door,
-        Icon	=	BlazerSCDoor,
-        VehicleType =   1,
+        Icon	=	P30Door,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30DoorSC_WorldItem,
+        WorldStaticModel = P30Door_WorldItem,
     }
 
         item P30WindshieldSC2
@@ -85,11 +85,11 @@ module Base
         Weight	=	20.0,
         Type	=	Normal,
         DisplayName	=	P30 Windshield,
-        Icon	=	BlazerSCWindshield,
-        VehicleType =   1,
+        Icon	=	P30Windshield,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30WindshieldSC_WorldItem,
+        WorldStaticModel = P30Windshield_WorldItem,
     }
 
         item P30SideWindowSC2
@@ -97,12 +97,25 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= P30 SIde Window,
-        Icon	=	BlazerSCWindshield,
-        VehicleType =   1,
+        DisplayName	= P30 Side Window,
+        Icon	=	P30SideWindow,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30SideWindowSC_WorldItem,
+        WorldStaticModel = P30SideWindow_WorldItem,
+    }
+    
+        item P30RearWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Windows,
+        Icon	=	P30SideWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30RearWindows_WorldItem,
     }
 
         item P30HoodSC2
@@ -111,11 +124,11 @@ module Base
         Weight	=	5.0,
         Type	=	Normal,
         DisplayName	= P30 Hood,
-        Icon	=	BlazerSCRearTop,
-        VehicleType =   1,
+        VehicleType = 2,
+        Icon	=	P30Hood, 
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30HoodSC_WorldItem,
+        WorldStaticModel = P30Hood_WorldItem,
     }
 
         item P30RearDoorsSC2
@@ -124,11 +137,11 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= P30 Rear Doors,
-        Icon	=	BlazerSCRearTop,
-        VehicleType =   1,
+        Icon	=	P30RearDoors,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P30RearDoorsSC_WorldItem,
+        WorldStaticModel = P30RearDoors_WorldItem,
     }
 
         item P72DoorSC2
@@ -136,38 +149,77 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= P72 Door,
+        DisplayName	= P72 Front Door,
         Icon	=	BlazerSCDoor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P72DoorSC_WorldItem,
+        WorldStaticModel = P72FrontDoor_WorldItem,
     }
 
-        item P72WindshieldSC2
+        item P72RearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P72 Rear Door,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72RearDoor_WorldItem,
+    }
+
+        item P72FrontWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
         Type	=	Normal,
-        DisplayName	=	P72 Windshield,
+        DisplayName	=	P72 Front Windshield,
         Icon	=	BlazerSCWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P72WindshieldSC_WorldItem,
+        WorldStaticModel = P72FrontWindshield_WorldItem,
     }
 
-        item P72SideWindowSC2
+        item P72RearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	P72 Rear Windshield,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72RearWindshield_WorldItem,
+    }
+
+        item P72FrontSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= P72 SIde Window,
+        DisplayName	= P72 Front Side Window,
         Icon	=	BlazerSCWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P72SideWindowSC_WorldItem,
+        WorldStaticModel = P72FrontSideWindow_WorldItem,
+    }
+
+        item P72RearSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P72 Rear Side Window,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72RearSideWindow_WorldItem,
     }
 
         item P72HoodSC2
@@ -180,21 +232,127 @@ module Base
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P72HoodSC_WorldItem,
+        WorldStaticModel = P72Hood_WorldItem,
     }
 
-        item P72RearDoorsSC2
+        item P72TrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
+        Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= P72 Rear Doors,
+        DisplayName	= P72 Trunk Lid,
         Icon	=	BlazerSCRearTop,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = P72RearDoorsSC_WorldItem,
+        WorldStaticModel = P72TrunkLid_WorldItem,
     }
+
+    
+        item CapriceDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Door,
+        Icon	=	BlazerSCDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
+        item CapriceRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Door,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearDoor_WorldItem,
+    }
+
+        item CapriceFrontWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Caprice Front Windshield,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+    }
+
+        item CapriceRearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Caprice Rear Windshield,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearWindshield_WorldItem,
+    }
+
+        item CapriceFrontSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Side Window,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+    }
+
+        item CapriceRearSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Side Window,
+        Icon	=	BlazerSCWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+    }
+
+        item CapriceHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Hood,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceHood_WorldItem,
+    }
+
+        item CapriceTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Trunk Lid,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceTrunkLid_WorldItem,
+    }
+
 
        	item SCInteriorArmory
     {
