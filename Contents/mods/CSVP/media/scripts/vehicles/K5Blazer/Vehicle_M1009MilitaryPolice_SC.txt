@@ -3,13 +3,13 @@ module Base
 	model BlazerSC
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model BlazerSCWindshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_BlazerK5_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -32,7 +32,7 @@ module Base
 	model BlazerSCFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -40,7 +40,7 @@ module Base
 	model BlazerSCFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -48,51 +48,21 @@ module Base
 	model BlazerSCTrunk
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = RearWindShieldBone 1.0,
 	}
 	model BlazerSCHood
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerSCRearWindshield
-	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|RearWindshield_obj,
-		shader = vehicle,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearWindshieldBone 1.0,
-	}
-	model BlazerSCDoorfrontwheelleft
-	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
-		shader = vehiclewheel,
-	}
-	model BlazerSCDoorfrontwheelright
-	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
-		shader = vehiclewheel,
-	}
-	model BlazerSCDoorbackwheelleft
-	{
-		mesh = vehicles/Vehicle_GWagen_LeftWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
-		shader = vehiclewheel,
-	}
-	model BlazerSCDoorbackwheelright
-	{
-		mesh = vehicles/Vehicle_GWagen_RightWheel,
-		texture = vehicles/Vehicle_BlazerSCWheel,
-		shader = vehiclewheel,
-	}
+
 	vehicle SC_M1009MilitaryPolice
 	{
 		mechanicType = 2,
@@ -113,13 +83,13 @@ module Base
 		}
 
 
-		textureRust = Vehicles/Vehicle_BlazerSC_rust,
-		textureMask = Vehicles/Vehicle_BlazerSC_mask,
-		textureLights = Vehicles/Vehicle_BlazerSC_lights,
-		textureDamage1Shell = Vehicles/Vehicle_BlazerSC_damage,
-		textureDamage2Shell= Vehicles/Vehicle_BlazerSC_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_BlazerSC_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_BlazerSC_blood2,
+		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/BlazerK5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/BlazerK5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
 
 		sound
 		{
@@ -308,6 +278,40 @@ module Base
 
 		part EngineDoor
 		{
+
+			model engineDoor
+			{
+				file = BlazerSCHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -330,6 +334,7 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
@@ -358,10 +363,9 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.BlazerSCWindshield,
 		}
 
-		part RearWindshield
+		part WindshieldRear
 		{
 			model windshieldRear
 			{
@@ -390,7 +394,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.BlazerSCWindshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -467,7 +470,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BlazerSCDoor,
 		}
 
 		part DoorFrontLeft
@@ -505,7 +507,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BlazerSCDoor,
 		}
 
 		template = TrunkDoor,
