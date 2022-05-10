@@ -2,8 +2,8 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_Caprice9C1StatePolice"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 3};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_CrownP72StatePolice"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_CrownP72StatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.trafficjamw.spawnRate = 10;
     
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
