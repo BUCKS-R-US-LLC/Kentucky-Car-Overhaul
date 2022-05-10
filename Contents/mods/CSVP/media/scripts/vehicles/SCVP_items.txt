@@ -353,6 +353,31 @@ module Base
         WorldStaticModel = CapriceTrunkLid_WorldItem,
     }
 
+        item CapriceFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Seat,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSeat_WorldItem,
+    }
+    
+        item CapriceRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Seat,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
 
        	item SCInteriorArmory
     {
