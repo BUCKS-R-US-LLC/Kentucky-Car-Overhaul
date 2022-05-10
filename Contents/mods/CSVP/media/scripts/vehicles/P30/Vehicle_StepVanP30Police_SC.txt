@@ -404,6 +404,7 @@ module Base
 				file = StepVanP30Hood,
 			}
 
+			anim Close
 			{
 				anim = HoodClosing,
 				reverse = TRUE,
@@ -412,6 +413,8 @@ module Base
 
 			anim Open
 			{
+				anim = HoodClosing,
+				reverse = FALSE,
 				rate = 1.0,
 			}
 
