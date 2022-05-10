@@ -122,13 +122,13 @@ module Base
 			texture = Vehicles/StepVanP30/Vehicle_StepVanP30Police_SC,
 		}
 
-		textureRust = Vehicles/Vehicle_StepVanP30_SC_rust,
-		textureMask = Vehicles/Vehicle_StepVanP30_SC_mask,
-		textureLights = Vehicles/Vehicle_StepVanP30_SC_lights,
-		textureDamage1Shell = Vehicles/Vehicle_StepVanP30_SC_damage,
-		textureDamage2Shell= Vehicles/Vehicle_StepVanP30_SC_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_StepVanP30_SC_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_StepVanP30_SC_blood2,
+		textureRust = Vehicles/StepVanP30/Vehicle_StepVanP30_rust,
+		textureMask = Vehicles/StepVanP30/Vehicle_StepVanP30_mask,
+		textureLights = Vehicles/StepVanP30/Vehicle_StepVanP30_lights,
+		textureDamage1Shell = Vehicles/StepVanP30/Vehicle_StepVanP30_damage,
+		textureDamage2Shell= Vehicles/StepVanP30/Vehicle_StepVanP30_damage2,
+		textureDamage1Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
+		textureDamage2Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
 
 		sound
 		{
@@ -404,6 +404,31 @@ module Base
 				file = StepVanP30Hood,
 			}
 
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -454,6 +479,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
 		}
 
 		part WindshieldRear
@@ -484,6 +510,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -548,6 +575,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 		}
 
 		part DoorFrontLeft
@@ -584,7 +612,9 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 		}
+
 
 		part DoorRearRight
 		{
@@ -620,6 +650,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 		}
 
 		part SCInteriorArmory
