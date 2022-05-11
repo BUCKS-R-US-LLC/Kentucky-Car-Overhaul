@@ -48,7 +48,7 @@ module Base
 	model CrownP72FrontRightDoor
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -56,7 +56,7 @@ module Base
 	model CrownP72FrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -64,7 +64,7 @@ module Base
 	model CrownP72RearRightDoor
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|RearRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model CrownP72RearLeftDoor
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model CrownP72Trunk
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model CrownP72Hood
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model CrownP72RearWindshield
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|RearWindshield_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownP72Doorfrontwheelleft
@@ -142,13 +142,13 @@ module Base
 			texture = Vehicles/CrownP72/Vehicle_CrownP72SC_LVPD,
 		}
 
-		textureRust = Vehicles/Vehicle_CrownP72_rust,
-		textureMask = Vehicles/Vehicle_CrownP72_mask,
-		textureLights = Vehicles/Vehicle_CrownP72_lights,
-		textureDamage1Shell = Vehicles/Vehicle_CrownP72_damage,
-		textureDamage2Shell= Vehicles/Vehicle_CrownP72_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_CrownP72_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_CrownP72_blood2,
+		textureRust = Vehicles/CrownP72/Vehicle_CrownP72SC_rust,
+		textureMask = Vehicles/CrownP72/Vehicle_CrownP72SC_mask,
+		textureLights = Vehicles/CrownP72/Vehicle_CrownP72SC_lights,
+		textureDamage1Shell = Vehicles/CrownP72/Vehicle_CrownP72SC_damage,
+		textureDamage2Shell= Vehicles/CrownP72/Vehicle_CrownP72SC_damage2,
+		textureDamage1Overlay = Vehicles/CrownP72/Vehicle_CrownP72SC_blood,
+		textureDamage2Overlay = Vehicles/CrownP72/Vehicle_CrownP72SC_blood,
 
 		sound
 		{
@@ -337,6 +337,40 @@ module Base
 
 		part EngineDoor
 		{
+		
+			model engineDoor
+			{
+				file = CrownP72Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -387,7 +421,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.CrownP72Windshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -502,7 +535,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CrownP72Door,
 		}
 
 		part DoorFrontLeft
@@ -540,7 +572,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CrownP72Door,
 		}
 
 
@@ -579,7 +610,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CrownP72Door,
 		}
 
 		part DoorRearLeft
@@ -617,7 +647,6 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CrownP72Door,
 		}
 
 		template = TrunkDoor,
