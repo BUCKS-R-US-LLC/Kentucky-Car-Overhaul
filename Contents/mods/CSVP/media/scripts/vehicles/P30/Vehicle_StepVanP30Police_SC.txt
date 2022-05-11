@@ -91,27 +91,27 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model StepVanP30Doorfrontwheelleft
+	model StepVanP30frontwheelleft
 	{
-		mesh = vehicles/Vehicle_StepVanP30_FrontLeft,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontLeft,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model StepVanP30Doorfrontwheelright
+	model StepVanP30frontwheelright
 	{
-		mesh = vehicles/Vehicle_StepVanP30_FrontRight,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontRight,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model StepVanP30Doorbackwheelleft
+	model StepVanP30backwheelleft
 	{
-		mesh = vehicles/Vehicle_StepVanP30_RearLeft,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearLeft,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model StepVanP30Doorbackwheelright
+	model StepVanP30backwheelright
 	{
-		mesh = vehicles/Vehicle_StepVanP30_RearRight,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearRight,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
@@ -144,7 +144,6 @@ module Base
 
 		sound
 		{
-			backSignal = VehicleBackUpBeeper,
 			engine = VehicleEngineStepVan,
 			engineStart = VehicleEngineStepVan,
 			engineTurnOff = VehicleEngineStepVan,
