@@ -1,6 +1,6 @@
 module Base
 {
-	model BlazerSC
+	model K5BlazerStatePolice
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -110,7 +110,7 @@ module Base
 		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1009MilitaryPolice
+	vehicle SC_K5BlazerStatePolice
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -119,14 +119,24 @@ module Base
 
 		model
 		{
-			file = BlazerSC,
+			file = K5BlazerStatePolice,
 			scale = 0.6300,
 			offset = 0.0635 0.4444 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_MilitaryPolice,
+			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateBlue,
+		}
+		
+		skin
+		{
+			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_StateBlack,
 		}
 
 		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
