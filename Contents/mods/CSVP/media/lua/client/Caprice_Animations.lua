@@ -2,39 +2,43 @@
 -- require "Vehicles/ISUI/ISVehicleMenu"
 -- require "Vehicles/TimedActions/ISStartVehicleEngine"
 
-local function IFAV_Enter(player)
+local function CapricePolice_Enter(player)
 	local vehicle = player:getVehicle()
 	if not vehicle then return end
     local vehicleName = vehicle:getScriptName()
     local seat = vehicle:getSeat(player)
     if not seat then return end
-	if seat == 0 and vehicleName:contains("Base.IFAV") then		
+	if seat == 0 and vehicleName:contains("Base.SC_Caprice9C1") then		
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
 		return
 	end
-	if seat == 1 and vehicleName:contains("Base.IFAV") then		
+	if seat == 1 and vehicleName:contains("Base.SC_Caprice9C1") then		
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
 	end
-	if seat == 2 and vehicleName:contains("Base.IFAV") then		
-		player:SetVariable("VehicleScriptName", "Shark_Idle_RearPassenger")
+	if seat == 2 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
 	end
-	if seat == 3 and vehicleName:contains("Base.IFAV") then		
-		player:SetVariable("VehicleScriptName", "Shark_Idle_RearPassenger")
+	if seat == 3 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
+		return
+	end
+	if seat == 4 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
 	end
 end
 
-function IFAV_Enter_Server(player)
+function CapricePolice_Enter_Server(player)
 	IFAV_Enter(player)
 end
 
-local function IFAV_Exit(player)
-    sendClientCommand(player, "IFAV", "PlayerExit", {})
+local function CapricePolice_Exit(player)
+    sendClientCommand(player, "SC_Caprice9C1", "PlayerExit", {})
     player:SetVariable("VehicleScriptName", "")
 end
 
-Events.OnEnterVehicle.Add(IFAV_Enter)
-Events.OnExitVehicle.Add(IFAV_Exit)
-Events.OnSwitchVehicleSeat.Add(IFAV_Enter)
+Events.OnEnterVehicle.Add(CapricePolice_Enter)
+Events.OnExitVehicle.Add(CapricePolice_Exit)
+Events.OnSwitchVehicleSeat.Add(CapricePolice_Enter)
