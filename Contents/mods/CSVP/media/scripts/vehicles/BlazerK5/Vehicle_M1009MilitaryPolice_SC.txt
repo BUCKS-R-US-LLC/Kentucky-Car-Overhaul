@@ -57,6 +57,18 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
+	model BlazerSCRearRightWindow
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model BlazerSCRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model BlazerSCTrunk
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|Trunk_obj,
@@ -453,6 +465,8 @@ module Base
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -486,6 +500,26 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = BlazerSCRearLeftWindow,
+			}
+
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = BlazerSCRearRightWindow,
+			}
+
+			area = SeatFrontRight,
 		}
 
 		part DoorFrontRight
@@ -621,7 +655,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorfrontwheelleft,
+				file = BlazerWheelfrontwheelleft,
 			}
 		}
 
@@ -629,7 +663,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorfrontwheelright,
+				file = BlazerWheelfrontwheelright,
 			}
 		}
 
@@ -637,7 +671,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorbackwheelleft,
+				file = BlazerWheelbackwheelleft,
 			}
 		}
 
@@ -645,7 +679,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerSCDoorbackwheelright,
+				file = BlazerWheelbackwheelright,
 			}
 		}
 
