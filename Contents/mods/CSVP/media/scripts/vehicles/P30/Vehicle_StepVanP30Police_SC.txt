@@ -7,6 +7,18 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
+	model StepVanP30Driver
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model StepVanP30Passenger
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model StepVanP30Windshield
 	{
 		mesh = vehicles/Vehicle_StepVanP30_SC|Windshield_obj,
@@ -381,6 +393,22 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = StepVanP30Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = StepVanP30Passenger,
+			}
+		}
 
 		part Muffler
 		{

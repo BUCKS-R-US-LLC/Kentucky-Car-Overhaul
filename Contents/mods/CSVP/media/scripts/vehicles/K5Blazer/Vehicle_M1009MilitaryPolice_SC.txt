@@ -7,6 +7,18 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
+	model BlazerSCDriver
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model BlazerSCPassenger
+	{
+		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model BlazerSCWindshield
 	{
 		mesh = vehicles/Vehicle_BlazerK5_SC|WindShield_obj,
@@ -260,6 +272,22 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = BlazerSCDriver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = BlazerSCPassenger,
+			}
+		}
 
 		part Muffler
 		{

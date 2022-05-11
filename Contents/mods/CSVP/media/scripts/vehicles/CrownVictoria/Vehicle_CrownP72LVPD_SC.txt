@@ -7,6 +7,24 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
+	model CrownP72Driver
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownP72Passenger
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|FrontPassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownP72Double
+	{
+		mesh = vehicles/Vehicle_CrownP72_SC|RearPassengerSeatDouble_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model CrownP72Windshield
 	{
 		mesh = vehicles/Vehicle_CrownP72_SC|Windshield_obj,
@@ -314,11 +332,37 @@ module Base
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = CrownP72Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = CrownP72Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = CrownP72Double,
+			}
+		}
 
 		part Muffler
 		{

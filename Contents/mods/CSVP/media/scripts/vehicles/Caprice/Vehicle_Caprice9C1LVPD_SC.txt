@@ -7,6 +7,24 @@ module Base
 		static = TRUE,
 		scale = 1,
 	}
+	model Caprice9C1Driver
+	{
+		mesh = vehicles/Vehicle_Caprice9C1_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model Caprice9C1Passenger
+	{
+		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontPassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model Caprice9C1Double
+	{
+		mesh = vehicles/Vehicle_Caprice9C1_SC|RearPassengerSeatDouble_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model Caprice9C1Windshield
 	{
 		mesh = vehicles/Vehicle_Caprice9C1_SC|Windshield_obj,
@@ -406,6 +424,30 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = Caprice9C1Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = Caprice9C1Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = Caprice9C1Double,
+			}
+		}
 
 		part Muffler
 		{
