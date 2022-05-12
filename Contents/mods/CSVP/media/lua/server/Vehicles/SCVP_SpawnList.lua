@@ -14,8 +14,8 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.military = VehicleZoneDistribution.military or {}
     VehicleZoneDistribution.military.vehicles = VehicleZoneDistribution.military.vehicles or {}
-    VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.military.spawnRate = 10;
 
 end
