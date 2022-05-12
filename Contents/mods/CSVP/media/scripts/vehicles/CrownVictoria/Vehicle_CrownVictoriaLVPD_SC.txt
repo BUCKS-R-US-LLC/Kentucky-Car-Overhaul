@@ -511,12 +511,41 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
 			model windshieldFront
 			{
 				file = CrownVictoriaWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = CrownVictoriaRearWindshield,
 			}
 
 			window
