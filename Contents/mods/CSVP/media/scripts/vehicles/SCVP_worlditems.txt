@@ -43,6 +43,13 @@ module Base
 		scale = 0.5,
 	}
 
+		model BlazerWheel_WorldItem
+	{
+		mesh = WorldItems/K5/BlazerWheel_WorldItem,
+		texture = WorldItems/BlazerWheel,
+		scale = 0.5,
+	}
+
 		model P30Door_WorldItem
 	{
 		mesh = WorldItems/P30/P30Door_WorldItem,
@@ -89,6 +96,20 @@ module Base
 	{
 		mesh = WorldItems/P30/P30FrontSeat_WorldItem,
 		texture = WorldItems/P30SC,
+		scale = 0.5,
+	}
+
+		model P30FrontWheel_WorldItem
+	{
+		mesh = WorldItems/P30/P30FrontWheel_WorldItem,
+		texture = WorldItems/P30Wheel,
+		scale = 0.5,
+	}
+
+		model P30RearWheel_WorldItem
+	{
+		mesh = WorldItems/P30/P30RearWheel_WorldItem,
+		texture = WorldItems/P30Wheel,
 		scale = 0.5,
 	}
 
@@ -162,6 +183,13 @@ module Base
 		scale = 0.5,
 	}
 
+		model P72Wheel_WorldItem
+	{
+		mesh = WorldItems/P72/P72Wheel_WorldItem,
+		texture = WorldItems/P72Wheel,
+		scale = 0.5,
+	}
+
 		model CapriceFrontDoor_WorldItem
 	{
 		mesh = WorldItems/Caprice/CapriceFrontDoor_WorldItem,
@@ -229,6 +257,13 @@ module Base
 	{
 		mesh = WorldItems/Caprice/CapriceRearSeat_WorldItem,
 		texture = WorldItems/CapriceSC,
+		scale = 0.5,
+	}
+
+		model CapriceWheel_WorldItem
+	{
+		mesh = WorldItems/Caprice/CapriceWheel_WorldItem,
+		texture = WorldItems/CapriceWheel,
 		scale = 0.5,
 	}
 }

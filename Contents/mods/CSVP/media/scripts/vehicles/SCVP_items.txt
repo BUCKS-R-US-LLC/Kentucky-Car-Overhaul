@@ -66,6 +66,19 @@ module Base
         WorldStaticModel = K5TrunkLid_WorldItem,
     }
 
+        item BlazerWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	K5 Blazer Wheel,
+        Icon	=	K5TrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BlazerWheel_WorldItem,
+    }
+
         item K5FrontSeatSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -168,6 +181,32 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = P30FrontSeat_WorldItem,
+    }
+
+        item P30FrontWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Front Wheel,
+        Icon	=	P30RearDoors,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30FrontWheel_WorldItem,
+    }
+
+        item P30RearWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Wheel,
+        Icon	=	P30RearDoors,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30RearWheel_WorldItem,
     }
 
         item P72DoorSC2
@@ -299,7 +338,33 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = P72RearSeat_WorldItem,
     }
+
+        item P72RearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P72 Rear Door,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72RearDoor_WorldItem,
+    }
     
+        item P72WheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P72 Wheel Door,
+        Icon	=	BlazerSCDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P72Wheel_WorldItem,
+    }
+
         item CapriceDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -428,6 +493,19 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item CapriceWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Wheel,
+        Icon	=	BlazerSCRearTop,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceWheel_WorldItem,
     }
 
        	item SCInteriorArmory
