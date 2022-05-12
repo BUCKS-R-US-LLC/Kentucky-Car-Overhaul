@@ -86,30 +86,6 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = vehicles/Blazer/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelfrontwheelright
-	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelbackwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelbackwheelright
-	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
 	vehicle SC_K5BlazerStatePolice
 	{
 		mechanicType = 2,
@@ -121,7 +97,7 @@ module Base
 		{
 			file = K5BlazerStatePolice,
 			scale = 0.6300,
-			offset = 0.0635 0.4444 0.0000,
+			offset = 0.0635 -0.2540 0.0000,
 		}
 
 		skin
@@ -302,6 +278,8 @@ module Base
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
+		template = K5Bullbar/part/K5Bullbar,
+		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
