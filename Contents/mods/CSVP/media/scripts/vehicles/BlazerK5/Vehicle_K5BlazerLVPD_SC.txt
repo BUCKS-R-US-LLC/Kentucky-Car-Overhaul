@@ -146,14 +146,15 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		lightbar
+	lightbar
+	
 		{
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 2.5079 3.0794 6.5714,
+		extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
-		physicsChassisShape = 2.5079 3.0794 6.5714,
+		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0635 1.5556 0.0000,
 		shadowExtents = 2.8807 6.5799,
 		shadowOffset = 0.0635 0.0063,
@@ -161,8 +162,7 @@ module Base
 		engineQuality = 80,
 		engineLoudness = 120,
 		maxSpeed = 110f,
-		brakingForce = 80,
-		brakingForce = 60,
+		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
@@ -175,12 +175,12 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 4,
+		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.0000 0.0794 2.1587,
+			offset = -1.2063 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +188,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0000 0.0794 2.1587,
+			offset = 1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +196,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.2063 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,7 +251,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6032 4.0000 2.0000,
+			xywh = 0.0000 4.2857 4.0000 2.0000,
 		}
 
 		area TruckBed
@@ -271,7 +271,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = -1.7937 -3.0159 1.0794 0.5714,
+			xywh = -1.9048 -3.0000 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -292,11 +292,6 @@ module Base
 		area TireRearRight
 		{
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
-		}
-
-		area RearSheet
-		{
-			xywh = -0.0159 -1.4444 5.9048 2.4444,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -734,7 +729,7 @@ module Base
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.4762,
+			offset = -0.0159 0.0000 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
