@@ -47,7 +47,6 @@ VehicleDistributions.SCStatePolice = {
             "BluePen", 8,
             "Bullets9mmBox", 20,
             "Bullets9mmBox", 10,
-            "Disc_Retail", 2,
             "Eraser", 6,
             "HandTorch", 4,
             "Magazine", 10,
@@ -58,7 +57,6 @@ VehicleDistributions.SCStatePolice = {
             "Radio.WalkieTalkie4", 10,
             "RedPen", 8,
             "RubberBand", 6,
-            "Tissue", 10,
         },
         junk = {
             rolls = 1,
@@ -73,13 +71,9 @@ VehicleDistributions.SCStatePolice = {
                 "Glasses_Aviators", 0.5,
                 "Gloves_LeatherGlovesBlack", 0.5,
                 "HandTorch", 4,
-                "HuntingKnife", 0.1,
                 "Lighter", 4,
                 "Matches", 8,
                 "Pistol", 20,
-                "Scotchtape", 8,
-                "ToiletPaper", 4,
-                "Twine", 10,
             }
         }
     },
@@ -89,5 +83,13 @@ VehicleDistributions.SCStatePolice = {
 }
 
 distributionTable["SC_BlazerK5StatePolice"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_CrownP72StatePolice"] = { Normal = VehicleDistributions.SCStatePolice; }
-distributionTable["SC_Caprice9C1"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_BlazerK5ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_BlazerK5LVPD"] = distributionTable["PickUpVanLightsPolice"]
+
+distributionTable["SC_Caprice9C1StatePolice"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_Caprice9C1ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_Caprice9C1LVPD"] = distributionTable["PickUpVanLightsPolice"]
+
+distributionTable["SC_CrownP72StatePolice"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_CrownP72ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_CrownP72LVPD"] = distributionTable["PickUpVanLightsPolice"]
