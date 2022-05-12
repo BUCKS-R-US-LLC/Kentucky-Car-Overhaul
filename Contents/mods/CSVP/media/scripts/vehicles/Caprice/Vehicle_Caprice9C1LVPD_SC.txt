@@ -117,28 +117,28 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Doorfrontwheelleft
+	model Caprice9C1frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownP72_LeftWheel,
-		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1Doorfrontwheelright
+	model Caprice9C1frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownP72_RightWheel,
-		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1Doorbackwheelleft
+	model Caprice9C1backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownP72_LeftWheel,
-		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1Doorbackwheelright
+	model Caprice9C1backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownP72_RightWheel,
-		texture = vehicles/CrownP72/Vehicle_CrownP72SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_Caprice9C1LVPD
@@ -150,7 +150,7 @@ module Base
 
 		model
 		{
-			file = Caprice9C1,
+			file = Caprice9C1LVPD,
 			scale = 0.6300,
 			offset = 0.0000 -0.0159 0.0000,
 		}
@@ -849,7 +849,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1Doorfrontwheelleft,
+				file = Caprice9C1frontwheelleft,
 			}
 		}
 
@@ -857,7 +857,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1Doorfrontwheelright,
+				file = Caprice9C1frontwheelright,
 			}
 		}
 
@@ -865,7 +865,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1Doorbackwheelleft,
+				file = Caprice9C1backwheelleft,
 			}
 		}
 
@@ -873,7 +873,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1Doorbackwheelright,
+				file = Caprice9C1backwheelright,
 			}
 		}
 
