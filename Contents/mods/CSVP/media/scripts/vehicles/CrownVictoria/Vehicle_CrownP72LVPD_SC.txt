@@ -182,11 +182,11 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 3.0476 1.3968 7.7143,
+		extents = 3.0476 1.3968 8.0317,
 		mass = 800,
 		physicsChassisShape = 2.2222 1.3968 4.6349,
 		centerOfMassOffset = 0.0000 0.6667 0.0000,
-		shadowExtents = 3.1524 8.0117,
+		shadowExtents = 3.1524 8.1704,
 		shadowOffset = -0.0032 -0.1048,
 		engineForce = 4201,
 		gearRatioCount = 4,
@@ -357,7 +357,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.2698 2.3492 1.7460,
+			xywh = 0.0000 -4.7302 2.3492 1.7460,
 		}
 
 		area SeatFrontLeft
@@ -382,7 +382,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = -2.0476 -3.0159 1.0794 0.5714,
+			xywh = 2.0635 -2.9524 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -403,11 +403,6 @@ module Base
 		area TireRearRight
 		{
 			xywh = -1.5397 -3.1746 0.0000 0.0000,
-		}
-
-		area RearSheet
-		{
-			xywh = -0.0159 -1.4444 5.9048 2.4444,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -898,21 +893,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.0952 -0.0952,
+			offset = 0.0000 0.9524 -0.0952,
 			extents = 3.0476 1.8571 8.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0317 -4.1270,
+			offset = 0.0000 0.0317 -4.1905,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.8095,
+			offset = 0.0000 0.0000 3.9841,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
