@@ -29,7 +29,7 @@ local function CapricePolice_Enter(player)
 end
 
 function CapricePolice_Enter_Server(player)
-	IFAV_Enter(player)
+	CapricePolice_Enter(player)
 end
 
 local function CapricePolice_Exit(player)
