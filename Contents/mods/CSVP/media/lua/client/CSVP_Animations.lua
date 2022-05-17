@@ -1,6 +1,4 @@
--- Huge thanks to Dislaik for creating this, you should him out: https://steamcommunity.com/sharedfiles/filedetails/?id=2728300240
--- require "Vehicles/ISUI/ISVehicleMenu"
--- require "Vehicles/TimedActions/ISStartVehicleEngine"
+-- Huge thanks to Dislaik for creating this method, you should him out: https://steamcommunity.com/sharedfiles/filedetails/?id=2728300240
 
 local function CapricePolice_Enter(player)
 	local vehicle = player:getVehicle()
