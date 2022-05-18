@@ -1,177 +1,172 @@
 module Base
 {
-	model Caprice9C1ParkRanger
+	model CrownVictoriaStatePolice
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model Caprice9C1Driver
+	model CrownVictoriaDriver
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Passenger
+	model CrownVictoriaPassenger
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Double
+	model CrownVictoriaDouble
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Windshield
+	model CrownVictoriaWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1FrontRightWindow
+	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model Caprice9C1FrontLeftWindow
+	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model Caprice9C1RearRightWindow
+	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model Caprice9C1RearLeftWindow
+	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model Caprice9C1FrontRightDoor
+	model CrownVictoriaFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model Caprice9C1FrontLeftDoor
+	model CrownVictoriaFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model Caprice9C1RearRightDoor
+	model CrownVictoriaRearRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model Caprice9C1RearLeftDoor
+	model CrownVictoriaRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model Caprice9C1Trunk
+	model CrownVictoriaTrunk
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model Caprice9C1Hood
+	model CrownVictoriaHood
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model Caprice9C1RearWindshield
+	model CrownVictoriaRearWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1frontwheelleft
+	model CrownVictoriaDoorfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1frontwheelright
+	model CrownVictoriaDoorfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelleft
+	model CrownVictoriaDoorbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelright
+	model CrownVictoriaDoorbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_Caprice9C1ParkRanger
+	vehicle CarLightsPolice
 	{
 		mechanicType = 1,
-		offRoadEfficiency = 1.5,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = Caprice9C1ParkRanger,
+			file = CrownVictoriaStatePolice,
 			scale = 0.6300,
-			offset = 0.0000 -0.0159 0.0000,
+			offset = 0.0000 -0.0476 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice9C1/Vehicle_Caprice9C1_ParkRanger,
+			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_StatePolice,
 		}
 
-		textureMask = Vehicles/Caprice9C1/Vehicle_Caprice9C1_mask,
-		textureLights = Vehicles/Caprice9C1/Vehicle_Caprice9C1_lights,
-		textureDamage1Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage2Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage1Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage,
-		textureDamage2Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage2,
-		textureRust = Vehicles/Caprice9C1/Vehicle_Caprice9C1_rust,
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
+		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
+		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_mask,
+		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_lights,
+		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage,
+		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage2,
+		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
+		textureDamage2Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
 
 		sound
 		{
@@ -180,6 +175,11 @@ module Base
 			engineTurnOff = VehicleEngineCarNormal,
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
 		}
 
 		extents = 3.0476 1.3968 7.7143,
@@ -211,7 +211,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3175 0.0794 2.5397,
+			offset = -1.3175 0.0794 2.3810,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,7 +219,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1905 0.0794 2.5397,
+			offset = 1.1905 0.0794 2.3810,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -227,7 +227,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.3175 0.0794 -1.9683,
+			offset = -1.3175 0.0794 -2.1111,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -235,7 +235,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1905 0.0794 -1.9683,
+			offset = 1.1905 0.0794 -2.1111,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,7 +249,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6032 0.6349 0.2857,
+				offset = 0.6032 0.6349 0.2063,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -276,7 +276,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5873 0.6349 0.2857,
+				offset = -0.5873 0.6349 0.2063,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -372,37 +372,37 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = 2.3175 -1.0476 2.0000 2.0000,
+			xywh = 2.3175 0.9683 2.0000 2.0000,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1905 -1.0476 2.0000 2.0000,
+			xywh = -2.1905 0.9683 2.0000 2.0000,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0317 -4.3810 1.0794 0.5714,
+			xywh = -2.0476 -3.0159 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.0000 0.0000 0.0000,
+			xywh = 1.5079 2.3810 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.0000 0.0000 0.0000,
+			xywh = -1.5238 2.3810 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 1.5238 -3.1746 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -1.5397 -3.1746 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -419,7 +419,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = Caprice9C1Driver,
+				file = CrownVictoriaDriver,
 			}
 		}
 
@@ -427,7 +427,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = Caprice9C1Passenger,
+				file = CrownVictoriaPassenger,
 			}
 		}
 
@@ -435,7 +435,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = Caprice9C1Double,
+				file = CrownVictoriaDouble,
 			}
 		}
 
@@ -458,7 +458,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = Caprice9C1Hood,
+				file = CrownVictoriaHood,
 			}
 
 			anim Close
@@ -517,7 +517,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = Caprice9C1Windshield,
+				file = CrownVictoriaWindshield,
 			}
 
 			window
@@ -545,7 +545,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = Caprice9C1RearWindshield,
+				file = CrownVictoriaRearWindshield,
 			}
 
 			window
@@ -582,7 +582,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = Caprice9C1FrontRightWindow,
+				file = CrownVictoriaFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -599,7 +599,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = Caprice9C1FrontLeftWindow,
+				file = CrownVictoriaFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -616,7 +616,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = Caprice9C1RearRightWindow,
+				file = CrownVictoriaRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -633,7 +633,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = Caprice9C1RearLeftWindow,
+				file = CrownVictoriaRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -650,7 +650,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontRightDoor,
+				file = CrownVictoriaFrontRightDoor,
 			}
 
 			anim Close
@@ -686,7 +686,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontLeftDoor,
+				file = CrownVictoriaFrontLeftDoor,
 			}
 
 			anim Close
@@ -722,7 +722,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearRightDoor,
+				file = CrownVictoriaRearRightDoor,
 			}
 
 			anim Close
@@ -758,7 +758,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearLeftDoor,
+				file = CrownVictoriaRearLeftDoor,
 			}
 
 			anim Close
@@ -806,7 +806,7 @@ module Base
 
 			model Default
 			{
-				file = Caprice9C1Trunk,
+				file = CrownVictoriaTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -849,7 +849,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelleft,
+				file = CrownVictoriaDoorfrontwheelleft,
 			}
 		}
 
@@ -857,7 +857,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelright,
+				file = CrownVictoriaDoorfrontwheelright,
 			}
 		}
 
@@ -865,7 +865,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelleft,
+				file = CrownVictoriaDoorbackwheelleft,
 			}
 		}
 
@@ -873,7 +873,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelright,
+				file = CrownVictoriaDoorbackwheelright,
 			}
 		}
 
@@ -922,21 +922,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			offset = 0.0000 1.0952 -0.0952,
+			extents = 3.0476 1.8571 8.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3651 -4.1587,
+			offset = 0.0000 0.0317 -4.1270,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.9524,
+			offset = 0.0000 0.0000 3.8095,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
