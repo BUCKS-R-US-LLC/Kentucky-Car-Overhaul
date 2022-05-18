@@ -1,6 +1,6 @@
 local distributionTable = VehicleDistributions[1]
 
-VehicleDistributions.SCStatePolice = {
+VehicleDistributions.SCPolice = {
     TruckBed = {
         rolls = 4,
         items = {
@@ -82,14 +82,14 @@ VehicleDistributions.SCStatePolice = {
     SeatRearRight = VehicleDistributions.Seat;
 }
 
-distributionTable["SC_BlazerK5StatePolice"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_BlazerK5ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_BlazerK5LVPD"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_BlazerK5StatePolice"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_BlazerK5LVPD"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_BlazerK5ParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
 
-distributionTable["SC_Caprice9C1StatePolice"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_Caprice9C1ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_Caprice9C1LVPD"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_Caprice9C1StatePolice"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_Caprice9C1LVPD"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_Caprice9C1ParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
 
-distributionTable["SC_CrownP72StatePolice"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_CrownP72ParkRanger"] = distributionTable["PickUpVanLightsPolice"]
-distributionTable["SC_CrownP72LVPD"] = distributionTable["PickUpVanLightsPolice"]
+distributionTable["SC_CrownVictoriaStatePolice"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_CrownVictoriaParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
