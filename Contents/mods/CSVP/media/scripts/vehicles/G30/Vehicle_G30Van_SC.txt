@@ -139,16 +139,46 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/30VanBox/Vehicle_30VanBoxSC_Green,
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Green,
 		}
 
-		textureRust = Vehicles/30VanBox/Vehicle_30VanBoxSC_Rust,
-		textureMask = Vehicles/30VanBox/Vehicle_30VanBoxSC_Mask,
-		textureLights = Vehicles/30VanBox/Vehicle_30VanBoxSC_Lights,
-		textureDamage1Shell = Vehicles/30VanBox/Vehicle_30VanBoxSC_Scratch,
-		textureDamage2Shell= Vehicles/30VanBox/Vehicle_30VanBoxSC_Scratch,
-		textureDamage1Overlay = Vehicles/30VanBox/Vehicle_30VanBoxSC_Blood,
-		textureDamage2Overlay = Vehicles/30VanBox/Vehicle_30VanBoxSC_Blood,
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blue,
+		}
+		
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Brown,
+		}
+
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_BrownBad,
+		}
+
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_DarkBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Black
+		}
+
+		textureRust = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Rust,
+		textureMask = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Mask,
+		textureLights = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Lights,
+		textureDamage1Shell = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
+		textureDamage2Shell= Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
+		textureDamage1Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
+		textureDamage2Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
 
 		sound
 		{
@@ -159,12 +189,6 @@ module Base
 			ignitionFail = VehiclegnitionFailStepVan,
 		}
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-			leftCol = 1;0.73;0.2,
-            rightCol = 1;0.73;0.2,
-		}
 
 		extents = 3.2063 3.0794 8.6984,
 		mass = 1700,
