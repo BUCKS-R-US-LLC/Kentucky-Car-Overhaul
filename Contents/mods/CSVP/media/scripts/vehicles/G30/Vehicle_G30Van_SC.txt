@@ -402,6 +402,56 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = G30VanTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
 
 		part SeatFrontLeft
 		{
@@ -564,6 +614,13 @@ module Base
 				file = G30VanFrontRightWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -573,6 +630,12 @@ module Base
 			model windowFL
 			{
 				file = G30VanFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
 			}
 
 			parent = DoorFrontLeft,
@@ -655,33 +718,33 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanRearRightDoor,
+				file = G30VanSlidingDoor,
 			}
 
 			anim Close
 			{
-				anim = RearDoorClosing,
+				anim = RearSlidingDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = RearDoorClosing,
+				anim = RearSlidingDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearDoorClosing,
+				anim = RearSlidingDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearDoorClosing,
+				anim = RearSlidingDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
