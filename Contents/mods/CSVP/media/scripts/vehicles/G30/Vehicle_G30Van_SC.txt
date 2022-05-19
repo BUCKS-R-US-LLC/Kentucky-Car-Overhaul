@@ -2,32 +2,32 @@ module Base
 {
 	model SC_G30Van
 	{
-		mesh = vehicles/Vehicle_G30VanCivilian_SC|base_mesh,
+		mesh = vehicles/Vehicle_30VanBox_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model G30VanDriver
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanPassenger
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_30VanBox_SCFrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanWindshield
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model G30VanFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model G30VanFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontRightDoor_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
@@ -51,32 +51,40 @@ module Base
 	}
 	model G30VanFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontLeftDoor_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanRearRightDoor
+	model G30VanSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|RearDoor_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|RearSlidingDoor_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearSlidingDoorBone 1.0,
+	}
+	model G30VanSlidingWindow
+	{
+		mesh = vehicles/Vehicle_30VanBox_SC|RearSlidingDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearSlidingDoorBone 1.0,
 	}
 	model G30VanTrunk
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|Trunk_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model G30VanHood
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|Hood_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|Hood_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
@@ -84,7 +92,7 @@ module Base
 	}
 	model G30VanRearWindshield
 	{
-		mesh = vehicles/Vehicle_G30Van_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|RearWindshield_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
@@ -131,7 +139,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/G30Van/Vehicle_P30SC_White,
+			texture = Vehicles/30VanBox/Vehicle_30VanBoxSC_Green,
 		}
 
 		textureRust = Vehicles/G30Van/Vehicle_G30Van_rust,
