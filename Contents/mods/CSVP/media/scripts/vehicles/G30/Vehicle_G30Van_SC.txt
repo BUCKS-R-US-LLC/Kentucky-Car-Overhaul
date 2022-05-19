@@ -101,26 +101,26 @@ module Base
 	}
 	model G30Vanfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_G30Van_FrontLeft,
-		texture = vehicles/G30Van/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30Van_FrontRight,
-		texture = vehicles/G30Van/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_G30Van_RearLeft,
-		texture = vehicles/G30Van/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30Van_RearRight,
-		texture = vehicles/G30Van/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_G30Van
@@ -189,13 +189,13 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 6,
+		seats = 4,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2857 0.0794 2.0794,
+			offset = -1.2857 0.0794 1.9365,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -203,7 +203,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.0794,
+			offset = 1.2698 0.0794 1.9206,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -211,7 +211,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0317 0.0794 -2.8730,
+			offset = -1.2698 0.0794 -2.8730,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,12 +219,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0317 0.0794 -2.8730,
+			offset = 1.2381 0.0794 -2.8730,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat6,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -233,7 +233,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 1.4762 1.0159,
+				offset = 0.7460 1.2381 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
