@@ -27,7 +27,7 @@ module Base
 	}
 	model G30VanFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_30VanBox_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_30VanBox_SC|FrontRightWindow_obj.001,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -63,15 +63,15 @@ module Base
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlidingDoorBone 1.0,
+		boneWeight = RearSlideDoorBone 1.0,
 	}
 	model G30VanSlidingWindow
 	{
-		mesh = vehicles/Vehicle_30VanBox_SC|RearSlidingDoor_obj,
-		shader = vehicle,
+		mesh = vehicles/Vehicle_30VanBox_SC|RearSlidingWindow_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlidingDoorBone 1.0,
+		boneWeight = RearSlideDoorBone 1.0,
 	}
 	model G30VanTrunk
 	{
@@ -93,7 +93,7 @@ module Base
 	model G30VanRearWindshield
 	{
 		mesh = vehicles/Vehicle_30VanBox_SC|RearWindshield_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -142,13 +142,13 @@ module Base
 			texture = Vehicles/30VanBox/Vehicle_30VanBoxSC_Green,
 		}
 
-		textureRust = Vehicles/G30Van/Vehicle_G30Van_rust,
-		textureMask = Vehicles/G30Van/Vehicle_G30Van_mask,
-		textureLights = Vehicles/G30Van/Vehicle_G30VanParkRanger_lights,
-		textureDamage1Shell = Vehicles/G30Van/Vehicle_G30Van_damage,
-		textureDamage2Shell= Vehicles/G30Van/Vehicle_G30Van_damage2,
-		textureDamage1Overlay = Vehicles/G30Van/Vehicle_G30Van_blood,
-		textureDamage2Overlay = Vehicles/G30Van/Vehicle_G30Van_blood,
+		textureRust = Vehicles/30VanBox/Vehicle_30VanBoxSC_Rust,
+		textureMask = Vehicles/30VanBox/Vehicle_30VanBoxSC_Mask,
+		textureLights = Vehicles/30VanBox/Vehicle_30VanBoxSC_Lights,
+		textureDamage1Shell = Vehicles/30VanBox/Vehicle_30VanBoxSC_Scratch,
+		textureDamage2Shell= Vehicles/30VanBox/Vehicle_30VanBoxSC_Scratch,
+		textureDamage1Overlay = Vehicles/30VanBox/Vehicle_30VanBoxSC_Blood,
+		textureDamage2Overlay = Vehicles/30VanBox/Vehicle_30VanBoxSC_Blood,
 
 		sound
 		{
@@ -583,7 +583,7 @@ module Base
 				openable = false,
 			}
 
-			parent = DoorRearRight,
+			parent = TrunkDoor,
 
 			table install
 			{
@@ -606,6 +606,7 @@ module Base
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -718,7 +719,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanSlidingDoor,
+				file = G30VanSlidingRightDoor,
 			}
 
 			anim Close
@@ -748,6 +749,17 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = G30VanSlidingWindow,
+			}
+
+			parent = DoorRearRight,
+			area = SeatFrontRight,
 		}
 
 		part SCInteriorArmory
