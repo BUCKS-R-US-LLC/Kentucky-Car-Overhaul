@@ -1,8 +1,8 @@
 module Base
 {
-	model SC_CrownVictoria
+	model SC_CrownVictoriaCiv
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
+		mesh = vehicles/Vehicle_CrownVictoriaCiv_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -141,7 +141,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_CrownVictoria
+	vehicle CarNormal
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
@@ -150,7 +150,7 @@ module Base
 
 		model
 		{
-			file = SC_CrownVictoria,
+			file = SC_CrownVictoriaCiv,
 			scale = 0.6300,
 			offset = 0.0000 -0.0476 0.0000,
 		}
