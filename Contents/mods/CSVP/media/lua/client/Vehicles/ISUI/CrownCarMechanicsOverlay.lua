@@ -1,6 +1,7 @@
 ISCarMechanicsOverlay.CarList["Base.SC_CrownVictoriaLVPD"] = {imgPrefix = "crown_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CrownVictoriaStatePolice"] = {imgPrefix = "crown_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CrownVictoriaParkRanger"] = {imgPrefix = "crown_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.CarNormal"] = {imgPrefix = "crown_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.CarLightsPolice"] = {imgPrefix = "crown_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.CarLights"] = {imgPrefix = "crown_", x=0,y=0};
 --
