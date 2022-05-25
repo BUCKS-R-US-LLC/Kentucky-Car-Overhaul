@@ -6,25 +6,45 @@ local function CapricePolice_Enter(player)
     local vehicleName = vehicle:getScriptName()
     local seat = vehicle:getSeat(player)
     if not seat then return end
-	if seat == 0 and vehicleName:contains("Base.SC_Caprice9C1") then		
+	if seat == 0 and vehicleName:contains("Base.SC_Caprice9C1") then				
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
 		return
 	end
-	if seat == 1 and vehicleName:contains("Base.SC_Caprice9C1") then		
+	if seat == 1 and vehicleName:contains("Base.SC_Caprice9C1") then
+--- Below sets random chance between if and else
+		if ZombRand(100) <= 50 then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
+		else
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
+		end
 	end
 	if seat == 2 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+--- Below sets random chance between if and else
+		if ZombRand(100) <= 50 then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
+		else
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
+		end
 	end
 	if seat == 3 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+--- Below sets random chance between if and else
+		if ZombRand(100) <= 50 then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
+		else
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
+		end
 	end
 	if seat == 4 and vehicleName:contains("Base.Base.SC_Caprice9C1") then		
+--- Below sets random chance between if and else
+		if ZombRand(100) <= 50 then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
+		else
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
+		end
 	end
 end
 
