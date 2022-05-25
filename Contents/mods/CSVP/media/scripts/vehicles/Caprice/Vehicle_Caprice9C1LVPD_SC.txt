@@ -151,8 +151,8 @@ module Base
 		model
 		{
 			file = Caprice9C1LVPD,
-			scale = 0.6300,
-			offset = 0.0000 -0.0159 0.0000,
+			scale = 0.6100,
+			offset = 0.0000 -0.0161 0.0000,
 		}
 
 		skin
@@ -182,10 +182,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0476 1.3968 7.7143,
+		extents = 3.0645 1.4194 7.7419,
 		mass = 800,
-		physicsChassisShape = 2.2222 1.3968 4.6349,
-		centerOfMassOffset = 0.0000 0.6667 0.0000,
+		physicsChassisShape = 2.2258 1.4194 4.6774,
+		centerOfMassOffset = 0.0000 0.6613 0.0000,
 		shadowExtents = 3.1524 8.0117,
 		shadowOffset = -0.0032 -0.1048,
 		engineForce = 4201,
@@ -211,7 +211,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3175 0.0794 2.5397,
+			offset = -1.3226 0.0806 2.5484,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,7 +219,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1905 0.0794 2.5397,
+			offset = 1.1774 0.0806 2.5484,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -227,7 +227,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.3175 0.0794 -1.9683,
+			offset = -1.3226 0.0806 -1.9677,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -235,7 +235,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1905 0.0794 -1.9683,
+			offset = 1.1774 0.0806 -1.9677,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,13 +249,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6032 0.6349 0.2857,
+				offset = 0.6129 0.5323 0.2903,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.4286 0.6349,
+				offset = 2.0484 -0.4194 0.6290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -276,13 +276,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5873 0.6349 0.2857,
+				offset = -0.5968 0.5323 0.2903,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2063 -0.4286 0.1429,
+				offset = -2.1935 -0.4194 0.1290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -303,13 +303,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5873 0.6190 -1.1270,
+				offset = 0.5968 0.5323 -1.1129,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.4286 -0.6508,
+				offset = 2.0484 -0.4194 -0.6452,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -330,13 +330,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5873 0.6190 -1.1270,
+				offset = -0.5968 0.5323 -1.1129,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2222 -0.4286 -0.8095,
+				offset = -2.2097 -0.4194 -0.8226,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -350,39 +350,39 @@ module Base
 			}
 		}
 
-	area Engine
+		area Engine
 		{
-			xywh = 0.0000 4.6032 4.0000 2.0000,
+			xywh = 0.0000 4.6129 4.0000 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.2698 2.3492 1.7460,
+			xywh = 0.0000 -4.2742 2.3871 1.7742,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3175 0.9683 2.0000 2.0000,
+			xywh = 2.5323 0.9677 2.0000 2.0000,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1905 0.9683 2.0000 2.0000,
+			xywh = -2.5323 0.9677 2.0000 2.0000,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.3175 -1.0476 2.0000 2.0000,
+			xywh = 2.5323 -1.0484 2.0000 2.0000,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1905 -1.0476 2.0000 2.0000,
+			xywh = -2.5323 -1.0484 2.0000 2.0000,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0317 -4.3810 1.0794 0.5714,
+			xywh = 0.0323 -4.3710 1.0968 0.6129,
 		}
 
 		area TireFrontLeft
