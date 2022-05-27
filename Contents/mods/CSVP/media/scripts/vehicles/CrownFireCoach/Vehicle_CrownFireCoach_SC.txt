@@ -232,7 +232,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 6500,
 		rearEndHealth = 4500,
-		seats = 6,
+		seats = 2,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
@@ -267,7 +267,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat6,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -307,73 +307,6 @@ module Base
 			}
 		}
 
-		passenger MiddleLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7460 2.6032 1.9683,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7937 2.6032 1.8730,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-			}
-		}
-
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.8254 1.7619 -6.7143,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.8095 1.7778 -6.7143,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 0.0159 -0.5873 -5.7302,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
 			xywh = 0.0635 3.3651 5.2698 1.9048,
@@ -389,29 +322,9 @@ module Base
 			xywh = -2.4127 4.8730 1.1111 1.1111,
 		}
 
-		area SeatMiddleLeft
-		{
-			xywh = 2.2063 2.0794 0.4762 0.4762,
-		}
-
-		area SeatMiddleRight
-		{
-			xywh = -2.0794 2.0794 0.4762 0.4762,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.0794 -5.9683 0.4762 0.4762,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.2063 -5.9683 0.4762 0.4762,
-		}
-
 		area GasTank
 		{
-			xywh = 2.5079 -3.4444 1.0794 0.5714,
+			xywh = 2.5079 -0.7778 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -481,10 +394,6 @@ module Base
 		template = FireCoachArmor/part/FireCoachRearRightWindowArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -962,7 +871,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -970,6 +878,11 @@ module Base
 
 		part WindowFrontRight
 		{
+			window
+			{
+				openable = false,
+			}
+
 			model windowFR
 			{
 				file = FireCoachFrontRightWindow,
@@ -981,6 +894,11 @@ module Base
 
 		part WindowFrontLeft
 		{
+			window
+			{
+				openable = false,
+			}
+
 			model windowFL
 			{
 				file = FireCoachFrontLeftWindow,
@@ -997,7 +915,6 @@ module Base
 				file = FireCoachRearLeftWindow,
 			}
 
-			area = SeatRearLeft,
 		}
 
 		part WindowRearRight
@@ -1006,8 +923,6 @@ module Base
 			{
 				file = FireCoachRearRightWindow,
 			}
-
-			area = SeatRearRight,
 		}
 
 		part DoorFrontRight
