@@ -177,7 +177,7 @@ module Base
 		{
 			file = SC_FireCoach,
 			scale = 0.6300,
-			offset = 0.0635 -0.3016 0.0000,
+			offset = 0.0635 -0.0476 0.0000,
 		}
 
 		skin
@@ -198,7 +198,7 @@ module Base
 			engine = VehicleEngineStepVan,
 			engineStart = VehicleEngineStepVan,
 			engineTurnOff = VehicleEngineStepVan,
-			horn = VehicleHornVan,
+			horn = FireTruckHorn,
 			ignitionFail = VehiclegnitionFailStepVan,
 		}
 
@@ -209,15 +209,15 @@ module Base
 			rightCol = 1;0;0,
 		}
 
-		extents = 3.8095 2.9524 13.2381,
-		mass = 1700,
+		extents = 3.8095 3.4286 13.2381,
+		mass = 2000,
 		physicsChassisShape = 3.8095 4.1587 13.2063,
 		centerOfMassOffset = 0.0635 2.1111 0.0159,
 		shadowExtents = 4.1347 13.2149,
 		shadowOffset = 0.0635 0.0222,
 		maxSpeed = 80f,
 		engineForce = 6000,
-		engineQuality = 70,
+		engineQuality = 80,
 		engineLoudness = 150,
 		brakingForce = 90,
 		stoppingMovementForce = 4.0f,
@@ -914,7 +914,6 @@ module Base
 			{
 				file = FireCoachRearLeftWindow,
 			}
-
 		}
 
 		part WindowRearRight
