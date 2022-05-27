@@ -1,0 +1,43 @@
+module Base
+{
+
+recipe Craft Fire Coach Door Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:FireCoachDoorArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Fire Coach Windshield Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FireCoachWindshieldArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Fire Coach Window Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FireCoachWindowArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}
