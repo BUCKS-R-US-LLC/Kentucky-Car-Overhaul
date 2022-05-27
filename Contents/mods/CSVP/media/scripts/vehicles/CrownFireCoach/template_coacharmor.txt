@@ -3,14 +3,14 @@ module Base
 
 	model FireCoachArmorWindshield
 	{
-		mesh = vehicles/Vehicle_FireCoach|ArmorWindshield_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|ArmorWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model FireCoachFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_FireCoach|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -19,7 +19,7 @@ module Base
 
 	model FireCoachFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_FireCoach|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -28,14 +28,14 @@ module Base
 
 	model FireCoachRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_FireCoach|RearRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model FireCoachRearLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_FireCoach|RearLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -259,9 +259,6 @@ module Base
             }
 		}
 
-
-	}	
-
 part FireCoachRearLeftWindowArmor
         	{
 
@@ -314,9 +311,6 @@ part FireCoachRearLeftWindowArmor
             {
             }
 		}
-
-
-	}
 
 part FireCoachRearRightWindowArmor
         	{
@@ -372,6 +366,6 @@ part FireCoachRearRightWindowArmor
 		}
 
 
-	}
+     }
 
 }
