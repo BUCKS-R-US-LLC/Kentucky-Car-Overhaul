@@ -990,6 +990,25 @@ module Base
 			area = SeatFrontLeft,
 		}
 
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = FireCoachRearLeftWindow,
+			}
+
+			area = SeatRearLeft,
+		}
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = FireCoachRearRightWindow,
+			}
+
+			area = SeatRearRight,
+		}
+
 		part DoorFrontRight
 		{
 			model Default
