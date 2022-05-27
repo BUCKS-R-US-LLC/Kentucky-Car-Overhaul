@@ -41,6 +41,24 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
+
+	model FireCoachRearRightWindow
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model FireCoachRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	
 	model FireCoachFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_FireCoach_SC|FrontRightDoor_obj,
@@ -56,15 +74,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model FireCoachRearRightDoor
-	{
-		mesh = vehicles/Vehicle_FireCoach_SC|RearDoor_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model FireCoachTrunk
 	{
@@ -658,6 +667,8 @@ module Base
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -675,6 +686,28 @@ module Base
 			model windowFL
 			{
 				file = FireCoachFrontLeftWindow,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+			part WindowRearRight
+		{
+			model windowFR
+			{
+				file = FireCoachRearRightWindow,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowRearLeft
+		{
+			model windowFL
+			{
+				file = FireCoachRearLeftWindow,
 			}
 
 			parent = DoorFrontLeft,
@@ -748,42 +781,6 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = FireCoachRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
