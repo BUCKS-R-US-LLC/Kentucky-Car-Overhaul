@@ -1,0 +1,694 @@
+module Base
+{
+	template vehicle TrunkDoorFireCoach
+	{
+		part TrunkDoor1
+		{
+			category = bodywork,
+			area = SideContainer1,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor2
+		{
+			category = bodywork,
+			area = SideContainer2,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor3
+		{
+			category = bodywork,
+			area = SideContainer3,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor4
+		{
+			category = bodywork,
+			area = SideContainer4,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor5
+		{
+			category = bodywork,
+			area = SideContainer5,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor6
+		{
+			category = bodywork,
+			area = SideContainer6,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor7
+		{
+			category = bodywork,
+			area = SideContainer7,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor8
+		{
+			category = bodywork,
+			area = SideContainer8,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+	}
+}

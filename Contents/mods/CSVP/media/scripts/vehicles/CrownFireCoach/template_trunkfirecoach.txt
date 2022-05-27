@@ -6,13 +6,14 @@ module Base
 		/* FIXME: This should be "TruckBed" */
 		part SideContainer1
 		{
-			area = SideContainer,
+			area = SideContainer1,
 			category = bodywork,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
 			{
+				capacity = 50,
 				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
@@ -21,6 +22,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+}
 
 		part SideContainer2
 		{
@@ -31,6 +34,7 @@ module Base
 			repairMechanic = false,
 			container
 			{
+				capacity = 50,
 				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
@@ -41,6 +45,8 @@ module Base
 			}
 		}
 
+
+
 		part SideContainer3
 		{
 			area = SideContainer3,
@@ -50,6 +56,7 @@ module Base
 			repairMechanic = false,
 			container
 			{
+				capacity = 50,
 				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
@@ -59,6 +66,101 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
+		
+		part SideContainer4
+		{
+			area = SideContainer4,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 50,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		part SideContainer5
+		{
+			area = SideContainer5,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 50,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		part SideContainer6
+		{
+			area = SideContainer6,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 50,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		part SideContainer7
+		{
+			area = SideContainer7,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 50,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		part SideContainer8
+		{
+			area = SideContainer8,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 50,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 		}
 	}
 }

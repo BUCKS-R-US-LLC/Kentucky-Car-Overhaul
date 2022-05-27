@@ -41,24 +41,18 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-
 	model FireCoachRearRightWindow
 	{
 		mesh = vehicles/Vehicle_FireCoach_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
 	}
 	model FireCoachRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_FireCoach_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	
 	model FireCoachFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_FireCoach_SC|FrontRightDoor_obj,
@@ -75,21 +69,69 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model FireCoachTrunk
+	model FireCoachRightFrontStorage
 	{
-		mesh = vehicles/Vehicle_FireCoach_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|RightFrontStorage_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
+		boneWeight = RightFrontStorageBone 1.0,
 	}
-	model FireCoachHood
+	model FireCoachRightMiddleStorage
 	{
-		mesh = vehicles/Vehicle_FireCoach_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FireCoach_SC|RightMiddleStorage_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = HoodBone 1.0,
+		boneWeight = RightMiddleStorageBone 1.0,
+	}
+	model FireCoachRightRearStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RightRearStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightRearStorageBone 1.0,
+	}
+	model FireCoachRightBackStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RightBackStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightBackStorageBone 1.0,
+	}
+	model FireCoachLeftFrontStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|LeftFrontStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftFrontStorageBone 1.0,
+	}
+	model FireCoachLeftMiddleStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|LeftMiddleStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftMiddleStorageBone 1.0,
+	}
+	model FireCoachLeftRearStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|LeftRearStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftRearStorageBone 1.0,
+	}
+	model FireCoachLeftBackStorage
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|LeftBackStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftBackStorageBone 1.0,
 	}
 	model FireCoachRearWindshield
 	{
@@ -146,8 +188,8 @@ module Base
 		textureRust = Vehicles/FireCoach/Vehicle_FireCoach_rust,
 		textureMask = Vehicles/FireCoach/Vehicle_FireCoach_mask,
 		textureLights = Vehicles/FireCoach/Vehicle_FireCoach_lights,
-		textureDamage1Shell = Vehicles/FireCoach/Vehicle_FireCoach_damage,
-		textureDamage2Shell= Vehicles/FireCoach/Vehicle_FireCoach_damage,
+		textureDamage1Shell = Vehicles/FireCoach/Vehicle_FireCoach_scratch,
+		textureDamage2Shell= Vehicles/FireCoach/Vehicle_FireCoach_scratch,
 		textureDamage1Overlay = Vehicles/FireCoach/Vehicle_FireCoach_blood,
 		textureDamage2Overlay = Vehicles/FireCoach/Vehicle_FireCoach_blood,
 
@@ -407,9 +449,34 @@ module Base
 			xywh = -1.9048 -4.1429 0.0000 0.0000,
 		}
 
+		area SideContainer4
+		{
+			xywh = -1.9048 -4.1429 0.0000 0.0000,
+		}
+
+		area SideContainer5
+		{
+			xywh = -1.9048 -4.1429 0.0000 0.0000,
+		}
+
+		area SideContainer6
+		{
+			xywh = -1.9048 -4.1429 0.0000 0.0000,
+		}
+
+		area SideContainer7
+		{
+			xywh = -1.9048 -4.1429 0.0000 0.0000,
+		}
+
+		area SideContainer8
+		{
+			xywh = -1.9048 -4.1429 0.0000 0.0000,
+		}
+
 		template = FireCoachArmor/part/FireCoachArmorWindshield,
 		template = FireCoachArmor/part/FireCoachFrontLeftDoorArmor,
-        template = FireCoachArmor/part/FireCoachFrontRightDoorArmor,
+        	template = FireCoachArmor/part/FireCoachFrontRightDoorArmor,
 		template = FireCoachArmor/part/FireCoachRearLeftWindowArmor,
 		template = FireCoachArmor/part/FireCoachRearRightWindowArmor,
 		template = Seat/part/SeatFrontLeft,
@@ -423,29 +490,325 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = Templates/TrunkFireCoach,
+		template = TrunkFireCoach/part/SideContainer1,
+		template = TrunkFireCoach/part/SideContainer2,
+		template = TrunkFireCoach/part/SideContainer3,
+		template = TrunkFireCoach/part/SideContainer4,
+		template = TrunkFireCoach/part/SideContainer5,
+		template = TrunkFireCoach/part/SideContainer6,
+		template = TrunkFireCoach/part/SideContainer7,
+		template = TrunkFireCoach/part/SideContainer8,
+		template = TrunkDoorFireCoach,
 
-		part SideContainer1
+		part TrunkDoor1
 		{
-			container
+			model Default
 			{
-				capacity = 50,
+				file = FireCoachRightFrontStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightFrontStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightFrontStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightFrontStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightFrontStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
 			}
 		}
 
-		part SideContainer2
+		part TrunkDoor2
 		{
-			container
+			model Default
 			{
-				capacity = 50,
+				file = FireCoachRightMiddleStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
 			}
 		}
 
-		part SideContainer3
+		part TrunkDoor3
 		{
-			container
+			model Default
 			{
-				capacity = 50,
+				file = FireCoachRightRearStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightRearStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightRearStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightRearStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightRearStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor4
+		{
+			model Default
+			{
+				file = FireCoachRightBackStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightBackStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightBackStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightBackStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightBackStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor5
+		{
+			model Default
+			{
+				file = FireCoachLeftFrontStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor6
+		{
+			model Default
+			{
+				file = FireCoachLeftMiddleStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor7
+		{
+			model Default
+			{
+				file = FireCoachLeftRearStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftRearStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftRearStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftRearStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftRearStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor8
+		{
+			model Default
+			{
+				file = FireCoachLeftBackStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftBackStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftBackStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftBackStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftBackStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
 			}
 		}
 
@@ -627,28 +990,6 @@ module Base
 			area = SeatFrontLeft,
 		}
 
-			part WindowRearRight
-		{
-			model windowFR
-			{
-				file = FireCoachRearRightWindow,
-			}
-
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-		}
-
-		part WindowRearLeft
-		{
-			model windowFL
-			{
-				file = FireCoachRearLeftWindow,
-			}
-
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-		}
-
 		part DoorFrontRight
 		{
 			model Default
@@ -716,6 +1057,42 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = FireCoachRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
