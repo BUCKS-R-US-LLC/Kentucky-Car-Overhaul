@@ -10,10 +10,10 @@ module Base
 			category = bodywork,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
-			repairMechanic = true,
+			repairMechanic = false,
 			container
 			{
-				conditionAffectsCapacity = true,
+				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
 			}
@@ -28,10 +28,10 @@ module Base
 			category = bodywork,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
-			repairMechanic = true,
+			repairMechanic = false,
 			container
 			{
-				conditionAffectsCapacity = true,
+				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
 			}
@@ -47,10 +47,10 @@ module Base
 			category = bodywork,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
-			repairMechanic = true,
+			repairMechanic = false,
 			container
 			{
-				conditionAffectsCapacity = true,
+				conditionAffectsCapacity = false,
 				/* FIXME: This should be "ContainerAccess.TruckBed" */
 				test = Vehicles.ContainerAccess.TruckBed,
 			}
