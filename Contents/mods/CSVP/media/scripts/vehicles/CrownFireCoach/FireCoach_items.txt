@@ -1,17 +1,69 @@
 module Base
 {
 
-	  item FireCoachDoorArmor2
+    item FireCoachSeat2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,0
         Type	=	Normal,
-        DisplayName	=	Fire Coach Door Armor,
+        DisplayName	=	Fire Coach Seat,
         Icon	=	FireCoachDoorArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = FireCoachDoorArmor_WorldItem,
+        WorldStaticModel = FireCoachSeat_WorldItem,
+    }
+
+    item FireCoachWindshield2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Fire Coach Windshield,
+        Icon	=	FireCoachDoorArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachWindshield_WorldItem,
+    }
+
+    item FireCoachFrontDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Front Door,
+        Icon	=	FireCoachDoorArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachFrontDoor_WorldItem,
+    }
+
+    item FireCoachFrontSideWindowDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Front Side Window,
+        Icon	=	FireCoachDoorArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachFrontSideWindow_WorldItem,
+    }
+
+    item FireCoachRearSideWindowDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Rear Side Window,
+        Icon	=	FireCoachDoorArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachRearSideWindow_WorldItem,
     }
 
     item FireCoachWindshieldArmor2
@@ -19,7 +71,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,0
         Type	=	Normal,
-        DisplayName	=	Fire Coach Windshield Armor,
+        DisplayName	=	Firecoach Windshield Armor,
         Icon	=	FireCoachWindshieldArmor,
         VehicleType =   1,
         ConditionMax = 100,
@@ -32,7 +84,46 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,0
         Type	=	Normal,
-        DisplayName	=	Fire Coach Window Armor,
+        DisplayName	=	Firecoach Window Armor,
+        Icon	=	FireCoachWindowArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachWindowArmor_WorldItem,
+    }
+
+	  item FireCoachDoorArmor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Door Armor,
+        Icon	=	FireCoachDoorArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachDoorArmor_WorldItem,
+    }
+
+    item FireCoachWindshieldArmor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Windshield Armor,
+        Icon	=	FireCoachWindshieldArmor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FireCoachWindshieldArmor_WorldItem,
+    }
+
+    item FireCoachWindowArmor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,0
+        Type	=	Normal,
+        DisplayName	=	Firecoach Window Armor,
         Icon	=	FireCoachWindowArmor,
         VehicleType =   1,
         ConditionMax = 100,
