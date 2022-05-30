@@ -10,10 +10,8 @@ VehicleDistributions.SCPolice = {
             "AssaultRifle2", 1,
             "Bullets9mmBox", 20,
             "Bullets9mmBox", 10,
-            "FiberglassStock", 4,
             "HandTorch", 4,
             "Hat_CrashHelmet_Police", 2,
-            "Hat_EarMuff_Protectors", 4,
             "HolsterDouble", 1,
             "HolsterSimple", 4,
             "HuntingRifle", 8,
@@ -82,6 +80,40 @@ VehicleDistributions.SCPolice = {
     SeatRearRight = VehicleDistributions.Seat;
 }
 
+VehicleDistributions.SCCivilianGloveBox = {
+    rolls = 15,
+    items ={
+        "Base.MarchRidgeMap", 1,
+        "Base.MuldraughMap", 1,
+        "Base.RiversideMap", 1,
+        "Base.RosewoodMap", 1,
+        "Base.WestpointMap", 1,
+        "Magazine", 10,
+        "Notebook", 10,
+        "Pistol", 0.3,
+        "Glasses_Aviators", 2,
+        "Bandaid", 10,
+        "Battery", 10,
+        "RedPen", 8,
+        "HandTorch", 1,
+        "RubberBand", 6,
+    }
+}
+
+VehicleDistributions.SCCivilianMisc = {
+    rolls = 10,
+    items ={
+
+        "FirstAidKit", 0.3,
+    }
+}
+
+VehicleDistributions.SCCivilian = {
+
+	GloveBox = VehicleDistributions.SCCivilianGloveBox;
+	TruckBed = VehicleDistributions.SCCivilianMisc;
+}
+
 distributionTable["SC_BlazerK5StatePolice"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_BlazerK5LVPD"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_BlazerK5ParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
@@ -93,3 +125,8 @@ distributionTable["SC_Caprice9C1ParkRanger"] = { Normal = VehicleDistributions.S
 distributionTable["SC_CrownVictoriaStatePolice"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_CrownVictoriaParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
+
+distributionTable["SC_K5BlazerCiv"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_CapriceCiv"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_CrownVictoriaCiv"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_G30Van"] = { Normal = VehicleDistributions.SCCivilian; }
