@@ -125,8 +125,10 @@ distributionTable["SC_Caprice9C1ParkRanger"] = { Normal = VehicleDistributions.S
 distributionTable["SC_CrownVictoriaStatePolice"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_CrownVictoriaParkRanger"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["SC_StepVanP30Police"] = { Normal = VehicleDistributions.SCPolice; }
 
 distributionTable["SC_K5BlazerCiv"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_CapriceCiv"] = { Normal = VehicleDistributions.SCCivilian; }
-distributionTable["SC_CrownVictoriaCiv"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_CrownVictoriaCiv"] = { Normal = VehicleDistributions.SCCivilian; 
+distributionTable["SC_StepVanP30Civ"] = { Normal = VehicleDistributions.SCCivilian; }}
 distributionTable["SC_G30Van"] = { Normal = VehicleDistributions.SCCivilian; }

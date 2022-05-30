@@ -209,10 +209,10 @@ module Base
 
 		extents = 3.0508 1.3898 8.0339,
 		mass = 800,
-		physicsChassisShape = 2.2373 1.3898 4.6441,
-		centerOfMassOffset = 0.0000 0.6610 0.0000,
-		shadowExtents = 3.1524 8.1704,
-		shadowOffset = -0.0032 -0.1048,
+		physicsChassisShape = 3.0508 1.3898 8.1356,
+		centerOfMassOffset = 0.0000 0.6610 -0.0678,
+		shadowExtents = 3.0338 8.9162,
+		shadowOffset = -0.0032 -0.0709,
 		engineForce = 4201,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -280,7 +280,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.0508 -0.4237 0.6271,
+				offset = 2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -299,7 +299,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.2034 -0.4237 0.1356,
+				offset = -2.2034 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -318,7 +318,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.0508 -0.4237 -0.6441,
+				offset = 2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -337,7 +337,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.2203 -0.4237 -0.8136,
+				offset = -2.2203 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -355,27 +355,27 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.5254 0.9661 2.0000 2.0000,
+			xywh = 2.1864 0.4407 1.3220 1.3220,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.5254 0.9661 2.0000 2.0000,
+			xywh = -2.1864 0.4407 1.3220 1.3220,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.5254 -1.0339 2.0000 2.0000,
+			xywh = 2.1864 -1.0339 1.3220 1.3220,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.5254 -1.0339 2.0000 2.0000,
+			xywh = -2.1864 -1.0339 1.3220 1.3220,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0678 -2.9492 1.0847 0.5763,
+			xywh = 2.0678 -2.5932 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
@@ -390,12 +390,12 @@ module Base
 
 		area TireRearLeft
 		{
-			xywh = 1.5254 -3.1695 0.0000 0.0000,
+			xywh = 1.5254 -2.0678 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5424 -3.1695 0.0000 0.0000,
+			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
