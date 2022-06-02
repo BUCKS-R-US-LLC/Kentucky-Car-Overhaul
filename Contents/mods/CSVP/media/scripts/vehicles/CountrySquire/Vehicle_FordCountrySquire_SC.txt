@@ -63,6 +63,18 @@ module Base
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
+	model FordCountrySquireMiddleRightWindow
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordCountrySquireMiddleLeftWindow
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model FordCountrySquireFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoor_obj,
@@ -607,6 +619,30 @@ module Base
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
 		template = Window/part/WindowRearRight,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
+
+		part WindowMiddleRight
+		{
+			model windowMR
+			{
+				file = FordCountrySquireMiddleRightWindow,
+			}
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
+		}
+
+		part WindowMiddleLeft
+		{
+			model windowMR
+			{
+				file = FordCountrySquireMiddleRightWindow,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+		}
 
 		part WindowFrontRight
 		{
