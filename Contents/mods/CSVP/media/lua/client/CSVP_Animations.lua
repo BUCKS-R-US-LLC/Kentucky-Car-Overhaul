@@ -20,7 +20,7 @@ local function CapriceCiv_Enter(player)
 		return
 		end
 	end
-	if seat == 2 and vehicleName:contains("Base.Base.SC_CapriceCiv") then		
+	if seat == 2 and vehicleName:contains("Base.SC_CapriceCiv") then		
 --- Below sets random chance between if and else
 		if ZombRand(100) <= 50 then		
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
@@ -29,7 +29,7 @@ local function CapriceCiv_Enter(player)
 		return
 		end
 	end
-	if seat == 3 and vehicleName:contains("Base.Base.SC_CapriceCiv") then		
+	if seat == 3 and vehicleName:contains("Base.SC_CapriceCiv") then		
 --- Below sets random chance between if and else
 		if ZombRand(100) <= 50 then		
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")
@@ -38,7 +38,7 @@ local function CapriceCiv_Enter(player)
 		return
 		end
 	end
-	if seat == 4 and vehicleName:contains("Base.Base.SC_CapriceCiv") then		
+	if seat == 4 and vehicleName:contains("Base.SC_CapriceCiv") then		
 --- Below sets random chance between if and else
 		if ZombRand(100) <= 50 then		
 		player:SetVariable("VehicleScriptName", "Shark_Idle_Driver")

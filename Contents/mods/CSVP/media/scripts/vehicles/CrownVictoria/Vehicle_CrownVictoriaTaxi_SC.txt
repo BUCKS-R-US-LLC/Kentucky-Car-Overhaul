@@ -2,7 +2,7 @@ module Base
 {
 	model SC_CrownVictoriaTaxi
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaCiv_SC|base_mesh,
+		mesh = vehicles/Vehicle_CrownVictoriaTaxi_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -157,7 +157,17 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CrownVictoriaCiv/Vehicle_CrownVictoriaSC_White,
+			texture = Vehicles/CrownVictoriaTaxi/BasicYellow,
+		}
+
+		skin
+		{
+			texture = Vehicles/CrownVictoriaTaxi/BlackYellow,
+		}
+
+		skin
+		{
+			texture = Vehicles/CrownVictoriaTaxi/CheckersYellow,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
