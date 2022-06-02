@@ -7,136 +7,136 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model CrownVictoriaDriver
+	model FordCountrySquireDriver
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaPassenger
+	model FordCountrySquirePassenger
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaDouble
+	model FordCountrySquireDouble
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaWindshield
+	model FordCountrySquireWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaFrontRightWindow
+	model FordCountrySquireFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model CrownVictoriaFrontLeftWindow
+	model FordCountrySquireFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model CrownVictoriaRearRightWindow
+	model FordCountrySquireRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model CrownVictoriaRearLeftWindow
+	model FordCountrySquireRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model CrownVictoriaFrontRightDoor
+	model FordCountrySquireFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model CrownVictoriaFrontLeftDoor
+	model FordCountrySquireFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model CrownVictoriaRearRightDoor
+	model FordCountrySquireRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model CrownVictoriaRearLeftDoor
+	model FordCountrySquireRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model CrownVictoriaTrunk
+	model FordCountrySquireTrunk
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkWindowBone 1.0,
 	}
-	model CrownVictoriaHood
+	model FordCountrySquireHood
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CrownVictoriaRearWindshield
+	model FordCountrySquireRearWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaDoorfrontwheelleft
+	model FordCountrySquirefrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorfrontwheelright
+	model FordCountrySquirefrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelleft
+	model FordCountrySquirebackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelright
+	model FordCountrySquirebackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
@@ -227,13 +227,13 @@ module Base
 			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_OnlyRedWood,
 		}
 
-		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
-		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_mask,
-		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_lights,
-		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage,
-		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage2,
-		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
-		textureDamage2Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
+		textureRust = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_rust,
+		textureMask = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_mask,
+		textureLights = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_lights,
+		textureDamage1Shell = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_damage,
+		textureDamage2Shell= Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_damage2,
+		textureDamage1Overlay = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_blood,
+		textureDamage2Overlay = Vehicles/FordCountrySquire/Vehicle_CrownVictoriaSC_blood,
 
 		sound
 		{
@@ -449,7 +449,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = CrownVictoriaDriver,
+				file = FordCountrySquireDriver,
 			}
 		}
 
@@ -457,7 +457,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = CrownVictoriaPassenger,
+				file = FordCountrySquirePassenger,
 			}
 		}
 
@@ -465,7 +465,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = CrownVictoriaDouble,
+				file = FordCountrySquireDouble,
 			}
 		}
 
@@ -488,7 +488,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = CrownVictoriaHood,
+				file = FordCountrySquireHood,
 			}
 
 			anim Close
@@ -547,7 +547,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CrownVictoriaWindshield,
+				file = FordCountrySquireWindshield,
 			}
 
 			window
@@ -575,7 +575,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = CrownVictoriaRearWindshield,
+				file = FordCountrySquireRearWindshield,
 			}
 
 			window
@@ -612,7 +612,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CrownVictoriaFrontRightWindow,
+				file = FordCountrySquireFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -629,7 +629,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CrownVictoriaFrontLeftWindow,
+				file = FordCountrySquireFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -646,7 +646,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = CrownVictoriaRearRightWindow,
+				file = FordCountrySquireRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -663,7 +663,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = CrownVictoriaRearLeftWindow,
+				file = FordCountrySquireRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -680,7 +680,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoriaFrontRightDoor,
+				file = FordCountrySquireFrontRightDoor,
 			}
 
 			anim Close
@@ -716,7 +716,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoriaFrontLeftDoor,
+				file = FordCountrySquireFrontLeftDoor,
 			}
 
 			anim Close
@@ -752,7 +752,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoriaRearRightDoor,
+				file = FordCountrySquireRearRightDoor,
 			}
 
 			anim Close
@@ -788,7 +788,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoriaRearLeftDoor,
+				file = FordCountrySquireRearLeftDoor,
 			}
 
 			anim Close
@@ -836,7 +836,7 @@ module Base
 
 			model Default
 			{
-				file = CrownVictoriaTrunk,
+				file = FordCountrySquireTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -879,7 +879,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriafrontwheelleft,
+				file = FordCountrySquirefrontwheelleft,
 			}
 		}
 
@@ -887,7 +887,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriafrontwheelright,
+				file = FordCountrySquirefrontwheelright,
 			}
 		}
 
@@ -895,7 +895,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriabackwheelleft,
+				file = FordCountrySquirebackwheelleft,
 			}
 		}
 
@@ -903,7 +903,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriabackwheelright,
+				file = FordCountrySquirebackwheelright,
 			}
 		}
 
