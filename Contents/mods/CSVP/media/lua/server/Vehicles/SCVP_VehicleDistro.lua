@@ -135,4 +135,5 @@ distributionTable["SC_CrownVictoriaTaxi"] = { Normal = VehicleDistributions.SCCi
 distributionTable["SC_StepVanP30Civ"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_FordCountrySquire"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_G30Van"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_G30VanNormal"] = { Normal = VehicleDistributions.SCCivilian; }
 
