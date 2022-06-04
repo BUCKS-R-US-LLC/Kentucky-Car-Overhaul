@@ -1,31 +1,31 @@
 module Base
 {
-	model SC_G30Van
+	model SC_G30VanBox
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanDriver
+	model G30VanBoxDriver
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanPassenger
+	model G30VanBoxPassenger
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindshield
+	model G30VanBoxWindshield
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanFrontRightWindow
+	model G30VanBoxFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightWindow_obj.001,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model G30VanFrontLeftWindow
+	model G30VanBoxFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model G30VanFrontRightDoor
+	model G30VanBoxFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightDoor_obj,
 		shader = vehicle,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanFrontLeftDoor
+	model G30VanBoxFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoor_obj,
 		shader = vehicle,
@@ -57,7 +57,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanSlidingRightDoor
+	model G30VanBoxSlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|RearSlidingDoor_obj,
 		shader = vehicle,
@@ -65,7 +65,7 @@ module Base
 		scale = 1,
 		boneWeight = RearSlideDoorBone 1.0,
 	}
-	model G30VanSlidingWindow
+	model G30VanBoxSlidingWindow
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|RearSlidingWindow_obj,
 		shader = vehicle_noreflect,
@@ -73,7 +73,7 @@ module Base
 		scale = 1,
 		boneWeight = RearSlideDoorBone 1.0,
 	}
-	model G30VanTrunk
+	model G30VanBoxTrunk
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|Trunk_obj,
 		shader = vehicle,
@@ -82,7 +82,7 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model G30VanHood
+	model G30VanBoxHood
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|Hood_obj,
 		shader = vehicle,
@@ -90,7 +90,7 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanRearWindshield
+	model G30VanBoxRearWindshield
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
@@ -99,31 +99,31 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model G30Vanfrontwheelleft
+	model G30VanBoxfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanfrontwheelright
+	model G30VanBoxfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanbackwheelleft
+	model G30VanBoxbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanbackwheelright
+	model G30VanBoxbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_G30Van
+	vehicle SC_G30BoxVan
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -132,9 +132,9 @@ module Base
 
 		model
 		{
-			file = SC_G30Van,
+			file = SC_G30VanBox,
 			scale = 0.5900,
-			offset = 0.0667 0.2000 0.0833,
+			offset = 0.0635 0.1905 0.0794,
 		}
 
 		skin
@@ -167,13 +167,17 @@ module Base
 			texture = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Red,
 		}
 
-		textureRust = Vehicles/G30VanBox/Vehicle_G30VanSC_Rust,
-		textureMask = Vehicles/G30VanBox/Vehicle_G30VanSC_Mask,
-		textureLights = Vehicles/G30VanBox/Vehicle_G30VanSC_Lights,
-		textureDamage1Shell = Vehicles/G30VanBox/Vehicle_G30VanSC_Scratch,
-		textureDamage2Shell= Vehicles/G30VanBox/Vehicle_G30VanSC_Scratch,
-		textureDamage1Overlay = Vehicles/G30VanBox/Vehicle_G30VanSC_Blood,
-		textureDamage2Overlay = Vehicles/G30VanBox/Vehicle_G30VanSC_Blood,
+		skin
+		{
+		}
+
+		textureRust = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Rust,
+		textureMask = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Mask,
+		textureLights = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Lights,
+		textureDamage1Shell = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
+		textureDamage2Shell= Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
+		textureDamage1Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
+		textureDamage2Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
 
 		sound
 		{
@@ -184,10 +188,10 @@ module Base
 			ignitionFail = VehiclegnitionFailVan,
 		}
 
-		extents = 3.2000 3.1000 8.4000,
+		extents = 3.1746 3.0794 8.3810,
 		mass = 1700,
-		physicsChassisShape = 3.2000 3.1000 8.4000,
-		centerOfMassOffset = 0.0667 1.5667 -0.7833,
+		physicsChassisShape = 3.1746 3.0794 8.3810,
+		centerOfMassOffset = 0.0635 1.5556 -0.7937,
 		shadowExtents = 3.1823 8.3736,
 		shadowOffset = 0.0635 -0.7873,
 		maxSpeed = 70f,
@@ -213,7 +217,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2833 0.0833 1.9333,
+			offset = -1.2857 0.0794 1.9365,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -221,7 +225,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2667 0.0833 1.9167,
+			offset = 1.2698 0.0794 1.9206,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -229,7 +233,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2667 0.0833 -2.8833,
+			offset = -1.2698 0.0794 -2.8730,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -237,7 +241,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2500 0.0833 -2.8833,
+			offset = 1.2381 0.0794 -2.8730,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,13 +255,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7500 1.2500 0.5500,
+				offset = 0.7460 1.2381 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3500 -0.5833 1.5667,
+				offset = 2.3492 -0.5714 1.5556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -270,13 +274,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.7500 1.2500 0.5500,
+				offset = -0.7460 1.2381 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3500 -0.5833 1.5667,
+				offset = -2.3492 -0.5714 1.5556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -289,13 +293,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.1000 1.1167 -2.8833,
+				offset = 1.1111 1.1270 -2.8730,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.0000 -0.2000 -5.4500,
+				offset = 0.0000 -0.1905 -5.4603,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -308,13 +312,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.0833 1.1333 -2.8833,
+				offset = -1.0952 1.1429 -2.8730,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3000 -0.2000 -0.6500,
+				offset = -2.3016 -0.1905 -0.6508,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -322,32 +326,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0667 4.4167 3.2000 2.0000,
+			xywh = 0.0635 4.4127 3.1746 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2333 0.7667 1.1333 1.1333,
+			xywh = 2.2222 0.7778 1.1111 1.1111,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0833 0.7667 1.1333 1.1333,
+			xywh = -2.0952 0.7778 1.1111 1.1111,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0833 -0.5833 1.1333 1.1000,
+			xywh = -2.0952 -0.5714 1.1111 1.0794,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.0833 -0.5833 1.1333 1.1000,
+			xywh = -2.0952 -0.5714 1.1111 1.0794,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1833 -3.9333 1.0333 0.6000,
+			xywh = 2.1746 -3.9365 1.0159 0.5714,
 		}
 
 		area TireFrontLeft
@@ -372,7 +376,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0667 -5.4833 2.9667 1.0333,
+			xywh = 0.0635 -5.4921 2.9524 1.0159,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -400,7 +404,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanTrunk,
+				file = G30VanBoxTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -439,7 +443,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = G30VanDriver,
+				file = G30VanBoxDriver,
 			}
 		}
 
@@ -447,7 +451,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = G30VanPassenger,
+				file = G30VanBoxPassenger,
 			}
 		}
 
@@ -470,7 +474,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = G30VanHood,
+				file = G30VanBoxHood,
 			}
 
 			anim Close
@@ -529,7 +533,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = G30VanWindshield,
+				file = G30VanBoxWindshield,
 			}
 
 			window
@@ -557,7 +561,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = G30VanRearWindshield,
+				file = G30VanBoxRearWindshield,
 			}
 
 			window
@@ -594,7 +598,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanFrontRightWindow,
+				file = G30VanBoxFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -611,7 +615,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanFrontLeftWindow,
+				file = G30VanBoxFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -628,7 +632,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanFrontRightDoor,
+				file = G30VanBoxFrontRightDoor,
 			}
 
 			anim Close
@@ -664,7 +668,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanFrontLeftDoor,
+				file = G30VanBoxFrontLeftDoor,
 			}
 
 			anim Close
@@ -700,7 +704,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanSlidingRightDoor,
+				file = G30VanBoxSlidingRightDoor,
 			}
 
 			anim Close
@@ -736,7 +740,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = G30VanSlidingWindow,
+				file = G30VanBoxSlidingWindow,
 			}
 
 			window
@@ -755,7 +759,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelleft,
+				file = G30VanBoxfrontwheelleft,
 			}
 		}
 
@@ -763,7 +767,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelright,
+				file = G30VanBoxfrontwheelright,
 			}
 		}
 
@@ -771,7 +775,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelleft,
+				file = G30VanBoxbackwheelleft,
 			}
 		}
 
@@ -779,7 +783,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelright,
+				file = G30VanBoxbackwheelright,
 			}
 		}
 
