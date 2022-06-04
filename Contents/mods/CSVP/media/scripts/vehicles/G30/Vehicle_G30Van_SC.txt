@@ -27,11 +27,12 @@ module Base
 	}
 	model G30VanFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightWindow_obj.001,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 	model G30VanFrontLeftWindow
 	{
@@ -40,6 +41,33 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model G30VanMiddleRightWindow
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|SlideDoorWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = SlideDoorBone,
+	}
+	model G30VanMiddleLeftWindow
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model G30VanRearRightWindow
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model G30VanRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
 	}
 	model G30VanFrontRightDoor
 	{
@@ -59,28 +87,28 @@ module Base
 	}
 	model G30VanSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|RearSlidingDoor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|SlideDoor_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
+		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30VanSlidingWindow
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|RearSlidingWindow_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|SlideDoorWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
+		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30VanTrunk
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearDoor_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model G30VanHood
 	{
@@ -92,12 +120,12 @@ module Base
 	}
 	model G30VanRearWindshield
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model G30Vanfrontwheelleft
 	{
@@ -418,28 +446,28 @@ module Base
 
 			anim Close
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -599,6 +627,9 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowMiddleRight,
+		template = Window/part/WindowMiddleLeft,
 
 		part WindowFrontRight
 		{
@@ -626,7 +657,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowClosing,
+				anim = FrontLeftWindowClosing.001,
 				animate = FALSE,
 			}
 
@@ -634,6 +665,35 @@ module Base
 			area = SeatFrontLeft,
 		}
 
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = G30VanMiddleLeftWindow,
+			}
+
+			area = SeatRearLeft,
+		}
+
+		part WindowMiddleLeft
+		{
+			model windowML
+			{
+				file = G30VanRearLeftWindow,
+			}
+
+			area = SeatMiddleLeft,
+		}
+
+		part WindowMiddleRight
+		{
+			model windowMR
+			{
+				file = G30VanRearRightWindow,
+			}
+
+			area = SeatMiddleRight,
+		}
 		part DoorFrontRight
 		{
 			model Default
@@ -715,28 +775,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
