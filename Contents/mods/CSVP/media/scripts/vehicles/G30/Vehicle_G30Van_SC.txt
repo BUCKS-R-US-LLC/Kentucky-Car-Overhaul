@@ -19,6 +19,12 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model G30VanRearSeat
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model G30VanWindshield
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|Windshield_obj,
@@ -415,6 +421,8 @@ module Base
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
@@ -423,6 +431,32 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = TrunkDoor,
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+		model Default
+			{
+				file = G30VanRearSeat
+			}
+
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+		}
 
 		part TrunkDoor
 		{
