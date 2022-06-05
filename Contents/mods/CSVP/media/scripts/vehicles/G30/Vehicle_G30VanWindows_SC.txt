@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_G30VanNormal
+	model SC_G30VanWindows
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
@@ -157,7 +157,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_G30VanNormal
+	vehicle SC_G30VanWindows
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -166,7 +166,7 @@ module Base
 
 		model
 		{
-			file = SC_G30VanNormal,
+			file = SC_G30VanWindows,
 			scale = 0.5900,
 			offset = 0.0678 0.2034 0.0847,
 		}
