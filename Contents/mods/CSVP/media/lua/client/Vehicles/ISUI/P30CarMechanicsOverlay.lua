@@ -4,6 +4,9 @@ ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_G30Van"] = {imgPrefix = "g30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoach"] = {imgPrefix = "firetruck_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30VanNormal"] = {imgPrefix = "g30van_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30Windowless"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30Ambulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
