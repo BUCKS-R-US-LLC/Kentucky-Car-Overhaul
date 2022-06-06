@@ -27,7 +27,7 @@ module Base
 	}
 	model G30AmbulanceFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontRightWindow_obj.001,
+		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,28 +59,28 @@ module Base
 	}
 	model G30AmbulanceSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Ambulance_SC|RearSlidingDoor_obj,
+		mesh = vehicles/Vehicle_G30Ambulance_SC|SlideDoor_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
+		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30AmbulanceSlidingWindow
 	{
-		mesh = vehicles/Vehicle_G30Ambulance_SC|RearSlidingWindow_obj,
+		mesh = vehicles/Vehicle_G30Ambulance_SC|SlideDoorWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
+		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30AmbulanceTrunk
 	{
-		mesh = vehicles/Vehicle_G30Ambulance_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_G30Ambulance_SC|RearDoor_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model G30AmbulanceHood
 	{
@@ -92,12 +92,12 @@ module Base
 	}
 	model G30AmbulanceRearWindshield
 	{
-		mesh = vehicles/Vehicle_G30Ambulance_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_G30Ambulance_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model G30Ambulancefrontwheelleft
 	{
@@ -142,13 +142,13 @@ module Base
 			texture = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC,
 		}
 
-		textureRust = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Rust,
-		textureMask = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Mask,
-		textureLights = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Lights,
-		textureDamage1Shell = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
-		textureDamage2Shell= Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Scratch,
-		textureDamage1Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
-		textureDamage2Overlay = Vehicles/G30VanBox/Vehicle_G30VanBoxSC_Blood,
+		textureRust = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_rust,
+		textureMask = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_mask,
+		textureLights = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_lights,
+		textureDamage1Shell = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_scratch,
+		textureDamage2Shell= Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_scratch,
+		textureDamage1Overlay = Vehicles/G30Ambulance/Vehicle_G30Ambulance_SC_blood,
+		textureDamage2Overlay = Vehicles/G30Ambulance/VVehicle_G30Ambulance_SC_blood,
 
 		sound
 		{
@@ -375,7 +375,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanTrunk,
+				file = G30AmbulanceTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -383,28 +383,28 @@ module Base
 
 			anim Close
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -414,7 +414,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = G30VanDriver,
+				file = G30AmbulanceDriver,
 			}
 		}
 
@@ -422,7 +422,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = G30VanPassenger,
+				file = G30AmbulancePassenger,
 			}
 		}
 
@@ -680,28 +680,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearSlidingDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -711,7 +711,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = G30VanSlidingWindow,
+				file = G30AmbulanceSlidingWindow,
 			}
 
 			window
