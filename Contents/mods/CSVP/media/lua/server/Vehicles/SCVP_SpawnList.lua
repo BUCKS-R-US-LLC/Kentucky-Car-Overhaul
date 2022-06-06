@@ -8,6 +8,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordCountrySquire"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30VanCiv"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30Van"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.chanceToPartDamage = 5;
 
@@ -24,6 +25,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_CrownVictoriaStatePolice"] = {index = -1, spawnChance = 50};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamw.spawnRate = 10;
     
@@ -53,7 +55,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.vehicles["Base.SC_CrownVictoriaTaxi"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_K5BlazerCiv"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.medium.vehicles["Base.SC_G30Van"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.chanceToPartDamage = 10;
 
