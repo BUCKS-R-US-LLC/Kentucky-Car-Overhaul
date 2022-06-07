@@ -151,7 +151,7 @@ module Base
 		model
 		{
 			file = SC_CrownVictoriaCiv,
-			scale = 0.6300,
+			scale = 0.5900,
 			offset = 0.0000 -0.0476 0.0000,
 		}
 
@@ -190,7 +190,6 @@ module Base
 			texture = Vehicles/CrownVictoriaCiv/Vehicle_CrownVictoriaSC_Grape,
 		}
 
-
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
 		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_mask,
 		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_lights,
@@ -210,10 +209,10 @@ module Base
 
 		extents = 3.0476 1.3968 8.0317,
 		mass = 800,
-		physicsChassisShape = 2.2222 1.3968 4.6349,
-		centerOfMassOffset = 0.0000 0.6667 0.0000,
-		shadowExtents = 3.1524 8.1704,
-		shadowOffset = -0.0032 -0.1048,
+		physicsChassisShape = 3.0476 1.3968 8.1587,
+		centerOfMassOffset = 0.0000 0.6667 -0.0635,
+		shadowExtents = 3.0338 8.9162,
+		shadowOffset = -0.0032 -0.0709,
 		engineForce = 4201,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -237,7 +236,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3175 0.0794 2.3810,
+			offset = -1.3175 0.0794 2.3651,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -245,7 +244,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1905 0.0794 2.3810,
+			offset = 1.1905 0.0794 2.3651,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -275,13 +274,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6032 0.6349 0.2063,
+				offset = 0.6032 0.5397 0.2063,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.4286 0.6349,
+				offset = 2.0476 -0.4286 0.0952,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -294,13 +293,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5873 0.6349 0.2063,
+				offset = -0.5873 0.5397 0.2063,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2063 -0.4286 0.1429,
+				offset = -2.2063 -0.4286 0.0952,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -313,13 +312,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5873 0.6190 -1.1270,
+				offset = 0.5873 0.5397 -1.1111,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.4286 -0.6508,
+				offset = 2.0476 -0.4286 -0.9841,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -332,13 +331,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5873 0.6190 -1.1270,
+				offset = -0.5873 0.5397 -1.1111,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2222 -0.4286 -0.8095,
+				offset = -2.2222 -0.4286 -0.9841,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -351,52 +350,52 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.7302 2.3492 1.7460,
+			xywh = 0.0000 -4.7302 2.3810 1.7778,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3175 0.9683 2.0000 2.0000,
+			xywh = 2.1905 0.4444 1.3333 1.3333,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1905 0.9683 2.0000 2.0000,
+			xywh = -2.1905 0.4444 1.3333 1.3333,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.3175 0.9683 2.0000 2.0000,
+			xywh = 2.1905 -1.0317 1.3333 1.3333,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1905 0.9683 2.0000 2.0000,
+			xywh = -2.1905 -1.0317 1.3333 1.3333,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0635 -2.9524 1.0794 0.5714,
+			xywh = 2.0635 -2.5873 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5079 2.3810 0.0000 0.0000,
+			xywh = 1.5079 2.3651 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5238 2.3810 0.0000 0.0000,
+			xywh = -1.5238 2.3651 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5238 -3.1746 0.0000 0.0000,
+			xywh = 1.5238 -2.0635 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5397 -3.1746 0.0000 0.0000,
+			xywh = -1.5397 -2.0635 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
