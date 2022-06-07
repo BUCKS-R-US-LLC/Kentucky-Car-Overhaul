@@ -7,6 +7,9 @@ ISCarMechanicsOverlay.CarList["Base.PickupVanLights"] = {imgPrefix = "blazer_", 
 ISCarMechanicsOverlay.CarList["Base.PickupVan"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_M1008"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_K10Civ"] = {imgPrefix = "blazer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_PickUpTruck"] = {imgPrefix = "blazer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_PickUpTruckMcCoy"] = {imgPrefix = "blazer_", x=0,y=0};
+--
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
