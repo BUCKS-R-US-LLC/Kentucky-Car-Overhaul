@@ -1,0 +1,63 @@
+module Base
+{
+	model CJ7softtop
+	{
+		mesh = vehicles/Vehicle_JeepCJ7|Softtop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+
+	template vehicle CJ7softtop
+		{
+		part CJ7softtop
+        	{
+
+			model CJ7softtop
+				{
+                		file = CJ7softtop,
+				}
+		area = TruckBed,
+            category = bodywork,
+            itemType = Base.CJ7softtop,
+            mechanicRequireKey = false,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+		requireUninstalled = CJ7softtop,
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:5,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		}
+	}
+}
