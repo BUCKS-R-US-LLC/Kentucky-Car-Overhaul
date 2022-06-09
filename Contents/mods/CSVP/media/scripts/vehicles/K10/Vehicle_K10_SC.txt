@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_M1008
+	model SC_K10Civ
 	{
 		mesh = vehicles/Vehicle_K10Civ_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -78,12 +78,14 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
+	
 	model K10RearWindshield
 	{
 		mesh = vehicles/Vehicle_K10_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+
 	model K10Hood
 	{
 		mesh = vehicles/Vehicle_K10Civ_SC|Hood_obj,
@@ -116,7 +118,7 @@ module Base
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1008
+	vehicle SC_K10
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -125,14 +127,44 @@ module Base
 
 		model
 		{
-			file = SC_M1008,
+			file = SC_K10Civ,
 			scale = 0.6300,
 			offset = 0.0476 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/K10/Vehicle_K10_Military,
+			texture = Vehicles/K10/Vehicle_K10_White,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Orange,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Stool,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Blue,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Brown,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Green,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -156,8 +188,8 @@ module Base
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
 		centerOfMassOffset = 0.0476 1.5556 -0.2222,
-		shadowExtents = 3.0712 7.7704,
-		shadowOffset = 0.0476 -0.1048,
+		shadowExtents = 2.9601 7.7704,
+		shadowOffset = 0.0635 -0.1048,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -218,7 +250,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.6190 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -237,7 +269,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6825 0.9683 0.0159,
+				offset = -0.6349 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
