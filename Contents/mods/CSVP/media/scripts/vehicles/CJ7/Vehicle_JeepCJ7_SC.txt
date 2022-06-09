@@ -21,7 +21,7 @@ module Base
 	}
 	model JeepCJ7Windshield
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -80,6 +80,7 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = WheelBone 1.0,
 	}
 	model JeepCJ7Hood
 	{
@@ -94,6 +95,12 @@ module Base
 		mesh = vehicles/Vehicle_JeepCJ7_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+	}
+	model JeepCJ7SpareWheel
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|SpareWheel_obj,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
 	}
 	model JeepCJ7frontwheelleft
 	{
@@ -178,13 +185,13 @@ module Base
 			texture = Vehicles/JeepCJ7/Vehicle_SmokeGray_Saxon,
 		}
 
-		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_mask,
-		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_lights,
-		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_blood,
-		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_blood,
-		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_damage,
-		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_damage2,
-		textureRust = Vehicles/JeepCJ7/Vehicle_JeepCJ7_rust,
+		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Mask,
+		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Lights,
+		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureRust = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Rust,
 
 		sound
 		{
@@ -441,6 +448,7 @@ module Base
 			}
 		}
 
+		template = JeepCJ7Spare/part/SpareWheel,
 		template = Windshield/part/Windshield,
 		template = Windshield/part/WindshieldRear,
 
