@@ -10,6 +10,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30Van"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_K10Civ"] = {index = -1, spawnChance = 10};
@@ -26,7 +27,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.spawnRate = 10;
     
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 70};
@@ -57,6 +59,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_K5BlazerCiv"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.good.vehicles["Base.SC_K10Civ"] = {index = -1, spawnChance = 5};
@@ -70,6 +73,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_Caprice9C1ParkRanger"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.good.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.military = VehicleZoneDistribution.military or {}

@@ -1,221 +1,167 @@
 module Base
 {
-	model SC_JeepCJ7
+	model SC_G30VanWindowless
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model JeepCJ7Driver
+	model G30VanWindowlessDriver
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model JeepCJ7Passenger
+	model G30VanWindowlessPassenger
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model JeepCJ7Windshield
+	model G30VanWindowlessWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model JeepCJ7FrontRightWindow
+	model G30VanWindowlessFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model JeepCJ7FrontLeftWindow
+	model G30VanWindowlessFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model JeepCJ7RearRightWindow
+	model G30VanWindowlessFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
-	}
-	model JeepCJ7RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
-	}
-	model JeepCJ7FrontRightDoor
-	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model JeepCJ7FrontLeftDoor
+	model G30VanWindowlessFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model JeepCJ7Trunk
+	model G30VanWindowlessSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = SlideDoorBone 1.0,
+	}
+	model G30VanWindowlessTrunk
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-		boneWeight = WheelBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model JeepCJ7Hood
+	model G30VanWindowlessHood
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model JeepCJ7RearWindshield
+	model G30VanWindowlessRearWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-	}
-	model JeepCJ7SpareWheel
-	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|SpareWheel_obj,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		shader = vehiclewheel,
-		scale = 1,
 		static = FALSE,
-		boneWeight = WheelBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model JeepCJ7frontwheelleft
+	model G30VanWindowlessfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model JeepCJ7frontwheelright
+	model G30VanWindowlessfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model JeepCJ7backwheelleft
+	model G30VanWindowlessbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model JeepCJ7backwheelright
+	model G30VanWindowlessbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_JeepCJ7
+	vehicle VanSpiffo
 	{
 		mechanicType = 2,
-		offRoadEfficiency = 1.5,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_JeepCJ7,
+			file = SC_G30VanWindowless,
 			scale = 0.5900,
-			offset = 0.0000 0.0000 0.0000,
+			offset = 0.0635 0.1905 0.0794,
 		}
 
 		skin
 		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Red,
+			texture = Vehicles/G30VanWindowless/Vehicle_G30VanWindowlessSC_Spiffo,
 		}
 
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_White,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Teal,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_NavyBlue,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_DarkGreen,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Orange,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Saxon,
-		}
-
-		skin
-		{
-			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_SmokeGray,
-		}
-
-		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Mask,
-		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Lights,
-		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
-		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
-		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
-		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
-		textureRust = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Rust,
+		textureRust = Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_rust,
+		textureMask = Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_mask,
+		textureLights = Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_lights,
+		textureDamage1Shell = Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_scratch,
+		textureDamage2Shell= Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_scratch,
+		textureDamage1Overlay = Vehicles/G30VanWindowless/Vehicle_G30VanWindowless_SC_blood,
+		textureDamage2Overlay = Vehicles/G30VanWindowless/VVehicle_G30VanWindowless_SC_blood,
 
 		sound
 		{
-			engine = VehicleEngineOffRoad,
-			engineStart = VehicleEngineOffRoad,
-			engineTurnOff = VehicleEngineOffRoad,
-			horn = VehicleHornJeep,
-			ignitionFail = VehicleIgnitionFailOffRoad,
+			engine = VehicleEngineVan,
+			engineStart = VehicleEngineVan,
+			engineTurnOff = VehicleEngineVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehiclegnitionFailVan,
 		}
 
-		extents = 2.5763 2.1356 5.5254,
-		mass = 600,
-		physicsChassisShape = 2.4746 2.1356 5.5254,
-		centerOfMassOffset = 0.0000 1.0847 0.1864,
-		shadowExtents = 2.7117 5.7404,
-		shadowOffset = -0.0032 0.1833,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
+		extents = 3.2063 3.0794 8.6984,
+		mass = 1700,
+		physicsChassisShape = 3.1746 3.0794 8.3810,
+		centerOfMassOffset = 0.0635 1.5556 -0.7937,
+		shadowExtents = 3.2617 8.3736,
+		shadowOffset = 0.0635 -0.7873,
+		maxSpeed = 70f,
+		engineForce = 4000,
+		engineQuality = 70,
+		engineLoudness = 100,
+		brakingForce = 60,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
@@ -228,12 +174,13 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 2,
+		seats = 4,
+		isSmallVehicle = false,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.0000 0.2203 2.0169,
+			offset = -1.2857 0.0794 1.9365,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -241,7 +188,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0169 0.2203 2.0169,
+			offset = 1.2698 0.0794 1.9206,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,7 +196,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0000 0.2203 -1.5424,
+			offset = -1.2698 0.0794 -3.0794,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -257,7 +204,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0169 0.2203 -1.5424,
+			offset = 1.2381 0.0794 -3.0794,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -271,13 +218,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6102 1.3051 -0.5085,
+				offset = 0.7460 1.2381 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0508 -0.4237 0.5085,
+				offset = 2.3492 -0.5714 1.5556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -290,13 +237,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5932 1.3051 -0.5085,
+				offset = -0.7460 1.2381 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1525 -0.4237 0.5085,
+				offset = -2.3492 -0.5714 1.5556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -304,62 +251,113 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.0169 2.5424 2.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -3.8983 2.5763 1.7627,
+			xywh = 0.0635 4.5556 3.2063 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9661 -0.2203 1.3559 1.3559,
+			xywh = 2.2222 0.7778 1.1111 1.1111,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9661 -0.2203 1.3559 1.3559,
+			xywh = -2.0952 0.7778 1.1111 1.1111,
 		}
 
 		area GasTank
 		{
-			xywh = -0.9831 -2.8983 0.6102 0.6441,
+			xywh = 2.1746 -3.9365 1.0159 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.2881 1.9322 0.0000 0.0000,
+			xywh = 1.0000 2.0000 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.2881 1.9322 0.0000 0.0000,
+			xywh = -1.0000 2.0000 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.2881 -1.5254 0.0000 0.0000,
+			xywh = 2.0000 -3.0159 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.2881 -1.5254 0.0000 0.0000,
+			xywh = -2.0000 -3.0159 0.0000 0.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0635 -5.6508 3.2063 1.0159,
 		}
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
+		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = G30VanWindowlessTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
 
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
-				file = JeepCJ7Driver,
+				file = G30VanWindowlessDriver,
 			}
 		}
 
@@ -367,15 +365,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = JeepCJ7Passenger,
-			}
-		}
-
-		part SeatRearLeft
-		{
-			model seatrearLeft
-			{
-				file = JeepCJ7Double,
+				file = G30VanWindowlessPassenger,
 			}
 		}
 
@@ -398,7 +388,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = JeepCJ7Hood,
+				file = G30VanWindowlessHood,
 			}
 
 			anim Close
@@ -450,7 +440,6 @@ module Base
 			}
 		}
 
-		template = CJ7softtop/part/CJ7softtop,
 		template = Windshield/part/Windshield,
 		template = Windshield/part/WindshieldRear,
 
@@ -458,7 +447,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = JeepCJ7Windshield,
+				file = G30VanWindowlessWindshield,
 			}
 
 			window
@@ -482,9 +471,38 @@ module Base
 			}
 		}
 
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = G30VanWindowlessRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			parent = TrunkDoor,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
@@ -493,7 +511,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = JeepCJ7FrontRightWindow,
+				file = G30VanWindowlessFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -510,7 +528,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = JeepCJ7FrontLeftWindow,
+				file = G30VanWindowlessFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -527,7 +545,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCJ7FrontRightDoor,
+				file = G30VanWindowlessFrontRightDoor,
 			}
 
 			anim Close
@@ -563,7 +581,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCJ7FrontLeftDoor,
+				file = G30VanWindowlessFrontLeftDoor,
 			}
 
 			anim Close
@@ -595,58 +613,42 @@ module Base
 			}
 		}
 
-		template = TrunkDoor,
-
-		part TrunkDoor
+		part DoorRearRight
 		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
 			model Default
 			{
-				file = JeepCJ7Trunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
+				file = G30VanWindowlessSlidingRightDoor,
 			}
 
 			anim Close
 			{
-				anim = TrunkClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
-				rate = 1.5,
+				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = TrunkClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = TrunkClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 		}
 
-		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
@@ -654,7 +656,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7frontwheelleft,
+				file = G30Vanfrontwheelleft,
 			}
 		}
 
@@ -662,7 +664,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7frontwheelright,
+				file = G30Vanfrontwheelright,
 			}
 		}
 
@@ -670,7 +672,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7backwheelleft,
+				file = G30Vanbackwheelleft,
 			}
 		}
 
@@ -678,7 +680,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7backwheelright,
+				file = G30Vanbackwheelright,
 			}
 		}
 
@@ -727,21 +729,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9661 0.1356,
-			extents = 2.4746 1.8644 5.5254,
+			offset = 0.0794 2.0159 -0.8254,
+			extents = 3.1111 3.5714 8.3968,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0169 -2.7119,
+			offset = 0.0000 0.0000 -5.1270,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.9153,
+			offset = 0.0000 0.0000 3.2857,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
