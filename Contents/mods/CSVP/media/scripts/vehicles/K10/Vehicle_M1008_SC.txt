@@ -453,8 +453,6 @@ module Base
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -489,27 +487,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = K10RearLeftWindow,
-			}
-
-			area = SeatFrontLeft,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = K10RearRightWindow,
-			}
-
-			area = SeatFrontRight,
-		}
-
+		
 		part DoorFrontRight
 		{
 			model Default
