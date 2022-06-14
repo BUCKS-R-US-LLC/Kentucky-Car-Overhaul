@@ -42,7 +42,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.ranger.vehicles["Base.SC_Caprice9C1ParkRanger"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.ranger.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.ranger.vehicles["Base.SC_CrownVictoriaParkRanger"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.ranger.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.ranger.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.ranger.chanceToPartDamage = 5;
     
     VehicleZoneDistribution.medium.vehicles["Base.SC_K10Civ"] = {index = -1, spawnChance = 5};
@@ -79,6 +79,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.military = VehicleZoneDistribution.military or {}
     VehicleZoneDistribution.military.vehicles = VehicleZoneDistribution.military.vehicles or {}
     VehicleZoneDistribution.military.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.military.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 20};
     VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 20};
     VehicleZoneDistribution.military.spawnRate = 10;
 
