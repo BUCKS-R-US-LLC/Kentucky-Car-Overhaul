@@ -272,9 +272,25 @@ module Base
 			}
 		}
 
+		passenger MiddleLeft
+		{
+			showPassenger = false,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 1.7778 -1.2381,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+			}
+		}
+
 		passenger MiddleRight
 		{
-			showPassenger = true,
+			showPassenger = false,
 			hasRoof = true,
 
 			position inside
@@ -290,7 +306,7 @@ module Base
 
 		passenger RearLeft
 		{
-			showPassenger = true,
+			showPassenger = false,
 			hasRoof = true,
 
 			position inside
@@ -301,12 +317,15 @@ module Base
 
 			position outside
 			{
+				offset = 0.0159 -0.5873 -5.7302,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
 			}
 		}
 
 		passenger RearRight
 		{
-			showPassenger = true,
+			showPassenger = false,
 			hasRoof = true,
 
 			position inside
