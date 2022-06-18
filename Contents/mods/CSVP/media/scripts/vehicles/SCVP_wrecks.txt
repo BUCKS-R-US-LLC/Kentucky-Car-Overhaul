@@ -81,7 +81,7 @@ module Base
 	}
 	model Vehicles_CarNormal_Burnt
 	{
-		mesh = vehicles/Vehicles_CarNormal_Burnt,
+		mesh = vehicles/Wrecks/Vehicle_CrownVicWreck,
 		shader = vehicle,
 		scale = 0.01,
 	}
@@ -90,21 +90,23 @@ module Base
 		model
 		{
 			file = Vehicles_CarNormal_Burnt,
-			scale = 1.8200,
-			offset = 0.0000 0.3297 0.0000,
+			scale = 2.7100,
+			offset = 0.0000 -0.0185 0.0332,
 		}
 
 		spawnOffsetY = 0.19999991,
 
 		skin
 		{
-			texture = Vehicles/vehicles_carnormal_burnt,
+			texture = Vehicles/Wrecks/CrownVicWreck,
 		}
 
-		extents = 0.8022 0.6593 2.6044,
+		extents = 0.8044 0.6642 2.0148,
 		mass = 500,
-		centerOfMassOffset = 0.0000 0.3242 0.0000,
-		physicsChassisShape = 0.8022 0.6593 2.6044,
+		centerOfMassOffset = 0.0000 0.3247 0.0000,
+		shadowExtents = 0.8022 2.1505,
+		shadowOffset = 0.0000 0.0000,
+		physicsChassisShape = 0.8044 0.6642 1.9262,
 
 		attachment trailer
 		{
