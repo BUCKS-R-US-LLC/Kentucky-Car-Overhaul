@@ -125,8 +125,8 @@ module Base
 		model
 		{
 			file = StepVanP30Police,
-			scale = 0.6300,
-			offset = 0.0635 0.1905 0.0794,
+			scale = 0.5700,
+			offset = 0.0702 0.1930 0.0877,
 		}
 
 		skin
@@ -156,12 +156,12 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 3.2063 3.0794 8.6984,
+		extents = 3.2281 3.0877 8.7368,
 		mass = 1700,
-		physicsChassisShape = 3.1746 3.0794 8.3810,
-		centerOfMassOffset = 0.0635 1.5556 -0.6508,
-		shadowExtents = 3.2617 8.8180,
-		shadowOffset = 0.0635 -0.6921,
+		physicsChassisShape = 3.1930 3.0877 8.4211,
+		centerOfMassOffset = 0.0000 1.5614 -0.6316,
+		shadowExtents = 3.2617 9.6250,
+		shadowOffset = -0.0067 -0.6921,
 		maxSpeed = 70f,
 		engineForce = 4000,
 		engineQuality = 70,
@@ -185,7 +185,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2857 0.0794 2.0794,
+			offset = -1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -193,7 +193,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.0794,
+			offset = 1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -201,7 +201,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0317 0.0794 -2.8730,
+			offset = -1.1228 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -209,7 +209,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0317 0.0794 -2.8730,
+			offset = 1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -223,13 +223,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 1.4762 1.0159,
+				offset = 0.7368 1.4737 1.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3492 -0.5714 1.5556,
+				offset = 2.3684 -0.5789 1.5614,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -242,13 +242,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 1.3810 1.0159,
+				offset = -0.7368 1.3860 1.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3492 -0.5714 1.5556,
+				offset = -2.3684 -0.5789 1.5614,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -261,7 +261,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 1.7778 -1.2381,
+				offset = 0.7368 1.7895 -1.2281,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -277,7 +277,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7937 1.7778 -1.3333,
+				offset = -0.7193 1.7895 -1.2105,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -293,13 +293,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.8254 1.7619 -3.2540,
+				offset = 0.7368 1.7719 -3.2632,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.0159 -0.5873 -5.7302,
+				offset = 0.0175 -0.5965 -5.7193,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -312,13 +312,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.8095 1.7778 -3.2540,
+				offset = -0.7193 1.7895 -3.2632,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.0159 -0.5873 -5.7302,
+				offset = 0.0175 -0.5965 -5.7193,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -326,42 +326,42 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6032 4.0000 2.0000,
+			xywh = 0.0000 4.6140 4.0000 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2222 0.7778 1.1111 1.1111,
+			xywh = 2.1754 0.7895 1.1228 1.1228,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0952 0.7778 1.1111 1.1111,
+			xywh = -2.1754 0.7895 1.1228 1.1228,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 0.8095 0.0000 0.4762 0.4762,
+			xywh = 0.8246 0.0000 0.4912 0.4912,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -0.8095 0.0000 0.4762 0.4762,
+			xywh = -0.8246 0.0000 0.4912 0.4912,
 		}
 
 		area SeatRearRight
 		{
-			xywh = 0.0635 -5.3810 1.7778 1.3016,
+			xywh = 0.0702 -5.6316 1.8246 1.3684,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.8095 -1.3968 0.4762 0.4762,
+			xywh = 0.8246 -1.3860 0.4912 0.4912,
 		}
 
 		area GasTank
 		{
-			xywh = 2.2381 -3.4444 1.0794 0.5714,
+			xywh = 2.2281 -3.4386 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
@@ -398,7 +398,7 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
 				file = StepVanP30Driver,
 			}
@@ -406,7 +406,47 @@ module Base
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			model SeatMiddleLeft
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+
+			model SeatMiddleRight
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model SeatRearLeft
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model SeatRearRight
 			{
 				file = StepVanP30Passenger,
 			}
@@ -493,10 +533,6 @@ module Base
 				file = StepVanP30Windshield,
 			}
 
-			window
-			{
-				openable = false,
-			}
 
 			table install
 			{
@@ -519,11 +555,6 @@ module Base
 			model windshieldRear
 			{
 				file = StepVanP30RearWindshield,
-			}
-
-			window
-			{
-				openable = false,
 			}
 
 			parent = DoorRearRight,
@@ -552,6 +583,12 @@ module Base
 
 		part WindowFrontRight
 		{
+
+			window
+			{
+				openable = false,
+			}
+
 			model windowFR
 			{
 				file = StepVanP30FrontRightWindow,
@@ -563,6 +600,12 @@ module Base
 
 		part WindowFrontLeft
 		{
+
+			window
+			{
+				openable = false,
+			}
+
 			model windowFL
 			{
 				file = StepVanP30FrontLeftWindow,
@@ -680,40 +723,6 @@ module Base
 			}
 		}
 
-		part SCInteriorArmory
-		{
-			area = SeatMiddleLeft,
-			itemType = Base.SCInteriorArmory,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCInteriorArmory,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part SCInteriorArmory
-		{
-			area = SeatMiddleLeft,
-			itemType = Base.SCInteriorArmory,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCInteriorArmory,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		template = Tire,
 		template = Axle,
 
@@ -794,8 +803,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.0159 -0.7143,
-			extents = 3.1111 3.5714 8.6825,
+			offset = 0.0000 1.9474 -0.7193,
+			extents = 3.1754 3.5789 8.6842,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
