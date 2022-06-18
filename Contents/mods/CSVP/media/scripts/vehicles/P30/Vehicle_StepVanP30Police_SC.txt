@@ -801,6 +801,40 @@ module Base
 
 		template = Headlight,
 
+				part SCInteriorArmory
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.SCInteriorArmory,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.SCInteriorArmory,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SCInteriorArmory
+		{
+			area = SeatMiddleLeft,
+			itemType = Base.SCInteriorArmory,
+			specificItem = false,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.SCInteriorArmory,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
 		physics box
 		{
 			offset = 0.0000 1.9474 -0.7193,
