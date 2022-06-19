@@ -1,13 +1,18 @@
-ISCarMechanicsOverlay.CarList["Base.SC_M1009MilitaryPolice"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M1009"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerParkRanger"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerStatePolice"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerCiv"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickupVanLightsPolice"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanLights"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVan"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanMccoy"] = {imgPrefix = "blazer_", x=0,y=0};
---
+ISCarMechanicsOverlay.CarList["Base.SC_G30BoxVan"] = {imgPrefix = "g30_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoach"] = {imgPrefix = "firetruck_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30VanNormal"] = {imgPrefix = "g30van_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30Windowless"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_G30Ambulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanAmbulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSpecial"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSeats"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.Van_MassGenFac"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.Van_KnoxDisti"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.Van_Transit"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.Van_LectroMax"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
+
+
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
 --

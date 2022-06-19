@@ -5,20 +5,6 @@ ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVan_Heralds"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVan_Scarlet"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_G30BoxVan"] = {imgPrefix = "g30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoach"] = {imgPrefix = "firetruck_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_G30VanNormal"] = {imgPrefix = "g30van_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_G30Windowless"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_G30Ambulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanAmbulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSpecial"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSeats"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_MassGenFac"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_KnoxDisti"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_Transit"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_LectroMax"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
-
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
