@@ -5,9 +5,9 @@ if getActivatedMods():contains("SCKCO") and VehicleZoneDistribution then
     VehicleZoneDistribution.SCKMilitary = VehicleZoneDistribution.Military or {};
     VehicleZoneDistribution.SCKMilitary.vehicles = VehicleZoneDistribution.Military.vehicles or {};
 
-    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 40};
-    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 40};
-    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 40};
+    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 100};
+    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 100};
+    VehicleZoneDistribution.SCKMilitary.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 100};
 
     --- SCKLouisvillePolice: Spawn zones for Louisville police vehicles (such as LVPD cruisers) ---
 
