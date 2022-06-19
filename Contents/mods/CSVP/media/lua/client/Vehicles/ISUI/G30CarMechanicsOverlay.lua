@@ -4,6 +4,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_G30VanNormal"] = {imgPrefix = "g30van_", 
 ISCarMechanicsOverlay.CarList["Base.SC_G30Windowless"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_G30Ambulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.VanAmbulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.Van"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.VanSpecial"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.VanSeats"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.Van_MassGenFac"] = {imgPrefix = "g30windowless_", x=0,y=0};
