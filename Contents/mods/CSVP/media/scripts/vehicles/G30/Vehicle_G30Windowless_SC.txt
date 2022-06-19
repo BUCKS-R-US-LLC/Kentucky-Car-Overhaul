@@ -683,6 +683,15 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+
 		}
 
 		template = Tire,
