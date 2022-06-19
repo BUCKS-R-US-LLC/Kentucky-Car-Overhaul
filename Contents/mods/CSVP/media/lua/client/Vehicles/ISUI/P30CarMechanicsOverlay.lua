@@ -1,10 +1,10 @@
-ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Civ"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Police"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30ParkRanger"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan_Heralds"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan_Scarlet"] = {imgPrefix = "p30_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Police"] = {imgPrefix = "p30police_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30ParkRanger"] = {imgPrefix = "p30police_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Civ"] = {imgPrefix = "p30civ_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30civ_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30civ_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.StepVan_Heralds"] = {imgPrefix = "p30civ_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.StepVan_Scarlet"] = {imgPrefix = "p30civ_", x=0,y=0};
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
