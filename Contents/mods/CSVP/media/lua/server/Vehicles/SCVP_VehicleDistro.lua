@@ -4,7 +4,6 @@ VehicleDistributions.SCPolice = {
     TruckBed = {
         rolls = 4,
         items = {
-            "308Box", 10,
             "AmmoStrap_Bullets", 4,
             "AmmoStrap_Shells", 4,
             "AssaultRifle2", 1,
@@ -22,9 +21,6 @@ VehicleDistributions.SCPolice = {
             "Shotgun", 10,
             "ShotgunShellsBox", 10,
             "Sling", 4,
-            "x2Scope", 4,
-            "x4Scope", 2,
-            "x8Scope", 1,
         },
         junk = {
             rolls = 1,
@@ -113,6 +109,15 @@ VehicleDistributions.SCCivilian = {
 	GloveBox = VehicleDistributions.SCCivilianGloveBox;
 	TruckBed = VehicleDistributions.SCCivilianMisc;
 }
+
+-- Vanilla Car Loot Edits --
+
+distributionTable["CarLights"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["CarLightsPolice"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["PickupVanLights"] = { Normal = VehicleDistributions.SCPolice; }
+distributionTable["PickupVanPolice"] = { Normal = VehicleDistributions.SCPolice; }
+
+-- End edits--
 
 distributionTable["SC_BlazerK5StatePolice"] = { Normal = VehicleDistributions.SCPolice; }
 distributionTable["SC_BlazerK5LVPD"] = { Normal = VehicleDistributions.SCPolice; }
