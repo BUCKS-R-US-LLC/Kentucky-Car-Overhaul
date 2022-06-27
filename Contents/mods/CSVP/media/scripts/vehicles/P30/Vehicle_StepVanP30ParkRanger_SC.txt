@@ -126,7 +126,7 @@ module Base
 		{
 			file = StepVanP30Police,
 			scale = 0.5700,
-			offset = 0.0678 0.1864 0.0847,
+			offset = 0.0702 0.1930 0.0877,
 		}
 
 		skin
@@ -157,7 +157,7 @@ module Base
 			leftCol = 1;0.73;0.2,
 			rightCol = 1;0.73;0.2,
 		}
-        
+
 		extents = 3.2281 3.0877 8.7368,
 		mass = 1700,
 		physicsChassisShape = 3.1930 3.0877 8.4211,
@@ -203,7 +203,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1228 0.0877 -2.8772,
+			offset = -1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -535,7 +535,6 @@ module Base
 				file = StepVanP30Windshield,
 			}
 
-
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -585,7 +584,6 @@ module Base
 
 		part WindowFrontRight
 		{
-
 			window
 			{
 				openable = false,
@@ -602,7 +600,6 @@ module Base
 
 		part WindowFrontLeft
 		{
-
 			window
 			{
 				openable = false,
@@ -820,23 +817,6 @@ module Base
 			}
 		}
 
-		part SCInteriorArmory
-		{
-			area = SeatMiddleLeft,
-			category = nodisplay,
-			itemType = Base.SCInteriorArmory,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCInteriorArmory,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 		physics box
 		{
 			offset = 0.0000 1.9474 -0.7193,
