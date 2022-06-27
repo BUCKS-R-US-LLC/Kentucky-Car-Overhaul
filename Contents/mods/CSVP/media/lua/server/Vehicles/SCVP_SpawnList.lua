@@ -76,12 +76,5 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.chanceToPartDamage = 5;
-
-    VehicleZoneDistribution.military = VehicleZoneDistribution.military or {}
-    VehicleZoneDistribution.military.vehicles = VehicleZoneDistribution.military.vehicles or {}
-    VehicleZoneDistribution.military.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 20};
-    VehicleZoneDistribution.military.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 20};
-    VehicleZoneDistribution.military.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 20};
-    VehicleZoneDistribution.military.spawnRate = 10;
-
+    
 end

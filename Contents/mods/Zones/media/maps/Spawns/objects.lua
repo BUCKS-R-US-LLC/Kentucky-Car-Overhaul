@@ -7,4 +7,9 @@ objects = {
   { name = "SCKMilitary", type = "ParkingStall", x = 12066, y = 1411, z = 0, width = 3, height = 5 },
   { name = "SCKMilitary", type = "ParkingStall", x = 12099, y = 1450, z = 0, width = 5, height = 3 },
   { name = "SCKMilitary", type = "ParkingStall", x = 12099, y = 1423, z = 0, width = 5, height = 3 },
+  { name = "SCKMilitary", type = "ParkingStall", x = 5414, y = 5902, z = 0, width = 5, height = 3 },
+  { name = "SCKMilitary", type = "ParkingStall", x = 5408, y = 5893, z = 0, width = 3, height = 5 },
+  { name = "SCKMilitary", type = "ParkingStall", x = 5407, y = 5865, z = 0, width = 3, height = 5 },
+  { name = "SCKMilitary", type = "ParkingStall", x = 5413, y = 5860, z = 0, width = 5, height = 3 },
+  { name = "SCKMilitary", type = "ParkingStall", x = 5431, y = 5944, z = 0, width = 5, height = 3 },
 }
