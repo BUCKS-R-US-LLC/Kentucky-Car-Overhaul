@@ -1,29 +1,29 @@
  module SCA
 {	
-		item MealReadytoEat_SA
+		item MealReadytoEat_SCA
 	{
 		DisplayCategory = Food,
 		HungerChange	= -60,
 		Weight		= 0.6,
 		Type		= Food,
 		DisplayName	= MRE,
-		Icon		= MRE_SACEE,
+		Icon		= MRE,
         Carbohydrates 	= 150,
         Proteins 	= 45,
         Lipids 		= 66,
         Calories 	= 1800,
         Packaged 	= TRUE,
-		ReplaceOnUse = MREWrapper_SA,
+		ReplaceOnUse = MREWrapper_SCA,
 		WorldStaticModel = MRE,
 	}
 
-		item MREWrapper_SA
+		item MREWrapper_SCA
 	{
 		DisplayCategory = Junk,
 		Weight	=	0.1,
 		Type	=	Normal,
 		DisplayName	=	MRE Wrapper,
-		Icon	=	MRE_SACEE,
-		WorldStaticModel = MREWrapper_SA,
+		Icon	=	MRE,
+		WorldStaticModel = MREWrapper_SCA,
 	}
 }
