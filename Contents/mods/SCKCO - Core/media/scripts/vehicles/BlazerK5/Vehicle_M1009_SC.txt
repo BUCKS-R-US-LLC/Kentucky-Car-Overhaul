@@ -86,27 +86,27 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model BlazerWheelLargefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel, 
-		shader = vehiclewheel,
-	}
-	model BlazerWheelfrontwheelright
-	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model BlazerWheelLargefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model BlazerWheelLargebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model BlazerWheelLargebackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
@@ -633,7 +633,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -641,7 +641,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -649,7 +649,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -657,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -713,14 +713,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3651 -3.4444,
+			offset = 0.0000 0.0000 -3.1746,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3651,
+			offset = -0.0159 0.0000 3.3492,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
