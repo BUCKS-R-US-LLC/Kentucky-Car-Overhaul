@@ -38,6 +38,7 @@ local vehicleToSeatAnimations = {
 
     ["DEFAULT"] = {
         ["seat0"]="Shark_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
         ["passenger"]="Shark_Idle_Passenger",
     },
 
