@@ -1,6 +1,5 @@
--- Huge thanks to Dislaik for originally creating this method (which we added a change to)
--- You should him out: https://steamcommunity.com/sharedfiles/filedetails/?id=2728300240
-
+-- Credit: Chuck
+-- This is free for anyone to use that needs it for a project but do credit Chuck.
 
 ---If the provided 'input' is not a table then that is returned (string expected).
 ---Otherwise; then parse every other value as a acceptable value and it's weight.
