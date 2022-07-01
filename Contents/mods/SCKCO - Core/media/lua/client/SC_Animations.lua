@@ -48,6 +48,13 @@ local vehicleToSeatAnimations = {
         ["passenger"]={"Shark_Idle_Driver","Shark_Idle_Passenger",99},
         },
 
+		
+	["Base.SC_CapriceLVPD"] = {
+		["seat0"]="Shark_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["passenger"]={"Shark_Idle_Driver","Shark_Idle_Passenger",99},
+		},
+	
     ["Base.SC_StepVanP30Police"] = {
         ["seat0"]="Shark_Idle_Driver",
         ["seat0"]="Shark_Idle_Passenger",
