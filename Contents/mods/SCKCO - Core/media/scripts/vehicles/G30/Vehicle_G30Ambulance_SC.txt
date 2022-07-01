@@ -798,23 +798,6 @@ module Base
 			}
 		}
 
-		part SCAmbulanceStorage
-		{
-			area = SeatRearRight,
-			itemType = Base.SCAmbulanceStorage,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCAmbulanceStorage,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		template = Radio,
 
 		part Radio*

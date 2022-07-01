@@ -14,8 +14,8 @@ ISWorldObjectContextMenu.onPutBodyInBag = function(worldobjects, player, corpse,
 end
 
 
-SACEE_BodyBagMenu = {}
-function SACEE_BodyBagMenu.doMenu(player, context, worldobjects, test)
+SCA_BodyBagMenu = {}
+function SCA_BodyBagMenu.doMenu(player, context, worldobjects, test)
 	local playerObj = getSpecificPlayer(player)
 	local playerInv = playerObj:getInventory()
 	if playerObj:isAsleep() then return end
@@ -41,7 +41,7 @@ function SACEE_BodyBagMenu.doMenu(player, context, worldobjects, test)
 		end
 	end
 end
-Events.OnFillWorldObjectContextMenu.Add(SACEE_BodyBagMenu.doMenu)
+Events.OnFillWorldObjectContextMenu.Add(SCA_BodyBagMenu.doMenu)
 
 
 local ISInventoryTransferAction_transferItem = ISInventoryTransferAction.transferItem
