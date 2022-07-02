@@ -1,86 +1,86 @@
 module Base
 {
-	model BlazerSC
+	model SC_M1009MilitaryPolice
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1009MPOL_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model M1009SCDriver
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model M1009SCPassenger
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model M1009SCWindshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1009_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model M1009SCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model M1009SCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model M1009SCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model M1009SCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model M1009SCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCRearLeftWindow
+	model M1009SCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCTrunk
+	model M1009SCTrunk
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1009_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerSCHood
+	model M1009SCHood
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1009_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -102,7 +102,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_MilitaryPolice,
+			texture = Vehicles/CUCV/Vehicle_M1009MPOL_SC,
 		}
 
 		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
