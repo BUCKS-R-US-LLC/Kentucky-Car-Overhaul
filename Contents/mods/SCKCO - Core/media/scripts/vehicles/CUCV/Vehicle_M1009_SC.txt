@@ -2,85 +2,85 @@ module Base
 {
 	model SC_M1009
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1009_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model M1009SCDriver
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model M1009SCPassenger
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model M1009SCWindshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1009_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model M1009SCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model M1009SCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model M1009SCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model M1009SCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1009_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model M1009SCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCRearLeftWindow
+	model M1009SCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCTrunk
+	model M1009SCTrunk
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1009_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerSCHood
+	model M1009SCHood
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1009_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -126,7 +126,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Military,
+			texture = Vehicles/CUCV/Vehicle_M1009_SC,
 		}
 
 		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
@@ -302,7 +302,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = M1009SCDriver,
 			}
 		}
 
@@ -310,7 +310,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = M1009SCPassenger,
 			}
 		}
 
@@ -333,7 +333,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = M1009SCHood,
 			}
 
 			anim Close
@@ -392,7 +392,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = M1009SCWindshield,
 			}
 
 			window
@@ -452,7 +452,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = M1009SCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -469,7 +469,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = M1009SCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -486,7 +486,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = M1009SCRearLeftWindow,
 			}
 
 			area = SeatFrontLeft,
@@ -496,7 +496,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = M1009SCRearRightWindow,
 			}
 
 			area = SeatFrontRight,
@@ -506,7 +506,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = M1009SCFrontRightDoor,
 			}
 
 			anim Close
@@ -542,7 +542,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = M1009SCFrontLeftDoor,
 			}
 
 			anim Close
