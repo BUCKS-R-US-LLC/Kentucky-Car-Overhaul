@@ -2,91 +2,91 @@ module Base
 {
 	model SC_M1008
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1008_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model K10Driver
+	model M1008Driver
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Passenger
+	model M1008Passenger
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Windshield
+	model M1008Windshield
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1008_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10FrontRightWindow
+	model M1008FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model K10FrontLeftWindow
+	model M1008FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model K10FrontRightDoor
+	model M1008FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model K10FrontLeftDoor
+	model M1008FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model K10RearRightWindow
+	model M1008RearRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1008_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10RearLeftWindow
+	model M1008RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1008_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Trunk
+	model M1008Trunk
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1008_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model K10RearWindshield
+	model M1008RearWindshield
 	{
-		mesh = vehicles/Vehicle_K10_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_M1008_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Hood
+	model M1008Hood
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1008_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -132,7 +132,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/K10/Vehicle_K10_Military,
+			texture = Vehicles/CUCV/Vehicle_M1008_SC,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -294,6 +294,7 @@ module Base
 			xywh = -1.3810 -2.1270 0.0000 0.0000,
 		}
 
+		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -307,7 +308,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = K10Driver,
+				file = M1008Driver,
 			}
 		}
 
@@ -315,7 +316,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = K10Passenger,
+				file = M1008Passenger,
 			}
 		}
 
@@ -338,7 +339,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = K10Hood,
+				file = M1008Hood,
 			}
 
 			anim Close
@@ -397,7 +398,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = K10Windshield,
+				file = M1008Windshield,
 			}
 
 			window
@@ -425,7 +426,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = K10RearWindshield,
+				file = M1008RearWindshield,
 			}
 
 			window
@@ -458,7 +459,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = K10FrontRightWindow,
+				file = M1008FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -475,7 +476,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = K10FrontLeftWindow,
+				file = M1008FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -492,7 +493,7 @@ module Base
 		{
 			model Default
 			{
-				file = K10FrontRightDoor,
+				file = M1008FrontRightDoor,
 			}
 
 			anim Close
@@ -528,7 +529,7 @@ module Base
 		{
 			model Default
 			{
-				file = K10FrontLeftDoor,
+				file = M1008FrontLeftDoor,
 			}
 
 			anim Close
@@ -576,7 +577,7 @@ module Base
 
 			model Default
 			{
-				file = K10Trunk,
+				file = M1008Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
