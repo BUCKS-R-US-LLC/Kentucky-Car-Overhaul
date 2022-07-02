@@ -19,7 +19,7 @@ VehicleDistributions.SCMilitary = {
                 "FirstAidKit", 20,
 
                 -- Accessories --
-                
+
                 "SCA.MealReadytoEat_SCA", 10,
             }
         }
@@ -39,7 +39,7 @@ VehicleDistributions.SCMilitary = {
         junk = {
             rolls = 1,
             items = {
-                "HottieZ", 2,
+                "HottieZ", 5,
                 "Cigarettes", 8,
                 "FirstAidKit", 20,
                 "Glasses_Aviators", 0.5,
