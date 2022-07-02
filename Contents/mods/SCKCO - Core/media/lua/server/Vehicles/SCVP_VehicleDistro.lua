@@ -8,11 +8,19 @@ VehicleDistributions.SCMilitary = {
         items = {
             "HandTorch", 4,
             "Radio.WalkieTalkie4", 10,
+
+            -- Accessories -- 
+
+            "SCA.MealReadytoEat_SCA", 5,
         },
         junk = {
             rolls = 1,
             items = {
                 "FirstAidKit", 20,
+
+                -- Accessories --
+                
+                "SCA.MealReadytoEat_SCA", 10,
             }
         }
     },
