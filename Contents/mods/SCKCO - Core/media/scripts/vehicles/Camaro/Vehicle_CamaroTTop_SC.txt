@@ -7,25 +7,25 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model CamaroCDriver
+	model CamaroSCDriver
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CamaroCPassenger
+	model CamaroSCPassenger
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CamaroCWindshield
+	model CamaroSCWindshield
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CamaroCFrontRightWindow
+	model CamaroSCFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model CamaroCFrontLeftWindow
+	model CamaroSCFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model CamaroCFrontRightDoor
+	model CamaroSCFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model CamaroCFrontLeftDoor
+	model CamaroSCFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model CamaroCRearRightWindow
+	model CamaroSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RightTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CamaroCRearLeftWindow
+	model CamaroSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|LeftTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CamaroCTrunk
+	model CamaroSCTrunk
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,7 +78,7 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model CamaroCHood
+	model CamaroSCHood
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -121,12 +121,12 @@ module Base
 		{
 			file = SC_CamaroTTop,
 			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			offset = 0.0000 -0.5556 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTopSC_Red,
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Red,
 		}
 
 		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
@@ -146,12 +146,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 2.8571 3.0794 6.5714,
+		extents = 2.8571 1.6508 6.5714,
 		mass = 1000,
-		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
+		physicsChassisShape = 2.8571 1.6508 6.5714,
+		centerOfMassOffset = 0.0000 0.4921 0.0000,
 		shadowExtents = 2.8807 7.6434,
-		shadowOffset = 0.0635 0.0063,
+		shadowOffset = 0.0000 0.0063,
 		engineForce = 5700,
 		engineLoudness = 90,
 		engineQuality = 90,
@@ -181,7 +181,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2063 0.3968 1.7778,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -189,7 +189,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2222 0.3968 1.7778,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -197,7 +197,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -1.6190,
+			offset = -1.2063 0.3968 -1.8413,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -205,7 +205,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.2222 0.3968 -1.8413,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,13 +219,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7302 0.9683 0.0159,
+				offset = 0.6508 0.6508 -0.3651,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0794 -0.2222 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -238,13 +238,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.5397 0.6508 -0.3651,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0476 0.2857 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -295,8 +295,6 @@ module Base
 			xywh = -2.0000 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -309,7 +307,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = CamaroCDriver,
+				file = CamaroSCDriver,
 			}
 		}
 
@@ -317,7 +315,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = CamaroCPassenger,
+				file = CamaroSCPassenger,
 			}
 		}
 
@@ -399,7 +397,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CamaroCWindshield,
+				file = CamaroWindshield,
 			}
 
 			window
@@ -427,7 +425,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = CamaroCRearWindshield,
+				file = RearWindshield_obj,
 			}
 
 			parent = TrunkDoor,
@@ -718,8 +716,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 0.6667 0.0000,
+			extents = 2.6032 1.3492 6.7143,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
