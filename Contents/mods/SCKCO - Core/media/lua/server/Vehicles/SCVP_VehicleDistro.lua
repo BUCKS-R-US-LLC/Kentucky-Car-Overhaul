@@ -24,7 +24,6 @@ VehicleDistributions.SCMilitary = {
     GloveBox = {
         rolls = 4,
         items = {
-            "SCA.MealReadytoEat_SCA", 10,
             "Battery", 10,
             "HandTorch", 4,
         },
@@ -32,11 +31,14 @@ VehicleDistributions.SCMilitary = {
             rolls = 1,
             items = {
                 "HottieZ", 5,
-                "SCA.MREWrapper_SCA", 4,
                 "Cigarettes", 8,
                 "Glasses_Aviators", 0.5,
                 "HandTorch", 4,
                 "Lighter", 4,
+
+                -- Accessories -- 
+
+                "SCA.MREWrapper_SCA", 4,
             }
         }
     },
