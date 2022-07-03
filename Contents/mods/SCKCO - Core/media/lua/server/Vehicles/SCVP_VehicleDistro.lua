@@ -8,10 +8,6 @@ VehicleDistributions.SCMilitary = {
         items = {
             "HandTorch", 4,
             "Radio.WalkieTalkie4", 10,
-
-            -- Accessories -- 
-
-            "SCA.MealReadytoEat_SCA", 5,
         },
         junk = {
             rolls = 1,
@@ -28,20 +24,16 @@ VehicleDistributions.SCMilitary = {
     GloveBox = {
         rolls = 4,
         items = {
-            "MealReadytoEat_SCA", 20,
-            "AlcoholWipes", 8,
-            "Bandage", 4,
-            "Bandaid", 10,
+            "SCA.MealReadytoEat_SCA", 10,
             "Battery", 10,
-            "BluePen", 8,
             "HandTorch", 4,
         },
         junk = {
             rolls = 1,
             items = {
                 "HottieZ", 5,
+                "SCA.MREWrapper_SCA", 4,
                 "Cigarettes", 8,
-                "FirstAidKit", 20,
                 "Glasses_Aviators", 0.5,
                 "HandTorch", 4,
                 "Lighter", 4,
@@ -133,7 +125,7 @@ VehicleDistributions.SCAmbulance = {
     TruckBed = {
         rolls = 40,
         items = {
-            "BodyBag", 20,
+            "SCA.BodyBag_SCA", 20,
         },
     },
 }
