@@ -9,19 +9,31 @@ module Base
 	}
 	model CamaroSCDriver
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCPassenger
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearPassenger
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCWindshield
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearWindshield
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -86,28 +98,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model CamaroWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_CamaroC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model CamaroWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_CamaroC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model CamaroWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_CamaroC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model CamaroWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_CamaroC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_CamaroTTop
@@ -120,8 +132,8 @@ module Base
 		model
 		{
 			file = SC_CamaroTTop,
-			scale = 0.6300,
-			offset = 0.0000 -0.5556 0.0000,
+			scale = 0.6400,
+			offset = 0.0000 -0.5625 0.0000,
 		}
 
 		skin
@@ -148,10 +160,15 @@ module Base
 		{
 			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Yellow,
 		}
-		
+
 		skin
 		{
 			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Orange,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Black,
 		}
 
 		textureRust = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Rust,
@@ -171,11 +188,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 2.8571 1.6508 6.5714,
+		extents = 2.6250 1.7188 6.7188,
 		mass = 1000,
-		physicsChassisShape = 2.8571 1.6508 6.5714,
-		centerOfMassOffset = 0.0000 0.4921 0.0000,
-		shadowExtents = 2.8807 7.6434,
+		physicsChassisShape = 2.5938 1.7188 6.7188,
+		centerOfMassOffset = 0.0000 0.4844 0.0000,
+		shadowExtents = 2.6463 7.6434,
 		shadowOffset = 0.0000 0.0063,
 		engineForce = 5700,
 		engineLoudness = 90,
@@ -201,12 +218,12 @@ module Base
 		wheelFriction = 1.8f,
 		frontEndHealth = 1500,
 		rearEndHealth = 900,
-		seats = 2,
+		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.3968 1.7778,
+			offset = -1.1094 0.3906 1.7813,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -214,7 +231,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.3968 1.7778,
+			offset = 1.1094 0.3906 1.7813,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -222,7 +239,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.3968 -1.8413,
+			offset = -1.1094 0.3906 -1.8438,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -230,12 +247,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.3968 -1.8413,
+			offset = 1.1094 0.3906 -1.8438,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -244,13 +261,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6508 0.6508 -0.3651,
+				offset = 0.6563 0.8750 -0.3594,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.2222 0.0159,
+				offset = 2.0781 -0.2188 0.0156,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -263,65 +280,115 @@ module Base
 
 			position inside
 			{
-				offset = -0.5397 0.6508 -0.3651,
+				offset = -0.5469 0.8750 -0.3594,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 0.2857 0.1429,
+				offset = -2.0469 0.2813 0.1406,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6563 0.6563 -0.3594,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0781 -0.2188 0.0156,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5469 0.6563 -0.3594,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0781 -0.2188 0.0156,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
-			xywh = 0.0635 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.2813 2.8750 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0635 -4.1587 2.8571 1.7460,
+			xywh = 0.0000 -4.1563 2.8750 1.7500,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1111 0.2540 1.2381 1.2381,
+			xywh = 2.0469 0.2500 1.2500 1.2500,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9841 0.2540 1.2381 1.2381,
+			xywh = -2.0469 0.2500 1.2500 1.2500,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.0469 -0.9844 1.2500 1.2500,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.0469 -0.9844 1.2500 1.2500,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9048 -2.5397 1.0794 0.5714,
+			xywh = -1.9688 -2.3906 1.0938 0.5938,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.1587 0.0000 0.0000,
+			xywh = 1.0000 2.1563 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.1587 0.0000 0.0000,
+			xywh = -1.0000 2.1563 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.6032 0.0000 0.0000,
+			xywh = 2.0000 -1.6094 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.6032 0.0000 0.0000,
+			xywh = -2.0000 -1.6094 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -330,7 +397,7 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
 				file = CamaroSCDriver,
 			}
@@ -338,10 +405,22 @@ module Base
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
 			{
 				file = CamaroSCPassenger,
 			}
+		}
+
+		part SeatFrontLeft
+		{
+			model SeatRearLeft
+			{
+				file = CamaroSCRearPassenger,
+			}
+		}
+
+		part SeatRearRight
+		{
 		}
 
 		part Muffler
@@ -363,7 +442,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = CamaroCHood,
+				file = CamaroSCHood,
 			}
 
 			anim Close
@@ -422,7 +501,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CamaroWindshield,
+				file = CamaroSCWindshield,
 			}
 
 			window
@@ -450,7 +529,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = RearWindshield_obj,
+				file = CamaroSCRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -487,7 +566,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CamaroCFrontRightWindow,
+				file = CamaroSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -504,7 +583,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CamaroCFrontLeftWindow,
+				file = CamaroSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -521,7 +600,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = CamaroCRearLeftWindow,
+				file = CamaroSCRearLeftWindow,
 			}
 
 			area = SeatFrontLeft,
@@ -531,7 +610,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = CamaroCRearRightWindow,
+				file = CamaroSCRearRightWindow,
 			}
 
 			area = SeatFrontRight,
@@ -541,7 +620,7 @@ module Base
 		{
 			model Default
 			{
-				file = CamaroCFrontRightDoor,
+				file = CamaroSCFrontRightDoor,
 			}
 
 			anim Close
@@ -577,7 +656,7 @@ module Base
 		{
 			model Default
 			{
-				file = CamaroCFrontLeftDoor,
+				file = CamaroSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -625,7 +704,7 @@ module Base
 
 			model Default
 			{
-				file = CamaroCTrunk,
+				file = CamaroSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -668,7 +747,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelleft,
+				file = CamaroWheelfrontwheelleft,
 			}
 		}
 
@@ -676,7 +755,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelright,
+				file = CamaroWheelfrontwheelright,
 			}
 		}
 
@@ -684,7 +763,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelleft,
+				file = CamaroWheelbackwheelleft,
 			}
 		}
 
@@ -692,7 +771,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelright,
+				file = CamaroWheelbackwheelright,
 			}
 		}
 
