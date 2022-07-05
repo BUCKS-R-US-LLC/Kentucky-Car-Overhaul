@@ -394,12 +394,18 @@ module Base
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
+		area TruckBed
+		{
+			xywh = -2.0000 -1.0000 0.0000 0.0000,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
 		template = Seat/part/SeatMiddleRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
+		template = TruckBed,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
