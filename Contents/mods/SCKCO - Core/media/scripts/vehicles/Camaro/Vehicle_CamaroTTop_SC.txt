@@ -133,8 +133,8 @@ module Base
 		model
 		{
 			file = SC_CamaroTTop,
-			scale = 0.6400,
-			offset = 0.0000 -0.5625 0.0000,
+			scale = 0.6700,
+			offset = 0.0000 -0.5672 0.0000,
 		}
 
 		skin
@@ -189,10 +189,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 2.6250 1.7188 6.7188,
+		extents = 2.6269 1.7313 6.7164,
 		mass = 1000,
-		physicsChassisShape = 2.5938 1.7188 6.7188,
-		centerOfMassOffset = 0.0000 0.4844 0.0000,
+		physicsChassisShape = 2.5970 1.7313 6.7164,
+		centerOfMassOffset = 0.0000 0.4776 0.0000,
 		shadowExtents = 2.6463 7.6434,
 		shadowOffset = 0.0000 0.0063,
 		engineForce = 5700,
@@ -224,7 +224,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.1094 0.3906 1.7813,
+			offset = -1.1045 0.3881 1.7761,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -232,7 +232,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1094 0.3906 1.7813,
+			offset = 1.1045 0.3881 1.7761,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -240,7 +240,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1094 0.3906 -1.8438,
+			offset = -1.1045 0.3881 -1.8507,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -248,7 +248,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1094 0.3906 -1.8438,
+			offset = 1.1045 0.3881 -1.8507,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -262,13 +262,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6563 0.8750 -0.3594,
+				offset = 0.6567 0.7015 -0.2090,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0781 -0.2188 0.0156,
+				offset = 2.0746 -0.2239 0.0149,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -281,13 +281,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5469 0.8750 -0.3594,
+				offset = -0.6716 0.6119 -0.2090,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0469 0.2813 0.1406,
+				offset = -2.0448 0.2836 0.1343,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -300,13 +300,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6563 0.6563 -0.3594,
+				offset = 0.3881 0.6119 -1.1791,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0781 -0.2188 0.0156,
+				offset = 2.0746 -0.2239 0.0149,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -319,13 +319,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5469 0.6563 -0.3594,
+				offset = -0.4030 0.6119 -1.1791,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0781 -0.2188 0.0156,
+				offset = 2.0746 -0.2239 0.0149,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -333,57 +333,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2813 2.8750 2.0000,
+			xywh = 0.0000 4.2836 2.8955 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.1563 2.8750 1.7500,
+			xywh = 0.0000 -4.1493 2.8955 1.7612,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0469 0.2500 1.2500 1.2500,
+			xywh = 2.0448 0.2537 1.2537 1.2537,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0469 0.2500 1.2500 1.2500,
+			xywh = -2.0448 0.2537 1.2537 1.2537,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0469 -0.9844 1.2500 1.2500,
+			xywh = 2.0448 -0.9851 1.2537 1.2537,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0469 -0.9844 1.2500 1.2500,
+			xywh = -2.0448 -0.9851 1.2537 1.2537,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9688 -2.3906 1.0938 0.5938,
+			xywh = -1.9701 -2.3881 1.1045 0.5970,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.1563 0.0000 0.0000,
+			xywh = 1.0000 2.1493 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.1563 0.0000 0.0000,
+			xywh = -1.0000 2.1493 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.6094 0.0000 0.0000,
+			xywh = 2.0000 -1.6119 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.6094 0.0000 0.0000,
+			xywh = -2.0000 -1.6119 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
