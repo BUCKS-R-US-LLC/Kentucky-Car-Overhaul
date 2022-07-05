@@ -30,6 +30,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamw.spawnRate = 10;
     
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 70};
@@ -75,6 +76,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.good.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.chanceToPartDamage = 5;
     
 end
