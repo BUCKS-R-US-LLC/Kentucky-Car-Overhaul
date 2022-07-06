@@ -43,7 +43,13 @@ local vehicleToSeatAnimations = {
     },
 
 	["Base.SC_CamaroTTop"] = {
-        ["seat0"]="Bob_Idle_Driver",
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_Passenger",
+		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_Passenger",50},
+	},
+
+	["Base.SC_HondaAccord"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
 		["seat1"]="Shark_Idle_Passenger",
 		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_Passenger",50},
 	},
