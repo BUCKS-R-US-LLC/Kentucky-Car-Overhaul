@@ -126,7 +126,7 @@ module Base
 		{
 			file = StepVanP30Police,
 			scale = 0.5700,
-			offset = 0.0702 0.1930 0.0877,
+			offset = 0.0000 0.1930 0.0877,
 		}
 
 		skin
@@ -179,7 +179,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 5500,
 		rearEndHealth = 4500,
-		seats = 6,
+		seats = 4,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
@@ -214,7 +214,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat6,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -254,38 +254,6 @@ module Base
 			}
 		}
 
-		passenger MiddleLeft
-		{
-			showPassenger = false,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7368 1.7895 -1.2281,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = false,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7193 1.7895 -1.2105,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-			}
-		}
-
 		passenger RearLeft
 		{
 			showPassenger = false,
@@ -299,7 +267,7 @@ module Base
 
 			position outside
 			{
-				offset = 0.0175 -0.5965 -5.7193,
+				offset = 1.1754 -0.5965 -5.7193,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -318,7 +286,7 @@ module Base
 
 			position outside
 			{
-				offset = 0.0175 -0.5965 -5.7193,
+				offset = -1.1579 -0.5965 -5.7193,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -326,7 +294,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6140 4.0000 2.0000,
+			xywh = 0.0000 4.7368 3.2281 2.0000,
 		}
 
 		area SeatFrontLeft
@@ -339,29 +307,19 @@ module Base
 			xywh = -2.1754 0.7895 1.1228 1.1228,
 		}
 
-		area SeatMiddleLeft
-		{
-			xywh = 0.8246 0.0000 0.4912 0.4912,
-		}
-
-		area SeatMiddleRight
-		{
-			xywh = -0.8246 0.0000 0.4912 0.4912,
-		}
-
 		area SeatRearRight
 		{
-			xywh = 0.0702 -5.6316 1.8246 1.3684,
+			xywh = 1.0526 -5.5614 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.8246 -1.3860 0.4912 0.4912,
+			xywh = -1.0526 -5.5614 1.1228 1.1228,
 		}
 
 		area GasTank
 		{
-			xywh = 2.2281 -3.4386 1.0877 0.5965,
+			xywh = 2.1579 -3.4386 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
@@ -384,12 +342,27 @@ module Base
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
+		area TruckBed
+		{
+			xywh = 0.0000 -5.5614 0.9825 1.1228,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
+		template = Trunk/part/TruckBed,
+
+		part TruckBed
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 300,
+			}
+		}
+
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -407,26 +380,6 @@ module Base
 		part SeatFrontRight
 		{
 			model SeatfrontRight
-			{
-				file = StepVanP30Passenger,
-			}
-		}
-
-		part SeatMiddleLeft
-		{
-			category = nodisplay,
-
-			model SeatMiddleLeft
-			{
-				file = StepVanP30Passenger,
-			}
-		}
-
-		part SeatMiddleRight
-		{
-			category = nodisplay,
-
-			model SeatMiddleRight
 			{
 				file = StepVanP30Passenger,
 			}
@@ -577,6 +530,7 @@ module Base
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
+		template = Door/part/DoorRearLeft,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -798,53 +752,11 @@ module Base
 
 		template = Headlight,
 
-		part SCInteriorArmory
-		{
-			area = SeatMiddleLeft,
-			itemType = Base.SCInteriorArmory,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCInteriorArmory,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part SCInteriorArmory
-		{
-			area = SeatMiddleLeft,
-			category = nodisplay,
-			itemType = Base.SCInteriorArmory,
-			specificItem = false,
-
-			container
-			{
-				test = Vehicles.ContainerAccess.SCInteriorArmory,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		physics box
 		{
 			offset = 0.0000 1.9474 -0.7193,
 			extents = 3.1754 3.5789 8.6842,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.0000 -5.1270,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront

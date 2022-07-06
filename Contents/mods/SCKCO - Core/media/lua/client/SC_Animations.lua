@@ -50,8 +50,20 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_HondaAccord"] = {
         ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_Passenger",50},
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SmallCar"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SmallCar02"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
 	},
 
 }
