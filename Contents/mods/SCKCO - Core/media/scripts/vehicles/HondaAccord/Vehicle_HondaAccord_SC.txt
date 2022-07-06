@@ -51,17 +51,13 @@ module Base
 	{
 		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
 	}
 	model HondaAccordRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
 	}
 	model HondaAccordFrontRightDoor
 	{
@@ -78,22 +74,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model HondaAccordRearRightDoor
-	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model HondaAccordRearLeftDoor
-	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model HondaAccordTrunk
 	{
@@ -116,6 +96,8 @@ module Base
 		mesh = vehicles/Vehicle_HondaAccord_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
 	}
 	model HondaAccordfrontwheelleft
 	{
@@ -185,13 +167,13 @@ module Base
 			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
 		}
 
-		textureMask = Vehicles/HondaAccord/Vehicle_HondaAccord_mask,
-		textureLights = Vehicles/HondaAccord/Vehicle_HondaAccord_lights,
-		textureDamage1Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_blood,
-		textureDamage2Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_blood,
-		textureDamage1Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_damage,
-		textureDamage2Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_damage2,
-		textureRust = Vehicles/HondaAccord/Vehicle_HondaAccord_rust,
+		textureMask = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_mask,
+		textureLights = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_lights,
+		textureDamage1Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
+		textureDamage2Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
+		textureDamage1Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
+		textureDamage2Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
+		textureRust = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_rust,
 
 		sound
 		{
@@ -531,6 +513,9 @@ module Base
 
 		part WindshieldRear
 		{
+
+			parent = TrunkDoor,
+
 			model windshieldRear
 			{
 				file = HondaAccordRearWindshield,
@@ -605,13 +590,6 @@ module Base
 				file = HondaAccordRearRightWindow,
 			}
 
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
 
@@ -622,13 +600,6 @@ module Base
 				file = HondaAccordRearLeftWindow,
 			}
 
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
 
@@ -699,78 +670,6 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = HondaAccordRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = HondaAccordRearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
