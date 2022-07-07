@@ -122,6 +122,10 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.sport.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 5};
 
+    VehicleZoneDistribution.postal.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.postal.vehicles["Base.SC_G30Mail"] = {index = -1, spawnChance = 25};
+
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30McCoy"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.chanceToPartDamage = 25;
     
