@@ -120,6 +120,39 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
+	vehicle TaxiBurnt
+	{
+		model
+		{
+			file = Vehicles_CarNormal_Burnt,
+			scale = 1.8200,
+			offset = 0.0000 0.3297 0.0000,
+		}
+
+		spawnOffsetY = 0.19999991,
+
+		skin
+		{
+			texture = Vehicles/vehicles_taxi_burnt,
+		}
+
+		extents = 0.9011 0.6593 2.5055,
+		mass = 500,
+		centerOfMassOffset = 0.0000 0.3297 0.0000,
+		physicsChassisShape = 0.9011 0.6593 2.5055,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.1923 -1.3736,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.3242 1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
 	model Vehicles_ModernCar02Burnt
 	{
 		mesh = vehicles/Vehicles_ModernCar02_Burnt,
