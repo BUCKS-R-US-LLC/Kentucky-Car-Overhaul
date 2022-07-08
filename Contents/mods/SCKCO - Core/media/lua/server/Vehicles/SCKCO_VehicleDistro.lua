@@ -123,15 +123,6 @@ VehicleDistributions.SCPolice = {
     SeatRearRight = VehicleDistributions.Seat;
 }
 
-VehicleDistributions.SCAmbulance = {
-    TruckBed = {
-        rolls = 40,
-        items = {
-            "SCA.BodyBag_SCA", 20,
-        },
-    },
-}
-
 VehicleDistributions.SCCivilianGloveBox = {
     rolls = 15,
     items ={
@@ -189,6 +180,7 @@ distributionTable["SC_FordCountrySquire"] = { Normal = VehicleDistributions.SCCi
 distributionTable["SC_G30Windowless"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_G30VanNormal"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_CamaroTTop"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_Mercedes280"] = { Normal = VehicleDistributions.SCCivilian; }
 
 distributionTable["SC_G30Ambulance"] = { Normal = VehicleDistributions.SCAmbulance; }
 
