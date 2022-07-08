@@ -279,7 +279,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6129 0.8226 0.0000,
+				offset = 0.6129 0.7742 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -298,7 +298,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5968 0.8226 0.0000,
+				offset = -0.5968 0.7742 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -317,7 +317,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5968 0.8226 -1.1129,
+				offset = 0.5968 0.7742 -0.9355,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -336,7 +336,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5968 0.8226 -1.1129,
+				offset = -0.5968 0.7742 -0.9355,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -350,57 +350,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6129 4.0000 2.0000,
+			xywh = 0.0000 4.5000 2.6452 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.7742 2.7742 1.7742,
+			xywh = 0.0000 -4.3871 2.6774 1.7742,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1774 0.6774 1.3548 1.3548,
+			xywh = 2.0000 0.6774 1.3548 1.3548,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1774 0.6774 1.3548 1.3548,
+			xywh = -2.0000 0.6774 1.3548 1.3548,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1774 -0.8065 1.3548 1.3548,
+			xywh = 2.0000 -0.8065 1.3548 1.3548,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1774 -0.8065 1.3548 1.3548,
+			xywh = -2.0000 -0.8065 1.3548 1.3548,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0323 -4.3710 1.1290 0.6452,
+			xywh = -1.8871 -1.9194 1.1290 0.6452,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5323 2.4677 0.0000 0.0000,
+			xywh = 1.3226 2.2581 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5323 2.4677 0.0000 0.0000,
+			xywh = -1.3226 2.2581 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5323 -1.9839 0.0000 0.0000,
+			xywh = 1.3226 -1.8065 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5323 -1.9839 0.0000 0.0000,
+			xywh = -1.3226 -1.8065 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -923,13 +923,6 @@ module Base
 			offset = 0.0000 0.9683 0.0159,
 			extents = 3.1111 1.8571 7.6667,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.0159 -4.1587,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront

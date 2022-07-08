@@ -42,10 +42,28 @@ local vehicleToSeatAnimations = {
         ["passenger"]="Shark_Idle_Passenger",
     },
 
-	["Base.SC_CamaroTTop"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
+	["Base.SportsCar"] = {
+        ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_Passenger",50},
+		["passenger"]={"Shark_Idle_Passenger"},
+	},
+
+	["Base.SC_CamaroTTop"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["passenger"]={"Shark_Idle_Passenger"},
+	},
+
+	["Base.SC_Mercedes280"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["passenger"]={"Shark_Idle_Passenger"},
+	},
+
+	["Base.CarLuxury"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["passenger"]={"Shark_Idle_Passenger"},
 	},
 
 	["Base.SC_HondaAccord"] = {
@@ -70,26 +88,35 @@ local vehicleToSeatAnimations = {
 
 ---@param player IsoPlayer|IsoGameCharacter
 local function Vehicle_Enter(player)
-	---@type BaseVehicle
-	local vehicle = player:getVehicle()
-	if not vehicle then return end
+    ---@type BaseVehicle
+    local vehicle = player:getVehicle()
+    if not vehicle then return end
 
-	local vehicleName = vehicle:getScriptName()
-	print("SC_ANIM: DEBUG: "..vehicleName)
+    local vehicleName = vehicle:getScriptName()
+    print("SC_ANIM: DEBUG: "..vehicleName)
 
-	local seat = vehicle:getSeat(player)
-	print(" -- Seat: "..seat)
-	if not seat then return end
+    local seat = vehicle:getSeat(player)
+    print(" -- Seat: "..seat)
+    if not seat then return end
 
-	local vehicleAnimation = vehicleToSeatAnimations[vehicleName] or vehicleToSeatAnimations["DEFAULT"]
+    local vehicleAnimation = vehicleToSeatAnimations[vehicleName] or vehicleToSeatAnimations["DEFAULT"]
 
-	local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
-	fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
-	print(" ---- Anim Selected: "..fetchedAnimation)
+    if not vehicleAnimation then
+        return
+    end
 
-	if fetchedAnimation then
-		player:SetVariable("VehicleScriptName", fetchedAnimation)
-	end
+    local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
+
+    if not fetchedAnimation then
+        return
+    end
+
+    fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
+    print(" ---- Anim Selected: "..fetchedAnimation)
+
+    if fetchedAnimation then
+        player:SetVariable("VehicleScriptName", fetchedAnimation)
+    end
 end
 
 
