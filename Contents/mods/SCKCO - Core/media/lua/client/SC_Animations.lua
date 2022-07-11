@@ -38,32 +38,32 @@ local vehicleToSeatAnimations = {
 
     ["DEFAULT"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-        ["passenger"]="Shark_Idle_Passenger",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
     },
 
 	["Base.SportsCar"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger"},
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
 	},
 
 	["Base.SC_CamaroTTop"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger"},
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
 	},
 
 	["Base.SC_Mercedes280"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger"},
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",50},
+		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
 	},
 
 	["Base.CarLuxury"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]={"Shark_Idle_Passenger"},
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
 	},
 
 	["Base.SC_HondaAccord"] = {
@@ -99,17 +99,11 @@ local function Vehicle_Enter(player)
     print(" -- Seat: "..seat)
     if not seat then return end
 
-    local vehicleAnimation = vehicleToSeatAnimations[vehicleName] or vehicleToSeatAnimations["DEFAULT"]
-
-    if not vehicleAnimation then
-        return
-    end
+    local vehicleAnimation = vehicleToSeatAnimations[vehicleName]
+    if not vehicleAnimation then return end
 
     local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
-
-    if not fetchedAnimation then
-        return
-    end
+    if not fetchedAnimation then return end
 
     fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
     print(" ---- Anim Selected: "..fetchedAnimation)
