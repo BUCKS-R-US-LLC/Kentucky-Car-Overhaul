@@ -119,11 +119,11 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.good.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 5};
+
     VehicleZoneDistribution.good.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.chanceToPartDamage = 15;
 
-    VehicleZoneDistribution.sport.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
