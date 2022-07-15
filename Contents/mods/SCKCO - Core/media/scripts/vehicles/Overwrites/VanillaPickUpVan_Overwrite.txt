@@ -318,7 +318,7 @@ module Base
 			xywh = -1.4286 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
+		template = K5Bullbar/part/K5BullbarNoSpawn,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -520,6 +520,11 @@ module Base
 			}
 
 			area = SeatFrontLeft,
+
+			table install
+			{
+			}
+
 		}
 
 		part WindowRearRight
@@ -530,6 +535,11 @@ module Base
 			}
 
 			area = SeatFrontRight,
+
+			table install
+			{
+			}
+
 		}
 
 		part DoorFrontRight

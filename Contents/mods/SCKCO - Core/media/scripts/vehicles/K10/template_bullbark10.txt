@@ -1,27 +1,20 @@
 module Base
 {
-	model K5ExtraBar
+	model K10ExtraBar
 	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|ExtraBar_obj,
+		mesh = vehicles/Vehicle_K10Civ_SC|ExtraBar_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
-	model K5Chevy
-	{
-		mesh = vehicles/Vehicle_BlazerK5_SC|Chevy_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
-	template vehicle K5Bullbar
+	template vehicle K10Bullbar
 		{
-		part K5Bullbar
+		part K10Bullbar
         	{
 
-			model K5Bullbar
+			model K10Bullbar
 				{
-                		file = K5ExtraBar,
+                		file = K10ExtraBar,
 				}
 		area = Engine,
             category = bodywork,
@@ -69,65 +62,12 @@ module Base
             }
 		}
 
-		part K5Chevy
+		part K10BullbarNoSpawn
         	{
 
-			model K5Chevy
+			model K10Bullbar
 				{
-                		file = K5Chevy,
-				}
-		area = Engine,
-            category = bodywork,
-            itemType = Base.K5Chevy,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-		part K5BullbarNoSpawn
-        	{
-
-			model K5Bullbar
-				{
-                		file = K5ExtraBar,
+                		file = K10ExtraBar,
 				}
 		area = Engine,
             category = bodywork,
