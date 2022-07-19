@@ -14,6 +14,12 @@ ISCarMechanicsOverlay.CarList["Base.Van_KnoxDisti"] = {imgPrefix = "g30windowles
 ISCarMechanicsOverlay.CarList["Base.Van_Transit"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.Van_LectroMax"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanRadio"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.VanRadio3N"] = {imgPrefix = "g30windowless_", x=0,y=0};
+
+
+
 
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
