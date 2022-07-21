@@ -42,6 +42,24 @@ local vehicleToSeatAnimations = {
 		["passenger"]={"Shark_Idle_Passenger",},
     },
 
+	["Base.CarNormal"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.CarTaxi"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.CarTaxi02"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
 	["Base.SportsCar"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
