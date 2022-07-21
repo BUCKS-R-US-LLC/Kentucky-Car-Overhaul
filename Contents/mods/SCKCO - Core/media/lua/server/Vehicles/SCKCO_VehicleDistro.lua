@@ -4,10 +4,73 @@ local distributionTable = VehicleDistributions[1]
 
 VehicleDistributions.SCMilitary = {
     TruckBed = {
+        rolls = 20,
+        items = {
+            "HandTorch", 1,
+            "Radio.WalkieTalkie4", 10,
+
+            -- SMUI --
+
+            "SMUIClothing.Hat_PatrolCap", 10,
+            "SMUIClothing.Hat.MilitaryHelmet", 10,
+            "Vest_BulletArmy", 10,
+        },
+        junk = {
+            rolls = 1,
+            items = {
+                "FirstAidKit", 1,
+
+                -- Accessories --
+
+                "SCA.MealReadytoEat_SCA", 5,
+            }
+        }
+    },
+
+    GloveBox = {
+        rolls = 5,
+        items = {
+            "Battery", 10,
+            "HandTorch", 4,
+
+            -- SMUI -- 
+
+            "SMUIClothing.Hat_WatchCap", 10,
+            "SMUIClothing.Glasses_GIGlasses", 10,
+
+
+        },
+        junk = {
+            rolls = 1,
+            items = {
+                "HottieZ", 5,
+                "Cigarettes", 8,
+                "Glasses_Aviators", 0.5,
+                "HandTorch", 4,
+                "Lighter", 4,
+
+                -- Accessories -- 
+
+                "SCA.MREWrapper_SCA", 4,
+            }
+        }
+    },
+
+    SeatRearLeft = VehicleDistributions.Seat;
+    SeatRearRight = VehicleDistributions.Seat;
+}
+
+VehicleDistributions.SCMilitaryPolice = {
+    TruckBed = {
         rolls = 4,
         items = {
             "HandTorch", 4,
             "Radio.WalkieTalkie4", 10,
+
+            -- SMUI --
+
+            "SMUIClothing.MPBrassard", 10,
+            "Vest_BulletArmy", 10,
         },
         junk = {
             rolls = 1,
@@ -39,6 +102,7 @@ VehicleDistributions.SCMilitary = {
                 -- Accessories -- 
 
                 "SCA.MREWrapper_SCA", 4,
+                
             }
         }
     },
@@ -184,6 +248,6 @@ distributionTable["SC_Mercedes280"] = { Normal = VehicleDistributions.SCCivilian
 
 distributionTable["SC_G30Ambulance"] = { Normal = VehicleDistributions.SCAmbulance; }
 
-distributionTable["SC_M1009MilitaryPolice"] = { Normal = VehicleDistributions.SCMilitary; }
+distributionTable["SC_M1009MilitaryPolice"] = { Normal = VehicleDistributions.SCMilitaryPolice; }
 distributionTable["SC_M1009"] = { Normal = VehicleDistributions.SCMilitary; }
 distributionTable["SC_M1008"] = { Normal = VehicleDistributions.SCMilitary; }
