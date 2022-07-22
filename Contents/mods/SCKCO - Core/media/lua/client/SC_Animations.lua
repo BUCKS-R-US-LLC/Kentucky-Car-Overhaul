@@ -102,6 +102,34 @@ local vehicleToSeatAnimations = {
         ["passenger"]="Shark_Idle_RearPassenger",
 	},
 
+	["Base.SC_StepVanP30Police"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_M1008TroopCarrier"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_G30Ambulance"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassengerAmbulance",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.VanAmbulance"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassengerAmbulance",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
 }
 
 ---@param player IsoPlayer|IsoGameCharacter
