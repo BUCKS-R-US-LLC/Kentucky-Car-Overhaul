@@ -102,7 +102,49 @@ local vehicleToSeatAnimations = {
         ["passenger"]="Shark_Idle_RearPassenger",
 	},
 
+	["Base.SC_StepVanP30Civ"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
 	["Base.SC_StepVanP30Police"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_StepVanP30ParkRanger"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.StepVan"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.StepVan_Scarlet"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.StepVan_Heralds"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.StepVanMail"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
         ["seat2"]="Shark_Idle_SidePassenger",
