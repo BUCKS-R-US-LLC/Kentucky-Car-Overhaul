@@ -42,6 +42,86 @@ local vehicleToSeatAnimations = {
 		["passenger"]={"Shark_Idle_Passenger",},
     },
 
+	["Base.SC_K5BlazerCiv"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_K5BlazerStatePolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_K5BlazerParkRanger"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+	
+	["Base.PickUpVanMccoy"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpVanLights"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpVanLightsFire"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpVanLightsPolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpTruckMccoy"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpTruckLights"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpTruckLightsFire"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.PickUpTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_K10"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_M1008"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_M1009"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.SC_M1009MilitaryPolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
 	["Base.SC_FordCountrySquire"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
@@ -55,6 +135,18 @@ local vehicleToSeatAnimations = {
     },
 
 	["Base.CarStationWagon2"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.CarLights"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.CarLightsPolice"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
 		["passenger"]={"Shark_Idle_Passenger",},
