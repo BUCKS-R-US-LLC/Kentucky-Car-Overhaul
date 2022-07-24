@@ -192,7 +192,7 @@ module Base
 		mass = 1700,
 		physicsChassisShape = 3.1864 3.0847 8.3729,
 		centerOfMassOffset = 0.0678 1.5593 -0.7966,
-		shadowExtents = 3.1823 8.3736,
+		shadowExtents = 3.1823 9.6956,
 		shadowOffset = 0.0635 -0.7873,
 		maxSpeed = 70f,
 		engineForce = 4000,
@@ -401,11 +401,19 @@ module Base
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = Trunk/part/TruckBed,
-		template = GasTank,
+ 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
 		template = TrunkDoor,
+
+       part TruckBed
+        {
+            container
+            {
+                capacity = 300,
+            }
+        }
 
 		part TrunkDoor
 		{
