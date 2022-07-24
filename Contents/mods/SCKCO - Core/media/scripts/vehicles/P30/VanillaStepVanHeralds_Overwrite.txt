@@ -1,116 +1,121 @@
 module Base
 {
-	model SC_K5BlazerCiv
+	model SC_StepVanP30Civ
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30Civ_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model StepVanP30Driver
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model StepVanP30Passenger
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model StepVanP30Windshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model StepVanP30FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model StepVanP30FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model StepVanP30FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model StepVanP30FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model StepVanP30RearRightDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|RearDoor_obj,
+		shader = vehicle,
+		static = FALSE,
 		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model BlazerSCRearLeftWindow
+	model StepVanP30Trunk
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model BlazerSCTrunk
-	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|Trunk_obj,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerSCHood
+	model StepVanP30Hood
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|Hood_obj,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model StepVanP30RearWindshield
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Vehicle_StepVanP30_SC|RearWindshield_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model StepVanP30frontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontLeft,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model StepVanP30frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontRight,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model StepVanP30backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearLeft,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model StepVanP30backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearRight,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerCiv
+	vehicle StepVan_Heralds
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -119,74 +124,43 @@ module Base
 
 		model
 		{
-			file = SC_K5BlazerCiv,
-			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			file = SC_StepVanP30Civ,
+			scale = 0.5700,
+			offset = 0.0000 0.1754 0.0877,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_White,
+			texture = Vehicles/StepVanP30Civ/Vehicle_P30StepVanHerald_SC,
 		}
 
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Orange,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Stool,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Green,
-		}
-
-		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/BlazerK5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/BlazerK5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
+		textureRust = Vehicles/StepVanP30/Vehicle_StepVanP30_rust,
+		textureMask = Vehicles/StepVanP30/Vehicle_StepVanP30_mask,
+		textureLights = Vehicles/StepVanP30/Vehicle_StepVanP30ParkRanger_lights,
+		textureDamage1Shell = Vehicles/StepVanP30/Vehicle_StepVanP30_damage,
+		textureDamage2Shell= Vehicles/StepVanP30/Vehicle_StepVanP30_damage2,
+		textureDamage1Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
+		textureDamage2Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehiclegnitionFailStepVan,
 		}
-
-		extents = 2.8571 3.0794 6.5714,
-		mass = 1000,
-		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 7.6434,
-		shadowOffset = 0.0635 0.0063,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
+	extents = 3.2281 3.0877 8.7368,
+		mass = 1700,
+		physicsChassisShape = 3.1930 3.0877 8.4211,
+		centerOfMassOffset = 0.0000 1.5614 -0.6316,
+		shadowExtents = 3.2617 9.6250,
+		shadowOffset = -0.0067 -0.6921,
+		maxSpeed = 70f,
+		engineForce = 4000,
+		engineQuality = 70,
+		engineLoudness = 100,
+		brakingForce = 60,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
@@ -197,14 +171,15 @@ module Base
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
 		wheelFriction = 1.6f,
-		frontEndHealth = 4500,
-		rearEndHealth = 3500,
-		seats = 2,
+		frontEndHealth = 5500,
+		rearEndHealth = 4500,
+		seats = 4,
+		isSmallVehicle = false,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +187,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +195,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,12 +203,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -242,13 +217,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7302 0.9683 0.0159,
+				offset = 0.7368 1.4737 1.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.3684 -0.5789 1.5614,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -261,67 +236,127 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.7368 1.3860 1.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.3684 -0.5789 1.5614,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
-		area Engine
+		passenger RearLeft
 		{
-			xywh = 0.0635 4.2857 2.8571 2.0000,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7193 1.7719 -3.6140,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.1754 -0.5965 -5.7193,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
 		}
 
-		area TruckBed
+		passenger RearRight
 		{
-			xywh = 0.0635 -4.1587 2.8571 1.7460,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7193 1.7895 -3.6140,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.1579 -0.5965 -5.7193,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.7368 3.2281 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1111 0.2540 1.2381 1.2381,
+			xywh = 2.1754 0.7895 1.1228 1.1228,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9841 0.2540 1.2381 1.2381,
+			xywh = -2.1754 0.7895 1.1228 1.1228,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 1.0526 -5.5614 1.1228 1.1228,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = -1.0526 -5.5614 1.1228 1.1228,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9048 -2.5397 1.0794 0.5714,
+			xywh = 2.1579 -3.4386 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.0000 3.0000 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.0000 3.0000 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -1.6032 0.0000 0.0000,
+			xywh = 2.0000 -1.0000 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -1.6032 0.0000 0.0000,
+			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5BullbarNoSpawn,
-		template = K5Bullbar/part/K5Chevy,
+		area TruckBed
+		{
+			xywh = 0.0000 -5.5614 0.9825 1.1228,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = Trunk/part/TruckBed,
+
+		part TruckBed
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 300,
+			}
+		}
+
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -330,17 +365,37 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = StepVanP30Driver,
 			}
 		}
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model SeatRearLeft
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model SeatRearRight
+			{
+				file = StepVanP30Passenger,
 			}
 		}
 
@@ -363,7 +418,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = StepVanP30Hood,
 			}
 
 			anim Close
@@ -422,12 +477,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
-			}
-
-			window
-			{
-				openable = false,
+				file = StepVanP30Windshield,
 			}
 
 			table install
@@ -448,12 +498,12 @@ module Base
 
 		part WindshieldRear
 		{
-			parent = TrunkDoor,
-
-			window
+			model windshieldRear
 			{
-				openable = false,
+				file = StepVanP30RearWindshield,
 			}
+
+			parent = DoorRearRight,
 
 			table install
 			{
@@ -473,22 +523,21 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
+		template = Door/part/DoorRearLeft,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
-			model windowFR
+			window
 			{
-				file = BlazerSCFrontRightWindow,
+				openable = false,
 			}
 
-			anim ClosedToOpen
+			model windowFR
 			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
+				file = StepVanP30FrontRightWindow,
 			}
 
 			parent = DoorFrontRight,
@@ -497,56 +546,25 @@ module Base
 
 		part WindowFrontLeft
 		{
-			model windowFL
+			window
 			{
-				file = BlazerSCFrontLeftWindow,
+				openable = false,
 			}
 
-			anim ClosedToOpen
+			model windowFL
 			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
+				file = StepVanP30FrontLeftWindow,
 			}
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
 
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = BlazerSCRearLeftWindow,
-			}
-
-			area = SeatFrontLeft,
-
-			table install
-			{
-			}
-
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = BlazerSCRearRightWindow,
-			}
-
-			area = SeatFrontRight,
-
-			table install
-			{
-			}
-
-		}
-
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = StepVanP30FrontRightDoor,
 			}
 
 			anim Close
@@ -582,7 +600,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = StepVanP30FrontLeftDoor,
 			}
 
 			anim Close
@@ -614,58 +632,42 @@ module Base
 			}
 		}
 
-		template = TrunkDoor,
-
-		part TrunkDoor
+		part DoorRearRight
 		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
 			model Default
 			{
-				file = BlazerSCTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
+				file = StepVanP30RearRightDoor,
 			}
 
 			anim Close
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
-				rate = 1.5,
+				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 		}
 
-		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
@@ -673,7 +675,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelleft,
+				file = StepVanP30frontwheelleft,
 			}
 		}
 
@@ -681,7 +683,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelright,
+				file = StepVanP30frontwheelright,
 			}
 		}
 
@@ -689,7 +691,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelleft,
+				file = StepVanP30backwheelleft,
 			}
 		}
 
@@ -697,7 +699,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelright,
+				file = StepVanP30backwheelright,
 			}
 		}
 
@@ -746,21 +748,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.9474 -0.7193,
+			extents = 3.1754 3.5789 8.6842,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.0000 -3.1746,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3492,
+			offset = 0.0000 0.0000 3.6032,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

@@ -1,187 +1,216 @@
 module Base
 {
-	model SC_K5BlazerCiv
+	model SC_JeepCJ7
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		invertX = FALSE,
+		static = TRUE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model JeepCJ7Driver
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model JeepCJ7Passenger
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model JeepCJ7Windshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model JeepCJ7FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model JeepCJ7FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model JeepCJ7RearRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model JeepCJ7RearLeftWindow
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model JeepCJ7FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model JeepCJ7FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model JeepCJ7Trunk
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model BlazerSCRearLeftWindow
-	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model BlazerSCTrunk
-	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
+		boneWeight = WheelBone 1.0,
 	}
-	model BlazerSCHood
+	model JeepCJ7Hood
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Hood_obj,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model JeepCJ7RearWindshield
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepCJ7SpareWheel
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|SpareWheel_obj,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+		scale = 1,
+		static = FALSE,
+		boneWeight = WheelBone 1.0,
+	}
+	model JeepCJ7frontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model JeepCJ7frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model JeepCJ7backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model JeepCJ7backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerCiv
+	vehicle OffRoad
 	{
 		mechanicType = 2,
-		offRoadEfficiency = 1.1,
+		offRoadEfficiency = 1.5,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_K5BlazerCiv,
-			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			file = SC_JeepCJ7,
+			scale = 0.5900,
+			offset = 0.0000 0.0000 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_White,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Black,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_White,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Orange,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Teal,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Stool,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_NavyBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Blue,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Brown,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_DarkGreen,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Green,
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Orange,
 		}
 
-		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/BlazerK5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/BlazerK5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Saxon,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_SmokeGray,
+		}
+
+		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Mask,
+		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Lights,
+		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureRust = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Rust,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			engine = VehicleEngineOffRoad,
+			engineStart = VehicleEngineOffRoad,
+			engineTurnOff = VehicleEngineOffRoad,
+			horn = VehicleHornJeep,
+			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 2.8571 3.0794 6.5714,
-		mass = 1000,
-		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 7.6434,
-		shadowOffset = 0.0635 0.0063,
+		extents = 2.5763 2.1356 5.5254,
+		mass = 600,
+		physicsChassisShape = 2.4746 2.1356 5.5254,
+		centerOfMassOffset = 0.0000 1.0847 0.1864,
+		shadowExtents = 2.7117 5.7404,
+		shadowOffset = -0.0032 0.1833,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -204,7 +233,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.0000 0.2203 2.0169,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +241,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.0169 0.2203 2.0169,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +249,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.0000 0.2203 -1.5424,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +257,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.0169 0.2203 -1.5424,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -242,13 +271,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7302 0.9683 0.0159,
+				offset = 0.6102 1.3051 -0.4407,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0508 -0.4237 0.5085,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -261,13 +290,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.5932 1.3051 -0.4407,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.1525 -0.4237 0.5085,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -275,51 +304,49 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0635 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.0169 2.5424 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0635 -4.1587 2.8571 1.7460,
+			xywh = 0.0000 -3.8983 2.5763 1.7627,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1111 0.2540 1.2381 1.2381,
+			xywh = 1.9661 -0.2203 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9841 0.2540 1.2381 1.2381,
+			xywh = -1.9661 -0.2203 1.3559 1.3559,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9048 -2.5397 1.0794 0.5714,
+			xywh = -0.9831 -2.8983 0.6102 0.6441,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.2881 1.9322 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.2881 1.9322 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -1.6032 0.0000 0.0000,
+			xywh = 1.2881 -1.5254 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -1.6032 0.0000 0.0000,
+			xywh = -1.2881 -1.5254 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5BullbarNoSpawn,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -332,7 +359,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = JeepCJ7Driver,
 			}
 		}
 
@@ -340,7 +367,15 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = JeepCJ7Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = JeepCJ7Double,
 			}
 		}
 
@@ -363,7 +398,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = JeepCJ7Hood,
 			}
 
 			anim Close
@@ -415,6 +450,7 @@ module Base
 			}
 		}
 
+		template = CJ7softtop/part/CJ7softtop,
 		template = Windshield/part/Windshield,
 		template = Windshield/part/WindshieldRear,
 
@@ -422,33 +458,8 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = JeepCJ7Windshield,
 			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
 
 			window
 			{
@@ -473,16 +484,16 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = JeepCJ7FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -499,7 +510,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = JeepCJ7FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -512,41 +523,11 @@ module Base
 			area = SeatFrontLeft,
 		}
 
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = BlazerSCRearLeftWindow,
-			}
-
-			area = SeatFrontLeft,
-
-			table install
-			{
-			}
-
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = BlazerSCRearRightWindow,
-			}
-
-			area = SeatFrontRight,
-
-			table install
-			{
-			}
-
-		}
-
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = JeepCJ7FrontRightDoor,
 			}
 
 			anim Close
@@ -582,7 +563,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = JeepCJ7FrontLeftDoor,
 			}
 
 			anim Close
@@ -630,7 +611,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = JeepCJ7Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -673,7 +654,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelleft,
+				file = JeepCJ7frontwheelleft,
 			}
 		}
 
@@ -681,7 +662,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelright,
+				file = JeepCJ7frontwheelright,
 			}
 		}
 
@@ -689,7 +670,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelleft,
+				file = JeepCJ7backwheelleft,
 			}
 		}
 
@@ -697,7 +678,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelright,
+				file = JeepCJ7backwheelright,
 			}
 		}
 
@@ -746,21 +727,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 0.9661 0.1356,
+			extents = 2.4746 1.8644 5.5254,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -3.1746,
+			offset = 0.0000 0.0169 -2.7119,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3492,
+			offset = 0.0000 0.0000 2.9153,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
