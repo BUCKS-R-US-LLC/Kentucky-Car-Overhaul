@@ -242,7 +242,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+	template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -251,13 +251,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5455 0.6970 -0.1818,
+				offset = 0.5469 0.7031 -0.1875,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0455 -0.4242 0.2576,
+				offset = 2.0469 -0.4219 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -270,13 +270,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5455 0.6970 -0.1818,
+				offset = -0.5469 0.7031 -0.1875,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1364 -0.4242 0.2576,
+				offset = -2.1406 -0.4219 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -289,13 +289,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.4545 0.6061 -1.1061,
+				offset = 0.4531 0.6094 -1.1094,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0455 -0.4242 0.2576,
+				offset = 2.0469 -0.4219 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -308,13 +308,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.4545 0.6061 -1.1061,
+				offset = -0.4531 0.6094 -1.1094,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1364 -0.4242 0.2576,
+				offset = -2.1406 -0.4219 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -322,57 +322,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 2.0152 3.1818 1.5455,
+			xywh = 0.0000 2.0156 3.1875 1.5312,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.5758 2.2121 1.7879,
+			xywh = 0.0000 -3.5781 2.2187 1.7813,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8030 0.3182 1.3939 1.3939,
+			xywh = 1.7969 0.3125 1.3750 1.3750,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8030 0.3182 1.3939 1.3939,
+			xywh = -1.7969 0.3125 1.3750 1.3750,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.8030 0.3182 1.3939 1.3939,
+			xywh = 1.7969 0.3125 1.3750 1.3750,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.8030 0.3182 1.3939 1.3939,
+			xywh = -1.7969 0.3125 1.3750 1.3750,
 		}
 
 		area GasTank
 		{
-			xywh = 1.6667 -1.8788 1.1212 0.6667,
+			xywh = 1.6719 -1.8750 1.1250 0.6563,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.1061 1.9242 0.0000 0.0000,
+			xywh = 1.1094 1.9219 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1061 1.9242 0.0000 0.0000,
+			xywh = -1.1094 1.9219 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.1061 -1.4545 0.0000 0.0000,
+			xywh = 1.1094 -1.4531 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.1061 -1.4545 0.0000 0.0000,
+			xywh = -1.1094 -1.4531 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -589,6 +589,10 @@ module Base
 				file = HondaAccordRearRightWindow,
 			}
 
+			table install
+			{
+			}
+
 			area = SeatRearRight,
 		}
 
@@ -597,6 +601,11 @@ module Base
 			model windowRL
 			{
 				file = HondaAccordRearLeftWindow,
+			}
+
+
+			table install
+			{
 			}
 
 			area = SeatRearLeft,
