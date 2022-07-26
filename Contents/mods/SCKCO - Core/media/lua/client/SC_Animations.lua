@@ -36,12 +36,6 @@ end
 
 local vehicleToSeatAnimations = {
 
-    ["DEFAULT"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
 	["Base.SC_K5BlazerCiv"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
