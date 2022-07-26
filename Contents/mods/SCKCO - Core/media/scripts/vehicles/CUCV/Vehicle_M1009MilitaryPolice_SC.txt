@@ -467,20 +467,34 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = M1009SCRearLeftWindow,
 			}
 
-			area = SeatFrontLeft,
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = M1009SCRearRightWindow,
 			}
 
-			area = SeatFrontRight,
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
 		}
 
 		part DoorFrontRight

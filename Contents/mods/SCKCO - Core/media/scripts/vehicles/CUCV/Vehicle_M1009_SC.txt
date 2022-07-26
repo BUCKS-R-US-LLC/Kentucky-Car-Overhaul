@@ -489,7 +489,14 @@ module Base
 				file = M1009SCRearLeftWindow,
 			}
 
-			area = SeatFrontLeft,
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
 		}
 
 		part WindowRearRight
@@ -499,9 +506,16 @@ module Base
 				file = M1009SCRearRightWindow,
 			}
 
-			area = SeatFrontRight,
-		}
+			area = TireRearRight,
+			parent =,
 
+			table install
+			{
+				requireInstalled =,
+			}
+
+		}
+		
 		part DoorFrontRight
 		{
 			model Default
