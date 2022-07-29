@@ -642,9 +642,19 @@ module Base
 			}
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 140,
+			}
+		}
 
 		part TireFrontLeft
 		{
