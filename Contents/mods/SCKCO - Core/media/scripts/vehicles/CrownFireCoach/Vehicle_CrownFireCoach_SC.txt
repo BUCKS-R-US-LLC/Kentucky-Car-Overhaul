@@ -213,7 +213,7 @@ module Base
 		mass = 1500,
 		physicsChassisShape = 3.8095 4.1587 13.2063,
 		centerOfMassOffset = 0.0635 2.1111 0.0159,
-		shadowExtents = 4.4204 13.2149,
+		shadowExtents = 4.5474 14.9292,
 		shadowOffset = 0.0635 0.0222,
 		maxSpeed = 80f,
 		engineForce = 6000,
@@ -267,7 +267,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -307,9 +307,47 @@ module Base
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 2.1746 2.1587,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3492 -0.1905 0.9048,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7460 2.0794 2.1587,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3492 -0.1905 0.9048,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
-			xywh = 0.0635 3.3651 5.2698 1.9048,
+			xywh = 0.0635 7.2540 3.8095 1.2698,
 		}
 
 		area SeatFrontLeft
@@ -320,6 +358,16 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.4127 4.8730 1.1111 1.1111,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.5238 2.3492 1.1111 1.1111,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.3968 2.3492 1.1111 1.1111,
 		}
 
 		area GasTank
@@ -394,6 +442,8 @@ module Base
 		template = FireCoachArmor/part/FireCoachRearRightWindowArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -734,6 +784,20 @@ module Base
 			model seatfrontRight
 			{
 				file = FireCoachPassenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			
+			{
+			}
+		}
+
+		part SeatRearLeft
+		{
+			
+			{
 			}
 		}
 
@@ -1115,20 +1179,6 @@ module Base
 			offset = 0.0794 2.0159 -0.0952,
 			extents = 3.7778 3.5714 13.0635,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.0000 -5.1270,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
-		}
-
-		attachment trailerfront
-		{
-			offset = 0.0000 0.0000 3.6032,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
 		}
 	}
 }
