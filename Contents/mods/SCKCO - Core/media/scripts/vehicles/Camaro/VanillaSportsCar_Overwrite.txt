@@ -820,6 +820,16 @@ module Base
 
 		template = Headlight,
 
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
 		physics box
 		{
 			offset = 0.0000 0.6667 0.0000,
