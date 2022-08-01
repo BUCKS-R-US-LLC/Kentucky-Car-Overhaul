@@ -1223,6 +1223,16 @@ template = Seat/part/SeatFrontLeft,
 
 		template = Headlight,
 
+			part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
 		physics box
 		{
 			offset = 0.0794 2.0159 -0.8254,
