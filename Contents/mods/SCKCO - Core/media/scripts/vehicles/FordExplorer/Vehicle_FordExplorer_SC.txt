@@ -2,143 +2,143 @@ module Base
 {
 	model SC_FordExplorer
 	{
-		mesh = vehicles/Vehicle_CapriceCiv_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordExplorer_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
-	model Caprice9C1Driver
+	model FordExplorerDriver
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Passenger
+	model FordExplorerPassenger
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Double
+	model FordExplorerDouble
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Windshield
+	model FordExplorerWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1FrontRightWindow
+	model FordExplorerFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model Caprice9C1FrontLeftWindow
+	model FordExplorerFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model Caprice9C1RearRightWindow
+	model FordExplorerRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model Caprice9C1RearLeftWindow
+	model FordExplorerRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model Caprice9C1FrontRightDoor
+	model FordExplorerFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model Caprice9C1FrontLeftDoor
+	model FordExplorerFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model Caprice9C1RearRightDoor
+	model FordExplorerRearRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model Caprice9C1RearLeftDoor
+	model FordExplorerRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model Caprice9C1Trunk
+	model FordExplorerTrunk
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model Caprice9C1Hood
+	model FordExplorerHood
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model Caprice9C1RearWindshield
+	model FordExplorerRearWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1frontwheelleft
+	model FordExplorerfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
+		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1frontwheelright
+	model FordExplorerfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
+		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelleft
+	model FordExplorerbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
+		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelright
+	model FordExplorerbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
+		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordExplorer
@@ -151,57 +151,42 @@ module Base
 		model
 		{
 			file = SC_FordExplorer,
-			scale = 0.6100,
-			offset = 0.0000 0.0328 0.0000,
+			scale = 0.7000,
+			offset = 0.0000 -0.1857 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_White,
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Blue,
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_DarkBlueDark,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_SilverBlue,
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Green,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_BrownSilver,
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Brown,
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Red,
 		}
 
-		skin
-		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Green,
-		}
-
-		skin
-		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Grey,
-		}
-
-		textureMask = Vehicles/Caprice9C1/Vehicle_Caprice9C1_mask,
-		textureLights = Vehicles/Caprice9C1/Vehicle_Caprice9C1_lights,
-		textureDamage1Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage2Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage1Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage,
-		textureDamage2Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage2,
-		textureRust = Vehicles/Caprice9C1/Vehicle_Caprice9C1_rust,
+		textureMask = Vehicles/FordExplorer/Vehicle_FordExplorer_mask,
+		textureLights = Vehicles/FordExplorer/Vehicle_FordExplorer_lights,
+		textureDamage1Overlay = Vehicles/FordExplorer/Vehicle_FordExplorer_blood,
+		textureDamage2Overlay = Vehicles/FordExplorer/Vehicle_FordExplorer_blood,
+		textureDamage1Shell = Vehicles/FordExplorer/Vehicle_FordExplorer_damage,
+		textureDamage2Shell = Vehicles/FordExplorer/Vehicle_FordExplorer_damage2,
+		textureRust = Vehicles/FordExplorer/Vehicle_FordExplorer_rust,
 
 		sound
 		{
@@ -212,12 +197,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0492 1.8689 7.7705,
+		extents = 2.6000 2.1429 6.4571,
 		mass = 800,
-		physicsChassisShape = 3.0820 2.1311 7.8033,
-		centerOfMassOffset = 0.0000 1.0984 -0.0492,
-		shadowExtents = 3.1524 9.0683,
-		shadowOffset = -0.0032 -0.0540,
+		physicsChassisShape = 2.6571 2.1429 6.5429,
+		centerOfMassOffset = 0.0000 1.1000 0.0000,
+		shadowExtents = 2.6096 6.6255,
+		shadowOffset = -0.0032 0.0031,
 		engineForce = 5000,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -241,7 +226,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3115 0.0820 2.5410,
+			offset = -1.0429 0.3857 2.1857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,7 +234,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2623 0.0820 2.5410,
+			offset = 1.0000 0.3857 2.1857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -257,7 +242,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.3115 0.0820 -1.9672,
+			offset = -1.0429 0.3857 -1.7571,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -265,7 +250,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2623 0.0820 -1.9672,
+			offset = 1.0286 0.3857 -1.7571,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -279,13 +264,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.5246 0.2951,
+				offset = 0.6000 1.1857 0.3000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0492 -0.4262 0.5082,
+				offset = 2.0429 -0.4286 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -298,13 +283,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 0.2951,
+				offset = -0.5857 1.1857 0.3000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1475 -0.4262 0.5082,
+				offset = -2.1429 -0.4286 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -317,13 +302,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.5246 -1.1148,
+				offset = 0.5857 1.1857 -1.1143,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0492 -0.4262 -0.6393,
+				offset = 2.0429 -0.4286 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -336,13 +321,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 -1.1148,
+				offset = -0.5857 1.1857 -1.1143,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1475 -0.4262 -0.6393,
+				offset = -2.1429 -0.4286 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -350,57 +335,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8361 3.0492 2.0000,
+			xywh = 0.0000 4.2286 2.6000 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.8197 3.0492 1.7705,
+			xywh = 0.0000 -4.1143 2.6000 1.7714,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1803 0.6721 1.3443 1.3443,
+			xywh = 1.9714 0.6714 1.3429 1.3429,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1803 0.6721 1.3443 1.3443,
+			xywh = -1.9714 0.6714 1.3429 1.3429,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1803 -0.8033 1.3443 1.3443,
+			xywh = 1.9714 -0.8000 1.3429 1.3429,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1803 -0.8033 1.3443 1.3443,
+			xywh = -1.9714 -0.8000 1.3429 1.3429,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0328 -4.3770 1.1148 0.6230,
+			xywh = 1.8714 -2.0143 1.1143 0.6286,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5246 2.4754 0.0000 0.0000,
+			xywh = 1.5286 2.4714 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5246 2.4754 0.0000 0.0000,
+			xywh = -1.5286 2.4714 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5246 -1.9836 0.0000 0.0000,
+			xywh = 1.5286 -1.9857 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5246 -1.9836 0.0000 0.0000,
+			xywh = -1.5286 -1.9857 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -417,7 +402,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = Caprice9C1Driver,
+				file = FordExplorerDriver,
 			}
 		}
 
@@ -425,7 +410,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = Caprice9C1Passenger,
+				file = FordExplorerPassenger,
 			}
 		}
 
@@ -433,7 +418,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = Caprice9C1Double,
+				file = FordExplorerDouble,
 			}
 		}
 
@@ -456,7 +441,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = Caprice9C1Hood,
+				file = FordExplorerHood,
 			}
 
 			anim Close
@@ -515,7 +500,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = Caprice9C1Windshield,
+				file = FordExplorerWindshield,
 			}
 
 			window
@@ -543,7 +528,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = Caprice9C1RearWindshield,
+				file = FordExplorerRearWindshield,
 			}
 
 			window
@@ -580,7 +565,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = Caprice9C1FrontRightWindow,
+				file = FordExplorerFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -597,7 +582,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = Caprice9C1FrontLeftWindow,
+				file = FordExplorerFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -614,7 +599,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = Caprice9C1RearRightWindow,
+				file = FordExplorerRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -631,7 +616,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = Caprice9C1RearLeftWindow,
+				file = FordExplorerRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -648,7 +633,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontRightDoor,
+				file = FordExplorerFrontRightDoor,
 			}
 
 			anim Close
@@ -684,7 +669,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontLeftDoor,
+				file = FordExplorerFrontLeftDoor,
 			}
 
 			anim Close
@@ -720,7 +705,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearRightDoor,
+				file = FordExplorerRearRightDoor,
 			}
 
 			anim Close
@@ -756,7 +741,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearLeftDoor,
+				file = FordExplorerRearLeftDoor,
 			}
 
 			anim Close
@@ -804,7 +789,7 @@ module Base
 
 			model Default
 			{
-				file = Caprice9C1Trunk,
+				file = FordExplorerTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -847,7 +832,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelleft,
+				file = FordExplorerfrontwheelleft,
 			}
 		}
 
@@ -855,7 +840,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelright,
+				file = FordExplorerfrontwheelright,
 			}
 		}
 
@@ -863,7 +848,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelleft,
+				file = FordExplorerbackwheelleft,
 			}
 		}
 
@@ -871,7 +856,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelright,
+				file = FordExplorerbackwheelright,
 			}
 		}
 
@@ -927,14 +912,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3898 -4.1864,
+			offset = 0.0000 0.3857 -3.1429,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3898 3.9831,
+			offset = 0.0000 0.3857 3.3000,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
