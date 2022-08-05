@@ -2,198 +2,216 @@ module Base
 {
 	model SC_VWRabbit
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		mesh = vehicles/Vehicle_VWRabbit_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model HondaAccordDriver
+	model VWRabbitDriver
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordPassenger
+	model VWRabbitPassenger
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordDouble
+	model VWRabbitDouble
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordWindshield
+	model VWRabbitWindshield
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordFrontRightWindow
+	model VWRabbitFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model HondaAccordFrontLeftWindow
+	model VWRabbitFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model HondaAccordRearRightWindow
+	model VWRabbitRearRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
 		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
 	}
-	model HondaAccordRearLeftWindow
+	model VWRabbitRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
 		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model HondaAccordFrontRightDoor
+	model VWRabbitFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model HondaAccordFrontLeftDoor
+	model VWRabbitFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model HondaAccordTrunk
+	model VWRabbitRearRightDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VWRabbitRearLeftDoor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VWRabbitTrunk
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model HondaAccordHood
+	model VWRabbitHood
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Hood_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model HondaAccordRearWindshield
+	model VWRabbitRearWindshield
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
 	}
-	model HondaAccordfrontwheelleft
+	model VWRabbitDoorfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_VWRabbit_LeftWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbitSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordfrontwheelright
+	model VWRabbitDoorfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_VWRabbit_RightWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbitSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordbackwheelleft
+	model VWRabbitDoorbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_VWRabbit_LeftWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbitSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordbackwheelright
+	model VWRabbitDoorbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_VWRabbit_RightWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbitSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_VWRabbit
 	{
 		mechanicType = 1,
-		offRoadEfficiency = 1.5,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
 			file = SC_VWRabbit,
-			scale = 0.6600,
-			offset = 0.0000 -0.3438 0.0000,
+			scale = 0.5900,
+			offset = 0.0000 -0.0508 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Red,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Blue,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Mint,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Mint,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Yellow,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Yellow,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Brown,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Brown,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
 		}
 
-		textureMask = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_mask,
-		textureLights = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_lights,
-		textureDamage1Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
-		textureDamage2Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
-		textureDamage1Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
-		textureDamage2Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
-		textureRust = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_rust,
+		textureRust = Vehicles/VWRabbit/Vehicle_VWRabbitSC_rust,
+		textureMask = Vehicles/VWRabbit/Vehicle_VWRabbitSC_mask,
+		textureLights = Vehicles/VWRabbit/Vehicle_VWRabbitSC_lights,
+		textureDamage1Shell = Vehicles/VWRabbit/Vehicle_VWRabbitSC_damage,
+		textureDamage2Shell= Vehicles/VWRabbit/Vehicle_VWRabbitSC_damage2,
+		textureDamage1Overlay = Vehicles/VWRabbit/Vehicle_VWRabbitSC_blood,
+		textureDamage2Overlay = Vehicles/VWRabbit/Vehicle_VWRabbitSC_blood,
 
 		sound
 		{
-			engine = VehicleEngineSmallCar,
-			engineStart = VehicleEngineSmallCar,
-			engineTurnOff = VehicleEngineSmallCar,
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSmallCar,
+			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.2188 1.6250 5.7500,
-		mass = 450,
-		physicsChassisShape = 2.2500 1.6250 5.7500,
-		centerOfMassOffset = 0.0000 0.8125 0.1875,
-		shadowExtents = 2.4264 5.8299,
-		shadowOffset = -0.0032 0.1919,
-		engineForce = 3500,
+		extents = 3.0508 1.3898 8.0339,
+		mass = 800,
+		physicsChassisShape = 3.0508 1.3898 8.1695,
+		centerOfMassOffset = 0.0000 0.6610 -0.0678,
+		shadowExtents = 3.0338 8.9162,
+		shadowOffset = -0.0032 -0.0709,
+		engineForce = 4201,
 		gearRatioCount = 4,
-		maxSpeed = 95f,
-		engineLoudness = 70,
+		maxSpeed = 110f,
+		engineLoudness = 100,
 		engineQuality = 80,
 		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
@@ -213,7 +231,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -0.9688 0.3438 1.7656,
+			offset = -1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -221,7 +239,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 0.9531 0.3438 1.7656,
+			offset = 1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -229,7 +247,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -0.9688 0.3438 -1.4844,
+			offset = -1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -237,7 +255,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.9531 0.3438 -1.4844,
+			offset = 1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,13 +269,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5469 0.7031 -0.1875,
+				offset = 0.6102 0.5424 0.2034,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0469 -0.4219 0.2500,
+				offset = 2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -270,13 +288,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5469 0.7031 -0.1875,
+				offset = -0.5932 0.5424 0.2034,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1406 -0.4219 0.2500,
+				offset = -2.2034 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -289,13 +307,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.4531 0.6094 -1.1094,
+				offset = 0.5932 0.5424 -1.1186,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0469 -0.4219 0.2500,
+				offset = 2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -308,13 +326,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.4531 0.6094 -1.1094,
+				offset = -0.5932 0.5424 -1.1186,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1406 -0.4219 0.2500,
+				offset = -2.2203 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -322,57 +340,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 2.0156 3.1875 1.5312,
+			xywh = 0.0000 4.9492 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.5781 2.2187 1.7813,
+			xywh = 0.0000 -4.9831 3.0508 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.7969 0.3125 1.3750 1.3750,
+			xywh = 2.1864 0.4407 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.7969 0.3125 1.3750 1.3750,
+			xywh = -2.1864 0.4407 1.3559 1.3559,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.7969 0.3125 1.3750 1.3750,
+			xywh = 2.1864 -1.0339 1.3559 1.3559,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.7969 0.3125 1.3750 1.3750,
+			xywh = -2.1864 -1.0339 1.3559 1.3559,
 		}
 
 		area GasTank
 		{
-			xywh = 1.6719 -1.8750 1.1250 0.6563,
+			xywh = 2.0678 -2.5932 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.1094 1.9219 0.0000 0.0000,
+			xywh = 1.5085 2.3729 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1094 1.9219 0.0000 0.0000,
+			xywh = -1.5254 2.3729 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.1094 -1.4531 0.0000 0.0000,
+			xywh = 1.5254 -2.0678 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.1094 -1.4531 0.0000 0.0000,
+			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -389,7 +407,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = HondaAccordDriver,
+				file = VWRabbitDriver,
 			}
 		}
 
@@ -397,7 +415,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = HondaAccordPassenger,
+				file = VWRabbitPassenger,
 			}
 		}
 
@@ -405,7 +423,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = HondaAccordDouble,
+				file = VWRabbitDouble,
 			}
 		}
 
@@ -428,7 +446,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = HondaAccordHood,
+				file = VWRabbitHood,
 			}
 
 			anim Close
@@ -487,7 +505,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = HondaAccordWindshield,
+				file = VWRabbitWindshield,
 			}
 
 			window
@@ -513,11 +531,9 @@ module Base
 
 		part WindshieldRear
 		{
-			parent = TrunkDoor,
-
 			model windshieldRear
 			{
-				file = HondaAccordRearWindshield,
+				file = VWRabbitRearWindshield,
 			}
 
 			window
@@ -543,6 +559,8 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -552,7 +570,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = HondaAccordFrontRightWindow,
+				file = VWRabbitFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -569,7 +587,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = HondaAccordFrontLeftWindow,
+				file = VWRabbitFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -586,9 +604,16 @@ module Base
 		{
 			model windowRR
 			{
-				file = HondaAccordRearRightWindow,
+				file = VWRabbitRearRightWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
 
@@ -596,9 +621,16 @@ module Base
 		{
 			model windowRL
 			{
-				file = HondaAccordRearLeftWindow,
+				file = VWRabbitRearLeftWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
 
@@ -606,7 +638,7 @@ module Base
 		{
 			model Default
 			{
-				file = HondaAccordFrontRightDoor,
+				file = VWRabbitFrontRightDoor,
 			}
 
 			anim Close
@@ -642,7 +674,7 @@ module Base
 		{
 			model Default
 			{
-				file = HondaAccordFrontLeftDoor,
+				file = VWRabbitFrontLeftDoor,
 			}
 
 			anim Close
@@ -674,6 +706,78 @@ module Base
 			}
 		}
 
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VWRabbitRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VWRabbitRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -690,7 +794,7 @@ module Base
 
 			model Default
 			{
-				file = HondaAccordTrunk,
+				file = VWRabbitTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -733,7 +837,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelleft,
+				file = VWRabbitfrontwheelleft,
 			}
 		}
 
@@ -741,7 +845,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelright,
+				file = VWRabbitfrontwheelright,
 			}
 		}
 
@@ -749,7 +853,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelleft,
+				file = VWRabbitbackwheelleft,
 			}
 		}
 
@@ -757,7 +861,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelright,
+				file = VWRabbitbackwheelright,
 			}
 		}
 
@@ -803,24 +907,34 @@ module Base
 		}
 
 		template = Headlight,
+		
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
 
 		physics box
 		{
-			offset = 0.0000 0.8254 0.1905,
-			extents = 2.2540 1.5714 5.7302,
+			offset = 0.0000 0.9524 -0.0952,
+			extents = 3.0476 1.8571 8.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.6667 -2.6508,
+			offset = 0.0000 0.3898 -4.1864,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.8571,
+			offset = 0.0000 0.3898 3.9831,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
