@@ -151,8 +151,8 @@ module Base
 		model
 		{
 			file = SC_VWRabbit,
-			scale = 0.5900,
-			offset = 0.0000 -0.3559 0.0000,
+			scale = 0.6100,
+			offset = 0.0000 -0.3607 0.0000,
 		}
 
 		skin
@@ -202,10 +202,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.5424 1.3898 5.5254,
+		extents = 2.5574 1.4098 5.5410,
 		mass = 800,
-		physicsChassisShape = 2.5424 1.3898 5.5932,
-		centerOfMassOffset = 0.0000 0.6610 0.1695,
+		physicsChassisShape = 2.5574 1.4098 5.6066,
+		centerOfMassOffset = 0.0000 0.6557 0.1639,
 		shadowExtents = 2.5762 6.2891,
 		shadowOffset = -0.0032 0.0986,
 		engineForce = 4201,
@@ -231,7 +231,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.1864 0.3390 1.8814,
+			offset = -1.1803 0.3443 1.8852,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -239,7 +239,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1864 0.3390 1.8814,
+			offset = 1.1803 0.3443 1.8852,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -247,7 +247,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1864 0.3390 -1.7458,
+			offset = -1.1803 0.3443 -1.7377,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -255,7 +255,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1864 0.3390 -1.7458,
+			offset = 1.1803 0.3443 -1.7377,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -269,13 +269,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6102 0.8644 0.0339,
+				offset = 0.6066 0.8033 -0.4262,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0508 -0.4237 0.1017,
+				offset = 2.0492 -0.4262 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -288,13 +288,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5932 0.8644 0.0339,
+				offset = -0.5902 0.8033 -0.4262,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2034 -0.4237 0.1017,
+				offset = -2.1967 -0.4262 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -307,13 +307,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5932 0.8644 -1.1186,
+				offset = 0.5246 0.6885 -1.5738,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0508 -0.4237 -0.9831,
+				offset = 2.0492 -0.4262 -0.9836,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -326,13 +326,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5932 0.8644 -1.1186,
+				offset = -0.5246 0.6885 -1.5738,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2203 -0.4237 -0.9831,
+				offset = -2.2131 -0.4262 -0.9836,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -340,57 +340,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.9322 2.5424 2.0000,
+			xywh = 0.0000 3.9344 2.5574 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.4915 2.5424 1.7966,
+			xywh = 0.0000 -3.4918 2.5574 1.8033,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9492 0.4407 1.3559 1.3559,
+			xywh = 1.9508 0.4426 1.3770 1.3770,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9492 0.4407 1.3559 1.3559,
+			xywh = -1.9508 0.4426 1.3770 1.3770,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9492 -1.0339 1.3559 1.3559,
+			xywh = 1.9508 -1.0328 1.3770 1.3770,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9492 -1.0339 1.3559 1.3559,
+			xywh = -1.9508 -1.0328 1.3770 1.3770,
 		}
 
 		area GasTank
 		{
-			xywh = -1.8136 -2.0339 1.0847 0.5763,
+			xywh = -1.8197 -2.0328 1.0820 0.5902,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5085 2.3729 0.0000 0.0000,
+			xywh = 1.5082 2.3770 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5254 2.3729 0.0000 0.0000,
+			xywh = -1.5246 2.3770 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5254 -2.0678 0.0000 0.0000,
+			xywh = 1.5246 -2.0656 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5424 -2.0678 0.0000 0.0000,
+			xywh = -1.5410 -2.0656 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -531,6 +531,8 @@ module Base
 
 		part WindshieldRear
 		{
+			parent = TrunkDoor,
+
 			model windshieldRear
 			{
 				file = VWRabbitRearWindshield,
@@ -832,6 +834,16 @@ module Base
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
+
+		part TruckBed
+		{
+			itemType = Base.SmallTrunk,
+
+			container
+			{
+				capacity = 40,
+			}
+		}
 
 		part TireFrontLeft
 		{
