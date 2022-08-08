@@ -242,6 +242,12 @@ local vehicleToSeatAnimations = {
 		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
 	},
 
+	["Base.SC_VWRabbit"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
+	},
+
 	["Base.SC_HondaAccord"] = {
         ["seat0"]="Shark_Idle_SmallCarDriver",
 		["seat1"]="Shark_Idle_PassengerRelaxed",
