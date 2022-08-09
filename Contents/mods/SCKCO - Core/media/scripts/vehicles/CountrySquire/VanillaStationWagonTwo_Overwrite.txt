@@ -221,12 +221,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0508 1.3898 8.0339,
+			extents = 3.0508 1.3898 8.2712,
 		mass = 800,
-		physicsChassisShape = 3.0508 1.3898 8.1356,
-		centerOfMassOffset = 0.0000 0.6610 -0.0678,
-		shadowExtents = 3.0338 8.9162,
-		shadowOffset = -0.0032 -0.0709,
+		physicsChassisShape = 3.0508 1.3898 8.2373,
+		centerOfMassOffset = 0.0000 0.6610 -0.3051,
+		shadowExtents = 3.0338 9.3230,
+		shadowOffset = -0.0032 -0.2404,
 		engineForce = 4201,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -359,12 +359,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6102 4.0000 2.0000,
+			xywh = 0.0000 4.8305 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.7288 2.3729 1.7627,
+			xywh = 0.0000 -5.3220 3.0508 1.7627,
 		}
 
 		area SeatFrontLeft
@@ -594,8 +594,13 @@ module Base
 				file = FordCountrySquireMiddleRightWindow,
 			}
 
-			parent = DoorRearRight,
 			area = SeatRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
 		}
 
 		part WindowMiddleLeft
@@ -605,8 +610,13 @@ module Base
 				file = FordCountrySquireMiddleLeftWindow,
 			}
 
-			parent = DoorRearLeft,
 			area = SeatRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
 		}
 
 		part WindowFrontRight
@@ -963,21 +973,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 -0.0952,
-			extents = 3.0476 1.8571 8.1111,
+			offset = 0.0000 0.9492 -0.3051,
+			extents = 3.0508 1.8644 8.2881,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3898 -4.1864,
+			offset = 0.0000 0.2373 -4.6441,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3898 3.9831,
+			offset = 0.0000 0.2881 3.9831,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
