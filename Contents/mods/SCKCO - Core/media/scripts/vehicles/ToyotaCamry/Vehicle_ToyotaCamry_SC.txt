@@ -2,143 +2,143 @@ module Base
 {
 	model SC_ToyotaCamry
 	{
-		mesh = vehicles/Vehicle_CapriceCiv_SC|base_mesh,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
-	model Caprice9C1Driver
+	model ToyotaCamryDriver
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Passenger
+	model ToyotaCamryPassenger
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Double
+	model ToyotaCamryDouble
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1Windshield
+	model ToyotaCamryWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1FrontRightWindow
+	model ToyotaCamryFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model Caprice9C1FrontLeftWindow
+	model ToyotaCamryFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model Caprice9C1RearRightWindow
+	model ToyotaCamryRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model Caprice9C1RearLeftWindow
+	model ToyotaCamryRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model Caprice9C1FrontRightDoor
+	model ToyotaCamryFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model Caprice9C1FrontLeftDoor
+	model ToyotaCamryFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model Caprice9C1RearRightDoor
+	model ToyotaCamryRearRightDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model Caprice9C1RearLeftDoor
+	model ToyotaCamryRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model Caprice9C1Trunk
+	model ToyotaCamryTrunk
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model Caprice9C1Hood
+	model ToyotaCamryHood
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|Hood_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model Caprice9C1RearWindshield
+	model ToyotaCamryRearWindshield
 	{
-		mesh = vehicles/Vehicle_Caprice9C1_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Caprice9C1frontwheelleft
+	model ToyotaCamryfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_ToyotaCamry_LeftWheel,
+		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1frontwheelright
+	model ToyotaCamryfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_ToyotaCamry_RightWheel,
+		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelleft
+	model ToyotaCamrybackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_ToyotaCamry_LeftWheel,
+		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
 		shader = vehiclewheel,
 	}
-	model Caprice9C1backwheelright
+	model ToyotaCamrybackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_ToyotaCamry_RightWheel,
+		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_ToyotaCamry
@@ -152,56 +152,46 @@ module Base
 		{
 			file = SC_ToyotaCamry,
 			scale = 0.6100,
-			offset = 0.0000 0.0328 0.0000,
+			offset = 0.0000 0.0984 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_White,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_White,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Blue,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_SilverBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_SilverBlue,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_BrownCream,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_BrownSilver,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Brown,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Brown,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Green,
 		}
 
 		skin
 		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Green,
+			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_DarkGrey,
 		}
 
-		skin
-		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/CapriceCiv/Vehicle_CapriceSC_Grey,
-		}
-
-		textureMask = Vehicles/Caprice9C1/Vehicle_Caprice9C1_mask,
-		textureLights = Vehicles/Caprice9C1/Vehicle_Caprice9C1_lights,
-		textureDamage1Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage2Overlay = Vehicles/Caprice9C1/Vehicle_Caprice9C1_blood,
-		textureDamage1Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage,
-		textureDamage2Shell = Vehicles/Caprice9C1/Vehicle_Caprice9C1_damage2,
-		textureRust = Vehicles/Caprice9C1/Vehicle_Caprice9C1_rust,
+		textureMask = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_mask,
+		textureLights = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_lights,
+		textureDamage1Overlay = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_blood,
+		textureDamage2Overlay = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_blood,
+		textureDamage1Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_damage,
+		textureDamage2Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_damage2,
+		textureRust = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_rust,
 
 		sound
 		{
@@ -212,11 +202,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0492 1.8689 7.7705,
+		extents = 2.5574 1.8689 6.6557,
 		mass = 800,
-		physicsChassisShape = 3.0820 2.1311 7.8033,
-		centerOfMassOffset = 0.0000 1.0984 -0.0492,
-		shadowExtents = 3.1524 9.0683,
+		physicsChassisShape = 2.5246 1.8361 6.6557,
+		centerOfMassOffset = 0.0000 0.9180 0.0000,
+		shadowExtents = 2.5295 7.1994,
 		shadowOffset = -0.0032 -0.0540,
 		engineForce = 5000,
 		gearRatioCount = 4,
@@ -241,7 +231,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3115 0.0820 2.5410,
+			offset = -1.0820 -0.1311 2.1148,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,7 +239,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2623 0.0820 2.5410,
+			offset = 1.0656 -0.1311 2.1148,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -257,7 +247,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.3115 0.0820 -1.9672,
+			offset = -1.0820 -0.1311 -1.8197,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -265,7 +255,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2623 0.0820 -1.9672,
+			offset = 1.0656 -0.1311 -1.8197,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -279,7 +269,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.5246 0.2951,
+				offset = 0.6066 0.4098 0.2951,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -298,7 +288,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 0.2951,
+				offset = -0.5902 0.4098 0.2951,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -317,7 +307,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.5246 -1.1148,
+				offset = 0.5902 0.4098 -0.9836,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -336,7 +326,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 -1.1148,
+				offset = -0.5902 0.4098 -0.9836,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -350,37 +340,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8361 3.0492 2.0000,
+			xywh = 0.0000 4.3279 2.5574 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.8197 3.0492 1.7705,
+			xywh = 0.0000 -4.2131 2.5574 1.7705,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1803 0.6721 1.3443 1.3443,
+			xywh = 1.9508 0.6721 1.3443 1.3443,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1803 0.6721 1.3443 1.3443,
+			xywh = -1.9508 0.6721 1.3443 1.3443,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1803 -0.8033 1.3443 1.3443,
+			xywh = 1.9508 -0.8033 1.3443 1.3443,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1803 -0.8033 1.3443 1.3443,
+			xywh = -1.9508 -0.8033 1.3443 1.3443,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0328 -4.3770 1.1148 0.6230,
+			xywh = 1.8361 -2.0656 1.1148 0.6230,
 		}
 
 		area TireFrontLeft
@@ -417,7 +407,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = Caprice9C1Driver,
+				file = ToyotaCamryDriver,
 			}
 		}
 
@@ -425,7 +415,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = Caprice9C1Passenger,
+				file = ToyotaCamryPassenger,
 			}
 		}
 
@@ -433,7 +423,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = Caprice9C1Double,
+				file = ToyotaCamryDoubleSeat,
 			}
 		}
 
@@ -456,7 +446,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = Caprice9C1Hood,
+				file = ToyotaCamryHood,
 			}
 
 			anim Close
@@ -515,7 +505,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = Caprice9C1Windshield,
+				file = ToyotaCamryWindshield,
 			}
 
 			window
@@ -543,7 +533,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = Caprice9C1RearWindshield,
+				file = ToyotaCamryRearWindshield,
 			}
 
 			window
@@ -580,7 +570,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = Caprice9C1FrontRightWindow,
+				file = ToyotaCamryFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -597,7 +587,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = Caprice9C1FrontLeftWindow,
+				file = ToyotaCamryFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -614,7 +604,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = Caprice9C1RearRightWindow,
+				file = ToyotaCamryRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -631,7 +621,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = Caprice9C1RearLeftWindow,
+				file = ToyotaCamryRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -648,7 +638,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontRightDoor,
+				file = ToyotaCamryFrontRightDoor,
 			}
 
 			anim Close
@@ -684,7 +674,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1FrontLeftDoor,
+				file = ToyotaCamryFrontLeftDoor,
 			}
 
 			anim Close
@@ -720,7 +710,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearRightDoor,
+				file = ToyotaCamryRearRightDoor,
 			}
 
 			anim Close
@@ -756,7 +746,7 @@ module Base
 		{
 			model Default
 			{
-				file = Caprice9C1RearLeftDoor,
+				file = ToyotaCamryRearLeftDoor,
 			}
 
 			anim Close
@@ -804,7 +794,7 @@ module Base
 
 			model Default
 			{
-				file = Caprice9C1Trunk,
+				file = ToyotaCamryTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -847,7 +837,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelleft,
+				file = ToyotaCamryfrontwheelleft,
 			}
 		}
 
@@ -855,7 +845,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelright,
+				file = ToyotaCamryfrontwheelright,
 			}
 		}
 
@@ -863,7 +853,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelleft,
+				file = ToyotaCamrybackwheelleft,
 			}
 		}
 
@@ -871,7 +861,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelright,
+				file = ToyotaCamrybackwheelright,
 			}
 		}
 
@@ -921,20 +911,20 @@ module Base
 		physics box
 		{
 			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			extents = 2.4918 1.8525 6.6230,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3898 -4.1864,
+			offset = 0.0000 0.2131 -3.2787,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3898 3.9831,
+			offset = 0.0000 0.1967 3.3279,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
