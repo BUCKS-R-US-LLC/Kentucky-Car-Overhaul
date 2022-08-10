@@ -15,13 +15,13 @@ module Base
 	}
 	model FordExplorerPassenger
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerDouble
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearDoubleSeat__obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -81,7 +81,7 @@ module Base
 	}
 	model FordExplorerRearRightDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightDoor__obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -156,6 +156,12 @@ module Base
 		}
 
 		skin
+
+		skin
+		{
+			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Black,
+		}
+
 		{
 			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Blue,
 		}
@@ -416,7 +422,15 @@ module Base
 
 		part SeatRearLeft
 		{
-			model seatrearLeft
+			model SeatRearLeft
+			{
+				file = FordExplorerDouble,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model SeatRearRight
 			{
 				file = FordExplorerDouble,
 			}
