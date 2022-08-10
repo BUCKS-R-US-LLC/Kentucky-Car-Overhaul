@@ -116,6 +116,7 @@ module Base
 		mesh = vehicles/Vehicle_VWRabbit_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		boneWeight = TrunkBone 1.0,
 	}
 	model VWRabbitfrontwheelleft
 	{
@@ -185,13 +186,13 @@ module Base
 			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
 		}
 
-		textureRust = Vehicles/VWRabbit/Vehicle_VWRabbitSC_rust,
-		textureMask = Vehicles/VWRabbit/Vehicle_VWRabbitSC_mask,
-		textureLights = Vehicles/VWRabbit/Vehicle_VWRabbitSC_lights,
-		textureDamage1Shell = Vehicles/VWRabbit/Vehicle_VWRabbitSC_damage,
-		textureDamage2Shell= Vehicles/VWRabbit/Vehicle_VWRabbitSC_damage2,
-		textureDamage1Overlay = Vehicles/VWRabbit/Vehicle_VWRabbitSC_blood,
-		textureDamage2Overlay = Vehicles/VWRabbit/Vehicle_VWRabbitSC_blood,
+		textureRust = Vehicles/VWRabbit/Vehicle_VWRabbit_rust,
+		textureMask = Vehicles/VWRabbit/Vehicle_VWRabbit_mask,
+		textureLights = Vehicles/VWRabbit/Vehicle_VWRabbit_lights,
+		textureDamage1Shell = Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
+		textureDamage2Shell= Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
+		textureDamage1Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
+		textureDamage2Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
 
 		sound
 		{
@@ -231,7 +232,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.1803 0.3443 1.8852,
+			offset = -1.0820 0.3443 1.8852,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -239,7 +240,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1803 0.3443 1.8852,
+			offset = 1.0820 0.3443 1.8852,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -247,7 +248,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1803 0.3443 -1.7377,
+			offset = -1.0820 0.3443 -1.7377,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -255,7 +256,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1803 0.3443 -1.7377,
+			offset = 1.0820 0.3443 -1.7377,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -933,20 +934,20 @@ module Base
 		physics box
 		{
 			offset = 0.0000 0.9508 0.1311,
-			extents = 2.6557 1.8525 5.5902,
+			extents = 2.6230 1.8525 5.5902,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5902 -2.7213,
+			offset = 0.0000 0.3898 -2.7288,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.6557 3.0000,
+			offset = 0.0000 0.3898 3.0000,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
