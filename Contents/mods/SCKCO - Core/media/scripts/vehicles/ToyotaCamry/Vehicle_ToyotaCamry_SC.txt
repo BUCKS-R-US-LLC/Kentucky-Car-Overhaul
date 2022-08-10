@@ -15,7 +15,7 @@ module Base
 	}
 	model ToyotaCamryPassenger
 	{
-		mesh = vehicles/Vehicle_ToyotaCamry_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_ToyotaCamry_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -162,11 +162,6 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_SilverBlue,
-		}
-
-		skin
-		{
 			texture = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_BrownCream,
 		}
 
@@ -189,8 +184,8 @@ module Base
 		textureLights = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_lights,
 		textureDamage1Overlay = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_blood,
 		textureDamage2Overlay = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_blood,
-		textureDamage1Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_damage,
-		textureDamage2Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_damage2,
+		textureDamage1Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_scratch,
+		textureDamage2Shell = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_scratch,
 		textureRust = Vehicles/ToyotaCamry/Vehicle_ToyotaCamry_rust,
 
 		sound
@@ -269,7 +264,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.4098 0.2951,
+				offset = 0.6066 0.4098 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -288,7 +283,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.4098 0.2951,
+				offset = -0.5902 0.4098 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -307,7 +302,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.4098 -0.9836,
+				offset = 0.5902 0.4098 -1.0656,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -326,7 +321,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.4098 -0.9836,
+				offset = -0.5902 0.4098 -1.0656,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -419,11 +414,19 @@ module Base
 			}
 		}
 
+		part SeatRearRight
+		{
+			model SeatRearRight
+			{
+				file = ToyotaCamryDouble,
+			}
+		}
+
 		part SeatRearLeft
 		{
-			model seatrearLeft
+			model SeatRearLeft
 			{
-				file = ToyotaCamryDoubleSeat,
+				file = ToyotaCamryDouble,
 			}
 		}
 
