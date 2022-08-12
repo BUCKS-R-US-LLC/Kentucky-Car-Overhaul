@@ -128,18 +128,6 @@ local vehicleToSeatAnimations = {
         ["passenger"]="Shark_Idle_RearPassenger",
 	},
 
-	["Base.SC_ToyotaCamry"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.ModernCar02"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
 	["Base.SC_FordCountrySquire"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
