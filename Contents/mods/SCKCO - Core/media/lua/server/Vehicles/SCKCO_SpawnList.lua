@@ -105,6 +105,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanWindowless"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.chanceToPartDamage = 20;
 
     VehicleZoneDistribution.good.vehicles["Base.SC_K10"] = {index = -1, spawnChance = 5};
@@ -119,12 +120,12 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_G30VanNormal"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 1};
-
+    VehicleZoneDistribution.good.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.good.vehicles["Base.SC_VWRabbit"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.good.chanceToPartDamage = 15;
 
     VehicleZoneDistribution.sport.vehicles["Base.SC_CamaroTTop"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.medium.chanceToPartDamage = 5;
+    VehicleZoneDistribution.sport.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30Mail"] = {index = -1, spawnChance = 25};
@@ -140,7 +141,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
-    VehicleZoneDistribution.massgenfac.chanceToPartDamage = 5;
+    VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.network3.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.network3.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
