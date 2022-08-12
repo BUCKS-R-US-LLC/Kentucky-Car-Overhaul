@@ -116,6 +116,30 @@ local vehicleToSeatAnimations = {
 		["seat1"]={"Shark_Idle_Passenger",},
     },
 
+	["Base.ModernCar"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SC_VWRabbit"] = {
+        ["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+        ["passenger"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SC_ToyotaCamry"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
+	["Base.ModernCar02"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
+    },
+
 	["Base.SC_FordCountrySquire"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
