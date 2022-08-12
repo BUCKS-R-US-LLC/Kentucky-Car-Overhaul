@@ -67,14 +67,12 @@ module Base
 	{
 		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
 	}
 	model FordExplorerMiddleLeftWindow
 	{
 		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
 	}
 	model FordExplorerRearRightWindow
@@ -146,6 +144,8 @@ module Base
 		mesh = vehicles/Vehicle_FordExplorer_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
 	}
 	model FordExplorerfrontwheelleft
 	{
@@ -576,6 +576,8 @@ module Base
 				file = FordExplorerRearWindshield,
 			}
 
+			parent = TrunkDoor,
+
 			window
 			{
 				openable = false,
@@ -648,7 +650,6 @@ module Base
 			}
 
 			area = SeatRearRight,
-			parent =,
 
 			table install
 			{
@@ -664,7 +665,6 @@ module Base
 			}
 
 			area = SeatRearLeft,
-			parent =,
 
 			table install
 			{
