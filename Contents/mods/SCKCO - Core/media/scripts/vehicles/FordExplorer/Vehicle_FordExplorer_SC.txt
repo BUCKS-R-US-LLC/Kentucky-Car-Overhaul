@@ -971,6 +971,16 @@ module Base
 			}
 		}
 
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
 		template = Radio,
 
 		part Radio*

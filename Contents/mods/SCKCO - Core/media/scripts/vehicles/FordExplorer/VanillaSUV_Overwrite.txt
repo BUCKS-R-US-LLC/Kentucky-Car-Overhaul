@@ -978,6 +978,16 @@ module Base
 			itemType = Radio.HamRadio1,
 		}
 
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
 		template = Headlight,
 
 		physics box
