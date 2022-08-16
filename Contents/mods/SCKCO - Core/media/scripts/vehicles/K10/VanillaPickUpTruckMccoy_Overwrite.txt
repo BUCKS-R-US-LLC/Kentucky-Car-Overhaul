@@ -1,33 +1,33 @@
 module Base
 {
-	model SC_K10Civ
+	model SC_K10Lights
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|base_mesh,
+		mesh = vehicles/Vehicle_K10Lights_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model K10Driver
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model K10Passenger
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model K10Windshield
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model K10FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model K10FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model K10FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model K10FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model K10RearRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model K10RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model K10Trunk
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -88,7 +88,7 @@ module Base
 
 	model K10Hood
 	{
-		mesh = vehicles/Vehicle_K10Civ_SC|Hood_obj,
+		mesh = vehicles/Vehicle_K10Lights_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -127,45 +127,16 @@ module Base
 
 		model
 		{
-			file = SC_K10Civ,
+			file = SC_K10Lights,
 			scale = 0.6300,
 			offset = 0.0476 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/K10/Vehicle_K10_White,
+			texture = Vehicles/K10/Vehicle_K10_McCoy,
 		}
 
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Orange,
-		}
-
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Stool,
-		}
-
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_Green,
-		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
 		textureMask = Vehicles/K10/Vehicle_K10Mask,
