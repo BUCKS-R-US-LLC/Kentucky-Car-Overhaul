@@ -1,33 +1,33 @@
 module Base
 {
-	model SC_K5BlazerCiv
+	model SC_M1009Fire
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1009_Fire|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model BlazerSCDriver
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCPassenger
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCWindshield
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model BlazerSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model BlazerSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model BlazerSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model BlazerSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCTrunk
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -80,7 +80,7 @@ module Base
 	}
 	model BlazerSCHood
 	{
-		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1009_Fire_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -119,44 +119,19 @@ module Base
 
 		model
 		{
-			file = SC_K5BlazerCiv,
+			file = SC_M1009Fire,
 			scale = 0.6300,
 			offset = 0.0635 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_White,
+			texture = Vehicles/CUCV/Vehicle_M1009_LouisvilleRedFire,
 		}
 
 		skin
 		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Orange,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Stool,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/BlazerK5Civ/Vehicle_BlazerSC_Green,
+			texture = Vehicles/CUCV/Vehicle_M1009_WestPointWhiteFire,
 		}
 
 		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
