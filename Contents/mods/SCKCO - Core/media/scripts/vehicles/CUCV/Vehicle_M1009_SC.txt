@@ -129,13 +129,13 @@ module Base
 			texture = Vehicles/CUCV/Vehicle_M1009_SC,
 		}
 
-		textureRust = Vehicles/BlazerK5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/BlazerK5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/BlazerK5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/BlazerK5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/BlazerK5/Vehicle_Blazer_blood,
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
 
 		sound
 		{
@@ -149,8 +149,8 @@ module Base
 		extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 3.1505 7.6434,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.1347 7.6434,
 		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -174,7 +174,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -182,7 +182,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2540 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -190,7 +190,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +198,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +212,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7302 0.9683 0.0159,
+				offset = 0.6190 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -270,22 +270,22 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4921 -1.6032 0.0000 0.0000,
+			xywh = 2.0000 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.3651 -1.6032 0.0000 0.0000,
+			xywh = -2.0000 -1.6032 0.0000 0.0000,
 		}
 
 		template = K5Bullbar/part/K5Bullbar,
@@ -302,7 +302,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1009SCDriver,
+				file = BlazerSCDriver,
 			}
 		}
 
@@ -310,7 +310,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1009SCPassenger,
+				file = BlazerSCPassenger,
 			}
 		}
 
@@ -333,7 +333,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1009SCHood,
+				file = BlazerSCHood,
 			}
 
 			anim Close
@@ -392,7 +392,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = M1009SCWindshield,
+				file = BlazerSCWindshield,
 			}
 
 			window
@@ -452,7 +452,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M1009SCFrontRightWindow,
+				file = BlazerSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -469,7 +469,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1009SCFrontLeftWindow,
+				file = BlazerSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -486,7 +486,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = M1009SCRearLeftWindow,
+				file = BlazerSCRearLeftWindow,
 			}
 
 			area = TireRearLeft,
@@ -496,14 +496,13 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = M1009SCRearRightWindow,
+				file = BlazerSCRearRightWindow,
 			}
 
 			area = TireRearRight,
@@ -513,14 +512,13 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
-		
+
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = M1009SCFrontRightDoor,
+				file = BlazerSCFrontRightDoor,
 			}
 
 			anim Close
@@ -556,7 +554,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1009SCFrontLeftDoor,
+				file = BlazerSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -713,7 +711,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio2,
+			itemType = Radio.HamRadio1,
 		}
 
 		template = Headlight,
@@ -730,21 +728,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 0.9524 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3651,
+			offset = -0.0159 0.0000 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
