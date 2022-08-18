@@ -12,6 +12,7 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30McCoy"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.chanceToPartDamage = 25;
     
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
@@ -21,6 +22,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.massgenfac.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
+
     VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.network3.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};

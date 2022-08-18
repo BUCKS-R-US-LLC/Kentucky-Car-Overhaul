@@ -110,7 +110,6 @@ module Base
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	
 	vehicle SC_K5BlazerParkRanger
 	{
 		mechanicType = 2,
@@ -122,7 +121,7 @@ module Base
 		{
 			file = K5BlazerParkRanger,
 			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			offset = 0.0000 -0.2540 0.0000,
 		}
 
 		skin
@@ -155,8 +154,8 @@ module Base
 		extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 7.6434,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.1347 7.6434,
 		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -180,7 +179,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +187,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2540 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +195,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +203,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -502,7 +501,6 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
 
 		part WindowRearRight
@@ -519,7 +517,6 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
 
 		part DoorFrontRight
@@ -736,14 +733,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 0.9524 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3651 -3.4444,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

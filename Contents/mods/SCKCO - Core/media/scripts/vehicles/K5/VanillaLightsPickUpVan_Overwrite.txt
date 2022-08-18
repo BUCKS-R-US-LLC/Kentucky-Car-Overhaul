@@ -1,33 +1,33 @@
 module Base
 {
-	model M1009FireDept
+	model SC_K5BlazerCiv
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|base_mesh,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model BlazerSCDriver
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCPassenger
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCWindshield
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model BlazerSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model BlazerSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model BlazerSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model BlazerSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCTrunk
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -80,38 +80,37 @@ module Base
 	}
 	model BlazerSCHood
 	{
-		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|Hood_obj,
+		mesh = vehicles/Vehicle_BlazerK5Civ_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelleft
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelright
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	
-	vehicle SC_M1009FireDept
+	vehicle PickUpVanLights
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -120,14 +119,14 @@ module Base
 
 		model
 		{
-			file = M1009FireDept,
+			file = SC_K5BlazerCiv,
 			scale = 0.6300,
 			offset = 0.0635 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_ParkRanger,
+			texture = Vehicles/K5/Vehicle_BlazerSC_White,
 		}
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
@@ -147,16 +146,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
-
-		extents = 2.8571 3.0794 6.5714,
+        extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 7.6434,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.1347 7.6434,
 		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -180,7 +174,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +182,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2540 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +190,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +198,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -502,7 +496,6 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
 
 		part WindowRearRight
@@ -519,7 +512,6 @@ module Base
 			{
 				requireInstalled =,
 			}
-
 		}
 
 		part DoorFrontRight
@@ -736,14 +728,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 0.9524 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3651 -3.4444,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

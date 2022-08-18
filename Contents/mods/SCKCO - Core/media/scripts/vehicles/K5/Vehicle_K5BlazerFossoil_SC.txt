@@ -1,124 +1,116 @@
 module Base
 {
-	model SC_K10Lights
+	model SC_K5BlazerFossoil
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|base_mesh,
+		mesh = vehicles/Vehicle_K5Blazer_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model K10Driver
+	model BlazerSCDriver
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Passenger
+	model BlazerSCPassenger
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Windshield
+	model BlazerSCWindshield
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10FrontRightWindow
+	model BlazerSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model K10FrontLeftWindow
+	model BlazerSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model K10FrontRightDoor
+	model BlazerSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model K10FrontLeftDoor
+	model BlazerSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model K10RearRightWindow
+	model BlazerSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10RearLeftWindow
+	model BlazerSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Trunk
+	model BlazerSCTrunk
 	{
-		mesh = vehicles/Vehicle_K10Lights_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	
-	model K10RearWindshield
+	model BlazerSCHood
 	{
-		mesh = vehicles/Vehicle_K10_SC|RearWinshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
-	model K10Hood
-	{
-		mesh = vehicles/Vehicle_K10Lights_SC|Hood_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelleft
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelright
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle PickUpTruckLightsFire
+	vehicle SC_K5BlazerFossoil
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -127,28 +119,23 @@ module Base
 
 		model
 		{
-			file = SC_K10Lights,
+			file = SC_K5BlazerFossoil,
 			scale = 0.6300,
-			offset = 0.0476 -0.2540 0.0000,
+			offset = 0.0635 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/K10/Vehicle_K10_LouisvilleRedFire,
+			texture = Vehicles/K5/Vehicle_BlazerSC_Fossoil,
 		}
 
-		skin
-		{
-			texture = Vehicles/K10/Vehicle_K10_WestPointWhiteFire,
-		}
-
-		textureRust = Vehicles/K10/Vehicle_K10Rust,
-		textureMask = Vehicles/K10/Vehicle_K10Mask,
-	    textureLights = Vehicles/CUCV/Vehicle_M1009Fire_Lights,
-		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
-		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
-		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
-		textureDamage2Overlay = Vehicles/K10/Vehicle_K10Blood,
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
 
 		sound
 		{
@@ -159,17 +146,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
-		
-		extents = 2.8571 3.0794 6.9841,
+		extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0476 1.5556 -0.2222,
-		shadowExtents = 2.9601 7.7704,
-		shadowOffset = 0.0635 -0.1048,
+		physicsChassisShape = 3.1429 3.0794 6.5714,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.1347 7.6434,
+		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -192,7 +174,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -200,7 +182,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2540 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -208,7 +190,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -216,7 +198,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -263,50 +245,50 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2857 2.8571 2.0000,
+			xywh = 0.0635 4.2857 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 2.8571 1.7460,
+			xywh = 0.0635 -4.1587 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -1.9841 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.1111 1.0794 0.5714,
+			xywh = -1.9048 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 2.0000 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -2.0000 -1.6032 0.0000 0.0000,
 		}
 
-		template = K10Bullbar/part/K10BullbarNoSpawn,
+		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -320,7 +302,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = K10Driver,
+				file = BlazerSCDriver,
 			}
 		}
 
@@ -328,7 +310,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = K10Passenger,
+				file = BlazerSCPassenger,
 			}
 		}
 
@@ -351,7 +333,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = K10Hood,
+				file = BlazerSCHood,
 			}
 
 			anim Close
@@ -408,9 +390,9 @@ module Base
 
 		part Windshield
 		{
-			model WindshieldFront
+			model windshieldFront
 			{
-				file = K10Windshield,
+				file = BlazerSCWindshield,
 			}
 
 			window
@@ -436,10 +418,7 @@ module Base
 
 		part WindshieldRear
 		{
-			model WindshieldRear
-			{
-				file = K10RearWindshield,
-			}
+			parent = TrunkDoor,
 
 			window
 			{
@@ -473,7 +452,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = K10FrontRightWindow,
+				file = BlazerSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -490,7 +469,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = K10FrontLeftWindow,
+				file = BlazerSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -507,27 +486,39 @@ module Base
 		{
 			model windowRL
 			{
-				file = K10RearLeftWindow,
+				file = BlazerSCRearLeftWindow,
 			}
 
-			area = SeatFrontLeft,
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = K10RearRightWindow,
+				file = BlazerSCRearRightWindow,
 			}
 
-			area = SeatFrontRight,
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = K10FrontRightDoor,
+				file = BlazerSCFrontRightDoor,
 			}
 
 			anim Close
@@ -563,7 +554,7 @@ module Base
 		{
 			model Default
 			{
-				file = K10FrontLeftDoor,
+				file = BlazerSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -611,7 +602,7 @@ module Base
 
 			model Default
 			{
-				file = K10Trunk,
+				file = BlazerSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -646,19 +637,9 @@ module Base
 			}
 		}
 
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
-
-		part TruckBedOpen
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 140,
-			}
-		}
 
 		part TireFrontLeft
 		{
@@ -747,21 +728,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 0.9524 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3651,
+			offset = -0.0159 0.0000 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

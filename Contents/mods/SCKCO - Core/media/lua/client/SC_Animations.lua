@@ -51,6 +51,11 @@ local vehicleToSeatAnimations = {
 		["seat1"]={"Shark_Idle_Passenger",},
     },
 	
+	["Base.SC_K5BlazerFossoil"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+    },
+
 	["Base.PickUpVanMccoy"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]={"Shark_Idle_Passenger",},
