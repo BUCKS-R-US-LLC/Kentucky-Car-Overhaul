@@ -143,8 +143,8 @@ module Base
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
-		textureMask = Vehicles/K10/Vehicle_K10Mask,
-	    textureLights = Vehicles/CUCV/Vehicle_M1009Fire_Lights,
+		textureMask = Vehicles/K10/Vehicle_K10Lights_Mask,
+	    textureLights = Vehicles/K10/Vehicle_K10OrangeLights,
 		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
@@ -162,6 +162,8 @@ module Base
 		lightbar
 		{
 			soundSiren = VehicleSiren,
+			leftCol = 1;0;0,
+            rightCol = 1;0;0,
 		}
 		
 		extents = 2.8571 3.0794 6.9841,
