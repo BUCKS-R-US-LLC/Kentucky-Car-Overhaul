@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_K5BlazerCiv
+	model SC_K5Blazer
 	{
 		mesh = vehicles/Vehicle_BlazerK5Civ_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -89,25 +89,25 @@ module Base
 	model BlazerWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle PickUpVanLights
@@ -119,7 +119,7 @@ module Base
 
 		model
 		{
-			file = SC_K5BlazerCiv,
+			file = SC_K5Blazer,
 			scale = 0.6300,
 			offset = 0.0635 -0.2540 0.0000,
 		}
