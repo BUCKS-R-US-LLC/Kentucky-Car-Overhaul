@@ -2,15 +2,20 @@ module Base {
 
 	sound CUCVAnnouncerAlarm {
 		category = Vehicle, loop = true,
-		clip { file = media/sound/vehicle_cream1.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,}
-        }
+		clip { file = media/sound/BreachThePerimeter.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,}
+		clip { file = media/sound/CUCVAlarm.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,}
+		clip { file = media/sound/ReturnHome.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1, } }
 
 	sound CUCVAnnouncerWall {
 		category = Vehicle, loop = true,
-		clip { file = media/sound/vehicle_cream2.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1, } }
+		clip { file = media/sound/CurfewInEffect.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,}
+		clip { file = media/sound/CUCVAlarm.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,} 
+		clip { file = media/sound/ReturnHome.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1, } }
 
 	sound CUCVAnnouncerYelp {
 		category = Vehicle,	loop = true,
-		clip { file = media/sound/vehicle_cream3.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1, } }
+		clip { file = media/sound/ReturnHome.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,}
+		clip { file = media/sound/CUCVAlarm.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1,} 
+		clip { file = media/sound/CurfewInEffect.ogg, distanceMin = 10, distanceMax = 20, reverbFactor = 0.1, } }
 
  }

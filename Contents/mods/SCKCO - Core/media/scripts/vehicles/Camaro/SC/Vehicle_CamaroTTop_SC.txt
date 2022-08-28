@@ -1,161 +1,231 @@
 module Base
 {
-	model SC_M1009MilitaryPolice
+	model SC_CamaroTTop
 	{
-		mesh = vehicles/Vehicle_M1009MPOL_SC|base_mesh,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1009SCDriver
+	model CamaroSCDriver
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCPassenger
+	model CamaroSCPassenger
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCWindshield
+	model CamaroSCRearPassenger
 	{
-		mesh = vehicles/Vehicle_M1009_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCFrontRightWindow
+	model CamaroSCWindshield
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearWindshield
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model CamaroSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1009SCFrontLeftWindow
+	model CamaroSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1009SCFrontRightDoor
+	model CamaroSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1009SCFrontLeftDoor
+	model CamaroSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1009SCRearRightWindow
+	model CamaroSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RightTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCRearLeftWindow
+	model CamaroSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|LeftTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCTrunk
+	model CamaroSCTrunk
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1009SCHood
+	model CamaroSCHood
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	vehicle SC_M1009MilitaryPolice
+	model CamaroWheelfrontwheelleft
 	{
-		mechanicType = 2,
-		offRoadEfficiency = 1.1,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_CamaroTTop
+	{
+		mechanicType = 3,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 6,
+		playerDamageProtection = 0.8,
+		engineRPMType = firebird,
 
 		model
 		{
-			file = SC_M1009MilitaryPolice,
-			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			file = SC_CamaroTTop,
+			scale = 0.6700,
+			offset = 0.0000 -0.5672 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009MPOL_SC,
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Red,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Blue,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_ImpBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Grey,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Yellow,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Orange,
+		}
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Black,
+		}
+
+		textureRust = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Rust,
+		textureMask = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Mask,
+		textureLights = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Lights,
+		textureDamage1Shell = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Damage,
+		textureDamage2Shell = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Damage,
+		textureDamage1Overlay = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Blood,
+		textureDamage2Overlay = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Blood,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			engine = VehicleEngineSportsCar,
+			engineStart = VehicleEngineSportsCar,
+			engineTurnOff = VehicleEngineSportsCar,
+			horn = VehicleHornSportsCar,
+			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		lightbar
-		{
-			soundSiren = CUCVAnnouncer,
-		}
-
-		extents = 2.8571 3.0794 6.5714,
+		extents = 2.6269 1.7313 6.9552,
 		mass = 1000,
-		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0000 1.5556 0.0000,
-		shadowExtents = 3.1347 7.6434,
-		shadowOffset = 0.0635 0.0063,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		physicsChassisShape = 2.5970 1.7313 6.7761,
+		centerOfMassOffset = 0.0000 0.4776 -0.0299,
+		shadowExtents = 2.6463 7.4046,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 5700,
+		engineLoudness = 90,
+		engineQuality = 90,
+		maxSpeed = 120f,
+		gearRatioCount = 5,
+		gearRatioR = 3.5,
+		gearRatio1 = 4.11,
+		gearRatio2 = 2.50,
+		gearRatio3 = 1.65,
+		gearRatio4 = 1.25,
+		gearRatio5 = 0.80,
+		gearRatio5 = 0.60,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 4500,
-		rearEndHealth = 3500,
-		seats = 2,
+		suspensionStiffness = 50,
+		suspensionCompression = 4.1,
+		suspensionDamping = 3.4,
+		maxSuspensionTravelCm = 20,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 1500,
+		rearEndHealth = 900,
+		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = -1.1045 0.3881 1.7761,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -163,7 +233,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2540 0.0794 2.1587,
+			offset = 1.1045 0.3881 1.7761,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -171,7 +241,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = -1.1045 0.3881 -1.8507,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -179,12 +249,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = 1.1045 0.3881 -1.8507,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -193,13 +263,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 0.9683 0.0159,
+				offset = 0.6567 0.7015 -0.2090,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0746 -0.2239 0.0149,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -212,67 +282,115 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.6716 0.6119 -0.2090,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0448 0.2836 0.1343,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.3881 0.6119 -1.1791,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0746 -0.2239 0.0149,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.4030 0.6119 -1.1791,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0746 -0.2239 0.0149,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
-			xywh = 0.0635 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.4478 2.6269 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0635 -4.1587 2.8571 1.7460,
+			xywh = 0.0000 -4.3881 2.6269 1.7612,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1111 0.2540 1.2381 1.2381,
+			xywh = 1.9403 0.2537 1.2537 1.2537,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9841 0.2540 1.2381 1.2381,
+			xywh = -1.9403 0.2537 1.2537 1.2537,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9403 -0.9851 1.2537 1.2537,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9403 -0.9851 1.2537 1.2537,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9048 -2.5397 1.0794 0.5714,
+			xywh = -1.8657 -2.3881 1.1045 0.5970,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.1587 0.0000 0.0000,
+			xywh = 1.3134 1.7910 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.1587 0.0000 0.0000,
+			xywh = -1.3134 1.7910 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.6032 0.0000 0.0000,
+			xywh = 1.3134 -1.8657 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.6032 0.0000 0.0000,
+			xywh = -1.3134 -1.8657 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -281,18 +399,30 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = CamaroSCDriver,
 			}
 		}
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = CamaroSCPassenger,
 			}
+		}
+
+		part SeatFrontLeft
+		{
+			model SeatRearLeft
+			{
+				file = CamaroSCRearPassenger,
+			}
+		}
+
+		part SeatRearRight
+		{
 		}
 
 		part Muffler
@@ -314,7 +444,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = CamaroSCHood,
 			}
 
 			anim Close
@@ -373,7 +503,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = CamaroSCWindshield,
 			}
 
 			window
@@ -399,6 +529,11 @@ module Base
 
 		part WindshieldRear
 		{
+			model windshieldRear
+			{
+				file = CamaroSCRearWindshield,
+			}
+
 			parent = TrunkDoor,
 
 			window
@@ -433,7 +568,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = CamaroSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -450,7 +585,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = CamaroSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -467,39 +602,27 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = CamaroSCRearLeftWindow,
 			}
 
-			area = TireRearLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
+			area = SeatFrontLeft,
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = CamaroSCRearRightWindow,
 			}
 
-			area = TireRearRight,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
+			area = SeatFrontRight,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = CamaroSCFrontRightDoor,
 			}
 
 			anim Close
@@ -535,7 +658,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = CamaroSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -583,7 +706,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = CamaroSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -626,7 +749,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CamaroWheelfrontwheelleft,
 			}
 		}
 
@@ -634,7 +757,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CamaroWheelfrontwheelright,
 			}
 		}
 
@@ -642,7 +765,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CamaroWheelbackwheelleft,
 			}
 		}
 
@@ -650,7 +773,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CamaroWheelbackwheelright,
 			}
 		}
 
@@ -709,21 +832,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 0.0635,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 0.6667 0.0000,
+			extents = 2.6032 1.3492 6.7143,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.3651 -3.3175,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3651,
+			offset = -0.0149 0.4478 3.3582,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
