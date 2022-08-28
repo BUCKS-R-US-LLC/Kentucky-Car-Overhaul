@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Patches"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Tweaks and Adjustments - AUG30"))

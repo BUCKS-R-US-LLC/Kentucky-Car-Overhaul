@@ -1,5 +1,10 @@
 if VehicleZoneDistribution then
 
+    VehicleZoneDistribution.good.vehicles["Base.CarNormal"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.good.vehicles["Base.SC_Caprice"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.good.spawnRate = 30;
+    VehicleZoneDistribution.good.chanceToPartDamage = 10;
+
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.spawnRate = 30;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
@@ -34,5 +39,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.kyheralds.chanceToPartDamage = 5;
+
+	VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1008"] = 100;
+	VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1009"] = 100;
+    VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1009MilitaryPolice"] = 100;
 
 end
