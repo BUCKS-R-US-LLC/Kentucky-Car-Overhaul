@@ -40,8 +40,4 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.kyheralds.chanceToPartDamage = 5;
 
-	VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1008"] = 100;
-	VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1009"] = 100;
-    VehicleZoneDistribution.MilitaryLight.vehicles["Base.SC_M1009MilitaryPolice"] = 100;
-
 end
