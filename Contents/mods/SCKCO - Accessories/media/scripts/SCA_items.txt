@@ -1,0 +1,35 @@
+module SCA
+{
+        item BodyBag
+    {
+        DisplayCategory = Bag,
+        Weight	=	0.1,
+        Type	=	Container,
+        DisplayName	=   Body Bag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBodybag,
+        PutInSound   =   OpenBodybag,
+        Capacity = 20,
+        DisplayName	=   Body Bag,
+        Icon	=	BodyBag,
+        WorldStaticModel = BodyBagFull_SCA,
+        /*BodyBagEmpty*/
+    }
+
+        item BodyBagEmpty
+    {
+        DisplayCategory = Bag,
+        Weight	=	0.1,
+        Type	=	Container,
+        DisplayName	=   Body Bag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBodybag,
+        PutInSound   =   OpenBodybag,
+        Capacity = 20,
+        DisplayName	=   Body Bag,
+        Icon	=	BodyBag,
+        WorldStaticModel = BodyBagEmpty_SCA,
+        /*BodyBagEmpty*/
+    }
+
+}

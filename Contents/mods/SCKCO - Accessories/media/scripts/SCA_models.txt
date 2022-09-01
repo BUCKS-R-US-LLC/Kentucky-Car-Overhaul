@@ -1,0 +1,30 @@
+module Base
+{
+		model MRE_SCA
+	{
+		mesh = WorldItems/MRE,
+		texture = WorldItems/MRE_SCA,
+		scale = 1.0,
+	}
+	
+		model MREWrapper_SCA
+	{
+		mesh = WorldItems/MREWrapper,
+		texture = WorldItems/MRE_SCA,
+		scale = 1.0,
+	}
+
+		model BodyBagEmpty_SCA
+	{
+		mesh = WorldItems/BodyBagEmpty,
+		texture = WorldItems/BodyBag_SCA,
+		scale = 1.0,
+	}
+
+		model BodyBagFull_SCA
+	{
+		mesh = WorldItems/BodyBagFull,
+		texture = WorldItems/BodyBag_SCA,
+		scale = 1.0,
+	}
+}
