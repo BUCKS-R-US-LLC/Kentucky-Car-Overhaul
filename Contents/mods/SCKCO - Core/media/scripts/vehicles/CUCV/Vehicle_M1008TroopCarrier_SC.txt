@@ -209,7 +209,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -218,13 +218,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.7458 1.2373 0.5424,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.3559 -0.1864 0.9322,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -237,34 +237,15 @@ module Base
 
 			position inside
 			{
-				offset = -0.6825 0.9683 0.0159,
+				offset = -0.7458 1.2373 0.5424,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.3559 -0.1864 0.9322,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7937 1.3651 -1.4286,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleRight,
 			}
 		}
 
@@ -275,34 +256,34 @@ module Base
 
 			position inside
 			{
-				offset = -0.7619 1.3651 -1.4286,
+				offset = 0.7458 1.2373 -1.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
+				offset = 0.5932 -0.1864 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
-		passenger RearRight
+		passenger MiddleRight
 		{
 			showPassenger = true,
 			hasRoof = true,
 
 			position inside
 			{
-				offset = 0.7937 1.3651 -2.6984,
+				offset = -0.2203 1.2373 -1.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				offset = -2.1695 -0.1864 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
+				area = SeatMiddleRight,
 			}
 		}
 
@@ -313,13 +294,32 @@ module Base
 
 			position inside
 			{
-				offset = -0.7619 1.3651 -2.6984,
+				offset = 0.7627 1.2373 -3.1186,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				area = SeatRearLeft,
+				offset = 0.5932 -0.1864 -0.6949,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7966 1.2373 -3.1186,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1695 -0.1864 0.1356,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -340,30 +340,25 @@ module Base
 			xywh = 2.0476 0.2540 1.2381 1.2381,
 		}
 
-		area SeatFrontRight
-		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
-		}
-
 		area SeatMiddleLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 0.6949 -0.0678 0.4746 0.4746,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = -0.6949 -0.0678 0.4746 0.4746,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1017 -0.5763 1.1186 1.0847,
 		}
+
+		area SeatRearLeft
+		{
+			xywh = -2.1017 -0.5763 1.1186 1.0847,
+		
 
 		area GasTank
 		{
@@ -419,6 +414,33 @@ module Base
 				file = M1008Passenger,
 			}
 		}
+
+		
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+
+			model seatfrontRight
+			{
+				file = M1008RearSeat,
+			}
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+		}
+
 
 		part Muffler
 		{
