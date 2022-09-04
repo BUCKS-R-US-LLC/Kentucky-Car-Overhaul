@@ -123,7 +123,7 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_M1008TroopCarrier"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
+		["seat1"]={"Shark_Idle_Passenger",},
         ["seat2"]="Shark_Idle_SidePassenger",
 		["seat3"]="Shark_Idle_SidePassenger2",
 		["seat4"]="Shark_Idle_SidePassenger",
