@@ -646,6 +646,16 @@ module Base
 		template = Tire,
 		template = Axle,
 
+		part TruckBed
+		{
+			itemType = Base.NormalTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
