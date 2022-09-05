@@ -716,6 +716,16 @@ module Base
 		template = Tire,
 		template = Axle,
 
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+		
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
