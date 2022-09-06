@@ -78,14 +78,12 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	
 	model K10RearWindshield
 	{
 		mesh = vehicles/Vehicle_K10_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model K10Hood
 	{
 		mesh = vehicles/Vehicle_K10Lights_SC|Hood_obj,
@@ -137,10 +135,9 @@ module Base
 			texture = Vehicles/K10/Vehicle_K10_McCoy,
 		}
 
-
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
 		textureMask = Vehicles/K10/Vehicle_K10Lights_Mask,
-	    textureLights = Vehicles/K10/Vehicle_K10OrangeLights,
+		textureLights = Vehicles/K10/Vehicle_K10OrangeLights,
 		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
@@ -157,11 +154,11 @@ module Base
 
 		lightbar
 		{
-		soundSiren = VehicleSiren,
-		leftCol = 1;0.73;0.2,
-        rightCol = 1;0.73;0.2,
+			soundSiren = VehicleSiren,
+			leftCol = 1;0.73;0.2,
+			rightCol = 1;0.73;0.2,
 		}
-		
+
 		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
@@ -228,7 +225,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 0.9683 0.0159,
+				offset = 0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -247,7 +244,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
