@@ -5,6 +5,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.spawnRate = 30;
     VehicleZoneDistribution.good.chanceToPartDamage = 10;
 
+    VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.spawnRate = 30;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
