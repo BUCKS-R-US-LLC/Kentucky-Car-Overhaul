@@ -9,13 +9,13 @@ module Base
 	}
 	model M35A1Driver
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1Passenger
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -92,31 +92,31 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model M35WheelLargefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M35A1_FrontLeftWheel,
+		texture = Vehicles/M35A1/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model M35WheelLargefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M35A1_FrontRightWheel,
+		texture = Vehicles/M35A1/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelleft
+	model M35WheelLargebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M35A1_RearLeftDoubleWheel,
+		texture = Vehicles/M35A1/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelright
+	model M35WheelLargebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M35A1_RearRightDoubleWheel,
+		texture = Vehicles/M35A1/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}
-	vehicle PickUpTruck
+	vehicle SC_M35A1
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -127,7 +127,7 @@ module Base
 		{
 			file = SC_M35A1,
 			scale = 0.6300,
-			offset = 0.0476 -0.2540 0.0000,
+			offset = 0.0000 -0.4762 0.4603,
 		}
 
 		skin
@@ -152,12 +152,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.8571 3.0794 6.9841,
+		extents = 3.4603 3.0794 10.0317,
 		mass = 1500,
-		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0476 1.5556 -0.2222,
-		shadowExtents = 2.9601 7.7704,
-		shadowOffset = 0.0635 -0.1048,
+		physicsChassisShape = 3.4921 3.0794 10.0317,
+		centerOfMassOffset = 0.0000 1.5556 -0.0159,
+		shadowExtents = 3.7061 10.1672,
+		shadowOffset = 0.0000 -0.1525,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -180,7 +180,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2063 0.4921 2.9524,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +188,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2222 0.4921 2.9524,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +196,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = 0.0159 0.4921 -1.9365,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +204,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
+			offset = 0.0000 0.4921 -3.6667,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -218,13 +218,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.7460 2.1111 1.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0794 0.0000 1.1270,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -237,41 +237,137 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 0.0159,
+				offset = -0.7460 2.1111 1.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0476 0.5079 1.2540,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = false,
+
+			position inside
+			{
+				offset = -0.7937 1.3651 -1.5714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -1.6032,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleRight,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = false,
+
+			position inside
+			{
+				offset = 0.7937 1.3651 -1.5714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -1.6032,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = false,
+
+			position inside
+			{
+				offset = -0.7937 1.3651 -4.1111,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -3.1587,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = false,
+
+			position inside
+			{
+				offset = 0.7937 1.3651 -4.1111,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -3.1587,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
-			xywh = 0.0000 4.2857 2.8571 2.0000,
+			xywh = 0.0000 6.0159 3.4603 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 2.8571 1.7460,
+			xywh = 0.0000 -5.8889 3.4603 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.3492 1.5397 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
+		{
+			xywh = -2.3492 1.5397 1.2381 1.2381,
+		}
+
+		area SeatMiddleLeft
+		{
+			xywh = 2.0476 0.2540 1.2381 1.2381,
+		}
+
+		area SeatMiddleRight
+		{
+			xywh = -2.0476 0.2540 1.2381 1.2381,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.0476 0.2540 1.2381 1.2381,
+		}
+
+		area SeatRearRight
 		{
 			xywh = -2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.1111 1.0794 0.5714,
+			xywh = -2.2698 -1.1111 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -295,9 +391,12 @@ module Base
 		}
 
 		template = M35A1Bullbar/part/M35A1BullbarNoSpawn,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -315,6 +414,38 @@ module Base
 		part SeatFrontRight
 		{
 			model seatfrontRight
+			{
+				file = M35A1Passenger,
+			}
+		}
+
+		part SeatMiddleRight
+		{
+			model seatmiddleRight
+			{
+				file = M35A1Passenger,
+			}
+		}
+
+		part SeatMiddleLeft
+		{
+			model seatmiddleLeft
+			{
+				file = M35A1Passenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model seatRearRight
+			{
+				file = M35A1Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatRearLeft
 			{
 				file = M35A1Passenger,
 			}
@@ -652,7 +783,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = M35WheelLargefrontwheelleft,
 			}
 		}
 
@@ -660,7 +791,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = M35WheelLargefrontwheelright,
 			}
 		}
 
@@ -668,7 +799,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = M35WheelLargebackwheelleft,
 			}
 		}
 
@@ -676,7 +807,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = M35WheelLargebackwheelright,
 			}
 		}
 
@@ -735,21 +866,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.3175 -0.2222,
+			extents = 3.4603 1.8571 9.7937,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.5238 -5.7937,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3651,
+			offset = -0.0159 0.5397 4.1429,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
