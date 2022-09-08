@@ -80,7 +80,7 @@ module Base
 	}
 	model M35A1RearWindshield
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -127,7 +127,7 @@ module Base
 		{
 			file = SC_M35A1,
 			scale = 0.6300,
-			offset = 0.0000 -0.4762 0.4603,
+			offset = 0.0000 -0.4762 0.5556,
 		}
 
 		skin
@@ -347,27 +347,27 @@ module Base
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.3492 -2.1905 1.2381 1.2381,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.3492 -2.1905 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.3492 -4.3968 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.3492 -4.3968 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.2698 -1.1111 1.0794 0.5714,
+			xywh = -2.2698 0.3175 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -873,14 +873,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -5.7937,
+			offset = 0.0000 1.0635 -5.6984,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 4.1429,
+			offset = -0.0159 1.3016 5.0159,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
