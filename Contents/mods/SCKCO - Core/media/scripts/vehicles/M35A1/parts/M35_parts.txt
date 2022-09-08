@@ -1,0 +1,250 @@
+module Base
+{
+
+    item M35A1Bull2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Bullbar,
+            Icon	=	M35A1Bullbar,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Bullbar_WorldItem,
+        }
+
+    item M35A1WindowArmor2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Window Armor,
+            Icon	=	M35A1WindowArmor,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1WindowArmor_WorldItem,
+        }
+
+    item M35A1WindshieldBars2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Windshield Cage,
+            Icon	=	M35A1WindshieldBars,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1WindshieldBars_WorldItem,
+        }
+
+    item M35A1Door2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Door,
+            Icon	=	M35A1Door,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Door_WorldItem,
+        }
+
+    item M35A1TrailerDoor2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= Trailer Door,
+            Icon	=	M35A1Door,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Door_WorldItem,
+        }
+
+    item M35A1Wheel2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Wheel,
+            Icon	=	M35A1Wheel,
+        	MaxCapacity = 35,
+        	ChanceToSpawnDamaged = 0,
+        	WheelFriction = 1.6,
+        	ConditionLowerStandard = 0.08,
+        	ConditionLowerOffroad = 0.10,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Wheel_WorldItem,
+        }
+
+    item M35A1Window2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Window,
+            Icon	=	M35A1Window,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Window_WorldItem,
+        }
+
+    item M35A1Hood2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Hood,
+            Icon	=	M35A1Hood,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Hood_WorldItem,
+        }
+
+    item M35A1TrunkDoor2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Trunk Hatch,
+            Icon	=	M35A1TrunkDoor,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1TrunkDoor_WorldItem,
+        }
+
+    item M35A1RearWindow2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Rear Windshield,
+            Icon	=	M35A1RearWindow,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1RearWindow_WorldItem,
+        }
+
+
+    item M35A1Seat2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Seat,
+            Icon	=	M35A1Seat,
+        	MaxCapacity = 40,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Seat_WorldItem,
+        }
+
+    item M35A1Windshield2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Windshield,
+            Icon	=	M35A1Windshield,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Windshield_WorldItem,
+        }
+
+    item M35A1GasTank2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	15.0,0
+            Type	=	Normal,
+            DisplayName	= M35A1 Gas Tank,
+            Icon	=	M35A1GasTank,
+            VehicleType =   1,
+            ConditionMax = 100,
+        	MaxCapacity = 85,
+        	ConditionAffectsCapacity = false,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1GasTank_WorldItem,
+        }
+
+    item M35A1Muffler2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Muffler,
+            Icon	=	M35A1Muffler,
+          	EngineLoudness = 100,
+            VehicleType =   1,
+            ConditionMax = 100,
+         	ConditionLowerStandard = 0.01,
+          	ConditionLowerOffroad = 0.15,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Muffler_WorldItem,
+        }
+
+    item M35A1Tarp2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Tarp Cover,
+            Icon	=	M35A1Tarp,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Tarp_WorldItem,
+        }
+
+    item M35A1FrontHardTop2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Front Hardtop,
+            Icon	=	M35A1Tarp,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Tarp_WorldItem,
+        }
+
+    item M35A1TarpFrame2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35A1 Tarp Frame,
+            Icon	=	M35A1Tarp,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Tarp_WorldItem,
+        }
+
+    item M35A1InteriorArmoring2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	40.0,0
+            Type	=	Normal,
+            DisplayName	= M35A1 Chassis and Body Armoring,
+            Icon	=	M35A1Armoring,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35A1Armoring_WorldItem,
+        }
+
+}

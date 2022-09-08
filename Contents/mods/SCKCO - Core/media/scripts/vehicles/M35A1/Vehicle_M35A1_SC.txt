@@ -7,6 +7,42 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
+	model M35A1GasTank
+	{
+		mesh = vehicles/Vehicle_M35A1|FuelTank_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1FrontHardTop
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|HardTarp_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1FrontSoftTop
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|SoftTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Tarp
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|Tarp_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1TarpFrame
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|TarpFrame_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Bumper
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model M35A1Driver
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|DriverSeat_obj,
@@ -21,7 +57,13 @@ module Base
 	}
 	model M35A1Windshield
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1WindshieldRear
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -57,32 +99,13 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M35A1RearRightWindow
-	{
-		mesh = vehicles/Vehicle_M35A1_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M35A1RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_M35A1_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model M35A1Trunk
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
-	}
-	model M35A1RearWindshield
-	{
-		mesh = vehicles/Vehicle_M35A1_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model M35A1Hood
 	{
@@ -92,25 +115,25 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M35WheelLargefrontwheelleft
+	model M35Wheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_M35A1_FrontLeftWheel,
 		texture = Vehicles/M35A1/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
-	model M35WheelLargefrontwheelright
+	model M35Wheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_M35A1_FrontRightWheel,
 		texture = Vehicles/M35A1/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
-	model M35WheelLargebackwheelleft
+	model M35Wheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_M35A1_RearLeftDoubleWheel,
 		texture = Vehicles/M35A1/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}
-	model M35WheelLargebackwheelright
+	model M35Wheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_M35A1_RearRightDoubleWheel,
 		texture = Vehicles/M35A1/Vehicle_M35RearWheel,
@@ -127,7 +150,7 @@ module Base
 		{
 			file = SC_M35A1,
 			scale = 0.6300,
-			offset = 0.0000 -0.4762 0.5556,
+			offset = 0.0000 -0.5556 0.5556,
 		}
 
 		skin
@@ -148,31 +171,31 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = VehicleHornVan,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.4603 3.0794 10.0317,
+		extents = 3.6508 2.1587 9.4603,
 		mass = 1500,
-		physicsChassisShape = 3.4921 3.0794 10.0317,
-		centerOfMassOffset = 0.0000 1.5556 -0.0159,
-		shadowExtents = 3.7061 10.1672,
-		shadowOffset = 0.0000 -0.1525,
-		engineForce = 4400,
-		engineQuality = 80,
+		physicsChassisShape = 3.6508 2.1587 9.4603,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.6593 10.2916,
+		shadowOffset = 0.0000 -0.0289,
+		engineForce = 5850,
+		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 110f,
+		maxSpeed = 55f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
+		suspensionStiffness = 300,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
 		seats = 6,
@@ -180,36 +203,36 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.4921 2.9524,
-			radius = 0.50f,
-			width = 0.30f,
+			offset = 1.4444 0.4921 2.9524,
+			radius = 0.70f,
+			width = 0.20f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.4921 2.9524,
-			radius = 0.50f,
-			width = 0.30f,
+			offset = -1.4444 0.4921 2.9524,
+			radius = 0.70f,
+			width = 0.20f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.0159 0.4921 -1.9365,
-			radius = 0.50f,
-			width = 0.30f,
+			offset = -0.0159 0.4921 -3.6984,
+			radius = 0.70f,
+			width = 0.20f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.0000 0.4921 -3.6667,
-			radius = 0.50f,
-			width = 0.30f,
+			offset = 0.0000 0.4921 -1.9048,
+			radius = 0.70f,
+			width = 0.20f,
 		}
 
-		template = PassengerSeat6,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -218,13 +241,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 2.1111 1.0159,
+				offset = 0.6508 2.1270 1.0317,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 0.0000 1.1270,
+				offset = 2.3968 -0.6984 1.6349,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -237,89 +260,89 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 2.1111 1.0159,
+				offset = -0.5238 2.1270 1.0317,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 0.5079 1.2540,
+				offset = -2.3651 -0.1905 1.7619,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = false,
-
-			position inside
-			{
-				offset = -0.7937 1.3651 -1.5714,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleRight,
 			}
 		}
 
 		passenger MiddleLeft
 		{
 			showPassenger = true,
-			hasRoof = false,
+			hasRoof = true,
 
 			position inside
 			{
-				offset = 0.7937 1.3651 -1.5714,
+				offset = 1.2857 2.1587 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -1.6032,
+				offset = 2.3968 -0.6984 -0.2857,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
 			}
 		}
 
-		passenger RearRight
+		passenger MiddleRight
 		{
 			showPassenger = true,
-			hasRoof = false,
+			hasRoof = true,
 
 			position inside
 			{
-				offset = -0.7937 1.3651 -4.1111,
+				offset = -1.2857 2.1587 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				offset = -2.3651 -0.1905 -0.2857,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
+				area = SeatMiddleRight,
 			}
 		}
 
 		passenger RearLeft
 		{
 			showPassenger = true,
-			hasRoof = false,
+			hasRoof = true,
 
 			position inside
 			{
-				offset = 0.7937 1.3651 -4.1111,
+				offset = 1.2857 2.1587 -4.1587,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				offset = 2.3968 -0.6984 -0.2857,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2857 2.1587 -4.1587,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3651 -0.1905 -0.2857,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -327,70 +350,70 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.0159 3.4603 2.0000,
+			xywh = 0.0000 5.4444 3.1746 1.3651,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.8889 3.4603 1.7460,
+			xywh = 0.0000 -5.6190 3.6508 1.7778,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3492 1.5397 1.2381 1.2381,
+			xywh = 2.5873 1.5873 2.0000 2.0000,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3492 1.5397 1.2381 1.2381,
+			xywh = -2.5873 1.5873 2.0000 2.0000,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.3492 -2.1905 1.2381 1.2381,
+			xywh = 2.5873 -0.4603 2.0000 2.0000,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.3492 -2.1905 1.2381 1.2381,
+			xywh = -2.5873 -0.4603 2.0000 2.0000,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.3492 -4.3968 1.2381 1.2381,
+			xywh = 2.5873 -0.4603 2.0000 2.0000,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.3492 -4.3968 1.2381 1.2381,
+			xywh = -2.5873 -0.4603 2.0000 2.0000,
 		}
 
 		area GasTank
 		{
-			xywh = -2.2698 0.3175 1.0794 0.5714,
+			xywh = -2.1429 1.7302 1.1111 0.6032,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.2222 3.5079 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.1587 3.5079 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 1.4286 -3.1746 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -1.2698 -1.3810 0.0000 0.0000,
 		}
 
-		template = M35A1Bullbar/part/M35A1BullbarNoSpawn,
+		template = M35A1Armor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -403,12 +426,24 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part GasTank
+		{
+			model seatfrontLeft
+			{
+				file = M35A1GasTank,
+			}
+
+			itemType = Base.M35A1GasTank,
+		}
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = M35A1Driver,
 			}
+
+			itemType = Base.M35A1Seat,
 		}
 
 		part SeatFrontRight
@@ -417,42 +452,17 @@ module Base
 			{
 				file = M35A1Passenger,
 			}
-		}
 
-		part SeatMiddleRight
-		{
-			model seatmiddleRight
-			{
-				file = M35A1Passenger,
-			}
-		}
-
-		part SeatMiddleLeft
-		{
-			model seatmiddleLeft
-			{
-				file = M35A1Passenger,
-			}
-		}
-
-		part SeatRearRight
-		{
-			model seatRearRight
-			{
-				file = M35A1Passenger,
-			}
-		}
-
-		part SeatRearLeft
-		{
-			model seatRearLeft
-			{
-				file = M35A1Passenger,
-			}
+			itemType = Base.M35A1Seat,
 		}
 
 		part Muffler
 		{
+			model Muffler
+			{
+				file = M35A1Muffler,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -462,6 +472,66 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+		}
+
+		part M35A1Tarp
+		{
+			model Tarp
+			{
+				file = M35A1Tarp,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1Tarp,
+		}
+
+		part M35A1TarpFrame
+		{
+			model TarpFrame
+			{
+				file = M35A1TarpFrame,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1TarpFrame,
+		}
+
+		part M35A1FrontHardTop
+		{
+			model M35A1FrontHardTop
+			{
+				file = M35A1FrontSoftTop,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1FrontHardTop,
 		}
 
 		template = EngineDoor,
@@ -501,6 +571,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.M35A1Hood,
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -527,7 +599,7 @@ module Base
 
 		part Windshield
 		{
-			model WindshieldFront
+			model windshieldFront
 			{
 				file = M35A1Windshield,
 			}
@@ -547,6 +619,8 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+			itemType = Base.M35A1Windshield,
+
 			lua
 			{
 				create = Vehicles.Create.Default,
@@ -555,9 +629,9 @@ module Base
 
 		part WindshieldRear
 		{
-			model WindshieldRear
+			model windshieldRear
 			{
-				file = M35A1RearWindshield,
+				file = M35A1WindshieldRear,
 			}
 
 			window
@@ -575,6 +649,38 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+			itemType = Base.M35A1RearWindow,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part FrontBumper
+		{
+			model M35A1Bumper
+			{
+				file = M35A1Bumper,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1Bull,
+
 			lua
 			{
 				create = Vehicles.Create.Default,
@@ -585,8 +691,6 @@ module Base
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -601,6 +705,7 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.M35A1Window,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -618,28 +723,9 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.M35A1Window,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = M35A1RearLeftWindow,
-			}
-
-			area = SeatFrontLeft,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = M35A1RearRightWindow,
-			}
-
-			area = SeatFrontRight,
 		}
 
 		part DoorFrontRight
@@ -676,6 +762,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.M35A1Door,
 		}
 
 		part DoorFrontLeft
@@ -712,6 +800,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.M35A1Door,
 		}
 
 		template = TrunkDoor,
@@ -763,19 +853,28 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.M35A1TrunkDoor,
 		}
 
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 		template = Tire,
-		template = Axle,
 
-		part TruckBedOpen
+		part PassengerCompartment
 		{
-			itemType = Base.BigTrunk,
+			category = nodisplay,
 
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		part TruckBed
+		{
 			container
 			{
-				capacity = 100,
+				capacity = 500,
 			}
 		}
 
@@ -783,32 +882,40 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35WheelLargefrontwheelleft,
+				file = M35Wheelfrontwheelleft,
 			}
+
+			itemType = Base.M35A1Wheel,
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35WheelLargefrontwheelright,
+				file = M35Wheelfrontwheelright,
 			}
+
+			itemType = Base.M35A1Wheel,
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35WheelLargebackwheelleft,
+				file = M35Wheelbackwheelleft,
 			}
+
+			itemType = Base.M35A1Wheel,
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35WheelLargebackwheelright,
+				file = M35Wheelbackwheelright,
 			}
+
+			itemType = Base.M35A1Wheel,
 		}
 
 		template = Brake,
@@ -849,38 +956,21 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio1,
+			itemType = Radio.HamRadio2,
 		}
 
 		template = Headlight,
 
-		part PassengerCompartment
-		{
-			category = nodisplay,
-
-			lua
-			{
-				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
-
-		physics box
-		{
-			offset = 0.0000 1.3175 -0.2222,
-			extents = 3.4603 1.8571 9.7937,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
 		attachment trailer
 		{
-			offset = 0.0000 1.0635 -5.6984,
+			offset = 0.0000 0.9365 -5.6984,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 1.3016 5.0159,
+			offset = -0.0159 0.8413 4.2063,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

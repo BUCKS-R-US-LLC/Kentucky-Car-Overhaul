@@ -129,6 +129,15 @@ local vehicleToSeatAnimations = {
 		["seat4"]="Shark_Idle_SidePassenger",
 		["seat5"]="Shark_Idle_SidePassenger2",
 	},
+
+	["Base.SC_M35A1"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",},
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+		["seat4"]="Shark_Idle_SidePassenger",
+		["seat5"]="Shark_Idle_SidePassenger2",
+	},
 	
 	["Base.ModernCar"] = {
         ["seat0"]="Shark_Idle_SmallCarDriver",
