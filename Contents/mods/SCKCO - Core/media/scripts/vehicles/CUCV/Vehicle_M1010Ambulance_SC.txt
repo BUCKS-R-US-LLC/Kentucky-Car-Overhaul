@@ -1,92 +1,92 @@
 module Base
 {
-	model SC_M1008TroopCarrier
+	model SC_M1010Ambulance
 	{
-		mesh = vehicles/Vehicle_M1008Troop_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1010AmbulanceTroop_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1008Driver
+	model M1010AmbulanceDriver
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Passenger
+	model M1010AmbulancePassenger
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Windshield
+	model M1010AmbulanceWindshield
 	{
-		mesh = vehicles/Vehicle_M1008_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008FrontRightWindow
+	model M1010AmbulanceFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1008FrontLeftWindow
+	model M1010AmbulanceFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1008FrontRightDoor
+	model M1010AmbulanceFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1008FrontLeftDoor
+	model M1010AmbulanceFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1008RearRightWindow
+	model M1010AmbulanceRearRightWindow
 	{
-		mesh = vehicles/Vehicle_M1008_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008RearLeftWindow
+	model M1010AmbulanceRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1008_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Trunk
+	model M1010AmbulanceTrunk
 	{
-		mesh = vehicles/Vehicle_M1008_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1008RearWindshield
+	model M1010AmbulanceRearWindshield
 	{
-		mesh = vehicles/Vehicle_M1008_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Hood
+	model M1010AmbulanceHood
 	{
-		mesh = vehicles/Vehicle_M1008_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -116,7 +116,7 @@ module Base
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1008TroopCarrier
+	vehicle SC_M1010Ambulance
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -125,14 +125,14 @@ module Base
 
 		model
 		{
-			file = SC_M1008TroopCarrier,
+			file = SC_M1010Ambulance,
 			scale = 0.6300,
 			offset = 0.0000 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1008Troop_SC,
+			texture = Vehicles/CUCV/Vehicle_M1010Ambulance_SC,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -407,7 +407,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1008Driver,
+				file = M1010AmbulanceDriver,
 			}
 		}
 
@@ -415,7 +415,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1008Passenger,
+				file = M1010AmbulancePassenger,
 			}
 		}
 
@@ -438,7 +438,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1008Hood,
+				file = M1010AmbulanceHood,
 			}
 
 			anim Close
@@ -497,7 +497,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M1008Windshield,
+				file = M1010AmbulanceWindshield,
 			}
 
 			window
@@ -525,7 +525,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = M1008RearWindshield,
+				file = M1010AmbulanceRearWindshield,
 			}
 
 			window
@@ -558,7 +558,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M1008FrontRightWindow,
+				file = M1010AmbulanceFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -575,7 +575,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1008FrontLeftWindow,
+				file = M1010AmbulanceFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -592,7 +592,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontRightDoor,
+				file = M1010AmbulanceFrontRightDoor,
 			}
 
 			anim Close
@@ -628,7 +628,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontLeftDoor,
+				file = M1010AmbulanceFrontLeftDoor,
 			}
 
 			anim Close
@@ -676,7 +676,7 @@ module Base
 
 			model Default
 			{
-				file = M1008Trunk,
+				file = M1010AmbulanceTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
