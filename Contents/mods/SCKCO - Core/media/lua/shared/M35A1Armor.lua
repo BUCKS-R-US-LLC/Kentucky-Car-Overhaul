@@ -24,10 +24,10 @@ function M35A1EngineDoor(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
 local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("M35A1Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bullbar"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bullbar"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-            vehicle:getPartById("M35A1Bullbar"):setCondition(vehicle:getPartById("M35A1Bullbar"):getCondition()-1)
+            vehicle:getPartById("M35A1Bumper"):setCondition(vehicle:getPartById("M35A1Bumper"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(EngineDoor)
