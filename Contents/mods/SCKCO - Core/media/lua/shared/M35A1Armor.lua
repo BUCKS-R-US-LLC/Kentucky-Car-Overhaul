@@ -7,10 +7,10 @@ function M35A1Windshield(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
 local part = vehicle:getPartById("Windshield")
-        if (vehicle:getPartById("M35A1WindshieldBars"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("M35A1WindshieldBars"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1WindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("M35A1WindshieldArmor"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-            vehicle:getPartById("M35A1WindshieldBars"):setCondition(vehicle:getPartById("M35A1WindshieldBars"):getCondition()-1)
+            vehicle:getPartById("M35A1WindshieldArmor"):setCondition(vehicle:getPartById("M35A1WindshieldArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(Windshield)
@@ -24,7 +24,7 @@ function M35A1EngineDoor(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
 local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bullbar"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bumper"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
             vehicle:getPartById("M35A1Bumper"):setCondition(vehicle:getPartById("M35A1Bumper"):getCondition()-1)
@@ -185,15 +185,15 @@ function M35A1TireRearRight(player, part, elapsedMinutes)
 
 end
 
-function M35A1Bullbar(player, part, elapsedMinutes)
+function M35A1Bumper(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
 local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("M35A1Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bullbar"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bumper"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
-            vehicle:getPartById("M35A1Bullbar"):setCondition(vehicle:getPartById("M35A1Bullbar"):getCondition()-1)
+            vehicle:getPartById("M35A1Bumper"):setCondition(vehicle:getPartById("M35A1Bumper"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(EngineDoor)
@@ -213,4 +213,4 @@ Events.OnPlayerUpdate.Add(M35A1TireFrontLeft);
 Events.OnPlayerUpdate.Add(M35A1TireFrontRight);
 Events.OnPlayerUpdate.Add(M35A1TireRearLeft);
 Events.OnPlayerUpdate.Add(M35A1TireRearRight);
-Events.OnPlayerUpdate.Add(M35A1Bullbar);
+Events.OnPlayerUpdate.Add(M35A1Bumper);

@@ -1,17 +1,17 @@
 module Base
 {
 
-    item M35A1Bull2
+    item M35A1Bumper2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Bullbar,
+            DisplayName	= M35A1 Bumper,
             Icon	=	M35A1Bullbar,
             VehicleType =   1,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Bullbar_WorldItem,
+            WorldStaticModel = M35A1Bumper_WorldItem,
         }
 
     item M35A1WindowArmor2
@@ -27,17 +27,17 @@ module Base
             WorldStaticModel = M35A1WindowArmor_WorldItem,
         }
 
-    item M35A1WindshieldBars2
+    item M35A1WindshieldArmor2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35A1 Windshield Cage,
-            Icon	=	M35A1WindshieldBars,
+            Icon	=	M35A1WindshieldArmor,
             VehicleType =   1,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1WindshieldBars_WorldItem,
+            WorldStaticModel = M35A1WindshieldArmor_WorldItem,
         }
 
     item M35A1Door2
@@ -46,19 +46,6 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35A1 Door,
-            Icon	=	M35A1Door,
-            VehicleType =   1,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Door_WorldItem,
-        }
-
-    item M35A1TrailerDoor2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= Trailer Door,
             Icon	=	M35A1Door,
             VehicleType =   1,
             ConditionMax = 100,
