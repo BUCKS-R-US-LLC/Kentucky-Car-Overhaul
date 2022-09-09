@@ -2,7 +2,7 @@ module Base
 {
 	model SC_M1010Ambulance
 	{
-		mesh = vehicles/Vehicle_M1010AmbulanceTroop_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
@@ -127,7 +127,7 @@ module Base
 		{
 			file = SC_M1010Ambulance,
 			scale = 0.6300,
-			offset = 0.0000 -0.2540 0.0000,
+			offset = 0.0000 -0.2540 0.5556,
 		}
 
 		skin
@@ -152,12 +152,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.9841 3.0794 6.9841,
+		extents = 2.9841 3.0794 7.8730,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0000 1.5556 -0.2222,
-		shadowExtents = 3.0712 7.7704,
-		shadowOffset = -0.0000 -0.1048,
+		physicsChassisShape = 2.9524 3.0794 7.8730,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.0712 8.8815,
+		shadowOffset = 0.0000 -0.0572,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -812,8 +812,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.3175 -0.1111,
+			extents = 3.1111 1.8571 8.1429,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

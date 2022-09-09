@@ -69,6 +69,12 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model M1008Tarp
+	{
+		mesh = vehicles/Vehicle_M1008_SC|Tarp_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model M1008Trunk
 	{
 		mesh = vehicles/Vehicle_M1008_SC|Trunk_obj,
@@ -390,7 +396,7 @@ module Base
 			xywh = -1.3810 -2.1270 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Chevy,
+		template = K10Bullbar/part/K10Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -546,6 +552,24 @@ module Base
 			lua
 			{
 				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M1008Tarp
+		{
+			model M1008Tarp
+			{
+				file = M1008Tarp,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
 			}
 		}
 
