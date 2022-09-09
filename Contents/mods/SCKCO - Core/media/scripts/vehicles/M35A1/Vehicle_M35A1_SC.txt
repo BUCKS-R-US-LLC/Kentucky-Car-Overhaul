@@ -434,6 +434,13 @@ module Base
 			}
 
 			itemType = Base.M35A1GasTank,
+
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 
 		part SeatFrontLeft
@@ -512,6 +519,12 @@ module Base
 			}
 
 			itemType = Base.M35A1TarpFrame,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 
 		part M35A1FrontHardTop
@@ -532,6 +545,32 @@ module Base
 			}
 
 			itemType = Base.M35A1FrontHardTop,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M35A1FrontSoftTop
+		{
+			model M35A1FrontSoftTop
+			{
+				file = M35A1FrontSoftTop,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1FrontSoftTop,
 		}
 
 		template = EngineDoor,
