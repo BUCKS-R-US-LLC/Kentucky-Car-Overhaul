@@ -9,7 +9,7 @@ module Base
 	}
 	model M1028A3Driver
 	{
-		mesh = vehicles/Vehicle_M108A3_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1028A3_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -57,18 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1028A3RearRightWindow
-	{
-		mesh = vehicles/Vehicle_M1028A3_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1028A3RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_M1028A3_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model M1028A3Trunk
 	{
 		mesh = vehicles/Vehicle_M1028A3_SC|Trunk_obj,
@@ -86,7 +74,7 @@ module Base
 	}
 	model M1028A3Hood
 	{
-		mesh = vehicles/Vehicle_M1028A3_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1028A3_SC|Hood_obj, 
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -94,31 +82,31 @@ module Base
 	}
 	model BlazerWheelLargefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M1028A3_RearLeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelLargefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M1028A3_RearRightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelleft
+	model M1028Wheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_M1028A3_RearLeftWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelright
+	model M1028Wheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_M1028A3_RearRightWheel,
-		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_M1028A3
 	{
-		mechanicType = 8,
+		mechanicType = 2,
 		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
@@ -127,7 +115,7 @@ module Base
 		{
 			file = SC_M1028A3,
 			scale = 0.6300,
-			offset = 0.0000 -0.8540 0.0000,
+			offset = 0.0000 -0.2540 0.0000,
 		}
 
 		skin
@@ -139,9 +127,9 @@ module Base
 		textureMask = Vehicles/K10/Vehicle_K10Mask,
 		textureLights = Vehicles/K10/Vehicle_K10Lights,
 		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
-		textureDamage8Shell = Vehicles/K10/Vehicle_K10Damage,
+		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
-		textureDamage8Overlay = Vehicles/K10/Vehicle_K10Blood,
+		textureDamage2Overlay = Vehicles/K10/Vehicle_K10Blood,
 
 		sound
 		{
@@ -152,15 +140,15 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 8.8571 3.0794 6.9841,
+		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
-		physicsChassisShape = 8.9584 3.0794 7.0159,
-		centerOfMassOffset = 0.0000 1.5556 -0.8888,
-		shadowExtents = 3.0718 7.7704,
-		shadowOffset = -0.0000 -0.1048,
+		physicsChassisShape = 2.9524 3.0794 7.0159,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
+		shadowExtents = 3.3569 8.1989,
+		shadowOffset = 0.0000 -0.5175,
 		engineForce = 4400,
 		engineQuality = 80,
-		engineLoudness = 180,
+		engineLoudness = 120,
 		maxSpeed = 110f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
@@ -169,18 +157,18 @@ module Base
 		steeringClamp = 0.3,
 		suspensionStiffness = 45,
 		suspensionCompression = 3.83,
-		suspensionDamping = 8.88,
-		maxSuspensionTravelCm = 18,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 8,
+		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.8063 0.0794 8.1587,
+			offset = -1.2063 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +176,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.8888 0.0794 8.1587,
+			offset = 1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +184,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.8063 0.0794 -8.0317,
+			offset = -1.3333 0.0794 -2.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,12 +192,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.8888 0.0794 -8.0317,
+			offset = 1.2698 0.0794 -2.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat8,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -224,7 +212,7 @@ module Base
 
 			position outside
 			{
-				offset = 8.0794 -0.6984 0.0159,
+				offset = 2.0794 -0.6984 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -237,13 +225,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6885 0.9683 0.0159,
+				offset = -0.6825 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -8.0476 -0.1905 0.1489,
+				offset = -2.0476 -0.1905 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -251,22 +239,22 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8857 8.8571 8.0000,
+			xywh = 0.0000 4.2857 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 8.8571 1.7460,
+			xywh = 0.0000 -4.6190 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 8.0476 0.8540 1.8381 1.8381,
+			xywh = 2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -8.0476 0.8540 1.8381 1.8381,
+			xywh = -2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -276,22 +264,22 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.4981 8.1587 0.0000 0.0000,
+			xywh = 1.4921 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 8.1587 0.0000 0.0000,
+			xywh = -1.3651 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4768 -8.1870 0.0000 0.0000,
+			xywh = 1.4762 -2.1270 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -8.1870 0.0000 0.0000,
+			xywh = -1.3810 -2.1270 0.0000 0.0000,
 		}
 
 		template = K10Bullbar/part/K10Bullbar,
@@ -500,7 +488,7 @@ module Base
 			{
 				anim = FrontRightDoorClosing,
 				reverse = TRUE,
-				rate = 8.0,
+				rate = 2.0,
 			}
 
 			anim Open
@@ -536,7 +524,7 @@ module Base
 			{
 				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
-				rate = 8.0,
+				rate = 2.0,
 			}
 
 			anim Open
@@ -646,7 +634,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = M1028Wheelbackwheelleft,
 			}
 		}
 
@@ -654,7 +642,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = M1028Wheelbackwheelright,
 			}
 		}
 
@@ -696,7 +684,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio8,
+			itemType = Radio.HamRadio2,
 		}
 
 		template = Headlight,
@@ -713,14 +701,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.8381,
+			offset = 0.0794 1.3175 0.2381,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5838 -3.5397,
+			offset = 0.0000 0.5238 -3.5397,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
