@@ -1,92 +1,92 @@
 module Base
 {
-	model SC_M1010Ambulance
+	model SC_M1028
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1028_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1010AmbulanceDriver
+	model M1028Driver
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulancePassenger
+	model M1028Passenger
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulanceWindshield
+	model M1028Windshield
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1028_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulanceFrontRightWindow
+	model M1028FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1010AmbulanceFrontLeftWindow
+	model M1028FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1010AmbulanceFrontRightDoor
+	model M1028FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1010AmbulanceFrontLeftDoor
+	model M1028FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1028_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1010AmbulanceRearRightWindow
+	model M1028RearRightWindow
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1028_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulanceRearLeftWindow
+	model M1028RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1028_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulanceTrunk
+	model M1028Trunk
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearDoor_obj,
+		mesh = vehicles/Vehicle_M1028_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1010AmbulanceRearWindshield
+	model M1028RearWindshield
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_M1028_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1010AmbulanceHood
+	model M1028Hood
 	{
-		mesh = vehicles/Vehicle_M1010Ambulance_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1028_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -116,7 +116,7 @@ module Base
 		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1010Ambulance
+	vehicle SC_M1028
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -125,14 +125,14 @@ module Base
 
 		model
 		{
-			file = SC_M1010Ambulance,
+			file = SC_M1028,
 			scale = 0.6300,
-			offset = 0.0000 -0.2540 0.5556,
+			offset = 0.0000 -0.2540 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1010Ambulance_SC,
+			texture = Vehicles/CUCV/Vehicle_M1028_SC,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -152,12 +152,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.9841 3.0794 7.8730,
+		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 7.8730,
-		centerOfMassOffset = 0.0000 1.5556 0.0000,
-		shadowExtents = 3.0712 8.8815,
-		shadowOffset = 0.0000 -0.0572,
+		physicsChassisShape = 2.9524 3.0794 7.0159,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
+		shadowExtents = 3.0712 7.7704,
+		shadowOffset = -0.0000 -0.1048,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -175,7 +175,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 6,
+		seats = 2,
 
 		wheel FrontLeft
 		{
@@ -237,7 +237,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 0.0159,
+				offset = -0.6825 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -246,82 +246,6 @@ module Base
 				offset = -2.0476 -0.1905 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7937 1.3651 -1.4286,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleRight,
-			}
-		}
-
-		passenger MiddleLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7619 1.3651 -1.4286,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7937 1.3651 -2.6984,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -3.1587,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7619 1.3651 -2.6984,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -3.1587,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
 			}
 		}
 
@@ -341,26 +265,6 @@ module Base
 		}
 
 		area SeatFrontRight
-		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
-		}
-
-		area SeatMiddleLeft
-		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
-		}
-
-		area SeatMiddleRight
-		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
-		}
-
-		area SeatRearRight
 		{
 			xywh = -2.0476 0.2540 1.2381 1.2381,
 		}
@@ -390,14 +294,10 @@ module Base
 			xywh = -1.3810 -2.1270 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
+		template = K10Bullbar/part/K10Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -408,7 +308,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1010AmbulanceDriver,
+				file = M1028Driver,
 			}
 		}
 
@@ -416,7 +316,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1010AmbulancePassenger,
+				file = M1028Passenger,
 			}
 		}
 
@@ -439,7 +339,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1010AmbulanceHood,
+				file = M1028Hood,
 			}
 
 			anim Close
@@ -498,7 +398,35 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M1010AmbulanceWindshield,
+				file = M1028Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part WindshieldRear
+		{
+			model WindshieldRear
+			{
+				file = M1028RearWindshield,
 			}
 
 			window
@@ -531,7 +459,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M1010AmbulanceFrontRightWindow,
+				file = M1028FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -548,7 +476,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1010AmbulanceFrontLeftWindow,
+				file = M1028FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -565,7 +493,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1010AmbulanceFrontRightDoor,
+				file = M1028FrontRightDoor,
 			}
 
 			anim Close
@@ -601,7 +529,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1010AmbulanceFrontLeftDoor,
+				file = M1028FrontLeftDoor,
 			}
 
 			anim Close
@@ -649,7 +577,7 @@ module Base
 
 			model Default
 			{
-				file = M1010AmbulanceTrunk,
+				file = M1028Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -684,9 +612,19 @@ module Base
 			}
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
 
 		part TireFrontLeft
 		{
@@ -775,8 +713,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3175 -0.1111,
-			extents = 3.1111 1.8571 8.1429,
+			offset = 0.0794 1.3175 0.2381,
+			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

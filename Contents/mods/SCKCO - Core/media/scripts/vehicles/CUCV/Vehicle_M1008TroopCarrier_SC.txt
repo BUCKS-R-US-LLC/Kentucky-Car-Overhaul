@@ -71,7 +71,7 @@ module Base
 	}
 	model M1008TarpFrame
 	{
-		mesh = vehicles/Vehicle_M1008_SC|TarpFrane_obj,
+		mesh = vehicles/Vehicle_M1008Troop_SC|TarpFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -215,7 +215,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -441,7 +441,7 @@ module Base
 
 		part M1008TarpFrame
 		{
-			model M1008TarpFrame
+			model TarpFrame
 			{
 				file = M1008TarpFrame,
 			}
