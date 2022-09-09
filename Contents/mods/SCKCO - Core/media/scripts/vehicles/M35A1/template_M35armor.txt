@@ -1,67 +1,69 @@
 module Base
 {
-	model U1500LBullbar
+	model M35A1Bullbar
 	{
-		mesh = vehicles/Vehicle_U1550L|Bullbar_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
-	model U1500LFrontRightWindowArmor
+	model M35A1FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_U1550L|FrontRightWindowArmors_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+
+	model M35A1FrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+
+	model M35A1FrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model U1500LFrontLeftWindowArmor
+	model M35A1FrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_U1550L|FrontLeftWindowArmors_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model U1500LRearRightWindowArmor
+	model M35A1WindshieldBars
 	{
-		mesh = vehicles/Vehicle_U1550L|RearRightWindowArmors_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-
-	model U1500LRearLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_U1550L|RearLeftWindowArmors_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-
-	model U1500LWindshieldBars
-	{
-		mesh = vehicles/Vehicle_U1550L|WindshieldBars,
+		mesh = vehicles/Vehicle_M35A1_SC|WindshieldArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
-	template vehicle UnimogArmor
+	template vehicle M35A1Armor
 		{
-		part U1500LBullbar
+		part M35A1Bumper
         	{
 
-			model U1500LBullbar
+			model M35A1Bumper
 				{
-                		file = U1500LBullbar,
+                		file = M35A1Bullbar,
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.U1550LBull,
+            itemType = Base.M35A1Bull,
             mechanicRequireKey = false,
 		table install
             {
@@ -104,17 +106,24 @@ module Base
             }
 		}
 
-		part U1500LFrontRightWindowArmor
+		part M35A1FrontRightWindowArmor
         	{
 
-			model U1500LFrontRightWindowArmor
+			model M35A1FrontRightWindowArmor
 				{
-                		file = U1500LFrontRightWindowArmor,
+                		file = M35A1FrontRightWindowArmor,
 				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
 		area = Engine,
 		parent = DoorFrontRight,
             category = bodywork,
-            itemType = Base.U1550LWindowArmor,
+            itemType = Base.M35A1WindowArmor,
             mechanicRequireKey = false,
 		table install
             {
@@ -158,17 +167,24 @@ module Base
             }
 		}
 
-		part U1500LFrontLeftWindowArmor
+		part M35A1FrontLeftWindowArmor
         	{
 
-			model U1500LFrontLeftWindowArmor
+			model M35A1FrontLeftWindowArmor
 				{
-                		file = U1500LFrontLeftWindowArmor,
+                		file = M35A1FrontLeftWindowArmor,
 				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
 		area = Engine,
 		parent = DoorFrontLeft,
             category = bodywork,
-            itemType = Base.U1550LWindowArmor,
+            itemType = Base.M35A1WindowArmor,
             mechanicRequireKey = false,
 		table install
             {
@@ -212,17 +228,19 @@ module Base
             }
 		}
 
-		part U1500LRearRightWindowArmor
+
+		part M35A1FrontRightDoorArmor
         	{
 
-			model U1500LRearRightWindowArmor
+			model M35A1FrontRightDoorArmor
 				{
-                		file = U1500LRearRightWindowArmor,
+                		file = M35A1FrontRightDoorArmor,
 				}
+
 		area = Engine,
-		parent = DoorRearRight,
+		parent = DoorFrontRight,
             category = bodywork,
-            itemType = Base.U1550LWindowArmor,
+            itemType = Base.M35A1DoorArmor,
             mechanicRequireKey = false,
 		table install
             {
@@ -236,7 +254,7 @@ module Base
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowRearRight,
+		requireInstalled = WindowFrontRight,
                 time = 300,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
@@ -266,17 +284,18 @@ module Base
             }
 		}
 
-		part U1500LRearLeftWindowArmor
+		part M35A1FrontLeftDoorArmor
         	{
 
-			model U1500LRearLeftWindowArmor
+			model M35A1FrontLeftDoorArmor
 				{
-                		file = U1500LRearLeftWindowArmor,
+                		file = M35A1FrontLeftDoorArmor,
 				}
+
 		area = Engine,
-		parent = DoorRearLeft,
+		parent = DoorFrontLeft,
             category = bodywork,
-            itemType = Base.U1550LWindowArmor,
+            itemType = Base.M35A1DoorArmor,
             mechanicRequireKey = false,
 		table install
             {
@@ -290,7 +309,7 @@ module Base
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowRearLeft,
+		requireInstalled = WindowFrontLeft,
                 time = 300,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
@@ -320,16 +339,16 @@ module Base
             }
 		}
 
-		part U1500LWindshieldBars
+		part M35A1WindshieldBars
         	{
 
-			model U1500LWindshieldBars
+			model M35A1WindshieldBars
 				{
-                		file = U1500LWindshieldBars,
+                		file = M35A1WindshieldBars,
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.U1550LWindshieldBars,
+            itemType = Base.M35A1WindshieldBars,
             mechanicRequireKey = false,
 		table install
             {
@@ -364,160 +383,6 @@ module Base
                 }
                 time = 300,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part U1500LRearLeftWindowArmor
-        	{
-
-			model U1500LRearLeftWindowArmor
-				{
-                		file = U1500LRearLeftWindowArmor,
-				}
-		area = Engine,
-		parent = DoorRearLeft,
-            category = bodywork,
-            itemType = Base.U1550LWindowArmor,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-		requireInstalled = WindowRearLeft,
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part U1500LArmoring
-        	{
-
-		area = Engine,
-            category = bodywork,
-            itemType = Base.U1550LInteriorArmoring,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1300,
-                  skills = Mechanics:6,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1300,
-                  skills = Mechanics:6,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part U1550LTarp
-        	{
-
-		model U1550LTarp
-				{
-                		file = U1550LTarp,
-				}
-		area = Engine,
-            category = bodywork,
-            itemType = Base.U1550LTarp,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1300,
-                  skills = Mechanics:6,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1300,
-                  skills = Mechanics:6,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
