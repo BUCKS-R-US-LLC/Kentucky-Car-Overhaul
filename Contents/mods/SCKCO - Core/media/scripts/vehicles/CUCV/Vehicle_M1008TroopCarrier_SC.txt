@@ -69,9 +69,9 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Tarp
+	model M1008TarpFrame
 	{
-		mesh = vehicles/Vehicle_M1008_SC|Tarp_obj,
+		mesh = vehicles/Vehicle_M1008_SC|TarpFrane_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -393,10 +393,11 @@ module Base
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -2.1270 0.0000 0.0000,
+			xywh = -1.3810 -2.1270 0.0000 0.0000,w
 		}
 
-		template = K10Bullbar/part/K10Chevy,
+		template = K5Bullbar/part/K5Bullbar,
+		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -427,6 +428,24 @@ module Base
 
 		part Muffler
 		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part M1008TarpFrame
+		{
+			model M1008TarpFrame
+			{
+				file = M1008TarpFrame,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
