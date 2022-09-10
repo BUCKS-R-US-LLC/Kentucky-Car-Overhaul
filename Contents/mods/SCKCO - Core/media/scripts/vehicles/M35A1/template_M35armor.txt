@@ -45,7 +45,7 @@ module Base
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model M35A1WindshieldBars
+	model M35A1WindshieldArmor
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|WindshieldArmor_obj,
 		shader = vehicle_noreflect,
@@ -63,7 +63,7 @@ module Base
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.M35A1Bull,
+            itemType = Base.M35A1Bumper,
             mechanicRequireKey = false,
 		table install
             {
@@ -340,16 +340,16 @@ module Base
             }
 		}
 
-		part M35A1WindshieldBars
+		part M35A1WindshieldArmor
         	{
 
-			model M35A1WindshieldBars
+			model M35A1WindshieldArmor
 				{
-                		file = M35A1WindshieldBars,
+                		file = M35A1WindshieldArmor,
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.M35A1WindshieldBars,
+            itemType = Base.M35A1WindshieldArmor,
             mechanicRequireKey = false,
 		table install
             {
