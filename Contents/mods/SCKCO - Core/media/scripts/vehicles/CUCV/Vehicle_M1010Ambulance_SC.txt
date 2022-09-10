@@ -63,7 +63,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
@@ -72,6 +71,8 @@ module Base
 		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model M1010AmbulanceHood
 	{
@@ -143,7 +144,7 @@ module Base
 
 		extents = 2.9841 3.0794 7.8730,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 7.8730,
+		physicsChassisShape = 2.9524 3.0794 7.9048,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
 		shadowExtents = 3.0712 8.8815,
 		shadowOffset = 0.0000 -0.0572,
@@ -198,7 +199,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -245,7 +246,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.8413 1.5397 -1.4286,
+				offset = -0.9524 1.5397 -1.4286,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -264,7 +265,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8413 1.5397 -1.4286,
+				offset = 0.9524 1.5397 -1.4286,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -283,7 +284,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.8413 1.5397 -2.6984,
+				offset = -0.9524 1.5397 -2.6984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -302,7 +303,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8413 1.5397 -2.6984,
+				offset = 0.9524 1.5397 -2.6984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -310,53 +311,53 @@ module Base
 			{
 				offset = -2.0476 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
+				area = SeatRearLeft,
 			}
 		}
 
 		area Engine
 		{
-			xywh = 0.0000 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.9365 2.9841 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 2.8571 1.7460,
+			xywh = 0.0000 -4.8095 2.9841 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 1.0317 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 1.0317 1.2381 1.2381,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 -1.3175 1.2381 1.2381,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 -1.3175 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 -2.9683 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 -2.9683 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.1111 1.0794 0.5714,
+			xywh = -2.0317 -1.1111 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -393,6 +394,16 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part TruckBed
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -404,6 +415,46 @@ module Base
 		part SeatFrontRight
 		{
 			model seatfrontRight
+			{
+				file = M1010AmbulancePassenger,
+			}
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			model SeatMiddleLeft
+			{
+				file = M1010AmbulancePassenger,
+			}
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+
+			model SeatMiddleRight
+			{
+				file = M1010AmbulancePassenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model SeatRearLeft
+			{
+				file = M1010AmbulancePassenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model SeatRearRight
 			{
 				file = M1010AmbulancePassenger,
 			}
@@ -494,6 +545,31 @@ module Base
 			{
 				openable = false,
 			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = M1010AmbulanceRearWindshield,
+			}
+
+			parent = DoorRearRight,
 
 			table install
 			{
