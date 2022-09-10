@@ -1,0 +1,311 @@
+module Base
+{
+
+	template vehicle PassengerSeat12
+	{
+		template = PassengerSeat4/passenger/FrontLeft,
+		template = PassengerSeat4/passenger/FrontRight,
+		
+		passenger FrontLeft
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+
+		passenger FrontRight
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			door = DoorMiddleLeft,
+			area = SeatMiddleLeft,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			door = DoorMiddleRight,
+			area = SeatMiddleRight,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+
+		template = PassengerSeat4/passenger/RearLeft,
+		template = PassengerSeat4/passenger/RearRight,
+
+		passenger RearLeft
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+
+		passenger RearRight
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+		}
+		
+		passenger RearLeftOne
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightOne
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearLeftTwo
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightTwo
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		passenger RearLeftThree
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightThree
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		passenger RearLeftFour
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightFour
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		passenger RearLeftFive
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightFive
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		template! = PassengerPosition6,
+
+		template! = PassengerCommon,
+	}
+
+}
