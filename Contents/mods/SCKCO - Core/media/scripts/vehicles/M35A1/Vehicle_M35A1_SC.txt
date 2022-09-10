@@ -74,6 +74,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model M35A1FrontLeftWindow
 	{
@@ -82,6 +83,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model M35A1FrontRightDoor
 	{
@@ -157,6 +159,21 @@ module Base
 		skin
 		{
 			texture = Vehicles/M35A1/Vehicle_M35A1_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A1/Vehicle_M35A1_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A1/Vehicle_M35A1_Summer,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A1/Vehicle_M35A1_Winter,
 		}
 
 		textureRust = Vehicles/M35A1/Vehicle_M35A1Rust,
@@ -371,12 +388,12 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.5806 1.5806 2.0000 2.0000,
+			xywh = 2.8226 1.5806 2.0000 2.0000,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.5806 1.5806 2.0000 2.0000,
+			xywh = -2.8226 1.5806 2.0000 2.0000,
 		}
 
 		area SeatMiddleLeft

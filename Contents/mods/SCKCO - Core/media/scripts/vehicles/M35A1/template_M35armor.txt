@@ -13,8 +13,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = FrontRightDoorBone 1.0,
-		boneWeight = FrontRightWindowBone 1.0,
 	}
 
 	model M35A1FrontLeftWindowArmor
@@ -23,8 +21,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = FrontLeftDoorBone 1.0,
-		boneWeight = FrontLeftWindowBone 1.0,
 	}
 
 	model M35A1FrontRightDoorArmor
@@ -63,7 +59,7 @@ module Base
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.M35A1Bumper,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
@@ -122,9 +118,9 @@ module Base
 			}
 
 		area = Engine,
-		parent = DoorFrontRight,
+		parent = WindowFrontRight,
             category = bodywork,
-            itemType = Base.M35A1WindowArmor,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
@@ -183,9 +179,9 @@ module Base
 			}
 
 		area = Engine,
-		parent = DoorFrontLeft,
+		parent = WindowFrontLeft,
             category = bodywork,
-            itemType = Base.M35A1WindowArmor,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
@@ -241,7 +237,7 @@ module Base
 		area = Engine,
 		parent = DoorFrontRight,
             category = bodywork,
-            itemType = Base.M35A1DoorArmor,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
@@ -296,7 +292,7 @@ module Base
 		area = Engine,
 		parent = DoorFrontLeft,
             category = bodywork,
-            itemType = Base.M35A1DoorArmor,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
@@ -349,7 +345,7 @@ module Base
 				}
 		area = Engine,
             category = bodywork,
-            itemType = Base.M35A1WindshieldArmor,
+            itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install
             {
