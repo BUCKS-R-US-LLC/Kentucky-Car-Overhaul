@@ -37,6 +37,12 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model M35A1SpareTire
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|SpareTire_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model M35A1Bumper
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
@@ -802,6 +808,27 @@ module Base
 			}
 
 			itemType = Base.M35A1FrontSoftTop,
+		}
+
+		part M35SpareTire
+		{
+			model Tarp
+			{
+				file = M35A1SpareTire,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35A1FrontTire,
+
 		}
 
 		template = EngineDoor,
