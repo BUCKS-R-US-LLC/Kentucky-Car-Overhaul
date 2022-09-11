@@ -9,7 +9,7 @@ module Base
 	}
 	model M35A1GasTank
 	{
-		mesh = vehicles/Vehicle_M35A1|FuelTank_obj,
+		mesh = vehicles/Vehicle_M35A1_SC|FuelTank_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -40,7 +40,8 @@ module Base
 	model M35A1SpareTire
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|SpareTire_obj,
-		shader = vehicle_noreflect,
+		texture = vehicles/M35A1/Vehicle_M35FrontWheel,
+		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M35A1Bumper
@@ -691,6 +692,7 @@ module Base
 
 		part SeatMiddleRight
 		{
+			category = nodisplay,
 			model seatMiddleRight
 			{
 				file = M35A1Passenger,
@@ -698,7 +700,40 @@ module Base
 
 			itemType = Base.M35A1Seat,
 		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+			model seatMiddleLeft
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35A1Seat,
+		}
 		
+		part SeatRearLeft
+		{
+			category = nodisplay,
+			model seatRearLeft
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35A1Seat,
+		}
+		
+		part SeatRearRight
+		{
+			category = nodisplay,
+			model seatRearRight
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35A1Seat,
+		}
+
 		part Muffler
 		{
 			model Muffler
@@ -810,9 +845,9 @@ module Base
 			itemType = Base.M35A1FrontSoftTop,
 		}
 
-		part M35SpareTire
+		part M35A1SpareTire
 		{
-			model Tarp
+			model M35A1SpareTire
 			{
 				file = M35A1SpareTire,
 			}
@@ -827,7 +862,12 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1FrontTire,
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M35A1Wheel,
 
 		}
 
