@@ -75,6 +75,12 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model M1008SoftTop
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|Tarp_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model M1008Trunk
 	{
 		mesh = vehicles/Vehicle_M1008_SC|Trunk_obj,
@@ -272,6 +278,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
 			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
 		}
 
 		passenger MiddleLeft
@@ -287,9 +301,17 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -1.6032,
+				offset = 1.9048 -0.1905 -1.6032,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 
@@ -310,6 +332,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
 		}
 
 		passenger RearLeft
@@ -325,9 +355,17 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				offset = 1.9048 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 
@@ -558,7 +596,7 @@ module Base
 
 		part TarpFrame
 		{
-			model TarpFrame
+			model M1008TarpFrame
 			{
 				file = M1008TarpFrame,
 			}
@@ -572,13 +610,20 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M1008TarpFrame,
 		}
 
-		part M1008Tarp
+		part M1008SoftTop
 		{
-			model M1008Tarp
+			model M1008SoftTop
 			{
-				file = M1008Tarp,
+				file = M1008SoftTop,
 			}
 
 			table install
@@ -590,6 +635,13 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M1008SoftTop,
 		}
 
 		template = Door/part/DoorFrontLeft,

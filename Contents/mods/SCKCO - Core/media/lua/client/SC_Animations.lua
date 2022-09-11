@@ -132,7 +132,7 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_M1010Ambulance"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
+		["seat1"]="Shark_Idle_Passenger",
         ["seat2"]="Shark_Idle_SidePassenger",
 		["seat3"]="Shark_Idle_SidePassenger2",
 		["seat4"]="Shark_Idle_SidePassenger",
@@ -141,11 +141,19 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_M35A1"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
+		["seat1"]="Shark_Idle_Passenger",
         ["seat2"]="Shark_Idle_SidePassenger",
 		["seat3"]="Shark_Idle_SidePassenger2",
 		["seat4"]="Shark_Idle_SidePassenger",
 		["seat5"]="Shark_Idle_SidePassenger2",
+		["seat6"]="Shark_Idle_SidePassenger",
+		["seat7"]="Shark_Idle_SidePassenger2",
+		["seat8"]="Shark_Idle_SidePassenger",
+		["seat9"]="Shark_Idle_SidePassenger2",
+		["seat10"]="Shark_Idle_SidePassenger",
+		["seat11"]="Shark_Idle_SidePassenger2",
+		["seat12"]="Shark_Idle_SidePassenger",
+		["seat13"]="Shark_Idle_SidePassenger2",
 	},
 	
 	["Base.ModernCar"] = {

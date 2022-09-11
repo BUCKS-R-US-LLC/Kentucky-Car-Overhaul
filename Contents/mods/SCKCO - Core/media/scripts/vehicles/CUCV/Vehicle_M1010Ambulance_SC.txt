@@ -71,8 +71,8 @@ module Base
 		mesh = vehicles/Vehicle_M1010Ambulance_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model M1010AmbulanceHood
 	{
@@ -357,7 +357,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = -2.0317 -1.1111 1.0794 0.5714,
+			xywh = 2.0317 -0.3492 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
