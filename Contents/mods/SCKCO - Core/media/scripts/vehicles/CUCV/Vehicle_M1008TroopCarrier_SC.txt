@@ -75,7 +75,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008SoftTop
+	model M1008Tarp
 	{
 		mesh = vehicles/Vehicle_M1008Troop_SC|Tarp_obj,
 		shader = vehicle_noreflect,
@@ -594,11 +594,11 @@ module Base
 			}
 		}
 
-		part TarpFrame
+		part M1008TarpFrame
 		{
 			model M1008TarpFrame
 			{
-				file = M1008TarpFrame,
+				file = TarpFrame,
 			}
 
 			table install
@@ -619,7 +619,7 @@ module Base
 			itemType = Base.M1008TarpFrame,
 		}
 
-		part M1008SoftTop
+		part M1008Tarp
 		{
 			model M1008SoftTop
 			{
