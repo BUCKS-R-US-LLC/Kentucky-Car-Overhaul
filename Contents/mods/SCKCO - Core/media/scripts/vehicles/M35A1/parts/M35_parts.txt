@@ -1,237 +1,220 @@
 module Base
 {
 
-    item M35A1Bumper2
+    item M35Bumper2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Bumper,
-            Icon	=	M35A1Bullbar,
-            VehicleType =   1,
+            DisplayName	= M35 Bumper,
+            Icon	=	M35Bullbar,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Bumper_WorldItem,
+            WorldStaticModel = M35Bumper_WorldItem,
         }
 
-    item M35A1WindowArmor2
+    item M35WindowArmor2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Window Armor,
-            Icon	=	M35A1WindowArmor,
-            VehicleType =   1,
+            DisplayName	= M35 Window Armor,
+            Icon	=	M35WindowArmor,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1WindowArmor_WorldItem,
+            WorldStaticModel = M35WindowArmor_WorldItem,
         }
 
-    item M35A1WindshieldArmor2
+    item M35WindshieldArmor2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Windshield Cage,
-            Icon	=	M35A1WindshieldArmor,
-            VehicleType =   1,
+            DisplayName	= M35 Windshield Cage,
+            Icon	=	M35WindshieldArmor,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1WindshieldArmor_WorldItem,
+            WorldStaticModel = M35WindshieldArmor_WorldItem,
         }
 
-    item M35A1Door2
+    item M35Door2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Door,
-            Icon	=	M35A1Door,
-            VehicleType =   1,
+            DisplayName	= M35 Door,
+            Icon	=	M35Door,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Door_WorldItem,
+            WorldStaticModel = M35Door_WorldItem,
         }
 
-    item M35A1Wheel2
+    item M35Wheel2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Wheel,
-            Icon	=	M35A1Wheel,
+            DisplayName	= M35 Wheel,
+            Icon	=	M35Wheel,
         	MaxCapacity = 35,
         	ChanceToSpawnDamaged = 0,
         	WheelFriction = 1.6,
         	ConditionLowerStandard = 0.08,
         	ConditionLowerOffroad = 0.10,
-            VehicleType =   1,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Wheel_WorldItem,
+            WorldStaticModel = M35Wheel_WorldItem,
         }
 
-    item M35A1Window2
+    item M35Window2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Window,
-            Icon	=	M35A1Window,
-            VehicleType =   1,
+            DisplayName	= M35 Window,
+            Icon	=	M35Window,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Window_WorldItem,
+            WorldStaticModel = M35Window_WorldItem,
         }
 
-    item M35A1Hood2
+    item M35Hood2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Hood,
-            Icon	=	M35A1Hood,
-            VehicleType =   1,
+            DisplayName	= M35 Hood,
+            Icon	=	M35Hood,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Hood_WorldItem,
+            WorldStaticModel = M35Hood_WorldItem,
         }
 
-    item M35A1TrunkDoor2
+    item M35TrunkDoor2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Trunk Hatch,
-            Icon	=	M35A1TrunkDoor,
-            VehicleType =   1,
+            DisplayName	= M35 Trunk Hatch,
+            Icon	=	M35TrunkDoor,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1TrunkDoor_WorldItem,
+            WorldStaticModel = M35TrunkDoor_WorldItem,
         }
 
-    item M35A1RearWindow2
+    item M35RearWindow2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Rear Windshield,
-            Icon	=	M35A1RearWindow,
-            VehicleType =   1,
+            DisplayName	= M35 Rear Windshield,
+            Icon	=	M35RearWindow,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1RearWindow_WorldItem,
+            WorldStaticModel = M35RearWindow_WorldItem,
         }
 
-
-    item M35A1Seat2
+    item M35Seat2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Seat,
-            Icon	=	M35A1Seat,
-        	MaxCapacity = 40,
-            VehicleType =   1,
+            DisplayName	= M35 Seat,
+            Icon	=	M35Seat,
+        	MaxCapacity = 5,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Seat_WorldItem,
+            WorldStaticModel = M35Seat_WorldItem,
         }
 
-    item M35A1Windshield2
+   item M35RearSeat2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Windshield,
-            Icon	=	M35A1Windshield,
-            VehicleType =   1,
+            DisplayName	= M35 Rear Seat,
+            Icon	=	M35Seat,
+        	MaxCapacity = 1,
+            VehicleType =   2,
             ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Windshield_WorldItem,
+            MechanicsItem = FALSE,
+            WorldStaticModel = M35Seat_WorldItem,
         }
 
-    item M35A1GasTank2
+    item M35Windshield2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Windshield,
+            Icon	=	M35Windshield,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35Windshield_WorldItem,
+        }
+
+    item M35GasTank2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	15.0,0
             Type	=	Normal,
-            DisplayName	= M35A1 Gas Tank,
-            Icon	=	M35A1GasTank,
-            VehicleType =   1,
+            DisplayName	= M35 Gas Tank,
+            Icon	=	M35GasTank,
+            VehicleType =   2,
             ConditionMax = 100,
         	MaxCapacity = 85,
         	ConditionAffectsCapacity = false,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1GasTank_WorldItem,
+            WorldStaticModel = M35GasTank_WorldItem,
         }
 
-    item M35A1Muffler2
+    item M35Tarp2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Muffler,
-            Icon	=	M35A1Muffler,
-          	EngineLoudness = 100,
-            VehicleType =   1,
+            DisplayName	= M35 Tarp Cover,
+            Icon	=	M35Tarp,
+            VehicleType =   2,
             ConditionMax = 100,
-         	ConditionLowerStandard = 0.01,
-          	ConditionLowerOffroad = 0.15,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Muffler_WorldItem,
+            WorldStaticModel = M35Tarp_WorldItem,
         }
 
-    item M35A1Tarp2
+    item M35FrontHardTop2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Tarp Cover,
-            Icon	=	M35A1Tarp,
-            VehicleType =   1,
+            DisplayName	= M35 Front Hardtop,
+            Icon	=	M35Tarp,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Tarp_WorldItem,
+            WorldStaticModel = M35Tarp_WorldItem,
         }
 
-    item M35A1FrontHardTop2
+    item M35TarpFrame2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35A1 Front Hardtop,
-            Icon	=	M35A1Tarp,
-            VehicleType =   1,
+            DisplayName	= M35 Tarp Frame,
+            Icon	=	M35Tarp,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Tarp_WorldItem,
+            WorldStaticModel = M35Tarp_WorldItem,
         }
-
-    item M35A1TarpFrame2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35A1 Tarp Frame,
-            Icon	=	M35A1Tarp,
-            VehicleType =   1,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Tarp_WorldItem,
-        }
-
-    item M35A1InteriorArmoring2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	40.0,0
-            Type	=	Normal,
-            DisplayName	= M35A1 Chassis and Body Armoring,
-            Icon	=	M35A1Armoring,
-            VehicleType =   1,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35A1Armoring_WorldItem,
-        }
-
 }

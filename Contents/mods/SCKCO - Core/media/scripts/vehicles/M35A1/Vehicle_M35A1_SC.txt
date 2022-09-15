@@ -200,7 +200,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.8387 2.1613 9.8065,
+		extents = 3.9032 2.1613 9.8710,
 		mass = 1500,
 		physicsChassisShape = 3.6452 2.1613 9.4839,
 		centerOfMassOffset = 0.0000 1.0968 -0.7742,
@@ -221,8 +221,8 @@ module Base
 		gearRatio7 = 0.80,
 		gearRatio8 = 0.60,
 		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.30f,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.25f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.3,
 		suspensionStiffness = 300,
@@ -230,7 +230,7 @@ module Base
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.4f,
+		wheelFriction = 1.6f,
 		frontEndHealth = 3001,
 		rearEndHealth = 1500,
 		seats = 6,
@@ -360,7 +360,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.4032 0.1774 -1.6129,
+				offset = 2.4032 0.1613 -1.4839,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -379,7 +379,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.3710 0.1935 -1.6129,
+				offset = -2.3710 0.1452 -1.5000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -417,7 +417,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.3710 0.1774 -0.3226,
+				offset = -2.3710 0.1774 -0.3065,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearRightOne,
 			}
@@ -662,7 +662,7 @@ module Base
 				file = M35A1GasTank,
 			}
 
-			itemType = Base.M35A1GasTank,
+			itemType = Base.M35GasTank,
 
 			lua
 			{
@@ -677,7 +677,7 @@ module Base
 				file = M35A1Driver,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35Seat,
 		}
 
 		part SeatFrontRight
@@ -687,7 +687,7 @@ module Base
 				file = M35A1Passenger,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35Seat,
 		}
 
 		part SeatMiddleRight
@@ -699,7 +699,7 @@ module Base
 				file = M35A1Passenger,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35RearSeat,
 		}
 
 		part SeatMiddleLeft
@@ -711,7 +711,7 @@ module Base
 				file = M35A1Passenger,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35RearSeat,
 		}
 
 		part SeatRearLeft
@@ -723,7 +723,7 @@ module Base
 				file = M35A1Passenger,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35RearSeat,
 		}
 
 		part SeatRearRight
@@ -735,7 +735,7 @@ module Base
 				file = M35A1Passenger,
 			}
 
-			itemType = Base.M35A1Seat,
+			itemType = Base.M35RearSeat,
 		}
 
 		part Muffler
@@ -773,7 +773,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1Tarp,
+			itemType = Base.M35Tarp,
 			parent = M35A1TarpFrame,
 			area = M35A1TarpFrame,
 		}
@@ -795,7 +795,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1TarpFrame,
+			itemType = Base.M35TarpFrame,
 
 			lua
 			{
@@ -820,7 +820,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1FrontHardTop,
+			itemType = Base.M35FrontHardTop,
 
 			lua
 			{
@@ -845,7 +845,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1FrontSoftTop,
+			itemType = Base.M35FrontSoftTop,
 		}
 
 		part M35A1SpareTire
@@ -870,7 +870,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.M35A1Wheel,
+			itemType = Base.M35Wheel,
 		}
 
 		template = EngineDoor,
@@ -910,7 +910,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1Hood,
+			itemType = Base.M35Hood,
 
 			table install
 			{
@@ -958,7 +958,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1Windshield,
+			itemType = Base.M35Windshield,
 
 			lua
 			{
@@ -988,7 +988,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.M35A1RearWindow,
+			itemType = Base.M35RearWindow,
 
 			lua
 			{
@@ -1014,7 +1014,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1Window,
+			itemType = Base.M35Window,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -1032,7 +1032,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1Window,
+			itemType = Base.M35Window,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -1072,7 +1072,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1Door,
+			itemType = Base.M35Door,
 		}
 
 		part DoorFrontLeft
@@ -1110,7 +1110,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1Door,
+			itemType = Base.M35Door,
 		}
 
 		template = TrunkDoor,
@@ -1163,7 +1163,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35A1TrunkDoor,
+			itemType = Base.M35TrunkDoor,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -1194,7 +1194,7 @@ module Base
 				file = M35Wheelfrontwheelleft,
 			}
 
-			itemType = Base.M35A1Wheel,
+			itemType = Base.M35Wheel,
 		}
 
 		part TireFrontRight
@@ -1204,7 +1204,7 @@ module Base
 				file = M35Wheelfrontwheelright,
 			}
 
-			itemType = Base.M35A1Wheel,
+			itemType = Base.M35Wheel,
 		}
 
 		part TireRearLeft
@@ -1214,7 +1214,7 @@ module Base
 				file = M35Wheelbackwheelleft,
 			}
 
-			itemType = Base.M35A1Wheel,
+			itemType = Base.M35Wheel,
 		}
 
 		part TireRearRight
@@ -1224,7 +1224,7 @@ module Base
 				file = M35Wheelbackwheelright,
 			}
 
-			itemType = Base.M35A1Wheel,
+			itemType = Base.M35Wheel,
 		}
 
 		template = Brake,

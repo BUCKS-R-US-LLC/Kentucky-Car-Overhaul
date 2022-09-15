@@ -3,23 +3,18 @@ module Base
 
 	template vehicle PassengerSeat14
 	{
-		template = PassengerSeat4/passenger/FrontLeft,
-		template = PassengerSeat4/passenger/FrontRight,
+		template = PassengerSeat2/passenger/FrontLeft,
+		template = PassengerSeat2/passenger/FrontRight,
 		
 		passenger FrontLeft
 		{
 			switchSeat MiddleLeft
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat MiddleRight
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
+
 			}
 
 
@@ -29,16 +24,10 @@ module Base
 		{
 			switchSeat MiddleLeft
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat MiddleRight
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 		}
 
@@ -49,16 +38,10 @@ module Base
 			
 			switchSeat FrontLeft
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat FrontRight
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat MiddleRight
@@ -161,16 +144,10 @@ module Base
 			
 			switchSeat FrontLeft
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat FrontRight
 			{
-				anim = Climb_WindowB,
-				rate = 0.23,
-				sound = ,
 			}
 			
 			switchSeat MiddleLeft
@@ -624,6 +601,7 @@ module Base
 				offset = -0.2 0.0 0.4,
 				rotate = 0.0 0.0 0.0,
 			}
+
 			position outside
 			{
 				offset = -0.6 0.0 0.4,
@@ -663,6 +641,13 @@ module Base
 			}
 
 			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightTwo
 			{
 				anim = Climb_WindowB,
 				rate = 0.23,
@@ -862,6 +847,13 @@ module Base
 			}
 
 			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
 			{
 				anim = Climb_WindowB,
 				rate = 0.23,
