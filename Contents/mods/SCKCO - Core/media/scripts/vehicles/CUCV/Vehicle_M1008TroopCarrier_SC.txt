@@ -598,7 +598,7 @@ module Base
 		{
 			model M1008TarpFrame
 			{
-				file = TarpFrame,
+				file = M1008TarpFrame,
 			}
 
 			table install
@@ -621,9 +621,9 @@ module Base
 
 		part M1008Tarp
 		{
-			model M1008SoftTop
+			model M1008Tarp
 			{
-				file = M1008SoftTop,
+				file = M1008Tarp,
 			}
 
 			table install
@@ -641,7 +641,8 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.M1008SoftTop,
+			itemType = Base.M1008Tarp,
+			
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -806,7 +807,7 @@ module Base
 			}
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
 
@@ -914,7 +915,7 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.5238 -3.9683,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
