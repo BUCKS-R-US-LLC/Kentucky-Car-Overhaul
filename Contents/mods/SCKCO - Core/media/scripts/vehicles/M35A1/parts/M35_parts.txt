@@ -192,6 +192,20 @@ module Base
             WorldStaticModel = M35Tarp_WorldItem,
         }
 
+
+    item M35FrontHardTop2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Front Softtop,
+            Icon	=	M35Tarp,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35SoftTop_WorldItem,
+        }
+
     item M35FrontHardTop2
         {
             DisplayCategory = VehicleMaintenance,
@@ -202,7 +216,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Tarp_WorldItem,
+            WorldStaticModel = M35HardTop_WorldItem,
         }
 
     item M35TarpFrame2
@@ -215,6 +229,6 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Tarp_WorldItem,
+            WorldStaticModel = M35TarpFrame_WorldItem,
         }
 }
