@@ -160,7 +160,7 @@ module Base
 		{
 			file = SC_M35A1,
 			scale = 0.6200,
-			offset = 0.0000 -0.3226 0.0000,
+			offset = 0.0000 -0.3226 -0.0806,
 		}
 
 		skin
@@ -200,12 +200,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.9032 2.1613 9.8710,
+		extents = 3.7419 2.1613 10.5161,
 		mass = 1500,
-		physicsChassisShape = 3.6452 2.1613 9.4839,
-		centerOfMassOffset = 0.0000 1.0968 -0.7742,
-		shadowExtents = 3.6593 10.7110,
-		shadowOffset = 0.0000 -0.6095,
+		physicsChassisShape = 3.6452 2.1613 10.4516,
+		centerOfMassOffset = 0.0000 1.0968 -0.5000,
+		shadowExtents = 3.6593 10.3884,
+		shadowOffset = 0.0000 -0.4966,
 		engineForce = 4500,
 		engineQuality = 100,
 		engineLoudness = 120,
@@ -276,13 +276,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6452 2.1290 1.0645,
+				offset = 0.6452 2.1290 0.9677,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.4032 0.1774 0.9677,
+				offset = 2.7903 0.1774 0.9677,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -295,13 +295,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6452 2.1290 1.0645,
+				offset = -0.6452 2.1290 0.9677,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1774 0.9677,
+				offset = -2.7903 0.1774 0.9677,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -315,13 +315,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7903 -0.6290,
+				offset = 1.1613 1.7903 -0.6290,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.4032 0.1774 0.0000,
+				offset = 2.7903 0.1774 -0.6290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
 			}
@@ -335,13 +335,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7903 -0.6290,
+				offset = -1.1613 1.7903 -0.6290,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1774 0.0000,
+				offset = -2.7903 0.1774 -0.6290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
 			}
@@ -354,13 +354,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7903 -1.3548,
+				offset = 1.1613 1.7903 -1.3548,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.4032 0.1613 -1.4839,
+				offset = 2.7903 0.1613 -1.3548,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -373,13 +373,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7581 -1.3548,
+				offset = -1.1613 1.7581 -1.3548,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1452 -1.5000,
+				offset = -2.7903 0.1452 -1.3548,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -392,13 +392,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7581 -1.8710,
+				offset = 1.1613 1.7581 -1.8710,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.2581 0.1774 -0.3226,
+				offset = 2.7903 0.1774 -1.8710,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearLeftOne,
 			}
@@ -411,13 +411,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7581 -1.8710,
+				offset = -1.1613 1.7581 -1.8710,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1774 -0.3065,
+				offset = -2.7903 0.1774 -1.8710,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearRightOne,
 			}
@@ -430,13 +430,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7581 -2.3226,
+				offset = 1.1613 1.7581 -2.3226,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3387 0.1774 -2.3710,
+				offset = 2.7903 0.1774 -2.3226,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearLeftTwo,
 			}
@@ -449,13 +449,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7581 -2.3226,
+				offset = -1.1613 1.7581 -2.3226,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1774 -2.3710,
+				offset = -2.7903 0.1774 -2.3226,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearRightTwo,
 			}
@@ -468,13 +468,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7581 -3.2097,
+				offset = 1.1613 1.7581 -3.2097,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3387 0.1774 -3.0484,
+				offset = 2.7903 0.1774 -3.2097,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearLeftThree,
 			}
@@ -487,13 +487,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7581 -3.2097,
+				offset = -1.1613 1.7581 -3.2097,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1774 -3.0484,
+				offset = -2.7903 0.1774 -3.2097,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearRightThree,
 			}
@@ -506,13 +506,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.2903 1.7581 -4.1290,
+				offset = 1.1613 1.7581 -4.1290,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1935 -4.6774,
+				offset = 2.7903 0.1935 -4.1290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearLeftFour,
 			}
@@ -525,13 +525,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.2903 1.7581 -4.1290,
+				offset = -1.1613 1.7581 -4.1290,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3710 0.1935 -4.6774,
+				offset = -2.7903 0.1935 -4.1290,
 				rotate = 0.0000 0.0000 0.0000,
 				area = RearRightFour,
 			}
