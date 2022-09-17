@@ -24,7 +24,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35WindowArmor_seWorldItem,
+            WorldStaticModel = M35WindowArmor_WorldItem,
         }
 
     item M35WindshieldArmor2
@@ -53,12 +53,12 @@ module Base
             WorldStaticModel = M35Door_WorldItem,
         }
 
-    item M35Wheel2
+    item M35FrontWheel2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
-            DisplayName	= M35 Wheel,
+            DisplayName	= M35 Front Wheel,
             Icon	=	M35Wheel,
         	MaxCapacity = 35,
         	ChanceToSpawnDamaged = 0,
@@ -69,6 +69,24 @@ module Base
             ConditionMax = 100,
             MechanicsItem = TRUE,
             WorldStaticModel = M35Wheel_WorldItem,
+        }
+
+    item M35RearDoubleWheels2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Rear Double Wheels,
+            Icon	=	M35Wheel,
+        	MaxCapacity = 35,
+        	ChanceToSpawnDamaged = 0,
+        	WheelFriction = 1.6,
+        	ConditionLowerStandard = 0.08,
+        	ConditionLowerOffroad = 0.10,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35RearDoubleWheels_WorldItem,
         }
 
     item M35Window2
@@ -107,7 +125,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35TrunkDoor_WorldItem,
+            WorldStaticModel = M35TailGate_WorldItem,
         }
 
     item M35RearWindow2
