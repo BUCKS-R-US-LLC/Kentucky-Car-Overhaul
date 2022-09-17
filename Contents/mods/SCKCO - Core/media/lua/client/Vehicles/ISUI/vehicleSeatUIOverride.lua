@@ -118,14 +118,8 @@ function ISVehicleSeatUI:render()
     end
 
     local previousSeats = {}
+    local previousExits = {}
 
---[[
-    if not self.setShiftedHeight then
-        self.setShiftedHeight = true
-        self:setHeight(self:getHeight()+100)
-        --self:setHeight(self:getHeight()+yOffset)
-    end
---]]
     for seat=1,self.vehicle:getMaxPassengers() do
         local pngr = script:getPassenger(seat-1)
         local posn = pngr:getPositionById("inside")
@@ -140,15 +134,11 @@ function ISVehicleSeatUI:render()
                 for _,seatXY in pairs(previousSeats[x]) do
                     local seatX, seatY = seatXY[1], seatXY[2]
                     --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
-                    if y >= seatY and y <= seatY+sizeY then
-                        local oldY = y
-                        y = math.max(y, seatY+sizeY+3)
-                    end
+                    if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY) end
                 end
             end
             previousSeats[x] = previousSeats[x] or {}
             table.insert(previousSeats[x], {x, y})
-
 
             local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + sizeX and
                     self:getMouseY() >= y and self:getMouseY() < y + sizeY) or
@@ -254,6 +244,16 @@ function ISVehicleSeatUI:render()
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
 
+                if previousExits[x] then
+                    for _,seatXY in pairs(previousExits[x]) do
+                        local seatX, seatY = seatXY[1], seatXY[2]
+                        --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
+                        if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY) end
+                    end
+                end
+                previousExits[x] = previousExits[x] or {}
+                table.insert(previousExits[x], {x, y})
+
                 local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + texW and
                         self:getMouseY() >= y and self:getMouseY() < y + texH) or
                         (self.joyfocus and self.joypadSeat == seat)
@@ -294,6 +294,18 @@ function ISVehicleSeatUI:render()
                 local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
+
+                if previousExits[x] then
+                    for _,seatXY in pairs(previousExits[x]) do
+                        local seatX, seatY = seatXY[1], seatXY[2]
+                        --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
+                        if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY)
+                        end
+                    end
+                end
+                previousExits[x] = previousExits[x] or {}
+                table.insert(previousExits[x], {x, y})
+
                 self:drawTextureScaledUniform(tex, x, y, 1, 1,1,1,1)
             end
         end
