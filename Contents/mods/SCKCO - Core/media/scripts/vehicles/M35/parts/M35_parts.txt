@@ -27,6 +27,19 @@ module Base
             WorldStaticModel = M35WindowArmor_WorldItem,
         }
 
+    item M35DoomArmor2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Door Armor,
+            Icon	=	M35WindowArmor,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35DoorArmor_WorldItem,
+        }
+
     item M35WindshieldArmor2
         {
             DisplayCategory = VehicleMaintenance,
