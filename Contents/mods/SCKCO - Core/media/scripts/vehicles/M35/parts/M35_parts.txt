@@ -24,7 +24,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35WindowArmor_WorldItem,
+            WorldStaticModel = M35WindowArmor_seWorldItem,
         }
 
     item M35WindshieldArmor2
@@ -68,26 +68,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35FrontWheel_WorldItem,
-        }
-
-
-    item M35RearDoubleWheels2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Rear Double Wheels,
-            Icon	=	M35Wheel,
-        	MaxCapacity = 35,
-        	ChanceToSpawnDamaged = 0,
-        	WheelFriction = 1.6,
-        	ConditionLowerStandard = 0.08,
-        	ConditionLowerOffroad = 0.10,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35RearDoubleWheels_WorldItem,
+            WorldStaticModel = M35Wheel_WorldItem,
         }
 
     item M35Window2
@@ -116,6 +97,19 @@ module Base
             WorldStaticModel = M35Hood_WorldItem,
         }
 
+    item M35TailGate2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Tail Gate,
+            Icon	=	M35TrunkDoor,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35TrunkDoor_WorldItem,
+        }
+
     item M35RearWindow2
         {
             DisplayCategory = VehicleMaintenance,
@@ -126,7 +120,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35RearWindshield_WorldItem,
+            WorldStaticModel = M35RearWindow_WorldItem,
         }
 
     item M35Seat2
@@ -169,33 +163,20 @@ module Base
             MechanicsItem = TRUE,
             WorldStaticModel = M35Windshield_WorldItem,
         }
-    
-        item M35TailGate2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Tail Gate,
-            Icon	=	M35Windshield,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35TailGate_WorldItem,
-        }
 
-    item M35GasTank2
+    item M35FuelTank2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	15.0,0
             Type	=	Normal,
-            DisplayName	= M35 Gas Tank,
+            DisplayName	= M35 Fuel Tank,
             Icon	=	M35GasTank,
             VehicleType =   2,
             ConditionMax = 100,
         	MaxCapacity = 85,
         	ConditionAffectsCapacity = false,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35GasTank_WorldItem,
+            WorldStaticModel = M35FuelTank_WorldItem,
         }
 
     item M35Tarp2

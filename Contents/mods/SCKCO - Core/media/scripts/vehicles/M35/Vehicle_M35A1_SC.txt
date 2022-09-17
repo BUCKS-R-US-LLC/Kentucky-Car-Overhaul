@@ -1,0 +1,1287 @@
+module Base
+{
+	model SC_M35A1
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model M35A1GasTank
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FuelTank_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1FrontHardTop
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|HardTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1FrontSoftTop
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|SoftTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Tarp
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|Tarp_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1TarpFrame
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|TarpFrame_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1SpareTire
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|SpareTire_obj,
+		texture = vehicles/M35/Vehicle_M35FrontWheel,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+	model M35A1Bumper
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Driver
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Passenger
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1Windshield
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1WindshieldRear
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M35A1FrontRightWindow
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+	model M35A1FrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+	model M35A1FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model M35A1FrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model M35A1Trunk
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|TrunkDoor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model M35A1Hood
+	{
+		mesh = vehicles/Vehicle_M35A1_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model M35Wheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_M35A1_FrontLeftWheel,
+		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		shader = vehiclewheel,
+	}
+	model M35Wheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_M35A1_FrontRightWheel,
+		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		shader = vehiclewheel,
+	}
+	model M35Wheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_M35A1_RearLeftDoubleWheel,
+		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		shader = vehiclewheel,
+	}
+	model M35Wheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_M35A1_RearRightDoubleWheel,
+		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_M35A1
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+		engineRPMType = M35,
+
+		model
+		{
+			file = SC_M35A1,
+			scale = 0.6200,
+			offset = 0.0000 -0.3226 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35/Vehicle_M35A1_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35/Vehicle_M35A1_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35/Vehicle_M35A1_Summer,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35/Vehicle_M35A1_Winter,
+		}
+
+		textureRust = Vehicles/M35/Vehicle_M35A1Rust,
+		textureMask = Vehicles/M35/Vehicle_M35A1Mask,
+		textureLights = Vehicles/M35/Vehicle_M35A1Lights,
+		textureDamage1Shell = Vehicles/M35/Vehicle_M35A1Damage,
+		textureDamage2Shell = Vehicles/M35/Vehicle_M35A1Damage,
+		textureDamage1Overlay = Vehicles/M35/Vehicle_M35A1Blood,
+		textureDamage2Overlay = Vehicles/M35/Vehicle_M35A1Blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornVan,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 3.9032 2.1613 9.8710,
+		mass = 1500,
+		physicsChassisShape = 3.6452 2.1613 9.4839,
+		centerOfMassOffset = 0.0000 1.0968 -0.7742,
+		shadowExtents = 3.6593 10.7110,
+		shadowOffset = 0.0000 -0.6095,
+		engineForce = 4500,
+		engineQuality = 100,
+		engineLoudness = 120,
+		maxSpeed = 50f,
+		gearRatioCount = 8,
+		gearRatioR = 3.5,
+		gearRatio1 = 6.31,
+		gearRatio2 = 5.80,
+		gearRatio3 = 3.80,
+		gearRatio4 = 2.50,
+		gearRatio5 = 1.65,
+		gearRatio6 = 1.25,
+		gearRatio7 = 0.80,
+		gearRatio8 = 0.60,
+		brakingForce = 80,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.3,
+		suspensionStiffness = 300,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 3001,
+		rearEndHealth = 1500,
+		seats = 6,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.4516 0.5000 2.9516,
+			radius = 0.70f,
+			width = 0.20f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.4516 0.5000 2.9516,
+			radius = 0.70f,
+			width = 0.20f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -0.0161 0.5000 -3.6935,
+			radius = 0.70f,
+			width = 0.20f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 0.0000 0.5000 -1.9032,
+			radius = 0.70f,
+			width = 0.20f,
+		}
+
+		template = PassengerSeat14,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6452 2.1290 1.0645,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.4032 0.1774 0.9677,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5000 2.1290 1.0645,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1774 0.9677,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			category = nodisplay,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7903 -0.6290,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.4032 0.1774 -0.2903,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleLeft,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			category = nodisplay,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7903 -0.6290,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1774 -0.2903,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7903 -1.8710,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.4032 0.1613 -1.4839,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7581 -1.8710,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1452 -1.5000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		passenger RearLeftOne
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7581 -1.3548,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.2581 0.1774 -0.3226,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftOne,
+			}
+		}
+
+		passenger RearRightOne
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7581 -1.3548,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1774 -0.3065,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightOne,
+			}
+		}
+
+		passenger RearLeftTwo
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7581 -2.3226,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3387 0.1774 -2.3710,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftTwo,
+			}
+		}
+
+		passenger RearRightTwo
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7581 -2.3226,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1774 -2.3710,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightTwo,
+			}
+		}
+
+		passenger RearLeftThree
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7581 -3.2097,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3387 0.1774 -3.0484,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftThree,
+			}
+		}
+
+		passenger RearRightThree
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7581 -3.2097,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1774 -3.0484,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightThree,
+			}
+		}
+
+		passenger RearLeftFour
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.2903 1.7581 -4.1290,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1935 -4.6774,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftFour,
+			}
+		}
+
+		passenger RearRightFour
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.2903 1.7581 -4.1290,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3710 0.1935 -4.6774,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightFour,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.8871 3.1935 1.3871,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -6.6290 3.6452 1.7742,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.6452 1.1129 1.4516 1.4516,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.6452 1.1129 1.4516 1.4516,
+		}
+
+		area SeatMiddleLeft
+		{
+			xywh = 2.3226 -0.6935 0.8065 0.8065,
+		}
+
+		area SeatMiddleRight
+		{
+			xywh = -2.3226 -0.6935 0.8065 0.8065,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.3226 -1.5000 0.8065 0.8065,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.3226 -1.5000 0.8065 0.8065,
+		}
+
+		area RearLeftOne
+		{
+			xywh = -2.3226 -2.3065 0.8065 0.8065,
+		}
+
+		area RearRightOne
+		{
+			xywh = 2.3226 -2.3065 0.8065 0.8065,
+		}
+
+		area RearLeftTwo
+		{
+			xywh = -2.3226 -3.1129 0.8065 0.8065,
+		}
+
+		area RearRightTwo
+		{
+			xywh = 2.3226 -3.1129 0.8065 0.8065,
+		}
+
+		area RearLeftThree
+		{
+			xywh = 2.3226 -3.9194 0.8065 0.8065,
+		}
+
+		area RearRightThree
+		{
+			xywh = -2.3226 -3.9194 0.8065 0.8065,
+		}
+
+		area RearLeftFour
+		{
+			xywh = 2.3226 -4.7258 0.8065 0.8065,
+		}
+
+		area RearRightFour
+		{
+			xywh = -2.3226 -4.7258 0.8065 0.8065,
+		}
+
+		area GasTank
+		{
+			xywh = -2.4839 -0.4516 1.1290 0.6129,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.2258 3.5000 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.1613 3.5000 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4355 -3.1774 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.2742 -1.3871 0.0000 0.0000,
+		}
+
+		template = M35A1Seat,
+		template = M35A1Armor,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part GasTank
+		{
+			model seatfrontLeft
+			{
+				file = M35A1GasTank,
+			}
+
+			itemType = Base.M35FuelTank,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = M35A1Driver,
+			}
+
+			itemType = Base.M35Seat,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35Seat,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+
+			model seatMiddleRight
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35RearSeat,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			model seatMiddleLeft
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35RearSeat,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model seatRearLeft
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35RearSeat,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model seatRearRight
+			{
+				file = M35A1Passenger,
+			}
+
+			itemType = Base.M35RearSeat,
+		}
+
+		part Muffler
+		{
+			model Muffler
+			{
+				file = M35A1Muffler,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part M35A1Tarp
+		{
+			model Tarp
+			{
+				file = M35A1Tarp,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35Tarp,
+			parent = M35A1TarpFrame,
+			area = M35A1TarpFrame,
+		}
+
+		part M35A1TarpFrame
+		{
+			model TarpFrame
+			{
+				file = M35A1TarpFrame,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35TarpFrame,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M35A1FrontHardTop
+		{
+			model M35A1FrontHardTop
+			{
+				file = M35A1FrontHardTop,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35FrontHardTop,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M35A1FrontSoftTop
+		{
+			model M35A1FrontSoftTop
+			{
+				file = M35A1FrontSoftTop,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35FrontSoftTop,
+		}
+
+		part M35A1SpareTire
+		{
+			model M35A1SpareTire
+			{
+				file = M35A1SpareTire,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M35Wheel,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = M35A1Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Hood,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = M35A1Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35Windshield,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = M35A1WindshieldRear,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.M35RearWindow,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = M35A1FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Window,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = M35A1FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Window,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = M35A1FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Door,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = M35A1FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Door,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = M35A1Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35TailGate,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		part TruckBed
+		{
+			container
+			{
+				capacity = 300,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M35Wheelfrontwheelleft,
+			}
+
+			itemType = Base.M35FrontWheel,
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M35Wheelfrontwheelright,
+			}
+
+			itemType = Base.M35FrontWheel,
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M35Wheelbackwheelleft,
+			}
+
+			itemType = Base.M35RearDoubleWheels,
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M35Wheelbackwheelright,
+			}
+
+			itemType = Base.M35RearDoubleWheels,
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio2,
+		}
+
+		template = Headlight,
+
+		attachment trailer
+		{
+			offset = 0.0000 1.0317 -5.7143,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0159 1.0317 4.2063,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

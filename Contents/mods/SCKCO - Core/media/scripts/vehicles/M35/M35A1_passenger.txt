@@ -1,0 +1,1185 @@
+module Base
+{
+
+	template vehicle PassengerSeat14
+	{
+		template = PassengerSeat2/passenger/FrontLeft,
+		template = PassengerSeat2/passenger/FrontRight,
+		
+		passenger FrontLeft
+		{
+			switchSeat MiddleLeft
+			{
+			}
+			
+			switchSeat MiddleRight
+			{
+
+			}
+
+
+		}
+
+		passenger FrontRight
+		{
+			switchSeat MiddleLeft
+			{
+			}
+			
+			switchSeat MiddleRight
+			{
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			door = DoorMiddleLeft,
+			area = SeatMiddleLeft,
+			
+			switchSeat FrontLeft
+			{
+			}
+			
+			switchSeat FrontRight
+			{
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+		}
+
+		passenger MiddleRight
+		{
+			door = DoorMiddleRight,
+			area = SeatMiddleRight,
+			
+			switchSeat FrontLeft
+			{
+			}
+			
+			switchSeat FrontRight
+			{
+			}
+			
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+		}
+
+		template = PassengerSeat4/passenger/RearLeft,
+		template = PassengerSeat4/passenger/RearRight,
+
+		passenger RearLeft
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+		}
+
+		passenger RearRight
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+		}
+		
+		passenger RearLeftOne
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightOne
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearLeftTwo
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightTwo
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		passenger RearLeftThree
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightThree
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+
+		passenger RearLeftFour
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRightFour
+		{
+
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftOne
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightTwo
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearRightThree
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearLeftFour
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+			
+			switchSeat RearLeftFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			switchSeat RearRightFive
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = ,
+			}
+
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		template! = PassengerPosition6,
+
+		template! = PassengerCommon,
+	}
+
+}
