@@ -544,7 +544,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.6290 3.6452 1.7742,
+			xywh = 0.0000 -3.1935 4.9677 6.3548,
 		}
 
 		area SeatFrontLeft
@@ -1166,7 +1166,25 @@ module Base
 			itemType = Base.M35TailGate,
 		}
 
-		template = Trunk/part/TruckBed,
+        part BackOfTruck
+        {
+            area = TruckBed,
+            category = bodywork,
+            itemType = Base.NormalTrunk,
+            mechanicRequireKey = true,
+            repairMechanic = true,
+            container
+            {
+                capacity = 300,
+                conditionAffectsCapacity = true,
+                test = Vehicles.ContainerAccess.BackOfTruck,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+
 		template = Tire,
 
 		part PassengerCompartment
@@ -1176,14 +1194,6 @@ module Base
 			lua
 			{
 				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
-
-		part TruckBed
-		{
-			container
-			{
-				capacity = 300,
 			}
 		}
 
