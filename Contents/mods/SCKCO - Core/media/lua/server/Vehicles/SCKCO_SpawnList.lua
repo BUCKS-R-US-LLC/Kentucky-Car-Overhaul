@@ -31,12 +31,13 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.trafficjamw.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamw.chanceToPartDamage = 10;
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1028"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 

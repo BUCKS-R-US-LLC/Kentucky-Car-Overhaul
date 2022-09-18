@@ -27,4 +27,29 @@ module Base
             WorldStaticModel = M1008TarpFrame_WorldItem,
         }
 
+    item M1010RearDoors2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M1010 Rear Doors,
+            Icon	=	M1008Frame,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M1010RearDoors_WorldItem,
+        }
+
+    item M1010RearWindows2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M1010 Rear Windows,
+            Icon	=	M1008Frame,
+            VehicleType =   1,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M1010RearWindows_WorldItem,
+        }
 }
