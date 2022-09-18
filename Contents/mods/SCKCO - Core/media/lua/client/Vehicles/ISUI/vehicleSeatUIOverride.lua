@@ -118,6 +118,7 @@ function ISVehicleSeatUI:render()
 
     local scale = height / extents:z()
     local sizeX,sizeY = 41,59
+    local origSizeX, origSizeY = sizeX, sizeY
 
     local driver = script:getPassenger(0)
     local driverPos = driver:getPositionById("inside")
@@ -127,10 +128,13 @@ function ISVehicleSeatUI:render()
         local y = self:getHeight() / 2 - offset:get(2) * scale - sizeY / 2
         y = y + (SeatOffsetY[scriptName] or 0.0)
         x = x + (SeatOffsetX[scriptName] or 0.0)
-
         sizeY = math.min(sizeY, ((height-y)/(self.vehicle:getMaxPassengers()/2)))
     end
 
+    local aspect = math.min(1, sizeX/origSizeX, sizeY/origSizeY)
+    sizeX = origSizeX*aspect
+    sizeY = origSizeY*aspect
+    
     local previousSeats = {}
     local previousExits = {}
 
@@ -143,7 +147,6 @@ function ISVehicleSeatUI:render()
             local y = self:getHeight() / 2 - offset:get(2) * scale - sizeY / 2
             y = y + (SeatOffsetY[scriptName] or 0.0)
             x = x + (SeatOffsetX[scriptName] or 0.0)
-
             x, y = seatUIAdaptiveRendering(previousSeats, x, y, sizeX, sizeY)
 
             local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + sizeX and
@@ -201,6 +204,7 @@ function ISVehicleSeatUI:render()
             end
 
             local tex = getTexture("media/ui/vehicles/seatui/" .. texName)
+
             if tex then
                 self:drawTextureScaled(tex, x, y, sizeX, sizeY, 1.0, seatRGB, seatRGB, seatRGB)
             else
@@ -218,12 +222,12 @@ function ISVehicleSeatUI:render()
 
             if canSwitch and self.joyfocus and self.joypadSeat == seat then
                 local texBtn = Joypad.Texture.AButton
-                local texW,texH = texBtn:getWidth(),texBtn:getHeight()
-                local xBtn = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
-                local yBtn = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
+                local texWBtn,texHBtn = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
+                local xBtn = self:getWidth() / 2 - offset:get(0) * scale - texWBtn / 2
+                local yBtn = self:getHeight() / 2 - offset:get(2) * scale - texHBtn / 2
                 xBtn = xBtn + (SeatOffsetX[scriptName] or 0.0)
                 yBtn = yBtn + (SeatOffsetY[scriptName] or 0.0)
-                self:drawTextureScaledUniform(texBtn, xBtn, yBtn, 1, 1,1,1,1)
+                self:drawTextureScaledUniform(texBtn, xBtn, yBtn, aspect, 1,1,1,1)
             end
         end
 
@@ -245,12 +249,11 @@ function ISVehicleSeatUI:render()
             if canSwitch and posn then
                 local offset = posn:getOffset()
                 local tex = getTexture("media/ui/vehicles/vehicle_exit.png")
-                local texW,texH = tex:getWidthOrig(),tex:getHeightOrig()
+                local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
                 local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
-
-                x, y = seatUIAdaptiveRendering(previousExits, x, y, sizeX, sizeY)
+                x, y = seatUIAdaptiveRendering(previousExits, x, y, texW, texH)
 
                 local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + texW and
                         self:getMouseY() >= y and self:getMouseY() < y + texH) or
@@ -260,9 +263,9 @@ function ISVehicleSeatUI:render()
                 end
 
                 if mouseOver or shiftKey then
-                    self:drawTextureScaledUniform(tex, x, y, 1, 1,1,1,1)
+                    self:drawTextureScaledUniform(tex, x, y, aspect, 1,1,1,1)
                 else
-                    self:drawTextureScaledUniform(tex, x, y, 1, 0.2,1,1,1)
+                    self:drawTextureScaledUniform(tex, x, y, aspect, 0.2,1,1,1)
                 end
 
                 if shiftKey then
@@ -288,14 +291,12 @@ function ISVehicleSeatUI:render()
             if canSwitch and posn then
                 local offset = posn:getOffset()
                 local tex = Joypad.Texture.XButton
-                local texW,texH = tex:getWidthOrig(),tex:getHeightOrig()
+                local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
                 local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
-
-                x, y = seatUIAdaptiveRendering(previousExits, x, y, sizeX, sizeY)
-
-                self:drawTextureScaledUniform(tex, x, y, 1, 1,1,1,1)
+                x, y = seatUIAdaptiveRendering(previousExits, x, y, texW, texH)
+                self:drawTextureScaledUniform(tex, x, y, aspect, 1,1,1,1)
             end
         end
     end
