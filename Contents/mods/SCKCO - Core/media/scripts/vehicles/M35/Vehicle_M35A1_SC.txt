@@ -160,7 +160,7 @@ module Base
 		{
 			file = SC_M35A1,
 			scale = 0.6200,
-			offset = 0.0000 -0.3226 -0.0806,
+			offset = 0.0000 0.0968 0.0000,
 		}
 
 		skin
@@ -544,7 +544,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.1935 4.9677 6.3548,
+			xywh = 0.0000 -6.7903 3.7419 2.0645,
 		}
 
 		area SeatFrontLeft
@@ -1166,24 +1166,26 @@ module Base
 			itemType = Base.M35TailGate,
 		}
 
-        part BackOfTruck
-        {
-            area = TruckBed,
-            category = bodywork,
-            itemType = Base.NormalTrunk,
-            mechanicRequireKey = true,
-            repairMechanic = true,
-            container
-            {
-                capacity = 300,
-                conditionAffectsCapacity = true,
-                test = Vehicles.ContainerAccess.BackOfTruck,
-            }
-            lua
-            {
-                create = Vehicles.Create.Default,
-            }
-        }
+		part BackOfTruck
+		{
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 300,
+				conditionAffectsCapacity = true,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
 
 		template = Tire,
 
