@@ -62,6 +62,20 @@ SeatOffsetX["Base.ModernCar02"] = SeatOffsetX["Base.ModernCar"]
 SeatOffsetX["Base.SUV"] = 0
 SeatOffsetX["Base.OffRoad"] = 2
 
+local function seatUIAdaptiveRendering(tbl, x, y, x2, y2)
+    if tbl[x] then
+        for _,tXY in pairs(tbl[x]) do
+            local tX, tY = tXY[1], tXY[2]
+            --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
+            if y >= tY and y <= tY+y2 then y = math.max(y, tY+y2) end
+        end
+    end
+    tbl[x] = tbl[x] or {}
+    table.insert(tbl[x], {x, y})
+
+    return x, y
+end
+
 
 function ISVehicleSeatUI:render()
     ISPanelJoypad.render(self)
@@ -130,15 +144,7 @@ function ISVehicleSeatUI:render()
             y = y + (SeatOffsetY[scriptName] or 0.0)
             x = x + (SeatOffsetX[scriptName] or 0.0)
 
-            if previousSeats[x] then
-                for _,seatXY in pairs(previousSeats[x]) do
-                    local seatX, seatY = seatXY[1], seatXY[2]
-                    --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
-                    if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY) end
-                end
-            end
-            previousSeats[x] = previousSeats[x] or {}
-            table.insert(previousSeats[x], {x, y})
+            x, y = seatUIAdaptiveRendering(previousSeats, x, y, sizeX, sizeY)
 
             local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + sizeX and
                     self:getMouseY() >= y and self:getMouseY() < y + sizeY) or
@@ -211,13 +217,13 @@ function ISVehicleSeatUI:render()
             end
 
             if canSwitch and self.joyfocus and self.joypadSeat == seat then
-                local tex = Joypad.Texture.AButton
-                local texW,texH = tex:getWidth(),tex:getHeight()
-                local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
-                local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
-                x = x + (SeatOffsetX[scriptName] or 0.0)
-                y = y + (SeatOffsetY[scriptName] or 0.0)
-                self:drawTextureScaledUniform(tex, x, y, 1, 1,1,1,1)
+                local texBtn = Joypad.Texture.AButton
+                local texW,texH = texBtn:getWidth(),texBtn:getHeight()
+                local xBtn = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
+                local yBtn = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
+                xBtn = xBtn + (SeatOffsetX[scriptName] or 0.0)
+                yBtn = yBtn + (SeatOffsetY[scriptName] or 0.0)
+                self:drawTextureScaledUniform(texBtn, xBtn, yBtn, 1, 1,1,1,1)
             end
         end
 
@@ -244,15 +250,7 @@ function ISVehicleSeatUI:render()
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
 
-                if previousExits[x] then
-                    for _,seatXY in pairs(previousExits[x]) do
-                        local seatX, seatY = seatXY[1], seatXY[2]
-                        --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
-                        if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY) end
-                    end
-                end
-                previousExits[x] = previousExits[x] or {}
-                table.insert(previousExits[x], {x, y})
+                x, y = seatUIAdaptiveRendering(previousExits, x, y, sizeX, sizeY)
 
                 local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + texW and
                         self:getMouseY() >= y and self:getMouseY() < y + texH) or
@@ -295,16 +293,7 @@ function ISVehicleSeatUI:render()
                 local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
                 y = y + (SeatOffsetY[scriptName] or 0.0)
 
-                if previousExits[x] then
-                    for _,seatXY in pairs(previousExits[x]) do
-                        local seatX, seatY = seatXY[1], seatXY[2]
-                        --if x > seatX and x < seatX+sizeX then x = seatX+sizeX+2 end
-                        if y >= seatY and y <= seatY+sizeY then y = math.max(y, seatY+sizeY)
-                        end
-                    end
-                end
-                previousExits[x] = previousExits[x] or {}
-                table.insert(previousExits[x], {x, y})
+                x, y = seatUIAdaptiveRendering(previousExits, x, y, sizeX, sizeY)
 
                 self:drawTextureScaledUniform(tex, x, y, 1, 1,1,1,1)
             end
