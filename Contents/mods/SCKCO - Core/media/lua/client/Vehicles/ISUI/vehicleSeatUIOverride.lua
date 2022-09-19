@@ -136,7 +136,6 @@ function ISVehicleSeatUI:render()
     sizeY = origSizeY*aspect
     
     local previousSeats = {}
-    local previousExits = {}
 
     for seat=1,self.vehicle:getMaxPassengers() do
         local pngr = script:getPassenger(seat-1)
@@ -232,7 +231,7 @@ function ISVehicleSeatUI:render()
         end
 
         -- Display available exits when inside.
-        if playerSeat ~= -1 and not self.joyfocus then
+        if playerSeat ~= -1 then
             local canSwitch = self.vehicle:canSwitchSeat(playerSeat, seat - 1)
             if self.vehicle:isSeatOccupied(seat - 1) then
                 canSwitch = false
@@ -248,58 +247,47 @@ function ISVehicleSeatUI:render()
             posn = pngr:getPositionById("outside")
             if canSwitch and posn then
                 local offset = posn:getOffset()
-                local tex = getTexture("media/ui/vehicles/vehicle_exit.png")
-                local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
-                local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
-                local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
-                y = y + (SeatOffsetY[scriptName] or 0.0)
-                x, y = seatUIAdaptiveRendering(previousExits, x, y, texW, texH)
-
-                local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + texW and
-                        self:getMouseY() >= y and self:getMouseY() < y + texH) or
-                        (self.joyfocus and self.joypadSeat == seat)
-                if mouseOver then
-                    self.mouseOverExit = seat - 1
-                end
-
-                if mouseOver or shiftKey then
+                if self.joyfocus and seat == self.joypadSeat then
+                    local tex = Joypad.Texture.XButton
+                    local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
+                    local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
+                    local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
+                    y = y + (SeatOffsetY[scriptName] or 0.0)
+                    x = x + (SeatOffsetX[scriptName] or 0.0)
+                    x, y = seatUIAdaptiveRendering(previousSeats, x, y, texW, texH)
                     self:drawTextureScaledUniform(tex, x, y, aspect, 1,1,1,1)
-                else
-                    self:drawTextureScaledUniform(tex, x, y, aspect, 0.2,1,1,1)
                 end
 
-                if shiftKey then
-                    self:drawRect(x + texW / 2 - 8, y + texH / 2 - FONT_HGT_LARGE / 2, 16, FONT_HGT_LARGE, 1, 0.1, 0.1, 0.1)
-                    self:drawTextCentre(tostring(seat), x + texW / 2, y + texH / 2 - FONT_HGT_LARGE / 2, 1, 1, 1, 1, UIFont.Large)
+                if not self.joyfocus then
+                    local tex = getTexture("media/ui/vehicles/vehicle_exit.png")
+                    local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
+                    local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
+                    local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
+                    y = y + (SeatOffsetY[scriptName] or 0.0)
+                    x = x + (SeatOffsetX[scriptName] or 0.0)
+
+                    if x > ex and x < (ex+width)-(texW/4) then
+                        if y < ey+height and y > self:getHeight()/2 then y = ey+height+1 end
+                        if y > ey and y < self:getHeight()/2 then y = y-(ey-y)-1 end
+                    end
+
+                    x, y = seatUIAdaptiveRendering(previousSeats, x, y, texW, texH)
+
+                    local mouseOver = (self:getMouseX() >= x and self:getMouseX() < x + texW and
+                            self:getMouseY() >= y and self:getMouseY() < y + texH) or
+                            (self.joyfocus and self.joypadSeat == seat)
+                    if mouseOver then self.mouseOverExit = seat - 1 end
+
+                    if mouseOver or shiftKey then self:drawTextureScaledUniform(tex, x, y, aspect, 1,1,1,1)
+                    else self:drawTextureScaledUniform(tex, x, y, aspect, 0.2,1,1,1) end
+
+                    if shiftKey then
+                        self:drawRect(x + texW / 2 - 8, y + texH / 2 - FONT_HGT_LARGE / 2, 16, FONT_HGT_LARGE, 1, 0.1, 0.1, 0.1)
+                        self:drawTextCentre(tostring(seat), x + texW / 2, y + texH / 2 - FONT_HGT_LARGE / 2, 1, 1, 1, 1, UIFont.Large)
+                    end
                 end
-            end
-        end
-        if playerSeat ~= -1 and self.joyfocus and seat == self.joypadSeat then
-            local canSwitch = self.vehicle:canSwitchSeat(playerSeat, seat - 1)
-            if self.vehicle:isSeatOccupied(seat - 1) then
-                canSwitch = false
-                -- if you can't switch because of item we check you can still move them
-                if not self.vehicle:getCharacter(seat-1) then
-                    canSwitch = ISVehicleMenu.moveItemsFromSeat(self.character, self.vehicle, seat-1, false, false)
-                end
-            end
-            if playerSeat == seat - 1 then canSwitch = true end
-            self.vehicle:updateHasExtendOffsetForExit(self.character)
-            if self.vehicle:isExitBlocked(self.character, seat - 1) then canSwitch = false end
-            self.vehicle:updateHasExtendOffsetForExitEnd(self.character)
-            posn = pngr:getPositionById("outside")
-            if canSwitch and posn then
-                local offset = posn:getOffset()
-                local tex = Joypad.Texture.XButton
-                local texW,texH = tex:getWidthOrig()*aspect,tex:getHeightOrig()*aspect
-                local x = self:getWidth() / 2 - offset:get(0) * scale - texW / 2
-                local y = self:getHeight() / 2 - offset:get(2) * scale - texH / 2
-                y = y + (SeatOffsetY[scriptName] or 0.0)
-                x, y = seatUIAdaptiveRendering(previousExits, x, y, texW, texH)
-                self:drawTextureScaledUniform(tex, x, y, aspect, 1,1,1,1)
+
             end
         end
     end
-
-    -- TODO: Allow choosing a seat to exit from
 end
