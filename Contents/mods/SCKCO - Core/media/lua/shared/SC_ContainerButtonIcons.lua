@@ -16,3 +16,7 @@ ContainerButtonIcons.RearLeftFour = t.seat
 ContainerButtonIcons.RearRightFour = t.seat
 ContainerButtonIcons.RearLeftFive = t.seat
 ContainerButtonIcons.RearRightFive = t.seat
+ContainerButtonIcons.RearLeftSix = t.seat
+ContainerButtonIcons.RearRightSix = t.seat
+ContainerButtonIcons.RearLeftSeven = t.seat
+ContainerButtonIcons.RearRightSeven = t.seat

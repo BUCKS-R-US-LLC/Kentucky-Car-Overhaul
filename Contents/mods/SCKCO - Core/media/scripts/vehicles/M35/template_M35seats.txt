@@ -92,9 +92,44 @@ module Base
 			}
 		}
 
+		part RearLeftSix
+		{
+			area = RearLeftSix,
+			container
+			{
+				seat = RearLeftSix,
+			}
+		}
+
+		part RearRightSix
+		{
+			area = RearRightSix,
+			container
+			{
+				seat = RearRightSix,
+			}
+		}
+
+        part RearLeftSeven
+        {
+            area = RearLeftSeven,
+            container
+            {
+                seat = RearLeftSeven,
+            }
+        }
+
+        part RearRightSeven
+        {
+            area = RearRightSeven,
+            container
+            {
+                seat = RearRightSeven,
+            }
+        }
+
 		part Rear*
 		{
-			category = seat,
 			category = nodisplay,
 			itemType = M35RearSeat,
 			mechanicRequireKey = true,
@@ -102,41 +137,7 @@ module Base
 			{
 				test = Vehicles.ContainerAccess.Seat,
 			}
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Screwdriver,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 300,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-			}
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Screwdriver,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 300,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-				requireEmpty = true,
-			}
+
 			lua
 			{
 				create = Vehicles.Create.Default,
