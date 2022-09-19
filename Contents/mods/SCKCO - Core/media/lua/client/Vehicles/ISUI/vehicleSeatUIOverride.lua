@@ -36,7 +36,7 @@ SeatOffsetY["Base.ModernCar02"] = 15
 SeatOffsetY["Base.SUV"] = -2
 SeatOffsetY["Base.OffRoad"] = 30
 
-SeatOffsetY["Base.SC_M35A1"] = -100
+SeatOffsetY["Base.SC_M35A1"] = -110
 
 local SeatOffsetX = {}
 SeatOffsetX["Base.PickUpTruck"] = 0
