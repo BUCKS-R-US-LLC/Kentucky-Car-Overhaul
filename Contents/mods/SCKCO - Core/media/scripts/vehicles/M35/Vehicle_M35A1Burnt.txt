@@ -1,0 +1,25 @@
+module Base
+{
+    model SC_M35A1Burnt
+	{
+		mesh = vehicles/Wrecks/Vehicle_M35A1Crashed_SC,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.0087,
+	}
+	vehicle SC_M35A1Burnt
+	{
+
+		model
+		{
+			file = SC_M35A1Burnt,
+			scale = 1.8200,
+            offset = 0.0000 0.4725 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35/Vehicle_M35A1_Burnt,
+		}
+	}
+}
