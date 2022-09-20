@@ -9,7 +9,7 @@ function M35A1Windshield(player, part, elapsedMinutes)
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("M35A1WindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("M35A1WindshieldArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("M35A1WindshieldArmor"):setCondition(vehicle:getPartById("M35A1WindshieldArmor"):getCondition()-1)
 
         end
@@ -26,7 +26,7 @@ function M35A1EngineDoor(player, part, elapsedMinutes)
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bumper"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("M35A1Bumper"):setCondition(vehicle:getPartById("M35A1Bumper"):getCondition()-1)
 
         end
@@ -58,9 +58,10 @@ function M35A1DoorFrontLeft(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
-        if (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("DoorFrontLeft"):getInventoryItem()) and (vehicle:getPartById("M35A1Armoring"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1DoorFrontLeftArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1DoorFrontLeftArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
+            vehicle:getPartById("M35A1DoorFrontLeftArmor"):setCondition(vehicle:getPartById("M35A1DoorFrontLeftArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(DoorFrontLeft)
@@ -74,9 +75,10 @@ function M35A1DoorFrontRight(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontRight")
-        if (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("DoorFrontRight"):getInventoryItem()) and (vehicle:getPartById("M35A1Armoring"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1DoorFrontRightArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1DoorFrontRightArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
+            vehicle:getPartById("M35A1DoorFrontRightArmor"):setCondition(vehicle:getPartById("M35A1DoorFrontRightArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(DoorFrontRight)
@@ -93,7 +95,7 @@ function M35A1WindowFrontLeft(player, part, elapsedMinutes)
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("M35A1FrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontLeftWindowArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("M35A1FrontLeftWindowArmor"):setCondition(vehicle:getPartById("M35A1FrontLeftWindowArmor"):getCondition()-1)
 
         end
@@ -111,7 +113,7 @@ function M35A1WindowFrontRight(player, part, elapsedMinutes)
         if (vehicle:getPartById("M35A1FrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontRightWindowArmor"):getInventoryItem()) then
 
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("M35A1FrontRightWindowArmor"):setCondition(vehicle:getPartById("M35A1FrontRightWindowArmor"):getCondition()-1)
 
         end
