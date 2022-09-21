@@ -194,9 +194,9 @@ module Base
 		sound
 		{
 			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
+			engineStart = M35start,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornVan,
+			horn = M35horn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
@@ -206,7 +206,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.9032 -0.5000,
 		shadowExtents = 3.6593 10.3884,
 		shadowOffset = 0.0000 -0.4966,
-		engineForce = 4500,
+		engineForce = 7500,
 		engineQuality = 100,
 		engineLoudness = 120,
 		maxSpeed = 50f,

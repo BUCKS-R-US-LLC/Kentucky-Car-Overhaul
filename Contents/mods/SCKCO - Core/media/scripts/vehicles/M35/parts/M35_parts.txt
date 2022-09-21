@@ -7,7 +7,7 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Bumper,
-            Icon	=	M35Bullbar,
+            Icon	=	M35Bumper,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
@@ -29,7 +29,7 @@ module Base
 
     item M35DoorArmor2
         {
-            DisplayCategory = VehicleMaintenance,
+            DisplayCategory = VssehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Door Armor,
@@ -72,7 +72,7 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Front Wheel,
-            Icon	=	M35Wheel,
+            Icon	=	M35FrontWheel,
         	MaxCapacity = 35,
         	ChanceToSpawnDamaged = 0,
         	WheelFriction = 1.6,
@@ -90,7 +90,7 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Rear Double Wheels,
-            Icon	=	M35Wheel,
+            Icon	=	M35RearWheel,
         	MaxCapacity = 35,
         	ChanceToSpawnDamaged = 0,
         	WheelFriction = 1.6,
@@ -108,7 +108,7 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Window,
-            Icon	=	M35Window,
+            Icon	=	M35FrontSideWindow,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
@@ -134,7 +134,7 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Tail Gate,
-            Icon	=	M35TrunkDoor,
+            Icon	=	M35TailGate,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
@@ -147,11 +147,11 @@ module Base
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Rear Windshield,
-            Icon	=	M35RearWindow,
+            Icon	=	M35RearWindshield,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35RearWindow_WorldItem,
+            WorldStaticModel = M35RearWindshield_WorldItem,
         }
 
     item M35Seat2
@@ -201,7 +201,7 @@ module Base
             Weight	=	15.0,0
             Type	=	Normal,
             DisplayName	= M35 Fuel Tank,
-            Icon	=	M35GasTank,
+            Icon	=	M35FuelTank,
             VehicleType =   2,
             ConditionMax = 100,
         	MaxCapacity = 85,
@@ -223,27 +223,26 @@ module Base
             WorldStaticModel = M35Tarp_WorldItem,
         }
 
-
-    item M35FrontHardTop2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Front Softtop,
-            Icon	=	M35Tarp,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35SoftTop_WorldItem,
-        }
-
     item M35FrontHardTop2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
             Type	=	Normal,
             DisplayName	= M35 Front Hardtop,
-            Icon	=	M35Tarp,
+            Icon	=	M35HardTop,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M35SoftTop_WorldItem,
+        }
+
+    item M35FrontSoftTop2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M35 Front Softtop,
+            Icon	=	M35Hardtop,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,

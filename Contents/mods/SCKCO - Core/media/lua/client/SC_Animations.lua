@@ -155,6 +155,7 @@ local vehicleToSeatAnimations = {
 		["seat12"]="Shark_Idle_SidePassenger",
 		["seat13"]="Shark_Idle_SidePassenger2",
 		["seat14"]="Shark_Idle_SidePassenger",
+		["seat15"]="Shark_Idle_SidePassenger2",
 	},
 	
 	["Base.ModernCar"] = {
