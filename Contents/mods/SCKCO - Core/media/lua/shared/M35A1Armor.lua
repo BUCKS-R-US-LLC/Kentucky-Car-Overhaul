@@ -58,10 +58,10 @@ function M35A1DoorFrontLeft(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
-        if (vehicle:getPartById("M35A1DoorFrontLeftArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1DoorFrontLeftArmor"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1FrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontLeftDoorArmor"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
-            vehicle:getPartById("M35A1DoorFrontLeftArmor"):setCondition(vehicle:getPartById("M35A1DoorFrontLeftArmor"):getCondition()-1)
+            vehicle:getPartById("M35A1FrontLeftDoorArmor"):setCondition(vehicle:getPartById("M35A1FrontLeftDoorArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(DoorFrontLeft)
@@ -75,10 +75,10 @@ function M35A1DoorFrontRight(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontRight")
-        if (vehicle:getPartById("M35A1DoorFrontRightArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1DoorFrontRightArmor"):getInventoryItem()) then
+        if (vehicle:getPartById("M35A1FrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontRightDoorArmor"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
-            vehicle:getPartById("M35A1DoorFrontRightArmor"):setCondition(vehicle:getPartById("M35A1DoorFrontRightArmor"):getCondition()-1)
+            vehicle:getPartById("M35A1FrontRightDoorArmor"):setCondition(vehicle:getPartById("M35A1FrontRightDoorArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(DoorFrontRight)
