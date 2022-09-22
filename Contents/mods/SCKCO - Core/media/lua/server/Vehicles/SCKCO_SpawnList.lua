@@ -23,30 +23,32 @@ if VehicleZoneDistribution then
     
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.knoxdisti.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.massgenfac.vehicles["Base.SC_JeepCherokeeAbu"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 2};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 2};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1028"] = {index = -1, spawnChance = 2};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 2};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 2};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 2};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1028"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.chanceToPartDamage = 10;
-
-    VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.network3.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.network3.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.network3.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.network3.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.network3.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.kyheralds.chanceToPartDamage = 5;
 
 end
