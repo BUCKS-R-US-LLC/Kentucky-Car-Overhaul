@@ -92,6 +92,12 @@ module Base
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
+	model BlazerWheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		shader = vehiclewheel,
+	}
 	model BlazerWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
@@ -121,7 +127,7 @@ module Base
 		{
 			file = SC_K5Blazer,
 			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			offset = 0.0635 0.2698 0.0000,
 		}
 
 		skin
@@ -179,8 +185,8 @@ module Base
 		extents = 2.8571 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0635 1.5556 0.0000,
-		shadowExtents = 2.8807 7.6434,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.1347 7.6434,
 		shadowOffset = 0.0635 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -204,7 +210,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +218,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +226,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +234,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -300,25 +306,25 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.0000 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -1.6032 0.0000 0.0000,
+			xywh = 2.0000 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -1.6032 0.0000 0.0000,
+			xywh = -2.0000 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5BullbarNoSpawn,
+		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -685,7 +691,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -693,7 +699,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelfrontwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -701,7 +707,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -709,7 +715,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelbackwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -768,21 +774,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 0.9524 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -3.1746,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3492,
+			offset = -0.0159 0.0000 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
