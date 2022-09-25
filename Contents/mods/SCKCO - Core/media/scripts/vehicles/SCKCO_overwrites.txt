@@ -1,0 +1,1429 @@
+module Base
+{
+    
+    /************************ Tires/Brakes ************************/
+    item OldTire1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Valu-Tire,
+        Icon	=	CarTire,
+        VehicleType =   1,
+        MaxCapacity = 30,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.04,
+        ConditionLowerOffroad = 0.5,
+        WheelFriction = 1.2,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item NormalTire1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Tire,
+        Icon	=	CarTire,
+        VehicleType =   1,
+        MaxCapacity = 35,
+        ChanceToSpawnDamaged = 50,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        WheelFriction = 1.4,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item ModernTire1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Tire,
+        Icon	=	CarTire,
+        VehicleType =   1,
+        MaxCapacity = 40,
+        ChanceToSpawnDamaged = 30,
+        WheelFriction = 1.6,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.35,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item OldTire2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Valu-Tire,
+        Icon	=	CarTire,
+        VehicleType =   2,
+        MaxCapacity = 30,
+        ChanceToSpawnDamaged = 70,
+        WheelFriction = 1.3,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.04,
+        ConditionLowerOffroad = 0.35,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item NormalTire2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Tire,
+        Icon	=	CarTire,
+        VehicleType =   2,
+        MaxCapacity = 35,
+        ChanceToSpawnDamaged = 50,
+        WheelFriction = 1.5,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.25,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item ModernTire2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Tire,
+        Icon	=	CarTire,
+        VehicleType =   2,
+        MaxCapacity = 40,
+        ChanceToSpawnDamaged = 30,
+        WheelFriction = 1.6,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.15,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item OldTire3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Valu-Tire,
+        Icon	=	CarTire,
+        VehicleType =   3,
+        MaxCapacity = 30,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 70,
+        ConditionLowerStandard = 0.08,
+        ConditionLowerOffroad = 0.5,
+        WheelFriction = 1.3,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item NormalTire3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Tire,
+        Icon	=	CarTire,
+        VehicleType =   3,
+        MaxCapacity = 35,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 50,
+        ConditionLowerStandard = 0.05,
+        ConditionLowerOffroad = 0.4,
+        WheelFriction = 1.6,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item ModernTire3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Tire,
+        Icon	=	CarTire,
+        VehicleType =   3,
+        MaxCapacity = 40,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.35,
+        WheelFriction = 1.8,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Wheel,
+    }
+
+    item OldBrake1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Old Brake,
+        Icon	=	CarBrakes,
+        VehicleType = 1,
+        MaxCapacity = 30,
+        ConditionMax = 100,
+        brakeForce = 17,
+        ChanceToSpawnDamaged = 70,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item NormalBrake1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   1,
+        MaxCapacity = 35,
+        ConditionMax = 100,
+        brakeForce = 20,
+        ChanceToSpawnDamaged = 50,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item ModernBrake1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   1,
+        MaxCapacity = 40,
+        ConditionMax = 100,
+        brakeForce = 25,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item OldBrake2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Old Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   2,
+        MaxCapacity = 30,
+        ConditionMax = 100,
+        brakeForce = 20,
+        ChanceToSpawnDamaged = 70,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item NormalBrake2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   2,
+        MaxCapacity = 35,
+        ConditionMax = 100,
+        brakeForce = 23,
+        ChanceToSpawnDamaged = 50,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item ModernBrake2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   2,
+        MaxCapacity = 40,
+        ConditionMax = 100,
+        brakeForce = 28,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item OldBrake3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Old Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   3,
+        MaxCapacity = 30,
+        ConditionMax = 100,
+        brakeForce = 20,
+        ChanceToSpawnDamaged = 70,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item NormalBrake3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   3,
+        MaxCapacity = 35,
+        ConditionMax = 100,
+        brakeForce = 23,
+        ChanceToSpawnDamaged = 50,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    item ModernBrake3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Brake,
+        Icon	=	CarBrakes,
+        VehicleType =   3,
+        MaxCapacity = 40,
+        ConditionMax = 100,
+        brakeForce = 27,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BrakeDisk,
+    }
+
+    /************************ Suspension ************************/
+
+    item NormalSuspension1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 30,
+        SuspensionDamping = 2.88,
+        SuspensionCompression = 3.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspension1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        SuspensionDamping = 2.88,
+        SuspensionCompression = 3.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    item NormalSuspension2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 30,
+        SuspensionDamping = 3.88,
+        SuspensionCompression = 4.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.15,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspension2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        SuspensionDamping = 3.88,
+        SuspensionCompression = 4.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.1,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    item NormalSuspension3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Regular Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 30,
+        SuspensionDamping = 3.4,
+        SuspensionCompression = 4.1,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspension3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Performance Suspension,
+        Icon	=	CarSuspension,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        SuspensionDamping = 3.4,
+        SuspensionCompression = 4.1,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = TRUE,
+        WorldStaticModel = Suspension,
+    }
+
+    /************************ Gas Tank ************************/
+    item SmallGasTank1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	11.0,
+        Type	=	Normal,
+        DisplayName	=	Small Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   1,
+        MaxCapacity = 39,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item NormalGasTank1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	13.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   1,
+        MaxCapacity = 49,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = GasTank,
+    }
+
+    item BigGasTank1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Big Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   1,
+        MaxCapacity = 59,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BigGasTank,
+    }
+
+    item SmallGasTank2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	14.0,
+        Type	=	Normal,
+        DisplayName	=	Small Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   2,
+        MaxCapacity = 55,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item NormalGasTank2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	17.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   2,
+        MaxCapacity = 65,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = GasTank,
+    }
+
+    item BigGasTank2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	22.0,
+        Type	=	Normal,
+        DisplayName	=	Big Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   2,
+        MaxCapacity = 75,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BigGasTank,
+    }
+
+    item SmallGasTank3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Small Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   3,
+        MaxCapacity = 35,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item NormalGasTank3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	12.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   3,
+        MaxCapacity = 45,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = GasTank,
+    }
+
+    item BigGasTank3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	14.0,
+        Type	=	Normal,
+        DisplayName	=	Big Gas Tank,
+        Icon	=	CarGastank,
+        VehicleType =   3,
+        MaxCapacity = 55,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = TRUE,
+        WorldStaticModel = BigGasTank,
+    }
+
+    /************************ Batteries ************************/
+    item CarBattery1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Drainable,
+        UseDelta	=	0.00001,
+        UseWhileEquipped	=	FALSE,
+        DisplayName	=	Car Battery,
+        Icon	=	CarBattery,
+        MetalValue = 1,
+        cantBeConsolided = TRUE,
+        VehicleType =   1,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarBattery,
+    }
+
+    item CarBattery2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Drainable,
+        UseDelta	=	0.00001,
+        UseWhileEquipped	=	FALSE,
+        DisplayName	=	Car Battery,
+        Icon	=	CarBattery,
+        MetalValue = 1,
+        cantBeConsolided = TRUE,
+        VehicleType =   2,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarBattery,
+    }
+
+    item CarBattery3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Drainable,
+        UseDelta	=	0.00001,
+        UseWhileEquipped	=	FALSE,
+        DisplayName	=	Car Battery,
+        Icon	=	CarBattery  ,
+        MetalValue = 1,
+        cantBeConsolided = TRUE,
+        VehicleType =   3,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarBattery,
+    }
+
+    /************************ Vegeta's son ************************/
+    item SmallTrunk1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Small Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   1,
+        MaxCapacity = 40,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+    }
+
+    item NormalTrunk1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	35.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   1,
+        MaxCapacity = 55,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 100,
+        MechanicsItem = TRUE,
+    }
+
+    item BigTrunk1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	40.0,
+        Type	=	Normal,
+        DisplayName	=	Big Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   1,
+        MaxCapacity = 70,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item VanSeatsTrunk2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Small Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 50,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+    }
+
+    item SmallTrunk2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	40.0,
+        Type	=	Normal,
+        DisplayName	=	Small Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 70,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+    }
+
+    item NormalTrunk2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	45.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 85,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item BigTrunk2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	50.0,
+        Type	=	Normal,
+        DisplayName	=	Big Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 150,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item SmallTrunk3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Small Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   3,
+        MaxCapacity = 30,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+    }
+
+    item NormalTrunk3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	25.0,
+        Type	=	Normal,
+        DisplayName	=	Standard Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   3,
+        MaxCapacity = 45,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = TRUE,
+    }
+
+    item BigTrunk3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Big Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   3,
+        MaxCapacity = 50,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item TrailerTrunk1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Big Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   1,
+        MaxCapacity = 100,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item TrailerTrunk2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 100,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item TrailerTrunk3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   3,
+        MaxCapacity = 100,
+        ConditionAffectsCapacity = false,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    /************************ Windows ************************/
+    item Windshield1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item RearWindshield1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item FrontWindow1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Front Window,
+        Icon	=	SideWindow,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    item RearWindow1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Window,
+        Icon	=	SideWindow,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    item Windshield2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item RearWindshield2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item FrontWindow2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Front Window,
+        Icon	=	SideWindow,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    item RearWindow2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Window,
+        Icon	=	SideWindow,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    item Windshield3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item RearWindshield3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	8.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindshield,
+    }
+
+    item FrontWindow3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Front Window,
+        Icon	=	SideWindow,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    item RearWindow3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Window,
+        Icon	=	SideWindow,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarWindow,
+    }
+
+    /************************ Doors ************************/
+    item FrontCarDoor1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Front Door,
+        Icon	=	CarDoorFront,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoor1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoorDouble1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Double Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item FrontCarDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Front Door,
+        Icon	=	CarDoorFront,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoorDouble2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Double Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item FrontCarDoor3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Front Door,
+        Icon	=	CarDoorFront,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoor3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    item RearCarDoorDouble3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Double Rear Door,
+        Icon	=	CarDoorRear,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 20,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarDoor,
+    }
+
+    /************************ Hood ************************/
+    item EngineDoor1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Hood,
+        Icon	=	EngineDoor,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarHood,
+    }
+
+    item EngineDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Hood,
+        Icon	=	EngineDoor,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarHood,
+    }
+
+    item EngineDoor3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Hood,
+        Icon	=	EngineDoor,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarHood,
+    }
+
+    /************************ Trunk Lid ************************/
+    item TrunkDoor1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Trunk Lid,
+        Icon	=	EngineDoor,
+        VehicleType =   1,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarTrunkLid,
+    }
+
+    item TrunkDoor2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Trunk Lid,
+        Icon	=	EngineDoor,
+        VehicleType =   2,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarTrunkLid,
+    }
+
+    item TrunkDoor3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Trunk Lid,
+        Icon	=	EngineDoor,
+        VehicleType =   3,
+        ChanceToSpawnDamaged = 25,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarTrunkLid,
+    }
+
+    /************************ Glove Boxes ************************/
+    item GloveBox1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	3.0,
+        Type	=	Normal,
+        DisplayName	=	Glove Box,
+        Icon	=	GloveBox,
+        VehicleType =   1,
+        MaxCapacity = 3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+    item GloveBox2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	4.0,
+        Type	=	Normal,
+        DisplayName	=	Glove Box,
+        Icon	=	GloveBox,
+        VehicleType =   2,
+        MaxCapacity = 10,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+    item GloveBox3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2.0,
+        Type	=	Normal,
+        DisplayName	=	Glove Box,
+        Icon	=	GloveBox,
+        VehicleType =   3,
+        MaxCapacity = 5,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+    /************************ Seats ************************/
+     item NormalCarSeat1
+     {
+         DisplayCategory = VehicleMaintenance,
+         Weight	=	15.0,
+         Type	=	Normal,
+         DisplayName	=	Standard Seat,
+         Icon	=	CarSeat,
+         VehicleType =   1,
+         MaxCapacity = 20,
+         ChanceToSpawnDamaged = 70,
+         ConditionMax = 100,
+         MechanicsItem = TRUE,
+         WorldStaticModel = CarSeat,
+     }
+
+     item NormalCarSeat2
+     {
+         DisplayCategory = VehicleMaintenance,
+         Weight	=	15.0,
+         Type	=	Normal,
+         DisplayName	=	Standard Seat,
+         Icon	=	CarSeat,
+         VehicleType =   2,
+         MaxCapacity = 20,
+         ChanceToSpawnDamaged = 70,
+         ConditionMax = 100,
+         MechanicsItem = TRUE,
+         WorldStaticModel = CarSeat,
+     }
+
+      item NormalCarSeat3
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	15.0,
+          Type	=	Normal,
+          DisplayName	=	Standard Seat,
+          Icon	=	CarSeat,
+          VehicleType =   3,
+          MaxCapacity = 20,
+          ChanceToSpawnDamaged = 70,
+          ConditionMax = 100,
+          MechanicsItem = TRUE,
+          WorldStaticModel = CarSeat,
+      }
+
+     /************************ Muffler ************************/
+      item OldCarMuffler1
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Old Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   1,
+          EngineLoudness = 80,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.02,
+          ConditionLowerOffroad = 0.4,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item NormalCarMuffler1
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Average Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   1,
+          EngineLoudness = 100,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.015,
+          ConditionLowerOffroad = 0.3,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item ModernCarMuffler1
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Performance Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   1,
+          EngineLoudness = 120,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.01,
+          ConditionLowerOffroad = 0.25,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item OldCarMuffler2
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Old Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   2,
+          EngineLoudness = 80,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.02,
+          ConditionLowerOffroad = 0.35,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item NormalCarMuffler2
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Average Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   2,
+          EngineLoudness = 100,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.015,
+          ConditionLowerOffroad = 0.25,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item ModernCarMuffler2
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Performance Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   2,
+          EngineLoudness = 120,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.01,
+          ConditionLowerOffroad = 0.15,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item OldCarMuffler3
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Old Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   3,
+          EngineLoudness = 80,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.02,
+          ConditionLowerOffroad = 0.4,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item NormalCarMuffler3
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Average Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   3,
+          EngineLoudness = 100,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.015,
+          ConditionLowerOffroad = 0.35,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+
+      item ModernCarMuffler3
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Performance Muffler,
+          Icon	=	CarMuffler,
+          VehicleType =   3,
+          EngineLoudness = 120,
+          ConditionMax = 100,
+          ConditionLowerStandard = 0.01,
+          ConditionLowerOffroad = 0.3,
+          MechanicsItem = TRUE,
+          WorldStaticModel = Muffler,
+      }
+}
