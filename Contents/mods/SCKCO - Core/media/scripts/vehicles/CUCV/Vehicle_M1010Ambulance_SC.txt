@@ -395,16 +395,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part TruckBed
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 100,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -750,7 +740,28 @@ module Base
 			}
 		}
 
-		template = Trunk/part/TruckBed,
+
+		part BackOfTruck
+		{
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = true,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
 		template = Tire,
 		template = Axle,
 
