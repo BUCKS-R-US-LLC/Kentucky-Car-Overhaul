@@ -10,7 +10,7 @@ module Base
 
 	model JeepCherokeeWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_JeepCherokee_SC|WindshieldArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -31,6 +31,24 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+    	model JeepCherokeeRearLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+
+	model JeepCherokeeRearRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
 	}
 
 	model JeepCherokeeFrontLeftWindowArmor
