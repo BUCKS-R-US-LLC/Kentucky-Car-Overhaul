@@ -190,12 +190,12 @@ module Base
 			texture = Vehicles/JeepCherokee/Vehicle_JeepCherokeePoliceAudubon,
 		}
 
-		textureMask = Vehicles/JeepCherokee/Vehicle_JeepCherokeePolice_mask,
-		textureLights = Vehicles/JeepCherokee/Vehicle_JeepCherokeePolice_lights,
+		textureMask = Vehicles/JeepCherokee/Vehicle_JeepCherokee_mask,
+		textureLights = Vehicles/JeepCherokee/Vehicle_JeepCherokee_lights,
 		textureDamage1Overlay = Vehicles/JeepCherokee/Vehicle_JeepCherokee_blood,
 		textureDamage2Overlay = Vehicles/JeepCherokee/Vehicle_JeepCherokee_blood,
-		textureDamage1Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokeePolice_scratch,
-		textureDamage2Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokeePolice_scratch,
+		textureDamage1Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokee_scratch,
+		textureDamage2Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokee_scratch,
 		textureRust = Vehicles/JeepCherokee/Vehicle_JeepCherokee_rust,
 
 		sound
@@ -212,9 +212,9 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 2.4286 2.1714 5.8286,
+extents = 2.4286 2.1714 5.8286,
 		mass = 600,
-		physicsChassisShape = 2.2857 2.1714 5.7429,
+		physicsChassisShape = 2.2286 2.1714 5.6000,
 		centerOfMassOffset = 0.0000 1.0857 0.0000,
 		shadowExtents = 2.3239 5.8112,
 		shadowOffset = -0.0032 0.0031,
@@ -249,7 +249,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0143 0.4000 2.0429,
+			offset = 1.0000 0.4000 2.0429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -265,7 +265,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0143 0.4000 -1.5714,
+			offset = 1.0000 0.4000 -1.5714,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -279,7 +279,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5857 1.0714 0.1000,
+				offset = 0.5857 1.0000 0.1000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -298,7 +298,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5714 1.0714 0.1000,
+				offset = -0.5714 1.0000 0.1000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -317,7 +317,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 1.0714 -0.9714,
+				offset = 0.5714 1.0000 -0.9714,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -336,7 +336,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5714 1.0714 -0.9714,
+				offset = -0.5714 1.0000 -0.9714,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -403,6 +403,7 @@ module Base
 			xywh = -1.2000 -1.5714 0.0000 0.0000,
 		}
 
+		template = JeepCherokeeArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Window/part/WindowMiddleLeft,
@@ -419,7 +420,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = JeepCherokeePoliceDriver,
+				file = JeepCherokeeDriver,
 			}
 		}
 
@@ -427,7 +428,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = JeepCherokeePolicePassenger,
+				file = JeepCherokeePassenger,
 			}
 		}
 
@@ -435,7 +436,7 @@ module Base
 		{
 			model SeatRearLeft
 			{
-				file = JeepCherokeePoliceDouble,
+				file = JeepCherokeeDouble,
 			}
 		}
 
@@ -443,7 +444,7 @@ module Base
 		{
 			model SeatRearRight
 			{
-				file = JeepCherokeePoliceDouble,
+				file = JeepCherokeeDouble,
 			}
 		}
 
@@ -466,7 +467,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = JeepCherokeePoliceHood,
+				file = JeepCherokeeHood,
 			}
 
 			anim Close
@@ -525,7 +526,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = JeepCherokeePoliceWindshield,
+				file = JeepCherokeeWindshield,
 			}
 
 			window
@@ -553,7 +554,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = JeepCherokeePoliceRearWindshield,
+				file = JeepCherokeeRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -592,7 +593,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = JeepCherokeePoliceFrontRightWindow,
+				file = JeepCherokeeFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -609,7 +610,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = JeepCherokeePoliceFrontLeftWindow,
+				file = JeepCherokeeFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -626,7 +627,7 @@ module Base
 		{
 			model windowMR
 			{
-				file = JeepCherokeePoliceMiddleRightWindow,
+				file = JeepCherokeeMiddleRightWindow,
 			}
 
 			area = SeatRearRight,
@@ -641,7 +642,7 @@ module Base
 		{
 			model windowML
 			{
-				file = JeepCherokeePoliceMiddleLeftWindow,
+				file = JeepCherokeeMiddleLeftWindow,
 			}
 
 			area = SeatRearLeft,
@@ -656,7 +657,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = JeepCherokeePoliceRearRightWindow,
+				file = JeepCherokeeRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -673,7 +674,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = JeepCherokeePoliceRearLeftWindow,
+				file = JeepCherokeeRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -690,7 +691,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCherokeePoliceFrontRightDoor,
+				file = JeepCherokeeFrontRightDoor,
 			}
 
 			anim Close
@@ -726,7 +727,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCherokeePoliceFrontLeftDoor,
+				file = JeepCherokeeFrontLeftDoor,
 			}
 
 			anim Close
@@ -762,7 +763,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCherokeePoliceRearRightDoor,
+				file = JeepCherokeeRearRightDoor,
 			}
 
 			anim Close
@@ -798,7 +799,7 @@ module Base
 		{
 			model Default
 			{
-				file = JeepCherokeePoliceRearLeftDoor,
+				file = JeepCherokeeRearLeftDoor,
 			}
 
 			anim Close
@@ -846,7 +847,7 @@ module Base
 
 			model Default
 			{
-				file = JeepCherokeePoliceTrunk,
+				file = JeepCherokeeTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -927,6 +928,31 @@ module Base
 			}
 		}
 
+		part JeepCherokeeSpareTire
+		{
+			model JeepCherokeeSpareTire
+			{
+				file = JeepCherokeeSpareTire,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M35Wheel,
+		}
+
 		template = Brake,
 
 		part Brake*
@@ -982,8 +1008,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 2.3714 1.8571 5.6714,
+			offset = 0.0000 0.9714 0.0000,
+			extents = 2.2571 1.8571 5.7000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

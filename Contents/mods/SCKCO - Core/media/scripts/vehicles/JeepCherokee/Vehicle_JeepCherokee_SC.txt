@@ -241,7 +241,7 @@ module Base
 
 		extents = 2.4286 2.1714 5.8286,
 		mass = 600,
-		physicsChassisShape = 2.2857 2.1714 5.6000,
+		physicsChassisShape = 2.2286 2.1714 5.6000,
 		centerOfMassOffset = 0.0000 1.0857 0.0000,
 		shadowExtents = 2.3239 5.8112,
 		shadowOffset = -0.0032 0.0031,
@@ -276,7 +276,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0143 0.4000 2.0429,
+			offset = 1.0000 0.4000 2.0429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -292,7 +292,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0143 0.4000 -1.5714,
+			offset = 1.0000 0.4000 -1.5714,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -312,7 +312,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.0429 -0.4286 0.5143,
+				offset = 1.5571 0.0000 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -331,7 +331,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1429 -0.4286 0.5143,
+				offset = -1.5571 0.0000 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -350,7 +350,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.0429 -0.4286 -0.6429,
+				offset = 1.5571 0.0000 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -369,7 +369,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1429 -0.4286 -0.6429,
+				offset = -1.5571 0.0000 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -1036,7 +1036,7 @@ module Base
 		physics box
 		{
 			offset = 0.0000 0.9714 0.0000,
-			extents = 3.1143 1.8571 5.4714,
+			extents = 2.2571 1.8571 5.7000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

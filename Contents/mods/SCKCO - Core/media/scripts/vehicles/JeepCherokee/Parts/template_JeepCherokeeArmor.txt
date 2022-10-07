@@ -53,7 +53,7 @@ module Base
 
 	model JeepCherokeeFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindowDoorArmor_obj,
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -62,7 +62,7 @@ module Base
 
 	model JeepCherokeeFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindowDoorArmor_obj,
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -71,14 +71,14 @@ module Base
 
 	model JeepCherokeeRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model JeepCherokeeRearLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -473,6 +473,7 @@ part JeepCherokeeFrontLeftWindowArmor
 				}
 
 		area = Engine,
+        parent = DoorFrontLeft,
             category = bodywork,
             itemType = Base.Windshield,
             mechanicRequireKey = false,
@@ -526,6 +527,7 @@ part JeepCherokeeFrontRightWindowArmor
 				}
 
 		area = Engine,
+        parent = DoorFrontRight,
             category = bodywork,
             itemType = Base.Windshield,
             mechanicRequireKey = false,
@@ -544,6 +546,7 @@ part JeepCherokeeFrontRightWindowArmor
                 time = 300,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
+                parent = DoorFrontRight,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
