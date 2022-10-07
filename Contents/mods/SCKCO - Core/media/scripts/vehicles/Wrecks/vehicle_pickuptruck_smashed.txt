@@ -1,0 +1,114 @@
+module Base
+{
+    model Vehicles_PickUpTruckSmashedRight
+	{
+		mesh = vehicles/Vehicles_PickUpTruckCRASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.0087,
+	}
+	vehicle PickUpTruckSmashedRight
+	{
+	    template! = PickUpTruck,
+
+	    model
+        {
+            file = Vehicles_PickUpTruckSmashedRight,
+            scale = 1.8200,
+            offset = 0.0000 0.3022 0.0000,
+        }
+
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+	}
+
+    model Vehicles_PickUpTruckSmashedLeft
+	{
+		mesh = vehicles/Vehicles_PickUpTruckCRASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.0087,
+	}
+	vehicle PickUpTruckSmashedLeft
+	{
+		template! = PickUpTruck,
+
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedLeft,
+            scale = 1.8200,
+            offset = 0.0000 0.3022 0.0000,
+        }
+
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+	}
+
+    model Vehicles_PickUpTruckSmashedFront
+	{
+		mesh = vehicles/Vehicles_PickUpTruckCRASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.0087,
+	}
+	vehicle PickUpTruckSmashedFront
+	{
+		template! = PickUpTruck,
+
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedFront,
+            scale = 1.8200,
+            offset = 0.0000 0.3022 0.0000,
+        }
+
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+	}
+
+	model Vehicles_PickUpTruckSmashedRear
+	{
+		mesh = vehicles/Vehicles_PickUpTruckCRASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.0087,
+	}
+	vehicle PickUpTruckSmashedRear
+	{
+		template! = PickUpTruck,
+
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedRear,
+            scale = 1.8200,
+            offset = 0.0000 0.3022 0.0000,
+        }
+
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+    }
+}
