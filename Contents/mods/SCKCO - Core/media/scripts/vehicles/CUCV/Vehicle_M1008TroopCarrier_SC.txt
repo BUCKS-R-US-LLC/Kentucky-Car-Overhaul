@@ -454,6 +454,8 @@ module Base
 			{
 				file = M1008Driver,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -462,6 +464,8 @@ module Base
 			{
 				file = M1008Passenger,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part Muffler
@@ -523,6 +527,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -564,6 +570,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -592,6 +600,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part M1008TarpFrame
@@ -664,6 +674,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -681,6 +693,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -717,6 +731,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -753,6 +769,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -804,6 +822,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
