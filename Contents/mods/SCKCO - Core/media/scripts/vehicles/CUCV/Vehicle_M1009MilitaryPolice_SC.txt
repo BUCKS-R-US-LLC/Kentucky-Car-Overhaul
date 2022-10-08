@@ -127,7 +127,7 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 2.8571 3.0794 6.5714,
+		extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -163,7 +163,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2540 0.0794 2.1587,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -226,22 +226,22 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0635 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.2857 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0635 -4.1587 2.8571 1.7460,
+			xywh = 0.0000 -4.1587 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1111 0.2540 1.2381 1.2381,
+			xywh = 2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9841 0.2540 1.2381 1.2381,
+			xywh = -2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -251,22 +251,22 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.1587 0.0000 0.0000,
+			xywh = 1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.1587 0.0000 0.0000,
+			xywh = -1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.6032 0.0000 0.0000,
+			xywh = 1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.6032 0.0000 0.0000,
+			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		template = K5Bullbar/part/K5Bullbar,
@@ -285,6 +285,8 @@ module Base
 			{
 				file = BlazerSCDriver,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -293,6 +295,8 @@ module Base
 			{
 				file = BlazerSCPassenger,
 			}
+		
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part Muffler
@@ -306,6 +310,9 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.NormalCarMuffler,
+
 		}
 
 		template = EngineDoor,
@@ -354,6 +361,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -395,6 +404,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -420,6 +431,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -444,6 +457,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -461,6 +476,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -477,6 +494,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -493,6 +512,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+			
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -529,6 +550,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -565,6 +588,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			
+			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -616,6 +641,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -638,6 +665,8 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+		
+		itemType = NormalTire,
 		}
 
 		part TireFrontRight
@@ -646,6 +675,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearLeft
@@ -654,6 +684,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearRight
@@ -662,6 +693,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		template = Brake,

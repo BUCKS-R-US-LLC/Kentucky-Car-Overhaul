@@ -333,6 +333,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerSCDriver,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -341,6 +343,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerSCPassenger,
 			}
+		
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part Muffler
@@ -354,6 +358,9 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.NormalCarMuffler,
+
 		}
 
 		template = EngineDoor,
@@ -402,6 +409,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -443,6 +452,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -468,6 +479,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -492,6 +505,8 @@ extents = 3.1429 3.0794 6.5714,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -509,6 +524,8 @@ extents = 3.1429 3.0794 6.5714,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -525,6 +542,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -541,6 +560,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				requireInstalled =,
 			}
+			
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -577,6 +598,8 @@ extents = 3.1429 3.0794 6.5714,
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -613,6 +636,8 @@ extents = 3.1429 3.0794 6.5714,
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			
+			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -664,6 +689,8 @@ extents = 3.1429 3.0794 6.5714,
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -686,6 +713,8 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+		
+		itemType = NormalTire,
 		}
 
 		part TireFrontRight
@@ -694,6 +723,7 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearLeft
@@ -702,6 +732,7 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearRight
@@ -710,6 +741,7 @@ extents = 3.1429 3.0794 6.5714,
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		template = Brake,

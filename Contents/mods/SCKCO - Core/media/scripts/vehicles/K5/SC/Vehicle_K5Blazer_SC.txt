@@ -340,6 +340,8 @@ module Base
 			{
 				file = BlazerSCDriver,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -348,6 +350,8 @@ module Base
 			{
 				file = BlazerSCPassenger,
 			}
+		
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part Muffler
@@ -361,6 +365,9 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.NormalCarMuffler,
+
 		}
 
 		template = EngineDoor,
@@ -409,6 +416,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -450,6 +459,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -475,6 +486,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -499,6 +512,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -516,6 +531,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -532,6 +549,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -548,6 +567,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+			
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -584,6 +605,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -620,6 +643,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			
+			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -671,6 +696,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -693,6 +720,8 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+		
+		itemType = NormalTire,
 		}
 
 		part TireFrontRight
@@ -701,6 +730,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearLeft
@@ -709,6 +739,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
+			itemType = NormalTire,
 		}
 
 		part TireRearRight
@@ -717,6 +748,7 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
+			itemType = NormalTire,
 		}
 
 		template = Brake,
