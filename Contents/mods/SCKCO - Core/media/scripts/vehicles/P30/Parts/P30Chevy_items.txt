@@ -1,0 +1,654 @@
+module Base
+{
+
+	  item K5Bullbar2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Bullbar,
+        Icon	=	BlazerBullBar,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5BullBar_WorldItem,
+    }
+
+	  item K5Chevy2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Logo,
+        Icon	=	ChevroletLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5ChevroletLogo_WorldItem,
+    }
+
+        item ChevyDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	= Chevrolet Style Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item ChevyWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item ChevySideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item ChevyHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item ChevyTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item ChevyFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Style Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item P30DoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Door,
+        Icon	=	P30FrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30Door_WorldItem,
+    }
+
+        item P30WindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	P30 Windshield,
+        Icon	=	P30RearWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30Windshield_WorldItem,
+    }
+
+        item P30SideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P30 Side Window,
+        Icon	=	P30FrontSideWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30SideWindow_WorldItem,
+    }
+    
+        item P30RearWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Windows,
+        Icon	=	P30RearWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30RearWindows_WorldItem,
+    }
+
+        item P30HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= P30 Hood,
+        VehicleType = 2,
+        Icon	=	P30Hood, 
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30Hood_WorldItem,
+    }
+
+        item P30RearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Doors,
+        Icon	=	P30RearDoors,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30RearDoors_WorldItem,
+    }
+
+        item P30FrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Front Seat,
+        Icon	=	P30Seat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30FrontSeat_WorldItem,
+    }
+
+        item P30FrontWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Front Wheel,
+        Icon	=	P30FrontWheel,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30FrontWheel_WorldItem,
+    }
+
+        item P30RearWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= P30 Rear Wheel,
+        Icon	=	P30RearWheel,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = P30RearWheel_WorldItem,
+    }
+
+        item CrownVictoriaDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Front Door,
+        Icon	=	CrownFrontDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaFrontDoor_WorldItem,
+    }
+
+        item CrownVictoriaRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Rear Door,
+        Icon	=	CrownRearDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
+    }
+
+        item CrownVictoriaFrontWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Crown Victoria Front Windshield,
+        Icon	=	CapriceFrontWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaFrontWindshield_WorldItem,
+    }
+
+        item CrownVictoriaRearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Crown Victoria Rear Windshield,
+        Icon	=	CapriceRearWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaRearWindshield_WorldItem,
+    }
+
+        item CrownVictoriaFrontSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Front Side Window,
+        Icon	=	CapriceFrontSideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
+    }
+
+        item CrownVictoriaRearSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Rear Side Window,
+        Icon	=	CrownRearSideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaRearSideWindow_WorldItem,
+    }
+
+        item CrownVictoriaHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Hood,
+        Icon	=	CrownHood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaHood_WorldItem,
+    }
+
+        item CrownVictoriaTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Trunk Lid,
+        Icon	=	CrownTrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaTrunkLid_WorldItem,
+    }
+
+        item CrownVictoriaFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Front Seat,
+        Icon	=	CrownFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaFrontSeat_WorldItem,
+    }
+
+        item CrownVictoriaRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Rear Seat,
+        Icon	=	CrownRearSeats,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaRearSeat_WorldItem,
+    }
+
+        item CrownVictoriaRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Rear Door,
+        Icon	=	CrownRearDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
+    }
+    
+        item CrownVictoriaWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Crown Victoria Wheel,
+        Icon	=	CrownWheel,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaWheel_WorldItem,
+    }
+
+        item CapriceDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Door,
+        Icon	=	CapriceFrontDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
+        item CapriceRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Door,
+        Icon	=	CapriceRearDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearDoor_WorldItem,
+    }
+
+        item CapriceFrontWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Caprice Front Windshield,
+        Icon	=	CapriceFrontWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+    }
+
+        item CapriceRearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Caprice Rear Windshield,
+        Icon	=	CapriceRearWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearWindshield_WorldItem,
+    }
+
+        item CapriceFrontSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Side Window,
+        Icon	=	CapriceFrontSideWIndow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+    }
+
+        item CapriceRearSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Side Window,
+        Icon	=	CapriceRearSideWindow_WorldItem,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+    }
+
+        item CapriceHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Hood,
+        Icon	=	CapriceHood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceHood_WorldItem,
+    }
+
+        item CapriceTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Trunk Lid,
+        Icon	= CapriceTrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceTrunkLid_WorldItem,
+    }
+
+        item CapriceFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Front Seat,
+        Icon	=	CapriceFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSeat_WorldItem,
+    }
+    
+        item CapriceRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Rear Seat,
+        Icon	=	CapriceRearSeats,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item CapriceWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Caprice Wheel,
+        Icon	=	CrownWheel,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CrownVictoriaWheel_WorldItem,
+    }
+
+        item G30FrontDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Front Door,
+        Icon	=	G30FrontDoor_WorldItem,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30FrontDoor_WorldItem,
+    }
+
+        item G30HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Hood,
+        Icon	=	G30Hood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30Hood_WorldItem,
+    }
+
+        item G30RearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Rear Doors,
+        Icon	= G30RearDoors,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30RearDoors_WorldItem,
+    }
+
+        item G30RearWindowsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Rear Windows,
+        Icon	= G30RearWindows,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30RearWindows_WorldItem,
+    }
+
+        item G30SideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Side Window,
+        Icon	= G30SideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30SideWindow_WorldItem,
+    }
+
+        item G30SideDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Side Door,
+        Icon	= G30SideDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30SideDoor_WorldItem,
+    }
+
+        item G30FrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30FrontSeat_WorldItem,
+    }
+    
+        item G30SideWindowLongSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Long Side Window,
+        Icon	= G30SideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30SideWindowLong_WorldItem,
+    }
+
+        item G30RearDoorsVanSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Van Rear Doors,
+        Icon	= G30SideDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30RearDoorsVan_WorldItem,
+    }
+
+        item G30RearWindowsVanSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Van Rear Windows,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = G30RearWindowsVan_WorldItem,
+    }
+    
+}
