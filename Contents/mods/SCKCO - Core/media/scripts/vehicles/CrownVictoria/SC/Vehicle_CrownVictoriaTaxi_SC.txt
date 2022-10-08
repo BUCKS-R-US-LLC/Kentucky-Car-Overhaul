@@ -189,7 +189,7 @@ module Base
 
 		extents = 3.0508 1.3898 8.0339,
 		mass = 800,
-		physicsChassisShape = 3.0508 1.3898 8.1356,
+		physicsChassisShape = 3.0508 1.3898 8.1695,
 		centerOfMassOffset = 0.0000 0.6610 -0.0678,
 		shadowExtents = 3.0338 8.9162,
 		shadowOffset = -0.0032 -0.0709,
@@ -273,13 +273,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5932 0.5424 0.2034,
+				offset = -0.6102 0.5424 0.2034,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.2034 -0.4237 0.1017,
+				offset = -2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -317,7 +317,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.2203 -0.4237 -0.9831,
+				offset = -2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -330,27 +330,27 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.9661 3.0508 1.7627,
+			xywh = 0.0000 -4.9831 3.0508 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1864 0.4407 1.3220 1.3220,
+			xywh = 2.1864 0.4407 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1864 0.4407 1.3220 1.3220,
+			xywh = -2.1864 0.4407 1.3559 1.3559,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1864 -1.0339 1.3220 1.3220,
+			xywh = 2.1864 -1.0339 1.3559 1.3559,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1864 -1.0339 1.3220 1.3220,
+			xywh = -2.1864 -1.0339 1.3559 1.3559,
 		}
 
 		area GasTank
@@ -360,22 +360,22 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = -1.5424 2.3729 0.0000 0.0000,
+			xywh = 1.5085 2.3729 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = 1.4746 2.3729 0.0000 0.0000,
+			xywh = -1.5254 2.3729 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = -1.5424 -2.0678 0.0000 0.0000,
+			xywh = 1.5254 -2.0678 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = 1.5254 -2.0678 0.0000 0.0000,
+			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -394,6 +394,9 @@ module Base
 			{
 				file = CrownVictoriaDriver,
 			}
+
+		itemType = Base.CrownSedanFrontSeatSC,
+
 		}
 
 		part SeatFrontRight
@@ -402,6 +405,9 @@ module Base
 			{
 				file = CrownVictoriaPassenger,
 			}
+		
+		itemType = Base.CrownSedanFrontSeatSC,
+
 		}
 
 		part SeatRearLeft
@@ -410,6 +416,18 @@ module Base
 			{
 				file = CrownVictoriaDouble,
 			}
+
+		itemType = Base.CrownSedanRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = CrownVictoriaDouble,
+			}
+
+		itemType = Base.CrownSedanRearSeatSC,
 		}
 
 		part Muffler
@@ -471,6 +489,9 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.CrownSedanHoodSC,
+
 		}
 
 		part Heater
@@ -512,6 +533,9 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CrownSedanFrontWindshieldSC,
+
 		}
 
 		part WindshieldRear
@@ -540,6 +564,9 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CrownSedanRearWindshieldSC,
+
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -566,6 +593,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.CrownSedanFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -583,6 +612,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			
+			itemType = Base.CrownSedanFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -600,6 +631,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+			
+			itemType = Base.CrownSedanRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -617,6 +650,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = Base.CrownSedanRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -653,6 +688,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -689,6 +726,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanDoorSC,
 		}
 
 		part DoorRearRight
@@ -725,6 +764,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -761,6 +802,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -812,6 +855,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -893,13 +938,6 @@ module Base
 
 		template = Headlight,
 
-		physics box
-		{
-			offset = 0.0000 0.9524 -0.0952,
-			extents = 3.0476 1.8571 8.1111,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
 		part PassengerCompartment
 		{
 			category = nodisplay,
@@ -910,16 +948,23 @@ module Base
 			}
 		}
 
+		physics box
+		{
+			offset = 0.0000 0.9524 -0.0952,
+			extents = 3.0476 1.8571 8.1111,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
 		attachment trailer
 		{
-			offset = 0.0000 0.0317 -4.1905,
+			offset = 0.0000 0.3898 -4.1864,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.9841,
+			offset = 0.0000 0.3898 3.9831,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

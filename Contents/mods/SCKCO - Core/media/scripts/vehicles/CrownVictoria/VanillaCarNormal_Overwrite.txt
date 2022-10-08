@@ -414,6 +414,9 @@ module Base
 			{
 				file = CrownVictoriaDriver,
 			}
+
+		itemType = Base.CrownSedanFrontSeatSC,
+
 		}
 
 		part SeatFrontRight
@@ -422,6 +425,9 @@ module Base
 			{
 				file = CrownVictoriaPassenger,
 			}
+		
+		itemType = Base.CrownSedanFrontSeatSC,
+
 		}
 
 		part SeatRearLeft
@@ -430,6 +436,18 @@ module Base
 			{
 				file = CrownVictoriaDouble,
 			}
+
+		itemType = Base.CrownSedanRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = CrownVictoriaDouble,
+			}
+
+		itemType = Base.CrownSedanRearSeatSC,
 		}
 
 		part Muffler
@@ -491,6 +509,9 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.CrownSedanHoodSC,
+
 		}
 
 		part Heater
@@ -532,6 +553,9 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CrownSedanFrontWindshieldSC,
+
 		}
 
 		part WindshieldRear
@@ -560,6 +584,9 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CrownSedanRearWindshieldSC,
+
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -586,6 +613,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.CrownSedanFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -603,6 +632,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			
+			itemType = Base.CrownSedanFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -620,6 +651,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+			
+			itemType = Base.CrownSedanRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -637,6 +670,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = Base.CrownSedanRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -673,6 +708,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -709,6 +746,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanDoorSC,
 		}
 
 		part DoorRearRight
@@ -745,6 +784,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -781,6 +822,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -832,6 +875,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CrownSedanTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
