@@ -182,7 +182,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.9508 1.8689 7.7705,
+		extents = 3.0492 1.8689 7.7705,
 		mass = 800,
 		physicsChassisShape = 3.0820 2.1311 7.8033,
 		centerOfMassOffset = 0.0000 1.0984 -0.0492,
@@ -320,12 +320,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8361 2.9508 2.0000,
+			xywh = 0.0000 4.8361 3.0492 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.8197 2.9508 1.7705,
+			xywh = 0.0000 -4.8197 3.0492 1.7705,
 		}
 
 		area SeatFrontLeft
@@ -389,6 +389,9 @@ module Base
 			{
 				file = Caprice9C1Driver,
 			}
+		
+		itemType = Base.ChevySedanFrontSeatSC,
+
 		}
 
 		part SeatFrontRight
@@ -397,6 +400,9 @@ module Base
 			{
 				file = Caprice9C1Passenger,
 			}
+
+		itemType = Base.ChevySedanFrontSeatSC,
+
 		}
 
 		part SeatRearLeft
@@ -405,7 +411,20 @@ module Base
 			{
 				file = Caprice9C1Double,
 			}
+		
+		itemType = Base.ChevySedanRearSeatSC,
 		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = Caprice9C1Double,
+			}
+		
+		itemType = Base.ChevySedanRearSeatSC,
+		}
+
 
 		part Muffler
 		{
@@ -466,6 +485,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+			
+			itemType = Base.ChevySedanHoodSC,
 		}
 
 		part Heater
@@ -507,6 +528,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySedanFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -535,6 +558,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevySedanRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -561,6 +586,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySedanFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -578,6 +605,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySedanFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -595,6 +624,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+
+			itemType = Base.ChevySedanRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -612,6 +643,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = Base.ChevySedanRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -648,6 +681,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -684,6 +719,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanDoorSC,
 		}
 
 		part DoorRearRight
@@ -720,6 +757,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -756,6 +795,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -807,6 +848,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -888,13 +931,6 @@ module Base
 
 		template = Headlight,
 
-		physics box
-		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
 		part PassengerCompartment
 		{
 			category = nodisplay,
@@ -903,6 +939,13 @@ module Base
 			{
 				update = Vehicles.Update.PassengerCompartment,
 			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.9683 0.0159,
+			extents = 3.1111 1.8571 7.6667,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer

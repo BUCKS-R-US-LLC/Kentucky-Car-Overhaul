@@ -389,6 +389,9 @@ module Base
 			{
 				file = Caprice9C1Driver,
 			}
+		
+		itemType = Base.ChevySedanFrontSeatSC,
+
 		}
 
 		part SeatFrontRight
@@ -397,6 +400,9 @@ module Base
 			{
 				file = Caprice9C1Passenger,
 			}
+
+		itemType = Base.ChevySedanFrontSeatSC,
+
 		}
 
 		part SeatRearLeft
@@ -405,7 +411,20 @@ module Base
 			{
 				file = Caprice9C1Double,
 			}
+		
+		itemType = Base.ChevySedanRearSeatSC,
 		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = Caprice9C1Double,
+			}
+		
+		itemType = Base.ChevySedanRearSeatSC,
+		}
+
 
 		part Muffler
 		{
@@ -466,6 +485,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+			
+			itemType = Base.ChevySedanHoodSC,
 		}
 
 		part Heater
@@ -507,6 +528,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySedanFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -535,6 +558,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevySedanRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -561,6 +586,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySedanFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -578,6 +605,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySedanFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -595,6 +624,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+
+			itemType = Base.ChevySedanRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -612,6 +643,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = Base.ChevySedanRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -648,6 +681,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -684,6 +719,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanDoorSC,
 		}
 
 		part DoorRearRight
@@ -720,6 +757,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -756,6 +795,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -807,6 +848,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySedanTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
