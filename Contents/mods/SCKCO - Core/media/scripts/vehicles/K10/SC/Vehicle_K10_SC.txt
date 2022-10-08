@@ -185,7 +185,7 @@ module Base
 		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0476 1.5397 -0.2222,
+		centerOfMassOffset = 0.0476 1.5556 -0.2222,
 		shadowExtents = 2.9601 7.7704,
 		shadowOffset = 0.0635 -0.1048,
 		engineForce = 4400,
@@ -210,7 +210,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2063 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -226,7 +226,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0794 -2.0317,
+			offset = -1.2063 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -339,7 +339,9 @@ module Base
 			model seatfrontLeft
 			{
 				file = K10Driver,
-			}
+			}	
+			
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -348,6 +350,8 @@ module Base
 			{
 				file = K10Passenger,
 			}
+
+			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part Muffler
@@ -361,6 +365,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -409,6 +415,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -450,6 +458,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -478,6 +488,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -500,6 +512,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+		    itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -517,6 +531,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -553,6 +569,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -589,6 +607,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -640,6 +660,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
