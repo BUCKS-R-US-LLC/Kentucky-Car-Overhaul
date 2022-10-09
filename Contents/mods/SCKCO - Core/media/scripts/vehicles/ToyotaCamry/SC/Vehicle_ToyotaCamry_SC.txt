@@ -197,7 +197,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.5574 1.8689 6.6557,
+			extents = 2.5574 1.8689 6.6557,
 		mass = 800,
 		physicsChassisShape = 2.5246 1.8361 6.6557,
 		centerOfMassOffset = 0.0000 0.9180 0.0000,
@@ -404,6 +404,8 @@ module Base
 			{
 				file = ToyotaCamryDriver,
 			}
+		
+		itemType = Base.ToyotaSedanFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -412,6 +414,8 @@ module Base
 			{
 				file = ToyotaCamryPassenger,
 			}
+
+		itemType = Base.ToyotaSedanFrontSeatSC,
 		}
 
 		part SeatRearRight
@@ -420,6 +424,8 @@ module Base
 			{
 				file = ToyotaCamryDouble,
 			}
+
+		itemType = Base.ToyotaSedanRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -428,6 +434,8 @@ module Base
 			{
 				file = ToyotaCamryDouble,
 			}
+		
+		itemType = Base.ToyotaSedanRearSeatSC,
 		}
 
 		part Muffler
@@ -441,6 +449,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+		
 		}
 
 		template = EngineDoor,
@@ -489,6 +498,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ToyotaSedanHoodSC,
 		}
 
 		part Heater
@@ -530,6 +541,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ToyotaSedanFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -558,6 +571,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ToyotaSedanRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -584,6 +599,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = ToyotaSedanRearSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -601,6 +618,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = ToyotaSedanFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -618,6 +637,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+
+			itemType = ToyotaSedanRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -635,6 +656,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = ToyotaSedanRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -671,6 +694,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaSedanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -707,6 +732,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaSedanDoorSC,
 		}
 
 		part DoorRearRight
@@ -743,6 +770,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaSedanRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -779,6 +808,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaSedanRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -830,6 +861,9 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ToyotaSedanTrunkLidSC,
+
 		}
 
 		template = Trunk/part/TruckBed,
@@ -899,6 +933,16 @@ module Base
 			{
 				skills = Mechanics:4,
 				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
 			}
 		}
 
