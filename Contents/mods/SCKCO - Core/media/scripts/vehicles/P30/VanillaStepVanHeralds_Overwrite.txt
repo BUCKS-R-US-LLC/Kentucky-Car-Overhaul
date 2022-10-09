@@ -150,6 +150,7 @@ module Base
 			horn = VehicleHornVan,
 			ignitionFail = VehiclegnitionFailStepVan,
 		}
+
 	extents = 3.2281 3.0877 8.7368,
 		mass = 1700,
 		physicsChassisShape = 3.1930 3.0877 8.4211,
@@ -458,6 +459,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = ChevyStepVanHoodSC,
 		}
 
 		part Heater
@@ -494,6 +497,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyStepVanWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -519,6 +524,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = ChevyStepVanRearWindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -542,6 +549,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyStepVanSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -558,6 +567,9 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+
+			itemType = Base.ChevyStepVanSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -594,6 +606,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyStepVanDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -630,6 +644,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyStepVanDoorSC,
 		}
 
 		part DoorRearRight
@@ -666,6 +682,46 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyStepVanRearDoorsSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = StepVanP30RearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyStepVanRearDoorsSC,
 		}
 
 		template = Tire,
