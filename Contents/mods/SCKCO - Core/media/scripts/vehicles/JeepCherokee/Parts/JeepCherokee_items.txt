@@ -51,4 +51,82 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = JeepCherokeeWindshieldArmor_WorldItem,
     }
-}
+
+
+}    item ChevyDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	= Jeep SUV Style Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item ChevyWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep SUV Style Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item ChevySideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep SUV Style Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item ChevyHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep Style Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item ChevyTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep Style Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item ChevyFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Jeep Style Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
