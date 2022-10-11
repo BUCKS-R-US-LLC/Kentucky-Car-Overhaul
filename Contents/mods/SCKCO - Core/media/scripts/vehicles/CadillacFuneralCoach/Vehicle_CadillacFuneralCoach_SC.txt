@@ -1,122 +1,122 @@
 module Base
 {
-	model SC_MazdaB
+	model SC_CadillacFuneralCoach
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|base_mesh,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model MazdaBDriver
+	model FuneralCoachSCDriver
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MazdaBPassenger
+	model FuneralCoachSCPassenger
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MazdaBWindshield
+	model FuneralCoachSCWindshield
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MazdaBFrontRightWindow
+	model FuneralCoachSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindShield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FuneralCoachSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model MazdaBFrontLeftWindow
+	model FuneralCoachSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model MazdaBFrontRightDoor
+	model FuneralCoachSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model MazdaBFrontLeftDoor
+	model FuneralCoachSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model MazdaBRearRightWindow
+	model FuneralCoachSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MazdaBRearLeftWindow
+	model FuneralCoachSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MazdaBTrunk
+	model FuneralCoachSCTrunk
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model MazdaBRearWindshield
+	model FuneralCoachSCHood
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearWinshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model MazdaBHood
-	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model MazdaWheelleft
+	model FuneralCoachWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_LeftWheel,
-		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model MazdaWheelright
+	model FuneralCoachWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_RightWheel,
-		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model MazdaWheelLargebackwheelleft
+	model FuneralCoachWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_LeftWheel,
-		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model MazdaWheelLargebackwheelright
+	model FuneralCoachWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_RightWheel,
-		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_MazdaB
+	vehicle SC_CadillacFuneralCoach
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -125,23 +125,33 @@ module Base
 
 		model
 		{
-			file = SC_MazdaB,
+			file = SC_CadillacFuneralCoach,
 			scale = 0.6300,
-			offset = 0.0000 -0.0317 0.0794,
+			offset = -0.0159 -0.0476 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/MazdaB/Vehicle_MazdaPic_Red,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_Black,
 		}
 
-		textureRust = Vehicles/MazdaB/Vehicle_MazdaBRust,
-		textureMask = Vehicles/MazdaB/Vehicle_MazdaBMask,
-		textureLights = Vehicles/MazdaB/Vehicle_MazdaBLights,
-		textureDamage1Shell = Vehicles/MazdaB/Vehicle_MazdaBDamage,
-		textureDamage2Shell = Vehicles/MazdaB/Vehicle_MazdaBDamage,
-		textureDamage1Overlay = Vehicles/MazdaB/Vehicle_MazdaBBlood,
-		textureDamage2Overlay = Vehicles/MazdaB/Vehicle_MazdaBBlood,
+		skin
+		{
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_White,
+		}
+
+		textureRust = Vehicles/K5/Vehicle_FuneralCoach_rust,
+		textureMask = Vehicles/K5/Vehicle_FuneralCoach_mask,
+		textureLights = Vehicles/K5/Vehicle_FuneralCoach_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_FuneralCoach_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_FuneralCoach_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_FuneralCoach_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_FuneralCoach_blood,
 
 		sound
 		{
@@ -152,12 +162,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.4444 3.0794 6.6984,
+		extents = 2.6984 3.0794 8.6349,
 		mass = 1000,
-		physicsChassisShape = 2.4444 3.0794 6.7619,
-		centerOfMassOffset = 0.0000 1.5556 -0.2222,
-		shadowExtents = 2.4522 6.7704,
-		shadowOffset = 0.0000 -0.2318,
+		physicsChassisShape = 2.6984 3.0794 8.1587,
+		centerOfMassOffset = 0.0000 1.5556 -0.5556,
+		shadowExtents = 3.1347 8.1990,
+		shadowOffset = 0.0000 -0.4381,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -180,7 +190,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.0476 0.3810 2.0000,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +198,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0476 0.3810 2.0000,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +206,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0476 0.3810 -2.0317,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +214,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0476 0.3810 -2.0317,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -218,7 +228,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 0.9683 0.0159,
+				offset = 0.6032 0.7302 -0.1587,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -237,7 +247,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5714 0.9683 0.0159,
+				offset = -0.6032 0.7302 -0.1587,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -251,47 +261,47 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.1270 2.4444 2.0000,
+			xywh = 0.0000 4.7619 2.6984 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.4444 2.4444 1.7460,
+			xywh = 0.0000 -5.7460 2.6984 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8413 0.2540 1.2381 1.2381,
+			xywh = 1.9683 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8413 0.2540 1.2381 1.2381,
+			xywh = -1.9683 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.4921 1.0794 0.5714,
+			xywh = -1.9048 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -306,7 +316,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = MazdaBDriver,
+				file = FuneralCoachSCDriver,
 			}
 
 			itemType = Base.ChevyFrontSeatSC,
@@ -316,7 +326,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = MazdaBPassenger,
+				file = FuneralCoachSCPassenger,
 			}
 
 			itemType = Base.ChevyFrontSeatSC,
@@ -343,7 +353,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = MazdaBHood,
+				file = FuneralCoachSCHood,
 			}
 
 			anim Close
@@ -402,9 +412,9 @@ module Base
 
 		part Windshield
 		{
-			model WindshieldFront
+			model windshieldFront
 			{
-				file = MazdaBWindshield,
+				file = FuneralCoachSCWindshield,
 			}
 
 			window
@@ -432,10 +442,7 @@ module Base
 
 		part WindshieldRear
 		{
-			model WindshieldRear
-			{
-				file = MazdaBRearWindshield,
-			}
+			parent = TrunkDoor,
 
 			window
 			{
@@ -464,12 +471,14 @@ module Base
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = MazdaBFrontRightWindow,
+				file = FuneralCoachSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -487,7 +496,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = MazdaBFrontLeftWindow,
+				file = FuneralCoachSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -501,11 +510,47 @@ module Base
 			itemType = Base.ChevySideWindowSC,
 		}
 
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = FuneralCoachSCRearLeftWindow,
+			}
+
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			itemType = Base.ChevySideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = FuneralCoachSCRearRightWindow,
+			}
+
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			itemType = Base.ChevySideWindowSC,
+		}
+
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = MazdaBFrontRightDoor,
+				file = FuneralCoachSCFrontRightDoor,
 			}
 
 			anim Close
@@ -543,7 +588,7 @@ module Base
 		{
 			model Default
 			{
-				file = MazdaBFrontLeftDoor,
+				file = FuneralCoachSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -593,7 +638,7 @@ module Base
 
 			model Default
 			{
-				file = MazdaBTrunk,
+				file = FuneralCoachSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -630,13 +675,13 @@ module Base
 			itemType = Base.ChevyTrunkLidSC,
 		}
 
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
-		part TruckBedOpen
+		part TruckBed
 		{
-			itemType = Base.BigTrunk,
+			itemType = Base.NormalTrunk,
 
 			container
 			{
@@ -648,32 +693,40 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = FuneralCoachWheelfrontwheelleft,
 			}
+
+			itemType = NormalTire,
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = FuneralCoachWheelfrontwheelright,
 			}
+
+			itemType = NormalTire,
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = FuneralCoachWheelrearwheelleft,
 			}
+
+			itemType = NormalTire,
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = FuneralCoachWheelrearwheelleft,
 			}
+
+			itemType = NormalTire,
 		}
 
 		template = Brake,
@@ -731,21 +784,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3175 -0.2381,
-			extents = 2.4444 1.8571 6.6190,
+			offset = 0.0000 0.9524 0.0635,
+			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.3651 -3.3175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.5397 3.0159,
+			offset = -0.0159 0.0000 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
