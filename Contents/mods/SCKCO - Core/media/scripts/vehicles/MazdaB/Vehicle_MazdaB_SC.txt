@@ -80,7 +80,7 @@ module Base
 	}
 	model MazdaBRearWindshield
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_MazdaB_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -132,24 +132,49 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/MazdaB/Vehicle_MazdaPic_Red,
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_Red,
 		}
 
-		textureRust = Vehicles/MazdaB/Vehicle_MazdaBRust,
-		textureMask = Vehicles/MazdaB/Vehicle_MazdaBMask,
-		textureLights = Vehicles/MazdaB/Vehicle_MazdaBLights,
-		textureDamage1Shell = Vehicles/MazdaB/Vehicle_MazdaBDamage,
-		textureDamage2Shell = Vehicles/MazdaB/Vehicle_MazdaBDamage,
-		textureDamage1Overlay = Vehicles/MazdaB/Vehicle_MazdaBBlood,
-		textureDamage2Overlay = Vehicles/MazdaB/Vehicle_MazdaBBlood,
+		skin
+		{
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_HardBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_Green,
+		}
+
+		skin
+		{
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_Cream,
+		}
+
+		skin
+		{
+			texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+		}
+
+		textureRust = Vehicles/MazdaB/Vehicle_MazdaB_Rust,
+		textureMask = Vehicles/MazdaB/Vehicle_MazdaB_Mask,
+		textureLights = Vehicles/MazdaB/Vehicle_MazdaB_Lights,
+		textureDamage1Shell = Vehicles/MazdaB/Vehicle_MazdaB_Scratch,
+		textureDamage2Shell = Vehicles/MazdaB/Vehicle_MazdaB_Scratch,
+		textureDamage1Overlay = Vehicles/MazdaB/Vehicle_MazdaB_Blood,
+		textureDamage2Overlay = Vehicles/MazdaB/Vehicle_MazdaB_Blood,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
+			engine = VehicleEnginePickUpTruck,
+			engineStart = VehicleEnginePickUpTruck,
+			engineTurnOff = VehicleEnginePickUpTruck,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			ignitionFail = VehicleIgnitionFailPickUpTruck,
 		}
 
 		extents = 2.4444 3.0794 6.6984,

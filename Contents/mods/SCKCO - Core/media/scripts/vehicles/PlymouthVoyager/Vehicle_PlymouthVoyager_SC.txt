@@ -9,19 +9,19 @@ module Base
 	}
 	model PlymouthVoyagerDriver
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_PlymouthVoyager_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerPassenger
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_PlymouthVoyager_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanRearSeat
+	model PlymouthVoyagerRearSeat
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearSeat_obj,
+		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -49,11 +49,10 @@ module Base
 	}
 	model PlymouthVoyagerMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|SlideDoorWindow_obj,
+		mesh = vehicles/Vehicle_PlymouthVoyager_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = SlideDoorBone,
 	}
 	model PlymouthVoyagerMiddleLeftWindow
 	{
@@ -95,7 +94,7 @@ module Base
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = SlideDoorBone 1.0,
+		boneWeight = RearRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerSlidingWindow
 	{
@@ -107,12 +106,11 @@ module Base
 	}
 	model PlymouthVoyagerTrunk
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearDoor_obj,
+		mesh = vehicles/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
+		boneWeight = TrunkBone 1.0,
 	}
 	model PlymouthVoyagerHood
 	{
@@ -131,28 +129,28 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30Vanfrontwheelleft
+	model PlymouthVoyagerfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
+		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanfrontwheelright
+	model PlymouthVoyagerfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_RightWheel,
+		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanbackwheelleft
+	model PlymouthVoyagerbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
+		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanbackwheelright
+	model PlymouthVoyagerbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_RightWheel,
+		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_PlymouthVoyager
@@ -166,21 +164,51 @@ module Base
 		{
 			file = SC_PlymouthVoyager,
 			scale = 0.6300,
-			offset = 0.0000 0.1905 0.0000,
+			offset = 0.0000 0.0317 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/PlymouthVoyager/Vehicle_Voyager_Blue,
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Blue,
 		}
 
-		textureRust = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_rust,
-		textureMask = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_mask,
-		textureLights = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_lights,
-		textureDamage1Shell = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_scratch,
-		textureDamage2Shell= Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_scratch,
-		textureDamage1Overlay = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_blood,
-		textureDamage2Overlay = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyagerSC_blood,
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Gold,
+		}
+
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_GoldWood,
+		}
+
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wood,
+		}
+
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Green,
+		}
+
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+		}
+
+		skin
+		{
+			texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Silver,
+		}
+
+		textureRust = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_rust,
+		textureMask = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_mask,
+		textureLights = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_lights,
+		textureDamage1Shell = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_scratch,
+		textureDamage2Shell= Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_scratch,
+		textureDamage1Overlay = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_blood,
+		textureDamage2Overlay = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_blood,
 
 		sound
 		{
@@ -191,12 +219,12 @@ module Base
 			ignitionFail = VehiclegnitionFailVan,
 		}
 
-		extents = 2.6032 3.1111 6.6349,
+		extents = 2.6032 2.0317 6.2540,
 		mass = 1700,
-		physicsChassisShape = 2.6349 3.1111 5.9048,
-		centerOfMassOffset = 0.0000 1.5556 0.0000,
-		shadowExtents = 2.6523 5.8892,
-		shadowOffset = 0.0010 0.0096,
+		physicsChassisShape = 2.6349 1.8413 6.1905,
+		centerOfMassOffset = 0.0000 0.9048 0.2222,
+		shadowExtents = 2.6523 6.7940,
+		shadowOffset = 0.0010 0.2159,
 		maxSpeed = 90f,
 		engineForce = 4500,
 		engineQuality = 70,
@@ -220,7 +248,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.2063,
+			offset = -1.0635 0.3016 2.2063,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +256,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1905,
+			offset = 1.0794 0.3016 2.1905,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -236,7 +264,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.7937,
+			offset = -1.0794 0.3016 -1.7937,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -244,7 +272,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.7937,
+			offset = 1.0952 0.3016 -1.7937,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -258,7 +286,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 1.2381 0.5397,
+				offset = 0.7460 0.9206 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -277,7 +305,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 1.2381 0.5397,
+				offset = -0.7460 0.9206 0.5397,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -296,7 +324,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 1.2381 -1.0000,
+				offset = 0.7460 0.9206 -0.7143,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -315,7 +343,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.2222 1.2381 -1.0000,
+				offset = -0.0159 0.9206 -0.7143,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -334,7 +362,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7619 1.2381 -3.1270,
+				offset = 0.7619 0.9206 -1.9524,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -353,7 +381,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7937 1.2381 -3.1270,
+				offset = -0.7937 0.9206 -1.9524,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -367,17 +395,17 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0635 4.5556 3.2381 2.0000,
+			xywh = 0.0000 4.5556 2.6032 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2222 0.7778 1.1429 1.1429,
+			xywh = 1.8730 0.7778 1.1429 1.1429,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1111 0.7778 1.1429 1.1429,
+			xywh = -1.8730 0.7778 1.1429 1.1429,
 		}
 
 		area SeatMiddleLeft
@@ -392,17 +420,17 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = -2.1111 -0.5714 1.1429 1.1111,
+			xywh = -1.8730 -0.5714 1.1429 1.1111,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.1111 -0.5714 1.1429 1.1111,
+			xywh = -1.8730 -0.5714 1.1429 1.1111,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1746 -3.9365 1.0476 0.6032,
+			xywh = 2.1746 -1.2540 1.0476 0.6032,
 		}
 
 		area TireFrontLeft
@@ -427,7 +455,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0635 -5.6349 3.2381 1.0476,
+			xywh = 0.0000 -3.6190 2.6032 1.0476,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -515,7 +543,7 @@ module Base
 
 			model seatfrontRight
 			{
-				file = G30VanRearSeat,
+				file = PlymouthVoyagerRearSeat,
 			}
 		}
 
@@ -751,7 +779,7 @@ module Base
 
 			model seatfrontRight
 			{
-				file = G30VanRearSeat,
+				file = PlymouthVoyagerRearSeat,
 			}
 		}
 
@@ -1122,7 +1150,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelleft,
+				file = PlymouthVoyagerfrontwheelleft,
 			}
 		}
 
@@ -1130,7 +1158,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelright,
+				file = PlymouthVoyagerfrontwheelright,
 			}
 		}
 
@@ -1138,7 +1166,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelleft,
+				file = PlymouthVoyagerbackwheelleft,
 			}
 		}
 
@@ -1146,7 +1174,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelright,
+				file = PlymouthVoyagerbackwheelright,
 			}
 		}
 
@@ -1205,8 +1233,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.0159 0.2540,
-			extents = 2.5714 3.5714 6.2381,
+			offset = 0.0000 1.0635 0.2540,
+			extents = 2.5714 2.1111 6.2381,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
