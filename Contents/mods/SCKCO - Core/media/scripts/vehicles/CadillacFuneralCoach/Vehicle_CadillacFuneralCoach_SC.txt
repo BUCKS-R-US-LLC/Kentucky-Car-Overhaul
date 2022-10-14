@@ -86,6 +86,7 @@ module Base
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = false,
 		boneWeight = RearRightDoorBone 1.0,
 	}
 	model FuneralCoachSCRearLeftWindow
@@ -93,6 +94,7 @@ module Base
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model FuneralCoachSCTrunk
@@ -151,17 +153,17 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_Black,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_Black,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_White,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
 		}
 
 		textureRust = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_rust,
