@@ -30,6 +30,8 @@ module Base
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
 	}
 	model FuneralCoachSCFrontRightWindow
 	{
@@ -84,12 +86,14 @@ module Base
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
 	}
 	model FuneralCoachSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model FuneralCoachSCTrunk
 	{
@@ -98,7 +102,6 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
 	model FuneralCoachSCHood
 	{
@@ -235,7 +238,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -244,13 +247,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6032 0.7302 -0.0159,
+				offset = 0.6032 0.6984 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0476 -0.4286 0.5079,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -263,65 +266,115 @@ module Base
 
 			position inside
 			{
-				offset = -0.6032 0.7302 -0.0159,
+				offset = -0.5873 0.6984 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.1429 -0.4286 0.5079,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5873 0.6984 -1.4127,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.4286 -0.6508,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5873 0.6984 -1.4127,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 -0.4286 -0.6508,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
-			xywh = 0.0000 4.7619 2.6984 2.0000,
+			xywh = 0.0000 4.5238 2.6032 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.7460 2.6984 1.7460,
+			xywh = 0.0000 -5.5238 2.6032 1.7778,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9683 0.2540 1.2381 1.2381,
+			xywh = 1.9683 0.6667 1.3651 1.3651,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9683 0.2540 1.2381 1.2381,
+			xywh = -1.9683 0.6667 1.3651 1.3651,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9683 -0.7937 1.3651 1.3651,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9683 -0.7937 1.3651 1.3651,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9048 -2.5397 1.0794 0.5714,
+			xywh = 1.8730 -2.0159 1.1111 0.6349,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5714 2.1587 0.0000 0.0000,
+			xywh = 1.5238 2.4762 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5714 2.1587 0.0000 0.0000,
+			xywh = -1.5238 2.4762 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5714 -1.6032 0.0000 0.0000,
+			xywh = 1.5238 -1.9841 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5714 -1.6032 0.0000 0.0000,
+			xywh = -1.5238 -1.9841 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -334,8 +387,6 @@ module Base
 			{
 				file = FuneralCoachSCDriver,
 			}
-
-			itemType = Base.ChevyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -344,8 +395,20 @@ module Base
 			{
 				file = FuneralCoachSCPassenger,
 			}
+		}
 
-			itemType = Base.ChevyFrontSeatSC,
+		part SeatRearLeft
+		{
+			model SeatRearLeft
+			{
+			}
+		}
+
+		part SeatRearRight
+		{
+			model SeatRearRight
+			{
+			}
 		}
 
 		part Muffler
@@ -359,8 +422,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -409,8 +470,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.ChevyHoodSC,
 		}
 
 		part Heater
@@ -456,12 +515,12 @@ module Base
 
 		part WindshieldRear
 		{
-			parent = TrunkDoor,
-
 			model windshieldRear
 			{
 				file = FuneralCoachSCRearWindshield,
 			}
+
+			parent = TrunkDoor,
 
 			window
 			{
@@ -497,7 +556,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = FuneralCoachSCFrontRightWindow,
+				file =  FuneralCoachSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -508,14 +567,13 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = FuneralCoachSCFrontLeftWindow,
+				file =  FuneralCoachSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -526,25 +584,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevySideWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = FuneralCoachSCRearLeftWindow,
-			}
-
-			area = TireRearLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			itemType = Base.ChevySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -554,15 +593,31 @@ module Base
 				file = FuneralCoachSCRearRightWindow,
 			}
 
-			area = TireRearRight,
-			parent =,
-
-			table install
+			anim ClosedToOpen
 			{
-				requireInstalled =,
+				anim = RearRightWindowClosing,
+				animate = FALSE,
 			}
 
-			itemType = Base.ChevySideWindowSC,
+			parent = DoorRearRight,
+			area = SeatRearRight,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = FuneralCoachSCRearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
 		}
 
 		part DoorFrontRight
@@ -599,8 +654,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -637,8 +690,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorRearRight
@@ -675,8 +726,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyDoorSC,
 		}
 
 		part DoorRearLeft
@@ -713,8 +762,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -766,8 +813,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -780,7 +825,7 @@ module Base
 
 			container
 			{
-				capacity = 100,
+				capacity = 80,
 			}
 		}
 
@@ -788,40 +833,32 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelfrontwheelleft,
+				file = FordExplorerfrontwheelleft,
 			}
-
-			itemType = NormalTire,
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelfrontwheelright,
+				file = FordExplorerfrontwheelright,
 			}
-
-			itemType = NormalTire,
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelbackwheelleft,
+				file = FordExplorerbackwheelleft,
 			}
-
-			itemType = NormalTire,
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelbackwheelright,
+				file = FordExplorerbackwheelright,
 			}
-
-			itemType = NormalTire,
 		}
 
 		template = Brake,
@@ -865,8 +902,6 @@ module Base
 			itemType = Radio.HamRadio1,
 		}
 
-		template = Headlight,
-
 		part PassengerCompartment
 		{
 			category = nodisplay,
@@ -877,16 +912,25 @@ module Base
 			}
 		}
 
+		template = Headlight,
+
 		physics box
 		{
-			offset = 0.0000 0.9524 -0.5556,
-			extents = 2.6349 1.8571 7.9841,
+			offset = -0.0317 0.9683 -0.6032,
+			extents = 2.6349 1.8571 8.1429,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.3857 -3.1429,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3651,
+			offset = 0.0000 0.3857 3.3000,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
