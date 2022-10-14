@@ -21,13 +21,13 @@ module Base
 	}
 	model FuneralCoachSCWindshield
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindShield_obj,
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -63,6 +63,22 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
+	model FuneralCoachSCRearRightDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model FuneralCoachSCRearLeftDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
 	model FuneralCoachSCRearRightWindow
 	{
 		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
@@ -95,25 +111,25 @@ module Base
 	model FuneralCoachWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
-		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
-		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
-		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
-		texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCoachSC_Wheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_CadillacFuneralCoach
@@ -127,47 +143,47 @@ module Base
 		{
 			file = SC_CadillacFuneralCoach,
 			scale = 0.6300,
-			offset = -0.0159 -0.0476 0.0000,
+			offset = -0.0159 0.1429 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_Black,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_Black,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacFuneralCoach/Vehicle_FuneralCadillac_White,
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCadillac_White,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_FuneralCoach_rust,
-		textureMask = Vehicles/K5/Vehicle_FuneralCoach_mask,
-		textureLights = Vehicles/K5/Vehicle_FuneralCoach_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_FuneralCoach_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_FuneralCoach_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_FuneralCoach_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_FuneralCoach_blood,
+		textureRust = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_rust,
+		textureMask = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_mask,
+		textureLights = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_lights,
+		textureDamage1Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureDamage1Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
+		textureDamage2Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.6984 3.0794 8.6349,
+		extents = 2.6984 3.0794 8.1587,
 		mass = 1000,
 		physicsChassisShape = 2.6984 3.0794 8.1587,
 		centerOfMassOffset = 0.0000 1.5556 -0.5556,
-		shadowExtents = 3.1347 8.1990,
-		shadowOffset = 0.0000 -0.4381,
+		shadowExtents = 2.7061 8.1673,
+		shadowOffset = 0.0000 -0.5492,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -190,7 +206,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = -1.0794 0.2381 2.2222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +214,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1587,
+			offset = 1.0794 0.2381 2.2222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -206,7 +222,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = -1.0794 0.2381 -2.6667,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -214,7 +230,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = 1.0794 0.2381 -2.6667,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +244,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6032 0.7302 -0.1587,
+				offset = 0.6032 0.7302 -0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -247,7 +263,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6032 0.7302 -0.1587,
+				offset = -0.6032 0.7302 -0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -436,13 +452,16 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
-			itemType = Base.ChevyWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			parent = TrunkDoor,
+
+			model windshieldRear
+			{
+				file = FuneralCoachSCRearWindshield,
+			}
 
 			window
 			{
@@ -463,12 +482,12 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
-			itemType = Base.ChevyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -622,6 +641,82 @@ module Base
 			itemType = Base.ChevyDoorSC,
 		}
 
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = FuneralCoachSCRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = FuneralCoachSCRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyDoorSC,
+		}
+
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -713,7 +808,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelrearwheelleft,
+				file = FuneralCoachWheelbackwheelleft,
 			}
 
 			itemType = NormalTire,
@@ -723,7 +818,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FuneralCoachWheelrearwheelleft,
+				file = FuneralCoachWheelbackwheelright,
 			}
 
 			itemType = NormalTire,
@@ -784,16 +879,9 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 0.0635,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 0.9524 -0.5556,
+			extents = 2.6349 1.8571 7.9841,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.3651 -3.3175,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
