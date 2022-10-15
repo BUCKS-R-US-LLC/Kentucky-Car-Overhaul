@@ -90,20 +90,24 @@ module Base
 		mesh = vehicles/Vehicle_PlymouthVoyager_SC|SideDoor_obj,
 		shader = vehicle,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerSlidingWindow
 	{
 		mesh = vehicles/Vehicle_PlymouthVoyager_SC|SlideDoorWindow_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
 		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
+		static = FALSE,
+		boneWeight = RearRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerTrunk
 	{
 		mesh = vehicles/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
 		shader = vehicle,
 		scale = 1,
+		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
 	model PlymouthVoyagerHood
@@ -1004,6 +1008,8 @@ module Base
 				openable = false,
 			}
 
+			parent = DoorRearRight,
+			
 			model windowRR
 			{
 				file = PlymouthVoyagerRearRightWindow,
