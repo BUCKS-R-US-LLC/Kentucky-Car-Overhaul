@@ -170,7 +170,7 @@ module Base
 		textureMask = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_mask,
 		textureLights = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_lights,
 		textureDamage1Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
-		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch2,
+		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
 		textureDamage1Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
 		textureDamage2Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
 
@@ -330,22 +330,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9683 0.6667 1.3651 1.3651,
+			xywh = 1.9683 0.1270 1.3651 1.3651,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9683 0.6667 1.3651 1.3651,
+			xywh = -1.9683 0.1270 1.3651 1.3651,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9683 -0.7937 1.3651 1.3651,
+			xywh = 1.9683 -1.3333 1.3651 1.3651,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9683 -0.7937 1.3651 1.3651,
+			xywh = -1.9683 -1.3333 1.3651 1.3651,
 		}
 
 		area GasTank
@@ -389,6 +389,8 @@ module Base
 			{
 				file = FuneralCoachSCDriver,
 			}
+
+			itemType = Base.CadillacStandardFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -397,19 +399,27 @@ module Base
 			{
 				file = FuneralCoachSCPassenger,
 			}
+
+			itemType = Base.CadillacStandardFrontSeatSC,
 		}
 
 		part SeatRearLeft
 		{
-			model SeatRearLeft
+			category = nodisplay,
+
+			model seatrearLeft
 			{
+				file = FuneralCoachSCDriver,
 			}
 		}
 
 		part SeatRearRight
 		{
-			model SeatRearRight
+			category = nodisplay,
+
+			model seatrearRight
 			{
+				file = FuneralCoachSCPassenger,
 			}
 		}
 
@@ -472,6 +482,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.CadillacStandardHoodSC,
 		}
 
 		part Heater
@@ -513,6 +525,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CadillacStandardFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -543,6 +557,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.CadillacStandardRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -569,6 +585,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			itemType = Base.CadillacStandardFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -586,11 +603,11 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			itemType = Base.CadillacStandardFrontSideWindowSC,
 		}
 
 		part WindowRearRight
 		{
-
 			window
 			{
 				openable = false,
@@ -609,11 +626,11 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+			itemType = Base.CadillacStandardRearSideWindowSC,
 		}
 
 		part WindowRearLeft
 		{
-
 			window
 			{
 				openable = false,
@@ -632,6 +649,7 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+			itemType = Base.CadillacStandardRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -668,6 +686,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CadillacStandardDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -704,6 +724,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CadillacStandardDoorSC,
 		}
 
 		part DoorRearRight
@@ -740,6 +762,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CadillacStandardRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -776,6 +800,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CadillacStandardRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -827,6 +853,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.CadillacStandardTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -847,7 +875,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelleft,
+				file = FuneralCoachWheelfrontwheelleft,
 			}
 		}
 
@@ -855,7 +883,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelright,
+				file = FuneralCoachWheelfrontwheelright,
 			}
 		}
 
@@ -863,7 +891,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelleft,
+				file = FuneralCoachWheelbackwheelright,
 			}
 		}
 
@@ -871,7 +899,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelright,
+				file = FuneralCoachWheelbackwheelright,
 			}
 		}
 
