@@ -383,6 +383,12 @@ local vehicleToSeatAnimations = {
 		["seat3"]="Shark_Idle_SidePassenger2",
 	},
 	
+	["Base.SC_CadillacFuneralCoach"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+        ["seat2"]="Bob_SitGround_Idle",
+		["seat3"]="Bob_SitGround_Idle",
+	},
 
 }
 
