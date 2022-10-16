@@ -13,25 +13,12 @@ module Base
         WorldStaticModel = JeepCherokeeBullbar_WorldItem,
     }
 
-        item JeepCherokeeFrontDoorArmor
+        item JeepCherokeeDoorArmor
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,
         Type	=	Normal,
-        DisplayName	=	Jeep Cherokee Front Door Armor,
-        Icon	=	CherokeeWindshield,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = JeepCherokeeDoorArmor_WorldItem,
-    }
-
-        item JeepCherokeeRearDoorArmor
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Jeep Cherokee Rear Door Armor,
+        DisplayName	=	Jeep Cherokee Door Armor,
         Icon	=	CherokeeWindshield,
         VehicleType =   1,
         ConditionMax = 100,
@@ -52,8 +39,20 @@ module Base
         WorldStaticModel = JeepCherokeeWindshieldArmor_WorldItem,
     }
 
+        item JeepCherokeeWindowArmor
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep Cherokee Window Armor,
+        Icon	=	CherokeeWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = JeepCherokeeWindshieldArmor_WorldItem,
+    }
 
-}    item ChevyDoorSC2
+        item JeepDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,0
@@ -66,7 +65,7 @@ module Base
         WorldStaticModel = K5Door_WorldItem,
     }
 
-        item ChevyWindshieldSC2
+        item JeepWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
@@ -79,7 +78,7 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item ChevySideWindowSC2
+        item JeepSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
@@ -92,7 +91,7 @@ module Base
         WorldStaticModel = K5SideWindow_WorldItem,
     }
 
-        item ChevyHoodSC2
+        item JeepHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
@@ -105,7 +104,7 @@ module Base
         WorldStaticModel = K5Hood_WorldItem,
     }
 
-        item ChevyTrunkLidSC2
+        item JeepTrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -118,7 +117,7 @@ module Base
         WorldStaticModel = K5TrunkLid_WorldItem,
     }
 
-        item ChevyFrontSeatSC2
+        item JeepFrontSeatSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
@@ -130,3 +129,4 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = K5FrontSeat_WorldItem,
     }
+}
