@@ -1,5 +1,5 @@
 objects = {
-  
+
   { name = "military_general", type = "ParkingStall", x = 12515, y = 4223, z = 0, width = 5, height = 3 },
   { name = "military_general", type = "ParkingStall", x = 12526, y = 4256, z = 0, width = 5, height = 3 },
   { name = "military_general", type = "ParkingStall", x = 12515, y = 1296, z = 0, width = 5, height = 3 },
@@ -131,4 +131,5 @@ objects = {
   { name = "cemetery", type = "ParkingStall", x = 12635, y = 3346, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 12607, y = 3323, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 5718, y = 5345, z = 0, width = 3, height = 5 },
+  
 }

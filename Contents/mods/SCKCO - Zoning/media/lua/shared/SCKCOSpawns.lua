@@ -46,8 +46,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.louisville_police.spawnRate = 75;
 	
-	VehicleZoneDistribution.louisville_fire = VehicleZoneDistribution.louisville_fire_engines or {};
-	VehicleZoneDistribution.louisville_fire.vehicles = VehicleZoneDistribution.louisville_fire_engines.vehicles or {};
+	VehicleZoneDistribution.louisville_fire_engines = VehicleZoneDistribution.louisville_fire_engines or {};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles = VehicleZoneDistribution.louisville_fire_engines.vehicles or {};
 
 	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
 
@@ -130,7 +130,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_police_medical.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.military_police_medical.spawnRate = 75;
 	
-	VehicleZoneDistribution.police_tactical_vehicles= VehicleZoneDistribution.police_tactical_vehicles or {};
+	VehicleZoneDistribution.police_tactical_vehicles = VehicleZoneDistribution.police_tactical_vehicles or {};
 	VehicleZoneDistribution.police_tactical_vehicles.vehicles = VehicleZoneDistribution.police_tactical_vehicles.vehicles or {};
 
 	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 95};
