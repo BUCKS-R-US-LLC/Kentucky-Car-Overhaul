@@ -139,7 +139,7 @@ module Base
 	}
 	vehicle SC_CadillacFuneralCoach
 	{
-		mechanicType = 2,
+		mechanicType = 1,
 		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
@@ -170,7 +170,7 @@ module Base
 		textureMask = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_mask,
 		textureLights = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_lights,
 		textureDamage1Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
-		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch2,
 		textureDamage1Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
 		textureDamage2Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
 
@@ -590,6 +590,12 @@ module Base
 
 		part WindowRearRight
 		{
+
+			window
+			{
+				openable = false,
+			}
+
 			model windowRR
 			{
 				file = FuneralCoachSCRearRightWindow,
@@ -607,6 +613,12 @@ module Base
 
 		part WindowRearLeft
 		{
+
+			window
+			{
+				openable = false,
+			}
+
 			model windowRL
 			{
 				file = FuneralCoachSCRearLeftWindow,
