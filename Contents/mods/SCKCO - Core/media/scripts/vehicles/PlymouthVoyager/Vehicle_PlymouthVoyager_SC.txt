@@ -101,9 +101,8 @@ module Base
 	{
 		mesh = vehicles/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
 		shader = vehicle,
-		static = FALSE,
+		static = false,
 		scale = 1,
-		boneWeight = TrunkBone 1.0,
 	}
 	model PlymouthVoyagerHood
 	{
@@ -119,7 +118,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
-		boneWeight = TrunkBone 1.0,
 	}
 	model PlymouthVoyagerfrontwheelleft
 	{
@@ -958,7 +956,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowClosing.001,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
