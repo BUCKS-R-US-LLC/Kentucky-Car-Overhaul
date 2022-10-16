@@ -107,8 +107,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.cemetery = VehicleZoneDistribution.cemetery or {};
 	VehicleZoneDistribution.cemetery.vehicles = VehicleZoneDistribution.cemetery.vehicles or {};
 
-	VehicleZoneDistribution.cemetery.vehicles["Base.PickUpTruckMccoy"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.cemetery.vehicles["Base.CarLuxury"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.cemetery.vehicles["Base.SC_CadillacFuneralCoach"] = {index = -1, spawnChance = 80};
 
 	VehicleZoneDistribution.cemetery.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.cemetery.chanceToSpawnKey = 80;

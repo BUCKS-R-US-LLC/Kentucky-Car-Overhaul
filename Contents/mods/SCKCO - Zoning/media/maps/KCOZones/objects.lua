@@ -83,6 +83,15 @@ objects = {
   { name = "construction_site", type = "ParkingStall", x = 14148, y = 5788, z = 0, width = 3, height = 5 },
   { name = "construction_site", type = "ParkingStall", x = 14179, y = 5773, z = 0, width = 3, height = 5 },
 
+  { name = "construction_site", type = "ParkingStall", x = 13549, y = 1672, z = 0, width = 3, height = 5 },
+  { name = "construction_site", type = "ParkingStall", x = 13549, y = 1669, z = 0, width = 3, height = 5 },
+
+  { name = "construction_site", type = "ParkingStall", x = 13562, y = 1663, z = 0, width = 3, height = 5 },
+  { name = "construction_site", type = "ParkingStall", x = 13562, y = 1667, z = 0, width = 3, height = 5 },
+
+  { name = "construction_site", type = "ParkingStall", x = 13556, y = 1610, z = 0, width = 3, height = 5 },
+  { name = "construction_site", type = "ParkingStall", x = 13561, y = 1610, z = 0, width = 3, height = 5 },
+
   { name = "designated_bubba_zone", type = "ParkingStall", x = 13266, y = 5462, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 13263, y = 5462, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 13260, y = 5462, z = 0, width = 3, height = 5 },
@@ -97,4 +106,8 @@ objects = {
   { name = "designated_bubba_zone", type = "ParkingStall", x = 12482, y = 8884, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 12496, y = 8872, z = 0, width = 3, height = 5 },
 
+  { name = "cemetery", type = "ParkingStall", x = 12620, y = 3367, z = 0, width = 3, height = 5 },
+  { name = "cemetery", type = "ParkingStall", x = 12635, y = 3346, z = 0, width = 3, height = 5 },
+  { name = "cemetery", type = "ParkingStall", x = 12607, y = 3323, z = 0, width = 3, height = 5 },
+  { name = "cemetery", type = "ParkingStall", x = 5718, y = 5345, z = 0, width = 3, height = 5 },
 }
