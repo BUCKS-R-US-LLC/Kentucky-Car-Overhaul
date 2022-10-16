@@ -46,25 +46,25 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.louisville_police.spawnRate = 75;
 	
-	VehicleZoneDistribution.louisville_fire = VehicleZoneDistribution.louisville_fire or {};
-	VehicleZoneDistribution.louisville_fire.vehicles = VehicleZoneDistribution.louisville_fire.vehicles or {};
+	VehicleZoneDistribution.louisville_fire = VehicleZoneDistribution.louisville_fire_engines or {};
+	VehicleZoneDistribution.louisville_fire.vehicles = VehicleZoneDistribution.louisville_fire_engines.vehicles or {};
 
-	VehicleZoneDistribution.louisville_fire.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
 
-	VehicleZoneDistribution.louisville_fire.baseVehicleQuality = 1.1;
-	VehicleZoneDistribution.louisville_fire.chanceToSpawnKey = 80;
-	VehicleZoneDistribution.louisville_fire.chanceToSpawnSpecial = 0;
-	VehicleZoneDistribution.louisville_fire.spawnRate = 75;
+	VehicleZoneDistribution.louisville_fire_engines.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.louisville_fire_engines.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.louisville_fire_engines.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.louisville_fire_engines.spawnRate = 75;
 
-	VehicleZoneDistribution.rosewood_fire = VehicleZoneDistribution.rosewood_fire or {};
-	VehicleZoneDistribution.rosewood_fire.vehicles = VehicleZoneDistribution.rosewood_fire.vehicles or {};
+	VehicleZoneDistribution.rosewood_fire_engines = VehicleZoneDistribution.rosewood_fire_engines or {};
+	VehicleZoneDistribution.rosewood_fire_engines.vehicles = VehicleZoneDistribution.rosewood_fire_engines.vehicles or {};
 
 	VehicleZoneDistribution.rosewood_fire.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
 
-	VehicleZoneDistribution.rosewood_fire.baseVehicleQuality = 1.1;
-	VehicleZoneDistribution.rosewood_fire.chanceToSpawnKey = 80;
-	VehicleZoneDistribution.rosewood_fire.chanceToSpawnSpecial = 0;
-	VehicleZoneDistribution.rosewood_fire.spawnRate = 75;
+	VehicleZoneDistribution.rosewood_fire_engines.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.rosewood_fire_engines.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.rosewood_fire_engines.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.rosewood_fire_engines.spawnRate = 75;
 
 	VehicleZoneDistribution.national_park_service = VehicleZoneDistribution.national_park_service or {};
 	VehicleZoneDistribution.national_park_service.vehicles = VehicleZoneDistribution.national_park_service.vehicles or {};
@@ -114,4 +114,30 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.cemetery.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.cemetery.spawnRate = 75;
 
+	VehicleZoneDistribution.military_police_medical = VehicleZoneDistribution.military_police_medical or {};
+	VehicleZoneDistribution.military_police_medical.vehicles = VehicleZoneDistribution.military_police_medical.vehicles or {};
+
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.VanAmbulance"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_Caprice9C1StatePolice"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 30};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1010Ambulance"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 15};
+
+	VehicleZoneDistribution.military_police_medical.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.military_police_medical.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.military_police_medical.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.military_police_medical.spawnRate = 75;
+	
+	VehicleZoneDistribution.police_tactical_vehicles= VehicleZoneDistribution.police_tactical_vehicles or {};
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles = VehicleZoneDistribution.police_tactical_vehicles.vehicles or {};
+
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 95};
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
+
+	VehicleZoneDistribution.police_tactical_vehicles.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.police_tactical_vehicles.spawnRate = 70;
 end
