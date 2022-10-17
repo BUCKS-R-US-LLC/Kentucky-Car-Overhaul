@@ -146,7 +146,25 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.1429 3.0794 6.5714,
+		
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+        extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -289,7 +307,7 @@ module Base
 		}
 
 		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5Chevy,
+		template = K5Bullbar/part/K5ChevyHeavyDuty,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -298,6 +316,12 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+
+		part GasTank
+		{
+			itemType = Base.BigGasTank,
+		}
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -305,7 +329,7 @@ module Base
 				file = BlazerSCDriver,
 			}
 
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -315,7 +339,7 @@ module Base
 				file = BlazerSCPassenger,
 			}
 		
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -381,7 +405,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyHoodSC,
+			itemType = Base.ChevyHeavyDutyHoodSC,
 		}
 
 		part Heater
@@ -424,7 +448,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -451,7 +475,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -477,7 +501,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -496,7 +520,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -514,7 +538,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -532,7 +556,7 @@ module Base
 				requireInstalled =,
 			}
 			
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -570,7 +594,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.ChevyHeavyDutyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -608,7 +632,7 @@ module Base
 				animate = FALSE,
 			}
 			
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.ChevyHeavyDutyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -661,7 +685,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyTrunkLidSC,
+			itemType = Base.ChevyHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

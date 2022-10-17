@@ -302,7 +302,6 @@ module Base
 		}
 
 		template = K10Bullbar/part/K10BullbarNoSpawn,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -311,6 +310,11 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part GasTank
+		{
+			itemType = Base.BigGasTank,
+		}
+		
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -318,7 +322,7 @@ module Base
 				file = K10Driver,
 			}	
 			
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -328,7 +332,7 @@ module Base
 				file = K10Passenger,
 			}
 
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -393,7 +397,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyHoodSC,
+			itemType = Base.ChevyHeavyDutyHoodSC,
 		}
 
 		part Heater
@@ -436,7 +440,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 			
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -466,7 +470,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 			
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -490,7 +494,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-		    itemType = Base.ChevySideWindowSC,
+		    itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -509,7 +513,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -547,7 +551,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.ChevyHeavyDutyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -585,7 +589,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.ChevyHeavyDutyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -638,7 +642,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyTrunkLidSC,
+			itemType = Base.ChevyHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
