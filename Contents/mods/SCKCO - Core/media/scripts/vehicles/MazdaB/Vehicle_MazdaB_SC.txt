@@ -334,7 +334,7 @@ module Base
 				file = MazdaBDriver,
 			}
 
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.MazdaHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -344,7 +344,7 @@ module Base
 				file = MazdaBPassenger,
 			}
 
-			itemType = Base.ChevyFrontSeatSC,
+			itemType = Base.MazdaHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -409,7 +409,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyHoodSC,
+			itemType = Base.MazdaHeavyDutyHoodSC,
 		}
 
 		part Heater
@@ -452,7 +452,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.MazdaHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -482,7 +482,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyWindshieldSC,
+			itemType = Base.MazdaHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -505,7 +505,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.MazdaHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -523,7 +523,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevySideWindowSC,
+			itemType = Base.MazdaHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -561,7 +561,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.MazdaHeavyDutyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -599,7 +599,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyDoorSC,
+			itemType = Base.MazdaHeavyDutyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -652,7 +652,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyTrunkLidSC,
+			itemType = Base.MazdaHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,

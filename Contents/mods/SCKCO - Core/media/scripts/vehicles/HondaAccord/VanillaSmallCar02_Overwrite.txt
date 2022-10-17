@@ -185,10 +185,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailSmallCar,
 		}
 
-		extents = 2.2188 1.6250 5.7500,
+		extents = 2.2121 1.6364 5.7576,
 		mass = 450,
-		physicsChassisShape = 2.2500 1.6250 5.7500,
-		centerOfMassOffset = 0.0000 0.8125 0.1875,
+		physicsChassisShape = 2.2727 1.6364 5.7576,
+		centerOfMassOffset = 0.0000 0.8182 0.1818,
 		shadowExtents = 2.4264 5.8299,
 		shadowOffset = -0.0032 0.1919,
 		engineForce = 3500,
@@ -214,7 +214,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -0.9688 0.3438 1.7656,
+			offset = -0.9697 0.3485 1.7727,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -222,7 +222,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 0.9531 0.3438 1.7656,
+			offset = 0.9545 0.3485 1.7727,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -230,7 +230,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -0.9688 0.3438 -1.4844,
+			offset = -0.9697 0.3485 -1.4848,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -238,12 +238,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.9531 0.3438 -1.4844,
+			offset = 0.9545 0.3485 -1.4848,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+	template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -392,6 +392,8 @@ module Base
 			{
 				file = HondaAccordDriver,
 			}
+
+			itemType = Base.HondaStandardFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -400,6 +402,8 @@ module Base
 			{
 				file = HondaAccordPassenger,
 			}
+
+			itemType = Base.HondaStandardFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -408,6 +412,16 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
+			itemType = Base.HondaStandardRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = HondaAccordDouble,
+			}
+			itemType = Base.HondaStandardRearSeatSC,
 		}
 
 		part Muffler
@@ -469,6 +483,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.HondaStandardHoodSC,
 		}
 
 		part Heater
@@ -510,6 +526,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.HondaStandardFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -540,6 +558,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.HondaStandardRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -562,6 +582,9 @@ module Base
 				animate = FALSE,
 			}
 
+
+			itemType = Base.HondaStandardFrontSideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -579,6 +602,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.HondaStandardFrontSideWindowSC,
+
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -594,6 +619,8 @@ module Base
 			{
 			}
 
+			itemType = Base.HondaStandardRearSideWindowSC,
+
 			area = SeatRearRight,
 		}
 
@@ -608,6 +635,8 @@ module Base
 			table install
 			{
 			}
+
+			itemType = Base.HondaStandardRearSideWindowSC,
 
 			area = SeatRearLeft,
 		}
@@ -646,6 +675,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			
+			itemType = Base.HondaStandardDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -682,6 +713,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.HondaStandardDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -733,6 +766,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.HondaStandardTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

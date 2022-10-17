@@ -428,6 +428,8 @@ module Base
 			{
 				file = FordCountrySquireDriver,
 			}
+			
+			itemType = Base.FordStandardFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -436,6 +438,7 @@ module Base
 			{
 				file = FordCountrySquirePassenger,
 			}
+			itemType = Base.FordStandardFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -444,6 +447,16 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
+			itemType = Base.FordStandardRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = FordCountrySquireDouble,
+			}
+			itemType = Base.FordStandardRearSeatSC,
 		}
 
 		part Muffler
@@ -505,6 +518,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.FordStandardHoodSC,
 		}
 
 		part Heater
@@ -546,6 +561,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			itemType = Base.FordStandardFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -574,6 +590,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.FordStandardRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -601,6 +619,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.FordStandardRearSideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -617,6 +637,7 @@ module Base
 			{
 				requireInstalled =,
 			}
+			itemType = Base.FordStandardRearSideWindowSC,
 		}
 
 		part WindowFrontRight
@@ -631,6 +652,8 @@ module Base
 				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardFrontSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -649,6 +672,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.FordStandardFrontSideWindowSC,
+
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -666,6 +691,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.FordStandardRearSideWindowSC,
+
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -682,6 +709,8 @@ module Base
 				anim = RearLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -721,6 +750,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -757,6 +788,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardDoorSC,
 		}
 
 		part DoorRearRight
@@ -793,6 +826,9 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			
+			itemType = Base.FordStandardRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -829,6 +865,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -880,6 +918,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordStandardTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
