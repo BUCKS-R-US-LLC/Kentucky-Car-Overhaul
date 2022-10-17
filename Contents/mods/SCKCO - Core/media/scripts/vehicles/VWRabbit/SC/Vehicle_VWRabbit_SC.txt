@@ -203,8 +203,7 @@ module Base
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
-
-		extents = 2.5574 1.4098 5.5410,
+extents = 2.5574 1.4098 5.5410,
 		mass = 800,
 		physicsChassisShape = 2.5574 1.4098 5.6066,
 		centerOfMassOffset = 0.0000 0.6557 0.1639,
@@ -411,6 +410,8 @@ module Base
 			{
 				file = VWRabbitDriver,
 			}
+
+		itemType = Base.VWStandardFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -419,6 +420,8 @@ module Base
 			{
 				file = VWRabbitPassenger,
 			}
+
+		itemType = Base.VWStandardRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -427,6 +430,8 @@ module Base
 			{
 				file = VWRabbitDouble,
 			}
+
+		itemType = Base.VWStandardRearSeatSC,
 		}
 
 		part Muffler
@@ -488,6 +493,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.VWStandardHoodSC,
 		}
 
 		part Heater
@@ -529,6 +536,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.VWStandardFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -559,6 +568,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.VWStandardRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -583,6 +594,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.VWStandardFrontSideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -599,6 +612,8 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -617,6 +632,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.VWStandardRearSideWindowSC,
+
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -633,6 +650,8 @@ module Base
 				anim = RearLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -672,6 +691,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -708,6 +729,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardDoorSC,
 		}
 
 		part DoorRearRight
@@ -744,6 +767,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -780,6 +805,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -831,6 +858,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWStandardTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
