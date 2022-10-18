@@ -4,11 +4,11 @@ module Base
 	  item K5Bullbar2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,0
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Chevrolet Style Bullbar,
         Icon	=	BlazerBullBar,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5BullBar_WorldItem,
@@ -17,11 +17,11 @@ module Base
 	  item K5Chevy2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,0
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Chevrolet Logo,
         Icon	=	ChevroletLogo,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5ChevroletLogo_WorldItem,
@@ -30,11 +30,11 @@ module Base
         item ChevyHeavyDutyDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,0
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Heavy-Duty Door,
         Icon	=	BlazerFrontDoor,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Door_WorldItem,
@@ -43,11 +43,11 @@ module Base
         item ChevyHeavyDutyWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20.0,
+        Weight	=	20,
         Type	=	Normal,
         DisplayName	=	Chevrolet Heavy-Duty Windshield,
         Icon	=	BlazerFrontWindow,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Windshield_WorldItem,
@@ -60,7 +60,7 @@ module Base
         Type	=	Normal,
         DisplayName	=	Chevrolet Heavy-Duty Side Window,
         Icon	= BlazerFrontWindow,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5SideWindow_WorldItem,
@@ -73,7 +73,7 @@ module Base
         Type	=	Normal,
         DisplayName	=	Chevrolet Heavy-Duty Hood,
         Icon	=	BlazerHood,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Hood_WorldItem,
@@ -86,7 +86,7 @@ module Base
         Type	=	Normal,
         DisplayName	=	Chevrolet Heavy-Duty Trunk Lid,
         Icon	=	BlazerTrunkLid,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5TrunkLid_WorldItem,
@@ -99,11 +99,13 @@ module Base
         Type	=	Normal,
         DisplayName	= Chevrolet Heavy-Duty Seat,
         Icon	=	BlazerFrontSeat,
-        VehicleType =   1,
+        VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5FrontSeat_WorldItem,
 
+    }
+    
         item ChevyStandardDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
@@ -234,7 +236,6 @@ module Base
         WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
-
         item ChevyStepVanDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -326,7 +327,7 @@ module Base
         WorldStaticModel = P30FrontSeat_WorldItem,
     }
 
-           item ChevyVanFrontDoorSC2
+        item ChevyVanFrontDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
