@@ -403,6 +403,7 @@ module Base
 			{
 				file = CamaroSCDriver,
 			}
+			itemType = Base.ChevySportFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -411,18 +412,27 @@ module Base
 			{
 				file = CamaroSCPassenger,
 			}
+			itemType = Base.ChevySportFrontSeatSC,
 		}
 
-		part SeatFrontLeft
+		part SeatRearLeft
 		{
 			model SeatRearLeft
 			{
 				file = CamaroSCRearPassenger,
 			}
+			itemType = Base.ChevySportRearSeatSC,
 		}
 
 		part SeatRearRight
 		{
+
+			model SeatRearRight
+			{
+				file = CamaroSCRearPassenger,
+			}
+			
+			itemType = Base.ChevyRearSeatSC,
 		}
 
 		part Muffler
@@ -484,6 +494,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevySportHoodSC,
 		}
 
 		part Heater
@@ -525,6 +537,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySportFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -555,6 +569,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySportRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -579,6 +595,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+						
+			itemType = Base.ChevySportFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -596,6 +614,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySportFrontSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -606,6 +626,8 @@ module Base
 			}
 
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySportRearSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -616,6 +638,8 @@ module Base
 			}
 
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySportRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -652,6 +676,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySportDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -688,6 +714,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.ChevySportDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -739,6 +766,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.ChevySportTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
