@@ -578,14 +578,14 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.JeepFrontWindshieldSC,
+			itemType = Base.JeepHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model windshieldRear
 			{
-				file = JeepCherokeeRearWindshield,
+				file = JeepCherokeeRearWindshieldSC,
 			}
 
 			parent = TrunkDoor,
@@ -610,7 +610,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.JeepHeavyDutyRearWindshieldSC,
+			itemType = Base.JeepHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -635,6 +635,8 @@ module Base
 				animate = FALSE,
 			}
 
+           itemType = Base.JeepHeavyDutySideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -651,6 +653,8 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
+
+            itemType = Base.JeepHeavyDutySideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -684,6 +688,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -701,6 +707,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -718,6 +726,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight

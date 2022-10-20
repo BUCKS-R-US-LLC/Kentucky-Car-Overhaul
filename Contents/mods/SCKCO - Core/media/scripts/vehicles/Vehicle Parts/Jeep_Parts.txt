@@ -122,7 +122,20 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= Jeep Heavy-Duty Seat,
+        DisplayName	= Jeep Heavy-Duty Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item JeepHeavyDutyRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Jeep Heavy-Duty Rear Seat,
         Icon	=	BlazerFrontSeat,
         VehicleType =   2,
         ConditionMax = 100,
