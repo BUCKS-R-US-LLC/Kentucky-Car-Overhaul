@@ -510,6 +510,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.PlymouthVanRearDoorsSC,
 		}
 
 		part SeatFrontLeft
@@ -564,6 +566,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
 		}
 
 		template = EngineDoor,
@@ -612,6 +615,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+			
+			itemType = Base.PlymouthVanHoodSC
 		}
 
 		part Heater
@@ -653,6 +658,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.PlymouthVanWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -683,6 +690,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.PlymouthVanRearWindowsSC,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -746,6 +755,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.PlymouthVanTrunkLidSC,
 		}
 
 		part SeatFrontLeft
@@ -754,6 +765,8 @@ module Base
 			{
 				file = PlymouthVoyagerDriver,
 			}
+			
+			itemType = Base.PlymouthVanFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -762,32 +775,41 @@ module Base
 			{
 				file = PlymouthVoyagerPassenger,
 			}
+
+			itemType = Base.PlymouthVanFrontSeatSC,
 		}
 
 		part SeatMiddleRight
 		{
-			category = nodisplay,
-
 			model seatfrontRight
 			{
 				file = PlymouthVoyagerRearSeat,
 			}
+
+			itemType = Base.PlymouthVanRearSeatSC,
 		}
 
 		part SeatMiddleLeft
-		{
-			category = nodisplay,
-		}
+			{
+				file = PlymouthVoyagerRearSeat,
+
+				itemType = Base.PlymouthVanRearSeatSC,
+			}
+
 
 		part SeatRearRight
-		{
-			category = nodisplay,
-		}
+			{
+				file = PlymouthVoyagerRearSeat,
+
+				itemType = Base.PlymouthVanRearSeatSC,
+			}
 
 		part SeatRearLeft
-		{
-			category = nodisplay,
-		}
+			{
+				file = PlymouthVoyagerRearSeat,
+
+				itemType = Base.PlymouthVanRearSeatSC,
+			}
 
 		part Muffler
 		{
@@ -848,6 +870,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.PlymouthVanHoodSC,
 		}
 
 		part Heater
@@ -889,6 +913,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.PlymouthVanWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -919,6 +945,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.PlymouthVanRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -944,6 +972,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.PlymouthVanSideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -961,6 +991,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.PlymouthVanSideWindowSC,
+
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -977,6 +1009,8 @@ module Base
 				file = PlymouthVoyagerMiddleLeftWindow,
 			}
 
+		    itemType = Base.PlymouthVanSideWindowSC,
+
 			area = SeatMiddleLeft,
 		}
 
@@ -991,6 +1025,8 @@ module Base
 			{
 				file = PlymouthVoyagerMiddleRightWindow,
 			}
+
+			itemType = Base.PlymouthVanSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
@@ -1010,6 +1046,8 @@ module Base
 				file = PlymouthVoyagerSlidingWindow,
 			}
 
+			itemType = Base.PlymouthVanSideWindowSC,
+
 			area = SeatRearRight,
 		}
 
@@ -1024,6 +1062,8 @@ module Base
 			{
 				file = PlymouthVoyagerRearLeftWindow,
 			}
+
+			itemType = Base.PlymouthVanSideWindowSC,
 
 			area = SeatRearLeft,
 		}
@@ -1062,6 +1102,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.PlymouthVanFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1098,6 +1140,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.PlymouthVanFrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -1134,6 +1178,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.PlymouthVanSideDoorSC,
 		}
 
 		template = Tire,
