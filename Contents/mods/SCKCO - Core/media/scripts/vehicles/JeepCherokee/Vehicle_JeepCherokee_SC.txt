@@ -230,16 +230,8 @@ module Base
 		textureDamage2Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokee_scratch,
 		textureRust = Vehicles/JeepCherokee/Vehicle_JeepCherokee_rust,
 
-		sound
-		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
-		}
-
-		extents = 2.4286 2.1714 5.8286,
+	
+        extents = 2.4286 2.1714 5.8286,
 		mass = 600,
 		physicsChassisShape = 2.2286 2.1714 5.6000,
 		centerOfMassOffset = 0.0000 1.0857 0.0000,
@@ -312,7 +304,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.5571 0.0000 0.5143,
+				offset = 2.0429 -0.4286 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -331,7 +323,7 @@ module Base
 
 			position outside
 			{
-				offset = -1.5571 0.0000 0.5143,
+				offset = -2.1429 -0.4286 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -350,7 +342,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.5571 0.0000 -0.6429,
+				offset = 2.0429 -0.4286 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -369,7 +361,7 @@ module Base
 
 			position outside
 			{
-				offset = -1.5571 0.0000 -0.6429,
+				offset = -2.1429 -0.4286 -0.6429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -443,12 +435,19 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part GasTank
+		{
+			itemType = Base.NormalGasTank,
+		}
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = JeepCherokeeDriver,
 			}
+
+			itemType = Base.JeepHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -457,6 +456,8 @@ module Base
 			{
 				file = JeepCherokeePassenger,
 			}
+			
+			itemType = Base.JeepHeavyDutyFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -465,6 +466,9 @@ module Base
 			{
 				file = JeepCherokeeDouble,
 			}
+						
+			itemType = Base.JeepHeavyDutyRearSeatSC,
+
 		}
 
 		part SeatRearRight
@@ -473,6 +477,8 @@ module Base
 			{
 				file = JeepCherokeeDouble,
 			}
+
+			itemType = Base.JeepHeavyDutyRearSeatSC,
 		}
 
 		part Muffler
@@ -535,6 +541,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+
 			itemType = Base.JeepHeavyDutyHoodSC,
 		}
 
@@ -585,7 +592,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = JeepCherokeeRearWindshieldSC,
+				file = JeepCherokeeRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -635,10 +642,10 @@ module Base
 				animate = FALSE,
 			}
 
-           itemType = Base.JeepHeavyDutySideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -654,10 +661,10 @@ module Base
 				animate = FALSE,
 			}
 
-            itemType = Base.JeepHeavyDutySideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part WindowMiddleRight
@@ -673,6 +680,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+			
+			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -688,7 +697,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-
+			
 			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
@@ -705,10 +714,11 @@ module Base
 				animate = FALSE,
 			}
 
-			parent = DoorRearRight,
-			area = SeatRearRight,
 
 			itemType = Base.JeepHeavyDutySideWindowSC,
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
 		}
 
 		part WindowRearLeft
@@ -724,10 +734,10 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.JeepHeavyDutySideWindowSC,
+
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
-			itemType = Base.JeepHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -840,7 +850,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
+			
 			itemType = Base.JeepHeavyDutyDoorSC,
 		}
 
@@ -1003,7 +1013,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.M35Wheel,
+			itemType = Base.ModernTire,
 		}
 
 		template = Brake,
