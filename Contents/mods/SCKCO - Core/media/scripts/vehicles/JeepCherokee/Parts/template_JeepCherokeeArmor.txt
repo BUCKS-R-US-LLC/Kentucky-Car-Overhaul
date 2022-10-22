@@ -33,7 +33,7 @@ module Base
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-    	model JeepCherokeeRearLeftDoorArmor
+    model JeepCherokeeRearLeftDoorArmor
 	{
 		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
@@ -74,6 +74,8 @@ module Base
 		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+        static = FALSE,
+        boneWeight = RearRightDoorBone 1.0,
 	}
 
 	model JeepCherokeeRearLeftWindowArmor
@@ -81,6 +83,8 @@ module Base
 		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+        static = FALSE,
+        boneWeight = RearLeftDoorBone 1.0,
 	}
 
 	model JeepCherokeeMiddleRightWindowArmor
@@ -93,20 +97,6 @@ module Base
 	model JeepCherokeeMiddleLeftWindowArmor
 	{
 		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
-	model JeepCherokeeRearRightWindowArmor
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
-	model JeepCherokeeRearLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -664,6 +654,7 @@ part JeepCherokeeRearLeftWindowArmor
 				}
 
 		area = Engine,
+                parent = DoorRearLeft,
             category = bodywork,
             itemType = Base.Windshield,
             mechanicRequireKey = false,
@@ -718,6 +709,7 @@ part JeepCherokeeRearRightWindowArmor
 
 		area = Engine,
             category = bodywork,
+            parent = DoorRearRight,
             itemType = Base.Windshield,
             mechanicRequireKey = false,
 		table install

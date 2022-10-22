@@ -110,8 +110,8 @@ function CherokeeBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "Cherokee" )) then
 
-local part = vehicle:getPartById("EngineWindow")
-        if (vehicle:getPartById("JeepCherokeeBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineWindow"):getCondition() < 70) and (vehicle:getPartById("JeepCherokeeBullbar"):getInventoryItem()) then
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("JeepCherokeeBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("JeepCherokeeBullbar"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("JeepCherokeeBullbar"):setCondition(vehicle:getPartById("JeepCherokeeBullbar"):getCondition()-1)
@@ -232,9 +232,27 @@ function CherokeeWindowRearRight(player, part, elapsedMinutes)
 
 end
 
+function CherokeeBullbar(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "Cherokee" )) then
+
+local part = vehicle:getPartById("EngineDoor")
+        if (vehicle:getPartById("JeepCherokeeBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("JeepCherokeeBullbar"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
+            vehicle:getPartById("JeepCherokeeBullbar"):setCondition(vehicle:getPartById("JeepCherokeeBullbar"):getCondition()-1)
+
+        end
+        vehicle:transmitPartModData(EngineDoor)
+    end
+
+
+end
+
+
 Events.OnPlayerUpdate.Add(CherokeeWindshield);
 Events.OnPlayerUpdate.Add(CherokeeGasTank);
-Events.OnPlayerUpdate.Add(CherokeeEngineWindow);
+Events.OnPlayerUpdate.Add(CherokeeBullbar);
 Events.OnPlayerUpdate.Add(CherokeeDoorFrontLeft);
 Events.OnPlayerUpdate.Add(CherokeeDoorFrontRight);
 Events.OnPlayerUpdate.Add(CherokeeDoorRearLeft);

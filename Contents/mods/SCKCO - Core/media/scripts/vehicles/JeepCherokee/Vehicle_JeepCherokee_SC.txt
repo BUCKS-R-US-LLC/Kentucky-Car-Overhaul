@@ -230,6 +230,14 @@ module Base
 		textureDamage2Shell = Vehicles/JeepCherokee/Vehicle_JeepCherokee_scratch,
 		textureRust = Vehicles/JeepCherokee/Vehicle_JeepCherokee_rust,
 
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
 	
         extents = 2.4286 2.1714 5.8286,
 		mass = 600,
