@@ -435,12 +435,19 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part GasTank
+		{
+
+		itemType = Base.BigGasTank,
+		}
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = FordExplorerDriver,
 			}
+		itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -449,6 +456,7 @@ module Base
 			{
 				file = FordExplorerPassenger,
 			}
+		itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -457,6 +465,7 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
+		itemType = Base.FordHeavyDutyRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -465,6 +474,8 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
+
+		itemType = FordHeavyDutyRearSeatSC,
 		}
 
 		part Muffler
@@ -478,6 +489,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+			itemType = Base.ModernCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -526,6 +538,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.FordHeavyDutyHoodSC,
 		}
 
 		part Heater
@@ -567,6 +581,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.FordHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -597,6 +613,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.FordHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -621,6 +639,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.FordHeavyDutySideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -637,6 +657,8 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutySideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -655,6 +677,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.FordHeavyDutySideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -670,6 +694,8 @@ module Base
 			{
 				requireInstalled =,
 			}
+
+			itemType = Base.FordHeavyDutySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -684,6 +710,8 @@ module Base
 				anim = RearRightWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutySideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -701,6 +729,8 @@ module Base
 				anim = RearLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutySideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -740,6 +770,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -776,6 +808,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		part DoorRearRight
@@ -812,6 +846,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		part DoorRearLeft
@@ -848,6 +884,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -899,6 +937,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

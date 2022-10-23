@@ -45,7 +45,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
-		boneWeight = FrontLeftDoorBone 1.0,
+		boneWeight = FrontLeftWindowBone 1.0,
 	}
 	model PlymouthVoyagerMiddleRightWindow
 	{
@@ -730,28 +730,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}

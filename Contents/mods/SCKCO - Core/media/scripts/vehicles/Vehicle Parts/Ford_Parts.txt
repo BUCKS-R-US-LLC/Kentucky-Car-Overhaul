@@ -144,4 +144,95 @@ module Base
         WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
     }
     
+    
+        item FordHeavyDutyDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	= Ford Heavy-Duty Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item FordHeavyDutyWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Heavy-Duty Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item FordHeavyDutySideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Heavy-Duty Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item FordHeavyDutyHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Heavy-Duty Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item FordHeavyDutyTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Heavy-Duty Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =  2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item FordHeavyDutyFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Ford Heavy-Duty Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item FordHeavyDutyRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Ford Heavy-Duty Rear Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
 }
