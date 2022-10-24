@@ -416,6 +416,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+		
+		itemType = Base.ChevyVanRearDoorsSC,
 		}
 
 		part SeatFrontLeft
@@ -424,6 +426,8 @@ module Base
 			{
 				file = G30AmbulanceDriver,
 			}
+		
+		itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -432,6 +436,8 @@ module Base
 			{
 				file = G30AmbulancePassenger,
 			}
+
+		itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -493,6 +499,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyVanHoodSC,
 		}
 
 		part Heater
@@ -534,6 +542,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -564,6 +574,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyVanRearWindowsSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -588,6 +600,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyVanSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -605,6 +619,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevyVanSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -641,6 +657,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -677,6 +695,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanFrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -713,6 +733,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.ChevyVanSideDoorSC,
 		}
 
 		part WindowRearRight
@@ -729,6 +750,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyVanSideWindowSC,
 		}
 
 		template = Tire,
