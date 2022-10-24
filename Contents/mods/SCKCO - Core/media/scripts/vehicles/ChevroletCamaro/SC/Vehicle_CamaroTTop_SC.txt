@@ -189,11 +189,11 @@ module Base
 			horn = VehicleHornSportsCar,
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
-
-		extents = 2.6269 1.7313 6.9552,
+		
+        extents = 2.6269 1.7313 6.9552,
 		mass = 1000,
-		physicsChassisShape = 2.5970 1.7313 6.7761,
-		centerOfMassOffset = 0.0000 0.4776 -0.0299,
+		physicsChassisShape = 2.5970 1.7313 6.9552,
+		centerOfMassOffset = 0.0000 0.4776 0.0000,
 		shadowExtents = 2.6463 7.4046,
 		shadowOffset = 0.0000 0.0063,
 		engineForce = 5700,
@@ -334,12 +334,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.4478 2.6269 2.0000,
+			xywh = 0.0000 4.3582 2.8955 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.3881 2.6269 1.7612,
+			xywh = 0.0000 -4.2388 2.8955 1.7612,
 		}
 
 		area SeatFrontLeft
@@ -403,6 +403,7 @@ module Base
 			{
 				file = CamaroSCDriver,
 			}
+			itemType = Base.ChevySportFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -411,18 +412,27 @@ module Base
 			{
 				file = CamaroSCPassenger,
 			}
+			itemType = Base.ChevySportFrontSeatSC,
 		}
 
-		part SeatFrontLeft
+		part SeatRearLeft
 		{
 			model SeatRearLeft
 			{
 				file = CamaroSCRearPassenger,
 			}
+			itemType = Base.ChevySportRearSeatSC,
 		}
 
 		part SeatRearRight
 		{
+
+			model SeatRearRight
+			{
+				file = CamaroSCRearPassenger,
+			}
+			
+			itemType = Base.ChevySportRearSeatSC,
 		}
 
 		part Muffler
@@ -484,6 +494,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevySportHoodSC,
 		}
 
 		part Heater
@@ -525,6 +537,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySportFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -555,6 +569,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevySportRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -579,6 +595,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+						
+			itemType = Base.ChevySportFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -596,6 +614,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySportFrontSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -606,6 +626,8 @@ module Base
 			}
 
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevySportRearSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -616,6 +638,8 @@ module Base
 			}
 
 			area = SeatFrontRight,
+
+			itemType = Base.ChevySportRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -652,6 +676,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevySportDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -688,6 +714,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.ChevySportDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -739,6 +766,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.ChevySportTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
