@@ -209,7 +209,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 4,
+		seats = 2,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
@@ -386,6 +386,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanRearDoorsSC,
 		}
 
 		part SeatFrontLeft
@@ -394,6 +396,8 @@ module Base
 			{
 				file = G30VanWindowlessDriver,
 			}
+		
+		    itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -402,6 +406,8 @@ module Base
 			{
 				file = G30VanWindowlessPassenger,
 			}
+			
+		    itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -463,6 +469,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyVanHoodSC,
 		}
 
 		part Heater
@@ -504,6 +512,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -534,6 +544,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyVanRearWindowsSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -557,6 +569,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyVanSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -571,6 +585,8 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -610,6 +626,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -646,6 +664,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanFrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -682,6 +702,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyVanSideDoorSC,
 		}
 
 		template = Tire,
@@ -762,7 +784,7 @@ module Base
 
 		template = Headlight,
 
-		part PassengerCompartment
+	    part PassengerCompartment
 		{
 			category = nodisplay,
 
