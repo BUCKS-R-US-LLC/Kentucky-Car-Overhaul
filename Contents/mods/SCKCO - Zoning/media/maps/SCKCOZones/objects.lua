@@ -79,12 +79,8 @@ objects = {
   { name = "police_tactical_vehicles", type = "ParkingStall", x = 12496, y = 1607, z = 0, width = 3, height = 5 },
 
   { name = "louisville_fire_engines", type = "ParkingStall", x = 12569, y = 1136, z = 0, width = 3, height = 5 },
-  { name = "louisville_fire_engines", type = "ParkingStall", x = 12501, y = 4125, z = 0, width = 3, height = 5 },
-  { name = "louisville_fire_engines", type = "ParkingStall", x = 13699, y = 1790, z = 0, width = 3, height = 5 },
-  { name = "louisville_fire_engines", type = "ParkingStall", x = 13693, y = 1790, z = 0, width = 3, height = 5 },
 
   { name = "rosewood_fire_engines", type = "ParkingStall", x = 8149, y = 11753, z = 0, width = 3, height = 5 },
-  { name = "rosewood_fire_engines", type = "ParkingStall", x = 8154, y = 11753, z = 0, width = 3, height = 5 },
 
   { name = "construction_site", type = "ParkingStall", x = 13769, y = 1626, z = 0, width = 3, height = 5 },
   { name = "construction_site", type = "ParkingStall", x = 13787, y = 1637, z = 0, width = 3, height = 5 },
