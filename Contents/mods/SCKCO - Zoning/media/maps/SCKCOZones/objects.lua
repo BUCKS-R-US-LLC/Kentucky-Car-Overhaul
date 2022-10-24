@@ -2,7 +2,6 @@ objects = {
 
   { name = "military_general", type = "ParkingStall", x = 12515, y = 4223, z = 0, width = 5, height = 3 },
   { name = "military_general", type = "ParkingStall", x = 12526, y = 4256, z = 0, width = 5, height = 3 },
-  { name = "military_general", type = "ParkingStall", x = 12515, y = 1296, z = 0, width = 5, height = 3 },
   { name = "military_general", type = "ParkingStall", x = 13444, y = 4074, z = 0, width = 3, height = 5 },
   { name = "military_general", type = "ParkingStall", x = 14541, y = 4020, z = 0, width = 3, height = 5 },
   { name = "military_general", type = "ParkingStall", x = 12495, y = 4253, z = 0, width = 3, height = 5 },
@@ -80,6 +79,10 @@ objects = {
 
   { name = "louisville_fire_engines", type = "ParkingStall", x = 12569, y = 1136, z = 0, width = 3, height = 5 },
 
+  { name = "louisville_fire_engines", type = "ParkingStall", x = 13693, y = 1790, z = 0, width = 3, height = 5 },
+  { name = "louisville_fire_engines", type = "ParkingStall", x = 13706, y = 1790, z = 0, width = 3, height = 5 },
+
+
   { name = "rosewood_fire_engines", type = "ParkingStall", x = 8149, y = 11753, z = 0, width = 3, height = 5 },
 
   { name = "construction_site", type = "ParkingStall", x = 13769, y = 1626, z = 0, width = 3, height = 5 },
@@ -118,7 +121,6 @@ objects = {
   { name = "designated_bubba_zone", type = "ParkingStall", x = 12482, y = 8884, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 12496, y = 8872, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 4253, y = 7235, z = 0, width = 3, height = 5 },
-  { name = "designated_bubba_zone", type = "ParkingStall", x = 5361, y = 6069, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 4364, y = 6069, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 4250, y = 5899, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 13114, y = 5313, z = 0, width = 3, height = 5 },

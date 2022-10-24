@@ -56,16 +56,6 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_fire_engines.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.louisville_fire_engines.spawnRate = 75;
 
-	VehicleZoneDistribution.rosewood_fire_engines = VehicleZoneDistribution.rosewood_fire_engines or {};
-	VehicleZoneDistribution.rosewood_fire_engines.vehicles = VehicleZoneDistribution.rosewood_fire_engines.vehicles or {};
-
-	VehicleZoneDistribution.rosewood_fire.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
-
-	VehicleZoneDistribution.rosewood_fire_engines.baseVehicleQuality = 1.1;
-	VehicleZoneDistribution.rosewood_fire_engines.chanceToSpawnKey = 80;
-	VehicleZoneDistribution.rosewood_fire_engines.chanceToSpawnSpecial = 0;
-	VehicleZoneDistribution.rosewood_fire_engines.spawnRate = 75;
-
 	VehicleZoneDistribution.national_park_service = VehicleZoneDistribution.national_park_service or {};
 	VehicleZoneDistribution.national_park_service.vehicles = VehicleZoneDistribution.national_park_service.vehicles or {};
 
