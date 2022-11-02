@@ -212,7 +212,7 @@ module Base
 
 		extents = 2.6032 2.0317 6.2540,
 		mass = 1700,
-		physicsChassisShape = 2.6349 1.8413 6.1905,
+		physicsChassisShape = 2.5714 1.8413 6.1905,
 		centerOfMassOffset = 0.0000 0.9048 0.2222,
 		shadowExtents = 2.6523 6.7940,
 		shadowOffset = 0.0010 0.2159,
@@ -283,7 +283,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.3651 -0.1905 0.9365,
+				offset = 1.5873 -0.1905 0.9365,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -302,7 +302,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.3651 -0.1905 0.9365,
+				offset = -1.5873 -0.1905 0.9365,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -322,7 +322,7 @@ module Base
 			position outside
 			{
 				area = SeatMiddleLeft,
-				offset = 0.5873 -0.1905 0.0000,
+				offset = -1.5873 -0.1905 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
@@ -340,7 +340,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1746 -0.1905 0.0000,
+				offset = -1.5873 -0.1905 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
 			}
@@ -360,7 +360,7 @@ module Base
 			position outside
 			{
 				area = SeatRearLeft,
-				offset = 0.5873 -0.1905 -0.6825,
+				offset = -1.5873 -0.1905 -0.6349,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
@@ -378,7 +378,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1746 -0.1905 0.1429,
+				offset = -1.5873 -0.1905 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -566,7 +566,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -615,8 +614,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-			
-			itemType = Base.PlymouthVanHoodSC
 		}
 
 		part Heater
@@ -765,7 +762,7 @@ module Base
 			{
 				file = PlymouthVoyagerDriver,
 			}
-			
+
 			itemType = Base.PlymouthVanFrontSeatSC,
 		}
 
@@ -790,26 +787,22 @@ module Base
 		}
 
 		part SeatMiddleLeft
-			{
-				file = PlymouthVoyagerRearSeat,
-
-				itemType = Base.PlymouthVanRearSeatSC,
-			}
-
+		{
+			file = PlymouthVoyagerRearSeat,
+			itemType = Base.PlymouthVanRearSeatSC,
+		}
 
 		part SeatRearRight
-			{
-				file = PlymouthVoyagerRearSeat,
-
-				itemType = Base.PlymouthVanRearSeatSC,
-			}
+		{
+			file = PlymouthVoyagerRearSeat,
+			itemType = Base.PlymouthVanRearSeatSC,
+		}
 
 		part SeatRearLeft
-			{
-				file = PlymouthVoyagerRearSeat,
-
-				itemType = Base.PlymouthVanRearSeatSC,
-			}
+		{
+			file = PlymouthVoyagerRearSeat,
+			itemType = Base.PlymouthVanRearSeatSC,
+		}
 
 		part Muffler
 		{
@@ -973,7 +966,6 @@ module Base
 			}
 
 			itemType = Base.PlymouthVanSideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -992,7 +984,6 @@ module Base
 			}
 
 			itemType = Base.PlymouthVanSideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -1009,8 +1000,7 @@ module Base
 				file = PlymouthVoyagerMiddleLeftWindow,
 			}
 
-		    itemType = Base.PlymouthVanSideWindowSC,
-
+			itemType = Base.PlymouthVanSideWindowSC,
 			area = SeatMiddleLeft,
 		}
 
@@ -1027,7 +1017,6 @@ module Base
 			}
 
 			itemType = Base.PlymouthVanSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
 		}
@@ -1040,14 +1029,13 @@ module Base
 			}
 
 			parent = DoorRearRight,
-			
+
 			model windowRR
 			{
 				file = PlymouthVoyagerSlidingWindow,
 			}
 
 			itemType = Base.PlymouthVanSideWindowSC,
-
 			area = SeatRearRight,
 		}
 
@@ -1064,7 +1052,6 @@ module Base
 			}
 
 			itemType = Base.PlymouthVanSideWindowSC,
-
 			area = SeatRearLeft,
 		}
 
@@ -1279,14 +1266,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -5.1270,
+			offset = 0.0000 0.4444 -2.9048,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.2857,
+			offset = 0.0000 0.4444 3.3333,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
