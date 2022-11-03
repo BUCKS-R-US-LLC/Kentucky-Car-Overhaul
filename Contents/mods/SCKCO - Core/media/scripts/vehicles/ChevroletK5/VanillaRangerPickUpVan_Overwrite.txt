@@ -110,7 +110,7 @@ module Base
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_K5BlazerParkRanger
+	vehicle PickUpVanLights
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -126,21 +126,24 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateBlue,
-		}
-
-		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateWhite,
-		}
-
-		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateBlack,
+			texture = Vehicles/CUCV/Vehicle_M1009_ParkRanger,
 		}
 
 		lightbar
 		{
 			soundSiren = VehicleSiren,
 		}
+
+		area LeftSiren
+		{
+			xywh = 1.2308 0.2033 0.4725 0.5604,
+		}
+
+		area RightSiren
+		{
+			xywh = -0.8626 0.2033 0.4725 0.5604,
+		}
+
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,

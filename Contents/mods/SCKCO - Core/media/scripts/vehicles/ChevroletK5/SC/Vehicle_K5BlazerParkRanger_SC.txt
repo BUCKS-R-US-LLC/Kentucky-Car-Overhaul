@@ -146,7 +146,21 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+		}
+
+		area LeftSiren
+		{
+			xywh = 1.2308 0.2033 0.4725 0.5604,
+		}
+
+		area RightSiren
+		{
+			xywh = -0.8626 0.2033 0.4725 0.5604,
+		}
+
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
