@@ -7,25 +7,25 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model BlazerFossoilSCDriver
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model BlazerFossoilSCPassenger
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model BlazerFossoilSCWindshield
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model BlazerFossoilSCFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model BlazerFossoilSCFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model BlazerFossoilSCFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model BlazerFossoilSCFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model BlazerFossoilSCRearRightWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCRearLeftWindow
+	model BlazerFossoilSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCTrunk
+	model BlazerFossoilSCTrunk
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,7 +78,7 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerSCHood
+	model BlazerFossoilSCHood
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -86,28 +86,34 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model BlazerFossoilWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model BlazerFossoilWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model BlazerFossoilWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model BlazerFossoilWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_BlazerK5_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model BlazerFossoilWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_K5BlazerFossoil
@@ -121,7 +127,7 @@ module Base
 		{
 			file = SC_K5BlazerFossoil,
 			scale = 0.6300,
-			offset = 0.0635 0.2698 0.0000,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
@@ -162,6 +168,11 @@ module Base
 			engineTurnOff = VehicleEngineSUV,
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
 		}
 
         extents = 3.1429 3.0794 6.5714,
@@ -326,7 +337,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = BlazerFossoilSCDriver,
 			}
 
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
@@ -336,7 +347,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = BlazerFossoilSCPassenger,
 			}
 		
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
@@ -364,7 +375,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = BlazerFossoilSCHood,
 			}
 
 			anim Close
@@ -425,7 +436,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = BlazerFossoilSCWindshield,
 			}
 
 			window
@@ -489,7 +500,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = BlazerFossoilSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -508,7 +519,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = BlazerFossoilSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -527,7 +538,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = BlazerFossoilSCRearLeftWindow,
 			}
 
 			area = TireRearLeft,
@@ -545,7 +556,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = BlazerFossoilSCRearRightWindow,
 			}
 
 			area = TireRearRight,
@@ -563,7 +574,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = BlazerFossoilSCFrontRightDoor,
 			}
 
 			anim Close
@@ -601,7 +612,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = BlazerFossoilSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -651,7 +662,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = BlazerFossoilSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,

@@ -1,31 +1,31 @@
 module Base
 {
-	model M1009StatePolice
+	model SC_M1009Police
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerSCDriver
+	model M1009PoliceSCDriver
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCPassenger
+	model M1009PoliceSCPassenger
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCWindshield
+	model M1009PoliceSCWindshield
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCFrontRightWindow
+	model M1009PoliceSCFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerSCFrontLeftWindow
+	model M1009PoliceSCFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerSCFrontRightDoor
+	model M1009PoliceSCFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerSCFrontLeftDoor
+	model M1009PoliceSCFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerSCRearRightWindow
+	model M1009PoliceSCRearRightWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCRearLeftWindow
+	model M1009PoliceSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerSCTrunk
+	model M1009PoliceSCTrunk
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,7 +78,7 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerSCHood
+	model M1009PoliceSCHood
 	{
 		mesh = vehicles/Vehicle_K5BlazerLights_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -86,28 +86,34 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model M1009PoliceWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model M1009PoliceWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelleft
+	model M1009PoliceWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargebackwheelright
+	model M1009PoliceWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model M1009PoliceWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle PickUpVanLightsPolice
@@ -119,9 +125,9 @@ module Base
 
 		model
 		{
-			file = M1009StatePolice,
+			file = SC_M1009Police,
 			scale = 0.6300,
-			offset = 0.0635 0.2698 0.0000,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
@@ -129,9 +135,12 @@ module Base
 			texture = Vehicles/CUCV/Vehicle_M1009_StateBlue,
 		}
 
-		skin
 		{
 			texture = Vehicles/CUCV/Vehicle_M1009_StateWhite,
+		}
+
+		{
+			texture = Vehicles/CUCV/Vehicle_M1009_StateBlack,
 		}
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
@@ -151,12 +160,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
-
-
+		
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
@@ -315,7 +319,8 @@ module Base
 		{
 			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
-		
+
+		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5ChevyHeavyDuty,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -335,7 +340,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = M1009PoliceSCDriver,
 			}
 
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
@@ -345,7 +350,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = M1009PoliceSCPassenger,
 			}
 		
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
@@ -373,7 +378,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = M1009PoliceSCHood,
 			}
 
 			anim Close
@@ -434,7 +439,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = M1009PoliceSCWindshield,
 			}
 
 			window
@@ -498,7 +503,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = M1009PoliceSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -517,7 +522,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = M1009PoliceSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -536,7 +541,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = M1009PoliceSCRearLeftWindow,
 			}
 
 			area = TireRearLeft,
@@ -554,7 +559,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = M1009PoliceSCRearRightWindow,
 			}
 
 			area = TireRearRight,
@@ -572,7 +577,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = M1009PoliceSCFrontRightDoor,
 			}
 
 			anim Close
@@ -610,7 +615,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = M1009PoliceSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -660,7 +665,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = M1009PoliceSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
