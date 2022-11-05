@@ -151,7 +151,7 @@ function CherokeeDoorFrontRight(player, part, elapsedMinutes)
 
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-            vehicle:getPartById("JeepCherokeeFrontRightDoorArmor"):setCondition(vehicle:getPartById("JeepCherokeeFrontRightWindowArmor"):getCondition()-1)
+            vehicle:getPartById("JeepCherokeeFrontRightDoorArmor"):setCondition(vehicle:getPartById("JeepCherokeeFrontRightDoorArmor"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(DoorFrontRight)
