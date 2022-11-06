@@ -728,7 +728,7 @@ module Base
 				file = FireCoachDriver,
 			}
 
-		itemType = Base.FireCoachSeat2,
+		itemType = Base.FireCoachSeat,
 		}
 
 		part SeatFrontRight
@@ -738,7 +738,7 @@ module Base
 				file = FireCoachPassenger,
 			}
 		
-		itemType = Base.FireCoachSeat2,
+		itemType = Base.FireCoachSeat,
 		}
 
 		part Muffler
@@ -842,7 +842,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FireCoachWindshield2,
+			itemType = Base.FireCoachWindshield,
 		}
 
 		part WindshieldRear
@@ -894,7 +894,7 @@ module Base
 				file = FireCoachFrontRightWindow,
 			}
 
-			itemType = Base.FireCoachFrontSideWindowDoor2,
+			itemType = Base.FireCoachFrontSideWindowDoor,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -912,7 +912,7 @@ module Base
 				file = FireCoachFrontLeftWindow,
 			}
 
-			itemType = Base.FireCoachFrontSideWindowDoor2,
+			itemType = Base.FireCoachFrontSideWindowDoor,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -925,7 +925,7 @@ module Base
 				file = FireCoachRearLeftWindow,
 			}
 
-			itemType = Base.FireCoachRearSideWindowDoor2,
+			itemType = Base.FireCoachRearSideWindowDoor,
 		}
 
 		part WindowRearRight
@@ -935,7 +935,7 @@ module Base
 				file = FireCoachRearRightWindow,
 			}
 
-			itemType = Base.FireCoachRearSideWindowDoor2,
+			itemType = Base.FireCoachRearSideWindowDoor,
 		}
 
 		part DoorFrontRight
@@ -973,7 +973,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FireCoachFrontDoor2,
+			itemType = Base.FireCoachFrontDoor,
 		}
 
 		part DoorFrontLeft
@@ -1011,43 +1011,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FireCoachFrontDoor2
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = FireCoachRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
+			itemType = Base.FireCoachFrontDoor,
 		}
 
 		template = Tire,
