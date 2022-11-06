@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - M35A1, M1010, M1028A3 and M1008 Troop Carrier - SEPT21"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Fixes and Adjustments - NOV6"))
