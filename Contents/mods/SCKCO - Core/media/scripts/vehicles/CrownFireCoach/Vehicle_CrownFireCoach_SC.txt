@@ -727,6 +727,8 @@ module Base
 			{
 				file = FireCoachDriver,
 			}
+
+		itemType = Base.FireCoachSeat2,
 		}
 
 		part SeatFrontRight
@@ -735,6 +737,8 @@ module Base
 			{
 				file = FireCoachPassenger,
 			}
+		
+		itemType = Base.FireCoachSeat2,
 		}
 
 		part Muffler
@@ -837,6 +841,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.FireCoachWindshield2,
 		}
 
 		part WindshieldRear
@@ -888,6 +894,8 @@ module Base
 				file = FireCoachFrontRightWindow,
 			}
 
+			itemType = Base.FireCoachFrontSideWindowDoor2,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -904,6 +912,8 @@ module Base
 				file = FireCoachFrontLeftWindow,
 			}
 
+			itemType = Base.FireCoachFrontSideWindowDoor2,
+
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -914,6 +924,8 @@ module Base
 			{
 				file = FireCoachRearLeftWindow,
 			}
+
+			itemType = Base.FireCoachRearSideWindowDoor2,
 		}
 
 		part WindowRearRight
@@ -922,6 +934,8 @@ module Base
 			{
 				file = FireCoachRearRightWindow,
 			}
+
+			itemType = Base.FireCoachRearSideWindowDoor2,
 		}
 
 		part DoorFrontRight
@@ -958,6 +972,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FireCoachFrontDoor2,
 		}
 
 		part DoorFrontLeft
@@ -994,6 +1010,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FireCoachFrontDoor2
 		}
 
 		part DoorRearRight
