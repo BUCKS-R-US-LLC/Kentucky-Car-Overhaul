@@ -11,9 +11,9 @@ module Base
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-	fixing Fix Chverolet Hood Welding
+	fixing Fix Chevrolet Hood Welding
 	{
-	   Require : ChevyStandardHoodSC1;ChevyHeavyDutyHoodSC2;ChevySportHoodSC3,
+	   Require : ChevyStandardHoodSC1;ChevyHeavyDutyHoodSC2;ChevyStepVanHoodSC2;ChevyVanHoodSC2;ChevySportHoodSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -42,7 +42,7 @@ module Base
 
     fixing Fix Chevrolet Trunk Lid
 	{
-       Require : ChevyStandardTrunkLidSC1;ChevyHeavyDutyTrunkLidSC2;ChevySportTrunkLidSC3,
+       Require : ChevyStandardTrunkLidSC1;ChevyHeavyDutyTrunkLidSC2;ChevyStepVanHoodSC2;ChevyVanHoodSC2;ChevySportTrunkLidSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -51,7 +51,7 @@ module Base
 
 	fixing Fix Chevrolet Door Welding
 	{
-	   Require : ChevyHeavyDutyDoorSC2,
+	   Require : ChevyStandardDoorSC1;ChevyHeavyDutyDoorSC2;ChevyVanFrontDoorSC2;ChevyStepVanVanDoorSC2;ChevyVanSideDoorSC2;ChevySportDoorSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 

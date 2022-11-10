@@ -154,8 +154,7 @@ module Base
         Tooltip = Tooltip_FordStandard,
         WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
     }
-    
-    
+        
         item FordHeavyDutyDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -253,4 +252,103 @@ module Base
         Tooltip = Tooltip_FordHeavyDuty,
         WorldStaticModel = K5FrontSeat_WorldItem,
     }
+
+        item FordSportDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,0
+        Type	=	Normal,
+        DisplayName	= Ford Sport Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item FordSportWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Sport Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item FordSportSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Sport Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item FordSportHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Sport Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item FordSportTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Ford Sport Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =  2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item FordSportFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Ford Sport Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item FordSportRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Ford Sport Rear Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordSport,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+    
 }
