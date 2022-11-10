@@ -1,177 +1,177 @@
 module Base
 {
-	model SC_FordExplorer
+	model SC_FordBronco
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordBronco_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
-	model FordExplorerDriver
+	model FordBroncoDriver
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerPassenger
+	model FordBroncoPassenger
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerDouble
+	model FordBroncoDouble
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearDoubleSeat__obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearDoubleSeat__obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerWindshield
+	model FordBroncoWindshield
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerFrontRightWindow
+	model FordBroncoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-	}
-	model FordExplorerFrontLeftWindow
-	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-	}
-	model FordExplorerFrontRightWindow
-	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model FordExplorerFrontLeftWindow
+	model FordBroncoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model FordExplorerMiddleRightWindow
+	model FordBroncoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model FordBroncoFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model FordBroncoMiddleRightWindow
+	{
+		mesh = vehicles/Vehicle_FordBronco_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerMiddleLeftWindow
+	model FordBroncoMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordExplorerRearRightWindow
+	model FordBroncoRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model FordExplorerRearLeftWindow
+	model FordBroncoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model FordExplorerFrontRightDoor
+	model FordBroncoFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model FordExplorerFrontLeftDoor
+	model FordBroncoFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model FordExplorerRearRightDoor
+	model FordBroncoRearRightDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightDoor__obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearRightDoor__obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model FordExplorerRearLeftDoor
+	model FordBroncoRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model FordExplorerTrunk
+	model FordBroncoTrunk
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model FordExplorerHood
+	model FordBroncoHood
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model FordExplorerRearWindshield
+	model FordBroncoRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordBronco_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model FordExplorerfrontwheelleft
+	model FordBroncofrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordExplorerfrontwheelright
+	model FordBroncofrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordExplorerbackwheelleft
+	model FordBroncobackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordExplorerbackwheelright
+	model FordBroncobackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SUV
+	vehicle SC_FordBronco
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.5,
@@ -180,48 +180,48 @@ module Base
 
 		model
 		{
-			file = SC_FordExplorer,
+			file = SC_FordBronco,
 			scale = 0.7000,
 			offset = 0.0000 -0.1857 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Black,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_OJ,
 		}
 
 		
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Blue,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_DarkBlueDark,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_DarkBlueDark,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Green,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_Green,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Red,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco_Red,
 		}
 
-		textureMask = Vehicles/FordExplorer/Vehicle_FordExplorer_mask,
-		textureLights = Vehicles/FordExplorer/Vehicle_FordExplorer_lights,
-		textureDamage1Overlay = Vehicles/FordExplorer/Vehicle_FordExplorer_blood,
-		textureDamage2Overlay = Vehicles/FordExplorer/Vehicle_FordExplorer_blood,
-		textureDamage1Shell = Vehicles/FordExplorer/Vehicle_FordExplorer_scratch,
-		textureDamage2Shell = Vehicles/FordExplorer/Vehicle_FordExplorer_scratch,
-		textureRust = Vehicles/FordExplorer/Vehicle_FordExplorer_rust,
+		textureMask = Vehicles/FordBronco/Vehicle_FordBronco_mask,
+		textureLights = Vehicles/FordBronco/Vehicle_FordBronco_lights,
+		textureDamage1Overlay = Vehicles/FordBronco/Vehicle_FordBronco_blood,
+		textureDamage2Overlay = Vehicles/FordBronco/Vehicle_FordBronco_blood,
+		textureDamage1Shell = Vehicles/FordBronco/Vehicle_FordBronco_scratch,
+		textureDamage2Shell = Vehicles/FordBronco/Vehicle_FordBronco_scratch,
+		textureRust = Vehicles/FordBronco/Vehicle_FordBronco_rust,
 
 		sound
 		{
@@ -445,7 +445,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = FordExplorerDriver,
+				file = FordBroncoDriver,
 			}
 		itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
@@ -454,7 +454,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = FordExplorerPassenger,
+				file = FordBroncoPassenger,
 			}
 		itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
@@ -463,7 +463,7 @@ module Base
 		{
 			model SeatRearLeft
 			{
-				file = FordExplorerDouble,
+				file = FordBroncoDouble,
 			}
 		itemType = Base.FordHeavyDutyRearSeatSC,
 		}
@@ -472,7 +472,7 @@ module Base
 		{
 			model SeatRearRight
 			{
-				file = FordExplorerDouble,
+				file = FordBroncoDouble,
 			}
 
 		itemType = FordHeavyDutyRearSeatSC,
@@ -498,7 +498,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = FordExplorerHood,
+				file = FordBroncoHood,
 			}
 
 			anim Close
@@ -559,7 +559,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = FordExplorerWindshield,
+				file = FordBroncoWindshield,
 			}
 
 			window
@@ -589,7 +589,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = FordExplorerRearWindshield,
+				file = FordBroncoRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -630,7 +630,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = FordExplorerFrontRightWindow,
+				file = FordBroncoFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -649,7 +649,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = FordExplorerFrontLeftWindow,
+				file = FordBroncoFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -668,7 +668,7 @@ module Base
 		{
 			model windowMR
 			{
-				file = FordExplorerMiddleRightWindow,
+				file = FordBroncoMiddleRightWindow,
 			}
 
 			area = SeatRearRight,
@@ -685,7 +685,7 @@ module Base
 		{
 			model windowML
 			{
-				file = FordExplorerMiddleLeftWindow,
+				file = FordBroncoMiddleLeftWindow,
 			}
 
 			area = SeatRearLeft,
@@ -702,7 +702,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = FordExplorerRearRightWindow,
+				file = FordBroncoRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -721,7 +721,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = FordExplorerRearLeftWindow,
+				file = FordBroncoRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -740,7 +740,7 @@ module Base
 		{
 			model Default
 			{
-				file = FordExplorerFrontRightDoor,
+				file = FordBroncoFrontRightDoor,
 			}
 
 			anim Close
@@ -778,7 +778,7 @@ module Base
 		{
 			model Default
 			{
-				file = FordExplorerFrontLeftDoor,
+				file = FordBroncoFrontLeftDoor,
 			}
 
 			anim Close
@@ -816,7 +816,7 @@ module Base
 		{
 			model Default
 			{
-				file = FordExplorerRearRightDoor,
+				file = FordBroncoRearRightDoor,
 			}
 
 			anim Close
@@ -854,7 +854,7 @@ module Base
 		{
 			model Default
 			{
-				file = FordExplorerRearLeftDoor,
+				file = FordBroncoRearLeftDoor,
 			}
 
 			anim Close
@@ -904,7 +904,7 @@ module Base
 
 			model Default
 			{
-				file = FordExplorerTrunk,
+				file = FordBroncoTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -959,7 +959,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelleft,
+				file = FordBroncofrontwheelleft,
 			}
 		}
 
@@ -967,7 +967,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelright,
+				file = FordBroncofrontwheelright,
 			}
 		}
 
@@ -975,7 +975,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelleft,
+				file = FordBroncobackwheelleft,
 			}
 		}
 
@@ -983,7 +983,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelright,
+				file = FordBroncobackwheelright,
 			}
 		}
 
