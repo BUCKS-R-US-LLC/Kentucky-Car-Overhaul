@@ -2,38 +2,38 @@ module Base
 {
 	model SC_FordBronco
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|base_mesh,
+		mesh = vehicles/Vehicle_Bronco1992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model FordBroncoDriver
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoPassenger
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoDouble
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearDoubleSeat__obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|RearDoubleSeat__obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoWindshield
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model FordBroncoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model FordBroncoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,35 +57,28 @@ module Base
 	}
 	model FordBroncoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model FordBroncoMiddleRightWindow
+	model FordBroncoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|MiddleRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model FordBroncoMiddleLeftWindow
-	{
-		mesh = vehicles/Vehicle_FordBronco_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
 	}
 	model FordBroncoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -93,7 +86,7 @@ module Base
 	}
 	model FordBroncoFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -101,31 +94,15 @@ module Base
 	}
 	model FordBroncoFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model FordBroncoRearRightDoor
-	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearRightDoor__obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model FordBroncoRearLeftDoor
-	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
 	model FordBroncoTrunk
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,7 +110,7 @@ module Base
 	}
 	model FordBroncoHood
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|Hood_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -141,7 +118,7 @@ module Base
 	}
 	model FordBroncoRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordBronco_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_Bronco1992_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -149,26 +126,26 @@ module Base
 	}
 	model FordBroncofrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncofrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordBronco
@@ -187,57 +164,56 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_OJ,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_OJ,
 		}
 
 		
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicBlack,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicRed,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicRed,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicSilver,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_SilverDual,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_SilverDual,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_RedGreyDual,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_RedGreyDual,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicSilver,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_DarkBlueGreyDual,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_DarkBlueGreyDual,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_SVTRed,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_SVTRed,
 		}
 
-
-		textureMask = Vehicles/FordBronco/Vehicle_FordBronco_mask,
-		textureLights = Vehicles/FordBronco/Vehicle_FordBronco_lights,
-		textureDamage1Overlay = Vehicles/FordBronco/Vehicle_FordBronco_blood,
-		textureDamage2Overlay = Vehicles/FordBronco/Vehicle_FordBronco_blood,
-		textureDamage1Shell = Vehicles/FordBronco/Vehicle_FordBronco_scratch,
-		textureDamage2Shell = Vehicles/FordBronco/Vehicle_FordBronco_scratch,
-		textureRust = Vehicles/FordBronco/Vehicle_FordBronco_rust,
+		textureMask = Vehicles/FordBronco/Vehicle_Bronco1992_mask,
+		textureLights = Vehicles/FordBronco/Vehicle_Bronco1992_lights,
+		textureDamage1Overlay = Vehicles/FordBronco/Vehicle_Bronco1992_blood,
+		textureDamage2Overlay = Vehicles/FordBronco/Vehicle_Bronco1992_blood,
+		textureDamage1Shell = Vehicles/FordBronco/Vehicle_Bronco1992_scratch,
+		textureDamage2Shell = Vehicles/FordBronco/Vehicle_Bronco1992_scratch,
+		textureRust = Vehicles/FordBronco/Vehicle_Bronco1992_rust,
 
 		sound
 		{
@@ -248,12 +224,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.6000 2.1429 6.4571,
+		extents = 2.6000 2.1429 6.3429,
 		mass = 800,
-		physicsChassisShape = 2.6571 2.1429 6.5429,
-		centerOfMassOffset = 0.0000 1.1000 0.0000,
-		shadowExtents = 2.6096 6.6255,
-		shadowOffset = -0.0032 0.0031,
+		physicsChassisShape = 2.6286 2.1429 6.5429,
+		centerOfMassOffset = 0.0000 1.1000 0.2571,
+		shadowExtents = 2.6667 6.5541,
+		shadowOffset = -0.0032 0.2460,
 		engineForce = 5000,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -272,12 +248,12 @@ module Base
 		wheelFriction = 1.4f,
 		frontEndHealth = 3500,
 		rearEndHealth = 2000,
-		seats = 4,
+		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.0000 0.3857 2.2571,
+			offset = -1.1571 0.3857 2.3143,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -285,7 +261,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.0143 0.3857 2.2571,
+			offset = 1.1429 0.3857 2.3143,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -293,7 +269,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.0000 0.3857 -1.7571,
+			offset = -1.1571 0.3857 -1.2857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -301,12 +277,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.0143 0.3857 -1.7571,
+			offset = 1.1429 0.3857 -1.2857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -315,13 +291,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6000 1.1857 0.3000,
+				offset = 0.6000 1.3000 0.3000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0429 -0.4286 0.5143,
+				offset = 2.0429 0.0000 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -334,64 +310,26 @@ module Base
 
 			position inside
 			{
-				offset = -0.5857 1.1857 0.3000,
+				offset = -0.5857 1.3000 0.3000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1429 -0.4286 0.5143,
+				offset = -2.1429 0.0000 0.5143,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.5857 1.1857 -1.1143,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0429 -0.4286 -0.6429,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.5857 1.1857 -1.1143,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.1429 -0.4286 -0.6429,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
-			xywh = 0.0000 4.2286 2.6000 2.0000,
+			xywh = 0.0000 4.4429 2.6000 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.1143 2.6000 1.7714,
+			xywh = 0.0000 -3.8000 2.6000 1.7714,
 		}
 
 		area SeatFrontLeft
@@ -404,16 +342,6 @@ module Base
 			xywh = -1.9714 0.6714 1.3429 1.3429,
 		}
 
-		area SeatRearLeft
-		{
-			xywh = 1.9714 -0.8000 1.3429 1.3429,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -1.9714 -0.8000 1.3429 1.3429,
-		}
-
 		area GasTank
 		{
 			xywh = 1.8714 -2.0143 1.1143 0.6286,
@@ -421,30 +349,28 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.5286 2.4714 0.0000 0.0000,
+			xywh = 1.3000 2.3143 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5286 2.4714 0.0000 0.0000,
+			xywh = -1.3000 2.3143 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5286 -1.9857 0.0000 0.0000,
+			xywh = 1.3000 -1.2857 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5286 -1.9857 0.0000 0.0000,
+			xywh = -1.3000 -1.2857 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Window/part/WindowMiddleLeft,
-		template = Window/part/WindowMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -453,8 +379,7 @@ module Base
 
 		part GasTank
 		{
-
-		itemType = Base.BigGasTank,
+			itemType = Base.BigGasTank,
 		}
 
 		part SeatFrontLeft
@@ -463,7 +388,8 @@ module Base
 			{
 				file = FordBroncoDriver,
 			}
-		itemType = Base.FordHeavyDutyFrontSeatSC,
+
+			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -472,26 +398,8 @@ module Base
 			{
 				file = FordBroncoPassenger,
 			}
-		itemType = Base.FordHeavyDutyFrontSeatSC,
-		}
 
-		part SeatRearLeft
-		{
-			model SeatRearLeft
-			{
-				file = FordBroncoDouble,
-			}
-		itemType = Base.FordHeavyDutyRearSeatSC,
-		}
-
-		part SeatRearRight
-		{
-			model SeatRearRight
-			{
-				file = FordBroncoDouble,
-			}
-
-		itemType = FordHeavyDutyRearSeatSC,
+			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -505,6 +413,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
 			itemType = Base.ModernCarMuffler,
 		}
 
@@ -597,7 +506,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.FordHeavyDutyWindshieldSC,
 		}
 
@@ -656,7 +565,6 @@ module Base
 			}
 
 			itemType = Base.FordHeavyDutySideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -675,43 +583,8 @@ module Base
 			}
 
 			itemType = Base.FordHeavyDutySideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-		}
-
-		part WindowMiddleRight
-		{
-			model windowMR
-			{
-				file = FordBroncoMiddleRightWindow,
-			}
-
-			area = SeatRearRight,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			itemType = Base.FordHeavyDutySideWindowSC,
-		}
-
-		part WindowMiddleLeft
-		{
-			model windowML
-			{
-				file = FordBroncoMiddleLeftWindow,
-			}
-
-			area = SeatRearLeft,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			itemType = Base.FordHeavyDutySideWindowSC,
 		}
 
 		part WindowRearRight
@@ -721,16 +594,14 @@ module Base
 				file = FordBroncoRearRightWindow,
 			}
 
-			anim ClosedToOpen
+			area = SeatRearRight,
+
+			table install
 			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
+				requireInstalled =,
 			}
 
 			itemType = Base.FordHeavyDutySideWindowSC,
-
-			parent = DoorRearRight,
-			area = SeatRearRight,
 		}
 
 		part WindowRearLeft
@@ -740,16 +611,14 @@ module Base
 				file = FordBroncoRearLeftWindow,
 			}
 
-			anim ClosedToOpen
+			area = SeatRearLeft,
+
+			table install
 			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
+				requireInstalled =,
 			}
 
 			itemType = Base.FordHeavyDutySideWindowSC,
-
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
 		}
 
 		part DoorFrontRight
@@ -828,82 +697,7 @@ module Base
 			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = FordBroncoRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.FordHeavyDutyDoorSC,
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = FordBroncoRearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.FordHeavyDutyDoorSC,
-		}
-
+		
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -1065,14 +859,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3857 -3.1429,
+			offset = 0.0000 0.6714 -2.8714,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3857 3.3000,
+			offset = 0.0000 0.6714 3.4286,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
