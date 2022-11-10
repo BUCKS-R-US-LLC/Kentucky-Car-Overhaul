@@ -150,25 +150,25 @@ module Base
 	model FordBroncofrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncofrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordBronco_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordBronco_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_FordBronco_Wheel,
+		texture = vehicles/FordBronco/Vehicle_FordBronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordBronco
@@ -187,33 +187,49 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_OJ,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_OJ,
 		}
 
 		
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_Blue,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_DarkBlueDark,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicRed,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_Green,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_Silver,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_SilverDual,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordBronco/Vehicle_FordBronco_Red,
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_RedGreyDual,
 		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_BasicSilver,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_DarkBlueGreyDual,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_FordBronco1992_SVTRed,
+		}
+
 
 		textureMask = Vehicles/FordBronco/Vehicle_FordBronco_mask,
 		textureLights = Vehicles/FordBronco/Vehicle_FordBronco_lights,
