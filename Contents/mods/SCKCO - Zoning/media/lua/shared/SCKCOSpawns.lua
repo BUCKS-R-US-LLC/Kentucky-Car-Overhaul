@@ -130,4 +130,15 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnKey = 80;
 	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.police_tactical_vehicles.spawnRate = 70;
+
+	VehicleZoneDistribution.large_utility_vehicles = VehicleZoneDistribution.large_utility_vehicles or {};
+    VehicleZoneDistribution.large_utility_vehicles.vehicles = VehicleZoneDistribution.large_utility_vehicles.vehicles or {};
+
+    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 95};
+    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
+
+    VehicleZoneDistribution.large_utility_vehicles.baseVehicleQuality = 1.1;
+    VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnKey = 80;
+    VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnSpecial = 0;
+    VehicleZoneDistribution.large_utility_vehicles.spawnRate = 70;
 end

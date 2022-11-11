@@ -78,10 +78,8 @@ objects = {
   { name = "police_tactical_vehicles", type = "ParkingStall", x = 12496, y = 1607, z = 0, width = 3, height = 5 },
 
   { name = "louisville_fire_engines", type = "ParkingStall", x = 12569, y = 1136, z = 0, width = 3, height = 5 },
-
   { name = "louisville_fire_engines", type = "ParkingStall", x = 13693, y = 1790, z = 0, width = 3, height = 5 },
   { name = "louisville_fire_engines", type = "ParkingStall", x = 13706, y = 1790, z = 0, width = 3, height = 5 },
-
 
   { name = "rosewood_fire_engines", type = "ParkingStall", x = 8149, y = 11753, z = 0, width = 3, height = 5 },
 
@@ -130,4 +128,15 @@ objects = {
   { name = "cemetery", type = "ParkingStall", x = 12607, y = 3323, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 5718, y = 5345, z = 0, width = 3, height = 5 },
   
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10340, y = 9270, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10349, y = 9270, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10344, y = 9312, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10344, y = 9321, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10324, y = 9395, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10324, y = 9404, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10025, y = 10964, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10025, y = 10969, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10024, y = 10964, z = 0, width = 3, height = 5 },
+  { name = "large_utility_vehicles", type = "ParkingStall", x = 10024, y = 10920, z = 0, width = 3, height = 5 },
+
 }
