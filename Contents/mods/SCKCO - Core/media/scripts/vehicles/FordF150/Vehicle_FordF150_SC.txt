@@ -2,32 +2,32 @@ module Base
 {
 	model SC_FordF150
 	{
-		mesh = vehicles/Vehicle_F150_SC|base_mesh,
+		mesh = vehicles/Vehicle_F1501992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model F150Driver
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Passenger
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Windshield
 	{
-		mesh = vehicles/Vehicle_F150_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model F150FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model F150FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model F150FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_F150_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,34 +59,33 @@ module Base
 	}
 	model F150RearRightWindow
 	{
-		mesh = vehicles/Vehicle_F150_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_F150_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Trunk
 	{
-		mesh = vehicles/Vehicle_F150_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
 	model F150RearWindshield
 	{
-		mesh = vehicles/Vehicle_F150_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Hood
 	{
-		mesh = vehicles/Vehicle_F150_SC|Hood_obj,
+		mesh = vehicles/Vehicle_F1501992_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -127,76 +126,76 @@ module Base
 		{
 			file = SC_FordF150,
 			scale = 0.6300,
-			offset = 0.0476 0.2698 0.0000,
+			offset = 0.0476 -0.0952 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_Silver,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_SilverBlack,
+			texture = Vehicles/FordF150/Vehicle_F1501992_SilverBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_WhiteSilver,
+			texture = Vehicles/FordF150/Vehicle_F1501992_WhiteSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_BlackGreen,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlackGreen,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_Blue,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_BlueBlack,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_White,
+			texture = Vehicles/FordF150/Vehicle_F1501992_White,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_Magenta,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Magenta,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_RedBrown,
+			texture = Vehicles/FordF150/Vehicle_F1501992_RedBrown,
 		}
 
 		skin
 		{
-			texture = Vehicles/F150/Vehicle_F1501992_Red,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Red,
 		}
 
-		textureRust = Vehicles/F150/Vehicle_F1501992Rust,
-		textureMask = Vehicles/F150/Vehicle_F1501992Mask,
-		textureLights = Vehicles/F150/Vehicle_F1501992Lights,
-		textureDamage1Shell = Vehicles/F150/Vehicle_F1501992Damage,
-		textureDamage2Shell = Vehicles/F150/Vehicle_F1501992Damage,
-		textureDamage1Overlay = Vehicles/F150/Vehicle_F1501992Blood,
-		textureDamage2Overlay = Vehicles/F150/Vehicle_F1501992Blood,
+		textureRust = Vehicles/FordF150/Vehicle_F1501992Rust,
+		textureMask = Vehicles/FordF150/Vehicle_F1501992Mask,
+		textureLights = Vehicles/FordF150/Vehicle_F1501992Lights,
+		textureDamage1Shell = Vehicles/FordF150/Vehicle_F1501992Damage,
+		textureDamage2Shell = Vehicles/FordF150/Vehicle_F1501992Damage,
+		textureDamage1Overlay = Vehicles/FordF150/Vehicle_F1501992Blood,
+		textureDamage2Overlay = Vehicles/FordF150/Vehicle_F1501992Blood,
 
 		sound
 		{
@@ -210,7 +209,7 @@ module Base
 		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0476 1.5556 -0.2222,
+		centerOfMassOffset = 0.0476 1.5556 -0.1270,
 		shadowExtents = 2.9601 7.7704,
 		shadowOffset = 0.0635 -0.1048,
 		engineForce = 4400,
@@ -235,7 +234,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2222 0.4286 2.3333,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -243,7 +242,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2222 0.4286 2.3333,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,7 +250,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = -1.2222 0.4286 -1.8254,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -259,7 +258,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
+			offset = 1.2222 0.4286 -1.8254,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -273,13 +272,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.6190 1.2857 0.2540,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0794 0.0794 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -292,13 +291,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 0.0159,
+				offset = -0.6190 1.2857 0.2540,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0476 0.0794 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -306,27 +305,27 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2857 2.8571 2.0000,
+			xywh = 0.0476 4.2698 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 2.8571 1.7460,
+			xywh = 0.0476 -4.5873 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.0952 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.0000 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.1111 1.0794 0.5714,
+			xywh = 2.0159 -1.0635 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -362,14 +361,14 @@ module Base
 		{
 			itemType = Base.BigGasTank,
 		}
-		
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = F150Driver,
-			}	
-			
+			}
+
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
@@ -487,7 +486,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
@@ -517,7 +516,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyHeavyDutyWindshieldSC,
 		}
 
@@ -541,8 +540,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
-		    itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -560,7 +558,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
@@ -794,14 +791,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0794 0.9365 -0.1270,
+			extents = 3.1111 1.8571 7.1270,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.5238 -3.7143,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
