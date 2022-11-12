@@ -88,6 +88,8 @@ if VehicleZoneDistribution then
 
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 60};
 
 	VehicleZoneDistribution.designated_bubba_zone.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.designated_bubba_zone.chanceToSpawnKey = 80;
@@ -134,8 +136,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.large_utility_vehicles = VehicleZoneDistribution.large_utility_vehicles or {};
     VehicleZoneDistribution.large_utility_vehicles.vehicles = VehicleZoneDistribution.large_utility_vehicles.vehicles or {};
 
-    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 95};
-    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_PickUpTruck"] = {index = -1, spawnChance = 95};
 
     VehicleZoneDistribution.large_utility_vehicles.baseVehicleQuality = 1.1;
     VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnKey = 80;

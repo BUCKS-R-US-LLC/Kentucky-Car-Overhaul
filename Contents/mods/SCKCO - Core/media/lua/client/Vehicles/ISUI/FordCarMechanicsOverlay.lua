@@ -1,4 +1,6 @@
 ISCarMechanicsOverlay.CarList["Base.SC_FordExplorer"] = {imgPrefix = "explorer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordBronco"] = {imgPrefix = "K10_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordF150"] = {imgPrefix = "K10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SUV"] = {imgPrefix = "explorer_", x=0,y=0};
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};

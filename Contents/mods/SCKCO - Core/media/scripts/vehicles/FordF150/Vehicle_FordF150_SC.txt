@@ -171,11 +171,6 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_White,
-		}
-
-		skin
-		{
 			texture = Vehicles/FordF150/Vehicle_F1501992_Magenta,
 		}
 
@@ -189,13 +184,13 @@ module Base
 			texture = Vehicles/FordF150/Vehicle_F1501992_Red,
 		}
 
-		textureRust = Vehicles/FordF150/Vehicle_F1501992Rust,
-		textureMask = Vehicles/FordF150/Vehicle_F1501992Mask,
-		textureLights = Vehicles/FordF150/Vehicle_F1501992Lights,
-		textureDamage1Shell = Vehicles/FordF150/Vehicle_F1501992Damage,
-		textureDamage2Shell = Vehicles/FordF150/Vehicle_F1501992Damage,
-		textureDamage1Overlay = Vehicles/FordF150/Vehicle_F1501992Blood,
-		textureDamage2Overlay = Vehicles/FordF150/Vehicle_F1501992Blood,
+		textureRust = Vehicles/FordF150/Vehicle_F1501992_Rust,
+		textureMask = Vehicles/FordF150/Vehicle_F1501992_Masks,
+		textureLights = Vehicles/FordF150/Vehicle_F1501992_Lights,
+		textureDamage1Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
+		textureDamage2Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
+		textureDamage1Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
+		textureDamage2Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
 
 		sound
 		{
@@ -369,7 +364,7 @@ module Base
 				file = F150Driver,
 			}
 
-			itemType = Base.ChevyHeavyDutyFrontSeatSC,
+			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -379,7 +374,7 @@ module Base
 				file = F150Passenger,
 			}
 
-			itemType = Base.ChevyHeavyDutyFrontSeatSC,
+			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part Muffler
@@ -444,7 +439,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyHeavyDutyHoodSC,
+			itemType = Base.FordHeavyDutyHoodSC,
 		}
 
 		part Heater
@@ -487,7 +482,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyHeavyDutyWindshieldSC,
+			itemType = Base.FordHeavyDutyWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -517,7 +512,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyHeavyDutyWindshieldSC,
+			itemType = Base.FordHeavyDutyWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -540,7 +535,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.FordHeavyDutySideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -558,7 +553,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.FordHeavyDutySideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -596,7 +591,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyHeavyDutyDoorSC,
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -634,7 +629,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyHeavyDutyDoorSC,
+			itemType = Base.FordHeavyDutyDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -687,7 +682,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyHeavyDutyTrunkLidSC,
+			itemType = Base.FordHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
