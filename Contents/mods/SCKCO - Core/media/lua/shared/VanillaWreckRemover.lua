@@ -96,3 +96,5 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.StepVan"] = nil;
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.ModernCar"] = nil;
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.ModernCar02"] = nil;
+
+end
