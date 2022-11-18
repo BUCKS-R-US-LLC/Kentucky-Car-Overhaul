@@ -97,4 +97,7 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.ModernCar"] = nil;
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.ModernCar02"] = nil;
 
+	-- Had to hide vanilla offroads because the dev's have a space in the vehicle name
+	VehicleZoneDistribution.medium.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.Offroad"] = nil;
 end
