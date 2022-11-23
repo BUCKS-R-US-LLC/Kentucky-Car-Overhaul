@@ -77,9 +77,9 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone2 1.0,
-				boneWeight = TrunkBone3 1.0,
-						boneWeight = TrunkBone4 1.0,
-								boneWeight = TrunkBone5 1.0,
+		boneWeight = TrunkBone3 1.0,
+		boneWeight = TrunkBone4 1.0,
+		boneWeight = TrunkBone5 1.0,
 		boneWeight = TrunkBone6 1.0,
 	}
 	model F700BoxTruckRearWindshield
@@ -96,28 +96,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model F700frontwheelleft
+	model F700BoxTruckfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelfront,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model F700frontwheelright
+	model F700BoxTruckfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelfront,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model F700backwheelleft
+	model F700BoxTruckrearwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelrear,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	model F700backwheelright
+	model F700BoxTruckrearwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelrear,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordF700BoxTruck
@@ -131,12 +131,7 @@ module Base
 		{
 			file = SC_FordF700BoxTruck,
 			scale = 0.6300,
-			offset = 0.0476 0.3175 -0.3175,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_Vehicle_FordF700BoxTruck_Black,
+			offset = 0.0000 0.3175 -0.3175,
 		}
 
 		skin
@@ -191,12 +186,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailPickUpTruck,
 		}
 
-		extents = 2.8571 3.0794 11.2381,
+		extents = 2.9524 3.0794 11.2381,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 11.2381,
-		centerOfMassOffset = 0.0476 1.5556 -0.3016,
-		shadowExtents = 3.3411 11.4846,
-		shadowOffset = 0.0635 -0.1842,
+		physicsChassisShape = 2.9524 3.0794 10.6984,
+		centerOfMassOffset = 0.0000 1.5556 -0.3016,
+		shadowExtents = 3.3411 11.0878,
+		shadowOffset = 0.0000 -0.1842,
 		engineForce = 6500,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -693,7 +688,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelleft,
+				file = F700BoxTruckfrontwheelleft,
 			}
 		}
 
@@ -701,7 +696,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelright,
+				file = F700BoxTruckfrontwheelright,
 			}
 		}
 
@@ -709,7 +704,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelleft,
+				file = F700BoxTruckrearwheelleft,
 			}
 		}
 
@@ -717,7 +712,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelright,
+				file = F700BoxTruckrearwheelright,
 			}
 		}
 
@@ -776,7 +771,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.4127 -0.2698,
+			offset = 0.0000 2.4127 -0.2698,
 			extents = 3.1111 2.9683 10.7460,
 			rotate = 0.0000 0.0000 0.0000,
 		}

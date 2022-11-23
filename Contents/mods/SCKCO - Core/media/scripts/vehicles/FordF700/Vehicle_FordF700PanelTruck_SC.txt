@@ -91,28 +91,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model F700frontwheelleft
+	model F700BoxTruckfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelfront,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model F700frontwheelright
+	model F700BoxTruckfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelfront,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model F700backwheelleft
+	model F700BoxTruckrearwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelrear,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	model F700backwheelright
+	model F700BoxTruckrearwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700_wheelrear,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordF700PanelTruck
@@ -126,7 +126,7 @@ module Base
 		{
 			file = SC_FordF700PanelTruck,
 			scale = 0.6300,
-			offset = 0.0476 0.3175 -0.3175,
+			offset = 0.0000 0.3175 -1.1429,
 		}
 
 		skin
@@ -176,12 +176,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailPickUpTruck,
 		}
 
-		extents = 2.8571 3.0794 11.2381,
+		extents = 2.8571 3.0794 9.3333,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 11.2381,
-		centerOfMassOffset = 0.0476 1.5556 -0.3016,
-		shadowExtents = 3.3411 11.4846,
-		shadowOffset = 0.0635 -0.1842,
+		physicsChassisShape = 2.9524 3.0794 9.3333,
+		centerOfMassOffset = 0.0000 1.5556 -0.3016,
+		shadowExtents = 3.0395 9.4846,
+		shadowOffset = 0.0000 -0.3112,
 		engineForce = 6500,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -275,22 +275,22 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0476 6.1746 2.8571 2.0000,
+			xywh = 0.0000 5.3651 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0476 -6.7937 2.8571 1.7460,
+			xywh = 0.0000 -5.8095 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0952 2.8413 1.2381 1.2381,
+			xywh = 2.0952 1.7460 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0000 2.8413 1.2381 1.2381,
+			xywh = -2.0000 1.7460 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -678,7 +678,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelleft,
+				file = F700BoxTruckfrontwheelleft,
 			}
 		}
 
@@ -686,7 +686,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700frontwheelright,
+				file = F700BoxTruckfrontwheelright,
 			}
 		}
 
@@ -694,7 +694,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700rearwheelleft,
+				file = F700BoxTruckrearwheelleft,
 			}
 		}
 
@@ -702,7 +702,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700rearwheelright,
+				file = F700BoxTruckrearwheelright,
 			}
 		}
 
@@ -721,6 +721,57 @@ module Base
 				skills = Mechanics:4,
 				recipes = Intermediate Mechanics,
 			}
+		}
+
+        part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = F700PanelTruckTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordHeavyDutyTrunkLidSC,
 		}
 
 		template = Suspension,
@@ -761,8 +812,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.4127 -0.2698,
-			extents = 3.1111 2.9683 10.7460,
+			offset = 0.0000 2.4127 -0.2698,
+			extents = 3.1111 2.9683 9.3175,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
