@@ -1,121 +1,121 @@
 module Base
 {
-	model SC_FordF700Cargo
+	model SC_FordF700BoxTruck
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model F150Driver
+	model F700BoxTruckDriver
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150Passenger
+	model F700BoxTruckPassenger
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150Windshield
+	model F700BoxTruckWindshield
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150FrontRightWindow
+	model F700BoxTruckFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model F150FrontLeftWindow
+	model F700BoxTruckFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model F150FrontRightDoor
+	model F700BoxTruckFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model F150FrontLeftDoor
+	model F700BoxTruckFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model F150RearRightWindow
+	model F700BoxTruckRearRightWindow
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150RearLeftWindow
+	model F700BoxTruckRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150Trunk
+	model F700BoxTruckTrunk
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|TrunkDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model F150RearWindshield
+	model F700BoxTruckRearWindshield
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F150Hood
+	model F700BoxTruckHood
 	{
-		mesh = vehicles/Vehicle_F1501992_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model F150frontwheelleft
+	model F700frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700_Wheel,
 		shader = vehiclewheel,
 	}
-	model F150frontwheelright
+	model F700frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700_Wheel,
 		shader = vehiclewheel,
 	}
-	model F150backwheelleft
+	model F700backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700_Wheel,
 		shader = vehiclewheel,
 	}
-	model F150backwheelright
+	model F700backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordF700Cargo
+	vehicle SC_FordF700BoxTruck
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -124,73 +124,48 @@ module Base
 
 		model
 		{
-			file = SC_FordF700Cargo,
+			file = SC_FordF700BoxTruck,
 			scale = 0.6300,
 			offset = 0.0476 -0.0952 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_Silver,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_SilverBlack,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_SilverBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_WhiteSilver,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_WhiteSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_BlackGreen,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_BlackGreen,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_Blue,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_BlueBlack,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_BlueBlack,
 		}
 
-		skin
-		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_BlueWhite,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_BlueWhite,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_Magenta,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_RedBrown,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700Cargo/Vehicle_F1501992_Red,
-		}
-
-		textureRust = Vehicles/FordF700Cargo/Vehicle_F1501992_Rust,
-		textureMask = Vehicles/FordF700Cargo/Vehicle_F1501992_Masks,
-		textureLights = Vehicles/FordF700Cargo/Vehicle_F1501992_Lights,
-		textureDamage1Shell = Vehicles/FordF700Cargo/Vehicle_F1501992_scratch,
-		textureDamage2Shell = Vehicles/FordF700Cargo/Vehicle_F1501992_scratch,
-		textureDamage1Overlay = Vehicles/FordF700Cargo/Vehicle_F1501992_Blood,
-		textureDamage2Overlay = Vehicles/FordF700Cargo/Vehicle_F1501992_Blood,
+		textureRust = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Rust,
+		textureMask = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Masks,
+		textureLights = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Lights,
+		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
+		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
+		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
+		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
 
 		sound
 		{
@@ -343,7 +318,7 @@ module Base
 			xywh = -1.4286 -2.1270 0.0000 0.0000,
 		}
 
-		template = F150Bullbar/part/F150BullbarNoSpawn,
+		template = F700Bullbar/part/F700BullbarNoSpawn,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -361,7 +336,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = F150Driver,
+				file = F700Driver,
 			}
 
 			itemType = Base.FordHeavyDutyFrontSeatSC,
@@ -371,7 +346,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = F150Passenger,
+				file = F700Passenger,
 			}
 
 			itemType = Base.FordHeavyDutyFrontSeatSC,
@@ -398,7 +373,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = F150Hood,
+				file = F700Hood,
 			}
 
 			anim Close
@@ -459,7 +434,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = F150Windshield,
+				file = F700Windshield,
 			}
 
 			window
@@ -489,7 +464,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = F150RearWindshield,
+				file = F700RearWindshield,
 			}
 
 			window
@@ -524,7 +499,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = F150FrontRightWindow,
+				file = F700FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -542,7 +517,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = F150FrontLeftWindow,
+				file = F700FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -560,7 +535,7 @@ module Base
 		{
 			model Default
 			{
-				file = F150FrontRightDoor,
+				file = F700FrontRightDoor,
 			}
 
 			anim Close
@@ -598,7 +573,7 @@ module Base
 		{
 			model Default
 			{
-				file = F150FrontLeftDoor,
+				file = F700FrontLeftDoor,
 			}
 
 			anim Close
@@ -648,7 +623,7 @@ module Base
 
 			model Default
 			{
-				file = F150Trunk,
+				file = F700Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -703,7 +678,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelleft,
+				file = F700frontwheelleft,
 			}
 		}
 
@@ -711,7 +686,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelright,
+				file = F700frontwheelright,
 			}
 		}
 
@@ -719,7 +694,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelleft,
+				file = F700frontwheelleft,
 			}
 		}
 
@@ -727,7 +702,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelright,
+				file = F700frontwheelright,
 			}
 		}
 
