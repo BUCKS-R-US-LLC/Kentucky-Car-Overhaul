@@ -1,5 +1,9 @@
 if VehicleZoneDistribution then
 
+    VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 40};
@@ -21,6 +25,7 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordF700Police"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.spawnRate = 30;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
 
@@ -30,6 +35,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30Mail"] = {index = -1, spawnChance = 25};
 
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30McCoy"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};

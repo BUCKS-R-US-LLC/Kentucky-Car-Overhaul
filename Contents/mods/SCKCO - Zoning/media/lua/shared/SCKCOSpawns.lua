@@ -40,8 +40,7 @@ if VehicleZoneDistribution then
 
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 80};
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 90};
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 1};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 20};
 
 	VehicleZoneDistribution.louisville_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.louisville_police.spawnRate = 75;
@@ -125,8 +124,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.police_tactical_vehicles = VehicleZoneDistribution.police_tactical_vehicles or {};
 	VehicleZoneDistribution.police_tactical_vehicles.vehicles = VehicleZoneDistribution.police_tactical_vehicles.vehicles or {};
 
-	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 95};
-	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 50};
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_FordF700Police"] = {index = -1, spawnChance = 50};
 
 	VehicleZoneDistribution.police_tactical_vehicles.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnKey = 80;
@@ -136,7 +135,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.large_utility_vehicles = VehicleZoneDistribution.large_utility_vehicles or {};
     VehicleZoneDistribution.large_utility_vehicles.vehicles = VehicleZoneDistribution.large_utility_vehicles.vehicles or {};
 
-    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_PickUpTruck"] = {index = -1, spawnChance = 95};
+    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 60};
 
     VehicleZoneDistribution.large_utility_vehicles.baseVehicleQuality = 1.1;
     VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnKey = 80;
