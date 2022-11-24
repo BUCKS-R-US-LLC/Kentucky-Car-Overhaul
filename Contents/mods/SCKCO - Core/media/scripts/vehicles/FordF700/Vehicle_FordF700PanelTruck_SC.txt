@@ -162,8 +162,8 @@ module Base
 		textureRust = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Rust,
 		textureMask = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Mask,
 		textureLights = Vehicles/FordF700/Vehicle_FordF700PanelTruck_lights,
-		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700PanelTruck_scratch,
-		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700PanelTruck_scratch,
+		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
+		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
 		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Blood,
 		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Blood,
 
@@ -180,7 +180,7 @@ module Base
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 9.3333,
 		centerOfMassOffset = 0.0000 1.5556 -0.3016,
-		shadowExtents = 3.0395 9.4846,
+		shadowExtents = 3.2617 9.4846,
 		shadowOffset = 0.0000 -0.3112,
 		engineForce = 6500,
 		engineQuality = 80,
@@ -723,7 +723,7 @@ module Base
 			}
 		}
 
-        part TrunkDoor
+		part TrunkDoor
 		{
 			table install
 			{
