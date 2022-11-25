@@ -156,7 +156,7 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = CUCVhorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
@@ -492,6 +492,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			category = nodisplay,
 			itemType = Base.M1008Tarp,
 		}
 
