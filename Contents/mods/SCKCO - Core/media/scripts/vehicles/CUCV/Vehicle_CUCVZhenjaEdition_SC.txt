@@ -7,25 +7,25 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1008Driver
+	model CUCVZhenjaEditionDriver
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Passenger
+	model CUCVZhenjaEditionPassenger
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Windshield
+	model CUCVZhenjaEditionWindshield
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008FrontRightWindow
+	model CUCVZhenjaEditionFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1008FrontLeftWindow
+	model CUCVZhenjaEditionFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1008FrontRightDoor
+	model CUCVZhenjaEditionFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1008FrontLeftDoor
+	model CUCVZhenjaEditionFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1008RearRightWindow
+	model CUCVZhenjaEditionRearRightWindow
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008RearLeftWindow
+	model CUCVZhenjaEditionRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Trunk
+	model CUCVZhenjaEditionTrunk
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,13 +78,13 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1008RearWindshield
+	model CUCVZhenjaEditionRearWindshield
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008Hood
+	model CUCVZhenjaEditionHood
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -92,6 +92,14 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
+
+	model CUCVZhenjaEditionSoftTop
+	{
+		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|SoftTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
 	model BlazerWheelLargefrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
@@ -196,7 +204,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = -1.2063 0.0794 -1.5873,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +212,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
+			offset = 1.2222 0.0794 -1.5873,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -308,7 +316,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1008Driver,
+				file = CUCVZhenjaEditionDriver,
 			}
 
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
@@ -318,8 +326,9 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1008Passenger,
+				file = CUCVZhenjaEditionPassenger,
 			}
+
 			itemType = Base.ChevyHeavyDutyFrontSeatSC,
 		}
 
@@ -344,7 +353,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1008Hood,
+				file = CUCVZhenjaEditionHood,
 			}
 
 			anim Close
@@ -405,7 +414,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M1008Windshield,
+				file = CUCVZhenjaEditionWindshield,
 			}
 
 			window
@@ -435,7 +444,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = M1008RearWindshield,
+				file = CUCVZhenjaEditionRearWindshield,
 			}
 
 			window
@@ -457,8 +466,33 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyHeavyDutyWindshieldSC,
+		}
+
+		part CUCVZhenjaEditionSoftTop
+		{
+			model CUCVZhenjaEditionSoftTop
+			{
+				file = CUCVZhenjaEditionSoftTop,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.M1008Tarp,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -470,7 +504,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M1008FrontRightWindow,
+				file = CUCVZhenjaEditionFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -481,7 +515,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
@@ -489,7 +522,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1008FrontLeftWindow,
+				file = CUCVZhenjaEditionFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -500,7 +533,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyHeavyDutySideWindowSC,
 		}
 
@@ -508,7 +540,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontRightDoor,
+				file = CUCVZhenjaEditionFrontRightDoor,
 			}
 
 			anim Close
@@ -546,7 +578,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontLeftDoor,
+				file = CUCVZhenjaEditionFrontLeftDoor,
 			}
 
 			anim Close
@@ -596,7 +628,7 @@ module Base
 
 			model Default
 			{
-				file = M1008Trunk,
+				file = CUCVZhenjaEditionTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
