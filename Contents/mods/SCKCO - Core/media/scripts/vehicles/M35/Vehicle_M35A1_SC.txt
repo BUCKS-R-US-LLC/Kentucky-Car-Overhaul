@@ -193,13 +193,12 @@ module Base
 
 		sound
 		{
-			engine = VehicleEngineSUV,
+			engine = VehicleEngineStepVan,
 			engineStart = M35start,
-			engineTurnOff = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineStepVan,
 			horn = M35horn,
-			ignitionFail = VehicleIgnitionFailSUV,
+			ignitionFail = VehicleIgnitionFailStepVan,
 		}
-
 		extents = 3.7419 3.6129 10.5161,
 		mass = 1500,
 		physicsChassisShape = 3.6452 3.8065 10.4516,
