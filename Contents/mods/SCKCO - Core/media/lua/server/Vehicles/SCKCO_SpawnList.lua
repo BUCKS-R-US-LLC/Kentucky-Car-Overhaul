@@ -20,12 +20,13 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.good.vehicles["Base.SC_CadillacFuneralCoach"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.good.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.spawnRate = 30;
     VehicleZoneDistribution.good.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordF700Police"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordF700ArmoredPolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.spawnRate = 30;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
 
