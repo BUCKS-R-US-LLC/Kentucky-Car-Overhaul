@@ -75,7 +75,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearDoorBone 1.0,
 	}
 	model F700ArmoredRearWindshield
 	{
@@ -145,19 +144,19 @@ module Base
 
 		sound
 		{
-			engine = VehicleEnginePickUpTruck,
-			engineStart = VehicleEnginePickUpTruck,
-			engineTurnOff = VehicleEnginePickUpTruck,
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailPickUpTruck,
+			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
 		extents = 2.8571 2.7302 8.0952,
 		mass = 1000,
 		physicsChassisShape = 2.9524 2.8254 7.9683,
 		centerOfMassOffset = 0.0000 1.7460 0.0159,
-		shadowExtents = 3.2617 8.1036,
-		shadowOffset = 0.0000 0.0539,
+		shadowExtents = 3.2617 8.5003,
+		shadowOffset = 0.0000 0.0222,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -209,7 +208,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -262,7 +261,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.1905 0.0000 -0.7143,
+				offset = 2.1905 0.0000 -3.4286,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -281,7 +280,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0159 0.0000 -0.5873,
+				offset = -2.0159 0.0000 -3.3016,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -309,12 +308,12 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = 2.0476 -4.6508 1.2381 1.2381,
+			xywh = -0.0000 -4.6508 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0476 -4.6508 1.2381 1.2381,
+			xywh = -0.0000 -4.6508 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -358,27 +357,6 @@ module Base
 			itemType = Base.BigGasTank,
 		}
 
-		part BackOfTruck
-		{
-			area = TruckBed,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 300,
-				conditionAffectsCapacity = true,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -399,24 +377,14 @@ module Base
 			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
-		part SeatFrontLeft
+		part SeatRearLeft
 		{
-			model seatRearLeft
-			{
-				file = F700ArmoredDriver,
-			}
-
 			category = nodisplay,
 			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
 
 		part SeatRearRight
 		{
-			model seatfrontRight
-			{
-				file = F700ArmoredPassenger,
-			}
-
 			category = nodisplay,
 			itemType = Base.FordHeavyDutyFrontSeatSC,
 		}
@@ -483,7 +451,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordHeavyDutyHoodSC,
+			itemType = Base.FordF700HoodSC,
 		}
 
 		part Heater
@@ -526,7 +494,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.BallisticGlassWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -556,11 +524,13 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			parent = TrunkLid,
+			itemType = Base.BallisticGlassWindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -581,7 +551,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.BallisticGlassWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -598,7 +568,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.BallisticGlassWindowSC,
 		}
 
 		part WindowRearRight
@@ -615,7 +585,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.BallisticGlassWindowSC,
 		}
 
 		part WindowRearLeft
@@ -632,7 +602,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.BallisticGlassWindowSC,
 		}
 
 		part DoorFrontRight
@@ -670,7 +640,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -708,7 +678,45 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = F700ArmoredRearDoor,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordF700DoorSC,
 		}
 
 		template = Tire,
@@ -768,56 +776,6 @@ module Base
 			}
 		}
 
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = F700ArmoredRearDoor,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		}
-
 		template = Suspension,
 
 		part Suspension*
@@ -859,13 +817,6 @@ module Base
 			offset = 0.0000 1.7460 0.0000,
 			extents = 2.9841 2.7778 7.9206,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.5238 -5.5556,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
