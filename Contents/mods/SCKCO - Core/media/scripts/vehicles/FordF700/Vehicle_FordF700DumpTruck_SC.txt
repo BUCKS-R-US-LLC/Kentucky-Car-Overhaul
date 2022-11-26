@@ -339,7 +339,7 @@ module Base
 				file = F700DumpTruckDriver,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -349,7 +349,7 @@ module Base
 				file = F700DumpTruckPassenger,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part Muffler
@@ -414,7 +414,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordHeavyDutyHoodSC,
+			itemType = Base.FordF700HoodSC,
 		}
 
 		part Heater
@@ -457,7 +457,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordF700WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -487,7 +487,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordF700WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -510,7 +510,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -528,7 +528,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -566,7 +566,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -604,7 +604,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -656,8 +656,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.FordHeavyDutyTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -761,8 +759,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.4127 0.9841,
-			extents = 3.1111 2.9683 8.4921,
+			offset = 0.0000 2.0952 1.0159,
+			extents = 3.1111 2.2063 8.4921,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

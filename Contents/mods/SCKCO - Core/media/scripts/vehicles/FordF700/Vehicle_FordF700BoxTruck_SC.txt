@@ -349,7 +349,7 @@ module Base
 				file = F700BoxTruckDriver,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -359,7 +359,7 @@ module Base
 				file = F700BoxTruckPassenger,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part Muffler
@@ -424,7 +424,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordHeavyDutyHoodSC,
+			itemType = Base.FordF700HoodSC,
 		}
 
 		part Heater
@@ -467,7 +467,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordF700WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -497,7 +497,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordF700WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -520,7 +520,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -538,7 +538,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -576,7 +576,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -614,7 +614,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -667,20 +667,20 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyTrunkLidSC,
+			itemType = Base.FordF700BoxTruckRollUpDoorSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
 
-		part TruckBedOpen
+		part TruckBed
 		{
 			itemType = Base.BigTrunk,
 
 			container
 			{
-				capacity = 400,
+				capacity = 300,
 			}
 		}
 

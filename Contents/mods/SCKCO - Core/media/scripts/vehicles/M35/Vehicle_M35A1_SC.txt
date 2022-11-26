@@ -159,7 +159,7 @@ module Base
 		model
 		{
 			file = SC_M35A1,
-			scale = 0.6200,
+			scale = 0.6100,
 			offset = 0.0000 0.0161 0.0000,
 		}
 
@@ -199,6 +199,7 @@ module Base
 			horn = M35horn,
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
+
 		extents = 3.7419 3.6129 10.5161,
 		mass = 1500,
 		physicsChassisShape = 3.6452 3.8065 10.4516,
@@ -562,12 +563,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.6452 1.1129 1.4516 1.4516,
+			xywh = 2.5968 1.1129 1.4516 1.4516,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.6452 1.1129 1.4516 1.4516,
+			xywh = -2.5968 1.1129 1.4516 1.4516,
+		}
+
+		area DoorRearLeft
+		{
+			xywh = 2.5968 -5.0323 1.4516 1.4516,
+		}
+
+		area DoorRearRight
+		{
+			xywh = -2.5968 -5.0323 1.4516 1.4516,
 		}
 
 		area RearStep
@@ -667,8 +678,6 @@ module Base
 		{
 			category = nodisplay,
 		}
-
-
 
 		part Muffler
 		{
@@ -930,6 +939,8 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -1043,6 +1054,54 @@ module Base
 			}
 
 			itemType = Base.M35Door,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = M35A1FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.M35Door,
+		}
+
+		part DoorRearLeft
+		{
+			category = nodisplay,
+		}
+
+		part DoorRearRight
+		{
+			category = nodisplay,
 		}
 
 		template = TrunkDoor,

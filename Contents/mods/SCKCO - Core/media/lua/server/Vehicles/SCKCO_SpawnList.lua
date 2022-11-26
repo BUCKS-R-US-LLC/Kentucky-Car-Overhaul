@@ -66,4 +66,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.network3.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.kyheralds.chanceToPartDamage = 5;
 
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 30};  
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 30};  
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 30};  
+    VehicleZoneDistribution.junkyard.chanceToPartDamage = 60;
 end
