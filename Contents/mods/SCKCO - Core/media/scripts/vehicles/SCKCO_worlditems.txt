@@ -1,6 +1,34 @@
 module Base
 {
 
+		model F700Door_WorldItem
+	{
+		mesh = WorldItems/F700/F700Door_WorldItem,
+		texture = Vehicles/F700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+	
+		model F700Hood_WorldItem
+	{
+		mesh = WorldItems/F700/F700Hood_WorldItem,
+		texture = Vehicles/F700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+
+		model F700ArmoredWindows_WorldItem
+	{
+		mesh = WorldItems/F700/F700ArmoredWindows_WorldItem,
+		texture = Vehicles/F700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+	
+		model F700Bullbar_WorldItem
+	{
+		mesh = WorldItems/F700/F700Bullbar_WorldItem,
+		texture = Vehicles/F700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+
 		model K5Door_WorldItem
 	{
 		mesh = WorldItems/K5/K5Door_WorldItem,
@@ -32,7 +60,7 @@ module Base
 		model K5TrunkLid_WorldItem
 	{
 		mesh = WorldItems/K5/K5TrunkLid_WorldItem,
-			texture = Vehicles/K5/Vehicle_BlazerSC_White,
+		texture = Vehicles/K5/Vehicle_BlazerSC_White,
 		scale = 0.5,
 	}
 

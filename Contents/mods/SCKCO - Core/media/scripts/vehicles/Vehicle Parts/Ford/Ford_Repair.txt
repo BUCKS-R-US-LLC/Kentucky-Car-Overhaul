@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Ford Hood Welding
 	{
-	   Require : FordStandardHoodSC1;FordHeavyDutySC2,
+	   Require : FordCrownVictoriaHoodSC1;FordF700HoodSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
     fixing Fix Ford Hood
 	{
-	   Require : FordStandardHoodSC1;FordHeavyDutySC2,
+	   Require : FordCrownVictoriaHoodSC1;FordF700HoodSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Ford Trunk Lid Welding
     {
-       Require : FordStandardTrunkLidSC1;FordTrunkLidHeavyDutySC2,
+       Require : FordCrownVictoriaTrunkLidSC1;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Ford Trunk Lid
 	{
-       Require : FordStandardTrunkLidSC1;FordTrunkLidHeavyDutySC2,
+       Require : FordCrownVictoriaTrunkLidSC1;FordTrunkLidF700HoodSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module Base
 
 	fixing Fix Ford Door Welding
 	{
-	   Require : FordStandardDoorSC1;FordHeavyDutyDoorSC2,
+	   Require : FordCrownVictoriaDoorSC1;FordF700DoorSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -51,7 +51,7 @@ module Base
 
     fixing Fix Ford Car seat
 	{
-	   Require : FordStandardFrontSeatSC1;FordStandardRearSeatSC1;FordHeavyDutySeatSC2,
+	   Require : FordCrownVictoriaFrontSeatSC1;FordCrownVictoriaRearSeatSC1;FordF700FrontSeatSC2,
 	   ConditionModifier : 0.8,
 
        Fixer : DuctTape=2;Mechanics=1,
