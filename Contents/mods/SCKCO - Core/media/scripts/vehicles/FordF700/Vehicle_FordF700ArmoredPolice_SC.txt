@@ -75,8 +75,9 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
+		boneWeight = RearDoorBone 1.0,
 	}
-	model F700ArmoredRearWindshield
+	model F700ArmoredRearWindow
 	{
 		mesh = vehicles/Vehicle_FordF700Armored_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
@@ -255,7 +256,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.9524 1.6349 -1.0635,
+				offset = 0.9524 1.8571 -1.0635,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -274,7 +275,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.9206 1.6349 -1.0635,
+				offset = -0.9206 1.8571 -1.0635,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -308,12 +309,12 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = -0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.6508 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.6508 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -496,44 +497,14 @@ module Base
 
 			itemType = Base.BallisticGlassWindshieldSC,
 		}
-
-		part WindshieldRear
-		{
-			model WindshieldRear
-			{
-				file = F700ArmoredRearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			parent = TrunkLid,
-			itemType = Base.BallisticGlassWindowSC,
-		}
-
+		
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
 		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
@@ -571,9 +542,9 @@ module Base
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
-		part WindowRearRight
+		part WindowMiddleRight
 		{
-			model windowRR
+			model windowMR
 			{
 				file = F700ArmoredRearRightWindow,
 			}
@@ -588,9 +559,9 @@ module Base
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
-		part WindowRearLeft
+		part WindowMiddleLeft
 		{
-			model windowRL
+			model windowML
 			{
 				file = F700ArmoredRearLeftWindow,
 			}
@@ -600,8 +571,25 @@ module Base
 				openable = false,
 			}
 
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.BallisticGlassWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = F700ArmoredRearWindow,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			parent = DoorRearRight,
+			area = SeatFrontRight,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
