@@ -2,9 +2,9 @@
 --- Created by cytt0rak
 ---  WIP
 
-function F700PoliceWindshield(player, part, elapsedMinutes)
+function F700ArmoredWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("Windshield"):getInventoryItem()) then
@@ -18,12 +18,12 @@ local part = vehicle:getPartById("Windshield")
 
 end
 
-function F700PoliceEngineDoor(player, part, elapsedMinutes)
+function F700ArmoredEngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
 local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("F700PoliceArmBodyBar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("F700PoliceArmBodyBar"):getInventoryItem()) then
+        if (vehicle:getPartById("FordF700BullbarSC"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("FordF700BullbarSC"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
 
@@ -34,25 +34,10 @@ local part = vehicle:getPartById("EngineDoor")
 
 end
 
-function F700PoliceArmBodyBar(player, part, elapsedMinutes)
+
+function F700ArmoredGasTank(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
-
-        local part = vehicle:getPartById("F700PoliceArmBodyBar")
-        if (vehicle:getPartById("F700PoliceArmBodyBar"):getCondition() < 70) and (vehicle:getPartById("F700PoliceArmBodyBar"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(F700PoliceArmBodyBar)
-    end
-
-
-end
-
-function F700PoliceGasTank(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("GasTank")
         if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
@@ -66,9 +51,9 @@ function F700PoliceGasTank(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceDoorFrontLeft(player, part, elapsedMinutes)
+function F700ArmoredDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("DoorFrontLeft"):getInventoryItem()) then
@@ -82,9 +67,9 @@ function F700PoliceDoorFrontLeft(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceDoorFrontRight(player, part, elapsedMinutes)
+function F700ArmoredDoorFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("DoorFrontRight"):getInventoryItem()) then
@@ -98,9 +83,9 @@ function F700PoliceDoorFrontRight(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceWindowFrontLeft(player, part, elapsedMinutes)
+function F700ArmoredWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("WindowFrontLeft"):getInventoryItem()) then
@@ -114,9 +99,9 @@ function F700PoliceWindowFrontLeft(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceWindowFrontRight(player, part, elapsedMinutes)
+function F700ArmoredWindowFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("WindowFrontRight"):getInventoryItem()) then
@@ -130,9 +115,9 @@ function F700PoliceWindowFrontRight(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceWindowRearLeft(player, part, elapsedMinutes)
+function F700ArmoredWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("WindowRearLeft"):getInventoryItem()) then
@@ -146,9 +131,9 @@ function F700PoliceWindowRearLeft(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceWindowRearRight(player, part, elapsedMinutes)
+function F700ArmoredWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("WindowRearRight"):getInventoryItem()) then
@@ -162,9 +147,9 @@ function F700PoliceWindowRearRight(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceWindshieldRear(player, part, elapsedMinutes)
+function F700ArmoredWindshieldRear(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("WindshieldRear")
         if (vehicle:getPartById("WindshieldRear"):getCondition() < 70) and (vehicle:getPartById("WindshieldRear"):getInventoryItem()) then
@@ -178,41 +163,9 @@ function F700PoliceWindshieldRear(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceMuffler(player, part, elapsedMinutes)
+function F700ArmoredTruckBed(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
-
-        local part = vehicle:getPartById("Muffler")
-        if (vehicle:getPartById("Muffler"):getCondition() < 70) and (vehicle:getPartById("Muffler"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(Muffler)
-    end
-
-
-end
-
-function F700PoliceTrunkDoor(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
-
-        local part = vehicle:getPartById("TrunkDoor")
-        if (vehicle:getPartById("TrunkDoor"):getCondition() < 70) and (vehicle:getPartById("TrunkDoor"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(TrunkDoor)
-    end
-
-
-end
-
-function F700PoliceTruckBed(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("TruckBed")
         if (vehicle:getPartById("TruckBed"):getCondition() < 70) and (vehicle:getPartById("TruckBed"):getInventoryItem()) then
@@ -226,9 +179,9 @@ function F700PoliceTruckBed(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceTireFrontLeft(player, part, elapsedMinutes)
+function F700ArmoredTireFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
@@ -242,9 +195,9 @@ function F700PoliceTireFrontLeft(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceTireFrontRight(player, part, elapsedMinutes)
+function F700ArmoredTireFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("TireFrontRight")
         if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
@@ -258,9 +211,9 @@ function F700PoliceTireFrontRight(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceTireRearLeft(player, part, elapsedMinutes)
+function F700ArmoredTireRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
@@ -274,9 +227,9 @@ function F700PoliceTireRearLeft(player, part, elapsedMinutes)
 
 end
 
-function F700PoliceTireRearRight(player, part, elapsedMinutes)
+function F700ArmoredTireRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "F700Police" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
         local part = vehicle:getPartById("TireRearRight")
         if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
@@ -290,21 +243,19 @@ function F700PoliceTireRearRight(player, part, elapsedMinutes)
 
 end
 
-Events.OnPlayerUpdate.Add(F700PoliceWindshield);
-Events.OnPlayerUpdate.Add(F700PoliceWindshieldRear);
-Events.OnPlayerUpdate.Add(F700PoliceGasTank);
-Events.OnPlayerUpdate.Add(F700PoliceEngineDoor);
-Events.OnPlayerUpdate.Add(F700PoliceDoorFrontLeft);
-Events.OnPlayerUpdate.Add(F700PoliceDoorFrontRight);
-Events.OnPlayerUpdate.Add(F700PoliceWindowFrontLeft);
-Events.OnPlayerUpdate.Add(F700PoliceWindowFrontRight);
-Events.OnPlayerUpdate.Add(F700PoliceWindowRearRight);
-Events.OnPlayerUpdate.Add(F700PoliceWindowRearLeft);
-Events.OnPlayerUpdate.Add(F700PoliceTruckBed);
-Events.OnPlayerUpdate.Add(F700PoliceTrunkDoor);
-Events.OnPlayerUpdate.Add(F700PoliceMuffler);
-Events.OnPlayerUpdate.Add(F700PoliceArmBodyBar);
-Events.OnPlayerUpdate.Add(F700PoliceTireFrontLeft);
-Events.OnPlayerUpdate.Add(F700PoliceTireFrontRight);
-Events.OnPlayerUpdate.Add(F700PoliceTireRearLeft);
-Events.OnPlayerUpdate.Add(F700PoliceTireRearRight);
+Events.OnPlayerUpdate.Add(F700ArmoredWindshield);
+Events.OnPlayerUpdate.Add(F700ArmoredWindshieldRear);
+Events.OnPlayerUpdate.Add(F700ArmoredGasTank);
+Events.OnPlayerUpdate.Add(F700ArmoredEngineDoor);
+Events.OnPlayerUpdate.Add(F700ArmoredDoorFrontLeft);
+Events.OnPlayerUpdate.Add(F700ArmoredDoorFrontRight);
+Events.OnPlayerUpdate.Add(F700ArmoredWindowFrontLeft);
+Events.OnPlayerUpdate.Add(F700ArmoredWindowFrontRight);
+Events.OnPlayerUpdate.Add(F700ArmoredWindowRearRight);
+Events.OnPlayerUpdate.Add(F700ArmoredWindowRearLeft);
+Events.OnPlayerUpdate.Add(F700ArmoredTruckBed);
+Events.OnPlayerUpdate.Add(F700ArmoredArmBodyBar);
+Events.OnPlayerUpdate.Add(F700ArmoredTireFrontLeft);
+Events.OnPlayerUpdate.Add(F700ArmoredTireFrontRight);
+Events.OnPlayerUpdate.Add(F700ArmoredTireRearLeft);
+Events.OnPlayerUpdate.Add(F700ArmoredTireRearRight);
