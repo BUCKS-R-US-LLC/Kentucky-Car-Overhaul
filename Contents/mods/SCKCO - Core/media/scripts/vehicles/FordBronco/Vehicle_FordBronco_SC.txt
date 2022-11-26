@@ -415,7 +415,7 @@ module Base
 				file = FordBroncoDriver,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordBroncoFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -425,7 +425,7 @@ module Base
 				file = FordBroncoPassenger,
 			}
 
-			itemType = Base.FordHeavyDutyFrontSeatSC,
+			itemType = Base.FordBroncoFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -435,7 +435,7 @@ module Base
 				file = FordBroncoRearDouble,
 			}
 
-			itemType = Base.FordHeavyDutyRearSeatSC,
+			itemType = Base.FordBroncoRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -445,7 +445,7 @@ module Base
 				file = FordBroncoRearDouble,
 			}
 
-			itemType = Base.FordHeavyDutyRearSeatSC,
+			itemType = Base.FordBroncoRearSeatSC,
 		}
 
 		part Muffler
@@ -510,7 +510,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordHeavyDutyHoodSC,
+			itemType = Base.FordBroncoHoodSC,
 		}
 
 		part Heater
@@ -553,7 +553,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordBroncoWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -585,7 +585,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordBroncoWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -608,7 +608,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordBroncoSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -626,7 +626,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordBroncoSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -645,7 +645,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordBroncoSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -662,7 +662,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordBroncoSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -700,7 +700,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordBroncoDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -738,7 +738,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordBroncoDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -791,7 +791,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyTrunkLidSC,
+			itemType = Base.FordBroncoTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

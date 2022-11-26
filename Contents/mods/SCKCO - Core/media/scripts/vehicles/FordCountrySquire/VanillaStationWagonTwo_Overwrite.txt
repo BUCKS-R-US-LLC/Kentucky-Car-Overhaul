@@ -221,7 +221,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-			extents = 3.0508 1.3898 8.2712,
+		extents = 3.0508 1.3898 8.2712,
 		mass = 800,
 		physicsChassisShape = 3.0508 1.3898 8.2373,
 		centerOfMassOffset = 0.0000 0.6610 -0.3051,
@@ -429,7 +429,7 @@ module Base
 				file = FordCountrySquireDriver,
 			}
 			
-			itemType = Base.FordStandardFrontSeatSC,
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -438,7 +438,7 @@ module Base
 			{
 				file = FordCountrySquirePassenger,
 			}
-			itemType = Base.FordStandardFrontSeatSC,
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -447,7 +447,7 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-			itemType = Base.FordStandardRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -456,7 +456,7 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-			itemType = Base.FordStandardRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part Muffler
@@ -519,7 +519,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordStandardHoodSC,
+			itemType = Base.FordCrownVictoriaHoodSC,
 		}
 
 		part Heater
@@ -561,7 +561,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			itemType = Base.FordStandardFrontWindshieldSC,
+			itemType = Base.FordCrownVictoriaFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -591,7 +591,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordStandardRearWindshieldSC,
+			itemType = Base.FordCrownVictoriaRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -620,7 +620,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.FordStandardRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -637,7 +637,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-			itemType = Base.FordStandardRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
 		part WindowFrontRight
@@ -653,7 +653,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardFrontSideWindowSC,
+			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -672,7 +672,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardFrontSideWindowSC,
+			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -691,7 +691,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -710,7 +710,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -751,7 +751,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardDoorSC,
+			itemType = Base.FordCrownVictoriaDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -789,7 +789,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardDoorSC,
+			itemType = Base.FordCrownVictoriaDoorSC,
 		}
 
 		part DoorRearRight
@@ -828,7 +828,7 @@ module Base
 			}
 
 			
-			itemType = Base.FordStandardRearDoorSC,
+			itemType = Base.FordCrownVictoriaRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -866,7 +866,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardRearDoorSC,
+			itemType = Base.FordCrownVictoriaRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -919,7 +919,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordStandardTrunkLidSC,
+			itemType = Base.FordCrownVictoriaTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

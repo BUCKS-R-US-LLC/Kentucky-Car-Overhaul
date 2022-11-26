@@ -1,0 +1,620 @@
+module Base
+{
+
+	  item K5Bullbar2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Style Bullbar,
+        Icon	=	BlazerBullBar,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5BullBar_WorldItem,
+    }
+
+	  item K5Chevy2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Logo,
+        Icon	=	ChevroletLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5ChevroletLogo_WorldItem,
+    }
+
+        item ChevyHeavyDutyDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item ChevyHeavyDutyWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Heavy-Duty Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item ChevyHeavyDutySideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Heavy-Duty Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item ChevyHeavyDutyHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Heavy-Duty Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item ChevyHeavyDutyTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Heavy-Duty Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item ChevyHeavyDutyFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDuty,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+
+    }
+    
+        item ChevyStandardDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Door,
+        Icon	=	CapriceFrontDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
+        item ChevyStandardRearDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Rear Door,
+        Icon	=	CapriceRearDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceRearDoor_WorldItem,
+    }
+
+        item ChevyStandardFrontWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Standard Style Front Windshield,
+        Icon	=	CapriceFrontWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+    }
+
+        item ChevyStandardRearWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Standard Style Rear Windshield,
+        Icon	=	CapriceRearWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceRearWindshield_WorldItem,
+    }
+
+        item ChevyStandardFrontSideWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Front Side Window,
+        Icon	=	CapriceFrontSideWIndow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+    }
+
+        item ChevyStandardRearSideWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Rear Side Window,
+        Icon	=	CapriceRearSideWindow_WorldItem,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+    }
+
+        item ChevyStandardHoodSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Hood,
+        Icon	=	CapriceHood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceHood_WorldItem,
+    }
+
+        item ChevyStandardTrunkLidSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Trunk Lid,
+        Icon	= CapriceTrunkLid,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceTrunkLid_WorldItem,
+    }
+
+        item ChevyStandardFrontSeatSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Front Seat,
+        Icon	=	CapriceFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceFrontSeat_WorldItem,
+    }
+    
+        item ChevyStandardRearSeatSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Standard Style Rear Seat,
+        Icon	=	CapriceRearSeats,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletStandard,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item ChevyStepVanDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Door,
+        Icon	=	P30FrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30Door_WorldItem,
+    }
+
+        item ChevyStepVanWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Heavy-Duty Style Windshield,
+        Icon	=	P30RearWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30Windshield_WorldItem,
+    }
+
+        item ChevyStepVanSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Side Window,
+        Icon	=	P30FrontSideWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30SideWindow_WorldItem,
+    }
+    
+        item ChevyStepVanRearWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Rear Windows,
+        Icon	=	P30RearWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30RearWindows_WorldItem,
+    }
+
+        item ChevyStepVanHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Hood,
+        VehicleType = 2,
+        Icon	=	P30Hood, 
+        ConditionMax = 100,
+        MechanicsItem = TRUE,      
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30Hood_WorldItem,
+    }
+
+        item ChevyStepVanRearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Rear Doors,
+        Icon	=	P30RearDoors,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30RearDoors_WorldItem,
+    }
+
+        item ChevyStepVanFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Style Front Seat,
+        Icon	=	P30Seat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = P30FrontSeat_WorldItem,
+    }
+
+        item ChevyVanFrontDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Front Door,
+        Icon	=	G30FrontDoor_WorldItem,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30FrontDoor_WorldItem,
+    }
+
+        item ChevyVanHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Hood,
+        Icon	=	G30Hood,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30Hood_WorldItem,
+    }
+
+        item ChevyVanRearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Rear Doors,
+        Icon	= G30RearDoors,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30RearDoors_WorldItem,
+    }
+
+        item ChevyVanRearWindowsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Rear Windows,
+        Icon	= G30RearWindows,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30RearWindows_WorldItem,
+    }
+
+        item ChevyVanSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Side Window,
+        Icon	= G30SideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30SideWindow_WorldItem,
+    }
+
+        item ChevyVanSideDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Side Door,
+        Icon	= G30SideDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30SideDoor_WorldItem,
+    }
+
+        item ChevyVanFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30FrontSeat_WorldItem,
+    }
+    
+        item ChevyVanSideWindowLongSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Long Side Window,
+        Icon	= G30SideWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30SideWindowLong_WorldItem,
+    }
+
+        item ChevyVanRearDoorsVanSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Rear Doors,
+        Icon	= G30SideDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyG30,
+        WorldStaticModel = G30RearDoorsVan_WorldItem,
+    }
+
+        item ChevyVanRearWindowsVanSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Heavy-Duty Van Rear Windows,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletHeavyDutyP30,
+        WorldStaticModel = G30RearWindowsVan_WorldItem,
+    }
+
+        item ChevySportDoorSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Door,
+        Icon	=	CapriceFrontDoor,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
+        item ChevySportFrontWindshieldSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Sport Style Front Windshield,
+        Icon	=	CapriceFrontWindshield,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+    }
+
+        item ChevySportRearWindshieldSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Sport Style Rear Windshield,
+        Icon	=	CapriceRearWindshield,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceRearWindshield_WorldItem,
+    }
+
+        item ChevySportFrontSideWindowSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Front Side Window,
+        Icon	=	CapriceFrontSideWIndow,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+    }
+
+        item ChevySportRearSideWindowSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Rear Side Window,
+        Icon	=	CapriceRearSideWindow_WorldItem,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+    }
+
+        item ChevySportHoodSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Hood,
+        Icon	=	CapriceHood,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceHood_WorldItem,
+    }
+
+        item ChevySportTrunkLidSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Trunk Lid,
+        Icon	= CapriceTrunkLid,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceTrunkLid_WorldItem,
+    }
+
+        item ChevySportFrontSeatSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Front Seat,
+        Icon	=	CapriceFrontSeat,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceFrontSeat_WorldItem,
+    }
+    
+        item ChevySportRearSeatSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet Sport Style Rear Seat,
+        Icon	=	CapriceRearSeats,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_ChevroletSport,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+}
+

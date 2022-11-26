@@ -1,0 +1,34 @@
+module Base
+{
+
+fixing Fix Fire Coach Door Armor
+	{
+	   Require : FireCoachDoorArmor2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.5,
+
+       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+	}
+
+fixing Fix Fire Coach Windshield
+	{
+	   Require : FireCoachWindshieldArmor2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.5,
+
+       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+	}
+
+fixing Fix Fire Coach Window Armor
+	{
+	   Require : FireWindowArmor2,
+	   GlobalItem : BlowTorch=3,
+	   ConditionModifier : 1.5,
+
+       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+	}
+
+}

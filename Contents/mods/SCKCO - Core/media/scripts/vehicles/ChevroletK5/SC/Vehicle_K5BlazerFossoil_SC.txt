@@ -318,7 +318,7 @@ module Base
 		}
 
 		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5ChevyHeavyDuty,
+		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -340,7 +340,7 @@ module Base
 				file = BlazerFossoilSCDriver,
 			}
 
-			itemType = Base.ChevyHeavyDutyFrontSeatSC,
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -350,7 +350,7 @@ module Base
 				file = BlazerFossoilSCPassenger,
 			}
 		
-			itemType = Base.ChevyHeavyDutyFrontSeatSC,
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -416,7 +416,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyHeavyDutyHoodSC,
+			itemType = Base.ChevyBlazerHoodSC,
 		}
 
 		part Heater
@@ -459,7 +459,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyHeavyDutyWindshieldSC,
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -486,7 +486,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyHeavyDutyWindshieldSC,
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -512,7 +512,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -531,7 +531,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -549,7 +549,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -567,7 +567,7 @@ module Base
 				requireInstalled =,
 			}
 			
-			itemType = Base.ChevyHeavyDutySideWindowSC,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -605,7 +605,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyHeavyDutyDoorSC,
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -643,7 +643,7 @@ module Base
 				animate = FALSE,
 			}
 			
-			itemType = Base.ChevyHeavyDutyDoorSC,
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -696,7 +696,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyHeavyDutyTrunkLidSC,
+			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

@@ -455,7 +455,7 @@ module Base
 				file = JeepCherokeeDriver,
 			}
 
-			itemType = Base.JeepHeavyDutyFrontSeatSC,
+			itemType = Base.JeepCherokeeFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -465,7 +465,7 @@ module Base
 				file = JeepCherokeePassenger,
 			}
 			
-			itemType = Base.JeepHeavyDutyFrontSeatSC,
+			itemType = Base.JeepCherokeeFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -475,7 +475,7 @@ module Base
 				file = JeepCherokeeDouble,
 			}
 						
-			itemType = Base.JeepHeavyDutyRearSeatSC,
+			itemType = Base.JeepCherokeeRearSeatSC,
 
 		}
 
@@ -486,7 +486,7 @@ module Base
 				file = JeepCherokeeDouble,
 			}
 
-			itemType = Base.JeepHeavyDutyRearSeatSC,
+			itemType = Base.JeepCherokeeRearSeatSC,
 		}
 
 		part Muffler
@@ -550,7 +550,7 @@ module Base
 			}
 
 
-			itemType = Base.JeepHeavyDutyHoodSC,
+			itemType = Base.JeepCherokeeHoodSC,
 		}
 
 		part Heater
@@ -593,7 +593,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.JeepHeavyDutyWindshieldSC,
+			itemType = Base.JeepCherokeeWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -625,7 +625,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.JeepHeavyDutyWindshieldSC,
+			itemType = Base.JeepCherokeeWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -653,7 +653,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -672,7 +672,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
 		part WindowMiddleRight
@@ -689,7 +689,7 @@ module Base
 				requireInstalled =,
 			}
 			
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -706,7 +706,7 @@ module Base
 				requireInstalled =,
 			}
 			
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -723,7 +723,7 @@ module Base
 			}
 
 
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -742,7 +742,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepHeavyDutySideWindowSC,
+			itemType = Base.JeepCherokeeSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -783,7 +783,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepHeavyDutyDoorSC,
+			itemType = Base.JeepCherokeeDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -821,7 +821,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepHeavyDutyDoorSC,
+			itemType = Base.JeepCherokeeDoorSC,
 		}
 
 		part DoorRearRight
@@ -859,7 +859,7 @@ module Base
 				animate = FALSE,
 			}
 			
-			itemType = Base.JeepHeavyDutyDoorSC,
+			itemType = Base.JeepCherokeeDoorSC,
 		}
 
 		part DoorRearLeft
@@ -897,7 +897,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepHeavyDutyDoorSC,
+			itemType = Base.JeepCherokeeDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -950,7 +950,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepHeavyDutyTrunkLidSC,
+			itemType = Base.JeepCherokeeTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

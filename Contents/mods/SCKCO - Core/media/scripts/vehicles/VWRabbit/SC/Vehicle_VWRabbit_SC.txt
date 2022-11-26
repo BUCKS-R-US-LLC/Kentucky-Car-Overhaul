@@ -203,7 +203,8 @@ module Base
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
-extents = 2.5574 1.4098 5.5410,
+
+        extents = 2.5574 1.4098 5.5410,
 		mass = 800,
 		physicsChassisShape = 2.5574 1.4098 5.6066,
 		centerOfMassOffset = 0.0000 0.6557 0.1639,
@@ -411,7 +412,7 @@ extents = 2.5574 1.4098 5.5410,
 				file = VWRabbitDriver,
 			}
 
-		itemType = Base.VWStandardFrontSeatSC,
+		itemType = Base.VWRabbitFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -421,7 +422,7 @@ extents = 2.5574 1.4098 5.5410,
 				file = VWRabbitPassenger,
 			}
 
-		itemType = Base.VWStandardRearSeatSC,
+		itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -431,7 +432,7 @@ extents = 2.5574 1.4098 5.5410,
 				file = VWRabbitDouble,
 			}
 
-		itemType = Base.VWStandardRearSeatSC,
+		itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part Muffler
@@ -494,7 +495,7 @@ extents = 2.5574 1.4098 5.5410,
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.VWStandardHoodSC,
+		itemType = Base.VWRabbitHoodSC,
 		}
 
 		part Heater
@@ -537,7 +538,7 @@ extents = 2.5574 1.4098 5.5410,
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.VWStandardFrontWindshieldSC,
+			itemType = Base.VWRabbitFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -569,7 +570,7 @@ extents = 2.5574 1.4098 5.5410,
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.VWStandardRearWindshieldSC,
+			itemType = Base.VWRabbitRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -594,7 +595,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardFrontSideWindowSC,
+			itemType = Base.VWRabbitFrontSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -613,7 +614,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardFrontSideWindowSC,
+			itemType = Base.VWRabbitFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -632,7 +633,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardRearSideWindowSC,
+			itemType = Base.VWRabbitRearSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -651,7 +652,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardRearSideWindowSC,
+			itemType = Base.VWRabbitRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -692,7 +693,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardDoorSC,
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -730,7 +731,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardDoorSC,
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		part DoorRearRight
@@ -768,7 +769,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardRearDoorSC,
+			itemType = Base.VWRabbitRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -806,7 +807,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardRearDoorSC,
+			itemType = Base.VWRabbitRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -859,7 +860,7 @@ extents = 2.5574 1.4098 5.5410,
 				animate = FALSE,
 			}
 
-			itemType = Base.VWStandardTrunkLidSC,
+			itemType = Base.VWRabbitTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

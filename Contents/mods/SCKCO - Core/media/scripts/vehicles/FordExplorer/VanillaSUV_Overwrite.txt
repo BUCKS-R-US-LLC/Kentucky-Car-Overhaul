@@ -447,7 +447,7 @@ module Base
 			{
 				file = FordExplorerDriver,
 			}
-		itemType = Base.FordHeavyDutyFrontSeatSC,
+		itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -456,7 +456,7 @@ module Base
 			{
 				file = FordExplorerPassenger,
 			}
-		itemType = Base.FordHeavyDutyFrontSeatSC,
+		itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -465,7 +465,7 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
-		itemType = Base.FordHeavyDutyRearSeatSC,
+		itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -475,7 +475,7 @@ module Base
 				file = FordExplorerDouble,
 			}
 
-		itemType = FordHeavyDutyRearSeatSC,
+		itemType = FordExplorerRearSeatSC,
 		}
 
 		part Muffler
@@ -539,7 +539,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordHeavyDutyHoodSC,
+			itemType = Base.FordExplorerHoodSC,
 		}
 
 		part Heater
@@ -582,7 +582,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 			
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordExplorerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -614,7 +614,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordHeavyDutyWindshieldSC,
+			itemType = Base.FordExplorerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -639,7 +639,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -658,7 +658,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -678,7 +678,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -695,7 +695,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -711,7 +711,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -730,7 +730,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutySideWindowSC,
+			itemType = Base.FordExplorerSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -771,7 +771,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordExplorerFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -809,7 +809,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordExplorerFrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -847,7 +847,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordExplorerRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -885,7 +885,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyDoorSC,
+			itemType = Base.FordExplorerRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -938,7 +938,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordHeavyDutyTrunkLidSC,
+			itemType = Base.FordExplorerTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

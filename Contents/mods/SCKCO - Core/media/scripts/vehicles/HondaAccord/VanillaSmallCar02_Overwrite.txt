@@ -393,7 +393,7 @@ module Base
 				file = HondaAccordDriver,
 			}
 
-			itemType = Base.HondaStandardFrontSeatSC,
+			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -403,7 +403,7 @@ module Base
 				file = HondaAccordPassenger,
 			}
 
-			itemType = Base.HondaStandardFrontSeatSC,
+			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -412,7 +412,7 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
-			itemType = Base.HondaStandardRearSeatSC,
+			itemType = Base.HondaAccordRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -421,7 +421,7 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
-			itemType = Base.HondaStandardRearSeatSC,
+			itemType = Base.HondaAccordRearSeatSC,
 		}
 
 		part Muffler
@@ -484,7 +484,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.HondaStandardHoodSC,
+			itemType = Base.HondaAccordHoodSC,
 		}
 
 		part Heater
@@ -527,7 +527,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.HondaStandardFrontWindshieldSC,
+			itemType = Base.HondaAccordFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -559,7 +559,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.HondaStandardRearWindshieldSC,
+			itemType = Base.HondaAccordRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -583,7 +583,7 @@ module Base
 			}
 
 
-			itemType = Base.HondaStandardFrontSideWindowSC,
+			itemType = Base.HondaAccordFrontSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -602,7 +602,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaStandardFrontSideWindowSC,
+			itemType = Base.HondaAccordFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -619,7 +619,7 @@ module Base
 			{
 			}
 
-			itemType = Base.HondaStandardRearSideWindowSC,
+			itemType = Base.HondaAccordRearSideWindowSC,
 
 			area = SeatRearRight,
 		}
@@ -636,7 +636,7 @@ module Base
 			{
 			}
 
-			itemType = Base.HondaStandardRearSideWindowSC,
+			itemType = Base.HondaAccordRearSideWindowSC,
 
 			area = SeatRearLeft,
 		}
@@ -676,7 +676,7 @@ module Base
 				animate = FALSE,
 			}
 			
-			itemType = Base.HondaStandardDoorSC,
+			itemType = Base.HondaAccordDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -714,7 +714,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaStandardDoorSC,
+			itemType = Base.HondaAccordDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -767,7 +767,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaStandardTrunkLidSC,
+			itemType = Base.HondaAccordTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
