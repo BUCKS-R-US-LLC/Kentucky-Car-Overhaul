@@ -61,6 +61,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_FordF700Armored_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
 		scale = 1,
 	}
 	model F700ArmoredRearLeftWindow
@@ -82,6 +83,7 @@ module Base
 		mesh = vehicles/Vehicle_FordF700Armored_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearDoorBone 1.0,
 	}
 	model F700ArmoredHood
@@ -513,13 +515,7 @@ module Base
 			{
 				file = F700ArmoredFrontRightWindow,
 			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
+			
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.BallisticGlassWindowSC,
