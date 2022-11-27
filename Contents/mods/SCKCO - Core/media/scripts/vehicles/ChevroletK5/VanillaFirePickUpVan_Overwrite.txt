@@ -720,8 +720,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
-		
-		itemType = NormalTire,
 		}
 
 		part TireFrontRight
@@ -730,7 +728,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
-			itemType = NormalTire,
 		}
 
 		part TireRearLeft
@@ -739,7 +736,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
-			itemType = NormalTire,
 		}
 
 		part TireRearRight
@@ -748,7 +744,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
-			itemType = NormalTire,
 		}
 
 		template = Brake,
@@ -806,21 +801,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 0.0635,
+			offset = 0.0794 1.3175 0.2381,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3651 -3.3175,
+			offset = 0.0000 0.5238 -3.9683,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.0000 3.3651,
+			offset = -0.0159 0.5397 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
