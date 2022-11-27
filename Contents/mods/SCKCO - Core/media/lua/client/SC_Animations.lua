@@ -408,6 +408,30 @@ local vehicleToSeatAnimations = {
 		["seat4"]="Shark_Idle_Passenger",
 		["seat5"]="Shark_Idle_Passenger",
 	},
+
+	["Base.SC_FordF700BoxTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF700PanelTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF700ArmoredPolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_FordF700ArmoredBank"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
 }
 
 ---@param player IsoPlayer|IsoGameCharacter
