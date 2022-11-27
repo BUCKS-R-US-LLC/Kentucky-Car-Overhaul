@@ -114,17 +114,33 @@ function F700WindowFrontRight(player, part, elapsedMinutes)
 
 end
 
-function F700WindowRearLeft(player, part, elapsedMinutes)
+function F700WindowMiddleRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
 
-        local part = vehicle:getPartById("WindowRearLeft")
-        if (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("WindowRearLeft"):getInventoryItem()) then
+        local part = vehicle:getPartById("WindowMiddleRight")
+        if (vehicle:getPartById("WindowMiddleRight"):getCondition() < 70) and (vehicle:getPartById("WindowMiddleRight"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
 
         end
-        vehicle:transmitPartModData(WindowRearLeft)
+        vehicle:transmitPartModData(WindowMiddleRight)
+    end
+
+
+end
+
+function F700WindowMiddleLeft(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "F700Armored" )) then
+
+        local part = vehicle:getPartById("WindowMiddleLeft")
+        if (vehicle:getPartById("WindowMiddleLeft"):getCondition() < 70) and (vehicle:getPartById("WindowMiddleLeft"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+
+        end
+        vehicle:transmitPartModData(WindowMiddleLeft)
     end
 
 
@@ -250,7 +266,8 @@ Events.OnPlayerUpdate.Add(F700DoorFrontLeft);
 Events.OnPlayerUpdate.Add(F700DoorFrontRight);
 Events.OnPlayerUpdate.Add(F700WindowFrontLeft);
 Events.OnPlayerUpdate.Add(F700WindowFrontRight);
-Events.OnPlayerUpdate.Add(F700WindowRearLeft);
+Events.OnPlayerUpdate.Add(F700WindowMiddleLeft);
+Events.OnPlayerUpdate.Add(F700WindowMiddleRight);
 Events.OnPlayerUpdate.Add(F700WindowRearRight);
 Events.OnPlayerUpdate.Add(F700Muffler);
 Events.OnPlayerUpdate.Add(F700F700Bullbar);
