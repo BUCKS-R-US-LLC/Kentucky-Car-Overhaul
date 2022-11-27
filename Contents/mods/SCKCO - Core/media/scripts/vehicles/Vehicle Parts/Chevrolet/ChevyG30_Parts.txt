@@ -131,5 +131,18 @@ module Base
         WorldStaticModel = ChevyG30RearWindows_WorldItem,
     }
 
+        item ChevyG30WindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Chevrolet G30 Windshield,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyG30Windshield_WorldItem,
+    }
+
 }
 

@@ -417,7 +417,7 @@ module Base
 				animate = FALSE,
 			}
 		
-		itemType = Base.ChevyVanRearDoorsSC,
+		itemType = Base.ChevyG30RearDoorsSC,
 		}
 
 		part SeatFrontLeft
@@ -427,7 +427,7 @@ module Base
 				file = G30AmbulanceDriver,
 			}
 		
-		itemType = Base.ChevyHeavyDutyFrontSeatSC,
+		itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -437,7 +437,7 @@ module Base
 				file = G30AmbulancePassenger,
 			}
 
-		itemType = Base.ChevyHeavyDutyFrontSeatSC,
+		itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -510,7 +510,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyVanHoodSC,
+			itemType = Base.ChevyG30HoodSC,
 		}
 
 		part Heater
@@ -553,7 +553,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyHeavyDutyWindshieldSC,
+			itemType = Base.ChevyG30WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -585,7 +585,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyVanRearWindowsSC,
+			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -611,7 +611,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -630,7 +630,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -668,7 +668,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanFrontDoorSC,
+			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -706,7 +706,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanFrontDoorSC,
+			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -743,7 +743,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			itemType = Base.ChevyVanSideDoorSC,
+			itemType = Base.ChevyG30SideDoorSC,
 		}
 
 		part WindowRearRight
@@ -761,7 +761,7 @@ module Base
 			parent = DoorRearRight,
 			area = SeatFrontRight,
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 		}
 
 		template = Tire,
