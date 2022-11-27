@@ -700,7 +700,8 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-template = Seat/part/SeatFrontLeft,
+
+        template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
 		template = Seat/part/SeatMiddleRight,
@@ -762,7 +763,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanRearDoorsSC,
+			itemType = Base.ChevyG30RearDoorsSC,
 		}
 
 		part SeatFrontLeft
@@ -870,7 +871,7 @@ template = Seat/part/SeatFrontLeft,
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyVanHoodSC,
+			itemType = Base.ChevyG30HoodSC,
 		}
 
 		part Heater
@@ -945,7 +946,7 @@ template = Seat/part/SeatFrontLeft,
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyVanRearWindowsSC,
+			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -971,7 +972,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -990,7 +991,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -1007,7 +1008,7 @@ template = Seat/part/SeatFrontLeft,
 				file = G30VanNormalMiddleLeftWindow,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			area = SeatMiddleLeft,
 		}
@@ -1023,7 +1024,7 @@ template = Seat/part/SeatFrontLeft,
 				file = G30VanNormalSlidingWindow,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
@@ -1040,7 +1041,7 @@ template = Seat/part/SeatFrontLeft,
 				file = G30VanNormalRearRightWindow,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			area = SeatRearRight,
 		}
@@ -1056,7 +1057,7 @@ template = Seat/part/SeatFrontLeft,
 				file = G30VanNormalRearLeftWindow,
 			}
 
-			itemType = Base.ChevyVanSideWindowSC,
+			itemType = Base.ChevyG30SideWindowSC,
 
 			area = SeatRearLeft,
 		}
@@ -1096,7 +1097,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 			
-			itemType = Base.ChevyVanFrontDoorSC,
+			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1134,7 +1135,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanFrontDoorSC,
+			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -1172,7 +1173,7 @@ template = Seat/part/SeatFrontLeft,
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyVanSideDoorSC,
+			itemType = Base.ChevyG30SideDoorSC,
 		}
 
 		template = Tire,
