@@ -13,7 +13,7 @@ module Base
 
 	fixing Fix Chevrolet Hood Welding
 	{
-	   Require : ChevyStandardHoodSC1;ChevyHeavyDutyHoodSC2;ChevyStepVanHoodSC2;ChevyVanHoodSC2;ChevySportHoodSC3,
+	   Require : ChevyCapriceHoodSC1;ChevyBlazerHoodSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroHoodSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -23,7 +23,7 @@ module Base
 
     fixing Fix Chevrolet Hood
 	{
-	   Require : ChevyStandardHoodSC1;ChevyHeavyDutyHoodSC2;ChevySportHoodSC3,
+	   Require : ChevyCapriceHoodSC1;ChevyBlazerHoodSC2;ChevyCamaroHoodSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -32,7 +32,7 @@ module Base
 
 	fixing Fix Chevrolet Trunk Lid Welding
     {
-       Require : ChevyStandardTrunkLidSC1;ChevyHeavyDutyTrunkLidSC2;ChevySportTrunkLidSC3,
+       Require : ChevyCapriceTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyCamaroTrunkLidSC3,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -42,7 +42,7 @@ module Base
 
     fixing Fix Chevrolet Trunk Lid
 	{
-       Require : ChevyStandardTrunkLidSC1;ChevyHeavyDutyTrunkLidSC2;ChevyStepVanHoodSC2;ChevyVanHoodSC2;ChevySportTrunkLidSC3,
+       Require : ChevyCapriceTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroTrunkLidSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -51,7 +51,7 @@ module Base
 
 	fixing Fix Chevrolet Door Welding
 	{
-	   Require : ChevyStandardDoorSC1;ChevyHeavyDutyDoorSC2;ChevyVanFrontDoorSC2;ChevyStepVanVanDoorSC2;ChevyVanSideDoorSC2;ChevySportDoorSC3,
+	   Require : ChevyCapriceDoorSC1;ChevyBlazerDoorSC2;ChevyG30FrontDoorSC2;ChevyP30DoorSC2;ChevyG30SideDoorSC2;ChevyCamaroDoorSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -61,7 +61,7 @@ module Base
 
     fixing Fix Chevrolet Car seat
 	{
-	   Require : ChevyStandardFrontSeatSC1;ChevyStandardRearSeatSC1;ChevyHeavyDutyFrontSeatSC2;ChevyHeavyDutyRearSeatSC2;ChevySportFrontSeatSC3;ChevySportRearSeatSC3,
+	   Require : ChevyCapriceFrontSeatSC1;ChevyCapriceRearSeatSC1;ChevyBlazerFrontSeatSC2;ChevyCamaroFrontSeatSC3;ChevyCamaroRearSeatSC3,
 	   ConditionModifier : 0.8,
 
        Fixer : DuctTape=2;Mechanics=1,
