@@ -162,10 +162,10 @@ module Base
 		textureRust = Vehicles/FordF700/Vehicle_FordF700DumpTruck_Rust,
 		textureMask = Vehicles/FordF700/Vehicle_FordF700DumpTruck_Mask,
 		textureLights = Vehicles/FordF700/Vehicle_FordF700DumpTruck_lights,
-		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700DumpTruck_scratch,
-		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700DumpTruck_scratch,
-		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700DumpTruck_Blood,
-		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700DumpTruck_Blood,
+		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
+		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
+		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
+		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
 
 		sound
 		{
@@ -604,57 +604,6 @@ module Base
 			}
 
 			itemType = Base.FordF700DoorSC,
-		}
-
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = F700DumpTruckTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
 		}
 
 		template = Trunk/part/TruckBedOpen,
