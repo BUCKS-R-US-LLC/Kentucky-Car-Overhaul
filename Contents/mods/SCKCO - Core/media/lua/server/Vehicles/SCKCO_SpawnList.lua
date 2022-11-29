@@ -70,4 +70,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 30};  
     VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 30};  
     VehicleZoneDistribution.junkyard.chanceToPartDamage = 60;
+
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 5};  
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};  
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 1};  
+    VehicleZoneDistribution.trafficjams.chanceToPartDamage = 100;
 end
