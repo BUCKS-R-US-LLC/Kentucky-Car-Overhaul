@@ -190,7 +190,7 @@ module Base
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 10.6984,
 		centerOfMassOffset = 0.0000 1.5556 -0.3016,
-		shadowExtents = 3.3411 11.0878,
+		shadowExtents = 3.6109 11.1989,
 		shadowOffset = 0.0000 -0.1842,
 		engineForce = 4000,
 		engineQuality = 80,
@@ -214,7 +214,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0159 4.5079,
+			offset = -1.3651 0.0159 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -222,7 +222,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0159 4.5079,
+			offset = 1.3651 0.0159 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -230,7 +230,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0159 -1.8254,
+			offset = -1.1587 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -238,7 +238,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0159 -1.8254,
+			offset = 1.1587 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -290,7 +290,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0476 -6.7937 2.8571 1.7460,
+			xywh = 0.0000 -6.7937 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
@@ -300,12 +300,12 @@ module Base
 
 		area SeatFrontRight
 		{
-			xywh = -2.0000 2.8413 1.2381 1.2381,
+			xywh = -2.0952 2.8413 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0159 -1.0635 1.0794 0.5714,
+			xywh = -2.0159 2.5079 1.0794 0.5714,
 		}
 
 		area TireFrontLeft

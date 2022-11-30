@@ -176,12 +176,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailPickUpTruck,
 		}
 
-		extents = 3.1111 3.0794 8.5079,
+		extents = 3.1111 3.0794 8.4444,
 		mass = 1000,
 		physicsChassisShape = 3.1111 3.0794 8.4444,
 		centerOfMassOffset = 0.0000 1.5556 1.0159,
-		shadowExtents = 3.1030 8.5639,
-		shadowOffset = 0.0000 1.0221,
+		shadowExtents = 3.5474 8.4210,
+		shadowOffset = 0.0000 1.0062,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -204,7 +204,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2222 0.0159 4.4444,
+			offset = -1.3810 0.0159 4.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +212,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2222 0.0159 4.4444,
+			offset = 1.3810 0.0159 4.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +220,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2222 0.0159 -1.8254,
+			offset = -1.1746 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +228,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2222 0.0159 -1.8254,
+			offset = 1.1746 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -295,7 +295,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 2.0952 -1.0635 1.0794 0.5714,
+			xywh = -2.0952 2.5714 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
