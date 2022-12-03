@@ -192,7 +192,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -208,7 +208,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = -1.2222 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -355,7 +355,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.9048 -0.1905 -3.1587,
+				offset = 2.1429 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -381,32 +381,32 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 0.2540 1.2381 1.2381,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 -1.2857 1.2381 1.2381,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 -1.2857 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1111 -3.1111 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1111 -3.1111 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -466,6 +466,40 @@ module Base
 			}
 
 			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = M1008Driver,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+			itemType = Base.M1008RearSeat,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+			itemType = Base.M1008RearSeat,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+			itemType = Base.M1008RearSeat,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+			itemType = Base.M1008RearSeat,
 		}
 
 		part Muffler
@@ -656,6 +690,10 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorMiddleLeft,
+		template = Door/part/DoorMiddleRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -674,7 +712,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -693,7 +730,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -773,6 +809,16 @@ module Base
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 
+		part DoorRearRight
+		{
+			category = nodisplay,
+		}
+
+		part DoorRearLeft
+		{
+			category = nodisplay,
+		}
+
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -826,17 +872,27 @@ module Base
 			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
-		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
 
-		part TruckBedOpen
+		part BackOfTruck
 		{
-			itemType = Base.BigTrunk,
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
 
 			container
 			{
 				capacity = 100,
+				conditionAffectsCapacity = true,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
 			}
 		}
 
