@@ -32,4 +32,18 @@ module SCA
         /*BodyBagEmpty*/
     }
 
+        item BankBag
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	30,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        DisplayName	=	Bank Bag,
+        Icon	=	Plasticbag,
+        ReplaceInSecondHand = Bag_BankBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_BankBag_RHand holdingbagright,
+        WorldStaticModel = BankBag_SCA,
+        SoundParameter = EquippedBaggageContainer DuffleBag,
+    }
 }
