@@ -20,7 +20,7 @@ end
 
 function C70SurvivorWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "C70Survivalist" )) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("C70BrushGuardFabricated"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("C70BrushGuardFabricated"):getInventoryItem()) then
@@ -37,7 +37,7 @@ end
 
 function C70EngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "C70Survivor" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "C70" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("C70Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("C70Bullbar"):getInventoryItem()) then
@@ -54,7 +54,7 @@ end
 
 function C70SurvivorEngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "C70Survivor" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "C70Survivalist" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("C70BullbarFabricated"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("C70BullbarFabricated"):getInventoryItem()) then
