@@ -432,6 +432,16 @@ local vehicleToSeatAnimations = {
 		["seat2"]="Shark_Idle_SidePassenger",
 		["seat3"]="Shark_Idle_SidePassenger2",
 	},
+
+	["Base.SC_ChevroletC70GrainTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_ChevroletC70Survivalist"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
 }
 
 ---@param player IsoPlayer|IsoGameCharacter

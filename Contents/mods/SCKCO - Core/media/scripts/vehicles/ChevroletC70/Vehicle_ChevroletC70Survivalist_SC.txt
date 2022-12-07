@@ -298,7 +298,7 @@ module Base
 			xywh = -1.4286 -1.3333 0.0000 0.0000,
 		}
 
-		template = C70Bullbar,
+		template = C70BullbarSurvivor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -318,6 +318,8 @@ module Base
 			{
 				file = C70SurvivorDriver,
 			}
+			
+			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -326,6 +328,7 @@ module Base
 			{
 				file = C70SurvivorPassenger,
 			}
+			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part Muffler
@@ -389,6 +392,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyC70HoodSC,
 		}
 
 		part Heater
@@ -430,6 +435,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyC70WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -458,6 +465,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyC70WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -491,7 +500,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowBone,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
@@ -533,6 +542,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyC70DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -569,19 +580,74 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyC70DoorSC,
 		}
 
-		template = Trunk/part/TruckBedOpen,
+		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
-		part TruckBedOpen
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = C70SurvivorTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.C70TailGate,
+		}
+
+		part TruckBed
 		{
 			itemType = Base.BigTrunk,
 
 			container
 			{
-				capacity = 400,
+				capacity = 250,
 			}
 		}
 

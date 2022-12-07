@@ -322,7 +322,8 @@ module Base
 		{
 			xywh = -1.4286 -1.3333 0.0000 0.0000,
 		}
-
+		
+		template = C70Bullbar,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -515,7 +516,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowBone,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
