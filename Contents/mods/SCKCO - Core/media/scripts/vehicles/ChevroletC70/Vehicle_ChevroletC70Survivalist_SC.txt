@@ -255,7 +255,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.8254 2.8571 2.0000,
+			xywh = 0.0000 4.2222 4.7619 1.2063,
 		}
 
 		area TruckBed
@@ -318,7 +318,7 @@ module Base
 			{
 				file = C70SurvivorDriver,
 			}
-			
+
 			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
@@ -328,6 +328,7 @@ module Base
 			{
 				file = C70SurvivorPassenger,
 			}
+
 			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
@@ -435,7 +436,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyC70WindshieldSC,
 		}
 
@@ -487,6 +488,7 @@ module Base
 				animate = FALSE,
 			}
 
+            itemType = ChevyC70SideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -504,6 +506,7 @@ module Base
 				animate = FALSE,
 			}
 
+            itemType = ChevyC70SideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -587,7 +590,6 @@ module Base
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
-
 		template = TrunkDoor,
 
 		part TrunkDoor
