@@ -93,6 +93,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 5};      
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 5};    
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};  
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletC70GrainTruck"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 1};  
