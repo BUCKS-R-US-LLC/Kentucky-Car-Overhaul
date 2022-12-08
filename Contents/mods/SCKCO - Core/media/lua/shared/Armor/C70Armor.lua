@@ -37,7 +37,7 @@ end
 
 function C70EngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "C70" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "C70GrainTruck" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("C70Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("C70Bullbar"):getInventoryItem()) then
@@ -71,4 +71,5 @@ end
 
 Events.OnPlayerUpdate.Add(C70GasTank);
 Events.OnPlayerUpdate.Add(C70EngineDoor);
-Events.OnPlayerUpdate.Add(C70SurvivorEgineDoor);
+Events.OnPlayerUpdate.Add(C70SurvivorWindshield);
+Events.OnPlayerUpdate.Add(C70SurvivorEngineDoor);
