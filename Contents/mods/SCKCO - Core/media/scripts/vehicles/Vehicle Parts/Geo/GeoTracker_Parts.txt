@@ -1,0 +1,110 @@
+module Base
+{
+
+        item GeoTrackerDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10,
+        Type	=	Normal,
+        DisplayName	= Geo Tracker Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item GeoTrackerWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20,
+        Type	=	Normal,
+        DisplayName	=	Geo Tracker Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item GeoTrackerSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Geo Tracker Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item GeoTrackerHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Geo Tracker Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item GeoTrackerTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10,
+        Type	=	Normal,
+        DisplayName	=	Geo Tracker Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =  2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item GeoTrackerFrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	= Geo Tracker Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        MaxCapacity = 5,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item GeoTrackerRearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	= Geo Tracker Rear Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MaxCapacity = 5,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+    	item GeoTrackersofttop2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Geo Tracker Soft-top,
+        Icon	=	CJ7Tarp,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_CJ7Tarp,
+        WorldStaticModel = CJ7Tarp_WorldItem,
+    }
+}
