@@ -442,6 +442,20 @@ local vehicleToSeatAnimations = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
 	},
+
+	["Base.SC_GeoTracker"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordTaurus"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
 }
 
 ---@param player IsoPlayer|IsoGameCharacter
