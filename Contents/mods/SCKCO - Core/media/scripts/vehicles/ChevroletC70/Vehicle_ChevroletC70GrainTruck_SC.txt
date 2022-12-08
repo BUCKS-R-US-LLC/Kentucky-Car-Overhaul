@@ -2,117 +2,117 @@ module Base
 {
 	model SC_ChevroletC70GrainTruck
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|base_mesh,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model F700DumpTruckDriver
+	model C70GrainTruckDriver
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckPassenger
+	model C70GrainTruckPassenger
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckWindshield
+	model C70GrainTruckWindshield
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckFrontRightWindow
+	model C70GrainTruckFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model F700DumpTruckFrontLeftWindow
+	model C70GrainTruckFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model F700DumpTruckFrontRightDoor
+	model C70GrainTruckFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model F700DumpTruckFrontLeftDoor
+	model C70GrainTruckFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model F700DumpTruckRearRightWindow
+	model C70GrainTruckRearRightWindow
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckRearLeftWindow
+	model C70GrainTruckRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckTrunk
+	model C70GrainTruckTrunk
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|TrunkDoor_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model F700DumpTruckRearWindshield
+	model C70GrainTruckRearWindshield
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700DumpTruckHood
+	model C70GrainTruckHood
 	{
-		mesh = vehicles/Vehicle_ChevroletC70GrainTruck_SC|Hood_obj,
+		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model F700BoxTruckfrontwheelleft
+	model C70GrainTruckfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
+		mesh = vehicles/Wheels/Vehicle_ChevroletC70_FrontLeftWheel,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckfrontwheelright
+	model C70GrainTruckfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
+		mesh = vehicles/Wheels/Vehicle_ChevroletC70_FrontRightWheel,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckrearwheelleft
+	model C70GrainTruckrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
+		mesh = vehicles/Wheels/Vehicle_ChevroletC70_RearLeftDual,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckrearwheelright
+	model C70GrainTruckrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
+		mesh = vehicles/Wheels/Vehicle_ChevroletC70_RearLeftDual,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
 		shader = vehiclewheel,
 	}
 	vehicle SC_ChevroletC70GrainTruck
@@ -126,46 +126,51 @@ module Base
 		{
 			file = SC_ChevroletC70GrainTruck,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -0.2222,
+			offset = 0.0000 -0.1111 1.0317,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Black,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Caramel,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_DarkCanyon,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Green,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Green,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Orange,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Red,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_White,
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Silver,
 		}
 
-		textureRust = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Rust,
-		textureMask = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_Mask,
-		textureLights = Vehicles/FordF700/Vehicle_ChevroletC70GrainTruck_lights,
-		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
-		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
-		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
-		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
+		skin
+		{
+			texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+		}
+
+		textureRust = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Rust,
+		textureMask = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Masks,
+		textureLights = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_lights,
+		textureDamage1Shell = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Scratch,
+		textureDamage2Shell = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_SCratch,
+		textureDamage1Overlay = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Blood,
+		textureDamage2Overlay = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Blood,
 
 		sound
 		{
@@ -176,12 +181,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.1111 3.0794 8.4444,
+		extents = 3.5556 3.0794 9.7778,
 		mass = 1000,
-		physicsChassisShape = 3.1111 3.0794 8.4444,
-		centerOfMassOffset = 0.0000 1.5556 1.0159,
-		shadowExtents = 3.5474 8.4210,
-		shadowOffset = 0.0000 1.0062,
+		physicsChassisShape = 3.5873 3.0794 9.7460,
+		centerOfMassOffset = 0.0000 1.5556 0.2698,
+		shadowExtents = 3.9759 10.3575,
+		shadowOffset = 0.0000 0.2125,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -204,7 +209,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3810 0.0159 4.4127,
+			offset = -1.3810 0.3968 2.9683,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +217,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.3810 0.0159 4.4127,
+			offset = 1.3810 0.3968 2.9683,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +225,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1746 0.0159 -1.6984,
+			offset = 0.0000 0.3968 -2.3810,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +233,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1746 0.0159 -1.6984,
+			offset = 0.0000 0.3968 -4.2063,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -242,13 +247,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 1.4921 2.6984,
+				offset = 0.6190 2.0317 1.2381,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 0.2222 2.3492,
+				offset = 2.0794 0.0000 1.3651,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -261,13 +266,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6190 1.4921 2.6984,
+				offset = -0.6190 2.0317 1.2381,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 0.2222 2.4762,
+				offset = -2.0476 0.0000 1.4921,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -275,22 +280,22 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.2698 2.8571 2.0000,
+			xywh = 0.0000 4.1905 4.7619 1.2063,
 		}
 
 		area TruckBed
 		{
-			xywh = -0.0159 -1.0476 3.9365 5.4603,
+			xywh = -0.0159 -5.4286 3.5556 1.5873,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1746 2.7778 1.2381 1.2381,
+			xywh = 2.3968 2.3810 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1746 2.7778 1.2381 1.2381,
+			xywh = -2.3968 2.3810 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -300,24 +305,25 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.4921 4.0317 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.3651 4.0317 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 1.4286 -3.1746 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -1.4286 -1.3333 0.0000 0.0000,
 		}
 
+		template = C70Bullbar,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -335,20 +341,20 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = F700DumpTruckDriver,
+				file = C70GrainTruckDriver,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
+			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = F700DumpTruckPassenger,
+				file = C70GrainTruckPassenger,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
+			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part Muffler
@@ -372,7 +378,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = F700DumpTruckHood,
+				file = C70GrainTruckHood,
 			}
 
 			anim Close
@@ -413,7 +419,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordF700HoodSC,
+			itemType = Base.ChevyC70HoodSC,
 		}
 
 		part Heater
@@ -433,7 +439,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = F700DumpTruckWindshield,
+				file = C70GrainTruckWindshield,
 			}
 
 			window
@@ -456,14 +462,14 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordF700WindshieldSC,
+			itemType = Base.ChevyC70WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model WindshieldRear
 			{
-				file = F700DumpTruckRearWindshield,
+				file = C70GrainTruckRearWindshield,
 			}
 
 			window
@@ -486,7 +492,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.FordF700WindshieldSC,
+			itemType = Base.ChevyC70WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -498,7 +504,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = F700DumpTruckFrontRightWindow,
+				file = C70GrainTruckFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -507,34 +513,34 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.ChevyC70SideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = F700DumpTruckFrontLeftWindow,
+				file = C70GrainTruckFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowBone,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
+			itemType = Base.ChevyC70SideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordF700SideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = F700DumpTruckFrontRightDoor,
+				file = C70GrainTruckFrontRightDoor,
 			}
 
 			anim Close
@@ -565,14 +571,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = Base.ChevyC70DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = F700DumpTruckFrontLeftDoor,
+				file = C70GrainTruckFrontLeftDoor,
 			}
 
 			anim Close
@@ -603,7 +609,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = Base.ChevyC70DoorSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -624,7 +630,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckfrontwheelleft,
+				file = C70GrainTruckfrontwheelleft,
 			}
 		}
 
@@ -632,7 +638,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckfrontwheelright,
+				file = C70GrainTruckfrontwheelright,
 			}
 		}
 
@@ -640,7 +646,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckrearwheelleft,
+				file = C70GrainTruckrearwheelleft,
 			}
 		}
 
@@ -648,7 +654,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckrearwheelright,
+				file = C70GrainTruckrearwheelright,
 			}
 		}
 
@@ -707,21 +713,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.0952 1.0159,
-			extents = 3.1111 2.2063 8.4921,
+			offset = 0.0000 2.0952 0.1270,
+			extents = 3.4603 2.2063 9.5079,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -5.5556,
+			offset = 0.0000 0.5238 -5.6508,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 5.4921,
+			offset = -0.0159 0.9841 4.1270,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
