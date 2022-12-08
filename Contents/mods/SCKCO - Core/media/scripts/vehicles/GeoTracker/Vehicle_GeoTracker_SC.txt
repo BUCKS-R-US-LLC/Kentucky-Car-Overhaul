@@ -2,32 +2,32 @@ module Base
 {
 	model SC_GeoTracker
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|base_mesh,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model GeoTrackerDriver
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GeoTrackerPassenger
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GeoTrackerWindshield
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GeoTrackerFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model GeoTrackerFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model GeoTrackerRearRightWindow
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model GeoTrackerRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,7 +59,7 @@ module Base
 	}
 	model GeoTrackerFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -67,7 +67,7 @@ module Base
 	}
 	model GeoTrackerFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -75,7 +75,7 @@ module Base
 	}
 	model GeoTrackerTrunk
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -84,7 +84,7 @@ module Base
 	}
 	model GeoTrackerHood
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|Hood_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -92,13 +92,13 @@ module Base
 	}
 	model GeoTrackerRearWindshield
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GeoTrackerSpareWheel
 	{
-		mesh = vehicles/Vehicle_GeoTracker_SC|SpareWheel_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|SpareWheel_obj,
 		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
 		shader = vehiclewheel,
 		scale = 1,
@@ -107,26 +107,26 @@ module Base
 	}
 	model GeoTrackerfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_GeoTracker_LeftWheel,
-		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model GeoTrackerfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_GeoTracker_RightWheel,
-		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model GeoTrackerbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_GeoTracker_LeftWheel,
-		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model GeoTrackerbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_GeoTracker_RightWheel,
-		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
+		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_GeoTracker
@@ -150,17 +150,12 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_White,
+			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Pink,
 		}
 
 		skin
 		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Teal,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_NavyBlue,
+			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Blue,
 		}
 
 		skin
@@ -170,7 +165,17 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_DarkGreen,
+			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Emerald,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Green,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Banana,
 		}
 
 		skin
@@ -178,23 +183,13 @@ module Base
 			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Orange,
 		}
 
-		skin
-		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_Saxon,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker/Vehicle_GeoTracker_SmokeGray,
-		}
-
-		textureMask = Vehicles/GeoTracker/Vehicle_GeoTracker_Mask,
-		textureLights = Vehicles/GeoTracker/Vehicle_GeoTracker_Lights,
-		textureDamage1Overlay = Vehicles/GeoTracker/Vehicle_GeoTracker_Blood,
-		textureDamage2Overlay = Vehicles/GeoTracker/Vehicle_GeoTracker_Blood,
-		textureDamage1Shell = Vehicles/GeoTracker/Vehicle_GeoTracker_Scratch,
-		textureDamage2Shell = Vehicles/GeoTracker/Vehicle_GeoTracker_Scratch,
-		textureRust = Vehicles/GeoTracker/Vehicle_GeoTracker_Rust,
+		textureMask = Vehicles/GeoTracker/Vehicle_GeoTracker89_Mask,
+		textureLights = Vehicles/GeoTracker/Vehicle_GeoTracker89_Lights,
+		textureDamage1Overlay = Vehicles/GeoTracker/Vehicle_GeoTracker89_Blood,
+		textureDamage2Overlay = Vehicles/GeoTracker/Vehicle_GeoTracker89_Blood,
+		textureDamage1Shell = Vehicles/GeoTracker/Vehicle_GeoTracker89_SCratch,
+		textureDamage2Shell = Vehicles/GeoTracker/Vehicle_GeoTracker89_SCratch,
+		textureRust = Vehicles/GeoTracker/Vehicle_GeoTracker89_Rust,
 
 		sound
 		{
