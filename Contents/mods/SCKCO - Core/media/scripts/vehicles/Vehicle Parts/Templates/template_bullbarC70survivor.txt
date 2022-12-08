@@ -14,6 +14,14 @@ module Base
 		scale = 1,
 	}
 
+    model C70ChevySurvivor
+	{
+		mesh = vehicles/Vehicle_C70Survivor_SC|Chevy_obj,
+		shader = vehicle_noreflect,
+		boneWeight = HoodBone 1.0,
+		scale = 1,
+	}
+
 	template vehicle C70BullbarSurvivor
 		{
 		part C70BullbarFabricated
@@ -79,6 +87,59 @@ module Base
 		area = Engine,
             category = bodywork,
             itemType = Base.ChevyC70FabricatedBrushGuardSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+        part C70SurvivorLogo
+        	{
+
+			model C70ChevyLogoSurvivor
+				{
+                		file = C70ChevySurvivor,
+				}
+		area = Engine,
+            category = bodywork,
+            itemType = Base.K5Chevy,
             mechanicRequireKey = false,
 		table install
             {
