@@ -60,14 +60,12 @@ module Base
 	{
 		mesh = vehicles/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
 	}
 	model GeoTrackerRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
 	}
 	model GeoTrackerFrontRightDoor
@@ -107,17 +105,8 @@ module Base
 		mesh = vehicles/Vehicle_GeoTracker89_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindshieldBone 1.0,
-	}
-	model GeoTrackerSpareWheel
-	{
-		mesh = vehicles/Vehicle_GeoTracker89_SC|SpareWheel_obj,
-		texture = vehicles/GeoTracker/Vehicle_GeoTracker_Wheel,
-		shader = vehiclewheel,
-		scale = 1,
 		static = FALSE,
-		boneWeight = WheelBone 1.0,
+		boneWeight = TrunkBone 1.0,
 	}
 	model GeoTrackerfrontwheelleft
 	{
@@ -184,17 +173,12 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Green,
-		}
-
-		skin
-		{
 			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Banana,
 		}
 
 		skin
 		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Orange,
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Brown,
 		}
 
 		textureMask = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Masks,
@@ -222,7 +206,7 @@ module Base
 		shadowOffset = -0.0032 -0.0000,
 		engineForce = 4400,
 		engineQuality = 80,
-		engineLoudness = 120,
+		engineLoudness = 85,
 		maxSpeed = 110f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
@@ -311,6 +295,30 @@ module Base
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5000 1.0333 -1.6167,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5000 1.0333 -1.6167,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
 		area Engine
 		{
 			xywh = 0.0000 3.5000 2.4667 2.0000,
@@ -327,6 +335,16 @@ module Base
 		}
 
 		area SeatFrontRight
+		{
+			xywh = -1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area SeatRearRight
 		{
 			xywh = -1.9167 0.0167 1.3667 1.3667,
 		}
@@ -382,8 +400,6 @@ module Base
 			{
 				file = GeoTrackerPassenger,
 			}
-
-			itemType = Base.GeoTrackerFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -572,10 +588,10 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
@@ -767,6 +783,16 @@ module Base
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
+
+		part TruckBed
+		{
+			itemType = Base.SmallTrunk,
+
+			container
+			{
+				capacity = 20,
+			}
+		}
 
 		part TireFrontLeft
 		{
