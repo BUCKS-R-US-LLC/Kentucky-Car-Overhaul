@@ -7,7 +7,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
-    VehicleZoneDistribution.medium.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 40};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.medium.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
@@ -68,9 +68,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.kyheralds.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.kyheralds.chanceToPartDamage = 5;
 
-    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 30};  
-    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 30};  
-    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 30};  
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 5};  
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 5};  
+    VehicleZoneDistribution.junkyard.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.junkyard.chanceToPartDamage = 60;
 
     VehicleZoneDistribution.trafficjams.vehicles["Base.SUV"] = {index = -1, spawnChance = 7};    

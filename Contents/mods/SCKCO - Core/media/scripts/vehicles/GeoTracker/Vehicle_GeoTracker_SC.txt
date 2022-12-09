@@ -192,12 +192,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 2.4667 2.1333 5.0000,
+		extents = 2.2667 2.1333 5.0000,
 		mass = 600,
-		physicsChassisShape = 2.4667 2.1333 5.0000,
+		physicsChassisShape = 2.2667 2.1333 4.9333,
 		centerOfMassOffset = 0.0000 1.0833 0.0000,
-		shadowExtents = 2.5950 5.1071,
-		shadowOffset = -0.0032 -0.0000,
+		shadowExtents = 2.2450 4.9405,
+		shadowOffset = 0.0135 0.0000,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 85,
@@ -716,7 +716,7 @@ module Base
 				rotate = 0 0 0,
 				scale = 1.0,
 			}
-						
+
 			anim Close
 			{
 				anim = TrunkClosing,
@@ -849,8 +849,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9667 0.0000,
-			extents = 2.4667 1.8667 4.9667,
+			offset = 0.0000 0.9667 -0.0167,
+			extents = 2.2667 1.8667 4.9667,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
