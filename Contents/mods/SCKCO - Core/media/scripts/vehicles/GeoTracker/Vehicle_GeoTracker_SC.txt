@@ -33,11 +33,10 @@ module Base
 	}
 	model GeoTrackerRearWindshield
 	{
-		mesh = vehicles/Vehicle_GeoTracker89_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_GeoTracker89_SC|RearWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
+		boneWeight = RearBone 1.0,
 	}
 	model GeoTrackerFrontRightWindow
 	{
@@ -99,37 +98,33 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model GeoTrackerRearWindshield
-	{
-		mesh = vehicles/Vehicle_GeoTracker89_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearWindshieldBone 1.0,
-	}
 	model GeoTrackerfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
+		scale = 0.8,
 	}
 	model GeoTrackerfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
+		scale = 0.8,
 	}
 	model GeoTrackerbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
+		scale = 0.8,
 	}
 	model GeoTrackerbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
+		scale = 0.8,
 	}
 	vehicle SC_GeoTracker
 	{
@@ -556,32 +551,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
 			itemType = Base.GeoTrackerWindshieldSC,
 		}
 
@@ -747,7 +716,7 @@ module Base
 				rotate = 0 0 0,
 				scale = 1.0,
 			}
-
+						
 			anim Close
 			{
 				anim = TrunkClosing,
