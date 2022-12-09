@@ -4,6 +4,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 40};
@@ -16,6 +17,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.good.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 35};
+    VehicleZoneDistribution.good.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
@@ -84,6 +86,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarTaxi2"] = {index = -1, spawnChance = 10};   
     VehicleZoneDistribution.trafficjams.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 10};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 10};    
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 6};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ToyotaCamry"] = {index = -1, spawnChance = 10};    
