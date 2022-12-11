@@ -2,145 +2,145 @@ module Base
 {
 	model SC_FordTaurus
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model VWRabbitDriver
+	model FordTaurusDriver
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model VWRabbitPassenger
+	model FordTaurusPassenger
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model VWRabbitDouble
+	model FordTaurusDouble
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model VWRabbitWindshield
+	model FordTaurusWindshield
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model VWRabbitFrontRightWindow
+	model FordTaurusFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model VWRabbitFrontLeftWindow
+	model FordTaurusFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model VWRabbitRearRightWindow
+	model FordTaurusRearRightWindow
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model VWRabbitRearLeftWindow
+	model FordTaurusRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model VWRabbitFrontRightDoor
+	model FordTaurusFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model VWRabbitFrontLeftDoor
+	model FordTaurusFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model VWRabbitRearRightDoor
+	model FordTaurusRearRightDoor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model VWRabbitRearLeftDoor
+	model FordTaurusRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model VWRabbitTrunk
+	model FordTaurusTrunk
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model VWRabbitHood
+	model FordTaurusHood
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model VWRabbitRearWindshield
+	model FordTaurusRearWindshield
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model VWRabbitfrontwheelleft
+	model FordTaurusfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_VWRabbit_LeftWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model VWRabbitfrontwheelright
+	model FordTaurusfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_VWRabbit_RightWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model VWRabbitbackwheelleft
+	model FordTaurusbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_VWRabbit_LeftWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model VWRabbitbackwheelright
+	model FordTaurusbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_VWRabbit_RightWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle ModernCar
@@ -159,41 +159,46 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Red,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Blue,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_FullBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Yellow,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_BlackTwo,
 		}
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Green,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Brown,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_LightBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_Green,
 		}
 
-		textureRust = Vehicles/VWRabbit/Vehicle_VWRabbit_rust,
-		textureMask = Vehicles/VWRabbit/Vehicle_VWRabbit_mask,
-		textureLights = Vehicles/VWRabbit/Vehicle_VWRabbit_lights,
-		textureDamage1Shell = Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
-		textureDamage2Shell= Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
-		textureDamage1Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
-		textureDamage2Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus_Grey,
+		}
+
+		textureRust = Vehicles/Taurus86/Vehicle_FordTaurus_rust,
+		textureMask = Vehicles/Taurus86/Vehicle_FordTaurus_mask,
+		textureLights = Vehicles/Taurus86/Vehicle_FordTaurus_lights,
+		textureDamage1Shell = Vehicles/Taurus86/Vehicle_FordTaurus86_SCratch,
+		textureDamage2Shell= Vehicles/Taurus86/Vehicle_FordTaurus86_SCratch,
+		textureDamage1Overlay = Vehicles/Taurus86/Vehicle_FordTaurus_blood,
+		textureDamage2Overlay = Vehicles/Taurus86/Vehicle_FordTaurus_blood,
 
 		sound
 		{
@@ -409,30 +414,30 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = VWRabbitDriver,
+				file = FordTaurusDriver,
 			}
 
-		itemType = Base.VWRabbitFrontSeatSC,
+		itemType = Base.FordTaurusFrontSeatSC,
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = VWRabbitPassenger,
+				file = FordTaurusPassenger,
 			}
 
-		itemType = Base.VWRabbitRearSeatSC,
+		itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			model seatrearLeft
 			{
-				file = VWRabbitDouble,
+				file = FordTaurusDouble,
 			}
 
-		itemType = Base.VWRabbitRearSeatSC,
+		itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part Muffler
@@ -454,7 +459,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = VWRabbitHood,
+				file = FordTaurusHood,
 			}
 
 			anim Close
@@ -495,7 +500,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.VWRabbitHoodSC,
+		itemType = Base.FordTaurusHoodSC,
 		}
 
 		part Heater
@@ -515,7 +520,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = VWRabbitWindshield,
+				file = FordTaurusWindshield,
 			}
 
 			window
@@ -538,7 +543,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.VWRabbitFrontWindshieldSC,
+			itemType = Base.FordTaurusFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -547,7 +552,7 @@ module Base
 
 			model windshieldRear
 			{
-				file = VWRabbitRearWindshield,
+				file = FordTaurusRearWindshield,
 			}
 
 			window
@@ -570,7 +575,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.VWRabbitRearWindshieldSC,
+			itemType = Base.FordTaurusRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -586,7 +591,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = VWRabbitFrontRightWindow,
+				file = FordTaurusFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -595,7 +600,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitFrontSideWindowSC,
+			itemType = Base.FordTaurusFrontSideWindowSC,
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -605,7 +610,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = VWRabbitFrontLeftWindow,
+				file = FordTaurusFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -614,7 +619,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitFrontSideWindowSC,
+			itemType = Base.FordTaurusFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -624,7 +629,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = VWRabbitRearRightWindow,
+				file = FordTaurusRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -633,7 +638,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearSideWindowSC,
+			itemType = Base.FordTaurusRearSideWindowSC,
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -643,7 +648,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = VWRabbitRearLeftWindow,
+				file = FordTaurusRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -652,7 +657,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearSideWindowSC,
+			itemType = Base.FordTaurusRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -662,7 +667,7 @@ module Base
 		{
 			model Default
 			{
-				file = VWRabbitFrontRightDoor,
+				file = FordTaurusFrontRightDoor,
 			}
 
 			anim Close
@@ -693,14 +698,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitDoorSC,
+			itemType = Base.FordTaurusDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = VWRabbitFrontLeftDoor,
+				file = FordTaurusFrontLeftDoor,
 			}
 
 			anim Close
@@ -731,14 +736,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitDoorSC,
+			itemType = Base.FordTaurusDoorSC,
 		}
 
 		part DoorRearRight
 		{
 			model Default
 			{
-				file = VWRabbitRearRightDoor,
+				file = FordTaurusRearRightDoor,
 			}
 
 			anim Close
@@ -769,14 +774,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearDoorSC,
+			itemType = Base.FordTaurusRearDoorSC,
 		}
 
 		part DoorRearLeft
 		{
 			model Default
 			{
-				file = VWRabbitRearLeftDoor,
+				file = FordTaurusRearLeftDoor,
 			}
 
 			anim Close
@@ -807,7 +812,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearDoorSC,
+			itemType = Base.FordTaurusRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -826,7 +831,7 @@ module Base
 
 			model Default
 			{
-				file = VWRabbitTrunk,
+				file = FordTaurusTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -860,7 +865,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitTrunkLidSC,
+			itemType = Base.FordTaurusTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -881,7 +886,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitfrontwheelleft,
+				file = FordTaurusfrontwheelleft,
 			}
 		}
 
@@ -889,7 +894,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitfrontwheelright,
+				file = FordTaurusfrontwheelright,
 			}
 		}
 
@@ -897,7 +902,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitbackwheelleft,
+				file = FordTaurusbackwheelleft,
 			}
 		}
 
@@ -905,7 +910,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitbackwheelright,
+				file = FordTaurusbackwheelright,
 			}
 		}
 
