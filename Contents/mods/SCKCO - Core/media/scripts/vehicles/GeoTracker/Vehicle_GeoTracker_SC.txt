@@ -264,7 +264,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.5833 -0.2167 0.0000,
+				offset = 1.5833 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -283,7 +283,7 @@ module Base
 
 			position outside
 			{
-				offset = -1.6000 -0.0833 0.0000,
+				offset = -1.6000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -299,6 +299,13 @@ module Base
 				offset = 0.5000 1.0333 -1.6167,
 				rotate = 0.0000 0.0000 0.0000,
 			}
+
+			position outside
+			{
+				offset = -1.6000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
 		}
 
 		passenger RearRight
@@ -310,6 +317,13 @@ module Base
 			{
 				offset = -0.5000 1.0333 -1.6167,
 				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.6000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
 			}
 		}
 
@@ -369,7 +383,7 @@ module Base
 		}
 
 		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight
+		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,

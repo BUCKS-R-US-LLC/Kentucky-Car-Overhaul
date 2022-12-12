@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Hood Welding
 	{
-	   Require : JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
+	   Require : GeoTrackerHoodSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
     fixing Fix Hood
 	{
-	   Require : JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
+	   Require : GeoTrackerHoodSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Trunk Lid Welding
     {
-       Require : JeepCherokeeTrunkLidSC2;JeepCJ7TrunkLidSC2,
+       Require : GeoTrackerTrunkLidSC2,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Trunk Lid
 	{
-       Require : JeepCherokeeTrunkLidSC2,
+       Require : GeoTrackerTrunkLidSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module Base
 
 	fixing Fix Door Welding
 	{
-	   Require : JeepCherokeeDoorSC2;JeepCJ7DoorSC2,
+	   Require : GeoTrackerDoorSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -51,7 +51,7 @@ module Base
 
     fixing Fix Car seat
 	{
-	   Require : JeepCherokeeFrontSeatSC2;JeepCherokeeRearSeatSC2;JeepCJ7FrontSeatSC2,
+	   Require : GeoTrackerFrontSeatSC2;GeoTrackerRearSeatSC2,
 	   ConditionModifier : 0.8,
 
        Fixer : DuctTape=2;Mechanics=1,
