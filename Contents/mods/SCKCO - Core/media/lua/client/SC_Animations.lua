@@ -46,6 +46,34 @@ local seatAnimationsProfiles = {
 		---Uses current seat animation from above if none of these are set:
 	},
 
+	["16SideSeater"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+		["seat4"]="Shark_Idle_SidePassenger",
+		["seat5"]="Shark_Idle_SidePassenger2",
+		["seat6"]="Shark_Idle_SidePassenger",
+		["seat7"]="Shark_Idle_SidePassenger2",
+		["seat8"]="Shark_Idle_SidePassenger",
+		["seat9"]="Shark_Idle_SidePassenger2",
+		["seat10"]="Shark_Idle_SidePassenger",
+		["seat11"]="Shark_Idle_SidePassenger2",
+		["seat12"]="Shark_Idle_SidePassenger",
+		["seat13"]="Shark_Idle_SidePassenger2",
+		["seat14"]="Shark_Idle_SidePassenger",
+		["seat15"]="Shark_Idle_SidePassenger2",
+	},
+
+	["6SideSeater"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+		["seat4"]="Shark_Idle_SidePassenger",
+		["seat5"]="Shark_Idle_SidePassenger2",
+	},
+
 	["6Seater"] = {
 		["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
@@ -119,27 +147,9 @@ local vehicleToSeatAnimations = {
 	["Base.CarTaxi"] = "Default",
 	["Base.CarTaxi02"] = "Default",
 
-	["Base.SC_M1008TroopCarrier"] = "6Seater",
-	["Base.SC_M1010Ambulance"] = "6Seater",
-
-	["Base.SC_M35A1"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-		["seat4"]="Shark_Idle_SidePassenger",
-		["seat5"]="Shark_Idle_SidePassenger2",
-		["seat6"]="Shark_Idle_SidePassenger",
-		["seat7"]="Shark_Idle_SidePassenger2",
-		["seat8"]="Shark_Idle_SidePassenger",
-		["seat9"]="Shark_Idle_SidePassenger2",
-		["seat10"]="Shark_Idle_SidePassenger",
-		["seat11"]="Shark_Idle_SidePassenger2",
-		["seat12"]="Shark_Idle_SidePassenger",
-		["seat13"]="Shark_Idle_SidePassenger2",
-		["seat14"]="Shark_Idle_SidePassenger",
-		["seat15"]="Shark_Idle_SidePassenger2",
-	},
+	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
+	["Base.SC_M1010Ambulance"] = "6SideSeater",
+	["Base.SC_M35A1"] = "16SideSeater",
 	
 	["Base.ModernCar"] = "SmallCar",
 	["Base.SC_VWRabbit"] = "SmallCar",
