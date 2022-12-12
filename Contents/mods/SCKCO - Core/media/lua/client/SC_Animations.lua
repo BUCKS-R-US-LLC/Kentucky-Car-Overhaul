@@ -1,3 +1,8 @@
+
+require "Vehicles/TimedActions/ISEnterVehicle"
+require "Vehicles/TimedActions/ISExitVehicle"
+require "Vehicles/TimedActions/ISSwitchVehicleSeat"
+
 -- Credit: Chuck
 -- This is free for anyone to use that needs it for a project but do credit Chuck.
 
@@ -34,110 +39,88 @@ local function parseSeatAnimationSelection(input)
 end
 
 
+local seatAnimationsProfiles = {
+	["Default"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seatDefault"]="Shark_Idle_Passenger",
+		---Uses current seat animation from above if none of these are set:
+	},
+
+	["6Seater"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+		["seat4"]="Shark_Idle_SidePassenger",
+		["seat5"]="Shark_Idle_SidePassenger2",
+	},
+
+	["SmallCar"] = {
+		["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat1"]="Shark_Idle_PassengerRelaxed",
+		["seatDefault"]="Shark_Idle_RearPassenger",
+	},
+
+	["4Seater"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",4,"Shark_Idle_PassengerAlternate"}, -- 4:1 = 4/5 = 20%
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["midSized"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",4,"Shark_Idle_PassengerAlternate"},
+		["seatDefault"]={"Shark_Idle_Passenger",4,"Shark_Idle_PassengerAlternate"},
+	},
+
+	["Ambulance"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]={"Shark_Idle_Passenger",4,"Shark_Idle_PassengerAlternate"},
+		["seat2"]="Shark_Idle_SidePassengerAmbulance",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+}
+
 local vehicleToSeatAnimations = {
 
-	["Base.SC_K5BlazerCiv"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
+	["Base.SC_K5BlazerCiv"] = "Default",
+	["Base.SC_K5BlazerStatePolice"] = "Default",
+	["Base.SC_K5BlazerParkRanger"] = "Default",
+	["Base.SC_K5BlazerFossoil"] = "Default",
+	["Base.PickUpVanMccoy"] = "Default",
+	["Base.PickUpVanLights"] = "Default",
+	["Base.PickUpVanLightsFire"] = "Default",
+	["Base.PickUpVanLightsPolice"] = "Default",
+	["Base.PickUpTruck"] = "Default",
+	["Base.PickUpTruckMccoy"] = "Default",
+	["Base.PickUpTruckLights"] = "Default",
+	["Base.PickUpTruckLightsFire"] = "Default",
+	["Base.PickUpTruck"] = "Default",
+	["Base.SC_K10"] = "Default",
+	["Base.SC_M1008"] = "Default",
+	["Base.SC_M1009"] = "Default",
+	["Base.SC_M1009MilitaryPolice"] = "Default",
+	["Base.SC_FordCountrySquire"] = "Default",
+	["Base.CarStationWagon"] = "Default",
+	["Base.CarStationWagon2"] = "Default",
+	["Base.CarLights"] = "Default",
+	["Base.CarLightsPolice"] = "Default",
+	["Base.SC_CrownVictoriaCiv"] = "Default",
+	["Base.SC_CrownVictoriaStatePolice"] = "Default",
+	["Base.SC_CrownVictoriaParkRanger"] = "Default",
+	["Base.SC_CrownVictoriaLVPD"] = "Default",
+	["Base.SC_CrownVictoriaTaxi"] = "Default",
+	["Base.SC_CapriceCiv"] = "Default",
+	["Base.SC_Caprice9C1StatePolice"] = "Default",
+	["Base.SC_Caprice9C1ParkRanger"] = "Default",
+	["Base.SC_CapriceLVPD"] = "Default",
+	["Base.CarNormal"] = "Default",
+	["Base.CarTaxi"] = "Default",
+	["Base.CarTaxi02"] = "Default",
 
-	["Base.SC_K5BlazerStatePolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_K5BlazerParkRanger"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-	
-	["Base.SC_K5BlazerFossoil"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpVanMccoy"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpVanLights"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpVanLightsFire"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpVanLightsPolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpTruck"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpTruckMccoy"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpTruckLights"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpTruckLightsFire"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.PickUpTruck"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_K10"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_M1008"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_M1009"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_M1009MilitaryPolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_M1008TroopCarrier"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-		["seat4"]="Shark_Idle_SidePassenger",
-		["seat5"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.SC_M1010Ambulance"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-		["seat4"]="Shark_Idle_SidePassenger",
-		["seat5"]="Shark_Idle_SidePassenger2",
-	},
+	["Base.SC_M1008TroopCarrier"] = "6Seater",
+	["Base.SC_M1010Ambulance"] = "6Seater",
 
 	["Base.SC_M35A1"] = {
         ["seat0"]="Bob_Idle_Driver",
@@ -158,231 +141,28 @@ local vehicleToSeatAnimations = {
 		["seat15"]="Shark_Idle_SidePassenger2",
 	},
 	
-	["Base.ModernCar"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
+	["Base.ModernCar"] = "SmallCar",
+	["Base.SC_VWRabbit"] = "SmallCar",
+	["Base.SC_HondaAccord"] = "SmallCar",
+	["Base.SmallCar"] = "SmallCar",
+	["Base.SmallCar02"] = "SmallCar",
 
-	["Base.SC_VWRabbit"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
+	["Base.SportsCar"] = "midSized",
+	["Base.SC_CamaroTTop"] = "midSized",
+	["Base.SC_Mercedes280"] = "midSized",
+	["Base.CarLuxury"] = "midSized",
 
-	["Base.SC_FordCountrySquire"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
+	["Base.SC_StepVanP30Civ"] = "4Seater",
+	["Base.SC_StepVanP30Police"] = "4Seater",
+	["Base.SC_StepVanP30ParkRanger"] = "4Seater",
+	["Base.StepVan"] = "4Seater",
+	["Base.StepVan_Scarlet"] = "4Seater",
+	["Base.StepVan_Heralds"] = "4Seater",
+	["Base.StepVanMail"] = "4Seater",
 
-	["Base.CarStationWagon"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["passenger"]="Shark_Idle_Passenger",
-    },
+	["Base.SC_G30Ambulance"] = "Ambulance",
+	["Base.VanAmbulance"] = "Ambulance",
 
-	["Base.CarStationWagon2"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.CarLights"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.CarLightsPolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CrownVictoriaCiv"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CrownVictoriaStatePolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CrownVictoriaParkRanger"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CrownVictoriaLVPD"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CrownVictoriaTaxi"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CapriceCiv"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },	
-
-	["Base.SC_Caprice9C1StatePolice"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },	
-
-	["Base.SC_Caprice9C1ParkRanger"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SC_CapriceLVPD"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },	
-	
-	["Base.CarNormal"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.CarTaxi"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.CarTaxi02"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger",},
-		["passenger"]={"Shark_Idle_Passenger",},
-    },
-
-	["Base.SportsCar"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-	},
-
-	["Base.SC_CamaroTTop"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-	},
-
-	["Base.SC_Mercedes280"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",50},
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-	},
-
-	["Base.CarLuxury"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-		["passenger"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-	},
-
-	["Base.SC_VWRabbit"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
-
-	["Base.SC_HondaAccord"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
-
-	["Base.SmallCar"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
-
-	["Base.SmallCar02"] = {
-        ["seat0"]="Shark_Idle_SmallCarDriver",
-		["seat1"]="Shark_Idle_PassengerRelaxed",
-        ["passenger"]="Shark_Idle_RearPassenger",
-	},
-
-	["Base.SC_StepVanP30Civ"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.SC_StepVanP30Police"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.SC_StepVanP30ParkRanger"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.StepVan"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.StepVan_Scarlet"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.StepVan_Heralds"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.StepVanMail"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-	
-	["Base.SC_G30Ambulance"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassengerAmbulance",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-
-	["Base.VanAmbulance"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]={"Shark_Idle_Passenger","Shark_Idle_PassengerAlternate",20},
-        ["seat2"]="Shark_Idle_SidePassengerAmbulance",
-		["seat3"]="Shark_Idle_SidePassenger2",
-	},
-	
 	["Base.SC_CadillacFuneralCoach"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
@@ -458,40 +238,56 @@ local vehicleToSeatAnimations = {
 	},
 }
 
----@param player IsoPlayer|IsoGameCharacter
-local function Vehicle_Enter(player)
-    ---@type BaseVehicle
+
+local function fetchAnimForVehicle(vehicle, player)
+	local vehicleName = vehicle:getScriptName()
+	local seat = vehicle:getSeat(player)
+	if not seat then return end
+
+	local vehicleAnimationSet = vehicleToSeatAnimations[vehicleName]
+	--use the `vehicleAnimationSet` as a profile ID if it's not a table
+	print(" - vehicleAnimationSet: "..type(vehicleAnimationSet).." "..tostring(vehicleAnimationSet))
+	vehicleAnimationSet = (type(vehicleAnimationSet) == "table" and vehicleAnimationSet) or seatAnimationsProfiles[vehicleAnimationSet]
+
+	if not vehicleAnimationSet then return end
+	local fetchedAnimation = vehicleAnimationSet["seat"..seat] or vehicleAnimationSet["seatDefault"]
+	return fetchedAnimation, seat
+end
+
+
+local enter_start = ISEnterVehicle.start
+function ISEnterVehicle:start()
+    enter_start(self)
+    self.character:SetVariable("SCUCK_Anim", "True")
+end
+
+
+local function applySeatAnim(player)
     local vehicle = player:getVehicle()
     if not vehicle then return end
 
     local vehicleName = vehicle:getScriptName()
-    print("SC_ANIM: DEBUG: "..vehicleName)
+    local vehicleAnimationSet = vehicleToSeatAnimations[vehicleName]
 
-    local seat = vehicle:getSeat(player)
-    print(" -- Seat: "..seat)
-    if not seat then return end
+    if vehicleAnimationSet then return end
 
-    local vehicleAnimation = vehicleToSeatAnimations[vehicleName]
-    if not vehicleAnimation then return end
+    local fetchedAnim, seat = fetchAnimForVehicle(vehicle, player)
+    if not fetchedAnim or not seat then print("ERROR: SCKCO(SCUCK) -enter -No fetchedAnimation or no seat!") return end
 
-    local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
-    if not fetchedAnimation then return end
-
-    fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
-    print(" ---- Anim Selected: "..fetchedAnimation)
-
-    if fetchedAnimation then
-        player:SetVariable("VehicleScriptName", fetchedAnimation)
+    if fetchedAnim then
+        fetchedAnim = parseSeatAnimationSelection(fetchedAnim)
+        print(" ---- Anim Selected: Enter_complete: "..tostring(fetchedAnim))
+        if fetchedAnim then
+            player:SetVariable("VehicleScriptName", fetchedAnim)
+        end
     end
 end
+Events.OnEnterVehicle.Add(applySeatAnim)
+Events.OnSwitchVehicleSeat.Add(applySeatAnim)
 
 
-Events.OnEnterVehicle.Add(Vehicle_Enter)
-Events.OnSwitchVehicleSeat.Add(Vehicle_Enter)
-
-
-local function Vehicle_Exit(player)
-    --sendClientCommand(player, "SC_VehicleAnim", "PlayerExit", {})
+local function exitVehicle(player)
     player:SetVariable("VehicleScriptName", "")
+    player:SetVariable("SCUCK_Anim", "False")
 end
-Events.OnExitVehicle.Add(Vehicle_Exit)
+Events.OnExitVehicle.Add(exitVehicle)

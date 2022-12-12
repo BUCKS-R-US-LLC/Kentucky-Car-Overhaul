@@ -2,65 +2,7 @@ require "Vehicles/ISUI/ISVehicleSeatUI"
 
 local FONT_HGT_LARGE = getTextManager():getFontHeight(UIFont.Large)
 
-local ImageScale = {}
-ImageScale["4door_"] = 1.0
-ImageScale["offroad_"] = 1.0
-ImageScale["smallcar_"] = 1.1
-ImageScale["sportscar_"] = 1.15
-ImageScale["stationwagon_"] = 1.15
-ImageScale["suv_"] = 1.0
-ImageScale["truck_"] = 1.1
-ImageScale["van_"] = 1.1
-
-local SeatOffsetY = {}
-SeatOffsetY["Base.CarNormal"] = 4
-SeatOffsetY["Base.CarTaxi"] = SeatOffsetY["Base.CarNormal"]
-SeatOffsetY["Base.CarTaxi2"] = SeatOffsetY["Base.CarNormal"]
-SeatOffsetY["Base.PickUpTruck"] = 3
-SeatOffsetY["Base.PickUpVan"] = SeatOffsetY["Base.PickUpTruck"]
-SeatOffsetY["Base.PickUpVanLights"] = SeatOffsetY["Base.PickUpTruck"]
-SeatOffsetY["Base.PickUpVanLightsFire"] = SeatOffsetY["Base.PickUpTruck"]
-SeatOffsetY["Base.PickUpTruckLightsFire"] = SeatOffsetY["Base.PickUpTruck"]
-SeatOffsetY["Base.PickUpTruckLights"] = SeatOffsetY["Base.PickUpTruck"]
-SeatOffsetY["Base.SmallCar"] = 15
-SeatOffsetY["Base.SmallCar02"] = 0
-SeatOffsetY["Base.CarStationWagon"] = -9
-SeatOffsetY["Base.CarLuxury"] = 0
-SeatOffsetY["Base.SportsCar"] = -6
-SeatOffsetY["Base.StepVan"] = -3
-SeatOffsetY["Base.Van"] = 3
-SeatOffsetY["Base.VanAmbulance"] = SeatOffsetY["Base.Van"]
-SeatOffsetY["Base.VanSeats"] = SeatOffsetY["Base.StepVan"]
-SeatOffsetY["Base.ModernCar"] = 7
-SeatOffsetY["Base.ModernCar02"] = 15
-SeatOffsetY["Base.SUV"] = -2
-SeatOffsetY["Base.OffRoad"] = 30
-
 SeatOffsetY["Base.SC_M35A1"] = -110
-
-local SeatOffsetX = {}
-SeatOffsetX["Base.PickUpTruck"] = 0
-SeatOffsetX["Base.PickUpVan"] = SeatOffsetX["Base.PickUpTruck"]
-SeatOffsetX["Base.PickUpVanLights"] = SeatOffsetX["Base.PickUpTruck"]
-SeatOffsetX["Base.PickUpVanLightsFire"] = SeatOffsetX["Base.PickUpTruck"]
-SeatOffsetX["Base.PickUpTruckLightsFire"] = SeatOffsetX["Base.PickUpTruck"]
-SeatOffsetX["Base.PickUpTruckLights"] = SeatOffsetX["Base.PickUpTruck"]
-SeatOffsetX["Base.SmallCar"] = 0
-SeatOffsetX["Base.SmallCar02"] = SeatOffsetX["Base.SmallCar"]
-SeatOffsetX["Base.CarStationWagon"] = 0
-SeatOffsetX["Base.CarNormal"] = 0
-SeatOffsetX["Base.CarTaxi"] = SeatOffsetX["Base.CarNormal"]
-SeatOffsetX["Base.CarTaxi2"] = SeatOffsetX["Base.CarNormal"]
-SeatOffsetX["Base.StepVan"] = 0
-SeatOffsetX["Base.Van"] = 0
-SeatOffsetX["Base.VanSeats"] = SeatOffsetX["Base.StepVan"]
-SeatOffsetX["Base.VanAmbulance"] = SeatOffsetX["Base.Van"]
-SeatOffsetX["Base.CarLuxury"] = 0
-SeatOffsetX["Base.SportsCar"] = 0
-SeatOffsetX["Base.ModernCar"] = 0
-SeatOffsetX["Base.ModernCar02"] = SeatOffsetX["Base.ModernCar"]
-SeatOffsetX["Base.SUV"] = 0
-SeatOffsetX["Base.OffRoad"] = 2
 
 local function seatUIAdaptiveRendering(tbl, x, y, x2, y2)
     if tbl[x] then
