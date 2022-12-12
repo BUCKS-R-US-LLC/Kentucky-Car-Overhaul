@@ -117,28 +117,28 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordTaurusDoorfrontwheelleft
+	model FordTaurusfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
-		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus86_LeftWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordTaurusDoorfrontwheelright
+	model FordTaurusfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
-		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus86_RightWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordTaurusDoorbackwheelleft
+	model FordTaurusbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
-		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus86_LeftWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordTaurusDoorbackwheelright
+	model FordTaurusbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
-		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_FordTaurus86_RightWheel,
+		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordTaurus
@@ -152,7 +152,7 @@ module Base
 		{
 			file = SC_FordTaurus,
 			scale = 0.5900,
-			offset = 0.0000 -0.2542 0.3559,
+			offset = 0.0000 -0.3559 0.3559,
 		}
 
 		skin
@@ -210,7 +210,7 @@ module Base
 		extents = 2.7119 1.3898 7.3220,
 		mass = 800,
 		physicsChassisShape = 2.7119 1.3898 7.3220,
-		centerOfMassOffset = 0.0000 0.6610 0.1186,
+		centerOfMassOffset = 0.0000 0.6949 0.1186,
 		shadowExtents = 2.7965 7.5602,
 		shadowOffset = -0.0032 0.1325,
 		engineForce = 4201,
@@ -236,7 +236,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.1864 0.3220 1.9492,
+			offset = -1.1864 0.4237 1.9492,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -244,7 +244,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.1864 0.3220 1.9492,
+			offset = 1.1864 0.4237 1.9492,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -252,7 +252,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1864 0.3220 -2.2203,
+			offset = -1.1864 0.4237 -2.2203,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -260,7 +260,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1864 0.3220 -2.2203,
+			offset = 1.1864 0.4237 -2.2203,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -274,7 +274,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6102 0.9492 -0.1864,
+				offset = 0.6102 0.8814 -0.1864,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -293,7 +293,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6102 0.9492 -0.1864,
+				offset = -0.6102 0.8814 -0.1864,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -312,7 +312,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5932 0.9322 -1.4746,
+				offset = 0.5932 0.8644 -1.4746,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -331,7 +331,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5932 0.9322 -1.4746,
+				offset = -0.5932 0.8644 -1.4746,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
