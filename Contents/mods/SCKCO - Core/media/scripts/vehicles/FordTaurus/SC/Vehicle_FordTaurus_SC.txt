@@ -1,0 +1,983 @@
+module Base
+{
+	model SC_FordTaurus
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model FordTaurusDriver
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordTaurusPassenger
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordTaurusDouble
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearrDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordTaurusWindshield
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordTaurusFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model FordTaurusFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model FordTaurusRearRightWindow
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model FordTaurusRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model FordTaurusFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model FordTaurusFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model FordTaurusRearRightDoor
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model FordTaurusRearLeftDoor
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model FordTaurusTrunk
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model FordTaurusHood
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model FordTaurusRearWindshield
+	{
+		mesh = vehicles/Vehicle_FordTaurus86_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordTaurusDoorfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
+		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model FordTaurusDoorfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
+		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model FordTaurusDoorbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_LeftWheel,
+		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model FordTaurusDoorbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_FordTaurus_RightWheel,
+		texture = vehicles/FordTaurus/Vehicle_FordTaurusSC_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_FordTaurus
+	{
+		mechanicType = 1,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_FordTaurus,
+			scale = 0.5900,
+			offset = 0.0000 -0.2542 0.3559,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_FullBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_BlackTwo,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Blue,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_LightBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Green,
+		}
+
+		skin
+		{
+			texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Grey,
+		}
+
+		textureRust = Vehicles/Taurus86/Vehicle_FordTaurus86_rust,
+		textureMask = Vehicles/Taurus86/Vehicle_FordTaurus86_mask,
+		textureLights = Vehicles/Taurus86/Vehicle_FordTaurus86_lights,
+		textureDamage1Shell = Vehicles/Taurus86/Vehicle_FordTaurus86_Scratch,
+		textureDamage2Shell= Vehicles/Taurus86/Vehicle_FordTaurus86_Scratch,
+		textureDamage1Overlay = Vehicles/Taurus86/Vehicle_FordTaurus86_blood,
+		textureDamage2Overlay = Vehicles/Taurus86/Vehicle_FordTaurus86_blood,
+
+		sound
+		{
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 2.7119 1.3898 7.3220,
+		mass = 800,
+		physicsChassisShape = 2.7119 1.3898 7.3220,
+		centerOfMassOffset = 0.0000 0.6610 0.1186,
+		shadowExtents = 2.7965 7.5602,
+		shadowOffset = -0.0032 0.1325,
+		engineForce = 4201,
+		gearRatioCount = 4,
+		maxSpeed = 110f,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.95f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1350,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = -1.1864 0.3220 1.9492,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = 1.1864 0.3220 1.9492,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -1.1864 0.3220 -2.2203,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 1.1864 0.3220 -2.2203,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6102 0.9492 -0.1864,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0508 0.0000 0.1017,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6102 0.9492 -0.1864,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0508 0.0000 0.1017,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5932 0.9322 -1.4746,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0508 0.0000 -0.9831,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5932 0.9322 -1.4746,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0508 0.0000 -0.9831,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.7797 2.7119 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -4.4407 2.7119 1.7966,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.0339 0.6441 1.3559 1.3559,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.0339 0.6441 1.3559 1.3559,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.0339 -0.8305 1.3559 1.3559,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.0339 -0.8305 1.3559 1.3559,
+		}
+
+		area GasTank
+		{
+			xywh = -1.8983 -2.5424 1.0847 0.5763,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.3559 2.2881 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3559 2.2881 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.3559 -1.8644 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.3559 -1.8644 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = FordTaurusDriver,
+			}
+
+			itemType = Base.FordTaurusFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = FordTaurusPassenger,
+			}
+
+			itemType = Base.FordTaurusFrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = FordTaurusDouble,
+			}
+
+			itemType = Base.FordTaurusRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = FordTaurusDouble,
+			}
+
+			itemType = Base.FordTaurusRearSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = FordTaurusHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.FordTaurusHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = FordTaurusWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.FordTaurusFrontWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = FordTaurusRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.FordTaurusRearWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = FordTaurusFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.FordTaurusFrontSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = FordTaurusFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.FordTaurusFrontSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = FordTaurusRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
+			itemType = Base.FordTaurusRearSideWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = FordTaurusRearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = Base.FordTaurusRearSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = FordTaurusFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordTaurusDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = FordTaurusFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordTaurusDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = FordTaurusRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordTaurusRearDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = FordTaurusRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordTaurusRearDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = FordTaurusTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordTaurusTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FordTaurusfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FordTaurusfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FordTaurusbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FordTaurusbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.9492 0.1356,
+			extents = 2.6780 1.8644 7.3390,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.7458 -3.8644,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.5932 3.3898,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
