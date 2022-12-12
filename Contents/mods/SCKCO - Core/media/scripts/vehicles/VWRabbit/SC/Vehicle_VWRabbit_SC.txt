@@ -204,7 +204,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.5574 1.4098 5.5410,
+        extents = 2.5574 1.4098 5.5410,
 		mass = 800,
 		physicsChassisShape = 2.5574 1.4098 5.6066,
 		centerOfMassOffset = 0.0000 0.6557 0.1639,
@@ -411,6 +411,8 @@ module Base
 			{
 				file = VWRabbitDriver,
 			}
+
+		itemType = Base.VWRabbitFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -419,6 +421,8 @@ module Base
 			{
 				file = VWRabbitPassenger,
 			}
+
+		itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -427,6 +431,8 @@ module Base
 			{
 				file = VWRabbitDouble,
 			}
+
+		itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part Muffler
@@ -488,6 +494,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.VWRabbitHoodSC,
 		}
 
 		part Heater
@@ -529,6 +537,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.VWRabbitFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -559,6 +569,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.VWRabbitRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -583,6 +595,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.VWRabbitFrontSideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -599,6 +613,8 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitFrontSideWindowSC,
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -617,6 +633,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.VWRabbitRearSideWindowSC,
+
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -633,6 +651,8 @@ module Base
 				anim = RearLeftWindowClosing,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitRearSideWindowSC,
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -672,6 +692,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -708,6 +730,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		part DoorRearRight
@@ -744,6 +768,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -780,6 +806,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -831,6 +859,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.VWRabbitTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

@@ -137,6 +137,8 @@ local vehicleToSeatAnimations = {
 		["seat11"]="Shark_Idle_SidePassenger2",
 		["seat12"]="Shark_Idle_SidePassenger",
 		["seat13"]="Shark_Idle_SidePassenger2",
+		["seat14"]="Shark_Idle_SidePassenger",
+		["seat15"]="Shark_Idle_SidePassenger2",
 	},
 	
 	["Base.ModernCar"] = "SmallCar",
@@ -161,6 +163,79 @@ local vehicleToSeatAnimations = {
 	["Base.SC_G30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",
 
+	["Base.SC_CadillacFuneralCoach"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+        ["seat2"]="Bob_SitGround_Idle",
+		["seat3"]="Bob_SitGround_Idle",
+	},
+
+	["Base.SC_FordBronco"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF150"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_PlymouthVoyager"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+		["seat4"]="Shark_Idle_Passenger",
+		["seat5"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF700BoxTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF700PanelTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordF700ArmoredPolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_FordF700ArmoredBank"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_ChevroletC70GrainTruck"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_ChevroletC70Survivalist"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_GeoTracker"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_FordTaurus"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
 }
 
 
@@ -207,8 +282,8 @@ local function applySeatAnim(player)
         end
     end
 end
---Events.OnEnterVehicle.Add(applySeatAnim)
---Events.OnSwitchVehicleSeat.Add(applySeatAnim)
+Events.OnEnterVehicle.Add(applySeatAnim)
+Events.OnSwitchVehicleSeat.Add(applySeatAnim)
 
 
 local function exitVehicle(player)

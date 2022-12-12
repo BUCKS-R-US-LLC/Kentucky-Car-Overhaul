@@ -1,0 +1,770 @@
+module Base
+{
+	model SC_JeepCJ7
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+	model JeepCJ7Driver
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepCJ7Passenger
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepCJ7Windshield
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|WindShield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepCJ7FrontRightWindow
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model JeepCJ7FrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model JeepCJ7RearRightWindow
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model JeepCJ7RearLeftWindow
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model JeepCJ7FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model JeepCJ7FrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model JeepCJ7Trunk
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = WheelBone 1.0,
+	}
+	model JeepCJ7Hood
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model JeepCJ7RearWindshield
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepCJ7SpareWheel
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|SpareWheel_obj,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+		scale = 1,
+		static = FALSE,
+		boneWeight = WheelBone 1.0,
+	}
+	model JeepCJ7frontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCJ7frontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCJ7backwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCJ7backwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle OffRoad
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.5,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_JeepCJ7,
+			scale = 0.5900,
+			offset = 0.0000 0.0000 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_White,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Teal,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_NavyBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_DarkGreen,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Orange,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Saxon,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_SmokeGray,
+		}
+
+		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Mask,
+		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Lights,
+		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Scratch,
+		textureRust = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Rust,
+
+		sound
+		{
+			engine = VehicleEngineOffRoad,
+			engineStart = VehicleEngineOffRoad,
+			engineTurnOff = VehicleEngineOffRoad,
+			horn = VehicleHornJeep,
+			ignitionFail = VehicleIgnitionFailOffRoad,
+		}
+
+		extents = 2.5763 2.1356 5.5254,
+		mass = 600,
+		physicsChassisShape = 2.4746 2.1356 5.5254,
+		centerOfMassOffset = 0.0000 1.0847 0.1864,
+		shadowExtents = 2.7117 5.7404,
+		shadowOffset = -0.0032 0.1833,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = -1.0000 0.2203 2.0169,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = 1.0169 0.2203 2.0169,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -1.0000 0.2203 -1.5424,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 1.0169 0.2203 -1.5424,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6102 1.3051 -0.4407,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0508 -0.4237 0.5085,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5932 1.3051 -0.4407,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1525 -0.4237 0.5085,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.0169 2.5424 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -3.8983 2.5763 1.7627,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.9661 -0.2203 1.3559 1.3559,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.9661 -0.2203 1.3559 1.3559,
+		}
+
+		area GasTank
+		{
+			xywh = -0.9831 -2.8983 0.6102 0.6441,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.2881 1.9322 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.2881 1.9322 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.2881 -1.5254 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.2881 -1.5254 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = JeepCJ7Driver,
+			}
+
+			itemType = Base.JeepCJ7FrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = JeepCJ7Passenger,
+			}
+
+			itemType = Base.JeepCJ7FrontSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = JeepCJ7Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.JeepCJ7HoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = CJ7softtop/part/CJ7softtop,
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = JeepCJ7Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.JeepCJ7WindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = JeepCJ7FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+
+            itemType = Base.JeepCJ7SideWindowSC,
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = JeepCJ7FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+            itemType = Base.JeepCJ7SideWindowSC,
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = JeepCJ7FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.JeepCJ7DoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = JeepCJ7FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.JeepCJ7DoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = JeepCJ7Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.JeepCJ7TrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepCJ7frontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepCJ7frontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepCJ7backwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepCJ7backwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.9661 0.1356,
+			extents = 2.4746 1.8644 5.5254,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.0169 -2.7119,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 2.9153,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

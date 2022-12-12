@@ -1,0 +1,194 @@
+module Base
+{
+	model C70SurvivorBullbar
+	{
+		mesh = vehicles/Vehicle_C70Survivor_SC|SurvivorBar_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+		scale = 1,
+	}
+
+	model C70SurvivorHead
+	{
+		mesh = vehicles/Vehicle_C70Survivor_SC|SurvivorHead_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+    model C70ChevySurvivor
+	{
+		mesh = vehicles/Vehicle_C70Survivor_SC|Chevy_obj,
+		shader = vehicle_noreflect,
+        static = FALSE,
+		boneWeight = HoodBone 1.0,
+		scale = 1,
+	}
+
+	template vehicle C70BullbarSurvivor
+		{
+		part C70BullbarFabricated
+        	{
+
+			model C70SurvivorSurvivorBullbar
+				{
+                		file = C70SurvivorBullbar,
+				}
+		parent = EngineDoor,
+		area = Engine,
+            category = bodywork,
+            itemType = Base.ChevyC70FabricatedBullbarSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+        part C70BrushGuardFabricated
+        	{
+
+			model C70SurvivorHeadFabricated
+				{
+                		file = C70SurvivorHead,
+				}
+		area = Engine,
+            category = bodywork,
+            itemType = Base.ChevyC70FabricatedBrushGuardSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+        part C70SurvivorLogo
+        	{
+
+			model C70ChevyLogoSurvivor
+				{
+                		file = C70ChevySurvivor,
+				}
+		area = Engine,
+            category = bodywork,
+            category = nodisplay,
+            itemType = Base.K5Chevy,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+
+	}	
+	
+}

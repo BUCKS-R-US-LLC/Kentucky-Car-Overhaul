@@ -1,0 +1,69 @@
+module Base
+{
+
+	fixing Fix Ford Bullbar
+    {
+       Require : F700Bullbar2,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+	fixing Fix Ford Hood Welding
+	{
+	   Require : FordCrownVictoriaHoodSC1;FordBroncoHoodSC2;FordF700HoodSC2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+    fixing Fix Ford Hood
+	{
+	   Require : FordCrownVictoriaHoodSC1;FordBroncoHoodSC2;FordF700HoodSC2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix Ford Trunk Lid Welding
+    {
+       Require : FordCrownVictoriaTrunkLidSC1;FordBroncoTrunkLidSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Ford Trunk Lid
+	{
+       Require : FordCrownVictoriaTrunkLidSC1;FordBroncoTrunkLidSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix Ford Door Welding
+	{
+	   Require : FordCrownVictoriaDoorSC1;FordBroncoDoorSC2;FordF700DoorSC2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+    fixing Fix Ford Car seat
+	{
+	   Require : FordCrownVictoriaFrontSeatSC1;FordCrownVictoriaRearSeatSC1;FordBroncoFrontSeatSC2;FordBroncoRearSeatSC2;FordF700FrontSeatSC2,
+	   ConditionModifier : 0.8,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+}

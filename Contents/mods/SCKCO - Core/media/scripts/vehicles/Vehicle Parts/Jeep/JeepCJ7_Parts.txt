@@ -1,0 +1,110 @@
+module Base
+{
+
+        item JeepCJ7DoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10,
+        Type	=	Normal,
+        DisplayName	= Jeep CJ-7 Door,
+        Icon	=	BlazerFrontDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item JeepCJ7WindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ-7 Windshield,
+        Icon	=	BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item JeepCJ7SideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ-7 Side Window,
+        Icon	= BlazerFrontWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
+    }
+
+        item JeepCJ7HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ-7 Hood,
+        Icon	=	BlazerHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Hood_WorldItem,
+    }
+
+        item JeepCJ7TrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ-7 Trunk Lid,
+        Icon	=	BlazerTrunkLid,
+        VehicleType =  2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5TrunkLid_WorldItem,
+    }
+
+        item JeepCJ7FrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	= Jeep CJ-7 Front Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        MaxCapacity = 5,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item JeepCJ7RearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	= Jeep CJ-7 Rear Seat,
+        Icon	=	BlazerFrontSeat,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MaxCapacity = 5,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+    	item CJ7softtop2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ7 Soft-top,
+        Icon	=	CJ7Tarp,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_CJ7Tarp,
+        WorldStaticModel = CJ7Tarp_WorldItem,
+    }
+}

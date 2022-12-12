@@ -212,7 +212,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.6452 1.8710 7.0000,
+				extents = 2.6452 1.8710 7.0000,
 		mass = 800,
 		physicsChassisShape = 2.6452 2.1290 7.0000,
 		centerOfMassOffset = 0.0000 1.0968 -0.0484,
@@ -277,15 +277,636 @@ module Base
 			showPassenger = true,
 			hasRoof = true,
 
-			position inside
+		position inside
+		{
+			offset = 0.6129 0.7742 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		position outside
+		{
+			offset = 2.0484 -0.4194 0.5161,
+	        xywh = 2.0000 -0.8065 1.3548 1.3548,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.0000 -0.8065 1.3548 1.3548,
+		}
+
+		area GasTank
+		{
+			xywh = -1.8871 -1.9194 1.1290 0.6452,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.3226 2.2581 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3226 2.2581 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.3226 -1.8065 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.3226 -1.8065 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
 			{
-				offset = 0.6129 0.7742 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
+				file = Mercedes280Driver,
 			}
 
-			position outside
+		itemType = Base.Mercedes280FrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
 			{
-				offset = 2.0484 -0.4194 0.5161,
+				file = Mercedes280Passenger,
+			}
+			
+		itemType = Base.Mercedes280FrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = Mercedes280Double,
+			}
+			
+		itemType = Base.Mercedes280RearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = Mercedes280Double,
+			}
+
+		itemType = Base.Mercedes280RearSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ModernCarMuffler,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = Mercedes280Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.Mercedes280HoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = Mercedes280Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.Mercedes280FrontWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = Mercedes280RearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.Mercedes280RearWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = Mercedes280FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+
+			itemType = Base.Mercedes280FrontSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = Mercedes280FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+
+			itemType = Base.Mercedes280FrontSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = Mercedes280RearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
+
+			itemType = Base.Mercedes280RearSideWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = Mercedes280RearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+
+			itemType = Base.Mercedes280RearSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = Mercedes280FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.Mercedes280DoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = Mercedes280FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.Mercedes280DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = Mercedes280RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.Mercedes280RearDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = Mercedes280RearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Mercedes280RearDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = Mercedes280Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.Mercedes280TrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Mercedes280frontwheelleft,
+			}
+
+			itemType = Base.ModernTire,
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Mercedes280frontwheelright,
+			}
+
+			itemType = Base.ModernTire,
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Mercedes280backwheelleft,
+			}
+			itemType = Base.ModernTire,
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Mercedes280backwheelright,
+			}
+			itemType = Base.ModernTire,
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.9683 0.0159,
+			extents = 3.1111 1.8571 7.6667,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 3.9524,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -370,576 +991,4 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = 2.0000 -0.8065 1.3548 1.3548,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.0000 -0.8065 1.3548 1.3548,
-		}
-
-		area GasTank
-		{
-			xywh = -1.8871 -1.9194 1.1290 0.6452,
-		}
-
-		area TireFrontLeft
-		{
-			xywh = 1.3226 2.2581 0.0000 0.0000,
-		}
-
-		area TireFrontRight
-		{
-			xywh = -1.3226 2.2581 0.0000 0.0000,
-		}
-
-		area TireRearLeft
-		{
-			xywh = 1.3226 -1.8065 0.0000 0.0000,
-		}
-
-		area TireRearRight
-		{
-			xywh = -1.3226 -1.8065 0.0000 0.0000,
-		}
-
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
-		template = GloveBox,
-		template = GasTank,
-		template = Battery,
-		template = Engine,
-		template = Muffler,
-
-		part SeatFrontLeft
-		{
-			model seatfrontLeft
-			{
-				file = Mercedes280Driver,
-			}
-		}
-
-		part SeatFrontRight
-		{
-			model seatfrontRight
-			{
-				file = Mercedes280Passenger,
-			}
-		}
-
-		part SeatRearLeft
-		{
-			model seatrearLeft
-			{
-				file = Mercedes280Double,
-			}
-		}
-
-		part Muffler
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			model engineDoor
-			{
-				file = Mercedes280Hood,
-			}
-
-			anim Close
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		part Heater
-		{
-			category = engine,
-
-			lua
-			{
-				update = Vehicles.Update.Heater,
-			}
-		}
-
-		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
-
-		part Windshield
-		{
-			model windshieldFront
-			{
-				file = Mercedes280Windshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part WindshieldRear
-		{
-			model windshieldRear
-			{
-				file = Mercedes280RearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
-
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = Mercedes280FrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = Mercedes280FrontLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = Mercedes280RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearRight,
-			area = SeatRearRight,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = Mercedes280RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = Mercedes280FrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = Mercedes280FrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = Mercedes280RearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = Mercedes280RearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = Mercedes280Trunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		template = Trunk/part/TruckBed,
-		template = Tire,
-		template = Axle,
-
-		part TireFrontLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = Mercedes280frontwheelleft,
-			}
-		}
-
-		part TireFrontRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = Mercedes280frontwheelright,
-			}
-		}
-
-		part TireRearLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = Mercedes280backwheelleft,
-			}
-		}
-
-		part TireRearRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = Mercedes280backwheelright,
-			}
-		}
-
-		template = Brake,
-
-		part Brake*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = Suspension,
-
-		part Suspension*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
-		template = Headlight,
-
-		part PassengerCompartment
-		{
-			category = nodisplay,
-
-			lua
-			{
-				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
-
-		physics box
-		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailerfront
-		{
-			offset = 0.0000 0.0000 3.9524,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
-		}
-	}
-}
+		

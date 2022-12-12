@@ -118,7 +118,7 @@ module Base
 		{
 			file = SC_M1010Ambulance,
 			scale = 0.6300,
-			offset = 0.0000 -0.2540 0.7143,
+			offset = 0.0000 0.2698 0.7143,
 		}
 
 		skin
@@ -139,7 +139,7 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = CUCVhorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
@@ -395,22 +395,14 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part TruckBed
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 100,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = M1010AmbulanceDriver,
 			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -419,6 +411,8 @@ module Base
 			{
 				file = M1010AmbulancePassenger,
 			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatMiddleLeft
@@ -472,6 +466,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -520,6 +516,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyBlazerHoodSC,
 		}
 
 		part Heater
@@ -561,6 +559,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -586,6 +586,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.M1010RearWindows,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -608,6 +610,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -625,6 +629,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -661,6 +667,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -697,6 +705,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -748,9 +758,32 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.M1010RearDoors,
 		}
 
-		template = Trunk/part/TruckBed,
+
+		part BackOfTruck
+		{
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = true,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
 		template = Tire,
 		template = Axle,
 

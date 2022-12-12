@@ -404,6 +404,8 @@ module Base
 			{
 				file = ToyotaCamryDriver,
 			}
+		
+		itemType = Base.ToyotaCamryFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -412,6 +414,8 @@ module Base
 			{
 				file = ToyotaCamryPassenger,
 			}
+
+		itemType = Base.ToyotaCamryFrontSeatSC,
 		}
 
 		part SeatRearRight
@@ -420,6 +424,8 @@ module Base
 			{
 				file = ToyotaCamryDouble,
 			}
+
+		itemType = Base.ToyotaCamryRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -428,6 +434,8 @@ module Base
 			{
 				file = ToyotaCamryDouble,
 			}
+		
+		itemType = Base.ToyotaCamryRearSeatSC,
 		}
 
 		part Muffler
@@ -441,6 +449,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+		
 		}
 
 		template = EngineDoor,
@@ -489,6 +498,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ToyotaCamryHoodSC,
 		}
 
 		part Heater
@@ -530,6 +541,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ToyotaCamryFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -558,6 +571,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ToyotaCamryRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -584,6 +599,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = ToyotaCamryRearSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -601,6 +618,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = ToyotaCamryFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -618,6 +637,8 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
+
+			itemType = ToyotaCamryRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -635,6 +656,8 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
+
+			itemType = ToyotaCamryRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -671,6 +694,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaCamryDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -707,6 +732,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaCamryDoorSC,
 		}
 
 		part DoorRearRight
@@ -743,6 +770,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaCamryRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -779,6 +808,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = ToyotaCamryRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -830,6 +861,9 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ToyotaCamryTrunkLidSC,
+
 		}
 
 		template = Trunk/part/TruckBed,
@@ -899,6 +933,16 @@ module Base
 			{
 				skills = Mechanics:4,
 				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
 			}
 		}
 

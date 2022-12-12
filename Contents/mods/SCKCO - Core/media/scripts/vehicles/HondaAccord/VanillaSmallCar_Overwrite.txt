@@ -391,6 +391,8 @@ module Base
 			{
 				file = HondaAccordDriver,
 			}
+
+			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -399,6 +401,8 @@ module Base
 			{
 				file = HondaAccordPassenger,
 			}
+
+			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -407,6 +411,16 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
+			itemType = Base.HondaAccordRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = HondaAccordDouble,
+			}
+			itemType = Base.HondaAccordRearSeatSC,
 		}
 
 		part Muffler
@@ -468,6 +482,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.HondaAccordHoodSC,
 		}
 
 		part Heater
@@ -509,6 +525,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.HondaAccordFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -539,6 +557,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.HondaAccordRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -561,6 +581,9 @@ module Base
 				animate = FALSE,
 			}
 
+
+			itemType = Base.HondaAccordFrontSideWindowSC,
+
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -578,6 +601,8 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.HondaAccordFrontSideWindowSC,
+
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -593,6 +618,8 @@ module Base
 			{
 			}
 
+			itemType = Base.HondaAccordRearSideWindowSC,
+
 			area = SeatRearRight,
 		}
 
@@ -607,6 +634,8 @@ module Base
 			table install
 			{
 			}
+
+			itemType = Base.HondaAccordRearSideWindowSC,
 
 			area = SeatRearLeft,
 		}
@@ -645,6 +674,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			
+			itemType = Base.HondaAccordDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -681,6 +712,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.HondaAccordDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -732,6 +765,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.HondaAccordTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

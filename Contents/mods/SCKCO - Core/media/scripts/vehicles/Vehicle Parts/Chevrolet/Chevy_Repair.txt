@@ -1,0 +1,70 @@
+module Base
+{
+
+	fixing Fix Chevrolet Bullbar
+    {
+       Require : K5Bullbar2,
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+	fixing Fix Chevrolet Hood Welding
+	{
+	   Require : ChevyCapriceHoodSC1;ChevyBlazerHoodSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroHoodSC3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+	}
+
+    fixing Fix Chevrolet Hood
+	{
+	   Require : ChevyCapriceHoodSC1;ChevyBlazerHoodSC2;ChevyCamaroHoodSC3;ChevyC70HoodSC,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix Chevrolet Trunk Lid Welding
+    {
+       Require : ChevyCapriceTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyCamaroTrunkLidSC3;
+       GlobalItem : BlowTorch=5,
+       ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Chevrolet Trunk Lid
+	{
+       Require : ChevyCapriceTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroTrunkLidSC3,ChevyC70TailGateSC2,
+	   GlobalItem : Screws=8,
+	   ConditionModifier : 0.5,
+
+       Fixer : SheetMetal; Mechanics=2,
+	}
+
+	fixing Fix Chevrolet Door Welding
+	{
+	   Require : ChevyCapriceDoorSC1;ChevyBlazerDoorSC2;ChevyG30FrontDoorSC2;ChevyP30DoorSC2;ChevyG30SideDoorSC2;ChevyCamaroDoorSC3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
+
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+	}
+
+    fixing Fix Chevrolet Car seat
+	{
+	   Require : ChevyCapriceFrontSeatSC1;ChevyCapriceRearSeatSC1;ChevyBlazerFrontSeatSC2;ChevyCamaroFrontSeatSC3;ChevyCamaroRearSeatSC3,
+	   ConditionModifier : 0.8,
+
+       Fixer : DuctTape=2;Mechanics=1,
+       Fixer : Glue=2;Mechanics=1,
+	}
+}

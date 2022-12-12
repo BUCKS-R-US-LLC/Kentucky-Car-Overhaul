@@ -1,0 +1,120 @@
+module Base
+{
+	model K10ExtraBar
+	{
+		mesh = vehicles/Vehicle_K10Civ_SC|ExtraBar_obj,
+        texture = vehicles/K5/Vehicle_BlazerSC_Black,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle K10Bullbar
+		{
+		part K10Bullbar
+        	{
+
+			model K10Bullbar
+				{
+                		file = K10ExtraBar,
+				}
+		area = Engine,
+            category = bodywork,
+            itemType = Base.K5Bullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+		part K10BullbarNoSpawn
+        	{
+
+			model K10Bullbar
+				{
+                		file = K10ExtraBar,
+				}
+		area = Engine,
+            category = bodywork,
+            itemType = Base.K5Bullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+	}	
+	
+}

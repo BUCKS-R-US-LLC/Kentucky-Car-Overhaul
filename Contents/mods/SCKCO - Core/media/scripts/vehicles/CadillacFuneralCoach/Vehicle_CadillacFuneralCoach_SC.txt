@@ -1,0 +1,980 @@
+module Base
+{
+	model SC_CadillacFuneralCoach
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model FuneralCoachSCDriver
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FuneralCoachSCPassenger
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FuneralCoachSCWindshield
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FuneralCoachSCRearWindshield
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model FuneralCoachSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model FuneralCoachSCFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model FuneralCoachSCFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model FuneralCoachSCFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model FuneralCoachSCRearRightDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model FuneralCoachSCRearLeftDoor
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model FuneralCoachSCRearRightWindow
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = false,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model FuneralCoachSCRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model FuneralCoachSCTrunk
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model FuneralCoachSCHood
+	{
+		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model FuneralCoachWheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
+		shader = vehiclewheel,
+	}
+	model FuneralCoachWheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
+		shader = vehiclewheel,
+	}
+	model FuneralCoachWheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
+		shader = vehiclewheel,
+	}
+	model FuneralCoachWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_CadillacFuneralCoach
+	{
+		mechanicType = 1,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_CadillacFuneralCoach,
+			scale = 0.6300,
+			offset = -0.0159 0.1429 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Silver,
+		}
+
+		skin
+		{
+			texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+		}
+
+		textureRust = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureMask = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_mask,
+		textureLights = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_lights,
+		textureDamage1Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureDamage2Shell = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_scratch,
+		textureDamage1Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
+		textureDamage2Overlay = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_blood,
+
+		sound
+		{
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 2.6984 3.0794 8.1587,
+		mass = 1000,
+		physicsChassisShape = 2.6984 3.0794 8.1587,
+		centerOfMassOffset = 0.0000 1.5556 -0.5556,
+		shadowExtents = 2.7061 8.1673,
+		shadowOffset = 0.0000 -0.5492,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = -1.0794 0.2381 2.2222,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = 1.0794 0.2381 2.2222,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -1.0794 0.2381 -2.6667,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 1.0794 0.2381 -2.6667,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6032 0.6984 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.4286 0.5079,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5873 0.6984 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 -0.4286 0.5079,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5873 0.6984 -1.4127,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.4286 -0.6508,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5873 0.6984 -1.4127,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 -0.4286 -0.6508,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.5238 2.6032 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -5.5238 2.6032 1.7778,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.9683 0.1270 1.3651 1.3651,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.9683 0.1270 1.3651 1.3651,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9683 -1.3333 1.3651 1.3651,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9683 -1.3333 1.3651 1.3651,
+		}
+
+		area GasTank
+		{
+			xywh = 1.8730 -2.0159 1.1111 0.6349,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.5238 2.4762 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.5238 2.4762 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.5238 -1.9841 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.5238 -1.9841 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = FuneralCoachSCDriver,
+			}
+
+			itemType = Base.CadillacFuneralCoachFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = FuneralCoachSCPassenger,
+			}
+
+			itemType = Base.CadillacFuneralCoachFrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model seatrearLeft
+			{
+				file = FuneralCoachSCDriver,
+			}
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model seatrearRight
+			{
+				file = FuneralCoachSCPassenger,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = FuneralCoachSCHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.CadillacFuneralCoachHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = FuneralCoachSCWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.CadillacFuneralCoachFrontWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = FuneralCoachSCRearWindshield,
+			}
+
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.CadillacFuneralCoachRearWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file =  FuneralCoachSCFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.CadillacFuneralCoachFrontSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file =  FuneralCoachSCFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.CadillacFuneralCoachFrontSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowRR
+			{
+				file = FuneralCoachSCRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearRight,
+			area = SeatRearRight,
+			itemType = Base.CadillacFuneralCoachRearSideWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowRL
+			{
+				file = FuneralCoachSCRearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = Base.CadillacFuneralCoachRearSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = FuneralCoachSCFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CadillacFuneralCoachDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = FuneralCoachSCFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CadillacFuneralCoachDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = FuneralCoachSCRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CadillacFuneralCoachRearDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = FuneralCoachSCRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CadillacFuneralCoachRearDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = FuneralCoachSCTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.CadillacFuneralCoachTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TruckBed
+		{
+			itemType = Base.NormalTrunk,
+
+			container
+			{
+				capacity = 80,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FuneralCoachWheelfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FuneralCoachWheelfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FuneralCoachWheelbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = FuneralCoachWheelbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = -0.0317 0.9683 -0.6032,
+			extents = 2.6349 1.8571 8.1429,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.3857 -3.1429,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.3857 3.3000,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

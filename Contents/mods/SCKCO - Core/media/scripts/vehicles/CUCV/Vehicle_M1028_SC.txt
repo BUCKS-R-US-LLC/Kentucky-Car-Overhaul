@@ -115,7 +115,7 @@ module Base
 		{
 			file = SC_M1028A3,
 			scale = 0.6300,
-			offset = 0.0000 -0.2540 0.0000,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
@@ -136,7 +136,7 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+		    horn = CUCVhorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
@@ -298,6 +298,8 @@ module Base
 			{
 				file = M1028A3Driver,
 			}
+
+		itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -306,6 +308,8 @@ module Base
 			{
 				file = M1028A3Passenger,
 			}
+			
+		itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -319,6 +323,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+		itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -367,6 +373,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyBlazerHoodSC,
 		}
 
 		part Heater
@@ -408,6 +416,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -436,6 +446,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -458,6 +470,8 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -475,6 +489,8 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -511,6 +527,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -547,6 +565,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -598,6 +618,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,

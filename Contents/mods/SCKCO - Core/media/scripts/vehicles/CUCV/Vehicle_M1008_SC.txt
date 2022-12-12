@@ -127,7 +127,7 @@ module Base
 		{
 			file = SC_M1008,
 			scale = 0.6300,
-			offset = 0.0000 -0.2540 0.0000,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
@@ -148,7 +148,7 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = CUCVhorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
@@ -180,7 +180,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2063 0.0794 2.1587,
+			offset = -1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +196,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2063 0.0794 -2.0317,
+			offset = -1.2222 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -310,6 +310,8 @@ module Base
 			{
 				file = M1008Driver,
 			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -318,6 +320,8 @@ module Base
 			{
 				file = M1008Passenger,
 			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -331,6 +335,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -379,6 +385,8 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
+			itemType = Base.ChevyBlazerHoodSC,
 		}
 
 		part Heater
@@ -420,6 +428,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -448,6 +458,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -470,6 +482,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -487,6 +500,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -523,6 +537,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -559,6 +575,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -610,6 +628,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
