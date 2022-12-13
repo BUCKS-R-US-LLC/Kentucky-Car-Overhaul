@@ -256,8 +256,11 @@ local function fetchAnimForVehicle(vehicle, player)
 
 	local vehicleAnimationSet = vehicleToSeatAnimations[vehicleName]
 	--use the `vehicleAnimationSet` as a profile ID if it's not a table
-	print(" - vehicleAnimationSet: "..type(vehicleAnimationSet).." "..tostring(vehicleAnimationSet))
-	vehicleAnimationSet = (type(vehicleAnimationSet) == "table" and vehicleAnimationSet) or seatAnimationsProfiles[vehicleAnimationSet]
+	if getDebug() then print(" -- vehicleAnimationSet: "..type(vehicleAnimationSet).." "..tostring(vehicleAnimationSet)) end
+	if type(vehicleAnimationSet) == "string" then
+		vehicleAnimationSet = seatAnimationsProfiles[vehicleAnimationSet]
+		if getDebug() then print(" ---- changedTo: "..type(vehicleAnimationSet).." "..tostring(vehicleAnimationSet)) end
+	end
 
 	if not vehicleAnimationSet then return end
 	local fetchedAnimation = vehicleAnimationSet["seat"..seat] or vehicleAnimationSet["seatDefault"]
@@ -275,19 +278,23 @@ end
 
 local function applySeatAnim(player)
     local vehicle = player:getVehicle()
-    if not vehicle then return end
+    if not vehicle then
+		print("ERROR: SCKCO(SCUCK) -applySeatAnim: No Vehicle??")
+		return
+	end
 
     local vehicleName = vehicle:getScriptName()
+	if getDebug() then print(" -- ScriptName: "..vehicleName) end
     local vehicleAnimationSet = vehicleToSeatAnimations[vehicleName]
 
-    if vehicleAnimationSet then return end
+    if not vehicleAnimationSet then return end
 
     local fetchedAnim, seat = fetchAnimForVehicle(vehicle, player)
-    if not fetchedAnim or not seat then print("ERROR: SCKCO(SCUCK) -enter -No fetchedAnimation or no seat!") return end
+    if not fetchedAnim or not seat then print("ERROR: SCKCO(SCUCK) -applySeatAnim -No fetchedAnimation or no seat!") return end
 
     if fetchedAnim then
         fetchedAnim = parseSeatAnimationSelection(fetchedAnim)
-        print(" ---- Anim Selected: Enter_complete: "..tostring(fetchedAnim))
+		if getDebug() then print(" ---- Anim Selected for applySeatAnim: "..tostring(fetchedAnim)) end
         if fetchedAnim then
             player:SetVariable("SCUCK_AnimSeated", fetchedAnim)
         end
