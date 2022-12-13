@@ -1,6 +1,15 @@
 module Base
 {
 
+	fixing Fix M35Wheel
+	{
+	   Require : M35Wheel2,
+	   ConditionModifier : 0.45,
+
+	   Fixer : DuctTape=2;Mechanics=2,
+      Fixer : Glue=2;Mechanics=2,
+	}
+
 	fixing Fix M35 Bumper
     {
        Require : M35Bumper2,
