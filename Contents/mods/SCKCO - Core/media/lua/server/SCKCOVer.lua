@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Chevrolet C70's, Geo Tracker, and Ford Taurus - DEC12"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Vehicle Animation Expansion Prototype + Fixes and Changes - DEC13"))
