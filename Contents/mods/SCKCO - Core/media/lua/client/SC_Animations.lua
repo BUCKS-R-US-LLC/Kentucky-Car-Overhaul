@@ -269,6 +269,7 @@ local enter_start = ISEnterVehicle.start
 function ISEnterVehicle:start()
     enter_start(self)
     self.character:SetVariable("SCUCK_Anim", "True")
+	self.character:SetVariable("SCUCK_AnimTransition", "Default")
 end
 
 
@@ -288,7 +289,7 @@ local function applySeatAnim(player)
         fetchedAnim = parseSeatAnimationSelection(fetchedAnim)
         print(" ---- Anim Selected: Enter_complete: "..tostring(fetchedAnim))
         if fetchedAnim then
-            player:SetVariable("VehicleScriptName", fetchedAnim)
+            player:SetVariable("SCUCK_AnimSeated", fetchedAnim)
         end
     end
 end
@@ -297,7 +298,8 @@ Events.OnSwitchVehicleSeat.Add(applySeatAnim)
 
 
 local function exitVehicle(player)
-    player:SetVariable("VehicleScriptName", "")
+    player:SetVariable("SCUCK_AnimSeated", "")
     player:SetVariable("SCUCK_Anim", "False")
+	player:SetVariable("SCUCK_AnimTransition", "Default")
 end
 Events.OnExitVehicle.Add(exitVehicle)
