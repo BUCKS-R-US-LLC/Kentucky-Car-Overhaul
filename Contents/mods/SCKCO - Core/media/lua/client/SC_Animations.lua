@@ -63,6 +63,7 @@ local seatAnimationsProfiles = {
 		["seat13"]="Shark_Idle_SidePassenger2",
 		["seat14"]="Shark_Idle_SidePassenger",
 		["seat15"]="Shark_Idle_SidePassenger2",
+		["seat16"]="Shark_Idle_SidePassenger",
 	},
 
 	["6SideSeater"] = {
