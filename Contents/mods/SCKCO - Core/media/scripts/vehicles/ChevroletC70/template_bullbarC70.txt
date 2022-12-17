@@ -7,13 +7,6 @@ module Base
 		scale = 1,
 	}
 
-    model C70ChevySurvivor
-	{
-		mesh = vehicles/Vehicle_ChevroletC70Agri_SC|Chevy_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
     model C70Chevy
 	{
 		mesh = vehicles/Vehicle_C70Survivor_SC|Chevy_obj,
@@ -86,8 +79,8 @@ module Base
                 		file = C70Chevy,
 				}
 		area = Engine,
+            parent = EngineDoor,
             category = bodywork,
-            category = nodisplay,
             itemType = Base.K5Chevy,
             mechanicRequireKey = false,
 		table install
