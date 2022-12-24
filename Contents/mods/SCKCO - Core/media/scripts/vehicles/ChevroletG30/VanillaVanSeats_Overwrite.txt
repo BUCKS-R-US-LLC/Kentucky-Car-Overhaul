@@ -299,7 +299,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.3559 -0.1864 0.9322,
+				offset = 2.1356 -0.1864 0.9322,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -318,7 +318,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.3559 -0.1864 0.9322,
+				offset = -2.2881 -0.1864 0.9322,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -338,7 +338,7 @@ module Base
 			position outside
 			{
 				area = SeatMiddleLeft,
-				offset = 0.5932 -0.1864 0.0000,
+				offset = -2.2712 -0.1864 -1.6610,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
@@ -356,7 +356,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1695 -0.1864 0.0000,
+				offset = -2.2712 -0.1864 -0.0847,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
 			}
@@ -376,7 +376,7 @@ module Base
 			position outside
 			{
 				area = SeatRearLeft,
-				offset = 0.5932 -0.1864 -0.6949,
+				offset = -2.2712 -0.1864 -0.7627,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
@@ -394,7 +394,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1695 -0.1864 0.1356,
+				offset = -2.2712 -0.1864 -0.0847,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -701,7 +701,7 @@ module Base
 			}
 		}
 
-        template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
 		template = Seat/part/SeatMiddleRight,
@@ -782,7 +782,7 @@ module Base
 			{
 				file = G30VanNormalPassenger,
 			}
-			
+
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
@@ -913,7 +913,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyG30WindshieldSC,
 		}
 
@@ -973,7 +973,6 @@ module Base
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -992,7 +991,6 @@ module Base
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -1003,13 +1001,13 @@ module Base
 			{
 				openable = false,
 			}
+
 			model windowML
 			{
 				file = G30VanNormalMiddleLeftWindow,
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			area = SeatMiddleLeft,
 		}
 
@@ -1019,13 +1017,13 @@ module Base
 			{
 				openable = false,
 			}
+
 			model windowMR
 			{
 				file = G30VanNormalSlidingWindow,
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
 		}
@@ -1036,13 +1034,13 @@ module Base
 			{
 				openable = false,
 			}
+
 			model windowRR
 			{
 				file = G30VanNormalRearRightWindow,
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			area = SeatRearRight,
 		}
 
@@ -1052,13 +1050,13 @@ module Base
 			{
 				openable = false,
 			}
+
 			model windowRL
 			{
 				file = G30VanNormalRearLeftWindow,
 			}
 
 			itemType = Base.ChevyG30SideWindowSC,
-
 			area = SeatRearLeft,
 		}
 
@@ -1096,7 +1094,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
@@ -1254,7 +1252,7 @@ module Base
 
 		template = Headlight,
 
-			part PassengerCompartment
+		part PassengerCompartment
 		{
 			category = nodisplay,
 
