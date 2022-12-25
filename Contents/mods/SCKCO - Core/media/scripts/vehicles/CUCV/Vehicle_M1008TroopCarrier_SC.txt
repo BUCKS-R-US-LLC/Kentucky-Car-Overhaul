@@ -480,6 +480,48 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part GunRack1
+		{
+			area = SeatFrontRight,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
+			part GunRack2
+		{
+			area = SeatFrontLeft,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -846,21 +888,25 @@ module Base
 		part DoorMiddleRight
 		{
 			category = nodisplay,
+						mechanicRequireKey = false,
 		}
 
 		part DoorMiddleLeft
 		{
 			category = nodisplay,
+									mechanicRequireKey = false,
 		}
 
 		part DoorRearRight
 		{
 			category = nodisplay,
+									mechanicRequireKey = false,
 		}
 
 		part DoorRearLeft
 		{
 			category = nodisplay,
+									mechanicRequireKey = false,
 		}
 
 		template = TrunkDoor,
@@ -930,7 +976,7 @@ module Base
 			container
 			{
 				capacity = 100,
-				conditionAffectsCapacity = true,
+				conditionAffectsCapacity = false,
 				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 

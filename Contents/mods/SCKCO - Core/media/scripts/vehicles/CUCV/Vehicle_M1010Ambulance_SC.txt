@@ -272,7 +272,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -1.6032,
+				offset = 2.0476 -0.1905 -1.6032,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
 			}
@@ -310,7 +310,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 -3.1587,
+				offset = 2.0476 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -363,12 +363,12 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.4921 2.8730 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.3651 2.8730 0.0000 0.0000,
 		}
 
 		area TireRearLeft
@@ -378,7 +378,7 @@ module Base
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -2.1270 0.0000 0.0000,
+			xywh = -1.5079 -2.1270 0.0000 0.0000,
 		}
 
 		template = K5Bullbar/part/K5Bullbar,
@@ -394,6 +394,48 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part GunRack1
+		{
+			area = SeatFrontRight,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part GunRack2
+		{
+			area = SeatFrontLeft,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
 
 		part SeatFrontLeft
 		{
@@ -418,41 +460,25 @@ module Base
 		part SeatMiddleLeft
 		{
 			category = nodisplay,
-
-			model SeatMiddleLeft
-			{
-				file = M1010AmbulancePassenger,
-			}
+			itemType = Base.M1008RearSeat,
 		}
 
 		part SeatMiddleRight
 		{
 			category = nodisplay,
-
-			model SeatMiddleRight
-			{
-				file = M1010AmbulancePassenger,
-			}
+			itemType = Base.M1008RearSeat,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
-
-			model SeatRearLeft
-			{
-				file = M1010AmbulancePassenger,
-			}
+			itemType = Base.M1008RearSeat,
 		}
 
 		part SeatRearRight
 		{
 			category = nodisplay,
-
-			model SeatRearRight
-			{
-				file = M1010AmbulancePassenger,
-			}
+			itemType = Base.M1008RearSeat,
 		}
 
 		part Muffler
@@ -559,7 +585,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
@@ -592,6 +618,10 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorMiddleLeft,
+		template = Door/part/DoorMiddleRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -610,7 +640,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -629,7 +658,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -762,7 +790,6 @@ module Base
 			itemType = Base.M1010RearDoors,
 		}
 
-
 		part BackOfTruck
 		{
 			area = TruckBed,
@@ -774,7 +801,7 @@ module Base
 			container
 			{
 				capacity = 100,
-				conditionAffectsCapacity = true,
+				conditionAffectsCapacity = FALSE,
 				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 

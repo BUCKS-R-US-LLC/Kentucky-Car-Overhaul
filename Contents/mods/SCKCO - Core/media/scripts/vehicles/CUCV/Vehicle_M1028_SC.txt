@@ -282,6 +282,48 @@ module Base
 			xywh = -1.3810 -2.1270 0.0000 0.0000,
 		}
 
+		part GunRack1
+		{
+			area = SeatFrontRight,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
+			part GunRack2
+		{
+			area = SeatFrontLeft,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
 		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
@@ -633,6 +675,7 @@ module Base
 			container
 			{
 				capacity = 100,
+				conditionAffectsCapacity = false,
 			}
 		}
 
