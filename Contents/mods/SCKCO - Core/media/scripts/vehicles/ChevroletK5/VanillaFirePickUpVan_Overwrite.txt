@@ -329,48 +329,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GunRack1
-		{
-			area = SeatFrontRight,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-		
-			part GunRack2
-		{
-			area = SeatFrontLeft,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-		
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
