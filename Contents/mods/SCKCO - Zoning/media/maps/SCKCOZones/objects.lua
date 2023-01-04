@@ -128,4 +128,5 @@ objects = {
   { name = "cemetery", type = "ParkingStall", x = 12607, y = 3323, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 5718, y = 5345, z = 0, width = 3, height = 5 },
   
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 5860, y = 12480, z = 0, width = 3, height = 5 },
 }

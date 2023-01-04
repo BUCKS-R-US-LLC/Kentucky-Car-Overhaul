@@ -319,12 +319,12 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = 1.0526 -5.5614 1.1228 1.1228,
+			xywh = 2.1754 -4.4386 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -1.0526 -5.5614 1.1228 1.1228,
+			xywh = -2.1754 -4.4386 1.1228 1.1228,
 		}
 
 		area GasTank
@@ -354,7 +354,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.5614 0.9825 1.1228,
+			xywh = 0.0000 -5.5614 3.2281 1.1228,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -385,6 +385,7 @@ module Base
 			{
 				file = StepVanP30Driver,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
@@ -394,6 +395,7 @@ module Base
 			{
 				file = StepVanP30Passenger,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
@@ -566,7 +568,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 
@@ -584,8 +585,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 

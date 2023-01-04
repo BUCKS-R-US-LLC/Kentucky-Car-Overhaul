@@ -334,12 +334,12 @@ module Base
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 2.0000 -2.7895 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -2.0000 -2.7895 0.0000 0.0000,
 		}
 
 		area TruckBed
@@ -375,6 +375,7 @@ module Base
 			{
 				file = StepVanP30Driver,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
@@ -384,6 +385,7 @@ module Base
 			{
 				file = StepVanP30Passenger,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
@@ -556,7 +558,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 
@@ -574,8 +575,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 

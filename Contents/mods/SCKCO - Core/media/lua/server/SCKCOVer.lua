@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - K5/CUCV Armor + Touch-Up - DEC23"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Fixes"))

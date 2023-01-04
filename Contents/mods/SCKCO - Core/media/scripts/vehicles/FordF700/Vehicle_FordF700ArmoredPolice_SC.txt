@@ -293,11 +293,6 @@ module Base
 			xywh = 0.0000 5.0635 2.8571 2.0000,
 		}
 
-		area TruckBed
-		{
-			xywh = 0.0000 -4.9048 2.8571 1.7460,
-		}
-
 		area SeatFrontLeft
 		{
 			xywh = 2.0476 1.4603 1.2381 1.2381,
@@ -705,9 +700,25 @@ module Base
 		template = Tire,
 		template = Axle,
 
-		part TruckBedOpen
+		part BackOfTruck
 		{
-			itemType = Base.BigTrunk,
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 		}
 
 		part TireFrontLeft

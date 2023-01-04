@@ -144,4 +144,5 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnKey = 80;
     VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnSpecial = 0;
     VehicleZoneDistribution.large_utility_vehicles.spawnRate = 70;
+
 end
