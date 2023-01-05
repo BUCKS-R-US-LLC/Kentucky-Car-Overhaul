@@ -1,0 +1,846 @@
+module Base
+{
+	model SC_CamaroTTop
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model CamaroSCDriver
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCPassenger
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearPassenger
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCWindshield
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearWindshield
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model CamaroSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model CamaroSCFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model CamaroSCFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model CamaroSCFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model CamaroSCRearRightWindow
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|RightTTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|LeftTTop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CamaroSCTrunk
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model CamaroSCHood
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model CamaroWheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	model CamaroWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle TestCar
+	{
+		mechanicType = 3,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 6,
+		playerDamageProtection = 0.8,
+		engineRPMType = firebird,
+
+		model
+		{
+			file = SC_CamaroTTop,
+			scale = 0.6700,
+			offset = 0.0000 -0.5672 0.0000,
+		}
+
+
+		skin
+		{
+			texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Black,
+		}
+
+		textureRust = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Rust,
+		textureMask = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Mask,
+		textureLights = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Lights,
+		textureDamage1Shell = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Damage,
+		textureDamage2Shell = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Damage,
+		textureDamage1Overlay = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Blood,
+		textureDamage2Overlay = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Blood,
+
+		sound
+		{
+			engine = VehicleEngineSportsCar,
+			engineStart = VehicleEngineSportsCar,
+			engineTurnOff = VehicleEngineSportsCar,
+			horn = VehicleHornSportsCar,
+			ignitionFail = VehicleIgnitionFailSportsCar,
+		}
+
+		extents = 2.6269 1.7313 6.9552,
+		mass = 500,
+		physicsChassisShape = 2.5970 1.7313 6.9552,
+		centerOfMassOffset = 0.0000 0.4776 0.0000,
+		shadowExtents = 2.6463 7.4046,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 10000,
+		engineLoudness = 1,
+		engineQuality = 90,
+		maxSpeed = 450f,
+		gearRatioCount = 5,
+		gearRatioR = 3.5,
+		gearRatio1 = 4.11,
+		gearRatio2 = 2.50,
+		gearRatio3 = 1.65,
+		gearRatio4 = 1.25,
+		gearRatio5 = 0.80,
+		gearRatio5 = 0.60,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.7f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 50,
+		suspensionCompression = 4.1,
+		suspensionDamping = 3.4,
+		maxSuspensionTravelCm = 20,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 50000,
+		rearEndHealth = 50000,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = -1.1045 0.3881 1.7761,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = 1.1045 0.3881 1.7761,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = -1.1045 0.3881 -1.8507,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 1.1045 0.3881 -1.8507,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6567 0.7015 -0.2090,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0746 -0.2239 0.0149,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6716 0.6119 -0.2090,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0448 0.2836 0.1343,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.3881 0.6119 -1.1791,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0746 -0.2239 0.0149,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.4030 0.6119 -1.1791,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0746 -0.2239 0.0149,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.3582 2.8955 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -4.2388 2.8955 1.7612,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.9403 0.2537 1.2537 1.2537,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.9403 0.2537 1.2537 1.2537,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9403 -0.9851 1.2537 1.2537,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9403 -0.9851 1.2537 1.2537,
+		}
+
+		area GasTank
+		{
+			xywh = -1.8657 -2.3881 1.1045 0.5970,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.3134 1.7910 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3134 1.7910 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.3134 -1.8657 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.3134 -1.8657 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model SeatfrontLeft
+			{
+				file = CamaroSCDriver,
+			}
+			itemType = Base.ChevyCamaroFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model SeatfrontRight
+			{
+				file = CamaroSCPassenger,
+			}
+			itemType = Base.ChevyCamaroFrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			model SeatRearLeft
+			{
+				file = CamaroSCRearPassenger,
+			}
+			itemType = Base.ChevyCamaroRearSeatSC,
+		}
+
+		part SeatRearRight
+		{
+
+			model SeatRearRight
+			{
+				file = CamaroSCRearPassenger,
+			}
+			
+			itemType = Base.ChevyCamaroRearSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = CamaroSCHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ChevyCamaroHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = CamaroSCWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.ChevyCamaroFrontWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = CamaroSCRearWindshield,
+			}
+
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.ChevyCamaroRearWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = CamaroSCFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+						
+			itemType = Base.ChevyCamaroFrontSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = CamaroSCFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+
+			itemType = Base.ChevyCamaroFrontSideWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = CamaroSCRearLeftWindow,
+			}
+
+			area = SeatFrontLeft,
+
+			itemType = Base.ChevyCamaroRearSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = CamaroSCRearRightWindow,
+			}
+
+			area = SeatFrontRight,
+
+			itemType = Base.ChevyCamaroRearSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = CamaroSCFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyCamaroDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = CamaroSCFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+			itemType = Base.ChevyCamaroDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = CamaroSCTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+			itemType = Base.ChevyCamaroTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CamaroWheelfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CamaroWheelfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CamaroWheelbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CamaroWheelbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.6667 0.0000,
+			extents = 2.6032 1.3492 6.7143,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0149 0.4478 3.3582,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
