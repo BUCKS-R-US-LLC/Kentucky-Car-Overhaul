@@ -309,12 +309,12 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = 1.0526 -5.5614 1.1228 1.1228,
+			xywh = -0.0000 -5.5614 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -1.0526 -5.5614 1.1228 1.1228,
+			xywh = 0.0000 -5.5614 1.1228 1.1228,
 		}
 
 		area GasTank
@@ -324,50 +324,54 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.0000 0.0000 0.0000,
+			xywh = 1.6140 2.1754 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.0000 0.0000 0.0000,
+			xywh = -1.6140 2.1754 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 1.6140 -2.7895 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -1.6140 -2.7895 0.0000 0.0000,
 		}
 
-		area TruckBed
-		{
-			xywh = 0.0000 -5.5614 0.9825 1.1228,
-		}
-
-		template = Seat/part/SeatFrontLeft,
+        template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
-		template = Trunk/part/TruckBed,
-
-		part TruckBed
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 230,
-			}
-		}
-
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part BackOfTruck
+		{
+			area = DoorRearLeft,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 150,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
 
 		part SeatFrontLeft
 		{
@@ -375,6 +379,7 @@ module Base
 			{
 				file = StepVanP30Driver,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
@@ -384,9 +389,10 @@ module Base
 			{
 				file = StepVanP30Passenger,
 			}
+
 			itemType = Base.ChevyP30FrontSeatSC,
 		}
-		
+
 		part SeatRearLeft
 		{
 			category = nodisplay,
@@ -556,7 +562,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 
@@ -574,8 +579,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-
 			itemType = Base.ChevyP30SideWindowSC,
 		}
 
@@ -727,7 +730,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
+			
 			itemType = Base.ChevyP30RearDoorsSC,
 		}
 

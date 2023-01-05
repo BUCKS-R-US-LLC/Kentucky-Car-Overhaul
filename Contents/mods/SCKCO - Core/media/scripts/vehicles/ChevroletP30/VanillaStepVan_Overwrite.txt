@@ -362,9 +362,9 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part P30Trunk
+		part BackOfTruck
 		{
-			area = TruckBed,
+			area = DoorRearLeft,
 			category = nodisplay,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = true,
@@ -374,7 +374,7 @@ module Base
 			{
 				capacity = 150,
 				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.P30Trunk,
+				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 
 			lua
@@ -740,7 +740,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
+			
 			itemType = Base.ChevyP30RearDoorsSC,
 		}
 
