@@ -134,15 +134,17 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.police_tactical_vehicles.spawnRate = 70;
 
-	VehicleZoneDistribution.large_utility_vehicles = VehicleZoneDistribution.large_utility_vehicles or {};
-    VehicleZoneDistribution.large_utility_vehicles.vehicles = VehicleZoneDistribution.large_utility_vehicles.vehicles or {};
+	VehicleZoneDistribution.secret_lab_wrecks = VehicleZoneDistribution.secret_lab_wrecks or {};
+    VehicleZoneDistribution.secret_lab_wrecks.vehicles = VehicleZoneDistribution.secret_lab_wrecks.vehicles or {};
 
-    VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.large_utility_vehicles.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 60};
-
-    VehicleZoneDistribution.large_utility_vehicles.baseVehicleQuality = 1.1;
-    VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnKey = 80;
-    VehicleZoneDistribution.large_utility_vehicles.chanceToSpawnSpecial = 0;
-    VehicleZoneDistribution.large_utility_vehicles.spawnRate = 70;
+    VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 40};
+    VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1CrashedOverturned"] = {index = -1, spawnChance = 30};
+	
+    VehicleZoneDistribution.secret_lab_wrecks.baseVehicleQuality = 1.1;
+    VehicleZoneDistribution.secret_lab_wrecks.chanceToSpawnKey = 80;
+    VehicleZoneDistribution.secret_lab_wrecks.chanceToSpawnSpecial = 0;
+    VehicleZoneDistribution.secret_lab_wrecks.spawnRate = 70;
 
 end
