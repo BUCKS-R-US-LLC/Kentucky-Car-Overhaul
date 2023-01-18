@@ -15,13 +15,13 @@ module Base
 	}
 	model MustangSCPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MustangSCRearPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_FordMustang_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -102,25 +102,25 @@ module Base
 	model MustangWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordMustang_LeftWheel,
-		texture = Vehicles/FordMustang/Vehicle_FordMustang_Wheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
 	model MustangWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordMustang_RightWheel,
-		texture = Vehicles/FordMustang/Vehicle_FordMustang_Wheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
 	model MustangWheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordMustang_LeftWheel,
-		texture = Vehicles/FordMustang/Vehicle_FordMustang_Wheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
 	model MustangWheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FordMustang_RightWheel,
-		texture = Vehicles/FordMustang/Vehicle_FordMustang_Wheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_FordMustang
@@ -140,46 +140,56 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Red,
+			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Blue,
+			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Strawberry,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_ImpBlue,
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Grey,
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_CrystalBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Yellow,
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_TwilightBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Orange,
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_UltraBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordMustang/Vehicle_FordMustang_Black,
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_Titanium,
 		}
 
-		textureRust = Vehicles/FordMustang/Vehicle_FordMustang_Rust,
-		textureMask = Vehicles/FordMustang/Vehicle_FordMustang_Mask,
-		textureLights = Vehicles/FordMustang/Vehicle_FordMustang_Lights,
-		textureDamage1Shell = Vehicles/FordMustang/Vehicle_FordMustang_Damage,
-		textureDamage2Shell = Vehicles/FordMustang/Vehicle_FordMustang_Damage,
-		textureDamage1Overlay = Vehicles/FordMustang/Vehicle_FordMustang_Blood,
-		textureDamage2Overlay = Vehicles/FordMustang/Vehicle_FordMustang_Blood,
+		skin
+		{
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_Yellow,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordMustang90/Vehicle_FordMustang_Black,
+		}
+
+		textureRust = Vehicles/FordMustang90/Vehicle_Mustang90_Rust,
+		textureMask = Vehicles/FordMustang90/Vehicle_Mustang90_Mask,
+		textureLights = Vehicles/FordMustang90/Vehicle_Mustang90_lights,
+		textureDamage1Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage2Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage1Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
+		textureDamage2Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 
 		sound
 		{
@@ -403,7 +413,7 @@ module Base
 			{
 				file = MustangSCDriver,
 			}
-			itemType = Base.ChevyMustangFrontSeatSC,
+			itemType = Base.FordMustangFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -412,7 +422,7 @@ module Base
 			{
 				file = MustangSCPassenger,
 			}
-			itemType = Base.ChevyMustangFrontSeatSC,
+			itemType = Base.FordMustangFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -421,7 +431,7 @@ module Base
 			{
 				file = MustangSCRearPassenger,
 			}
-			itemType = Base.ChevyMustangRearSeatSC,
+			itemType = Base.FordMustangRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -432,7 +442,7 @@ module Base
 				file = MustangSCRearPassenger,
 			}
 			
-			itemType = Base.ChevyMustangRearSeatSC,
+			itemType = Base.FordMustangRearSeatSC,
 		}
 
 		part Muffler
@@ -495,7 +505,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyMustangHoodSC,
+			itemType = Base.FordMustangHoodSC,
 		}
 
 		part Heater
@@ -538,7 +548,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyMustangFrontWindshieldSC,
+			itemType = Base.FordMustangFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -570,7 +580,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyMustangRearWindshieldSC,
+			itemType = Base.FordMustangRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -596,7 +606,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 						
-			itemType = Base.ChevyMustangFrontSideWindowSC,
+			itemType = Base.FordMustangFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -615,7 +625,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevyMustangFrontSideWindowSC,
+			itemType = Base.FordMustangFrontSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -627,7 +637,7 @@ module Base
 
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevyMustangRearSideWindowSC,
+			itemType = Base.FordMustangRearSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -639,7 +649,7 @@ module Base
 
 			area = SeatFrontRight,
 
-			itemType = Base.ChevyMustangRearSideWindowSC,
+			itemType = Base.FordMustangRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -677,7 +687,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyMustangDoorSC,
+			itemType = Base.FordMustangDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -714,7 +724,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			itemType = Base.ChevyMustangDoorSC,
+			itemType = Base.FordMustangDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -766,7 +776,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			itemType = Base.ChevyMustangTrunkLidSC,
+			itemType = Base.FordMustangTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
