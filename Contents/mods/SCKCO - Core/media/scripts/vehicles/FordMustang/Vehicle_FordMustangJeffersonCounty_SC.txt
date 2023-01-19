@@ -125,7 +125,7 @@ module Base
 		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordMustang
+	vehicle SC_FordMustangJeffersonCounty
 	{
 		mechanicType = 3,
 		offRoadEfficiency = 0.8,
@@ -142,47 +142,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Strawberry,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_FordMustang90_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_CrystalBlue,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_TwilightBlue,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_UltraBlue,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Titanium,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Yellow,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Black,
+			texture = Vehicles/FordMustang90/Vehicle_Mustang90_JeffersonCo,
 		}
 
 		textureRust = Vehicles/FordMustang90/Vehicle_Mustang90_Rust,
@@ -192,6 +152,11 @@ module Base
 		textureDamage2Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
 		textureDamage1Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 		textureDamage2Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+		}
 
 		sound
 		{
