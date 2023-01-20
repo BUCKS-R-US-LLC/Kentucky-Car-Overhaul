@@ -323,6 +323,10 @@ distributionTable["SC_Caprice9C1StatePolice"] = { Normal = VehicleDistributions.
 distributionTable["SC_Caprice9C1LVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_Caprice9C1ParkRanger"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 
+distributionTable["SC_FordMustangStatePolice"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_FordMustangJeffersonCounty"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_FordMustangUndercover"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+
 distributionTable["SC_CrownVictoriaStatePolice"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_CrownVictoriaParkRanger"] = { Normal = VehicleDistributions.SCPolicePatrol; }
