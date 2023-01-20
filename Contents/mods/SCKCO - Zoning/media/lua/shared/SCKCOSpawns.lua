@@ -41,6 +41,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 80};
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 90};
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustangJeffersonCounty"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 20};
 
 	VehicleZoneDistribution.louisville_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.louisville_police.spawnRate = 75;
