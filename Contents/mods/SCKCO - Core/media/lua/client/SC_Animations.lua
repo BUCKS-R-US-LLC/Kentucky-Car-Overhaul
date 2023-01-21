@@ -247,6 +247,34 @@ local vehicleToSeatAnimations = {
 		["seat2"]="Shark_Idle_Passenger",
 		["seat3"]="Shark_Idle_Passenger",
 	},
+
+	["Base.SC_FordMustang"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_PassengerRelaxed",
+		["seat3"]="Shark_Idle_PassengerRelaxed",
+	},
+
+	["Base.SC_FordMustangUndercover"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_PassengerRelaxed",
+		["seat3"]="Shark_Idle_PassengerRelaxed",
+	},
+
+	["Base.SC_FordMustangJeffersonCounty"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_PassengerRelaxed",
+		["seat3"]="Shark_Idle_PassengerRelaxed",
+	},
+
+	["Base.SC_FordMustangStatePolice"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_PassengerRelaxed",
+		["seat3"]="Shark_Idle_PassengerRelaxed",
+	},
 }
 
 
