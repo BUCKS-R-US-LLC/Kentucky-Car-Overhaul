@@ -17,6 +17,9 @@ objects = {
   { name = "military_heavyvehicles", type = "ParkingStall", x = 12558, y = 1150, z = 0, width = 5, height = 3 },
   { name = "military_heavyvehicles", type = "ParkingStall", x = 12558, y = 1154, z = 0, width = 5, height = 3 },
   { name = "military_heavyvehicles", type = "ParkingStall", x = 12558, y = 1158, z = 0, width = 5, height = 3 },
+  { name = "military_heavyvehicles", type = "ParkingStall", x = 5572, y = 12451, z = 0, width = 5, height = 3 },
+  { name = "military_heavyvehicles", type = "ParkingStall", x = 5572, y = 12446, z = 0, width = 5, height = 3 },
+  { name = "military_heavyvehicles", type = "ParkingStall", x = 5572, y = 12442, z = 0, width = 5, height = 3 },
 
   { name = "military_police", type = "ParkingStall", x = 10354, y = 12405, z = 0, width = 3, height = 5 },
   { name = "military_police", type = "ParkingStall", x = 10050, y = 12760, z = 0, width = 3, height = 5 },
@@ -140,5 +143,10 @@ objects = {
   { name = "secret_lab_wrecks", type = "ParkingStall", x = 5860, y = 12480, z = 0, width = 3, height = 5 },
   { name = "secret_lab_wrecks", type = "ParkingStall", x = 5874, y = 12489, z = 0, width = 3, height = 5 },
   { name = "secret_lab_wrecks", type = "ParkingStall", x = 5813, y = 12484, z = 0, width = 3, height = 5 },
-
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6477, y = 12111, z = 0, width = 3, height = 5 },
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6411, y = 12105, z = 0, width = 3, height = 5 },
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6179, y = 12199, z = 0, width = 3, height = 5 },
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6147, y = 12202, z = 0, width = 3, height = 5 },
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6481, y = 12046, z = 0, width = 3, height = 5 },
+  { name = "secret_lab_wrecks", type = "ParkingStall", x = 6793, y = 11610, z = 0, width = 3, height = 5 },
 }
