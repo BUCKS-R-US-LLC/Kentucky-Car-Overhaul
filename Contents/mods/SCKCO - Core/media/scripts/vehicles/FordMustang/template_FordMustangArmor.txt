@@ -256,88 +256,6 @@ module Base
             }
 		}
 
-        part FordMustangRearLeftDoorArmor
-        	{
-
-			model FordMustangRearLeftDoorArmor
-				{
-                		file = FordMustangRearLeftDoorArmor,
-				}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearLeft,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
 		part FordMustangFrontRightDoorArmor
         	{
 
@@ -428,6 +346,12 @@ part FordMustangFrontLeftWindowArmor
                 		file = FordMustangFrontLeftWindowArmor,
 				}
 
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
 		area = Engine,
         parent = DoorFrontLeft,
             category = bodywork,
@@ -481,6 +405,12 @@ part FordMustangFrontRightWindowArmor
 				{
                 		file = FordMustangFrontRightWindowArmor,
 				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
 
 		area = Engine,
         parent = DoorFrontRight,
