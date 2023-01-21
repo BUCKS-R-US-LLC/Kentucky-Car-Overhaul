@@ -156,6 +156,8 @@ module Base
 		lightbar
 		{
 			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
 		}
 
 		sound
@@ -170,13 +172,13 @@ module Base
 		extents = 2.4706 1.7647 6.0000,
 		mass = 1000,
 		physicsChassisShape = 2.4706 1.7647 6.0588,
-		centerOfMassOffset = 0.0000 0.4853 0.0588,
-		shadowExtents = 2.3926 6.7520,
+		centerOfMassOffset = 0.0000 0.8824 0.0588,
+		shadowExtents = 2.3779 6.7520,
 		shadowOffset = 0.0000 0.0063,
-		engineForce = 5700,
+		engineForce = 3700,
 		engineLoudness = 90,
 		engineQuality = 90,
-		maxSpeed = 120f,
+		maxSpeed = 145f,
 		gearRatioCount = 5,
 		gearRatioR = 3.5,
 		gearRatio1 = 4.11,
@@ -240,7 +242,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6618 0.7059 -0.2059,
+				offset = 0.6618 0.6912 -0.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -259,7 +261,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6765 0.6029 -0.2059,
+				offset = -0.6765 0.6912 -0.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -321,22 +323,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8382 0.2500 1.2647 1.2647,
+			xywh = 1.8676 0.2500 1.2647 1.2647,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8382 0.2500 1.2647 1.2647,
+			xywh = -1.8676 0.2500 1.2647 1.2647,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.8382 -0.9853 1.2647 1.2647,
+			xywh = 1.8676 -1.0147 1.2647 1.2647,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.8382 -0.9853 1.2647 1.2647,
+			xywh = -1.8676 -1.0147 1.2647 1.2647,
 		}
 
 		area GasTank
@@ -833,7 +835,7 @@ module Base
 
 		attachment trailerfront
 		{
-			offset = -0.0149 0.4478 3.3582,
+			offset = -0.0147 0.4412 3.0441,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
