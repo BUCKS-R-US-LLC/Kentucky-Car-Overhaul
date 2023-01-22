@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Cadillac Hood Welding
 	{
-	   Require : CadillacFuneralCoachHoodSC1,
+	   Require : CadillacFuneralCoachHoodSC1;CadillacFleetwoodHoodSC1,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
     fixing Fix Cadillac Hood
 	{
-	   Require : CadillacFuneralCoachHoodSC1;
+	   Require : CadillacFuneralCoachHoodSC1;CadillacFleetwoodHoodSC1,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Cadillac Trunk Lid Welding
     {
-       Require : CadillacFuneralCoachTrunkLidSC1,
+       Require : CadillacFuneralCoachTrunkLidSC1;CadillacFleetwoodTrunkLidSC1,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Cadillac Trunk Lid
 	{
-       Require : CadillacFuneralCoachTrunkLidSC1,
+       Require : CadillacFuneralCoachTrunkLidSC1;CadillacFleetwoodTrunkLidSC1,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module Base
 
 	fixing Fix Cadillac Door Welding
 	{
-	   Require : CadillacFuneralCoachDoorSC1,
+	   Require : CadillacFuneralCoachDoorSC1;CadillacFleetwoodDoorSC1;CadillacFleetwoodRearDoorSC1,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -51,7 +51,7 @@ module Base
 
     fixing Fix Cadillac Car seat
 	{
-	   Require : CadillacFuneralCoachFrontSeatSC1;CadillacFuneralCoachRearSeatSC1,
+	   Require : CadillacFuneralCoachFrontSeatSC1;CadillacFuneralCoachRearSeatSC1;CadillacFleetwoodFrontSeatSC;CadillacFleetwoodRearSeatSC,
 	   ConditionModifier : 0.8,
 
        Fixer : DuctTape=2;Mechanics=1,
