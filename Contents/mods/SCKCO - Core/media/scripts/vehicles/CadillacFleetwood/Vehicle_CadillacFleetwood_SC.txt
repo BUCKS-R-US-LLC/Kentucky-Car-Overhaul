@@ -15,7 +15,7 @@ module Base
 	}
 	model CadillacFleetwoodPassenger
 	{
-		mesh = vehicles/Vehicle_CadillacFlet86_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_CadillacFlet86_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -119,26 +119,26 @@ module Base
 	}
 	model CadillacFleetwoodfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacFleetwoodfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacFleetwoodbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacFleetwoodbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_CadillacFleetwood
@@ -152,50 +152,50 @@ module Base
 		{
 			file = SC_CadillacFleetwood,
 			scale = 0.6100,
-			offset = 0.0000 0.0328 0.0000,
+			offset = 0.0000 -0.1148 0.5082,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_Chamois,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Chamois,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_DarkSilver,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_DarkSilver,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_White,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_White,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_WhiteRed,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_WhiteRed,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_Black,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_GarnetRed,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_GarnetRed,
 		}
 
 		skin
 		{
-			texture = Vehicles/Caprice/Vehicle_CadillacFlet86_Blue,
+			texture = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Blue,
 		}
 
 		textureMask = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_mask,
 		textureLights = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_lights,
 		textureDamage1Overlay = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_blood,
 		textureDamage2Overlay = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_blood,
-		textureDamage1Shell = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_damage,
-		textureDamage2Shell = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_damage2,
+		textureDamage1Shell = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_scratch,
+		textureDamage2Shell = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_scratch,
 		textureRust = Vehicles/CadillacFlet86/Vehicle_CadillacFlet86_rust,
 
 		sound
@@ -207,11 +207,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0492 1.8689 7.7705,
+		extents = 2.7541 2.0656 8.1311,
 		mass = 800,
-		physicsChassisShape = 3.0820 2.1311 7.8033,
+		physicsChassisShape = 2.7541 2.0656 8.1311,
 		centerOfMassOffset = 0.0000 1.0984 -0.0492,
-		shadowExtents = 3.1524 9.0683,
+		shadowExtents = 2.7754 8.1339,
 		shadowOffset = -0.0032 -0.0540,
 		engineForce = 5000,
 		gearRatioCount = 4,
@@ -236,7 +236,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.3115 0.0820 2.5410,
+			offset = -1.1475 0.2459 2.0164,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -244,7 +244,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2623 0.0820 2.5410,
+			offset = 1.1475 0.2459 2.0164,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -252,7 +252,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.3115 0.0820 -1.9672,
+			offset = -1.1475 0.2459 -2.6557,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -260,7 +260,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2623 0.0820 -1.9672,
+			offset = 1.1475 0.2459 -2.6557,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -274,7 +274,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.5246 0.2951,
+				offset = 0.6066 0.6066 -0.3443,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -293,7 +293,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 0.2951,
+				offset = -0.5902 0.6066 -0.3443,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -312,7 +312,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.5246 -1.1148,
+				offset = 0.5902 0.6066 -1.7541,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -331,7 +331,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.5246 -1.1148,
+				offset = -0.5902 0.6066 -1.7541,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -345,32 +345,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8361 3.0492 2.0000,
+			xywh = 0.0000 5.0164 2.7541 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.8197 3.0492 1.7705,
+			xywh = 0.0000 -5.0000 2.7541 1.7705,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1803 0.6721 1.3443 1.3443,
+			xywh = 2.0492 0.6721 1.3443 1.3443,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1803 0.6721 1.3443 1.3443,
+			xywh = -2.0492 0.6721 1.3443 1.3443,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1803 -0.8033 1.3443 1.3443,
+			xywh = 2.0492 -0.8033 1.3443 1.3443,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1803 -0.8033 1.3443 1.3443,
+			xywh = -2.0492 -0.8033 1.3443 1.3443,
 		}
 
 		area GasTank
@@ -414,9 +414,6 @@ module Base
 			{
 				file = CadillacFleetwoodDriver,
 			}
-		
-		itemType = Base.ChevyCapriceFrontSeatSC,
-
 		}
 
 		part SeatFrontRight
@@ -425,9 +422,6 @@ module Base
 			{
 				file = CadillacFleetwoodPassenger,
 			}
-
-		itemType = Base.ChevyCapriceFrontSeatSC,
-
 		}
 
 		part SeatRearLeft
@@ -436,8 +430,6 @@ module Base
 			{
 				file = CadillacFleetwoodDouble,
 			}
-		
-		itemType = Base.ChevyCapriceRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -446,10 +438,7 @@ module Base
 			{
 				file = CadillacFleetwoodDouble,
 			}
-		
-		itemType = Base.ChevyCapriceRearSeatSC,
 		}
-
 
 		part Muffler
 		{
@@ -510,8 +499,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-			
-			itemType = Base.ChevyCapriceHoodSC,
 		}
 
 		part Heater
@@ -553,8 +540,6 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
-			itemType = Base.ChevyCapriceFrontWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -583,8 +568,6 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-			itemType = Base.ChevyCapriceRearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -611,8 +594,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
-			itemType = Base.ChevyCapriceFrontSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -630,8 +611,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-			itemType = Base.ChevyCapriceFrontSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -649,8 +628,6 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
-
-			itemType = Base.ChevyCapriceRearSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -668,8 +645,6 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
-			itemType = Base.ChevyCapriceRearSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -706,8 +681,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyCapriceFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -744,8 +717,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyCapriceFrontDoorSC,
 		}
 
 		part DoorRearRight
@@ -782,8 +753,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyCapriceRearDoorSC,
 		}
 
 		part DoorRearLeft
@@ -820,8 +789,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyCapriceRearDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -873,8 +840,6 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
-			itemType = Base.ChevyCapriceTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -968,8 +933,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			offset = 0.0000 0.9672 -0.1148,
+			extents = 3.1148 1.8525 8.0328,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
