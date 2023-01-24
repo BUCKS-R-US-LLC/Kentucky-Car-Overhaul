@@ -97,6 +97,12 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
+	model PoliceRadio
+	{
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|PoliceRadio,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model MustangWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FordMustang90_LeftWheel,
@@ -807,6 +813,11 @@ module Base
 
 		part Radio*
 		{
+			model PoliceRadio
+			{
+				file = PoliceRadio,
+			}
+
 			itemType = Radio.HamRadio1,
 		}
 
