@@ -36,8 +36,6 @@ module Base
 		mesh = vehicles/Vehicle_FordMustang90_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
 	}
 	model MustangSCFrontRightWindow
 	{
@@ -59,14 +57,12 @@ module Base
 	{
 		mesh = vehicles/Vehicle_FordMustang90_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
 		scale = 1,
 	}
 	model MustangSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_FordMustang90_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
 		scale = 1,
 	}
 	model MustangSCFrontRightDoor
@@ -148,11 +144,6 @@ module Base
 		skin
 		{
 			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Strawberry,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordMustang90/Vehicle_FordMustang90_Blue,
 		}
 
 		skin
