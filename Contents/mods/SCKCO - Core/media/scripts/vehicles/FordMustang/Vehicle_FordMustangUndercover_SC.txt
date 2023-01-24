@@ -1,101 +1,97 @@
 module Base
 {
-	model SC_FordMustang
+	model SC_FordMustangPolice
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model MustangSCDriver
+	model PoliceMustangSCDriver
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MustangSCPassenger
+	model PoliceMustangSCPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MustangSCRearPassenger
+	model PoliceMustangSCRearPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MustangSCWindshield
+	model PoliceMustangSCWindshield
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model MustangSCRearWindshield
+	model PoliceMustangSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
 	}
-	model MustangSCFrontRightWindow
+	model PoliceMustangSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model MustangSCFrontLeftWindow
+	model PoliceMustangSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model MustangSCRearRightWindow
+	model PoliceMustangSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
 		scale = 1,
 	}
-	model MustangSCRearLeftWindow
+	model PoliceMustangSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
 		scale = 1,
 	}
-	model MustangSCFrontRightDoor
+	model PoliceMustangSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model MustangSCFrontLeftDoor
+	model PoliceMustangSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model MustangSCTrunk
+	model PoliceMustangSCTrunk
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model MustangSCHood
+	model PoliceMustangSCHood
 	{
-		mesh = vehicles/Vehicle_FordMustang90_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordMustang90Police_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -135,9 +131,9 @@ module Base
 
 		model
 		{
-			file = SC_FordMustang,
+			file = SC_FordMustangPolice,
 			scale = 0.6800,
-			offset = 0.0000 -0.5000 -0.1618,
+			offset = 0.0000 -0.2500 -0.1618,
 		}
 
 		skin
@@ -153,13 +149,6 @@ module Base
 		textureDamage1Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 		textureDamage2Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-			leftCol = 0;0;1,
-			rightCol = 0;0;1,
-		}
-
 		sound
 		{
 			engine = VehicleEngineSportsCar,
@@ -169,6 +158,13 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
+		}
+		
 		extents = 2.4706 1.7647 6.0000,
 		mass = 1000,
 		physicsChassisShape = 2.4706 1.7647 6.0588,
@@ -381,7 +377,7 @@ module Base
 		{
 			model SeatfrontLeft
 			{
-				file = MustangSCDriver,
+				file = PoliceMustangSCDriver,
 			}
 
 			itemType = Base.FordMustangFrontSeatSC,
@@ -391,7 +387,7 @@ module Base
 		{
 			model SeatfrontRight
 			{
-				file = MustangSCPassenger,
+				file = PoliceMustangSCPassenger,
 			}
 
 			itemType = Base.FordMustangFrontSeatSC,
@@ -401,7 +397,7 @@ module Base
 		{
 			model SeatRearLeft
 			{
-				file = MustangSCRearPassenger,
+				file = PoliceMustangSCRearPassenger,
 			}
 
 			itemType = Base.FordMustangRearSeatSC,
@@ -411,7 +407,7 @@ module Base
 		{
 			model SeatRearRight
 			{
-				file = MustangSCRearPassenger,
+				file = PoliceMustangSCRearPassenger,
 			}
 
 			itemType = Base.FordMustangRearSeatSC,
@@ -436,7 +432,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = MustangSCHood,
+				file = PoliceMustangSCHood,
 			}
 
 			anim Close
@@ -497,7 +493,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = MustangSCWindshield,
+				file = PoliceMustangSCWindshield,
 			}
 
 			window
@@ -525,7 +521,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = MustangSCRearWindshield,
+				file = PoliceMustangSCRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -562,7 +558,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = MustangSCFrontRightWindow,
+				file = PoliceMustangSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -579,7 +575,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = MustangSCFrontLeftWindow,
+				file = PoliceMustangSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -596,7 +592,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = MustangSCRearLeftWindow,
+				file = PoliceMustangSCRearLeftWindow,
 			}
 
 			area = SeatFrontLeft,
@@ -606,7 +602,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = MustangSCRearRightWindow,
+				file = PoliceMustangSCRearRightWindow,
 			}
 
 			area = SeatFrontRight,
@@ -616,7 +612,7 @@ module Base
 		{
 			model Default
 			{
-				file = MustangSCFrontRightDoor,
+				file = PoliceMustangSCFrontRightDoor,
 			}
 
 			anim Close
@@ -652,7 +648,7 @@ module Base
 		{
 			model Default
 			{
-				file = MustangSCFrontLeftDoor,
+				file = PoliceMustangSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -700,7 +696,7 @@ module Base
 
 			model Default
 			{
-				file = MustangSCTrunk,
+				file = PoliceMustangSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
