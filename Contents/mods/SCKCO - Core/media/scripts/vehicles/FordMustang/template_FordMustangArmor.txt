@@ -39,7 +39,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
 	model FordMustangFrontRightWindowArmor
@@ -48,7 +48,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
 
 	model FordMustangRearRightWindowArmor
@@ -78,9 +78,9 @@ module Base
                 		file = FordMustangWindshieldArmor,
 				}
 		area = Engine,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangWindshieldArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -94,8 +94,8 @@ module Base
                     }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -113,8 +113,8 @@ module Base
                    }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -130,9 +130,9 @@ module Base
                 		file = FordMustangBullbar,
 				}
 		area = Engine,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangBullbarSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -146,8 +146,8 @@ module Base
                     }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -165,8 +165,8 @@ module Base
                    }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -212,9 +212,9 @@ module Base
 
 		area = Engine,
 		parent = DoorFrontLeft,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangDoorArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -228,8 +228,8 @@ module Base
                     }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -247,8 +247,8 @@ module Base
                    }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -294,9 +294,9 @@ module Base
 
 		area = Engine,
 		parent = DoorFrontRight,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangDoorArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -310,8 +310,8 @@ module Base
                     }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -354,9 +354,9 @@ part FordMustangFrontLeftWindowArmor
 
 		area = Engine,
         parent = DoorFrontLeft,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangWindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -370,8 +370,8 @@ part FordMustangFrontLeftWindowArmor
                     }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -389,8 +389,8 @@ part FordMustangFrontLeftWindowArmor
                    }
                 }
                 time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -414,9 +414,9 @@ part FordMustangFrontRightWindowArmor
 
 		area = Engine,
         parent = DoorFrontRight,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        itemType = Base.FordMustangWindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -459,88 +459,6 @@ part FordMustangFrontRightWindowArmor
             }
 		}
 
- part FordMustangRearRightDoorArmor
-        	{
-
-			model FordMustangRearRightDoorArmor
-				{
-                		file = FordMustangRearRightDoorArmor,
-				}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearRight,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
 part FordMustangRearLeftWindowArmor
         	{
 
@@ -550,10 +468,10 @@ part FordMustangRearLeftWindowArmor
 				}
 
 		area = Engine,
-                parent = DoorRearLeft,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        parent = DoorRearLeft,
+        category = bodywork,
+        itemType = Base.FordMustangWindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -604,117 +522,10 @@ part FordMustangRearRightWindowArmor
 				}
 
 		area = Engine,
-            category = bodywork,
-            parent = DoorRearRight,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-
-part FordMustangMiddleLeftWindowArmor
-        	{
-
-			model FordMustangMiddleLeftWindowArmor
-				{
-                		file = FordMustangMiddleLeftWindowArmor,
-				}
-
-		area = Engine,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-part FordMustangMiddleRightWindowArmor
-        	{
-
-			model FordMustangMiddleRightWindowArmor
-				{
-                		file = FordMustangMiddleRightWindowArmor,
-				}
-
-		area = Engine,
-            category = bodywork,
-            itemType = Base.Windshield,
-            mechanicRequireKey = false,
+        category = bodywork,
+        parent = DoorRearRight,
+        itemType = Base.FordMustangWindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
