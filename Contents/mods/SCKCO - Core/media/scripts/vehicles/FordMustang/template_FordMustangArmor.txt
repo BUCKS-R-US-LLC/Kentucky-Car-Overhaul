@@ -292,7 +292,7 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontRight,
 		parent = DoorFrontRight,
         category = bodywork,
         itemType = Base.FordMustangDoorArmorSC,
@@ -352,7 +352,7 @@ part FordMustangFrontLeftWindowArmor
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontLeft,
         parent = DoorFrontLeft,
         category = bodywork,
         itemType = Base.FordMustangWindowArmorSC,
@@ -412,8 +412,8 @@ part FordMustangFrontRightWindowArmor
 				animate = FALSE,
 			}
 
-		area = Engine,
-        parent = DoorFrontRight,
+		area = DoorFrontLeft,
+        parent = WindowFrontRight,
         category = bodywork,
         itemType = Base.FordMustangWindowArmorSC,
         mechanicRequireKey = false,
@@ -432,7 +432,7 @@ part FordMustangFrontRightWindowArmor
                 time = 300,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
-                parent = DoorFrontRight,
+                parent = WindowFrontRight,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -467,7 +467,7 @@ part FordMustangRearLeftWindowArmor
                 		file = FordMustangRearLeftWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorRearLeft,
         parent = DoorRearLeft,
         category = bodywork,
         itemType = Base.FordMustangWindowArmorSC,
@@ -521,9 +521,9 @@ part FordMustangRearRightWindowArmor
                 		file = FordMustangRearRightWindowArmor,
 				}
 
-		area = Engine,
-        category = bodywork,
+		area = DoorRearRight,        
         parent = DoorRearRight,
+        category = bodywork,
         itemType = Base.FordMustangWindowArmorSC,
         mechanicRequireKey = false,
 		table install
