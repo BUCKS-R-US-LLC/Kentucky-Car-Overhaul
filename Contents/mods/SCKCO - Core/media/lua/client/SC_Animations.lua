@@ -148,6 +148,7 @@ local vehicleToSeatAnimations = {
 	["Base.CarTaxi"] = "Default",
 	["Base.CarTaxi02"] = "Default",
 	["Base.SC_CadillacFleetwood"] = "Default",
+	["Base.SC_ChevroletCavalier"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
