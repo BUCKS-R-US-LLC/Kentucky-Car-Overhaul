@@ -1,3 +1,4 @@
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCavalier"] = {imgPrefix = "chevcara_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CamaroTTop"] = {imgPrefix = "camaro_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SportsCar"] = {imgPrefix = "camaro_", x=0,y=0};
 --
