@@ -348,12 +348,12 @@ part FordMustangFrontLeftWindowArmor
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftArmorClosing,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
 		area = DoorFrontLeft,
-        parent = DoorFrontLeft,
+		parent = WindowFrontLeft,
         category = bodywork,
         itemType = Base.FordMustangWindowArmorSC,
         mechanicRequireKey = false,
@@ -408,7 +408,7 @@ part FordMustangFrontRightWindowArmor
 
 			anim ClosedToOpen
 			{
-				anim = FrontRightArmorClosing,
+				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
 

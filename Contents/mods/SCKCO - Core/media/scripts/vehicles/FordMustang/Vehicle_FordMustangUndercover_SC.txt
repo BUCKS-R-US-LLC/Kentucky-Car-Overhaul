@@ -1,107 +1,103 @@
 module Base
 {
-	model SC_FordMustangPolice
+	model SC_FordMustang
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordMustang90_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model PoliceMustangSCDriver
+	model MustangSCDriver
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCPassenger
+	model MustangSCPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCRearPassenger
+	model MustangSCRearPassenger
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCWindshield
+	model MustangSCWindshield
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCRearWindshield
+	model MustangSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCFrontRightWindow
+	model MustangSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
-	model PoliceMustangSCFrontLeftWindow
+	model MustangSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
-	model PoliceMustangSCRearRightWindow
+	model MustangSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCRearLeftWindow
+	model MustangSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model PoliceMustangSCFrontRightDoor
+	model MustangSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model PoliceMustangSCFrontLeftDoor
+	model MustangSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model PoliceMustangSCTrunk
+	model MustangSCTrunk
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model PoliceMustangSCHood
+	model MustangSCHood
 	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordMustang90_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
-	}
-	model PoliceRadio
-	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|PoliceRadio,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model MustangWheelfrontwheelleft
 	{
@@ -137,7 +133,7 @@ module Base
 
 		model
 		{
-			file = SC_FordMustangPolice,
+			file = SC_FordMustang,
 			scale = 0.6800,
 			offset = 0.0000 -0.2500 -0.1618,
 		}
@@ -493,16 +489,6 @@ module Base
 			}
 		}
 
-		part PoliceRadio
-		{
-			model PoliceRadio
-			{
-				file = PoliceRadio,
-			}
-
-			itemType = Base.FordMustangRearSeatSC,
-		}
-
 		template = Windshield/part/Windshield,
 		template = Windshield/part/WindshieldRear,
 
@@ -824,10 +810,6 @@ module Base
 
 		part Radio*
 		{
-			model PoliceRadio
-			{
-				file = PoliceRadio,
-			}
 
 			itemType = Radio.HamRadio1,
 		}

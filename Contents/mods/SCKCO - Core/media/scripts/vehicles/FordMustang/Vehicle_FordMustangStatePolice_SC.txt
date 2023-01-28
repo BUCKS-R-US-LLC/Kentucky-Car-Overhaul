@@ -44,6 +44,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
 	model PoliceMustangSCFrontLeftWindow
 	{
@@ -52,6 +53,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
 	model PoliceMustangSCRearRightWindow
 	{
@@ -96,12 +98,6 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
-	}
-		model PoliceRadio
-	{
-		mesh = vehicles/Vehicle_FordMustang90Police_SC|PoliceRadio,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model MustangWheelfrontwheelleft
 	{
