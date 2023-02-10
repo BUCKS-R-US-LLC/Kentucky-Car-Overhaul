@@ -3,7 +3,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_CUCVZhenjaEdition"] = {imgPrefix = "k10_"
 ISCarMechanicsOverlay.CarList["Base.SC_M1008"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_M1008TroopCarrier"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_M1010Ambulance"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_K10"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruck"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
@@ -15,7 +14,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_M1009MilitaryPolice"] = {imgPrefix = "bla
 ISCarMechanicsOverlay.CarList["Base.SC_M1009"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerParkRanger"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerStatePolice"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerCiv"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerFossoil"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsPolice"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsFire"] = {imgPrefix = "blazer_", x=0,y=0};
@@ -54,7 +52,6 @@ ISCarMechanicsOverlay.CarList["Base.VanRadio3N"] = {imgPrefix = "g30windowless_"
 
 ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Police"] = {imgPrefix = "p30police_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30ParkRanger"] = {imgPrefix = "p30police_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Civ"] = {imgPrefix = "p30civ_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30civ_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30civ_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVan_Heralds"] = {imgPrefix = "p30civ_", x=0,y=0};
