@@ -1,3 +1,6 @@
+ISCarMechanicsOverlay.CarList["Base.SC_FordCountrySquire"] = {imgPrefix = "squire_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.CarStationWagon"] = {imgPrefix = "squire_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.CarStationWagon2"] = {imgPrefix = "squire_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordExplorer"] = {imgPrefix = "explorer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordBronco"] = {imgPrefix = "bronco1992_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF150"] = {imgPrefix = "f150_", x=0,y=0};
