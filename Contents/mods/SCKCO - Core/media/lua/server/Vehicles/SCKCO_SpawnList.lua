@@ -39,9 +39,9 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangJeffersonCo"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangStatePolice"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangJeffersonCo"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordMustangStatePolice"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordF700ArmoredPolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.spawnRate = 30;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
@@ -120,4 +120,5 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.trafficjams.chanceToPartDamage = 50;
+
 end
