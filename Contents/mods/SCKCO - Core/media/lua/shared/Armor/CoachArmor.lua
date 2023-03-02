@@ -4,7 +4,7 @@
 
 function FireCoachWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
 
     local part = vehicle:getPartById("Windshield")
@@ -23,7 +23,7 @@ end
 
 function FireCoachEngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("EngineDoor"):getInventoryItem()) then
@@ -39,7 +39,7 @@ end
 
 function FireCoachGasTank(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
         local part = vehicle:getPartById("GasTank")
         if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
@@ -55,7 +55,7 @@ end
 
 function FireCoachLeftDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
 local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("FireCoachFrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("FireCoachFrontLeftDoorArmor"):getInventoryItem()) then
@@ -74,7 +74,7 @@ end
 
 function FireCoachRightDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
 local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("FireCoachFrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("FireCoachFrontRightDoorArmor"):getInventoryItem()) then
@@ -93,7 +93,7 @@ end
 
 function FireCoachLeftWindow(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownFireCoach" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Crown FireCoach" )) then
 
 
         local part = vehicle:getPartById("WindowFrontLeft")
