@@ -121,33 +121,53 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
-
+            
             		table uninstall
             {
                 items
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -173,15 +193,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -192,14 +212,35 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		} 
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -255,14 +296,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -274,14 +316,34 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -337,14 +399,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -356,14 +419,34 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -419,14 +502,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -438,14 +522,34 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -473,14 +577,15 @@ part JeepCherokeeFrontLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -492,14 +597,34 @@ part JeepCherokeeFrontLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -533,7 +658,7 @@ part JeepCherokeeFrontRightWindowArmor
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
                 parent = DoorFrontRight,
@@ -547,14 +672,34 @@ part JeepCherokeeFrontRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -610,14 +755,15 @@ part JeepCherokeeFrontRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -629,14 +775,34 @@ part JeepCherokeeFrontRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -664,14 +830,15 @@ part JeepCherokeeRearLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -683,14 +850,34 @@ part JeepCherokeeRearLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -718,14 +905,15 @@ part JeepCherokeeRearRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -737,14 +925,34 @@ part JeepCherokeeRearRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -772,14 +980,15 @@ part JeepCherokeeMiddleLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -791,14 +1000,34 @@ part JeepCherokeeMiddleLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -825,14 +1054,15 @@ part JeepCherokeeMiddleRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -844,14 +1074,34 @@ part JeepCherokeeMiddleRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }

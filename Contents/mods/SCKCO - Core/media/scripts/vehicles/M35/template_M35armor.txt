@@ -67,15 +67,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -86,15 +86,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -128,16 +128,16 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
 		requireInstalled = WindowFrontRight,
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -148,15 +148,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -189,15 +189,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowFrontLeft,
-                time = 300,
-                  skills = Mechanics:1,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -209,14 +209,14 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -245,15 +245,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
 		requireInstalled = WindowFrontRight,
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -265,14 +265,14 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -300,15 +300,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
 		requireInstalled = WindowFrontLeft,
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -320,14 +320,14 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -353,14 +353,14 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -372,14 +372,14 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                  skills = Mechanics:1,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }

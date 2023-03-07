@@ -87,15 +87,16 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+		    requireInstalled = WindowFrontLeft,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -106,15 +107,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -139,15 +140,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                 skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -158,15 +159,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -221,15 +222,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                 skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -240,15 +241,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -303,15 +304,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                 skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -322,15 +323,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -363,15 +364,15 @@ part FordMustangFrontLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                 skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -382,15 +383,15 @@ part FordMustangFrontLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -423,15 +424,15 @@ part FordMustangFrontRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 parent = WindowFrontRight,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
@@ -443,15 +444,15 @@ part FordMustangFrontRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -478,15 +479,15 @@ part FordMustangRearLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -497,15 +498,15 @@ part FordMustangRearLeftWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -532,15 +533,15 @@ part FordMustangRearRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -551,15 +552,15 @@ part FordMustangRearRightWindowArmor
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
