@@ -14,6 +14,15 @@ VehicleDistributions.SCMilitary = {
             "SMUIClothing.Hat_PatrolCap", 10,
             "SMUIClothing.Hat.MilitaryHelmet", 10,
             "Vest_BulletArmy", 10,
+
+            -- MEA -- 
+            
+            "MEA.GIJerryCan", 10,
+            "MEA.AmmoCan762X51", 10,
+            "MEA.AmmoCan50BMG", 10,
+            "MEA.ANPRC113", 5,
+            "MEA.ANPRC119", 5,
+
         },
         junk = {
             rolls = 1,
