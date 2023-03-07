@@ -18,20 +18,13 @@ module Base
                 		file = CJ7softtop,
 				}
 		area = TruckBed,
-            category = bodywork,
+            category = SCUCKaccessories,
             itemType = Base.CJ7softtop,
             mechanicRequireKey = false,
             table install
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
                 }
                 time = 300,
                 category = SCUCKaccessories,
@@ -41,20 +34,10 @@ module Base
 
             		table uninstall
             {
-		requireUninstalled = CJ7softtop,
                 items
                 {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
                 }
                 time = 300,
-                  skills = Mechanics:5,
-                  recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
  		lua
