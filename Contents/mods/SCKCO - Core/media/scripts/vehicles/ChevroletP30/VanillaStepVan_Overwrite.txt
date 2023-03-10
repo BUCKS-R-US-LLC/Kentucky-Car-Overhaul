@@ -195,7 +195,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2632 0.0877 2.0877,
+			offset = 1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -203,7 +203,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2632 0.0877 2.0877,
+			offset = -1.2632 0.0877 2.0877,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -211,7 +211,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.1404 0.0877 -2.8772,
+			offset = 1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,7 +219,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.1404 0.0877 -2.8772,
+			offset = -1.1404 0.0877 -2.8772,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -319,7 +319,7 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = -0.0000 -5.5614 1.1228 1.1228,
+			xywh = 0.0000 -5.5614 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
@@ -352,7 +352,7 @@ module Base
 			xywh = -1.6140 -2.7895 0.0000 0.0000,
 		}
 
-        template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
@@ -740,7 +740,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyP30RearDoorsSC,
 		}
 
