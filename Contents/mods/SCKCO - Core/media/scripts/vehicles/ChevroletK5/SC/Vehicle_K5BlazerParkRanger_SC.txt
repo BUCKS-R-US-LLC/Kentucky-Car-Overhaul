@@ -129,14 +129,6 @@ module Base
 			texture = Vehicles/CUCV/Vehicle_M1009_ParkRanger,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
 		sound
 		{
 			engine = VehicleEngineSUV,
@@ -211,7 +203,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -219,7 +211,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -227,7 +219,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -235,7 +227,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
