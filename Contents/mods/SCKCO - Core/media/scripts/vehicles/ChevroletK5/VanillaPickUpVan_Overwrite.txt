@@ -89,31 +89,25 @@ module Base
 	model BlazerCivilianWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerCivilianSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerCivilianWheelfrontwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerCivilianSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerCivilianWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerCivilianSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerCivilianWheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerCivilianSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerCivilianWheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerCivilianSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle PickUpVan
@@ -182,7 +176,6 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
@@ -200,7 +193,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-        extents = 3.1429 3.0794 6.5714,
+		extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -228,7 +221,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -236,7 +229,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1587,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -244,7 +237,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -252,7 +245,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -352,7 +345,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -374,7 +366,7 @@ module Base
 			{
 				file = BlazerCivilianSCPassenger,
 			}
-		
+
 			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
@@ -390,8 +382,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.NormalCarMuffler,
-
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -536,7 +527,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -555,7 +545,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -591,7 +580,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-			
+
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -667,7 +656,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 
@@ -742,7 +731,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = BlazerCivilianWheelfrontwheelleft,
 			}
 		}
 
@@ -750,7 +739,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = BlazerCivilianWheelfrontwheelright,
 			}
 		}
 
@@ -758,7 +747,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = BlazerCivilianWheelbackwheelleft,
 			}
 		}
 
@@ -766,7 +755,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = BlazerCivilianWheelbackwheelright,
 			}
 		}
 
