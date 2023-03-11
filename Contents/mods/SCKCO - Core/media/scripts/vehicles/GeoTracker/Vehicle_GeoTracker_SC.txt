@@ -620,6 +620,10 @@ module Base
 
 			area = SeatRearRight,
 			itemType = Base.GeoTrackerSideWindowSC,
+			table install
+			{
+			requireInstalled =,
+			}
 		}
 
 		part WindowRearLeft
@@ -631,6 +635,10 @@ module Base
 
 			area = SeatRearLeft,
 			itemType = Base.GeoTrackerSideWindowSC,
+			table install
+			{
+			requireInstalled =,
+			}
 		}
 
 		part DoorFrontRight

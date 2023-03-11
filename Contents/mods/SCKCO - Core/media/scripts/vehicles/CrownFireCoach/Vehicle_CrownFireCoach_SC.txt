@@ -925,6 +925,14 @@ module Base
 				file = FireCoachRearLeftWindow,
 			}
 
+			area = TireFrontLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+			
 			itemType = Base.FireCoachRearSideWindowDoor,
 		}
 
@@ -933,6 +941,14 @@ module Base
 			model windowRR
 			{
 				file = FireCoachRearRightWindow,
+			}
+
+			area = TireFrontRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
 			}
 
 			itemType = Base.FireCoachRearSideWindowDoor,

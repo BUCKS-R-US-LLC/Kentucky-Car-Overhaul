@@ -86,34 +86,34 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerCivilianWheelfrontwheelleft
+	model BlazerFossoilWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerCivilianWheelfrontwheelleft
+	model BlazerFossoilWheelfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerCivilianWheelfrontwheelright
+	model BlazerFossoilWheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerCivilianWheelbackwheelleft
+	model BlazerFossoilWheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerCivilianWheelbackwheelright
+	model BlazerFossoilWheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/K5/Vehicle_BlazerFossoilSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_K5BlazerFossoil
@@ -152,6 +152,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
+		
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
@@ -174,7 +175,7 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 3.1429 3.0794 6.5714,
+        extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -283,17 +284,17 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1905 0.2540 1.2381 1.2381,
+			xywh = 2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1905 0.2540 1.2381 1.2381,
+			xywh = -2.0476 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1111 -2.5397 1.0794 0.5714,
+			xywh = -1.9048 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -326,6 +327,7 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -347,7 +349,7 @@ module Base
 			{
 				file = BlazerFossoilSCPassenger,
 			}
-
+		
 			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
@@ -363,7 +365,8 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.NormalCarMuffler,
+		itemType = Base.NormalCarMuffler,
+
 		}
 
 		template = EngineDoor,
@@ -508,6 +511,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -526,6 +530,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -561,7 +566,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-
+			
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -637,7 +642,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-
+			
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 
@@ -712,33 +717,34 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerCivilianWheelfrontwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
+		
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerCivilianWheelfrontwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
-		}
+			}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerCivilianWheelbackwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
-		}
+			}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerCivilianWheelbackwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
-		}
+			}
 
 		template = Brake,
 

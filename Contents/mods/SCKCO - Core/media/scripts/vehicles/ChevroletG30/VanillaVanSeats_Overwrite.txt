@@ -432,7 +432,7 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = 2.1017 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
@@ -1009,6 +1009,10 @@ module Base
 
 			itemType = Base.ChevyG30SideWindowSC,
 			area = SeatMiddleLeft,
+			table install
+			{
+			requireInstalled =,
+			}
 		}
 
 		part WindowMiddleRight
@@ -1026,6 +1030,11 @@ module Base
 			itemType = Base.ChevyG30SideWindowSC,
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
+			table install
+			{
+			requireInstalled =,
+			}
+			
 		}
 
 		part WindowRearRight
@@ -1058,6 +1067,10 @@ module Base
 
 			itemType = Base.ChevyG30SideWindowSC,
 			area = SeatRearLeft,
+			table install
+			{
+			requireInstalled =,
+			}		
 		}
 
 		part DoorFrontRight

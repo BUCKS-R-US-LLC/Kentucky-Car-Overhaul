@@ -129,6 +129,14 @@ module Base
 			texture = Vehicles/CUCV/Vehicle_M1009_ParkRanger,
 		}
 
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+
 		sound
 		{
 			engine = VehicleEngineSUV,
@@ -720,7 +728,6 @@ module Base
 				file = BlazerWheelLargefrontwheelleft,
 			}
 		
-		itemType = NormalTire,
 		}
 
 		part TireFrontRight
@@ -729,7 +736,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
-			itemType = NormalTire,
 		}
 
 		part TireRearLeft
@@ -738,7 +744,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelleft,
 			}
-			itemType = NormalTire,
 		}
 
 		part TireRearRight
@@ -747,7 +752,6 @@ module Base
 			{
 				file = BlazerWheelLargefrontwheelright,
 			}
-			itemType = NormalTire,
 		}
 
 		template = Brake,

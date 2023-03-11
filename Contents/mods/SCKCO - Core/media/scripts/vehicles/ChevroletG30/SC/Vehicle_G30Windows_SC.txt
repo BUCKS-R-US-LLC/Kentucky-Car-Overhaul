@@ -756,7 +756,10 @@ module Base
 			{
 				file = G30VanNormalMiddleLeftWindow,
 			}
-
+			table install
+			{
+			requireInstalled =,
+			}
 			area = SeatMiddleLeft,
 		}
 
@@ -771,7 +774,10 @@ module Base
 			{
 				file = G30VanNormalSlidingWindow,
 			}
-
+			table install
+			{
+			requireInstalled =,
+			}
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
 		}
@@ -802,7 +808,10 @@ module Base
 			{
 				file = G30VanNormalRearLeftWindow,
 			}
-
+			table install
+			{
+			requireInstalled =,
+			}
 			area = SeatRearLeft,
 		}
 
