@@ -496,6 +496,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindshieldSC,
 		}
 
@@ -514,7 +515,8 @@ module Base
 			{
 				file = F700ArmoredFrontRightWindow,
 			}
-
+			
+		    category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.BallisticGlassWindowSC,
@@ -532,6 +534,7 @@ module Base
 				openable = false,
 			}
 
+		    category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.BallisticGlassWindowSC,
@@ -549,6 +552,7 @@ module Base
 				openable = false,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.BallisticGlassWindowSC,
@@ -566,12 +570,15 @@ module Base
 				openable = false,
 			}
 
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
 			table install
 			{
 			requireInstalled =,
 			}
+
+		    category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -586,13 +593,16 @@ module Base
 			{
 				openable = false,
 			}
-
-			parent = DoorRearRight,
-			area = SeatFrontRight,
+			
 			table install
 			{
 			requireInstalled =,
 			}
+
+		    category = SCUCKwindows,
+			parent = DoorRearRight,
+			area = SeatFrontRight,
+	
 			itemType = Base.BallisticGlassWindowSC,
 		}
 

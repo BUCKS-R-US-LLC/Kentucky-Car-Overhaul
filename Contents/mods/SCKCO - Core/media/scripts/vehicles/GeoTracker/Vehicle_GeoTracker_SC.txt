@@ -532,7 +532,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
+	     	category = SCUCKwindows,
 			itemType = Base.GeoTrackerWindshieldSC,
 		}
 
@@ -565,6 +565,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.GeoTrackerWindshieldSC,
 		}
 
@@ -588,6 +589,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.GeoTrackerSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -606,6 +608,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.GeoTrackerSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -617,13 +620,16 @@ module Base
 			{
 				file = GeoTrackerRearRightWindow,
 			}
-
-			area = SeatRearRight,
-			itemType = Base.GeoTrackerSideWindowSC,
+			
 			table install
 			{
 			requireInstalled =,
 			}
+
+		    category = SCUCKwindows,
+			area = SeatRearRight,
+			itemType = Base.GeoTrackerSideWindowSC,
+
 		}
 
 		part WindowRearLeft
@@ -632,13 +638,15 @@ module Base
 			{
 				file = GeoTrackerRearLeftWindow,
 			}
-
-			area = SeatRearLeft,
-			itemType = Base.GeoTrackerSideWindowSC,
 			table install
 			{
 			requireInstalled =,
 			}
+			
+		    category = SCUCKwindows,			
+			area = SeatRearLeft,
+			itemType = Base.GeoTrackerSideWindowSC,
+
 		}
 
 		part DoorFrontRight

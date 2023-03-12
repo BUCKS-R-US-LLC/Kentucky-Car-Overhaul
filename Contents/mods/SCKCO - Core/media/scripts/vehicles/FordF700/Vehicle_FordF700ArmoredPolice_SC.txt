@@ -490,7 +490,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
+			
+		    category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindshieldSC,
 		}
 
@@ -512,6 +513,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -529,6 +531,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -546,6 +549,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -561,12 +565,14 @@ module Base
 				openable = false,
 			}
 
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
 			table install
 			{
 			requireInstalled =,
 			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		    category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -582,12 +588,14 @@ module Base
 				openable = false,
 			}
 
-			parent = DoorRearRight,
-			area = SeatFrontRight,
 			table install
 			{
 			requireInstalled =,
 			}
+
+			parent = DoorRearRight,
+			area = SeatFrontRight,
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 

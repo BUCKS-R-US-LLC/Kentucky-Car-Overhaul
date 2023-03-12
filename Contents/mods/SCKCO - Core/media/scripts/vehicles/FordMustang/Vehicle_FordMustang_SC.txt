@@ -545,6 +545,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.FordMustangWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -575,6 +577,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			itemType = Base.FordMustangWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -597,6 +601,7 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.FordMustangSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -614,6 +619,7 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = Base.FordMustangSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -625,11 +631,14 @@ module Base
 				file = MustangSCRearLeftWindow,
 			}
 
-			area = SeatFrontLeft,
 			table install
 			{
 			requireInstalled =,
 			}
+
+			itemType = Base.FordMustangSideWindowSC,
+			area = SeatFrontLeft,
+
 		}
 
 		part WindowRearRight
@@ -639,11 +648,14 @@ module Base
 				file = MustangSCRearRightWindow,
 			}
 
-			area = SeatFrontRight,
 			table install
 			{
 			requireInstalled =,
 			}
+
+			itemType = Base.FordMustangSideWindowSC,
+			area = SeatFrontRight,
+
 		}
 
 		part DoorFrontRight
@@ -680,6 +692,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordMustangFrontDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -716,6 +730,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordMustangFrontDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -845,7 +861,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio1,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,

@@ -842,6 +842,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			category = SCUCKwindows,
 			itemType = Base.FireCoachWindshield,
 		}
 
@@ -872,7 +873,10 @@ module Base
 			lua
 			{
 				create = Vehicles.Create.Default,
+
 			}
+
+			category = SCUCKwindows,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -894,6 +898,7 @@ module Base
 				file = FireCoachFrontRightWindow,
 			}
 
+			category = SCUCKwindows,
 			itemType = Base.FireCoachFrontSideWindowDoor,
 
 			parent = DoorFrontRight,
@@ -914,6 +919,7 @@ module Base
 
 			itemType = Base.FireCoachFrontSideWindowDoor,
 
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -933,6 +939,7 @@ module Base
 				requireInstalled =,
 			}
 			
+			category = SCUCKwindows,
 			itemType = Base.FireCoachRearSideWindowDoor,
 		}
 
@@ -951,6 +958,8 @@ module Base
 				requireInstalled =,
 			}
 
+
+			category = SCUCKwindows,
 			itemType = Base.FireCoachRearSideWindowDoor,
 		}
 
