@@ -173,6 +173,8 @@ local vehicleToSeatAnimations = {
 	["Base.StepVan_Heralds"] = "4Seater",
 	["Base.StepVanMail"] = "4Seater",
 
+	["Base.SC_GrummanLLV"] = "2Seater",
+
 	["Base.SC_G30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",
 
@@ -276,6 +278,11 @@ local vehicleToSeatAnimations = {
 		["seat1"]="Shark_Idle_Passenger",
 		["seat2"]="Shark_Idle_PassengerRelaxed",
 		["seat3"]="Shark_Idle_PassengerRelaxed",
+	},
+
+	["Base.SC_GrummanLLV"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
 	},
 }
 
