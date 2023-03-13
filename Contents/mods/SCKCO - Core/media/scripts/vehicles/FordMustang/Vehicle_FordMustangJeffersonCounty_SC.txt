@@ -380,7 +380,7 @@ module Base
 		{
 			model SeatfrontLeft
 			{
-				file = PoliceMustangSCDriver,
+				file = MustangSCDriver,
 			}
 
 			itemType = Base.FordMustangFrontSeatSC,
@@ -390,7 +390,7 @@ module Base
 		{
 			model SeatfrontRight
 			{
-				file = PoliceMustangSCPassenger,
+				file = MustangSCPassenger,
 			}
 
 			itemType = Base.FordMustangFrontSeatSC,
@@ -400,7 +400,7 @@ module Base
 		{
 			model SeatRearLeft
 			{
-				file = PoliceMustangSCRearPassenger,
+				file = MustangSCRearPassenger,
 			}
 
 			itemType = Base.FordMustangRearSeatSC,
@@ -410,7 +410,7 @@ module Base
 		{
 			model SeatRearRight
 			{
-				file = PoliceMustangSCRearPassenger,
+				file = MustangSCRearPassenger,
 			}
 
 			itemType = Base.FordMustangRearSeatSC,
@@ -435,7 +435,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = PoliceMustangSCHood,
+				file = MustangSCHood,
 			}
 
 			anim Close
@@ -496,7 +496,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = PoliceMustangSCWindshield,
+				file = MustangSCWindshield,
 			}
 
 			window
@@ -518,13 +518,16 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			category = SCUCKwindows,
+			itemType = Base.FordMustangWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model windshieldRear
 			{
-				file = PoliceMustangSCRearWindshield,
+				file = MustangSCRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -548,6 +551,9 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			category = SCUCKwindows,			
+			itemType = Base.FordMustangWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -561,7 +567,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = PoliceMustangSCFrontRightWindow,
+				file = MustangSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -570,6 +576,8 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
+			itemType = Base.FordMustangSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -578,7 +586,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = PoliceMustangSCFrontLeftWindow,
+				file = MustangSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -587,6 +595,8 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
+			itemType = Base.FordMustangSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -595,34 +605,43 @@ module Base
 		{
 			model windowRL
 			{
-				file = PoliceMustangSCRearLeftWindow,
+				file = MustangSCRearLeftWindow,
 			}
+
 			table install
 			{
 			requireInstalled =,
 			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordMustangSideWindowSC,
 			area = SeatFrontLeft,
+
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = PoliceMustangSCRearRightWindow,
+				file = MustangSCRearRightWindow,
 			}
 
-			area = SeatFrontRight,
 			table install
 			{
 			requireInstalled =,
 			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordMustangSideWindowSC,
+			area = SeatFrontRight,
+
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = PoliceMustangSCFrontRightDoor,
+				file = MustangSCFrontRightDoor,
 			}
 
 			anim Close
@@ -652,13 +671,15 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordMustangFrontDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = PoliceMustangSCFrontLeftDoor,
+				file = MustangSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -688,6 +709,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.FordMustangFrontDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -706,7 +729,7 @@ module Base
 
 			model Default
 			{
-				file = PoliceMustangSCTrunk,
+				file = MustangSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -817,12 +840,7 @@ module Base
 
 		part Radio*
 		{
-			model PoliceRadio
-			{
-				file = PoliceRadio,
-			}
-
-			itemType = Radio.HamRadio1,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,

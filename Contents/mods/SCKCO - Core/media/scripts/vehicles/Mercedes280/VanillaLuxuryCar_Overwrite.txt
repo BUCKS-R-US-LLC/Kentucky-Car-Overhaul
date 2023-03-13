@@ -304,7 +304,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.1452 -0.4194 0.5161,
+				offset = -2.0000 -0.4194 0.5161,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -317,7 +317,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5968 0.7742 -0.9355,
+				offset = 0.5968 0.7742 -1.1613,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -336,13 +336,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5968 0.7742 -0.9355,
+				offset = -0.5968 0.7742 -1.1613,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1452 -0.4194 -0.6452,
+				offset = -2.0000 -0.4194 -0.6452,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -420,7 +420,7 @@ module Base
 				file = Mercedes280Driver,
 			}
 
-		itemType = Base.Mercedes280FrontSeatSC,
+			itemType = Base.Mercedes280FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -429,8 +429,8 @@ module Base
 			{
 				file = Mercedes280Passenger,
 			}
-			
-		itemType = Base.Mercedes280FrontSeatSC,
+
+			itemType = Base.Mercedes280FrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -439,8 +439,8 @@ module Base
 			{
 				file = Mercedes280Double,
 			}
-			
-		itemType = Base.Mercedes280RearSeatSC,
+
+			itemType = Base.Mercedes280RearSeatSC,
 		}
 
 		part SeatRearRight
@@ -450,7 +450,7 @@ module Base
 				file = Mercedes280Double,
 			}
 
-		itemType = Base.Mercedes280RearSeatSC,
+			itemType = Base.Mercedes280RearSeatSC,
 		}
 
 		part Muffler
@@ -557,7 +557,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
+			
+		    category = SCUCKwindows,
 			itemType = Base.Mercedes280FrontWindshieldSC,
 		}
 
@@ -587,7 +588,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
+			
+		    category = SCUCKwindows,
 			itemType = Base.Mercedes280RearWindshieldSC,
 		}
 
@@ -615,7 +617,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280FrontSideWindowSC,
 		}
 
@@ -634,7 +636,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280FrontSideWindowSC,
 		}
 
@@ -653,7 +655,7 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
-
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280RearSideWindowSC,
 		}
 
@@ -672,7 +674,7 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280RearSideWindowSC,
 		}
 
@@ -911,6 +913,7 @@ module Base
 			{
 				file = Mercedes280backwheelleft,
 			}
+
 			itemType = Base.ModernTire,
 		}
 
@@ -920,6 +923,7 @@ module Base
 			{
 				file = Mercedes280backwheelright,
 			}
+
 			itemType = Base.ModernTire,
 		}
 
@@ -985,7 +989,7 @@ module Base
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.9524,
+			offset = 0.0000 0.3710 3.2258,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

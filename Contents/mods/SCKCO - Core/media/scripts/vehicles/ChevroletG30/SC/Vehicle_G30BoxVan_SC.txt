@@ -625,6 +625,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			category = SCUCKwindows,
 			itemType = Base.ChevyG30WindshieldSC,
 		}
 
@@ -657,6 +658,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			category = SCUCKwindows,
 			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
@@ -679,8 +681,7 @@ module Base
 				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
-
-			
+			category = SCUCKwindows,
             itemType = Base.ChevyG30SideWindowSC,
 
 			parent = DoorFrontRight,
@@ -700,6 +701,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
             itemType = Base.ChevyG30SideWindowSC,
 
 			parent = DoorFrontLeft,
@@ -833,6 +835,8 @@ module Base
 			}
 
             itemType = Base.ChevyG30SideWindowSC,
+
+			category = SCUCKwindows,
 
 			parent = DoorRearRight,
 			area = SeatFrontRight,

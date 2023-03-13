@@ -195,7 +195,7 @@ module Base
 		{
 			engine = VehicleEngineStepVan,
 			engineStart = M35start,
-			engineTurnOff = VehicleEngineStepVan,
+			engineTurnOff = M35off,
 			horn = M35horn,
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
@@ -899,6 +899,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.M35Windshield,
 
 			lua
@@ -929,6 +930,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.M35RearWindow,
 
 			lua
@@ -955,6 +957,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.M35Window,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -973,6 +976,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.M35Window,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,

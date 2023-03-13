@@ -596,6 +596,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 						
+			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroFrontSideWindowSC,
 		}
 
@@ -615,6 +616,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
+			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroFrontSideWindowSC,
 		}
 
@@ -626,10 +628,13 @@ module Base
 			}
 
 			area = SeatFrontLeft,
+
 			table install
 			{
 			requireInstalled =,
 			}
+
+			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroRearSideWindowSC,
 		}
 
@@ -641,10 +646,13 @@ module Base
 			}
 
 			area = SeatFrontRight,
+
 			table install
 			{
 			requireInstalled =,
 			}
+
+			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroRearSideWindowSC,
 		}
 

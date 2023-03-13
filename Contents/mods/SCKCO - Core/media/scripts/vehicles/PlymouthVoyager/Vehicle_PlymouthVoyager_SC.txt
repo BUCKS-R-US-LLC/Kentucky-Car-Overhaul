@@ -907,6 +907,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.PlymouthVoyagerWindshieldSC,
 		}
 
@@ -939,6 +940,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.PlymouthVoyagerRearWindshieldSC,
 		}
 
@@ -965,6 +967,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.PlymouthVoyagerSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -983,6 +986,7 @@ module Base
 				animate = FALSE,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.PlymouthVoyagerSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -1000,11 +1004,14 @@ module Base
 				file = PlymouthVoyagerMiddleLeftWindow,
 			}
 
-			itemType = Base.PlymouthVoyagerSideWindowSC,
-			area = SeatMiddleLeft,
 			{
 			requireInstalled =,
 			}
+
+		    category = SCUCKwindows,
+			itemType = Base.PlymouthVoyagerSideWindowSC,
+			area = SeatMiddleLeft,
+
 		}
 
 		part WindowMiddleRight
@@ -1019,13 +1026,15 @@ module Base
 				file = PlymouthVoyagerMiddleRightWindow,
 			}
 
-			itemType = Base.PlymouthVoyagerSideWindowSC,
-			parent = DoorRearRight,
-			area = SeatMiddleRight,
-			table install
 			{
 			requireInstalled =,
 			}
+
+		    category = SCUCKwindows,
+			itemType = Base.PlymouthVoyagerSideWindowSC,
+			parent = DoorRearRight,
+			area = SeatMiddleRight,
+
 		}
 
 		part WindowRearRight
@@ -1042,6 +1051,7 @@ module Base
 				file = PlymouthVoyagerSlidingWindow,
 			}
 
+		    category = SCUCKwindows,
 			itemType = Base.PlymouthVoyagerSideWindowSC,
 			area = SeatRearRight,
 		}
@@ -1058,11 +1068,14 @@ module Base
 				file = PlymouthVoyagerRearLeftWindow,
 			}
 
-			itemType = Base.PlymouthVoyagerSideWindowSC,
-			area = SeatRearLeft,
 			{
 			requireInstalled =,
 			}
+			
+		    category = SCUCKwindows,
+			itemType = Base.PlymouthVoyagerSideWindowSC,
+			area = SeatRearLeft,
+
 		}
 
 		part DoorFrontRight
