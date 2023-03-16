@@ -13,16 +13,39 @@ module Base
         MechanicsItem = TRUE,
     }
 
-    item CUCVSoundPart
+      item BackUpAlarm
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	0.0,
         Type	=	Normal,
-        DisplayName	=	CUCVSoundPart,
+        DisplayName	=	BackUpAlarm,
+        Icon	=	BlazerWheel,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+    
+        item M35SoundController
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	0.0,
+        Type	=	Normal,
+        DisplayName	=	M35SoundController,
         Icon	=	BlazerWheel,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
     }
 
+        item F700SoundController
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	0.0,
+        Type	=	Normal,
+        DisplayName	=	F700 Sound Controller,
+        Icon	=	BlazerWheel,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
 }
