@@ -2,32 +2,32 @@ module Base
 {
 	model SC_MackDM800Garbage
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|base_mesh,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model MackDM800GarbageDriver
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|DrivereSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbagePassenger
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbageWindshield
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|Windshield_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbageFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model MackDM800GarbageFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model MackDM800GarbageFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model MackDM800GarbageFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,52 +59,58 @@ module Base
 	}
 	model MackDM800GarbageRearRightWindow
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbageRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbageRearWindshield
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|RearWindshield_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MackDM800GarbageHood
 	{
-		mesh = vehicles/Vehicle_MackDM800Garbage|Hood_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
+	model MackDM800GarbageExhaust
+	{
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model MackDM800Garbagefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MackWheel_LeftWheel,
-		texture = vehicles/MackDM800/Vehicle_MackWheel,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_FrontLeft,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
 	model MackDM800Garbagefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MackWheel_RightWheel,
-		texture = vehicles/MackDM800/Vehicle_MackWheel,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_FrontRight,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
 	model MackDM800Garbagerearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MackWheel_LeftWheel,
-		texture = vehicles/MackDM800/Vehicle_MackWheel,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_RearLeft,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
 	model MackDM800Garbagerearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MackWheel_RightWheel,
-		texture = vehicles/MackDM800/Vehicle_MackWheel,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_RearRight,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
 	vehicle SC_MackDM800Garbage
@@ -118,7 +124,7 @@ module Base
 		{
 			file = SC_MackDM800Garbage,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -0.3175,
+			offset = 0.0000 0.3175 0.1111,
 		}
 
 		skin
@@ -129,8 +135,8 @@ module Base
 		textureRust = Vehicles/MackDM800/Vehicle_MackGarbage_rust,
 		textureMask = Vehicles/MackDM800/Vehicle_MackGarbage_mask,
 		textureLights = Vehicles/MackDM800/Vehicle_MackGarbage_lights,
-		textureDamage1Shell = Vehicles/MackDM800/Vehicle_MackGarbage_sratch,
-		textureDamage2Shell = Vehicles/MackDM800/Vehicle_MackGarbage_sratch,
+		textureDamage1Shell = Vehicles/MackDM800/Vehicle_MackGarbage_scratch,
+		textureDamage2Shell = Vehicles/MackDM800/Vehicle_MackGarbage_scratch,
 		textureDamage1Overlay = Vehicles/MackDM800/Vehicle_MackGarbage_Blood,
 		textureDamage2Overlay = Vehicles/MackDM800/Vehicle_MackGarbage_Blood,
 
@@ -143,12 +149,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.9524 3.0794 11.2381,
+		extents = 3.4603 3.0794 12.6667,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 10.6984,
-		centerOfMassOffset = 0.0000 1.5556 -0.3016,
-		shadowExtents = 3.6109 11.1989,
-		shadowOffset = 0.0000 -0.1842,
+		physicsChassisShape = 3.4921 3.0794 12.6667,
+		centerOfMassOffset = 0.0000 1.5556 -0.4603,
+		shadowExtents = 4.0554 14.5482,
+		shadowOffset = 0.0000 -0.2000,
 		engineForce = 4000,
 		engineQuality = 80,
 		engineLoudness = 180,
@@ -171,7 +177,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3651 0.0159 4.5079,
+			offset = 1.3651 0.0159 4.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -179,7 +185,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.3651 0.0159 4.5079,
+			offset = -1.3651 0.0159 4.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -187,7 +193,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1587 0.0159 -1.6984,
+			offset = -0.0476 0.0159 -3.8095,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -195,7 +201,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.1587 0.0159 -1.6984,
+			offset = -0.0317 0.0159 -2.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -242,7 +248,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0476 6.1746 2.8571 2.0000,
+			xywh = 0.0476 4.6349 5.2063 2.0000,
 		}
 
 		area TruckBed
@@ -252,37 +258,37 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0952 2.8413 1.2381 1.2381,
+			xywh = 2.3492 2.8413 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0952 2.8413 1.2381 1.2381,
+			xywh = -2.3492 2.8413 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0159 2.5079 1.0794 0.5714,
+			xywh = -2.2698 2.5079 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.4921 4.0794 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.3651 4.0794 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 1.4286 -3.7143 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -1.4286 -1.9524 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -292,6 +298,14 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part Muffler
+		{
+			model muffler
+			{
+				file = MackDM800GarbageMuffler,
+			}
+		}
 
 		part GasTank
 		{
@@ -423,7 +437,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.MackDM800WindshieldSC,
 		}
 
@@ -454,7 +468,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.MackDM800WindshieldSC,
 		}
 
@@ -476,7 +490,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.MackDM800SideWindowSC,
@@ -495,7 +509,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.MackDM800SideWindowSC,
@@ -590,44 +604,6 @@ module Base
 			{
 				recipes = Advanced Mechanics,
 			}
-
-			model Default
-			{
-				file = MackDM800GarbageTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.MackDM800GarbageRollUpDoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -733,7 +709,7 @@ module Base
 		physics box
 		{
 			offset = 0.0000 2.4127 -0.2698,
-			extents = 3.1111 2.9683 10.7460,
+			extents = 3.4921 3.2857 11.9206,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
