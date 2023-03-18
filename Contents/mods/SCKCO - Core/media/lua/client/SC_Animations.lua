@@ -174,6 +174,7 @@ local vehicleToSeatAnimations = {
 	["Base.StepVanMail"] = "4Seater",
 
 	["Base.SC_GrummanLLV"] = "2Seater",
+	["Base.SC_MackDM800Garbage"] = "2Seater",
 
 	["Base.SC_G30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",

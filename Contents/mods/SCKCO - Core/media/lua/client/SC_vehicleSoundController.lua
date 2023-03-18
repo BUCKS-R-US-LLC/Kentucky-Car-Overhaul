@@ -2,11 +2,10 @@ local vehicleSoundController = {}
 
 vehicleSoundController.library = {
 
-    ["partID"] = {---Not all params need-to or should-be defined
+    ["LargeUtilityTruckSoundController"] = {---Not all params need-to or should-be defined
 
-        { sound = "example: sound You Want To Stop", --soundFile or soundScript
-          stop = true, --if true/present will stop sound
-          --speedIsLessThan = 2, --if speed < this - play sound
+        { sound = "TruckAirbrake", --soundFile or soundScript
+          speedIsLessThan = -1,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
 

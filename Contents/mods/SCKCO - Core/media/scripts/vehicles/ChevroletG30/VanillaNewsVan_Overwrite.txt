@@ -7,6 +7,14 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
+
+	model G30VanTV
+	{
+		mesh = vehicles/Vehicle_G30WindowlessTVset_SC,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
 	model G30VanWindowlessDriver
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
@@ -136,7 +144,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/G30VanWindowless/Vehicle_LBMWTVRed,
+			texture = Vehicles/G30VanWindowless/Vehicle_LBMWRed,
 		}
 
 		textureRust = Vehicles/G30VanWindowless/Vehicle_G30VanWindowlessSC_rust,
@@ -358,6 +366,14 @@ module Base
 			}
 
 			itemType = Base.ChevyG30RearDoorsSC,
+		}
+
+		part G30TV
+		{
+			model G30VanTV
+			{
+				file = G30VanTV,
+			}
 		}
 
 		part SeatFrontLeft
