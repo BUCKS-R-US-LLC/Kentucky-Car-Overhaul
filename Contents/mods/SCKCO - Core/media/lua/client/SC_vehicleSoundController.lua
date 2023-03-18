@@ -4,14 +4,14 @@ vehicleSoundController.library = {
 
     ["LargeUtilityTruckSoundController"] = {---Not all params need-to or should-be defined
 
-        { sound = "TruckAirbrake", --soundFile or soundScript
-          speedIsLessThan = -1,
+        { sound = "BackUpAlarm", --soundFile or soundScript
+          speedIsLessThan = -3,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
 
-       { sound = "", --soundFile or soundScript
-         speedIsLessThan = -2, --if speed < this = play sound
-         speedIsGreaterThan = 2, --if speed > this = play sound
+       { sound = "TruckAirbrake",
+         stop = true,
+         speedIsLessThan = 1, 
        },
 
     }---
@@ -25,7 +25,7 @@ function vehicleSoundController.handleUpdate(player)
     if not vehicle then return end
 
     local vehicleEmitter = vehicle:getEmitter()
-    local vehicleSpeed = math.abs(vehicle:getCurrentSpeedKmHour())
+    local vehicleSpeed = vehicle:getCurrentSpeedKmHour()
 
     for partID,soundSet in pairs(vehicleSoundController.library) do
 
