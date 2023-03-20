@@ -113,9 +113,6 @@ local seatAnimationsProfiles = {
 
 local vehicleToSeatAnimations = {
 
-	["Base.SC_K5BlazerCiv"] = "Default",
-	["Base.SC_K5BlazerStatePolice"] = "Default",
-	["Base.SC_K5BlazerParkRanger"] = "Default",
 	["Base.SC_K5BlazerFossoil"] = "Default",
 	["Base.PickUpVanMccoy"] = "Default",
 	["Base.PickUpVanLights"] = "Default",
@@ -279,11 +276,6 @@ local vehicleToSeatAnimations = {
 		["seat1"]="Shark_Idle_Passenger",
 		["seat2"]="Shark_Idle_PassengerRelaxed",
 		["seat3"]="Shark_Idle_PassengerRelaxed",
-	},
-
-	["Base.SC_GrummanLLV"] = {
-        ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
 	},
 }
 

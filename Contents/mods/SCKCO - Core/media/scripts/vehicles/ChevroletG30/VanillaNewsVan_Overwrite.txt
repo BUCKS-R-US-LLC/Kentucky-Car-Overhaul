@@ -7,14 +7,6 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-
-	model G30VanTV
-	{
-		mesh = vehicles/Vehicle_G30WindowlessTVset_SC,
-		shader = vehiclewheel,
-		scale = 1,
-	}
-
 	model G30VanWindowlessDriver
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
@@ -368,14 +360,6 @@ module Base
 			itemType = Base.ChevyG30RearDoorsSC,
 		}
 
-		part G30TV
-		{
-			model G30VanTV
-			{
-				file = G30VanTV,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -536,6 +520,7 @@ module Base
 			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
+		template = G30TVDish/part/G30TVDish,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
