@@ -347,6 +347,12 @@ extents = 3.2281 3.0877 8.7368,
 		template = Engine,
 		template = Muffler,
 
+		part LargeUtilityTruckSoundController
+		{
+            category = nodisplay,
+			itemType = Base.LargeUtilityTruckSoundController,
+		}
+
 		part BackOfTruck
 		{
 			area = DoorRearLeft,
@@ -806,7 +812,7 @@ extents = 3.2281 3.0877 8.7368,
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio1,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,

@@ -347,6 +347,12 @@ module Base
 		template = Engine,
 		template = Muffler,
 
+		part LargeUtilityTruckSoundController
+		{
+            category = nodisplay,
+			itemType = Base.LargeUtilityTruckSoundController,
+		}
+
 		part BackOfTruck
 		{
 			area = DoorRearLeft,
@@ -806,7 +812,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio1,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,

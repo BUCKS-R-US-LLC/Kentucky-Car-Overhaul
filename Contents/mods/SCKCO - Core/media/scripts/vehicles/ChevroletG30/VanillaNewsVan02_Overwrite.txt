@@ -294,6 +294,7 @@ module Base
 			xywh = 0.0678 -5.6441 3.2203 1.0169,
 		}
 
+		template = G30TVDish/part/G30TVDish,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -354,17 +355,7 @@ module Base
 
 			itemType = Base.ChevyG30RearDoorsSC,
 		}
-
-		part G30TV
-		{
-			model G30TV
-			{
-				file = G30VanWindowlessDriver,
-			}
 		
-		    itemType = Base.ChevyG30FrontSeatSC,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -758,7 +749,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio1,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,
