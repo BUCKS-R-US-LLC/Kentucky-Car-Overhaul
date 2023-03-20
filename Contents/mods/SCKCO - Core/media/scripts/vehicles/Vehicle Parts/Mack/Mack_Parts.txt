@@ -7,7 +7,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Mack DM800 Door,
+        DisplayName	= Mack DM-800 Door,
         Icon	=	MackLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -20,7 +20,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
         Type	=	Normal,
-        DisplayName	=	Mack DM800 Windshield,
+        DisplayName	=	Mack DM-800 Windshield,
         Icon = MackLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -33,7 +33,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	=	Mack DM800 Side Window,
+        DisplayName	=	Mack DM-800 Side Window,
         Icon = MackLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -46,7 +46,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= Mack DM800 Front Seat,
+        DisplayName	= Mack DM-800 Front Seat,
         Icon = MackLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -59,7 +59,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	=	Mack DM800 Hood,
+        DisplayName	=	Mack DM-800 Hood,
         Icon = MackLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -67,25 +67,12 @@ module Base
         WorldStaticModel = K5Hood_WorldItem,
     }
 
-        item MackDM800RearDoorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Mack DM800 Rear Door,
-        Icon = MackLogo,
-        VehicleType =  2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5TrunkLid_WorldItem,
-    }
-
         item MackDM800FrontSeatSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= Mack DM800 Front Seat,
+        DisplayName	= Mack DM-800 Front Seat,
         Icon = MackLogo,
         VehicleType =   2,
         MaxCapacity = 10,
@@ -95,29 +82,4 @@ module Base
         WorldStaticModel = K5FrontSeat_WorldItem,
     }
 
-        item MackDM800PanelTruckGateSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Mack DM800 Panel Truck Gate,
-        Icon = MackLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
-
-        item MackDM800BoxTruckRollUpDoorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Mack DM800 Roll-Up Door,
-        Icon = MackLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
 }
