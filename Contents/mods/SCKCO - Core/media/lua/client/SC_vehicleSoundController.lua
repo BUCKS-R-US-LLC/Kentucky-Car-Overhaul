@@ -8,12 +8,6 @@ vehicleSoundController.library = {
           speedIsLessThan = -3,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
-
-       { sound = "TruckAirbrake",
-         stop = true,
-         speedIsLessThan = 1, 
-       },
-
     }---
 
 }
