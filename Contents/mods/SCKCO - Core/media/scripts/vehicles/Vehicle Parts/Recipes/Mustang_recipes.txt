@@ -1,0 +1,57 @@
+module Base
+{
+
+
+recipe Craft Mustang Bullbar
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:JeepMustangBullbar2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Mustang Windshield Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:JeepMustangWindshieldArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Mustang Door Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:JeepMustangDoorArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Mustang Window Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:JeepMustangWindowArmor2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}
