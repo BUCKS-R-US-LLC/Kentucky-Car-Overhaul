@@ -1,0 +1,810 @@
+module Base
+{
+	model SC_M880
+	{
+		mesh = vehicles/Vehicle_M880_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model M880Driver
+	{
+		mesh = vehicles/Vehicle_M880_SC|DoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880Passenger
+	{
+		mesh = vehicles/Vehicle_M880_SC|DoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880Windshield
+	{
+		mesh = vehicles/Vehicle_M880_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880FrontRightWindow
+	{
+		mesh = vehicles/Vehicle_M880_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model M880FrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_M880_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model M880FrontRightDoor
+	{
+		mesh = vehicles/Vehicle_M880_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model M880FrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_M880_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model M880RearRightWindow
+	{
+		mesh = vehicles/Vehicle_M880_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880RearLeftWindow
+	{
+		mesh = vehicles/Vehicle_M880_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880Trunk
+	{
+		mesh = vehicles/Vehicle_M880_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = RearWindShieldBone 1.0,
+	}
+	model M880RearWindshield
+	{
+		mesh = vehicles/Vehicle_M880_SC|RearWinshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M880Hood
+	{
+		mesh = vehicles/Vehicle_M880_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model M880Wheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
+		shader = vehiclewheel,
+	}
+	model M880Wheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
+		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model M880Wheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
+		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model M880Wheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
+		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_M880
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_M880,
+			scale = 0.6300,
+			offset = 0.0000 0.2698 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_3Tone,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_MERDC1,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_MERDC2,
+		}
+
+		textureRust = Vehicles/M880/Vehicle_M880Rust,
+		textureMask = Vehicles/M880/Vehicle_M880Masks,
+		textureLights = Vehicles/M880/Vehicle_M880Lights,
+		textureDamage1Shell = Vehicles/M880/Vehicle_M880Damage,
+		textureDamage2Shell = Vehicles/M880/Vehicle_M880Damage,
+		textureDamage1Overlay = Vehicles/M880/Vehicle_M880Blood,
+		textureDamage2Overlay = Vehicles/M880/Vehicle_M880Blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = CUCVhorn,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 2.8571 3.0794 6.9841,
+		mass = 1000,
+		physicsChassisShape = 2.9524 3.0794 7.0159,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
+		shadowExtents = 3.0712 7.7704,
+		shadowOffset = -0.0000 -0.1048,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.2222 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.2222 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.2222 0.0794 -2.0317,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.2222 0.0794 -2.0317,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 0.9683 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0794 -0.6984 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6825 0.9683 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 0.1429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.2857 2.8571 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -4.6190 2.8571 1.7460,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.0476 0.2540 1.2381 1.2381,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.0476 0.2540 1.2381 1.2381,
+		}
+
+		area GasTank
+		{
+			xywh = -1.9683 -1.1111 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.4921 2.1587 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3651 2.1587 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4762 -2.1270 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.3810 -2.1270 0.0000 0.0000,
+		}
+
+		template = K5Bullbar/part/K5Bullbar,
+		template = K5Bullbar/part/K5Chevy,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part GunRack1
+		{
+			area = SeatFrontRight,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
+			part GunRack2
+		{
+			area = SeatFrontLeft,
+			category = nodisplay,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 4,
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+		
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = M880Driver,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = M880Passenger,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.NormalCarMuffler,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = M880Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ChevyBlazerHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model WindshieldFront
+			{
+				file = M880Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model WindshieldRear
+			{
+				file = M880RearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = M880FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = M880FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = M880FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = M880FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = M880Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBedOpen,
+		template = Tire,
+		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M880WheelLargefrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M880WheelLargefrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M880WheelLargefrontwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M880WheelLargefrontwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio2,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0794 1.3175 0.2381,
+			extents = 3.1111 1.8571 6.3016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.5238 -3.9683,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0159 0.5397 3.3651,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
