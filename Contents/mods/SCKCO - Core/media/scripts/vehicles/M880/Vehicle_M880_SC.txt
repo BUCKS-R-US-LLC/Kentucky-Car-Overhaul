@@ -71,16 +71,15 @@ module Base
 	}
 	model M880Trunk
 	{
-		mesh = vehicles/Vehicle_M880_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M880_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
 	model M880RearWindshield
 	{
-		mesh = vehicles/Vehicle_M880_SC|RearWinshield_obj,
+		mesh = vehicles/Vehicle_M880_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -101,19 +100,19 @@ module Base
 	model M880Wheelfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
-		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	model M880Wheelbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
-		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	model M880Wheelbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
-		texture = Vehicles/M880/Vehicle_BlazerSC_Wheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_M880
@@ -126,8 +125,8 @@ module Base
 		model
 		{
 			file = SC_M880,
-			scale = 0.6300,
-			offset = 0.0000 0.2698 0.0000,
+			scale = 0.5700,
+			offset = 0.0000 -0.2281 0.1053,
 		}
 
 		skin
@@ -145,13 +144,18 @@ module Base
 			texture = Vehicles/M880/Vehicle_M880_MERDC2,
 		}
 
-		textureRust = Vehicles/M880/Vehicle_M880Rust,
-		textureMask = Vehicles/M880/Vehicle_M880Masks,
-		textureLights = Vehicles/M880/Vehicle_M880Lights,
-		textureDamage1Shell = Vehicles/M880/Vehicle_M880Damage,
-		textureDamage2Shell = Vehicles/M880/Vehicle_M880Damage,
-		textureDamage1Overlay = Vehicles/M880/Vehicle_M880Blood,
-		textureDamage2Overlay = Vehicles/M880/Vehicle_M880Blood,
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_OD,
+		}
+
+		textureRust = Vehicles/M880/Vehicle_M880_Rust,
+		textureMask = Vehicles/M880/Vehicle_M880_Masks,
+		textureLights = Vehicles/M880/Vehicle_M880_Lights,
+		textureDamage1Shell = Vehicles/M880/Vehicle_M880_Scratch,
+		textureDamage2Shell = Vehicles/M880/Vehicle_M880_Scratch,
+		textureDamage1Overlay = Vehicles/M880/Vehicle_M880_Blood,
+		textureDamage2Overlay = Vehicles/M880/Vehicle_M880_Blood,
 
 		sound
 		{
@@ -162,12 +166,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.8571 3.0794 6.9841,
+		extents = 3.1579 3.0877 8.9123,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0000 1.5556 -0.2222,
-		shadowExtents = 3.0712 7.7704,
-		shadowOffset = -0.0000 -0.1048,
+		physicsChassisShape = 2.9474 3.0877 8.6667,
+		centerOfMassOffset = 0.0000 1.5614 -0.4737,
+		shadowExtents = 3.1506 8.9458,
+		shadowOffset = 0.0000 -0.4857,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -190,7 +194,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
+			offset = 1.2632 0.3860 2.4386,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +202,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2222 0.0794 2.1587,
+			offset = -1.2632 0.3860 2.4386,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -206,7 +210,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
+			offset = 1.2632 0.3860 -3.0351,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -214,7 +218,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2222 0.0794 -2.0317,
+			offset = -1.2632 0.3860 -3.0351,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,13 +232,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.7544 1.5088 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0877 -0.7018 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -247,13 +251,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6825 0.9683 0.0159,
+				offset = -0.6842 1.5088 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0526 -0.1930 0.1404,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -261,51 +265,49 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2857 2.8571 2.0000,
+			xywh = 0.0000 4.2807 2.8772 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6190 2.8571 1.7460,
+			xywh = 0.0000 -5.3158 2.8772 1.7544,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.1930 0.7719 1.2632 1.2632,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1930 0.7719 1.2632 1.2632,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9683 -1.1111 1.0794 0.5714,
+			xywh = -2.1053 -1.1053 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.4912 2.1579 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.3684 2.1579 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4762 -2.1270 0.0000 0.0000,
+			xywh = 1.4737 -2.1228 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -2.1270 0.0000 0.0000,
+			xywh = -1.3860 -2.1228 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -314,48 +316,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GunRack1
-		{
-			area = SeatFrontRight,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-		
-			part GunRack2
-		{
-			area = SeatFrontLeft,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-		
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -363,7 +323,7 @@ module Base
 				file = M880Driver,
 			}
 
-			itemType = Base.ChevyBlazerFrontSeatSC,
+			itemType = Base.DodgePowerWagonFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -373,7 +333,7 @@ module Base
 				file = M880Passenger,
 			}
 
-			itemType = Base.ChevyBlazerFrontSeatSC,
+			itemType = Base.DodgePowerWagonFrontSeatSC,
 		}
 
 		part Muffler
@@ -438,7 +398,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyBlazerHoodSC,
+			itemType = Base.DodgePowerWagonHoodSC,
 		}
 
 		part Heater
@@ -482,7 +442,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.DodgePowerWagonWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -513,7 +473,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.DodgePowerWagonWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -537,7 +497,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.DodgePowerWagonSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -555,7 +515,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.DodgePowerWagonSideWindowSC,
 		}
 
 		part DoorFrontRight
@@ -593,7 +553,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.DodgePowerWagonDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -631,7 +591,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.DodgePowerWagonDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -684,7 +644,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerTrunkLidSC,
+			itemType = Base.DodgePowerWagonTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -705,7 +665,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880WheelLargefrontwheelleft,
+				file = M880Wheelfrontwheelleft,
 			}
 		}
 
@@ -713,7 +673,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880WheelLargefrontwheelright,
+				file = M880Wheelfrontwheelright,
 			}
 		}
 
@@ -721,7 +681,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880WheelLargefrontwheelleft,
+				file = M880Wheelfrontwheelleft,
 			}
 		}
 
@@ -729,7 +689,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880WheelLargefrontwheelright,
+				file = M880Wheelfrontwheelright,
 			}
 		}
 
@@ -788,21 +748,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0794 1.5714 -0.4286,
+			extents = 3.1111 2.1429 8.5873,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.9683,
+			offset = 0.0000 0.9298 -4.8070,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3651,
+			offset = -0.0175 0.8596 3.6316,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

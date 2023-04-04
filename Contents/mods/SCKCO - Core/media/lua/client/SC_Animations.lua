@@ -146,6 +146,9 @@ local vehicleToSeatAnimations = {
 	["Base.CarTaxi02"] = "Default",
 	["Base.SC_CadillacFleetwood"] = "Default",
 	["Base.SC_ChevroletCavalier"] = "Default",
+	["Base.SC_M880"] = "Default",
+	["Base.SC_M880Bubba"] = "Default",
+	["Base.SC_M880Militia"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
