@@ -1,116 +1,115 @@
 module Base
 {
-	model SC_M1009
+	model SC_M1025
 	{
-		mesh = vehicles/Vehicle_M1009_SC|base_mesh,
+		mesh = vehicles/Vehicle_M1025_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1009SCDriver
+	model M1025SCDriver
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCPassenger
+	model M1025SCPassenger
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCWindshield
+	model M1025SCWindshield
 	{
-		mesh = vehicles/Vehicle_M1009_SC|WindShield_obj,
+		mesh = vehicles/Vehicle_M1025_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCFrontRightWindow
+	model M1025SCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1009SCFrontLeftWindow
+	model M1025SCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1009SCFrontRightDoor
+	model M1025SCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1009SCFrontLeftDoor
+	model M1025SCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_M1025_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1009SCRearRightWindow
+	model M1025SCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_M1025_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCRearLeftWindow
+	model M1025SCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_M1025_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCTrunk
+	model M1025SCTrunk
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_M1025_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1009SCHood
+	model M1025SCHood
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Hood_obj,
+		mesh = vehicles/Vehicle_M1025_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model HMMWVWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_HM_LeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1205_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model HMMWVWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_HM_RightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model HMMWVWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_HMMWVHMMWV_RearLeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model HMMWVWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_HM_RearRightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1009
+	vehicle SC_M1025
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -119,23 +118,23 @@ module Base
 
 		model
 		{
-			file = SC_M1009,
+			file = SC_M1025,
 			scale = 0.6300,
 			offset = 0.0635 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_SC,
+			texture = Vehicles/HMMWV/Vehicle_M1025_SC,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
+		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
+		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
+		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
+		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch2,
+		textureDamage1Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
+		textureDamage2Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
 
 		sound
 		{
@@ -169,7 +168,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 2,
+		seats = 4,
 
 		wheel FrontLeft
 		{
@@ -288,8 +287,8 @@ module Base
 			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
-		template = K5Bullbar/part/K5Chevy,
+		template = HMMWVBullbar/part/HMMWVBullbar,
+		template = HMMWVBullbar/part/HMMWV,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -344,20 +343,40 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = HMMWVSCDriver,
 			}
 
-			itemType = Base.ChevyBlazerFrontSeatSC,
+			itemType = Base.HMMWVSeatSC,
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = HMMWVSCPassenger,
 			}
 		
-			itemType = Base.ChevyBlazerFrontSeatSC,
+			itemType = Base.HMMWVSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			model seatRearLeft
+			{
+				file = HMMWVSCDriver,
+			}
+
+			itemType = Base.HMMWVSeatSC,
+		}
+
+		part RearFrontRight
+		{
+			model seatRearRight
+			{
+				file = HMMWVSCPassenger,
+			}
+		
+			itemType = Base.HMMWVSeatSC,
 		}
 
 		part Muffler
@@ -382,7 +401,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = HMMWVSCHood,
 			}
 
 			anim Close
@@ -423,7 +442,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyBlazerHoodSC,
+			itemType = Base.HMMWVHoodSC,
 		}
 
 		part Heater
@@ -443,7 +462,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = HMMWVSCWindshield,
 			}
 
 			window
@@ -467,7 +486,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.HMMWVWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -495,7 +514,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.HMMWVWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -509,7 +528,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = HMMWVSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -522,14 +541,14 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.HMMWVSideWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = HMMWVSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -542,14 +561,14 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.HMMWVSideWindowSC,
 		}
 
 		part WindowRearLeft
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = HMMWVSCRearLeftWindow,
 			}
 
 			area = TireRearLeft,
@@ -561,14 +580,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.HMMWVSideWindowSC,
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = HMMWVSCRearRightWindow,
 			}
 
 			area = TireRearRight,
@@ -580,14 +599,14 @@ module Base
 			}
 			
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.HMMWVSideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = HMMWVSCFrontRightDoor,
 			}
 
 			anim Close
@@ -618,14 +637,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.HMMWVHardDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = HMMWVSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -656,7 +675,7 @@ module Base
 				animate = FALSE,
 			}
 			
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.HMMWVHardDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -675,7 +694,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = HMMWVSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -709,7 +728,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerTrunkLidSC,
+			itemType = Base.HMMWVTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -730,7 +749,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = HMMWVWheelLargefrontwheelleft,
 			}
 		
 		itemType = NormalTire,
@@ -740,7 +759,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = HMMWVWheelLargefrontwheelright,
 			}
 			itemType = NormalTire,
 		}
@@ -749,7 +768,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = HMMWVWheelLargefrontwheelleft,
 			}
 			itemType = NormalTire,
 		}
@@ -758,7 +777,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = HMMWVWheelLargefrontwheelright,
 			}
 			itemType = NormalTire,
 		}
