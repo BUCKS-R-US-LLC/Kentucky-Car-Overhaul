@@ -21,7 +21,7 @@ end
 
 function CUCVBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M10" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "CUCV" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("K5Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("K5Bullbar"):getInventoryItem()) then
