@@ -121,7 +121,7 @@ module Base
 		{
 			file = SC_K5BlazerMcCoy,
 			scale = 0.6300,
-			offset = 0.0635 -0.2540 0.0000,
+			offset = 0.0635 0.2698 0.0000,
 		}
 
 		skin
@@ -153,7 +153,6 @@ module Base
 			rightCol = 1;0.73;0.2,
 		}
 
-      
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
@@ -171,7 +170,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-        extents = 3.1429 3.0794 6.5714,
+		extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -323,7 +322,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -345,7 +343,7 @@ module Base
 			{
 				file = BlazerSCPassenger,
 			}
-		
+
 			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
@@ -361,8 +359,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.NormalCarMuffler,
-
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -510,7 +507,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -530,7 +526,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -567,7 +562,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
@@ -644,7 +639,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 

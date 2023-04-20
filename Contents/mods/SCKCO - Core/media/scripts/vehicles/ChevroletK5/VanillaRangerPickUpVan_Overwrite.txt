@@ -136,14 +136,13 @@ module Base
 
 		area LeftSiren
 		{
-			xywh = 1.2308 0.2033 0.4725 0.5604,
+			xywh = 1.2381 0.2063 0.4762 0.5714,
 		}
 
 		area RightSiren
 		{
-			xywh = -0.8626 0.2033 0.4725 0.5604,
+			xywh = -0.8571 0.2063 0.4762 0.5714,
 		}
-
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
@@ -162,7 +161,6 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
@@ -180,7 +178,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-        extents = 3.1429 3.0794 6.5714,
+		extents = 3.1429 3.0794 6.5714,
 		mass = 1000,
 		physicsChassisShape = 3.1429 3.0794 6.5714,
 		centerOfMassOffset = 0.0000 1.5556 0.0000,
@@ -252,7 +250,7 @@ module Base
 
 			position outside
 			{
-				offset = 2.0794 -0.6984 0.0159,
+				offset = 2.0476 -0.2698 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -271,7 +269,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -0.1905 0.1429,
+				offset = -2.0476 -0.2698 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -332,7 +330,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -354,7 +351,7 @@ module Base
 			{
 				file = BlazerSCPassenger,
 			}
-		
+
 			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
@@ -370,8 +367,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.NormalCarMuffler,
-
+			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -519,7 +515,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -539,7 +534,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -576,7 +570,7 @@ module Base
 			{
 				requireInstalled =,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
@@ -653,7 +647,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 
