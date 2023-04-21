@@ -149,6 +149,8 @@ local vehicleToSeatAnimations = {
 	["Base.SC_M880"] = "Default",
 	["Base.SC_M880Bubba"] = "Default",
 	["Base.SC_M880Militia"] = "Default",
+	["Base.SC_M998"] = "Default",
+	["Base.SC_M1025"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
