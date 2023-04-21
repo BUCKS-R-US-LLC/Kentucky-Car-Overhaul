@@ -45,63 +45,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model HM1025FrontLeftWindow
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-	}
-	model HM1025RearRightWindow
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
-	}
-	model HM1025RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
-	}
-	model HM1025FrontRightDoor
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model HM1025FrontLeftDoor
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model HM1025RearRightDoor
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model HM1025RearLeftDoor
-	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-	model HM1025SCSlant
+	model M1025SCSlant
 	{
 		mesh = vehicles/Vehicle_HM1025_SC|Slant_obj,
 		shader = vehicle_noreflect,
@@ -217,25 +161,26 @@ module Base
 		mass = 800,
 		physicsChassisShape = 5.0000 3.5500 10.6000,
 		centerOfMassOffset = 0.0000 1.7750 -0.1500,
-		shadowExtents = 5.7529 11.5239,
-		shadowOffset = -0.0032 0.0064,
-		engineForce = 5800,
-		engineQuality = 80,
-		engineLoudness = 120,
+		shadowExtents = 5.5529 11.8489,
+		shadowOffset = -0.0032 -0.1436,
+		engineForce = 5000,
+		gearRatioCount = 4,
 		maxSpeed = 110f,
-		brakingForce = 100,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 40,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 4500,
-		rearEndHealth = 3500,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1350,
 		seats = 4,
 
 		wheel FrontLeft
@@ -272,7 +217,6 @@ module Base
 
 		template = PassengerSeat4,
 
-
 		passenger FrontLeft
 		{
 			showPassenger = true,
@@ -280,13 +224,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5500 2.0500 0.2750,
+				offset = 1.5500 1.6500 0.3250,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3750 -0.4250 0.7750,
+				offset = 1.4500 -0.4250 0.5250,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -299,13 +243,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5500 2.0500 0.2750,
+				offset = -1.6500 1.8000 0.3250,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3750 -0.4250 0.7750,
+				offset = -1.4500 -0.4250 0.5250,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -318,13 +262,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5500 2.0500 -1.4750,
+				offset = 1.5500 1.6500 -1.4750,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3750 -0.4250 -1.2000,
+				offset = 1.4500 -0.4250 -0.6500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -337,13 +281,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5500 2.0500 -1.4750,
+				offset = -1.6000 1.6500 -1.0250,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3750 -0.4250 -1.2000,
+				offset = -1.4500 -0.4250 -0.6500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -560,251 +504,13 @@ module Base
 			itemType = Base.HMMWVWindshieldSC,
 		}
 
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
-
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = HM1025FrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-			itemType = Base.HMMWVSideWindowSC,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = HM1025FrontLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-			itemType = Base.HMMWVSideWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HM1025RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			itemType = Base.HMMWVSideWindowSC,
-			
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = HM1025RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
-			itemType = Base.HMMWVSideWindowSC,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = HM1025FrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = HM1025FrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = HM1025RearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = HM1025RearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
-		}
-
 		part M1025Slant
 		{
 			parent = TrunkDoor,
 
-			model HM1025Slant
+			model M1025Slant
 			{
-				file = HM1025SCSlant,
+				file = M1025SCSlant,
 			}
 
 			window
