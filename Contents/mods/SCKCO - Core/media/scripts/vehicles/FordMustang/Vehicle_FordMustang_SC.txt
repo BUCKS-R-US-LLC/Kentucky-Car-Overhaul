@@ -349,22 +349,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8676 0.2500 1.2647 1.2647,
+			xywh = 1.8382 0.2500 1.2059 1.2059,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8676 0.2500 1.2647 1.2647,
+			xywh = -1.8382 0.2500 1.2059 1.2059,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.8676 -1.0147 1.2647 1.2647,
+			xywh = 1.8382 -0.9559 1.2059 1.2059,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.8676 -1.0147 1.2647 1.2647,
+			xywh = -1.8382 -0.9559 1.2059 1.2059,
 		}
 
 		area GasTank
@@ -545,7 +545,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.FordMustangWindshieldSC,
 		}
@@ -579,7 +579,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,			
+			category = SCUCKwindows,
 			itemType = Base.FordMustangWindshieldSC,
 		}
 
@@ -637,13 +637,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
 			itemType = Base.FordMustangSideWindowSC,
 			area = SeatFrontLeft,
-
 		}
 
 		part WindowRearRight
@@ -655,13 +654,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
 			itemType = Base.FordMustangSideWindowSC,
 			area = SeatFrontRight,
-
 		}
 
 		part DoorFrontRight
