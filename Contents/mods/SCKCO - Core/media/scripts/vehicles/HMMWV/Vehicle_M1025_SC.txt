@@ -109,7 +109,7 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model HM1025SCSlant
+	model HM1025Slant
 	{
 		mesh = vehicles/Vehicle_HM1025_SC|Slant_obj,
 		shader = vehicle_noreflect,
@@ -158,8 +158,8 @@ module Base
 		model
 		{
 			file = SC_M1025,
-			scale = 0.4200,
-			offset = 0.0000 -0.4048 -0.0238,
+			scale = 0.4000,
+			offset = 0.0000 -0.4000 -0.0250,
 		}
 
 		skin
@@ -214,16 +214,16 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0000 3.7619 10.4286,
-		mass = 500,
-		physicsChassisShape = 5.0000 3.7619 10.4286,
-		centerOfMassOffset = 0.0000 1.8810 -0.1429,
+		extents = 5.0500 3.8000 10.5500,
+		mass = 800,
+		physicsChassisShape = 5.0500 3.8000 10.5500,
+		centerOfMassOffset = 0.0000 1.8750 -0.1500,
 		shadowExtents = 5.5029 11.9989,
 		shadowOffset = -0.0032 0.0064,
-		engineForce = 4000,
+		engineForce = 5800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 90f,
+		maxSpeed = 70f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
@@ -242,7 +242,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 2.1429 0.7381 4.0238,
+			offset = 2.1500 0.7500 4.0250,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -250,7 +250,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -2.1429 0.7381 4.0238,
+			offset = -2.1500 0.7500 4.0250,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -258,7 +258,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 2.1429 0.7381 -3.5714,
+			offset = 2.1500 0.7500 -3.5750,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -266,7 +266,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -2.1429 0.7381 -3.5714,
+			offset = -2.1500 0.7500 -3.5750,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -280,13 +280,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5476 2.0238 0.2619,
+				offset = 1.5500 2.0250 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3810 0.0000 0.7619,
+				offset = 3.3750 0.0000 0.7500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -299,13 +299,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5476 2.0238 0.2619,
+				offset = -1.5500 2.0250 0.2500,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3810 0.0000 0.7619,
+				offset = -3.3750 0.0000 0.7500,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -318,13 +318,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5476 2.0238 -1.4762,
+				offset = 1.5500 2.0250 -1.4750,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3810 0.0000 -1.1905,
+				offset = 3.3750 0.0000 -1.1750,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -337,13 +337,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5476 2.0238 -1.4762,
+				offset = -1.5500 2.0250 -1.4750,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3810 0.0000 -1.1905,
+				offset = -3.3750 0.0000 -1.1750,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -351,57 +351,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.7381 5.0000 1.3333,
+			xywh = 0.0000 5.8250 5.0500 1.4000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.9524 3.3333 1.1905,
+			xywh = 0.0000 -6.0250 3.4000 1.2000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 3.3333 0.8095 1.6667 1.6667,
+			xywh = 3.5500 0.8250 2.0500 2.0500,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -3.3333 0.8095 1.6667 1.6667,
+			xywh = -3.5500 0.8250 2.0500 2.0500,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 3.3333 -0.8571 1.6667 1.6667,
+			xywh = 3.5500 -1.2250 2.0500 2.0500,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.3333 -0.8571 1.6667 1.6667,
+			xywh = -3.5500 -1.2250 2.0500 2.0500,
 		}
 
 		area GasTank
 		{
-			xywh = -3.0476 -2.2381 1.0952 0.6667,
+			xywh = -3.1000 -2.5000 1.1500 0.7500,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 2.5000 4.0238 0.0000 0.0000,
+			xywh = 2.4750 4.0250 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -2.5000 4.0238 0.0000 0.0000,
+			xywh = -2.4750 4.0250 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.5000 -3.6190 0.0000 0.0000,
+			xywh = 2.4750 -3.6250 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.5000 -3.6190 0.0000 0.0000,
+			xywh = -2.4750 -3.6250 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -803,12 +803,12 @@ module Base
 
 			model HM1025Slant
 			{
-				file = HM1025SCSlant,
+				file = HM1025Slant,
 			}
 
 			model Default
 			{
-				file = HM1025Trunk,
+				file = HM1025Slant,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
