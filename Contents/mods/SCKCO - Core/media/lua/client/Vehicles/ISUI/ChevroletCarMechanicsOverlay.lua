@@ -47,6 +47,8 @@ ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_",
 ISCarMechanicsOverlay.CarList["Base.VanRadio"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.VanRadio_3N"] = {imgPrefix = "g30windowless_", x=0,y=0};
 
+ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Greenes"] = {imgPrefix = "p30civ_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30BunnyBread"] = {imgPrefix = "p30civ_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30Police"] = {imgPrefix = "p30police_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_StepVanP30ParkRanger"] = {imgPrefix = "p30police_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30civ_", x=0,y=0};
