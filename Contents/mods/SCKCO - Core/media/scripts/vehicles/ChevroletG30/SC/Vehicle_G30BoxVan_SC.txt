@@ -346,7 +346,7 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
-		
+
 			switchSeat FrontLeft
 			{
 			}
@@ -368,17 +368,17 @@ module Base
 
 		area SeatFrontRight
 		{
-			xywh = -2.1017 0.7797 1.1186 1.1186,
+			xywh = -2.0847 0.7797 1.1186 1.1186,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.0847 -0.5763 1.1186 1.0847,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.0847 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
@@ -417,19 +417,19 @@ module Base
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = Trunk/part/TruckBed,
- 		template = GasTank,
+		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
 		template = TrunkDoor,
 
-       part TruckBed
-        {
-            container
-            {
-                capacity = 150,
-            }
-        }
+		part TruckBed
+		{
+			container
+			{
+				capacity = 150,
+			}
+		}
 
 		part TrunkDoor
 		{
@@ -488,7 +488,7 @@ module Base
 			{
 				file = G30VanBoxDriver,
 			}
-			
+
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
@@ -681,9 +681,9 @@ module Base
 				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
-			category = SCUCKwindows,
-            itemType = Base.ChevyG30SideWindowSC,
 
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30SideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -702,8 +702,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-            itemType = Base.ChevyG30SideWindowSC,
-
+			itemType = Base.ChevyG30SideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -780,7 +779,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyG30FrontDoorSC,
 		}
 
@@ -818,8 +817,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-	
-            itemType = Base.ChevyG30SideDoorSC,
+
+			itemType = Base.ChevyG30SideDoorSC,
 		}
 
 		part WindowRearRight
@@ -834,10 +833,8 @@ module Base
 				openable = false,
 			}
 
-            itemType = Base.ChevyG30SideWindowSC,
-
+			itemType = Base.ChevyG30SideWindowSC,
 			category = SCUCKwindows,
-
 			parent = DoorRearRight,
 			area = SeatFrontRight,
 		}
@@ -929,7 +926,6 @@ module Base
 				update = Vehicles.Update.PassengerCompartment,
 			}
 		}
-
 
 		physics box
 		{

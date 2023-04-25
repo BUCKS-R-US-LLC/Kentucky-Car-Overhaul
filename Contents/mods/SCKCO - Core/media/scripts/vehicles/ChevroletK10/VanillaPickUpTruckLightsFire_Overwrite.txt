@@ -127,7 +127,7 @@ module Base
 		{
 			file = SC_K10Lights,
 			scale = 0.6300,
-			offset = 0.0476 0.2698 0.0000,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
@@ -167,9 +167,9 @@ module Base
 		extents = 2.8571 3.0794 6.9841,
 		mass = 1000,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
-		centerOfMassOffset = 0.0476 1.5556 -0.2222,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
 		shadowExtents = 2.9601 7.7704,
-		shadowOffset = 0.0635 -0.1048,
+		shadowOffset = 0.0000 -0.1048,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -319,14 +319,14 @@ module Base
 		{
 			itemType = Base.BigGasTank,
 		}
-		
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = K10Driver,
-			}	
-			
+			}
+
 			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
@@ -444,7 +444,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyBlazerWindshieldSC,
 		}
@@ -501,8 +501,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
-		    itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -521,7 +520,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
@@ -755,7 +753,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0000 1.3175 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}

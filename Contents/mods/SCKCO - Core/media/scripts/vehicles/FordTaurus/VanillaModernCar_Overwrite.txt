@@ -355,22 +355,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0339 0.6441 1.3559 1.3559,
+			xywh = 2.0508 0.6441 1.3898 1.3898,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0339 0.6441 1.3559 1.3559,
+			xywh = -2.0508 0.6441 1.3898 1.3898,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0339 -0.8305 1.3559 1.3559,
+			xywh = 2.0508 -0.8305 1.3898 1.3898,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0339 -0.8305 1.3559 1.3559,
+			xywh = -2.0508 -0.8305 1.3898 1.3898,
 		}
 
 		area GasTank
@@ -551,7 +551,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordTaurusFrontWindshieldSC,
 		}
 
@@ -582,7 +582,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordTaurusRearWindshieldSC,
 		}
 
@@ -608,7 +608,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.FordTaurusFrontSideWindowSC,
@@ -627,7 +627,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.FordTaurusFrontSideWindowSC,
@@ -645,8 +645,8 @@ module Base
 				anim = RearRightWindowClosing,
 				animate = FALSE,
 			}
-			 
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 			itemType = Base.FordTaurusRearSideWindowSC,
@@ -665,7 +665,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 			itemType = Base.FordTaurusRearSideWindowSC,

@@ -238,8 +238,8 @@ module Base
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
-	
-        extents = 2.4286 2.1714 5.8286,
+
+		extents = 2.4286 2.1714 5.8286,
 		mass = 600,
 		physicsChassisShape = 2.2286 2.1714 5.6000,
 		centerOfMassOffset = 0.0000 1.0857 0.0000,
@@ -377,32 +377,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.9143 2.4286 2.0000,
+			xywh = 0.0000 3.3143 2.4286 0.8000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.7857 2.4286 1.8000,
+			xywh = 0.0000 -3.2143 2.4286 0.6000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8857 0.6714 1.3714 1.3714,
+			xywh = 1.8000 0.3571 1.1714 1.1714,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8857 0.6714 1.3714 1.3714,
+			xywh = -1.8000 0.3571 1.1714 1.1714,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.8857 -0.8000 1.3714 1.3714,
+			xywh = 1.8000 -0.8000 1.1714 1.1714,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.8857 -0.8000 1.3714 1.3714,
+			xywh = -1.8000 -0.8000 1.1714 1.1714,
 		}
 
 		area GasTank
@@ -464,7 +464,7 @@ module Base
 			{
 				file = JeepCherokeePassenger,
 			}
-			
+
 			itemType = Base.JeepCherokeeFrontSeatSC,
 		}
 
@@ -474,9 +474,8 @@ module Base
 			{
 				file = JeepCherokeeDouble,
 			}
-						
-			itemType = Base.JeepCherokeeRearSeatSC,
 
+			itemType = Base.JeepCherokeeRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -549,7 +548,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-
 			itemType = Base.JeepCherokeeHoodSC,
 		}
 
@@ -592,8 +590,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeWindshieldSC,
 		}
 
@@ -626,7 +624,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeWindshieldSC,
 		}
 
@@ -654,8 +652,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
@@ -674,8 +671,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-		    category = SCUCKwindows,			
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
@@ -692,7 +688,8 @@ module Base
 			{
 				requireInstalled =,
 			}
-		    category = SCUCKwindows,			
+
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
@@ -710,7 +707,7 @@ module Base
 				requireInstalled =,
 			}
 
-		    category = SCUCKwindows,			
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
 		}
 
@@ -727,9 +724,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -747,9 +743,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCherokeeSideWindowSC,
-
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -864,7 +859,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.JeepCherokeeDoorSC,
 		}
 

@@ -309,17 +309,17 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.8983 2.5763 1.7627,
+			xywh = 0.0000 -3.4576 2.5763 1.7627,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9661 -0.2203 1.3559 1.3559,
+			xywh = 1.9661 -0.2203 1.3898 1.3898,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9661 -0.2203 1.3559 1.3559,
+			xywh = -1.9661 -0.2203 1.3898 1.3898,
 		}
 
 		area GasTank
@@ -479,7 +479,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCJ7WindshieldSC,
 		}
 
@@ -503,9 +503,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
-            itemType = Base.JeepCJ7SideWindowSC,
-
+			category = SCUCKwindows,
+			itemType = Base.JeepCJ7SideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -522,10 +521,9 @@ module Base
 				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
-			
-		    category = SCUCKwindows,
-            itemType = Base.JeepCJ7SideWindowSC,
 
+			category = SCUCKwindows,
+			itemType = Base.JeepCJ7SideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}

@@ -757,6 +757,7 @@ module Base
 
 			table install
 			{
+				requireUninstalled = M35A1FrontSoftTop
 			}
 
 			table uninstall
@@ -782,6 +783,7 @@ module Base
 
 			table install
 			{
+				requireUninstalled = M35A1FrontSoftTop,
 			}
 
 			table uninstall
@@ -927,7 +929,7 @@ module Base
 
 			table uninstall
 			{
-				recipes = Intermediate Mechanics,
+				requireUninstalled = M35A1FrontHardTop,
 			}
 
 		    category = SCUCKwindows,

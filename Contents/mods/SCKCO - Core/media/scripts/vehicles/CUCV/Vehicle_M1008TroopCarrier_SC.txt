@@ -500,8 +500,8 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-		
-			part GunRack2
+
+		part GunRack2
 		{
 			area = SeatFrontLeft,
 			category = nodisplay,
@@ -521,7 +521,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-		
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -734,7 +734,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.M1008TarpFrame,
 		}
 
@@ -758,7 +758,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKaccessories,
+			category = SCUCKaccessories,
 			itemType = Base.M1008Tarp,
 		}
 
@@ -883,29 +883,28 @@ module Base
 			itemType = Base.ChevyBlazerDoorSC,
 		}
 
-		
 		part DoorMiddleRight
 		{
 			category = nodisplay,
-						mechanicRequireKey = false,
+			mechanicRequireKey = false,
 		}
 
 		part DoorMiddleLeft
 		{
 			category = nodisplay,
-									mechanicRequireKey = false,
+			mechanicRequireKey = false,
 		}
 
 		part DoorRearRight
 		{
 			category = nodisplay,
-									mechanicRequireKey = false,
+			mechanicRequireKey = false,
 		}
 
 		part DoorRearLeft
 		{
 			category = nodisplay,
-									mechanicRequireKey = false,
+			mechanicRequireKey = false,
 		}
 
 		template = TrunkDoor,
@@ -1072,7 +1071,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.2381,
+			offset = 0.0794 1.3175 0.0635,
 			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
