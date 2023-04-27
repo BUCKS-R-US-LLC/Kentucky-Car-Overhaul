@@ -108,13 +108,14 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone1 1.0,
 	}
 	model HM1025Slant
 	{
 		mesh = vehicles/Vehicle_HM1025_SC|Slant_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		boneWeight = TrunkBone1 1.0,
+		static = FALSE,
 	}
 	model HM1025Hood
 	{
@@ -159,7 +160,7 @@ module Base
 		{
 			file = SC_M1025,
 			scale = 0.4000,
-			offset = 0.0000 -0.3750 0.0750,
+			offset = 0.0000 0.3250 0.0750,
 		}
 
 		skin
@@ -214,11 +215,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0500 3.9000 10.5500,
+		extents = 5.0500 3.1000 10.6000,
 		mass = 800,
-		physicsChassisShape = 5.0500 3.9000 10.6000,
-		centerOfMassOffset = 0.0000 1.9500 0.0000,
-		shadowExtents = 5.5779 12.4739,
+		physicsChassisShape = 5.0500 3.2500 10.6000,
+		centerOfMassOffset = 0.0000 2.8500 0.0000,
+		shadowExtents = 5.4529 10.8239,
 		shadowOffset = -0.0032 0.0064,
 		engineForce = 6800,
 		engineQuality = 80,
@@ -806,42 +807,6 @@ module Base
 				file = HM1025Slant,
 			}
 
-			model Default
-			{
-				file = HM1025Slant,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -1013,8 +978,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.8500 -0.1500,
-			extents = 5.0000 2.0000 10.4250,
+			offset = 0.0000 2.2750 -0.1500,
+			extents = 5.0000 3.3500 10.4250,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
