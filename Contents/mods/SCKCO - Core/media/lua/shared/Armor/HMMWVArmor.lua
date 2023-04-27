@@ -4,7 +4,7 @@
 
 function HMMWVWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "AM M1025", "AM M998" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("Windshield"):getInventoryItem()) then
@@ -20,7 +20,7 @@ end
 
 function HMMWVEngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025", "M998" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("EngineDoor"):getInventoryItem()) then
@@ -36,7 +36,7 @@ end
 
 function HMMWVWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025" )) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("WindowFrontLeft"):getInventoryItem()) then
@@ -68,7 +68,7 @@ end
 
 function HMMWVWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025" )) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("WindowRearRight"):getInventoryItem()) then
@@ -84,7 +84,7 @@ end
 
 function HMMWVWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025" "M998")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025" )) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("WindowRearLeft"):getInventoryItem()) then
@@ -100,7 +100,7 @@ end
 
 function HMMWVTireFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025", "M998" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
 
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
@@ -116,7 +116,7 @@ end
 
 function HMMWVTireFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025", "M998")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998")) then
 
         local part = vehicle:getPartById("TireFrontRight")
         if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
@@ -132,7 +132,7 @@ end
 
 function HMMWVTireRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025", "M998" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
 
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
@@ -148,7 +148,7 @@ end
 
 function HMMWVTireRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M1025", "M998" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
 
         local part = vehicle:getPartById("TireRearRight")
         if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then

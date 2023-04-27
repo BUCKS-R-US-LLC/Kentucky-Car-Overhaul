@@ -4,7 +4,7 @@
 
 function MustangWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("FordMustangWindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("FordMustangWindshieldArmor"):getInventoryItem()) then
@@ -21,7 +21,7 @@ end
 
 function MustangGasTank(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("GasTank")
         if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
@@ -37,7 +37,7 @@ end
 
 function MustangWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("FordMustangFrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontLeftWindowArmor"):getInventoryItem()) then
@@ -54,7 +54,7 @@ end
 
 function MustangWindowFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("FordMustangFrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontRightWindowArmor"):getInventoryItem()) then
@@ -73,7 +73,7 @@ end
 
 function MustangWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getInventoryItem()) then
@@ -90,7 +90,7 @@ end
 
 function MustangWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("FordMustangRearRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearRightWindowArmor"):getInventoryItem()) then
@@ -108,7 +108,7 @@ end
 
 function MustangBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
@@ -126,7 +126,7 @@ end
 
 function MustangDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("FordMustangFrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontLeftDoorArmor"):getInventoryItem()) then
@@ -144,7 +144,7 @@ end
 
 function MustangDoorFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("FordMustangFrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontRightDoorArmor"):getInventoryItem()) then
@@ -162,7 +162,7 @@ end
 
 function MustangWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("FordMustangRearRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearRightWindowArmor"):getInventoryItem()) then
@@ -180,7 +180,7 @@ end
 
 function MustangWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getInventoryItem()) then
@@ -198,7 +198,7 @@ end
 
 function MustangBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "'90 Ford Mustang LX")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
         local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
