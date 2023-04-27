@@ -116,6 +116,16 @@ module Base
 
 		skin
 		{
+			texture = Vehicles/HMMWV/Vehicle_HM998_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM998_3Tone,
+		}
+
+		skin
+		{
 			texture = Vehicles/HMMWV/Vehicle_HM998_3Tone,
 		}
 
@@ -359,6 +369,8 @@ module Base
 			lua
             {
             }
+
+	itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontRight
@@ -369,6 +381,8 @@ module Base
 			lua
             {
             }
+
+itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
@@ -379,6 +393,8 @@ module Base
 			lua
             {
             }
+
+	itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
@@ -389,6 +405,7 @@ module Base
 			lua
             {
             }
+itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part SeatFrontLeft
@@ -556,6 +573,8 @@ module Base
 			lua
             {
             }
+			
+			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -567,6 +586,8 @@ module Base
 			lua
             {
             }
+			
+			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
 		part WindowRearRight
@@ -578,6 +599,8 @@ module Base
 			lua
             {
             }
+			
+			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
 		part WindowRearLeft
@@ -589,28 +612,34 @@ module Base
 			lua
             {
             }
+			
+			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
             category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			
             category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
 		{
 			
             category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
 		{
             category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		template = TrunkDoor,
