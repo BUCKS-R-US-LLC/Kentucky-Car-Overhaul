@@ -20,7 +20,20 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= HMMWV Door,
+        DisplayName	= HMMWV Hard Door,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item HMMWVSoftDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Soft Door,
         Icon	=	AMLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -39,6 +52,19 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Windshield_WorldItem,
+    }
+
+        item HMMWVSoftSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	=	HMMWV Soft Side Window,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5SideWindow_WorldItem,
     }
 
         item HMMWVSideWindowSC2
