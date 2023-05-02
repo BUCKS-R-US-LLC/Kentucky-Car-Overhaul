@@ -110,6 +110,12 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone1 1.0,
 	}
+	model HM1025SlantBase
+	{
+		mesh = vehicles/Vehicle_HM1025_SC|SlantBase_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model HM1025Slant
 	{
 		mesh = vehicles/Vehicle_HM1025_SC|Slant_obj,
@@ -160,7 +166,7 @@ module Base
 		{
 			file = SC_M1025,
 			scale = 0.4000,
-			offset = 0.0000 0.3250 0.0750,
+			offset = 0.0000 -0.4000 0.0000,
 		}
 
 		skin
@@ -215,26 +221,26 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0500 3.1000 10.6000,
+		extents = 5.0500 3.2500 10.6000,
 		mass = 800,
 		physicsChassisShape = 5.0500 3.2500 10.6000,
-		centerOfMassOffset = 0.0000 2.8500 0.0000,
+		centerOfMassOffset = 0.0000 1.6250 0.0000,
 		shadowExtents = 5.4529 10.8239,
 		shadowOffset = -0.0032 0.0064,
-		engineForce = 6800,
+		engineForce = 4800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 110f,
+		maxSpeed = 80f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
+		suspensionStiffness = 80,
+		suspensionCompression = 3.60,
+		suspensionDamping = 2.69,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.20f,
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
@@ -243,7 +249,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 2.1500 0.7500 4.0250,
+			offset = 2.1250 0.7500 4.0250,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,7 +257,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -2.1500 0.7500 4.0250,
+			offset = -2.1250 0.7500 4.0250,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -259,7 +265,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 2.1500 0.7500 -3.5750,
+			offset = 2.1250 0.7500 -3.5750,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -267,7 +273,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -2.1500 0.7500 -3.5750,
+			offset = -2.1250 0.7500 -3.5750,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -798,6 +804,34 @@ module Base
 			itemType = Base.HMMWVHardDoorSC,
 		}
 
+		part M1025SlantBase
+		{
+			model HM1025SlantBase
+			{
+				file = HM1025SlantBase,
+			}
+
+			parent = TrunkLid,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				requireUninstalled = M1025Slant,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+			
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantDoorSC,
+		}
+
 		part M1025Slant
 		{
 			parent = TrunkDoor,
@@ -809,7 +843,7 @@ module Base
 
 			table install
 			{
-				recipes = Intermediate Mechanics,
+				requireInstalled = TrunkLid,
 			}
 
 			table uninstall
@@ -823,7 +857,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantSC,
+			itemType = Base.M1025SlantBaseSC,
 		}
 
 		template = TrunkDoor,

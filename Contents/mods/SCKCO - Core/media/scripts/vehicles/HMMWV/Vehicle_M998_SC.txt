@@ -96,7 +96,7 @@ module Base
 		{
 			file = SC_M998,
 			scale = 0.4000,
-			offset = 0.0000 -0.3750 0.0000,
+			offset = 0.0000 -0.4000 0.0000,
 		}
 
 		skin
@@ -161,26 +161,26 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0500 3.9000 10.5500,
+		extents = 5.0500 3.2500 10.6000,
 		mass = 800,
-		physicsChassisShape = 5.0500 3.9000 10.6000,
-		centerOfMassOffset = 0.0000 1.9500 0.0000,
-		shadowExtents = 5.5779 12.4739,
+		physicsChassisShape = 5.0500 3.2500 10.6000,
+		centerOfMassOffset = 0.0000 1.6250 0.0000,
+		shadowExtents = 5.4529 10.8239,
 		shadowOffset = -0.0032 0.0064,
-		engineForce = 6800,
+		engineForce = 4800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 110f,
+		maxSpeed = 80f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
+		suspensionStiffness = 80,
+		suspensionCompression = 3.60,
+		suspensionDamping = 2.69,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.20f,
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
@@ -360,17 +360,17 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		
+
 		part DoorFrontLeft
 		{
 			area = SeatFrontLeft,
 			category = nodisplay,
 
 			lua
-            {
-            }
+			{
+			}
 
-	itemType = Base.HMMWVSoftDoorSC,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontRight
@@ -379,10 +379,10 @@ module Base
 			category = nodisplay,
 
 			lua
-            {
-            }
+			{
+			}
 
-itemType = Base.HMMWVSoftDoorSC,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
@@ -391,10 +391,10 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = nodisplay,
 
 			lua
-            {
-            }
+			{
+			}
 
-	itemType = Base.HMMWVSoftDoorSC,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
@@ -403,9 +403,10 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = nodisplay,
 
 			lua
-            {
-            }
-itemType = Base.HMMWVSoftDoorSC,
+			{
+			}
+
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part SeatFrontLeft
@@ -563,7 +564,7 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = SCUCKwindows,
 			itemType = Base.HMMWVWindshieldSC,
 		}
-		
+
 		part WindowFrontRight
 		{
 			parent = DoorFrontRight,
@@ -571,9 +572,9 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = nodisplay,
 
 			lua
-            {
-            }
-			
+			{
+			}
+
 			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
@@ -584,9 +585,9 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = nodisplay,
 
 			lua
-            {
-            }
-			
+			{
+			}
+
 			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
@@ -597,9 +598,9 @@ itemType = Base.HMMWVSoftDoorSC,
 			category = nodisplay,
 
 			lua
-            {
-            }
-			
+			{
+			}
+
 			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
@@ -607,38 +608,36 @@ itemType = Base.HMMWVSoftDoorSC,
 		{
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-            category = nodisplay,
+			category = nodisplay,
 
 			lua
-            {
-            }
-			
+			{
+			}
+
 			itemType = Base.HMMWVSoftSideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
-			
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
 		{
-			
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
 		{
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
