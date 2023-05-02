@@ -4,13 +4,13 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_general.vehicles = VehicleZoneDistribution.military_general.vehicles or {};
 
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 5};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 40};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 40};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 40};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 50};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 30};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1028A3"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 70};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1010Ambulance"] = {index = -1, spawnChance = 30};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1010Ambulance"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 30};
 
 	VehicleZoneDistribution.military_general.baseVehicleQuality = 1.1;
@@ -18,6 +18,21 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_general.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.military_general.spawnRate = 100;
 
+	VehicleZoneDistribution.military_utility = VehicleZoneDistribution.military_utility or {};
+	VehicleZoneDistribution.military_utility.vehicles = VehicleZoneDistribution.military_utility.vehicles or {};
+
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1028A3"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1008TroopCarrier"] = {index = -1, spawnChance = 70};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1010Ambulance"] = {index = -1, spawnChance = 20};
+
+	VehicleZoneDistribution.military_utility.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.military_utility.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.military_utility.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.military_utility.spawnRate = 100;
+	
 	VehicleZoneDistribution.military_heavyvehicles = VehicleZoneDistribution.military_heavyvehicles or {};
 	VehicleZoneDistribution.military_heavyvehicles.vehicles = VehicleZoneDistribution.military_heavyvehicles.vehicles or {};
 
