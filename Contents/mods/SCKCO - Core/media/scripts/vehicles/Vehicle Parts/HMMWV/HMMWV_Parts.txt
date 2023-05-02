@@ -2,12 +2,25 @@ module Base
 {
 
 
-        item M1025SlantSC2
+        item M1025SlantDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= M1025 Slant,
+        DisplayName	= M1025 Slant Door,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5Door_WorldItem,
+    }
+
+        item M1025SlantBaseSC2
+    {   
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= M1025 Slant Base,
         Icon	=	AMLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -25,6 +38,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
+        Tooltip = Tooltip_HMMWVSoftDoor,
         WorldStaticModel = K5Door_WorldItem,
     }
 
@@ -38,6 +52,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
+        Tooltip = Tooltip_HMMWVSoftDoor,
         WorldStaticModel = K5Door_WorldItem,
     }
 
