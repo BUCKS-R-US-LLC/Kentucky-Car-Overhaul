@@ -1,7 +1,7 @@
 if VehicleZoneDistribution then
 
-    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 20};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 15};
@@ -101,8 +101,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarLights"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarLightsPolice"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.PickUpVanLightsPolice"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 20};
     VehicleZoneDistribution.trafficjams.vehicles["Base.StepVan"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.StepVan"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.Offroad"] = {index = -1, spawnChance = 10};      
@@ -119,10 +119,10 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 10};    
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckMacTools"] = {index = -1, spawnChance = 5};       
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckGigaMart"] = {index = -1, spawnChance = 5};     
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckGreenes"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckBunnyBread"] = {index = -1, spawnChance = 5};             
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckMacTools"] = {index = -1, spawnChance = 10};       
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckGigaMart"] = {index = -1, spawnChance = 10};     
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckGreenes"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckBunnyBread"] = {index = -1, spawnChance = 10};             
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 5};    
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};  
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletC70GrainTruck"] = {index = -1, spawnChance = 5};  
