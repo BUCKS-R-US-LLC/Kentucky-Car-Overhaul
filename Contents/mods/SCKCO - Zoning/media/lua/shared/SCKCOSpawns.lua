@@ -102,6 +102,21 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.construction_site.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.construction_site.spawnRate = 75;
 
+	VehicleZoneDistribution.farming_machinery = VehicleZoneDistribution.farming_machinery or {};
+	VehicleZoneDistribution.farming_machinery.vehicles = VehicleZoneDistribution.farming_machinery.vehicles or {};
+
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
+
+	VehicleZoneDistribution.farming_machinery.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.farming_machinery.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.farming_machinery.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.farming_machinery.spawnRate = 55;
+	
 	VehicleZoneDistribution.designated_bubba_zone = VehicleZoneDistribution.designated_bubba_zone or {};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles = VehicleZoneDistribution.designated_bubba_zone.vehicles or {};
 
