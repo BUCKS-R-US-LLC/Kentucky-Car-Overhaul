@@ -14,12 +14,14 @@ objects = {
   { name = "military_general", type = "ParkingStall", x = 12610, y = 1199, z = 0, width = 3, height = 5 },
   { name = "military_general", type = "ParkingStall", x = 12610, y = 1210, z = 0, width = 3, height = 5 },
 
-  { name = "military_utility", type = "ParkingStall", x = 12605, y = 4365, z = 0, width = 5, height = 3 },
-  { name = "military_utility", type = "ParkingStall", x = 12605, y = 4369, z = 0, width = 5, height = 3 },
+  { name = "military_utility", type = "ParkingStall", x = 12603, y = 4365, z = 0, width = 5, height = 3 },
+  { name = "military_utility", type = "ParkingStall", x = 12603, y = 4369, z = 0, width = 5, height = 3 },
   { name = "military_utility", type = "ParkingStall", x = 12620, y = 4340, z = 0, width = 5, height = 3 },
   { name = "military_utility", type = "ParkingStall", x = 12626, y = 4340, z = 0, width = 5, height = 3 },
   { name = "military_utility", type = "ParkingStall", x = 12620, y = 4422, z = 0, width = 5, height = 3 },
   { name = "military_utility", type = "ParkingStall", x = 12626, y = 4422, z = 0, width = 5, height = 3 },
+  { name = "military_utility", type = "ParkingStall", x = 12607, y = 4256, z = 0, width = 5, height = 3 },
+  { name = "military_utility", type = "ParkingStall", x = 12607, y = 4460, z = 0, width = 5, height = 3 },
 
   { name = "military_heavyvehicles", type = "ParkingStall", x = 12558, y = 1150, z = 0, width = 5, height = 3 },
   { name = "military_heavyvehicles", type = "ParkingStall", x = 12558, y = 1154, z = 0, width = 5, height = 3 },
