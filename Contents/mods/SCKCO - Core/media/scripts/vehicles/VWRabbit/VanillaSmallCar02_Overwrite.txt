@@ -204,7 +204,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-        extents = 2.5574 1.4098 5.5410,
+		extents = 2.5574 1.4098 5.5410,
 		mass = 800,
 		physicsChassisShape = 2.5574 1.4098 5.6066,
 		centerOfMassOffset = 0.0000 0.6557 0.1639,
@@ -412,7 +412,7 @@ module Base
 				file = VWRabbitDriver,
 			}
 
-		itemType = Base.VWRabbitFrontSeatSC,
+			itemType = Base.VWRabbitFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -422,7 +422,7 @@ module Base
 				file = VWRabbitPassenger,
 			}
 
-		itemType = Base.VWRabbitRearSeatSC,
+			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -432,7 +432,7 @@ module Base
 				file = VWRabbitDouble,
 			}
 
-		itemType = Base.VWRabbitRearSeatSC,
+			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -442,7 +442,7 @@ module Base
 				file = VWRabbitDouble,
 			}
 
-		itemType = Base.VWRabbitRearSeatSC,
+			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part Muffler
@@ -505,7 +505,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		itemType = Base.VWRabbitHoodSC,
+			itemType = Base.VWRabbitHoodSC,
 		}
 
 		part Heater
@@ -548,7 +548,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.VWRabbitFrontWindshieldSC,
 		}
 
@@ -581,7 +581,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.VWRabbitRearWindshieldSC,
 		}
 
@@ -607,9 +607,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.VWRabbitFrontSideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -627,9 +626,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.VWRabbitFrontSideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -648,7 +646,6 @@ module Base
 			}
 
 			itemType = Base.VWRabbitRearSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -666,9 +663,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.VWRabbitRearSideWindowSC,
-
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}

@@ -188,8 +188,8 @@ module Base
 		mass = 450,
 		physicsChassisShape = 2.2727 1.6364 5.7576,
 		centerOfMassOffset = 0.0000 0.8182 0.1818,
-		shadowExtents = 2.4264 5.8299,
-		shadowOffset = -0.0032 0.1919,
+		shadowExtents = 2.2749 5.7541,
+		shadowOffset = -0.0032 0.1767,
 		engineForce = 3500,
 		gearRatioCount = 4,
 		maxSpeed = 95f,
@@ -242,7 +242,7 @@ module Base
 			width = 0.30f,
 		}
 
-	template = PassengerSeat4,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -251,13 +251,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5469 0.7031 -0.1875,
+				offset = 0.5455 0.6970 -0.1818,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0469 -0.4219 0.2500,
+				offset = 2.0455 -0.4242 0.2576,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -270,13 +270,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5469 0.7031 -0.1875,
+				offset = -0.5455 0.6970 -0.1818,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1406 -0.4219 0.2500,
+				offset = -2.1364 -0.4242 0.2576,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -289,13 +289,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.4531 0.6094 -1.1094,
+				offset = 0.4545 0.6061 -1.1061,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0469 -0.4219 0.2500,
+				offset = 2.0455 -0.4242 0.2576,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -308,13 +308,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.4531 0.6094 -1.1094,
+				offset = -0.4545 0.6061 -1.1061,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1406 -0.4219 0.2500,
+				offset = -2.1364 -0.4242 0.2576,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -322,57 +322,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 2.0156 3.1875 1.5312,
+			xywh = 0.0000 2.0152 3.1818 1.5455,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.5781 2.2187 1.7813,
+			xywh = 0.0000 -3.5758 2.2121 1.7879,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.7969 0.3125 1.3750 1.3750,
+			xywh = 1.8030 0.3182 1.3939 1.3939,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.7969 0.3125 1.3750 1.3750,
+			xywh = -1.8030 0.3182 1.3939 1.3939,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.7969 0.3125 1.3750 1.3750,
+			xywh = 1.8030 0.3182 1.3939 1.3939,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.7969 0.3125 1.3750 1.3750,
+			xywh = -1.8030 0.3182 1.3939 1.3939,
 		}
 
 		area GasTank
 		{
-			xywh = 1.6719 -1.8750 1.1250 0.6563,
+			xywh = 1.6667 -1.8788 1.1212 0.6667,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.1094 1.9219 0.0000 0.0000,
+			xywh = 1.1061 1.9242 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1094 1.9219 0.0000 0.0000,
+			xywh = -1.1061 1.9242 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.1094 -1.4531 0.0000 0.0000,
+			xywh = 1.1061 -1.4545 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.1094 -1.4531 0.0000 0.0000,
+			xywh = -1.1061 -1.4545 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -411,6 +411,7 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
+
 			itemType = Base.HondaAccordRearSeatSC,
 		}
 
@@ -420,6 +421,7 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
+
 			itemType = Base.HondaAccordRearSeatSC,
 		}
 
@@ -525,8 +527,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.HondaAccordFrontWindshieldSC,
 		}
 
@@ -559,7 +561,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.HondaAccordRearWindshieldSC,
 		}
 
@@ -583,10 +585,8 @@ module Base
 				animate = FALSE,
 			}
 
-
 			itemType = Base.HondaAccordFrontSideWindowSC,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -605,8 +605,7 @@ module Base
 			}
 
 			itemType = Base.HondaAccordFrontSideWindowSC,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -620,12 +619,11 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			itemType = Base.HondaAccordRearSideWindowSC,
-			
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			area = SeatRearRight,
 		}
 
@@ -636,15 +634,13 @@ module Base
 				file = HondaAccordRearLeftWindow,
 			}
 
-
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			itemType = Base.HondaAccordRearSideWindowSC,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			area = SeatRearLeft,
 		}
 
@@ -682,7 +678,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.HondaAccordDoorSC,
 		}
 
