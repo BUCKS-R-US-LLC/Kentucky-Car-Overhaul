@@ -75,14 +75,14 @@ module Base
 	{
 		mesh = vehicles/Vehicle_HM151A2_SC|Radio_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Radio,
-		shader = vehicle_noreflect,
+		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151SpareWheel
 	{
 		mesh = vehicles/Vehicle_HM151A2_SC|SpareWheel_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_wheel,
-		shader = vehicle_noreflect,
+		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151Antenna
@@ -152,7 +152,7 @@ module Base
 	model M151backwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_HM151A2_RightWheel,
-		texture = vehicles/M151A2/Vehicle_M151_Wheel,
+		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_M151
@@ -166,7 +166,7 @@ module Base
 		{
 			file = SC_M151,
 			scale = 0.2700,
-			offset = 0.0000 0.1481 0.0000,
+			offset = 0.0000 -0.5926 0.0000,
 		}
 
 		skin
@@ -239,13 +239,13 @@ module Base
 			texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
 		}
 
-		textureRust = Vehicles/M151/Vehicle_HM151_rust,
-		textureMask = Vehicles/M151/Vehicle_HM151_mask,
-		textureLights = Vehicles/M151/Vehicle_HM151_lights,
-		textureDamage1Shell = Vehicles/M151/Vehicle_HM151_scratch,
-		textureDamage2Shell= Vehicles/M151/Vehicle_HM151_scratch,
-		textureDamage1Overlay = Vehicles/M151/Vehicle_HM151_blood,
-		textureDamage2Overlay = Vehicles/M151/Vehicle_HM151_blood,
+		textureRust = Vehicles/M151A2/Vehicle_HM151_rust,
+		textureMask = Vehicles/M151A2/Vehicle_HM151_mask,
+		textureLights = Vehicles/M151A2/Vehicle_HM151_lights,
+		textureDamage1Shell = Vehicles/M151A2/Vehicle_HM151_scratch,
+		textureDamage2Shell= Vehicles/M151A2/Vehicle_HM151_scratch,
+		textureDamage1Overlay = Vehicles/M151A2/Vehicle_HM151_blood,
+		textureDamage2Overlay = Vehicles/M151A2/Vehicle_HM151_blood,
 
 		sound
 		{
@@ -256,15 +256,15 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.6296 5.1111 10.9630,
-		mass = 800,
-		physicsChassisShape = 5.6296 2.5926 10.9630,
-		centerOfMassOffset = 0.0000 1.2963 0.2222,
-		shadowExtents = 5.8747 11.3301,
+		extents = 5.6296 3.4815 10.7407,
+		mass = 250,
+		physicsChassisShape = 5.6296 3.4815 10.7407,
+		centerOfMassOffset = 0.0000 1.7778 0.2222,
+		shadowExtents = 6.1340 11.3301,
 		shadowOffset = -0.0032 0.2198,
-		engineForce = 4201,
+		engineForce = 3500,
 		gearRatioCount = 4,
-		maxSpeed = 110f,
+		maxSpeed = 75f,
 		engineLoudness = 100,
 		engineQuality = 80,
 		brakingForce = 55,
@@ -472,8 +472,13 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
+			itemType = Base.M151SoftTopSC,
 		}
 
 		part M151SideTarp
@@ -491,8 +496,13 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
+			itemType = Base.M151SideTarpSC,
 		}
 
 		part M151TarpFrame
@@ -510,8 +520,13 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
+			itemType = Base.M151TarpFrameSC,
 		}
 
 		part M151SpareWheel
@@ -529,8 +544,37 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
 			itemType = Base.M35FrontSoftTop,
+		}
+
+		part M151JerryCan
+		{
+			model M151JerryCan
+			{
+				file = M151JerryCan,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.PetrolCan,
 		}
 
 		part M151Antenna
@@ -548,8 +592,13 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
+			itemType = Base.M151AntennaSC,
 		}
 
 		part M151TarpFrame
@@ -567,8 +616,13 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
+			itemType = Base.M35FrontSoftTopSC,
 		}
 
 		part SeatFrontLeft
@@ -700,6 +754,11 @@ module Base
 
 			table uninstall
 			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -860,16 +919,6 @@ module Base
 		template = Tire,
 		template = Axle,
 
-		part TruckBed
-		{
-			itemType = Base.SmallTrunk,
-
-			container
-			{
-				capacity = 40,
-			}
-		}
-
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
@@ -962,8 +1011,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.6207 0.2759,
-			extents = 5.6552 5.2759 10.8621,
+			offset = 0.0000 1.8148 0.2593,
+			extents = 5.6667 3.6296 10.8519,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
