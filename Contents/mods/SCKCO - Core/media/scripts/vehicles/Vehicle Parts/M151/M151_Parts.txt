@@ -1,0 +1,97 @@
+module Base
+{
+
+        item M151DoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Door,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
+        item M151FrontWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	M151A2 Rabbit Front Windshield,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+    }
+
+        item M151FrontSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Front Side Window,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+    }
+
+        item M151RearSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Rear Side Window,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+    }
+
+        item M151HoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Hood,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceHood_WorldItem,
+    }
+
+        item M151FrontSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Front Seat,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontSeat_WorldItem,
+    }
+    
+        item M151RearSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Rabbit Rear Seat,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+}
