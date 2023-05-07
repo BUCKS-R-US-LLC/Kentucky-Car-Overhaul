@@ -6,7 +6,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Door,
+        DisplayName	= M151A2 Soft Door,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -14,12 +14,26 @@ module Base
         WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
+        item M151WindshieldFrameSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Windshield Frame,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
         item M151FrontWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	M151A2 Rabbit Front Windshield,
+        DisplayName	=	M151A2 Front Windshield,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -32,7 +46,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Front Side Window,
+        DisplayName	= M151A2 Front Side Window,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -40,17 +54,74 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item M151RearSideWindowSC2
+        item M151AntennaSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Rear Side Window,
+        DisplayName	= M151A2 Antenna,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
+        MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item M151TarpFrameSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Tarp Frame,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item M151SideTarpSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Side Tarp,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item M151SoftTopSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Soft Top,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
+    }
+
+        item M151AntennaSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= M151A2 Antenna,
+        Icon	=	AMLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MaxCapacity = 10,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
         item M151HoodSC2
@@ -58,7 +129,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Hood,
+        DisplayName	= M151A2 Hood,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -71,7 +142,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Front Seat,
+        DisplayName	= M151A2 Front Seat,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -85,7 +156,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Rabbit Rear Seat,
+        DisplayName	= M151A2 Rear Seat,
         Icon	=	AMLogo,
         VehicleType =   1,
         ConditionMax = 100,
