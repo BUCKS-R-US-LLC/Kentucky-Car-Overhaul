@@ -249,11 +249,11 @@ module Base
 
 		sound
 		{
-			engine = VehicleEngineCarNormal,
-			engineStart = VehicleEngineCarNormal,
-			engineTurnOff = VehicleEngineCarNormal,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailCarNormal,
+			engine = VehicleEngineOffRoad,
+			engineStart = VehicleEngineOffRoad,
+			engineTurnOff = VehicleEngineOffRoad,
+			horn = VehicleHornJeep,
+			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
 		extents = 5.6667 3.5000 10.7500,
@@ -741,7 +741,6 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
 
 		part M151WindshieldFrame
 		{
@@ -756,6 +755,7 @@ module Base
 
 			table uninstall
 			{
+				requireUninstalled = Windshield,
 			}
 
 			lua
@@ -817,6 +817,11 @@ module Base
 				animate = FALSE,
 			}
 
+			window
+			{
+				openable = false,
+			}
+
 			category = SCUCKwindows,
 			itemType = Base.M151FrontSideWindowSC,
 			parent = DoorFrontRight,
@@ -836,6 +841,11 @@ module Base
 				animate = FALSE,
 			}
 
+			window
+			{
+				openable = false,
+			}
+			
 			category = SCUCKwindows,
 			itemType = Base.M151FrontSideWindowSC,
 			parent = DoorFrontLeft,
