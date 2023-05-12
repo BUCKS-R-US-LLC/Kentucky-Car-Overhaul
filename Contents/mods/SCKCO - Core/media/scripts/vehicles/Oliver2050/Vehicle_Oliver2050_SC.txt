@@ -1,0 +1,455 @@
+module Base
+{
+	model SC_Oliver2050
+	{
+		mesh = vehicles/Vehicle_Oliver2050_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model Oliver2050Driver
+	{
+		mesh = vehicles/Vehicle_Oliver2050_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model Oliver2050Exhaust
+	{
+		mesh = vehicles/Vehicle_Oliver2050_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model Oliver2050Wheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontLeftWheel,
+		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_front,
+		shader = vehiclewheel,
+	}
+	model Oliver2050Wheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontRightWheel,
+		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_front,
+		shader = vehiclewheel,
+	}
+	model Oliver2050Wheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontLeftWheel,
+		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
+		shader = vehiclewheel,
+	}
+	model Oliver2050Wheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontRightWheel,
+		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
+		shader = vehiclewheel,
+	}
+	vehicle SC_Oliver2050
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_Oliver2050,
+			scale = 0.5700,
+			offset = 0.0000 -0.2281 0.1053,
+		}
+
+		skin
+		{
+			texture = Vehicles/Oliver2050/Vehicle_Oliver2050,
+		}
+
+		textureRust = Vehicles/Oliver2050/Vehicle_Oliver2050_Rust,
+		textureMask = Vehicles/Oliver2050/Vehicle_Oliver2050_Masks,
+		textureLights = Vehicles/Oliver2050/Vehicle_Oliver2050_Lights,
+		textureDamage1Shell = Vehicles/Oliver2050/Vehicle_Oliver2050_Scratch,
+		textureDamage2Shell = Vehicles/Oliver2050/Vehicle_Oliver2050_Scratch,
+		textureDamage1Overlay = Vehicles/Oliver2050/Vehicle_Oliver2050_Blood,
+		textureDamage2Overlay = Vehicles/Oliver2050/Vehicle_Oliver2050_Blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 3.1579 3.0877 8.9123,
+		mass = 1000,
+		physicsChassisShape = 2.9474 3.0877 8.6667,
+		centerOfMassOffset = 0.0000 1.5614 -0.4737,
+		shadowExtents = 3.1506 8.9458,
+		shadowOffset = 0.0000 -0.4857,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 1,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.2632 0.3860 2.4386,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.2632 0.3860 2.4386,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.2632 0.3860 -3.0351,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.2632 0.3860 -3.0351,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7544 1.5088 0.0175,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.1930 0.2281 0.0175,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6842 1.5088 0.0175,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1930 0.2105 0.1404,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.2807 2.8772 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -5.3158 2.8772 1.7544,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.1930 0.7719 1.2632 1.2632,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.1930 0.7719 1.2632 1.2632,
+		}
+
+		area GasTank
+		{
+			xywh = -2.1053 -1.1053 1.0877 0.5965,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.4912 2.1579 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3684 2.1579 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4737 -2.1228 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.3860 -2.1228 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = Oliver2050Driver,
+			}
+
+			itemType = Base.DodgePowerWagonFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = Oliver2050Passenger,
+			}
+
+			itemType = Base.DodgePowerWagonFrontSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.NormalCarMuffler,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = Oliver2050Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.DodgePowerWagonHoodSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+
+			category = nodisplay,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.DodgePowerWagonSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			category = nodisplay,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.DodgePowerWagonSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			category = nodisplay,
+			itemType = Base.DodgePowerWagonDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			category = nodisplay,
+			itemType = Base.DodgePowerWagonDoorSC,
+		}
+
+		template = Trunk/part/TruckBedOpen,
+		template = Tire,
+		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Oliver2050Wheelfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Oliver2050Wheelfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Oliver2050Wheelfrontwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = Oliver2050Wheelfrontwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = 0.0794 1.5714 -0.4286,
+			extents = 3.1111 2.1429 8.5873,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.9298 -4.8070,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0175 0.8596 3.6316,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
