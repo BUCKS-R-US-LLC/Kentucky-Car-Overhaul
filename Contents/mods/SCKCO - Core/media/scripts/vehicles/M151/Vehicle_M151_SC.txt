@@ -166,7 +166,7 @@ module Base
 		{
 			file = SC_M151,
 			scale = 0.2400,
-			offset = 0.0000 0.0833 0.0000,
+			offset = 0.0000 -0.0417 0.0000,
 		}
 
 		skin
@@ -424,7 +424,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 3.4167 -0.2083 1.1667 0.6667,
+			xywh = 3.4167 -0.1667 1.1667 0.6667,
 		}
 
 		area TireFrontLeft
@@ -466,7 +466,7 @@ module Base
 
 			table install
 			{
-			requireInstalled = M151TarpFrame,
+				requireInstalled = M151TarpFrame,
 			}
 
 			table uninstall
@@ -576,7 +576,6 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.GasCan,
 		}
 
 		part M151Antenna
@@ -845,7 +844,7 @@ module Base
 			{
 				openable = false,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.M151FrontSideWindowSC,
 			parent = DoorFrontLeft,
@@ -928,8 +927,19 @@ module Base
 			itemType = Base.M151DoorSC,
 		}
 
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 30,
+			}
+		}
 
 		part TireFrontLeft
 		{
