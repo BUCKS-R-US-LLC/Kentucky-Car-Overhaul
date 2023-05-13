@@ -18,6 +18,11 @@ module Base
 		mesh = vehicles/Vehicle_Oliver2050_SC|Exhaust_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+<<<<<<< HEAD
+=======
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 	}
 	model Oliver2050Wheelfrontwheelleft
 	{
@@ -33,13 +38,21 @@ module Base
 	}
 	model Oliver2050Wheelbackwheelleft
 	{
+<<<<<<< HEAD
 		mesh = vehicles/Wheels/Vehicle_Oliver2050_RearLeftWheel,
+=======
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontLeftWheel,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
 		shader = vehiclewheel,
 	}
 	model Oliver2050Wheelbackwheelright
 	{
+<<<<<<< HEAD
 		mesh = vehicles/Wheels/Vehicle_Oliver2050_RearRightWheel,
+=======
+		mesh = vehicles/Wheels/Vehicle_Oliver2050_FrontRightWheel,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
 		shader = vehiclewheel,
 	}
@@ -53,8 +66,13 @@ module Base
 		model
 		{
 			file = SC_Oliver2050,
+<<<<<<< HEAD
 			scale = 0.0900,
 			offset = 0.0000 -1.1111 0.0000,
+=======
+			scale = 0.5700,
+			offset = 0.0000 -0.2281 0.1053,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		skin
@@ -64,7 +82,11 @@ module Base
 
 		textureRust = Vehicles/Oliver2050/Vehicle_Oliver2050_Rust,
 		textureMask = Vehicles/Oliver2050/Vehicle_Oliver2050_Masks,
+<<<<<<< HEAD
 		textureLights = Vehicles/Oliver2050/Vehicle_Oliver2050_lights,
+=======
+		textureLights = Vehicles/Oliver2050/Vehicle_Oliver2050_Lights,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		textureDamage1Shell = Vehicles/Oliver2050/Vehicle_Oliver2050_Scratch,
 		textureDamage2Shell = Vehicles/Oliver2050/Vehicle_Oliver2050_Scratch,
 		textureDamage1Overlay = Vehicles/Oliver2050/Vehicle_Oliver2050_Blood,
@@ -78,6 +100,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
+<<<<<<< HEAD
 		extents = 9.5556 13.3333 23.3333,
 		mass = 750,
 		physicsChassisShape = 9.5556 13.3333 23.3333,
@@ -88,6 +111,18 @@ module Base
 		engineQuality = 80,
 		engineLoudness = 120,
 		maxSpeed = 35f,
+=======
+		extents = 3.1579 3.0877 8.9123,
+		mass = 1000,
+		physicsChassisShape = 2.9474 3.0877 8.6667,
+		centerOfMassOffset = 0.0000 1.5614 -0.4737,
+		shadowExtents = 3.1506 8.9458,
+		shadowOffset = 0.0000 -0.4857,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
@@ -106,7 +141,11 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
+<<<<<<< HEAD
 			offset = -6.6667 3.4444 9.2222,
+=======
+			offset = 1.2632 0.3860 2.4386,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -114,7 +153,11 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
+<<<<<<< HEAD
 			offset = 6.6667 3.4444 9.2222,
+=======
+			offset = -1.2632 0.3860 2.4386,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -122,7 +165,11 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
+<<<<<<< HEAD
 			offset = -7.4444 6.2222 -8.0000,
+=======
+			offset = 1.2632 0.3860 -3.0351,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -130,11 +177,20 @@ module Base
 		wheel RearRight
 		{
 			front = false,
+<<<<<<< HEAD
 			offset = 7.4444 6.2222 -8.0000,
+=======
+			offset = -1.2632 0.3860 -3.0351,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
+<<<<<<< HEAD
+=======
+		template = PassengerSeat2,
+
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		passenger FrontLeft
 		{
 			showPassenger = true,
@@ -142,54 +198,125 @@ module Base
 
 			position inside
 			{
+<<<<<<< HEAD
 				offset = 0.0000 13.1111 -6.4444,
+=======
+				offset = 0.7544 1.5088 0.0175,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
+<<<<<<< HEAD
 				offset = 7.2222 0.3333 0.0000,
+=======
+				offset = 2.1930 0.2281 0.0175,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
 		}
 
+<<<<<<< HEAD
 		area Engine
 		{
 			xywh = 6.3333 5.5556 3.1111 3.5556,
+=======
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6842 1.5088 0.0175,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1930 0.2105 0.1404,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.2807 2.8772 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -5.3158 2.8772 1.7544,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area SeatFrontLeft
 		{
+<<<<<<< HEAD
 			xywh = 6.3333 -0.1111 3.1111 3.1111,
+=======
+			xywh = 2.1930 0.7719 1.2632 1.2632,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.1930 0.7719 1.2632 1.2632,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area GasTank
 		{
+<<<<<<< HEAD
 			xywh = 5.3333 3.3333 1.1111 0.8889,
+=======
+			xywh = -2.1053 -1.1053 1.0877 0.5965,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area TireFrontLeft
 		{
+<<<<<<< HEAD
 			xywh = 1.8889 9.2222 0.0000 0.0000,
+=======
+			xywh = 1.4912 2.1579 0.0000 0.0000,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area TireFrontRight
 		{
+<<<<<<< HEAD
 			xywh = -1.8889 9.2222 0.0000 0.0000,
+=======
+			xywh = -1.3684 2.1579 0.0000 0.0000,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area TireRearLeft
 		{
+<<<<<<< HEAD
 			xywh = 1.8889 -7.1111 0.0000 0.0000,
+=======
+			xywh = 1.4737 -2.1228 0.0000 0.0000,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		area TireRearRight
 		{
+<<<<<<< HEAD
 			xywh = -1.8889 -7.1111 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
+=======
+			xywh = -1.3860 -2.1228 0.0000 0.0000,
+		}
+
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -206,6 +333,19 @@ module Base
 			itemType = Base.DodgePowerWagonFrontSeatSC,
 		}
 
+<<<<<<< HEAD
+=======
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = Oliver2050Passenger,
+			}
+
+			itemType = Base.DodgePowerWagonFrontSeatSC,
+		}
+
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		part Muffler
 		{
 			table install
@@ -221,6 +361,59 @@ module Base
 			itemType = Base.NormalCarMuffler,
 		}
 
+<<<<<<< HEAD
+=======
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = Oliver2050Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.DodgePowerWagonHoodSC,
+		}
+
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
@@ -228,6 +421,7 @@ module Base
 
 		part WindowFrontRight
 		{
+<<<<<<< HEAD
 			category = nodisplay,
 			parent = DoorFrontRight,
 			area = SeatFrontLeft,
@@ -235,6 +429,13 @@ module Base
 			lua
 			{
 			}
+=======
+
+			category = nodisplay,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.DodgePowerWagonSideWindowSC,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		part WindowFrontLeft
@@ -242,25 +443,34 @@ module Base
 			category = nodisplay,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+<<<<<<< HEAD
 
 			lua
 			{
 			}
+=======
+			itemType = Base.DodgePowerWagonSideWindowSC,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		part DoorFrontRight
 		{
 			category = nodisplay,
+<<<<<<< HEAD
 			area = SeatFrontLeft,
 
 			lua
 			{
 			}
+=======
+			itemType = Base.DodgePowerWagonDoorSC,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		}
 
 		part DoorFrontLeft
 		{
 			category = nodisplay,
+<<<<<<< HEAD
 			area = SeatFrontLeft,
 
 			lua
@@ -271,6 +481,25 @@ module Base
 		template = Tire,
 		template = Axle,
 
+=======
+			itemType = Base.DodgePowerWagonDoorSC,
+		}
+
+		template = Trunk/part/TruckBedOpen,
+		template = Tire,
+		template = Axle,
+
+		part TruckBedOpen
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
@@ -291,7 +520,11 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
+<<<<<<< HEAD
 				file = Oliver2050Wheelbackwheelleft,
+=======
+				file = Oliver2050Wheelfrontwheelleft,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			}
 		}
 
@@ -299,7 +532,11 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
+<<<<<<< HEAD
 				file = Oliver2050Wheelbackwheelright,
+=======
+				file = Oliver2050Wheelfrontwheelright,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			}
 		}
 
@@ -341,8 +578,13 @@ module Base
 
 		physics box
 		{
+<<<<<<< HEAD
 			offset = 0.1000 5.4000 1.4000,
 			extents = 9.5000 8.1000 25.2000,
+=======
+			offset = 0.0794 1.5714 -0.4286,
+			extents = 3.1111 2.1429 8.5873,
+>>>>>>> 2e1371004287127c249f45a8733302db0c2f987b
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
