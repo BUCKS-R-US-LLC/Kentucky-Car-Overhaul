@@ -39,12 +39,11 @@ module Base
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix M151A2 Door Welding
+	fixing Fix M151A2 Soft Doors
 	{
 	   Require : M151DoorSC2,
 
-       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
-       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+       Fixer : DuctTape=2,
 	}
 
     fixing Fix M151A2 Car seat

@@ -165,8 +165,8 @@ module Base
 		model
 		{
 			file = SC_M151A2,
-			scale = 0.2400,
-			offset = 0.0000 -0.0417 0.0000,
+			scale = 0.2500,
+			offset = 0.0000 -0.0800 -0.0400,
 		}
 
 		skin
@@ -256,36 +256,41 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 5.6667 3.5000 10.7500,
-		mass = 250,
-		physicsChassisShape = 5.6667 3.5000 10.7500,
-		centerOfMassOffset = 0.0000 1.7917 0.2083,
-		shadowExtents = 6.1340 11.3301,
-		shadowOffset = -0.0032 0.2198,
+		extents = 5.6800 3.4400 10.9600,
+		mass = 450,
+		physicsChassisShape = 5.6800 3.4400 10.9600,
+		centerOfMassOffset = 0.0000 1.7200 0.2000,
+		shadowExtents = 5.6749 10.9941,
+		shadowOffset = -0.0032 0.1767,
 		engineForce = 3500,
 		gearRatioCount = 4,
-		maxSpeed = 75f,
-		engineLoudness = 100,
-		engineQuality = 80,
+		gearRatioR = 13.6,
+		gearRatio1 = 12.8,
+		gearRatio2 = 9.2,
+		gearRatio3 = 6.0,
+		gearRatio4 = 3.8,
+		maxSpeed = 70f,
+		engineLoudness = 70,
+		engineQuality = 76,
 		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.95f,
+		rollInfluence = 0.96f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 40,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 14,
-		suspensionRestLength = 0.20f,
+		suspensionStiffness = 18,
+		suspensionCompression = 1.00,
+		suspensionDamping = 1.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.5f,
 		wheelFriction = 1.4f,
-		frontEndHealth = 1500,
-		rearEndHealth = 1350,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
 		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 2.4583 0.8333 4.2917,
+			offset = 2.4000 0.8800 4.2800,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -293,7 +298,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -2.4583 0.8333 4.2917,
+			offset = -2.4000 0.8800 4.2800,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -301,7 +306,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 2.4583 0.8333 -3.4167,
+			offset = 2.4000 0.8800 -3.4000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -309,7 +314,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -2.4583 0.8333 -3.4167,
+			offset = -2.4000 0.8800 -3.4000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -323,13 +328,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.4583 2.6250 -0.8750,
+				offset = 1.4000 2.9200 -0.8800,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 4.6667 0.0833 1.2083,
+				offset = 4.7200 0.1200 1.1200,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -342,13 +347,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.4583 2.6250 -0.8750,
+				offset = -1.4000 2.9200 -0.8800,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -4.6250 0.0833 1.2083,
+				offset = -4.6000 0.1200 1.1200,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -361,13 +366,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.4167 2.7500 -3.1667,
+				offset = 1.4000 3.4400 -3.1200,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 4.6667 0.0833 -1.0000,
+				offset = 4.7200 0.1200 -1.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -380,13 +385,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.4167 2.7500 -3.1667,
+				offset = -1.4000 3.4400 -3.1200,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -4.6250 0.0833 -1.0000,
+				offset = -4.6000 0.1200 -1.0000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -394,57 +399,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.5833 5.6667 2.0000,
+			xywh = 0.0000 6.6000 5.6800 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.0833 5.6667 1.8333,
+			xywh = 0.0000 -6.3600 5.6800 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 3.8333 0.5000 2.0000 2.0000,
+			xywh = 3.8400 0.6000 2.0000 2.0000,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -3.8333 0.5000 2.0000 2.0000,
+			xywh = -3.8400 0.6000 2.0000 2.0000,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 3.8333 -1.5000 2.0000 2.0000,
+			xywh = 3.8400 -1.4000 2.0000 2.0000,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.8333 -1.5000 2.0000 2.0000,
+			xywh = -3.8400 -1.4000 2.0000 2.0000,
 		}
 
 		area GasTank
 		{
-			xywh = 3.4167 -0.1667 1.1667 0.6667,
+			xywh = 3.4400 -0.2800 1.2000 0.9600,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 2.8333 4.2083 0.0000 0.0000,
+			xywh = 2.8800 4.1200 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -2.8333 4.2083 0.0000 0.0000,
+			xywh = -2.8800 4.1200 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.8333 -3.4583 0.0000 0.0000,
+			xywh = 2.8800 -3.4000 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.8333 -3.4583 0.0000 0.0000,
+			xywh = -2.8800 -3.4000 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -821,6 +826,10 @@ module Base
 				openable = false,
 			}
 
+			lua
+			{
+			}
+
 			category = SCUCKwindows,
 			itemType = Base.M151FrontSideWindowSC,
 			parent = DoorFrontRight,
@@ -843,6 +852,10 @@ module Base
 			window
 			{
 				openable = false,
+			}
+
+			lua
+			{
 			}
 
 			category = SCUCKwindows,
@@ -886,6 +899,10 @@ module Base
 				animate = FALSE,
 			}
 
+			lua
+			{
+			}
+
 			itemType = Base.M151DoorSC,
 		}
 
@@ -922,6 +939,10 @@ module Base
 				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
+			}
+
+			lua
+			{
 			}
 
 			itemType = Base.M151DoorSC,
@@ -1033,8 +1054,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.8148 0.2593,
-			extents = 5.6667 3.6296 10.8519,
+			offset = 0.0000 1.7917 0.0833,
+			extents = 5.6400 3.5600 10.7600,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

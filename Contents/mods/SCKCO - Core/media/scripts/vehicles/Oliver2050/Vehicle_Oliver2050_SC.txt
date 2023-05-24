@@ -54,7 +54,7 @@ module Base
 		{
 			file = SC_Oliver2050,
 			scale = 0.0900,
-			offset = 0.0000 -1.1111 0.0000,
+			offset = 0.0000 -0.4444 0.0000,
 		}
 
 		skin
@@ -78,16 +78,16 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 9.5556 13.3333 23.3333,
+		extents = 9.5556 9.1111 23.3333,
 		mass = 750,
-		physicsChassisShape = 9.5556 13.3333 23.3333,
+		physicsChassisShape = 9.5556 9.1111 23.3333,
 		centerOfMassOffset = 0.0000 6.6667 0.3333,
 		shadowExtents = 9.6506 28.5458,
 		shadowOffset = 0.0000 0.0143,
 		engineForce = 6800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 35f,
+		maxSpeed = 50f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
@@ -95,9 +95,9 @@ module Base
 		steeringClamp = 0.3,
 		suspensionStiffness = 45,
 		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
+		suspensionDamping = 0.50,
+		maxSuspensionTravelCm = 5,
+		suspensionRestLength = 10,
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
@@ -208,6 +208,12 @@ module Base
 
 		part Muffler
 		{
+
+			model Oliver2050Exhaust
+			{
+				file = Oliver2050Exhaust,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -341,8 +347,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.1000 5.4000 1.4000,
-			extents = 9.5000 8.1000 25.2000,
+			offset = 0.1111 5.5556 -0.2222,
+			extents = 9.5556 8.5556 24.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
