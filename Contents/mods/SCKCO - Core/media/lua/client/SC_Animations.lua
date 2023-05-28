@@ -188,6 +188,35 @@ local vehicleToSeatAnimations = {
 		["seat3"]="Bob_SitGround_Idle",
 	},
 
+	["Base.SC_CadillacGageRanger"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Bob_SitGround_Idle",
+        ["seat2"]="Bob_SitGround_Idle",
+		["seat3"]="Bob_SitGround_Idle",
+	},
+
+	["Base.SC_CadillacGageRangerLights"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Bob_SitGround_Idle",
+        ["seat2"]="Bob_SitGround_Idle",
+		["seat3"]="Bob_SitGround_Idle",
+	},
+
+	
+	["Base.SC_M151A2"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_M151A2Cleaners"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+	},
+
 	["Base.SC_FordBronco"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",

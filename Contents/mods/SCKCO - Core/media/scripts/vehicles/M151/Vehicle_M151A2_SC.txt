@@ -166,7 +166,7 @@ module Base
 		{
 			file = SC_M151A2,
 			scale = 0.2500,
-			offset = 0.0000 -0.0800 -0.0400,
+			offset = 0.0000 -0.6800 -0.0400,
 		}
 
 		skin
@@ -257,11 +257,11 @@ module Base
 		}
 
 		extents = 5.6800 3.4400 10.9600,
-		mass = 450,
-		physicsChassisShape = 5.6800 3.4400 10.9600,
+		mass = 250,
+		physicsChassisShape = 5.6800 3.3600 10.9600,
 		centerOfMassOffset = 0.0000 1.7200 0.2000,
-		shadowExtents = 5.6749 10.9941,
-		shadowOffset = -0.0032 0.1767,
+		shadowExtents = 5.6749 10.9541,
+		shadowOffset = -0.0032 0.2167,
 		engineForce = 3500,
 		gearRatioCount = 4,
 		gearRatioR = 13.6,
@@ -274,17 +274,17 @@ module Base
 		engineQuality = 76,
 		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.96f,
+		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 18,
-		suspensionCompression = 1.00,
-		suspensionDamping = 1.88,
-		maxSuspensionTravelCm = 10,
-		suspensionRestLength = 0.5f,
+		suspensionStiffness = 20,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
 		wheelFriction = 1.4f,
-		frontEndHealth = 150,
-		rearEndHealth = 150,
+		frontEndHealth = 1200,
+		rearEndHealth = 750,
 		seats = 4,
 
 		wheel FrontLeft
@@ -399,12 +399,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.6000 5.6800 2.0000,
+			xywh = 0.0000 6.6800 5.6800 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.3600 5.6800 2.0000,
+			xywh = 0.0000 -6.2800 5.6800 2.0000,
 		}
 
 		area SeatFrontLeft
@@ -826,10 +826,6 @@ module Base
 				openable = false,
 			}
 
-			lua
-			{
-			}
-
 			category = SCUCKwindows,
 			itemType = Base.M151FrontSideWindowSC,
 			parent = DoorFrontRight,
@@ -852,10 +848,6 @@ module Base
 			window
 			{
 				openable = false,
-			}
-
-			lua
-			{
 			}
 
 			category = SCUCKwindows,
@@ -899,10 +891,6 @@ module Base
 				animate = FALSE,
 			}
 
-			lua
-			{
-			}
-
 			itemType = Base.M151DoorSC,
 		}
 
@@ -939,10 +927,6 @@ module Base
 				anim = FrontLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
-			}
-
-			lua
-			{
 			}
 
 			itemType = Base.M151DoorSC,
@@ -1054,8 +1038,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.7917 0.0833,
-			extents = 5.6400 3.5600 10.7600,
+			offset = 0.0000 1.6400 0.0800,
+			extents = 5.6400 2.5200 10.7600,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
