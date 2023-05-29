@@ -180,7 +180,7 @@ end
 
 function F700TireFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
 
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
@@ -212,7 +212,7 @@ end
 
 function F700TireRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice)) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
 
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
