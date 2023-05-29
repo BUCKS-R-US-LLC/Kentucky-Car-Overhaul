@@ -277,7 +277,7 @@ module Base
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 20,
+		suspensionStiffness = 90,
 		suspensionCompression = 1.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
@@ -580,7 +580,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKaccessories,
+			category = nodisplay,
 		}
 
 		part M151Antenna
