@@ -4,7 +4,7 @@
 
 function K5Bullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "K5" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_K5BlazerFossoil", "SC_K5BlazerMcCoys", "PickUpVan", "PickUpVanLights", "PickUpVanLightsFire", "PickUpLightsPolice", "PickupVanLightsMccoy")) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("K5Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("K5Bullbar"):getInventoryItem()) then
@@ -21,7 +21,7 @@ end
 
 function CUCVBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "CUCV" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1008", "SC_M1009", "SC_M1010", "SC_M1028A3", "SC_CUCVZhenjaEdition")) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("K5Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("K5Bullbar"):getInventoryItem()) then

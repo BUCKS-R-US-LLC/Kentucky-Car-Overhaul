@@ -34,7 +34,7 @@ local part = vehicle:getPartById("EngineDoor")
 
 end
 
-function F700F700Bullbar(player, part, elapsedMinutes)
+function F700Bullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "Ford F700 Armored" )) then
 
@@ -270,7 +270,7 @@ Events.OnPlayerUpdate.Add(F700WindowMiddleLeft);
 Events.OnPlayerUpdate.Add(F700WindowMiddleRight);
 Events.OnPlayerUpdate.Add(F700WindowRearRight);
 Events.OnPlayerUpdate.Add(F700Muffler);
-Events.OnPlayerUpdate.Add(F700F700Bullbar);
+Events.OnPlayerUpdate.Add(F700Bullbar);
 Events.OnPlayerUpdate.Add(F700TireFrontLeft);
 Events.OnPlayerUpdate.Add(F700TireFrontRight);
 Events.OnPlayerUpdate.Add(F700TireRearLeft);

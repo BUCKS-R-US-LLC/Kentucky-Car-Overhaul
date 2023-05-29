@@ -4,7 +4,7 @@
 
 function M35A1Windshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("M35A1WindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("M35A1WindshieldArmor"):getInventoryItem()) then
@@ -21,7 +21,7 @@ end
 
 function M35A1EngineDoor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bumper"):getInventoryItem()) then
@@ -39,7 +39,7 @@ end
 
 function M35A1GasTank(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("GasTank")
         if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
@@ -55,7 +55,7 @@ end
 
 function M35A1DoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("M35A1FrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontLeftDoorArmor"):getInventoryItem()) then
@@ -72,7 +72,7 @@ end
 
 function M35A1DoorFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("M35A1FrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontRightDoorArmor"):getInventoryItem()) then
@@ -90,7 +90,7 @@ end
 
 function M35A1WindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("M35A1FrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontLeftWindowArmor"):getInventoryItem()) then
@@ -107,7 +107,7 @@ end
 
 function M35A1WindowFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("M35A1FrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("M35A1FrontRightWindowArmor"):getInventoryItem()) then
@@ -125,7 +125,7 @@ end
 
 function M35A1TireFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
@@ -141,7 +141,7 @@ end
 
 function M35A1TireFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("TireFrontRight")
         if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
@@ -157,7 +157,7 @@ end
 
 function M35A1TireRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
@@ -173,7 +173,7 @@ end
 
 function M35A1TireRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
         local part = vehicle:getPartById("TireRearRight")
         if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
@@ -189,7 +189,7 @@ end
 
 function M35A1Bumper(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
 
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("M35A1Bumper"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("M35A1Bumper"):getInventoryItem()) then
