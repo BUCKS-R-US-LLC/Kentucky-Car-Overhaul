@@ -107,7 +107,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.farming_machinery = VehicleZoneDistribution.farming_machinery or {};
 	VehicleZoneDistribution.farming_machinery.vehicles = VehicleZoneDistribution.farming_machinery.vehicles or {};
 
-	VehicleZoneDistribution.farming_machinery.vehicles["Base.SC_Oliver2050"] = {index = -1, spawnChance = 90};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 90};
 	
 	VehicleZoneDistribution.farming_machinery.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.farming_machinery.chanceToSpawnKey = 80;
