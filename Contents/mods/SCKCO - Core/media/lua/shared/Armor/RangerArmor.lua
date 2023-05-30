@@ -18,6 +18,22 @@ local part = vehicle:getPartById("Windshield")
 
 end
 
+function RangerEngineDoor(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_CadillacGageRanger", "SC_CadillacGageRangerLights")) then
+
+local part = vehicle:getPartById("EngineDoor")
+        if (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("EngineDoor"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 30 })
+
+        end
+        vehicle:transmitPartModData(EngineDoor)
+    end
+
+
+end
+
 function RangerDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_CadillacGageRanger", "SC_CadillacGageRangerLights")) then

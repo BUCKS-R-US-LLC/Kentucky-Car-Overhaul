@@ -132,11 +132,7 @@ local vehicleToSeatAnimations = {
 	["Base.CarStationWagon2"] = "Default",
 	["Base.CarLights"] = "Default",
 	["Base.CarLightsPolice"] = "Default",
-	["Base.SC_CrownVictoriaCiv"] = "Default",
-	["Base.SC_CrownVictoriaStatePolice"] = "Default",
-	["Base.SC_CrownVictoriaParkRanger"] = "Default",
 	["Base.SC_CrownVictoriaLVPD"] = "Default",
-	["Base.SC_CrownVictoriaTaxi"] = "Default",
 	["Base.SC_CapriceCiv"] = "Default",
 	["Base.SC_Caprice9C1StatePolice"] = "Default",
 	["Base.SC_Caprice9C1ParkRanger"] = "Default",
@@ -167,9 +163,11 @@ local vehicleToSeatAnimations = {
 	["Base.SC_Mercedes280"] = "midSized",
 	["Base.CarLuxury"] = "midSized",
 
-	["Base.SC_StepVanP30Civ"] = "4Seater",
 	["Base.SC_StepVanP30Police"] = "4Seater",
 	["Base.SC_StepVanP30ParkRanger"] = "4Seater",
+	["Base.SC_StepVanP30Bunny"] = "4Seater",
+	["Base.SC_StepVanP30Greenes"] = "4Seater",
+
 	["Base.StepVan"] = "4Seater",
 	["Base.StepVan_Scarlet"] = "4Seater",
 	["Base.StepVan_Heralds"] = "4Seater",
@@ -189,14 +187,14 @@ local vehicleToSeatAnimations = {
 	},
 
 	["Base.SC_CadillacGageRanger"] = {
-        ["seat0"]="Bob_Idle_Driver",
+		["seat0"]="Shark_Idle_SmallCarDriver",
 		["seat1"]="Bob_SitGround_Idle",
         ["seat2"]="Bob_SitGround_Idle",
 		["seat3"]="Bob_SitGround_Idle",
 	},
 
 	["Base.SC_CadillacGageRangerLights"] = {
-        ["seat0"]="Bob_Idle_Driver",
+		["seat0"]="Shark_Idle_SmallCarDriver",
 		["seat1"]="Bob_SitGround_Idle",
         ["seat2"]="Bob_SitGround_Idle",
 		["seat3"]="Bob_SitGround_Idle",
