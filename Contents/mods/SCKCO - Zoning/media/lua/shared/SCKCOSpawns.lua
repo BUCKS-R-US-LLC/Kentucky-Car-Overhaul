@@ -4,6 +4,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_general.vehicles = VehicleZoneDistribution.military_general.vehicles or {};
 
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M151A2"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 50};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 30};
 	VehicleZoneDistribution.military_general.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 10};
@@ -22,6 +23,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_utility.vehicles = VehicleZoneDistribution.military_utility.vehicles or {};
 
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_general.vehicles["Base.SC_M151A2"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1028A3"] = {index = -1, spawnChance = 60};
@@ -171,6 +173,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.secret_lab_wrecks.vehicles = VehicleZoneDistribution.secret_lab_wrecks.vehicles or {};
 
     VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M151A2Cleaners"] = {index = -1, spawnChance = 30};
 	VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 40};
     VehicleZoneDistribution.secret_lab_wrecks.vehicles["Base.SC_M35A1CrashedOverturned"] = {index = -1, spawnChance = 30};
