@@ -225,7 +225,7 @@ module Base
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.3,
-		suspensionStiffness = 300,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -238,7 +238,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.4590 0.5082 2.9508,
+			offset = 1.4098 0.5082 2.9508,
 			radius = 0.70f,
 			width = 0.20f,
 		}
@@ -246,7 +246,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.4590 0.5082 2.9508,
+			offset = -1.4098 0.5082 2.9508,
 			radius = 0.70f,
 			width = 0.20f,
 		}
@@ -716,7 +716,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKaccessories,
 			itemType = Base.M35Tarp,
 			parent = M35A1TarpFrame,
@@ -744,7 +744,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = nodisplay,
 		}
 
@@ -757,7 +757,6 @@ module Base
 
 			table install
 			{
-				requireUninstalled = M35A1FrontSoftTop
 			}
 
 			table uninstall
@@ -812,6 +811,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
 			category = SCUCKaccessories,
 			itemType = Base.M35Wheel,
 		}
@@ -901,7 +901,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.M35Windshield,
 
 			lua
@@ -932,7 +932,7 @@ module Base
 				requireUninstalled = M35A1FrontHardTop,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.M35RearWindow,
 
 			lua
@@ -959,7 +959,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.M35Window,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -978,7 +978,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.M35Window,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
