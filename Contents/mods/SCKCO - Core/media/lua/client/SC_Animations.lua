@@ -152,6 +152,8 @@ local vehicleToSeatAnimations = {
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
 	["Base.SC_M35A1"] = "16SideSeater",
 	
+	["Base.CrownVictoria92"] = "Default",
+
 	["Base.ModernCar"] = "Default",
 	["Base.SC_VWRabbit"] = "SmallCar",
 	["Base.SC_HondaAccord"] = "SmallCar",
