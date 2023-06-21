@@ -1,0 +1,1133 @@
+module Base
+{
+	model SC_HahnPumper
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model HahnPumperDriver
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HahnPumperPassenger
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HahnPumperWindshield
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HahnPumperFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model HahnPumperFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model HahnPumperRearRightWindow
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HahnPumperRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HahnPumperFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model HahnPumperFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model HahnPumperRightFrontStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RightFrontStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightFrontStorageBone 1.0,
+	}
+	model HahnPumperRightMiddleStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RightMiddleStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightMiddleStorageBone 1.0,
+	}
+	model HahnPumperRightRearStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RightRearStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightRearStorageBone 1.0,
+	}
+	model HahnPumperRightBackStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RightBackStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RightBackStorageBone 1.0,
+	}
+	model HahnPumperLeftFrontStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|LeftFrontStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftFrontStorageBone 1.0,
+	}
+	model HahnPumperLeftMiddleStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|LeftMiddleStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftMiddleStorageBone 1.0,
+	}
+	model HahnPumperLeftRearStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|LeftRearStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftRearStorageBone 1.0,
+	}
+	model HahnPumperLeftBackStorage
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|LeftBackStorage_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = LeftBackStorageBone 1.0,
+	}
+	model HahnPumperRearWindshield
+	{
+		mesh = vehicles/Vehicle_HahnPumper_SC|RearWindshield_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model HahnPumperfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_HahnPumper_FrontLeft,
+		texture = vehicles/HahnPumper/Vehicle_HahnPumper_FrontWheel,
+		shader = vehiclewheel,
+	}
+	model HahnPumperfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_HahnPumper_FrontRight,
+		texture = vehicles/HahnPumper/Vehicle_HahnPumper_FrontWheel,
+		shader = vehiclewheel,
+	}
+	model HahnPumperbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_HahnPumper_RearLeft,
+		texture = vehicles/HahnPumper/Vehicle_HahnPumper_RearWheel,
+		shader = vehiclewheel,
+	}
+	model HahnPumperbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_HahnPumper_RearRight,
+		texture = vehicles/HahnPumper/Vehicle_HahnPumper_RearWheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_HahnPumper
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_HahnPumper,
+			scale = 0.6300,
+			offset = 0.0635 -0.3016 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/HahnPumper/Vehicle_HahnPumper,
+		}
+
+		textureRust = Vehicles/HahnPumper/Vehicle_HahnPumper_rust,
+		textureMask = Vehicles/HahnPumper/Vehicle_HahnPumper_mask,
+		textureLights = Vehicles/HahnPumper/Vehicle_HahnPumper_lights,
+		textureDamage1Shell = Vehicles/HahnPumper/Vehicle_HahnPumper_scratch,
+		textureDamage2Shell= Vehicles/HahnPumper/Vehicle_HahnPumper_scratch,
+		textureDamage1Overlay = Vehicles/HahnPumper/Vehicle_HahnPumper_blood,
+		textureDamage2Overlay = Vehicles/HahnPumper/Vehicle_HahnPumper_blood,
+
+		sound
+		{
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = FireTruckHorn,
+			ignitionFail = VehiclegnitionFailStepVan,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+			leftCol = 1;0;0,
+			rightCol = 1;0;0,
+		}
+
+		extents = 3.8095 3.4286 13.2381,
+		mass = 1500,
+		physicsChassisShape = 3.8095 4.1587 13.2063,
+		centerOfMassOffset = 0.0635 2.1111 0.0159,
+		shadowExtents = 4.5474 14.9292,
+		shadowOffset = 0.0635 0.0222,
+		maxSpeed = 80f,
+		engineForce = 6000,
+		engineQuality = 80,
+		engineLoudness = 150,
+		brakingForce = 90,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 6500,
+		rearEndHealth = 4500,
+		seats = 2,
+		isSmallVehicle = false,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.6349 0.5873 3.2222,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.6508 0.5873 3.2222,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.3651 0.6190 -3.4921,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.3968 0.6190 -3.4921,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 2.1746 4.7143,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3492 -0.1905 5.0476,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7460 2.0794 4.7143,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3492 -0.1905 5.0476,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0635 7.2540 3.8095 1.2698,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.5556 4.8730 1.1111 1.1111,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.4127 4.8730 1.1111 1.1111,
+		}
+
+		area GasTank
+		{
+			xywh = 2.5079 -0.7778 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.0000 3.1746 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.0000 3.1746 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 2.0000 -3.4921 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -2.0000 -3.4921 0.0000 0.0000,
+		}
+
+		area SideContainer1
+		{
+			xywh = -2.2063 1.3810 0.7302 0.8254,
+		}
+
+		area SideContainer2
+		{
+			xywh = -2.2063 -2.0635 0.7302 0.8254,
+		}
+
+		area SideContainer3
+		{
+			xywh = -2.2063 -4.3333 0.7302 0.8254,
+		}
+
+		area SideContainer4
+		{
+			xywh = -2.2063 -5.1587 0.7302 0.8254,
+		}
+
+		area SideContainer5
+		{
+			xywh = 2.3333 1.3810 0.7302 0.8254,
+		}
+
+		area SideContainer6
+		{
+			xywh = 2.3333 -2.0635 0.7302 0.8254,
+		}
+
+		area SideContainer7
+		{
+			xywh = 2.3333 -4.3333 0.7302 0.8254,
+		}
+
+		area SideContainer8
+		{
+			xywh = 2.3333 -5.1587 0.7302 0.8254,
+		}
+
+		template = HahnPumperArmor/part/HahnPumperArmorWindshield,
+		template = HahnPumperArmor/part/HahnPumperFrontLeftDoorArmor,
+		template = HahnPumperArmor/part/HahnPumperFrontRightDoorArmor,
+		template = HahnPumperArmor/part/HahnPumperRearLeftWindowArmor,
+		template = HahnPumperArmor/part/HahnPumperRearRightWindowArmor,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+		template = TrunkHahnPumper/part/SideContainer1,
+		template = TrunkHahnPumper/part/SideContainer2,
+		template = TrunkHahnPumper/part/SideContainer3,
+		template = TrunkHahnPumper/part/SideContainer4,
+		template = TrunkHahnPumper/part/SideContainer5,
+		template = TrunkHahnPumper/part/SideContainer6,
+		template = TrunkHahnPumper/part/SideContainer7,
+		template = TrunkHahnPumper/part/SideContainer8,
+		template = TrunkDoorHahnPumper,
+
+		part LargeUtilityTruckSoundController
+		{
+			itemType = Base.LargeUtilityTruckSoundController,
+			category = nodisplay,
+		}
+		
+		part TrunkDoor1
+		{
+			model Default
+			{
+				file = HahnPumperRightFrontStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightFrontStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightFrontStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightFrontStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightFrontStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor2
+		{
+			model Default
+			{
+				file = HahnPumperRightMiddleStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightMiddleStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor3
+		{
+			model Default
+			{
+				file = HahnPumperRightRearStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightRearStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightRearStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightRearStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightRearStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor4
+		{
+			model Default
+			{
+				file = HahnPumperRightBackStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = RightBackStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = RightBackStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RightBackStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RightBackStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor5
+		{
+			model Default
+			{
+				file = HahnPumperLeftFrontStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftFrontStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor6
+		{
+			model Default
+			{
+				file = HahnPumperLeftMiddleStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftMiddleStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor7
+		{
+			model Default
+			{
+				file = HahnPumperLeftRearStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftRearStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftRearStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftRearStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftRearStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part TrunkDoor8
+		{
+			model Default
+			{
+				file = HahnPumperLeftBackStorage,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = LeftBackStorageClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = LeftBackStorageClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = LeftBackStorageClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = LeftBackStorageClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = HahnPumperDriver,
+			}
+
+		itemType = Base.HahnPumperSeat,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = HahnPumperPassenger,
+			}
+		
+		itemType = Base.HahnPumperSeat,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = HahnPumperHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = HahnPumperWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.HahnPumperWindshield,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = HahnPumperRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			parent = DoorRearRight,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+
+			}
+
+			category = SCUCKwindows,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowFR
+			{
+				file = HahnPumperFrontRightWindow,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.HahnPumperFrontSideWindowDoor,
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowFL
+			{
+				file = HahnPumperFrontLeftWindow,
+			}
+
+			itemType = Base.HahnPumperFrontSideWindowDoor,
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = HahnPumperRearLeftWindow,
+			}
+
+			area = TireFrontLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+			
+			category = SCUCKwindows,
+			itemType = Base.HahnPumperRearSideWindowDoor,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = HahnPumperRearRightWindow,
+			}
+
+			area = TireFrontRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+
+			category = SCUCKwindows,
+			itemType = Base.HahnPumperRearSideWindowDoor,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = HahnPumperFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HahnPumperFrontDoor,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = HahnPumperFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HahnPumperFrontDoor,
+		}
+
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HahnPumperfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HahnPumperfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HahnPumperbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HahnPumperbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.HamRadio1,
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = 0.0794 2.0159 -0.0952,
+			extents = 3.7778 3.5714 13.0635,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}
