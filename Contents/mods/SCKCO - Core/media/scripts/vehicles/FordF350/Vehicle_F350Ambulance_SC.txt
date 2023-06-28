@@ -67,13 +67,12 @@ module Base
 	}
 	model F350AmbulanceSlidingWindow
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|SlideDoorWindow_obj,
+		mesh = vehicles/Vehicle_F350Ambulance_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-
 	model F350AmbulanceHood
 	{
 		mesh = vehicles/Vehicle_F350Ambulance_SC|Hood_obj,
@@ -81,7 +80,7 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
-	}	
+	}
 	model F350AmbulanceTrunk
 	{
 		mesh = vehicles/Vehicle_F350Ambulance_SC|TrunkDoor_obj,
@@ -102,29 +101,29 @@ module Base
 	}
 	model F350Ambulancefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF350_LeftWheel,
-		texture = vehicles/FordF350/Vehicle_FordF350_Wheel,
+		mesh = vehicles/Wheels/Vehicle_F350Ambulance_FrontLeft,
+		texture = vehicles/FordF350/Vehicle_F350Ambu_frontwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF350_RightWheel,
-		texture = vehicles/FordF350/Vehicle_FordF350_Wheel,
+		mesh = vehicles/Wheels/Vehicle_F350Ambulance_FrontRight,
+		texture = vehicles/FordF350/Vehicle_F350Ambu_frontwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF350_LeftWheel,
-		texture = vehicles/FordF350/Vehicle_FordF350_Wheel,
+		mesh = vehicles/Wheels/Vehicle_F350Ambulance_RearLeft,
+		texture = vehicles/FordF350/Vehicle_F350Ambu_rearwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF350_RightWheel,
-		texture = vehicles/FordF350/Vehicle_FordF350_Wheel,
+		mesh = vehicles/Wheels/Vehicle_F350Ambulance_RearRight,
+		texture = vehicles/FordF350/Vehicle_F350Ambu_rearwheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_F350Ambulance
+	vehicle SC_FordF350Ambulance
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -135,7 +134,7 @@ module Base
 		{
 			file = SC_F350Ambulance,
 			scale = 0.5900,
-			offset = 0.0000 0.1864 0.5932,
+			offset = 0.0000 -0.1864 0.5932,
 		}
 
 		skin
@@ -146,8 +145,8 @@ module Base
 		textureRust = Vehicles/FordF350/Vehicle_F350Ambu_rust,
 		textureMask = Vehicles/FordF350/Vehicle_F350Ambu_mask,
 		textureLights = Vehicles/FordF350/Vehicle_F350Ambu_lights,
-		textureDamage1Shell = Vehicles/FordF350/Vehicle_F350Amb_scratch,
-		textureDamage2Shell= Vehicles/FordF350/Vehicle_F350Ambu_scratch,
+		textureDamage1Shell = Vehicles/FordF350/Vehicle_F350Ambu_scratch,
+		textureDamage2Shell = Vehicles/FordF350/Vehicle_F350Ambu_scratch,
 		textureDamage1Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
 		textureDamage2Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
 
@@ -196,7 +195,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2712 0.0847 1.9322,
+			offset = 1.1356 0.2034 2.3220,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +203,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2712 0.0847 1.9153,
+			offset = -1.1356 0.2034 2.3051,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +211,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2712 0.0847 -3.0847,
+			offset = 1.3559 0.2034 -3.6441,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +219,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2712 0.0847 -3.0847,
+			offset = -1.3559 0.2034 -3.6441,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -775,7 +774,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F350Vanfrontwheelleft,
+				file = F350Ambulancefrontwheelleft,
 			}
 		}
 
@@ -783,7 +782,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F350Vanfrontwheelright,
+				file = F350Ambulancefrontwheelright,
 			}
 		}
 
@@ -791,7 +790,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F350Vanbackwheelleft,
+				file = F350Ambulancebackwheelleft,
 			}
 		}
 
@@ -799,7 +798,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F350Vanbackwheelright,
+				file = F350Ambulancebackwheelright,
 			}
 		}
 
