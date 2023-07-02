@@ -54,7 +54,7 @@ module Base
 		{
 			file = SC_Oliver2050,
 			scale = 0.0900,
-			offset = 0.0000 0.0000 0.0000,
+			offset = 0.0000 3.6667 0.0000,
 		}
 
 		skin
@@ -78,16 +78,16 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 10.8889 9.1111 23.5556,
+		extents = 8.2222 9.1111 23.5556,
 		mass = 400,
-		physicsChassisShape = 10.8889 9.1111 23.5556,
-		centerOfMassOffset = 0.0000 4.5556 0.0000,
+		physicsChassisShape = 10.6667 8.6667 24.2222,
+		centerOfMassOffset = 0.0000 4.3333 0.0000,
 		shadowExtents = 10.8728 23.5458,
 		shadowOffset = 0.0000 0.0143,
 		engineForce = 6800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 40f,
+		maxSpeed = 20f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
@@ -96,17 +96,17 @@ module Base
 		suspensionStiffness = 90,
 		suspensionCompression = 3.83,
 		suspensionDamping = 0.50,
-		maxSuspensionTravelCm = 10,
-		suspensionRestLength = 10,
+		maxSuspensionTravelCm = 2,
+		suspensionRestLength = 3,
 		wheelFriction = 1.6f,
-		frontEndHealth = 1000,
+		frontEndHealth = 800,
 		rearEndHealth = 500,
 		seats = 1,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -6.6667 0.0000 9.2222,
+			offset = -6.6667 -2.1111 9.2222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -114,7 +114,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 6.6667 0.0000 9.2222,
+			offset = 6.6667 -2.1111 9.2222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -122,7 +122,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = -7.4444 0.0000 -8.0000,
+			offset = -7.4444 0.1111 -8.0000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -130,7 +130,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = 7.4444 0.0000 -8.0000,
+			offset = 7.4444 0.1111 -8.0000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -152,6 +152,11 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 7.0000 -0.1111 3.1111 3.1111,
 		}
 
 		area Engine
@@ -228,33 +233,11 @@ module Base
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-
-		part WindowFrontRight
-		{
-			category = nodisplay,
-			parent = DoorFrontRight,
-			area = SeatFrontLeft,
-
-			lua
-			{
-			}
-		}
 
 		part WindowFrontLeft
 		{
 			category = nodisplay,
 			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-
-			lua
-			{
-			}
-		}
-
-		part DoorFrontRight
-		{
-			category = nodisplay,
 			area = SeatFrontLeft,
 
 			lua
@@ -345,21 +328,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 4.3333 -0.2222,
+			offset = 0.0000 4.3333 0.0000,
 			extents = 10.6667 8.5556 24.1111,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.9298 -4.8070,
+			offset = 0.0000 0.8889 -17.6667,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0175 0.8596 3.6316,
+			offset = 0.0000 0.8889 14.1111,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

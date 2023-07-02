@@ -177,11 +177,21 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_GrummanLLV"] = "2Seater",
 	["Base.SC_MackDM800Garbage"] = "2Seater",
-
+	["Base.SC_CrownFirecoach"] = "2Seater",
+	["Base.SC_HahnPumperRed"] = "2Seater",
+	["Base.SC_HahnPumperYellow"] = "2Seater",
+	
 	["Base.SC_G30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",
 
 	["Base.SC_CadillacFuneralCoach"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+        ["seat2"]="Bob_SitGround_Idle",
+		["seat3"]="Bob_SitGround_Idle",
+	},
+
+	["Base.SC_FordF350Ambulance"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
         ["seat2"]="Bob_SitGround_Idle",
@@ -228,6 +238,24 @@ local vehicleToSeatAnimations = {
 	},
 
 	["Base.SC_PlymouthVoyager"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+		["seat4"]="Shark_Idle_Passenger",
+		["seat5"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_HahnPumperRed"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_Passenger",
+		["seat3"]="Shark_Idle_Passenger",
+		["seat4"]="Shark_Idle_Passenger",
+		["seat5"]="Shark_Idle_Passenger",
+	},
+
+	["Base.SC_HahnPumperYellow"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
 		["seat2"]="Shark_Idle_Passenger",
