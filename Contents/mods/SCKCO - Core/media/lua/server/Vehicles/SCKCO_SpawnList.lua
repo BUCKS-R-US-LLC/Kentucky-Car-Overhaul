@@ -18,6 +18,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.medium.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.medium.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.spawnRate = 30;
     VehicleZoneDistribution.medium.chanceToPartDamage = 10;
@@ -39,6 +40,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.good.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.good.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.good.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.spawnRate = 30;
     VehicleZoneDistribution.good.chanceToPartDamage = 10;
@@ -118,6 +120,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};    
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 10};    
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckMacTools"] = {index = -1, spawnChance = 10};       
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700BoxTruckGigaMart"] = {index = -1, spawnChance = 10};     
