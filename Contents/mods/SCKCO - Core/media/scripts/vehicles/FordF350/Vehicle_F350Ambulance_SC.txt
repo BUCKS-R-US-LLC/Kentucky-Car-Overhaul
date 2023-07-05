@@ -25,6 +25,12 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model F350AmbulanceRearWindshield
+	{
+		mesh = vehicles/Vehicle_F350Ambulance_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model F350AmbulanceFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_F350Ambulance_SC|FrontRightWindow_obj,
@@ -90,7 +96,7 @@ module Base
 		boneWeight = TrunkBone1 1.0,
 		boneWeight = TrunkBone2 1.0,
 	}
-	model F350AmbulanceRearWindshield
+	model F350AmbulanceRearWindows
 	{
 		mesh = vehicles/Vehicle_F350Ambulance_SC|TrunkWindow_obj,
 		shader = vehicle_noreflect,
@@ -156,7 +162,7 @@ module Base
 			engineStart = VehicleEngineVan,
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
+			ignitionFail = VehicleIgnitionFailVan,
 		}
 
 		lightbar
@@ -233,7 +239,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7458 1.2373 0.5424,
+				offset = 0.6102 1.2373 0.1695,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -252,7 +258,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7458 1.2373 0.5424,
+				offset = -0.6102 1.2373 0.1695,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -271,7 +277,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.8305 1.7797 -3.9322,
+				offset = 0.8305 1.3729 -3.3559,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -290,7 +296,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8136 1.7797 -3.9322,
+				offset = -0.8136 1.3729 -3.3559,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -559,9 +565,40 @@ module Base
 
 		part WindshieldRear
 		{
-			model windshieldRear
+			model windshieldrear
 			{
 				file = F350AmbulanceRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordF350WindshieldSC,
+		}
+
+		part RearWindows
+		{
+			model RearWindows
+			{
+				file = F350AmbulanceRearWindows,
 			}
 
 			window
