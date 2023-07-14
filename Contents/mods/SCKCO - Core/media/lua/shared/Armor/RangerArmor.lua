@@ -25,7 +25,7 @@ function RangerEngineDoor(player, part, elapsedMinutes)
 local part = vehicle:getPartById("EngineDoor")
         if (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("EngineDoor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 30 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
 
         end
         vehicle:transmitPartModData(EngineDoor)
