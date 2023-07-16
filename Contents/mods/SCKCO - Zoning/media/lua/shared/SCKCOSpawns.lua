@@ -172,6 +172,30 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.police_tactical_vehicles.chanceToSpawnSpecial = 0;
 	VehicleZoneDistribution.police_tactical_vehicles.spawnRate = 70;
 
+	VehicleZoneDistribution.old_money = VehicleZoneDistribution.old_money or {};
+	VehicleZoneDistribution.old_money.vehicles = VehicleZoneDistribution.old_money.vehicles or {};
+	
+	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.old_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
+	
+	VehicleZoneDistribution.old_money.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.old_money.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.old_money.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.old_money.spawnRate = 100;
+
+	VehicleZoneDistribution.new_money = VehicleZoneDistribution.new_money or {};
+	VehicleZoneDistribution.new_money.vehicles = VehicleZoneDistribution.new_money.vehicles or {};
+	
+	VehicleZoneDistribution.new_money.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 50};
+	VehicleZoneDistribution.new_money.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.new_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
+	
+	VehicleZoneDistribution.new_money.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.new_money.chanceToSpawnKey = 80;
+	VehicleZoneDistribution.new_money.chanceToSpawnSpecial = 0;
+	VehicleZoneDistribution.new_money.spawnRate = 100;
+
 	VehicleZoneDistribution.secret_lab_wrecks = VehicleZoneDistribution.secret_lab_wrecks or {};
     VehicleZoneDistribution.secret_lab_wrecks.vehicles = VehicleZoneDistribution.secret_lab_wrecks.vehicles or {};
 

@@ -144,6 +144,18 @@ objects = {
   { name = "designated_bubba_zone", type = "ParkingStall", x = 4250, y = 5899, z = 0, width = 3, height = 5 },
   { name = "designated_bubba_zone", type = "ParkingStall", x = 13114, y = 5313, z = 0, width = 3, height = 5 },
 
+  { name = "old_money", type = "ParkingStall", x = 12527, y = 4334, z = 0, width = 3, height = 5 },
+  { name = "old_money", type = "ParkingStall", x = 12585, y = 1204, z = 0, width = 3, height = 5 },
+  { name = "old_money", type = "ParkingStall", x = 12584, y = 1195, z = 0, width = 3, height = 5 },
+  { name = "old_money", type = "ParkingStall", x = 12610, y = 1199, z = 0, width = 3, height = 5 },
+  { name = "old_money", type = "ParkingStall", x = 12610, y = 1210, z = 0, width = 3, height = 5 },
+
+  { name = "new_money", type = "ParkingStall", x = 12527, y = 4334, z = 0, width = 3, height = 5 },
+  { name = "new_money", type = "ParkingStall", x = 12585, y = 1204, z = 0, width = 3, height = 5 },
+  { name = "new_money", type = "ParkingStall", x = 12584, y = 1195, z = 0, width = 3, height = 5 },
+  { name = "new_money", type = "ParkingStall", x = 12610, y = 1199, z = 0, width = 3, height = 5 },
+  { name = "new_money", type = "ParkingStall", x = 12610, y = 1210, z = 0, width = 3, height = 5 },
+  
   { name = "cemetery", type = "ParkingStall", x = 12620, y = 3367, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 12635, y = 3346, z = 0, width = 3, height = 5 },
   { name = "cemetery", type = "ParkingStall", x = 12607, y = 3323, z = 0, width = 3, height = 5 },
