@@ -15,13 +15,7 @@ module Base
 	}
 	model Porsche911Passenger
 	{
-		mesh = vehicles/Vehicle_PorscheG911G50_SC|FrontPassengerSeat_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model Porsche911Double
-	{
-		mesh = vehicles/Vehicle_PorscheG911G50_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_PorscheG911G50_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -96,36 +90,34 @@ module Base
 		mesh = vehicles/Vehicle_PorscheG911G50_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
 	}
 	model Porsche911frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Porsche911_LeftWheel,
-		texture = vehicles/911G50/Vehicle_PorscheG911G50_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PorscheG911G50_LeftWheel,
+		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
 		shader = vehiclewheel,
 	}
 	model Porsche911frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Porsche911_RightWheel,
-		texture = vehicles/911G50/Vehicle_PorscheG911G50_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PorscheG911G50_RightWheel,
+		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
 		shader = vehiclewheel,
 	}
 	model Porsche911backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Porsche911_LeftWheel,
-		texture = vehicles/911G50/Vehicle_PorscheG911G50_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PorscheG911G50_LeftWheel,
+		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
 		shader = vehiclewheel,
 	}
 	model Porsche911backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Porsche911_RightWheel,
-		texture = vehicles/911G50/Vehicle_PorscheG911G50_Wheel,
+		mesh = vehicles/Wheels/Vehicle_PorscheG911G50_RightWheel,
+		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_Porsche911G50
 	{
-		mechanicType = 1,
+		mechanicType = 3,
 		offRoadEfficiency = 1.5,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
@@ -133,96 +125,96 @@ module Base
 		model
 		{
 			file = SC_Porsche911,
-			scale = 0.6600,
-			offset = 0.0000 -0.3485 0.0000,
+			scale = 0.3800,
+			offset = 0.0000 -0.0789 0.1053,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_Black,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_Black,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_BlackNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_BlackNO,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_Chiff,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_Chiff,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_ChiffNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_ChiffNO,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_Cyan,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_Cyan,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_CyanNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_CyanNO,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_DarkBlue,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_DarkBlue,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_DarkBlueNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_DarkBlueNO,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_Grey,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_Grey,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_GreyNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_GreyNO,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_White,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_White,
 		}
 
 		skin
 		{
-			texture = vehicles/911G50/Vehicle_PorscheG911G50_WhiteNO,
+			texture = vehicles/911G50/Vehicle_Porsche911G50_WhiteNO,
 		}
 
-		textureMask = vehicles/911G50/Vehicle_PorscheG911G50_mask,
-		textureLights = vehicles/911G50/Vehicle_PorscheG911G50_lights,
-		textureDamage1Overlay = vehicles/911G50/Vehicle_PorscheG911G50_blood,
-		textureDamage2Overlay = vehicles/911G50/Vehicle_PorscheG911G50_blood,
-		textureDamage1Shell = vehicles/911G50/Vehicle_PorscheG911G50_damage,
-		textureDamage2Shell = vehicles/911G50/Vehicle_PorscheG911G50_damage,
-		textureRust = vehicles/911G50/Vehicle_PorscheG911G50_rust,
+		textureMask = vehicles/911G50/Vehicle_Porsche911G50_masks,
+		textureLights = vehicles/911G50/Vehicle_Porsche911G50_lights,
+		textureDamage1Overlay = vehicles/911G50/Vehicle_Porsche911G50_blood,
+		textureDamage2Overlay = vehicles/911G50/Vehicle_Porsche911G50_blood,
+		textureDamage1Shell = vehicles/911G50/Vehicle_Porsche911G50_scratch,
+		textureDamage2Shell = vehicles/911G50/Vehicle_Porsche911G50_scratch,
+		textureRust = vehicles/911G50/Vehicle_Porsche911G50_rust,
 
 		sound
 		{
-			engine = VehicleEngineSmallCar,
-			engineStart = VehicleEngineSmallCar,
-			engineTurnOff = VehicleEngineSmallCar,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSmallCar,
+			engine = VehicleEngineSportsCar,
+			engineStart = VehicleEngineSportsCar,
+			engineTurnOff = VehicleEngineSportsCar,
+			horn = VehicleHornSportsCar,
+			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 2.2121 1.6364 5.7576,
+		extents = 4.1053 1.6842 11.1579,
 		mass = 450,
-		physicsChassisShape = 2.2727 1.6364 5.7576,
-		centerOfMassOffset = 0.0000 0.8182 0.1818,
-		shadowExtents = 2.2749 5.7541,
-		shadowOffset = -0.0032 0.1767,
-		engineForce = 3500,
+		physicsChassisShape = 4.3158 1.6842 11.1579,
+		centerOfMassOffset = 0.0000 0.8158 0.0000,
+		shadowExtents = 4.7222 12.2541,
+		shadowOffset = -0.0032 -0.1654,
+		engineForce = 4500,
 		gearRatioCount = 4,
-		maxSpeed = 95f,
+		maxSpeed = 135f,
 		engineLoudness = 70,
 		engineQuality = 80,
 		brakingForce = 55,
@@ -230,7 +222,7 @@ module Base
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 40,
+		suspensionStiffness = 90,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
@@ -238,12 +230,12 @@ module Base
 		wheelFriction = 1.4f,
 		frontEndHealth = 1500,
 		rearEndHealth = 1350,
-		seats = 2,
+		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.9697 0.3485 1.7727,
+			offset = 1.8421 0.3421 3.0263,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -251,7 +243,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.9545 0.3485 1.7727,
+			offset = -1.7895 0.3421 3.0263,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -259,7 +251,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.9697 0.3485 -1.4848,
+			offset = 1.8421 0.3421 -3.1316,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -267,7 +259,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.9545 0.3485 -1.4848,
+			offset = -1.7895 0.3421 -3.1316,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -281,13 +273,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5455 0.6970 -0.1818,
+				offset = 1.0526 1.1053 -0.5789,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0455 -0.4242 0.2576,
+				offset = 3.0526 -0.4211 -0.1842,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -300,13 +292,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5455 0.6970 -0.1818,
+				offset = -1.0526 1.1053 -0.5789,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1364 -0.4242 0.2576,
+				offset = -3.0526 -0.4211 -0.1842,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -319,13 +311,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.4545 0.6061 -1.1061,
+				offset = 0.6842 1.0000 -2.5526,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0455 -0.4242 0.2576,
+				offset = 3.0526 -0.4211 -0.1842,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -338,13 +330,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.4545 0.6061 -1.1061,
+				offset = -0.6842 1.0000 -2.5526,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1364 -0.4242 0.2576,
+				offset = -3.0526 -0.4211 -0.1842,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -352,57 +344,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 2.0152 3.1818 1.5455,
+			xywh = 0.0000 -6.3684 4.1053 1.5789,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.5758 2.2121 1.7879,
+			xywh = 0.0000 6.5000 4.1053 1.8421,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.8030 0.3182 1.3939 1.3939,
+			xywh = 3.1316 0.3158 2.1579 2.1579,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.8030 0.3182 1.3939 1.3939,
+			xywh = -3.1316 0.3158 2.1579 2.1579,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.8030 0.3182 1.3939 1.3939,
+			xywh = 3.1316 0.3158 2.1579 2.1579,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.8030 0.3182 1.3939 1.3939,
+			xywh = -3.1316 0.3158 2.1579 2.1579,
 		}
 
 		area GasTank
 		{
-			xywh = 1.6667 -1.8788 1.1212 0.6667,
+			xywh = 2.6053 2.3684 1.1053 0.7368,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.1061 1.9242 0.0000 0.0000,
+			xywh = 2.0526 3.1053 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1061 1.9242 0.0000 0.0000,
+			xywh = -2.0526 3.1053 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.1061 -1.4545 0.0000 0.0000,
+			xywh = 2.0526 -3.0526 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.1061 -1.4545 0.0000 0.0000,
+			xywh = -2.0526 -3.0526 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -437,22 +429,12 @@ module Base
 
 		part SeatRearLeft
 		{
-			model seatrearLeft
-			{
-				file = Porsche911Double,
-			}
-
-			itemType = Base.Porsche911RearSeatSC,
+			category = nodisplay,
 		}
 
 		part SeatRearRight
 		{
-			model seatrearRight
-			{
-				file = Porsche911Double,
-			}
-
-			itemType = Base.Porsche911RearSeatSC,
+			category = nodisplay,
 		}
 
 		part Muffler
@@ -894,21 +876,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.8254 0.1905,
-			extents = 2.2540 1.5714 5.7302,
+			offset = 0.0000 0.8158 -0.1579,
+			extents = 4.0000 1.5789 10.8421,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.6667 -2.6508,
+			offset = 0.0000 0.6579 -2.6842,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.8571,
+			offset = 0.0000 0.0789 5.2632,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
