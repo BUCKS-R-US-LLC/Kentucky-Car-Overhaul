@@ -124,12 +124,6 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model FordCountrySquireRearWindshield
-	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model FordCountrySquirefrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
@@ -568,10 +562,6 @@ module Base
 
 		part WindshieldRear
 		{
-			model windshieldRear
-			{
-				file = FordCountrySquireRearWindshield,
-			}
 
 			window
 			{
