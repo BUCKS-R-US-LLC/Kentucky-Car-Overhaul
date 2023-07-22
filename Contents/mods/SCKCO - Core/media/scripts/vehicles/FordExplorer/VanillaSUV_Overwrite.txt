@@ -225,11 +225,11 @@ module Base
 
 		sound
 		{
-			engine = VehicleEngineCarNormal,
-			engineStart = VehicleEngineCarNormal,
-			engineTurnOff = VehicleEngineCarNormal,
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailCarNormal,
+			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
 		extents = 2.6000 2.1429 6.4571,
@@ -254,8 +254,8 @@ module Base
 		maxSuspensionTravelCm = 14,
 		suspensionRestLength = 0.20f,
 		wheelFriction = 1.4f,
-		frontEndHealth = 3500,
-		rearEndHealth = 2000,
+		frontEndHealth = 2700,
+		rearEndHealth = 1800,
 		seats = 4,
 
 		wheel FrontLeft

@@ -231,8 +231,8 @@ module Base
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
 		wheelFriction = 1.8f,
-		frontEndHealth = 3001,
-		rearEndHealth = 1500,
+		frontEndHealth = 2800,
+		rearEndHealth = 1900,
 		seats = 6,
 
 		wheel FrontLeft
@@ -312,6 +312,7 @@ module Base
 			category = nodisplay,
 			showPassenger = true,
 			hasRoof = true,
+			area = SeatMiddleLeft,
 
 			position inside
 			{
@@ -329,6 +330,7 @@ module Base
 			category = nodisplay,
 			showPassenger = true,
 			hasRoof = true,
+			area = SeatMiddleLeft,
 
 			position inside
 			{
@@ -943,6 +945,10 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorMiddleLeft,
+		template = Door/part/DoorMiddleRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -1094,6 +1100,17 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.M35Door,
+		}
+
+		part DoorMiddleLeft
+		{
+			itemType = Base.M35Door,
+		}
+
+		part DoorMiddleRight
+		{
 
 			itemType = Base.M35Door,
 		}
