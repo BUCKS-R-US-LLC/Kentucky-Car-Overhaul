@@ -111,34 +111,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CadillacBroughamRearWindshield
+	model CadillacFleetwoodfrontwheelleft
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model CadillacBroughamfrontwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_CadiBrough88_LeftWheel,
-		texture = vehicles/CadiBrough88/Vehicle_CadiBrough88_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
-	model CadillacBroughamfrontwheelright
+	model CadillacFleetwoodfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadiBrough88_RightWheel,
-		texture = vehicles/CadiBrough88/Vehicle_CadiBrough88_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
-	model CadillacBroughambackwheelleft
+	model CadillacFleetwoodbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadiBrough88_LeftWheel,
-		texture = vehicles/CadiBrough88/Vehicle_CadiBrough88_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
-	model CadillacBroughambackwheelright
+	model CadillacFleetwoodbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadiBrough88_RightWheel,
-		texture = vehicles/CadiBrough88/Vehicle_CadiBrough88_Wheel,
+		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_CadillacBrougham
@@ -157,46 +151,42 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_Chamois,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Brown,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_DarkSilver,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Cream,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_White,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_WhiteRed,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_Black,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_GarnetRed,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Lime,
 		}
 
-		skin
-		{
-			texture = Vehicles/CadiBrough88/Vehicle_CadiBrough88_Blue,
-		}
 
-		textureMask = Vehicles/CadiBrough88/Vehicle_CadiBrough88_mask,
-		textureLights = Vehicles/CadiBrough88/Vehicle_CadiBrough88_lights,
-		textureDamage1Overlay = Vehicles/CadiBrough88/Vehicle_CadiBrough88_blood,
-		textureDamage2Overlay = Vehicles/CadiBrough88/Vehicle_CadiBrough88_blood,
-		textureDamage1Shell = Vehicles/CadiBrough88/Vehicle_CadiBrough88_scratch,
-		textureDamage2Shell = Vehicles/CadiBrough88/Vehicle_CadiBrough88_scratch,
-		textureRust = Vehicles/CadiBrough88/Vehicle_CadiBrough88_rust,
+		textureMask = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_mask,
+		textureLights = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_lights,
+		textureDamage1Overlay = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_blood,
+		textureDamage2Overlay = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_blood,
+		textureDamage1Shell = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_scratch,
+		textureDamage2Shell = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_scratch,
+		textureRust = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_rust,
 
 		sound
 		{
@@ -884,7 +874,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughamfrontwheelleft,
+				file = CadillaFleetwoodfrontwheelleft,
 			}
 		}
 
@@ -892,7 +882,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughamfrontwheelright,
+				file = CadillacFleetwoodfrontwheelright,
 			}
 		}
 
@@ -900,7 +890,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughambackwheelleft,
+				file = CadillacFleetwoodbackwheelleft,
 			}
 		}
 
@@ -908,7 +898,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughambackwheelright,
+				file = CadillacFleetwoodbackwheelright,
 			}
 		}
 
