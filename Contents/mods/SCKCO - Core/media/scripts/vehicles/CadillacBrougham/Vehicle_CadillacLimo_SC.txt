@@ -1,111 +1,124 @@
 module Base
 {
-	model SC_CadillacBrougham
+	model SC_CadillacLimo
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|base_mesh,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
-	model CadillacBroughamDriver
+	model CadillacLimoDriver
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CadillacBroughamPassenger
+	model CadillacLimoPassenger
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|PassengerSeat_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CadillacBroughamDouble
+	model CadillacLimoDouble
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CadillacBroughamWindshield
+	model CadillacLimoCenterWindows
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|base_mesh.001,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+	model CadillacLimoWindshield
+	{
+		mesh = vehicles/Vehicle_CadiLimo88_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CadillacBroughamFrontRightWindow
+	model CadillacLimoRearWindshield
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CadillacLimoFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model CadillacBroughamFrontLeftWindow
+	model CadillacLimoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model CadillacBroughamRearRightWindow
+	model CadillacLimoRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-	model CadillacBroughamRearLeftWindow
+	model CadillacLimoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model CadillacBroughamFrontRightDoor
+	model CadillacLimoFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model CadillacBroughamFrontLeftDoor
+	model CadillacLimoFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model CadillacBroughamRearRightDoor
+	model CadillacLimoRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model CadillacBroughamRearLeftDoor
+	model CadillacLimoRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model CadillacBroughamTrunk
+	model CadillacLimoTrunk
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model CadillacBroughamHood
+	model CadillacLimoHood
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CadiLimo88_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -135,7 +148,7 @@ module Base
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_CadillacBrougham
+	vehicle SC_CadillacLimo
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.5,
@@ -144,48 +157,23 @@ module Base
 
 		model
 		{
-			file = SC_CadillacBrougham,
+			file = SC_CadillacLimo,
 			scale = 0.6100,
-			offset = 0.0000 -0.1148 0.5082,
+			offset = 0.0000 -0.1148 1.5738,
 		}
 
 		skin
 		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Brown,
+			texture = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_Black,
 		}
 
-		skin
-		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Cream,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_Lime,
-		}
-
-		textureMask = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_mask,
-		textureLights = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_lights,
-		textureDamage1Overlay = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_blood,
-		textureDamage2Overlay = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_blood,
-		textureDamage1Shell = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_scratch,
-		textureDamage2Shell = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_scratch,
-		textureRust = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_rust,
+		textureMask = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_mask,
+		textureLights = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_lights,
+		textureDamage1Overlay = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_blood,
+		textureDamage2Overlay = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_blood,
+		textureDamage1Shell = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_scratch,
+		textureDamage2Shell = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_scratch,
+		textureRust = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_rust,
 
 		sound
 		{
@@ -196,12 +184,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.7541 2.0656 8.1311,
+		extents = 2.7213 2.0656 9.2459,
 		mass = 800,
-		physicsChassisShape = 2.7541 2.0656 8.1311,
-		centerOfMassOffset = 0.0000 1.0984 -0.0492,
-		shadowExtents = 2.7754 9.2815,
-		shadowOffset = -0.0032 -0.0540,
+		physicsChassisShape = 2.6885 2.0656 9.8361,
+		centerOfMassOffset = 0.0000 1.0984 0.2295,
+		shadowExtents = 2.7754 10.7569,
+		shadowOffset = -0.0032 0.2247,
 		engineForce = 3500,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -241,7 +229,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1475 0.2459 -2.6557,
+			offset = 1.1475 0.2459 -4.1639,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -249,7 +237,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.1475 0.2459 -2.6557,
+			offset = -1.1475 0.2459 -4.1639,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -263,7 +251,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.6066 -0.3443,
+				offset = 0.6066 0.6557 -0.3770,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -282,7 +270,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.6066 -0.3443,
+				offset = -0.5902 0.6557 -0.3770,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -301,7 +289,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.6066 -1.7541,
+				offset = 0.5902 0.6557 -3.5082,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -320,7 +308,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.6066 -1.7541,
+				offset = -0.5902 0.6557 -3.5082,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -334,32 +322,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.0164 2.7541 2.0000,
+			xywh = 0.0000 5.8525 2.7541 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.0000 2.7541 1.7705,
+			xywh = 0.0000 -5.5246 2.7541 1.7705,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0492 0.6721 1.3443 1.3443,
+			xywh = 2.0492 1.5902 1.3443 1.3443,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0492 0.6721 1.3443 1.3443,
+			xywh = -2.0492 1.5902 1.3443 1.3443,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0492 -0.8033 1.3443 1.3443,
+			xywh = 2.0492 -1.3279 1.3443 1.3443,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0492 -0.8033 1.3443 1.3443,
+			xywh = -2.0492 -1.3279 1.3443 1.3443,
 		}
 
 		area GasTank
@@ -401,7 +389,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = CadillacBroughamDriver,
+				file = CadillacLimoDriver,
 			}
 
 			itemType = Base.CadillacBroughamFrontSeatSC,
@@ -411,7 +399,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = CadillacBroughamPassenger,
+				file = CadillacLimoPassenger,
 			}
 
 			itemType = Base.CadillacBroughamFrontSeatSC,
@@ -421,7 +409,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = CadillacBroughamDouble,
+				file = CadillacLimoDouble,
 			}
 
 			itemType = Base.CadillacBroughamRearSeatSC,
@@ -431,7 +419,7 @@ module Base
 		{
 			model seatrearRight
 			{
-				file = CadillacBroughamDouble,
+				file = CadillacLimoDouble,
 			}
 
 			itemType = Base.CadillacBroughamRearSeatSC,
@@ -456,7 +444,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = CadillacBroughamHood,
+				file = CadillacLimoHood,
 			}
 
 			anim Close
@@ -517,7 +505,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CadillacBroughamWindshield,
+				file = CadillacLimoWindshield,
 			}
 
 			window
@@ -548,7 +536,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = CadillacBroughamRearWindshield,
+				file = CadillacLimoRearWindshield,
 			}
 
 			window
@@ -588,7 +576,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CadillacBroughamFrontRightWindow,
+				file = CadillacLimoFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -607,7 +595,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CadillacBroughamFrontLeftWindow,
+				file = CadillacLimoFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -622,11 +610,27 @@ module Base
 			itemType = Base.CadillacBroughamFrontSideWindowSC,
 		}
 
+		part CenterWindows
+		{
+			model windowsCenter
+			{
+				file = CadillacLimoCenterWindows,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.CadillacBroughamFrontSideWindowSC,
+		}
+
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = CadillacBroughamRearRightWindow,
+				file = CadillacLimoRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -645,7 +649,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = CadillacBroughamRearLeftWindow,
+				file = CadillacLimoRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -664,7 +668,7 @@ module Base
 		{
 			model Default
 			{
-				file = CadillacBroughamFrontRightDoor,
+				file = CadillacLimoFrontRightDoor,
 			}
 
 			anim Close
@@ -702,7 +706,7 @@ module Base
 		{
 			model Default
 			{
-				file = CadillacBroughamFrontLeftDoor,
+				file = CadillacLimoFrontLeftDoor,
 			}
 
 			anim Close
@@ -740,7 +744,7 @@ module Base
 		{
 			model Default
 			{
-				file = CadillacBroughamRearRightDoor,
+				file = CadillacLimoRearRightDoor,
 			}
 
 			anim Close
@@ -778,7 +782,7 @@ module Base
 		{
 			model Default
 			{
-				file = CadillacBroughamRearLeftDoor,
+				file = CadillacLimoRearLeftDoor,
 			}
 
 			anim Close
@@ -828,7 +832,7 @@ module Base
 
 			model Default
 			{
-				file = CadillacBroughamTrunk,
+				file = CadillacLimoTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -873,7 +877,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillaFleetwoodfrontwheelleft,
+				file = CadillacFleetwoodfrontwheelleft,
 			}
 		}
 
