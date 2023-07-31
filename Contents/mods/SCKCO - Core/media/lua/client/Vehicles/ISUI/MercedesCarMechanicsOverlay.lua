@@ -1,6 +1,6 @@
 ISCarMechanicsOverlay.CarList["Base.SC_Mercedes280"] = {imgPrefix = "mercedesw123_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.CarLuxury"] = {imgPrefix = "mercedesw123_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_MercedesSL500"] = {imgPrefix = "mercedesSL500_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_MercedesSL500"] = {imgPrefix = "sl500_", x=0,y=0};
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};

@@ -1,6 +1,6 @@
-ISCarMechanicsOverlay.CarList["Base.SC_HondaAccord"] = {imgPrefix = "honda_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SmallCar"] = {imgPrefix = "honda_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SmallCar02"] = {imgPrefix = "honda_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_HondaAccord"] = {imgPrefix = "accord_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SmallCar"] = {imgPrefix = "accord_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SmallCar02"] = {imgPrefix = "accord_", x=0,y=0};
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["caprice_"] = {img="battery", x=0,y=0,x2=0,y2=0};
