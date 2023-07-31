@@ -240,7 +240,6 @@ distributionTable["SC_G30Windowless"] = { Normal = VehicleDistributions.SCCivili
 distributionTable["SC_G30VanNormal"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_CamaroTTop"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_Mercedes280"] = { Normal = VehicleDistributions.SCCivilian; }
-distributionTable["SC_MercedesSL500"] = { Normal = VehicleDistributions.SCCivilian; }
 
 distributionTable["SC_Caprice9C1StatePolice"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_Caprice9C1LVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
