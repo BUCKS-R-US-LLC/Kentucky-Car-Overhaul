@@ -129,8 +129,8 @@ VehicleDistributions.SCPolicePatrol = {
 
             -- SPGO. --
 
-            "SPGOClothing.Hat_PatrolCapWoodland", 10,
-            "SPGOClothing.Hat.PASGTHelmetWoodland", 10,
+            "Base.Shotgun", 2,
+            "Base.ShotgunShells", 5,
             "Vest_Police", 10,
 
         },
@@ -151,12 +151,6 @@ VehicleDistributions.SCPolicePatrol = {
         items = {
             "Battery", 10,
             "HandTorch", 4,
-
-            -- SPGO. -- 
-
-            "SPGOClothing.Hat_WatchCap", 10,
-            "SPGOClothing.Glasses_GIGlasses", 10,
-
 
         },
         junk = {
