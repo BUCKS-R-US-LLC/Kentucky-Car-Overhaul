@@ -214,6 +214,7 @@ distributionTable["SC_PlymouthVoyager"] = { Normal = VehicleDistributions.SCCivi
 distributionTable["SC_Porsche911G50"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_BMW520i"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_CadillacBrougham"] = { Normal = VehicleDistributions.SCCivilian; }
+distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_JaguarXJ6"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_CadillacFleetwood"] = { Normal = VehicleDistributions.SCCivilian; }
 distributionTable["SC_ChevroletCavalier"] = { Normal = VehicleDistributions.SCCivilian; }
