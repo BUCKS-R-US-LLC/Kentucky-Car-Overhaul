@@ -54,7 +54,7 @@ module Base
 		{
 			file = SC_Oliver2050,
 			scale = 0.0900,
-			offset = 0.0000 3.6667 0.0000,
+			offset = 0.0000 0.0000 0.0000,
 		}
 
 		skin
@@ -78,11 +78,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 8.2222 9.1111 23.5556,
-		mass = 400,
+		extents = 8.2222 8.6667 24.2222,
+		mass = 100,
 		physicsChassisShape = 10.6667 8.6667 24.2222,
 		centerOfMassOffset = 0.0000 4.3333 0.0000,
-		shadowExtents = 10.8728 23.5458,
+		shadowExtents = 10.6506 24.2125,
 		shadowOffset = 0.0000 0.0143,
 		engineForce = 6800,
 		engineQuality = 80,
@@ -93,7 +93,7 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 90,
+		suspensionStiffness = 200,
 		suspensionCompression = 3.83,
 		suspensionDamping = 0.50,
 		maxSuspensionTravelCm = 2,
@@ -232,18 +232,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Window/part/WindowFrontLeft,
-
-		part WindowFrontLeft
-		{
-			category = nodisplay,
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-
-			lua
-			{
-			}
-		}
 
 		part DoorFrontLeft
 		{
