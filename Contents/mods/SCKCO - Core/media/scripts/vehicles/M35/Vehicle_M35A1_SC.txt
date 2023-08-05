@@ -206,10 +206,10 @@ module Base
 		centerOfMassOffset = 0.0000 1.9016 -0.5082,
 		shadowExtents = 3.6593 10.3884,
 		shadowOffset = 0.0000 -0.4966,
-		engineForce = 7500,
+		engineForce = 50000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 50f,
+		maxSpeed = 30f,
 		gearRatioCount = 8,
 		gearRatioR = 3.5,
 		gearRatio1 = 6.31,
@@ -231,8 +231,8 @@ module Base
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
 		wheelFriction = 1.8f,
-		frontEndHealth = 2800,
-		rearEndHealth = 1900,
+		frontEndHealth = 5500,
+		rearEndHealth = 3300,
 		seats = 6,
 
 		wheel FrontLeft
@@ -734,10 +734,14 @@ module Base
 
 			table install
 			{
+				recipes = Intermediate Mechanics,
+				requireUninstalled - Base.M35Tarp,
 			}
 
 			table uninstall
 			{
+				recipes = Intermediate Mechanics,
+				requireUninstalled - Base.M35Tarp,
 			}
 
 			itemType = Base.M35TarpFrame,
@@ -747,7 +751,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = nodisplay,
 		}
 
 		part M35A1FrontHardTop
@@ -759,10 +762,14 @@ module Base
 
 			table install
 			{
+				recipes = Intermediate Mechanics,
+				requireUninstalled = Base.M35FrontSoftTop,
 			}
 
 			table uninstall
 			{
+				recipes = Intermediate Mechanics,
+				requireInstalled = Base.M35FrontSoftTop,
 			}
 
 			itemType = Base.M35FrontHardTop,
@@ -1106,13 +1113,22 @@ module Base
 
 		part DoorMiddleLeft
 		{
-			itemType = Base.M35Door,
+			category = nodisplay,
 		}
 
 		part DoorMiddleRight
 		{
+			category = nodisplay,
+		}
 
-			itemType = Base.M35Door,
+		part DoorRearLeft
+		{
+			category = nodisplay,
+		}
+
+		part DoorRearRight
+		{
+			category = nodisplay,
 		}
 
 		template = TrunkDoor,
