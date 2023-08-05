@@ -633,6 +633,16 @@ module Base
 				file = M35A1GasTank,
 			}
 
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
 			itemType = Base.M35FuelTank,
 
 			lua
@@ -708,6 +718,7 @@ module Base
 
 			table install
 			{
+				recipes
 			}
 
 			table uninstall
