@@ -86,23 +86,23 @@ module Base
 		shadowOffset = 0.0000 0.0143,
 		engineForce = 20000,
 		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 5f,
-		brakingForce = 100,
+		engineLoudness = 20,
+		maxSpeed = 1f,
+		brakingForce = 30,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 100,
+		suspensionStiffness = 150,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 50,
 		suspensionRestLength = 0.20f,
 		wheelFriction = 1.5f,
-		frontEndHealth = 800,
-		rearEndHealth = 500,
+		frontEndHealth = 1800,
+		rearEndHealth = 100,
 		seats = 1,
-
+		
 		wheel FrontLeft
 		{
 			front = true,
@@ -199,6 +199,12 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+        category = nodisplay,
+		}
 
 		part GasTank
 		{
@@ -239,6 +245,21 @@ module Base
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			lua 
+			{
+			}
+
+		}
+
+		part WindowFrontLeft
+		{
+			lua 
+			{
+			}
+		}
 
 		part DoorFrontLeft
 		{
@@ -323,13 +344,20 @@ module Base
 		physics box
 		{
 			offset = 0.0000 4.3333 0.0000,
-			extents = 10.6667 8.5556 24.1111,
+			extents = 8.2222 8.5556 24.1111,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 4.3333 -8.1111,
+			extents = 15.1111 8.5556 7.8889,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 3.2222 -17.6667,
+			offset = 0.0000 3.2222 -17.7778,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
