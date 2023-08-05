@@ -125,21 +125,27 @@ module Base
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model HahnPumperRightFrontStorage
+	model HahnPumperRightStorage
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|RightStorageArea_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
+		static = false,
 		scale = 1,
-		static = FALSE,
-		boneWeight = RightFrontStorageBone 1.0,
+		boneWeight = RightStorage1 1.0,
+		boneWeight = RightStorage2 1.0,
+		boneWeight = RightStorage3 1.0,
+		boneWeight = RightStorage4 1.0,
 	}
 	model HahnPumperLeftStorage
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|LeftStorageArea_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
+		static = false,
 		scale = 1,
-		static = FALSE,
-		boneWeight = LeftFrontStorageBone 1.0,
+		boneWeight = LeftStorage1 1.0,
+		boneWeight = LeftStorage2 1.0,
+		boneWeight = LeftStorage3 1.0,
+		boneWeight = LeftStorage4 1.0,
 	}
 	model HahnPumperRearWindshield
 	{
@@ -453,7 +459,7 @@ module Base
 
 		area SideContainer1
 		{
-			xywh = -2.2857 1.3810 0.7302 0.8254,
+			xywh = -2.2857 0.4921 0.7302 0.8254,
 		}
 
 		area SideContainer2
@@ -502,15 +508,15 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-		template = TrunkDoorPumper/part/SideContainer1,
-		template = TrunkDoorPumper/part/SideContainer2,
-		template = TrunkDoorPumper/part/SideContainer3,
-		template = TrunkDoorPumper/part/SideContainer4,
-		template = TrunkDoorPumper/part/SideContainer5,
-		template = TrunkDoorPumper/part/SideContainer6,
-		template = TrunkDoorPumper/part/SideContainer7,
-		template = TrunkDoorPumper/part/SideContainer8,
-		template = TrunkDoorHahnPumper,
+		template = TrunkPumper/part/SideContainer1,
+		template = TrunkPumper/part/SideContainer2,
+		template = TrunkPumper/part/SideContainer3,
+		template = TrunkPumper/part/SideContainer4,
+		template = TrunkPumper/part/SideContainer5,
+		template = TrunkPumper/part/SideContainer6,
+		template = TrunkPumper/part/SideContainer7,
+		template = TrunkPumper/part/SideContainer8,
+		template = TrunkDoorPumper,
 
 		part LargeUtilityTruckSoundController
 		{
