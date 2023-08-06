@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Hood Welding
 	{
-	   Require : GeoTrackerHoodSC2,
+	   Require : GrummanLLVHoodSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
     fixing Fix Hood
 	{
-	   Require : GeoTrackerHoodSC2,
+	   Require : GrummanLLVHoodSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Trunk Lid Welding
     {
-       Require : GeoTrackerTrunkLidSC2,
+       Require : GrummanLLVRollUpDoorSC2,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Trunk Lid
 	{
-       Require : GeoTrackerTrunkLidSC2,
+       Require : GrummanLLVRollUpDoorSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module Base
 
 	fixing Fix Door Welding
 	{
-	   Require : GeoTrackerDoorSC2,
+	   Require : GrummanLLVDoorSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -51,7 +51,7 @@ module Base
 
     fixing Fix Car seat
 	{
-	   Require : GeoTrackerFrontSeatSC2;GeoTrackerRearSeatSC2,
+	   Require : GrummanLLVFrontSeatSC2;GrummanLLVRearSeatSC2,
 	   ConditionModifier : 0.8,
 
        Fixer : DuctTape=2;Mechanics=1,

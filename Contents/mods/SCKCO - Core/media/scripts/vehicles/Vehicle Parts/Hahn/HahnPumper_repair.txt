@@ -1,34 +1,30 @@
 module Base
 {
 
-fixing Fix Hahn Pumper Door Armor
+	fixing Fix Hahn Pumper Hood Welding
 	{
-	   Require : HahnPumperDoorArmor2,
-	   GlobalItem : BlowTorch=3,
-	   ConditionModifier : 1.5,
+	   Require : HahnPumperHoodSC2,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.2,
 
-       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
-       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+       Fixer : SheetMetal; MetalWelding=1;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
 	}
 
-fixing Fix Hahn Pumper Windshield
+	fixing Fix Hahn Pumper Door Welding
 	{
-	   Require : HahnPumperWindshieldArmor2,
-	   GlobalItem : BlowTorch=3,
-	   ConditionModifier : 1.5,
+	   Require : HahnPumperDoorSC2;HahnPumperRearDoorSC2,
 
-       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
-       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+       Fixer : SheetMetal; MetalWelding=3;Mechanics=2,
+       Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
 	}
 
-fixing Fix Hahn Pumper Window Armor
+    fixing Fix Hahn Pumper seat
 	{
-	   Require : HahnPumperWindowArmor2,
-	   GlobalItem : BlowTorch=3,
-	   ConditionModifier : 1.5,
+	   Require : HahnPumperSeatSC2,
+	   ConditionModifier : 0.8,
 
-       Fixer : SheetMetal; MetalWelding=2;Mechanics=2,
-       Fixer : SmallSheetMetal=2; MetalWelding=2;Mechanics=2,
+       Fixer : DuctTape=2;Mechanics=1,
 	}
 
 }

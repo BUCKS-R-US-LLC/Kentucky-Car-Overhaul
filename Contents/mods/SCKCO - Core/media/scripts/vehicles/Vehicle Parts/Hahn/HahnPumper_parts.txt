@@ -54,7 +54,7 @@ module Base
         WorldStaticModel = HahnPumperFrontDoor_WorldItem,
     }
 
-    item HahnPumperFrontSideWindowDoorSC2
+    item HahnPumperFrontSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,
@@ -67,7 +67,7 @@ module Base
         WorldStaticModel = HahnPumperFrontSideWindow_WorldItem,
     }
 
-    item HahnPumperRearSideWindowDoorSC2
+    item HahnPumperRearSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,
@@ -78,44 +78,5 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = HahnPumperRearSideWindow_WorldItem,
-    }
-
-    item HahnPumperWindshieldArmorSC2
-    {
-        DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Hahn Pumper Windshield Armor,
-        Icon	=	HahnLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = HahnPumperWindshieldArmor_WorldItem,
-    }
-
-    item HahnPumperWindowArmorSC2
-    {
-        DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Hahn Pumper Window Armor,
-        Icon	=	HahnLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = HahnPumperWindowArmor_WorldItem,
-    }
-
-	  item HahnPumperDoorArmorSC2
-    {
-        DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Hahn Pumper Door Armor,
-        Icon	=	HahnLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = HahnPumperDoorArmor_WorldItem,
     }
 }
