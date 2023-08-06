@@ -158,31 +158,31 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model HahnPumperRedfrontwheelleft
+	model HahnPumperYellowfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_HahnPump_FrontLeft,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_redwheelfront,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelfront,
 		shader = vehiclewheel,
 	}
-	model HahnPumperRedfrontwheelright
+	model HahnPumperYfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_HahnPump_FrontRight,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_redwheelfront,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelfront,
 		shader = vehiclewheel,
 	}
-	model HahnPumperRedbackwheelleft
+	model HahnPumperYellowbackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_HahnPump_RearLeft,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_redwheelrear,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelrear,
 		shader = vehiclewheel,
 	}
-	model HahnPumperRedbackwheelright
+	model HahnPumperYellowbackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_HahnPump_RearRight,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_redwheelrear,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelrear,
 		shader = vehiclewheel,
 	}
-	vehicle SC_HahnPumperRed
+	vehicle SC_HahnPumperYellow
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -198,7 +198,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Red,
+			texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
 		}
 
 		textureRust = Vehicles/HahnPumper/Vehicle_Hahn86Pump_rust,
@@ -1085,7 +1085,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperRedfrontwheelleft,
+				file = HahnPumperYellowfrontwheelleft,
 			}
 		}
 
@@ -1093,7 +1093,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperRedfrontwheelright,
+				file = HahnPumperYellowfrontwheelright,
 			}
 		}
 
@@ -1101,7 +1101,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperRedbackwheelleft,
+				file = HahnPumperYellowbackwheelleft,
 			}
 		}
 
@@ -1109,7 +1109,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperRedbackwheelright,
+				file = HahnPumperYellowbackwheelright,
 			}
 		}
 
