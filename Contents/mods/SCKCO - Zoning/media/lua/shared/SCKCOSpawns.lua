@@ -88,7 +88,6 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.national_park_service.vehicles["Base.CarLights"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_Caprice9C1ParkRanger"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.national_park_service.vehicles["Base.PickUpTruckLights"] = {index = -1, spawnChance = 80};
-	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
 
 	VehicleZoneDistribution.national_park_service.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.national_park_service.chanceToSpawnKey = 80;
