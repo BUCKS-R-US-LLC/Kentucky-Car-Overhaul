@@ -178,7 +178,6 @@ if VehicleZoneDistribution then
 	
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.old_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
 	
 	VehicleZoneDistribution.old_money.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.old_money.chanceToSpawnKey = 80;
@@ -190,7 +189,6 @@ if VehicleZoneDistribution then
 	
 	VehicleZoneDistribution.new_money.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 50};
 	VehicleZoneDistribution.new_money.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.new_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
 	
 	VehicleZoneDistribution.new_money.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.new_money.chanceToSpawnKey = 80;
