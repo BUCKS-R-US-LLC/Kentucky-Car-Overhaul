@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - Bulk Update Ahoy"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - M880, M998 and M1025, 90's Liveries"))
