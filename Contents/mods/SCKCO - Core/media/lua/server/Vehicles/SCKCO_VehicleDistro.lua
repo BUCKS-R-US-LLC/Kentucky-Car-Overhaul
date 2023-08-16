@@ -248,11 +248,10 @@ distributionTable["SC_FordMustangStatePolice"] = { Normal = VehicleDistributions
 distributionTable["SC_FordMustangJeffersonCounty"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_FordMustangUndercover"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92LVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92JeffersonPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92WarrenPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92MuhlenbergPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92StatePolice"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaLouisville92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaJefferson92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaWarrena92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaMuhlenberg92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 
 distributionTable["SC_M1009MilitaryPolice"] = { Normal = VehicleDistributions.SCMilitaryPolice; }
 distributionTable["SC_CadillacGageRanger"] = { Normal = VehicleDistributions.SCMilitaryPolice; }

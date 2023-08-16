@@ -147,6 +147,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaLouisville92"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaJefferson92"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 70};
@@ -178,6 +180,7 @@ if VehicleZoneDistribution then
 	
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacLimo"] = {index = -1, spawnChance = 20};
 	
 	VehicleZoneDistribution.old_money.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.old_money.chanceToSpawnKey = 80;

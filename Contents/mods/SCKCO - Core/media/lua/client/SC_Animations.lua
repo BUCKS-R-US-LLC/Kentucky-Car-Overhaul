@@ -157,6 +157,8 @@ local vehicleToSeatAnimations = {
 	["Base.SC_CapriceLVPD"] = "Default",
 
 	["Base.SC_CadillacFleetwood"] = "Default",
+	["Base.SC_CadillacBrougham"] = "Default",
+	["Base.SC_CadillacLimo"] = "Default",
 	["Base.SC_ChevroletCavalier"] = "Default",
 	["Base.SC_M880"] = "Default",
 	["Base.SC_M880Bubba"] = "Default",
@@ -168,7 +170,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_FordTaurus"] = "Default",
 	["Base.SC_GeoTracker"] = "Default",
 	["Base.SC_BMW520i"] = "Default",
-    ["Base.CrownVictoria92"] = "Default",
+    ["Base.SC_CrownVictoria92"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
@@ -250,6 +252,9 @@ local vehicleToSeatAnimations = {
 		["seat3"]="Shark_Idle_SidePassenger2",
 	},
 
+	["Base.SC_Oliver2050"] = {
+        ["seat0"]="Shark_Idle_HogRider",
+	},
 }
 
 
