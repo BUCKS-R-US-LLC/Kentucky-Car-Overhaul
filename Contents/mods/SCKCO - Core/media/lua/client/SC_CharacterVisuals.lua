@@ -103,6 +103,8 @@ function characterVisualHandler.process(character)
             charModData.sc_storedHairModel = charModData.sc_storedHairModel or charHairModel
         end
         character:resetModel()
+        sendVisual(character)
+        sendClothing(character)
     end
 
     wornItems:copyFrom(_wornItems)
@@ -113,6 +115,8 @@ function characterVisualHandler.process(character)
             charModData.sc_storedHairModel = nil
         end
         character:resetModel()
+        sendVisual(character)
+        sendClothing(character)
     end
 
 end
