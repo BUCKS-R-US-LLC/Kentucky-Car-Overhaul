@@ -119,7 +119,6 @@ function characterVisualHandler.process(character)
         character:resetModel()
     end
 
-    sendClothing(character)
 end
 
 function characterVisualHandler._process(index, character) characterVisualHandler.process(character) end
