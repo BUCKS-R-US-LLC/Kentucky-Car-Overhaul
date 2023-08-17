@@ -69,28 +69,24 @@ function characterVisualHandler.process(character)
         ---@type WornItem
         local wornItem = wornItems:get(i)
         if wornItem then
-            if getDebug() then
+            local wornItemItem = wornItem:getItem()
+            local wornItemFullType = wornItemItem:getFullType()
+            local wornItemLocation = wornItem:getLocation()
 
-                local wornItemItem = wornItem:getItem()
-                local wornItemFullType = wornItemItem:getFullType()
-                local wornItemLocation = wornItem:getLocation()
+            local hideWornItem = characterVisualHandler.itemTypes[wornItemFullType]
+            local hideBodyLocation = characterVisualHandler.bodyLocations[wornItemLocation]
 
-                local hideWornItem = characterVisualHandler.itemTypes[wornItemFullType]
-                local hideBodyLocation = characterVisualHandler.bodyLocations[wornItemLocation]
+            local prevent = hideWornItem or hideBodyLocation
 
-                local prevent = hideWornItem or hideBodyLocation
+            if not prevent or (hideWornItem and hideWornItem~=true) then
+                local wornItemItemVisual = wornItemItem:getVisual()
+                wornItemItemVisual:setInventoryItem(wornItemItem)
 
-                if not prevent or (hideWornItem and hideWornItem~=true) then
-                    local wornItemItemVisual = wornItemItem:getVisual()
-                    wornItemItemVisual:setInventoryItem(wornItemItem)
-
-                    if hideWornItem then
-                        wornItemItemVisual:setItemType((inVehicle and hideWornItem) or wornItemFullType)
-                    end
-
-                    itemVisuals:add(wornItemItemVisual)
+                if hideWornItem then
+                    wornItemItemVisual:setItemType((inVehicle and hideWornItem) or wornItemFullType)
                 end
 
+                itemVisuals:add(wornItemItemVisual)
             end
         end
     end
