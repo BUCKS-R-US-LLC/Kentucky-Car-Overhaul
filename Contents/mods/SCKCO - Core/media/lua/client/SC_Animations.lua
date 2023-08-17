@@ -277,6 +277,8 @@ local function fetchAnimForVehicle(vehicle, player)
 end
 
 
+local CharVisuals = require "SC_CharacterVisuals"
+
 local enter_start = ISEnterVehicle.start
 function ISEnterVehicle:start()
     enter_start(self)
@@ -308,6 +310,7 @@ local function applySeatAnim(player)
             player:SetVariable("SCUCK_AnimSeated", fetchedAnim)
         end
     end
+	CharVisuals.process(player)
 end
 Events.OnEnterVehicle.Add(applySeatAnim)
 Events.OnSwitchVehicleSeat.Add(applySeatAnim)
@@ -317,5 +320,6 @@ local function exitVehicle(player)
     player:SetVariable("SCUCK_AnimSeated", "")
     player:SetVariable("SCUCK_Anim", "False")
 	player:SetVariable("SCUCK_AnimTransition", "Default")
+	CharVisuals.process(player)
 end
 Events.OnExitVehicle.Add(exitVehicle)
