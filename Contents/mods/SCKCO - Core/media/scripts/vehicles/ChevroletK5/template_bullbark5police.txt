@@ -1,0 +1,42 @@
+module Base
+{
+
+	template vehicle K5BullbarPolice
+		{
+		part K5BullbarPolice
+        	{
+
+			model K5Bullbar
+				{
+                		file = K5ExtraBar,
+				}
+		area = Engine,
+            category = SCUCKpermaarmor,
+            itemType = Base.K5Bullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+	}	
+	
+}
