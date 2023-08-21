@@ -174,20 +174,20 @@ extents = 4.5263 3.1053 9.9474,
 		engineForce = 4800,
 		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 90f,
+		maxSpeed = 70f,
 		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 90,
+		suspensionStiffness = 70,
 		suspensionCompression = 1.00,
 		suspensionDamping = 1.50,
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.50f,
 		wheelFriction = 1.5f,
-		frontEndHealth = 4500,
-		rearEndHealth = 3500,
+		frontEndHealth = 8500,
+		rearEndHealth = 7500,
 		seats = 4,
 
 		wheel FrontLeft
@@ -355,6 +355,7 @@ extents = 4.5263 3.1053 9.9474,
 			xywh = -1.3947 -2.1316 0.0000 0.0000,
 		}
 
+		template = RangerPushbar/part/RangerPushbar,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -390,7 +391,8 @@ extents = 4.5263 3.1053 9.9474,
 			{
 				file = CadillacGageRangerLights,
 			}
-
+			
+			category = nodisplay,
 			itemType = Base.CadillacGageRangerRearSeatSC,
 		}
 
@@ -401,6 +403,7 @@ extents = 4.5263 3.1053 9.9474,
 				file = CadillacGageRangerLightsPassenger,
 			}
 
+			category = nodisplay,
 			itemType = Base.CadillacGageRangerRearSeatSC,
 		}
 
@@ -903,4 +906,3 @@ extents = 4.5263 3.1053 9.9474,
 			zoffset = 1.0000,
 		}
 	}
-}
