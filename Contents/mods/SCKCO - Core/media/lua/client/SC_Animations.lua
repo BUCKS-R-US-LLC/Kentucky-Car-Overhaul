@@ -171,6 +171,10 @@ local vehicleToSeatAnimations = {
 	["Base.SC_GeoTracker"] = "Default",
 	["Base.SC_BMW520i"] = "Default",
     ["Base.SC_CrownVictoria92"] = "Default",
+    ["Base.SC_CrownVictoriaJefferson92"] = "Default",
+	["Base.SC_CrownVictoriaLouisville92"] = "Default",
+	["Base.SC_CrownVictoriaWarren92"] = "Default",
+	["Base.SC_CrownVictoriaMuhlen92"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",
@@ -179,6 +183,7 @@ local vehicleToSeatAnimations = {
 	["Base.SmallCar"] = "SmallCar",
 	["Base.SmallCar02"] = "SmallCar",
 	["Base.SC_VWRabbit"] = "SmallCar",
+	["Base.SC_VWRabbitPizza"] = "SmallCar",
 	["Base.SC_HondaAccord"] = "SmallCar",
 
 	["Base.SportsCar"] = "midSized",
