@@ -160,9 +160,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_CadillacBrougham"] = "Default",
 	["Base.SC_CadillacLimo"] = "Default",
 	["Base.SC_ChevroletCavalier"] = "Default",
-	["Base.SC_M880"] = "Default",
-	["Base.SC_M880Bubba"] = "Default",
-	["Base.SC_M880Militia"] = "Default",
+
 	["Base.SC_M998"] = "Default",
 	["Base.SC_M1025"] = "Default",
 	["Base.SC_M151A2"] = "Default",
@@ -204,7 +202,10 @@ local vehicleToSeatAnimations = {
 	["Base.SC_GrummanLLV"] = "2Seater",
 	["Base.SC_MackDM800Garbage"] = "2Seater",
 	["Base.SC_CrownFirecoach"] = "2Seater",
-	
+	["Base.SC_M880"] = "2Seater",
+	["Base.SC_M880Bubba"] = "2Seater",
+	["Base.SC_M880Militia"] = "2Seater",
+
 	["Base.SC_StepVanP30Police"] = "4Seater",
 	["Base.SC_StepVanP30ParkRanger"] = "4Seater",
 	["Base.SC_StepVanP30Bunny"] = "4Seater",
