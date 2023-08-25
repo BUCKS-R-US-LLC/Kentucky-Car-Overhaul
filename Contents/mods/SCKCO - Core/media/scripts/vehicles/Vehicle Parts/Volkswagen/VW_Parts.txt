@@ -1,6 +1,19 @@
 module Base
 {
 
+        item PizzaTopperSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Pizza Topper,
+        Icon	=	VWLogo,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
+    }
+
         item VWRabbitDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
