@@ -18,6 +18,7 @@ function C70GasTank(player, part, elapsedMinutes)
 
 end
 
+
 function C70SurvivorWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_ChevroletC70Survivalist" )) then
@@ -30,6 +31,22 @@ local part = vehicle:getPartById("Windshield")
 
         end
         vehicle:transmitPartModData(Windshield)
+    end
+
+
+end
+
+function C70Engine(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownC70" )) then
+
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("Engine"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+
+        end
+        vehicle:transmitPartModData(Engine)
     end
 
 

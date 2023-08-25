@@ -41,7 +41,7 @@ function M151TireFrontLeft(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireFrontLeft)
@@ -57,7 +57,7 @@ function M151TireFrontRight(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireFrontRight")
         if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireFrontRight)
@@ -73,7 +73,7 @@ function M151TireRearLeft(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireRearLeft)
@@ -89,7 +89,7 @@ function M151TireRearRight(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireRearRight")
         if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireRearRight)
@@ -105,7 +105,7 @@ function M151A2TireFrontLeft(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireFrontLeft")
         if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireFrontLeft)
@@ -121,7 +121,7 @@ function M151A2TireFrontRight(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireFrontRight")
         if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireFrontRight)
@@ -137,7 +137,7 @@ function M151A2TireRearLeft(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireRearLeft")
         if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireRearLeft)
@@ -153,7 +153,7 @@ function M151A2TireRearRight(player, part, elapsedMinutes)
         local part = vehicle:getPartById("TireRearRight")
         if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 60, })
 
         end
         vehicle:transmitPartModData(TireRearRight)
