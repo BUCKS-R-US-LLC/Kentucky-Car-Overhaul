@@ -106,14 +106,14 @@ function MustangWindowRearRight(player, part, elapsedMinutes)
 
 end
 
-function MustangBullbar(player, part, elapsedMinutes)
+function MustangBullbar1(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
             vehicle:getPartById("FordMustangBullbar"):setCondition(vehicle:getPartById("FordMustangBullbar"):getCondition()-1)
 
         end
@@ -123,6 +123,22 @@ local part = vehicle:getPartById("Engine")
 
 end
 
+function MustangBullbar2(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+
+        local part = vehicle:getPartById("EngineDoor")
+        if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
+            vehicle:getPartById("FordMustangBullbar"):setCondition(vehicle:getPartById("FordMustangBullbar"):getCondition()-1)
+
+        end
+        vehicle:transmitPartModData(EngineDoor)
+    end
+
+
+end
 
 function MustangDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
@@ -196,27 +212,10 @@ function MustangWindowRearLeft(player, part, elapsedMinutes)
 
 end
 
-function MustangBullbar(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
-
-        local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
-            vehicle:getPartById("FordMustangBullbar"):setCondition(vehicle:getPartById("FordMustangBullbar"):getCondition()-1)
-
-        end
-        vehicle:transmitPartModData(EngineDoor)
-    end
-
-
-end
-
-
 Events.OnPlayerUpdate.Add(MustangWindshield);
 Events.OnPlayerUpdate.Add(MustangGasTank);
-Events.OnPlayerUpdate.Add(MustangBullbar);
+Events.OnPlayerUpdate.Add(MustangBullbar1);
+Events.OnPlayerUpdate.Add(MustangBullbar2);
 Events.OnPlayerUpdate.Add(MustangDoorFrontLeft);
 Events.OnPlayerUpdate.Add(MustangDoorFrontRight);
 Events.OnPlayerUpdate.Add(MustangWindowFrontLeft);

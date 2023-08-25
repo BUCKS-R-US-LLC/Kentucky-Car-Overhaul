@@ -34,6 +34,22 @@ local part = vehicle:getPartById("EngineDoor")
 
 end
 
+function HMMWVEngine(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
+
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("Engine"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+
+        end
+        vehicle:transmitPartModData(Engine)
+    end
+
+
+end
+
 function HMMWVWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025" )) then

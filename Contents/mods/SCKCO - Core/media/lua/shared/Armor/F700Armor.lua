@@ -23,12 +23,28 @@ function F700EngineDoor(player, part, elapsedMinutes)
     if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
 
 local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("F700Bullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("F700Bullbar"):getInventoryItem()) then
+        if (vehicle:getPartById("EngineDoor"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("EngineDoor"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
 
         end
         vehicle:transmitPartModData(EngineDoor)
+    end
+
+
+end
+
+function F700Engine(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
+
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("Engine"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("Engine"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+
+        end
+        vehicle:transmitPartModData(Engine)
     end
 
 
