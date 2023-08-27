@@ -4,7 +4,7 @@
 
 function PorscheEngine(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_Porsche911")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_Porsche911G50")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("Engine"):getCondition() < 20) and (vehicle:getPartById("Engine"):getInventoryItem()) then
