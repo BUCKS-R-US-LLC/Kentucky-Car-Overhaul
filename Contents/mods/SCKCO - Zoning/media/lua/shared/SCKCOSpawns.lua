@@ -122,8 +122,10 @@ if VehicleZoneDistribution then
 
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_M880Bubba"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_K10Dixie"] = {index = -1, spawnChance = 5};
 
 	VehicleZoneDistribution.designated_bubba_zone.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.designated_bubba_zone.chanceToSpawnKey = 80;
