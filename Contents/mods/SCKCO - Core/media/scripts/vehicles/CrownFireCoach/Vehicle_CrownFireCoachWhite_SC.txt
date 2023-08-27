@@ -145,28 +145,28 @@ module Base
 	model FireCoachfrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FireCoach_FrontLeft,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_FrontWheel,
+		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteFrontWheel,
 		shader = vehiclewheel,
 	}
 	model FireCoachfrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_FireCoach_FrontRight,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_FrontWheel,
+		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteFrontWheel,
 		shader = vehiclewheel,
 	}
-	model FireCoachbackwheelleft
+	model FireCoachbackwheelwhiteleft
 	{
 		mesh = vehicles/Wheels/Vehicle_FireCoach_RearLeft,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_RearWheel,
+		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteRearWheel,
 		shader = vehiclewheel,
 	}
-	model FireCoachbackwheelright
+	model FireCoachbackwheelwhiteright
 	{
 		mesh = vehicles/Wheels/Vehicle_FireCoach_RearRight,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_RearWheel,
+		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteRearWheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_CrownFireCoach
+	vehicle SC_CrownFireCoachWhite
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -182,7 +182,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FireCoach/Vehicle_FireCoach,
+			texture = Vehicles/FireCoach/Vehicle_FireCoachWhite,
 		}
 
 		textureRust = Vehicles/FireCoach/Vehicle_FireCoach_rust,
@@ -1068,7 +1068,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachbackwheelleft,
+				file = FireCoachbackwheelwhiteleft,
 			}
 		}
 
@@ -1076,7 +1076,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachbackwheelright,
+				file = FireCoachbackwheelwhiteright,
 			}
 		}
 

@@ -72,7 +72,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_fire_engines = VehicleZoneDistribution.louisville_fire_engines or {};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles = VehicleZoneDistribution.louisville_fire_engines.vehicles or {};
 
-	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoachRed"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoachWhite"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 80};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 80};
 
