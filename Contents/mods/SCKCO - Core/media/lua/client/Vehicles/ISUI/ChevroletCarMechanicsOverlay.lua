@@ -3,6 +3,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_CUCVZhenjaEdition"] = {imgPrefix = "k10_"
 ISCarMechanicsOverlay.CarList["Base.SC_M1008"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_M1008TroopCarrier"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_M1010Ambulance"] = {imgPrefix = "k10_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_K10Dixie"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruck"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
