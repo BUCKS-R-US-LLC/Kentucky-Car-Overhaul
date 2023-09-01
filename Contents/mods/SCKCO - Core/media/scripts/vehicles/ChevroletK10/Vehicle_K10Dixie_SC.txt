@@ -22,13 +22,13 @@ module Base
 	model K10Windshield
 	{
 		mesh = vehicles/Vehicle_K10_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model K10FrontRightWindow
 	{
 		mesh = vehicles/Vehicle_K10_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model K10FrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -57,17 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model K10RearRightWindow
-	{
-		mesh = vehicles/Vehicle_K10_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model K10RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_K10_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model K10Trunk
 	{
@@ -76,7 +65,6 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
 	model K10RearWindshield
 	{
