@@ -260,7 +260,7 @@ local vehicleToSeatAnimations = {
 	},
 
 	["Base.SC_Oliver2050"] = {
-        ["seat0"]="Shark_Idle_HogRider",
+        ["seat0"]="Bob_Idle_Driver",
 	},
 }
 
