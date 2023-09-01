@@ -3,7 +3,7 @@ module Base
 	model SC_CrownVictoriaCiv
 	{
 		mesh = vehicles/Vehicle_CrownVictoriaCiv_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model CrownVictoriaWindshield
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model CrownVictoriaFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -50,7 +50,7 @@ module Base
 	model CrownVictoriaRearRightWindow
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -58,7 +58,7 @@ module Base
 	model CrownVictoriaRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -114,7 +114,7 @@ module Base
 	model CrownVictoriaRearWindshield
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaDoorfrontwheelleft
