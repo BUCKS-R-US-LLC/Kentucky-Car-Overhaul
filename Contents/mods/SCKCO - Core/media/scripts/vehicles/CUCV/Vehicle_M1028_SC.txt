@@ -22,13 +22,13 @@ module Base
 	model M1028A3Windshield
 	{
 		mesh = vehicles/Vehicle_M1028A3_SC|WindShield_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1028A3FrontRightWindow
 	{
 		mesh = vehicles/Vehicle_M1028A3_SC|FrontRightWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -69,7 +69,7 @@ module Base
 	model M1028A3RearWindshield
 	{
 		mesh = vehicles/Vehicle_M1028A3_SC|RearWinshield_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1028A3Hood
