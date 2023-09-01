@@ -22,13 +22,13 @@ module Base
 	model BlazerCivilianSCWindshield
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model BlazerCivilianSCFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model BlazerCivilianSCFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model BlazerCivilianSCRearRightWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model BlazerCivilianSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model BlazerCivilianSCTrunk
@@ -153,16 +153,6 @@ module Base
 		skin
 		{
 			texture = Vehicles/K5/Vehicle_BlazerSC_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/K5/Vehicle_BlazerSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/K5/Vehicle_BlazerSC_Green,
 		}
 
 		skin
