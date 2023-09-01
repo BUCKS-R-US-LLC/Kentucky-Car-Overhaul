@@ -27,11 +27,12 @@ module Base
 	}
 	model ShortBusFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_ShortSchool_SC|FrontRightWindow_obj.001,
+		mesh = vehicles/Vehicle_ShortSchool_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = SlideBone1 1.0,
+		boneWeight = SlideBone2 1.0,
 	}
 	model ShortBusFrontLeftWindow
 	{
@@ -47,7 +48,8 @@ module Base
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
+		boneWeight = SlideBone1 1.0,
+		boneWeight = SlideBone2 1.0,
 	}
 	model ShortBusRearRightWindows
 	{
@@ -58,7 +60,7 @@ module Base
 	}
 	model ShortBusRearLeftWindows
 	{
-		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -74,7 +76,7 @@ module Base
 	}
 	model ShortBusTrunk
 	{
-		mesh = vehicles/Vehicle_ShortSchool_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|TrunkDoor_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
@@ -94,8 +96,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = TrunkBone 1.0,
 	}
 	model ShortBusfrontwheelleft
 	{
@@ -186,7 +187,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2373 0.0847 1.9322,
+			offset = 1.2373 0.0847 1.9661,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -194,7 +195,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2373 0.0847 1.9153,
+			offset = -1.2373 0.0847 1.9492,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -295,67 +296,67 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0678 4.4068 3.1864 2.0000,
+			xywh = 0.0000 4.9661 3.1864 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2203 0.7797 1.1186 1.1186,
+			xywh = 2.1525 2.1017 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0847 0.7797 1.1186 1.1186,
+			xywh = -2.1525 1.3051 1.1186 1.1186,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.2203 0.7797 1.1186 1.1186,
+			xywh = 2.1525 0.7797 1.1186 1.1186,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.0847 0.7797 1.1186 1.1186,
+			xywh = -2.1525 1.3051 1.1186 1.1186,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0847 -0.5763 1.1186 1.0847,
+			xywh = -2.1525 1.3051 1.1186 1.1186,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.0847 -0.5763 1.1186 1.0847,
+			xywh = 2.1525 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1695 -3.9322 1.0169 0.5763,
+			xywh = 2.1017 -3.9322 1.0169 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.0000 0.0000 0.0000,
+			xywh = 1.5932 3.0000 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.0000 0.0000 0.0000,
+			xywh = -1.5932 3.0000 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 1.5932 -2.8814 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -1.5932 -2.8814 0.0000 0.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0678 -5.4915 2.9492 1.0169,
+			xywh = 0.0678 -5.5254 1.1186 1.0169,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -443,22 +444,22 @@ module Base
 
 		part SeatFrontRight
 		{
-			model SeatFrontRight
-			{
-				file = ShortBusPassenger,
-			}
+			itemType = Base.ChevyG30FrontSeatSC,
+		}
 
+		part SeatFrontLeft
+		{
+			itemType = Base.ChevyG30FrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
-
-			model SeatRearLeft
-			{
-				file = ShortBusDriver,
-			}
 		}
 
 		part SeatRearRight
@@ -611,6 +612,7 @@ module Base
 			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
+		template = StopSign/part/StopSign,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
@@ -627,7 +629,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontRightWindowClosing,
+				anim = SlideDoorClosing,
 				animate = FALSE,
 			}
 
@@ -665,28 +667,28 @@ module Base
 
 			anim Close
 			{
-				anim = FrontRightDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = FrontRightDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = FrontRightDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = FrontRightDoorClosing,
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -772,7 +774,7 @@ module Base
 
 		part WindowRearRight
 		{
-			model windowRR
+			model Default
 			{
 				file = ShortBusRearRightWindows,
 			}
