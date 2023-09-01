@@ -22,13 +22,13 @@ module Base
 	model M1008Windshield
 	{
 		mesh = vehicles/Vehicle_M1008_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model M1008FrontRightWindow
 	{
 		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M1008FrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -57,18 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1008RearRightWindow
-	{
-		mesh = vehicles/Vehicle_M1008_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1008RearLeftWindow
-	{
-		mesh = vehicles/Vehicle_M1008_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model M1008Trunk
 	{
 		mesh = vehicles/Vehicle_M1008_SC|Trunk_obj,
@@ -81,7 +69,7 @@ module Base
 	model M1008RearWindshield
 	{
 		mesh = vehicles/Vehicle_M1008_SC|RearWinshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model M1008Hood
