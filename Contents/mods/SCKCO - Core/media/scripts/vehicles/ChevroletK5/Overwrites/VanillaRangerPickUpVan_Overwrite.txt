@@ -28,7 +28,7 @@ module Base
 	model BlazerSCFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model BlazerSCFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model BlazerSCRearRightWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearRightWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearLeftWindow_obj,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerSCTrunk
