@@ -275,7 +275,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.2698 2.8571 2.0000,
+			xywh = 0.0000 6.3016 3.1111 2.0000,
 		}
 
 		area TruckBed
@@ -285,17 +285,17 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1746 2.7778 1.2381 1.2381,
+			xywh = 2.2857 2.7778 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1746 2.7778 1.2381 1.2381,
+			xywh = -2.2698 2.7778 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0952 2.5714 1.0794 0.5714,
+			xywh = -2.1905 2.5714 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -331,7 +331,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -462,7 +462,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordF700WindshieldSC,
 		}
 
@@ -493,7 +493,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordF700WindshieldSC,
 		}
 
@@ -514,8 +514,8 @@ module Base
 				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.FordF700SideWindowSC,
@@ -533,8 +533,8 @@ module Base
 				anim = FrontLeftWindowBone,
 				animate = FALSE,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.FordF700SideWindowSC,

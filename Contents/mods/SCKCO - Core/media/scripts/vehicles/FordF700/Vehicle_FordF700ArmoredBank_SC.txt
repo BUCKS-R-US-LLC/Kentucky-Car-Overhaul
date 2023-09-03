@@ -158,9 +158,9 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.8571 2.7302 8.0952,
+		extents = 2.9841 2.7302 7.9048,
 		mass = 1000,
-		physicsChassisShape = 2.9524 2.8254 7.9683,
+		physicsChassisShape = 2.9841 2.8254 7.9048,
 		centerOfMassOffset = 0.0000 1.7460 0.0159,
 		shadowExtents = 3.2617 8.5003,
 		shadowOffset = 0.0000 0.0222,
@@ -295,32 +295,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.0635 2.8571 2.0000,
+			xywh = 0.0000 5.1746 2.9841 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 1.4603 1.2381 1.2381,
+			xywh = 2.2063 1.4603 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 1.4603 1.2381 1.2381,
+			xywh = -2.2063 1.4603 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = 0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0159 -1.0635 1.0794 0.5714,
+			xywh = 2.1270 -1.3016 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -330,17 +330,17 @@ module Base
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 3.0159 0.0000 0.0000,
+			xywh = -1.4921 3.0159 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.7937 0.0000 0.0000,
+			xywh = 1.4921 -2.7937 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.7937 0.0000 0.0000,
+			xywh = -1.4921 -2.7937 0.0000 0.0000,
 		}
 
 		template = F700Bullbar/part/F700Bullbar,
@@ -359,7 +359,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -521,8 +521,8 @@ module Base
 			{
 				file = F700ArmoredFrontRightWindow,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.BallisticGlassWindowSC,
@@ -540,7 +540,7 @@ module Base
 				openable = false,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.BallisticGlassWindowSC,
@@ -578,13 +578,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -599,16 +598,15 @@ module Base
 			{
 				openable = false,
 			}
-			
+
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatFrontRight,
-	
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
