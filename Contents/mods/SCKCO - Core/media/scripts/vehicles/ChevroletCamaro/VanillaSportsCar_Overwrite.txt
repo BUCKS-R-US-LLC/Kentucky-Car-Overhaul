@@ -344,22 +344,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9403 0.2537 1.2537 1.2537,
+			xywh = 2.1194 0.2537 1.2537 1.2537,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9403 0.2537 1.2537 1.2537,
+			xywh = -2.1194 0.2537 1.2537 1.2537,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9403 -0.9851 1.2537 1.2537,
+			xywh = 2.1194 -0.9851 1.2537 1.2537,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9403 -0.9851 1.2537 1.2537,
+			xywh = -2.1194 -0.9851 1.2537 1.2537,
 		}
 
 		area GasTank
@@ -403,6 +403,7 @@ module Base
 			{
 				file = CamaroSCDriver,
 			}
+
 			itemType = Base.ChevyCamaroFrontSeatSC,
 		}
 
@@ -412,6 +413,7 @@ module Base
 			{
 				file = CamaroSCPassenger,
 			}
+
 			itemType = Base.ChevyCamaroFrontSeatSC,
 		}
 
@@ -421,17 +423,17 @@ module Base
 			{
 				file = CamaroSCRearPassenger,
 			}
+
 			itemType = Base.ChevyCamaroRearSeatSC,
 		}
 
 		part SeatRearRight
 		{
-
 			model SeatRearRight
 			{
 				file = CamaroSCRearPassenger,
 			}
-			
+
 			itemType = Base.ChevyCamaroRearSeatSC,
 		}
 
@@ -595,7 +597,6 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-						
 			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroFrontSideWindowSC,
 		}
@@ -615,7 +616,6 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			category = SCUCKwindows,
 			itemType = Base.ChevyCamaroFrontSideWindowSC,
 		}
@@ -631,7 +631,7 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
@@ -649,7 +649,7 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
@@ -728,6 +728,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			itemType = Base.ChevyCamaroDoorSC,
 		}
 
@@ -780,6 +781,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			itemType = Base.ChevyCamaroTrunkLidSC,
 		}
 

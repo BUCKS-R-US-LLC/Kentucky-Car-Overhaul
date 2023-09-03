@@ -151,11 +151,11 @@ module Base
 			ignitionFail = VehiclegnitionFailStepVan,
 		}
 
-		extents = 3.2281 3.0877 8.7368,
+		extents = 3.1930 3.7193 8.1754,
 		mass = 1700,
-		physicsChassisShape = 3.1930 3.0877 8.4211,
-		centerOfMassOffset = 0.0000 1.5614 -0.6316,
-		shadowExtents = 3.2617 9.6250,
+		physicsChassisShape = 3.1930 3.7193 8.1754,
+		centerOfMassOffset = 0.0000 1.8596 -0.6491,
+		shadowExtents = 3.2617 9.8004,
 		shadowOffset = -0.0067 -0.6921,
 		maxSpeed = 70f,
 		engineForce = 4000,
@@ -218,7 +218,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7368 1.4737 1.0175,
+				offset = 0.7368 1.3860 1.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -256,7 +256,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7193 1.7719 -3.6140,
+				offset = 0.7193 1.7544 -3.6140,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -275,7 +275,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7193 1.7895 -3.6140,
+				offset = -0.7193 1.7544 -3.6140,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -289,32 +289,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.7368 3.2281 2.0000,
+			xywh = 0.0000 4.7895 3.2281 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1754 0.7895 1.1228 1.1228,
+			xywh = 2.2456 0.7895 1.1228 1.1228,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1754 0.7895 1.1228 1.1228,
+			xywh = -2.2456 0.7895 1.1228 1.1228,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -0.0000 -5.5614 1.1228 1.1228,
+			xywh = 0.0000 -5.7193 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.0000 -5.5614 1.1228 1.1228,
+			xywh = 0.0000 -5.7193 1.1228 1.1228,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1579 -3.4386 1.0877 0.5965,
+			xywh = 2.2456 -3.4386 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
@@ -337,7 +337,7 @@ module Base
 			xywh = -1.6140 -2.7895 0.0000 0.0000,
 		}
 
-        template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
@@ -349,7 +349,7 @@ module Base
 
 		part LargeUtilityTruckSoundController
 		{
-            category = nodisplay,
+			category = nodisplay,
 			itemType = Base.LargeUtilityTruckSoundController,
 		}
 
@@ -511,7 +511,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyP30WindshieldSC,
 		}
@@ -735,7 +735,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
-			
+
 			itemType = Base.ChevyP30RearDoorsSC,
 		}
 
@@ -829,8 +829,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.9474 -0.7193,
-			extents = 3.1754 3.5789 8.6842,
+			offset = 0.0000 1.8596 -0.6491,
+			extents = 3.1754 3.7193 8.1930,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

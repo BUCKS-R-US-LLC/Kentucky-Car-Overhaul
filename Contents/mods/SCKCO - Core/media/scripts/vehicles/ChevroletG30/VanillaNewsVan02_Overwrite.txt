@@ -126,7 +126,7 @@ module Base
 		{
 			file = SC_G30VanWindowless,
 			scale = 0.5900,
-			offset = 0.0678 0.1864 0.0847,
+			offset = 0.0678 0.1864 0.0339,
 		}
 
 		skin
@@ -151,14 +151,32 @@ module Base
 			ignitionFail = VehiclegnitionFailVan,
 		}
 
-		extents = 3.2203 3.0847 8.7119,
+		sound
+		{
+			engine = VehicleEngineVan,
+			engineStart = VehicleEngineVan,
+			engineTurnOff = VehicleEngineVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehiclegnitionFailVan,
+		}
+
+		sound
+		{
+			engine = VehicleEngineVan,
+			engineStart = VehicleEngineVan,
+			engineTurnOff = VehicleEngineVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehiclegnitionFailVan,
+		}
+
+		extents = 3.3220 3.0847 8.3051,
 		mass = 1700,
-		physicsChassisShape = 3.1864 3.0847 8.3729,
-		centerOfMassOffset = 0.0678 1.5593 -0.7966,
-		shadowExtents = 3.2617 8.3736,
-		shadowOffset = 0.0635 -0.7873,
+		physicsChassisShape = 3.3220 3.0847 8.3051,
+		centerOfMassOffset = 0.0000 1.5593 -0.7966,
+		shadowExtents = 3.3295 8.3058,
+		shadowOffset = -0.0042 -0.8042,
 		maxSpeed = 90f,
-		engineForce = 4500,
+		engineForce = 8500,
 		engineQuality = 70,
 		engineLoudness = 100,
 		brakingForce = 60,
@@ -166,7 +184,7 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 80,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
@@ -251,22 +269,22 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0678 4.5593 3.2203 2.0000,
+			xywh = 0.0000 4.3898 3.3220 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2203 0.7797 1.1186 1.1186,
+			xywh = 2.2881 0.7797 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1017 0.7797 1.1186 1.1186,
+			xywh = -2.2712 0.7797 1.1186 1.1186,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1695 -3.9322 1.0169 0.5763,
+			xywh = 2.2203 -3.9322 1.0169 0.5763,
 		}
 
 		area TireFrontLeft
@@ -291,7 +309,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0678 -5.6441 3.2203 1.0169,
+			xywh = 0.0000 -5.4915 3.3220 1.0169,
 		}
 
 		template = G30TVDish/part/G30TVDish,
@@ -355,15 +373,15 @@ module Base
 
 			itemType = Base.ChevyG30RearDoorsSC,
 		}
-		
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = G30VanWindowlessDriver,
 			}
-		
-		    itemType = Base.ChevyG30FrontSeatSC,
+
+			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -372,8 +390,8 @@ module Base
 			{
 				file = G30VanWindowlessPassenger,
 			}
-			
-		    itemType = Base.ChevyG30FrontSeatSC,
+
+			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part Muffler
@@ -478,7 +496,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30WindshieldSC,
 		}
@@ -512,7 +530,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,		
+			category = SCUCKwindows,
 			itemType = Base.ChevyG30RearWindowsSC,
 		}
 
@@ -538,7 +556,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyG30SideWindowSC,
 		}
 
@@ -557,7 +574,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30SideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -754,7 +770,7 @@ module Base
 
 		template = Headlight,
 
-	    part PassengerCompartment
+		part PassengerCompartment
 		{
 			category = nodisplay,
 
@@ -766,21 +782,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.0159 -0.8254,
-			extents = 3.1111 3.5714 8.3968,
+			offset = 0.0000 1.4576 -0.7797,
+			extents = 3.3220 2.8983 8.2881,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -5.1270,
+			offset = 0.0000 0.3390 -4.9661,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.2857,
+			offset = 0.0000 0.3390 3.2881,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

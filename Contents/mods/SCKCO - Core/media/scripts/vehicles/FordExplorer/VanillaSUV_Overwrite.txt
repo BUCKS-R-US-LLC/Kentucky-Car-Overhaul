@@ -380,22 +380,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9714 0.6714 1.3429 1.3429,
+			xywh = 2.0857 0.6714 1.3429 1.3429,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9714 0.6714 1.3429 1.3429,
+			xywh = -2.1000 0.6714 1.3429 1.3429,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9714 -0.8000 1.3429 1.3429,
+			xywh = 2.0857 -0.8000 1.3429 1.3429,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9714 -0.8000 1.3429 1.3429,
+			xywh = -2.1000 -0.8000 1.3429 1.3429,
 		}
 
 		area GasTank
@@ -437,8 +437,7 @@ module Base
 
 		part GasTank
 		{
-
-		itemType = Base.BigGasTank,
+			itemType = Base.BigGasTank,
 		}
 
 		part SeatFrontLeft
@@ -447,7 +446,8 @@ module Base
 			{
 				file = FordExplorerDriver,
 			}
-		itemType = Base.FordExplorerFrontSeatSC,
+
+			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -456,7 +456,8 @@ module Base
 			{
 				file = FordExplorerPassenger,
 			}
-		itemType = Base.FordExplorerFrontSeatSC,
+
+			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -465,7 +466,8 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
-		itemType = Base.FordExplorerRearSeatSC,
+
+			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -475,7 +477,7 @@ module Base
 				file = FordExplorerDouble,
 			}
 
-		itemType = Base.FordExplorerRearSeatSC,
+			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part Muffler
@@ -489,6 +491,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
 			itemType = Base.ModernCarMuffler,
 		}
 
@@ -581,7 +584,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.FordExplorerWindshieldSC,
 		}
@@ -642,7 +645,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -661,7 +663,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -714,7 +715,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -733,7 +733,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}

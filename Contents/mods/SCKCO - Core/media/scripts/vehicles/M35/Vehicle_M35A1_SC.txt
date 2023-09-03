@@ -555,12 +555,12 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.5902 1.1148 1.4754 1.4754,
+			xywh = 2.8033 1.1148 1.4754 1.4754,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.5902 1.1148 1.4754 1.4754,
+			xywh = -2.8033 1.1148 1.4754 1.4754,
 		}
 
 		area DoorRearLeft
@@ -708,7 +708,6 @@ module Base
 
 			table install
 			{
-				recipes
 			}
 
 			table uninstall
@@ -751,7 +750,6 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
 		}
 
 		part M35A1FrontHardTop
@@ -1206,10 +1204,9 @@ module Base
 			}
 		}
 
-
 		template = Tire,
-        template = Axle,
-		
+		template = Axle,
+
 		part PassengerCompartment
 		{
 			category = nodisplay,

@@ -261,12 +261,12 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 0.2540 1.2381 1.2381,
+			xywh = 2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 0.2540 1.2381 1.2381,
+			xywh = -2.1905 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -286,14 +286,14 @@ module Base
 
 		area TireRearLeft
 		{
-			xywh = 1.4762 -2.1270 0.0000 0.0000,
+			xywh = 1.4286 -2.1270 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -2.1270 0.0000 0.0000,
+			xywh = -1.4286 -2.1270 0.0000 0.0000,
 		}
-
+		
 		template = K5Bullbar/part/K5Bullbar,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
@@ -324,8 +324,8 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-		
-			part GunRack2
+
+		part GunRack2
 		{
 			area = SeatFrontLeft,
 			category = nodisplay,
@@ -345,7 +345,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-		
+
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
