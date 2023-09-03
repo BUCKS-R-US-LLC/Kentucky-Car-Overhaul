@@ -148,7 +148,7 @@ module Base
 		{
 			file = SC_CadillacFuneralCoach,
 			scale = 0.6300,
-			offset = -0.0159 0.1429 0.0000,
+			offset = -0.0159 -0.1429 -0.0159,
 		}
 
 		skin
@@ -183,12 +183,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.6984 3.0794 8.1587,
+		extents = 2.6984 1.9683 8.0952,
 		mass = 1000,
-		physicsChassisShape = 2.6984 3.0794 8.1587,
-		centerOfMassOffset = 0.0000 1.5556 -0.5556,
-		shadowExtents = 2.7061 8.1673,
-		shadowOffset = 0.0000 -0.5492,
+		physicsChassisShape = 2.6984 1.9683 8.0952,
+		centerOfMassOffset = 0.0000 0.9841 -0.6032,
+		shadowExtents = 2.7061 8.0879,
+		shadowOffset = 0.0000 -0.5968,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -320,57 +320,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.5238 2.6032 2.0000,
+			xywh = 0.0000 4.6667 2.6984 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.5238 2.6032 1.7778,
+			xywh = 0.0000 -5.6667 2.6984 1.7778,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0317 0.1270 1.3651 1.3651,
+			xywh = 2.2222 0.2540 1.3651 1.3651,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0317 0.1270 1.3651 1.3651,
+			xywh = -2.2222 0.2540 1.3651 1.3651,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0317 -1.3333 1.3651 1.3651,
+			xywh = 2.2222 -1.2063 1.3651 1.3651,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0317 -1.3333 1.3651 1.3651,
+			xywh = -2.2222 -1.2063 1.3651 1.3651,
 		}
 
 		area GasTank
 		{
-			xywh = 1.9048 -2.0159 1.1111 0.6349,
+			xywh = 2.0952 -2.0159 1.1111 0.6349,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5238 2.4762 0.0000 0.0000,
+			xywh = 1.5238 2.2222 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5238 2.4762 0.0000 0.0000,
+			xywh = -1.5238 2.2222 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5238 -1.9841 0.0000 0.0000,
+			xywh = 1.5238 -2.6508 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5238 -1.9841 0.0000 0.0000,
+			xywh = -1.5238 -2.6508 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -964,16 +964,9 @@ module Base
 
 		physics box
 		{
-			offset = -0.0317 0.9683 -0.6032,
-			extents = 2.6349 1.8571 8.1429,
+			offset = -0.0317 0.9841 -0.6032,
+			extents = 2.6349 1.9841 8.1111,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.3857 -3.1429,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront

@@ -126,7 +126,7 @@ module Base
 		{
 			file = SC_G30VanWindowless,
 			scale = 0.5900,
-			offset = 0.0000 0.1864 0.0847,
+			offset = 0.0000 0.1864 0.0508,
 		}
 
 		skin
@@ -176,25 +176,6 @@ module Base
 		textureDamage2Shell= Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_scratch,
 		textureDamage1Overlay = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_blood,
 		textureDamage2Overlay = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_blood,
-
-		sound
-		{
-			engine = VehicleEngineVan,
-			engineStart = VehicleEngineVan,
-			engineTurnOff = VehicleEngineVan,
-			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
-		}
-
-		sound
-		{
-			engine = VehicleEngineVan,
-			engineStart = VehicleEngineVan,
-			engineTurnOff = VehicleEngineVan,
-			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
-		}
-
 		extents = 3.3220 3.0847 8.3051,
 		mass = 1700,
 		physicsChassisShape = 3.3220 3.0847 8.3051,
@@ -295,47 +276,47 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.3898 3.3220 2.0000,
+			xywh = 0.0000 4.5593 3.3220 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2881 0.7797 1.1186 1.1186,
+			xywh = 2.4237 0.7797 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2712 0.7797 1.1186 1.1186,
+			xywh = -2.4237 0.7797 1.1186 1.1186,
 		}
 
 		area GasTank
 		{
-			xywh = 2.2203 -3.9322 1.0169 0.5763,
+			xywh = 2.3729 -3.9322 1.0169 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.0000 0.0000 0.0000,
+			xywh = 1.6610 1.9831 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.0000 0.0000 0.0000,
+			xywh = -1.6610 1.9831 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -3.0169 0.0000 0.0000,
+			xywh = 1.6610 -3.0508 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -3.0169 0.0000 0.0000,
+			xywh = -1.6610 -3.0508 0.0000 0.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.4915 3.3220 1.0169,
+			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
 
 		template = Seat/part/SeatFrontLeft,

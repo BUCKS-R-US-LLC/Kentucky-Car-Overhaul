@@ -134,7 +134,7 @@ module Base
 		{
 			file = SC_G30Ambulance,
 			scale = 0.5900,
-			offset = 0.0000 0.1864 0.0847,
+			offset = 0.0000 0.1864 0.0339,
 		}
 
 		skin
@@ -166,10 +166,10 @@ module Base
 			rightCol = 1;0;0,
 		}
 
-		extents = 3.3220 3.0847 8.3051,
+		extents = 3.3220 3.2881 8.2712,
 		mass = 1700,
-		physicsChassisShape = 3.3220 3.0847 8.3051,
-		centerOfMassOffset = 0.0000 1.5593 -0.7966,
+		physicsChassisShape = 3.3220 3.2881 8.2712,
+		centerOfMassOffset = 0.0000 1.6102 -0.7966,
 		shadowExtents = 3.3295 8.3058,
 		shadowOffset = -0.0042 -0.8042,
 		maxSpeed = 90f,
@@ -304,57 +304,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0169 4.3559 3.2203 2.0000,
+			xywh = 0.0169 4.5424 3.3220 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2203 0.7797 1.1186 1.1186,
+			xywh = 2.4237 0.7797 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1017 0.7797 1.1186 1.1186,
+			xywh = -2.4237 0.7797 1.1186 1.1186,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.4237 -0.5763 1.1186 1.0847,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.4237 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1695 -3.9322 1.0169 0.5763,
+			xywh = 2.3559 -3.9322 1.0169 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 2.0000 0.0000 0.0000,
+			xywh = 1.6610 1.9322 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 2.0000 0.0000 0.0000,
+			xywh = -1.6610 1.9322 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -3.0169 0.0000 0.0000,
+			xywh = 1.6610 -3.0678 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -3.0169 0.0000 0.0000,
+			xywh = -1.6610 -3.0678 0.0000 0.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0678 -5.6441 3.2203 1.0169,
+			xywh = 0.0169 -5.6441 3.3559 1.0169,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -857,21 +857,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.0169 -0.8305,
-			extents = 3.1111 3.5714 8.3968,
+			offset = 0.0000 1.6271 -0.7966,
+			extents = 3.1186 3.2712 8.2881,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.0000 -5.1270,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.2857,
+			offset = 0.0000 0.3559 3.2881,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

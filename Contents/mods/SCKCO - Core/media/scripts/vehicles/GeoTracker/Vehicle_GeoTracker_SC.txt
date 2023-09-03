@@ -192,12 +192,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 2.2667 2.1333 5.0000,
+		extents = 2.2667 2.1333 4.9333,
 		mass = 600,
-		physicsChassisShape = 2.2667 2.1333 4.9333,
-		centerOfMassOffset = 0.0000 1.0833 0.0000,
-		shadowExtents = 2.2450 4.9405,
-		shadowOffset = 0.0135 0.0000,
+		physicsChassisShape = 2.2667 2.1667 4.9667,
+		centerOfMassOffset = 0.0000 1.0833 -0.0333,
+		shadowExtents = 2.2450 4.9738,
+		shadowOffset = 0.0135 -0.0333,
 		engineForce = 4400,
 		engineQuality = 80,
 		engineLoudness = 85,
@@ -329,12 +329,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.5000 2.4667 2.0000,
+			xywh = 0.0000 3.5500 2.2667 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.3833 2.4667 1.7667,
+			xywh = 0.0000 -3.5000 2.2667 1.7667,
 		}
 
 		area SeatFrontLeft
@@ -364,12 +364,12 @@ module Base
 
 		area TireFrontLeft
 		{
-			xywh = 1.2333 1.5000 0.0000 0.0000,
+			xywh = 1.2333 1.5667 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.2333 1.5000 0.0000 0.0000,
+			xywh = -1.2333 1.5667 0.0000 0.0000,
 		}
 
 		area TireRearLeft
@@ -532,7 +532,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-	     	category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.GeoTrackerWindshieldSC,
 		}
 
@@ -565,7 +566,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.GeoTrackerWindshieldSC,
 		}
 
@@ -589,7 +590,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.GeoTrackerSideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -608,7 +609,7 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.GeoTrackerSideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -620,16 +621,15 @@ module Base
 			{
 				file = GeoTrackerRearRightWindow,
 			}
-			
+
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			area = SeatRearRight,
 			itemType = Base.GeoTrackerSideWindowSC,
-
 		}
 
 		part WindowRearLeft
@@ -638,15 +638,15 @@ module Base
 			{
 				file = GeoTrackerRearLeftWindow,
 			}
+
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
-			
-		    category = SCUCKwindows,			
+
+			category = SCUCKwindows,
 			area = SeatRearLeft,
 			itemType = Base.GeoTrackerSideWindowSC,
-
 		}
 
 		part DoorFrontRight
@@ -879,8 +879,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9667 -0.0167,
-			extents = 2.2667 1.8667 4.9667,
+			offset = 0.0000 1.0833 -0.0167,
+			extents = 2.2667 2.1667 4.9667,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

@@ -205,10 +205,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 2.5763 2.1356 5.5254,
+		extents = 2.4746 2.0000 5.1864,
 		mass = 600,
-		physicsChassisShape = 2.4746 2.1356 5.5254,
-		centerOfMassOffset = 0.0000 1.0847 0.1864,
+		physicsChassisShape = 2.4746 2.0000 5.1864,
+		centerOfMassOffset = 0.0000 1.0169 0.0678,
 		shadowExtents = 2.7117 5.7404,
 		shadowOffset = -0.0032 0.1833,
 		engineForce = 4400,
@@ -304,47 +304,47 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.0169 2.5424 2.0000,
+			xywh = 0.0000 3.7458 2.4746 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.8983 2.5763 1.7627,
+			xywh = 0.0000 -3.4915 2.4746 1.7627,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9661 -0.2203 1.3559 1.3559,
+			xywh = 2.0678 -0.2203 1.3898 1.3898,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9661 -0.2203 1.3559 1.3559,
+			xywh = -2.0678 -0.2203 1.3898 1.3898,
 		}
 
 		area GasTank
 		{
-			xywh = -0.9831 -2.8983 0.6102 0.6441,
+			xywh = -0.9322 -2.9322 0.6102 0.6441,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.2881 1.9322 0.0000 0.0000,
+			xywh = 1.2373 1.9322 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.2881 1.9322 0.0000 0.0000,
+			xywh = -1.2373 1.9322 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.2881 -1.5254 0.0000 0.0000,
+			xywh = 1.2373 -1.5254 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.2881 -1.5254 0.0000 0.0000,
+			xywh = -1.2373 -1.5254 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -479,7 +479,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.JeepCJ7WindshieldSC,
 		}
 
@@ -503,10 +503,8 @@ module Base
 				animate = FALSE,
 			}
 
-
-            itemType = Base.JeepCJ7SideWindowSC,
-		    category = SCUCKwindows,
-			
+			category = SCUCKwindows,
+			itemType = Base.JeepCJ7SideWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -524,9 +522,8 @@ module Base
 				animate = FALSE,
 			}
 
-		    category = SCUCKwindows,
-            itemType = Base.JeepCJ7SideWindowSC,
-
+			category = SCUCKwindows,
+			itemType = Base.JeepCJ7SideWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -751,21 +748,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9661 0.1356,
-			extents = 2.4746 1.8644 5.5254,
+			offset = 0.0000 1.0169 0.0678,
+			extents = 2.4746 2.0000 5.1864,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0169 -2.7119,
+			offset = 0.0000 0.6949 -2.4576,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.9153,
+			offset = 0.0000 0.7288 2.7288,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

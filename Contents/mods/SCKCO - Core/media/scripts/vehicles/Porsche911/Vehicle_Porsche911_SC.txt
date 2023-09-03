@@ -196,10 +196,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 4.1053 1.6842 11.1579,
+		extents = 4.0000 1.6316 10.8421,
 		mass = 450,
-		physicsChassisShape = 4.3158 1.6842 11.1579,
-		centerOfMassOffset = 0.0000 0.8158 0.0000,
+		physicsChassisShape = 4.0000 1.5789 10.8421,
+		centerOfMassOffset = 0.0000 0.8158 -0.1316,
 		shadowExtents = 4.7222 12.2541,
 		shadowOffset = -0.0032 -0.1654,
 		engineForce = 6500,
@@ -334,7 +334,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 -6.3684 4.1053 1.5789,
+			xywh = 0.0000 -6.5789 4.0526 1.5789,
 		}
 
 		area TruckBed
@@ -364,7 +364,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 2.6053 2.3684 1.1053 0.7368,
+			xywh = 2.9474 2.3684 1.1053 0.7368,
 		}
 
 		area TireFrontLeft
@@ -880,7 +880,7 @@ module Base
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0789 5.2632,
+			offset = 0.0000 0.5789 5.2895,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

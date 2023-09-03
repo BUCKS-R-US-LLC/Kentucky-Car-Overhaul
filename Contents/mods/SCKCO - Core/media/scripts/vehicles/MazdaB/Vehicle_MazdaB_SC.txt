@@ -126,7 +126,7 @@ module Base
 		{
 			file = SC_MazdaB,
 			scale = 0.6300,
-			offset = 0.0000 -0.0317 0.0794,
+			offset = 0.0000 -0.1587 0.0794,
 		}
 
 		skin
@@ -176,11 +176,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailPickUpTruck,
 		}
 
-		extents = 2.4444 3.0794 6.6984,
+		extents = 2.4444 2.0635 6.6349,
 		mass = 1000,
-		physicsChassisShape = 2.4444 3.0794 6.7619,
-		centerOfMassOffset = 0.0000 1.5556 -0.2222,
-		shadowExtents = 2.4522 6.7704,
+		physicsChassisShape = 2.4444 2.0317 6.6032,
+		centerOfMassOffset = 0.0000 1.0317 -0.2222,
+		shadowExtents = 2.4522 6.6434,
 		shadowOffset = 0.0000 -0.2318,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -275,12 +275,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.1270 2.4444 2.0000,
+			xywh = 0.0000 4.2698 2.4444 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.4444 2.4444 1.7460,
+			xywh = 0.0000 -4.6032 2.4444 1.7460,
 		}
 
 		area SeatFrontLeft
@@ -295,27 +295,27 @@ module Base
 
 		area GasTank
 		{
-			xywh = -1.7619 -1.4921 1.0794 0.5714,
+			xywh = -1.9365 -1.4921 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.2222 2.0794 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.2222 2.0794 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.1270 0.0000 0.0000,
+			xywh = 1.2222 -1.9524 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.1270 0.0000 0.0000,
+			xywh = -1.2222 -1.9524 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -759,14 +759,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3175 -0.2381,
-			extents = 2.4444 1.8571 6.6190,
+			offset = 0.0000 1.0159 -0.2381,
+			extents = 2.4444 2.0476 6.6190,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.5397,
+			offset = 0.0000 0.5238 -3.5873,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

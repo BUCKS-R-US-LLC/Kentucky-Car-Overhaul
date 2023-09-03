@@ -128,7 +128,7 @@ module Base
 		{
 			file = SC_CadillacGageRanger,
 			scale = 0.3800,
-			offset = 0.0000 -0.4737 -0.6053,
+			offset = 0.0000 -0.7368 -0.6053,
 		}
 
 		skin
@@ -158,12 +158,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 4.5263 3.1053 9.9474,
+		extents = 4.5263 3.7368 9.7368,
 		mass = 400,
-		physicsChassisShape = 4.5263 3.1053 9.9474,
-		centerOfMassOffset = 0.0000 1.5789 -0.4737,
-		shadowExtents = 4.5256 9.9041,
-		shadowOffset = 0.0000 -0.4857,
+		physicsChassisShape = 4.5263 3.7368 9.7368,
+		centerOfMassOffset = 0.0000 1.8684 -0.4211,
+		shadowExtents = 4.5256 10.0357,
+		shadowOffset = 0.0000 -0.4068,
 		engineForce = 4800,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -295,37 +295,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.4474 2.9474 2.0000,
+			xywh = 0.0000 5.6316 2.9474 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.2368 2.9474 1.7368,
+			xywh = 0.0000 -6.3684 2.9474 1.7368,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.9474 0.7895 1.2632 1.2632,
+			xywh = 3.0526 0.7895 1.2632 1.2632,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.9211 0.7895 1.2632 1.2632,
+			xywh = -3.0526 0.7895 1.2632 1.2632,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.9474 0.7895 1.2632 1.2632,
+			xywh = 3.0526 0.7895 1.2632 1.2632,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.9211 0.7895 1.2632 1.2632,
+			xywh = -3.0526 0.7895 1.2632 1.2632,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1053 -1.1053 1.1053 0.6316,
+			xywh = -2.9737 -1.1053 1.1053 0.6316,
 		}
 
 		area TireFrontLeft
@@ -384,7 +384,7 @@ module Base
 			{
 				file = CadillacGageRangerLights,
 			}
-			
+
 			category = nodisplay,
 			itemType = Base.CadillacGageRangerRearSeatSC,
 		}
@@ -880,8 +880,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.0526 -0.4211,
-			extents = 4.5417 2.1250 9.7500,
+			offset = 0.0000 1.8684 -0.4211,
+			extents = 4.5526 3.7105 9.7368,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

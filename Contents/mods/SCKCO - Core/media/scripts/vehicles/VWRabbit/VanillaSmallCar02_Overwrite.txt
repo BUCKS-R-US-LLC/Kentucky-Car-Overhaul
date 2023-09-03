@@ -204,10 +204,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.5574 1.4098 5.5410,
+		extents = 2.5574 1.7049 5.5410,
 		mass = 800,
-		physicsChassisShape = 2.5574 1.4098 5.6066,
-		centerOfMassOffset = 0.0000 0.6557 0.1639,
+		physicsChassisShape = 2.5574 1.7049 5.5410,
+		centerOfMassOffset = 0.0000 0.8689 0.1311,
 		shadowExtents = 2.5762 6.2891,
 		shadowOffset = -0.0032 0.0986,
 		engineForce = 4201,
@@ -271,7 +271,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.8033 -0.4262,
+				offset = 0.6066 0.8033 -0.3443,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -290,7 +290,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.8033 -0.4262,
+				offset = -0.5902 0.8033 -0.3443,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -342,12 +342,12 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.9344 2.5574 2.0000,
+			xywh = 0.0000 4.0492 2.5574 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.4918 2.5574 1.8033,
+			xywh = 0.0000 -3.6230 2.5574 1.8033,
 		}
 
 		area SeatFrontLeft
@@ -372,27 +372,27 @@ module Base
 
 		area GasTank
 		{
-			xywh = -1.8197 -2.0328 1.0820 0.5902,
+			xywh = -1.9016 -2.0328 1.0820 0.5902,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5082 2.3770 0.0000 0.0000,
+			xywh = 1.5082 1.8852 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5246 2.3770 0.0000 0.0000,
+			xywh = -1.5246 1.8852 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5246 -2.0656 0.0000 0.0000,
+			xywh = 1.5246 -1.7377 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5410 -2.0656 0.0000 0.0000,
+			xywh = -1.5410 -1.7377 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -975,21 +975,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9508 0.1311,
-			extents = 2.6230 1.8525 5.5902,
+			offset = 0.0000 0.8525 0.1311,
+			extents = 2.6230 1.7213 5.5246,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3898 -2.7288,
+			offset = 0.0000 0.6557 -2.7213,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3898 3.0000,
+			offset = 0.0000 0.7213 2.9672,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
