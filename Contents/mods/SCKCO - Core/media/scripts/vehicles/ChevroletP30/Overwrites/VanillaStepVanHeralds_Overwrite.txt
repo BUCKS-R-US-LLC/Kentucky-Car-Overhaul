@@ -136,7 +136,7 @@ module Base
 
 		textureRust = Vehicles/StepVanP30/Vehicle_StepVanP30_rust,
 		textureMask = Vehicles/StepVanP30/Vehicle_StepVanP30_mask,
-		textureLights = Vehicles/StepVanP30/Vehicle_StepVanP30ParkRanger_lights,
+		textureLights = Vehicles/StepVanP30/Vehicle_StepVanP30_lights,
 		textureDamage1Shell = Vehicles/StepVanP30/Vehicle_StepVanP30_damage,
 		textureDamage2Shell= Vehicles/StepVanP30/Vehicle_StepVanP30_damage2,
 		textureDamage1Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
@@ -832,6 +832,13 @@ module Base
 			offset = 0.0000 1.8596 -0.6491,
 			extents = 3.1754 3.7193 8.1930,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.2105 -5.1228,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
