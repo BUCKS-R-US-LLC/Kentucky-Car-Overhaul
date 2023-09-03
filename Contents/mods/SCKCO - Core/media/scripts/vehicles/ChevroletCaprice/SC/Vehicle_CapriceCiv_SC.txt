@@ -152,7 +152,7 @@ module Base
 		{
 			file = SC_CapriceCiv,
 			scale = 0.6100,
-			offset = 0.0000 0.0328 0.0000,
+			offset = 0.0328 0.0328 0.0000,
 		}
 
 		skin
@@ -212,12 +212,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0492 1.8689 7.7705,
+		extents = 3.1148 1.8689 8.0000,
 		mass = 800,
-		physicsChassisShape = 3.0820 2.1311 7.8033,
-		centerOfMassOffset = 0.0000 1.0984 -0.0492,
-		shadowExtents = 3.1524 9.0683,
-		shadowOffset = -0.0032 -0.0540,
+		physicsChassisShape = 3.1148 1.8689 8.0000,
+		centerOfMassOffset = 0.0000 1.0164 -0.0820,
+		shadowExtents = 3.1196 8.0191,
+		shadowOffset = -0.0032 -0.0868,
 		engineForce = 5000,
 		gearRatioCount = 4,
 		maxSpeed = 110f,
@@ -350,47 +350,47 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8361 3.0492 2.0000,
+			xywh = 0.0000 5.0000 3.1148 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.8197 3.0492 1.7705,
+			xywh = 0.0000 -5.0656 3.0492 1.7705,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1803 0.6721 1.3443 1.3443,
+			xywh = 2.3115 0.6721 1.3443 1.3443,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1803 0.6721 1.3443 1.3443,
+			xywh = -2.3115 0.6721 1.3443 1.3443,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1803 -0.8033 1.3443 1.3443,
+			xywh = 2.3115 -0.8033 1.3443 1.3443,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1803 -0.8033 1.3443 1.3443,
+			xywh = -2.3115 -0.8033 1.3443 1.3443,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0328 -4.3770 1.1148 0.6230,
+			xywh = 0.0328 -4.4918 1.1148 0.6230,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5246 2.4754 0.0000 0.0000,
+			xywh = 1.5246 2.5410 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5246 2.4754 0.0000 0.0000,
+			xywh = -1.5246 2.5410 0.0000 0.0000,
 		}
 
 		area TireRearLeft
@@ -419,9 +419,8 @@ module Base
 			{
 				file = Caprice9C1Driver,
 			}
-		
-		itemType = Base.ChevyCapriceFrontSeatSC,
 
+			itemType = Base.ChevyCapriceFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -431,8 +430,7 @@ module Base
 				file = Caprice9C1Passenger,
 			}
 
-		itemType = Base.ChevyCapriceFrontSeatSC,
-
+			itemType = Base.ChevyCapriceFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -441,8 +439,8 @@ module Base
 			{
 				file = Caprice9C1Double,
 			}
-		
-		itemType = Base.ChevyCapriceRearSeatSC,
+
+			itemType = Base.ChevyCapriceRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -451,10 +449,9 @@ module Base
 			{
 				file = Caprice9C1Double,
 			}
-		
-		itemType = Base.ChevyCapriceRearSeatSC,
-		}
 
+			itemType = Base.ChevyCapriceRearSeatSC,
+		}
 
 		part Muffler
 		{
@@ -515,7 +512,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-			
+
 			itemType = Base.ChevyCapriceHoodSC,
 		}
 
@@ -589,7 +586,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyCapriceRearWindshieldSC,
 		}
@@ -619,7 +616,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.ChevyCapriceFrontSideWindowSC,
 		}
 
@@ -639,7 +635,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
 			itemType = Base.ChevyCapriceFrontSideWindowSC,
 		}
 
@@ -659,7 +654,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-
 			itemType = Base.ChevyCapriceRearSideWindowSC,
 		}
 
@@ -679,7 +673,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
 			itemType = Base.ChevyCapriceRearSideWindowSC,
 		}
 
@@ -979,21 +972,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			offset = 0.0000 1.0164 -0.0656,
+			extents = 3.1148 1.8852 8.0328,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3898 -4.1864,
+			offset = 0.0000 0.3934 -4.0984,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3898 3.9831,
+			offset = 0.0000 0.3934 3.8689,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

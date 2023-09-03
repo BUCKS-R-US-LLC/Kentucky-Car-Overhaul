@@ -182,10 +182,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.4583 1.4167 9.5000,
+		extents = 3.4583 2.3333 9.5000,
 		mass = 800,
-		physicsChassisShape = 3.4583 1.4167 9.5000,
-		centerOfMassOffset = 0.0000 0.7292 0.2083,
+		physicsChassisShape = 3.4583 2.3333 9.5000,
+		centerOfMassOffset = 0.0000 1.1667 0.2083,
 		shadowExtents = 3.4713 10.1870,
 		shadowOffset = -0.0032 0.1166,
 		engineForce = 4201,
@@ -320,32 +320,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.9583 3.4583 2.0000,
+			xywh = 0.0000 6.1042 3.4583 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.4375 3.4583 1.7917,
+			xywh = 0.0000 -5.6042 3.4583 1.7917,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.4167 0.7292 1.3750 1.3750,
+			xywh = 2.5625 0.7292 1.3750 1.3750,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.4167 0.7292 1.3750 1.3750,
+			xywh = -2.5625 0.7292 1.3750 1.3750,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.4167 -0.7500 1.3750 1.3750,
+			xywh = 2.5625 -0.7500 1.3750 1.3750,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.4167 -0.7500 1.3750 1.3750,
+			xywh = -2.5625 -0.7500 1.3750 1.3750,
 		}
 
 		area GasTank
@@ -387,7 +387,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = CrownVictoria92PoliceDriver,
+				file = CrownVictoria92Driver,
 			}
 
 			itemType = Base.FordCrownVictoria92FrontSeatSC,
@@ -397,7 +397,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = CrownVictoria92PolicePassenger,
+				file = CrownVictoria92Passenger,
 			}
 
 			itemType = Base.FordCrownVictoria92FrontSeatSC,
@@ -407,7 +407,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = CrownVictoria92PoliceDouble,
+				file = CrownVictoria92Double,
 			}
 
 			itemType = Base.FordCrownVictoria92RearSeatSC,
@@ -417,7 +417,7 @@ module Base
 		{
 			model seatrearRight
 			{
-				file = CrownVictoria92PoliceDouble,
+				file = CrownVictoria92Double,
 			}
 
 			itemType = Base.FordCrownVictoria92RearSeatSC,
@@ -442,7 +442,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = CrownVictoria92PoliceHood,
+				file = CrownVictoria92Hood,
 			}
 
 			anim Close
@@ -503,7 +503,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CrownVictoria92PoliceWindshield,
+				file = CrownVictoria92Windshield,
 			}
 
 			window
@@ -534,7 +534,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = CrownVictoria92PoliceRearWindshield,
+				file = CrownVictoria92RearWindshield,
 			}
 
 			window
@@ -574,7 +574,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CrownVictoria92PoliceFrontRightWindow,
+				file = CrownVictoria92FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -593,7 +593,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CrownVictoria92PoliceFrontLeftWindow,
+				file = CrownVictoria92FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -612,7 +612,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = CrownVictoria92PoliceRearRightWindow,
+				file = CrownVictoria92RearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -631,7 +631,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = CrownVictoria92PoliceRearLeftWindow,
+				file = CrownVictoria92RearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -650,7 +650,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria92PoliceFrontRightDoor,
+				file = CrownVictoria92FrontRightDoor,
 			}
 
 			anim Close
@@ -688,7 +688,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria92PoliceFrontLeftDoor,
+				file = CrownVictoria92FrontLeftDoor,
 			}
 
 			anim Close
@@ -726,7 +726,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria92PoliceRearRightDoor,
+				file = CrownVictoria92RearRightDoor,
 			}
 
 			anim Close
@@ -764,7 +764,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria92PoliceRearLeftDoor,
+				file = CrownVictoria92RearLeftDoor,
 			}
 
 			anim Close
@@ -814,7 +814,7 @@ module Base
 
 			model Default
 			{
-				file = CrownVictoria92PoliceTrunk,
+				file = CrownVictoria92Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -859,7 +859,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92Policefrontwheelleft,
+				file = CrownVictoria92frontwheelleft,
 			}
 		}
 
@@ -867,7 +867,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92Policefrontwheelright,
+				file = CrownVictoria92frontwheelright,
 			}
 		}
 
@@ -875,7 +875,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92Policebackwheelleft,
+				file = CrownVictoria92backwheelleft,
 			}
 		}
 
@@ -883,7 +883,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92Policebackwheelright,
+				file = CrownVictoria92backwheelright,
 			}
 		}
 
@@ -942,8 +942,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9583 0.2292,
-			extents = 3.4583 1.8542 9.5208,
+			offset = 0.0000 1.1667 0.2292,
+			extents = 3.4583 2.3125 9.5208,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

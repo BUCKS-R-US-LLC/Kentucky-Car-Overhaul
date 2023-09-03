@@ -207,10 +207,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.4583 1.4167 9.5000,
+		extents = 3.4583 2.3333 9.5000,
 		mass = 800,
-		physicsChassisShape = 3.4583 1.4167 9.5000,
-		centerOfMassOffset = 0.0000 0.7292 0.2083,
+		physicsChassisShape = 3.4583 2.3333 9.5000,
+		centerOfMassOffset = 0.0000 1.1667 0.2083,
 		shadowExtents = 3.4713 10.1870,
 		shadowOffset = -0.0032 0.1166,
 		engineForce = 4201,
@@ -345,32 +345,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.9583 3.4583 2.0000,
+			xywh = 0.0000 6.1042 3.4583 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.4375 3.4583 1.7917,
+			xywh = 0.0000 -5.6042 3.4583 1.7917,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.4167 0.7292 1.3750 1.3750,
+			xywh = 2.5625 0.7292 1.3750 1.3750,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.4167 0.7292 1.3750 1.3750,
+			xywh = -2.5625 0.7292 1.3750 1.3750,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.4167 -0.7500 1.3750 1.3750,
+			xywh = 2.5625 -0.7500 1.3750 1.3750,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.4167 -0.7500 1.3750 1.3750,
+			xywh = -2.5625 -0.7500 1.3750 1.3750,
 		}
 
 		area GasTank
@@ -967,8 +967,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9583 0.2292,
-			extents = 3.4583 1.8542 9.5208,
+			offset = 0.0000 1.1667 0.2292,
+			extents = 3.4583 2.3125 9.5208,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

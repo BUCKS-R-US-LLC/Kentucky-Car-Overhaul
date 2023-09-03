@@ -187,10 +187,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0508 1.3898 8.0339,
+
+		extents = 3.0169 1.8644 8.0678,
 		mass = 800,
-		physicsChassisShape = 3.0508 1.3898 8.1695,
-		centerOfMassOffset = 0.0000 0.6610 -0.0678,
+		physicsChassisShape = 2.9831 1.8644 8.0678,
+		centerOfMassOffset = 0.0000 0.9322 -0.1186,
 		shadowExtents = 3.0338 8.9162,
 		shadowOffset = -0.0032 -0.0709,
 		engineForce = 4201,
@@ -325,37 +326,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.9492 3.0508 2.0000,
+			xywh = 0.0000 5.0169 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.9831 3.0508 1.7966,
+			xywh = 0.0000 -5.1864 3.0508 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1864 0.4407 1.3559 1.3559,
+			xywh = 2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1864 0.4407 1.3559 1.3559,
+			xywh = -2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1864 -1.0339 1.3559 1.3559,
+			xywh = 2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1864 -1.0339 1.3559 1.3559,
+			xywh = -2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0678 -2.5932 1.0847 0.5763,
+			xywh = 2.1525 -2.5763 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
@@ -395,8 +396,7 @@ module Base
 				file = CrownVictoriaDriver,
 			}
 
-		itemType = Base.FordCrownVictoriaFrontSeatSC,
-
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -405,9 +405,8 @@ module Base
 			{
 				file = CrownVictoriaPassenger,
 			}
-		
-		itemType = Base.FordCrownVictoriaFrontSeatSC,
 
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -417,7 +416,7 @@ module Base
 				file = CrownVictoriaDouble,
 			}
 
-		itemType = Base.FordCrownVictoriaRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -427,7 +426,7 @@ module Base
 				file = CrownVictoriaDouble,
 			}
 
-		itemType = Base.FordCrownVictoriaRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part Muffler
@@ -491,7 +490,6 @@ module Base
 			}
 
 			itemType = Base.FordCrownVictoriaHoodSC,
-
 		}
 
 		part Heater
@@ -536,7 +534,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaFrontWindshieldSC,
-
 		}
 
 		part WindshieldRear
@@ -568,7 +565,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaRearWindshieldSC,
-
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -593,10 +589,8 @@ module Base
 				animate = FALSE,
 			}
 
-			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 		}
 
@@ -616,7 +610,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 		}
 
@@ -636,7 +629,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
@@ -656,7 +648,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
@@ -939,7 +930,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.RadioBlack,
+			itemType = Radio.HamRadio1,
 		}
 
 		template = Headlight,
@@ -956,8 +947,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 -0.0952,
-			extents = 3.0476 1.8571 8.1111,
+			offset = 0.0000 0.9322 -0.1186,
+			extents = 3.0169 1.8644 8.0508,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

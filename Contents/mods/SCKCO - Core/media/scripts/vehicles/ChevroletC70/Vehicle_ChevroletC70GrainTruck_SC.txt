@@ -181,10 +181,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.5556 3.0794 9.7778,
+		extents = 3.4603 3.3016 9.1429,
 		mass = 1000,
-		physicsChassisShape = 3.5873 3.0794 9.7460,
-		centerOfMassOffset = 0.0000 1.5556 0.2698,
+		physicsChassisShape = 3.4603 3.3016 9.1429,
+		centerOfMassOffset = 0.0000 1.6508 0.3016,
 		shadowExtents = 3.9759 10.3575,
 		shadowOffset = 0.0000 0.2125,
 		engineForce = 15000,
@@ -285,22 +285,22 @@ module Base
 
 		area TruckBed
 		{
-			xywh = -0.0159 -5.4286 3.5556 1.5873,
+			xywh = -0.0159 -5.1587 3.4603 1.5873,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3968 2.3810 1.2381 1.2381,
+			xywh = 2.4444 2.3810 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3968 2.3810 1.2381 1.2381,
+			xywh = -2.4444 2.3810 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0952 2.5714 1.0794 0.5714,
+			xywh = -2.3651 2.5714 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -337,7 +337,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -724,8 +724,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.0952 0.1270,
-			extents = 3.4603 2.2063 9.5079,
+			offset = 0.0000 1.6508 0.3175,
+			extents = 3.4603 3.2857 9.1270,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
