@@ -178,11 +178,11 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.1429 3.0794 6.5714,
+		extents = 2.9524 2.6032 6.6032,
 		mass = 1000,
-		physicsChassisShape = 3.1429 3.0794 6.5714,
-		centerOfMassOffset = 0.0000 1.5556 0.0000,
-		shadowExtents = 3.1347 7.6434,
+		physicsChassisShape = 2.9524 2.6032 6.6349,
+		centerOfMassOffset = 0.0000 1.3016 0.0000,
+		shadowExtents = 2.9443 6.6116,
 		shadowOffset = 0.0000 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -277,27 +277,27 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2857 3.1429 2.0000,
+			xywh = 0.0000 4.4127 2.9524 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.1587 3.1429 1.7460,
+			xywh = 0.0000 -4.2857 2.9524 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3651 0.2540 1.2381 1.2381,
+			xywh = 2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3651 0.2540 1.2381 1.2381,
+			xywh = -2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1111 -2.5397 1.0794 0.5714,
+			xywh = -2.1270 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -320,7 +320,7 @@ module Base
 			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5Bullbar,
+		template = K5Bullbar/part/K5BullbarNoSpawn,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -339,7 +339,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerSCDriver,
+				file = BlazerCivilianSCDriver,
 			}
 
 			itemType = Base.ChevyBlazerFrontSeatSC,
@@ -349,7 +349,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerSCPassenger,
+				file = BlazerCivilianSCPassenger,
 			}
 
 			itemType = Base.ChevyBlazerFrontSeatSC,
@@ -376,7 +376,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerSCHood,
+				file = BlazerCivilianSCHood,
 			}
 
 			anim Close
@@ -437,7 +437,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerSCWindshield,
+				file = BlazerCivilianSCWindshield,
 			}
 
 			window
@@ -460,7 +460,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,
 			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
@@ -488,7 +487,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,
 			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
@@ -503,7 +501,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerSCFrontRightWindow,
+				file = BlazerCivilianSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -522,7 +520,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerSCFrontLeftWindow,
+				file = BlazerCivilianSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -541,7 +539,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerSCRearLeftWindow,
+				file = BlazerCivilianSCRearLeftWindow,
 			}
 
 			area = TireRearLeft,
@@ -560,7 +558,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = BlazerSCRearRightWindow,
+				file = BlazerCivilianSCRearRightWindow,
 			}
 
 			area = TireRearRight,
@@ -579,7 +577,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontRightDoor,
+				file = BlazerCivilianSCFrontRightDoor,
 			}
 
 			anim Close
@@ -617,7 +615,7 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerSCFrontLeftDoor,
+				file = BlazerCivilianSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -667,7 +665,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerSCTrunk,
+				file = BlazerCivilianSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -788,7 +786,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.HamRadio2,
+			itemType = Radio.RadioBlack,
 		}
 
 		template = Headlight,
@@ -805,21 +803,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3175 0.0952,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.3016 0.0159,
+			extents = 2.9524 2.5873 6.6190,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.9683,
+			offset = 0.0000 0.5238 -3.1746,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3651,
+			offset = -0.0159 0.5397 3.2222,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
