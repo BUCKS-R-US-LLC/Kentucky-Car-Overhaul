@@ -1,0 +1,388 @@
+module Base
+{
+
+	model K5ExtraBar
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|ExtraBar_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model K5Chevy
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|Chevy_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+    
+	model KSeriesBullbar
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|Bullbar_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model KSeriesWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|WindshieldArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model KSeriesFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|FrontLeftWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftArmorBone 1.0,
+	}
+
+	model KSeriesFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_M1008Troop_SC|FrontRightWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightArmorBone 1.0,
+	}
+
+	template vehicle K10Attachments
+		{
+
+		part K5Chevy
+        	{
+
+			model K5Chevy
+				{
+                		file = K5Chevy,
+				}
+		area = Engine,
+            category = SCUCKaccessories,
+            itemType = Base.KSeriesChevyLogo,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+        
+		part KSeriesWindshieldArmor
+        	{
+
+			model KSeriesWindshieldArmor
+				{
+                		file = KSeriesWindshieldArmor,
+				}
+
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesStandardBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+		part KSeriesNoSpawn
+        	{
+
+			model KSeriesBullbar
+				{
+                		file = K5ExtraBar,
+				}
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesStandardBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part KSeriesBullbar
+        	{
+
+			model KSeriesBullbar
+				{
+                		file = KSeriesBullbar,
+				}
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesHeavyBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+        part KSeriesFrontLeftWindowArmor
+        	{
+
+			model KSeriesFrontLeftWindowArmor
+				{
+                		file = KSeriesFrontLeftWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+		parent = WindowFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesStandardBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+        part KSeriesFrontRightWindowArmor
+        	{
+
+			model KSeriesFrontRightWindowArmor
+				{
+                		file = KSeriesFrontRightWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+        parent = WindowFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesStandardBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                parent = WindowFrontRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+     }
+
+}
