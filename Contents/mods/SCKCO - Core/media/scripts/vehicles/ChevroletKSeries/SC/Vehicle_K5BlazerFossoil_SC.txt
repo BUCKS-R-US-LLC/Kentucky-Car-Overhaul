@@ -152,28 +152,6 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
-		sound
-		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
-		}
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
-
 		extents = 2.9524 2.6032 6.6032,
 		mass = 1000,
 		physicsChassisShape = 2.9524 2.6032 6.6349,
@@ -316,8 +294,8 @@ module Base
 			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
-		template = K5Bullbar/part/K5BullbarNoSpawn,
-		template = K5Bullbar/part/K5Chevy,
+		template = K5Logo,
+		template = K5Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,

@@ -1,6 +1,13 @@
 module Base
 {
 
+	model K5ExtraBar
+	{
+		mesh = vehicles/Vehicle_K5Blazer_SC|ExtraBar_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
 	model K5Chevy
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
@@ -8,13 +15,6 @@ module Base
 		scale = 1,
 	}
     
-	model KSeriesBullbar
-	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Bullbar_obj,
-		shader = vehiclewheel,
-		scale = 1,
-	}
-
 	model KSeriesWindshieldArmor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
@@ -43,8 +43,7 @@ module Base
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-
-template vehicle K5Attachments
+template vehicle CUCVAttachments
 		{
 
 		part K5Chevy
@@ -325,6 +324,7 @@ template vehicle K5Attachments
             {
             }
 		}
-    }
+
+     }
 
 }

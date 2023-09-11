@@ -1,0 +1,130 @@
+module Base
+{
+		model K5Attachment
+		mesh = vehicles/K5LOGO,
+		texture = Vehicles/K5/K5SideLogo,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+    	model K10Attachment
+	{
+		mesh = vehicles/K10LOGO,
+		texture = Vehicles/K10/K10SideLogo,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	template vehicle K5Logo
+		{
+		part K5Attachment
+        	{
+
+			model K5Attachment
+				{
+                		file = K5Attachment,
+				}
+		area = Engine,
+            category = nodisplay,
+            itemType = Base.KSeriesChevyLogo,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+	}	
+	
+    template vehicle K10Logo
+		{
+		part K10Attachment
+        	{
+
+			model K10Attachment
+				{
+                		file = K10Attachment,
+				}
+		area = Engine,
+        category = nodisplay,
+        itemType = Base.KSeriesChevyLogo,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+	}	
+
+}
