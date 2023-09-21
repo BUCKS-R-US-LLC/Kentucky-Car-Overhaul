@@ -1,0 +1,1047 @@
+module Base
+{
+	model SC_ChevroletSuburban
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model SuburbanSCDriver
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCPassenger
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCRearSeat
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|RearDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCWindshield
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|WindShield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCFrontRightDoor
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model SuburbanSCFrontLeftDoor
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model SuburbanSCRearRightDoor
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model SuburbanSCRearLeftDoor
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model SuburbanSCFrontRightWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model SuburbanSCFrontLeftWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model SuburbanSCMiddleRightWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|MiddleRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCMiddleLeftWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|MiddleLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model SuburbanSCRearRightWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model SuburbanSCRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model SuburbanSCTrunk
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = RearWindShieldBone 1.0,
+	}
+	model SuburbanSCHood
+	{
+		mesh = vehicles/Vehicle_Suburb86_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model SuburbanWheelfrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model SuburbanWheelfrontwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model SuburbanWheelbackwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
+		shader = vehiclewheel,
+	}
+	model SuburbanWheelbackwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_ChevroletSuburban
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_ChevroletSuburban,
+			scale = 0.6300,
+			offset = 0.0000 0.2698 0.5873,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_BlueWhte,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_CyanWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_DarkBlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_GreyBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_InvertGreyBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/Suburban/Vehicle_Suburb86_RedWhite,
+		}
+
+		textureRust = Vehicles/Suburban/Vehicle_Suburb86_rust,
+		textureMask = Vehicles/Suburban/Vehicle_Suburb86_mask,
+		textureLights = Vehicles/Suburban/Vehicle_Suburb86_lights,
+		textureDamage1Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
+		textureDamage2Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
+		textureDamage1Overlay = Vehicles/Suburban/Vehicle_Suburb86_blood,
+		textureDamage2Overlay = Vehicles/Suburban/Vehicle_Suburb86_blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 2.9524 2.6032 7.7778,
+		mass = 1000,
+		physicsChassisShape = 2.9524 2.6032 7.7778,
+		centerOfMassOffset = 0.0000 1.3016 0.0000,
+		shadowExtents = 2.9443 7.7862,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 2000,
+		rearEndHealth = 1700,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.2698 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.2698 0.0794 2.1587,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.2698 0.0794 -2.5397,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.2698 0.0794 -2.5397,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 0.9683 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.2698 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7460 0.9683 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.2698 0.1429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 0.9683 -1.2222,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.2698 -1.2222,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7460 0.9683 -1.2222,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.2698 -1.0952,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 5.0476 2.9524 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -4.9365 2.9524 1.7460,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.2063 0.8730 1.2381 1.2381,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.2063 0.8730 1.2381 1.2381,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.2063 -0.3651 1.2381 1.2381,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.2063 -0.3651 1.2381 1.2381,
+		}
+
+		area GasTank
+		{
+			xywh = -2.1270 -2.7619 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.4762 2.7619 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.4762 2.7619 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4762 -1.9841 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.4762 -1.9841 0.0000 0.0000,
+		}
+
+		template = K5Logo,
+		template = SuburbanAttachments,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part GasTank
+		{
+			itemType = Base.BigGasTank,
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = SuburbanSCDriver,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = SuburbanSCPassenger,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = SuburbanSCRearSeat,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = SuburbanSCRearSeat,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.NormalCarMuffler,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = SuburbanSCHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ChevyBlazerHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = SuburbanSCWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = SuburbanSCFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = SuburbanSCFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowMiddleRight
+		{
+			model windowMR
+			{
+				file = SuburbanSCMiddleRightWindow,
+			}
+
+
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			area = TireRearRight,
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowMiddleLeft
+		{
+			model windowML
+			{
+				file = SuburbanSCMiddleLeftWindow,
+			}
+
+
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			area = TireRearLeft,
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = SuburbanSCRearLeftWindow,
+			}
+
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			parent = DoorRearLeft,
+            area = DoorRearLeft,
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = SuburbanSCRearRightWindow,
+			}
+
+			parent = DoorRearRight,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+            area = DoorRearRight,
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = SuburbanSCFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = SuburbanSCFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = SuburbanSCRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = SuburbanSCRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = SuburbanSCTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TruckBed
+		{
+			itemType = Base.NormalTrunk,
+
+			container
+			{
+				capacity = 100,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerWheelLargefrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerWheelLargefrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerWheelLargefrontwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = BlazerWheelLargefrontwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.RadioBlack,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.3016 0.0159,
+			extents = 2.9524 2.5873 7.7937,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.5238 -4.5079,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0159 0.5397 3.3175,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
