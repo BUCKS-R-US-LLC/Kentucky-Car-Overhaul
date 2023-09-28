@@ -114,70 +114,6 @@ function HMMWVWindowRearLeft(player, part, elapsedMinutes)
 
 end
 
-function HMMWVTireFrontLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
-
-        local part = vehicle:getPartById("TireFrontLeft")
-        if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50 })
-
-        end
-        vehicle:transmitPartModData(TireFrontLeft)
-    end
-
-
-end
-
-function HMMWVTireFrontRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998")) then
-
-        local part = vehicle:getPartById("TireFrontRight")
-        if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50 })
-
-        end
-        vehicle:transmitPartModData(TireFrontRight)
-    end
-
-
-end
-
-function HMMWVTireRearLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
-
-        local part = vehicle:getPartById("TireRearLeft")
-        if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50 })
-
-        end
-        vehicle:transmitPartModData(TireRearLeft)
-    end
-
-
-end
-
-function HMMWVTireRearRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M1025", "SC_M998" )) then
-
-        local part = vehicle:getPartById("TireRearRight")
-        if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50 })
-
-        end
-        vehicle:transmitPartModData(TireRearRight)
-    end
-
-
-end
-
 Events.OnPlayerUpdate.Add(HMMWVWindshield);
 Events.OnPlayerUpdate.Add(HMMWVEngineDoor);
 Events.OnPlayerUpdate.Add(HMMWVDoorFrontLeft);
@@ -188,7 +124,3 @@ Events.OnPlayerUpdate.Add(HMMWVWindowFrontLeft);
 Events.OnPlayerUpdate.Add(HMMWVWindowFrontRight);
 Events.OnPlayerUpdate.Add(HMMWVWindowRearLeft);
 Events.OnPlayerUpdate.Add(HMMWVWindowRearRight);
-Events.OnPlayerUpdate.Add(HMMWVTireFrontLeft);
-Events.OnPlayerUpdate.Add(HMMWVTireFrontRight);
-Events.OnPlayerUpdate.Add(HMMWVTireRearLeft);
-Events.OnPlayerUpdate.Add(HMMWVTireRearRight);

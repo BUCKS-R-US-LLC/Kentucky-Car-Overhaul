@@ -194,70 +194,6 @@ function F700Muffler(player, part, elapsedMinutes)
 
 end
 
-function F700TireFrontLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
-
-        local part = vehicle:getPartById("TireFrontLeft")
-        if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
-
-        end
-        vehicle:transmitPartModData(TireFrontLeft)
-    end
-
-
-end
-
-function F700TireFrontRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
-
-        local part = vehicle:getPartById("TireFrontRight")
-        if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
-
-        end
-        vehicle:transmitPartModData(TireFrontRight)
-    end
-
-
-end
-
-function F700TireRearLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
-
-        local part = vehicle:getPartById("TireRearLeft")
-        if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
-
-        end
-        vehicle:transmitPartModData(TireRearLeft)
-    end
-
-
-end
-
-function F700TireRearRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordF700PanelTruck", "SC_FordF700BoxTruck", "SC_FordF700BoxTruckBunnyBread", "SC_FordF700BoxTruckMacTools", "SC_FordF700BoxTruckGreenes", "SC_FordF700BoxTruckGigaMart", "SC_FordF700ArmoredBank", "SC_FordF700ArmoredPolice")) then
-
-        local part = vehicle:getPartById("TireRearRight")
-        if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 51 })
-
-        end
-        vehicle:transmitPartModData(TireRearRight)
-    end
-
-
-end
-
 Events.OnPlayerUpdate.Add(F700Windshield);
 Events.OnPlayerUpdate.Add(F700WindshieldRear);
 Events.OnPlayerUpdate.Add(F700EngineDoor);
@@ -270,7 +206,3 @@ Events.OnPlayerUpdate.Add(F700WindowMiddleRight);
 Events.OnPlayerUpdate.Add(F700WindowRearRight);
 Events.OnPlayerUpdate.Add(F700Muffler);
 Events.OnPlayerUpdate.Add(F700Bullbar);
-Events.OnPlayerUpdate.Add(F700TireFrontLeft);
-Events.OnPlayerUpdate.Add(F700TireFrontRight);
-Events.OnPlayerUpdate.Add(F700TireRearLeft);
-Events.OnPlayerUpdate.Add(F700TireRearRight);

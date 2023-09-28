@@ -139,70 +139,6 @@ function M35A1WindowFrontRight(player, part, elapsedMinutes)
 
 end
 
-function M35A1TireFrontLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
-
-        local part = vehicle:getPartById("TireFrontLeft")
-        if (vehicle:getPartById("TireFrontLeft"):getCondition() < 50) and (vehicle:getPartById("TireFrontLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
-
-        end
-        vehicle:transmitPartModData(TireFrontLeft)
-    end
-
-
-end
-
-function M35A1TireFrontRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
-
-        local part = vehicle:getPartById("TireFrontRight")
-        if (vehicle:getPartById("TireFrontRight"):getCondition() < 50) and (vehicle:getPartById("TireFrontRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
-
-        end
-        vehicle:transmitPartModData(TireFrontRight)
-    end
-
-
-end
-
-function M35A1TireRearLeft(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
-
-        local part = vehicle:getPartById("TireRearLeft")
-        if (vehicle:getPartById("TireRearLeft"):getCondition() < 50) and (vehicle:getPartById("TireRearLeft"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
-
-        end
-        vehicle:transmitPartModData(TireRearLeft)
-    end
-
-
-end
-
-function M35A1TireRearRight(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
-
-        local part = vehicle:getPartById("TireRearRight")
-        if (vehicle:getPartById("TireRearRight"):getCondition() < 50) and (vehicle:getPartById("TireRearRight"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
-
-        end
-        vehicle:transmitPartModData(TireRearRight)
-    end
-
-
-end
-
 function M35A1Bumper(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_M35A1" )) then
@@ -227,8 +163,4 @@ Events.OnPlayerUpdate.Add(M35A1DoorFrontLeft);
 Events.OnPlayerUpdate.Add(M35A1DoorFrontRight);
 Events.OnPlayerUpdate.Add(M35A1WindowFrontLeft);
 Events.OnPlayerUpdate.Add(M35A1WindowFrontRight);
-Events.OnPlayerUpdate.Add(M35A1TireFrontLeft);
-Events.OnPlayerUpdate.Add(M35A1TireFrontRight);
-Events.OnPlayerUpdate.Add(M35A1TireRearLeft);
-Events.OnPlayerUpdate.Add(M35A1TireRearRight);
 Events.OnPlayerUpdate.Add(M35A1Bumper);
