@@ -64,7 +64,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
 	}
 	model ShortBusFrontLeftDoor
 	{
@@ -155,12 +154,12 @@ module Base
 			engineStart = VehicleEngineVan,
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
+			ignitionFail = VehicleIgnitionFailVan,
 		}
 
-		extents = 3.1864 3.0847 8.9831,
+		extents = 3.2881 3.0847 9.0169,
 		mass = 1700,
-		physicsChassisShape = 3.1864 3.0847 8.9831,
+		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
 		shadowExtents = 3.2501 10.2210,
 		shadowOffset = 0.0635 -0.3636,
@@ -181,7 +180,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
-		seats = 4,
+		seats = 6,
 		isSmallVehicle = false,
 
 		wheel FrontLeft
@@ -216,7 +215,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -225,13 +224,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.8136 1.2373 0.5424,
+				offset = 0.8475 1.2373 0.5424,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3559 -0.5763 1.5593,
+				offset = 2.3559 -0.1864 0.4237,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -244,15 +243,53 @@ module Base
 
 			position inside
 			{
-				offset = -0.8305 1.2373 -0.8644,
+				offset = -0.8305 1.2373 -0.7627,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3559 -0.5763 1.5593,
+				offset = -2.3729 -0.1864 -0.7627,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.8475 1.2373 -0.7627,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.4576 -0.1864 -0.7627,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleLeft,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.8644 1.2373 -2.0169,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3729 -0.1864 -3.3051,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleRight,
 			}
 		}
 
@@ -263,13 +300,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.8475 1.1186 -3.4068,
+				offset = 0.8475 1.2373 -2.0508,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 0.0000 -0.1864 -5.4576,
+				offset = 2.4576 -0.1864 -2.0169,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -282,13 +319,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.8644 1.1356 -3.4068,
+				offset = -0.8644 1.2373 -3.3051,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3051 -0.1864 -0.6441,
+				offset = -2.3729 -0.1864 -0.7627,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -301,57 +338,57 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1525 2.1017 1.1186 1.1186,
+			xywh = 2.4237 2.1017 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1525 1.3051 1.1186 1.1186,
+			xywh = -2.4237 1.1356 1.1186 1.1186,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.1525 0.7797 1.1186 1.1186,
+			xywh = 2.4237 0.7797 1.1186 1.1186,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.1525 1.3051 1.1186 1.1186,
+			xywh = -2.4237 1.1356 1.1186 1.1186,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1525 1.3051 1.1186 1.1186,
+			xywh = -2.4237 1.1356 1.1186 1.1186,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1525 -0.5763 1.1186 1.0847,
+			xywh = 2.4237 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
 		{
-			xywh = 2.1017 -3.9322 1.0169 0.5763,
+			xywh = 2.3729 -3.9322 1.0169 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5932 3.0000 0.0000 0.0000,
+			xywh = 1.5932 2.7119 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5932 3.0000 0.0000 0.0000,
+			xywh = -1.5932 2.7119 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5932 -2.8814 0.0000 0.0000,
+			xywh = 1.5932 -2.9661 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5932 -2.8814 0.0000 0.0000,
+			xywh = -1.5932 -2.9661 0.0000 0.0000,
 		}
 
 		area TruckBed
@@ -447,19 +484,22 @@ module Base
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
-		part SeatFrontLeft
+		part SeatMiddleRight
 		{
+			category = nodisplay,
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
-		part SeatFrontRight
+		part SeatMiddleLeft
 		{
+			category = nodisplay,
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
+			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearRight
@@ -615,9 +655,11 @@ module Base
 		template = StopSign/part/StopSign,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
 		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
@@ -786,8 +828,24 @@ module Base
 
 			itemType = Base.ChevyG30SideWindowSC,
 			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatFrontRight,
+			area = SeatRearLeft,
+		}
+
+		part WindowRearLeft
+		{
+			model Default
+			{
+				file = ShortBusRearLeftWindows,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			itemType = Base.ChevyG30SideWindowSC,
+			category = SCUCKwindows,
+			area = SeatRearLeft,
 		}
 
 		template = Tire,
@@ -887,16 +945,9 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -5.1270,
+			offset = 0.0000 0.3390 3.1864,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
-		}
-
-		attachment trailerfront
-		{
-			offset = 0.0000 0.0000 3.2857,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
 		}
 	}
 }
