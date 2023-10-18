@@ -11,8 +11,8 @@ module Base
 	model SuburbanBullbar
 	{
 		mesh = vehicles/Vehicle_Suburb86_SC|ExtraBar_obj,
-        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehicle_noreflect,
+        texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
+		shader = vehiclewheel,
 		scale = 1,
 	}
 
@@ -75,7 +75,7 @@ module Base
                 		file = SuburbanChevy,
 				}
 		area = Engine,
-            category = SCUCKaccessories,
+            category = nodisplay,
             itemType = Base.KSeriesChevyLogo,
             mechanicRequireKey = false,
 		table install
@@ -170,59 +170,7 @@ module Base
             {
             }
 		}
-        
-		part SuburbanNoSpawn
-        	{
-
-			model SuburbanBullbar
-				{
-                		file = SurburbanExtraBar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.SuburbanStandardBullbarSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
+ 
 		part SuburbanBullbar
         	{
 
