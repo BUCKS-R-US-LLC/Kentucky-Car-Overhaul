@@ -63,7 +63,7 @@ module Base
 				}
 		area = Engine,
             category = SCUCKaccessories,
-            itemType = Base.KSeriesChevyLogo,
+            itemType = Base.ChevyLogo,
             mechanicRequireKey = false,
 		table install
             {
@@ -210,58 +210,6 @@ module Base
             }
 		}
 
-		part KSeriesBullbar
-        	{
-
-			model KSeriesBullbar
-				{
-                		file = KSeriesBullbar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.KSeriesHeavyBullbarSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                  recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
         part KSeriesFrontLeftWindowArmor
         	{
 
