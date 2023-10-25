@@ -1,5 +1,13 @@
 module Base
 {
+
+    	model K5Chevy
+	{
+		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
 		model K5Attachment
 	{
 		mesh = vehicles/K5LOGO,
@@ -27,7 +35,7 @@ module Base
 				}
 		area = Engine,
             category = nodisplay,
-            itemType = Base.KSeriesChevyLogo,
+            itemType = Base.ChevyLogo,
             mechanicRequireKey = false,
 		table install
             {
@@ -83,7 +91,7 @@ module Base
 				}
 		area = Engine,
         category = nodisplay,
-        itemType = Base.KSeriesChevyLogo,
+        itemType = Base.ChevyLogo,
         mechanicRequireKey = false,
 		table install
             {

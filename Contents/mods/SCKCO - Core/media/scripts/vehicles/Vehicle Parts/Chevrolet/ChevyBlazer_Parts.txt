@@ -1,6 +1,19 @@
 module Base
 {
 
+	    item ChevyLogo2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Chevrolet Logo,
+        Icon	=	ChevyLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5ChevroletLogo_WorldItem,
+    }
+    
 	    item K5SeriesWindshieldArmorSC2
     {
         DisplayCategory = VehicleArmor,
@@ -51,19 +64,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5BullBar_WorldItem,
-    }
-
-	    item KSeriesChevyLogo2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Chevrolet Logo,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5ChevroletLogo_WorldItem,
     }
 
         item ChevyBlazerDoorSC2

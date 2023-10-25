@@ -1,13 +1,6 @@
 module Base
 {
 
-	model K5Chevy
-	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
-		shader = vehiclewheel,
-		scale = 1,
-	}
-    
 	model KSeriesBullbar
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Bullbar_obj,
@@ -56,7 +49,7 @@ template vehicle K5Attachments
 				}
 		area = Engine,
             category = SCUCKaccessories,
-            itemType = Base.KSeriesChevyLogo,
+            itemType = Base.ChevyLogo,
             mechanicRequireKey = false,
 		table install
             {
