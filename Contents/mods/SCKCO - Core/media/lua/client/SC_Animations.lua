@@ -163,8 +163,7 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_M998"] = "Default",
 	["Base.SC_M1025"] = "Default",
-	["Base.SC_M151A2"] = "Default",
-	["Base.SC_M151A2Cleaners"] = "Default",
+
 	["Base.SC_FordTaurus"] = "Default",
 	["Base.SC_GeoTracker"] = "Default",
 	["Base.SC_BMW520i"] = "Default",
@@ -183,6 +182,9 @@ local vehicleToSeatAnimations = {
 	["Base.SC_VWRabbit"] = "SmallCar",
 	["Base.SC_VWRabbitPizza"] = "SmallCar",
 	["Base.SC_HondaAccord"] = "SmallCar",
+	["Base.SC_M151A2"] = "SmallCar",
+	["Base.SC_M151A2Cleaners"] = "SmallCar",
+	["Base.SC_Porsche911G50"] = "SmallCar",
 
 	["Base.SportsCar"] = "midSized",
 	["Base.SC_CamaroTTop"] = "midSized",
@@ -231,6 +233,18 @@ local vehicleToSeatAnimations = {
 	["Base.SC_G30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",
 
+	["Base.SC_M151A2"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seatDefault"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SC_M151A2Cleaners"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seatDefault"]="Shark_Idle_RearPassenger",
+	},
+
 	["Base.SC_CadillacGageRanger"] = {
 		["seat0"]="Shark_Idle_SmallCarDriver",
 		["seat1"]="Bob_SitGround_Idle",
@@ -262,6 +276,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_Oliver2050"] = {
         ["seat0"]="Bob_Idle_Driver",
 	},
+	
 }
 
 
