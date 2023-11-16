@@ -1,101 +1,101 @@
 module Base
 {
 
-	model CrownVictoriaBullbar
+	model CountrySquireBullbar
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontBumper_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontBumper_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model CrownVictoriaWindshieldArmor
+	model CountrySquireWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model CrownVictoriaFrontLeftDoorArmor
+	model CountrySquireFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model CrownVictoriaFrontLeftWindowArmor
+	model CountrySquireFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
 
-	model CrownVictoriaFrontRightWindowArmor
+	model CountrySquireFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
     
-	model CrownVictoriaFrontRightDoorArmor
+	model CountrySquireFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-    model CrownVictoriaRearLeftDoorArmor
+    model CountrySquireRearLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftArmorBone 1.0,
 	}
 
-	model CrownVictoriaRearRightDoorArmor
+	model CountrySquireRearRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightArmorBone 1.0,
 	}
 
-	model CrownVictoriaRearRightWindowArmor
+	model CountrySquireRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftArmorBone 1.0,
 	}
 
-	model CrownVictoriaRearRightWindowArmor
+	model CountrySquireRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightArmorBone 1.0,
 	}
 
-template vehicle CrownVic85Attachments
+template vehicle CountrySquireAttachments
 		{
         
-		part CrownVictoriaWindshieldArmor
+		part CountrySquireWindshieldArmor
         	{
 
-			model CrownVictoriaWindshieldArmor
+			model CountrySquireWindshieldArmor
 				{
-                		file = CrownVictoriaWindshieldArmor,
+                		file = CountrySquireWindshieldArmor,
 				}
 
 		area = Engine,
@@ -143,16 +143,16 @@ template vehicle CrownVic85Attachments
             }
 		}
         
-		part CrownVictoriaBullbar
+		part CountrySquireBullbar
         	{
 
-			model CrownVictoriaBullbar
+			model CountrySquireBullbar
 				{
-                		file = CrownVictoriaBullbar,
+                		file = CountrySquireBullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
+        itemType = Base.FordCrownVictoriaBullbarSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -195,12 +195,12 @@ template vehicle CrownVic85Attachments
             }
 		}
         
-        part CrownVictoriaRearLeftDoorArmor
+        part CountrySquireRearLeftDoorArmor
         	{
 
-			model CrownVictoriaRearLeftDoorArmor
+			model CountrySquireRearLeftDoorArmor
 				{
-                		file = CrownVictoriaRearLeftDoorArmor,
+                		file = CountrySquireRearLeftDoorArmor,
 				}
 
 			anim ClosedToOpen
@@ -256,12 +256,12 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaFrontLeftDoorArmor
+        part CountrySquireFrontLeftDoorArmor
         	{
 
-			model CrownVictoriaFrontLeftDoorArmor
+			model CountrySquireFrontLeftDoorArmor
 				{
-                		file = CrownVictoriaFrontLeftDoorArmor,
+                		file = CountrySquireFrontLeftDoorArmor,
 				}
 
 			anim ClosedToOpen
@@ -317,12 +317,12 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaFrontRightDoorArmor
+        part CountrySquireFrontRightDoorArmor
         	{
 
-			model CrownVictoriaFrontRightDoorArmor
+			model CountrySquireFrontRightDoorArmor
 				{
-                		file = CrownVictoriaFrontRightDoorArmor,
+                		file = CountrySquireFrontRightDoorArmor,
 				}
 
 			anim ClosedToOpen
@@ -377,12 +377,12 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaRearRightDoorArmor
+        part CountrySquireRearRightDoorArmor
         	{
 
-			model CrownVictoriaRearRightDoorArmor
+			model CountrySquireRearRightDoorArmor
 				{
-                		file = CrownVictoriaRearRightDoorArmor,
+                		file = CountrySquireRearRightDoorArmor,
 				}
 
 			anim ClosedToOpen
@@ -438,12 +438,12 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaFrontLeftWindowArmor
+        part CountrySquireFrontLeftWindowArmor
         	{
 
-			model CrownVictoriaFrontLeftWindowArmor
+			model CountrySquireFrontLeftWindowArmor
 				{
-                		file = CrownVictoriaFrontLeftWindowArmor,
+                		file = CountrySquireFrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -455,7 +455,6 @@ template vehicle CrownVic85Attachments
 		area = DoorFrontLeft,
 		parent = WindowFrontLeft,
         category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
         itemType = Base.FordCrownVictoriaWindowArmorSC,
         mechanicRequireKey = false,
 		table install
@@ -500,12 +499,12 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaFrontRightWindowArmor
+        part CountrySquireFrontRightWindowArmor
         	{
 
-			model CrownVictoriaFrontRightWindowArmor
+			model CountrySquireFrontRightWindowArmor
 				{
-                		file = CrownVictoriaFrontRightWindowArmor,
+                		file = CountrySquireFrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -517,7 +516,6 @@ template vehicle CrownVic85Attachments
 		area = DoorFrontLeft,
         parent = WindowFrontRight,
         category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
         itemType = Base.FordCrownVictoriaWindowArmorSC,
         mechanicRequireKey = false,
 		table install
