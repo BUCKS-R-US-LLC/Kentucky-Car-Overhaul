@@ -1,7 +1,7 @@
 module Base
 {
 
-    	model K5Chevy
+    	model ChevyLogo
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
 		shader = vehiclewheel,
@@ -23,6 +23,70 @@ module Base
 		shader = vehiclewheel,
 		scale = 1,
 	}
+
+    	model SuburbanAttachment
+	{
+		mesh = vehicles/K10LOGO,
+		texture = Vehicles/Suburban/SuburbanLogo,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	template vehicle ChevyLogo
+		{
+		part ChevyLogo
+        	{
+
+			model ChevyLogo
+				{
+                		file = ChevyLogo,
+				}
+		area = Engine,
+            category = nodisplay,
+            itemType = Base.ChevyLogo,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+	}	
 
 	template vehicle K5Logo
 		{
@@ -88,6 +152,62 @@ module Base
 			model K10Attachment
 				{
                 		file = K10Attachment,
+				}
+		area = Engine,
+        category = nodisplay,
+        itemType = Base.ChevyLogo,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+	}	
+
+    template vehicle SuburbanLogo
+		{
+		part SuburbanAttachment
+        	{
+
+			model SuburbanAttachment
+				{
+                		file = SuburbanAttachment,
 				}
 		area = Engine,
         category = nodisplay,
