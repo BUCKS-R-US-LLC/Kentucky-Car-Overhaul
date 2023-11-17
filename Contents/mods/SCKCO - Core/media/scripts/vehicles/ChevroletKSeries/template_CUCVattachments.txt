@@ -8,13 +8,6 @@ module Base
 		scale = 1,
 	}
 
-	model K5Chevy
-	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
-		shader = vehiclewheel,
-		scale = 1,
-	}
-    
 	model KSeriesWindshieldArmor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
@@ -45,57 +38,6 @@ module Base
 
 template vehicle CUCVAttachments
 		{
-
-		part K5Chevy
-        	{
-
-			model K5Chevy
-				{
-                		file = K5Chevy,
-				}
-		area = Engine,
-            category = SCUCKaccessories,
-            itemType = Base.KSeriesChevyLogo,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
         
 		part KSeriesWindshieldArmor
         	{

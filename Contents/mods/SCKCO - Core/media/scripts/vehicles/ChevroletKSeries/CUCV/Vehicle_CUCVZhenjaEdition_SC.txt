@@ -78,12 +78,6 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model CUCVZhenjaEditionRearWindshield
-	{
-		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|RearWinshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model CUCVZhenjaEditionHood
 	{
 		mesh = vehicles/Vehicle_CUCVZhenjaEdition_SC|Hood_obj,
@@ -300,6 +294,7 @@ module Base
 			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
+		template = ChevyLogo,
 		template = K5Bullbar/part/K5BullbarNoSpawn,
 		template = K5Bullbar/part/K5Chevy,
 		template = Seat/part/SeatFrontLeft,
