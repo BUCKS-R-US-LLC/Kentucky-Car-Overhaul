@@ -1,8 +1,8 @@
 module Base
 {
-	model SC_CrownVictoriaTaxi
+	model SC_CrownVictoria
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaTaxi_SC|base_mesh,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
@@ -117,25 +117,25 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaDoorfrontwheelleft
+	model CrownVictoriafrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorfrontwheelright
+	model CrownVictoriafrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelleft
+	model CrownVictoriabackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelright
+	model CrownVictoriabackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
@@ -150,7 +150,7 @@ module Base
 
 		model
 		{
-			file = SC_CrownVictoriaTaxi,
+			file = SC_CrownVictoria,
 			scale = 0.5900,
 			offset = 0.0000 -0.0508 0.0000,
 		}
