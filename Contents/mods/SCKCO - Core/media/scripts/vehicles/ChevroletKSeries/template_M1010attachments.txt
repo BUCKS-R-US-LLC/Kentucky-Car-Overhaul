@@ -1,24 +1,24 @@
 module Base
 {
 
-	model KSeriesBullbar
+	model K5ExtraBar
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Bullbar_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model K5WindshieldArmor
+	model M1010WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model K5FrontLeftWindowArmor
+	model M1010FrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -26,9 +26,9 @@ module Base
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model K5FrontRightWindowArmor
+	model M1010FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -36,16 +36,15 @@ module Base
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-
-template vehicle K5Attachments
+template vehicle M1010Attachments
 		{
         
-		part K5WindshieldArmor
+		part M1010WindshieldArmor
         	{
 
-			model K5WindshieldArmor
+			model M1010WindshieldArmor
 				{
-                		file = K5WindshieldArmor,
+                		file = M1010WindshieldArmor,
 				}
 
 		area = Engine,
@@ -146,12 +145,12 @@ template vehicle K5Attachments
             }
 		}
         
-        part K5FrontLeftWindowArmor
+        part M1010FrontLeftWindowArmor
         	{
 
-			model K5FrontLeftWindowArmor
+			model M1010FrontLeftWindowArmor
 				{
-                		file = K5FrontLeftWindowArmor,
+                		file = M1010FrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -207,12 +206,12 @@ template vehicle K5Attachments
             }
 		}
 
-        part K5FrontRightWindowArmor
+        part M1010FrontRightWindowArmor
         	{
 
-			model K5FrontRightWindowArmor
+			model M1010FrontRightWindowArmor
 				{
-                		file = K5FrontRightWindowArmor,
+                		file = M1010FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -267,6 +266,7 @@ template vehicle K5Attachments
             {
             }
 		}
-    }
+
+     }
 
 }
