@@ -1,7 +1,7 @@
 require "Vehicles/ISUI/ISVehicleSeatUI"
 require "Vehicles/ISUI/ISVehicleMenu"
 
-ISVehicleSeatUI.SeatScale = {}
+ISVehicleSeatUI.SeatScale = ISVehicleSeatUI.SeatScale or {}
 ISVehicleSeatUI.fonts = {UIFont.Large,UIFont.Medium,UIFont.Small}
 ISVehicleSeatUI.fontMeasured = false
 ISVehicleSeatUI.fontHeights = {}
