@@ -7,13 +7,6 @@ module Base
 		shader = vehiclewheel,
 		scale = 1,
 	}
-
-	model K5Chevy
-	{
-		mesh = vehicles/Vehicle_K10_SC|Chevy_obj,
-		shader = vehiclewheel,
-		scale = 1,
-	}
     
 	model K10Bullbar
 	{
@@ -106,7 +99,7 @@ module Base
             }
 		}
         
-		part KSeriesNoSpawn
+		part K10BullbarNoSpawn
         	{
 
 			model K10Bullbar
