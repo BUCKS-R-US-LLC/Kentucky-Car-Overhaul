@@ -1,14 +1,14 @@
 module Base
 {
 
-	model KSeriesBullbar
+	model K10HeavyBullbar
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Bullbar_obj,
+		mesh = vehicles/Vehicle_K10_SC|Bullbar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model KSeriesWindshieldArmor
+	model K5WindshieldArmor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
@@ -16,7 +16,7 @@ module Base
 		scale = 1,
 	}
 
-	model KSeriesFrontLeftWindowArmor
+	model K5FrontLeftWindowArmor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
@@ -26,7 +26,7 @@ module Base
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model KSeriesFrontRightWindowArmor
+	model K5FrontRightWindowArmor
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
@@ -39,69 +39,18 @@ module Base
 
 template vehicle K5Attachments
 		{
-
-		part K5Chevy
-        	{
-
-			model K5Chevy
-				{
-                		file = K5Chevy,
-				}
-		area = Engine,
-            category = SCUCKaccessories,
-            itemType = Base.ChevyLogo,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
         
-		part KSeriesWindshieldArmor
+		part K5WindshieldArmor
         	{
 
-			model KSeriesWindshieldArmor
+			model K5WindshieldArmor
 				{
-                		file = KSeriesWindshieldArmor,
+                		file = K5WindshieldArmor,
 				}
 
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindshieldArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -144,12 +93,12 @@ template vehicle K5Attachments
             }
 		}
         
-		part K5ExtraBar
+		part K10ExtraBar
         	{
 
-			model K5ExtraBar
+			model K10HeavyBullbar
 				{
-                		file = K5ExtraBar,
+                		file = K10HeavyBullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
@@ -197,12 +146,12 @@ template vehicle K5Attachments
             }
 		}
         
-        part KSeriesFrontLeftWindowArmor
+        part K5FrontLeftWindowArmor
         	{
 
-			model KSeriesFrontLeftWindowArmor
+			model K5FrontLeftWindowArmor
 				{
-                		file = KSeriesFrontLeftWindowArmor,
+                		file = K5FrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -214,7 +163,7 @@ template vehicle K5Attachments
 		area = DoorFrontLeft,
 		parent = WindowFrontLeft,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -258,12 +207,12 @@ template vehicle K5Attachments
             }
 		}
 
-        part KSeriesFrontRightWindowArmor
+        part K5FrontRightWindowArmor
         	{
 
-			model KSeriesFrontRightWindowArmor
+			model K5FrontRightWindowArmor
 				{
-                		file = KSeriesFrontRightWindowArmor,
+                		file = K5FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -275,7 +224,7 @@ template vehicle K5Attachments
 		area = DoorFrontLeft,
         parent = WindowFrontRight,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {

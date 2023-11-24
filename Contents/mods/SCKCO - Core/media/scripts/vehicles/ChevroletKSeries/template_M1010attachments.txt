@@ -1,24 +1,24 @@
 module Base
 {
 
-	model K5ExtraBar
+	model M1010Bullbar
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|ExtraBar_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model KSeriesWindshieldArmor
+	model M1010WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model KSeriesFrontLeftWindowArmor
+	model M1010FrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -26,9 +26,9 @@ module Base
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model KSeriesFrontRightWindowArmor
+	model M1010FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1010Ambulance_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -36,20 +36,20 @@ module Base
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-template vehicle CUCVAttachments
+template vehicle M1010Attachments
 		{
         
-		part KSeriesWindshieldArmor
+		part M1010WindshieldArmor
         	{
 
-			model KSeriesWindshieldArmor
+			model M1010WindshieldArmor
 				{
-                		file = KSeriesWindshieldArmor,
+                		file = M1010WindshieldArmor,
 				}
 
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindshieldArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -92,12 +92,12 @@ template vehicle CUCVAttachments
             }
 		}
         
-		part K5ExtraBar
+		part M1010Bullbar
         	{
 
-			model K5ExtraBar
+			model M1010Bullbar
 				{
-                		file = K5ExtraBar,
+                		file = M1010Bullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
@@ -145,12 +145,12 @@ template vehicle CUCVAttachments
             }
 		}
         
-        part KSeriesFrontLeftWindowArmor
+        part M1010FrontLeftWindowArmor
         	{
 
-			model KSeriesFrontLeftWindowArmor
+			model M1010FrontLeftWindowArmor
 				{
-                		file = KSeriesFrontLeftWindowArmor,
+                		file = M1010FrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -162,7 +162,7 @@ template vehicle CUCVAttachments
 		area = DoorFrontLeft,
 		parent = WindowFrontLeft,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -206,12 +206,12 @@ template vehicle CUCVAttachments
             }
 		}
 
-        part KSeriesFrontRightWindowArmor
+        part M1010FrontRightWindowArmor
         	{
 
-			model KSeriesFrontRightWindowArmor
+			model M1010FrontRightWindowArmor
 				{
-                		file = KSeriesFrontRightWindowArmor,
+                		file = M1010FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -223,7 +223,7 @@ template vehicle CUCVAttachments
 		area = DoorFrontLeft,
         parent = WindowFrontRight,
         category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {

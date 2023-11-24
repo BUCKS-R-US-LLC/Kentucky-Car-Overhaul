@@ -1,49 +1,50 @@
 module Base
 {
-    
-	model K10Bullbar
+
+	model M1008Bullbar
 	{
-		mesh = vehicles/Vehicle_K10_SC|Bullbar_obj,
+		mesh = vehicles/Vehicle_M1008_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model K10WindshieldArmor
+	model M1008WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_M1008_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model K10FrontLeftWindowArmor
+	model M1008FrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model K10FrontRightWindowArmor
+	model M1008FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightArmorBone 1.0,
 	}
-    
-	template vehicle K10Attachments
+
+template vehicle M1008Attachments
 		{
-		part K10WindshieldArmor
+        
+		part M1008WindshieldArmor
         	{
 
-			model K10WindshieldArmor
+			model M1008WindshieldArmor
 				{
-                		file = K10WindshieldArmor,
+                		file = M1008WindshieldArmor,
 				}
 
 		area = Engine,
@@ -91,12 +92,12 @@ module Base
             }
 		}
         
-		part K10BullbarNoSpawn
+		part M1008Bullbar
         	{
 
-			model K10Bullbar
+			model M1008Bullbar
 				{
-                		file = K10Bullbar,
+                		file = M1008Bullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
@@ -115,8 +116,8 @@ module Base
                     }
                 }
                 time = 1000,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -127,28 +128,29 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                         type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
                 time = 1000,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
+                skills = Mechanics:2,
+                  recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
             {
+                create = Vehicles.Create.Default,
             }
 		}
-
-        part K10FrontLeftWindowArmor
+        
+        part M1008FrontLeftWindowArmor
         	{
 
-			model K10FrontLeftWindowArmor
+			model M1008FrontLeftWindowArmor
 				{
-                		file = K10FrontLeftWindowArmor,
+                		file = M1008FrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -200,15 +202,16 @@ module Base
             }
 		lua
             {
+                
             }
 		}
 
-        part K10FrontRightWindowArmor
+        part M1008FrontRightWindowArmor
         	{
 
-			model K10FrontRightWindowArmor
+			model M1008FrontRightWindowArmor
 				{
-                		file = K10FrontRightWindowArmor,
+                		file = M1008FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
