@@ -298,6 +298,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		passenger RearRight
@@ -316,6 +324,14 @@ module Base
 				offset = -2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
+			}
+			
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
 			}
 		}
 
