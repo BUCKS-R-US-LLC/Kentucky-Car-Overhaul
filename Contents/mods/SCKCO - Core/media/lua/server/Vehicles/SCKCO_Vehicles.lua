@@ -1,4 +1,4 @@
-require "server/Vehicles/Vehicles"
+require "Vehicles/Vehicles"
 
 function Vehicles.ContainerAccess.BackOfTruck(vehicle, part, chr)
     if chr:getVehicle() == vehicle then
