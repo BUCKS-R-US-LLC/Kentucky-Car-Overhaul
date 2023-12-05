@@ -1,9 +1,9 @@
 module Base
 {
 
-	model K10HeavyBullbar
+	model K5Bullbar
 	{
-		mesh = vehicles/Vehicle_K10_SC|Bullbar_obj,
+		mesh = vehicles/Vehicle_K5Blazer_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
@@ -93,12 +93,12 @@ template vehicle K5Attachments
             }
 		}
         
-		part K10ExtraBar
+		part K5Bullbar
         	{
 
-			model K10HeavyBullbar
+			model K5Bullbar
 				{
-                		file = K10HeavyBullbar,
+                		file = K5Bullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,

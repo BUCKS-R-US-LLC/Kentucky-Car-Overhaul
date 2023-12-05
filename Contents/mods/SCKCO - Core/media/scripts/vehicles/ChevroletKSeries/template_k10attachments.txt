@@ -3,7 +3,7 @@ module Base
     
 	model K10Bullbar
 	{
-		mesh = vehicles/Vehicle_K10_SC|Bullbar_obj,
+		mesh = vehicles/Vehicle_K10_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
@@ -20,7 +20,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftArmorBone 1.0,
@@ -30,7 +30,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_K10_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightArmorBone 1.0,

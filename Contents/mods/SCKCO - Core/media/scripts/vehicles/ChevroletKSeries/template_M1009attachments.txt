@@ -8,7 +8,7 @@ module Base
 		scale = 1,
 	}
 
-	model KSeriesWindshieldArmor
+	model M1009WindshieldArmor
 	{
 		mesh = vehicles/Vehicle_M1009_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
@@ -39,12 +39,12 @@ module Base
 template vehicle M1009Attachments
 		{
         
-		part KSeriesWindshieldArmor
+		part M1009WindshieldArmor
         	{
 
-			model KSeriesWindshieldArmor
+			model M1009WindshieldArmor
 				{
-                		file = KSeriesWindshieldArmor,
+                		file = M1009WindshieldArmor,
 				}
 
 		area = Engine,
