@@ -44,7 +44,7 @@ module Base
 	model G30VanWindowlessFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model G30VanWindowlessFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model G30VanWindowlessSlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -68,7 +68,7 @@ module Base
 	model G30VanWindowlessTrunk
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -77,7 +77,7 @@ module Base
 	model G30VanWindowlessHood
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

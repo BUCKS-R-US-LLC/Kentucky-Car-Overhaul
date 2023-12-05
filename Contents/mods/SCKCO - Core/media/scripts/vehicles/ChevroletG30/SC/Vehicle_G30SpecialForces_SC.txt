@@ -3,7 +3,7 @@ module Base
 	model SC_G30SpecialForces
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -45,7 +45,7 @@ module Base
 	model ShortBusFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideBone1 1.0,
@@ -68,7 +68,7 @@ module Base
 	model ShortBusFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model ShortBusTrunk
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -84,7 +84,7 @@ module Base
 	model ShortBusHood
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
