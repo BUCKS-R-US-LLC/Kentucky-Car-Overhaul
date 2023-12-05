@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearRightWindow
 	{
@@ -54,6 +56,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearLeftWindow
 	{
@@ -62,6 +65,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontRightDoor
 	{
@@ -390,6 +394,7 @@ module Base
 			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
+		template = CrownVic85Wind,
 		template = CrownVic85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,

@@ -33,35 +33,39 @@ module Base
 	}
 	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontRightDoor
 	{
@@ -380,6 +384,7 @@ module Base
 		}
 
 		template = TaxiTopper,
+		template = CrownVic85Wind,
 		template = CrownVic85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
