@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30VanWindowlessFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30VanWindowlessFrontRightDoor
 	{
@@ -71,8 +73,8 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+		boneWeight = RearRightDoorBone 1.0,
 	}
 	model G30VanWindowlessHood
 	{
@@ -157,6 +159,26 @@ module Base
 		skin
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlueBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlackGrey,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BrownBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_Fedex,
 		}
 
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_rust,
@@ -319,6 +341,7 @@ module Base
 			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
 
+		template = G30WindowlessArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -351,28 +374,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
