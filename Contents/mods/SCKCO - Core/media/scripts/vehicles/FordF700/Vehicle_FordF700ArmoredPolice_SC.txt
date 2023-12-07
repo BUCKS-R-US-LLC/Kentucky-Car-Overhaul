@@ -3,7 +3,7 @@ module Base
 	model SC_FordF700ArmoredPolice
 	{
 		mesh = vehicles/Vehicle_FordF700Armored_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -153,35 +153,35 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.8571 2.7302 8.0952,
+		extents = 2.9841 2.7302 7.9048,
 		mass = 1000,
-		physicsChassisShape = 2.9524 2.8254 7.9683,
+		physicsChassisShape = 2.9841 2.8254 7.9048,
 		centerOfMassOffset = 0.0000 1.7460 0.0159,
 		shadowExtents = 3.2617 8.5003,
 		shadowOffset = 0.0000 0.0222,
-		engineForce = 4000,
-		engineQuality = 80,
-		engineLoudness = 180,
-		maxSpeed = 80f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
+		engineForce = 15000,
+		engineQuality = 100,
+		engineLoudness = 120,
+		maxSpeed = 100f,
+		brakingForce = 80,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.5,
+		suspensionStiffness = 50,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 8500,
-		rearEndHealth = 7500,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 5500,
+		rearEndHealth = 3300,
 		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3492 0.3175 4.4921,
+			offset = 1.2222 0.3175 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -189,7 +189,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.3651 0.3175 4.4921,
+			offset = -1.2222 0.3175 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -197,7 +197,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1587 0.3175 -1.3016,
+			offset = 1.1429 0.3175 -1.3016,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -290,32 +290,32 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.0635 2.8571 2.0000,
+			xywh = 0.0000 5.1746 2.9841 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0476 1.4603 1.2381 1.2381,
+			xywh = 2.2063 1.4603 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0476 1.4603 1.2381 1.2381,
+			xywh = -2.2063 1.4603 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = 0.0000 -4.6508 1.2381 1.2381,
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0159 -1.0635 1.0794 0.5714,
+			xywh = 2.1270 -1.3016 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -325,17 +325,17 @@ module Base
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 3.0159 0.0000 0.0000,
+			xywh = -1.4921 3.0159 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -2.7937 0.0000 0.0000,
+			xywh = 1.4921 -2.7937 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -2.7937 0.0000 0.0000,
+			xywh = -1.4921 -2.7937 0.0000 0.0000,
 		}
 
 		template = F700Bullbar/part/F700Bullbar,
@@ -354,7 +354,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -496,8 +496,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindshieldSC,
 		}
 
@@ -517,9 +517,9 @@ module Base
 				file = F700ArmoredFrontRightWindow,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -535,9 +535,9 @@ module Base
 				openable = false,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -553,9 +553,9 @@ module Base
 				openable = false,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -573,12 +573,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-		    category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -596,12 +596,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatFrontRight,
-			category = SCUCKwindows,
 			itemType = Base.BallisticGlassWindowSC,
 		}
 
@@ -843,3 +843,4 @@ module Base
 		}
 	}
 }
+

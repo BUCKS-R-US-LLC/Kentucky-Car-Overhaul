@@ -3,7 +3,7 @@ module Base
 	model SC_CadillacFleetwood
 	{
 		mesh = vehicles/Vehicle_CadillacFlet86_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -152,7 +152,7 @@ module Base
 		{
 			file = SC_CadillacFleetwood,
 			scale = 0.6100,
-			offset = 0.0000 -0.1148 0.5082,
+			offset = 0.0000 -0.1148 0.5902,
 		}
 
 		skin
@@ -207,10 +207,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.7541 2.0656 8.1311,
+		extents = 2.7541 1.7377 8.0328,
 		mass = 800,
-		physicsChassisShape = 2.7541 2.0656 8.1311,
-		centerOfMassOffset = 0.0000 1.0984 -0.0492,
+		physicsChassisShape = 2.7541 1.7377 8.0328,
+		centerOfMassOffset = 0.0000 0.8852 -0.0328,
 		shadowExtents = 2.7754 9.2815,
 		shadowOffset = -0.0032 -0.0540,
 		engineForce = 3500,
@@ -345,57 +345,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.0164 2.7541 2.0000,
+			xywh = 0.0000 5.1311 2.7541 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.0000 2.7541 1.7705,
+			xywh = 0.0000 -5.1475 2.7541 1.7705,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0492 0.6721 1.3443 1.3443,
+			xywh = 2.2295 0.6721 1.3443 1.3443,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0492 0.6721 1.3443 1.3443,
+			xywh = -2.2295 0.6721 1.3443 1.3443,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0492 -0.8033 1.3443 1.3443,
+			xywh = 2.2295 -0.8033 1.3443 1.3443,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0492 -0.8033 1.3443 1.3443,
+			xywh = -2.2295 -0.8033 1.3443 1.3443,
 		}
 
 		area GasTank
 		{
-			xywh = 0.0328 -4.3770 1.1148 0.6230,
+			xywh = 0.0328 -4.5738 1.1148 0.6230,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5246 2.4754 0.0000 0.0000,
+			xywh = 1.5246 2.5410 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5246 2.4754 0.0000 0.0000,
+			xywh = -1.5246 2.5410 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5246 -1.9836 0.0000 0.0000,
+			xywh = 1.5246 -2.1311 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5246 -1.9836 0.0000 0.0000,
+			xywh = -1.5246 -2.1311 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,

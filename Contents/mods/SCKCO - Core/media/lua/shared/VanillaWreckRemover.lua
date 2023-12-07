@@ -98,6 +98,7 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.trafficjamw.vehicles["Base.ModernCar02"] = nil;
 
 	-- Developers added a space to the "offroad" alas preventing total renaming
-	VehicleZoneDistribution.medium.vehicles["Base.Offroad "] = nil;
-	VehicleZoneDistribution.good.vehicles["Base.Offroad "] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.Offroad"] = nil;
 end

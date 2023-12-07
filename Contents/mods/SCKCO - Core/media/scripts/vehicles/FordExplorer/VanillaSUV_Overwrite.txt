@@ -3,7 +3,7 @@ module Base
 	model SC_FordExplorer
 	{
 		mesh = vehicles/Vehicle_FordExplorer_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -370,57 +370,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2286 2.6000 2.0000,
+			xywh = 0.0000 4.4000 2.6000 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.1143 2.6000 1.7714,
+			xywh = 0.0000 -4.2857 2.6000 1.7714,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9714 0.6714 1.3429 1.3429,
+			xywh = 2.0857 0.6714 1.3429 1.3429,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9714 0.6714 1.3429 1.3429,
+			xywh = -2.1000 0.6714 1.3429 1.3429,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9714 -0.8000 1.3429 1.3429,
+			xywh = 2.0857 -0.8000 1.3429 1.3429,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9714 -0.8000 1.3429 1.3429,
+			xywh = -2.1000 -0.8000 1.3429 1.3429,
 		}
 
 		area GasTank
 		{
-			xywh = 1.8714 -2.0143 1.1143 0.6286,
+			xywh = 1.9714 -2.0143 1.1143 0.6286,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5286 2.4714 0.0000 0.0000,
+			xywh = 1.3000 2.2571 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5286 2.4714 0.0000 0.0000,
+			xywh = -1.3000 2.2571 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5286 -1.9857 0.0000 0.0000,
+			xywh = 1.3000 -1.7714 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5286 -1.9857 0.0000 0.0000,
+			xywh = -1.3000 -1.7714 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -437,8 +437,7 @@ module Base
 
 		part GasTank
 		{
-
-		itemType = Base.BigGasTank,
+			itemType = Base.BigGasTank,
 		}
 
 		part SeatFrontLeft
@@ -447,7 +446,8 @@ module Base
 			{
 				file = FordExplorerDriver,
 			}
-		itemType = Base.FordExplorerFrontSeatSC,
+
+			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -456,7 +456,8 @@ module Base
 			{
 				file = FordExplorerPassenger,
 			}
-		itemType = Base.FordExplorerFrontSeatSC,
+
+			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -465,7 +466,8 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
-		itemType = Base.FordExplorerRearSeatSC,
+
+			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -475,7 +477,7 @@ module Base
 				file = FordExplorerDouble,
 			}
 
-		itemType = Base.FordExplorerRearSeatSC,
+			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part Muffler
@@ -489,6 +491,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+
 			itemType = Base.ModernCarMuffler,
 		}
 
@@ -581,7 +584,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
+
 			category = SCUCKwindows,
 			itemType = Base.FordExplorerWindshieldSC,
 		}
@@ -642,7 +645,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -661,7 +663,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -714,7 +715,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -733,7 +733,6 @@ module Base
 			}
 
 			itemType = Base.FordExplorerSideWindowSC,
-
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}

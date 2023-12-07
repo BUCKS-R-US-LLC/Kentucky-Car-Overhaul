@@ -1,0 +1,57 @@
+module Base
+{
+
+
+recipe Craft Caprice Bullbar
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCapriceBullbarSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Caprice Windshield Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCapriceWindshieldArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Caprice Door Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCapriceDoorArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Caprice Window Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCapriceWindowArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}

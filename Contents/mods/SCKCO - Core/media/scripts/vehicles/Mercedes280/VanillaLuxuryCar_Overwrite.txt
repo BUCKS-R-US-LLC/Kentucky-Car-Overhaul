@@ -3,7 +3,7 @@ module Base
 	model SC_Mercedes280
 	{
 		mesh = vehicles/Vehicle_Mercedes280_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -152,7 +152,7 @@ module Base
 		{
 			file = SC_Mercedes280,
 			scale = 0.6200,
-			offset = 0.0000 -0.1613 0.0000,
+			offset = 0.0000 -0.2258 0.0484,
 		}
 
 		skin
@@ -212,10 +212,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.6452 1.8710 7.0000,
+		extents = 2.6452 1.8065 6.6452,
 		mass = 800,
-		physicsChassisShape = 2.6452 2.1290 7.0000,
-		centerOfMassOffset = 0.0000 1.0968 -0.0484,
+		physicsChassisShape = 2.6452 1.8065 6.6452,
+		centerOfMassOffset = 0.0000 0.9355 -0.0484,
 		shadowExtents = 2.6278 7.6151,
 		shadowOffset = -0.0032 -0.0540,
 		engineForce = 5000,
@@ -350,37 +350,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.4516 2.6452 2.0000,
+			xywh = 0.0000 4.6290 2.6452 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.4355 2.6452 1.7742,
+			xywh = 0.0000 -4.6129 2.6452 1.7742,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0000 0.6774 1.3548 1.3548,
+			xywh = 2.2903 0.6774 1.3548 1.3548,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0000 0.6774 1.3548 1.3548,
+			xywh = -2.2903 0.6774 1.3548 1.3548,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0000 -0.8065 1.3548 1.3548,
+			xywh = 2.2903 -0.8065 1.3548 1.3548,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0000 -0.8065 1.3548 1.3548,
+			xywh = -2.2903 -0.8065 1.3548 1.3548,
 		}
 
 		area GasTank
 		{
-			xywh = -1.8871 -1.9194 1.1290 0.6452,
+			xywh = -2.1774 -1.9194 1.1290 0.6452,
 		}
 
 		area TireFrontLeft
@@ -557,8 +557,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280FrontWindshieldSC,
 		}
 
@@ -588,8 +588,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			itemType = Base.Mercedes280RearWindshieldSC,
 		}
 
@@ -982,8 +982,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			offset = 0.0000 0.9355 -0.0484,
+			extents = 3.1129 1.7903 6.6290,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

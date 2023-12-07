@@ -9,10 +9,10 @@ VehicleDistributions.SCMilitary = {
             "HandTorch", 1,
             "Radio.WalkieTalkie4", 10,
 
-            -- SPGO. --
+            -- SCGL. --
 
-            "SPGOClothing.Hat_PatrolCapWoodland", 10,
-            "SPGOClothing.Hat.PASGTHelmetWoodland", 10,
+            "SCGLClothing.Hat_PatrolCapWoodland", 10,
+            "SCGLClothing.Hat.PASGTHelmetWoodland", 10,
             "Vest_BulletArmy", 10,
 
             -- MEA -- 
@@ -42,10 +42,10 @@ VehicleDistributions.SCMilitary = {
             "Battery", 10,
             "HandTorch", 4,
 
-            -- SPGO. -- 
+            -- SCGL. -- 
 
-            "SPGOClothing.Hat_WatchCap", 10,
-            "SPGOClothing.Glasses_GIGlasses", 10,
+            "SCGLClothing.Hat_WatchCap", 10,
+            "SCGLClothing.Glasses_GIGlasses", 10,
 
 
         },
@@ -76,9 +76,9 @@ VehicleDistributions.SCMilitaryPolice = {
             "HandTorch", 4,
             "Radio.WalkieTalkie4", 10,
 
-            -- SPGO. --
+            -- SCGL. --
 
-            "SPGOClothing.MPBrassard", 10,
+            "SCGLClothing.MPBrassard", 10,
             "Vest_BulletArmy", 10,
         },
         junk = {
@@ -127,11 +127,11 @@ VehicleDistributions.SCPolicePatrol = {
             "HandTorch", 1,
             "Radio.WalkieTalkie4", 10,
 
-            -- SPGO. --
+            -- SCGL. --
 
             "Base.Shotgun", 2,
-            "Base.ShotgunShells", 5,
-            "Vest_Police", 10,
+            "Base.ShotgunShellsBox", 5,
+            "Vest_BulletPolice", 10,
 
         },
         junk = {
@@ -248,11 +248,10 @@ distributionTable["SC_FordMustangStatePolice"] = { Normal = VehicleDistributions
 distributionTable["SC_FordMustangJeffersonCounty"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_FordMustangUndercover"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 distributionTable["SC_CrownVictoriaLVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92LVPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92JeffersonPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92WarrenPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92MuhlenbergPD"] = { Normal = VehicleDistributions.SCPolicePatrol; }
-distributionTable["SC_CrownVictoria92StatePolice"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaLouisville92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaJefferson92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaWarrena92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
+distributionTable["SC_CrownVictoriaMuhlenberg92"] = { Normal = VehicleDistributions.SCPolicePatrol; }
 
 distributionTable["SC_M1009MilitaryPolice"] = { Normal = VehicleDistributions.SCMilitaryPolice; }
 distributionTable["SC_CadillacGageRanger"] = { Normal = VehicleDistributions.SCMilitaryPolice; }

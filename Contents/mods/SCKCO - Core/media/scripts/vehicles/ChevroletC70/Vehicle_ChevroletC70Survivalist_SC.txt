@@ -3,7 +3,7 @@ module Base
 	model SC_ChevroletC70Survivalist
 	{
 		mesh = vehicles/Vehicle_C70Survivor_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -156,29 +156,29 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.5556 3.0794 9.7778,
+		extents = 3.5556 3.2381 9.4921,
 		mass = 1000,
-		physicsChassisShape = 3.5873 3.0794 9.7460,
-		centerOfMassOffset = 0.0000 1.5556 0.2698,
+		physicsChassisShape = 3.5873 3.2381 9.4921,
+		centerOfMassOffset = 0.0000 1.6190 0.1270,
 		shadowExtents = 3.9759 10.3575,
 		shadowOffset = 0.0000 0.2125,
-		engineForce = 4000,
-		engineQuality = 80,
-		engineLoudness = 180,
-		maxSpeed = 80f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
+		engineForce = 15000,
+		engineQuality = 100,
+		engineLoudness = 120,
+		maxSpeed = 60f,
+		brakingForce = 80,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.5,
+		suspensionStiffness = 50,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.8f,
 		frontEndHealth = 5500,
-		rearEndHealth = 3500,
+		rearEndHealth = 3300,
 		seats = 2,
 
 		wheel FrontLeft
@@ -260,22 +260,22 @@ module Base
 
 		area TruckBed
 		{
-			xywh = -0.0159 -5.4286 3.5556 1.5873,
+			xywh = -0.0159 -5.5556 3.5556 1.5873,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3968 2.3810 1.2381 1.2381,
+			xywh = 2.5079 2.3810 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3968 2.3810 1.2381 1.2381,
+			xywh = -2.5079 2.3810 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0952 2.5714 1.0794 0.5714,
+			xywh = -2.4286 2.5714 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -312,7 +312,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -751,8 +751,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.0952 0.1270,
-			extents = 3.4603 2.2063 9.5079,
+			offset = 0.0000 1.6190 0.1270,
+			extents = 3.4603 3.2222 9.5079,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

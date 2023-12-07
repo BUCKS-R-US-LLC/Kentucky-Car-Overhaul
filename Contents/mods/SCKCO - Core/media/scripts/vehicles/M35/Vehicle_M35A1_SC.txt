@@ -3,7 +3,7 @@ module Base
 	model SC_M35A1
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -200,32 +200,22 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.7377 3.6066 10.5246,
+		extents = 3.7377 3.8033 10.4590,
 		mass = 1500,
 		physicsChassisShape = 3.6393 3.8033 10.4590,
 		centerOfMassOffset = 0.0000 1.9016 -0.5082,
 		shadowExtents = 3.6593 10.3884,
 		shadowOffset = 0.0000 -0.4966,
-		engineForce = 50000,
+		engineForce = 15000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 30f,
-		gearRatioCount = 8,
-		gearRatioR = 3.5,
-		gearRatio1 = 6.31,
-		gearRatio2 = 5.80,
-		gearRatio3 = 3.80,
-		gearRatio4 = 2.50,
-		gearRatio5 = 1.65,
-		gearRatio6 = 1.25,
-		gearRatio7 = 0.80,
-		gearRatio8 = 0.60,
+		maxSpeed = 100f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
-		steeringClamp = 0.3,
-		suspensionStiffness = 90,
+		steeringClamp = 0.5,
+		suspensionStiffness = 50,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -555,62 +545,62 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.7213 3.2131 1.4098,
+			xywh = 0.0000 5.5410 3.7377 1.4098,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.7869 3.7377 2.0656,
+			xywh = 0.0000 -6.9344 3.7377 2.0656,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.5902 1.1148 1.4754 1.4754,
+			xywh = 2.7049 1.1148 1.4754 1.4754,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.5902 1.1148 1.4754 1.4754,
+			xywh = -2.7049 1.1148 1.4754 1.4754,
 		}
 
 		area DoorRearLeft
 		{
-			xywh = 2.5902 -5.0328 1.4754 1.4754,
+			xywh = 2.7049 -5.0328 1.4754 1.4754,
 		}
 
 		area DoorRearRight
 		{
-			xywh = -2.5902 -5.0328 1.4754 1.4754,
+			xywh = -2.7049 -5.0328 1.4754 1.4754,
 		}
 
 		area RearStep
 		{
-			xywh = 0.0000 -6.3607 3.7049 1.1803,
+			xywh = 0.0000 -6.4918 3.7049 1.1803,
 		}
 
 		area GasTank
 		{
-			xywh = -2.4918 -0.4590 1.1475 0.6230,
+			xywh = -2.5410 -0.4590 1.1475 0.6230,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.2295 3.4918 0.0000 0.0000,
+			xywh = 1.2295 2.9508 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1639 3.4918 0.0000 0.0000,
+			xywh = -1.1639 2.9508 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4426 -3.1803 0.0000 0.0000,
+			xywh = 1.4426 -3.6885 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.2787 -1.3934 0.0000 0.0000,
+			xywh = -1.2787 -1.8852 0.0000 0.0000,
 		}
 
 		template = M35A1Seat,
@@ -718,7 +708,6 @@ module Base
 
 			table install
 			{
-				recipes
 			}
 
 			table uninstall
@@ -761,7 +750,6 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-
 		}
 
 		part M35A1FrontHardTop
@@ -1217,6 +1205,7 @@ module Base
 		}
 
 		template = Tire,
+		template = Axle,
 
 		part PassengerCompartment
 		{

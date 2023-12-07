@@ -3,7 +3,7 @@ module Base
 	model SC_HahnPumper
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -96,7 +96,7 @@ module Base
 	model HahnPumperFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model HahnPumperFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model HahnPumperRearRightDoor
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|RearRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model HahnPumperRearLeftDoor
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -152,7 +152,7 @@ module Base
 	model HahnPumperRearWindshield
 	{
 		mesh = vehicles/Vehicle_HahnPumper86_SC|RearWindshield_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -182,6 +182,7 @@ module Base
 		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelrear,
 		shader = vehiclewheel,
 	}
+	
 	vehicle SC_HahnPumperYellow
 	{
 		mechanicType = 2,
@@ -224,11 +225,10 @@ module Base
 			leftCol = 1;0;0,
 			rightCol = 1;0;0,
 		}
-
-		extents = 3.8095 3.4286 13.0159,
+		extents = 3.8095 4.0000 13.0794,
 		mass = 1500,
-		physicsChassisShape = 3.8095 4.1587 13.0159,
-		centerOfMassOffset = 0.0000 2.1111 0.0159,
+		physicsChassisShape = 3.8095 4.0317 13.0476,
+		centerOfMassOffset = 0.0000 2.0000 0.0000,
 		shadowExtents = 4.5474 14.9292,
 		shadowOffset = 0.0635 0.0222,
 		maxSpeed = 80f,
@@ -406,67 +406,67 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.4603 4.8730 1.1111 1.1111,
+			xywh = 2.6349 4.8730 1.1111 1.1111,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.4603 4.8730 1.1111 1.1111,
+			xywh = -2.6349 4.8730 1.1111 1.1111,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.4603 3.7619 1.1111 1.1111,
+			xywh = 2.6349 3.7619 1.1111 1.1111,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.4603 3.7619 1.1111 1.1111,
+			xywh = -2.6349 3.7619 1.1111 1.1111,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.4603 1.6667 1.1111 1.1111,
+			xywh = 2.6349 1.6667 1.1111 1.1111,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.5079 1.6667 1.1111 1.1111,
+			xywh = -2.6190 1.6667 1.1111 1.1111,
 		}
 
 		area GasTank
 		{
-			xywh = 2.4444 -0.7778 1.0794 0.5714,
+			xywh = 2.6349 -0.7778 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.1746 0.0000 0.0000,
+			xywh = 1.9048 3.1746 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.1746 0.0000 0.0000,
+			xywh = -1.9048 3.1746 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -3.4921 0.0000 0.0000,
+			xywh = 1.9048 -3.4921 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -3.4921 0.0000 0.0000,
+			xywh = -1.9048 -3.4921 0.0000 0.0000,
 		}
 
 		area SideContainer1
 		{
-			xywh = 2.2857 -2.3492 0.7302 6.4127,
+			xywh = 2.4603 -2.3492 0.7302 6.4127,
 		}
 
 		area SideContainer2
 		{
-			xywh = -2.2698 -2.3492 0.7302 6.4127,
+			xywh = -2.4444 -2.3492 0.7302 6.4127,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -1085,7 +1085,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperYellowfrontwheelleft,
+				file = HahnPumperRedfrontwheelleft,
 			}
 		}
 
@@ -1093,7 +1093,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperYellowfrontwheelright,
+				file = HahnPumperRedfrontwheelright,
 			}
 		}
 
@@ -1101,7 +1101,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperYellowbackwheelleft,
+				file = HahnPumperRedbackwheelleft,
 			}
 		}
 
@@ -1109,7 +1109,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HahnPumperYellowbackwheelright,
+				file = HahnPumperRedbackwheelright,
 			}
 		}
 
@@ -1159,7 +1159,7 @@ module Base
 		physics box
 		{
 			offset = 0.0159 2.0159 -0.0159,
-			extents = 3.7778 3.5714 13.0635,
+			extents = 3.7778 4.0159 13.0635,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}

@@ -72,7 +72,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_fire_engines = VehicleZoneDistribution.louisville_fire_engines or {};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles = VehicleZoneDistribution.louisville_fire_engines.vehicles or {};
 
-	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoach"] = {index = -1, spawnChance = 80};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoachRed"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_CrownFireCoachWhite"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 80};
 	VehicleZoneDistribution.louisville_fire_engines.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 80};
 
@@ -88,7 +89,6 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.national_park_service.vehicles["Base.CarLights"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_Caprice9C1ParkRanger"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.national_park_service.vehicles["Base.PickUpTruckLights"] = {index = -1, spawnChance = 80};
-	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_StepVanP30ParkRanger"] = {index = -1, spawnChance = 5};
 
 	VehicleZoneDistribution.national_park_service.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.national_park_service.chanceToSpawnKey = 80;
@@ -123,8 +123,10 @@ if VehicleZoneDistribution then
 
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_M880Bubba"] = {index = -1, spawnChance = 60};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_K10Dixie"] = {index = -1, spawnChance = 5};
 
 	VehicleZoneDistribution.designated_bubba_zone.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.designated_bubba_zone.chanceToSpawnKey = 80;
@@ -148,6 +150,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaLouisville92"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaJefferson92"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 70};
@@ -179,7 +183,7 @@ if VehicleZoneDistribution then
 	
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.old_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
+	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacLimo"] = {index = -1, spawnChance = 20};
 	
 	VehicleZoneDistribution.old_money.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.old_money.chanceToSpawnKey = 80;
@@ -191,7 +195,6 @@ if VehicleZoneDistribution then
 	
 	VehicleZoneDistribution.new_money.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 50};
 	VehicleZoneDistribution.new_money.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.new_money.vehicles["Base.SC_JaguarXJ6"] = {index = -1, spawnChance = 50};
 	
 	VehicleZoneDistribution.new_money.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.new_money.chanceToSpawnKey = 80;

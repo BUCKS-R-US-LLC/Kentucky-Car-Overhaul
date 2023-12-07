@@ -3,7 +3,7 @@ module Base
 	model SC_Oliver2050
 	{
 		mesh = vehicles/Vehicle_Oliver2050_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -156,7 +156,7 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 6.0000 0.0000 3.0909 3.0909,
+			xywh = 7.0000 0.0000 3.0909 3.0909,
 		}
 
 		area Engine
@@ -245,9 +245,9 @@ module Base
 		{
 			category = nodisplay,
 
-		lua
-            {
-            }
+			lua
+			{
+			}
 		}
 
 		part WindowFrontLeft
@@ -286,6 +286,8 @@ module Base
 			{
 				file = Oliver2050Wheelfrontwheelleft,
 			}
+
+			itemType = Base.TractorFrontWheelSC,
 		}
 
 		part TireFrontRight
@@ -294,6 +296,8 @@ module Base
 			{
 				file = Oliver2050Wheelfrontwheelright,
 			}
+
+			itemType = Base.TractorFrontWheelSC,
 		}
 
 		part TireRearLeft
@@ -302,6 +306,8 @@ module Base
 			{
 				file = Oliver2050Wheelbackwheelleft,
 			}
+
+			itemType = Base.TractorBackWheelSC,
 		}
 
 		part TireRearRight
@@ -310,6 +316,8 @@ module Base
 			{
 				file = Oliver2050Wheelbackwheelright,
 			}
+
+			itemType = Base.TractorBackWheelSC,
 		}
 
 		template = Brake,

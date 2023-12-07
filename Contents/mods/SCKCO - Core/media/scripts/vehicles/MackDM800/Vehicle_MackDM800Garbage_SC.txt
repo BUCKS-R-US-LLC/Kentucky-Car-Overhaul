@@ -3,7 +3,7 @@ module Base
 	model SC_MackDM800Garbage
 	{
 		mesh = vehicles/Vehicle_MackDM800Garbage_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -150,10 +150,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.4603 3.0794 12.6667,
+		extents = 3.4603 3.3016 12.8889,
 		mass = 1000,
-		physicsChassisShape = 3.4921 3.0794 12.3175,
-		centerOfMassOffset = 0.0000 1.5556 -0.4762,
+		physicsChassisShape = 3.4921 3.3016 12.8571,
+		centerOfMassOffset = 0.0000 1.6508 -0.5714,
 		shadowExtents = 4.0554 14.5482,
 		shadowOffset = 0.0000 -0.2000,
 		engineForce = 4000,
@@ -254,32 +254,32 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -7.3810 3.4603 1.1746,
+			xywh = 0.0000 -6.6349 3.4603 1.1746,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3492 2.8413 1.2381 1.2381,
+			xywh = 2.5238 2.8413 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3492 2.8413 1.2381 1.2381,
+			xywh = -2.5079 2.8413 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.2698 2.5079 1.0794 0.5714,
+			xywh = -2.4286 2.5079 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 4.0794 0.0000 0.0000,
+			xywh = 1.4921 4.1746 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 4.0794 0.0000 0.0000,
+			xywh = -1.3651 4.1746 0.0000 0.0000,
 		}
 
 		area TireRearLeft
@@ -720,8 +720,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.4127 -0.2698,
-			extents = 3.4921 3.2857 11.9206,
+			offset = 0.0000 1.6349 0.0000,
+			extents = 3.4921 3.2857 11.7302,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

@@ -1,6 +1,33 @@
 module Base
 {
 
+        item TractorFrontWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Tractor Front Wheel,
+        Icon	=	OliverLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MaxCapacity = 5,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
+
+        item TractorBackWheelSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	5.0,
+        Type	=	Normal,
+        DisplayName	= Tractor Back Wheel,
+        Icon	=	OliverLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MaxCapacity = 5,
+        MechanicsItem = TRUE,
+        WorldStaticModel = K5FrontSeat_WorldItem,
+    }
 
         item Oliver2050SeatSC2
     {
@@ -14,7 +41,6 @@ module Base
         MaxCapacity = 5,
         MechanicsItem = TRUE,
         WorldStaticModel = K5FrontSeat_WorldItem,
-
     }
 
         item Oliver2050MufflerSC2

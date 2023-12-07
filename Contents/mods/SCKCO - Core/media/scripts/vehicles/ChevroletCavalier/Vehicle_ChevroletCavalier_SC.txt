@@ -3,7 +3,7 @@ module Base
 	model SC_ChevroletCavalier
 	{
 		mesh = vehicles/Vehicle_ChevCava_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -152,7 +152,7 @@ module Base
 		{
 			file = SC_ChevroletCavalier,
 			scale = 0.6700,
-			offset = 0.0000 -0.1791 -0.0448,
+			offset = 0.0000 -0.2239 -0.0448,
 		}
 
 		skin
@@ -212,10 +212,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.1493 1.8806 5.5821,
+		extents = 2.1493 1.5821 5.5821,
 		mass = 800,
 		physicsChassisShape = 2.1493 1.5821 5.5821,
-		centerOfMassOffset = 0.0000 0.8955 -0.1493,
+		centerOfMassOffset = 0.0000 0.7910 -0.1493,
 		shadowExtents = 2.1529 6.2239,
 		shadowOffset = -0.0032 -0.1436,
 		engineForce = 5000,
@@ -279,7 +279,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.4925 0.5970 -0.0896,
+				offset = 0.4776 0.5522 -0.0896,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -298,7 +298,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.4925 0.5970 -0.0896,
+				offset = -0.4776 0.5522 -0.0896,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -317,7 +317,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.4925 0.5970 -1.1194,
+				offset = 0.4776 0.5522 -1.1194,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -336,7 +336,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.4925 0.5970 -1.1194,
+				offset = -0.4776 0.5522 -1.1194,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -350,57 +350,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.2090 2.1493 1.1343,
+			xywh = 0.0000 3.3582 2.1493 1.1343,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.4030 2.1493 0.9254,
+			xywh = 0.0000 -3.5821 2.1493 0.9254,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.5970 0.3284 1.0448 1.1642,
+			xywh = 1.7313 0.3284 1.0448 1.1642,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.5970 0.3284 1.0448 1.1642,
+			xywh = -1.7313 0.3284 1.0448 1.1642,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.5970 -0.8358 1.0448 1.1642,
+			xywh = 1.7313 -0.8358 1.0448 1.1642,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.5970 -0.8358 1.0448 1.1642,
+			xywh = -1.7313 -0.8358 1.0448 1.1642,
 		}
 
 		area GasTank
 		{
-			xywh = -1.5970 -2.2388 1.0448 0.5970,
+			xywh = -1.7313 -2.2388 1.0448 0.5970,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5224 2.4776 0.0000 0.0000,
+			xywh = 1.0746 1.5970 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5224 2.4776 0.0000 0.0000,
+			xywh = -1.0746 1.5970 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5224 -1.9851 0.0000 0.0000,
+			xywh = 1.0746 -1.9851 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5224 -1.9851 0.0000 0.0000,
+			xywh = -1.0746 -1.9851 0.0000 0.0000,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -972,8 +972,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9701 -0.1493,
-			extents = 2.1493 1.8507 5.5821,
+			offset = 0.0000 0.7910 -0.1493,
+			extents = 2.1493 1.5821 5.5821,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

@@ -3,7 +3,7 @@ module Base
 	model SC_G30VanNormal
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -76,7 +76,7 @@ module Base
 	model G30VanNormalFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -84,7 +84,7 @@ module Base
 	model G30VanNormalFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -92,7 +92,7 @@ module Base
 	model G30VanNormalSlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|SlideDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -108,7 +108,7 @@ module Base
 	model G30VanNormalTrunk
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|RearDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -117,7 +117,7 @@ module Base
 	model G30VanNormalHood
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -166,7 +166,7 @@ module Base
 		{
 			file = SC_G30VanNormal,
 			scale = 0.5900,
-			offset = 0.0678 0.1864 0.0847,
+			offset = 0.0000 0.1864 0.0508,
 		}
 
 		skin
@@ -188,17 +188,7 @@ module Base
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_Black,
 		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_BrownBad,
-		}
-
+		
 		skin
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_DarkBlue,
@@ -223,15 +213,15 @@ module Base
 			engineStart = VehicleEngineVan,
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
+			ignitionFail = VehicleIgnitionFailVan,
 		}
 
-		extents = 3.2203 3.0847 8.7119,
+		extents = 3.3220 3.0847 8.3390,
 		mass = 1700,
-		physicsChassisShape = 3.1864 3.0847 8.3729,
-		centerOfMassOffset = 0.0678 1.5593 -0.7966,
-		shadowExtents = 3.2617 8.3736,
-		shadowOffset = 0.0635 -0.7873,
+		physicsChassisShape = 3.3220 3.0847 8.3051,
+		centerOfMassOffset = 0.0000 1.5593 -0.7966,
+		shadowExtents = 3.3125 8.3058,
+		shadowOffset = -0.0043 -0.7873,
 		maxSpeed = 90f,
 		engineForce = 4500,
 		engineQuality = 70,
@@ -402,17 +392,17 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0678 4.5593 3.2203 2.0000,
+			xywh = -0.0169 4.3729 3.2203 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2203 0.7797 1.1186 1.1186,
+			xywh = 2.2881 0.7797 1.1186 1.1186,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1017 0.7797 1.1186 1.1186,
+			xywh = -2.2542 0.7797 1.1186 1.1186,
 		}
 
 		area SeatMiddleLeft
@@ -427,12 +417,12 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = -2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.2542 -0.5763 1.1186 1.0847,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1017 -0.5763 1.1186 1.0847,
+			xywh = -2.2542 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
@@ -462,7 +452,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0678 -5.6441 3.2203 1.0169,
+			xywh = -0.0169 -5.4746 3.2203 1.0169,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -1010,16 +1000,15 @@ module Base
 			{
 				file = G30VanNormalMiddleLeftWindow,
 			}
-			
+
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30SideWindowSC,
 			area = SeatMiddleLeft,
-
 		}
 
 		part WindowMiddleRight
@@ -1036,14 +1025,13 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30SideWindowSC,
 			parent = DoorRearRight,
 			area = SeatMiddleRight,
-			
 		}
 
 		part WindowRearRight
@@ -1077,13 +1065,12 @@ module Base
 
 			table install
 			{
-			requireInstalled =,
-			}	
+				requireInstalled =,
+			}
 
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30SideWindowSC,
 			area = SeatRearLeft,
-	
 		}
 
 		part DoorFrontRight
@@ -1290,21 +1277,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.0159 -0.8254,
-			extents = 3.1111 3.5714 8.3968,
+			offset = 0.0000 1.4407 -0.7797,
+			extents = 3.3220 2.8983 8.2881,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.0000 -5.1270,
+			offset = 0.0000 0.3220 -4.9661,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 3.2857,
+			offset = 0.0000 0.3220 3.2881,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

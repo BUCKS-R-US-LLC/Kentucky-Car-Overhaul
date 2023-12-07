@@ -2,70 +2,74 @@ module Base
 {
 	model CrownVictoriaStatePolice
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|base_mesh,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model CrownVictoriaDriver
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaPassenger
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaDouble
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -73,7 +77,7 @@ module Base
 	}
 	model CrownVictoriaFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -81,7 +85,7 @@ module Base
 	}
 	model CrownVictoriaRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -89,7 +93,7 @@ module Base
 	}
 	model CrownVictoriaRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -97,7 +101,7 @@ module Base
 	}
 	model CrownVictoriaTrunk
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -105,7 +109,7 @@ module Base
 	}
 	model CrownVictoriaHood
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -113,29 +117,29 @@ module Base
 	}
 	model CrownVictoriaRearWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoriaDoorfrontwheelleft
+	model CrownVictoriafrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorfrontwheelright
+	model CrownVictoriafrontwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelleft
+	model CrownVictoriabackwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoriaDoorbackwheelright
+	model CrownVictoriabackwheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
@@ -182,10 +186,11 @@ module Base
 			soundSiren = VehicleSiren,
 		}
 
-		extents = 3.0508 1.3898 8.0339,
+
+		extents = 3.0169 1.8644 8.0678,
 		mass = 800,
-		physicsChassisShape = 3.0508 1.3898 8.1695,
-		centerOfMassOffset = 0.0000 0.6610 -0.0678,
+		physicsChassisShape = 2.9831 1.8644 8.0678,
+		centerOfMassOffset = 0.0000 0.9322 -0.1186,
 		shadowExtents = 3.0338 8.9162,
 		shadowOffset = -0.0032 -0.0709,
 		engineForce = 4201,
@@ -297,6 +302,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		passenger RearRight
@@ -316,41 +329,49 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
+			
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		area Engine
 		{
-			xywh = 0.0000 4.9492 3.0508 2.0000,
+			xywh = 0.0000 5.0169 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.9831 3.0508 1.7966,
+			xywh = 0.0000 -5.1864 3.0508 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1864 0.4407 1.3559 1.3559,
+			xywh = 2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1864 0.4407 1.3559 1.3559,
+			xywh = -2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1864 -1.0339 1.3559 1.3559,
+			xywh = 2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1864 -1.0339 1.3559 1.3559,
+			xywh = -2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0678 -2.5932 1.0847 0.5763,
+			xywh = 2.1525 -2.5763 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
@@ -373,6 +394,8 @@ module Base
 			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
+		template = CrownVic85Wind,
+		template = CrownVic85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -390,8 +413,7 @@ module Base
 				file = CrownVictoriaDriver,
 			}
 
-		itemType = Base.FordCrownVictoriaFrontSeatSC,
-
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -400,9 +422,8 @@ module Base
 			{
 				file = CrownVictoriaPassenger,
 			}
-		
-		itemType = Base.FordCrownVictoriaFrontSeatSC,
 
+			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -412,7 +433,7 @@ module Base
 				file = CrownVictoriaDouble,
 			}
 
-		itemType = Base.FordCrownVictoriaRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -422,7 +443,7 @@ module Base
 				file = CrownVictoriaDouble,
 			}
 
-		itemType = Base.FordCrownVictoriaRearSeatSC,
+			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part Muffler
@@ -486,7 +507,6 @@ module Base
 			}
 
 			itemType = Base.FordCrownVictoriaHoodSC,
-
 		}
 
 		part Heater
@@ -531,7 +551,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaFrontWindshieldSC,
-
 		}
 
 		part WindshieldRear
@@ -563,7 +582,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaRearWindshieldSC,
-
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -588,10 +606,8 @@ module Base
 				animate = FALSE,
 			}
 
-			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 		}
 
@@ -611,7 +627,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
 		}
 
@@ -631,7 +646,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
@@ -651,7 +665,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
 		}
 
@@ -951,8 +964,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 0.9524 -0.0952,
-			extents = 3.0476 1.8571 8.1111,
+			offset = 0.0000 0.9322 -0.1186,
+			extents = 3.0169 1.8644 8.0508,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

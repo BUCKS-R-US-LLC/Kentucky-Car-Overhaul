@@ -3,7 +3,7 @@ module Base
 	model SC_FordCountrySquire
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -170,32 +170,17 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_BrownWood,
-		}
-		
-		skin
-		{
-			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_BlackWood,
-		}
-		
-		skin
-		{
-			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_BlueWood,
+			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_GreyWood,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_DarkBlue,
-		}
-		
-		skin
-		{
 			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_DarkBlueWood,
 		}
-		
+
 		skin
 		{
-			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_OnlyRedWood,
+			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_RedWood,
 		}
 
 		textureRust = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_rust,
@@ -215,10 +200,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 3.0508 1.3898 8.2712,
+		extents = 3.0508 1.8305 8.2712,
 		mass = 800,
-		physicsChassisShape = 3.0508 1.3898 8.2373,
-		centerOfMassOffset = 0.0000 0.6610 -0.3051,
+		physicsChassisShape = 3.0508 1.8644 8.3051,
+		centerOfMassOffset = 0.0000 0.9661 -0.3051,
 		shadowExtents = 3.0338 9.3230,
 		shadowOffset = -0.0032 -0.2404,
 		engineForce = 4201,
@@ -238,7 +223,7 @@ module Base
 		suspensionRestLength = 0.20f,
 		wheelFriction = 1.4f,
 		frontEndHealth = 1500,
-		rearEndHealth = 1200,
+		rearEndHealth = 1350,
 		seats = 4,
 
 		wheel FrontLeft
@@ -353,37 +338,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.8305 3.0508 2.0000,
+			xywh = 0.0000 4.9831 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.3220 3.0508 1.7627,
+			xywh = 0.0000 -5.4746 3.0508 1.7627,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1864 0.4407 1.3220 1.3220,
+			xywh = 2.3729 0.4407 1.3220 1.3220,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1864 0.4407 1.3220 1.3220,
+			xywh = -2.3559 0.4407 1.3220 1.3220,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.1864 -1.0339 1.3220 1.3220,
+			xywh = 2.3729 -1.0339 1.3220 1.3220,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1864 -1.0339 1.3220 1.3220,
+			xywh = -2.3559 -1.0339 1.3220 1.3220,
 		}
 
 		area GasTank
 		{
-			xywh = 2.0678 -2.5932 1.0847 0.5763,
+			xywh = 2.2542 -2.5932 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
@@ -406,6 +391,7 @@ module Base
 			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
+		template = CountrySquireAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -422,7 +408,7 @@ module Base
 			{
 				file = FordCountrySquireDriver,
 			}
-			
+
 			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
@@ -432,6 +418,7 @@ module Base
 			{
 				file = FordCountrySquirePassenger,
 			}
+
 			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
@@ -441,6 +428,7 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
+
 			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
@@ -450,6 +438,7 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
+
 			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
@@ -562,7 +551,6 @@ module Base
 
 		part WindshieldRear
 		{
-
 			window
 			{
 				openable = false,
@@ -651,7 +639,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
-
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -671,7 +658,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
-
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -691,7 +677,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
-
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -711,7 +696,6 @@ module Base
 
 			category = SCUCKwindows,
 			itemType = Base.FordCrownVictoriaRearSideWindowSC,
-
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -827,7 +811,6 @@ module Base
 				animate = FALSE,
 			}
 
-			
 			itemType = Base.FordCrownVictoriaRearDoorSC,
 		}
 
@@ -1020,7 +1003,7 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.2373 -4.6441,
+			offset = 0.0000 0.3898 -4.6441,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

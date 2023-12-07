@@ -3,7 +3,7 @@ module Base
 	model SC_G30BoxVan
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -44,7 +44,7 @@ module Base
 	model G30VanBoxFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model G30VanBoxFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model G30VanBoxSlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|RearSlidingDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearSlideDoorBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model G30VanBoxTrunk
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -85,7 +85,7 @@ module Base
 	model G30VanBoxHood
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -134,7 +134,7 @@ module Base
 		{
 			file = SC_G30BoxVan,
 			scale = 0.5900,
-			offset = 0.0678 0.1864 0.0847,
+			offset = 0.0000 0.1864 0.0847,
 		}
 
 		skin
@@ -150,11 +150,6 @@ module Base
 		skin
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_BrownBad,
 		}
 
 		skin
@@ -181,17 +176,17 @@ module Base
 			engineStart = VehicleEngineVan,
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailVan,
+			ignitionFail = VehicleIgnitionFailVan,
 		}
 
-		extents = 3.1864 3.0847 8.3729,
+		extents = 3.1186 3.0847 8.4068,
 		mass = 1700,
-		physicsChassisShape = 3.1864 3.0847 8.3729,
-		centerOfMassOffset = 0.0678 1.5593 -0.7966,
-		shadowExtents = 3.1823 9.6956,
-		shadowOffset = 0.0635 -0.7873,
-		maxSpeed = 70f,
-		engineForce = 4000,
+		physicsChassisShape = 3.1186 3.0847 8.4068,
+		centerOfMassOffset = 0.0000 1.5593 -0.7966,
+		shadowExtents = 3.1145 9.6956,
+		shadowOffset = -0.0043 -0.7873,
+		maxSpeed = 90f,
+		engineForce = 8500,
 		engineQuality = 70,
 		engineLoudness = 100,
 		brakingForce = 60,
@@ -199,7 +194,7 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 60,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
@@ -354,7 +349,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0678 4.4068 3.1864 2.0000,
+			xywh = -0.0169 4.4068 3.0847 2.0000,
 		}
 
 		area SeatFrontLeft
@@ -364,17 +359,17 @@ module Base
 
 		area SeatFrontRight
 		{
-			xywh = -2.0847 0.7797 1.1186 1.1186,
+			xywh = -2.2373 0.7797 1.1186 1.1186,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0847 -0.5763 1.1186 1.0847,
+			xywh = -2.2373 -0.5763 1.1186 1.0847,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = -2.0847 -0.5763 1.1186 1.0847,
+			xywh = -2.2373 -0.5763 1.1186 1.0847,
 		}
 
 		area GasTank
@@ -404,7 +399,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0678 -5.4915 2.9492 1.0169,
+			xywh = -0.0169 -5.4915 3.1525 1.0169,
 		}
 
 		template = Seat/part/SeatFrontLeft,
@@ -925,7 +920,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.0159 -0.8254,
+			offset = 0.0000 1.7966 -0.7966,
 			extents = 3.1111 3.5714 8.3968,
 			rotate = 0.0000 0.0000 0.0000,
 		}

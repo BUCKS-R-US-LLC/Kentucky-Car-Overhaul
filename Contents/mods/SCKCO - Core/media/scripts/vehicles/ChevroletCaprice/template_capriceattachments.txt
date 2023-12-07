@@ -1,0 +1,686 @@
+module Base
+{
+
+	model CapriceBullbar
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|HoodArmor_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model CapriceWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model CapriceFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftArmorBone 1.0,
+	}
+
+	model CapriceFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+
+	model CapriceFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+    
+	model CapriceFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightArmorBone 1.0,
+	}
+
+    model CapriceRearLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftArmorBone 1.0,
+	}
+
+	model CapriceRearRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightArmorBone 1.0,
+	}
+
+	model CapriceRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftArmorBone 1.0,
+	}
+
+	model CapriceRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightArmorBone 1.0,
+	}
+
+template vehicle CapriceAttachments
+		{
+        
+		part CapriceWindshieldArmor
+        	{
+
+			model CapriceWindshieldArmor
+				{
+                		file = CapriceWindshieldArmor,
+				}
+
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceWindshieldArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+		part CapriceBullbar
+        	{
+
+			model CapriceBullbar
+				{
+                		file = CapriceBullbar,
+				}
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceBullbarSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+        part CapriceRearLeftDoorArmor
+        	{
+
+			model CapriceRearLeftDoorArmor
+				{
+                		file = CapriceRearLeftDoorArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftDoorClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearLeft,
+		parent = DoorRearLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceDoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Rear,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part CapriceFrontLeftDoorArmor
+        	{
+
+			model CapriceFrontLeftDoorArmor
+				{
+                		file = CapriceFrontLeftDoorArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftDoorClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+		parent = DoorFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceDoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Door,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part CapriceFrontRightDoorArmor
+        	{
+
+			model CapriceFrontRightDoorArmor
+				{
+                		file = CapriceFrontRightDoorArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightDoorClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontRight,
+        parent = DoorFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceDoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Door,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+        part CapriceRearRightDoorArmor
+        	{
+
+			model CapriceRearRightDoorArmor
+				{
+                		file = CapriceRearRightDoorArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightDoorClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearRight,
+        parent = DoorRearRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceDoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                parent = DoorRearRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Rear,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+        part CapriceFrontLeftWindowArmor
+        	{
+
+			model CapriceFrontLeftWindowArmor
+				{
+                		file = CapriceFrontLeftWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+		parent = WindowFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part CapriceFrontRightWindowArmor
+        	{
+
+			model CapriceFrontRightWindowArmor
+				{
+                		file = CapriceFrontRightWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+        parent = WindowFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                parent = WindowFrontRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+                part CapriceRearLeftWindowArmor
+        	{
+
+			model CapriceRearLeftWindowArmor
+				{
+                		file = CapriceRearLeftWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearLeft,
+		parent = WindowRearLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part CapriceRearRightWindowArmor
+        	{
+
+			model CapriceRearRightWindowArmor
+				{
+                		file = CapriceRearRightWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearLeft,
+        parent = WindowRearRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyCapriceWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                parent = WindowRearRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+    }
+
+}

@@ -3,7 +3,7 @@ module Base
 	model SC_FordF700DumpTruck
 	{
 		mesh = vehicles/Vehicle_FordF700DumpTruck_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -182,23 +182,23 @@ module Base
 		centerOfMassOffset = 0.0000 1.5556 1.0159,
 		shadowExtents = 3.5474 8.4210,
 		shadowOffset = 0.0000 1.0062,
-		engineForce = 4000,
-		engineQuality = 80,
-		engineLoudness = 180,
-		maxSpeed = 80f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
+		engineForce = 15000,
+		engineQuality = 100,
+		engineLoudness = 120,
+		maxSpeed = 100f,
+		brakingForce = 80,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.5,
+		suspensionStiffness = 50,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 4700,
-		rearEndHealth = 3900,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.8f,
+		frontEndHealth = 5500,
+		rearEndHealth = 3300,
 		seats = 2,
 
 		wheel FrontLeft
@@ -275,7 +275,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.2698 2.8571 2.0000,
+			xywh = 0.0000 6.3016 3.1111 2.0000,
 		}
 
 		area TruckBed
@@ -285,17 +285,17 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1746 2.7778 1.2381 1.2381,
+			xywh = 2.2857 2.7778 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1746 2.7778 1.2381 1.2381,
+			xywh = -2.2698 2.7778 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0952 2.5714 1.0794 0.5714,
+			xywh = -2.1905 2.5714 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -331,7 +331,7 @@ module Base
 			itemType = Base.LargeUtilityTruckSoundController,
 			category = nodisplay,
 		}
-		
+
 		part GasTank
 		{
 			itemType = Base.BigGasTank,
@@ -462,7 +462,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordF700WindshieldSC,
 		}
 
@@ -493,7 +493,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.FordF700WindshieldSC,
 		}
 
@@ -514,8 +514,8 @@ module Base
 				anim = FrontRightWindowClosing,
 				animate = FALSE,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.FordF700SideWindowSC,
@@ -533,8 +533,8 @@ module Base
 				anim = FrontLeftWindowBone,
 				animate = FALSE,
 			}
-			
-		    category = SCUCKwindows,
+
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.FordF700SideWindowSC,

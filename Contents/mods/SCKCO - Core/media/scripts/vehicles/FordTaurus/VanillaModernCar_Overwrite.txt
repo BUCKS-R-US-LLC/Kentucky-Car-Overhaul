@@ -3,7 +3,7 @@ module Base
 	model SC_FordTaurus
 	{
 		mesh = vehicles/Vehicle_FordTaurus86_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -207,10 +207,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 2.7119 1.3898 7.3220,
+		extents = 2.7119 1.8644 7.3220,
 		mass = 800,
-		physicsChassisShape = 2.7119 1.3898 7.3220,
-		centerOfMassOffset = 0.0000 0.6949 0.1186,
+		physicsChassisShape = 2.7119 1.8644 7.3220,
+		centerOfMassOffset = 0.0000 0.9492 0.1356,
 		shadowExtents = 2.7965 7.5602,
 		shadowOffset = -0.0032 0.1325,
 		engineForce = 4201,
@@ -345,37 +345,37 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.7797 2.7119 2.0000,
+			xywh = 0.0000 4.9661 2.7119 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.4407 2.7119 1.7966,
+			xywh = 0.0000 -4.5932 2.7119 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.0508 0.6441 1.3898 1.3898,
+			xywh = 2.2034 0.6441 1.3898 1.3898,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.0508 0.6441 1.3898 1.3898,
+			xywh = -2.2034 0.6441 1.3898 1.3898,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.0508 -0.8305 1.3898 1.3898,
+			xywh = 2.2034 -0.8305 1.3898 1.3898,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.0508 -0.8305 1.3898 1.3898,
+			xywh = -2.2034 -0.8305 1.3898 1.3898,
 		}
 
 		area GasTank
 		{
-			xywh = -1.8983 -2.5424 1.0847 0.5763,
+			xywh = -2.0508 -2.5424 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
