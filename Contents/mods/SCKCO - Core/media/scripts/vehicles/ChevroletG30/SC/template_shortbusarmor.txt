@@ -1,67 +1,49 @@
 module Base
 {
 
-	model G30WindowlessBullbar
+	model ShortBusBullbar
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|HoodArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|HoodArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessWindshieldArmor
+	model ShortBusWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessFrontLeftDoorArmor
+	model ShortBusFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontRightDoorArmor
+	model ShortBusFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoorArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-
-	model G30WindowlessFrontLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontRightWindowArmor
-	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = TRUE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-
-	template vehicle G30WindowlessArmor
+	template vehicle ShortBusArmor
 		{
 
-		part G30WindowlessWindshieldArmor
+		part ShortBusWindshieldArmor
         	{
 
-			model G30WindowlessWindshieldArmor
+			model ShortBusWindshieldArmor
 				{
-                		file = G30WindowlessWindshieldArmor,
+                		file = ShortBusWindshieldArmor,
 				}
 		area = Engine,
             category = SCUCKarmor,
@@ -108,12 +90,12 @@ module Base
             }
 		}
 
-		part G30WindowlessBullbar
+		part ShortBusBullbar
         	{
 
-			model G30WindowlessBullbar
+			model ShortBusBullbar
 				{
-                		file = G30WindowlessBullbar,
+                		file = ShortBusBullbar,
 				}
 		area = Engine,
             category = SCUCKarmor,
@@ -160,12 +142,12 @@ module Base
             }
 		}
         
-		part G30WindowlessFrontLeftDoorArmor
+		part ShortBusFrontLeftDoorArmor
         	{
 
-			model G30WindowlessFrontLeftDoorArmor
+			model ShortBusFrontLeftDoorArmor
 				{
-                		file = G30WindowlessFrontLeftDoorArmor,
+                		file = ShortBusFrontLeftDoorArmor,
 				}
 
 			anim Close
@@ -242,12 +224,12 @@ module Base
             }
 		}
 
-        part G30WindowlessRearLeftDoorArmor
+        part ShortBusRearLeftDoorArmor
         	{
 
-			model G30WindowlessRearLeftDoorArmor
+			model ShortBusRearLeftDoorArmor
 				{
-                		file = G30WindowlessRearLeftDoorArmor,
+                		file = ShortBusRearLeftDoorArmor,
 				}
 
 			anim Close
@@ -324,12 +306,12 @@ module Base
             }
 		}
 
-		part G30WindowlessFrontRightDoorArmor
+		part ShortBusFrontRightDoorArmor
         	{
 
-			model G30WindowlessFrontRightDoorArmor
+			model ShortBusFrontRightDoorArmor
 				{
-                		file = G30WindowlessFrontRightDoorArmor,
+                		file = ShortBusFrontRightDoorArmor,
 				}
 
 			anim Close
@@ -406,12 +388,12 @@ module Base
             }
 		}
 
-part G30WindowlessFrontLeftWindowArmor
+part ShortBusFrontLeftWindowArmor
         	{
 
-			model G30WindowlessFrontLeftWindowArmor
+			model ShortBusFrontLeftWindowArmor
 				{
-                		file = G30WindowlessFrontLeftWindowArmor,
+                		file = ShortBusFrontLeftWindowArmor,
 				}
 
 		area = Engine,
@@ -460,12 +442,12 @@ part G30WindowlessFrontLeftWindowArmor
             }
 		}
 
-part G30WindowlessFrontRightWindowArmor
+part ShortBusFrontRightWindowArmor
         	{
 
-			model G30WindowlessFrontRightWindowArmor
+			model ShortBusFrontRightWindowArmor
 				{
-                		file = G30WindowlessFrontRightWindowArmor,
+                		file = ShortBusFrontRightWindowArmor,
 				}
 
 		area = Engine,

@@ -1,71 +1,109 @@
 module Base
 {
 
-	model G30WindowlessBullbar
+	model G30WindowedBullbar
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|HoodArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|HoodArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessWindshieldArmor
+	model G30WindowedWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessFrontLeftDoorArmor
+	model G30WindowedFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontRightDoorArmor
+	model G30WindowedFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontLeftWindowArmor
+	model G30WindowedFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontRightWindowArmor
+	model G30WindowedFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = TRUE,       
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	template vehicle G30WindowlessArmor
+	model G30WindowedRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,        
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+        static = TRUE,
+        boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model G30WindowedRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearLeftWindowArmor_obj,
+		shader = vehiclewheel,   
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+		scale = 1,
+        static = TRUE,
+	}
+
+	model G30WindowedMiddleRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleRightWindowArmor_obj,
+		shader = vehiclewheel,
+        static = TRUE,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+		scale = 1,
+	}
+
+	model G30WindowedMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleLeftWindowArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+		scale = 1,
+	}
+
+	template vehicle G30WindowedArmor
 		{
 
-		part G30WindowlessWindshieldArmor
+		part G30WindowedWindshieldArmor
         	{
 
-			model G30WindowlessWindshieldArmor
+			model G30WindowedWindshieldArmor
 				{
-                		file = G30WindowlessWindshieldArmor,
+                		file = G30WindowedWindshieldArmor,
 				}
 		area = Engine,
             category = SCUCKarmor,
-        itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.JeepCherokeeBullbar,
             mechanicRequireKey = false,
 		table install
             {
@@ -108,12 +146,12 @@ module Base
             }
 		}
 
-		part G30WindowlessBullbar
+		part G30WindowedBullbar
         	{
 
-			model G30WindowlessBullbar
+			model G30WindowedBullbar
 				{
-                		file = G30WindowlessBullbar,
+                		file = G30WindowedBullbar,
 				}
 		area = Engine,
             category = SCUCKarmor,
@@ -160,41 +198,13 @@ module Base
             }
 		}
         
-		part G30WindowlessFrontLeftDoorArmor
+		part G30WindowedFrontLeftDoorArmor
         	{
 
-			model G30WindowlessFrontLeftDoorArmor
+			model G30WindowedFrontLeftDoorArmor
 				{
-                		file = G30WindowlessFrontLeftDoorArmor,
+                		file = G30WindowedFrontLeftDoorArmor,
 				}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
 
 		area = Engine,
 		parent = DoorFrontLeft,
@@ -242,128 +252,18 @@ module Base
             }
 		}
 
-        part G30WindowlessRearLeftDoorArmor
+		part G30WindowedFrontRightDoorArmor
         	{
 
-			model G30WindowlessRearLeftDoorArmor
+			model G30WindowedFrontRightDoorArmor
 				{
-                		file = G30WindowlessRearLeftDoorArmor,
+                		file = G30WindowedFrontRightDoorArmor,
 				}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.JeepCherokeeBullbar,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part G30WindowlessFrontRightDoorArmor
-        	{
-
-			model G30WindowlessFrontRightDoorArmor
-				{
-                		file = G30WindowlessFrontRightDoorArmor,
-				}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
 
 		area = Engine,
 		parent = DoorFrontRight,
             category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.JeepCherokeeBullbar,
             mechanicRequireKey = false,
 		table install
             {
@@ -406,18 +306,18 @@ module Base
             }
 		}
 
-part G30WindowlessFrontLeftWindowArmor
+part G30WindowedFrontLeftWindowArmor
         	{
 
-			model G30WindowlessFrontLeftWindowArmor
+			model G30WindowedFrontLeftWindowArmor
 				{
-                		file = G30WindowlessFrontLeftWindowArmor,
+                		file = G30WindowedFrontLeftWindowArmor,
 				}
 
 		area = Engine,
         parent = DoorFrontLeft,
             category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.JeepCherokeeBullbar,
             mechanicRequireKey = false,
 		table install
             {
@@ -460,18 +360,18 @@ part G30WindowlessFrontLeftWindowArmor
             }
 		}
 
-part G30WindowlessFrontRightWindowArmor
+part G30WindowedFrontRightWindowArmor
         	{
 
-			model G30WindowlessFrontRightWindowArmor
+			model G30WindowedFrontRightWindowArmor
 				{
-                		file = G30WindowlessFrontRightWindowArmor,
+                		file = G30WindowedFrontRightWindowArmor,
 				}
 
 		area = Engine,
         parent = DoorFrontRight,
             category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.JeepCherokeeBullbar,
             mechanicRequireKey = false,
 		table install
             {
@@ -489,6 +389,224 @@ part G30WindowlessFrontRightWindowArmor
                 skills = Mechanics:2,
                 recipes = Basic Mechanics,
                 parent = DoorFrontRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30WindowedRearLeftWindowArmor
+        	{
+
+			model G30WindowedRearLeftWindowArmor
+				{
+                		file = G30WindowedRearLeftWindowArmor,
+				}
+
+		area = RearLeftWindow,
+            parent = DoorRearLeft,
+            category = SCUCKarmor,
+            itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30WindowedRearRightWindowArmor
+        	{
+
+			model G30WindowedRearRightWindowArmor
+				{
+                		file = G30WindowedRearRightWindowArmor,
+				}
+
+		area = WindowRearRight,
+        parent = WindowRearRight,
+            category = SCUCKarmor,
+            parent = DoorRearRight,
+            itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+
+part G30WindowedMiddleLeftWindowArmor
+        	{
+
+			model G30WindowedMiddleLeftWindowArmor
+				{
+                		file = G30WindowedMiddleLeftWindowArmor,
+				}
+
+		area = WindowMiddleLeft,
+        parent = WindowMiddleLeft,
+            category = SCUCKarmor,
+            itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30WindowedMiddleRightWindowArmor
+        	{
+
+			model G30WindowedMiddleRightWindowArmor
+				{
+                		file = G30WindowedMiddleRightWindowArmor,
+				}
+
+		area = WindowMiddleRight,
+        parent = WindowMiddleRight,
+            category = SCUCKarmor,
+            itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
