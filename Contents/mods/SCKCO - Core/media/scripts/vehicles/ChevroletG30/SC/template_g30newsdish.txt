@@ -1,24 +1,25 @@
 module Base
 {
-		model TaxiTopper
+	model G30TVDish
 	{
-		mesh = vehicles/CabTop,
-		texture = Vehicles/CrownVictoria/CabTop,
+		mesh = Vehicles/Vehicle_G30WindowlessTVset_SC|TVSet_obj,
+        texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_TVset,
 		shader = vehiclewheel,
 		scale = 1,
 	}
-	template vehicle TaxiTopper
+
+	template vehicle G30TVDish
 		{
-		part TaxiTopper
+		part G30TVDish
         	{
 
-			model TaxiTopper
+			model G30TVDish
 				{
-                		file = TaxiTopper,
+                		file = G30TVDish,
 				}
 		area = Engine,
             category = nodisplay,
-            itemType = Base.TaxiTopperSC,
+            itemType = Base.TVDishSC,
             mechanicRequireKey = false,
 		table install
             {

@@ -3,7 +3,7 @@ module Base
 	model SC_G30SpecialForces
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|base_mesh,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -55,14 +55,14 @@ module Base
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
+		static = TRUE,
 		scale = 1,
 	}
 	model ShortBusRearLeftWindows
 	{
 		mesh = vehicles/Vehicle_ShortSchool_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
+		static = TRUE,
 		scale = 1,
 	}
 	model ShortBusFrontLeftDoor
@@ -99,26 +99,26 @@ module Base
 	}
 	model ShortBusfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30ShortBus_FrontLeft,
+		texture = vehicles/ChevroletG30/Vehicle_ShortSchool_frontwheel,
 		shader = vehiclewheel,
 	}
 	model ShortBusfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30ShortBus_FrontRight,
+		texture = vehicles/ChevroletG30/Vehicle_ShortSchool_frontwheel,
 		shader = vehiclewheel,
 	}
-	model ShortBusbackwheelleft
+	model ShortBusrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30ShortBus_RearLeft,
+		texture = vehicles/ChevroletG30/Vehicle_ShortSchool_rearwheel,
 		shader = vehiclewheel,
 	}
-	model ShortBusbackwheelright
+	model ShortBusrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30ShortBus_RearRight,
+		texture = vehicles/ChevroletG30/Vehicle_ShortSchool_rearwheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_G30SpecialForces
@@ -132,7 +132,7 @@ module Base
 		{
 			file = SC_G30SpecialForces,
 			scale = 0.5900,
-			offset = 0.0000 0.0169 0.7627,
+			offset = 0.0000 0.1864 0.7627,
 		}
 
 		skin
@@ -161,7 +161,7 @@ module Base
 		mass = 1700,
 		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
-		shadowExtents = 3.2501 10.2210,
+		shadowExtents = 3.8942 10.2210,
 		shadowOffset = 0.0635 -0.3636,
 		maxSpeed = 70f,
 		engineForce = 4000,
@@ -243,7 +243,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8305 1.2373 -0.7627,
+				offset = -0.8475 1.2373 -0.7627,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -281,7 +281,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8644 1.2373 -2.0169,
+				offset = -0.8475 1.2373 -2.0169,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -319,7 +319,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.8644 1.2373 -3.3051,
+				offset = -0.8475 1.2373 -3.3051,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -871,7 +871,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ShortBusbackwheelleft,
+				file = ShortBusrearwheelleft,
 			}
 		}
 
@@ -879,7 +879,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ShortBusbackwheelright,
+				file = ShortBusrearwheelright,
 			}
 		}
 

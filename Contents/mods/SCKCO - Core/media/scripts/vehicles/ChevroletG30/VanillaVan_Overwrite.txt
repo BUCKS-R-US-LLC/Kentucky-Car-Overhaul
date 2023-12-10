@@ -3,7 +3,7 @@ module Base
 	model SC_G30VanWindowless
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -91,28 +91,28 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30VanWindowlessfrontwheelleft
+	model G30Vanfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanWindowlessfrontwheelright
+	model G30Vanfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanWindowlessbackwheelleft
+	model G30Vanrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanWindowlessbackwheelright
+	model G30Vanrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle Van
@@ -157,6 +157,46 @@ module Base
 		skin
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlackGrey,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlueBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_GreyWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BrownBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlackGrey,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BlueBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_GreyWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_BrownBlack,
 		}
 
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_rust,
@@ -319,6 +359,7 @@ module Base
 			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
 
+		template = G30WindowlessArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -351,28 +392,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -721,7 +762,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelleft,
+				file = G30Vanrearwheelleft,
 			}
 		}
 
@@ -729,7 +770,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelright,
+				file = G30Vanrearwheelright,
 			}
 		}
 

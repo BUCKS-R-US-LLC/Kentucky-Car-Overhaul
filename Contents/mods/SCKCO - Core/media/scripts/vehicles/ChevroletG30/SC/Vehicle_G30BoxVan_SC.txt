@@ -3,7 +3,7 @@ module Base
 	model SC_G30BoxVan
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|base_mesh,
-		shader = vehicle_noreflect,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -25,7 +25,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanBoxFrontRightWindow
+	model G30VanfrontRightWindow
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightWindow_obj.001,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model G30VanBoxFrontLeftWindow
+	model G30VanfrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model G30VanBoxFrontRightDoor
+	model G30VanfrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanBoxFrontLeftDoor
+	model G30VanfrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -99,28 +99,28 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model G30VanBoxfrontwheelleft
+	model G30Vanfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanBoxfrontwheelright
+	model G30Vanfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanBoxbackwheelleft
+	model G30Vanrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30VanBoxbackwheelright
+	model G30Vanrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_G30BoxVan
@@ -664,7 +664,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanBoxFrontRightWindow,
+				file = G30VanfrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -683,7 +683,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanBoxFrontLeftWindow,
+				file = G30VanfrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -702,7 +702,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanBoxFrontRightDoor,
+				file = G30VanfrontRightDoor,
 			}
 
 			anim Close
@@ -740,7 +740,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanBoxFrontLeftDoor,
+				file = G30VanfrontLeftDoor,
 			}
 
 			anim Close
@@ -837,7 +837,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30VanBoxfrontwheelleft,
+				file = G30Vanfrontwheelleft,
 			}
 		}
 
@@ -845,7 +845,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30VanBoxfrontwheelright,
+				file = G30Vanfrontwheelright,
 			}
 		}
 
@@ -853,7 +853,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30VanBoxbackwheelleft,
+				file = G30Vanrearwheelleft,
 			}
 		}
 
@@ -861,7 +861,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30VanBoxbackwheelright,
+				file = G30Vanrearwheelright,
 			}
 		}
 

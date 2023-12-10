@@ -1,0 +1,520 @@
+module Base
+{
+
+	model G30WindowlessBullbar
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|HoodArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30WindowlessWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30WindowlessFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model G30WindowlessFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model G30WindowlessFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model G30WindowlessFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle G30WindowlessArmor
+		{
+
+		part G30WindowlessWindshieldArmor
+        	{
+
+			model G30WindowlessWindshieldArmor
+				{
+                		file = G30WindowlessWindshieldArmor,
+				}
+		area = Engine,
+            category = SCUCKarmor,
+        itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part G30WindowlessBullbar
+        	{
+
+			model G30WindowlessBullbar
+				{
+                		file = G30WindowlessBullbar,
+				}
+		area = Engine,
+            category = SCUCKarmor,
+            itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+		part G30WindowlessFrontLeftDoorArmor
+        	{
+
+			model G30WindowlessFrontLeftDoorArmor
+				{
+                		file = G30WindowlessFrontLeftDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = Engine,
+		parent = DoorFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.JeepCherokeeBullbar,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+        part G30WindowlessRearLeftDoorArmor
+        	{
+
+			model G30WindowlessRearLeftDoorArmor
+				{
+                		file = G30WindowlessRearLeftDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = Engine,
+		parent = DoorRearLeft,
+        category = SCUCKarmor,
+        itemType = Base.JeepCherokeeBullbar,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part G30WindowlessFrontRightDoorArmor
+        	{
+
+			model G30WindowlessFrontRightDoorArmor
+				{
+                		file = G30WindowlessFrontRightDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = Engine,
+		parent = DoorFrontRight,
+            category = SCUCKarmor,
+           itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30WindowlessFrontLeftWindowArmor
+        	{
+
+			model G30WindowlessFrontLeftWindowArmor
+				{
+                		file = G30WindowlessFrontLeftWindowArmor,
+				}
+
+		area = Engine,
+        parent = DoorFrontLeft,
+            category = SCUCKarmor,
+           itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30WindowlessFrontRightWindowArmor
+        	{
+
+			model G30WindowlessFrontRightWindowArmor
+				{
+                		file = G30WindowlessFrontRightWindowArmor,
+				}
+
+		area = Engine,
+        parent = DoorFrontRight,
+            category = SCUCKarmor,
+           itemType = Base.JeepCherokeeBullbar,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                parent = DoorFrontRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+     }
+
+}

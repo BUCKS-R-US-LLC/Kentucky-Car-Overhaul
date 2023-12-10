@@ -3,7 +3,7 @@ module Base
 	model SC_G30Ambulance
 	{
 		mesh = vehicles/Vehicle_G30Ambulance_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -99,28 +99,28 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30Ambulancefrontwheelleft
+	model G30Vanfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Ambulancefrontwheelright
+	model G30Vanfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Ambulancebackwheelleft
+	model G30Vanrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Ambulancebackwheelright
+	model G30Vanrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle VanAmbulance
@@ -391,28 +391,28 @@ module Base
 
 			anim Close
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = RearDoorClosing,
+				anim = TrunkClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -790,7 +790,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelleft,
+				file = G30Vanrearwheelleft,
 			}
 		}
 
@@ -798,7 +798,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanbackwheelright,
+				file = G30Vanrearwheelright,
 			}
 		}
 
