@@ -1,39 +1,53 @@
 module Base
 {
 
-recipe Craft M35 Door Armor
+
+recipe Craft G30 Bullbar
 	{
 		BlowTorch=20,
        	keep WeldingMask,
-		SheetMetal=4,
+		SheetMetal=3,
 
-		Result:M35DoorArmor2,
+		Result:ChevyG30BullbarSC2,
 		Time:800.0,
 		Category:Car Mods,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Craft M35 Windshield Armor
+recipe Craft G30 Windshield Armor
 	{
 		BlowTorch=20,
        	keep WeldingMask,
 		SheetMetal=3,
 
-		Result:M35WindshieldArmor2,
+		Result:ChevyG30WindshieldArmorSC2,
 		Time:800.0,
 		Category:Car Mods,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Craft M35 Window Armor
+recipe Craft G30 Door Armor
 	{
 		BlowTorch=20,
        	keep WeldingMask,
 		SheetMetal=3,
 
-		Result:M35WindowArmor2,
+		Result:ChevyG30DoorArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft G30 Window Armor
+	{
+		BlowTorch=20,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyG30WindowArmorSC2,
 		Time:800.0,
 		Category:Car Mods,
 		SkillRequired:MetalWelding=4,

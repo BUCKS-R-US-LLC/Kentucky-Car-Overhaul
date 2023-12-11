@@ -1,7 +1,7 @@
 module Base
 {
 
-	model G30VanBoxBullbar
+	model BoxVanBullbar
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|HoodArmor_obj,
 		shader = vehiclewheel,
@@ -9,7 +9,7 @@ module Base
 		scale = 1,
 	}
 
-	model G30VanBoxWindshieldArmor
+	model BoxVanWindshieldArmor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
@@ -17,7 +17,7 @@ module Base
 		scale = 1,
 	}
 
-	model G30VanBoxFrontLeftDoorArmor
+	model BoxVanFrontLeftDoorArmor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
@@ -26,7 +26,16 @@ module Base
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30VanBoxFrontLeftWindowArmor
+	model BoxVanFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model BoxVanFrontLeftWindowArmor
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
@@ -35,15 +44,24 @@ module Base
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	template vehicle G30VanBoxArmor
+	model BoxVanFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	template vehicle BoxVanAttachments
 		{
 
-		part G30VanBoxWindshieldArmor
+		part BoxVanWindshieldArmor
         	{
 
-			model G30VanBoxWindshieldArmor
+			model BoxVanWindshieldArmor
 				{
-                		file = G30VanBoxWindshieldArmor,
+                		file = BoxVanWindshieldArmor,
 				}
 		area = Engine,
             category = SCUCKarmor,
@@ -90,12 +108,12 @@ module Base
             }
 		}
 
-		part G30VanBoxBullbar
+		part BoxVanBullbar
         	{
 
-			model G30VanBoxBullbar
+			model BoxVanBullbar
 				{
-                		file = G30VanBoxBullbar,
+                		file = BoxVanBullbar,
 				}
 		area = Engine,
             category = SCUCKarmor,
@@ -142,12 +160,12 @@ module Base
             }
 		}
         
-		part G30VanBoxFrontLeftDoorArmor
+		part BoxVanFrontLeftDoorArmor
         	{
 
-			model G30VanBoxFrontLeftDoorArmor
+			model BoxVanFrontLeftDoorArmor
 				{
-                		file = G30VanBoxFrontLeftDoorArmor,
+                		file = BoxVanFrontLeftDoorArmor,
 				}
 
 			anim Close
@@ -178,11 +196,12 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = DoorFrontLeft,
         category = SCUCKarmor,
         itemType = Base.ChevyG30DoorArmorSC,
         mechanicRequireKey = false,
+
 		table install
             {
                 items
@@ -224,19 +243,158 @@ module Base
             }
 		}
 
-        part G30VanBoxFrontLeftWindowArmor
+        part BoxVanFrontLeftWindowArmor
         	{
 
-			model G30VanBoxFrontLeftWindowArmor
+			model BoxVanFrontLeftWindowArmor
 				{
-                		file = G30VanBoxFrontLeftWindowArmor,
+                		file = BoxVanFrontLeftWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontLeft,
         parent = DoorFrontLeft,
-            category = SCUCKarmor,
-           itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
+
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+	    part BoxVanFrontRightDoorArmor
+        	{
+
+			model BoxVanFrontRightDoorArmor
+				{
+                		file = BoxVanFrontRightDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = DoorFrontRight,
+		parent = DoorFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30DoorArmorSC,
+        mechanicRequireKey = false,
+
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+        part BoxVanFrontRightWindowArmor
+        	{
+
+			model BoxVanFrontRightWindowArmor
+				{
+                		file = BoxVanFrontRightWindowArmor,
+				}
+
+		area = DoorFrontRight,
+        parent = DoorFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
+
 		table install
             {
                 items
