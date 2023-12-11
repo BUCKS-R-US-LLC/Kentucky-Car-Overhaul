@@ -43,6 +43,11 @@ local seatAnimationsProfiles = {
 		---Uses current seat animation from above if none of these are set:
 	},
 
+	["2Seater"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+	},
+
 	["4SeatUtility"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
