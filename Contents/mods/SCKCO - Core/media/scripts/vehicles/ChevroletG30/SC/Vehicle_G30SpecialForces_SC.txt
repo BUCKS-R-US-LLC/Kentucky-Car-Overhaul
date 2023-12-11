@@ -158,7 +158,7 @@ module Base
 		}
 
 		extents = 3.2881 3.0847 9.0169,
-		mass = 1700,
+		mass = 300,
 		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
 		shadowExtents = 3.8942 10.2210,
@@ -396,7 +396,7 @@ module Base
 			xywh = 0.0678 -5.5254 1.1186 1.0169,
 		}
 
-		template = ShortBusArmor,
+		template = ShortBusAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -410,6 +410,11 @@ module Base
 		template = Engine,
 		template = Muffler,
 		template = TrunkDoor,
+
+		part LargeUtilityTruckSoundController
+		{
+			itemType = Base.LargeUtilityTruckSoundController,
+		}
 
 		part TruckBed
 		{
@@ -775,44 +780,6 @@ module Base
 			}
 
 			itemType = Base.ChevyG30FrontDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = ShortBusSlidingRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.ChevyG30SideDoorSC,
 		}
 
 		part WindowRearRight
