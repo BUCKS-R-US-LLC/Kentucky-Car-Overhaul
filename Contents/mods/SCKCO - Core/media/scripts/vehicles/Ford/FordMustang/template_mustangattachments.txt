@@ -93,7 +93,6 @@ module Base
 						equip = primary,
                     }
                 }
-		    requireInstalled = WindowFrontLeft,
                 time = 1000,
                 skills = Mechanics:2,
                   recipes = Advanced Mechanics,
@@ -170,21 +169,6 @@ module Base
                   recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-
-        table partVariation
-            {
-                chances = {
-                    default = 0,
-                    Base.SC_FordMustang = 50,
-                }
-                additionalVehicleFunc = Default
-            }
-
-		lua
-            {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-            }
-		}
         
 		part FordMustangFrontLeftDoorArmor
         	{
@@ -222,7 +206,7 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = DoorFrontLeft,
         category = SCUCKarmor,
         itemType = Base.FordMustangDoorArmorSC,
