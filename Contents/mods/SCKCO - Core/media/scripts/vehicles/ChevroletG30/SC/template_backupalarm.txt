@@ -7,8 +7,8 @@ module Base
 		part BackUpAlarm
         	{
 
-		area = Engine,
-        itemType = Base.TVDishSC,
+		area = Trunk,
+        itemType = Base.BackUpAlarmSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -24,7 +24,6 @@ module Base
                 }
                 time = 500,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -42,8 +41,7 @@ module Base
                    }
                 }
                 time = 50,
-                  skills = Mechanics:1;Electrical:1,
-                  recipes = Basic Mechanics,
+                  skills = Mechanics:1,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
@@ -58,8 +56,8 @@ module Base
 		part BackUpAlarm
         	{
 
-		area = Engine,
-        itemType = Base.TVDishSC,
+		area = Trunk,
+        itemType = Base.BackUpAlarmSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -75,7 +73,6 @@ module Base
                 }
                 time = 500,
                   skills = Mechanics:1,
-                  recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -93,8 +90,7 @@ module Base
                    }
                 }
                 time = 1000,
-                  skills = Mechanics:1;Electrical:1,
-                  recipes = Basic Mechanics,
+                  skills = Mechanics:1,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
