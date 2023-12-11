@@ -97,11 +97,21 @@ module Base
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        table partVariation
             {
-				create = Vehicles.Create.Default,
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 10,
+                }
+                additionalVehicleFunc = Default
             }
-		}
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
 
 		part M35A1FrontRightWindowArmor
         	{
@@ -159,10 +169,21 @@ module Base
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        table partVariation
             {
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 50,
+                }
+                additionalVehicleFunc = Default
             }
-		}
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
 
 		part M35A1FrontLeftWindowArmor
         	{
@@ -220,10 +241,21 @@ module Base
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        table partVariation
             {
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 50,
+                }
+                additionalVehicleFunc = Default
             }
-		}
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
 
 
 		part M35A1FrontRightDoorArmor
@@ -276,10 +308,21 @@ module Base
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        table partVariation
             {
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 50,
+                }
+                additionalVehicleFunc = Default
             }
-		}
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
 
 		part M35A1FrontLeftDoorArmor
         	{
