@@ -2,13 +2,12 @@ module Base
 {
 
 	template vehicle BackUpAlarmInstalled
-
+    
 		{
 		part BackUpAlarm
         	{
 
 		area = Engine,
-        category = nodisplay,
         itemType = Base.TVDishSC,
         mechanicRequireKey = false,
 		table install
@@ -42,8 +41,8 @@ module Base
  						equip = primary,
                    }
                 }
-                time = 1000,
-                  skills = Mechanics:1,
+                time = 50,
+                  skills = Mechanics:1;Electrical:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
@@ -54,13 +53,12 @@ module Base
 		}
 
 	template vehicle BackUpAlarmUninstalled
-    
+
 		{
 		part BackUpAlarm
         	{
 
 		area = Engine,
-        category = nodisplay,
         itemType = Base.TVDishSC,
         mechanicRequireKey = false,
 		table install
@@ -95,7 +93,7 @@ module Base
                    }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
+                  skills = Mechanics:1;Electrical:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
