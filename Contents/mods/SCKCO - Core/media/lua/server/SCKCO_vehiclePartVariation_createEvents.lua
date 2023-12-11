@@ -29,7 +29,7 @@ function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
     local chances = partTable.chances
     local chance = (chances and tonumber(chances[vehicleID] or chances["default"])) --or 0
 
-    print("vehicleID: ",vehicleID," chance:",chance)
+    --print("vehicleID: ",vehicleID," chance:",chance)
 
     if chance and (ZombRand(0, 101) <= chance) then
 
@@ -37,7 +37,7 @@ function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
         local addFunc = (additionalFunc and (Vehicles.Create[additionalFunc])) or Vehicles.Create.Default
 
         if addFunc then
-            print(" -- additionalFunc: ",additionalFunc)
+            --print(" -- additionalFunc: ",additionalFunc)
             addFunc(vehicle, part)
         end
     end
