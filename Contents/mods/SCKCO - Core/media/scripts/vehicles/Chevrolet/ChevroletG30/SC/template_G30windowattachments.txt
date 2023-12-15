@@ -368,11 +368,11 @@ part G30WindowedFrontRightWindowArmor
                 		file = G30WindowedFrontRightWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontRight,
         parent = DoorFrontRight,
-            category = SCUCKarmor,
-            itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -423,11 +423,11 @@ part G30WindowedRearLeftWindowArmor
                 		file = G30WindowedRearLeftWindowArmor,
 				}
 
-		area = RearLeftWindow,
-            parent = DoorRearLeft,
-            category = SCUCKarmor,
-            itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
+		area = DoorRearLeft,
+        parent = DoorRearLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -477,12 +477,12 @@ part G30WindowedRearRightWindowArmor
                 		file = G30WindowedRearRightWindowArmor,
 				}
 
-		area = WindowRearRight,
+		area = DoorRearRight,
         parent = WindowRearRight,
-            category = SCUCKarmor,
-            parent = DoorRearRight,
-            itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        parent = DoorRearRight,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -535,9 +535,9 @@ part G30WindowedMiddleLeftWindowArmor
 
 		area = WindowMiddleLeft,
         parent = WindowMiddleLeft,
-            category = SCUCKarmor,
-            itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items

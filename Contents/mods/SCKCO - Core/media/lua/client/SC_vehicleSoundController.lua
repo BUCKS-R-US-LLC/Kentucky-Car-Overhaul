@@ -2,10 +2,18 @@ local vehicleSoundController = {}
 
 vehicleSoundController.library = {
 
-    ["BackUpAlarm"] = {---Not all params need-to or should-be defined
+    ["BackUpAlarmSC"] = {---Not all params need-to or should-be defined
 
-        { sound = "BackUpAlarm", --soundFile or soundScript
+        { sound = "DixieHorn", --soundFile or soundScript
           speedIsLessThan = -3,
+          --speedIsGreaterThan = 2, --if speed > this - play sound
+        },
+    }---
+
+    ["DetroitDiesel"] = {---Not all params need-to or should-be defined
+
+        { sound = "DetroitDieselIdle", --soundFile or soundScript
+          speedIsLessThan = 1,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
     }---

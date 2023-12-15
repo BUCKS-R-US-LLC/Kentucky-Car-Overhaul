@@ -50,11 +50,12 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.spawnRate = 30;
     VehicleZoneDistribution.good.chanceToPartDamage = 10;
 
-    VehicleZoneDistribution.sport.vehicles["Base.SC_FordMustang"] = {index = -1, spawnChance = 40};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_FordMustang"] = {index = -1, spawnChance = 70};
     VehicleZoneDistribution.sport.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.sport.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.sport.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.sport.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 70};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 80};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 50};
 
     VehicleZoneDistribution.police.vehicles["Base.SC_K5BlazerStatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 1};

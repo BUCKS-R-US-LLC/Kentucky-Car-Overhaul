@@ -64,9 +64,9 @@ module Base
                 		file = G30WindowlessWindshieldArmor,
 				}
 		area = Engine,
-            category = SCUCKarmor,
+        category = SCUCKarmor,
         itemType = Base.JeepCherokeeBullbar,
-            mechanicRequireKey = false,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -117,7 +117,7 @@ module Base
 				}
 		area = Engine,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.ChevyG30BullbarSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -196,92 +196,10 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = DoorFrontLeft,
         category = SCUCKarmor,
-        itemType = Base.JeepCherokeeBullbar,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part G30WindowlessRearLeftDoorArmor
-        	{
-
-			model G30WindowlessRearLeftDoorArmor
-				{
-                		file = G30WindowlessRearLeftDoorArmor,
-				}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.JeepCherokeeBullbar,
+        itemType = Base.ChevyG30DoorArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -360,11 +278,11 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontRight,
 		parent = DoorFrontRight,
-            category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30DoorArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -414,10 +332,10 @@ part G30WindowlessFrontLeftWindowArmor
                 		file = G30WindowlessFrontLeftWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontLeft,
         parent = DoorFrontLeft,
             category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
+           itemType = Base.ChevyG30WindowArmorSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -468,10 +386,10 @@ part G30WindowlessFrontRightWindowArmor
                 		file = G30WindowlessFrontRightWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontRight,
         parent = DoorFrontRight,
             category = SCUCKarmor,
-           itemType = Base.JeepCherokeeBullbar,
+           itemType = Base.ChevyG30WindowArmorSC,
             mechanicRequireKey = false,
 		table install
             {
