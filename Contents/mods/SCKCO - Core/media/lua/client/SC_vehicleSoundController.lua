@@ -14,6 +14,7 @@ vehicleSoundController.library = {
 
         { sound = "DetroitDieselIdle", --soundFile or soundScript
           speedIsLessThan = 1,
+          stopWhenNotRunning = true,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
     }
@@ -23,6 +24,7 @@ vehicleSoundController.library = {
 
 function vehicleSoundController.handleUpdate(player)
     if not player then return end
+    ---@type BaseVehicle
     local vehicle = player:getVehicle()
     if not vehicle then return end
 
@@ -42,8 +44,10 @@ function vehicleSoundController.handleUpdate(player)
                     local invertedCase = data.speedIsLessThan and data.speedIsGreaterThan and data.speedIsLessThan > data.speedIsGreaterThan
 
                     local notValid = (invertedCase and (not bSpeedLessThan or not bSpeedGreaterThan)) or (not bSpeedLessThan and not bSpeedGreaterThan)
-
-                    if data.stop or notValid then
+                    local stopWhenNotRunning = (data.stopWhenNotRunning and (not vehicle:isEngineRunning()))
+                    local stopSound = data.stop or notValid or stopWhenNotRunning
+                    
+                    if stopSound then
                         if vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:stopSoundByName(data.sound) end
                     else
                         if not vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:playAmbientLoopedImpl(data.sound) end
