@@ -6,9 +6,9 @@ vehicleSoundController.library = {
 
         { sound = "DixieHorn", --soundFile or soundScript
           speedIsLessThan = -3,
-          --speedIsGreaterThan = 2, --if speed > this - play sound
+            --speedIsGreaterThan = 2, --if speed > this - play sound
         },
-    }---
+    },
 
     ["DetroitDiesel"] = {---Not all params need-to or should-be defined
 
@@ -16,7 +16,7 @@ vehicleSoundController.library = {
           speedIsLessThan = 1,
           --speedIsGreaterThan = 2, --if speed > this - play sound
         },
-    }---
+    }
 
 }
 
