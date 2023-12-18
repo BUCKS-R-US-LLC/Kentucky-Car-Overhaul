@@ -4,7 +4,7 @@
 
 function K10Windshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck", "PickUpTruckLights", "PickUpTruckLightsFire", "PickUpTruckMccoy", "SC_K10Dixie")) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("K10WindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("K10WindshieldArmor"):getInventoryItem()) then
@@ -21,7 +21,7 @@ end
 
 function K10Bullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck", "PickUpTruckLights", "PickUpTruckLightsFire", "PickUpTruckMccoy", "SC_K10Dixie")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("K10Bullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("K10Bullbar"):getInventoryItem()) then
@@ -38,7 +38,7 @@ end
 
 function K10WindowFrontLeftArmor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck", "PickUpTruckLights", "PickUpTruckLightsFire", "PickUpTruckMccoy", "SC_K10Dixie")) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("K10FrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("K10FrontLeftWindowArmor"):getInventoryItem()) then
@@ -55,7 +55,7 @@ end
 
 function K10WindowFrontRightArmor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpTruck", "PickUpTruckLights", "PickUpTruckLightsFire", "PickUpTruckMccoy", "SC_K10Dixie")) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("K10FrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("K10FrontRightWindowArmor"):getInventoryItem()) then
