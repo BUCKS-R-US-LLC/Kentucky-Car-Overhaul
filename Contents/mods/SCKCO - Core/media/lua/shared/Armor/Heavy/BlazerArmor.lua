@@ -2,14 +2,32 @@
 --- Created by cytt0rak
 ---  WIP
 
-function ChevyEngine(player, part, elapsedMinutes)
+function K5Windshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVan", "PickUpVanLights", "PickUpVanLightsPolice", "SC_CUCVZhenjaEdition", "SC_M1008", "SC_M1009", "SC_M1009MilitaryPolice", "SC_M1008TroopCarrier", "SC_M1010Ambulance", "SC_M1010Ambulance", "SC_M1028A3")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVan")) then
 
-        local part = vehicle:getPartById("Engine")
-        if (vehicle:getPartById("Engine"):getCondition() < 20) and (vehicle:getPartById("Engine"):getInventoryItem()) then
+local part = vehicle:getPartById("Windshield")
+        if (vehicle:getPartById("K5WindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("K5WindshieldArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50 })
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            vehicle:getPartById("K5WindshieldArmor"):setCondition(vehicle:getPartById("K5WindshieldArmor"):getCondition()-1)
+
+        end
+        vehicle:transmitPartModData(Windshield)
+    end
+
+
+end
+
+function K5Bullbar(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVan")) then
+
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("K5Bullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("K5Bullbar"):getInventoryItem()) then
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            vehicle:getPartById("K5Bullbar"):setCondition(vehicle:getPartById("K5Bullbar"):getCondition()-1)
 
         end
         vehicle:transmitPartModData(Engine)
@@ -18,22 +36,42 @@ function ChevyEngine(player, part, elapsedMinutes)
 
 end
 
-function K5BullbarPolice(player, part, elapsedMinutes)
+function K5WindowFrontLeftArmor(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVanLightsPolice")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVan")) then
 
-local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("K5BullbarPolice"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 100) and (vehicle:getPartById("K5BullbarPolice"):getInventoryItem()) then
+        local part = vehicle:getPartById("WindowFrontLeft")
+        if (vehicle:getPartById("K5FrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("K5FrontLeftWindowArmor"):getInventoryItem()) then
 
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 50})
-            vehicle:getPartById("K5BullbarPolice"):setCondition(vehicle:getPartById("K5BullbarPolice"):getCondition()-1)
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            vehicle:getPartById("K5FrontLeftWindowArmor"):setCondition(vehicle:getPartById("K5FrontLeftWindowArmor"):getCondition()-1)
 
         end
-        vehicle:transmitPartModData(EngineDoor)
+        vehicle:transmitPartModData(WindowFrontLeft)
     end
 
 
 end
 
-Events.OnPlayerUpdate.Add(ChevyEngine);
-Events.OnPlayerUpdate.Add(K5BullbarPolice);
+function K5WindowFrontRightArmor(player, part, elapsedMinutes)
+    local vehicle = player:getVehicle()
+    if (vehicle and string.find( vehicle:getScriptName(), "PickUpVan")) then
+
+        local part = vehicle:getPartById("WindowFrontRight")
+        if (vehicle:getPartById("K5FrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("K5FrontRightWindowArmor"):getInventoryItem()) then
+
+
+            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
+            vehicle:getPartById("K5FrontRightWindowArmor"):setCondition(vehicle:getPartById("K5FrontRightWindowArmor"):getCondition()-1)
+
+        end
+        vehicle:transmitPartModData(WindowFrontRight)
+    end
+
+
+end
+
+Events.OnPlayerUpdate.Add(K5WindshieldArmor);
+Events.OnPlayerUpdate.Add(K5Bullbar);
+Events.OnPlayerUpdate.Add(K5WindowFrontLeftArmor);
+Events.OnPlayerUpdate.Add(K5WindowFrontRightArmor);

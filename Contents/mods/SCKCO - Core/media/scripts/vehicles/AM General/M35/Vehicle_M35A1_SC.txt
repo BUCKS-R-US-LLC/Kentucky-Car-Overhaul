@@ -708,16 +708,26 @@ module Base
 
 			table install
 			{
+				requireInstalled = M35A1TarpFrame,
 			}
 
 			table uninstall
 			{
 			}
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+        table partVariation
+            {
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 50,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
 
 			category = SCUCKaccessories,
 			itemType = Base.M35Tarp,
@@ -735,21 +745,22 @@ module Base
 			table install
 			{
 				recipes = Intermediate Mechanics,
-				requireUninstalled - Base.M35Tarp,
+				requireUninstalled - M35A1Tarp,
 			}
 
 			table uninstall
 			{
 				recipes = Intermediate Mechanics,
-				requireUninstalled - Base.M35Tarp,
+				requireUninstalled - M35A1Tarp,
 			}
-
-			itemType = Base.M35TarpFrame,
 
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+            category = SCUCKaccessories,
+			itemType = Base.M35TarpFrame,
 		}
 
 		part M35A1FrontHardTop
@@ -761,17 +772,12 @@ module Base
 
 			table install
 			{
-				recipes = Intermediate Mechanics,
-				requireUninstalled = Base.M35FrontSoftTop,
+				requireUninstalled = M35A1FrontSoftTop,
 			}
 
 			table uninstall
 			{
-				recipes = Intermediate Mechanics,
-				requireInstalled = Base.M35FrontSoftTop,
 			}
-
-			itemType = Base.M35FrontHardTop,
 
 			lua
 			{
@@ -779,6 +785,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
+			itemType = Base.M35FrontHardTop,
 		}
 
 		part M35A1FrontSoftTop
@@ -790,13 +797,14 @@ module Base
 
 			table install
 			{
-				requireUninstalled = M35A1FrontSoftTop,
+				requireUninstalled = M35A1FrontHardTop,
 			}
 
 			table uninstall
 			{
 			}
 
+            category = SCUCKaccessories,
 			itemType = Base.M35FrontSoftTop,
 		}
 
@@ -815,10 +823,19 @@ module Base
 			{
 			}
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+        table partVariation
+            {
+                chances = {
+                    default = 0,
+                    Base.SC_M35A1 = 50,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
 
 			category = SCUCKaccessories,
 			itemType = Base.M35Wheel,

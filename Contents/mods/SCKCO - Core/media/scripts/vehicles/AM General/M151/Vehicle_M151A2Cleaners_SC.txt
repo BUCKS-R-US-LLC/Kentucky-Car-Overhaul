@@ -197,13 +197,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.7200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 5000,
-		gearRatioCount = 4,
-		gearRatioR = 13.6,
-		gearRatio1 = 12.8,
-		gearRatio2 = 9.2,
-		gearRatio3 = 6.0,
-		gearRatio4 = 3.8,
+		engineForce = 8000,
 		maxSpeed = 50f,
 		engineLoudness = 70,
 		engineQuality = 76,
@@ -217,7 +211,7 @@ module Base
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.4f,
+		wheelFriction = 5.0f,
 		frontEndHealth = 1200,
 		rearEndHealth = 750,
 		seats = 4,
@@ -414,7 +408,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -439,7 +432,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -463,7 +455,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -558,7 +549,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -698,7 +688,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -720,6 +709,7 @@ module Base
 			table install
 			{
 				recipes = Intermediate Mechanics,
+				requireInstalled = M151WindshieldFrame,
 			}
 
 			table uninstall
@@ -729,7 +719,6 @@ module Base
 
 			lua
 			{
-				create = Vehicles.Create.Default,
 			}
 
 			parent = M151WindshieldFrame,
@@ -742,6 +731,82 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = HM1025FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HMMWVHardDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = HM1025FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HMMWVHardDoorSC,
+		}
+		
 		part WindowFrontRight
 		{
 			model windowFR

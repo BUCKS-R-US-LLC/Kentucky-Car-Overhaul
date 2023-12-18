@@ -40,9 +40,17 @@ module Base
                 time = 300,
                 test = Vehicles.UninstallTest.Default,
             }
- 		lua
+        table partVariation
             {
-                create = Vehicles.Create.Default,
+                chances = {
+                    default = 50,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
             }
 		}
 	}

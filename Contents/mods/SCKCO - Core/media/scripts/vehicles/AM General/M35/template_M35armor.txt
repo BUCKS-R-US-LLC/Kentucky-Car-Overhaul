@@ -58,9 +58,9 @@ module Base
                 		file = M35A1Bullbar,
 				}
 		area = Engine,
-            category = SCUCKarmor,
-            itemType = Base.M35Bumper,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35Bumper,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -97,11 +97,12 @@ module Base
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        lua
             {
 				create = Vehicles.Create.Default,
             }
-		}
+        }
 
 		part M35A1FrontRightWindowArmor
         	{
@@ -117,11 +118,11 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontRight,
 		parent = WindowFrontRight,
-            category = SCUCKarmor,
-            itemType = Base.M35WindowArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35WindowArmor,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -134,7 +135,7 @@ module Base
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowFrontRight,
+		        requireInstalled = WindowFrontRight,
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
                 recipes = Basic Mechanics,
@@ -159,10 +160,11 @@ module Base
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        lua
             {
             }
-		}
+        }
 
 		part M35A1FrontLeftWindowArmor
         	{
@@ -178,11 +180,11 @@ module Base
 				animate = FALSE,
 			}
 
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = WindowFrontLeft,
-            category = SCUCKarmor,
-            itemType = Base.M35WindowArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35WindowArmor,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -195,10 +197,10 @@ module Base
 						equip = primary,
                     }
                 }
-		    requireInstalled = WindowFrontLeft,
+		        requireInstalled = WindowFrontLeft,
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -217,13 +219,14 @@ module Base
                 }
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        lua
             {
             }
-		}
+        }
 
 
 		part M35A1FrontRightDoorArmor
@@ -234,11 +237,11 @@ module Base
                 		file = M35A1FrontRightDoorArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontRight,
 		parent = DoorFrontRight,
-            category = SCUCKarmor,
-            itemType = Base.M35DoorArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35DoorArmor,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -251,10 +254,10 @@ module Base
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowFrontRight,
+		        requireInstalled = WindowFrontRight,
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -276,10 +279,11 @@ module Base
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        lua
             {
             }
-		}
+        }
 
 		part M35A1FrontLeftDoorArmor
         	{
@@ -289,11 +293,11 @@ module Base
                 		file = M35A1FrontLeftDoorArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = DoorFrontLeft,
-            category = SCUCKarmor,
-            itemType = Base.M35DoorArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35DoorArmor,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -306,10 +310,10 @@ module Base
 						equip = primary,
                     }
                 }
-		requireInstalled = WindowFrontLeft,
+		        requireInstalled = WindowFrontLeft,
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -344,9 +348,9 @@ module Base
                 		file = M35A1WindshieldArmor,
 				}
 		area = Engine,
-            category = SCUCKarmor,
-            itemType = Base.M35WindshieldArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.M35WindshieldArmor,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -361,7 +365,7 @@ module Base
                 }
                 time = 1000,
                 skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -388,5 +392,30 @@ module Base
             }
 		}
 
-	}
+	part DetroitDieselSC
+        {
+
+        category = nodisplay,
+        itemType = Base.DetroitDieselSC,
+        mechanicRequireKey = false,
+        
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+	part AirBrakeSC
+        {
+
+        category = SCUCKarmor,
+        itemType = Base.NormalBrake,
+        mechanicRequireKey = false,
+        
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+     }
 }

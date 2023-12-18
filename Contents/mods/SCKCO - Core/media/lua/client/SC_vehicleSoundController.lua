@@ -2,19 +2,28 @@ local vehicleSoundController = {}
 
 vehicleSoundController.library = {
 
-    ["BackUpAlarm"] = {---Not all params need-to or should-be defined
+    ["AirBrakeSC"] = {
 
-        { sound = "BackUpAlarm", --soundFile or soundScript
-          speedIsLessThan = -3,
-          --speedIsGreaterThan = 2, --if speed > this - play sound
+        { sound = "AirBrake",
+          speedIsGreaterThan = 0,
+          stopSound = true,
+          stopWhenNotRunning = true,
         },
-    }---
+    },
+
+    ["DetroitDieselSC"] = {
+
+        { sound = "DetroitDieselIdle",
+          speedIsGreaterThan = -1,
+          stopWhenNotRunning = true,
+        },
+    }
 
 }
 
-
 function vehicleSoundController.handleUpdate(player)
     if not player then return end
+    ---@type BaseVehicle
     local vehicle = player:getVehicle()
     if not vehicle then return end
 
@@ -34,8 +43,10 @@ function vehicleSoundController.handleUpdate(player)
                     local invertedCase = data.speedIsLessThan and data.speedIsGreaterThan and data.speedIsLessThan > data.speedIsGreaterThan
 
                     local notValid = (invertedCase and (not bSpeedLessThan or not bSpeedGreaterThan)) or (not bSpeedLessThan and not bSpeedGreaterThan)
-
-                    if data.stop or notValid then
+                    local stopWhenNotRunning = (data.stopWhenNotRunning and (not vehicle:isEngineRunning()))
+                    local stopSound = data.stop or notValid or stopWhenNotRunning
+                    
+                    if stopSound then
                         if vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:stopSoundByName(data.sound) end
                     else
                         if not vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:playAmbientLoopedImpl(data.sound) end

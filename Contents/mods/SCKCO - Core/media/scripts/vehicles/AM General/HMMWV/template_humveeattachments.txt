@@ -1,0 +1,33 @@
+module Base
+{
+
+template vehicle HumveeAttachments
+	{
+
+	part DetroitDieselSC
+        {
+
+        category = nodisplay,
+        itemType = Base.DetroitDieselSC,
+        mechanicRequireKey = false,
+        
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+	part AirBrakeSC
+        {
+
+        category = SCUCKarmor,
+        itemType = Base.NormalBrake,
+        mechanicRequireKey = false,
+        
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+     }
+}

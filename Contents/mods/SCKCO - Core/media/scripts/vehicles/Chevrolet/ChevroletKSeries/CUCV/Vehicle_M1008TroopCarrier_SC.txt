@@ -753,11 +753,18 @@ module Base
 			{
 			}
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+            table partVariation
+            {
+                chances = {
+                    default = 60,
+                }
+                additionalVehicleFunc = Default
+            }
 
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
 			category = SCUCKaccessories,
 			itemType = Base.M1008Tarp,
 		}

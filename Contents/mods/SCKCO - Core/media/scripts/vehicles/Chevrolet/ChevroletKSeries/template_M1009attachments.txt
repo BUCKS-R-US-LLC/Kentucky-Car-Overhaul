@@ -267,6 +267,19 @@ template vehicle M1009Attachments
             }
 		}
 
+		part DetroitDieselSC
+        {
+
+        category = nodisplay,
+        itemType = Base.DetroitDieselSC,
+        mechanicRequireKey = false,
+        
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
      }
 
 }

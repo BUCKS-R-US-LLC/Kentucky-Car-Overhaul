@@ -54,9 +54,18 @@ module Base
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-            lua
+
+            table partVariation
             {
-                create = Vehicles.Create.Default,
+                chances = {
+                    default = 10,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
             }
 		}
 	}		

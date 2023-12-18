@@ -277,7 +277,7 @@ module Base
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.4f,
+		wheelFriction = 3.0f,
 		frontEndHealth = 1200,
 		rearEndHealth = 750,
 		seats = 4,
@@ -472,10 +472,19 @@ module Base
 			{
 			}
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+        table partVariation
+            {
+                chances = {
+                    default = 0,
+                    Base.SC_M151A2 = 50,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
 
 			category = SCUCKaccessories,
 			itemType = Base.M151SoftTopSC,
@@ -497,10 +506,19 @@ module Base
 			{
 			}
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+        table partVariation
+            {
+                chances = {
+                    default = 0,
+                    Base.SC_M151A2 = 50,
+                }
+                additionalVehicleFunc = Default
+            }
+
+        lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
 
 			category = SCUCKaccessories,
 			itemType = Base.M151SideTarpSC,

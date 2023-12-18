@@ -246,7 +246,7 @@ module Base
 
 		template = PassengerSeat4,
 
-		passenger FrontLeft
+	passenger FrontLeft
 		{
 			showPassenger = true,
 			hasRoof = true,
@@ -263,7 +263,7 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
-
+			
 			switchSeat RearLeft
 			{
 			}
@@ -317,6 +317,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
 		}
 
 		passenger RearRight
@@ -335,6 +343,14 @@ module Base
 				offset = -2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
+			}
+			
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 

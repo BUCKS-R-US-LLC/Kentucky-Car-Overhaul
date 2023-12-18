@@ -19,22 +19,6 @@ local part = vehicle:getPartById("Windshield")
 
 end
 
-function CherokeeGasTank(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_JeepCherokee", "SC_JeepCherokeeAudubon")) then
-
-        local part = vehicle:getPartById("GasTank")
-        if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(GasTank)
-    end
-
-
-end
-
 function CherokeeWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_JeepCherokee", "SC_JeepCherokeeAudubon")) then
@@ -117,7 +101,7 @@ local part = vehicle:getPartById("Engine")
             vehicle:getPartById("JeepCherokeeBullbar"):setCondition(vehicle:getPartById("JeepCherokeeBullbar"):getCondition()-1)
 
         end
-        vehicle:transmitPartModData(EngineWindow)
+        vehicle:transmitPartModData(Engine)
     end
 
 
@@ -236,14 +220,14 @@ function CherokeeBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_JeepCherokee", "SC_JeepCherokeeAudubon")) then
 
-local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("JeepCherokeeBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("JeepCherokeeBullbar"):getInventoryItem()) then
+local part = vehicle:getPartById("Engine")
+        if (vehicle:getPartById("JeepCherokeeBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("JeepCherokeeBullbar"):getInventoryItem()) then
 
             sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 100 })
             vehicle:getPartById("JeepCherokeeBullbar"):setCondition(vehicle:getPartById("JeepCherokeeBullbar"):getCondition()-1)
 
         end
-        vehicle:transmitPartModData(EngineDoor)
+        vehicle:transmitPartModData(Engine)
     end
 
 
