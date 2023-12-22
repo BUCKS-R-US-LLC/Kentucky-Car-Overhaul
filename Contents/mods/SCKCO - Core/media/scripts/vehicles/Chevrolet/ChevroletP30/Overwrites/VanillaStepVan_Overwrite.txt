@@ -163,7 +163,7 @@ module Base
 			engineStart = VehicleEngineStepVan,
 			engineTurnOff = VehicleEngineStepVan,
 			horn = VehicleHornVan,
-			ignitionFail = VehiclegnitionFailStepVan,
+			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
 		extents = 3.1930 3.7193 8.1754,
@@ -271,7 +271,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7193 1.7544 -3.6140,
+				offset = 0.7193 1.7544 -4.1228,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -290,7 +290,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7193 1.7544 -3.6140,
+				offset = -0.7193 1.7544 -4.1228,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -319,12 +319,12 @@ module Base
 
 		area SeatRearRight
 		{
-			xywh = 0.0000 -5.7193 1.1228 1.1228,
+			xywh = 0.0000 -5.4211 1.1228 1.1228,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.0000 -5.7193 1.1228 1.1228,
+			xywh = 0.0000 -5.4211 1.1228 1.1228,
 		}
 
 		area GasTank
@@ -363,15 +363,9 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part LargeUtilityTruckSoundController
-		{
-			category = nodisplay,
-			itemType = Base.LargeUtilityTruckSoundController,
-		}
-
 		part BackOfTruck
 		{
-			area = DoorRearLeft,
+			area = SeatRearRight,
 			category = nodisplay,
 			itemType = Base.NormalTrunk,
 			mechanicRequireKey = true,
@@ -719,39 +713,7 @@ module Base
 
 		part DoorRearLeft
 		{
-			model Default
-			{
-				file = StepVanP30RearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
+			category = nodisplay,
 			itemType = Base.ChevyP30RearDoorsSC,
 		}
 

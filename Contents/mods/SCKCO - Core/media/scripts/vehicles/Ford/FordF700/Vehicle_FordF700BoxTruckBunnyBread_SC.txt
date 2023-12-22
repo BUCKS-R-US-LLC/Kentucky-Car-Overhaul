@@ -120,7 +120,7 @@ module Base
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordF700Greenes
+	vehicle SC_FordF700BunnyBread
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -136,7 +136,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_BunnyBread,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Bunny,
 		}
 
 		textureRust = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Rust,
@@ -162,21 +162,21 @@ module Base
 		centerOfMassOffset = 0.0000 1.5556 -0.3016,
 		shadowExtents = 3.6109 11.1989,
 		shadowOffset = 0.0000 -0.1842,
-		engineForce = 15000,
+		engineForce = 8500,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 40f,
+		maxSpeed = 80f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 50,
+		suspensionStiffness = 40,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.8f,
+		wheelFriction = 0.8f,
 		frontEndHealth = 5500,
 		rearEndHealth = 3300,
 		seats = 2,
