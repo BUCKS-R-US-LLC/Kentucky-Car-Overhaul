@@ -4,6 +4,365 @@ module Base
 	template vehicle FireCoachAttachments
     {
 
+	model FireCoachArmorWindshield
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|ArmorWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FireCoachFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model FireCoachFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model FireCoachRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FireCoachRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_FireCoach_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle FireCoachArmor
+		{
+
+		part FireCoachArmorWindshield
+        	{
+
+			model FireCoachArmorWindshield
+				{
+                		file = FireCoachArmorWindshield,
+				}
+		area = Engine,
+            category = SCUCKarmor,
+            itemType = Base.FireCoachWindshieldArmor,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part FireCoachFrontLeftDoorArmor
+        	{
+
+			model FireCoachFrontLeftDoorArmor
+				{
+                		file = FireCoachFrontLeftDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = Engine,
+		parent = DoorFrontLeft,
+        category = SCUCKarmor,
+            itemType = Base.FireCoachDoorArmor,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part FireCoachFrontRightDoorArmor
+        	{
+
+			model FireCoachFrontRightDoorArmor
+				{
+                		file = FireCoachFrontRightDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = Engine,
+		parent = DoorFrontRight,
+        category = SCUCKarmor,
+            itemType = Base.FireCoachDoorArmor,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part FireCoachRearLeftWindowArmor
+        	{
+
+			model FireCoachRearLeftWindowArmor
+				{
+                		file = FireCoachRearLeftWindowArmor,
+				}
+
+		area = Engine,
+        category = SCUCKarmor,
+            itemType = Base.FireCoachWindowArmor,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part FireCoachRearRightWindowArmor
+        	{
+
+			model FireCoachRearRightWindowArmor
+				{
+                		file = FireCoachRearRightWindowArmor,
+				}
+
+		area = Engine,
+        category = SCUCKarmor,
+            itemType = Base.FireCoachWindowArmor,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
 	part DetroitDieselSC
         {
 
