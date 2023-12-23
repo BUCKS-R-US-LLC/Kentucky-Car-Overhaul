@@ -209,7 +209,7 @@ module Base
 		engineForce = 15000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 100f,
+		maxSpeed = 70f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
@@ -220,7 +220,7 @@ module Base
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.8f,
+		wheelFriction = 0.8f,
 		frontEndHealth = 5500,
 		rearEndHealth = 3300,
 		seats = 6,
@@ -683,11 +683,6 @@ module Base
 
 		part Muffler
 		{
-			model Muffler
-			{
-				file = M35A1Muffler,
-			}
-
 			table install
 			{
 				recipes = Intermediate Mechanics,

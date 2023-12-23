@@ -154,7 +154,7 @@ module Base
 		mass = 1000,
 		physicsChassisShape = 3.4921 3.3016 12.8571,
 		centerOfMassOffset = 0.0000 1.6508 -0.5714,
-		shadowExtents = 4.0554 14.5482,
+		shadowExtents = 3.8173 14.5482,
 		shadowOffset = 0.0000 -0.2000,
 		engineForce = 4000,
 		engineQuality = 80,
@@ -165,7 +165,7 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 90,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
@@ -292,12 +292,8 @@ module Base
 			xywh = -1.4286 -1.9524 0.0000 0.0000,
 		}
 
-		part LargeUtilityTruckSoundController
-		{
-			itemType = Base.LargeUtilityTruckSoundController,
-			category = nodisplay,
-		}
-
+		template = DM800Attachments,
+		template = BackUpAlarmInstalled,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,

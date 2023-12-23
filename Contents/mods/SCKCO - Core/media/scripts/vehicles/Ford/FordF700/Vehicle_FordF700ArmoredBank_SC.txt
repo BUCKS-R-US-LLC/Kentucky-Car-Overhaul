@@ -164,21 +164,21 @@ module Base
 		centerOfMassOffset = 0.0000 1.7460 0.0159,
 		shadowExtents = 3.2617 8.5003,
 		shadowOffset = 0.0000 0.0222,
-		engineForce = 15000,
+		engineForce = 8000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 100f,
+		maxSpeed = 80f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 50,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.8f,
+		wheelFriction = 1.3f,
 		frontEndHealth = 5500,
 		rearEndHealth = 3300,
 		seats = 4,
@@ -343,8 +343,7 @@ module Base
 			xywh = -1.4921 -2.7937 0.0000 0.0000,
 		}
 
-		template = BackUpAlarmInstalled,
-		template = F700Bullbar/part/F700Bullbar,
+		template = F700ArmoredAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -354,12 +353,6 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-
-		part LargeUtilityTruckSoundController
-		{
-			itemType = Base.LargeUtilityTruckSoundController,
-			category = nodisplay,
-		}
 
 		part GasTank
 		{

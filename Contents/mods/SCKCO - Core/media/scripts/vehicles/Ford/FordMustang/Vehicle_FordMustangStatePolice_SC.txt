@@ -168,12 +168,12 @@ module Base
 		}
 
 		extents = 2.4706 1.5588 6.0588,
-		mass = 1000,
+		mass = 350,
 		physicsChassisShape = 2.4706 1.5588 6.0588,
 		centerOfMassOffset = 0.0000 0.7647 0.0588,
 		shadowExtents = 2.4661 6.7520,
 		shadowOffset = 0.0000 0.0063,
-		engineForce = 4700,
+		engineForce = 8700,
 		engineLoudness = 90,
 		engineQuality = 90,
 		maxSpeed = 145f,
@@ -189,12 +189,12 @@ module Base
 		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 50,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.1,
 		suspensionDamping = 3.4,
 		maxSuspensionTravelCm = 20,
 		suspensionRestLength = 0.2f,
-		wheelFriction = 1.8f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 1500,
 		rearEndHealth = 900,
 		seats = 4,
@@ -837,7 +837,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.RadioBlack,
+			itemType = Radio.HamRadio1,
 		}
 
 		template = Headlight,

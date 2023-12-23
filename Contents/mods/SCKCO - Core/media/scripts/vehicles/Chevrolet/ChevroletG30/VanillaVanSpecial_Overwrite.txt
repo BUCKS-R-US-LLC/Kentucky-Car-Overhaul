@@ -152,13 +152,13 @@ module Base
 		}
 
 		extents = 3.3220 3.0847 8.3051,
-		mass = 1700,
+		mass = 700,
 		physicsChassisShape = 3.3220 3.0847 8.3051,
 		centerOfMassOffset = 0.0000 1.5593 -0.7966,
 		shadowExtents = 3.3295 8.3058,
 		shadowOffset = -0.0042 -0.8042,
 		maxSpeed = 90f,
-		engineForce = 8500,
+		engineForce = 6500,
 		engineQuality = 70,
 		engineLoudness = 100,
 		brakingForce = 60,
@@ -166,12 +166,12 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 60,
+		suspensionStiffness = 90,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 1700,
 		rearEndHealth = 1300,
 		seats = 2,
@@ -209,7 +209,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -249,6 +249,44 @@ module Base
 			}
 		}
 
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7458 0.7288 -0.8814,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3559 -0.5763 1.5593,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7458 0.7288 -0.8814,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3559 -0.5763 1.5593,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		area Engine
 		{
 			xywh = 0.0000 4.5593 3.3220 2.0000,
@@ -262,6 +300,16 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.4237 0.7797 1.1186 1.1186,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = -2.4237 -0.7627 1.1186 1.1186,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.4237 -0.7627 1.1186 1.1186,
 		}
 
 		area GasTank
@@ -294,8 +342,11 @@ module Base
 			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
 
+		template = G30WindowlessAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = Trunk/part/TruckBed,
 		template = GasTank,
@@ -372,6 +423,16 @@ module Base
 				file = G30VanWindowlessPassenger,
 			}
 
+			itemType = Base.ChevyG30FrontSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			itemType = Base.ChevyG30FrontSeatSC,
+		}
+
+		part SeatRearRight
+		{
 			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
@@ -511,6 +572,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30RearWindowsSC,
 		}
@@ -521,6 +583,15 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
+		part TruckBed
+		{
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+		}
 		part WindowFrontRight
 		{
 			model windowFR
