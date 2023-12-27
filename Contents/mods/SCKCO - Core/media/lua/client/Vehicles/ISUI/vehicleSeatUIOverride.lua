@@ -6,6 +6,12 @@ ISVehicleSeatUI.fonts = {UIFont.Large,UIFont.Medium,UIFont.Small}
 ISVehicleSeatUI.fontMeasured = false
 ISVehicleSeatUI.fontHeights = {}
 
+
+SeatOffsetY["Base.SC_M35A1"] = -110
+ISVehicleSeatUI.SeatScale = ISVehicleSeatUI.SeatScale or {}
+ISVehicleSeatUI.SeatScale["Base.SC_M35A1"] = 0.50
+
+
 function ISVehicleSeatUI.setFontHeights()
     if ISVehicleSeatUI.fontMeasured then return end
     ISVehicleSeatUI.fontMeasured = true
