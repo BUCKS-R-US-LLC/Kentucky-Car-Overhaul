@@ -162,21 +162,21 @@ module Base
 		centerOfMassOffset = 0.0000 1.6190 0.1270,
 		shadowExtents = 3.9759 10.3575,
 		shadowOffset = 0.0000 0.2125,
-		engineForce = 15000,
+		engineForce = 7500,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 60f,
+		maxSpeed = 40f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 50,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 1.8f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 5500,
 		rearEndHealth = 3300,
 		seats = 2,
@@ -298,8 +298,7 @@ module Base
 			xywh = -1.4286 -1.3333 0.0000 0.0000,
 		}
 
-		template = BackUpAlarmUninstalled,
-		template = C70BullbarSurvivor,
+		template = C70SurvivorAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -307,12 +306,6 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-
-		part LargeUtilityTruckSoundController
-		{
-			itemType = Base.LargeUtilityTruckSoundController,
-			category = nodisplay,
-		}
 
 		part GasTank
 		{

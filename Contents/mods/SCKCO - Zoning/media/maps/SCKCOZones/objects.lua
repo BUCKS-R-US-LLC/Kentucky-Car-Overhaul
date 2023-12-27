@@ -146,7 +146,7 @@ objects = {
 
   { name = "old_money", type = "ParkingStall", x = 5267, y = 6477, z = 0, width = 3, height = 5 },
   { name = "old_money", type = "ParkingStall", x = 6320, y = 6641, z = 0, width = 3, height = 5 },
-  { name = "old_money", type = "ParkingStall", x = 12040, y = 2541, z = 0, width = 3, height = 5 },
+  { name = "old_money", type = "ParkingStall", x = 12045, y = 2532, z = 0, width = 3, height = 5 },
 
   { name = "new_money", type = "ParkingStall", x = 6116, y = 6726, z = 0, width = 3, height = 5 },
   { name = "new_money", type = "ParkingStall", x = 6261, y = 6675, z = 0, width = 3, height = 5 },

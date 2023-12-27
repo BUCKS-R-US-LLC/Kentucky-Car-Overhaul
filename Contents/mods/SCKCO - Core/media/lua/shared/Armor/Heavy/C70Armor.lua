@@ -2,23 +2,6 @@
 --- Created by cytt0rak
 ---  WIP
 
-function C70GasTank(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_ChevroletC70GrainTruck", "SC_ChevroletC70Survivalist")) then
-
-        local part = vehicle:getPartById("GasTank")
-        if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(GasTank)
-    end
-
-
-end
-
-
 function C70SurvivorWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_ChevroletC70Survivalist" )) then
@@ -36,23 +19,7 @@ local part = vehicle:getPartById("Windshield")
 
 end
 
-function C70Engine(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_CrownC70" )) then
-
-local part = vehicle:getPartById("Engine")
-        if (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("Engine"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(Engine)
-    end
-
-
-end
-
-function C70EngineDoor(player, part, elapsedMinutes)
+function C70Bullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "SC_ChevroletC70GrainTruck", "SC_ChevroletC70Survivalist")) then
 
@@ -86,7 +53,7 @@ local part = vehicle:getPartById("EngineDoor")
 
 end
 
-Events.OnPlayerUpdate.Add(C70GasTank);
-Events.OnPlayerUpdate.Add(C70EngineDoor);
+
+Events.OnPlayerUpdate.Add(C70Bullbar);
 Events.OnPlayerUpdate.Add(C70SurvivorWindshield);
 Events.OnPlayerUpdate.Add(C70SurvivorEngineDoor);

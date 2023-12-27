@@ -272,12 +272,12 @@ module Base
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.01,
 		steeringClamp = 0.3,
-		suspensionStiffness = 80,
+		suspensionStiffness = 90,
 		suspensionCompression = 1.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 3.0f,
+		wheelFriction = 1.5f,
 		frontEndHealth = 1200,
 		rearEndHealth = 750,
 		seats = 4,
@@ -944,6 +944,11 @@ module Base
 			itemType = Base.M151DoorSC,
 		}
 
+		part FourCylinderEngineSC
+		{
+			itemType = Base.FourCylinderEngineSC,
+		}
+		
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
