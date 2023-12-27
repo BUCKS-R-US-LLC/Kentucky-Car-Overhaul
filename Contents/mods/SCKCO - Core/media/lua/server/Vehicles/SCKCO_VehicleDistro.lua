@@ -49,7 +49,7 @@ VehicleDistributions.SC_CUCV = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_M151 = {
     TruckBed = {
@@ -76,7 +76,7 @@ VehicleDistributions.SC_M151 = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_Humvee = {
     TruckBed = {
@@ -127,7 +127,7 @@ VehicleDistributions.SC_Humvee = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_M35 = {
     TruckBed = {
@@ -141,7 +141,7 @@ VehicleDistributions.SC_M35 = {
 
         },
     }
-},
+}
 
 VehicleDistributions.SC_Police = {
     TruckBed = {
@@ -194,7 +194,7 @@ VehicleDistributions.SC_Police = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_Civilian = {
     TruckBed = {
@@ -247,7 +247,7 @@ VehicleDistributions.SC_Civilian = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 distributionTable["SC_K5BlazerFossoil"] = { Normal = VehicleDistributions.SC_Civilian; }
 distributionTable["SC_K5BlazerMcCoys"] = { Normal = VehicleDistributions.SC_Civilian; }
