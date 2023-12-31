@@ -16,18 +16,5 @@ template vehicle HumveeAttachments
                 create = Vehicles.Create.Default,
             }
 		}
-
-	part AirBrakeSC
-        {
-
-        category = SCUCKarmor,
-        itemType = Base.NormalBrake,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
      }
 }
