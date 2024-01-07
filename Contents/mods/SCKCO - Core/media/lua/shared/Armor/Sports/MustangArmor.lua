@@ -4,7 +4,7 @@
 
 function MustangWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("FordMustangWindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("FordMustangWindshieldArmor"):getInventoryItem()) then
@@ -19,25 +19,9 @@ local part = vehicle:getPartById("Windshield")
 
 end
 
-function MustangGasTank(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
-
-        local part = vehicle:getPartById("GasTank")
-        if (vehicle:getPartById("GasTank"):getCondition() < 70) and (vehicle:getPartById("GasTank"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70 })
-
-        end
-        vehicle:transmitPartModData(GasTank)
-    end
-
-
-end
-
 function MustangWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("FordMustangFrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontLeftWindowArmor"):getInventoryItem()) then
@@ -54,7 +38,7 @@ end
 
 function MustangWindowFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("FordMustangFrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontRightWindowArmor"):getInventoryItem()) then
@@ -73,7 +57,7 @@ end
 
 function MustangWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getInventoryItem()) then
@@ -90,7 +74,7 @@ end
 
 function MustangWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("FordMustangRearRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearRightWindowArmor"):getInventoryItem()) then
@@ -106,9 +90,9 @@ function MustangWindowRearRight(player, part, elapsedMinutes)
 
 end
 
-function MustangBullbar1(player, part, elapsedMinutes)
+function MustangBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
@@ -117,24 +101,7 @@ local part = vehicle:getPartById("Engine")
             vehicle:getPartById("FordMustangBullbar"):setCondition(vehicle:getPartById("FordMustangBullbar"):getCondition()-1)
 
         end
-        vehicle:transmitPartModData(EngineWindow)
-    end
-
-
-end
-
-function MustangBullbar2(player, part, elapsedMinutes)
-    local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
-
-        local part = vehicle:getPartById("EngineDoor")
-        if (vehicle:getPartById("FordMustangBullbar"):getCondition() > 1) and (vehicle:getPartById("EngineDoor"):getCondition() < 70) and (vehicle:getPartById("FordMustangBullbar"):getInventoryItem()) then
-
-            sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition = 70})
-            vehicle:getPartById("FordMustangBullbar"):setCondition(vehicle:getPartById("FordMustangBullbar"):getCondition()-1)
-
-        end
-        vehicle:transmitPartModData(EngineDoor)
+        vehicle:transmitPartModData(Engine)
     end
 
 
@@ -142,7 +109,7 @@ end
 
 function MustangDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("FordMustangFrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontLeftDoorArmor"):getInventoryItem()) then
@@ -160,7 +127,7 @@ end
 
 function MustangDoorFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("FordMustangFrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangFrontRightDoorArmor"):getInventoryItem()) then
@@ -178,7 +145,7 @@ end
 
 function MustangWindowRearRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowRearRight")
         if (vehicle:getPartById("FordMustangRearRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearRight"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearRightWindowArmor"):getInventoryItem()) then
@@ -196,7 +163,7 @@ end
 
 function MustangWindowRearLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang")) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_FordMustang", "SC_FordMustangJeffersonCounty", "SC_FordMustangStatePolice", "SC_FordMustangUndercover")) then
 
         local part = vehicle:getPartById("WindowRearLeft")
         if (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowRearLeft"):getCondition() < 70) and (vehicle:getPartById("FordMustangRearLeftWindowArmor"):getInventoryItem()) then
@@ -213,9 +180,7 @@ function MustangWindowRearLeft(player, part, elapsedMinutes)
 end
 
 Events.OnPlayerUpdate.Add(MustangWindshield);
-Events.OnPlayerUpdate.Add(MustangGasTank);
-Events.OnPlayerUpdate.Add(MustangBullbar1);
-Events.OnPlayerUpdate.Add(MustangBullbar2);
+Events.OnPlayerUpdate.Add(MustangBullbar);
 Events.OnPlayerUpdate.Add(MustangDoorFrontLeft);
 Events.OnPlayerUpdate.Add(MustangDoorFrontRight);
 Events.OnPlayerUpdate.Add(MustangWindowFrontLeft);

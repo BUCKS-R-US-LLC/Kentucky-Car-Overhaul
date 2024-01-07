@@ -4,7 +4,7 @@
 
 function G30WindowlessWindshield(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
 local part = vehicle:getPartById("Windshield")
         if (vehicle:getPartById("G30WindowlessWindshieldArmor"):getCondition() > 1) and (vehicle:getPartById("Windshield"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessWindshieldArmor"):getInventoryItem()) then
@@ -22,7 +22,7 @@ end
 
 function G30WindowlessWindowFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
         local part = vehicle:getPartById("WindowFrontLeft")
         if (vehicle:getPartById("G30WindowlessFrontLeftWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontLeft"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessFrontLeftWindowArmor"):getInventoryItem()) then
@@ -39,7 +39,7 @@ end
 
 function G30WindowlessWindowFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
         local part = vehicle:getPartById("WindowFrontRight")
         if (vehicle:getPartById("G30WindowlessFrontRightWindowArmor"):getCondition() > 1) and (vehicle:getPartById("WindowFrontRight"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessFrontRightWindowArmor"):getInventoryItem()) then
@@ -58,7 +58,7 @@ end
 
 function G30WindowlessBullbar(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
 local part = vehicle:getPartById("Engine")
         if (vehicle:getPartById("G30WindowlessBullbar"):getCondition() > 1) and (vehicle:getPartById("Engine"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessBullbar"):getInventoryItem()) then
@@ -75,7 +75,7 @@ end
 
 function G30WindowlessDoorFrontLeft(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
         local part = vehicle:getPartById("DoorFrontLeft")
         if (vehicle:getPartById("G30WindowlessFrontLeftDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontLeft"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessFrontLeftDoorArmor"):getInventoryItem()) then
@@ -92,7 +92,7 @@ end
 
 function G30WindowlessDoorFrontRight(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "Van", "VanRadio", "VanRadio_3N", "VanSpecial", "VanSpiffo", "Van_KnoxDisti", "Van_LectroMax", "Van_GenFac", "Van_Transit", "VanAmbulance", "SC_G30Transit", "SC_G30McCoy", "SC_G30Mail")) then
 
         local part = vehicle:getPartById("DoorFrontRight")
         if (vehicle:getPartById("G30WindowlessFrontRightDoorArmor"):getCondition() > 1) and (vehicle:getPartById("DoorFrontRight"):getCondition() < 70) and (vehicle:getPartById("G30WindowlessFrontRightDoorArmor"):getInventoryItem()) then

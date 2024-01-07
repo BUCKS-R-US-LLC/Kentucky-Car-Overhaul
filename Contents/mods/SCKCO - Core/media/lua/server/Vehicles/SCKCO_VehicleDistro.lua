@@ -6,8 +6,9 @@ VehicleDistributions.SC_CUCV = {
         items = {
 
             "MEA.GIJerryCan", 10,
-            "MEA.AmmoCan762X51", 10,
-            "MEA.AmmoCan50BMG", 50,
+            "MEA.AmmoCan556X45", 50,
+            "MEA.AmmoCan762X51", 50,
+            "MEA.AmmoCan50BMG", 10,
 
         },
         junk = {
@@ -49,7 +50,7 @@ VehicleDistributions.SC_CUCV = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_M151 = {
     TruckBed = {
@@ -57,8 +58,9 @@ VehicleDistributions.SC_M151 = {
         items = {
 
             "MEA.GIJerryCan", 10,
-            "MEA.AmmoCan762X51", 10,
-            "MEA.AmmoCan50BMG", 50,
+            "MEA.AmmoCan556X45", 50,
+            "MEA.AmmoCan762X51", 50,
+            "MEA.AmmoCan50BMG", 10,
 
         },
         junk = {
@@ -76,7 +78,7 @@ VehicleDistributions.SC_M151 = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_Humvee = {
     TruckBed = {
@@ -84,8 +86,9 @@ VehicleDistributions.SC_Humvee = {
         items = {
 
             "MEA.GIJerryCan", 10,
-            "MEA.AmmoCan762X51", 10,
-            "MEA.AmmoCan50BMG", 50,
+            "MEA.AmmoCan556X45", 50,
+            "MEA.AmmoCan762X51", 50,
+            "MEA.AmmoCan50BMG", 10,
 
         },
         junk = {
@@ -127,7 +130,7 @@ VehicleDistributions.SC_Humvee = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_M35 = {
     TruckBed = {
@@ -136,12 +139,13 @@ VehicleDistributions.SC_M35 = {
 
             "Base.M35SoftTop", 50,
             "MEA.GIJerryCan", 10,
-            "MEA.AmmoCan762X51", 10,
-            "MEA.AmmoCan50BMG", 50,
+            "MEA.AmmoCan556X45", 50,
+            "MEA.AmmoCan762X51", 50,
+            "MEA.AmmoCan50BMG", 10,
 
         },
     }
-},
+}
 
 VehicleDistributions.SC_Police = {
     TruckBed = {
@@ -194,30 +198,28 @@ VehicleDistributions.SC_Police = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 VehicleDistributions.SC_Civilian = {
     TruckBed = {
         rolls = 20,
         items = {
-            "HandTorch", 1,
-            "Radio.WalkieTalkie4", 10,
-
-            -- SCGL. --
-
-            "Base.Shotgun", 2,
-            "Base.ShotgunShellsBox", 5,
-            "Vest_BulletPolice", 10,
+            "HottieZ", 5,
+            "Cigarettes", 8,
+            "Glasses_Aviators", 0.5,
+            "HandTorch", 4,
+            "Lighter", 4,
 
         },
         junk = {
             rolls = 1,
             items = {
-                "FirstAidKit", 1,
+                "HottieZ", 5,
+                "Cigarettes", 8,
+                "Glasses_Aviators", 0.5,
+                "HandTorch", 4,
+                "Lighter", 4,
 
-                -- Accessories --
-
-                "SCA.MealReadytoEat_SCA", 5,
             }
         }
     },
@@ -247,7 +249,7 @@ VehicleDistributions.SC_Civilian = {
 
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
-},
+}
 
 distributionTable["SC_K5BlazerFossoil"] = { Normal = VehicleDistributions.SC_Civilian; }
 distributionTable["SC_K5BlazerMcCoys"] = { Normal = VehicleDistributions.SC_Civilian; }

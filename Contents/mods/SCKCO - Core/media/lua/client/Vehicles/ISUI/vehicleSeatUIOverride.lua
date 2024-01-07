@@ -8,7 +8,6 @@ ISVehicleSeatUI.fontHeights = {}
 
 
 SeatOffsetY["Base.SC_M35A1"] = -110
-ISVehicleSeatUI.SeatScale = ISVehicleSeatUI.SeatScale or {}
 ISVehicleSeatUI.SeatScale["Base.SC_M35A1"] = 0.50
 
 
