@@ -19,7 +19,7 @@ ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsPolice"] = {imgPrefix = "blaz
 ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsFire"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpVanLights"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.PickUpVan"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanMccoy"] = {imgPrefix = "blazer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_K5BlazerMcCoys"] = {imgPrefix = "blazer_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_Caprice9C1LVPD"] = {imgPrefix = "caprice_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_Caprice9C1ParkRanger"] = {imgPrefix = "caprice_", x=0,y=0};

@@ -389,7 +389,7 @@ module Base
 			{
 				offset = 1.9048 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
+				area = SeatRearLeft,
 			}
 
 			switchSeat FrontLeft
@@ -479,48 +479,6 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
-
-		part GunRack1
-		{
-			area = SeatFrontRight,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part GunRack2
-		{
-			area = SeatFrontLeft,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 
 		part SeatFrontLeft
 		{

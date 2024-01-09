@@ -282,48 +282,6 @@ module Base
 			xywh = -1.4286 -2.1270 0.0000 0.0000,
 		}
 
-		part GunRack1
-		{
-			area = SeatFrontRight,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part GunRack2
-		{
-			area = SeatFrontLeft,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		template = ChevyLogo,
 		template = M1008Attachments,
 		template = Seat/part/SeatFrontLeft,
