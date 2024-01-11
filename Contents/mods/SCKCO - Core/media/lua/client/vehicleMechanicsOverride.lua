@@ -5,12 +5,6 @@ require "Vehicles/ISUI/ISVehicleMechanics"
 -- it's probably a good chance this part of the UI is not messed with by many mods
 -- and if there are mods that mess with it, calling the original may not even help avoid issues.
 
-local render = ISVehicleMechanics.render
-function ISVehicleMechanics:render()
-    render(self)
-    print("test")
-end
-
 ---local renderCarOverlay = ISVehicleMechanics.renderCarOverlay
 function ISVehicleMechanics:renderCarOverlay()
     ---renderCarOverlay(self)
@@ -33,8 +27,6 @@ function ISVehicleMechanics:renderCarOverlay()
 
     self.hidetooltip = true
 
-    print("car: ", self.vehicle:getScriptName())
-
     local carMechanicsOverlay = ISCarMechanicsOverlay.CarList[self.vehicle:getScriptName()]
     if carMechanicsOverlay then
 
@@ -46,19 +38,22 @@ function ISVehicleMechanics:renderCarOverlay()
 
         for i=1, self.vehicle:getPartCount() do
             local part = self.vehicle:getPartByIndex(i-1)
-            print("checking:  ", part:getId())
-            local partOverlays = ISCarMechanicsOverlay.PartList[part:getId()]
+            local partID = part:getId()
+
+            local partOverlays = ISCarMechanicsOverlay.PartList[partID]
             if partOverlays then
-                print("     found partOverlays ", part:getId())
+
                 local condRGB = self:getConditionRGB(part:getCondition())
                 if not part:getInventoryItem() and part:getTable("install")  then
                     condRGB = self:getConditionRGB(part:getCondition())
                 end
 
-                if carMechanicsOverlay.PartList and carMechanicsOverlay.PartList[part:getId()] then
-                    partOverlays = carMechanicsOverlay.PartList[part:getId()]
-                elseif partOverlays.vehicles and not partOverlays.vehicles[propsImgPrefix] then
-                    propsImgPrefix = "_"
+                local tmpPrefix = propsImgPrefix
+
+                if carMechanicsOverlay.PartList and carMechanicsOverlay.PartList[partID] then
+                    partOverlays = carMechanicsOverlay.PartList[partID]
+                elseif partOverlays.vehicles and not partOverlays.vehicles[tmpPrefix] and partOverlays.x and partOverlays.y then
+                    tmpPrefix = "_"
                 end
 
                 local alpha = 0.9
@@ -67,15 +62,14 @@ function ISVehicleMechanics:renderCarOverlay()
                 end
 
                 if not partOverlays.multipleImg then
-                    print("SC PRINT TEST:  ", overlayDir..propsImgPrefix..partOverlays.img..".png")
-                    self:drawTextureScaledUniform(getTexture(overlayDir..propsImgPrefix..partOverlays.img..".png"), carMechanicsOverlay.x, carMechanicsOverlay.y, scale,alpha,condRGB.r,condRGB.g,condRGB.b)
+                    self:drawTextureScaledUniform(getTexture(overlayDir..tmpPrefix..partOverlays.img..".png"), carMechanicsOverlay.x, carMechanicsOverlay.y, scale,alpha,condRGB.r,condRGB.g,condRGB.b)
                 else
                     for _,img in ipairs(partOverlays.img) do
-                        self:drawTextureScaledUniform(getTexture(overlayDir..propsImgPrefix..img..".png"), carMechanicsOverlay.x, carMechanicsOverlay.y, scale,alpha,condRGB.r,condRGB.g,condRGB.b)
+                        self:drawTextureScaledUniform(getTexture(overlayDir..tmpPrefix..img..".png"), carMechanicsOverlay.x, carMechanicsOverlay.y, scale,alpha,condRGB.r,condRGB.g,condRGB.b)
                     end
                 end
 
-                if self:renderCarOverlayTooltip(partOverlays, part, propsImgPrefix) then
+                if self:renderCarOverlayTooltip(partOverlays, part, tmpPrefix) then
                     self.hidetooltip = false
                 end
 
