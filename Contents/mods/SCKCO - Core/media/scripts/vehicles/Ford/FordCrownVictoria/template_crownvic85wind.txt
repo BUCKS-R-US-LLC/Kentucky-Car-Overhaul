@@ -1,36 +1,40 @@
 module Base
 {
 
-	model CrownVictoriaFLWA
+	model CrownVicFLWA
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
         scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
-	model CrownVictoriaFRWA
+	model CrownVicFRWA
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
     
-	model CrownVictoriaRLWA
+	model CrownVicRLWA
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 
-	model CrownVictoriaRRWA
+	model CrownVicRRWA
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
 template vehicle CrownVic85Wind
@@ -39,9 +43,9 @@ template vehicle CrownVic85Wind
         part CrownVictoriaFLWA
         	{
 
-			model CrownVictoriaFLWA
+			model CrownVicFLWA
 				{
-                		file = CrownVictoriaFLWA,
+                		file = CrownVicFLWA,
 				}
 
 			anim ClosedToOpen
@@ -101,9 +105,9 @@ template vehicle CrownVic85Wind
         part CrownVictoriaFRWA
         	{
 
-			model CrownVictoriaFRWA
+			model CrownVicFRWA
 				{
-                		file = CrownVictoriaFRWA,
+                		file = CrownVicFRWA,
 				}
 
 			anim ClosedToOpen
@@ -163,9 +167,9 @@ template vehicle CrownVic85Wind
         part CrownVictoriaRLWA
         	{
 
-			model CrownVictoriaRLWA
+			model CrownVicRLWA
 				{
-                		file = CrownVictoriaRLWA,
+                		file = CrownVicRLWA,
 				}
 
 			anim ClosedToOpen
@@ -225,9 +229,9 @@ template vehicle CrownVic85Wind
         part CrownVictoriaRRWA
         	{
 
-			model CrownVictoriaRRWA
+			model CrownVicRRWA
 				{
-                		file = CrownVictoriaRRWA,
+                		file = CrownVicRRWA,
 				}
 
 			anim ClosedToOpen

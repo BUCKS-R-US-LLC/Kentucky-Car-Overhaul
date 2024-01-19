@@ -33,16 +33,16 @@ module Base
 	}
 	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = RearRightWindowArmorBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,21 +51,23 @@ module Base
 	}
 	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 		boneWeight = RearRightWindowArmorBone 1.0,
+
 	}
 	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
-		boneWeight = RearRightWindowArmorBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+
 	}
 	model CrownVictoriaFrontRightDoor
 	{
@@ -161,17 +163,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/CrownVictoria/BasicYellow,
-		}
-
-		skin
-		{
 			texture = Vehicles/CrownVictoria/BlackYellow,
-		}
-
-		skin
-		{
-			texture = Vehicles/CrownVictoria/CheckersYellow,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
@@ -190,7 +182,6 @@ module Base
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
-
 
 		extents = 3.0169 1.8644 8.0678,
 		mass = 800,
@@ -330,7 +321,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.0169 3.0508 2.0000,
+			xywh = 0.0000 5.1186 3.0508 2.0000,
 		}
 
 		area TruckBed
@@ -974,4 +965,3 @@ module Base
 		}
 	}
 }
-

@@ -1,47 +1,49 @@
 module Base
 {
-	model SC_G30VanWindowless
+	model SC_G30VanSpiffo
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanWindowlessDriver
+	model G30VanSpiffoDriver
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessPassenger
+	model G30VanSpiffoPassenger
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessWindshield
+	model G30VanSpiffoWindshield
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessFrontRightWindow
+	model G30VanSpiffoFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30VanWindowlessFrontLeftWindow
+	model G30VanSpiffoFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model G30VanWindowlessFrontRightDoor
+	model G30VanSpiffoFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +51,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanWindowlessFrontLeftDoor
+	model G30VanSpiffoFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,7 +59,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanWindowlessSlidingRightDoor
+	model G30VanSpiffoSlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
 		shader = vehicle_noreflect,
@@ -65,7 +67,7 @@ module Base
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
 	}
-	model G30VanWindowlessTrunk
+	model G30VanSpiffoTrunk
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
@@ -74,7 +76,7 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30VanWindowlessHood
+	model G30VanSpiffoHood
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -82,7 +84,7 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanWindowlessRearWindshield
+	model G30VanSpiffoRearWindshield
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
@@ -124,7 +126,7 @@ module Base
 
 		model
 		{
-			file = SC_G30VanWindowless,
+			file = SC_G30VanSpiffo,
 			scale = 0.5900,
 			offset = 0.0000 0.1864 0.0508,
 		}

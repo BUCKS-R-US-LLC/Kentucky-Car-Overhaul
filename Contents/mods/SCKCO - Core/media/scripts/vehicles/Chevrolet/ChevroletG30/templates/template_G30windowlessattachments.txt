@@ -39,18 +39,16 @@ module Base
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model G30WindowlessFrontRightWindowArmor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 	template vehicle G30WindowlessAttachments
