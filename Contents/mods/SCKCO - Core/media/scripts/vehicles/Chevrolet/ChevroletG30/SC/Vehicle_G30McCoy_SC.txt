@@ -1,31 +1,31 @@
 module Base
 {
-	model SC_G30VanWindowless
+	model SC_G30VanMcCoy
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanWindowlessDriver
+	model G30VanMcCoyDriver
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessPassenger
+	model G30VanMcCoyPassenger
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessWindshield
+	model G30VanMcCoyWindshield
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanWindowlessFrontRightWindow
+	model G30VanMcCoyFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model G30VanWindowlessFrontLeftWindow
+	model G30VanMcCoyFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model G30VanWindowlessFrontRightDoor
+	model G30VanMcCoyFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanWindowlessFrontLeftDoor
+	model G30VanMcCoyFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,7 +57,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanWindowlessSlidingRightDoor
+	model G30VanMcCoySlidingRightDoor
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
 		shader = vehicle_noreflect,
@@ -65,7 +65,7 @@ module Base
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
 	}
-	model G30VanWindowlessTrunk
+	model G30VanMcCoyTrunk
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
@@ -74,7 +74,7 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30VanWindowlessHood
+	model G30VanMcCoyHood
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -82,7 +82,7 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanWindowlessRearWindshield
+	model G30VanMcCoyRearWindshield
 	{
 		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
@@ -124,7 +124,7 @@ module Base
 
 		model
 		{
-			file = SC_G30VanWindowless,
+			file = SC_G30VanMcCoy,
 			scale = 0.5900,
 			offset = 0.0000 0.1864 0.0339,
 		}
@@ -374,7 +374,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanWindowlessTrunk,
+				file = G30VanMcCoyTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -415,7 +415,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = G30VanWindowlessDriver,
+				file = G30VanMcCoyDriver,
 			}
 
 			itemType = Base.ChevyG30FrontSeatSC,
@@ -425,7 +425,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = G30VanWindowlessPassenger,
+				file = G30VanMcCoyPassenger,
 			}
 
 			itemType = Base.ChevyG30FrontSeatSC,
@@ -460,7 +460,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = G30VanWindowlessHood,
+				file = G30VanMcCoyHood,
 			}
 
 			anim Close
@@ -521,7 +521,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = G30VanWindowlessWindshield,
+				file = G30VanMcCoyWindshield,
 			}
 
 			window
@@ -552,7 +552,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = G30VanWindowlessRearWindshield,
+				file = G30VanMcCoyRearWindshield,
 			}
 
 			window
@@ -601,7 +601,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanWindowlessFrontRightWindow,
+				file = G30VanMcCoyFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -620,7 +620,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanWindowlessFrontLeftWindow,
+				file = G30VanMcCoyFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -639,7 +639,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontRightDoor,
+				file = G30VanMcCoyFrontRightDoor,
 			}
 
 			anim Close
@@ -677,7 +677,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontLeftDoor,
+				file = G30VanMcCoyFrontLeftDoor,
 			}
 
 			anim Close
@@ -715,7 +715,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessSlidingRightDoor,
+				file = G30VanMcCoySlidingRightDoor,
 			}
 
 			anim Close

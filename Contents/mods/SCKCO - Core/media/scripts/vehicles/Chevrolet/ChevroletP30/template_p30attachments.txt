@@ -1,105 +1,82 @@
 module Base
 {
 
-	model CrownVictoriaBullbar
+	model P30Bullbar
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontBumper_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|Bullbar_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
 	}
 
-	model CrownVictoriaWindshieldArmor
+	model P30WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_StepVanP30_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
 	}
 
-	model CrownVictoriaFrontLeftDoorArmor
+	model P30HoodArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|HoodArmor_obj,
+		shader = vehicle_noreflect,
+        static = FALSE,
+        boneWeight = HoodBone 1.0,
+		scale = 1,
+	}
+
+	model P30FrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model CrownVictoriaFrontRightDoorArmor
+	model P30FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
+		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-    model CrownVictoriaRearLeftDoorArmor
+	model P30RearDoorArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_StepVanP30_SC|RearDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
+		boneWeight = FrontLeftDoorBone 1.0,
+        boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model CrownVictoriaRearRightDoorArmor
+	model P30SideArmor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoorArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
+		mesh = vehicles/Vehicle_StepVanP30_SC|SideArmor_obj,
+		shader = vehiclewheel,
+		static = TRUE,
+        texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
-
 	}
 
-	model CrownVicFLWA
-	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-        scale = 1,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
-	}
-
-	model CrownVicFRWA
-	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowArmorBone 1.0,
-	}
-    
-	model CrownVicRLWA
-	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowArmorBone 1.0,
-	}
-
-	model CrownVicRRWA
-	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowArmorBone 1.0,
-	}
-
-template vehicle CrownVic85Attachments
+template vehicle P30Attachments
 		{
         
-		part CrownVictoriaWindshieldArmor
+		part P30WindshieldArmor
         	{
 
-			model CrownVictoriaWindshieldArmor
+			model P30WindshieldArmor
 				{
-                		file = CrownVictoriaWindshieldArmor,
+                		file = P30WindshieldArmor,
 				}
 
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaWindshieldArmorSC,
+        itemType = Base.KSeriesWindshieldArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -142,16 +119,69 @@ template vehicle CrownVic85Attachments
             }
 		}
         
-		part CrownVictoriaBullbar
+        part P30SideArmor
         	{
 
-			model CrownVictoriaBullbar
+			model P30SideArmor
 				{
-                		file = CrownVictoriaBullbar,
+                		file = P30SideArmor,
+				}
+
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesWindshieldArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+		part P30Bullbar
+        	{
+
+			model P30Bullbar
+				{
+                		file = P30Bullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
+        itemType = Base.KSeriesStandardBullbarSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -189,273 +219,30 @@ template vehicle CrownVic85Attachments
                   recipes = Advanced Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
+
+        lua
             {
             }
 		}
         
-        part CrownVictoriaRearLeftDoorArmor
+        part P30HoodArmor
         	{
 
-			model CrownVictoriaRearLeftDoorArmor
+			model P30HoodArmor
 				{
-                		file = CrownVictoriaRearLeftDoorArmor,
+                		file = P30HoodArmor,
 				}
 
 			anim ClosedToOpen
 			{
-				anim = RearLeftDoorClosing,
+				anim = HoodClosing,
 				animate = FALSE,
 			}
 
-		area = DoorRearLeft,
-		parent = DoorRearLeft,
+		area = Engine,
+		parent = EngineDoor,
         category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CrownVictoriaFrontLeftDoorArmor
-        	{
-
-			model CrownVictoriaFrontLeftDoorArmor
-				{
-                		file = CrownVictoriaFrontLeftDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = DoorFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CrownVictoriaFrontRightDoorArmor
-        	{
-
-			model CrownVictoriaFrontRightDoorArmor
-				{
-                		file = CrownVictoriaFrontRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontRight,
-        parent = DoorFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CrownVictoriaRearRightDoorArmor
-        	{
-
-			model CrownVictoriaRearRightDoorArmor
-				{
-                		file = CrownVictoriaRearRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearRight,
-        parent = DoorRearRight,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                parent = DoorRearRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CrownVictoriaFLWA
-        	{
-
-			model CrownVicFLWA
-				{
-                		file = CrownVicFLWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = WindowFrontLeft,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -499,12 +286,73 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaFRWA
+        part P30FrontLeftWindowArmor
         	{
 
-			model CrownVicFRWA
+			model P30FrontLeftWindowArmor
 				{
-                		file = CrownVicFRWA,
+                		file = P30FrontLeftWindowArmor,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+		parent = WindowFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.KSeriesWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part P30FrontRightWindowArmor
+        	{
+
+			model P30FrontRightWindowArmor
+				{
+                		file = P30FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -516,8 +364,7 @@ template vehicle CrownVic85Attachments
 		area = DoorFrontLeft,
         parent = WindowFrontRight,
         category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -561,87 +408,24 @@ template vehicle CrownVic85Attachments
             }
 		}
 
-        part CrownVictoriaRLWA
+        part P30RearDoorArmor
         	{
 
-			model CrownVicRLWA
+			model P30RearDoorArmor
 				{
-                		file = CrownVicRLWA,
+                		file = P30RearDoorArmor,
 				}
 
 			anim ClosedToOpen
 			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearLeft,
-		parent = WindowRearLeft,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CrownVictoriaRRWA
-        	{
-
-			model CrownVicRRWA
-				{
-                		file = CrownVicRRWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
+				anim = RearDoorCllosing,
 				animate = FALSE,
 			}
 
 		area = DoorRearRight,
         parent = WindowRearRight,
         category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
+        itemType = Base.KSeriesWindowArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -658,7 +442,7 @@ template vehicle CrownVic85Attachments
                 time = 1000,
                 skills = Mechanics:2,
                 recipes = Advanced Mechanics,
-                parent = WindowRearRight,
+                parent = WindowFrontRight,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -684,7 +468,6 @@ template vehicle CrownVic85Attachments
             {
             }
 		}
-        
     }
 
 }

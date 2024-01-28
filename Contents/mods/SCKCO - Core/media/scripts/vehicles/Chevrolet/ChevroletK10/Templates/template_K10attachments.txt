@@ -1,24 +1,24 @@
 module Base
 {
 
-	model M1008Bullbar
+	model K10Bullbar
 	{
-		mesh = vehicles/Vehicle_M1008_SC|ExtraBar_obj,
+		mesh = vehicles/Vehicle_K10_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model M1008WindshieldArmor
+	model K10WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_M1008_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_K10_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
-	model M1008FrontLeftWindowArmor
+	model K10FrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -26,9 +26,9 @@ module Base
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model M1008FrontRightWindowArmor
+	model K10FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -36,15 +36,15 @@ module Base
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-template vehicle M1008Attachments
+template vehicle K10Attachments
 		{
         
-		part M1008WindshieldArmor
+		part K10WindshieldArmor
         	{
 
-			model M1008WindshieldArmor
+			model K10WindshieldArmor
 				{
-                		file = M1008WindshieldArmor,
+                		file = K10WindshieldArmor,
 				}
 
 		area = Engine,
@@ -92,12 +92,12 @@ template vehicle M1008Attachments
             }
 		}
         
-		part M1008Bullbar
+		part K10Bullbar
         	{
 
-			model M1008Bullbar
+			model K10Bullbar
 				{
-                		file = M1008Bullbar,
+                		file = K10Bullbar,
 				}
 		area = Engine,
         category = SCUCKarmor,
@@ -145,12 +145,12 @@ template vehicle M1008Attachments
             }
 		}
         
-        part M1008FrontLeftWindowArmor
+        part K10FrontLeftWindowArmor
         	{
 
-			model M1008FrontLeftWindowArmor
+			model K10FrontLeftWindowArmor
 				{
-                		file = M1008FrontLeftWindowArmor,
+                		file = K10FrontLeftWindowArmor,
 				}
 
 			anim ClosedToOpen
@@ -206,12 +206,12 @@ template vehicle M1008Attachments
             }
 		}
 
-        part M1008FrontRightWindowArmor
+        part K10FrontRightWindowArmor
         	{
 
-			model M1008FrontRightWindowArmor
+			model K10FrontRightWindowArmor
 				{
-                		file = M1008FrontRightWindowArmor,
+                		file = K10FrontRightWindowArmor,
 				}
 
 			anim ClosedToOpen

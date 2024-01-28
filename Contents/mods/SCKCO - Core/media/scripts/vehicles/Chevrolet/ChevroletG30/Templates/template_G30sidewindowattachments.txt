@@ -1,0 +1,436 @@
+module Base
+{
+
+	model G30AmbulanceBullbar
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|HoodArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30AmbulanceWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model G30AmbulanceFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model G30AmbulanceFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30Ambulance_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	template vehicle G30AmbulanceAttachments
+		{
+
+		part G30AmbulanceWindshieldArmor
+        	{
+
+			model G30AmbulanceWindshieldArmor
+				{
+                		file = G30AmbulanceWindshieldArmor,
+				}
+		area = Engine,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindshieldArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                  skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part G30AmbulanceBullbar
+        	{
+
+			model G30AmbulanceBullbar
+				{
+                		file = G30AmbulanceBullbar,
+				}
+		area = Engine,
+            category = SCUCKarmor,
+            itemType = Base.ChevyG30BullbarSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
+		part G30AmbulanceFrontLeftDoorArmor
+        	{
+
+			model G30AmbulanceFrontLeftDoorArmor
+				{
+                		file = G30AmbulanceFrontLeftDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = DoorFrontLeft,
+		parent = DoorFrontLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30DoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+		part G30AmbulanceFrontRightDoorArmor
+        	{
+
+			model G30AmbulanceFrontRightDoorArmor
+				{
+                		file = G30AmbulanceFrontRightDoorArmor,
+				}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+		area = DoorFrontRight,
+		parent = DoorFrontRight,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30DoorArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30AmbulanceFrontLeftWindowArmor
+        	{
+
+			model G30AmbulanceFrontLeftWindowArmor
+				{
+                		file = G30AmbulanceFrontLeftWindowArmor,
+				}
+
+		area = DoorFrontLeft,
+        parent = DoorFrontLeft,
+            category = SCUCKarmor,
+           itemType = Base.ChevyG30WindowArmorSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+part G30AmbulanceFrontRightWindowArmor
+        	{
+
+			model G30AmbulanceFrontRightWindowArmor
+				{
+                		file = G30AmbulanceFrontRightWindowArmor,
+				}
+
+		area = DoorFrontRight,
+        parent = DoorFrontRight,
+            category = SCUCKarmor,
+           itemType = Base.ChevyG30WindowArmorSC,
+            mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                parent = DoorFrontRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+
+     }
+
+}

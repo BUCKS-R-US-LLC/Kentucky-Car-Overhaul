@@ -1,119 +1,109 @@
 module Base
 {
 
-	model JeepCherokeeBullbar
+	model G30SeatsBullbar
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|Bullbar_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|HoodArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model JeepCherokeeWindshieldArmor
+	model G30SeatsWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model JeepCherokeeFrontLeftDoorArmor
+	model G30SeatsFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model JeepCherokeeFrontRightDoorArmor
+	model G30SeatsFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-    model JeepCherokeeRearLeftDoorArmor
+	model G30SeatsFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-
-	model JeepCherokeeRearRightDoorArmor
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightDoorArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-
-	model JeepCherokeeFrontLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
+		static = TRUE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model JeepCherokeeFrontRightWindowArmor
+	model G30SeatsFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
+		static = FALSE,      
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model JeepCherokeeRearRightWindowArmor
+	model G30SeatsRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
-		scale = 1,
-        static = FALSE,
+		scale = 1,        
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+        static = TRUE,
         boneWeight = RearRightDoorBone 1.0,
 	}
 
-	model JeepCherokeeRearLeftWindowArmor
+	model G30SeatsRearLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearLeftWindowArmor_obj,
+		shader = vehiclewheel,   
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
-        static = FALSE,
-        boneWeight = RearLeftDoorBone 1.0,
+        static = TRUE,
 	}
 
-	model JeepCherokeeMiddleRightWindowArmor
+	model G30SeatsMiddleRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-
-	model JeepCherokeeMiddleLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleRightWindowArmor_obj,
+		shader = vehiclewheel,
+        static = TRUE,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
 	}
 
-	template vehicle JeepCherokeeAttachments
+	model G30SeatsMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleLeftWindowArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+		scale = 1,
+	}
+
+	template vehicle G30SeatsAttachments
 		{
 
-		part JeepCherokeeWindshieldArmor
+		part G30SeatsWindshieldArmor
         	{
 
-			model JeepCherokeeWindshieldArmor
+			model G30SeatsWindshieldArmor
 				{
-                		file = JeepCherokeeWindshieldArmor,
+                		file = G30SeatsWindshieldArmor,
 				}
 		area = Engine,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindshieldArmor,
+            itemType = Base.ChevyG30WindshieldArmorSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -156,16 +146,16 @@ module Base
             }
 		}
 
-		part JeepCherokeeBullbar
+		part G30SeatsBullbar
         	{
 
-			model JeepCherokeeBullbar
+			model G30SeatsBullbar
 				{
-                		file = JeepCherokeeBullbar,
+                		file = G30SeatsBullbar,
 				}
 		area = Engine,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeBullbar,
+            itemType = Base.ChevyG30BullbarSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -208,46 +198,18 @@ module Base
             }
 		}
         
-		part JeepCherokeeFrontLeftDoorArmor
+		part G30SeatsFrontLeftDoorArmor
         	{
 
-			model JeepCherokeeFrontLeftDoorArmor
+			model G30SeatsFrontLeftDoorArmor
 				{
-                		file = JeepCherokeeFrontLeftDoorArmor,
+                		file = G30SeatsFrontLeftDoorArmor,
 				}
 
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
+		area = DoorFrontLeft,
 		parent = DoorFrontLeft,
         category = SCUCKarmor,
-        itemType = Base.JeepCherokeeDoorArmor,
+        itemType = Base.ChevyG30DoorArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -290,128 +252,18 @@ module Base
             }
 		}
 
-        part JeepCherokeeRearLeftDoorArmor
+		part G30SeatsFrontRightDoorArmor
         	{
 
-			model JeepCherokeeRearLeftDoorArmor
+			model G30SeatsFrontRightDoorArmor
 				{
-                		file = JeepCherokeeRearLeftDoorArmor,
+                		file = G30SeatsFrontRightDoorArmor,
 				}
 
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.JeepCherokeeDoorArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part JeepCherokeeFrontRightDoorArmor
-        	{
-
-			model JeepCherokeeFrontRightDoorArmor
-				{
-                		file = JeepCherokeeFrontRightDoorArmor,
-				}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
+		area = DoorFrontRight,
 		parent = DoorFrontRight,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeDoorArmor,
+            itemType = Base.ChevyG30DoorArmorSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -454,18 +306,18 @@ module Base
             }
 		}
 
-part JeepCherokeeFrontLeftWindowArmor
+part G30SeatsFrontLeftWindowArmor
         	{
 
-			model JeepCherokeeFrontLeftWindowArmor
+			model G30SeatsFrontLeftWindowArmor
 				{
-                		file = JeepCherokeeFrontLeftWindowArmor,
+                		file = G30SeatsFrontLeftWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontLeft,
         parent = DoorFrontLeft,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.ChevyG30WindowArmorSC,
             mechanicRequireKey = false,
 		table install
             {
@@ -508,19 +360,19 @@ part JeepCherokeeFrontLeftWindowArmor
             }
 		}
 
-part JeepCherokeeFrontRightWindowArmor
+part G30SeatsFrontRightWindowArmor
         	{
 
-			model JeepCherokeeFrontRightWindowArmor
+			model G30SeatsFrontRightWindowArmor
 				{
-                		file = JeepCherokeeFrontRightWindowArmor,
+                		file = G30SeatsFrontRightWindowArmor,
 				}
 
-		area = Engine,
+		area = DoorFrontRight,
         parent = DoorFrontRight,
-            category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindowArmor,
-            mechanicRequireKey = false,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -563,47 +415,19 @@ part JeepCherokeeFrontRightWindowArmor
             }
 		}
 
- part JeepCherokeeRearRightDoorArmor
+part G30SeatsRearLeftWindowArmor
         	{
 
-			model JeepCherokeeRearRightDoorArmor
+			model G30SeatsRearLeftWindowArmor
 				{
-                		file = JeepCherokeeRearRightDoorArmor,
+                		file = G30SeatsRearLeftWindowArmor,
 				}
 
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = Engine,
-		parent = DoorRearRight,
-            category = SCUCKarmor,
-            itemType = Base.JeepCherokeeDoorArmor,
-            mechanicRequireKey = false,
+		area = DoorRearLeft,
+        parent = DoorRearLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -645,73 +469,20 @@ part JeepCherokeeFrontRightWindowArmor
             }
 		}
 
-part JeepCherokeeRearLeftWindowArmor
+part G30SeatsRearRightWindowArmor
         	{
 
-			model JeepCherokeeRearLeftWindowArmor
+			model G30SeatsRearRightWindowArmor
 				{
-                		file = JeepCherokeeRearLeftWindowArmor,
+                		file = G30SeatsRearRightWindowArmor,
 				}
 
-		area = Engine,
-                parent = DoorRearLeft,
-            category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindowArmor,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-part JeepCherokeeRearRightWindowArmor
-        	{
-
-			model JeepCherokeeRearRightWindowArmor
-				{
-                		file = JeepCherokeeRearRightWindowArmor,
-				}
-
-		area = Engine,
-            category = SCUCKarmor,
-            parent = DoorRearRight,
-            itemType = Base.JeepCherokeeWindowArmor,
-            mechanicRequireKey = false,
+		area = DoorRearRight,
+        parent = WindowRearRight,
+        category = SCUCKarmor,
+        parent = DoorRearRight,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -754,18 +525,19 @@ part JeepCherokeeRearRightWindowArmor
 		}
 
 
-part JeepCherokeeMiddleLeftWindowArmor
+part G30SeatsMiddleLeftWindowArmor
         	{
 
-			model JeepCherokeeMiddleLeftWindowArmor
+			model G30SeatsMiddleLeftWindowArmor
 				{
-                		file = JeepCherokeeMiddleLeftWindowArmor,
+                		file = G30SeatsMiddleLeftWindowArmor,
 				}
 
-		area = Engine,
-            category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindowArmor,
-            mechanicRequireKey = false,
+		area = WindowMiddleLeft,
+        parent = WindowMiddleLeft,
+        category = SCUCKarmor,
+        itemType = Base.ChevyG30WindowArmorSC,
+        mechanicRequireKey = false,
 		table install
             {
                 items
@@ -807,17 +579,18 @@ part JeepCherokeeMiddleLeftWindowArmor
             }
 		}
 
-part JeepCherokeeMiddleRightWindowArmor
+part G30SeatsMiddleRightWindowArmor
         	{
 
-			model JeepCherokeeMiddleRightWindowArmor
+			model G30SeatsMiddleRightWindowArmor
 				{
-                		file = JeepCherokeeMiddleRightWindowArmor,
+                		file = G30SeatsMiddleRightWindowArmor,
 				}
 
-		area = Engine,
+		area = WindowMiddleRight,
+        parent = WindowMiddleRight,
             category = SCUCKarmor,
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.ChevyG30WindowArmorSC,
             mechanicRequireKey = false,
 		table install
             {
