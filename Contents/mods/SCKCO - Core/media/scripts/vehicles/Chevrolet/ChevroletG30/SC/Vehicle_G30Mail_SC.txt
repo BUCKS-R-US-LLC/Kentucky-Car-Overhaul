@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30VanMailFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30VanMailFrontRightDoor
 	{
@@ -126,7 +128,7 @@ module Base
 		{
 			file = SC_G30VanMail,
 			scale = 0.5900,
-			offset = 0.0678 0.1864 0.0339,
+			offset = 0.0000 0.1864 0.0508,
 		}
 
 		skin
@@ -369,7 +371,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanMailTrunk,
+				file = G30VanWindowlessTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -410,7 +412,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = G30VanMailDriver,
+				file = G30VanWindowlessDriver,
 			}
 
 			itemType = Base.ChevyG30FrontSeatSC,
@@ -420,7 +422,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = G30VanMailPassenger,
+				file = G30VanWindowlessPassenger,
 			}
 
 			itemType = Base.ChevyG30FrontSeatSC,
@@ -455,7 +457,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = G30VanMailHood,
+				file = G30VanWindowlessHood,
 			}
 
 			anim Close
@@ -516,7 +518,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = G30VanMailWindshield,
+				file = G30VanWindowlessWindshield,
 			}
 
 			window
@@ -547,7 +549,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = G30VanMailRearWindshield,
+				file = G30VanWindowlessRearWindshield,
 			}
 
 			window
@@ -596,7 +598,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanMailFrontRightWindow,
+				file = G30VanWindowlessFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -615,7 +617,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanMailFrontLeftWindow,
+				file = G30VanWindowlessFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -634,7 +636,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanMailFrontRightDoor,
+				file = G30VanWindowlessFrontRightDoor,
 			}
 
 			anim Close
@@ -672,7 +674,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanMailFrontLeftDoor,
+				file = G30VanWindowlessFrontLeftDoor,
 			}
 
 			anim Close
@@ -710,7 +712,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanMailSlidingRightDoor,
+				file = G30VanWindowlessSlidingRightDoor,
 			}
 
 			anim Close

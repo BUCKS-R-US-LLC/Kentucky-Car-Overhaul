@@ -1,18 +1,19 @@
 module Base
 {
 
-	model SuburbanChevy
+	model SuburbanChevyLogo
 	{
 		mesh = vehicles/Vehicle_Suburb86_SC|Chevy_obj,
-		shader = vehicle_noreflect,
+        texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
+		shader = vehiclewheel,
 		scale = 1,
 	}
-    
+
 	model SuburbanBullbar
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|ExtraBar_obj,
-        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Vehicle_K5Blazer_SC|ExtraBar_obj,
+        texture = Vehicles/K5/Vehicle_BlazerSC_White,
+		shader = vehiclewheel,
 		scale = 1,
 	}
 
@@ -66,16 +67,15 @@ module Base
     
 	template vehicle SuburbanAttachments
 		{
-
-		part SuburbanChevy
+        
+		part SuburbanChevyLogo
         	{
 
-			model SuburbanChevy
+			model SuburbanChevyLogo
 				{
-                		file = SuburbanChevy,
+                		file = SuburbanChevyLogo,
 				}
 		area = Engine,
-            category = nodisplay,
             itemType = Base.ChevyLogo,
             mechanicRequireKey = false,
 		table install
@@ -84,13 +84,15 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
 						equip = primary,
                     }
                 }
-                time = 300,
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -101,13 +103,13 @@ module Base
                 {
                     1
                     {
-                        type = Base.Screwdriver,
+                        type = Base.Wrench,
                         count = 1,
                         keep = true,
  						equip = primary,
                    }
                 }
-                time = 300,
+                time = 1000,
                   skills = Mechanics:1,
                   recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
@@ -117,7 +119,7 @@ module Base
                 create = Vehicles.Create.Default,
             }
 		}
-        
+
 		part SuburbanWindshieldArmor
         	{
 
