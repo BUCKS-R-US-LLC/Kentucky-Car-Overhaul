@@ -147,13 +147,7 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model JeepCherokeeSpareTire
-	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|SpareTire_obj,
-		texture = vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		shader = vehiclewheel,
-		scale = 1,
-	}
+
 	model JeepCherokeefrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_JeepCherokee_LeftWheel,
@@ -1000,29 +994,7 @@ module Base
 			}
 		}
 
-		part JeepCherokeeSpareTire
-		{
-			model JeepCherokeeSpareTire
-			{
-				file = JeepCherokeeSpareTire,
-			}
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			itemType = Base.ModernTire,
-		}
-
+		template = JeepCherokeeSpareTire/part/JeepCherokeeSpareTire,
 		template = Brake,
 
 		part Brake*
