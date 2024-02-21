@@ -949,29 +949,7 @@ module Base
 			}
 		}
 
-		part JeepCherokeeSpareTire
-		{
-			model JeepCherokeeSpareTire
-			{
-				file = JeepCherokeeSpareTire,
-			}
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			itemType = Base.ModernTire,
-		}
-
+		template = JeepCherokeeSpareTire/part/JeepCherokeeSpareTire,
 		template = Brake,
 
 		part Brake*

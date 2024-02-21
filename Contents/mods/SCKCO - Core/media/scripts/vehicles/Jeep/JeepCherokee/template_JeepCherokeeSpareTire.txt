@@ -1,0 +1,76 @@
+module Base
+{
+	model JeepCherokeeSpareTire
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|SpareTire_obj,
+		texture = vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	template vehicle JeepCherokeeSpareTire
+	{
+		part JeepCherokeeSpareTire
+		{
+
+			model JeepCherokeeSpareTire
+			{
+				file = JeepCherokeeSpareTire,
+			}
+
+			area = TruckBed,
+			category = tire,
+			itemType = Base.OldTire;Base.NormalTire;Base.ModernTire,
+			mechanicRequireKey = true,
+
+			table install
+			{
+				items
+				{
+					1
+					{
+						type = Base.LugWrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 400,
+				skills = Mechanics:1,
+				test = Vehicles.ContainerAccess.TruckBed,
+				complete = Vehicles.InstallComplete.Default,
+			}
+
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						type = Base.LugWrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+				   }
+				}
+				time = 400,
+				skills = Mechanics:1,
+				test = Vehicles.ContainerAccess.TruckBed,
+				complete = Vehicles.UninstallComplete.Default,
+			}
+
+			table partVariation
+			{
+				chances = {
+					default = 10,
+				}
+				additionalVehicleFunc = Default
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+	}
+}
