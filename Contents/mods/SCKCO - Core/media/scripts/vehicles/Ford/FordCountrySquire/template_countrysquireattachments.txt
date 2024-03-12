@@ -4,14 +4,14 @@ module Base
 	model CountrySquireBullbar
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontBumper_obj,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model CountrySquireWindshieldArmor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|WindshieldArmor_obj,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
@@ -21,34 +21,14 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model CountrySquireFrontLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-	}
-
-	model CountrySquireFrontRightWindowArmor
-	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-	}
-    
 	model CountrySquireFrontRightDoorArmor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
 	}
 
     model CountrySquireRearLeftDoorArmor
@@ -57,7 +37,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftArmorBone 1.0,
 	}
 
 	model CountrySquireRearRightDoorArmor
@@ -66,25 +45,42 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightArmorBone 1.0,
 	}
 
-	model CountrySquireRearRightWindowArmor
+	model CountrySquireFLWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CountrySquireFRWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CountrySquireRLWA
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftArmorBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 
-	model CountrySquireRearRightWindowArmor
+	model CountrySquireRRWA
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_FordCountrySquire_SCR|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightArmorBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
 template vehicle CountrySquireAttachments
@@ -152,7 +148,7 @@ template vehicle CountrySquireAttachments
 				}
 		area = Engine,
         category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaBullbarSC,
+        itemType = Base.FordCrownVictoriaDoorArmorSC,
         mechanicRequireKey = false,
 		table install
             {
@@ -438,12 +434,12 @@ template vehicle CountrySquireAttachments
             }
 		}
 
-        part CountrySquireFrontLeftWindowArmor
+        part CountrySquireFLWA
         	{
 
-			model CountrySquireFrontLeftWindowArmor
+			model CountrySquireFLWA
 				{
-                		file = CountrySquireFrontLeftWindowArmor,
+                		file = CountrySquireFLWA,
 				}
 
 			anim ClosedToOpen
@@ -455,6 +451,7 @@ template vehicle CountrySquireAttachments
 		area = DoorFrontLeft,
 		parent = WindowFrontLeft,
         category = SCUCKarmor,
+        requireInstalled = FordCrownVictoriaDoorArmorSC,
         itemType = Base.FordCrownVictoriaWindowArmorSC,
         mechanicRequireKey = false,
 		table install
@@ -499,12 +496,12 @@ template vehicle CountrySquireAttachments
             }
 		}
 
-        part CountrySquireFrontRightWindowArmor
+        part CountrySquireFRWA
         	{
 
-			model CountrySquireFrontRightWindowArmor
+			model CountrySquireFRWA
 				{
-                		file = CountrySquireFrontRightWindowArmor,
+                		file = CountrySquireFRWA,
 				}
 
 			anim ClosedToOpen
@@ -516,6 +513,7 @@ template vehicle CountrySquireAttachments
 		area = DoorFrontLeft,
         parent = WindowFrontRight,
         category = SCUCKarmor,
+        requireInstalled = FordCrownVictoriaDoorArmorSC,
         itemType = Base.FordCrownVictoriaWindowArmorSC,
         mechanicRequireKey = false,
 		table install
@@ -559,6 +557,131 @@ template vehicle CountrySquireAttachments
             {
             }
 		}
+
+        part CountrySquireRLWA
+        	{
+
+			model CountrySquireRLWA
+				{
+                		file = CountrySquireRLWA,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearLeft,
+		parent = WindowRearLeft,
+        category = SCUCKarmor,
+        requireInstalled = FordCrownVictoriaDoorArmorSC,
+        itemType = Base.FordCrownVictoriaWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Advanced Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                         type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                
+            }
+		}
+
+        part CountrySquireRRWA
+        	{
+
+			model CountrySquireRRWA
+				{
+                		file = CountrySquireRRWA,
+				}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+		area = DoorRearRight,
+        parent = WindowRearRight,
+        category = SCUCKarmor,
+        requireInstalled = FordCrownVictoriaDoorArmorSC,
+        itemType = Base.FordCrownVictoriaWindowArmorSC,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                parent = WindowRearRight,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:2,
+                recipes = Advanced Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+            }
+		}
+        
     }
 
 }

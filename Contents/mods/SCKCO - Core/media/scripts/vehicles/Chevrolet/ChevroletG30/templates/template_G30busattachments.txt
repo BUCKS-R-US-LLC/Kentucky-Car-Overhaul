@@ -30,7 +30,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
@@ -63,7 +63,6 @@ module Base
                 }
                 time = 1000,
                   skills = Mechanics:2,
-                  recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
@@ -82,7 +81,6 @@ module Base
                 }
                 time = 1000,
                 skills = Mechanics:2,
-                  recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua
