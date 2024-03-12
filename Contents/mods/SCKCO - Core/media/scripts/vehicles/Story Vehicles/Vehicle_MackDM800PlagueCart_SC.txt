@@ -1,121 +1,120 @@
 module Base
 {
-	model SC_FordF700PanelTruck
+	model SC_MackDM800Garbage
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|base_mesh,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model F700PanelTruckDriver
+	model MackDM800GarbageDriver
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckPassenger
+	model MackDM800GarbagePassenger
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckWindshield
+	model MackDM800GarbageWindshield
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckFrontRightWindow
+	model MackDM800GarbageFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model F700PanelTruckFrontLeftWindow
+	model MackDM800GarbageFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model F700PanelTruckFrontRightDoor
+	model MackDM800GarbageFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model F700PanelTruckFrontLeftDoor
+	model MackDM800GarbageFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model F700PanelTruckRearRightWindow
+	model MackDM800GarbageRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckRearLeftWindow
+	model MackDM800GarbageRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckTrunk
+	model MackDM800GarbageRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-	}
-	model F700PanelTruckRearWindshield
-	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckHood
+	model MackDM800GarbageHood
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|Hood_obj,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
+		boneWeight = HoodBone2 1.0,
 	}
-	model F700BoxTruckfrontwheelleft
+	model MackDM800GarbageExhaust
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
+		mesh = vehicles/Vehicle_MackDM800Garbage_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model MackDM800Garbagefrontwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_MackWheel_FrontLeft,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckfrontwheelright
+	model MackDM800Garbagefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_FrontRight,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckrearwheelleft
+	model MackDM800Garbagerearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_RearLeft,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
-	model F700BoxTruckrearwheelright
+	model MackDM800Garbagerearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
-		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
+		mesh = vehicles/Wheels/Vehicle_MackWheel_RearRight,
+		texture = vehicles/MackDM800/Vehicle_MackWheel_SC,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordF700PanelTruck
+	vehicle SC_MackDM800PlagueCart
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -124,87 +123,62 @@ module Base
 
 		model
 		{
-			file = SC_FordF700PanelTruck,
+			file = SC_MackDM800Garbage,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -1.1905,
+			offset = 0.0000 0.3175 0.1111,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Black,
+			texture = Vehicles/MackDM800/Vehicle_MackGarbageGreen_SC,
 		}
 
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Caramel,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_DarkCanyon,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Green,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_White,
-		}
-
-		textureRust = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Rust,
-		textureMask = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Mask,
-		textureLights = Vehicles/FordF700/Vehicle_FordF700PanelTruck_lights,
-		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
-		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
-		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_blood,
-		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_blood,
+		textureRust = Vehicles/MackDM800/Vehicle_MackGarbage_rust,
+		textureMask = Vehicles/MackDM800/Vehicle_MackGarbage_mask,
+		textureLights = Vehicles/MackDM800/Vehicle_MackGarbage_lights,
+		textureDamage1Shell = Vehicles/MackDM800/Vehicle_MackGarbage_scratch,
+		textureDamage2Shell = Vehicles/MackDM800/Vehicle_MackGarbage_scratch,
+		textureDamage1Overlay = Vehicles/MackDM800/Vehicle_MackGarbage_blood,
+		textureDamage2Overlay = Vehicles/MackDM800/Vehicle_MackGarbage_blood,
 
 		sound
 		{
 			engine = VehicleEngineStepVan,
 			engineStart = VehicleEngineStepVan,
 			engineTurnOff = VehicleEngineStepVan,
-			horn = VehicleHornStandard,
+			horn = MackAirHorn,
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.9524 3.0794 9.3333,
+		extents = 3.4603 3.3016 12.8889,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 9.3333,
-		centerOfMassOffset = 0.0000 1.5556 -0.3016,
-		shadowExtents = 3.2617 9.4846,
-		shadowOffset = 0.0000 -0.3112,
-		engineForce = 8000,
-		engineQuality = 100,
-		engineLoudness = 120,
+		physicsChassisShape = 3.4921 3.3016 12.8571,
+		centerOfMassOffset = 0.0000 1.6508 -0.5714,
+		shadowExtents = 3.8173 14.5482,
+		shadowOffset = 0.0000 -0.2000,
+		engineForce = 4000,
+		engineQuality = 80,
+		engineLoudness = 180,
 		maxSpeed = 80f,
-		brakingForce = 80,
-		stoppingMovementForce = 3.0f,
-		rollInfluence = 0.20f,
-		steeringIncrement = 0.02,
-		steeringClamp = 0.5,
-		suspensionStiffness = 40,
-		suspensionCompression = 4.83,
-		suspensionDamping = 3.88,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 90,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 1.3f,
-		frontEndHealth = 5500,
-		rearEndHealth = 3300,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 8000,
+		rearEndHealth = 6500,
 		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.0159 4.5079,
+			offset = 1.2698 0.0159 4.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +186,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2222 0.0159 4.5079,
+			offset = -1.2698 0.0159 4.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +194,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2222 0.0159 -1.8254,
+			offset = -0.0317 0.0159 -3.8095,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +202,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2222 0.0159 -1.8254,
+			offset = -0.0317 0.0159 -2.0476,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -242,7 +216,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 1.4921 2.6984,
+				offset = 0.8413 1.6667 2.4444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -261,7 +235,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6190 1.4921 2.6984,
+				offset = -0.1587 1.6667 2.4444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -275,50 +249,51 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.4444 2.9524 2.0000,
+			xywh = 0.0476 4.6349 5.2063 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.9524 2.9524 1.7460,
+			xywh = 0.0000 -7.3492 3.4603 1.1746,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2063 1.7460 1.2381 1.2381,
+			xywh = 2.5238 2.8413 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 1.7460 1.2381 1.2381,
+			xywh = -2.5079 2.8413 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 1.6349 1.0794 0.5714,
+			xywh = -2.4286 2.5079 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 3.3333 0.0000 0.0000,
+			xywh = 1.4921 4.1746 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 3.3333 0.0000 0.0000,
+			xywh = -1.3651 4.1746 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -3.0159 0.0000 0.0000,
+			xywh = 1.4286 -3.7143 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -3.0159 0.0000 0.0000,
+			xywh = -1.4286 -1.9524 0.0000 0.0000,
 		}
 
-		template = F700PanelAttachments,
+		template = DM800Attachments,
+		template = BackUpAlarmInstalled,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -326,6 +301,14 @@ module Base
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part Muffler
+		{
+			model DM800Exhaust
+			{
+				file = MackDM800GarbageExhaust,
+			}
+		}
 
 		part GasTank
 		{
@@ -336,20 +319,20 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = F700PanelTruckDriver,
+				file = MackDM800GarbageDriver,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
+			itemType = Base.MackDM800FrontSeatSC,
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = F700PanelTruckPassenger,
+				file = MackDM800GarbagePassenger,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
+			itemType = Base.MackDM800FrontSeatSC,
 		}
 
 		part Muffler
@@ -364,6 +347,11 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
+			model
+			{
+				file = MackDM800GarbageDriver,
+			}
+
 			itemType = Base.NormalCarMuffler,
 		}
 
@@ -373,7 +361,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = F700PanelTruckHood,
+				file = MackDM800GarbageHood,
 			}
 
 			anim Close
@@ -414,7 +402,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordF700HoodSC,
+			itemType = Base.MackDM800HoodSC,
 		}
 
 		part Heater
@@ -434,7 +422,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = F700PanelTruckWindshield,
+				file = MackDM800GarbageWindshield,
 			}
 
 			window
@@ -458,14 +446,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF700WindshieldSC,
+			itemType = Base.MackDM800WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model WindshieldRear
 			{
-				file = F700PanelTruckRearWindshield,
+				file = MackDM800GarbageRearWindshield,
 			}
 
 			window
@@ -489,7 +477,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF700WindshieldSC,
+			itemType = Base.MackDM800WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -501,7 +489,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = F700PanelTruckFrontRightWindow,
+				file = MackDM800GarbageFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -513,33 +501,33 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordF700SideWindowSC,
+			itemType = Base.MackDM800SideWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = F700PanelTruckFrontLeftWindow,
+				file = MackDM800GarbageFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowBone,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordF700SideWindowSC,
+			itemType = Base.MackDM800SideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = F700PanelTruckFrontRightDoor,
+				file = MackDM800GarbageFrontRightDoor,
 			}
 
 			anim Close
@@ -570,14 +558,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = Base.MackDM800DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = F700PanelTruckFrontLeftDoor,
+				file = MackDM800GarbageFrontLeftDoor,
 			}
 
 			anim Close
@@ -608,7 +596,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = Base.MackDM800DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -624,57 +612,19 @@ module Base
 			{
 				recipes = Advanced Mechanics,
 			}
-
-			model Default
-			{
-				file = F700PanelTruckTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.FordF700PanelTruckGateSC,
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
 
-		part TruckBed
+		part TruckBedOpen
 		{
 			itemType = Base.BigTrunk,
 
 			container
 			{
-				capacity = 250,
+				capacity = 400,
 				conditionAffectsCapacity = false,
 			}
 		}
@@ -683,7 +633,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckfrontwheelleft,
+				file = MackDM800Garbagefrontwheelleft,
 			}
 		}
 
@@ -691,7 +641,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckfrontwheelright,
+				file = MackDM800Garbagefrontwheelright,
 			}
 		}
 
@@ -699,7 +649,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckrearwheelleft,
+				file = MackDM800Garbagerearwheelleft,
 			}
 		}
 
@@ -707,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F700BoxTruckrearwheelright,
+				file = MackDM800Garbagerearwheelright,
 			}
 		}
 
@@ -749,7 +699,7 @@ module Base
 
 		part Radio*
 		{
-			itemType = Radio.RadioBlack,
+			itemType = Radio.HamRadio1,
 		}
 
 		template = Headlight,
@@ -766,8 +716,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.4127 -0.2698,
-			extents = 3.1111 2.9683 9.3175,
+			offset = 0.0000 1.6349 0.0000,
+			extents = 3.4921 3.2857 11.7302,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

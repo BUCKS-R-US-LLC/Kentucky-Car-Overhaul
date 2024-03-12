@@ -1,91 +1,96 @@
 module Base
 {
-	model SC_FordF700PanelTruck
+	model SC_FordF700BoxTruck
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|base_mesh,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model F700PanelTruckDriver
+	model F700BoxTruckDriver
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckPassenger
+	model F700BoxTruckPassenger
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|DoubleSeat_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckWindshield
+	model F700BoxTruckWindshield
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckFrontRightWindow
+	model F700BoxTruckFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model F700PanelTruckFrontLeftWindow
+	model F700BoxTruckFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model F700PanelTruckFrontRightDoor
+	model F700BoxTruckFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model F700PanelTruckFrontLeftDoor
+	model F700BoxTruckFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model F700PanelTruckRearRightWindow
+	model F700BoxTruckRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckRearLeftWindow
+	model F700BoxTruckRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckTrunk
+	model F700BoxTruckTrunk
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|TrunkDoor_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone2 1.0,
+		boneWeight = TrunkBone3 1.0,
+		boneWeight = TrunkBone4 1.0,
+		boneWeight = TrunkBone5 1.0,
+		boneWeight = TrunkBone6 1.0,
 	}
-	model F700PanelTruckRearWindshield
+	model F700BoxTruckRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model F700PanelTruckHood
+	model F700BoxTruckHood
 	{
-		mesh = vehicles/Vehicle_FordF700PanelTruck_SC|Hood_obj,
+		mesh = vehicles/Vehicle_FordF700BoxTruck_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -115,7 +120,7 @@ module Base
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordF700PanelTruck
+	vehicle SC_FordF700BoxPlagueCart
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -124,48 +129,53 @@ module Base
 
 		model
 		{
-			file = SC_FordF700PanelTruck,
+			file = SC_FordF700BoxTruck,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -1.1905,
+			offset = 0.0000 0.3175 -0.3175,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Black,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_BlackZhenja,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Caramel,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Caramel,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_DarkCanyon,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_DarkCanyon,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Green,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Green,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Red,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_White,
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
 		}
 
-		textureRust = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Rust,
-		textureMask = Vehicles/FordF700/Vehicle_FordF700PanelTruck_Mask,
-		textureLights = Vehicles/FordF700/Vehicle_FordF700PanelTruck_lights,
+		skin
+		{
+			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_WhiteZhenja,
+		}
+
+		textureRust = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Rust,
+		textureMask = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Mask,
+		textureLights = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Lights,
 		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
 		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700BoxTruck_scratch,
-		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_blood,
-		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_blood,
+		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
+		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Blood,
 
 		sound
 		{
@@ -176,22 +186,22 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.9524 3.0794 9.3333,
+		extents = 2.9524 3.0794 10.6984,
 		mass = 1000,
-		physicsChassisShape = 2.9524 3.0794 9.3333,
+		physicsChassisShape = 2.9524 3.0794 10.6984,
 		centerOfMassOffset = 0.0000 1.5556 -0.3016,
-		shadowExtents = 3.2617 9.4846,
-		shadowOffset = 0.0000 -0.3112,
+		shadowExtents = 3.6109 11.1989,
+		shadowOffset = 0.0000 -0.1842,
 		engineForce = 8000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 80f,
+		maxSpeed = 40f,
 		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 40,
+		suspensionStiffness = 30,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -204,7 +214,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.0159 4.5079,
+			offset = 1.3651 0.0159 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +222,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2222 0.0159 4.5079,
+			offset = -1.3651 0.0159 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +230,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2222 0.0159 -1.8254,
+			offset = 1.1587 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +238,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2222 0.0159 -1.8254,
+			offset = -1.1587 0.0159 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -275,50 +285,50 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 5.4444 2.9524 2.0000,
+			xywh = 0.0476 6.1746 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.9524 2.9524 1.7460,
+			xywh = 0.0000 -6.6032 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2063 1.7460 1.2381 1.2381,
+			xywh = 2.2063 2.8413 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 1.7460 1.2381 1.2381,
+			xywh = -2.2063 2.8413 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 1.6349 1.0794 0.5714,
+			xywh = -2.1270 2.5079 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 3.3333 0.0000 0.0000,
+			xywh = 1.4921 4.2381 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 3.3333 0.0000 0.0000,
+			xywh = -1.3651 4.2381 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -3.0159 0.0000 0.0000,
+			xywh = 1.4286 -1.9841 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -3.0159 0.0000 0.0000,
+			xywh = -1.4286 -1.9841 0.0000 0.0000,
 		}
 
-		template = F700PanelAttachments,
+		template = F700BoxAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -336,7 +346,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = F700PanelTruckDriver,
+				file = F700BoxTruckDriver,
 			}
 
 			itemType = Base.FordF700FrontSeatSC,
@@ -346,7 +356,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = F700PanelTruckPassenger,
+				file = F700BoxTruckPassenger,
 			}
 
 			itemType = Base.FordF700FrontSeatSC,
@@ -373,7 +383,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = F700PanelTruckHood,
+				file = F700BoxTruckHood,
 			}
 
 			anim Close
@@ -434,7 +444,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = F700PanelTruckWindshield,
+				file = F700BoxTruckWindshield,
 			}
 
 			window
@@ -465,7 +475,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = F700PanelTruckRearWindshield,
+				file = F700BoxTruckRearWindshield,
 			}
 
 			window
@@ -501,7 +511,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = F700PanelTruckFrontRightWindow,
+				file = F700BoxTruckFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -520,7 +530,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = F700PanelTruckFrontLeftWindow,
+				file = F700BoxTruckFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -539,7 +549,7 @@ module Base
 		{
 			model Default
 			{
-				file = F700PanelTruckFrontRightDoor,
+				file = F700BoxTruckFrontRightDoor,
 			}
 
 			anim Close
@@ -577,7 +587,7 @@ module Base
 		{
 			model Default
 			{
-				file = F700PanelTruckFrontLeftDoor,
+				file = F700BoxTruckFrontLeftDoor,
 			}
 
 			anim Close
@@ -627,7 +637,7 @@ module Base
 
 			model Default
 			{
-				file = F700PanelTruckTrunk,
+				file = F700BoxTruckTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -661,7 +671,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700PanelTruckGateSC,
+			itemType = Base.FordF700BoxTruckRollUpDoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -674,7 +684,7 @@ module Base
 
 			container
 			{
-				capacity = 250,
+				capacity = 300,
 				conditionAffectsCapacity = false,
 			}
 		}
@@ -767,7 +777,7 @@ module Base
 		physics box
 		{
 			offset = 0.0000 2.4127 -0.2698,
-			extents = 3.1111 2.9683 9.3175,
+			extents = 3.1111 2.9683 10.7460,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
