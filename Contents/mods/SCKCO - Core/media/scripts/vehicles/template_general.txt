@@ -28,8 +28,10 @@ module Base {
 
 
 /*
-        template = TEMPLATE/part/PART_LOCATION,
-        part PART_LOCATION {
+        template = armorUpgrades/part/PART_LOCATION,
+        /* armor_Bumper - armor_FrontRightWindow - armor_FrontLeftWindow - armor_FrontRightDoor - armor_FrontLeftDoor - armor_Windshield */
+        part PART_LOCATION
+        {
             model Default { file = MODEL, }
             itemType = MODULE.ITEMTYPE,
         }
@@ -38,19 +40,22 @@ module Base {
 
 	template vehicle armorUpgrades {
 
-		part armor_Bumper {
+		part armor_Bumper
+		{
             area = Engine,
             lua { create = Vehicles.Create.Default, }
         }
 
-		part armor_FrontRightWindow {
+		part armor_FrontRightWindow
+		{
 			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
             area = DoorFrontRight,
             parent = WindowFrontRight,
             lua { }
         }
 
-		part armor_FrontLeftWindow {
+		part armor_FrontLeftWindow
+		{
 			anim ClosedToOpen { anim = FrontLeftWindowClosing, animate = FALSE, }
             area = DoorFrontLeft,
             parent = WindowFrontLeft,
@@ -58,19 +63,22 @@ module Base {
         }
 
 
-		part armor_FrontRightDoor {
+		part armor_FrontRightDoor
+		{
             area = DoorFrontRight,
             parent = DoorFrontRight,
             lua { }
         }
 
-		part armor_FrontLeftDoor {
+		part armor_FrontLeftDoor
+		{
             area = DoorFrontLeft,
             parent = DoorFrontLeft,
             lua { }
 		}
 
-		part armor_Windshield {
+		part armor_Windshield
+		{
             lua { }
 		}
 
@@ -81,7 +89,8 @@ module Base {
             category = SCUCKarmor,
             mechanicRequireKey = false,
 
-            table install {
+            table install
+            {
                 items {
                     1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                     }
@@ -92,7 +101,8 @@ module Base {
                 complete = Vehicles.InstallComplete.Default,
             }
 
-            table uninstall {
+            table uninstall
+            {
                 items {
                     1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                     }
