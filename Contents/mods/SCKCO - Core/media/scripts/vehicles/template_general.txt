@@ -1,0 +1,108 @@
+module Base {
+
+	template vehicle specials {
+	    /* template = specials/part/DetroitDieselSC, */
+        part DetroitDieselSC {
+            category = nodisplay,
+            itemType = Base.DetroitDieselSC,
+            mechanicRequireKey = false,
+            lua { create = Vehicles.Create.Default, }
+        }
+
+        /* template = specials/part/BackUpAlarmSC, */
+        part BackUpAlarmSC {
+            category = nodisplay,
+            itemType = Base.BackUpAlarmSC,
+            mechanicRequireKey = false,
+            lua { create = Vehicles.Create.Default, } }
+        }
+
+        /* template = specials/part/AirBrakeSC, */
+        part AirBrakeSC {
+            category = nodisplay,
+            itemType = Base.NormalBrake,
+            mechanicRequireKey = false,
+            lua { create = Vehicles.Create.Default, }
+        }
+    }
+
+
+/*
+        template = TEMPLATE/part/PART_LOCATION,
+        part PART_LOCATION {
+            model Default { file = MODEL, }
+            itemType = MODULE.ITEMTYPE,
+        }
+*/
+
+
+	template vehicle armorUpgrades {
+
+		part armor_Bumper {
+            area = Engine,
+            lua { create = Vehicles.Create.Default, }
+        }
+
+		part armor_FrontRightWindow {
+			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
+            area = DoorFrontRight,
+            parent = WindowFrontRight,
+            lua { }
+        }
+
+		part armor_FrontLeftWindow {
+			anim ClosedToOpen { anim = FrontLeftWindowClosing, animate = FALSE, }
+            area = DoorFrontLeft,
+            parent = WindowFrontLeft,
+            lua { }
+        }
+
+
+		part armor_FrontRightDoor {
+            area = DoorFrontRight,
+            parent = DoorFrontRight,
+            lua { }
+        }
+
+		part armor_FrontLeftDoor {
+            area = DoorFrontLeft,
+            parent = DoorFrontLeft,
+            lua { }
+		}
+
+		part armor_Windshield {
+            lua { }
+		}
+
+
+        /* armor template-template */
+		part armor_* {
+            area = Engine,
+            category = SCUCKarmor,
+            mechanicRequireKey = false,
+
+            table install {
+                items {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                    }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+
+            table uninstall {
+                items {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                    }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+        }
+
+
+    }
+}
