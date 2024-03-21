@@ -1,5 +1,6 @@
 module Base
 {
+
 	model M35A1Bullbar
 	{
 		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
@@ -48,374 +49,47 @@ module Base
 		scale = 1,
 	}
 
-	template vehicle M35A1Armor
-		{
-		part M35A1Bumper
-        	{
+    template vehicle M35A1Armor
+    {
+        template = armorUpgrades/part/armor,
 
-			model M35A1Bumper
-				{
-                		file = M35A1Bullbar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.M35Bumper,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-
-        lua
-            {
-				create = Vehicles.Create.Default,
-            }
-        }
-
-		part M35A1FrontRightWindowArmor
-        	{
-
-			model M35A1FrontRightWindowArmor
-				{
-                		file = M35A1FrontRightWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontRight,
-		parent = WindowFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.M35WindowArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-		        requireInstalled = WindowFrontRight,
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-
-        lua
-            {
-            }
-        }
-
-		part M35A1FrontLeftWindowArmor
-        	{
-
-			model M35A1FrontLeftWindowArmor
-				{
-                		file = M35A1FrontLeftWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = WindowFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.M35WindowArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-		        requireInstalled = WindowFrontLeft,
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-
-        lua
-            {
-            }
-        }
-
-
-		part M35A1FrontRightDoorArmor
-        	{
-
-			model M35A1FrontRightDoorArmor
-				{
-                		file = M35A1FrontRightDoorArmor,
-				}
-
-		area = DoorFrontRight,
-		parent = DoorFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.M35DoorArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-		        requireInstalled = WindowFrontRight,
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-
-        lua
-            {
-            }
-        }
-
-		part M35A1FrontLeftDoorArmor
-        	{
-
-			model M35A1FrontLeftDoorArmor
-				{
-                		file = M35A1FrontLeftDoorArmor,
-				}
-
-		area = DoorFrontLeft,
-		parent = DoorFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.M35DoorArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-		        requireInstalled = WindowFrontLeft,
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part M35A1WindshieldArmor
-        	{
-
-			model M35A1WindshieldArmor
-				{
-                		file = M35A1WindshieldArmor,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.M35WindshieldArmor,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2;Metalworking:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-	part DetroitDieselSC
+        part SCARMORBumper
         {
+            model Default { file = M35A1Bullbar, }
+            itemType = Base.M35Bumper,
+        }
 
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-	part AirBrakeSC
+        part SCARMORFrontRightWindow
         {
+            model Default { file = M35A1FrontRightWindowArmor, }
+            itemType = Base.M35WindowArmor,
+        }
 
-        category = nodisplay,
-        itemType = Base.NormalBrake,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-     }
+        part SCARMORFrontLeftWindow
+        {
+            model Default { file = M35A1FrontLeftWindowArmor, }
+            itemType = Base.M35WindowArmor,
+        }
+
+        part SCARMORFrontRightDoor
+        {
+            model Default { file = M35A1FrontRightDoorArmor, }
+            itemType = Base.M35DoorArmor,
+        }
+
+        part SCARMORFrontLeftDoor
+        {
+            model Default { file = M35A1FrontLeftDoorArmor, }
+            itemType = Base.M35DoorArmor,
+        }
+
+        part SCARMORWindshield
+        {
+            model Default { file = M35A1WindshieldArmor, }
+            itemType = Base.M35WindshieldArmor,
+        }
+    }
+
+	template = specials/part/DetroitDieselSC,
+	template = specials/part/AirBrakeSC,
 }

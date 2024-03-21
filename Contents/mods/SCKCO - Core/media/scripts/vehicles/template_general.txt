@@ -29,7 +29,7 @@ module Base {
 
 /*
         template = armorUpgrades/part/PART_LOCATION,
-        /* armor_Bumper - armor_FrontRightWindow - armor_FrontLeftWindow - armor_FrontRightDoor - armor_FrontLeftDoor - armor_Windshield */
+        /* SCARMORBumper - SCARMORFrontRightWindow - SCARMORFrontLeftWindow - SCARMORFrontRightDoor - SCARMORFrontLeftDoor - SCARMORWindshield */
         part PART_LOCATION
         {
             model Default { file = MODEL, }
@@ -40,13 +40,18 @@ module Base {
 
 	template vehicle armorUpgrades {
 
-		part armor_Bumper
+		part SCARMOR
+		{
+            area = Engine,
+        }
+
+		part SCARMORBumper
 		{
             area = Engine,
             lua { create = Vehicles.Create.Default, }
         }
 
-		part armor_FrontRightWindow
+		part SCARMORFrontRightWindow
 		{
 			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
             area = DoorFrontRight,
@@ -54,7 +59,7 @@ module Base {
             lua { }
         }
 
-		part armor_FrontLeftWindow
+		part SCARMORFrontLeftWindow
 		{
 			anim ClosedToOpen { anim = FrontLeftWindowClosing, animate = FALSE, }
             area = DoorFrontLeft,
@@ -63,28 +68,28 @@ module Base {
         }
 
 
-		part armor_FrontRightDoor
+		part SCARMORFrontRightDoor
 		{
             area = DoorFrontRight,
             parent = DoorFrontRight,
             lua { }
         }
 
-		part armor_FrontLeftDoor
+		part SCARMORFrontLeftDoor
 		{
             area = DoorFrontLeft,
             parent = DoorFrontLeft,
             lua { }
 		}
 
-		part armor_Windshield
+		part SCARMORWindshield
 		{
             lua { }
 		}
 
 
         /* armor template-template */
-		part armor_* {
+		part SCARMOR* {
             area = Engine,
             category = SCUCKarmor,
             mechanicRequireKey = false,
