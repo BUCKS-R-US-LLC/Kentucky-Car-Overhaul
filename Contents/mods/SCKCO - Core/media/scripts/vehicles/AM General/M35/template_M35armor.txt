@@ -51,39 +51,44 @@ module Base
 
     template vehicle M35A1Armor
     {
-        template = armorUpgrades/part/armor,
 
-        part SCARMORBumper
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
         {
             model Default { file = M35A1Bullbar, }
             itemType = Base.M35Bumper,
         }
 
-        part SCARMORFrontRightWindow
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
         {
             model Default { file = M35A1FrontRightWindowArmor, }
             itemType = Base.M35WindowArmor,
         }
 
-        part SCARMORFrontLeftWindow
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
         {
             model Default { file = M35A1FrontLeftWindowArmor, }
             itemType = Base.M35WindowArmor,
         }
 
-        part SCARMORFrontRightDoor
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
         {
             model Default { file = M35A1FrontRightDoorArmor, }
             itemType = Base.M35DoorArmor,
         }
 
-        part SCARMORFrontLeftDoor
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
         {
             model Default { file = M35A1FrontLeftDoorArmor, }
             itemType = Base.M35DoorArmor,
         }
 
-        part SCARMORWindshield
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
         {
             model Default { file = M35A1WindshieldArmor, }
             itemType = Base.M35WindshieldArmor,

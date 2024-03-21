@@ -14,7 +14,7 @@ module Base {
             category = nodisplay,
             itemType = Base.BackUpAlarmSC,
             mechanicRequireKey = false,
-            lua { create = Vehicles.Create.Default, } }
+            lua { create = Vehicles.Create.Default, }
         }
 
         /* template = specials/part/AirBrakeSC, */
@@ -27,7 +27,9 @@ module Base {
     }
 
 
+
 /*
+        /* EXAMPLE USE */
         template = armorUpgrades/part/PART_LOCATION,
         /* SCARMORBumper - SCARMORFrontRightWindow - SCARMORFrontLeftWindow - SCARMORFrontRightDoor - SCARMORFrontLeftDoor - SCARMORWindshield */
         part PART_LOCATION
@@ -37,21 +39,15 @@ module Base {
         }
 */
 
-
 	template vehicle armorUpgrades {
 
-		part SCARMOR
-		{
-            area = Engine,
-        }
-
-		part SCARMORBumper
+		part SCArmorBumper
 		{
             area = Engine,
             lua { create = Vehicles.Create.Default, }
         }
 
-		part SCARMORFrontRightWindow
+		part SCArmorFrontRightWindow
 		{
 			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
             area = DoorFrontRight,
@@ -59,7 +55,7 @@ module Base {
             lua { }
         }
 
-		part SCARMORFrontLeftWindow
+		part SCArmorFrontLeftWindow
 		{
 			anim ClosedToOpen { anim = FrontLeftWindowClosing, animate = FALSE, }
             area = DoorFrontLeft,
@@ -68,28 +64,30 @@ module Base {
         }
 
 
-		part SCARMORFrontRightDoor
+		part SCArmorFrontRightDoor
 		{
             area = DoorFrontRight,
             parent = DoorFrontRight,
             lua { }
         }
 
-		part SCARMORFrontLeftDoor
+		part SCArmorFrontLeftDoor
 		{
             area = DoorFrontLeft,
             parent = DoorFrontLeft,
             lua { }
 		}
 
-		part SCARMORWindshield
+		part SCArmorWindshield
 		{
+            area = Engine,
             lua { }
 		}
 
 
-        /* armor template-template */
-		part SCARMOR* {
+        /* wild-card */
+		part SCArmor* {
+
             area = Engine,
             category = SCUCKarmor,
             mechanicRequireKey = false,
@@ -115,6 +113,7 @@ module Base {
                 skills = Mechanics:2;Metalworking:1,
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
             }
         }
 
