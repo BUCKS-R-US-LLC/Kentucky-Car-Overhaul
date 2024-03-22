@@ -313,6 +313,89 @@ VehicleDistributions.SC_SWATTruck = {
     SeatRearRight = VehicleDistributions.Seat,
 }
 
+VehicleDistributions.SC_StepVan = {
+    BackOfTruck = {
+        rolls = 50,
+        items = {
+
+            -- SCGL -- 
+            "SCGLClothing.Hat_PASGTHelmetBlack", 5,
+            "SCGLClothing.Vest_HighRiskModular", 5,
+            "SCGLClothing.Mask_MSAPhalanx", 5,
+            "SCGLClothing.Jacket_BlueTactical", 5,
+            "SCGLClothing.Trousers_BlueTactical", 5,
+
+            -- Vanilla -- 
+
+            "Vest_BulletPolice", 10,
+            "Shoes_ArmyBoots", 10,
+        },
+    },
+
+    SeatRearLeft = VehicleDistributions.Seat,
+    SeatRearRight = VehicleDistributions.Seat,
+}
+
+VehicleDistributions.SC_P30Heralds = {
+    BackOfTruck = {
+        rolls = 100,
+        items = {
+            -- Vanilla -- 
+
+            "Newspaper", 10,
+        },
+    },
+
+    SeatRearLeft = VehicleDistributions.Seat,
+    SeatRearRight = VehicleDistributions.Seat,
+}
+
+VehicleDistributions.SC_MailCar = {
+    BackOfTruck = {
+        rolls = 100,
+        items = {
+            -- Vanilla -- 
+
+            "Newspaper", 10,
+            "Magazine", 40,
+            "MagazineWordsearch1", 10,
+            "MagazineWordsearch2", 10,
+            "MagazineWordsearch3", 10,
+            "MagazineCrossword1", 10,
+            "MagazineCrossword2", 10,
+            "MagazineCrossword3", 10,
+            "FarmingMag1", 10,
+            "HuntingMag1", 10,
+            "CookingMag1", 10,
+            "CookingMag1", 10,
+        },
+        
+        Trunk = {
+            rolls = 100,
+            items = {
+    
+                 -- Vanilla -- 
+                 
+                "Newspaper", 10,
+                "Magazine", 40,
+                "MagazineWordsearch1", 10,
+                "MagazineWordsearch2", 10,
+                "MagazineWordsearch3", 10,
+                "MagazineCrossword1", 10,
+                "MagazineCrossword2", 10,
+                "MagazineCrossword3", 10,
+                "FarmingMag1", 10,
+                "HuntingMag1", 10,
+                "CookingMag1", 10,
+                "CookingMag1", 10,
+    
+        },
+    },
+
+    SeatRearLeft = VehicleDistributions.Seat,
+    SeatRearRight = VehicleDistributions.Seat,
+}
+
 VehicleDistributions.SC_WorkingVan = {
     TruckBed = {
         rolls = 60,
@@ -537,6 +620,10 @@ distributionTable["SC_G30BoxVan"] = { Normal = VehicleDistributions.SC_WorkingVa
 distributionTable["SC_G30McCoy"] = { Normal = VehicleDistributions.SC_McCoy; }
 
 distributionTable["SC_K10Dixie"] = { Normal = VehicleDistributions.SC_DrunkDriver; }
+
+distributionTable["SC_GrummanLLV"] = { Normal = VehicleDistributions.SC_MailCar; }
+distributionTable["StepVanMail"] = { Normal = VehicleDistributions.SC_MaiLCar; }
+distributionTable["StepVan_Heralds"] = { Normal = VehicleDistributions.SC_P30Heralds }
 
 distributionTable["SC_FordF700DumpPlagueCart"] = { Normal = VehicleDistributions.SC_PlagueCart; }
 distributionTable["SC_FordF700BoxPlagueCart"] = { Normal = VehicleDistributions.SC_PlagueCart; }
