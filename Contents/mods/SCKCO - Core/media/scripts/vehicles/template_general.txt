@@ -90,6 +90,11 @@ module Base {
             area = DoorFrontRight,
             parent = DoorFrontRight,
             lua { }
+
+            anim Close { anim = FrontRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = FrontRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = FrontRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = FrontRightDoorClosing, reverse = TRUE, animate = FALSE, }
         }
 
 		part SCArmorFrontLeftDoor
@@ -97,6 +102,11 @@ module Base {
             area = DoorFrontLeft,
             parent = DoorFrontLeft,
             lua { }
+
+            anim Close { anim = FrontLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = FrontLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = FrontLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = FrontLeftDoorClosing, reverse = TRUE, animate = FALSE, }
 		}
 
 		part SCArmorWindshield
