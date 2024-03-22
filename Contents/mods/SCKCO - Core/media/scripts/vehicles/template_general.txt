@@ -84,6 +84,37 @@ module Base {
             lua { }
         }
 
+        part SCArmorMiddleRightWindow
+        {
+            anim ClosedToOpen { anim = MiddleRightWindowClosing, animate = FALSE, }
+            area = DoorMiddleRight,
+            parent = WindowMiddleRight,
+            lua { }
+        }
+
+        part SCArmorMiddleLeftWindow
+        {
+            anim ClosedToOpen { anim = MiddleLeftWindowClosing, animate = FALSE, }
+            area = DoorMiddleLeft,
+            parent = WindowMiddleLeft,
+            lua { }
+        }
+
+        part SCArmorRearRightWindow
+        {
+            anim ClosedToOpen { anim = RearRightWindowClosing, animate = FALSE, }
+            area = DoorRearRight,
+            parent = WindowRearRight,
+            lua { }
+        }
+
+        part SCArmorRearLeftWindow
+        {
+            anim ClosedToOpen { anim = RearLeftWindowClosing, animate = FALSE, }
+            area = DoorRearLeft,
+            parent = WindowRearLeft,
+            lua { }
+        }
 
 		part SCArmorFrontRightDoor
 		{
@@ -107,6 +138,54 @@ module Base {
             anim Open { anim = FrontLeftDoorClosing, reverse = FALSE, rate = 1.0, }
             anim Closed { anim = FrontLeftDoorClosing, reverse = FALSE, animate = FALSE, }
             anim Opened { anim = FrontLeftDoorClosing, reverse = TRUE, animate = FALSE, }
+		}
+
+		part SCArmorMiddleRightDoor
+		{
+            area = DoorMiddleRight,
+            parent = DoorMiddleRight,
+            lua { }
+
+            anim Close { anim = MiddleRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = MiddleRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = MiddleRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = MiddleRightDoorClosing, reverse = TRUE, animate = FALSE, }
+        }
+
+		part SCArmorMiddleLeftDoor
+		{
+            area = DoorMiddleLeft,
+            parent = DoorMiddleLeft,
+            lua { }
+
+            anim Close { anim = MiddleLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = MiddleLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = MiddleLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = MiddleLeftDoorClosing, reverse = TRUE, animate = FALSE, }
+		}
+
+		part SCArmorRearRightDoor
+		{
+            area = DoorRearRight,
+            parent = DoorRearRight,
+            lua { }
+
+            anim Close { anim = RearRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = RearRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = RearRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = RearRightDoorClosing, reverse = TRUE, animate = FALSE, }
+        }
+
+		part SCArmorRearLeftDoor
+		{
+            area = DoorRearLeft,
+            parent = DoorRearLeft,
+            lua { }
+
+            anim Close { anim = RearLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = RearLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = RearLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = RearLeftDoorClosing, reverse = TRUE, animate = FALSE, }
 		}
 
 		part SCArmorWindshield
