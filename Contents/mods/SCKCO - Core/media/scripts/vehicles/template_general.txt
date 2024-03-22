@@ -14,6 +14,27 @@ module Base {
             category = nodisplay,
             itemType = Base.BackUpAlarmSC,
             mechanicRequireKey = false,
+
+            table install {
+                items {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                    }
+                time = 500,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+
+            table uninstall {
+                items {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                    }
+                time = 50,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
+            }
+
             lua { create = Vehicles.Create.Default, }
         }
 
