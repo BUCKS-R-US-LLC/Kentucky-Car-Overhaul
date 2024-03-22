@@ -35,247 +35,36 @@ module Base
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	template vehicle ShortBusAttachments
-		{
+    template vehicle ShortBusAttachments
+    {
 
-		part G30VanBoxWindshieldArmor
-        	{
-
-			model G30VanBoxWindshieldArmor
-				{
-                		file = G30VanBoxWindshieldArmor,
-				}
-		area = Engine,
-            category = SCUCKarmor,
-        itemType = Base.ChevyG30WindshieldArmorSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                  skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-		part G30VanBoxBullbar
-        	{
-
-			model G30VanBoxBullbar
-				{
-                		file = G30VanBoxBullbar,
-				}
-		area = Engine,
-            category = SCUCKarmor,
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = G30VanBoxBullbar, }
             itemType = Base.ChevyG30BullbarSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-		part G30VanBoxFrontLeftDoorArmor
-        	{
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = G30VanBoxFrontLeftWindowArmor, }
+            itemType = Base.ChevyG30WindowArmorSC,
+        }
 
-			model G30VanBoxFrontLeftDoorArmor
-				{
-                		file = G30VanBoxFrontLeftDoorArmor,
-				}
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = G30VanBoxFrontLeftDoorArmor, }
+            itemType = Base.ChevyG30DoorArmorSC,
+        }
 
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = DoorFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.ChevyG30DoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part G30VanBoxFrontLeftWindowArmor
-        	{
-
-			model G30VanBoxFrontLeftWindowArmor
-				{
-                		file = G30VanBoxFrontLeftWindowArmor,
-				}
-
-		area = DoorFrontLeft,
-        parent = DoorFrontLeft,
-            category = SCUCKarmor,
-           itemType = Base.ChevyG30WindowArmorSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-     }
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = G30VanBoxWindshieldArmor, }
+            itemType = Base.ChevyG30WindshieldArmorSC,
+        }
+    }
 
 }
