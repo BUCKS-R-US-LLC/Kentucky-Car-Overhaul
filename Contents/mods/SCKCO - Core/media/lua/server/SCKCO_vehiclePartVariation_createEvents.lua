@@ -25,7 +25,10 @@ function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
     local vehicleID = vehicle:getScriptName()
 
     local partTable = part:getTable("partVariation")
-    if not partTable then print("ERROR: SCKCO(SCUCK) - No `partVariation` set for ",part:getId()) return end
+    if not partTable then
+        Vehicles.Create.Default(vehicle, part)
+        return
+    end
     local chances = partTable.chances
     local chance = (chances and tonumber(chances[vehicleID] or chances["default"])) --or 0
 
