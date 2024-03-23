@@ -2,37 +2,14 @@ module Base
 {
 
 	template vehicle RangerPushbar
-		{
-		part RangerPushbar
-        	{
-
-		area = Engine,
+	{
+		template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
             category = SCUCKpermaarmor,
+            /*model Default { file = NOFILE, }*/
             itemType = Base.CadillacGageRangerPushbarSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-	}	
-	
+        }
+        
+	}
 }
