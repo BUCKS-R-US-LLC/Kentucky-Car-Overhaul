@@ -116,6 +116,12 @@ module Base {
             lua { create = Vehicles.Create.Default, }
         }
 
+        part SCArmorHood
+        {
+            area = Engine,
+            lua { create = Vehicles.Create.Default, }
+        }
+
 		part SCArmorFrontRightWindow
 		{
 			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
