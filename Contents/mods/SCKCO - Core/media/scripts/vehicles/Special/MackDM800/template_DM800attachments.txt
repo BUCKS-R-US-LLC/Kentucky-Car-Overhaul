@@ -1,47 +1,9 @@
 module Base
 {
-
 	template vehicle DM800Attachments
     {
-
-	part DetroitDieselSC
-        {
-
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-	part AirBrakeSC
-        {
-
-        category = nodisplay,
-        itemType = Base.NormalBrake,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-	part BackUpAlarmSC
-        {
-
-        category = nodisplay,
-        itemType = Base.BackUpAlarmSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-     }
+        template = specials/part/AirBrakeSC,
+        template = specials/part/BackUpAlarmSC,
+        template = specials/part/DetroitDieselSC,
+    }
 }

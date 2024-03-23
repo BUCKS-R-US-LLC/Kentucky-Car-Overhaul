@@ -198,48 +198,15 @@ module Base
             }
 		}
 
-	part DetroitDieselSC
-        {
 
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-	part AirBrakeSC
-        {
-
-        category = nodisplay,
-        itemType = Base.NormalBrake,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-	part BackUpAlarmSC
-        {
-
-        category = nodisplay,
-        itemType = Base.BackUpAlarmSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-            }
-		}
-
-    }
 
 	template vehicle C70Attachments
 		{
+
+        template = specials/part/AirBrakeSC,
+        template = specials/part/BackUpAlarmSC,
+        template = specials/part/DetroitDieselSC,
+
 		part C70Bullbar
         	{
 
@@ -341,8 +308,8 @@ module Base
                 create = Vehicles.Create.Default,
             }
 		}
-        	part DetroitDieselSC
-        {
+
+        part DetroitDieselSC
 
         category = nodisplay,
         itemType = Base.DetroitDieselSC,
@@ -352,32 +319,7 @@ module Base
             {
                 create = Vehicles.Create.Default,
             }
-		}
 
-	part AirBrakeSC
-        {
 
-        category = nodisplay,
-        itemType = Base.NormalBrake,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
 
-	part BackUpAlarmSC
-        {
-
-        category = nodisplay,
-        itemType = Base.BackUpAlarmSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-	}
 }
