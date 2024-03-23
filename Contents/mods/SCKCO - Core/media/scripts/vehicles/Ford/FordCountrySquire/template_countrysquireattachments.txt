@@ -83,605 +83,83 @@ module Base
 		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
-template vehicle CountrySquireAttachments
-		{
+    template vehicle CountrySquireAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = CountrySquireBullbar, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CountrySquireWindshieldArmor, }
+            itemType = Base.FordCrownVictoriaWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CountrySquireFRWA, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CountrySquireFLWA, }
+            itemType = Base.FordCrownVictoriaWindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CountrySquireFrontRightDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CountrySquireFrontLeftDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
         
-		part CountrySquireWindshieldArmor
-        	{
 
-			model CountrySquireWindshieldArmor
-				{
-                		file = CountrySquireWindshieldArmor,
-				}
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CountrySquireRRWA, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
 
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaWindshieldArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CountrySquireRLWA, }
+            itemType = Base.FordCrownVictoriaWindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-		part CountrySquireBullbar
-        	{
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CountrySquireRearRightDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
 
-			model CountrySquireBullbar
-				{
-                		file = CountrySquireBullbar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CountrySquireRearLeftDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                  recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-        part CountrySquireRearLeftDoorArmor
-        	{
-
-			model CountrySquireRearLeftDoorArmor
-				{
-                		file = CountrySquireRearLeftDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearLeft,
-		parent = DoorRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CountrySquireFrontLeftDoorArmor
-        	{
-
-			model CountrySquireFrontLeftDoorArmor
-				{
-                		file = CountrySquireFrontLeftDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = DoorFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CountrySquireFrontRightDoorArmor
-        	{
-
-			model CountrySquireFrontRightDoorArmor
-				{
-                		file = CountrySquireFrontRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontRight,
-        parent = DoorFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CountrySquireRearRightDoorArmor
-        	{
-
-			model CountrySquireRearRightDoorArmor
-				{
-                		file = CountrySquireRearRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearRight,
-        parent = DoorRearRight,
-        category = SCUCKarmor,
-        itemType = Base.FordCrownVictoriaDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                parent = DoorRearRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CountrySquireFLWA
-        	{
-
-			model CountrySquireFLWA
-				{
-                		file = CountrySquireFLWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = WindowFrontLeft,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CountrySquireFRWA
-        	{
-
-			model CountrySquireFRWA
-				{
-                		file = CountrySquireFRWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-        parent = WindowFrontRight,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                parent = WindowFrontRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CountrySquireRLWA
-        	{
-
-			model CountrySquireRLWA
-				{
-                		file = CountrySquireRLWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearLeft,
-		parent = WindowRearLeft,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                recipes = Advanced Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CountrySquireRRWA
-        	{
-
-			model CountrySquireRRWA
-				{
-                		file = CountrySquireRRWA,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearRight,
-        parent = WindowRearRight,
-        category = SCUCKarmor,
-        requireInstalled = FordCrownVictoriaDoorArmorSC,
-        itemType = Base.FordCrownVictoriaWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                parent = WindowRearRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                recipes = Advanced Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
     }
-
 }
