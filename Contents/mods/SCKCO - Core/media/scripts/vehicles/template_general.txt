@@ -122,6 +122,7 @@ module Base {
             lua { create = Vehicles.Create.Default, }
         }
 
+
 		part SCArmorFrontRightWindow
 		{
 			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
@@ -241,6 +242,18 @@ module Base {
             anim Closed { anim = RearLeftDoorClosing, reverse = FALSE, animate = FALSE, }
             anim Opened { anim = RearLeftDoorClosing, reverse = TRUE, animate = FALSE, }
 		}
+
+        part SCArmorRearDoor
+        {
+            area = Engine,
+            lua { create = Vehicles.Create.Default, }
+        }
+
+        part SCArmorSide
+        {
+            area = Engine,
+            lua { create = Vehicles.Create.Default, }
+        }
 
 		part SCArmorWindshield
 		{
