@@ -42,272 +42,51 @@ module Base
 	}
 
 	template vehicle C70SurvivorAttachments
-		{
-		part C70BullbarFabricated
-        	{
+    {
 
-			model C70SurvivorSurvivorBullbar
-				{
-                		file = C70SurvivorBullbar,
-				}
-		parent = EngineDoor,
-		area = Engine,
-            category = SCUCKarmor,
+        template = armorUpgrades/part/SCArmorGrille,
+		part SCArmorGrille
+        {
+            model C70SurvivorSurvivorBullbar { file = C70SurvivorBullbar, }
+            parent = EngineDoor,
             itemType = Base.ChevyC70FabricatedBullbarSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
 		}
 
-        part C70BrushGuardFabricated
-        	{
-
-			model C70SurvivorHeadFabricated
-				{
-                		file = C70SurvivorHead,
-				}
-		area = Engine,
-            category = SCUCKarmor,
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = C70SurvivorHead, }
             itemType = Base.ChevyC70FabricatedBrushGuardSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
+        template = cosmetic/part/logo,
+        part logo
+        {
+            model C70ChevySurvivor { file = C70ChevySurvivor, }
+            itemType = Base.ChevyLogo,
 		}
 
-        part C70SurvivorLogo
-        	{
-
-			model C70ChevySurvivor
-				{
-                		file = C70ChevySurvivor,
-				}
-		area = Engine,
-        parent = EngineDoor,
-        itemType = Base.ChevyLogo,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  		parent = EngineDoor,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
 	}
 
 
-
 	template vehicle C70Attachments
-		{
-
+	{
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
 
-		part C70Bullbar
-        	{
-
-			model C70AgriBullbar
-				{
-                		file = C70AgriBullbar,
-				}
-		area = Engine,
-            category = SCUCKarmor,
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = C70AgriBullbar, }
             itemType = Base.ChevyC70BullbarSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
-        part C70ChevyLogo
-        	{
-
-			model C70Chevy
-				{
-                		file = C70Chevy,
-				}
-		area = Engine,
-            parent = EngineDoor,
+        template = cosmetic/part/logo,
+        part logo
+        {
+			model C70Chevy { file = C70Chevy, }
             itemType = Base.ChevyLogo,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
 		}
 
     }

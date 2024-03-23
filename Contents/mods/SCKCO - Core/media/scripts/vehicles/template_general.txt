@@ -1,8 +1,10 @@
 module Base {
 
-	template vehicle specials {
+	template vehicle specials
+	{
 	    /* template = specials/part/DetroitDieselSC, */
-        part DetroitDieselSC {
+        part DetroitDieselSC
+        {
             category = nodisplay,
             itemType = Base.DetroitDieselSC,
             mechanicRequireKey = false,
@@ -10,15 +12,18 @@ module Base {
         }
 
         /* template = specials/part/BackUpAlarmSC, */
-        part BackUpAlarmSC {
+        part BackUpAlarmSC
+        {
             category = nodisplay,
             itemType = Base.BackUpAlarmSC,
             mechanicRequireKey = false,
 
-            table install {
-                items {
+            table install
+            {
+                items
+                {
                     1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
-                    }
+                }
                 time = 500,
                 skills = Mechanics:1,
                 test = Vehicles.InstallTest.Default,
@@ -26,9 +31,10 @@ module Base {
             }
 
             table uninstall {
-                items {
+                items
+                {
                     1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
-                    }
+                }
                 time = 50,
                 skills = Mechanics:1,
                 test = Vehicles.UninstallTest.Default,
@@ -39,7 +45,8 @@ module Base {
         }
 
         /* template = specials/part/AirBrakeSC, */
-        part AirBrakeSC {
+        part AirBrakeSC
+        {
             category = nodisplay,
             itemType = Base.NormalBrake,
             mechanicRequireKey = false,
@@ -47,6 +54,40 @@ module Base {
         }
     }
 
+
+    /* template = cosmetic/part/logo, */
+    template vehicle cosmetic
+    {
+        part logo
+        {
+		    area = Engine,
+            parent = EngineDoor,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
 
 
 /*
@@ -63,6 +104,12 @@ module Base {
 	template vehicle armorUpgrades {
 
 		part SCArmorBumper
+		{
+            area = Engine,
+            lua { create = Vehicles.Create.Default, }
+        }
+
+		part SCArmorGrille
 		{
             area = Engine,
             lua { create = Vehicles.Create.Default, }
