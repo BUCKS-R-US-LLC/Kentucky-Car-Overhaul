@@ -9,59 +9,42 @@ module Base
 	}
 
 	template vehicle G30TVDish
-		{
-		part G30TVDish
-        	{
+    {
+        part G30TVDish
+        {
 
-			model G30TVDish
-				{
-                		file = G30TVDish,
-				}
-		area = Engine,
+            model G30TVDish { file = G30TVDish, }
+            area = Engine,
             category = nodisplay,
             itemType = Base.TVDishSC,
             mechanicRequireKey = false,
-		table install
+            table install
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
 
-            		table uninstall
+            table uninstall
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
+
+            lua { create = Vehicles.Create.Default, }
+        }
 
 	}
 }
