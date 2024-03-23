@@ -36,231 +36,38 @@ module Base
 		boneWeight = FrontRightArmorBone 1.0,
 	}
 
-template vehicle M1008Attachments
-		{
+    template vehicle M1008Attachments
+	{
 
         template = specials/part/DetroitDieselSC,
 
-		part M1008WindshieldArmor
-        	{
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = M1008Bullbar, }
+            itemType = Base.KSeriesStandardBullbarSC,
+        }
 
-			model M1008WindshieldArmor
-				{
-                		file = M1008WindshieldArmor,
-				}
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1008FrontRightWindowArmor, }
+            itemType = Base.KSeriesWindowArmorSC,
+        }
 
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.KSeriesWindshieldArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1008FrontLeftWindowArmor, }
+            itemType = Base.KSeriesWindowArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-		part M1008Bullbar
-        	{
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1008WindshieldArmor, }
+            itemType = Base.KSeriesWindshieldArmorSC,
+        }
 
-			model M1008Bullbar
-				{
-                		file = M1008Bullbar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.KSeriesStandardBullbarSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-        
-        part M1008FrontLeftWindowArmor
-        	{
-
-			model M1008FrontLeftWindowArmor
-				{
-                		file = M1008FrontLeftWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = WindowFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.KSeriesWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part M1008FrontRightWindowArmor
-        	{
-
-			model M1008FrontRightWindowArmor
-				{
-                		file = M1008FrontRightWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-        parent = WindowFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.KSeriesWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                parent = WindowFrontRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-     }
+    }
 }
