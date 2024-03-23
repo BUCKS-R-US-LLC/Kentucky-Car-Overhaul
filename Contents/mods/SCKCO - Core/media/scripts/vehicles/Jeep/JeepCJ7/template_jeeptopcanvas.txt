@@ -7,51 +7,40 @@ module Base
 		scale = 1,
 	}
 
-
 	template vehicle CJ7softtop
-		{
+	{
 		part CJ7softtop
-        	{
+        {
 
-			model CJ7softtop
-				{
-                		file = CJ7softtop,
-				}
-		area = TruckBed,
+			model CJ7softtop { file = CJ7softtop, }
+		    area = TruckBed,
             category = SCUCKaccessories,
             itemType = Base.CJ7softtop,
             mechanicRequireKey = false,
             table install
             {
-                items
-                {
-                }
+                items { }
                 time = 300,
                 category = SCUCKaccessories,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
 
-            		table uninstall
+            table uninstall
             {
-                items
-                {
-                }
+                items { }
                 time = 300,
                 test = Vehicles.UninstallTest.Default,
             }
-        table partVariation
+
+            table partVariation
             {
-                chances = {
-                    default = 50,
-                }
+                chances = { default = 50, }
                 additionalVehicleFunc = Default
             }
 
-        lua
-            {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-            }
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+
 		}
 	}
 }
