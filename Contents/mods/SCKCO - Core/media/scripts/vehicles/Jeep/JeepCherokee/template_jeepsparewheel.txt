@@ -2,33 +2,21 @@ module Base
 {
 
 	template vehicle JeepCJ7Spare
-		{
+	{
 		part SpareWheel
-        	{
-
-			model jeepspare
-				{
-                		file = JeepCJ7SpareWheel,
-				}
-		area = TruckBed,
+        {
+			model jeepspare { file = JeepCJ7SpareWheel, }
+		    area = TruckBed,
             category = bodywork,
             itemType = Base.RearWindshield,
             mechanicRequireKey = true,
-            window
-            {
-                openable = false,
-            }
-		table install
+            window { openable = false,}
+
+		    table install
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
                 }
                 time = 300,
                   skills = Mechanics:1,
@@ -37,36 +25,25 @@ module Base
                 complete = Vehicles.InstallComplete.Window,
             }
 
-            		table uninstall
+            table uninstall
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
                 }
                 time = 300,
-                  skills = Mechanics:5,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 
             table partVariation
             {
-                chances = {
-                    default = 10,
-                }
+                chances = { default = 10, }
                 additionalVehicleFunc = Default
             }
 
-        lua
-            {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-            }
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
 		}
 	}		
 }
