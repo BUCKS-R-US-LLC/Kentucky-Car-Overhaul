@@ -7,14 +7,12 @@ module Base
 		scale = 1,
 	}
 
-
 	template vehicle F700BoxAttachments
 	{
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
     }
-
 
     template vehicle F700DumpAttachments
 	{
@@ -23,7 +21,6 @@ module Base
         template = specials/part/DetroitDieselSC,
     }
 
-
     template vehicle F700PanelAttachments
     {
         template = specials/part/AirBrakeSC,
@@ -31,65 +28,17 @@ module Base
         template = specials/part/DetroitDieselSC,
     }
 
-
     template vehicle F700ArmoredAttachments
-		{
-
+	{
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
 
-		part F700Bullbar
-        	{
-
-			model F700Bullbar
-				{
-                		file = F700Bullbar,
-				}
-		area = Engine,
-            category = SCUCKarmor,
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = F700Bullbar, }
             itemType = Base.FordF700BullbarSC,
-            mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Screwdriver,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 300,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
+        }
     }
 }
