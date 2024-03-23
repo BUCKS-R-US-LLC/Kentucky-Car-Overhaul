@@ -38,7 +38,9 @@ module Base
 
 template vehicle M1008Attachments
 		{
-        
+
+        template = specials/part/DetroitDieselSC,
+
 		part M1008WindshieldArmor
         	{
 
@@ -260,19 +262,5 @@ template vehicle M1008Attachments
             }
 		}
 
-		part DetroitDieselSC
-        {
-
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-
      }
-
 }

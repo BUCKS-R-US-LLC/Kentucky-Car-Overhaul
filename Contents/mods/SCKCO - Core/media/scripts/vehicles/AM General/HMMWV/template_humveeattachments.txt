@@ -1,20 +1,7 @@
 module Base
 {
-
-template vehicle HumveeAttachments
+    template vehicle HumveeAttachments
 	{
-
-	part DetroitDieselSC
-        {
-
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
-     }
+        template = specials/part/DetroitDieselSC,
+    }
 }

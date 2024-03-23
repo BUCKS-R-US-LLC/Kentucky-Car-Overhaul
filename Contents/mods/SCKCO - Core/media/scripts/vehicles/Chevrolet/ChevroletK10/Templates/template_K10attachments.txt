@@ -38,7 +38,9 @@ module Base
 
 template vehicle K10Attachments
 		{
-        
+
+        template = specials/part/DetroitDieselSC,
+
 		part K10WindshieldArmor
         	{
 
@@ -260,18 +262,6 @@ template vehicle K10Attachments
             }
 		}
 
-		part DetroitDieselSC
-        {
-
-        category = nodisplay,
-        itemType = Base.DetroitDieselSC,
-        mechanicRequireKey = false,
-        
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
 
      }
 
