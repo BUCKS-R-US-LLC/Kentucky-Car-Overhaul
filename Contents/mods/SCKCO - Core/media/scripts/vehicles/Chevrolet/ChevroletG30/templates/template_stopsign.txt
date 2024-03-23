@@ -1,64 +1,49 @@
 module Base
 {
-		model StopSign
+	model StopSign
 	{
 		mesh = vehicles/StopSign,
 		texture = Vehicles/ChevroletG30/StopSign,
 		shader = vehiclewheel,
 		scale = 1,
 	}
-	template vehicle StopSign
-		{
-		part StopSign
-        	{
 
-			model StopSign
-				{
-                		file = StopSign,
-				}
-		area = Engine,
+	template vehicle StopSign
+	{
+		part StopSign
+        {
+
+            model StopSign {  file = StopSign, }
+            area = Engine,
             category = nodisplay,
             itemType = Base.StopSignSC,
             mechanicRequireKey = false,
-		table install
+
+            table install
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
+                skills = Mechanics:1,
                 test = Vehicles.InstallTest.Default,
                 complete = Vehicles.InstallComplete.Window,
             }
 
-            		table uninstall
+            table uninstall
             {
                 items
                 {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
+                skills = Mechanics:1,
                 test = Vehicles.UninstallTest.Default,
             }
-		lua
-            {
-                create = Vehicles.Create.Default,
-            }
-		}
+
+            lua {  create = Vehicles.Create.Default, }
+        }
 
 	}	
 	
