@@ -87,581 +87,79 @@ module Base
 		boneWeight = RearRightArmorBone 1.0,
 	}
 
-template vehicle CapriceAttachments
-		{
-        
-		part CapriceWindshieldArmor
-        	{
+    template vehicle CapriceAttachments
+	{
 
-			model CapriceWindshieldArmor
-				{
-                		file = CapriceWindshieldArmor,
-				}
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = CapriceBullbar, }
+            itemType = Base.ChevyCapriceBullbarSC,
+        }
 
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceWindshieldArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CapriceFrontRightWindowArmor, }
+            itemType = Base.ChevyCapriceWindowArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-		part CapriceBullbar
-        	{
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CapriceFrontLeftWindowArmor, }
+            itemType = Base.ChevyCapriceWindowArmorSC,
+        }
 
-			model CapriceBullbar
-				{
-                		file = CapriceBullbar,
-				}
-		area = Engine,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceBullbarSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CapriceFrontRightDoorArmor, }
+            itemType = Base.ChevyCapriceDoorArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CapriceFrontLeftDoorArmor, }
+            itemType = Base.ChevyCapriceDoorArmorSC,
+        }
 
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-        part CapriceRearLeftDoorArmor
-        	{
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CapriceRearRightWindowArmor, }
+            itemType = Base.ChevyCapriceWindowArmorSC,
+        }
 
-			model CapriceRearLeftDoorArmor
-				{
-                		file = CapriceRearLeftDoorArmor,
-				}
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CapriceRearLeftWindowArmor, }
+            itemType = Base.ChevyCapriceWindowArmorSC,
+        }
 
-			anim ClosedToOpen
-			{
-				anim = RearLeftDoorClosing,
-				animate = FALSE,
-			}
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CapriceRearRightDoorArmor, }
+            itemType = Base.ChevyCapriceDoorArmorSC,
+        }
 
-		area = DoorRearLeft,
-		parent = DoorRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CapriceRearLeftDoorArmor, }
+            itemType = Base.ChevyCapriceDoorArmorSC,
+        }
 
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CapriceWindshieldArmor, }
+            itemType = Base.ChevyCapriceWindshieldArmorSC,
+        }
 
-        part CapriceFrontLeftDoorArmor
-        	{
-
-			model CapriceFrontLeftDoorArmor
-				{
-                		file = CapriceFrontLeftDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = DoorFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CapriceFrontRightDoorArmor
-        	{
-
-			model CapriceFrontRightDoorArmor
-				{
-                		file = CapriceFrontRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontRight,
-        parent = DoorFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Door,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CapriceRearRightDoorArmor
-        	{
-
-			model CapriceRearRightDoorArmor
-				{
-                		file = CapriceRearRightDoorArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightDoorClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearRight,
-        parent = DoorRearRight,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceDoorArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                parent = DoorRearRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Rear,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-
-        part CapriceFrontLeftWindowArmor
-        	{
-
-			model CapriceFrontLeftWindowArmor
-				{
-                		file = CapriceFrontLeftWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-		parent = WindowFrontLeft,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CapriceFrontRightWindowArmor
-        	{
-
-			model CapriceFrontRightWindowArmor
-				{
-                		file = CapriceFrontRightWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorFrontLeft,
-        parent = WindowFrontRight,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                parent = WindowFrontRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
-        
-                part CapriceRearLeftWindowArmor
-        	{
-
-			model CapriceRearLeftWindowArmor
-				{
-                		file = CapriceRearLeftWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearLeft,
-		parent = WindowRearLeft,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:1,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                         type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-                
-            }
-		}
-
-        part CapriceRearRightWindowArmor
-        	{
-
-			model CapriceRearRightWindowArmor
-				{
-                		file = CapriceRearRightWindowArmor,
-				}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-		area = DoorRearLeft,
-        parent = WindowRearRight,
-        category = SCUCKarmor,
-        itemType = Base.ChevyCapriceWindowArmorSC,
-        mechanicRequireKey = false,
-		table install
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
-						equip = primary,
-                    }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                parent = WindowRearRight,
-                test = Vehicles.InstallTest.Default,
-                complete = Vehicles.InstallComplete.Window,
-            }
-
-            		table uninstall
-            {
-                items
-                {
-                    1
-                    {
-                        type = Base.Wrench,
-                        count = 1,
-                        keep = true,
- 						equip = primary,
-                   }
-                }
-                time = 1000,
-                skills = Mechanics:2,
-                test = Vehicles.UninstallTest.Default,
-            }
-		lua
-            {
-            }
-		}
     }
 
 }
