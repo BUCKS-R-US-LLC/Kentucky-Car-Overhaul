@@ -47,7 +47,7 @@ module Base
         template = armorUpgrades/part/SCArmorGrille,
 		part SCArmorGrille
         {
-            model C70SurvivorSurvivorBullbar { file = C70SurvivorBullbar, }
+            model Default { file = C70SurvivorBullbar, }
             parent = EngineDoor,
             itemType = Base.ChevyC70FabricatedBullbarSC,
 		}
@@ -62,7 +62,8 @@ module Base
         template = cosmetic/part/SCLogo,
         part SCLogo
         {
-            model C70ChevySurvivor { file = C70ChevySurvivor, }
+            model Default { file = C70ChevySurvivor, }
+            parent = EngineDoor,
             itemType = Base.ChevyLogo,
 		}
 
@@ -82,10 +83,11 @@ module Base
             itemType = Base.ChevyC70BullbarSC,
         }
 
-        template = cosmetic/part/logo,
-        part logo
+        template = cosmetic/part/SCLogo,
+        part SCLogo
         {
-			model C70Chevy { file = C70Chevy, }
+			parent = EngineDoor,
+			model Default { file = C70Chevy, }
             itemType = Base.ChevyLogo,
 		}
 

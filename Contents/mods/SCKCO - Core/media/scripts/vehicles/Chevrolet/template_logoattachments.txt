@@ -48,333 +48,64 @@ module Base
 		scale = 1,
 	}
 
+
 	template vehicle ChevyLogo
 	{
-		part ChevyLogo
+		template = cosmetic/part/SCLogo,
+        part SCLogo
 		{
-			model ChevyLogo
-			{
-				file = ChevyLogo,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = ChevyLogo, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
 	template vehicle K5Logo
 	{
-		part K5Attachment
+		template = cosmetic/part/SCLogo,
+        part SCLogo
 		{
-			model K5Attachment
-			{
-				file = K5Attachment,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = K5Attachment, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
 	template vehicle K10Logo
 	{
-		part K10Attachment
+		template = cosmetic/part/SCLogo,
+        part SCLogo
 		{
-			model K10Attachment
-			{
-				file = K10Attachment,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = K10Attachment, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
 	template vehicle SuburbanLogo
 	{
-		part SuburbanAttachment
+		template = cosmetic/part/SCLogo,
+        part SCLogo
 		{
-			model SuburbanAttachment
-			{
-				file = SuburbanAttachment,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = SuburbanAttachment, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
 	template vehicle G30SportLogo
 	{
-		part G30SportAttachment
+		template = cosmetic/part/SCLogo,
+        part SCLogo
 		{
-			model G30SportAttachment
-			{
-				file = G30SportAttachment,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = G30SportAttachment, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
 	template vehicle G30ThirtyLogo
 	{
-		part G30ThirtyAttachment
+		template = cosmetic/part/SCLogo,
+		part SCLogo
 		{
-			model G30ThirtyAttachment
-			{
-				file = G30ThirtyAttachment,
-			}
-			area = Engine,
-			category = nodisplay,
+			model Default { file = G30ThirtyAttachment, }
 			itemType = Base.ChevyLogo,
-			mechanicRequireKey = false,
-			table install
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.InstallTest.Default,
-				complete = Vehicles.InstallComplete.Window,
-			}
-
-			table uninstall
-			{
-				items
-				{
-					1
-					{
-						type = Base.Wrench,
-						count = 1,
-						keep = true,
-						equip = primary,
-					}
-				}
-				time = 1000,
-				skills = Mechanics:1,
-				recipes = Basic Mechanics,
-				test = Vehicles.UninstallTest.Default,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 	}
 
