@@ -369,26 +369,27 @@ VehicleDistributions.SC_MailCar = {
             "CookingMag1", 10,
             "CookingMag1", 10,
         },
+    },
         
-        Trunk = {
-            rolls = 100,
-            items = {
-    
-                 -- Vanilla -- 
-                 
-                "Newspaper", 10,
-                "Magazine", 40,
-                "MagazineWordsearch1", 10,
-                "MagazineWordsearch2", 10,
-                "MagazineWordsearch3", 10,
-                "MagazineCrossword1", 10,
-                "MagazineCrossword2", 10,
-                "MagazineCrossword3", 10,
-                "FarmingMag1", 10,
-                "HuntingMag1", 10,
-                "CookingMag1", 10,
-                "CookingMag1", 10,
-    
+    Trunk = {
+        rolls = 100,
+        items = {
+
+             -- Vanilla --
+
+            "Newspaper", 10,
+            "Magazine", 40,
+            "MagazineWordsearch1", 10,
+            "MagazineWordsearch2", 10,
+            "MagazineWordsearch3", 10,
+            "MagazineCrossword1", 10,
+            "MagazineCrossword2", 10,
+            "MagazineCrossword3", 10,
+            "FarmingMag1", 10,
+            "HuntingMag1", 10,
+            "CookingMag1", 10,
+            "CookingMag1", 10,
+
         },
     },
 
