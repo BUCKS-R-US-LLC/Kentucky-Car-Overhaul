@@ -103,8 +103,16 @@ module Base
             /*TO-DO: CHANGE?*/
         }
 
-        template = armorUpgrades/part/SCArmorRearDoor,
-        part SCArmorRearDoor
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = P30RearDoorArmor, }
+            itemType = Base.KSeriesWindowArmorSC,
+            /*TO-DO: CHANGE?*/
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
         {
             model Default { file = P30RearDoorArmor, }
             itemType = Base.KSeriesWindowArmorSC,

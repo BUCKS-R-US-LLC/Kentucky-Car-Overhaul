@@ -243,12 +243,6 @@ module Base {
             anim Opened { anim = RearLeftDoorClosing, reverse = TRUE, animate = FALSE, }
 		}
 
-        part SCArmorRearDoor
-        {
-            area = Engine,
-            lua { create = Vehicles.Create.Default, }
-        }
-
         part SCArmorSide
         {
             area = Engine,
@@ -258,6 +252,7 @@ module Base {
 		part SCArmorWindshield
 		{
             area = Engine,
+            parent = Windshield,
             lua { }
 		}
 
