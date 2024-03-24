@@ -6,6 +6,41 @@ end
 
 if VehicleZoneDistribution then -- check if the table exists for backwards compatibility
 
+	VehicleZoneDistribution.parkingstall.vehicles["Base.ModernCar"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.ModernCar"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.ModernCar"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.ModernCar"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.ModernCar02"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.ModernCar02"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.ModernCar02"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.ModernCar02"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.CarLuxury"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.CarLuxury"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.CarLuxury"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.CarLuxury"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.Offroad"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.SUV"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.SUV"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.SUV"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.SUV"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.SmallCar"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.SmallCar"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.SmallCar"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.SmallCar"] = nil;
+
+	VehicleZoneDistribution.parkingstall.vehicles["Base.SmallCar02"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.SmallCar02"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.SmallCar02"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.SmallCar02"] = nil;
+
 	VehicleZoneDistribution.trafficjams.vehicles["Base.CarLightsSmashedFront"] = nil;
 	VehicleZoneDistribution.trafficjams.vehicles["Base.CarLightsSmashedLeft"] = nil;
 	VehicleZoneDistribution.trafficjams.vehicles["Base.CarLightsSmashedRight"] = nil;

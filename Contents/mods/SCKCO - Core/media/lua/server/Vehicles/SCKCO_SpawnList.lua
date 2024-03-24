@@ -1,6 +1,8 @@
 if VehicleZoneDistribution then
 
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SUV"] = {index = -1, spawnChance = 20};     
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_HondaAccord"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_VWRabbit"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_CrownVictoria92"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 1};
@@ -53,7 +55,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordMustang"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.good.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.good.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.good.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.good.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.good.chanceToPartDamage = 5;
 
