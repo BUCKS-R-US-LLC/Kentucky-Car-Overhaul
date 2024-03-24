@@ -33,7 +33,7 @@ function luaEvents.processArmor(player)
 
             if string.find(partID, "SCArmor") then
                 local parent = part:getParent()
-                local parentID = parent:getId()
+                local parentID = parent and parent:getId()
 
                 if parent then
                     print(" part: ", partID, " = ", parentID)
