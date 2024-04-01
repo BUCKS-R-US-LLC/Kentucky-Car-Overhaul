@@ -54,7 +54,7 @@ module Base
 		{
 			file = SC_Oliver2050,
 			scale = 0.1100,
-			offset = 0.0000 4.0909 0.0000,
+			offset = 0.0000 2.7273 0.0000,
 		}
 
 		skin
@@ -79,25 +79,25 @@ module Base
 		}
 
 		extents = 8.9091 9.0909 24.9091,
-		mass = 100,
+		mass = 1000,
 		physicsChassisShape = 8.9091 9.0909 24.9091,
-		centerOfMassOffset = 0.0000 5.5455 0.0000,
+		centerOfMassOffset = 0.0000 4.5455 0.0000,
 		shadowExtents = 10.6506 24.2125,
 		shadowOffset = 0.0000 0.0143,
-		engineForce = 20000,
+		engineForce = 30000,
 		engineQuality = 80,
 		engineLoudness = 20,
 		maxSpeed = 1f,
-		brakingForce = 30,
+		brakingForce = 5,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
 		suspensionStiffness = 150,
-		suspensionCompression = 3.83,
+		suspensionCompression = 9.00,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 50,
-		suspensionRestLength = 0.20f,
+		suspensionRestLength = 5.0f,
 		wheelFriction = 1.5f,
 		frontEndHealth = 1800,
 		rearEndHealth = 1000,
@@ -106,7 +106,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = -6.7273 -5.4545 9.0909,
+			offset = -6.7273 -8.1818 9.0909,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -114,7 +114,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = 6.7273 -5.4545 9.0909,
+			offset = 6.7273 -8.1818 9.0909,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -142,7 +142,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.0000 4.0909 -6.6364,
+				offset = 0.0000 4.5455 -5.9091,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -354,14 +354,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 3.2222 -17.7778,
+			offset = 0.0000 -3.2727 -17.8182,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.8889 14.1111,
+			offset = 0.0000 -4.0909 14.0909,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
