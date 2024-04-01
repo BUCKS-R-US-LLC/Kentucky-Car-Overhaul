@@ -191,21 +191,21 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 5.6800 3.5200 11.0400,
+		extents = 5.6800 2.3200 10.8000,
 		mass = 50,
-		physicsChassisShape = 5.6800 3.4400 11.0400,
-		centerOfMassOffset = 0.0000 1.7200 0.2000,
+		physicsChassisShape = 5.6800 2.3200 10.8000,
+		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 8000,
-		maxSpeed = 50f,
+		engineForce = 6000,
+		maxSpeed = 40f,
 		engineLoudness = 70,
 		engineQuality = 76,
-		brakingForce = 55,
+		brakingForce = 70,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.95f,
-		steeringIncrement = 0.01,
-		steeringClamp = 0.3,
+		steeringIncrement = 0.06,
+		steeringClamp = 0.8,
 		suspensionStiffness = 80,
 		suspensionCompression = 1.83,
 		suspensionDamping = 2.88,
@@ -766,6 +766,11 @@ module Base
 				animate = FALSE,
 			}
 
+			lua
+			{
+				use = Vehicles.Use.Door,
+			}
+			
 			itemType = Base.HMMWVHardDoorSC,
 		}
 
@@ -804,6 +809,11 @@ module Base
 				animate = FALSE,
 			}
 
+			lua
+			{
+				use = Vehicles.Use.Door,
+			}
+
 			itemType = Base.HMMWVHardDoorSC,
 		}
 		
@@ -823,6 +833,11 @@ module Base
 			window
 			{
 				openable = false,
+			}
+
+			lua
+			{
+				
 			}
 
 			category = SCUCKwindows,
@@ -847,6 +862,11 @@ module Base
 			window
 			{
 				openable = false,
+			}
+
+			lua
+			{
+				
 			}
 
 			category = SCUCKwindows,
@@ -890,6 +910,11 @@ module Base
 				animate = FALSE,
 			}
 
+			lua
+			{
+				
+			}
+
 			itemType = Base.M151DoorSC,
 		}
 
@@ -927,7 +952,10 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			lua
+			{
 
+			}
 			itemType = Base.M151DoorSC,
 		}
 
