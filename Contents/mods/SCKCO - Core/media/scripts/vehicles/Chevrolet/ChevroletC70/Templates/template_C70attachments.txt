@@ -81,6 +81,7 @@ module Base
         {
             model Default { file = C70AgriBullbar, }
             itemType = Base.ChevyC70BullbarSC,
+            lua { create = Vehicles.Create.Default, }
         }
 
         template = cosmetic/part/SCLogo,
