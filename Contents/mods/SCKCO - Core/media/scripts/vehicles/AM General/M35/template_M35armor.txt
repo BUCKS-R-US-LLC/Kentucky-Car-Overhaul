@@ -57,6 +57,7 @@ module Base
         {
             model Default { file = M35A1Bullbar, }
             itemType = Base.M35Bumper,
+            lua { create = Vehicles.Create.Default, }
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
