@@ -2,10 +2,12 @@ require "ISUI/ISWorldObjectContextMenu"
 
 ISWorldObjectContextMenu.onPutBodyInBag = function(worldobjects, player, corpse, bodyBag)
 
-	print(" - worldobjects: "..tostring(worldobjects))
-	print(" - player: "..tostring(player))
-	print(" - corpse: "..tostring(corpse))
-	print(" - bodyBag: "..tostring(bodyBag))
+	if getDebug() then
+		print(" - worldobjects: "..tostring(worldobjects))
+		print(" - player: "..tostring(player))
+		print(" - corpse: "..tostring(corpse))
+		print(" - bodyBag: "..tostring(bodyBag))
+	end
 
 	local playerObj = getSpecificPlayer(player)
 	if corpse:getSquare() and luautils.walkAdj(playerObj, corpse:getSquare(), bodyBag) then
@@ -50,7 +52,7 @@ function ISInventoryTransferAction:transferItem(item)
 
 	ISInventoryTransferAction_transferItem(self, item)
 
-	print("self.destContainer:getType(): "..self.destContainer:getType().." "..tostring(self.destContainer))
+	if getDebug() then print("self.destContainer:getType(): "..self.destContainer:getType().." "..tostring(self.destContainer)) end
 
 	if self.destContainer:getType() == "BodyBag" then
 		---@type InventoryItem
