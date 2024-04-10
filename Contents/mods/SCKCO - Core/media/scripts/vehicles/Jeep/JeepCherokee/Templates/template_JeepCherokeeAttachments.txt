@@ -1,0 +1,197 @@
+module Base
+{
+
+	model JeepCherokeeBullbar
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|Bullbar_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepCherokeeWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepCherokeeFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model JeepCherokeeFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+    model JeepCherokeeRearLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+
+	model JeepCherokeeRearRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model JeepCherokeeFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model JeepCherokeeFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model JeepCherokeeRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+        static = FALSE,
+        boneWeight = RearRightDoorBone 1.0,
+	}
+
+	model JeepCherokeeRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+        static = FALSE,
+        boneWeight = RearLeftDoorBone 1.0,
+	}
+
+	model JeepCherokeeMiddleRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepCherokeeMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle JeepCherokeeAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = JeepCherokeeBullbar, }
+            itemType = Base.JeepCherokeeBullbar,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = JeepCherokeeWindshieldArmor, }
+            itemType = Base.JeepCherokeeWindshieldArmor,
+        }
+
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = JeepCherokeeFrontRightDoorArmor, }
+            itemType = Base.JeepCherokeeDoorArmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = JeepCherokeeFrontLeftDoorArmor, }
+            itemType = Base.JeepCherokeeDoorArmor,
+        }
+
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = JeepCherokeeRearRightDoorArmor, }
+            itemType = Base.JeepCherokeeDoorArmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = JeepCherokeeRearLeftDoorArmor, }
+            itemType = Base.JeepCherokeeDoorArmor,
+        }
+
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = JeepCherokeeFrontRightWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = JeepCherokeeFrontLeftWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = JeepCherokeeRearRightWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = JeepCherokeeRearLeftWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            model Default { file = JeepCherokeeMiddleRightWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = JeepCherokeeMiddleLeftWindowArmor, }
+            itemType = Base.JeepCherokeeWindowArmor,
+        }
+
+    }
+}

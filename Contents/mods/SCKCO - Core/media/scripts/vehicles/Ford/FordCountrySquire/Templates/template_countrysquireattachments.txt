@@ -1,0 +1,165 @@
+module Base
+{
+
+	model CountrySquireBullbar
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CountrySquireWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CountrySquireFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CountrySquireFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model CountrySquireRearLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CountrySquireRearRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CountrySquireFLWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CountrySquireFRWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CountrySquireRLWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model CountrySquireRRWA
+	{
+		mesh = vehicles/Vehicle_FordCountrySquire_SCR|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
+    template vehicle CountrySquireAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = CountrySquireBullbar, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CountrySquireWindshieldArmor, }
+            itemType = Base.FordCrownVictoriaWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CountrySquireFRWA, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CountrySquireFLWA, }
+            itemType = Base.FordCrownVictoriaWindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CountrySquireFrontRightDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CountrySquireFrontLeftDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+        
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CountrySquireRRWA, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CountrySquireRLWA, }
+            itemType = Base.FordCrownVictoriaWindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CountrySquireRearRightDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CountrySquireRearLeftDoorArmor, }
+            itemType = Base.FordCrownVictoriaDoorArmorSC,
+        }
+
+    }
+}

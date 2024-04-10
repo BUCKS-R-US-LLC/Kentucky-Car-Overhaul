@@ -194,7 +194,7 @@ module Base
 		sound
 		{
 			engine = VehicleEngineStepVan,
-			engineStart = M35start,
+			engineStart = VehicleEngineStepVan,
 			engineTurnOff = M35off,
 			horn = M35horn,
 			ignitionFail = VehicleIgnitionFailStepVan,
@@ -606,7 +606,6 @@ module Base
 		template = M35A1Seat,
 		template = M35A1Armor,
         template = specials/part/DetroitDieselSC,
-        template = specials/part/AirBrakeSC,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -818,18 +817,9 @@ module Base
 			{
 			}
 
-        table partVariation
-            {
-                chances = {
-                    default = 0,
-                    Base.SC_M35A1 = 50,
-                }
-                additionalVehicleFunc = Default
-            }
-
         lua
             {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+                create = Vehicles.Create.Default,
             }
 
 			category = SCUCKaccessories,

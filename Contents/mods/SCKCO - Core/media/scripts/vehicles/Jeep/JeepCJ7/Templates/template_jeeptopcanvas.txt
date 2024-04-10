@@ -1,0 +1,46 @@
+module Base
+{
+	model CJ7softtop
+	{
+		mesh = vehicles/Vehicle_JeepCJ7_SC|Softtop_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle CJ7softtop
+	{
+		part CJ7softtop
+        {
+
+			model CJ7softtop { file = CJ7softtop, }
+		    area = TruckBed,
+            category = SCUCKaccessories,
+            itemType = Base.CJ7softtop,
+            mechanicRequireKey = false,
+            table install
+            {
+                items { }
+                time = 300,
+                category = SCUCKaccessories,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items { }
+                time = 300,
+                test = Vehicles.UninstallTest.Default,
+            }
+
+            table partVariation
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+
+		}
+	}
+}
