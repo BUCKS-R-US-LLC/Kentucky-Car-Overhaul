@@ -6,7 +6,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_CrownVictoria92"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30SpecialForces"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
@@ -16,7 +16,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_StepVanP30BunnyBread"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustang"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 1};
@@ -35,7 +35,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_MackDM800Garbage"] = {index = -1, spawnChance = 1};       
     VehicleZoneDistribution.parkingstall.chanceToPartDamage = 5;
     
-    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.medium.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 20};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.vehicles["Base.SC_FordF700PanelTruck"] = {index = -1, spawnChance = 15};
@@ -43,8 +43,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.medium.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.medium.chanceToPartDamage = 10;
     
-    VehicleZoneDistribution.good.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.good.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.good.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.good.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.good.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_MazdaB"] = {index = -1, spawnChance = 35};
@@ -131,8 +131,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarLights"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarLightsPolice"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.PickUpVanLightsPolice"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 20};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 20};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_StepVanP30Bunny"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.Offroad"] = {index = -1, spawnChance = 10};      
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarNormal"] = {index = -1, spawnChance = 10}; 
     VehicleZoneDistribution.trafficjams.vehicles["Base.CarTaxi"] = {index = -1, spawnChance = 10}; 
