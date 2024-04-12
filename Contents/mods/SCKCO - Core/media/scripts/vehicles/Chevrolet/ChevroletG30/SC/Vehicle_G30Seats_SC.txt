@@ -762,29 +762,6 @@ part WindowMiddleLeft
 	area = SeatMiddleLeft,
 }
 
-part WindowMiddleRight
-{
-	window
-	{
-		openable = false,
-	}
-
-	model windowMR
-	{
-		file = G30SeatsSlidingWindow,
-	}
-
-	table install
-	{
-		requireInstalled =,side
-	}
-
-	category = SCUCKwindows,
-	itemType = Base.ChevyG30SideWindowSC,
-	parent = DoorRearRight,
-	area = SeatMiddleRight,
-}
-
 part WindowRearRight
 {
 	window
