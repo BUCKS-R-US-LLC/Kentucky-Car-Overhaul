@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30VanfrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30VanfrontRightDoor
 	{
@@ -402,6 +404,7 @@ module Base
 			xywh = -0.0169 -5.4915 3.1525 1.0169,
 		}
 
+		template = BoxVanAttachments,
 		template = specials/part/BackUpAlarmSC,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,

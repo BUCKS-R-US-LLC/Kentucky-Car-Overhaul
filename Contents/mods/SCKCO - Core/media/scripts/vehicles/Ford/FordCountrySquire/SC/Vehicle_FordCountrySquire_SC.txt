@@ -43,6 +43,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 
 	model FordCountrySquireFrontLeftWindow
@@ -52,6 +53,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
 	model FordCountrySquireRearRightWindow
@@ -61,6 +63,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
 	model FordCountrySquireRearLeftWindow
@@ -70,6 +73,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 
 	model FordCountrySquireMiddleRightWindow
@@ -437,6 +441,7 @@ module Base
 			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
+		template = CountrySquireAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,

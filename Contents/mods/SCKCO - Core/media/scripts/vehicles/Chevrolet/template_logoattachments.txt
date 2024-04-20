@@ -4,6 +4,7 @@ module Base
 	model ChevyLogo
 	{
 		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
+		texture = Vehicles/K5/Vehicle_BlazerSC_White,
 		shader = vehiclewheel,
 		scale = 1,
 	}
@@ -52,20 +53,32 @@ module Base
 	template vehicle ChevyLogo
 	{
 		template = cosmetic/part/SCLogo,
-        part SCLogo
+        part ChevyLogo
 		{
 			model Default { file = ChevyLogo, }
 			itemType = Base.ChevyLogo,
 		}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 	}
 
 	template vehicle K5Logo
 	{
 		template = cosmetic/part/SCLogo,
+
         part SCLogo
 		{
 			model Default { file = K5Attachment, }
 			itemType = Base.ChevyLogo,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 	}
 
@@ -76,6 +89,12 @@ module Base
 		{
 			model Default { file = K10Attachment, }
 			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 	}
 
@@ -85,6 +104,12 @@ module Base
         part SCLogo
 		{
 			model Default { file = SuburbanAttachment, }
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			itemType = Base.ChevyLogo,
 		}
 	}
@@ -96,6 +121,12 @@ module Base
 		{
 			model Default { file = G30SportAttachment, }
 			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 		}
 	}
 
@@ -107,6 +138,10 @@ module Base
 			model Default { file = G30ThirtyAttachment, }
 			itemType = Base.ChevyLogo,
 		}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 	}
 
 }
