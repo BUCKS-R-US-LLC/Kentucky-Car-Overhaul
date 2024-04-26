@@ -40,7 +40,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
@@ -118,6 +118,7 @@ module Base
         template = armorUpgrades/part/SCArmorMiddleRightWindow,
         part SCArmorMiddleRightWindow
         {
+            parent = DoorRearRight,
             model Default { file = G30WindowedMiddleRightWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }

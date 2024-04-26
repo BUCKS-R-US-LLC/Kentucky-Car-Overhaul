@@ -2,7 +2,7 @@ module Base
 {
 	model SC_G30Seats
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|base_mesh,
+		mesh = vehicles/Vehicle_G30VanNormal|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30SeatsFrontRightWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30SeatsMiddleRightWindow
 	{
@@ -47,7 +49,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = SlideDoorBone,
+		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30SeatsMiddleLeftWindow
 	{
@@ -248,13 +250,6 @@ module Base
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
 			ignitionFail = VehicleIgnitionFailVan,
-		}
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-			leftCol = 1;0;0,
-			rightCol = 1;0;0,
 		}
 
 		extents = 3.3220 3.0847 8.3051,

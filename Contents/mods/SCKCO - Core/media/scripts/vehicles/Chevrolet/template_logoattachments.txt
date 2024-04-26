@@ -57,12 +57,13 @@ module Base
 		{
 			model Default { file = ChevyLogo, }
 			itemType = Base.ChevyLogo,
-		}
+
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
 
+		}
 	}
 
 	template vehicle K5Logo
@@ -117,16 +118,15 @@ module Base
 	template vehicle G30SportLogo
 	{
 		template = cosmetic/part/SCLogo,
-        part SCLogo
+        part G30SportLogo
 		{
 			model Default { file = G30SportAttachment, }
 			itemType = Base.ChevyLogo,
-
+			
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
-
 		}
 	}
 
@@ -137,11 +137,13 @@ module Base
 		{
 			model Default { file = G30ThirtyAttachment, }
 			itemType = Base.ChevyLogo,
-		}
+
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
-	}
 
-}
+		}
+
+		}
+	}

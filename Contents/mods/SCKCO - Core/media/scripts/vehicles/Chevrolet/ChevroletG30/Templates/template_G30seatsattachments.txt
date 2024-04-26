@@ -23,8 +23,8 @@ module Base
 		shader = vehicle_noreflect,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		static = FALSE,
+        boneWeight = FrontLeftDoorBone 1.0,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model G30SeatsFrontRightDoorArmor
@@ -32,17 +32,16 @@ module Base
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
+        boneWeight = FrontRightDoorBone 1.0,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 	model G30SeatsFrontLeftWindowArmor
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
-		static = TRUE,
+		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model G30SeatsFrontRightWindowArmor
@@ -52,7 +51,6 @@ module Base
 		static = FALSE,      
         texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 	model G30SeatsRearRightWindowArmor
@@ -60,9 +58,8 @@ module Base
 		mesh = vehicles/Vehicle_G30VanNormal_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,        
-        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
-        static = TRUE,
-        boneWeight = RearRightDoorBone 1.0,
+        static = FALSE,
+        boneWeight = SlideDoorBone 1.0,
 	}
 
 	model G30SeatsRearLeftWindowArmor
@@ -75,7 +72,7 @@ module Base
 	}
 
 	model G30SeatsMiddleRightWindowArmor
-	{
+	{   
 		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleRightWindowArmor_obj,
 		shader = vehiclewheel,
         static = TRUE,
@@ -87,6 +84,7 @@ module Base
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|MiddleLeftWindowArmor_obj,
 		shader = vehiclewheel,
+        static = TRUE,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
 		scale = 1,
 	}
