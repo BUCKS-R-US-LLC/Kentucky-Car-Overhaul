@@ -1,123 +1,122 @@
 module Base
 {
-	model SC_G30NewsVanTwo
+	model SC_K10
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
+		mesh = vehicles/Vehicle_K10_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30NewsVanTwoDriver
+	model K10Driver
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30NewsVanTwoPassenger
+	model K10Passenger
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30NewsVanTwoWindshield
+	model K10Windshield
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_K10_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30NewsVanTwoFrontRightWindow
+	model K10FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30NewsVanTwoFrontLeftWindow
+	model K10FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model G30NewsVanTwoFrontRightDoor
+	model K10FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30NewsVanTwoFrontLeftDoor
+	model K10FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_K10_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30NewsVanTwoSlidingRightDoor
+	model K10RearRightWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = SlideDoorBone 1.0,
-	}
-	model G30NewsVanTwoTrunk
-	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
+		mesh = vehicles/Vehicle_K10_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30NewsVanTwoHood
+	model K10RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
+		mesh = vehicles/Vehicle_K10_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model K10Trunk
+	{
+		mesh = vehicles/Vehicle_K10_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = RearWindShieldBone 1.0,
+	}
+	model K10RearWindshield
+	{
+		mesh = vehicles/Vehicle_K10_SC|RearWinshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model K10Hood
+	{
+		mesh = vehicles/Vehicle_K10_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30NewsVanTwoRearWindshield
+	model BlazerWheelLargefrontwheelleft
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
-	}
-	model G30Vanfrontwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanfrontwheelright
+	model BlazerWheelLargefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanrearwheelleft
+	model BlazerWheelLargebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanrearwheelright
+	model BlazerWheelLargebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/BlazerK5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle VanRadio_3N
+	vehicle SC_K10
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -126,63 +125,202 @@ module Base
 
 		model
 		{
-			file = SC_G30NewsVanTwo,
-			scale = 0.5900,
-			offset = 0.0000 0.1864 0.0508,
+			file = SC_K10,
+			scale = 0.6300,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletG30/Vehicle_3Network,
+			texture = Vehicles/K10/Vehicle_K10_Stool,
 		}
 
-		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_rust,
-		textureMask = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_mask,
-		textureLights = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_lights,
-		textureDamage1Shell = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_scratch,
-		textureDamage2Shell= Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_scratch,
-		textureDamage1Overlay = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_blood,
-		textureDamage2Overlay = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_blood,
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_White,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Blue,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_Orange,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CreamWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CreamWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlackRed,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlackRed,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CreamWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CreamWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CyanWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CyanWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_DarkBlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_DarkBlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_GreyBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_GreyBlue,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_GreyBlueRedLine,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_GreyBlueRedLine,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_RedWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_RedWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlackGrey,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BlackGrey,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BrownBeige,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_BrownBeige,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CopperWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/K10/Vehicle_K10_CopperWhite,
+		}
+		
+		textureRust = Vehicles/K10/Vehicle_K10Rust,
+		textureMask = Vehicles/K10/Vehicle_K10Mask,
+		textureLights = Vehicles/K10/Vehicle_K10Lights,
+		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
+		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
+		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
+		textureDamage2Overlay = Vehicles/K10/Vehicle_K10Blood,
 
 		sound
 		{
-			engine = VehicleEngineVan,
-			engineStart = VehicleEngineVan,
-			engineTurnOff = VehicleEngineVan,
-			horn = VehicleHornVan,
-			ignitionFail = VehicleIgnitionFailVan,
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.3220 3.0847 8.3051,
-		mass = 700,
-		physicsChassisShape = 3.3220 3.0847 8.3051,
-		centerOfMassOffset = 0.0000 1.5593 -0.7966,
-		shadowExtents = 3.3295 8.3058,
-		shadowOffset = -0.0042 -0.8042,
-		maxSpeed = 90f,
-		engineForce = 6500,
-		engineQuality = 70,
-		engineLoudness = 100,
-		brakingForce = 60,
+		extents = 2.8571 3.0794 6.9841,
+		mass = 1000,
+		physicsChassisShape = 2.9524 3.0794 7.0159,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
+		shadowExtents = 2.9601 7.7704,
+		shadowOffset = 0.0000 -0.1048,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 90,
+		suspensionStiffness = 45,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
-		wheelFriction = 2.0f,
-		frontEndHealth = 1700,
-		rearEndHealth = 1300,
+		wheelFriction = 1.6f,
+		frontEndHealth = 2000,
+		rearEndHealth = 1700,
 		seats = 2,
-		isSmallVehicle = false,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2712 0.0847 1.9322,
+			offset = 1.2063 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -190,7 +328,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2712 0.0847 1.9153,
+			offset = -1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +336,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2712 0.0847 -3.0847,
+			offset = 1.2063 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -206,12 +344,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2712 0.0847 -3.0847,
+			offset = -1.2222 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -220,13 +358,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7458 1.2373 0.5424,
+				offset = 0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.3559 -0.5763 1.5593,
+				offset = 2.0794 -0.6984 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -239,123 +377,358 @@ module Base
 
 			position inside
 			{
-				offset = -0.7458 1.2373 0.5424,
+				offset = -0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.3559 -0.5763 1.5593,
+				offset = -2.0476 -0.1905 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7458 0.7288 -0.8814,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.3559 -0.5763 1.5593,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7458 0.7288 -0.8814,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.3559 -0.5763 1.5593,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
-			xywh = 0.0000 4.5593 3.3220 2.0000,
-		}
-
-		area SeatFrontLeft
-		{
-			xywh = 2.4237 0.7797 1.1186 1.1186,
-		}
-
-		area SeatFrontRight
-		{
-			xywh = -2.4237 0.7797 1.1186 1.1186,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = -2.4237 -0.7627 1.1186 1.1186,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.4237 -0.7627 1.1186 1.1186,
-		}
-
-		area GasTank
-		{
-			xywh = 2.3729 -3.9322 1.0169 0.5763,
-		}
-
-		area TireFrontLeft
-		{
-			xywh = 1.6610 2.0000 0.0000 0.0000,
-		}
-
-		area TireFrontRight
-		{
-			xywh = -1.6610 2.0000 0.0000 0.0000,
-		}
-
-		area TireRearLeft
-		{
-			xywh = 1.6610 -3.0169 0.0000 0.0000,
-		}
-
-		area TireRearRight
-		{
-			xywh = -1.6610 -3.0169 0.0000 0.0000,
+			xywh = 0.0000 4.4127 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.5932 3.3220 1.0169,
+			xywh = 0.0000 -4.7460 2.8571 1.7460,
 		}
 
-		template = G30TVDish,
-		template = G30ThirtyLogo,
+		area SeatFrontLeft
+		{
+			xywh = 2.2063 0.2540 1.2381 1.2381,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.1905 0.2540 1.2381 1.2381,
+		}
+
+		area GasTank
+		{
+			xywh = -2.1270 -1.1111 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.4921 2.1587 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3651 2.1587 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4286 -2.1270 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.4286 -2.1270 0.0000 0.0000,
+		}
+
+		template = ChevyLogo,
+		template = K10Logo,
+		template = K10Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GloveBox,
-		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
+
+		part GasTank
+		{
+			itemType = Base.BigGasTank,
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = K10Driver,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = K10Passenger,
+			}
+
+			itemType = Base.ChevyBlazerFrontSeatSC,
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.NormalCarMuffler,
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = K10Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ChevyBlazerHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model WindshieldFront
+			{
+				file = K10Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model WindshieldRear
+			{
+				file = K10RearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = K10FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = K10FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = K10FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = K10FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyBlazerDoorSC,
+		}
+
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -372,7 +745,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanWindowlessTrunk,
+				file = K10Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -406,355 +779,28 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30RearDoorsSC,
+			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
-		part SeatFrontLeft
+		template = Trunk/part/TruckBedOpen,
+		template = Tire,
+		template = Axle,
+
+		part TruckBedOpen
 		{
-			model seatfrontLeft
-			{
-				file = G30VanWindowlessDriver,
-			}
+			itemType = Base.BigTrunk,
 
-			itemType = Base.ChevyG30FrontSeatSC,
-		}
-
-		part SeatFrontRight
-		{
-			model seatfrontRight
-			{
-				file = G30VanWindowlessPassenger,
-			}
-
-			itemType = Base.ChevyG30FrontSeatSC,
-		}
-
-		part SeatRearLeft
-		{
-			itemType = Base.ChevyG30FrontSeatSC,
-		}
-
-		part SeatRearRight
-		{
-			itemType = Base.ChevyG30FrontSeatSC,
-		}
-
-		part Muffler
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			model engineDoor
-			{
-				file = G30VanWindowlessHood,
-			}
-
-			anim Close
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			itemType = Base.ChevyG30HoodSC,
-		}
-
-		part Heater
-		{
-			category = engine,
-
-			lua
-			{
-				update = Vehicles.Update.Heater,
-			}
-		}
-
-		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
-
-		part Windshield
-		{
-			model windshieldFront
-			{
-				file = G30VanWindowlessWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = Base.ChevyG30WindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			model windshieldRear
-			{
-				file = G30VanWindowlessRearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			parent = TrunkDoor,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-
-			category = SCUCKwindows,
-			itemType = Base.ChevyG30RearWindowsSC,
-		}
-
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-
-		part TruckBed
-		{
 			container
 			{
 				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 		}
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = G30VanWindowlessFrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-			itemType = Base.ChevyG30SideWindowSC,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = G30VanWindowlessFrontLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			itemType = Base.ChevyG30SideWindowSC,
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = G30VanWindowlessFrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.ChevyG30FrontDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = G30VanWindowlessFrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.ChevyG30FrontDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = G30VanWindowlessSlidingRightDoor,
-			}
-
-			anim Close
-			{
-				anim = SlideDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = SlideDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = SlideDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = SlideDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.ChevyG30SideDoorSC,
-		}
-
-		template = Tire,
-		template = Axle,
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -762,7 +808,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -770,7 +816,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanrearwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -778,7 +824,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanrearwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -817,12 +863,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment
@@ -837,21 +877,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.4576 -0.7797,
-			extents = 3.3220 2.8983 8.2881,
+			offset = 0.0794 1.3175 0.0635,
+			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3390 -4.9661,
+			offset = 0.0000 0.5238 -3.5397,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3390 3.2881,
+			offset = -0.0159 0.5397 3.3651,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
