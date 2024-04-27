@@ -115,7 +115,7 @@ module Base
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M880Militia
+	vehicle SC_M880
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -127,6 +127,11 @@ module Base
 			file = SC_M880,
 			scale = 0.5700,
 			offset = 0.0000 -0.2281 0.1053,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_3Tone,
 		}
 
 		skin
@@ -144,16 +149,6 @@ module Base
 			texture = Vehicles/M880/Vehicle_M880_OD,
 		}
 
-		skin
-		{
-			texture = Vehicles/M880/Vehicle_M880_BCamo1,
-		}
-
-		skin
-		{
-			texture = Vehicles/M880/Vehicle_M880_BCamo2,
-		}
-
 		textureRust = Vehicles/M880/Vehicle_M880_Rust,
 		textureMask = Vehicles/M880/Vehicle_M880_Masks,
 		textureLights = Vehicles/M880/Vehicle_M880_Lights,
@@ -167,11 +162,11 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = VehicleHornStandard,
+			horn = CUCVhorn,
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
-		
-	    extents = 2.9474 3.0877 8.6667,
+
+		extents = 2.9474 3.0877 8.6667,
 		mass = 300,
 		physicsChassisShape = 2.9474 3.0877 8.6667,
 		centerOfMassOffset = 0.0000 1.5614 -0.4737,
@@ -328,7 +323,6 @@ module Base
 				file = M880Driver,
 			}
 
-			itemType = Base.DodgePowerWagonFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -338,7 +332,6 @@ module Base
 				file = M880Passenger,
 			}
 
-			itemType = Base.DodgePowerWagonFrontSeatSC,
 		}
 
 		part Muffler
@@ -352,8 +345,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
