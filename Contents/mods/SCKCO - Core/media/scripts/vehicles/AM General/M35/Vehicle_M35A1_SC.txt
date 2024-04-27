@@ -617,31 +617,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			model seatfrontLeft
-			{
-				file = M35A1GasTank,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			itemType = Base.M35FuelTank,
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -1294,12 +1269,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio2,
-		}
-
 		template = Headlight,
 
 		attachment trailer
