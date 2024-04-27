@@ -312,8 +312,6 @@ module Base
 			{
 				file = CUCVZhenjaEditionDriver,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -322,8 +320,6 @@ module Base
 			{
 				file = CUCVZhenjaEditionPassenger,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -337,8 +333,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -491,18 +485,7 @@ module Base
 			category = nodisplay,
 			itemType = Base.M1008Tarp,
 		}
-
-		part CUCVSoundPart
-		{
-			
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = nodisplay,
-			itemType = Base.CUCVSoundPart,
-		}
-
+		
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,

@@ -375,8 +375,6 @@ module Base
 			{
 				file = StepVanP30Driver,
 			}
-
-			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -385,8 +383,6 @@ module Base
 			{
 				file = StepVanP30Passenger,
 			}
-
-			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -772,12 +768,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment
