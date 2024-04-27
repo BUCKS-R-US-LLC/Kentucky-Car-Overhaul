@@ -346,19 +346,12 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = F150Driver,
 			}
-
-			itemType = Base.FordF150FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -367,8 +360,6 @@ module Base
 			{
 				file = F150Passenger,
 			}
-
-			itemType = Base.FordF150FrontSeatSC,
 		}
 
 		part Muffler
@@ -382,8 +373,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,

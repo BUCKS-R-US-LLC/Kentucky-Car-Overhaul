@@ -327,11 +327,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -339,7 +334,6 @@ module Base
 				file = F700DumpTruckDriver,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -349,7 +343,6 @@ module Base
 				file = F700DumpTruckPassenger,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part Muffler
@@ -364,7 +357,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
