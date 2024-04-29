@@ -47,8 +47,8 @@ function luaEvents.processArmor(player)
             local parent = vehicle:getPartById(parentID)
             local part = vehicle:getPartById(partID)
 
-            if (part:getCondition() > 1) and (parent:getCondition() < 100) and (part:getInventoryItem()) then
-                sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition=100 })
+            if (part:getCondition() > 1) and (parent:getCondition() < 50) and (part:getInventoryItem()) then
+                sendClientCommand(player, "vehicle", "setPartCondition", { vehicle = vehicle:getId(), part = part:getId(), condition=1000 })
                 part:setCondition(part:getCondition()-1)
             end
         end

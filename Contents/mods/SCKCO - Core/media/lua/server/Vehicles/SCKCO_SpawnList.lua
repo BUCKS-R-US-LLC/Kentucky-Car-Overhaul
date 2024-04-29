@@ -9,7 +9,6 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_CrownVictoriaStatePolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30SpecialForces"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 1};
@@ -18,15 +17,22 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_StepVanP30Greenes"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_StepVanP30BunnyBread"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustang"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_K5Blazer"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_K5BlazerMcCoys"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_K5BlazerParkRanger"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_CapriceCiv"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_Caprice9C1StatePolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30Mail"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30Heralds"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30Scarlet"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30BunnyBread"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_P30Greenes"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30Seats"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_G30Mail"] = {index = -1, spawnChance = 1};
@@ -93,6 +99,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.postal.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 100};
+    VehicleZoneDistribution.postal.vehicles["Base.SC_P30Mail"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.postal.vehicles["Base.SC_G30Mail"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.postal.chanceToPartDamage = 5;
 
@@ -102,6 +109,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30McCoy"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
+    VehicleZoneDistribution.mccoy.vehicles["Base.SC_K5BlazerMcCoys"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.mccoy.chanceToPartDamage = 25;
     
@@ -109,17 +117,20 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_CrownVictoriaJefferson92"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_CrownVictoriaLouisville92"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_M1009FireLV"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.knoxdisti.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.knoxdisti.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.massgenfac.vehicles["Base.SC_M1009FireLV"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_G30BoxVan"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.massgenfac.vehicles["Base.SC_K5BlazerFossoil"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.massgenfac.chanceToPartDamage = 10;
 
     VehicleZoneDistribution.network3.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.network3.vehicles["Base.SC_M1009FireLV"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.network3.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.network3.vehicles["Base.SC_CrownVictoriaLouisville92"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.network3.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 10};

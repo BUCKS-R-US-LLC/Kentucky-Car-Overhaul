@@ -1,219 +1,195 @@
 module Base
 {
-	model SC_HondaAccord
+	model K5BlazerParkRanger
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|base_mesh,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model HondaAccordDriver
+	model BlazerSCDriver
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordPassenger
+	model BlazerSCPassenger
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordDouble
+	model BlazerSCWindshield
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HondaAccordWindshield
+	model BlazerSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Windshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model HondaAccordFrontRightWindow
-	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model HondaAccordFrontLeftWindow
+	model BlazerSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model HondaAccordRearRightWindow
+	model BlazerSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model HondaAccordRearLeftWindow
-	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model HondaAccordFrontRightDoor
-	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model HondaAccordFrontLeftDoor
+	model BlazerSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model HondaAccordTrunk
+	model BlazerSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model BlazerSCRearLeftWindow
+	{
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model BlazerSCTrunk
+	{
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = RearWindShieldBone 1.0,
 	}
-	model HondaAccordHood
+	model BlazerSCHood
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Hood_obj,
+		mesh = vehicles/Vehicle_K5BlazerLightsUtility_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model HondaAccordRearWindshield
+	model BlazerWheelLargefrontwheelleft
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-	}
-	model HondaAccordfrontwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordfrontwheelright
+	model BlazerWheelLargefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordbackwheelleft
+	model BlazerWheelLargebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordbackwheelright
+	model BlazerWheelLargebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SmallCar
+	vehicle SC_K5BlazerParkRanger
 	{
-		mechanicType = 1,
-		offRoadEfficiency = 1.5,
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_HondaAccord,
-			scale = 0.6600,
-			offset = 0.0000 -0.3485 0.0000,
+			file = K5BlazerParkRanger,
+			scale = 0.6300,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Red,
+			texture = Vehicles/CUCV/Vehicle_M1009_ParkRanger,
 		}
 
-		skin
+		lightbar
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Blue,
+			soundSiren = VehicleSiren,
 		}
 
-		skin
+		area LeftSiren
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Mint,
+			xywh = 0.8254 0.2063 0.4762 0.5714,
 		}
 
-		skin
+		area RightSiren
 		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Yellow,
+			xywh = -0.8095 0.2063 0.4762 0.5714,
 		}
-
-		skin
-		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
-		}
-
-		textureMask = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_mask,
-		textureLights = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_lights,
-		textureDamage1Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
-		textureDamage2Overlay = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_blood,
-		textureDamage1Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
-		textureDamage2Shell = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_damage,
-		textureRust = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_rust,
 
 		sound
 		{
-			engine = VehicleEngineSmallCar,
-			engineStart = VehicleEngineSmallCar,
-			engineTurnOff = VehicleEngineSmallCar,
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSmallCar,
+			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.2727 1.5758 5.7273,
-		mass = 450,
-		physicsChassisShape = 2.2727 1.5758 5.7273,
-		centerOfMassOffset = 0.0000 0.8182 0.1818,
-		shadowExtents = 2.2749 5.7541,
-		shadowOffset = -0.0032 0.1767,
-		engineForce = 3500,
-		gearRatioCount = 4,
-		maxSpeed = 95f,
-		engineLoudness = 70,
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+
+		extents = 2.9524 2.6032 6.6032,
+		mass = 1000,
+		physicsChassisShape = 2.9524 2.6032 6.6349,
+		centerOfMassOffset = 0.0000 1.3016 0.0000,
+		shadowExtents = 2.9443 6.6116,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 4400,
 		engineQuality = 80,
-		brakingForce = 55,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.95f,
+		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 40,
+		suspensionStiffness = 45,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 14,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 1.4f,
-		frontEndHealth = 1300,
-		rearEndHealth = 900,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 2000,
+		rearEndHealth = 1700,
 		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.9697 0.3485 1.7727,
+			offset = 1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -221,7 +197,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.9545 0.3485 1.7727,
+			offset = -1.2698 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -229,7 +205,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.9697 0.3485 -1.4848,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -237,12 +213,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.9545 0.3485 -1.4848,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -251,13 +227,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5455 0.6970 -0.1818,
+				offset = 0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0455 -0.4242 0.2576,
+				offset = 2.0476 -0.2698 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -270,115 +246,67 @@ module Base
 
 			position inside
 			{
-				offset = -0.5455 0.6970 -0.1818,
+				offset = -0.7460 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.1364 -0.4242 0.2576,
+				offset = -2.0476 -0.2698 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.4545 0.6061 -1.1061,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0455 -0.4242 0.2576,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.4545 0.6061 -1.1061,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.1364 -0.4242 0.2576,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
-			xywh = 0.0000 2.0152 3.1818 1.5455,
+			xywh = 0.0000 4.4127 2.9524 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.7424 2.2121 1.7879,
+			xywh = 0.0000 -4.2857 2.9524 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9242 0.3182 1.3939 1.3939,
+			xywh = 2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9242 0.3182 1.3939 1.3939,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 1.9242 0.3182 1.3939 1.3939,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -1.9242 0.3182 1.3939 1.3939,
+			xywh = -2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = 1.8030 -1.8788 1.1212 0.6667,
+			xywh = -2.1270 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.1061 1.9242 0.0000 0.0000,
+			xywh = 1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.1061 1.9242 0.0000 0.0000,
+			xywh = -1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.1061 -1.4545 0.0000 0.0000,
+			xywh = 1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.1061 -1.4545 0.0000 0.0000,
+			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
+		template = K5Logo,
+		template = K5Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -389,36 +317,16 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = HondaAccordDriver,
+				file = BlazerCivilianSCDriver,
 			}
-
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = HondaAccordPassenger,
+				file = BlazerCivilianSCPassenger,
 			}
-
-		}
-
-		part SeatRearLeft
-		{
-			model seatrearLeft
-			{
-				file = HondaAccordDouble,
-			}
-
-		}
-
-		part SeatRearRight
-		{
-			model seatrearRight
-			{
-				file = HondaAccordDouble,
-			}
-
 		}
 
 		part Muffler
@@ -440,7 +348,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = HondaAccordHood,
+				file = BlazerCivilianSCHood,
 			}
 
 			anim Close
@@ -481,7 +389,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.HondaAccordHoodSC,
+			itemType = Base.ChevyBlazerHoodSC,
 		}
 
 		part Heater
@@ -501,7 +409,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = HondaAccordWindshield,
+				file = BlazerCivilianSCWindshield,
 			}
 
 			window
@@ -524,19 +432,13 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,
-			itemType = Base.HondaAccordFrontWindshieldSC,
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			parent = TrunkDoor,
 
-			model windshieldRear
-			{
-				file = HondaAccordRearWindshield,
-			}
-
 			window
 			{
 				openable = false,
@@ -557,8 +459,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKwindows,
-			itemType = Base.HondaAccordRearWindshieldSC,
+			itemType = Base.ChevyBlazerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -572,7 +473,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = HondaAccordFrontRightWindow,
+				file = BlazerCivilianSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -581,17 +482,17 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordFrontSideWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = HondaAccordFrontLeftWindow,
+				file = BlazerCivilianSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -600,51 +501,55 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordFrontSideWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HondaAccordRearRightWindow,
-			}
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			itemType = Base.HondaAccordRearSideWindowSC,
-			category = SCUCKwindows,
-			area = SeatRearRight,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part WindowRearLeft
 		{
 			model windowRL
 			{
-				file = HondaAccordRearLeftWindow,
+				file = BlazerCivilianSCRearLeftWindow,
 			}
+
+			area = TireRearLeft,
+			parent =,
 
 			table install
 			{
 				requireInstalled =,
 			}
 
-			itemType = Base.HondaAccordRearSideWindowSC,
 			category = SCUCKwindows,
-			area = SeatRearLeft,
+			itemType = Base.ChevyBlazerSideWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = BlazerCivilianSCRearRightWindow,
+			}
+
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyBlazerSideWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = HondaAccordFrontRightDoor,
+				file = BlazerCivilianSCFrontRightDoor,
 			}
 
 			anim Close
@@ -675,14 +580,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordDoorSC,
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = HondaAccordFrontLeftDoor,
+				file = BlazerCivilianSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -713,7 +618,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordDoorSC,
+			itemType = Base.ChevyBlazerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -732,7 +637,7 @@ module Base
 
 			model Default
 			{
-				file = HondaAccordTrunk,
+				file = BlazerCivilianSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -766,7 +671,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordTrunkLidSC,
+			itemType = Base.ChevyBlazerTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -775,11 +680,11 @@ module Base
 
 		part TruckBed
 		{
-			itemType = Base.SmallTrunk,
+			itemType = Base.NormalTrunk,
 
 			container
 			{
-				capacity = 40,
+				capacity = 100,
 			}
 		}
 
@@ -787,7 +692,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -795,7 +700,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -803,7 +708,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -811,7 +716,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -850,25 +755,41 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.RadioBlack,
+		}
+
 		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
 
 		physics box
 		{
-			offset = 0.0000 0.8254 0.1905,
-			extents = 2.2540 1.5714 5.7302,
+			offset = 0.0000 1.3016 0.0159,
+			extents = 2.9524 2.5873 6.6190,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.6667 -2.6508,
+			offset = 0.0000 0.5238 -3.1746,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.8571,
+			offset = -0.0159 0.5397 3.2222,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

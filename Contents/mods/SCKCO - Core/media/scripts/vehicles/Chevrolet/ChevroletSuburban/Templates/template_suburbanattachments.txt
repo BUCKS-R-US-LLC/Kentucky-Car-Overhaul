@@ -73,6 +73,14 @@ module Base
         {
             model Default { file = SuburbanBullbar, }
             itemType = Base.KSeriesHeavyBullbarSC,
+			
+			table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

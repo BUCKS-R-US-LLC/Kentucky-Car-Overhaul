@@ -55,8 +55,8 @@ module Base
 		template = cosmetic/part/SCLogo,
         part ChevyLogo
 		{
-			category = SC,
 			model Default { file = ChevyLogo, }
+			category = nodisplay,
 			itemType = Base.ChevyLogo,
 
 			lua
@@ -74,6 +74,7 @@ module Base
         part SCLogo
 		{
 			model Default { file = K5Attachment, }
+			category = nodisplay,
 			itemType = Base.ChevyLogo,
 			
 			lua
@@ -90,6 +91,7 @@ module Base
         part SCLogo
 		{
 			model Default { file = K10Attachment, }
+			category = nodisplay,
 			itemType = Base.ChevyLogo,
 
 			lua
@@ -106,13 +108,14 @@ module Base
         part SCLogo
 		{
 			model Default { file = SuburbanAttachment, }
-
+			category = nodisplay,
+			itemType = Base.ChevyLogo,
+			
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyLogo,
 		}
 	}
 
@@ -122,6 +125,7 @@ module Base
         part G30SportLogo
 		{
 			model Default { file = G30SportAttachment, }
+			category = nodisplay,
 			itemType = Base.ChevyLogo,
 			
 			lua
@@ -136,8 +140,8 @@ module Base
 		template = cosmetic/part/SCLogo,
 		part SCLogo
 		{
-			category = SC,
 			model Default { file = G30ThirtyAttachment, }
+			category = nodisplay,
 			itemType = Base.ChevyLogo,
 
 			lua
