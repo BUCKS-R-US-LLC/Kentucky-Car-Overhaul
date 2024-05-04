@@ -49,12 +49,4 @@ module Base
        Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
 	}
 
-    fixing Fix Car seat
-	{
-	   Require : JeepCherokeeFrontSeatSC2;JeepCherokeeRearSeatSC2;JeepCJ7FrontSeatSC2,
-	   ConditionModifier : 0.8,
-
-       Fixer : DuctTape=2;Mechanics=1,
-       Fixer : Glue=2;Mechanics=1,
-	}
 }
