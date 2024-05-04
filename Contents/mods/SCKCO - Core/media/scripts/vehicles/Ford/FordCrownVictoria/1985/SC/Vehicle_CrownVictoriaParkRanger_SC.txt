@@ -1,6 +1,6 @@
 module Base
 {
-	model CrownVictoriaParkRanger
+	model CrownVictoriaParkRanger85
 	{
 		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
 		shader = vehicle_norandom_multiuv,
@@ -141,7 +141,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_CrownVictoriaParkRanger
+	vehicle SC_FordCrownVictoriaParkRanger85
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
@@ -150,7 +150,7 @@ module Base
 
 		model
 		{
-			file = CrownVictoriaParkRanger,
+			file = CrownVictoriaParkRanger85,
 			scale = 0.5900,
 			offset = 0.0000 -0.0508 0.0000,
 		}
