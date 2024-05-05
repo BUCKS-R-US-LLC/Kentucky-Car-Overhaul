@@ -547,9 +547,10 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyP30RearWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
+		template = P30Attachments,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
@@ -572,7 +573,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyP30SideWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -590,7 +591,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyP30SideWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
 		part DoorFrontRight
@@ -704,13 +705,13 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyP30RearDoorsSC,
+			itemType = Base.ChevyP30DoorSC,
 		}
 
 		part DoorRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.ChevyP30RearDoorsSC,
+			itemType = Base.ChevyP30DoorSC,
 		}
 
 		template = Tire,

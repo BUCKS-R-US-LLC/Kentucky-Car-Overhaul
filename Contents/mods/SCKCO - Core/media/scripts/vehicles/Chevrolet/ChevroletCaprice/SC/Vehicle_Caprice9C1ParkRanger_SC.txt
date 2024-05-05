@@ -390,6 +390,7 @@ module Base
 			xywh = -1.5246 -1.9836 0.0000 0.0000,
 		}
 
+		template = GunRack,
 		template = CapriceAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -537,7 +538,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCapriceFrontWindshieldSC,
+			itemType = Base.ChevyCapriceWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -568,7 +569,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCapriceRearWindshieldSC,
+			itemType = Base.ChevyCapriceWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -596,7 +597,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyCapriceFrontSideWindowSC,
+			itemType = Base.ChevyCapriceWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -615,7 +616,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyCapriceFrontSideWindowSC,
+			itemType = Base.ChevyCapriceWindowSC,
 		}
 
 		part WindowRearRight
@@ -634,7 +635,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.ChevyCapriceRearSideWindowSC,
+			itemType = Base.ChevyCapriceWindowSC,
 		}
 
 		part WindowRearLeft
@@ -653,7 +654,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.ChevyCapriceRearSideWindowSC,
+			itemType = Base.ChevyCapriceWindowSC,
 		}
 
 		part DoorFrontRight
@@ -691,7 +692,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCapriceFrontDoorSC,
+			itemType = Base.ChevyCapriceDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -729,7 +730,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCapriceFrontDoorSC,
+			itemType = Base.ChevyCapriceDoorSC,
 		}
 
 		part DoorRearRight
@@ -767,7 +768,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCapriceRearDoorSC,
+			itemType = Base.ChevyCapriceDoorSC,
 		}
 
 		part DoorRearLeft
@@ -805,7 +806,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCapriceRearDoorSC,
+			itemType = Base.ChevyCapriceDoorSC,
 		}
 
 		template = TrunkDoor,

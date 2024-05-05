@@ -22,7 +22,6 @@ module Base
 		mesh = vehicles/Vehicle_StepVanP30_SC|HoodArmor_obj,
 		shader = vehicle_noreflect,
         static = FALSE,
-        boneWeight = HoodBone 1.0,
 		scale = 1,
 	}
 
@@ -99,6 +98,7 @@ module Base
         part SCArmorHood
         {
             model Default { file = P30HoodArmor, }
+            parent = EngineDoor,
             itemType = Base.ChevyP30HoodArmorSC,
             /*TO-DO: CHANGE?*/
         }

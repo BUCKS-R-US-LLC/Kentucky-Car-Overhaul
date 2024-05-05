@@ -474,6 +474,33 @@ VehicleDistributions.SC_Limo = {
     }, 
 }
 
+VehicleDistributions.SC_StatePoliceCar = {
+    GunRack = {
+        rolls = 60,
+        items = {
+            -- Vanilla -- 
+            "Base.Shotgun", 50,            
+        }
+    }, 
+
+    TruckBed = {
+        rolls = 1,
+        items = {
+            "Mov_RoadCone", 50,
+            "Bag_GolfBag", 5,
+
+        },
+        
+    GloveBox = {
+        rolls = 60,
+        items = {
+            "LeatherGloves", 10,
+            "Bullets38Box", 10,
+        },
+        },
+    }, 
+}
+
 VehicleDistributions.SC_HahnPumper = {
     SideContainer1 = {
         rolls = 50,
@@ -550,7 +577,7 @@ VehicleDistributions.SC_PlagueCart = {
 
 distributionTable["SC_K5BlazerFossoil"] = distributionTable["CarNormal"]
 distributionTable["SC_K5BlazerMcCoys"] = distributionTable["CarNormal"]
-distributionTable["SC_MazdaB"] = distributionTable["CarNormal"]
+distributionTable["SC_MazdaB2000"] = distributionTable["CarNormal"]
 distributionTable["SC_PlymouthVoyager"] = distributionTable["CarNormal"]
 distributionTable["SC_CadillacBrougham"] = distributionTable["CarNormal"]
 distributionTable["SC_CadillacLimo"] = distributionTable["CarNormal"]
@@ -561,15 +588,15 @@ distributionTable["SC_FordF150"] = distributionTable["CarNormal"]
 distributionTable["SC_FordMustang"] = distributionTable["CarNormal"]
 distributionTable["SC_JeepCJ7"] = distributionTable["CarNormal"]
 distributionTable["SC_JeepCherokee"] = distributionTable["CarNormal"]
-distributionTable["SC_CrownVictoria92"] = distributionTable["CarNormal"]
+distributionTable["SC_FordCrownVictoria92"] = distributionTable["CarNormal"]
 distributionTable["SC_GeoTracker"] = distributionTable["CarNormal"]
 distributionTable["SC_ChevroletC70GrainTruck"] = distributionTable["CarNormal"]
-distributionTable["SC_CapriceCiv"] = distributionTable["CarNormal"]
-distributionTable["SC_StepVanP30Civ"] = distributionTable["CarNormal"]
+distributionTable["SC_ChevroletCaprice85"] = distributionTable["CarNormal"]
+distributionTable["SC_P30"] = distributionTable["CarNormal"]
 distributionTable["SC_FordCountrySquire"] = distributionTable["CarNormal"]
-distributionTable["SC_G30Windowless"] = distributionTable["CarNormal"]
-distributionTable["SC_G30VanNormal"] = distributionTable["CarNormal"]
-distributionTable["SC_CrownVictoria92"] = distributionTable["CarNormal"]
+distributionTable["SC_ChevroletG30Windowless"] = distributionTable["CarNormal"]
+distributionTable["SC_ChevroletG30VanNormal"] = distributionTable["CarNormal"]
+distributionTable["SC_FordCrownVictoria92"] = distributionTable["CarNormal"]
 distributionTable["SC_ChevroletSuburban"] = distributionTable["CarNormal"]
 
 distributionTable["SC_FordF350Ambulance"] = distributionTable["Ambulance"]
@@ -580,21 +607,23 @@ distributionTable["SC_BMW520i"] = distributionTable["SportsCar"]
 distributionTable["SC_CadillacBrougham"] = distributionTable["SportsCar"]
 distributionTable["SC_CadillacFleetwood"] = distributionTable["SportsCar"]
 
-distributionTable["SC_Caprice9C1StatePolice"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_Caprice9C1LVPD"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_Caprice9C1ParkRanger"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_ChevroletCapriceStatePolice85"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_ChevroletCapriceLVPD85"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_ChevroletCapriceParkRanger85"] = distributionTable["CarLightsPolice"]
 distributionTable["SC_FordMustangStatePolice"] = distributionTable["CarLightsPolice"]
 distributionTable["SC_FordMustangJeffersonCounty"] = distributionTable["CarLightsPolice"]
 distributionTable["SC_FordMustangUndercover"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_CrownVictoriaLVPD"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_CrownVictoriaLouisville92"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_CrownVictoriaJefferson92"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_CrownVictoriaWarrena92"] = distributionTable["CarLightsPolice"]
-distributionTable["SC_CrownVictoriaMuhlenberg92"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_FordCrownVictoriaLVPD85"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_FordCrownVictoriaLouisville92"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_FordCrownVictoriaJefferson92"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_FordCrownVictoriaWarrena92"] = distributionTable["CarLightsPolice"]
+distributionTable["SC_FordCrownVictoriaMuhlenberg92"] = distributionTable["CarLightsPolice"]
 
 distributionTable["SC_FordF700ArmoredBank"] = { Normal = VehicleDistributions.SC_BankCar; }
 distributionTable["SC_FordF700ArmoredPolice"] = { Normal = VehicleDistributions.SC_SWATTruck; }
-distributionTable["SC_StepVanP30Police"] = { Normal = VehicleDistributions.SC_SWATTruck; }
+distributionTable["SC_P30SWAT"] = { Normal = VehicleDistributions.SC_SWATTruck; }
+distributionTable["SC_FordCrownVictoriaStatePolice85"] = { Normal = VehicleDistributions.SC_StatePoliceCar; }
+distributionTable["SC_ChevroletCapriceStatePolice85"] = { Normal = VehicleDistributions.SC_StatePoliceCar; }
 
 distributionTable["SC_HahnPumperRed"] = { Normal = VehicleDistributions.SC_HahnPumper; }
 distributionTable["SC_HahnPumperYellow"] = { Normal = VehicleDistributions.SC_HahnPumper; }
@@ -617,15 +646,11 @@ distributionTable["SC_M998"] = { Normal = VehicleDistributions.SC_Humvee; }
 
 distributionTable["SC_M35A1"] = { Normal = VehicleDistributions.SC_M35; }
 
-distributionTable["SC_G30BoxVan"] = { Normal = VehicleDistributions.SC_WorkingVan; }
-distributionTable["SC_G30McCoy"] = { Normal = VehicleDistributions.SC_McCoy; }
+distributionTable["SC_ChevroletG30BoxVan"] = { Normal = VehicleDistributions.SC_WorkingVan; }
+distributionTable["SC_ChevroletG30McCoy"] = { Normal = VehicleDistributions.SC_McCoy; }
 
-distributionTable["SC_K10Dixie"] = { Normal = VehicleDistributions.SC_DrunkDriver; }
+distributionTable["SC_ChevroletK10Dixie"] = { Normal = VehicleDistributions.SC_DrunkDriver; }
 
 distributionTable["SC_GrummanLLV"] = { Normal = VehicleDistributions.SC_MailCar; }
 distributionTable["StepVanMail"] = { Normal = VehicleDistributions.SC_MaiLCar; }
 distributionTable["StepVan_Heralds"] = { Normal = VehicleDistributions.SC_P30Heralds }
-
-distributionTable["SC_FordF700DumpPlagueCart"] = { Normal = VehicleDistributions.SC_PlagueCart; }
-distributionTable["SC_FordF700BoxPlagueCart"] = { Normal = VehicleDistributions.SC_PlagueCart; }
-distributionTable["SC_MackDM800PlagueCart"] = { Normal = VehicleDistributions.SC_PlagueCart; }

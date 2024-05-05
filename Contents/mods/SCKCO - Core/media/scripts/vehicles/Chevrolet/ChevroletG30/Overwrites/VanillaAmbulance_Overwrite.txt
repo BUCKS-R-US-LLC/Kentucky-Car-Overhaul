@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30AmbulanceFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30AmbulanceFrontRightDoor
 	{
@@ -418,7 +420,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30RearDoorsSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part SeatFrontLeft
@@ -585,7 +587,7 @@ module Base
 
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30RearWindowsSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -619,7 +621,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -636,7 +638,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -676,7 +678,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -714,7 +716,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorRearRight
@@ -752,7 +754,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30SideDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		template = Tire,

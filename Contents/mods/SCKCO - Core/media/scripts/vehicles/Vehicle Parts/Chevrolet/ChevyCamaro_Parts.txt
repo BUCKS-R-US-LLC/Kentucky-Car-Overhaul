@@ -14,12 +14,12 @@ module Base
         WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
-        item ChevyCamaroFrontWindshieldSC3
+        item ChevyCamaroWindshieldSC3
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Camaro Front Windshield,
+        DisplayName	=	Chevrolet Camaro Windshield,
         Icon	=	ChevyLogo,
         VehicleType =   3,
         ConditionMax = 100,
@@ -27,25 +27,12 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item ChevyCamaroRearWindshieldSC3
+        item ChevyCamaroWindowSC3
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Camaro Rear Windshield,
-        Icon	=	ChevyLogo,
-        VehicleType =   3,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item ChevyCamaroFrontSideWindowSC3
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Camaro Front Side Window,
+        DisplayName	= Chevrolet Camaro Window,
         Icon	=	ChevyLogo,
         VehicleType =   3,
         ConditionMax = 100,
@@ -53,23 +40,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item ChevyCamaroRearSideWindowSC3
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Camaro Rear Side Window,
-        Icon	=	ChevyLogo,
-        VehicleType =   3,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
         item ChevyCamaroHoodSC3
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Camaro Hood,
         Icon	=	ChevyLogo,
@@ -82,7 +56,7 @@ module Base
         item ChevyCamaroTrunkLidSC3
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Camaro Trunk Lid,
         Icon	=	ChevyLogo,

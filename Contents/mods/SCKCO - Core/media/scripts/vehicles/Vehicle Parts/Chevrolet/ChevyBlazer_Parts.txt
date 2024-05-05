@@ -40,19 +40,6 @@ module Base
         WorldStaticModel = K5BullBar_WorldItem,
     }
 
-	   item KSeriesHeavyBullbarSC2
-    {
-        DisplayCategory = VehicleArmor,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	K-Series Heavy Bullbar,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5BullBar_WorldItem,
-    }
-
 	   item KSeriesStandardBullbarSC2
     {
         DisplayCategory = VehicleArmor,
@@ -66,12 +53,12 @@ module Base
         WorldStaticModel = K5BullBar_WorldItem,
     }
 
-        item ChevyBlazerDoorSC2
+        item KSeriesDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet Blazer Door,
+        DisplayName	= Chevrolet K Series Door,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -79,12 +66,12 @@ module Base
         WorldStaticModel = K5Door_WorldItem,
     }
 
-        item ChevyBlazerWindshieldSC2
+        item KSeriesWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Blazer Windshield,
+        DisplayName	=	Chevrolet K Series Windshield,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -92,12 +79,12 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item ChevyBlazerSideWindowSC2
+        item KSeriesWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Blazer Side Window,
+        DisplayName	=	Chevrolet K Series Window,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -105,12 +92,12 @@ module Base
         WorldStaticModel = K5SideWindow_WorldItem,
     }
 
-        item ChevyBlazerHoodSC2
+        item KSeriesHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Blazer Hood,
+        DisplayName	=	Chevrolet K Series Hood,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -118,32 +105,17 @@ module Base
         WorldStaticModel = K5Hood_WorldItem,
     }
 
-        item ChevyBlazerTrunkLidSC2
+        item KSeriesTrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Blazer Trunk Lid,
+        DisplayName	=	Chevrolet K Series Trunk Lid,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5TrunkLid_WorldItem,
-    }
-
-        item ChevyBlazerFrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Blazer Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 5,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-
     }
 
 }

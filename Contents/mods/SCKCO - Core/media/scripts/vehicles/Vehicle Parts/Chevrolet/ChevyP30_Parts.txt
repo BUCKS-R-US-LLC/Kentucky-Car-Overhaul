@@ -30,20 +30,7 @@ module Base
         item ChevyP30WindowArmorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet P30 Window Armor,
-        Icon = ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
-    }
-
-        item ChevyP30WindowArmorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet P30 Window Armor,
         Icon = ChevyLogo,
@@ -56,7 +43,7 @@ module Base
         item ChevyP30HoodArmorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet P30 Hood Armor,
         Icon = ChevyLogo,
@@ -69,7 +56,7 @@ module Base
         item ChevyP30BullbarSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet P30 Bullbar,
         Icon = ChevyLogo,
@@ -95,7 +82,7 @@ module Base
         item ChevyP30WindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Chevrolet P30 Windshield,
         Icon	=	ChevyLogo,
@@ -105,12 +92,12 @@ module Base
         WorldStaticModel = P30Windshield_WorldItem,
     }
 
-        item ChevyP30SideWindowSC2
+        item ChevyP30WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet P30 Side Window,
+        DisplayName	= Chevrolet P30 Window,
         Icon	=	ChevyLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -118,23 +105,10 @@ module Base
         WorldStaticModel = P30SideWindow_WorldItem,
     }
     
-        item ChevyP30RearWindowSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet P30 Rear Windows,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = P30RearWindows_WorldItem,
-    }
-
         item ChevyP30HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet P30 Hood,
         VehicleType = 2,
@@ -142,19 +116,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,      
         WorldStaticModel = P30Hood_WorldItem,
-    }
-
-        item ChevyP30RearDoorsSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet P30 Rear Doors,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = P30RearDoors_WorldItem,
     }
 
 }

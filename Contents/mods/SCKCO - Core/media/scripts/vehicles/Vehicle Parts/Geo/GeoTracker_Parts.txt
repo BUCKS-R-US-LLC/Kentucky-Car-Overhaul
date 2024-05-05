@@ -27,12 +27,12 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item GeoTrackerSideWindowSC2
+        item GeoTrackerWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5,
         Type	=	Normal,
-        DisplayName	=	Geo Tracker Side Window,
+        DisplayName	=	Geo Tracker Window,
         Icon	=	GeoLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -64,33 +64,5 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5TrunkLid_WorldItem,
-    }
-
-        item GeoTrackerFrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
-        Type	=	Normal,
-        DisplayName	= Geo Tracker Front Seat,
-        Icon	=	GeoLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        MaxCapacity = 5,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
-
-        item GeoTrackerRearSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
-        Type	=	Normal,
-        DisplayName	= Geo Tracker Rear Seat,
-        Icon	=	GeoLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
     }
 }
