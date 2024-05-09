@@ -4,7 +4,7 @@ module Base
         item JeepCJ7DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Jeep CJ-7 Door,
         Icon	=	JeepLogo,
@@ -17,7 +17,7 @@ module Base
         item JeepCJ7WindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep CJ-7 Windshield,
         Icon	=	JeepLogo,
@@ -27,12 +27,12 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item JeepCJ7SideWindowSC2
+        item JeepCJ7eWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Jeep CJ-7 Side Window,
+        DisplayName	=	Jeep CJ-7 Window,
         Icon	= JeepLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -43,7 +43,7 @@ module Base
         item JeepCJ7HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep CJ-7 Hood,
         Icon	=	JeepLogo,
@@ -56,7 +56,7 @@ module Base
         item JeepCJ7TrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep CJ-7 Trunk Lid,
         Icon	=	JeepLogo,
@@ -69,7 +69,7 @@ module Base
         item JeepCherokeeBullbar2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Bullbar,
         Icon	=	JeepLogo,
@@ -82,7 +82,7 @@ module Base
         item JeepCherokeeDoorArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Door Armor,
         Icon	=	JeepLogo,
@@ -95,7 +95,7 @@ module Base
         item JeepCherokeeWindshieldArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Windshield Armor,
         Icon	=	JeepLogo,
@@ -108,7 +108,7 @@ module Base
         item JeepCherokeeWindowArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	15,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Window Armor,
         Icon	=	JeepLogo,
@@ -121,7 +121,7 @@ module Base
         item JeepCherokeeDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Jeep Cherokee Door,
         Icon	=	JeepLogo,
@@ -134,7 +134,7 @@ module Base
         item JeepCherokeeWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Windshield,
         Icon	=	JeepLogo,
@@ -144,12 +144,12 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item JeepCherokeeSideWindowSC2
+        item JeepCherokeeWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Jeep Cherokee Side Window,
+        DisplayName	=	Jeep Cherokee Window,
         Icon	= JeepLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -160,7 +160,7 @@ module Base
         item JeepCherokeeHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Hood,
         Icon	=	JeepLogo,
@@ -173,7 +173,7 @@ module Base
         item JeepCherokeeTrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Jeep Cherokee Trunk Lid,
         Icon	=	JeepLogo,
@@ -183,26 +183,12 @@ module Base
         WorldStaticModel = K5TrunkLid_WorldItem,
     }
 
-        item JeepCherokeeFrontSeatSC2
+        item JeepCherokeeSeatSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Jeep Cherokee Front Seat,
-        Icon	=	JeepLogo,
-        VehicleType =   2,
-        MaxCapacity = 10,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
-
-        item JeepCherokeeRearSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
-        Type	=	Normal,
-        DisplayName	= Jeep Cherokee Rear Seat,
         Icon	=	JeepLogo,
         VehicleType =   2,
         MaxCapacity = 10,
