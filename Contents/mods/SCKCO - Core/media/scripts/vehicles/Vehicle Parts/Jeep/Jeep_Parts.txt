@@ -1,5 +1,17 @@
 module Base
 {
+        item CJ7softtop2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Jeep CJ7 Soft-top,
+        Icon	=	JeepLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CJ7Tarp_WorldItem,
+    }
     
         item JeepCJ7DoorSC2
     {
@@ -27,7 +39,7 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item JeepCJ7eWindowSC2
+        item JeepCJ7WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -197,16 +209,4 @@ module Base
         WorldStaticModel = K5FrontSeat_WorldItem,
     }
 
-    	item CJ7softtop2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Jeep CJ7 Soft-top,
-        Icon	=	JeepLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CJ7Tarp_WorldItem,
-    }
 }
