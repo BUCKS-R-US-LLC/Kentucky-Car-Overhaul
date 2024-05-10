@@ -166,7 +166,6 @@ module Base
 			leftCol = 0;0;1,
 			rightCol = 0;0;1,
 		}
-		
 		extents = 2.4706 1.5588 6.0588,
 		mass = 350,
 		physicsChassisShape = 2.4706 1.5588 6.0588,
@@ -364,6 +363,7 @@ module Base
 			xywh = -1.2206 -1.8529 0.0000 0.0000,
 		}
 
+		template = RadioCarGunRack,
 		template = FordMustangAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -467,7 +467,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordMustangHoodSC,
+			itemType = Base.FordMustang90HoodSC,
 		}
 
 		part Heater
@@ -511,7 +511,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -544,7 +544,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -568,7 +568,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -587,7 +587,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -605,7 +605,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			area = SeatFrontLeft,
 		}
 
@@ -622,7 +622,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			area = SeatFrontRight,
 		}
 
@@ -661,7 +661,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangFrontDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -699,7 +699,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangFrontDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -752,7 +752,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangTrunkLidSC,
+			itemType = Base.FordMustang90TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

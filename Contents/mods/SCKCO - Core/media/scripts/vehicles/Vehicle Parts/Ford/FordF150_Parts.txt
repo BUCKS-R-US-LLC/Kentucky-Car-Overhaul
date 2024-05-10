@@ -4,7 +4,7 @@ module Base
         item FordF150DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,0
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Ford F-150 Door,
         Icon = FordLogo,
@@ -17,22 +17,22 @@ module Base
         item FordF150WindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Ford F-150 Windshield,
-                Icon = FordLogo,
+        Icon = FordLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = ArmoredWindows_WorldItem,
     }
 
-        item FordF150SideWindowSC2
+        item FordF150WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Ford F-150 Side Window,
+        DisplayName	=	Ford F-150 Window,
         Icon = FordLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -43,7 +43,7 @@ module Base
         item FordF150HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Ford F-150 Hood,
         Icon = FordLogo,
@@ -52,24 +52,11 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = K5Hood_WorldItem,
     }
-
-        item FordF150RearDoorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Ford F-150 Rear Door,
-        Icon = FordLogo,
-        VehicleType =  2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5TrunkLid_WorldItem,
-    }
     
         item FordF150TrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Ford F-150 Trunk Lid,
         Icon = FordLogo,
