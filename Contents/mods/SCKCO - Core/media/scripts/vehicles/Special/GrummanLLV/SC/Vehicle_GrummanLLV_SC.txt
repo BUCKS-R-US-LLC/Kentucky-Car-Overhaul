@@ -1,4 +1,4 @@
-	module Base
+module Base
 {
 	model SC_GrummanLLV
 	{
@@ -231,13 +231,13 @@
 
 			position inside
 			{
-				offset = 0.7167 1.3333 0.1667,
+				offset = -0.7000 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0667 0.0000 0.1667,
+				offset = -2.0667 0.0000 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -250,13 +250,13 @@
 
 			position inside
 			{
-				offset = -0.7000 1.3333 0.1667,
+				offset = 0.7000 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0667 0.0000 0.1667,
+				offset = 2.0833 0.0000 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -274,12 +274,12 @@
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3000 0.3667 1.3667 1.3667,
+			xywh = -2.3000 0.3667 1.3667 1.3667,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3000 0.3667 1.3667 1.3667,
+			xywh = 2.3000 0.3667 1.3667 1.3667,
 		}
 
 		area GasTank
@@ -321,7 +321,6 @@
 			{
 				file = GrummanLLVDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -330,7 +329,6 @@
 			{
 				file = GrummanLLVPassenger,
 			}
-
 		}
 
 		part Muffler
@@ -462,7 +460,7 @@
 			area = SeatFrontRight,
 		}
 
-		part WindowFrontLeft
+		part WindowFrontRight
 		{
 			model windowFL
 			{
