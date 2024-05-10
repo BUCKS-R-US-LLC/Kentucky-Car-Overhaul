@@ -419,8 +419,6 @@ module Base
 			{
 				file = ChevCavaDriver,
 			}
-
-			itemType = Base.ChevyCavalierFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -429,8 +427,6 @@ module Base
 			{
 				file = ChevCavaPassenger,
 			}
-
-			itemType = Base.ChevyCavalierFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -439,8 +435,6 @@ module Base
 			{
 				file = ChevCavaDouble,
 			}
-
-			itemType = Base.ChevyCavalierRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -449,8 +443,6 @@ module Base
 			{
 				file = ChevCavaDouble,
 			}
-
-			itemType = Base.ChevyCavalierRearSeatSC,
 		}
 
 		part Muffler
@@ -557,7 +549,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCavalierFrontWindshieldSC,
+			itemType = Base.ChevyCavalierWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -588,7 +580,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCavalierRearWindshieldSC,
+			itemType = Base.ChevyCavalierWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -616,7 +608,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyCavalierFrontSideWindowSC,
+			itemType = Base.ChevyCavalierWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -635,7 +627,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyCavalierFrontSideWindowSC,
+			itemType = Base.ChevyCavalierWindowSC,
 		}
 
 		part WindowRearRight
@@ -654,7 +646,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.ChevyCavalierRearSideWindowSC,
+			itemType = Base.ChevyCavalierWindowSC,
 		}
 
 		part WindowRearLeft
@@ -673,7 +665,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.ChevyCavalierRearSideWindowSC,
+			itemType = Base.ChevyCavalierWindowSC,
 		}
 
 		part DoorFrontRight
@@ -711,7 +703,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCavalierFrontDoorSC,
+			itemType = Base.ChevyCavalierDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -749,7 +741,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCavalierFrontDoorSC,
+			itemType = Base.ChevyCavalierDoorSC,
 		}
 
 		part DoorRearRight
@@ -787,7 +779,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCavalierRearDoorSC,
+			itemType = Base.ChevyCavalierDoorSC,
 		}
 
 		part DoorRearLeft
@@ -825,7 +817,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCavalierRearDoorSC,
+			itemType = Base.ChevyCavalierDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -952,12 +944,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

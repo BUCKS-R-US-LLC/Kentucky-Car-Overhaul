@@ -47,6 +47,17 @@ module Base
         {
             model Default { file = M1010Bullbar, }
             itemType = Base.KSeriesStandardBullbarSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
@@ -70,5 +81,4 @@ module Base
             itemType = Base.KSeriesWindshieldArmorSC,
         }
 
-    }
 }

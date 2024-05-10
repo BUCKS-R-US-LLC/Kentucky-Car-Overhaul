@@ -405,7 +405,6 @@ module Base
 				file = ToyotaCamryDriver,
 			}
 		
-		itemType = Base.ToyotaCamryFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -415,7 +414,6 @@ module Base
 				file = ToyotaCamryPassenger,
 			}
 
-		itemType = Base.ToyotaCamryFrontSeatSC,
 		}
 
 		part SeatRearRight
@@ -425,7 +423,6 @@ module Base
 				file = ToyotaCamryDouble,
 			}
 
-		itemType = Base.ToyotaCamryRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -435,7 +432,6 @@ module Base
 				file = ToyotaCamryDouble,
 			}
 		
-		itemType = Base.ToyotaCamryRearSeatSC,
 		}
 
 		part Muffler
@@ -543,7 +539,7 @@ module Base
 			}
 
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryFrontWindshieldSC,
+			itemType = Base.ToyotaCamryWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -574,7 +570,7 @@ module Base
 			}
 
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryRearWindshieldSC,
+			itemType = Base.ToyotaCamryWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -603,7 +599,7 @@ module Base
 			area = SeatFrontRight,
 			
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryFrontSideWindowSC,
+			itemType = Base.ToyotaCamryWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -623,7 +619,7 @@ module Base
 			area = SeatFrontLeft,
 
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryFrontSideWindowSC,
+			itemType = Base.ToyotaCamryWindowSC,
 		}
 
 		part WindowRearRight
@@ -643,7 +639,7 @@ module Base
 			area = SeatRearRight,
 
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryRearSideWindowSC,
+			itemType = Base.ToyotaCamryWindowSC,
 		}
 
 		part WindowRearLeft
@@ -663,7 +659,7 @@ module Base
 			area = SeatRearLeft,
 
 		    category = SCUCKwindows,
-			itemType = Base.ToyotaCamryRearSideWindowSC,
+			itemType = Base.ToyotaCamryWindowSC,
 		}
 
 		part DoorFrontRight
@@ -777,7 +773,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ToyotaCamryRearDoorSC,
+			itemType = Base.ToyotaCamryDoorSC,
 		}
 
 		part DoorRearLeft
@@ -815,7 +811,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ToyotaCamryRearDoorSC,
+			itemType = Base.ToyotaCamryDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -953,12 +949,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		physics box

@@ -420,7 +420,6 @@ module Base
 				file = Mercedes280Driver,
 			}
 
-			itemType = Base.Mercedes280FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -430,7 +429,6 @@ module Base
 				file = Mercedes280Passenger,
 			}
 
-			itemType = Base.Mercedes280FrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -440,7 +438,6 @@ module Base
 				file = Mercedes280Double,
 			}
 
-			itemType = Base.Mercedes280RearSeatSC,
 		}
 
 		part SeatRearRight
@@ -450,7 +447,6 @@ module Base
 				file = Mercedes280Double,
 			}
 
-			itemType = Base.Mercedes280RearSeatSC,
 		}
 
 		part Muffler
@@ -465,7 +461,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ModernCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -559,7 +554,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280FrontWindshieldSC,
+			itemType = Base.Mercedes280WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -590,7 +585,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280RearWindshieldSC,
+			itemType = Base.Mercedes280WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -618,7 +613,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280FrontSideWindowSC,
+			itemType = Base.Mercedes280WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -637,7 +632,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280FrontSideWindowSC,
+			itemType = Base.Mercedes280WindowSC,
 		}
 
 		part WindowRearRight
@@ -656,7 +651,7 @@ module Base
 			parent = DoorRearRight,
 			area = SeatRearRight,
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280RearSideWindowSC,
+			itemType = Base.Mercedes280WindowSC,
 		}
 
 		part WindowRearLeft
@@ -675,7 +670,7 @@ module Base
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 			category = SCUCKwindows,
-			itemType = Base.Mercedes280RearSideWindowSC,
+			itemType = Base.Mercedes280WindowSC,
 		}
 
 		part DoorFrontRight
@@ -789,7 +784,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.Mercedes280RearDoorSC,
+			itemType = Base.Mercedes280DoorSC,
 		}
 
 		part DoorRearLeft
@@ -827,7 +822,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.Mercedes280RearDoorSC,
+			itemType = Base.Mercedes280DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -894,7 +889,6 @@ module Base
 				file = Mercedes280frontwheelleft,
 			}
 
-			itemType = Base.ModernTire,
 		}
 
 		part TireFrontRight
@@ -904,7 +898,6 @@ module Base
 				file = Mercedes280frontwheelright,
 			}
 
-			itemType = Base.ModernTire,
 		}
 
 		part TireRearLeft
@@ -914,7 +907,6 @@ module Base
 				file = Mercedes280backwheelleft,
 			}
 
-			itemType = Base.ModernTire,
 		}
 
 		part TireRearRight
@@ -924,7 +916,6 @@ module Base
 				file = Mercedes280backwheelright,
 			}
 
-			itemType = Base.ModernTire,
 		}
 
 		template = Brake,
@@ -962,12 +953,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

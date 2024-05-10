@@ -310,11 +310,6 @@ module Base
 			}
 		}
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -322,7 +317,6 @@ module Base
 				file = MackDM800GarbageDriver,
 			}
 
-			itemType = Base.MackDM800FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -332,7 +326,6 @@ module Base
 				file = MackDM800GarbagePassenger,
 			}
 
-			itemType = Base.MackDM800FrontSeatSC,
 		}
 
 		part Muffler
@@ -352,7 +345,6 @@ module Base
 				file = MackDM800GarbageDriver,
 			}
 
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -501,7 +493,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.MackDM800SideWindowSC,
+			itemType = Base.MackDM800WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -520,7 +512,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.MackDM800SideWindowSC,
+			itemType = Base.MackDM800WindowSC,
 		}
 
 		part DoorFrontRight
@@ -696,12 +688,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment
@@ -719,13 +705,6 @@ module Base
 			offset = 0.0000 1.6349 0.0000,
 			extents = 3.4921 3.2857 11.7302,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.5238 -5.5556,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront

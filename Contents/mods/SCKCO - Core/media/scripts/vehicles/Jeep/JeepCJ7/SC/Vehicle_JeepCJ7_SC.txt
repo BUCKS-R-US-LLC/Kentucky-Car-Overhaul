@@ -361,7 +361,6 @@ module Base
 				file = JeepCJ7Driver,
 			}
 
-			itemType = Base.JeepCJ7FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -371,7 +370,6 @@ module Base
 				file = JeepCJ7Passenger,
 			}
 
-			itemType = Base.JeepCJ7FrontSeatSC,
 		}
 
 		part Muffler
@@ -503,7 +501,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCJ7SideWindowSC,
+			itemType = Base.JeepCJ7WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -522,7 +520,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCJ7SideWindowSC,
+			itemType = Base.JeepCJ7WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -727,12 +725,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

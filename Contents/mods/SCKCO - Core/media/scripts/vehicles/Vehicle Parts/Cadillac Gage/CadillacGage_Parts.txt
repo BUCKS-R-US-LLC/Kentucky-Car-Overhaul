@@ -27,10 +27,10 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item CadillacGageRangerSideWindowSC2
+        item CadillacGageRangerWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Cadillac Gage Ranger Front Side Window,
         Icon	=	CadillacGageLogo,
@@ -40,24 +40,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item CadillacGageRangerRearWindowSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Cadillac Gage Ranger Rear Window,
-        Icon	=	CadillacGageLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
-    }
-
         item CadillacGageRangerHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Cadillac Gage Ranger Hood,
         Icon	=	CadillacGageLogo,
@@ -78,34 +64,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceFrontDoor_WorldItem,
-    }
-
-        item CadillacGageRangerFrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Cadillac Gage Ranger Front Seat,
-        Icon	=	CadillacGageLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item CadillacGageRangerRearSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Cadillac Gage Ranger Rear Seat,
-        Icon	=	CadillacGageLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
         item CadillacGageRangerRearDoorsSC2

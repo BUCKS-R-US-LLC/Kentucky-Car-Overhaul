@@ -410,12 +410,6 @@ module Base
 		template = TrunkFireCoach/part/SideContainer8,
 		template = TrunkDoorFireCoach,
 
-		part LargeUtilityTruckSoundController
-		{
-			itemType = Base.LargeUtilityTruckSoundController,
-			category = nodisplay,
-		}
-
 		part TrunkDoor1
 		{
 			model Default
@@ -735,7 +729,6 @@ module Base
 				file = FireCoachDriver,
 			}
 
-			itemType = Base.FireCoachSeat,
 		}
 
 		part SeatFrontRight
@@ -745,7 +738,6 @@ module Base
 				file = FireCoachPassenger,
 			}
 
-			itemType = Base.FireCoachSeat,
 		}
 
 		part Muffler
@@ -787,7 +779,6 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
@@ -817,39 +808,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FireCoachWindshield,
-		}
-
-		part WindshieldRear
-		{
-			model windshieldRear
-			{
-				file = FireCoachRearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			parent = DoorRearRight,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
+			itemType = Base.FireCoachWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -872,7 +831,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FireCoachFrontSideWindow,
+			itemType = Base.FireCoachWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -889,7 +848,7 @@ module Base
 				file = FireCoachFrontLeftWindow,
 			}
 
-			itemType = Base.FireCoachFrontSideWindow,
+			itemType = Base.FireCoachWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -911,7 +870,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FireCoachRearSideWindow,
+			itemType = Base.FireCoachWindowSC,
 		}
 
 		part WindowRearRight
@@ -930,7 +889,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FireCoachRearSideWindow,
+			itemType = Base.FireCoachWindowSC,
 		}
 
 		part DoorFrontRight
@@ -968,7 +927,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FireCoachFrontDoor,
+			itemType = Base.FireCoachDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1006,7 +965,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FireCoachFrontDoor,
+			itemType = Base.FireCoachDoorSC,
 		}
 
 		template = Tire,
@@ -1079,12 +1038,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		physics box

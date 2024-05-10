@@ -231,13 +231,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7167 1.3333 0.1667,
+				offset = -0.7000 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0667 0.0000 0.1667,
+				offset = -2.0667 0.0000 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -250,13 +250,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.7000 1.3333 0.1667,
+				offset = 0.7000 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0667 0.0000 0.1667,
+				offset = 2.0833 0.0000 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -274,12 +274,12 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3000 0.3667 1.3667 1.3667,
+			xywh = -2.3000 0.3667 1.3667 1.3667,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.3000 0.3667 1.3667 1.3667,
+			xywh = 2.3000 0.3667 1.3667 1.3667,
 		}
 
 		area GasTank
@@ -321,8 +321,6 @@ module Base
 			{
 				file = GrummanLLVDriver,
 			}
-
-			itemType = Base.GrummanLLVFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -331,8 +329,6 @@ module Base
 			{
 				file = GrummanLLVPassenger,
 			}
-
-			itemType = Base.GrummanLLVFrontSeatSC,
 		}
 
 		part Muffler
@@ -459,12 +455,12 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GrummanLLVSideWindowSC,
+			itemType = Base.GrummanLLVWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
 
-		part WindowFrontLeft
+		part WindowFrontRight
 		{
 			model windowFL
 			{
@@ -477,7 +473,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GrummanLLVSideWindowSC,
+			itemType = Base.GrummanLLVWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -692,12 +688,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

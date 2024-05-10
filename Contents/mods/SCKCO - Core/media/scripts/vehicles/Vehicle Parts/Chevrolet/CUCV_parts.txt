@@ -1,7 +1,7 @@
 module Base
 {
 
-    item M1008Tarp2
+    item M1008TarpSC2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
@@ -15,7 +15,7 @@ module Base
             WorldStaticModel = M1008Tarp_WorldItem,
         }
 
-    item M1008TarpFrame2
+    item M1008TarpFrameSC2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
@@ -29,7 +29,7 @@ module Base
             WorldStaticModel = M1008TarpFrame_WorldItem,
         }
 
-    item M1010RearDoors2
+    item M1010RearDoorsSC2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,
@@ -41,21 +41,8 @@ module Base
             MechanicsItem = TRUE,
             WorldStaticModel = M1010RearDoors_WorldItem,
         }
-
-    item M1010RearWindows2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M1010 Rear Windows,
-            Icon	=	ChevyLogo,
-            VehicleType =   1,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M1010RearWindows_WorldItem,
-        }
     
-    item M1008RearSeat2
+    item M1008RearSeatSC2
         {
             DisplayCategory = VehicleMaintenance,
             Weight	=	10.0,

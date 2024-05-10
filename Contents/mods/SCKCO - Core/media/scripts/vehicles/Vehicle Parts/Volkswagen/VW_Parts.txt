@@ -27,25 +27,12 @@ module Base
         WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
-        item VWRabbitRearDoorSC1
+        item VWRabbitWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Volkswagen Rabbit Rear Door,
-        Icon	=	VWLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearDoor_WorldItem,
-    }
-
-        item VWRabbitFrontWindshieldSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Volkswagen Rabbit Front Windshield,
+        DisplayName	=	Volkswagen Rabbit Windshield,
         Icon	=	VWLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -53,25 +40,12 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item VWRabbitRearWindshieldSC1
+        item VWRabbitWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Volkswagen Rabbit Rear Windshield,
-        Icon	=	VWLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item VWRabbitFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Volkswagen Rabbit Front Side Window,
+        DisplayName	= Volkswagen Rabbit Window,
         Icon	=	VWLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -79,23 +53,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item VWRabbitRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Volkswagen Rabbit Rear Side Window,
-        Icon	=	VWLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
         item VWRabbitHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Volkswagen Rabbit Hood,
         Icon	=	VWLogo,
@@ -108,7 +69,7 @@ module Base
         item VWRabbitTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Volkswagen Rabbit Trunk Lid,
         Icon	=	VWLogo,
@@ -116,34 +77,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceTrunkLid_WorldItem,
-    }
-
-        item VWRabbitFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Volkswagen Rabbit Front Seat,
-        Icon	=	VWLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item VWRabbitRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Volkswagen Rabbit Rear Seat,
-        Icon	=	VWLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
 }

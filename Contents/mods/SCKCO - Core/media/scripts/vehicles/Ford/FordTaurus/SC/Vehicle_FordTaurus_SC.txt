@@ -414,8 +414,6 @@ module Base
 			{
 				file = FordTaurusDriver,
 			}
-
-			itemType = Base.FordTaurusFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -424,8 +422,6 @@ module Base
 			{
 				file = FordTaurusPassenger,
 			}
-
-			itemType = Base.FordTaurusFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -434,8 +430,6 @@ module Base
 			{
 				file = FordTaurusDouble,
 			}
-
-			itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -444,8 +438,6 @@ module Base
 			{
 				file = FordTaurusDouble,
 			}
-
-			itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part Muffler
@@ -552,7 +544,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordTaurusFrontWindshieldSC,
+			itemType = Base.FordTaurusWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -583,7 +575,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordTaurusRearWindshieldSC,
+			itemType = Base.FordTaurusWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -611,7 +603,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordTaurusFrontSideWindowSC,
+			itemType = Base.FordTaurusWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -630,7 +622,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordTaurusFrontSideWindowSC,
+			itemType = Base.FordTaurusWindowSC,
 		}
 
 		part WindowRearRight
@@ -649,7 +641,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.FordTaurusRearSideWindowSC,
+			itemType = Base.FordTaurusWindowSC,
 		}
 
 		part WindowRearLeft
@@ -668,7 +660,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.FordTaurusRearSideWindowSC,
+			itemType = Base.FordTaurusWindowSC,
 		}
 
 		part DoorFrontRight
@@ -782,7 +774,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordTaurusRearDoorSC,
+			itemType = Base.FordTaurusDoorSC,
 		}
 
 		part DoorRearLeft
@@ -820,7 +812,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordTaurusRearDoorSC,
+			itemType = Base.FordTaurusDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -947,12 +939,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

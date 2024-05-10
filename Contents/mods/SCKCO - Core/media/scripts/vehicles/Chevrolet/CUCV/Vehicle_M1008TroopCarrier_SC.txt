@@ -486,8 +486,6 @@ module Base
 			{
 				file = M1008Driver,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -496,18 +494,6 @@ module Base
 			{
 				file = M1008Passenger,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
-		}
-
-		part SeatFrontLeft
-		{
-			model seatfrontLeft
-			{
-				file = M1008Driver,
-			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatMiddleRight
@@ -594,7 +580,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyBlazerHoodSC,
+			itemType = Base.KSeriesHoodSC,
 		}
 
 		part Heater
@@ -638,7 +624,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -669,7 +655,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		part M1008TarpFrame
@@ -744,7 +730,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -762,7 +748,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part DoorFrontRight
@@ -800,7 +786,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -838,7 +824,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		part DoorMiddleRight
@@ -915,7 +901,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerTrunkLidSC,
+			itemType = Base.KSeriesTrunkLidSC,
 		}
 
 		template = Tire,
@@ -1009,12 +995,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio2,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

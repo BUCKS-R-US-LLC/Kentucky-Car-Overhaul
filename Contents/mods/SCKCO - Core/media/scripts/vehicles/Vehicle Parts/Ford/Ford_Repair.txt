@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Ford Bullbar
     {
-       Require : F700Bullbar2,
+       Require : FordF700Bullbar2,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
 	fixing Fix Ford Hood Welding
 	{
-	   Require : FordCrownVictoriaHoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordBroncoExplorerSC2;FordF700HoodSC2;FordMustangHoodSC3,
+	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordBroncoExplorerSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -23,7 +23,7 @@ module Base
 
     fixing Fix Ford Hood
 	{
-	   Require : FordCrownVictoriaHoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordExplorerHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordF700HoodSC2;FordMustangHoodSC3,
+	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordExplorerHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -32,7 +32,7 @@ module Base
 
 	fixing Fix Ford Trunk Lid Welding
     {
-       Require : FordCrownVictoriaTrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordBroncoTrunkLidSC2;FordExplorerTrunkLidSC2;FordF350RearDoorsSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
+       Require : FordCrownVictoria85TrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordBroncoTrunkLidSC2;FordExplorerTrunkLidSC2;FordF350RearDoorsSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -42,7 +42,7 @@ module Base
 
     fixing Fix Ford Trunk Lid
 	{
-       Require : FordCrownVictoriaTrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordExplorerTrunkLidSC2;FordBroncoTrunkLidSC2;FordF350TrunkLidSC2;FordF150TrunkLidSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
+       Require : FordCrownVictoria85TrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordExplorerTrunkLidSC2;FordBroncoTrunkLidSC2;FordF350TrunkLidSC2;FordF150TrunkLidSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -51,7 +51,7 @@ module Base
 
 	fixing Fix Ford Door Welding
 	{
-	   Require : FordCrownVictoriaDoorSC1;FordCrownVictoriaRearDoorSC1;FordCrownVictoria92DoorSC1;FordCrownVictoria92RearDoorSC1;FordTaurusDoorSC1;FordTaurusRearDoorSC1;FordExplorerFrontDoorSC2;FordBroncoDoorSC2;FordF150DoorSC2;FordF350FrontDoorSC2;FordF700DoorSC2;FordMustangDoorSC3,
+	   Require : FordCrownVictoria85DoorSC1;FordCrownVictoria85RearDoorSC1;FordCrownVictoria92DoorSC1;FordCrownVictoria92RearDoorSC1;FordTaurusDoorSC1;FordTaurusRearDoorSC1;FordExplorerFrontDoorSC2;FordBroncoDoorSC2;FordF150DoorSC2;FordF350FrontDoorSC2;FordF700DoorSC2;FordMustangDoorSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -59,11 +59,4 @@ module Base
        Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
 	}
 
-    fixing Fix Ford Car seat
-	{
-	   Require : FordCrownVictoriaFrontSeatSC1;FordCrownVictoria92FrontSeatSC1;FordTaurusFrontSeatSC1;FordExplorerFrontSeatSC2;FordMustangFrontSeatSC3;FordExplorerRearSeatSC2;FordCrownVictoriaRearSeatSC1;FordCrownVictoria92RearSeatSC1;FordTaurusRearSeatSC1;FordBroncoFrontSeatSC2;FordBroncoRearSeatSC2;FordF350FrontSeatSC2;FordF700FrontSeatSC2;FordMustangRearSeatSC3,
-	   ConditionModifier : 0.8,
-
-       Fixer : DuctTape=2;Mechanics=1,
-	}
 }

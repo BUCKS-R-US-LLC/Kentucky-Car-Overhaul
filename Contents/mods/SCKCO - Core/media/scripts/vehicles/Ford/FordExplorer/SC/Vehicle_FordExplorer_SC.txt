@@ -435,11 +435,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -447,7 +442,6 @@ module Base
 				file = FordExplorerDriver,
 			}
 
-			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -457,7 +451,6 @@ module Base
 				file = FordExplorerPassenger,
 			}
 
-			itemType = Base.FordExplorerFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -467,7 +460,6 @@ module Base
 				file = FordExplorerDouble,
 			}
 
-			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -477,7 +469,6 @@ module Base
 				file = FordExplorerDouble,
 			}
 
-			itemType = Base.FordExplorerRearSeatSC,
 		}
 
 		part Muffler
@@ -492,7 +483,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ModernCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -646,7 +636,7 @@ module Base
 
 			category = SCUCKwindows,
 			
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -666,7 +656,7 @@ module Base
 
 			category = SCUCKwindows,
 
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -687,7 +677,7 @@ module Base
 
 			category = SCUCKwindows,
 			
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -706,7 +696,7 @@ module Base
 
 			category = SCUCKwindows,
 
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 		}
 
 		part WindowRearRight
@@ -724,7 +714,7 @@ module Base
 
 			category = SCUCKwindows,
 
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -744,7 +734,7 @@ module Base
 
 			category = SCUCKwindows,
 
-			itemType = Base.FordExplorerSideWindowSC,
+			itemType = Base.FordExplorerWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -784,7 +774,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordExplorerFrontDoorSC,
+			itemType = Base.FordExplorerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -822,7 +812,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordExplorerFrontDoorSC,
+			itemType = Base.FordExplorerDoorSC,
 		}
 
 		part DoorRearRight
@@ -860,7 +850,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordExplorerRearDoorSC,
+			itemType = Base.FordExplorerDoorSC,
 		}
 
 		part DoorRearLeft
@@ -898,7 +888,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordExplorerRearDoorSC,
+			itemType = Base.FordExplorerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -1035,11 +1025,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
 
 		part PassengerCompartment
 		{

@@ -409,8 +409,6 @@ module Base
 			{
 				file = MustangSCDriver,
 			}
-
-			itemType = Base.FordMustangFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -419,8 +417,6 @@ module Base
 			{
 				file = MustangSCPassenger,
 			}
-
-			itemType = Base.FordMustangFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -429,8 +425,6 @@ module Base
 			{
 				file = MustangSCRearPassenger,
 			}
-
-			itemType = Base.FordMustangRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -439,8 +433,6 @@ module Base
 			{
 				file = MustangSCRearPassenger,
 			}
-
-			itemType = Base.FordMustangRearSeatSC,
 		}
 
 		part Muffler
@@ -503,7 +495,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordMustangHoodSC,
+			itemType = Base.FordMustang90HoodSC,
 		}
 
 		part Heater
@@ -547,7 +539,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -580,7 +572,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -604,7 +596,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -623,7 +615,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -641,7 +633,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			area = SeatFrontLeft,
 		}
 
@@ -658,7 +650,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordMustangSideWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			area = SeatFrontRight,
 		}
 
@@ -697,7 +689,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangFrontDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -735,7 +727,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangFrontDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -788,7 +780,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordMustangTrunkLidSC,
+			itemType = Base.FordMustang90TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -862,12 +854,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

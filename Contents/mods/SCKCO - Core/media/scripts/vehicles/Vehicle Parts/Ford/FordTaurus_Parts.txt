@@ -6,7 +6,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Ford Taurus Front Door,
+        DisplayName	= Ford Taurus Door,
         Icon = FordLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -14,25 +14,12 @@ module Base
         WorldStaticModel = CrownVictoriaFrontDoor_WorldItem,
     }
 
-        item FordTaurusRearDoorSC1
+        item FordTaurusWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Ford Taurus Rear Door,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
-    }
-
-        item FordTaurusFrontWindshieldSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Ford Taurus Front Windshield,
+        DisplayName	=	Ford Taurus Windshield,
         Icon = FordLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -40,25 +27,12 @@ module Base
         WorldStaticModel = CrownVictoriaFrontWindshield_WorldItem,
     }
 
-        item FordTaurusRearWindshieldSC1
+        item FordTaurusWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Ford Taurus Rear Windshield,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaRearWindshield_WorldItem,
-    }
-
-        item FordTaurusFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Ford Taurus Front Side Window,
+        DisplayName	= Ford Taurus Window,
         Icon = FordLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -66,23 +40,10 @@ module Base
         WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
     }
 
-        item FordTaurusRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Ford Taurus Rear Side Window,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaRearSideWindow_WorldItem,
-    }
-
         item FordTaurusHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Ford Taurus Hood,
         Icon = FordLogo,
@@ -95,7 +56,7 @@ module Base
         item FordTaurusTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Ford Taurus Trunk Lid,
         Icon = FordLogo,
@@ -103,47 +64,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CrownVictoriaTrunkLid_WorldItem,
-    }
-
-        item FordTaurusFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Ford Taurus Front Seat,
-        Icon = FordLogo,
-        VehicleType =   1,
-        MaxCapacity = 10,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontSeat_WorldItem,
-    }
-
-        item FordTaurusRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Ford Taurus Rear Seat,
-        Icon = FordLogo,
-        VehicleType =   1,
-        MaxCapacity = 10,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaRearSeat_WorldItem,
-    }
-
-        item FordTaurusRearDoorSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	= Ford Taurus Rear Door,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaRearDoor_WorldItem,
     }
 
 }

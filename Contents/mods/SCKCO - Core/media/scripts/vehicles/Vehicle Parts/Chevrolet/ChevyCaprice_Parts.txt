@@ -7,11 +7,11 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Windshield Armor,
-        Icon = FordLogo,
+        Icon = ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontDoor_WorldItem,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
         item ChevyCapriceDoorArmorSC1
@@ -20,58 +20,45 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Door Armor,
-        Icon = FordLogo,
+        Icon = ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontDoor_WorldItem,
+        WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
         item ChevyCapriceWindowArmorSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Window Armor,
-        Icon = FordLogo,
+        Icon = ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
-
-        item ChevyCapriceWindowArmorSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Window Armor,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
-    }
-
+    
         item ChevyCapriceBullbarSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Bullbar,
-        Icon = FordLogo,
+        Icon = ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CrownVictoriaFrontSideWindow_WorldItem,
+        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item ChevyCapriceFrontDoorSC1
+        item ChevyCapriceDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Front Door,
+        DisplayName	= Chevrolet Caprice Door,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -79,25 +66,12 @@ module Base
         WorldStaticModel = CapriceRearDoor_WorldItem,
     }
 
-        item ChevyCapriceRearDoorSC1
+        item ChevyCapriceWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Rear Door,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearDoor_WorldItem,
-    }
-
-        item ChevyCapriceFrontWindshieldSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Chevrolet Caprice Front Windshield,
+        DisplayName	=	Chevrolet Caprice Windshield,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -105,25 +79,12 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item ChevyCapriceRearWindshieldSC1
+        item ChevyCapriceWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Caprice Rear Windshield,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item ChevyCapriceFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Front Side Window,
+        DisplayName	= Chevrolet Caprice Window,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -131,23 +92,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item ChevyCapriceRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Rear Side Window,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
         item ChevyCapriceHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Hood,
         Icon	=	ChevyLogo,
@@ -160,7 +108,7 @@ module Base
         item ChevyCapriceTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Caprice Trunk Lid,
         Icon	=	ChevyLogo,
@@ -170,32 +118,5 @@ module Base
         WorldStaticModel = CapriceTrunkLid_WorldItem,
     }
 
-        item ChevyCapriceFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Front Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item ChevyCapriceRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Caprice Rear Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
-    }
 }
 

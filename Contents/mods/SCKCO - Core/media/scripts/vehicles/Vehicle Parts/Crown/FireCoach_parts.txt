@@ -1,81 +1,49 @@
 module Base
 {
 
-    item FireCoachSeat2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Fire Coach Seat,
-        Icon	=	CrownLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 5,
-        MechanicsItem = TRUE,
-        Tooltip = Tooltip_Firecoach,
-        WorldStaticModel = FireCoachSeat_WorldItem,
-    }
-
     item FireCoachWindshield2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Fire Coach Windshield,
+        DisplayName	=	Firecoach Windshield,
         Icon	=	CrownLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        Tooltip = Tooltip_Firecoach,
         WorldStaticModel = FireCoachWindshield_WorldItem,
     }
 
-    item FireCoachFrontDoor2
+    item FireCoachDoor2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Firecoach Front Door,
         Icon	=	CrownLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        Tooltip = Tooltip_Firecoach,
         WorldStaticModel = FireCoachFrontDoor_WorldItem,
     }
 
-    item FireCoachFrontSideWindow2
+    item FireCoachWindow2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Firecoach Front Side Window,
+        DisplayName	=	Firecoach Window,
         Icon	=	CrownLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        Tooltip = Tooltip_Firecoach,
         WorldStaticModel = FireCoachFrontSideWindow_WorldItem,
-    }
-
-    item FireCoachRearSideWindow2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Firecoach Rear Side Window,
-        Icon	=	CrownLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        Tooltip = Tooltip_Firecoach,
-        WorldStaticModel = FireCoachRearSideWindow_WorldItem,
     }
 
     item FireCoachWindshieldArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Firecoach Windshield Armor,
         Icon	=	CrownLogo,
@@ -88,7 +56,7 @@ module Base
     item FireCoachWindowArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Firecoach Window Armor,
         Icon	=	CrownLogo,
@@ -101,7 +69,7 @@ module Base
 	  item FireCoachDoorArmor2
     {
         DisplayCategory = VehicleArmor,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Firecoach Door Armor,
         Icon	=	CrownLogo,

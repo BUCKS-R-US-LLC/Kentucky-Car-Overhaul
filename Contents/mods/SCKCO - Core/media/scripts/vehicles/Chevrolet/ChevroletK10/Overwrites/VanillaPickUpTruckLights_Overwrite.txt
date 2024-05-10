@@ -312,19 +312,12 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = K10Driver,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -333,8 +326,6 @@ module Base
 			{
 				file = K10Passenger,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -348,8 +339,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -399,7 +388,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyBlazerHoodSC,
+			itemType = Base.KSeriesHoodSC,
 		}
 
 		part Heater
@@ -443,7 +432,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -474,7 +463,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -498,7 +487,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -517,7 +506,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part DoorFrontRight
@@ -555,7 +544,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -593,7 +582,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -646,7 +635,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerTrunkLidSC,
+			itemType = Base.KSeriesTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -730,12 +719,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

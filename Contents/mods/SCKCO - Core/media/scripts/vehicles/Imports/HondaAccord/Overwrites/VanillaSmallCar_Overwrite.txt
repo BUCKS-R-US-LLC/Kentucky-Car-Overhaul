@@ -392,7 +392,6 @@ module Base
 				file = HondaAccordDriver,
 			}
 
-			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -402,7 +401,6 @@ module Base
 				file = HondaAccordPassenger,
 			}
 
-			itemType = Base.HondaAccordFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -412,7 +410,6 @@ module Base
 				file = HondaAccordDouble,
 			}
 
-			itemType = Base.HondaAccordRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -422,7 +419,6 @@ module Base
 				file = HondaAccordDouble,
 			}
 
-			itemType = Base.HondaAccordRearSeatSC,
 		}
 
 		part Muffler
@@ -585,7 +581,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordFrontSideWindowSC,
+			itemType = Base.HondaAccordWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -604,7 +600,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HondaAccordFrontSideWindowSC,
+			itemType = Base.HondaAccordWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -622,7 +618,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.HondaAccordRearSideWindowSC,
+			itemType = Base.HondaAccordWindowSC,
 			category = SCUCKwindows,
 			area = SeatRearRight,
 		}
@@ -639,7 +635,7 @@ module Base
 				requireInstalled =,
 			}
 
-			itemType = Base.HondaAccordRearSideWindowSC,
+			itemType = Base.HondaAccordWindowSC,
 			category = SCUCKwindows,
 			area = SeatRearLeft,
 		}
@@ -854,12 +850,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		physics box

@@ -350,6 +350,7 @@ module Base
 		}
 
 		template = G30TVDish,
+		template = G30ThirtyLogo,
 		template = G30WindowlessAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -411,7 +412,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30RearDoorsSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part SeatFrontLeft
@@ -421,7 +422,6 @@ module Base
 				file = G30VanWindowlessDriver,
 			}
 
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -431,17 +431,14 @@ module Base
 				file = G30VanWindowlessPassenger,
 			}
 
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearLeft
 		{
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearRight
 		{
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part Muffler
@@ -582,7 +579,7 @@ module Base
 
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30RearWindowsSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -616,7 +613,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -633,7 +630,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -673,7 +670,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -711,7 +708,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorRearRight
@@ -749,7 +746,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30SideDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		template = Tire,
@@ -822,12 +819,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

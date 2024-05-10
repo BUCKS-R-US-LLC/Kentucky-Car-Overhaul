@@ -132,16 +132,19 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.bad.vehicles["Base.StepVanMail"] = nil;
 	VehicleZoneDistribution.medium.vehicles["Base.StepVanMail"] = nil;
 	VehicleZoneDistribution.good.vehicles["Base.StepVanMail"] = nil;
+	VehicleZoneDistribution.postal.vehicles["Base.StepVanMail"] = nil;
 
 	VehicleZoneDistribution.parkingstall.vehicles["Base.StepVan_Heralds"] = nil;
 	VehicleZoneDistribution.bad.vehicles["Base.StepVan_Heralds"] = nil;
 	VehicleZoneDistribution.medium.vehicles["Base.StepVan_Heralds"] = nil;
 	VehicleZoneDistribution.good.vehicles["Base.StepVan_Heralds"] = nil;
+	VehicleZoneDistribution.kyheralds.vehicles["Base.StepVan_Heralds"] = nil;
 
 	VehicleZoneDistribution.parkingstall.vehicles["Base.StepVan_Scarlet"] = nil;
 	VehicleZoneDistribution.bad.vehicles["Base.StepVan_Scarlet"] = nil;
 	VehicleZoneDistribution.medium.vehicles["Base.StepVan_Scarlet"] = nil;
 	VehicleZoneDistribution.good.vehicles["Base.StepVan_Scarlet"] = nil;
+	VehicleZoneDistribution.scarlet.vehicles["Base.StepVan_Scarlet"] = nil;
 
 	VehicleZoneDistribution.parkingstall.vehicles["Base.Van"] = nil;
 	VehicleZoneDistribution.bad.vehicles["Base.Van"] = nil;
@@ -187,6 +190,7 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.bad.vehicles["Base.Van_LectroMax"] = nil;
 	VehicleZoneDistribution.medium.vehicles["Base.Van_LectroMax"] = nil;
 	VehicleZoneDistribution.good.vehicles["Base.Van_LectroMax"] = nil;
+	VehicleZoneDistribution.lectromax.vehicles["Base.Van_LectroMax"] = nil;
 	
 	VehicleZoneDistribution.parkingstall.vehicles["Base.Van_MassGenFac"] = nil;
 	VehicleZoneDistribution.bad.vehicles["Base.Van_MassGenFac"] = nil;

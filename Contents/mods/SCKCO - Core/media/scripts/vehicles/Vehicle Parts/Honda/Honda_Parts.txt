@@ -14,7 +14,7 @@ module Base
         WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
-        item HondaAccordFrontWindshieldSC1
+        item HondaAccordWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -26,26 +26,13 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
-
-        item HondaAccordRearWindshieldSC1
+    
+        item HondaAccordWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Honda Accord Rear Windshield,
-        Icon	=	HondaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item HondaAccordFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Honda Accord Front Side Window,
+        DisplayName	= Honda Accord Window,
         Icon	=	HondaLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -53,23 +40,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item HondaAccordRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Honda Accord Rear Side Window,
-        Icon	=	HondaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
         item HondaAccordHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Honda Accord Hood,
         Icon	=	HondaLogo,
@@ -82,7 +56,7 @@ module Base
         item HondaAccordTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Honda Accord Trunk Lid,
         Icon	=	HondaLogo,
@@ -90,34 +64,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceTrunkLid_WorldItem,
-    }
-
-        item HondaAccordFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Honda Accord Front Seat,
-        Icon	=	HondaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item HondaAccordRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Honda Accord Rear Seat,
-        Icon	=	HondaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
 }

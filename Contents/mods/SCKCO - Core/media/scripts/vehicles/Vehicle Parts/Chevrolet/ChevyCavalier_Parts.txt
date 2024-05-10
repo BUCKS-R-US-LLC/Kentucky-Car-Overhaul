@@ -1,12 +1,12 @@
 module Base
 {
 
-        item ChevyCavalierFrontDoorSC1
+        item ChevyCavalierDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Front Door,
+        DisplayName	= Chevrolet Cavalier Door,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -14,25 +14,12 @@ module Base
         WorldStaticModel = CapriceRearDoor_WorldItem,
     }
 
-        item ChevyCavalierRearDoorSC1
+        item ChevyCavalierWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Rear Door,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearDoor_WorldItem,
-    }
-
-        item ChevyCavalierFrontWindshieldSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Chevrolet Cavalier Front Windshield,
+        DisplayName	=	Chevrolet Cavalier Windshield,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -40,49 +27,23 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item ChevyCavalierRearWindshieldSC1
+        item ChevyCavalierWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Chevrolet Cavalier Rear Windshield,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item ChevyCavalierFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Front Side Window,
+        DisplayName	= Chevrolet Cavalier Window,
         Icon	=	ChevyLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
-
-        item ChevyCavalierRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Rear Side Window,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
+    
         item ChevyCavalierHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Cavalier Hood,
         Icon	=	ChevyLogo,
@@ -95,7 +56,7 @@ module Base
         item ChevyCavalierTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Chevrolet Cavalier Trunk Lid,
         Icon	=	ChevyLogo,
@@ -105,32 +66,5 @@ module Base
         WorldStaticModel = CapriceTrunkLid_WorldItem,
     }
 
-        item ChevyCavalierFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Front Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item ChevyCavalierRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet Cavalier Rear Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
-    }
 }
 

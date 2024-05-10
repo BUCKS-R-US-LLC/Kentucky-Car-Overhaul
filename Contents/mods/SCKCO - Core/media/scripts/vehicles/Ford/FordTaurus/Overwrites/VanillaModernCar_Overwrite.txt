@@ -414,8 +414,6 @@ module Base
 			{
 				file = FordTaurusDriver,
 			}
-
-			itemType = Base.FordTaurusFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -424,8 +422,6 @@ module Base
 			{
 				file = FordTaurusPassenger,
 			}
-
-			itemType = Base.FordTaurusFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -434,8 +430,6 @@ module Base
 			{
 				file = FordTaurusDouble,
 			}
-
-			itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -444,8 +438,6 @@ module Base
 			{
 				file = FordTaurusDouble,
 			}
-
-			itemType = Base.FordTaurusRearSeatSC,
 		}
 
 		part Muffler
@@ -947,12 +939,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

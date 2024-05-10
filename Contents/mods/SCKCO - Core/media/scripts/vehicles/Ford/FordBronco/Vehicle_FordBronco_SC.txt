@@ -403,11 +403,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -415,7 +410,6 @@ module Base
 				file = FordBroncoDriver,
 			}
 
-			itemType = Base.FordBroncoFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -425,7 +419,6 @@ module Base
 				file = FordBroncoPassenger,
 			}
 
-			itemType = Base.FordBroncoFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -435,7 +428,6 @@ module Base
 				file = FordBroncoRearDouble,
 			}
 
-			itemType = Base.FordBroncoRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -445,7 +437,6 @@ module Base
 				file = FordBroncoRearDouble,
 			}
 
-			itemType = Base.FordBroncoRearSeatSC,
 		}
 
 		part Muffler
@@ -459,8 +450,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.ModernCarMuffler,
+			
 		}
 
 		template = EngineDoor,
@@ -611,7 +601,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoSideWindowSC,
+			itemType = Base.FordBroncoWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -630,7 +620,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoSideWindowSC,
+			itemType = Base.FordBroncoWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -650,7 +640,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoSideWindowSC,
+			itemType = Base.FordBroncoWindowSC,
 		}
 
 		part WindowRearLeft
@@ -668,7 +658,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoSideWindowSC,
+			itemType = Base.FordBroncoWindowSC,
 		}
 
 		part DoorFrontRight
@@ -881,11 +871,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
 
 		part PassengerCompartment
 		{

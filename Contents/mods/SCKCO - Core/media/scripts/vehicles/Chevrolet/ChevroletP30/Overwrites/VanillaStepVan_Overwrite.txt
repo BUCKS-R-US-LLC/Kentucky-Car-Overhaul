@@ -391,8 +391,6 @@ module Base
 			{
 				file = StepVanP30Driver,
 			}
-
-			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -401,8 +399,6 @@ module Base
 			{
 				file = StepVanP30Passenger,
 			}
-
-			itemType = Base.ChevyP30FrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -552,13 +548,12 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyP30RearWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
-		template = Door/part/DoorRearLeft,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -577,7 +572,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyP30SideWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -595,7 +590,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyP30SideWindowSC,
+			itemType = Base.ChevyP30WindowSC,
 		}
 
 		part DoorFrontRight
@@ -709,13 +704,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyP30RearDoorsSC,
-		}
-
-		part DoorRearLeft
-		{
-			category = nodisplay,
-			itemType = Base.ChevyP30RearDoorsSC,
+			itemType = Base.ChevyP30DoorSC,
 		}
 
 		template = Tire,
@@ -788,12 +777,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

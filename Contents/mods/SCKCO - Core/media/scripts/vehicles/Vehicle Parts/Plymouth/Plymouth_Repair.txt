@@ -1,7 +1,7 @@
 module Base
 {
 
-	fixing Fix Chverolet Hood Welding
+	fixing Fix Plymouth Hood Welding
 	{
 	   Require : PlymouthVoyagerHoodSC2,
 	   GlobalItem : BlowTorch=5,
@@ -49,12 +49,4 @@ module Base
        Fixer : SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
 	}
 
-    fixing Fix Plymouth Car seat
-	{
-	   Require : PlymouthVoyagerFrontSeatSC2;PlymouthVoyagerRearSeatSC2,
-	   ConditionModifier : 0.8,
-
-       Fixer : DuctTape=2;Mechanics=1,
-       Fixer : Glue=2;Mechanics=1,
-	}
 }

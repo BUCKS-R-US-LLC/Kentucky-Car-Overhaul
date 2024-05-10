@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30AmbulanceFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model G30AmbulanceFrontRightDoor
 	{
@@ -357,7 +359,7 @@ module Base
 			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
 
-		template = G30AmbulanceAttachments,
+		template = G30ThirtyLogo,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -418,7 +420,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30RearDoorsSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part SeatFrontLeft
@@ -428,7 +430,6 @@ module Base
 				file = G30VanWindowlessDriver,
 			}
 
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -438,17 +439,14 @@ module Base
 				file = G30VanWindowlessPassenger,
 			}
 
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearLeft
 		{
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part SeatRearRight
 		{
-			itemType = Base.ChevyG30FrontSeatSC,
 		}
 
 		part Muffler
@@ -589,7 +587,7 @@ module Base
 
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30RearWindowsSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -623,7 +621,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -640,7 +638,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyG30SideWindowSC,
+			itemType = Base.ChevyG30WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -680,7 +678,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -718,7 +716,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30FrontDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		part DoorRearRight
@@ -756,7 +754,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyG30SideDoorSC,
+			itemType = Base.ChevyG30DoorSC,
 		}
 
 		template = Tire,
@@ -829,12 +827,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

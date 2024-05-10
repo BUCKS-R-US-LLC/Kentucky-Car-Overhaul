@@ -308,19 +308,12 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = C70SurvivorDriver,
 			}
-
-			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -329,8 +322,6 @@ module Base
 			{
 				file = C70SurvivorPassenger,
 			}
-
-			itemType = Base.ChevyC70FrontSeatSC,
 		}
 
 		part Muffler
@@ -345,7 +336,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -492,7 +482,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70SideWindowSC,
+			itemType = Base.ChevyC70WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -511,7 +501,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70SideWindowSC,
+			itemType = Base.ChevyC70WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -726,12 +716,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

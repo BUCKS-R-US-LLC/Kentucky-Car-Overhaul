@@ -307,11 +307,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.BigGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -319,7 +314,6 @@ module Base
 				file = F700BoxTruckDriver,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -329,7 +323,6 @@ module Base
 				file = F700BoxTruckPassenger,
 			}
 
-			itemType = Base.FordF700FrontSeatSC,
 		}
 
 		part Muffler
@@ -344,7 +337,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -726,12 +718,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

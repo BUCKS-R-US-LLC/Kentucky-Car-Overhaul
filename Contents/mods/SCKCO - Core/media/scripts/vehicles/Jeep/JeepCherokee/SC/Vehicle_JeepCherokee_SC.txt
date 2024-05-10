@@ -443,11 +443,6 @@ module Base
 		template = Engine,
 		template = Muffler,
 
-		part GasTank
-		{
-			itemType = Base.NormalGasTank,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
@@ -455,7 +450,6 @@ module Base
 				file = JeepCherokeeDriver,
 			}
 
-			itemType = Base.JeepCherokeeFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -465,7 +459,6 @@ module Base
 				file = JeepCherokeePassenger,
 			}
 
-			itemType = Base.JeepCherokeeFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -475,7 +468,6 @@ module Base
 				file = JeepCherokeeDouble,
 			}
 
-			itemType = Base.JeepCherokeeRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -485,7 +477,6 @@ module Base
 				file = JeepCherokeeDouble,
 			}
 
-			itemType = Base.JeepCherokeeRearSeatSC,
 		}
 
 		part Muffler
@@ -653,7 +644,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -672,7 +663,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 		}
 
 		part WindowMiddleRight
@@ -690,7 +681,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -708,7 +699,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 		}
 
 		part WindowRearRight
@@ -725,7 +716,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -744,7 +735,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeSideWindowSC,
+			itemType = Base.JeepCherokeeWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -1058,11 +1049,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
 
 		part PassengerCompartment
 		{

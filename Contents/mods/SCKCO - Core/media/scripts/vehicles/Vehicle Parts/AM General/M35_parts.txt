@@ -154,20 +154,6 @@ module Base
             WorldStaticModel = M35RearWindshield_WorldItem,
         }
 
-    item M35Seat2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Seat,
-            Icon	=	AMLogo,
-        	MaxCapacity = 10,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35Seat_WorldItem,
-        }
-
    item M35RearSeat2
         {
             DisplayCategory = VehicleMaintenance,
@@ -193,21 +179,6 @@ module Base
             ConditionMax = 100,
             MechanicsItem = TRUE,
             WorldStaticModel = M35Windshield_WorldItem,
-        }
-
-    item M35FuelTank2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	15.0,0
-            Type	=	Normal,
-            DisplayName	= M35 Fuel Tank,
-            Icon	=	AMLogo,
-            VehicleType =   2,
-            ConditionMax = 100,
-        	MaxCapacity = 85,
-        	ConditionAffectsCapacity = false,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35FuelTank_WorldItem,
         }
 
     item M35Tarp2

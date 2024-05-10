@@ -412,7 +412,6 @@ module Base
 				file = VWRabbitDriver,
 			}
 
-			itemType = Base.VWRabbitFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -422,7 +421,6 @@ module Base
 				file = VWRabbitPassenger,
 			}
 
-			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearLeft
@@ -432,7 +430,6 @@ module Base
 				file = VWRabbitDouble,
 			}
 
-			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -442,7 +439,6 @@ module Base
 				file = VWRabbitDouble,
 			}
 
-			itemType = Base.VWRabbitRearSeatSC,
 		}
 
 		part Muffler
@@ -549,7 +545,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.VWRabbitFrontWindshieldSC,
+			itemType = Base.VWRabbitWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -582,7 +578,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.VWRabbitRearWindshieldSC,
+			itemType = Base.VWRabbitWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -608,7 +604,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.VWRabbitFrontSideWindowSC,
+			itemType = Base.VWRabbitWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -627,7 +623,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.VWRabbitFrontSideWindowSC,
+			itemType = Base.VWRabbitWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -645,7 +641,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearSideWindowSC,
+			itemType = Base.VWRabbitWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -664,7 +660,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.VWRabbitRearSideWindowSC,
+			itemType = Base.VWRabbitWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -780,7 +776,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearDoorSC,
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		part DoorRearLeft
@@ -818,7 +814,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.VWRabbitRearDoorSC,
+			itemType = Base.VWRabbitDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -955,12 +951,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

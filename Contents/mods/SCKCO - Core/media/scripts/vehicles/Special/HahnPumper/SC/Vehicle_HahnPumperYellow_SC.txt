@@ -487,12 +487,6 @@ module Base
 		template = TrunkPumper/part/SideContainer4,
 		template = TrunkDoorPumper,
 
-		part LargeUtilityTruckSoundController
-		{
-			itemType = Base.LargeUtilityTruckSoundController,
-			category = nodisplay,
-		}
-
 		part TrunkDoor1
 		{
 			model Default
@@ -582,7 +576,6 @@ module Base
 				file = HahnPumperDriver,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part SeatFrontRight
@@ -592,7 +585,6 @@ module Base
 				file = HahnPumperPassenger,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part SeatMiddleLeft
@@ -602,7 +594,6 @@ module Base
 				file = HahnPumperMiddlePassenger1,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part SeatMiddleRight
@@ -612,7 +603,6 @@ module Base
 				file = HahnPumperMiddlePassenger2,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part SeatRearLeft
@@ -622,7 +612,6 @@ module Base
 				file = HahnPumperRearPassenger1,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part SeatRearRight
@@ -632,7 +621,6 @@ module Base
 				file = HahnPumperRearPassenger2,
 			}
 
-			itemType = Base.HahnPumperSeatSC,
 		}
 
 		part Muffler
@@ -730,7 +718,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HahnPumperFrontSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -747,7 +735,7 @@ module Base
 				openable = false,
 			}
 
-			itemType = Base.HahnPumperFrontSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -774,7 +762,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HahnPumperRearSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 		}
 
 		part WindowMiddleRight
@@ -798,7 +786,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HahnPumperRearSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 		}
 
 		part WindowRearLeft
@@ -823,7 +811,7 @@ module Base
 
 			parent = DoorRearLeft,
 			category = SCUCKwindows,
-			itemType = Base.HahnPumperRearSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 		}
 
 		part WindowRearRight
@@ -848,7 +836,7 @@ module Base
 
 			parent = DoorRearRight,
 			category = SCUCKwindows,
-			itemType = Base.HahnPumperRearSideWindowSC,
+			itemType = Base.HahnPumperWindowSC,
 		}
 
 		part DoorFrontRight
@@ -886,7 +874,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperFrontDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -924,7 +912,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperFrontDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		part DoorFrontRight
@@ -962,7 +950,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperFrontDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1000,7 +988,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperFrontDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		part DoorRearRight
@@ -1038,7 +1026,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperRearDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		part DoorRearLeft
@@ -1076,7 +1064,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HahnPumperRearDoorSC,
+			itemType = Base.HahnPumperDoorSC,
 		}
 
 		template = Tire,
@@ -1149,12 +1137,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio1,
-		}
-
 		template = Headlight,
 
 		physics box

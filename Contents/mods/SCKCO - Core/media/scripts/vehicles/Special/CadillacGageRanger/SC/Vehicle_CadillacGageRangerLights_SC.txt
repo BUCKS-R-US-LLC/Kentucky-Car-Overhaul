@@ -186,8 +186,8 @@ module Base
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.50f,
 		wheelFriction = 1.5f,
-		frontEndHealth = 8500,
-		rearEndHealth = 7500,
+		frontEndHealth = 35000,
+		rearEndHealth = 25000,
 		seats = 4,
 
 		wheel FrontLeft
@@ -372,7 +372,6 @@ module Base
 				file = CadillacGageRangerLightsDriver,
 			}
 
-			itemType = Base.CadillacGageRangerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -393,7 +392,6 @@ module Base
 			}
 
 			category = nodisplay,
-			itemType = Base.CadillacGageRangerRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -404,7 +402,6 @@ module Base
 			}
 
 			category = nodisplay,
-			itemType = Base.CadillacGageRangerRearSeatSC,
 		}
 
 		part Muffler
@@ -419,7 +416,6 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -602,7 +598,7 @@ module Base
 			parent = DoorFrontRight,
 			category = SCUCKwindows,
 			area = SeatFrontRight,
-			itemType = Base.CadillacGageRangerSideWindowSC,
+			itemType = Base.CadillacGageRangerWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -626,7 +622,7 @@ module Base
 			parent = DoorFrontLeft,
 			category = SCUCKwindows,
 			area = SeatFrontLeft,
-			itemType = Base.CadillacGageRangerSideWindowSC,
+			itemType = Base.CadillacGageRangerWindowSC,
 		}
 
 		part DoorFrontRight
@@ -755,7 +751,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CadillacGageRangerRearDoorsSC,
+			itemType = Base.CadillacGageRangerDoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -867,12 +863,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio2,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

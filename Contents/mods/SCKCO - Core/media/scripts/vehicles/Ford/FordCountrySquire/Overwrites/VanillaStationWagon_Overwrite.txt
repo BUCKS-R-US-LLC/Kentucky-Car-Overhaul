@@ -435,7 +435,6 @@ module Base
 				file = FordCountrySquireDriver,
 			}
 
-			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -445,7 +444,6 @@ module Base
 				file = FordCountrySquirePassenger,
 			}
 
-			itemType = Base.FordCrownVictoriaFrontSeatSC,
 		}
 
 		part SeatRearLeft
@@ -455,7 +453,6 @@ module Base
 				file = FordCountrySquireDouble,
 			}
 
-			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part SeatRearRight
@@ -465,7 +462,6 @@ module Base
 				file = FordCountrySquireDouble,
 			}
 
-			itemType = Base.FordCrownVictoriaRearSeatSC,
 		}
 
 		part Muffler
@@ -572,7 +568,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaFrontWindshieldSC,
+			itemType = Base.FordCrownVictoriaWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -598,7 +594,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaRearWindshieldSC,
+			itemType = Base.FordCrownVictoriaWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -628,7 +624,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -647,7 +643,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 		}
 
 		part WindowFrontRight
@@ -664,7 +660,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -683,7 +679,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaFrontSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -702,7 +698,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -721,7 +717,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordCrownVictoriaRearSideWindowSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -837,7 +833,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordCrownVictoriaRearDoorSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 		}
 
 		part DoorRearLeft
@@ -875,7 +871,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordCrownVictoriaRearDoorSC,
+			itemType = Base.FordCrownVictoriaWindowSC,
 		}
 
 		template = TrunkDoor,
@@ -1002,12 +998,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.RadioBlack,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

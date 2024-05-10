@@ -18,7 +18,7 @@ module Base
         item MackDM800WindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Mack DM-800 Windshield,
         Icon = MackLogo,
@@ -28,10 +28,10 @@ module Base
         WorldStaticModel = F700ArmoredWindows_WorldItem,
     }
 
-        item MackDM800SideWindowSC2
+        item MackDM800WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Mack DM-800 Side Window,
         Icon = MackLogo,
@@ -41,23 +41,10 @@ module Base
         WorldStaticModel = K5SideWindow_WorldItem,
     }
 
-        item MackDM800FrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Mack DM-800 Front Seat,
-        Icon = MackLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
-
         item MackDM800HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Mack DM-800 Hood,
         Icon = MackLogo,
@@ -65,21 +52,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Hood_WorldItem,
-    }
-
-        item MackDM800FrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Mack DM-800 Front Seat,
-        Icon = MackLogo,
-        VehicleType =   2,
-        MaxCapacity = 10,
-        ChanceToSpawnDamaged = 70,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
     }
 
 }

@@ -66,10 +66,10 @@ module Base
         WorldStaticModel = F700ArmoredWindows_WorldItem,
     }
 
-        item ChevyC70SideWindowSC2
+        item ChevyC70WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Chevrolet C70 Side Window,
         Icon	=	ChevyLogo,
@@ -79,23 +79,10 @@ module Base
         WorldStaticModel = K5SideWindow_WorldItem,
     }
 
-        item ChevyC70FrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet C70 Front Seat,
-        Icon	=	ChevyLogo
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
-
         item ChevyC70HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Chevrolet C70 Hood,
         Icon	=	ChevyLogo,
@@ -103,21 +90,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = K5Hood_WorldItem,
-    }
-
-        item ChevyC70FrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Chevrolet C70 Front Seat,
-        Icon	=	ChevyLogo,
-        VehicleType =   2,
-        MaxCapacity = 10,
-        ChanceToSpawnDamaged = 70,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = K5FrontSeat_WorldItem,
     }
 
         item ChevyC70TailGate2

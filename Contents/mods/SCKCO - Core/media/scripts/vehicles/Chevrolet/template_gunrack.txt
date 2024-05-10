@@ -1,0 +1,105 @@
+module Base
+{
+	template vehicle CUCVGunRack
+	{
+		part GunRack1
+		{
+			area = SeatFrontLeft,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 4,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		
+		part GunRack2
+		{
+			area = SeatFrontRight,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 4,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+				
+		}
+	}
+	}
+
+	template vehicle RadioCarGunRack
+	{
+		part RadioCarGunRack
+		{
+			area = SeatFrontLeft,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 8,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		
+	}
+	}
+
+	template vehicle MustangGunRack
+	{
+		part RadioCarGunRack
+		{
+			area = SeatFrontLeft,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 8,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		
+	}
+	}
+
+	template vehicle BubbaGunRack
+	{
+		part RadioCarGunRack
+		{
+			area = SeatFrontLeft,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 8,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		
+	}
+	}
+
+}
+

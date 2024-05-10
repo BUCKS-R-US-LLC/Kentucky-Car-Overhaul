@@ -4,7 +4,7 @@ module Base
         item GrummanLLVDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Grumman LLV Door,
         Icon	=	GrummanLogo,
@@ -17,7 +17,7 @@ module Base
         item GrummanLLVWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Grumman LLV Windshield,
         Icon	=	GrummanLogo,
@@ -27,12 +27,12 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item GrummanLLVSideWindowSC2
+        item GrummanLLVWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Grumman LLV Side Window,
+        DisplayName	=	Grumman LLV Window,
         Icon	=	GrummanLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -43,7 +43,7 @@ module Base
         item GrummanLLVHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Grumman LLV Hood,
         Icon	=	GrummanLogo,
@@ -56,7 +56,7 @@ module Base
         item GrummanLLVRollUpDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	10,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Grumman LLV Roll-Up Door,
         Icon	=	GrummanLogo,
@@ -66,17 +66,4 @@ module Base
         WorldStaticModel = K5TrunkLid_WorldItem,
     }
 
-        item GrummanLLVFrontSeatSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5,
-        Type	=	Normal,
-        DisplayName	= Grumman LLV Front Seat,
-        Icon	=	GrummanLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        MaxCapacity = 5,
-        WorldStaticModel = K5FrontSeat_WorldItem,
-    }
 }

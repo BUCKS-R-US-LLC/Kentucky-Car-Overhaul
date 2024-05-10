@@ -306,56 +306,12 @@ module Base
 
         template = specials/part/DetroitDieselSC,
 
-		part GunRack1
-		{
-			area = SeatFrontRight,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
-		part GunRack2
-		{
-			area = SeatFrontLeft,
-			category = nodisplay,
-			itemType = Base.GloveBox,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 4,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
 				file = CUCVZhenjaEditionDriver,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -364,8 +320,6 @@ module Base
 			{
 				file = CUCVZhenjaEditionPassenger,
 			}
-
-			itemType = Base.ChevyBlazerFrontSeatSC,
 		}
 
 		part Muffler
@@ -379,8 +333,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -430,7 +382,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyBlazerHoodSC,
+			itemType = Base.KSeriesHoodSC,
 		}
 
 		part Heater
@@ -474,7 +426,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -505,7 +457,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyBlazerWindshieldSC,
+			itemType = Base.KSeriesWindshieldSC,
 		}
 
 		part CUCVZhenjaEditionSoftTop
@@ -531,20 +483,9 @@ module Base
 			}
 
 			category = nodisplay,
-			itemType = Base.M1008Tarp,
+			itemType = Base.M1008TarpSC,
 		}
-
-		part CUCVSoundPart
-		{
-			
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = nodisplay,
-			itemType = Base.CUCVSoundPart,
-		}
-
+		
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
@@ -566,7 +507,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -585,7 +526,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyBlazerSideWindowSC,
+			itemType = Base.KSeriesWindowSC,
 		}
 
 		part DoorFrontRight
@@ -623,7 +564,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -661,7 +602,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerDoorSC,
+			itemType = Base.KSeriesDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -714,7 +655,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyBlazerTrunkLidSC,
+			itemType = Base.KSeriesTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -798,12 +739,6 @@ module Base
 		}
 
 		template = Radio,
-
-		part Radio*
-		{
-			itemType = Radio.HamRadio2,
-		}
-
 		template = Headlight,
 
 		part PassengerCompartment

@@ -14,20 +14,7 @@ module Base
         WorldStaticModel = CapriceFrontDoor_WorldItem,
     }
 
-        item ToyotaCamryRearDoorSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	= Toyota Camry Rear Door,
-        Icon	=	ToyotaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearDoor_WorldItem,
-    }
-
-        item ToyotaCamryFrontWindshieldSC1
+        item ToyotaCamryWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -40,23 +27,10 @@ module Base
         WorldStaticModel = CapriceFrontWindshield_WorldItem,
     }
 
-        item ToyotaCamryRearWindshieldSC1
+        item ToyotaCamryWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
-        Type	=	Normal,
-        DisplayName	=	Toyota Camry Rear Windshield,
-        Icon	=	ToyotaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearWindshield_WorldItem,
-    }
-
-        item ToyotaCamryFrontSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
         Type	=	Normal,
         DisplayName	= Toyota Camry Front Side Window,
         Icon	=	ToyotaLogo,
@@ -66,23 +40,10 @@ module Base
         WorldStaticModel = CapriceFrontSideWindow_WorldItem,
     }
 
-        item ToyotaCamryRearSideWindowSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Toyota Camry Rear Side Window,
-        Icon	=	ToyotaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSideWindow_WorldItem,
-    }
-
         item ToyotaCamryHoodSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Toyota Camry Hood,
         Icon	=	ToyotaLogo,
@@ -95,7 +56,7 @@ module Base
         item ToyotaCamryTrunkLidSC1
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	= Toyota Camry Trunk Lid,
         Icon	=	ToyotaLogo,
@@ -103,34 +64,6 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = CapriceTrunkLid_WorldItem,
-    }
-
-        item ToyotaCamryFrontSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Toyota Camry Front Seat,
-        Icon	=	ToyotaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSeat_WorldItem,
-    }
-    
-        item ToyotaCamryRearSeatSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Toyota Camry Rear Seat,
-        Icon	=	ToyotaLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
     }
 
 }
