@@ -3,7 +3,7 @@ module Base
 
 	fixing Fix Plymouth Hood Welding
 	{
-	   Require : PlymouthVoyagerHoodSC2,
+	   Require : PlymouthVoyagerHoodSC1,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module Base
 
     fixing Fix Plymouth Hood
 	{
-	   Require : PlymouthVoyagerHoodSC2,
+	   Require : PlymouthVoyagerHoodSC1,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Plymouth Trunk Lid Welding
     {
-       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC2;PlymouthSportTrunkLidSC3,
+       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC1;PlymouthSportTrunkLidSC1,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Plymouth Trunk Lid
 	{
-       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC2;PlymouthSportTrunkLidSC3,
+       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC1;,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module Base
 
 	fixing Fix Plymouth Door Welding
 	{
-	   Require : PlymouthVoyagerDoorSC2,
+	   Require : PlymouthVoyagerDoorSC1,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 

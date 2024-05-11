@@ -3,15 +3,15 @@ module Base
 
 	model CapriceBullbar
 	{
-		mesh = vehicles/Vehicle_CapriceCiv_SC|HoodArmor_obj,
-		shader = vehiclewheel,
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model CapriceWindshieldArmor
 	{
 		mesh = vehicles/Vehicle_CapriceCiv_SC|WindshieldArmor_obj,
-		shader = vehiclewheel,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
@@ -21,34 +21,14 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
-	model CapriceFrontLeftWindowArmor
-	{
-		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-	}
-
-	model CapriceFrontRightWindowArmor
-	{
-		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-	}
-    
 	model CapriceFrontRightDoorArmor
 	{
 		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
 	}
 
     model CapriceRearLeftDoorArmor
@@ -57,7 +37,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftArmorBone 1.0,
 	}
 
 	model CapriceRearRightDoorArmor
@@ -66,25 +45,43 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightArmorBone 1.0,
+
 	}
 
-	model CapriceRearLeftWindowArmor
+	model CrownVicFLWA
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CrownVicFRWA
+	{
+		mesh = vehicles/Vehicle_CapriceCiv_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CrownVicRLWA
 	{
 		mesh = vehicles/Vehicle_CapriceCiv_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftArmorBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 
-	model CapriceRearRightWindowArmor
+	model CrownVicRRWA
 	{
 		mesh = vehicles/Vehicle_CapriceCiv_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightArmorBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
     template vehicle CapriceAttachments

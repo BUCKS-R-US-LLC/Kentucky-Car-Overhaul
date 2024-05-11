@@ -1,12 +1,12 @@
 module Base
 {
 
-        item PlymouthVoyagerFrontDoorSC2
+        item PlymouthVoyagerDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Front Door,
+        DisplayName	= Plymouth Voyager Door,
         Icon	=	PlymouthLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -17,9 +17,9 @@ module Base
         item PlymouthVoyagerHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Hood,
+        DisplayName	= Plymouth Voyager Hood,
         Icon	=	PlymouthLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -30,9 +30,9 @@ module Base
         item PlymouthVoyagerTrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Trunk Lid,
+        DisplayName	= Plymouth Voyager Trunk Lid,
         Icon	=	PlymouthLogo,
         VehicleType =   1,
         ConditionMax = 100,
@@ -45,7 +45,7 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	20,
         Type	=	Normal,
-        DisplayName	=	Plymouth Voyager Van Windshield,
+        DisplayName	=	Plymouth Voyager Windshield,
         Icon	=	PlymouthLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -53,96 +53,18 @@ module Base
         WorldStaticModel = K5Windshield_WorldItem,
     }
 
-        item PlymouthVoyagerRearWindowsSC2
+        item PlymouthVoyagerWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Rear Windows,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30RearWindows_WorldItem,
-    }
-
-        item PlymouthVoyagerSideWindowSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Side Window,
+        DisplayName	= Plymouth Voyager Window,
         Icon	=	PlymouthLogo,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = G30SideWindow_WorldItem,
     }
-
-        item PlymouthVoyagerSideDoorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Side Door,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30SideDoor_WorldItem,
-    }
     
-        item PlymouthVoyagerSideWindowLongSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Long Side Window,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30SideWindowLong_WorldItem,
-    }
-
-        item PlymouthVoyagerRearDoorsVanSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Rear Doors,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30RearDoorsVan_WorldItem,
-    }
-
-        item PlymouthVoyagerRearWindowVanSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Rear Window,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30RearWindowsVan_WorldItem,
-    }
-
-        item PlymouthVoyagerRearWindshieldSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= Plymouth Voyager Van Rear Windshield,
-        Icon	=	PlymouthLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = G30RearWindowsVan_WorldItem,
-    }
-
 }
 

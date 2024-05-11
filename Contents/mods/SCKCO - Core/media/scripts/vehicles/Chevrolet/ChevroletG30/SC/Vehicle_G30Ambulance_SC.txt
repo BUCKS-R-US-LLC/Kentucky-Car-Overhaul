@@ -354,18 +354,13 @@ module Base
 			xywh = -1.6610 -3.0169 0.0000 0.0000,
 		}
 
-		area TruckBed
-		{
-			xywh = 0.0000 -5.5932 3.3220 1.0169,
-		}
-
+		template = AmbulanceContainers,
 		template = G30ThirtyLogo,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
-		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
@@ -596,15 +591,6 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
-		part TruckBed
-		{
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-		}
 		part WindowFrontRight
 		{
 			model windowFR

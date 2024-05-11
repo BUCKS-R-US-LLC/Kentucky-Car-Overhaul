@@ -1,6 +1,19 @@
 module Base
 {
 
+    item CUCVBackSeatSC2
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= M1008 Tarp Frame,
+            Icon	=	ChevyLogo,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = M1008TarpFrame_WorldItem,
+        }
+
     item M1008TarpSC2
         {
             DisplayCategory = VehicleMaintenance,
@@ -8,7 +21,7 @@ module Base
             Type	=	Normal,
             DisplayName	= M1008 Tarp,
             Icon	=	ChevyLogo,
-            VehicleType =   1,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
             Tooltip = Tooltip_M1008Tarp,
@@ -22,7 +35,7 @@ module Base
             Type	=	Normal,
             DisplayName	= M1008 Tarp Frame,
             Icon	=	ChevyLogo,
-            VehicleType =   1,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
             Tooltip = Tooltip_M1008TarpFrame,
@@ -36,23 +49,9 @@ module Base
             Type	=	Normal,
             DisplayName	= M1010 Rear Doors,
             Icon	=	ChevyLogo,
-            VehicleType =   1,
+            VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
             WorldStaticModel = M1010RearDoors_WorldItem,
-        }
-    
-    item M1008RearSeatSC2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M1008 Rear Seat,
-            Icon	=	ChevyLogo,
-        	MaxCapacity = 1,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = FALSE,
-            WorldStaticModel = M35Seat_WorldItem,
         }
 }

@@ -4,7 +4,7 @@ module Base
     item HahnPumperWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Hahn Pumper Windshield,
         Icon	=	HahnLogo,
@@ -14,10 +14,10 @@ module Base
         WorldStaticModel = HahnPumperWindshield_WorldItem,
     }
 
-    item HahnPumperFrontDoorSC2
+    item HahnPumperDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	Hahn Pumper Front Door,
         Icon	=	HahnLogo,
@@ -27,25 +27,12 @@ module Base
         WorldStaticModel = HahnPumperFrontDoor_WorldItem,
     }
 
-    item HahnPumperRearDoorSC2
+    item HahnPumperWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	Hahn Pumper Rear Door,
-        Icon	=	HahnLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = HahnPumperFrontDoor_WorldItem,
-    }
-
-    item HahnPumperFrontSideWindowSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Hahn Pumper Front Side Window,
+        DisplayName	=	Hahn Pumper Window,
         Icon	=	HahnLogo,
         VehicleType =   2,
         ConditionMax = 100,
@@ -53,16 +40,4 @@ module Base
         WorldStaticModel = HahnPumperFrontSideWindow_WorldItem,
     }
 
-    item HahnPumperRearSideWindowSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
-        Type	=	Normal,
-        DisplayName	=	Hahn Pumper Rear Side Window,
-        Icon	=	HahnLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = HahnPumperRearSideWindow_WorldItem,
-    }
 }
