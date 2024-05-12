@@ -52,6 +52,21 @@ Events.OnPlayerUpdate.Add(luaEvents.processOnWeaponSwingHitPoint)
 luaEvents.processVehicleHits = {}
 
 
+function luaEvents.recursivePartChild(part)
+    if part:getChildCount() > 0 then
+
+        for i=part:getChildCount()-1, 0, -1 do
+            local child = part:getChild(i)
+            if child and child:getCondition() > 0 then
+                --print("   ------ child: ", child:getId(), " : ", child:getChildCount())
+                return luaEvents.recursivePartChild(child)
+            end
+        end
+    end
+    --print(" --- part: ", part:getId(), " : ", part:getChildCount())
+    return part
+end
+
 ---@param player IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param vehicle BaseVehicle
 function luaEvents.getNearestPart(vehicle, player)
@@ -59,8 +74,11 @@ function luaEvents.getNearestPart(vehicle, player)
     for i=vehicle:getPartCount()-1, 0, -1 do
         ---@type VehiclePart
         local part = vehicle:getPartByIndex(i)
-        if part and vehicle:isInArea(part:getArea(), player) and part:getCondition() > 0 then
-            return part
+
+        if part and (part:getCategory()=="door" or part:getCategory()=="bodywork") and vehicle:isInArea(part:getArea(), player) and part:getCondition() > 0 then
+            --print(" - part: ", part:getId(), " : ", part:getChildCount())
+            local truePart = luaEvents.recursivePartChild(part)
+            return truePart
         end
     end
 
@@ -93,23 +111,23 @@ function luaEvents.processPartDamages(player, vehicle)
                 local parent = part:getParent()
                 local parentID = parent and parent:getId()
 
-                if parent then dict[vehicleScriptName][parentID] = partID end
+                if parent then dict[vehicleScriptName][partID] = parentID end
             end
         end
     else
 
         local nearestPart = luaEvents.getNearestPart(vehicle, player)
+        local nearestID = nearestPart and nearestPart:getId()
 
-        --print("nearestPart: ", (nearestPart and nearestPart:getId()))
-
-        local armorID = nearestPart and dict[vehicleScriptName][nearestPart:getId()]
+        local armorID = nearestID and dict[vehicleScriptName][nearestID] and nearestID
         if not armorID then return end
+        local armor = nearestPart
 
-        local preHitCond = nearestPart and nearestPart:getCondition()
-        local armor = vehicle:getPartById(armorID)
+        local parent = armor:getParent()
+        local preHitCond = parent and parent:getCondition()
 
-        if armor and nearestPart and (armor:getCondition() > 1) and (armor:getInventoryItem()) then
-            luaEvents.processVehicleHits[player] = {vehicle=vehicle, armor=armor, parent=nearestPart, preHitCond=preHitCond}
+        if armor and parent and (armor:getCondition() > 1) and (armor:getInventoryItem()) then
+            luaEvents.processVehicleHits[player] = {vehicle=vehicle, armor=armor, parent=parent, preHitCond=preHitCond}
         end
 
     end
