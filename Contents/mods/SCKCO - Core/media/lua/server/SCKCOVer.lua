@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - M880, M998 and M1025, 90's Liveries"))
+Events.OnGameBoot.Add(print("Shark and Cytt's Kentucky Car Overhaul - SCKCO 2: Bigger, Blacker, Uncut"))
