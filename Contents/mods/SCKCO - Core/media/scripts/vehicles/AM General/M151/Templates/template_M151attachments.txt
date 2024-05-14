@@ -1,0 +1,174 @@
+module Base
+{
+
+	template vehicle M151Attachments
+	{
+
+		part M151SoftTop
+		{
+			model M151SoftTop
+			{
+				file = M151SoftTop,
+			}
+
+			table install
+			{
+				requireInstalled = M151TarpFrame,
+			}
+
+			table uninstall
+			{
+			}
+
+            table M151Parts
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = VehicleParts
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+
+			category = SCUCKaccessories,
+			itemType = Base.M151SoftTopSC,
+		}
+
+		part M151SideTarp
+		{
+			model M151SideTarp
+			{
+				file = M151SideTarp,
+			}
+
+			table install
+			{
+				requireInstalled = M151TarpFrame,
+			}
+
+			table uninstall
+			{
+			}
+
+            table M151Parts
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = VehicleParts
+            }
+
+			category = SCUCKaccessories,
+			itemType = Base.M151SideTarpSC,
+		}
+
+		part M151TarpFrame
+		{
+			model M151TarpFrame
+			{
+				file = M151TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+            table M151Parts
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = VehicleParts
+            }
+
+			category = SCUCKaccessories,
+			itemType = Base.M151TarpFrameSC,
+		}
+
+		part M151SpareWheel
+		{
+			model M151SpareWheel
+			{
+				file = M151SpareWheel,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M35FrontSoftTop,
+		}
+
+		part M151JerryCan
+		{
+			model M151JerryCan
+			{
+				file = M151JerryCan,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			category = nodisplay,
+		}
+
+		part M151Antenna
+		{
+			model M151Antenna
+			{
+				file = M151Antenna,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+
+            table M151Parts
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = VehicleParts
+            }
+            
+            category = SCUCKaccessories,
+			itemType = Base.M151AntennaSC,
+		}
+
+		part M151TarpFrame
+		{
+			model M151TarpFrame
+			{
+				file = M151TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+            table M151Parts
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = VehicleParts
+            }
+
+			category = SCUCKaccessories,
+			itemType = Base.M151TarpFrameSC,
+		}
+	}
+}
