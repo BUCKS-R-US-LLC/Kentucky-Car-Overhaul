@@ -165,7 +165,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
- 		extents = 4.5263 3.7368 9.7368,
+		extents = 4.5263 3.7368 9.7368,
 		mass = 400,
 		physicsChassisShape = 4.5263 3.7368 9.7368,
 		centerOfMassOffset = 0.0000 1.8684 -0.4211,
@@ -186,9 +186,9 @@ module Base
 		maxSuspensionTravelCm = 10,
 		suspensionRestLength = 0.50f,
 		wheelFriction = 1.5f,
-		frontEndHealth = 35000,
+		frontEndHealth = 30000,
 		rearEndHealth = 25000,
-		seats = 4,
+		seats = 6,
 
 		wheel FrontLeft
 		{
@@ -222,7 +222,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -250,7 +250,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6842 2.0000 0.0789,
+				offset = -0.7632 2.0000 0.0789,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -262,6 +262,44 @@ module Base
 			}
 		}
 
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7632 2.0526 -1.6316,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.1842 0.2368 0.0263,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7632 2.0526 -1.6316,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1842 0.2105 0.1316,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
 		passenger RearLeft
 		{
 			showPassenger = true,
@@ -269,7 +307,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6842 2.1579 -1.7368,
+				offset = 0.7632 2.0526 -3.3421,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -288,7 +326,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6842 2.1579 -3.0789,
+				offset = -0.7632 2.0526 -3.3421,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -355,9 +393,11 @@ module Base
 			xywh = -1.3947 -2.1316 0.0000 0.0000,
 		}
 
-		template = RangerPushbar/part/RangerPushbar,
+		template = RangerAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GasTank,
@@ -371,7 +411,6 @@ module Base
 			{
 				file = CadillacGageRangerLightsDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -384,13 +423,18 @@ module Base
 			category = nodisplay,
 		}
 
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+		}
+
 		part SeatRearLeft
 		{
-			model seatfrontLeft
-			{
-				file = CadillacGageRangerLights,
-			}
-
 			category = nodisplay,
 		}
 
@@ -415,7 +459,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -880,13 +923,6 @@ module Base
 			offset = 0.0000 1.8684 -0.4211,
 			extents = 4.5526 3.7105 9.7368,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.9298 -4.8070,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront

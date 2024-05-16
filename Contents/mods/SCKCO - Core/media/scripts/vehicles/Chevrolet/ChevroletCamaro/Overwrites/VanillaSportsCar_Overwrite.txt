@@ -387,6 +387,7 @@ module Base
 			xywh = -1.3134 -1.8657 0.0000 0.0000,
 		}
 
+		template = Camaro85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -489,7 +490,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyCamaroHoodSC,
+			itemType = Base.ChevyCamaro85HoodSC,
 		}
 
 		part Heater
@@ -532,7 +533,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyCamaroWindshieldSC,
+			itemType = Base.ChevyCamaro85WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -564,7 +565,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyCamaroWindshieldSC,
+			itemType = Base.ChevyCamaro85WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -590,7 +591,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaroWindowSC,
+			itemType = Base.ChevyCamaro85WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -609,7 +610,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaroWindowSC,
+			itemType = Base.ChevyCamaro85WindowSC,
 		}
 
 		part WindowRearLeft
@@ -627,7 +628,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaroWindowSC,
+			itemType = Base.ChevyCamaro85WindowSC,
 		}
 
 		part WindowRearRight
@@ -645,7 +646,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaroWindowSC,
+			itemType = Base.ChevyCamaro85WindowSC,
 		}
 
 		part DoorFrontRight
@@ -683,7 +684,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaroDoorSC,
+			itemType = Base.ChevyCamaro85DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -721,7 +722,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaroDoorSC,
+			itemType = Base.ChevyCamaro85DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -774,7 +775,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaroTrunkLidSC,
+			itemType = Base.ChevyCamaro85TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

@@ -1,0 +1,69 @@
+module Base
+{
+
+	model CamaroBullbar
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CamaroWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CamaroFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model CamaroFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    template vehicle Camaro85Attachments
+	{
+
+        template = FourSeaterFootwellSpace,
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = CamaroBullbar, }
+            itemType = Base.ChevyCamaro85BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CamaroFrontRightWindowArmor, }
+            itemType = Base.ChevyCamaro85WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CamaroFrontLeftWindowArmor, }
+            itemType = Base.ChevyCamaro85WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CamaroWindshieldArmor, }
+            itemType = Base.ChevyCamaro85WindshieldArmorSC,
+        }
+
+    }
+
+}
