@@ -68,11 +68,13 @@ module Base
 	template vehicle SuburbanAttachments
 	{
 
+        template = FourSeaterFootwellSpace,
+
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
             model Default { file = SuburbanBullbar, }
-            itemType = Base.KSeriesHeavyBullbarSC,
+            itemType = Base.KSeriesStandardBullbarSC,
 			
 			table partVariation
             {

@@ -87,6 +87,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.sport.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 50};
 
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletP30SWAT"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletSuburbanStatePolice"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90JeffersonCounty"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90StatePolice"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 5};
