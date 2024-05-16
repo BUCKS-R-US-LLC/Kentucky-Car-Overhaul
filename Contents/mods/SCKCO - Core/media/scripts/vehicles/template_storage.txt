@@ -1,0 +1,227 @@
+module Base
+{
+	template vehicle GunRack
+	{
+		part GunRackSC
+		{
+			category = nodisplay,
+			area = SeatFrontLeft,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 8,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle CUCVGunRacks
+	{
+		part GunRackSC
+		{
+			category = nodisplay,
+			area = SeatFrontLeft,
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 8,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle AmbulanceContainers
+	{
+		part AmbulanceContainer1
+		{
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 20,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	
+			part AmbulanceContainer2
+		{
+			mechanicRequireKey = true,
+			
+			container
+			{
+				capacity = 20,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}	
+	}
+
+	template vehicle TwoSeaterFootwellSpace
+	{
+		part FrontFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 10,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle FourSeaterFootwellSpace
+	{
+		part FrontFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 10,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part RearFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 20,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle PassengerVanFootwellSpace
+	{
+		part FrontFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 10,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part RearVanSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 60,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle CargoVanFootwellSpace
+	{
+		part FrontFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 10,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part RearVanSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 70,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle StepVanFootwellSpace
+	{
+		part FrontFootwellSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 10,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part RearVanSpace
+		{
+			category = nodisplay,
+			
+			container
+			{
+				capacity = 100,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+}
+
