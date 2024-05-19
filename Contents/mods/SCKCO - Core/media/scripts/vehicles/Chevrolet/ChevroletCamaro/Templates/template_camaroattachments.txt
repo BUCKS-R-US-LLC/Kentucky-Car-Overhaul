@@ -15,9 +15,25 @@ module Base
 		scale = 1,
 	}
 
-	model CamaroFrontLeftWindowArmor
+	model CamaroFrontLeftDoorArmor
 	{
 		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamaroFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamaroFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
         scale = 1,
@@ -25,9 +41,16 @@ module Base
 
 	model CamaroFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightArmor_obj,
+		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightWindorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		scale = 1,
+	}
+    
+	model CamaroTail
+	{
+		mesh = vehicles/Vehicle_CamaroTTop_SC|Tail_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
@@ -40,30 +63,59 @@ module Base
         part SCArmorBumper
         {
             model Default { file = CamaroBullbar, }
-            itemType = Base.ChevyCamaro85BumperSC,
+            itemType = Base.ChevyCamaro87BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = CamaroFrontRightWindowArmor, }
-            itemType = Base.ChevyCamaro85WindowArmorSC,
+            itemType = Base.ChevyCamaro87WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CamaroFrontRightDoorArmor, }
+            itemType = Base.ChevyCamaro87WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CamaroFrontLeftDoorArmor, }
+            itemType = Base.ChevyCamaro87WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = CamaroFrontLeftWindowArmor, }
-            itemType = Base.ChevyCamaro85WindowArmorSC,
+            itemType = Base.ChevyCamaro87WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = CamaroWindshieldArmor, }
-            itemType = Base.ChevyCamaro85WindshieldArmorSC,
+            itemType = Base.ChevyCamaro87WindshieldArmorSC,
         }
 
+        part CamaroLouver
+        {
+            model Default { file = CamaroTail, }
+            parent = TrunkDoor,
+            requireInstalled = TrunkDoor,
+            itemType = Base.ChevyCamaro87LouversSC,
+
+                table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
     }
 
 }

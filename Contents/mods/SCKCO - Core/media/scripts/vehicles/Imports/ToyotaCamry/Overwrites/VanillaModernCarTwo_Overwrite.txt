@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model ToyotaCamryFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model ToyotaCamryRearRightWindow
 	{
@@ -54,6 +56,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model ToyotaCamryRearLeftWindow
 	{
@@ -62,6 +65,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 	model ToyotaCamryFrontRightDoor
 	{
@@ -264,7 +268,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6066 0.4098 0.0984,
+				offset = 0.6066 0.3279 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -283,7 +287,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.4098 0.0984,
+				offset = -0.5902 0.3279 0.0984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -302,7 +306,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5902 0.4098 -1.0656,
+				offset = 0.5902 0.3279 -1.0656,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -321,7 +325,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5902 0.4098 -1.0656,
+				offset = -0.5902 0.3279 -1.0656,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -405,7 +409,7 @@ module Base
 			{
 				file = ToyotaCamryDriver,
 			}
-		
+
 		}
 
 		part SeatFrontRight
@@ -432,7 +436,7 @@ module Base
 			{
 				file = ToyotaCamryDouble,
 			}
-		
+
 		}
 
 		part Muffler
@@ -446,7 +450,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-		
 		}
 
 		template = EngineDoor,
@@ -539,7 +542,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindshieldSC,
 		}
 
@@ -570,7 +573,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindshieldSC,
 		}
 
@@ -598,8 +601,7 @@ module Base
 
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindowSC,
 		}
 
@@ -618,8 +620,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindowSC,
 		}
 
@@ -638,8 +639,7 @@ module Base
 
 			parent = DoorRearRight,
 			area = SeatRearRight,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindowSC,
 		}
 
@@ -658,8 +658,7 @@ module Base
 
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-
-		    category = SCUCKwindows,
+			category = SCUCKwindows,
 			itemType = Base.ToyotaCamryWindowSC,
 		}
 
@@ -866,7 +865,6 @@ module Base
 			}
 
 			itemType = Base.ToyotaCamryTrunkLidSC,
-
 		}
 
 		template = Trunk/part/TruckBed,

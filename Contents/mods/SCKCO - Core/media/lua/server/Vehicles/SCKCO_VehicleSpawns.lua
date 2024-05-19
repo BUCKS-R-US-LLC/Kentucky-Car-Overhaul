@@ -27,6 +27,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletCapriceStatePolice85"] = {index = -1, spawnChance = 0.3};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletCamaro87"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletP30"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletP30Mail"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletP30Heralds"] = {index = -1, spawnChance = 0.5};
@@ -42,7 +43,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30LectroMax"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30MassGenFac"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30SpecialForces"] = {index = -1, spawnChance = 0.1};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30BoxVan"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30BoxVan"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700MacTools"] = {index = -1, spawnChance = 0.5};       
@@ -85,6 +86,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.sport.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 50};
     VehicleZoneDistribution.sport.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 80};
     VehicleZoneDistribution.sport.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_ChevroletCamaro87"] = {index = -1, spawnChance = 50};
 
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletP30SWAT"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletSuburbanStatePolice"] = {index = -1, spawnChance = 5};

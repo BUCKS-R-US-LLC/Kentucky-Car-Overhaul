@@ -46,6 +46,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model CamaroSCFrontLeftWindow
 	{
@@ -54,6 +55,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CamaroSCFrontRightDoor
 	{
@@ -123,13 +125,12 @@ module Base
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_CamaroTTop
+	vehicle SC_ChevroletCamaro87
 	{
 		mechanicType = 3,
 		offRoadEfficiency = 0.8,
 		engineRepairLevel = 6,
 		playerDamageProtection = 0.8,
-		engineRPMType = firebird,
 
 		model
 		{
@@ -191,7 +192,7 @@ module Base
 		}
 
 		extents = 2.6269 1.5522 6.7761,
-		mass = 500,
+		mass = 700,
 		physicsChassisShape = 2.5970 1.5522 6.7761,
 		centerOfMassOffset = 0.0000 0.5075 -0.0299,
 		shadowExtents = 2.6015 6.7777,
@@ -200,19 +201,11 @@ module Base
 		engineLoudness = 90,
 		engineQuality = 90,
 		maxSpeed = 120f,
-		gearRatioCount = 5,
-		gearRatioR = 3.5,
-		gearRatio1 = 4.11,
-		gearRatio2 = 2.50,
-		gearRatio3 = 1.65,
-		gearRatio4 = 1.25,
-		gearRatio5 = 0.80,
-		gearRatio5 = 0.60,
 		stoppingMovementForce = 2.0f,
 		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 70,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.1,
 		suspensionDamping = 3.4,
 		maxSuspensionTravelCm = 20,
@@ -490,7 +483,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyCamaro85HoodSC,
+			itemType = Base.ChevyCamaro87HoodSC,
 		}
 
 		part Heater
@@ -533,7 +526,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyCamaro85WindshieldSC,
+			itemType = Base.ChevyCamaro87WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -565,7 +558,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ChevyCamaro85WindshieldSC,
+			itemType = Base.ChevyCamaro87WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -591,7 +584,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaro85WindowSC,
+			itemType = Base.ChevyCamaro87WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -610,7 +603,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaro85WindowSC,
+			itemType = Base.ChevyCamaro87WindowSC,
 		}
 
 		part WindowRearLeft
@@ -628,7 +621,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaro85WindowSC,
+			itemType = Base.ChevyCamaro87WindowSC,
 		}
 
 		part WindowRearRight
@@ -646,7 +639,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyCamaro85WindowSC,
+			itemType = Base.ChevyCamaro87WindowSC,
 		}
 
 		part DoorFrontRight
@@ -684,7 +677,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaro85DoorSC,
+			itemType = Base.ChevyCamaro87DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -722,7 +715,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaro85DoorSC,
+			itemType = Base.ChevyCamaro87DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -775,7 +768,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyCamaro85TrunkLidSC,
+			itemType = Base.ChevyCamaro87TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

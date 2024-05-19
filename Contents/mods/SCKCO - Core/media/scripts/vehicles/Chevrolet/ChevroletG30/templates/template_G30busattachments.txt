@@ -1,33 +1,33 @@
 module Base
 {
 
-	model G30VanBoxBullbar
+	model ShortSchoolBullbar
 	{
-		mesh = vehicles/Vehicle_G30VanBox_SC|HoodArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|HoodArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30VanBoxWindshieldArmor
+	model ShortSchoolWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_G30VanBox_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30VanBoxFrontLeftDoorArmor
+	model ShortSchoolFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
 
-	model G30VanBoxFrontLeftWindowArmor
+	model ShortSchoolFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_ShortSchool_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,28 +41,28 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = G30VanBoxBullbar, }
+            model Default { file = ShortSchoolBullbar, }
             itemType = Base.ChevyG30BullbarSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = G30VanBoxFrontLeftWindowArmor, }
+            model Default { file = ShortSchoolFrontLeftWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
-            model Default { file = G30VanBoxFrontLeftDoorArmor, }
+            model Default { file = ShortSchoolFrontLeftDoorArmor, }
             itemType = Base.ChevyG30DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
-            model Default { file = G30VanBoxWindshieldArmor, }
+            model Default { file = ShortSchoolWindshieldArmor, }
             itemType = Base.ChevyG30WindshieldArmorSC,
         }
     }
