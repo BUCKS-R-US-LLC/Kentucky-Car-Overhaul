@@ -23,7 +23,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_utility.vehicles = VehicleZoneDistribution.military_utility.vehicles or {};
 
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 10};
-	VehicleZoneDistribution.military_general.vehicles["Base.SC_M151A2"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M151A2"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1008"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.military_utility.vehicles["Base.SC_M1028A3"] = {index = -1, spawnChance = 60};
@@ -50,7 +50,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_police.vehicles = VehicleZoneDistribution.military_police.vehicles or {};
 
 	VehicleZoneDistribution.military_police.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 70};
-	VehicleZoneDistribution.military_police.vehicles["Base.SC_CadillacGageRangerLights"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.military_police.vehicles["Base.SC_CadillacGageRangerLights"] = {index = -1, spawnChance = 30};
 
 	VehicleZoneDistribution.military_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.military_police.chanceToSpawnKey = 80;
@@ -60,11 +60,10 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.louisville_police = VehicleZoneDistribution.louisville_police or {};
 	VehicleZoneDistribution.louisville_police.vehicles = VehicleZoneDistribution.louisville_police.vehicles or {};
 
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_Caprice9C1LVPD"] = {index = -1, spawnChance = 80};
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_CrownVictoriaLVPD"] = {index = -1, spawnChance = 90};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordCrownVictoria85LVPD"] = {index = -1, spawnChance = 90};
 	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_JeepCherokeeAudubon"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustangJeffersonCounty"] = {index = -1, spawnChance = 40};
-	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustangUndercover"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustang90JeffersonCounty"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.louisville_police.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 20};
 
 	VehicleZoneDistribution.louisville_police.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.louisville_police.spawnRate = 75;
@@ -85,10 +84,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.national_park_service = VehicleZoneDistribution.national_park_service or {};
 	VehicleZoneDistribution.national_park_service.vehicles = VehicleZoneDistribution.national_park_service.vehicles or {};
 
-	VehicleZoneDistribution.national_park_service.vehicles["Base.PickUpVanLights"] = {index = -1, spawnChance = 80};
-	VehicleZoneDistribution.national_park_service.vehicles["Base.CarLights"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_Caprice9C1ParkRanger"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.national_park_service.vehicles["Base.PickUpTruckLights"] = {index = -1, spawnChance = 80};
+	VehicleZoneDistribution.national_park_service.vehicles["Base.SC_ChevroletCaprice85ParkRanger"] = {index = -1, spawnChance = 20};
 
 	VehicleZoneDistribution.national_park_service.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.national_park_service.chanceToSpawnKey = 80;
@@ -98,10 +94,8 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.construction_site = VehicleZoneDistribution.construction_site or {};
 	VehicleZoneDistribution.construction_site.vehicles = VehicleZoneDistribution.construction_site.vehicles or {};
 
-	VehicleZoneDistribution.construction_site.vehicles["Base.PickUpTruckMccoy"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.construction_site.vehicles["Base.PickUpVanMccoy"] = {index = -1, spawnChance = 40};
-	VehicleZoneDistribution.construction_site.vehicles["Base.G30Mccoy"] = {index = -1, spawnChance = 20};
-	VehicleZoneDistribution.construction_site.vehicles["Base.G30BoxVan"] = {index = -1, spawnChance = 80};
+	VehicleZoneDistribution.construction_site.vehicles["Base.SC_ChevroletG30Mccoy"] = {index = -1, spawnChance = 20};
+	VehicleZoneDistribution.construction_site.vehicles["Base.SC_ChevroletG30BoxVan"] = {index = -1, spawnChance = 80};
 
 	VehicleZoneDistribution.construction_site.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.construction_site.chanceToSpawnKey = 80;
@@ -111,7 +105,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.farming_machinery = VehicleZoneDistribution.farming_machinery or {};
 	VehicleZoneDistribution.farming_machinery.vehicles = VehicleZoneDistribution.farming_machinery.vehicles or {};
 
-	VehicleZoneDistribution.farming_machinery.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 90};
+	VehicleZoneDistribution.farming_machinery.vehicles["Base.SC_Oliver2050"] = {index = -1, spawnChance = 90};
 	
 	VehicleZoneDistribution.farming_machinery.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.farming_machinery.chanceToSpawnKey = 80;
@@ -121,12 +115,10 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.designated_bubba_zone = VehicleZoneDistribution.designated_bubba_zone or {};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles = VehicleZoneDistribution.designated_bubba_zone.vehicles or {};
 
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 60};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_M880Bubba"] = {index = -1, spawnChance = 60};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_ChevroletC70Survivalist"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_CUCVZhenjaEdition"] = {index = -1, spawnChance = 5};
-	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_K10Dixie"] = {index = -1, spawnChance = 5};
+	VehicleZoneDistribution.designated_bubba_zone.vehicles["Base.SC_ChevroletK10Dixie"] = {index = -1, spawnChance = 5};
 
 	VehicleZoneDistribution.designated_bubba_zone.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.designated_bubba_zone.chanceToSpawnKey = 80;
@@ -150,12 +142,12 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 10};
-	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaLouisville92"] = {index = -1, spawnChance = 10};
-	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_CrownVictoriaJefferson92"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_FordCrownVictoriaLouisville92"] = {index = -1, spawnChance = 10};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_FordCrownVictoriaJefferson92"] = {index = -1, spawnChance = 10};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M880"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1025"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M998"] = {index = -1, spawnChance = 70};
-	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_Caprice9C1StatePolice"] = {index = -1, spawnChance = 40};
+	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_ChevroletCaprice85StatePolice"] = {index = -1, spawnChance = 40};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1009"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1009MilitaryPolice"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.military_police_medical.vehicles["Base.SC_M1010Ambulance"] = {index = -1, spawnChance = 40};
@@ -170,7 +162,7 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.police_tactical_vehicles = VehicleZoneDistribution.police_tactical_vehicles or {};
 	VehicleZoneDistribution.police_tactical_vehicles.vehicles = VehicleZoneDistribution.police_tactical_vehicles.vehicles or {};
 
-	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_StepVanP30Police"] = {index = -1, spawnChance = 50};
+	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_ChevroletP30SWAT"] = {index = -1, spawnChance = 50};
 	VehicleZoneDistribution.police_tactical_vehicles.vehicles["Base.SC_FordF700Police"] = {index = -1, spawnChance = 50};
 
 	VehicleZoneDistribution.police_tactical_vehicles.baseVehicleQuality = 1.1;
@@ -181,7 +173,6 @@ if VehicleZoneDistribution then
 	VehicleZoneDistribution.old_money = VehicleZoneDistribution.old_money or {};
 	VehicleZoneDistribution.old_money.vehicles = VehicleZoneDistribution.old_money.vehicles or {};
 	
-	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacFleetwood"] = {index = -1, spawnChance = 5};
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 20};
 	VehicleZoneDistribution.old_money.vehicles["Base.SC_CadillacLimo"] = {index = -1, spawnChance = 20};
 	
