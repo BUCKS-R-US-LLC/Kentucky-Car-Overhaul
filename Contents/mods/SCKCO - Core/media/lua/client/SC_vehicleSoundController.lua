@@ -19,15 +19,6 @@ vehicleSoundController.library = {
         },
     },
 
-    ["SportsCarAccelerationSC"] = {
-        { sound = "DixieHorn",
-          speedIsGreaterThan = 90,
-          speedIsLessThan = 120,
-          isEngineRunning = true,
-          stopSound = false,
-        },
-    },
-
     ["DetroitDieselSC"] = {
 
         { sound = "DetroitDieselIdle",

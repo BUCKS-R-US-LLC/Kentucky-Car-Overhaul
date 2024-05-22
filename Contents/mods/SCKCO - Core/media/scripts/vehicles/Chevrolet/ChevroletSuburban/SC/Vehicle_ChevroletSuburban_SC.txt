@@ -96,6 +96,7 @@ module Base
 		mesh = vehicles/Vehicle_Suburb86_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearRightWindowBone 1.0,
 	}
 	model SuburbanSCRearLeftWindow
@@ -103,6 +104,7 @@ module Base
 		mesh = vehicles/Vehicle_Suburb86_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
 	model SuburbanSCTrunk
@@ -674,6 +676,11 @@ module Base
 				file = SuburbanSCRearLeftWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
 
 			table install
 			{
@@ -691,6 +698,12 @@ module Base
 			model windowRR
 			{
 				file = SuburbanSCRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
 			}
 
 			parent = DoorRearRight,

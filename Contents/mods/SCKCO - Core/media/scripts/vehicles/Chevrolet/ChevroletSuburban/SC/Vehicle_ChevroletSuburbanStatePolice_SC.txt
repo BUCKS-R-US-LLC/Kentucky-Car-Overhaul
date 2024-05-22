@@ -96,6 +96,7 @@ module Base
 		mesh = vehicles/Vehicle_Suburb86Police_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearRightWindowBone 1.0,
 	}
 	model SuburbanPoliceSCRearLeftWindow
@@ -103,6 +104,7 @@ module Base
 		mesh = vehicles/Vehicle_Suburb86Police_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
+		static = FALSE,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
 	model SuburbanPoliceSCTrunk
@@ -170,7 +172,7 @@ module Base
 			texture = Vehicles/Suburban/Vehicle_SuburbStateWhite,
 		}
 
-		textureRust = Vehicles/Suburban/Vehicle_SuburbState_rust,
+		textureRust = Vehicles/Suburban/Vehicle_Suburb86_rust,
 		textureMask = Vehicles/Suburban/Vehicle_SuburbState_mask,
 		textureLights = Vehicles/Suburban/Vehicle_SuburbState_lights,
 		textureDamage1Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
@@ -655,6 +657,11 @@ module Base
 				file = SuburbanPoliceSCRearLeftWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
 
 			table install
 			{
@@ -672,6 +679,12 @@ module Base
 			model windowRR
 			{
 				file = SuburbanPoliceSCRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
 			}
 
 			parent = DoorRearRight,

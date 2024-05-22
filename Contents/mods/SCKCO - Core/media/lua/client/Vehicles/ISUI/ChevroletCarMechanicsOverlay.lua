@@ -33,7 +33,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCapriceStatePolice85"] = {imgPre
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCaprice85"] = {imgPrefix = "caprice_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCavalier"] = {imgPrefix = "cavalier_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCamaro85"] = {imgPrefix = "camaro_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCamaro87"] = {imgPrefix = "camaro_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SportsCar"] = {imgPrefix = "camaro_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30BoxVan"] = {imgPrefix = "g30box_", x=0,y=0};

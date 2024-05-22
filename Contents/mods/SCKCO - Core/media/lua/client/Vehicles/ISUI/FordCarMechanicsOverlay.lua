@@ -32,6 +32,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90"] = {imgPrefix = "fordmusta
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90Undercover"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90StatePolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90JeffersonCounty"] = {imgPrefix = "fordmustang90_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordTaurus"] = {imgPrefix = "taurus86_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SUV"] = {imgPrefix = "explorer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.ModernCar"] = {imgPrefix = "taurus86_", x=0,y=0};
 
