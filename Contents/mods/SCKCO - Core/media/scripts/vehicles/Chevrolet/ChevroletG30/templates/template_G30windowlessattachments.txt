@@ -64,6 +64,7 @@ module Base
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
+            parent = WindowFrontRight,
             model Default { file = G30WindowlessFrontRightWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }
@@ -71,6 +72,7 @@ module Base
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
+            parent = WindowFrontLeft,
             model Default { file = G30WindowlessFrontLeftWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }

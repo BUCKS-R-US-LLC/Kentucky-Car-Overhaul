@@ -1,10 +1,127 @@
 module Base
 {
 
-    template vehicle AccordAttachments
-    {
+	model AccordBullbar
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 
-        template = FourSeaterFloorwellSpace,
+	model AccordWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model AccordFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model AccordFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model AccordFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model AccordFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model AccordRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model AccordRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+    template vehicle AccordAttachments
+	{
+
+        template = FourSeaterFootwellSpace,
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = AccordBullbar, }
+            itemType = Base.HondaAccordBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = AccordFrontRightWindowArmor, }
+            itemType = Base.HondaAccordWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = AccordFrontLeftWindowArmor, }
+            itemType = Base.HondaAccordWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = AccordFrontRightDoorArmor, }
+            itemType = Base.HondaAccordDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = AccordFrontLeftDoorArmor, }
+            itemType = Base.HondaAccordDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = AccordRearRightWindowArmor, }
+            itemType = Base.HondaAccordWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = AccordRearLeftWindowArmor, }
+            itemType = Base.HondaAccordWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = AccordWindshieldArmor, }
+            itemType = Base.HondaAccordWindshieldArmorSC,
+        }
 
     }
+
 }

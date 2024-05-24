@@ -101,13 +101,23 @@ module Base
             itemType = Base.ChevyCamaro87WindshieldArmorSC,
         }
 
-        part CamaroLouver
+        part CamaroLouvers
         {
             model Default { file = CamaroTail, }
             parent = TrunkDoor,
             requireInstalled = TrunkDoor,
             itemType = Base.ChevyCamaro87LouversSC,
 
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+            
                 table partVariation
             {
                 chances = { default = 30, }

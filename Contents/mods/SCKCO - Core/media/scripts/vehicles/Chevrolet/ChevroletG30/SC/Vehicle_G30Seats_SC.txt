@@ -2,7 +2,7 @@ module Base
 {
 	model SC_G30Seats
 	{
-		mesh = vehicles/Vehicle_G30VanNormal_SC|base_mesh,
+		mesh = vehicles/Vehicle_G30VanNormal_SC|base_mes,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
@@ -16,6 +16,12 @@ module Base
 	model G30SeatsPassenger
 	{
 		mesh = vehicles/Vehicle_G30VanNormal_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model G30SeatsRear
+	{
+		mesh = vehicles/Vehicle_G30VanNormal_SC|RearSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -40,8 +46,8 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model G30SeatsMiddleRightWindow
 	{
@@ -184,7 +190,7 @@ module Base
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_Black,
 		}
-		
+
 		skin
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_DarkBlue,
@@ -234,7 +240,7 @@ module Base
 		{
 			texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_BlackGrey,
 		}
-		
+
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_rust,
 		textureMask = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_mask,
 		textureLights = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_lights,
@@ -319,7 +325,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7458 1.2373 0.5424,
+				offset = 0.8136 1.2373 0.5424,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -357,7 +363,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7458 0.7288 -0.8814,
+				offset = 0.8983 1.2373 -1.0508,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -376,7 +382,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7458 0.7288 -0.8814,
+				offset = 0.1525 1.2373 -1.0508,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -514,7 +520,6 @@ module Base
 			{
 				file = G30VanWindowlessDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -523,11 +528,14 @@ module Base
 			{
 				file = G30VanWindowlessPassenger,
 			}
-
 		}
 
 		part SeatRearLeft
 		{
+			model seatrearRight
+			{
+				file = G30SeatsRear,
+			}
 		}
 
 		part SeatRearRight
@@ -670,7 +678,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30DoorSC,
 		}
@@ -694,6 +701,7 @@ module Base
 				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 		}
+
 		part WindowFrontRight
 		{
 			model windowFR
@@ -732,66 +740,66 @@ module Base
 			area = SeatFrontLeft,
 		}
 
-part WindowMiddleLeft
-{
-	window
-	{
-		openable = false,
-	}
+		part WindowMiddleLeft
+		{
+			window
+			{
+				openable = false,
+			}
 
-	model windowML
-	{
-		file = G30SeatsMiddleLeftWindow,
-	}
+			model windowML
+			{
+				file = G30SeatsMiddleLeftWindow,
+			}
 
-	table install
-	{
-		requireInstalled =,
-	}
+			table install
+			{
+				requireInstalled =,
+			}
 
-	category = SCUCKwindows,
-	itemType = Base.ChevyG30DoorSC,
-	area = SeatMiddleLeft,
-}
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30DoorSC,
+			area = SeatMiddleLeft,
+		}
 
-part WindowRearRight
-{
-	window
-	{
-		openable = false,
-	}
+		part WindowRearRight
+		{
+			window
+			{
+				openable = false,
+			}
 
-	model windowRR
-	{
-		file = G30SeatsRearRightWindow,
-	}
+			model windowRR
+			{
+				file = G30SeatsRearRightWindow,
+			}
 
-	category = SCUCKwindows,
-	itemType = Base.ChevyG30DoorSC,
-	area = SeatRearRight,
-}
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30DoorSC,
+			area = SeatRearRight,
+		}
 
-part WindowRearLeft
-{
-	window
-	{
-		openable = false,
-	}
+		part WindowRearLeft
+		{
+			window
+			{
+				openable = false,
+			}
 
-	model windowRL
-	{
-		file = G30SeatsRearLeftWindow,
-	}
+			model windowRL
+			{
+				file = G30SeatsRearLeftWindow,
+			}
 
-	table install
-	{
-		requireInstalled =,
-	}
+			table install
+			{
+				requireInstalled =,
+			}
 
-	category = SCUCKwindows,
-	itemType = Base.ChevyG30DoorSC,
-	area = SeatRearLeft,
-}
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30DoorSC,
+			area = SeatRearLeft,
+		}
 
 		part DoorFrontRight
 		{

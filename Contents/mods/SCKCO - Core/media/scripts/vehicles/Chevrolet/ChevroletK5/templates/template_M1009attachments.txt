@@ -1,6 +1,40 @@
 module Base
 {
 
+	model M1008Bullbar
+	{
+		mesh = vehicles/Vehicle_M1008_SC|ExtraBar_obj,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model M1008WindshieldArmor
+	{
+		mesh = vehicles/Vehicle_M1008_SC|WindshieldArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehiclewheel,
+		scale = 1,
+	}
+
+	model M1008FrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_M1008_SC|FrontLeftWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model M1008FrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_M1008_SC|FrontRightWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+
 	model M1009Bullbar
 	{
 		mesh = vehicles/Vehicle_M1009_SC|ExtraBar_obj,
@@ -23,7 +57,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
 	}
 
 	model M1009FrontRightWindowArmor
@@ -33,7 +66,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
 	}
 
 
@@ -59,21 +91,21 @@ module Base
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
-            model Default { file = M1009FrontRightWindowArmor, }
+            model Default { file = M1008FrontRightWindowArmor, }
             itemType = Base.KSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = M1009FrontLeftWindowArmor, }
+            model Default { file = M1008FrontLeftWindowArmor, }
             itemType = Base.KSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
-            model Default { file = M1009WindshieldArmor, }
+            model Default { file = M1008WindshieldArmor, }
             itemType = Base.KSeriesWindshieldArmorSC,
         }
 

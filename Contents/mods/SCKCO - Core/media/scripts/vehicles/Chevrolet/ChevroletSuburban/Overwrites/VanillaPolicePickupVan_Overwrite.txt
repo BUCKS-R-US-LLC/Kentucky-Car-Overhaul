@@ -160,6 +160,7 @@ module Base
 			offset = 0.0000 0.2698 0.5873,
 		}
 
+
 		skin
 		{
 			texture = Vehicles/Suburban/Vehicle_SuburbState,
@@ -170,7 +171,7 @@ module Base
 			texture = Vehicles/Suburban/Vehicle_SuburbStateWhite,
 		}
 
-		textureRust = Vehicles/Suburban/Vehicle_SuburbState_rust,
+		textureRust = Vehicles/Suburban/Vehicle_Suburb86_rust,
 		textureMask = Vehicles/Suburban/Vehicle_SuburbState_mask,
 		textureLights = Vehicles/Suburban/Vehicle_SuburbState_lights,
 		textureDamage1Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
@@ -655,6 +656,11 @@ module Base
 				file = SuburbanPoliceSCRearLeftWindow,
 			}
 
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
 
 			table install
 			{
@@ -672,6 +678,12 @@ module Base
 			model windowRR
 			{
 				file = SuburbanPoliceSCRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
 			}
 
 			parent = DoorRearRight,

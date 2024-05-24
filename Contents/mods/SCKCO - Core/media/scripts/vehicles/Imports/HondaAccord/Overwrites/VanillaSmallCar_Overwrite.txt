@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model HondaAccordFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model HondaAccordRearRightWindow
 	{
@@ -251,7 +253,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5455 0.6970 -0.1818,
+				offset = 0.4848 0.6970 -0.1818,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -270,7 +272,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5455 0.6970 -0.1818,
+				offset = -0.4848 0.6970 -0.1818,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -526,7 +528,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HondaAccordFrontWindshieldSC,
+			itemType = Base.HondaAccordWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -559,7 +561,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HondaAccordRearWindshieldSC,
+			itemType = Base.HondaAccordWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,

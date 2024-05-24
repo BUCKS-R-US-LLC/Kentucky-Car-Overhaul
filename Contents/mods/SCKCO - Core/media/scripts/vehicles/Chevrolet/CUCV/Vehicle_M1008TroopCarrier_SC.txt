@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model M1008FrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model M1008FrontRightDoor
 	{
@@ -680,7 +682,7 @@ module Base
 			}
 
 			category = nodisplay,
-			itemType = Base.M1008TarpFrame,
+			itemType = Base.M1008TarpFrameSC,
 		}
 
 		part M1008Tarp
@@ -704,7 +706,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1008Tarp,
+			itemType = Base.M1008TarpSC,
 		}
 
 		template = Door/part/DoorFrontLeft,

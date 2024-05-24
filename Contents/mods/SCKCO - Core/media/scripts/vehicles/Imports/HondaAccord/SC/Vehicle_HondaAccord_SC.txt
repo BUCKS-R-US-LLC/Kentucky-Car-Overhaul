@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model HondaAccordFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model HondaAccordRearRightWindow
 	{
@@ -392,7 +394,6 @@ module Base
 			{
 				file = HondaAccordDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -401,7 +402,6 @@ module Base
 			{
 				file = HondaAccordPassenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -410,7 +410,6 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
-
 		}
 
 		part SeatRearRight
@@ -419,7 +418,6 @@ module Base
 			{
 				file = HondaAccordDouble,
 			}
-
 		}
 
 		part Muffler
@@ -869,7 +867,7 @@ module Base
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.0000 2.8571,
+			offset = 0.0000 0.6667 3.0303,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

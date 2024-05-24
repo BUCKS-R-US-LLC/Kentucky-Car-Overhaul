@@ -1,57 +1,57 @@
 module Base
 {
 
-	model G30WindowlessBullbar
+	model G30BoxVanBullbar
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|HoodArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|HoodArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessWindshieldArmor
+	model G30BoxVanWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|WindshieldArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
         texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
 		scale = 1,
 	}
 
-	model G30WindowlessFrontLeftDoorArmor
+	model G30BoxVanFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontRightDoorArmor
+	model G30BoxVanFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoorArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model G30WindowlessFrontLeftWindowArmor
+	model G30BoxVanFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
 
-	model G30WindowlessFrontRightWindowArmor
+	model G30BoxVanFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Vehicle_G30VanBox_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
 
- template vehicle G30WindowlessAttachments
+ template vehicle BoxVanAttachments
     {
 
         template = CargoVanFootwellSpace,
@@ -59,42 +59,42 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = G30WindowlessBullbar, }
+            model Default { file = G30BoxVanBullbar, }
             itemType = Base.ChevyG30BullbarSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
-            model Default { file = G30WindowlessFrontRightWindowArmor, }
+            model Default { file = G30BoxVanFrontRightWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = G30WindowlessFrontLeftWindowArmor, }
+            model Default { file = G30BoxVanFrontLeftWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
-            model Default { file = G30WindowlessFrontRightDoorArmor, }
+            model Default { file = G30BoxVanFrontRightDoorArmor, }
             itemType = Base.ChevyG30DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
-            model Default { file = G30WindowlessFrontLeftDoorArmor, }
+            model Default { file = G30BoxVanFrontLeftDoorArmor, }
             itemType = Base.ChevyG30DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
-            model Default { file = G30WindowlessWindshieldArmor, }
+            model Default { file = G30BoxVanWindshieldArmor, }
             itemType = Base.ChevyG30WindshieldArmorSC,
         }
     }
