@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_CrownVictoriaLVPD85
+	model SC_CrownVictoriaLStatePolice85
 	{
 		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -147,7 +147,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordCrownVictoriaLVPD85
+	vehicle SC_FordCrownVictoriaStatePolice85
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
@@ -156,14 +156,14 @@ module Base
 
 		model
 		{
-			file = SC_CrownVictoriaLVPD85,
+			file = SC_CrownVictoriaStatePolice85,
 			scale = 0.5900,
 			offset = 0.0000 -0.0508 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_LVPD,
+			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_StatePolice,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
@@ -615,6 +615,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.FordCrownVictoria85WindowSC,

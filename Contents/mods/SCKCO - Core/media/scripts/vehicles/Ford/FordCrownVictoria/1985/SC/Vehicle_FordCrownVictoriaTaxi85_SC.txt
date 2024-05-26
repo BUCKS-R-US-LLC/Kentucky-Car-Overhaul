@@ -1,57 +1,57 @@
 module Base
 {
-	model SC_CrownVictoriaLStatePolice85
+	model SC_CrownVictoria85
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|base_mesh,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model CrownVictoria85PoliceDriver
+	model CrownVictoriaDriver
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|DriverSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoria85PolicePassenger
+	model CrownVictoriaPassenger
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoria85PoliceDoublePassenger
+	model CrownVictoriaDouble
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoria85PoliceWindshield
+	model CrownVictoriaWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Windshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoria85PoliceFrontRightWindow
+	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model CrownVictoria85PoliceFrontLeftWindow
+	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model CrownVictoria85PoliceRearRightWindow
+	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,9 +59,9 @@ module Base
 		boneWeight = RearRightWindowArmorBone 1.0,
 
 	}
-	model CrownVictoria85PoliceRearLeftWindow
+	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftWindow_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -69,57 +69,57 @@ module Base
 		boneWeight = RearLeftWindowArmorBone 1.0,
 
 	}
-	model CrownVictoria85PoliceFrontRightDoor
+	model CrownVictoriaFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model CrownVictoria85PoliceFrontLeftDoor
+	model CrownVictoriaFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model CrownVictoria85PoliceRearRightDoor
+	model CrownVictoriaRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearRightDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model CrownVictoria85PoliceRearLeftDoor
+	model CrownVictoriaRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearLeftDoor_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model CrownVictoria85PoliceTrunk
+	model CrownVictoriaTrunk
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Trunk_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model CrownVictoria85PoliceHood
+	model CrownVictoriaHood
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|Hood_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CrownVictoria85PoliceRearWindshield
+	model CrownVictoriaRearWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoriaPolice_SC|RearWindshield_obj,
+		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -147,7 +147,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordCrownVictoriaStatePolice85
+	vehicle SC_FordCrownVictoriaTaxi85
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
@@ -156,14 +156,19 @@ module Base
 
 		model
 		{
-			file = SC_CrownVictoriaStatePolice85,
+			file = SC_CrownVictoria85,
 			scale = 0.5900,
 			offset = 0.0000 -0.0508 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_StatePolice,
+			texture = Vehicles/CrownVictoria/BasicYellow,
+		}
+
+		skin
+		{
+			texture = Vehicles/CrownVictoria/BlackYellow,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
@@ -174,11 +179,6 @@ module Base
 		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
 		textureDamage2Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
 
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-		}
-		
 		sound
 		{
 			engine = VehicleEngineCarNormal,
@@ -265,14 +265,6 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
-			}
 		}
 
 		passenger FrontRight
@@ -291,14 +283,6 @@ module Base
 				offset = -2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
-			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
 			}
 		}
 
@@ -319,14 +303,6 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
-			}
 		}
 
 		passenger RearRight
@@ -345,14 +321,6 @@ module Base
 				offset = -2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
-			}
-			
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
 			}
 		}
 
@@ -411,7 +379,7 @@ module Base
 			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
-		template = GunRack,
+		template = TaxiTopper,
 		template = CrownVic85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -427,7 +395,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = CrownVictoria85PoliceDriver,
+				file = CrownVictoriaDriver,
 			}
 		}
 
@@ -435,7 +403,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = CrownVictoria85PolicePassenger,
+				file = CrownVictoriaPassenger,
 			}
 		}
 
@@ -443,7 +411,7 @@ module Base
 		{
 			model seatrearLeft
 			{
-				file = CrownVictoria85PoliceDoublePassenger,
+				file = CrownVictoriaDouble,
 			}
 		}
 
@@ -451,7 +419,7 @@ module Base
 		{
 			model seatrearRight
 			{
-				file = CrownVictoria85PoliceDoublePassenger,
+				file = CrownVictoriaDouble,
 			}
 		}
 
@@ -474,7 +442,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = CrownVictoria85PoliceHood,
+				file = CrownVictoriaHood,
 			}
 
 			anim Close
@@ -535,7 +503,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = CrownVictoria85PoliceWindshield,
+				file = CrownVictoriaWindshield,
 			}
 
 			window
@@ -566,7 +534,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = CrownVictoria85PoliceRearWindshield,
+				file = CrownVictoriaRearWindshield,
 			}
 
 			window
@@ -593,6 +561,7 @@ module Base
 			itemType = Base.FordCrownVictoria85WindshieldSC,
 		}
 
+		template = CrownVictoria85Attachments,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearLeft,
@@ -606,7 +575,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CrownVictoria85PoliceFrontRightWindow,
+				file = CrownVictoriaFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -615,6 +584,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = Base.FordCrownVictoria85WindowSC,
@@ -624,7 +594,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CrownVictoria85PoliceFrontLeftWindow,
+				file = CrownVictoriaFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -643,7 +613,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = CrownVictoria85PoliceRearRightWindow,
+				file = CrownVictoriaRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -662,7 +632,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = CrownVictoria85PoliceRearLeftWindow,
+				file = CrownVictoriaRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -681,7 +651,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria85PoliceFrontRightDoor,
+				file = CrownVictoriaFrontRightDoor,
 			}
 
 			anim Close
@@ -719,7 +689,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria85PoliceFrontLeftDoor,
+				file = CrownVictoriaFrontLeftDoor,
 			}
 
 			anim Close
@@ -757,7 +727,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria85PoliceRearRightDoor,
+				file = CrownVictoriaRearRightDoor,
 			}
 
 			anim Close
@@ -795,7 +765,7 @@ module Base
 		{
 			model Default
 			{
-				file = CrownVictoria85PoliceRearLeftDoor,
+				file = CrownVictoriaRearLeftDoor,
 			}
 
 			anim Close
@@ -845,7 +815,7 @@ module Base
 
 			model Default
 			{
-				file = CrownVictoria85PoliceTrunk,
+				file = CrownVictoriaTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
