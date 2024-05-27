@@ -229,11 +229,6 @@ module Base
 			texture = Vehicles/M151A2/Vehicle_HM151_MERDCWin,
 		}
 
-		skin
-		{
-			texture = Vehicles/M151A2/Vehicle_HM151_Tan,
-		}
-
 		textureRust = Vehicles/M151A2/Vehicle_HM151_rust,
 		textureMask = Vehicles/M151A2/Vehicle_HM151_mask,
 		textureLights = Vehicles/M151A2/Vehicle_HM151_lights,
@@ -748,19 +743,8 @@ module Base
 			itemType = Base.M151DoorSC,
 		}
 		
-		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
-
-		part TruckBedOpen
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 30,
-			}
-		}
 
 		part TireFrontLeft
 		{
@@ -826,6 +810,16 @@ module Base
 				skills = Mechanics:4,
 				recipes = Intermediate Mechanics,
 			}
+		}
+
+		part Radio*
+		{
+			model M151Radio
+			{
+				file = M151Radio,
+			}
+			
+			itemType = Radio.HamRadio2,
 		}
 
 		template = Radio,

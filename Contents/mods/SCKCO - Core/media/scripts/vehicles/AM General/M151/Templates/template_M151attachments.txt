@@ -21,13 +21,10 @@ module Base
 			{
 			}
 
-            table M151Parts
-            {
-                chances = { default = 50, }
-                additionalVehicleFunc = VehicleParts
-            }
-
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 
 			category = SCUCKaccessories,
 			itemType = Base.M151SoftTopSC,
@@ -49,11 +46,10 @@ module Base
 			{
 			}
 
-            table M151Parts
-            {
-                chances = { default = 50, }
-                additionalVehicleFunc = VehicleParts
-            }
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 
 			category = SCUCKaccessories,
 			itemType = Base.M151SideTarpSC,
@@ -74,11 +70,10 @@ module Base
 			{
 			}
 
-            table M151Parts
-            {
-                chances = { default = 50, }
-                additionalVehicleFunc = VehicleParts
-            }
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 
 			category = SCUCKaccessories,
 			itemType = Base.M151TarpFrameSC,
@@ -97,6 +92,11 @@ module Base
 
 			table uninstall
 			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKaccessories,
@@ -136,13 +136,11 @@ module Base
 			{
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 
-            table M151Parts
-            {
-                chances = { default = 50, }
-                additionalVehicleFunc = VehicleParts
-            }
-            
             category = SCUCKaccessories,
 			itemType = Base.M151AntennaSC,
 		}
@@ -162,11 +160,10 @@ module Base
 			{
 			}
 
-            table M151Parts
-            {
-                chances = { default = 50, }
-                additionalVehicleFunc = VehicleParts
-            }
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
 
 			category = SCUCKaccessories,
 			itemType = Base.M151TarpFrameSC,

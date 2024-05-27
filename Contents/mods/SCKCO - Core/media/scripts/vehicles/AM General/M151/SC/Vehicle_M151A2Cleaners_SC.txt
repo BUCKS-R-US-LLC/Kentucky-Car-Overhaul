@@ -688,19 +688,8 @@ module Base
 			itemType = Base.M151DoorSC,
 		}
 		
-		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		template = Axle,
-
-		part TruckBedOpen
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 30,
-			}
-		}
 
 		part TireFrontLeft
 		{
@@ -766,6 +755,16 @@ module Base
 				skills = Mechanics:4,
 				recipes = Intermediate Mechanics,
 			}
+		}
+
+		part Radio*
+		{
+			model M151Radio
+			{
+				file = M151Radio,
+			}
+			
+			itemType = Radio.HamRadio2,
 		}
 
 		template = Radio,
