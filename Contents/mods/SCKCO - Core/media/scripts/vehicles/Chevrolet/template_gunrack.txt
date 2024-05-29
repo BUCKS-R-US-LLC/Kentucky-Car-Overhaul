@@ -173,21 +173,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-
-		part RearVanSpace
-		{
-			category = nodisplay,
-			
-			container
-			{
-				capacity = 70,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 	}
 
 	template vehicle StepVanFootwellSpace
@@ -207,20 +192,6 @@ module Base
 			}
 		}
 
-		part RearVanSpace
-		{
-			category = nodisplay,
-			
-			container
-			{
-				capacity = 100,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 	}
 
 }
