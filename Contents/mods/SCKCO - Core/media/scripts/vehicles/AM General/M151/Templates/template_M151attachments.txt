@@ -99,8 +99,8 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
+			itemType = Base.NormalTire,
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
 		}
 
 		part M151JerryCan
@@ -118,7 +118,13 @@ module Base
 			{
 			}
 
-			category = nodisplay,
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+			
+			itemType = Base.SmallGasTank,
+			category = SCUCKaccessories,
 		}
 
 		part M151Antenna

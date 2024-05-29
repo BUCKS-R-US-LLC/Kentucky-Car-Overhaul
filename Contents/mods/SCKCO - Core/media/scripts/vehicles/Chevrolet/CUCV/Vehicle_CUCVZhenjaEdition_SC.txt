@@ -32,7 +32,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CUCVZhenjaEditionFrontLeftWindow
 	{
@@ -41,7 +40,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CUCVZhenjaEditionFrontRightDoor
 	{
@@ -399,44 +397,12 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
 			model WindshieldFront
 			{
 				file = CUCVZhenjaEditionWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = Base.KSeriesWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			model WindshieldRear
-			{
-				file = CUCVZhenjaEditionRearWindshield,
 			}
 
 			window
