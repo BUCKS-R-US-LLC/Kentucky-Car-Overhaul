@@ -5,7 +5,6 @@ module Base
 		part GunRackSC
 		{
 			category = nodisplay,
-			area = SeatFrontLeft,
 			mechanicRequireKey = true,
 			
 			container
@@ -25,52 +24,18 @@ module Base
 		part GunRackSC
 		{
 			category = nodisplay,
-			area = SeatFrontLeft,
 			mechanicRequireKey = true,
 			
 			container
 			{
 				capacity = 8,
-				test = Vehicles.ContainerAccess.GloveBox,
+				test = Vehicles.ContainerAccess.BackOfTruck,
 			}
 			lua
 			{
 				create = Vehicles.Create.Default,
 			}
 		}
-	}
-
-	template vehicle AmbulanceContainers
-	{
-		part AmbulanceContainer1
-		{
-			mechanicRequireKey = true,
-			
-			container
-			{
-				capacity = 20,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-	
-			part AmbulanceContainer2
-		{
-			mechanicRequireKey = true,
-			
-			container
-			{
-				capacity = 20,
-				test = Vehicles.ContainerAccess.GloveBox,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}	
 	}
 
 	template vehicle TwoSeaterFootwellSpace
@@ -173,8 +138,30 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 		}
-	}
+			
+			part BackOfTruck
+		{
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
 
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+	}
+	
 	template vehicle StepVanFootwellSpace
 	{
 		part FrontFootwellSpace
@@ -186,6 +173,27 @@ module Base
 				capacity = 10,
 				test = Vehicles.ContainerAccess.GloveBox,
 			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part BackOfTruck
+		{
+			area = TruckBed,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
 			lua
 			{
 				create = Vehicles.Create.Default,

@@ -74,6 +74,7 @@ module Base
         template = TwoSeaterFootwellSpace,
 
         template = armorUpgrades/part/SCArmorBumper,
+        
         part SCArmorBumper
         {
             model Default { file = M1009Bullbar, }
@@ -131,6 +132,58 @@ module Base
             lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
         
+        part KSeriesRearSeat
+        	{
+
+			model KSeriesRearSeat
+				{
+                		file = KSeriesRearSeat,
+				}
+		area = Engine,
+        itemType = Base.NormalCarSeat,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {

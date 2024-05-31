@@ -348,6 +348,45 @@ VehicleDistributions.SC_PaperCar = {
     SeatRearRight = VehicleDistributions.Seat, 
 }
 
+VehicleDistributions.SC_AmbulanceGlovebox = {
+    rolls = 4,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "WaterBottleFull", 10,
+    }
+}
+
+VehicleDistributions.SC_AmbulanceFootwellSpace = {
+    rolls = 1,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+    }
+}
+
+VehicleDistributions.SC_AmbulanceTruckBed = {
+    rolls = 10,
+    items = {
+        "Bag_MedicalBag", 5,
+        "Bag_MedicalBag", 5,
+        "FirstAidKit", 10,
+        "FirstAidKit", 10,
+        "Gloves_Surgical", 10,
+        "Gloves_Surgical", 10,
+    }
+}
+
+VehicleDistributions.SC_Ambulance = {
+    BackOfTruck = VehicleDistributions.SC_AmbulanceTruckBed,
+    FrontFootwellSpace = VehicleDistributions.SC_AmbulanceFootwellSpace,
+    GloveBox = VehicleDistributions.SC_AmbulanceGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
 distributionTable["SC_HondaAccord"] = distributionTable["CarNormal"]
 distributionTable["SC_VWRabbit"] = distributionTable["CarNormal"]
 distributionTable["SC_VWRabbitPizza"] = distributionTable["CarNormal"]
@@ -415,7 +454,7 @@ distributionTable["SC_M1008"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_M1008TroopCarrier"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_M1009"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_M1009MilitaryPolice"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_M1010Ambulance"] = { Normal = VehicleDistributions.SC_CUCVMed }
+distributionTable["SC_M1010Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 
 distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Limo }
 
@@ -430,6 +469,7 @@ distributionTable["SC_M35A1"] = { Normal = VehicleDistributions.SC_Military }
 
 distributionTable["SC_ChevroletG30BoxVan"] = { Normal = VehicleDistributions.SC_WorkingVan }
 distributionTable["SC_ChevroletG30McCoy"] = { Normal = VehicleDistributions.SC_McCoy }
+distributionTable["SC_ChevroletG30Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 
 distributionTable["SC_GrummanLLV"] = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["StepVanMail"] = { Normal = VehicleDistributions.SC_MailCar }

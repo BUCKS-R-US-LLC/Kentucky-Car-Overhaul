@@ -217,7 +217,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -256,6 +256,45 @@ module Base
 				area = SeatFrontRight,
 			}
 		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7460 0.9683 -1.2063,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 -0.2698 0.0159,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7460 0.9683 -1.2063,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.2698 0.1429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
 
 		area Engine
 		{
@@ -307,6 +346,8 @@ module Base
 		template = K5Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -327,6 +368,16 @@ module Base
 			{
 				file = BlazerCivilianSCPassenger,
 			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
 		}
 
 		part Muffler
