@@ -8,12 +8,92 @@ module Base
 		scale = 1,
 	}
 
-	template vehicle RabbitAttachments
+	model VWRabbitBullbar
 	{
-        {
-            template = FourSeaterFloorwellSpace,
-		}
-    }
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model VWRabbitWindshieldArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model VWRabbitFrontLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitFrontRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model VWRabbitRearLeftDoorArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitRearRightDoorArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitFrontLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model VWRabbitFrontRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model VWRabbitRearLeftWindowArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitRearRightWindowArmor
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+    model RabbitTail
+	{
+		mesh = vehicles/Vehicle_VWRabbit_SC|Louver_obj,
+		shader = vehicle_noreflect,
+        static = false,
+		scale = 1,
+	}
+
 	template vehicle PizzaTopper
 	{
 		part PizzaTopper
@@ -51,6 +131,108 @@ module Base
             
 		    lua { create = Vehicles.Create.Default, }
 		}
+    }
 
+    template vehicle RabbitAttachments
+    {
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = VWRabbitBullbar, }
+            itemType = Base.VWRabbitBullbarSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = VWRabbitWindshieldArmor, }
+            itemType = Base.VWRabbitWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = VWRabbitFrontRightWindowArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = VWRabbitFrontLeftWindowArmor, }
+            itemType = Base.VWRabbitWindowArmorSC,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = VWRabbitFrontRightDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = VWRabbitFrontLeftDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = VWRabbitRearRightWindowArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = VWRabbitRearLeftWindowArmor, }
+            itemType = Base.VWRabbitWindowArmorSC,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = VWRabbitRearRightDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = VWRabbitRearLeftDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
+        part RabbitLouvers
+        {
+            model Default { file = RabbitTail, }
+            parent = TrunkDoor,
+            itemType = Base.VWRabbitLouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+            
+                table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
 	}	
 }
