@@ -83,10 +83,32 @@ module Base
 		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 
+	template vehicle CountrySquireRoofRack
+	{
+		part CountrySquireRoofRackSC
+		{
+			mechanicRequireKey = true,
+			category = nodisplay,
+
+			area = CountrySquireRoofRack,
+			
+			container
+			{
+				capacity = 40,
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
     template vehicle CountrySquireAttachments
 	{
 
 		template = FourSeaterFootwellSpace,
+		template = CountrySquireRoofRack,
 
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper

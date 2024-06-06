@@ -7,35 +7,30 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-
 	model FordCountrySquireDriver
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	
 	model FordCountrySquirePassenger
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model FordCountrySquireDouble
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model FordCountrySquireWindshield
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model FordCountrySquireFrontRightWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindow_obj,
@@ -44,7 +39,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-
 	model FordCountrySquireFrontLeftWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindow_obj,
@@ -53,7 +47,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-
 	model FordCountrySquireRearRightWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightWindow_obj,
@@ -62,7 +55,6 @@ module Base
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 	}
-
 	model FordCountrySquireRearLeftWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindow_obj,
@@ -71,21 +63,18 @@ module Base
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
 	}
-
 	model FordCountrySquireMiddleRightWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model FordCountrySquireMiddleLeftWindow
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-
 	model FordCountrySquireFrontRightDoor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoor_obj,
@@ -94,7 +83,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-
 	model FordCountrySquireFrontLeftDoor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftDoor_obj,
@@ -103,7 +91,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-
 	model FordCountrySquireRearRightDoor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightDoor_obj,
@@ -112,7 +99,6 @@ module Base
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-
 	model FordCountrySquireRearLeftDoor
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftDoor_obj,
@@ -121,7 +107,6 @@ module Base
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-
 	model FordCountrySquireTrunk
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|Trunk_obj,
@@ -131,7 +116,6 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkWindowBone 1.0,
 	}
-
 	model FordCountrySquireHood
 	{
 		mesh = vehicles/Vehicle_FordCountrySquire_SC|Hood_obj,
@@ -140,7 +124,6 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-
 	model FordCountrySquirefrontwheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
@@ -255,7 +238,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3220 0.0847 2.3729,
+			offset = 1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -271,7 +254,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.3220 0.0847 -2.1186,
+			offset = 1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -367,6 +350,11 @@ module Base
 			xywh = 0.0000 4.9831 3.0508 2.0000,
 		}
 
+		area CountrySquireRoofRack
+	    {
+		   xywh = 0.0000 -2.5932 6.0678 1.7966,
+	    }
+		
 		area TruckBed
 		{
 			xywh = 0.0000 -5.4746 3.0508 1.7627,
@@ -434,7 +422,6 @@ module Base
 			{
 				file = FordCountrySquireDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -443,7 +430,6 @@ module Base
 			{
 				file = FordCountrySquirePassenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -452,7 +438,6 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-
 		}
 
 		part SeatRearRight
@@ -461,7 +446,6 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-
 		}
 
 		part Muffler

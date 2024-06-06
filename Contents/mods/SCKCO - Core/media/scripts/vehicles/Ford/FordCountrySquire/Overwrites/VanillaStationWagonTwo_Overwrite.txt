@@ -162,7 +162,6 @@ module Base
 			offset = 0.0000 -0.0508 0.0000,
 		}
 
-
 		skin
 		{
 			texture = Vehicles/FordCountrySquire/Vehicle_FordCountrySquire_WhiteWood,
@@ -229,7 +228,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3220 0.0847 2.3729,
+			offset = 1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -245,7 +244,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.3220 0.0847 -2.1186,
+			offset = 1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -341,6 +340,11 @@ module Base
 			xywh = 0.0000 4.9831 3.0508 2.0000,
 		}
 
+		area CountrySquireRoofRack
+	    {
+		   xywh = 0.0000 -2.5932 6.0678 1.7966,
+	    }
+		
 		area TruckBed
 		{
 			xywh = 0.0000 -5.4746 3.0508 1.7627,
@@ -408,7 +412,6 @@ module Base
 			{
 				file = FordCountrySquireDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -417,7 +420,6 @@ module Base
 			{
 				file = FordCountrySquirePassenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -426,7 +428,6 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-
 		}
 
 		part SeatRearRight
@@ -435,7 +436,6 @@ module Base
 			{
 				file = FordCountrySquireDouble,
 			}
-
 		}
 
 		part Muffler
