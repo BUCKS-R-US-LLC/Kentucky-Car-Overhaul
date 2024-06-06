@@ -101,10 +101,32 @@ module Base
 		scale = 1,
 	}
 
+	template vehicle CherokeeRoofRack
+	{
+		part CherokeeRoofRackSC
+		{
+			mechanicRequireKey = true,
+			category = nodisplay,
+
+			area = CherokeeRoofRack,
+			
+			container
+			{
+				capacity = 20,
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
 	template vehicle JeepCherokeeAttachments
 	{
 
         template = FourSeaterFootwellSpace,
+		template = CherokeeRoofRack,
 
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
