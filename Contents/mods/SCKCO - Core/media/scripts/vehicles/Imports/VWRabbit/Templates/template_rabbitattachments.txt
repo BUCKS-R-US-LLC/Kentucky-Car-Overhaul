@@ -100,7 +100,7 @@ module Base
         {
 			model PizzaTopper { file = PizzaTopper, }
 		    area = Engine,
-            category = nodisplay,
+            category = SCUCKaccessories,
             itemType = Base.PizzaTopperSC,
             mechanicRequireKey = false,
 
@@ -133,9 +133,61 @@ module Base
 		}
     }
 
+    template vehicle RabbitLouvers
+    {
+        part RabbitLouvers
+        {
+            model Default { file = RabbitTail, }
+            parent = TrunkDoor,
+            itemType = Base.VWRabbitLouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+            
+                table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+    }
+
+    template vehicle RabbitLouversRemoved
+    {
+        part RabbitLouvers
+        {
+            model Default { file = RabbitTail, }
+            parent = TrunkDoor,
+            itemType = Base.VWRabbitLouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+        
+            lua { }
+        }
+
+    }
+
     template vehicle RabbitAttachments
     {
-
+        template = FourSeaterFootwellSpace,
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
@@ -154,7 +206,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = VWRabbitFrontRightWindowArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = Base.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -184,7 +236,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = VWRabbitRearRightWindowArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = Base.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -208,31 +260,6 @@ module Base
         {
             model Default { file = VWRabbitRearLeftDoorArmor, }
             itemType = Base.VWRabbitDoorArmorSC,
-        }
-
-        part RabbitLouvers
-        {
-            model Default { file = RabbitTail, }
-            parent = TrunkDoor,
-            itemType = Base.VWRabbitLouversSC,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-            
-                table partVariation
-            {
-                chances = { default = 30, }
-                additionalVehicleFunc = Default
-            }
-
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
 	}	
 }
