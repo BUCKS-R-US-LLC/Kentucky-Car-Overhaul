@@ -57,10 +57,10 @@ if VehicleZoneDistribution then -- check if the table exists for backwards compa
 	VehicleZoneDistribution.medium.vehicles["Base.CarLuxury"] = nil;
 	VehicleZoneDistribution.good.vehicles["Base.CarLuxury"] = nil;
 
-	VehicleZoneDistribution.parkingstall.vehicles["Base.Offroad"] = nil;
-	VehicleZoneDistribution.bad.vehicles["Base.Offroad"] = nil;
-	VehicleZoneDistribution.medium.vehicles["Base.Offroad"] = nil;
-	VehicleZoneDistribution.good.vehicles["Base.Offroad"] = nil;
+	VehicleZoneDistribution.parkingstall.vehicles["Base.OffRoad"] = nil;
+	VehicleZoneDistribution.bad.vehicles["Base.OffRoad"] = nil;
+	VehicleZoneDistribution.medium.vehicles["Base.OffRoad"] = nil;
+	VehicleZoneDistribution.good.vehicles["Base.OffRoad"] = nil;
 
 	VehicleZoneDistribution.parkingstall.vehicles["Base.SUV"] = nil;
 	VehicleZoneDistribution.bad.vehicles["Base.SUV"] = nil;

@@ -1,5 +1,5 @@
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCJ7"] = {imgPrefix = "jeepcj7_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Offroad"] = {imgPrefix = "jeepcj7_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.OffRoad"] = {imgPrefix = "jeepcj7_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCherokee"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCherokeeAudubon"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
 --
