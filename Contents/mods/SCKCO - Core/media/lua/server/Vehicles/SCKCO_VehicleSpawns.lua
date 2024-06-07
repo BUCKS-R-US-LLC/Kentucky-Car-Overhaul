@@ -1,12 +1,5 @@
 if VehicleZoneDistribution then
 
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletImpala"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletChevelle"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_LincolnContinental"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_Oldsmobile88"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_IHScoutII"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepWagoneer"] = {index = -1, spawnChance = 0.5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_PlymouthVolare"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordGalaxie"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 15};
