@@ -1,0 +1,56 @@
+module Base
+{
+
+recipe Craft Cadillac Fleetwood Brougham Bullbar
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:CadillacFleetwoodBullbarSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Cadillac Fleetwood Brougham Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:CadillacFleetwoodWindshieldArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Cadillac Fleetwood Brougham Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:CadillacFleetwoodDoorArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Cadillac Fleetwood Brougham Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:CadillacFleetwoodWindowArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}

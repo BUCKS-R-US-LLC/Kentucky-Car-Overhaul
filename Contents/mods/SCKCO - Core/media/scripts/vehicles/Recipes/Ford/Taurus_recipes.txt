@@ -1,0 +1,56 @@
+module Base
+{
+
+recipe Craft Ford Taurus Bullbar
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FordTaurusBullbarSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Ford Taurus Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FordTaurusWindshieldArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Ford Taurus Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FordTaurusDoorArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft Ford Taurus Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:FordTaurusWindowArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}
