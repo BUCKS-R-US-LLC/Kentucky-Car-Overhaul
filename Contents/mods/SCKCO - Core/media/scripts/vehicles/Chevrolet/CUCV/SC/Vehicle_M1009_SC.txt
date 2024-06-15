@@ -2,32 +2,32 @@ module Base
 {
 	model SC_M1009
 	{
-		mesh = vehicles/Vehicle_M1009_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model M1009SCDriver
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1009SCPassenger
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1009SCWindshield
 	{
-		mesh = vehicles/Vehicle_M1009_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1009SCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model M1009SCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model M1009SCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model M1009SCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M1009_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model M1009SCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1009SCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M1009_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M1009SCTrunk
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -80,7 +80,7 @@ module Base
 	}
 	model M1009SCHood
 	{
-		mesh = vehicles/Vehicle_M1009_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -88,25 +88,25 @@ module Base
 	}
 	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}

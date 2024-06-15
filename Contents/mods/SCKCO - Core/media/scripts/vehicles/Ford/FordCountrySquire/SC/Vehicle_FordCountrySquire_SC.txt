@@ -2,38 +2,38 @@ module Base
 {
 	model SC_FordCountrySquire
 	{
-		mesh = vehicles/Vehicle_FordCountrySquirE_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquirE_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model FordCountrySquireDriver
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquirePassenger
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireDouble
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireWindshield
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -42,7 +42,7 @@ module Base
 	}
 	model FordCountrySquireFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model FordCountrySquireRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -60,7 +60,7 @@ module Base
 	}
 	model FordCountrySquireRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -69,19 +69,19 @@ module Base
 	}
 	model FordCountrySquireMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -89,7 +89,7 @@ module Base
 	}
 	model FordCountrySquireFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -97,7 +97,7 @@ module Base
 	}
 	model FordCountrySquireRearRightDoor
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -105,7 +105,7 @@ module Base
 	}
 	model FordCountrySquireRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|RearLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -113,7 +113,7 @@ module Base
 	}
 	model FordCountrySquireTrunk
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -122,7 +122,7 @@ module Base
 	}
 	model FordCountrySquireHood
 	{
-		mesh = vehicles/Vehicle_FordCountrySquire_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -130,25 +130,25 @@ module Base
 	}
 	model FordCountrySquirefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordCountrySquirefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordCountrySquirebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordCountrySquirebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}

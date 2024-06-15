@@ -2,38 +2,38 @@ module Base
 {
 	model SC_ChevroletSuburban
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model SuburbanSCDriver
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCPassenger
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCRearSeat
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCWindshield
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model SuburbanSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model SuburbanSCRearRightDoor
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|RearRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model SuburbanSCRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|RearLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,7 +65,7 @@ module Base
 	}
 	model SuburbanSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -73,7 +73,7 @@ module Base
 	}
 	model SuburbanSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -81,19 +81,19 @@ module Base
 	}
 	model SuburbanSCMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|RearRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -101,7 +101,7 @@ module Base
 	}
 	model SuburbanSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -109,7 +109,7 @@ module Base
 	}
 	model SuburbanSCTrunk
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -118,7 +118,7 @@ module Base
 	}
 	model SuburbanSCHood
 	{
-		mesh = vehicles/Vehicle_Suburb86_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -126,25 +126,25 @@ module Base
 	}
 	model SuburbanWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model SuburbanWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model SuburbanWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model SuburbanWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_SuburbanSC_Wheel,
 		shader = vehiclewheel,
 	}

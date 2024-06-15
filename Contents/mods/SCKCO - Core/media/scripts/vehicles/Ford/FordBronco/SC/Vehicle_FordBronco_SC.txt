@@ -2,38 +2,38 @@ module Base
 {
 	model SC_FordBronco
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model FordBroncoDriver
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoPassenger
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoRearDouble
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoWindshield
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model FordBroncoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,19 +49,19 @@ module Base
 	}
 	model FordBroncoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -69,7 +69,7 @@ module Base
 	}
 	model FordBroncoFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -77,7 +77,7 @@ module Base
 	}
 	model FordBroncoTrunk
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|TrunkDoor_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -86,7 +86,7 @@ module Base
 	}
 	model FordBroncoHood
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -94,7 +94,7 @@ module Base
 	}
 	model FordBroncoRearWindshield
 	{
-		mesh = vehicles/Vehicle_Bronco1992_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -102,25 +102,25 @@ module Base
 	}
 	model FordBroncofrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncofrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordBroncobackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Bronco1992_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}

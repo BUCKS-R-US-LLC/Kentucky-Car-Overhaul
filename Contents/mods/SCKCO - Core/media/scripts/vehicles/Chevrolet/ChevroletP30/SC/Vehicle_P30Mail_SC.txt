@@ -2,32 +2,32 @@ module Base
 {
 	model SC_StepVanP30Civ
 	{
-		mesh = vehicles/Vehicle_StepVanP30Civ_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30Civ_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model StepVanP30Driver
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model StepVanP30Passenger
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model StepVanP30Windshield
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|Windshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model StepVanP30FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model StepVanP30FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model StepVanP30FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model StepVanP30FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,7 +59,7 @@ module Base
 	}
 	model StepVanP30RearRightDoor
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|RearDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -68,7 +68,7 @@ module Base
 	}
 	model StepVanP30Trunk
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -76,7 +76,7 @@ module Base
 	}
 	model StepVanP30Hood
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -84,7 +84,7 @@ module Base
 	}
 	model StepVanP30RearWindshield
 	{
-		mesh = vehicles/Vehicle_StepVanP30_SC|RearWindshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -93,25 +93,25 @@ module Base
 	}
 	model StepVanP30frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontLeft,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_StepVanP30_FrontLeft,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
 	model StepVanP30frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_StepVanP30_FrontRight,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_StepVanP30_FrontRight,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
 	model StepVanP30backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearLeft,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_StepVanP30_RearLeft,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}
 	model StepVanP30backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_StepVanP30_RearRight,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_StepVanP30_RearRight,
 		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
 		shader = vehiclewheel,
 	}

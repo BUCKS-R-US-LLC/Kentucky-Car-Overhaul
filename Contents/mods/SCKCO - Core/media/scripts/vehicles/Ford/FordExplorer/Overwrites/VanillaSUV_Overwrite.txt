@@ -2,38 +2,38 @@ module Base
 {
 	model SC_FordExplorer
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model FordExplorerDriver
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerPassenger
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerDouble
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearDoubleSeat__obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearDoubleSeat__obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerWindshield
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model FordExplorerFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model FordExplorerFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model FordExplorerFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,19 +65,19 @@ module Base
 	}
 	model FordExplorerMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordExplorerRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -85,7 +85,7 @@ module Base
 	}
 	model FordExplorerRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -93,7 +93,7 @@ module Base
 	}
 	model FordExplorerFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -101,7 +101,7 @@ module Base
 	}
 	model FordExplorerFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -109,7 +109,7 @@ module Base
 	}
 	model FordExplorerRearRightDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearRightDoor__obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightDoor__obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -117,7 +117,7 @@ module Base
 	}
 	model FordExplorerRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -125,7 +125,7 @@ module Base
 	}
 	model FordExplorerTrunk
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,7 +133,7 @@ module Base
 	}
 	model FordExplorerHood
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -141,7 +141,7 @@ module Base
 	}
 	model FordExplorerRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordExplorer_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -149,25 +149,25 @@ module Base
 	}
 	model FordExplorerfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordExplorer_LeftWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordExplorerfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordExplorer_RightWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordExplorerbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordExplorer_LeftWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordExplorerbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordExplorer_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordExplorer_RightWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}

@@ -2,38 +2,38 @@ module Base
 {
 	model SC_CamaroTTop
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model CamaroSCDriver
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|DriverSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCPassenger
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearPassenger
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCWindshield
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|Windshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|RearWindshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -41,7 +41,7 @@ module Base
 	}
 	model CamaroSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -50,7 +50,7 @@ module Base
 	}
 	model CamaroSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,7 +59,7 @@ module Base
 	}
 	model CamaroSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -67,7 +67,7 @@ module Base
 	}
 	model CamaroSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -75,19 +75,19 @@ module Base
 	}
 	model CamaroSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|RightTTop_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RightTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|LeftTTop_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|LeftTTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCTrunk
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -95,7 +95,7 @@ module Base
 	}
 	model CamaroSCHood
 	{
-		mesh = vehicles/Vehicle_CamaroTTop_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -103,25 +103,25 @@ module Base
 	}
 	model CamaroWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_CamaroTTop_LeftWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
 	model CamaroWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_CamaroTTop_RightWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
 	model CamaroWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CamaroTTop_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_CamaroTTop_LeftWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
 	model CamaroWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CamaroTTop_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_CamaroTTop_RightWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}

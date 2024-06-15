@@ -2,38 +2,38 @@ module Base
 {
 	model SC_CrownVictoria85
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model CrownVictoriaDriver
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaPassenger
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaDouble
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -42,7 +42,7 @@ module Base
 	}
 	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -61,7 +61,7 @@ module Base
 	}
 	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -71,7 +71,7 @@ module Base
 	}
 	model CrownVictoriaFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 	}
 	model CrownVictoriaFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -87,7 +87,7 @@ module Base
 	}
 	model CrownVictoriaRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -95,7 +95,7 @@ module Base
 	}
 	model CrownVictoriaRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -103,7 +103,7 @@ module Base
 	}
 	model CrownVictoriaTrunk
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -111,7 +111,7 @@ module Base
 	}
 	model CrownVictoriaHood
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -119,31 +119,31 @@ module Base
 	}
 	model CrownVictoriaRearWindshield
 	{
-		mesh = vehicles/Vehicle_CrownVictoria_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoriafrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model CrownVictoriafrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model CrownVictoriabackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model CrownVictoriabackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CrownVictoria_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}

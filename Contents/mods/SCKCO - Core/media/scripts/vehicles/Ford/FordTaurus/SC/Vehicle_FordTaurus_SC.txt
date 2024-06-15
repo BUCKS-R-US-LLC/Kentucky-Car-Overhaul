@@ -2,38 +2,38 @@ module Base
 {
 	model SC_FordTaurus
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model FordTaurusDriver
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordTaurusPassenger
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordTaurusDouble
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearrDoubleSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearrDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordTaurusWindshield
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordTaurusFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model FordTaurusFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model FordTaurusRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model FordTaurusRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,7 +65,7 @@ module Base
 	}
 	model FordTaurusFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -73,7 +73,7 @@ module Base
 	}
 	model FordTaurusFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -81,7 +81,7 @@ module Base
 	}
 	model FordTaurusRearRightDoor
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -89,7 +89,7 @@ module Base
 	}
 	model FordTaurusRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -97,7 +97,7 @@ module Base
 	}
 	model FordTaurusTrunk
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -105,7 +105,7 @@ module Base
 	}
 	model FordTaurusHood
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -113,31 +113,31 @@ module Base
 	}
 	model FordTaurusRearWindshield
 	{
-		mesh = vehicles/Vehicle_FordTaurus86_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FordTaurusfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus86_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordTaurus86_LeftWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordTaurusfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus86_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordTaurus86_RightWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordTaurusbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus86_LeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordTaurus86_LeftWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
 	model FordTaurusbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordTaurus86_RightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordTaurus86_RightWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}

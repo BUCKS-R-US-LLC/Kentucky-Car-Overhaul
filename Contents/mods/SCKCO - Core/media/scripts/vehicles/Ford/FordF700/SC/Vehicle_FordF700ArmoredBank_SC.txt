@@ -2,32 +2,32 @@ module Base
 {
 	model SC_FordF700ArmoredBank
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model F700ArmoredDriver
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F700ArmoredPassenger
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontRightSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F700ArmoredWindshield
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F700ArmoredFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model F700ArmoredFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model F700ArmoredFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model F700ArmoredFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model F700ArmoredRearRightWindow
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F700ArmoredRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F700ArmoredRearDoor
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|RearDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -79,7 +79,7 @@ module Base
 	}
 	model F700ArmoredRearWindow
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -87,7 +87,7 @@ module Base
 	}
 	model F700ArmoredHood
 	{
-		mesh = vehicles/Vehicle_FordF700Armored_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -95,25 +95,25 @@ module Base
 	}
 	model F700BoxTruckfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontLeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordF700_FrontLeftWheel,
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
 	model F700BoxTruckfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_FrontRightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordF700_FrontRightWheel,
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
 	model F700BoxTruckrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearLeftWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordF700_RearLeftWheel,
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
 	model F700BoxTruckrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_FordF700_RearRightWheel,
+		mesh = vehicles/Ford/Wheels/Vehicle_FordF700_RearRightWheel,
 		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}

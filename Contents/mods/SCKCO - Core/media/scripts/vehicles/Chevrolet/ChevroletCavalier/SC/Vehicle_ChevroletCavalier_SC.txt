@@ -2,38 +2,38 @@ module Base
 {
 	model SC_ChevroletCavalier
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model ChevCavaDriver
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|DriverSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ChevCavaPassenger
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|PassengerSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ChevCavaDouble
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ChevCavaWindshield
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|Windshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ChevCavaFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model ChevCavaFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model ChevCavaRearRightWindow
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model ChevCavaRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,7 +65,7 @@ module Base
 	}
 	model ChevCavaFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -73,7 +73,7 @@ module Base
 	}
 	model ChevCavaFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -81,7 +81,7 @@ module Base
 	}
 	model ChevCavaRearRightDoor
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -89,7 +89,7 @@ module Base
 	}
 	model ChevCavaRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -97,7 +97,7 @@ module Base
 	}
 	model ChevCavaTrunk
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -105,7 +105,7 @@ module Base
 	}
 	model ChevCavaHood
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -113,31 +113,31 @@ module Base
 	}
 	model ChevCavaRearWindshield
 	{
-		mesh = vehicles/Vehicle_ChevCava_SC|RearWindshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ChevCavafrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_ChevCava_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_ChevCava_LeftWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
 		shader = vehiclewheel,
 	}
 	model ChevCavafrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_ChevCava_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_ChevCava_RightWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
 		shader = vehiclewheel,
 	}
 	model ChevCavabackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_ChevCava_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_ChevCava_LeftWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
 		shader = vehiclewheel,
 	}
 	model ChevCavabackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_ChevCava_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_ChevCava_RightWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
 		shader = vehiclewheel,
 	}

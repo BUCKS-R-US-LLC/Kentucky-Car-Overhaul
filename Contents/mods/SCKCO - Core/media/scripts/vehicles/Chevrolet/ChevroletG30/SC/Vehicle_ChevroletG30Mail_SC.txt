@@ -2,32 +2,32 @@ module Base
 {
 	model SC_G30VanMail
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model G30VanMailDriver
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanMailPassenger
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanMailWindshield
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|Windshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model G30VanMailFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -36,7 +36,7 @@ module Base
 	}
 	model G30VanMailFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -45,7 +45,7 @@ module Base
 	}
 	model G30VanMailFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -53,7 +53,7 @@ module Base
 	}
 	model G30VanMailFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -61,7 +61,7 @@ module Base
 	}
 	model G30VanMailSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|SlideDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|SlideDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -69,7 +69,7 @@ module Base
 	}
 	model G30VanMailTrunk
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -78,7 +78,7 @@ module Base
 	}
 	model G30VanMailHood
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -86,7 +86,7 @@ module Base
 	}
 	model G30VanMailRearWindshield
 	{
-		mesh = vehicles/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -95,25 +95,25 @@ module Base
 	}
 	model G30Vanfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_G30_LeftWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_G30_RightWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanrearwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_G30_LeftWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
 	model G30Vanrearwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_G30_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_G30_RightWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}

@@ -2,38 +2,38 @@ module Base
 {
 	model SC_F350Ambulance
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model F350AmbulanceDriver
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulancePassenger
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulanceWindshield
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulanceRearWindshield
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulanceFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model F350AmbulanceFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model F350AmbulanceFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model F350AmbulanceFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,7 +65,7 @@ module Base
 	}
 	model F350AmbulanceSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|RearRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -73,7 +73,7 @@ module Base
 	}
 	model F350AmbulanceSlidingWindow
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -81,7 +81,7 @@ module Base
 	}
 	model F350AmbulanceHood
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -89,7 +89,7 @@ module Base
 	}
 	model F350AmbulanceTrunk
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|TrunkDoor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -98,7 +98,7 @@ module Base
 	}
 	model F350AmbulanceRearWindows
 	{
-		mesh = vehicles/Vehicle_F350Ambulance_SC|TrunkWindow_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|TrunkWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -107,25 +107,25 @@ module Base
 	}
 	model F350Ambulancefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_F350Ambulance_FrontLeft,
+		mesh = vehicles/Ford/Wheels/Vehicle_F350Ambulance_FrontLeft,
 		texture = vehicles/FordF350/Vehicle_F350Ambu_frontwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_F350Ambulance_FrontRight,
+		mesh = vehicles/Ford/Wheels/Vehicle_F350Ambulance_FrontRight,
 		texture = vehicles/FordF350/Vehicle_F350Ambu_frontwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_F350Ambulance_RearLeft,
+		mesh = vehicles/Ford/Wheels/Vehicle_F350Ambulance_RearLeft,
 		texture = vehicles/FordF350/Vehicle_F350Ambu_rearwheel,
 		shader = vehiclewheel,
 	}
 	model F350Ambulancebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_F350Ambulance_RearRight,
+		mesh = vehicles/Ford/Wheels/Vehicle_F350Ambulance_RearRight,
 		texture = vehicles/FordF350/Vehicle_F350Ambu_rearwheel,
 		shader = vehiclewheel,
 	}

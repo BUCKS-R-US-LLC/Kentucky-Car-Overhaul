@@ -3,7 +3,7 @@ module Base
 
 	model ChevyLogo
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Chevy_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Chevy_obj,
 		texture = Vehicles/K5/Vehicle_BlazerSC_White,
 		shader = vehiclewheel,
 		scale = 1,
@@ -11,7 +11,7 @@ module Base
 
 	model K5Attachment
 	{
-		mesh = vehicles/K5LOGO,
+		mesh = vehicles/attachments/K5LOGO,
 		texture = Vehicles/K5/K5SideLogo,
 		shader = vehiclewheel,
 		scale = 1,
@@ -19,7 +19,7 @@ module Base
 
 	model K10Attachment
 	{
-		mesh = vehicles/K10LOGO,
+		mesh = vehicles/attachments/K10LOGO,
 		texture = Vehicles/K10/K10SideLogo,
 		shader = vehiclewheel,
 		scale = 1,
@@ -27,7 +27,7 @@ module Base
 
 	model SuburbanAttachment
 	{
-		mesh = vehicles/K10LOGO,
+		mesh = vehicles/attachments/K10LOGO,
 		texture = Vehicles/Suburban/SuburbanLogo,
 		shader = vehiclewheel,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 
 	model G30SportAttachment
 	{
-		mesh = vehicles/SportsVAN,
+		mesh = vehicles/attachments/SportsVAN,
 		texture = Vehicles/ChevroletG30/ChevyVan,
 		shader = vehiclewheel,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 
 	model G30ThirtyAttachment
 	{
-		mesh = vehicles/Chevy30,
+		mesh = vehicles/attachments/Chevy30,
 		texture = Vehicles/ChevroletG30/Chevy30Badge,
 		shader = vehiclewheel,
 		scale = 1,

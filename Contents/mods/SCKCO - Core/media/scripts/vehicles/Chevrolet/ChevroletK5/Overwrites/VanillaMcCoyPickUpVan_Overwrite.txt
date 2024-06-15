@@ -2,32 +2,32 @@ module Base
 {
 	model SC_K5BlazerMcCoys
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model BlazerMcCoysSCDriver
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerMcCoysSCPassenger
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerMcCoysSCWindshield
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerMcCoysSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model BlazerMcCoysSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model BlazerMcCoysSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model BlazerMcCoysSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model BlazerMcCoysSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|RearRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerMcCoysSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerMcCoysSCTrunk
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -80,7 +80,7 @@ module Base
 	}
 	model BlazerMcCoysSCHood
 	{
-		mesh = vehicles/Vehicle_K5Blazer_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -88,31 +88,31 @@ module Base
 	}
 	model BlazerMcCoysWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerMcCoysWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerMcCoysWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerMcCoysWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
 		shader = vehiclewheel,
 	}
 	model BlazerMcCoysWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
 		shader = vehiclewheel,
 	}
