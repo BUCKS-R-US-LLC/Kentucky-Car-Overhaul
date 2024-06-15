@@ -2,38 +2,38 @@ module Base
 {
 	model SC_PlymouthVoyager
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|base_mesh,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model PlymouthVoyagerDriver
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|DriverSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerPassenger
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|PassengerSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerRearSeat
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerWindshield
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|Windshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
@@ -41,7 +41,7 @@ module Base
 	}
 	model PlymouthVoyagerFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
@@ -49,25 +49,25 @@ module Base
 	}
 	model PlymouthVoyagerMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -75,7 +75,7 @@ module Base
 	}
 	model PlymouthVoyagerFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -83,7 +83,7 @@ module Base
 	}
 	model PlymouthVoyagerSlidingRightDoor
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -91,7 +91,7 @@ module Base
 	}
 	model PlymouthVoyagerSlidingWindow
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -99,7 +99,7 @@ module Base
 	}
 	model PlymouthVoyagerTrunk
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
@@ -107,7 +107,7 @@ module Base
 	}
 	model PlymouthVoyagerHood
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|Hood_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -115,32 +115,32 @@ module Base
 	}
 	model PlymouthVoyagerRearWindshield
 	{
-		mesh = vehicles/Vehicle_PlymouthVoyager_SC|RearWindshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_PlymouthVoyager_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
 	}
 	model PlymouthVoyagerfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
 	model PlymouthVoyagerfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_PlymouthVoyager_RightWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
 	model PlymouthVoyagerbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_PlymouthVoyager_LeftWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
 	model PlymouthVoyagerbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_PlymouthVoyager_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_PlymouthVoyager_RightWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}

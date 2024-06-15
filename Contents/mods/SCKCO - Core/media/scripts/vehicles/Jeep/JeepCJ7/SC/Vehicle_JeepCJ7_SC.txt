@@ -2,31 +2,31 @@ module Base
 {
 	model SC_JeepCJ7
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|base_mesh,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Driver
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Passenger
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Windshield
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|WindShield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -34,7 +34,7 @@ module Base
 	}
 	model JeepCJ7FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -42,7 +42,7 @@ module Base
 	}
 	model JeepCJ7RearRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -50,7 +50,7 @@ module Base
 	}
 	model JeepCJ7RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -58,7 +58,7 @@ module Base
 	}
 	model JeepCJ7FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -66,7 +66,7 @@ module Base
 	}
 	model JeepCJ7FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -74,7 +74,7 @@ module Base
 	}
 	model JeepCJ7Trunk
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Trunk_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -83,7 +83,7 @@ module Base
 	}
 	model JeepCJ7Hood
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Hood_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -91,13 +91,13 @@ module Base
 	}
 	model JeepCJ7RearWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|RearWindshield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7SpareWheel
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|SpareWheel_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|SpareWheel_obj,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 		scale = 1,
@@ -106,25 +106,25 @@ module Base
 	}
 	model JeepCJ7frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCJ7_LeftWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCJ7frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCJ7_RightWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCJ7backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_LeftWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCJ7_LeftWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCJ7backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCJ7_RightWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCJ7_RightWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}

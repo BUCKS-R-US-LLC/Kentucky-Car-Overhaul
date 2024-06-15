@@ -2,44 +2,44 @@ module Base
 {
 	model SC_CadillacBrougham
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|base_mesh,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model CadillacBroughamDriver
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|DriverSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamPassenger
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|PassengerSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamDouble
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamWindshield
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Windshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamRearWindshield
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearWindshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -47,7 +47,7 @@ module Base
 	}
 	model CadillacBroughamFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -55,7 +55,7 @@ module Base
 	}
 	model CadillacBroughamRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -63,7 +63,7 @@ module Base
 	}
 	model CadillacBroughamRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -71,7 +71,7 @@ module Base
 	}
 	model CadillacBroughamFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 	}
 	model CadillacBroughamFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -87,7 +87,7 @@ module Base
 	}
 	model CadillacBroughamRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -95,7 +95,7 @@ module Base
 	}
 	model CadillacBroughamRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|RearLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -103,7 +103,7 @@ module Base
 	}
 	model CadillacBroughamTrunk
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Trunk_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -111,7 +111,7 @@ module Base
 	}
 	model CadillacBroughamHood
 	{
-		mesh = vehicles/Vehicle_CadiBrough88_SC|Hood_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -119,25 +119,25 @@ module Base
 	}
 	model CadillacBroughamfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_LeftWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughamfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_RightWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughambackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_LeftWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughambackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_RightWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}

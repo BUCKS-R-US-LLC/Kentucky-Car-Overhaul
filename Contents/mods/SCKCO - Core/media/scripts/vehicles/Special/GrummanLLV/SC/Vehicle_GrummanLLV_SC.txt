@@ -2,38 +2,38 @@ module Base
 {
 	model SC_GrummanLLV
 	{
-		mesh = vehicles/Vehicle_Grum_SC|base_mesh,
+		mesh = vehicles/Special/Vehicle_Grum_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model GrummanLLVDriver
 	{
-		mesh = vehicles/Vehicle_Grum_SC|DriverSeat_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVPassenger
 	{
-		mesh = vehicles/Vehicle_Grum_SC|PassengerSeat_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVRearDouble
 	{
-		mesh = vehicles/Vehicle_Grum_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVWindshield
 	{
-		mesh = vehicles/Vehicle_Grum_SC|Windshield_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_Grum_SC|FrontRightWindow_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model GrummanLLVFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_Grum_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,19 +49,19 @@ module Base
 	}
 	model GrummanLLVRearRightWindow
 	{
-		mesh = vehicles/Vehicle_Grum_SC|RearRightWindow_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_Grum_SC|RearLeftWindow_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_Grum_SC|FrontRightDoor_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -69,7 +69,7 @@ module Base
 	}
 	model GrummanLLVFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_Grum_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -77,7 +77,7 @@ module Base
 	}
 	model GrummanLLVTrunk
 	{
-		mesh = vehicles/Vehicle_Grum_SC|RearDoor_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -90,7 +90,7 @@ module Base
 	}
 	model GrummanLLVHood
 	{
-		mesh = vehicles/Vehicle_Grum_SC|Hood_obj,
+		mesh = vehicles/Special/Vehicle_Grum_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -98,28 +98,28 @@ module Base
 	}
 	model GrummanLLVfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Grum_LeftWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Grum_LeftWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
 		shader = vehiclewheel,
 		scale = 0.8,
 	}
 	model GrummanLLVfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Grum_RightWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Grum_RightWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
 		shader = vehiclewheel,
 		scale = 0.8,
 	}
 	model GrummanLLVbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Grum_LeftWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Grum_LeftWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
 		shader = vehiclewheel,
 		scale = 0.8,
 	}
 	model GrummanLLVbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Grum_RightWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Grum_RightWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
 		shader = vehiclewheel,
 		scale = 0.8,

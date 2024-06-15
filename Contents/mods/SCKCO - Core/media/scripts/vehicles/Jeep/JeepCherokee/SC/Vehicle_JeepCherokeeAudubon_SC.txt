@@ -2,38 +2,38 @@ module Base
 {
 	model SC_JeepCherokeeAudubon
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|base_mesh,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model JeepCherokeePoliceDriver
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|DriverSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePolicePassenger
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|PassengerSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceDouble
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|Windshield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model JeepCherokeePoliceFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model JeepCherokeePoliceFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model JeepCherokeePoliceFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,19 +65,19 @@ module Base
 	}
 	model JeepCherokeePoliceMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceRearRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -85,7 +85,7 @@ module Base
 	}
 	model JeepCherokeePoliceRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -93,7 +93,7 @@ module Base
 	}
 	model JeepCherokeePoliceFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontRightDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -101,7 +101,7 @@ module Base
 	}
 	model JeepCherokeePoliceFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -109,7 +109,7 @@ module Base
 	}
 	model JeepCherokeePoliceRearRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearRightDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -117,7 +117,7 @@ module Base
 	}
 	model JeepCherokeePoliceRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearLeftDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -125,7 +125,7 @@ module Base
 	}
 	model JeepCherokeePoliceTrunk
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|TrunkDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,7 +133,7 @@ module Base
 	}
 	model JeepCherokeePoliceHood
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|Hood_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -141,7 +141,7 @@ module Base
 	}
 	model JeepCherokeePoliceRearWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCherokeePolice_SC|RearWindshield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,

@@ -2,44 +2,44 @@ module Base
 {
 	model SC_M151A2
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model M151Driver
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151Passenger
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151Double
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|RearDoubleSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151WindshieldFrame
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|WindshieldFrame_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|WindshieldFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151Windshield
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -47,7 +47,7 @@ module Base
 	}
 	model M151FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|FrontLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -55,59 +55,59 @@ module Base
 	}
 	model M151SoftTop
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|Roof_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Roof_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151TarpFrame
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|TarpFrame_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|TarpFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151SideTarp
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|SideTarp_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|SideTarp_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151Radio
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|Radio_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Radio_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Radio,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151SpareWheel
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|SpareWheel_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|SpareWheel_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_wheel,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151Antenna
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|RadioAntenna_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RadioAntenna_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151JerryCan
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|RightJerryCan_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RightJerryCan_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M151Windshield
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M151FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|FrontRightDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -116,7 +116,7 @@ module Base
 	}
 	model M151FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|FrontLeftDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -125,7 +125,7 @@ module Base
 	}
 	model M151Hood
 	{
-		mesh = vehicles/Vehicle_HM151A2_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,25 +133,25 @@ module Base
 	}
 	model M151frontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM151A2_LeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM151A2_LeftWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
 	model M151frontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM151A2_RightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM151A2_RightWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
 	model M151backwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM151A2_LeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM151A2_LeftWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
 	model M151backwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM151A2_RightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM151A2_RightWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}

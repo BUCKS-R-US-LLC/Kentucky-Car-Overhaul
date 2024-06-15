@@ -2,32 +2,32 @@ module Base
 {
 	model SC_M880
 	{
-		mesh = vehicles/Vehicle_M880_SC|base_mesh,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model M880Driver
 	{
-		mesh = vehicles/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880Passenger
 	{
-		mesh = vehicles/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880Windshield
 	{
-		mesh = vehicles/Vehicle_M880_SC|Windshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M880_SC|FrontRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model M880FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M880_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model M880FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M880_SC|FrontRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model M880FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M880_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model M880RearRightWindow
 	{
-		mesh = vehicles/Vehicle_M880_SC|RearRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_M880_SC|RearLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880Trunk
 	{
-		mesh = vehicles/Vehicle_M880_SC|TrunkDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -79,13 +79,13 @@ module Base
 	}
 	model M880RearWindshield
 	{
-		mesh = vehicles/Vehicle_M880_SC|RearWindshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M880Hood
 	{
-		mesh = vehicles/Vehicle_M880_SC|Hood_obj,
+		mesh = vehicles/Cadillac/Vehicle_M880_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -93,25 +93,25 @@ module Base
 	}
 	model M880Wheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_M880_LeftWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	model M880Wheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_M880_RightWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	model M880Wheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_M880_LeftWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
 	model M880Wheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_M880_RightWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}

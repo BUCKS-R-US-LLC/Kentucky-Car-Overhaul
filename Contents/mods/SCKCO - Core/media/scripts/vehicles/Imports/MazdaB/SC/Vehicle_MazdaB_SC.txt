@@ -2,32 +2,32 @@ module Base
 {
 	model SC_MazdaB
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|base_mesh,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model MazdaBDriver
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|DriverSeat_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBPassenger
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|PassengerSeat_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBWindshield
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Windshield_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontRightWindow_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model MazdaBFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model MazdaBFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontRightDoor_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model MazdaBFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model MazdaBRearRightWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearRightWindow_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearLeftWindow_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBTrunk
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Trunk_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -79,13 +79,13 @@ module Base
 	}
 	model MazdaBRearWindshield
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|RearWindshield_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBHood
 	{
-		mesh = vehicles/Vehicle_MazdaB_SC|Hood_obj,
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -93,25 +93,25 @@ module Base
 	}
 	model MazdaWheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_LeftWheel,
+		mesh = vehicles/Mazda/Wheels/Vehicle_MazdaB_LeftWheel,
 		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
 		shader = vehiclewheel,
 	}
 	model MazdaWheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_RightWheel,
+		mesh = vehicles/Mazda/Wheels/Vehicle_MazdaB_RightWheel,
 		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
 		shader = vehiclewheel,
 	}
 	model MazdaWheelLargebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_LeftWheel,
+		mesh = vehicles/Mazda/Wheels/Vehicle_MazdaB_LeftWheel,
 		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
 		shader = vehiclewheel,
 	}
 	model MazdaWheelLargebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_MazdaB_RightWheel,
+		mesh = vehicles/Mazda/Wheels/Vehicle_MazdaB_RightWheel,
 		texture = Vehicles/MazdaB/Vehicle_MazdaB_Wheel,
 		shader = vehiclewheel,
 	}

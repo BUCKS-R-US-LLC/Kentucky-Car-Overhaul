@@ -2,44 +2,44 @@ module Base
 {
 	model SC_M998
 	{
-		mesh = vehicles/Vehicle_HM998_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model HM998Driver
 	{
-		mesh = vehicles/Vehicle_HM998_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998Passenger
 	{
-		mesh = vehicles/Vehicle_HM998_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998RearRightPassenger
 	{
-		mesh = vehicles/Vehicle_HM998_SC|RearRightSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998RearLeftPassenger
 	{
-		mesh = vehicles/Vehicle_HM998_SC|RearLeftSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998Windshield
 	{
-		mesh = vehicles/Vehicle_HM998_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HM998_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -47,7 +47,7 @@ module Base
 	}
 	model HM998Trunk
 	{
-		mesh = vehicles/Vehicle_HM998_SC|TrunkDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -55,7 +55,7 @@ module Base
 	}
 	model HM998Hood
 	{
-		mesh = vehicles/Vehicle_HM998_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -63,25 +63,25 @@ module Base
 	}
 	model HMMWVWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_FrontLeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_FrontRightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_FrontRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_RearLeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_RearLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_RearRightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}

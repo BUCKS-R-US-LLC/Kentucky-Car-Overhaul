@@ -2,32 +2,32 @@ module Base
 {
 	model SC_CadillacGageRangerLights
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|base_mesh,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsDriver
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|DriverSeat_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsPassenger
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|RearDouble_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsWindshield
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|Windshield_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|FrontRightWindow_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -35,7 +35,7 @@ module Base
 	}
 	model CadillacGageRangerLightsFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model CadillacGageRangerLightsFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|FrontRightDoor_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model CadillacGageRangerLightsFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +59,19 @@ module Base
 	}
 	model CadillacGageRangerLightsRearRightWindow
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|RearRightWindow_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|RearLeftWindow_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsTrunk
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|RearDoor_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
@@ -80,14 +80,14 @@ module Base
 	}
 	model CadillacGageRangerLightsRearWindshield
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|RearWindshield_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}
 	model CadillacGageRangerLightsHood
 	{
-		mesh = vehicles/Vehicle_RangerPol_SC|Hood_obj,
+		mesh = vehicles/Special/Vehicle_RangerPol_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -95,25 +95,25 @@ module Base
 	}
 	model CadillacGageRangerLightsWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Ranger_LeftWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Ranger_LeftWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacGageRangerLightsWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Ranger_RightWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Ranger_RightWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacGageRangerLightsWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_Ranger_LeftWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Ranger_LeftWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacGageRangerLightsWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_Ranger_RightWheel,
+		mesh = vehicles/Special/Wheels/Vehicle_Ranger_RightWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
 		shader = vehiclewheel,
 	}

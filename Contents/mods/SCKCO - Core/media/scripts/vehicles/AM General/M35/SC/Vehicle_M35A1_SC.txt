@@ -2,81 +2,81 @@ module Base
 {
 	model SC_M35A1
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model M35A1GasTank
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FuelTank_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FuelTank_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1FrontHardTop
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|HardTop_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|HardTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1FrontSoftTop
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|SoftTop_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SoftTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1Tarp
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|Tarp_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Tarp_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1TarpFrame
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|TarpFrame_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TarpFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1SpareTire
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|SpareTire_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SpareTire_obj,
 		texture = vehicles/M35/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model M35A1Bumper
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontBumper_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1Driver
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1Passenger
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1Windshield
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1WindshieldRear
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|RearWindshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A1FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -85,7 +85,7 @@ module Base
 	}
 	model M35A1FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -94,7 +94,7 @@ module Base
 	}
 	model M35A1FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontRightDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -102,7 +102,7 @@ module Base
 	}
 	model M35A1FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|FrontLeftDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -110,7 +110,7 @@ module Base
 	}
 	model M35A1Trunk
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|TrunkDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -118,7 +118,7 @@ module Base
 	}
 	model M35A1Hood
 	{
-		mesh = vehicles/Vehicle_M35A1_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -126,25 +126,25 @@ module Base
 	}
 	model M35Wheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M35A1_FrontLeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_M35A1_FrontLeftWheel,
 		texture = Vehicles/M35/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
 	model M35Wheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M35A1_FrontRightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_M35A1_FrontRightWheel,
 		texture = Vehicles/M35/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 	}
 	model M35Wheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M35A1_RearLeftDoubleWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_M35A1_RearLeftDoubleWheel,
 		texture = Vehicles/M35/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}
 	model M35Wheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M35A1_RearRightDoubleWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_M35A1_RearRightDoubleWheel,
 		texture = Vehicles/M35/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}

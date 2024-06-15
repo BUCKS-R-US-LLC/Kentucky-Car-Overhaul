@@ -2,44 +2,44 @@ module Base
 {
 	model SC_M1025
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model HM1025Driver
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025Passenger
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025RearRightPassenger
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearRightSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025RearLeftPassenger
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearLeftSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025Windshield
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025FrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -47,7 +47,7 @@ module Base
 	}
 	model HM1025FrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -55,7 +55,7 @@ module Base
 	}
 	model HM1025RearRightWindow
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -63,7 +63,7 @@ module Base
 	}
 	model HM1025RearLeftWindow
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -71,7 +71,7 @@ module Base
 	}
 	model HM1025FrontRightDoor
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontRightDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 	}
 	model HM1025FrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|FrontLeftDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -87,7 +87,7 @@ module Base
 	}
 	model HM1025RearRightDoor
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearRightDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -95,7 +95,7 @@ module Base
 	}
 	model HM1025RearLeftDoor
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|RearLeftDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -103,7 +103,7 @@ module Base
 	}
 	model HM1025Trunk
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|TrunkDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -112,20 +112,20 @@ module Base
 	}
 	model HM1025SlantBase
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|SlantBase_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|SlantBase_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HM1025Slant
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|Slant_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Slant_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}
 	model HM1025Hood
 	{
-		mesh = vehicles/Vehicle_HM1025_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,25 +133,25 @@ module Base
 	}
 	model HMMWVWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_FrontLeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_FrontRightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_FrontRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_RearLeftWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_RearLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
 	model HMMWVWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HM_RearRightWheel,
+		mesh = vehicles/AMGeneral/Wheels/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}

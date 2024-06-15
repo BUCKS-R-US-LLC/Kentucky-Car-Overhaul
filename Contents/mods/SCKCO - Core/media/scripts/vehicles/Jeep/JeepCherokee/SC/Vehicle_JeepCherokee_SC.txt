@@ -2,38 +2,38 @@ module Base
 {
 	model SC_JeepCherokee
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|base_mesh,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model JeepCherokeeDriver
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|DriverSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePassenger
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|PassengerSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeDouble
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|Windshield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -41,7 +41,7 @@ module Base
 	}
 	model JeepCherokeeFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -49,7 +49,7 @@ module Base
 	}
 	model JeepCherokeeFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -57,7 +57,7 @@ module Base
 	}
 	model JeepCherokeeFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -65,19 +65,19 @@ module Base
 	}
 	model JeepCherokeeMiddleRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|MiddleRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeMiddleLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|MiddleLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|MiddleLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeRearRightWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -85,7 +85,7 @@ module Base
 	}
 	model JeepCherokeeRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftWindow_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -93,7 +93,7 @@ module Base
 	}
 	model JeepCherokeeFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontRightDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -101,7 +101,7 @@ module Base
 	}
 	model JeepCherokeeFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -109,7 +109,7 @@ module Base
 	}
 	model JeepCherokeeRearRightDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearRightDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -117,7 +117,7 @@ module Base
 	}
 	model JeepCherokeeRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearLeftDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -125,7 +125,7 @@ module Base
 	}
 	model JeepCherokeeTrunk
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|TrunkDoor_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -133,7 +133,7 @@ module Base
 	}
 	model JeepCherokeeHood
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|Hood_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -141,7 +141,7 @@ module Base
 	}
 	model JeepCherokeeRearWindshield
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|RearWindshield_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -149,32 +149,32 @@ module Base
 	}
 	model JeepCherokeeSpareTire
 	{
-		mesh = vehicles/Vehicle_JeepCherokee_SC|SpareTire_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|SpareTire_obj,
 		texture = vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 	model JeepCherokeefrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCherokee_LeftWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCherokee_LeftWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCherokeefrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCherokee_RightWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCherokee_RightWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCherokeebackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCherokee_LeftWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCherokee_LeftWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 	}
 	model JeepCherokeebackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_JeepCherokee_RightWheel,
+		mesh = vehicles/Jeep/Wheels/Vehicle_JeepCherokee_RightWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 	}

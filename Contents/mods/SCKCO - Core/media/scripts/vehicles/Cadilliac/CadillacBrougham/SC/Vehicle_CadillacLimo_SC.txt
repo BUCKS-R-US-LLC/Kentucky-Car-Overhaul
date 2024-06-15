@@ -2,51 +2,51 @@ module Base
 {
 	model SC_CadillacLimo
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|base_mesh,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model CadillacLimoDriver
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|DriverSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacLimoPassenger
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|PassengerSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacLimoDouble
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacLimoCenterWindows
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|base_mesh.001,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|base_mesh.001,
 		shader = vehicle_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model CadillacLimoWindshield
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|Windshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacLimoRearWindshield
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearWindshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacLimoFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -54,7 +54,7 @@ module Base
 	}
 	model CadillacLimoFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -62,7 +62,7 @@ module Base
 	}
 	model CadillacLimoRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -70,7 +70,7 @@ module Base
 	}
 	model CadillacLimoRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -78,7 +78,7 @@ module Base
 	}
 	model CadillacLimoFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -86,7 +86,7 @@ module Base
 	}
 	model CadillacLimoFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -94,7 +94,7 @@ module Base
 	}
 	model CadillacLimoRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -102,7 +102,7 @@ module Base
 	}
 	model CadillacLimoRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|RearLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -110,7 +110,7 @@ module Base
 	}
 	model CadillacLimoTrunk
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|Trunk_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -118,7 +118,7 @@ module Base
 	}
 	model CadillacLimoHood
 	{
-		mesh = vehicles/Vehicle_CadiLimo88_SC|Hood_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -126,25 +126,25 @@ module Base
 	}
 	model CadillacBroughamfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_LeftWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughamfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_RightWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughambackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_LeftWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}
 	model CadillacBroughambackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFlet86_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFlet86_RightWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
 		shader = vehiclewheel,
 	}

@@ -2,38 +2,38 @@ module Base
 {
 	model SC_HondaAccord
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|base_mesh,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
 	model HondaAccordDriver
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|DriverSeat_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordPassenger
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontPassengerSeat_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordDouble
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearPassengerSeatDouble_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordWindshield
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Windshield_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightWindow_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -42,7 +42,7 @@ module Base
 	}
 	model HondaAccordFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,19 +51,19 @@ module Base
 	}
 	model HondaAccordRearRightWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearRightWindow_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearLeftWindow_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontRightDoor_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -71,7 +71,7 @@ module Base
 	}
 	model HondaAccordFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -79,7 +79,7 @@ module Base
 	}
 	model HondaAccordTrunk
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Trunk_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -87,7 +87,7 @@ module Base
 	}
 	model HondaAccordHood
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|Hood_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -95,7 +95,7 @@ module Base
 	}
 	model HondaAccordRearWindshield
 	{
-		mesh = vehicles/Vehicle_HondaAccord_SC|RearWindshield_obj,
+		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -103,25 +103,25 @@ module Base
 	}
 	model HondaAccordfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
+		mesh = vehicles/Honda/Wheels/Vehicle_HondaAccord_LeftWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
 		shader = vehiclewheel,
 	}
 	model HondaAccordfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
+		mesh = vehicles/Honda/Wheels/Vehicle_HondaAccord_RightWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
 		shader = vehiclewheel,
 	}
 	model HondaAccordbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_LeftWheel,
+		mesh = vehicles/Honda/Wheels/Vehicle_HondaAccord_LeftWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
 		shader = vehiclewheel,
 	}
 	model HondaAccordbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_HondaAccord_RightWheel,
+		mesh = vehicles/Honda/Wheels/Vehicle_HondaAccord_RightWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
 		shader = vehiclewheel,
 	}

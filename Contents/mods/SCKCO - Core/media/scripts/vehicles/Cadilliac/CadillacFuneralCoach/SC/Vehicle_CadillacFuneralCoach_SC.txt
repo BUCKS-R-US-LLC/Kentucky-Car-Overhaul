@@ -2,32 +2,32 @@ module Base
 {
 	model SC_CadillacFuneralCoach
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|base_mesh,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model FuneralCoachSCDriver
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|DriverSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCPassenger
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|PassengerSeat_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCWindshield
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Windshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCRearWindshield
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -35,7 +35,7 @@ module Base
 	}
 	model FuneralCoachSCFrontRightWindow
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -43,7 +43,7 @@ module Base
 	}
 	model FuneralCoachSCFrontLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +51,7 @@ module Base
 	}
 	model FuneralCoachSCFrontRightDoor
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,7 +59,7 @@ module Base
 	}
 	model FuneralCoachSCFrontLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -67,7 +67,7 @@ module Base
 	}
 	model FuneralCoachSCRearRightDoor
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -75,7 +75,7 @@ module Base
 	}
 	model FuneralCoachSCRearLeftDoor
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftDoor_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -83,7 +83,7 @@ module Base
 	}
 	model FuneralCoachSCRearRightWindow
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
@@ -91,7 +91,7 @@ module Base
 	}
 	model FuneralCoachSCRearLeftWindow
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -99,7 +99,7 @@ module Base
 	}
 	model FuneralCoachSCTrunk
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Trunk_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -107,7 +107,7 @@ module Base
 	}
 	model FuneralCoachSCHood
 	{
-		mesh = vehicles/Vehicle_CadillacFuneralCoach_SC|Hood_obj,
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -115,25 +115,25 @@ module Base
 	}
 	model FuneralCoachWheelfrontwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
 		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelfrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
 		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelbackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFuneralCoach_LeftWheel,
 		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
 	model FuneralCoachWheelbackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
+		mesh = vehicles/Cadillac/Wheels/Vehicle_CadillacFuneralCoach_RightWheel,
 		texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_Wheel,
 		shader = vehiclewheel,
 	}
