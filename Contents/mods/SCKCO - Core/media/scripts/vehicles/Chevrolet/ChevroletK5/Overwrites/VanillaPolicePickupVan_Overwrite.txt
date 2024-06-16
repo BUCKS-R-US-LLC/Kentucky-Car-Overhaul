@@ -86,34 +86,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M1009PoliceWheelfrontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1009PoliceWheelfrontwheelleft
+	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1009PoliceWheelfrontwheelright
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1009PoliceWheelbackwheelleft
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model M1009PoliceWheelbackwheelright
-	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_M1009PoliceSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle PickUpVanLightsPolice

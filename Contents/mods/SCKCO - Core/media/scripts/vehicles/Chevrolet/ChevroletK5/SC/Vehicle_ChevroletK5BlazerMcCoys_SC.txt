@@ -86,34 +86,28 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerMcCoysWheelfrontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerMcCoysWheelfrontwheelleft
+	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerMcCoysWheelfrontwheelright
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerMcCoysWheelbackwheelleft
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerMcCoysWheelbackwheelright
-	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerMcCoysSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
+		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_ChevroletK5BlazerMcCoys

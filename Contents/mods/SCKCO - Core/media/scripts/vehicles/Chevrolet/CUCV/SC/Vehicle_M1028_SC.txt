@@ -80,30 +80,31 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model BlazerWheelfrontwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1028Wheelbackwheelleft
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_M1028A3_RearLeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1028Wheelbackwheelright
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Chevrolet/Wheels/Vehicle_M1028A3_RearRightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
+
 	vehicle SC_M1028A3
 	{
 		mechanicType = 2,

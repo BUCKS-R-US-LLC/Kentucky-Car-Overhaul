@@ -147,6 +147,30 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
+	model JeepCherokeefrontwheelleft
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
+		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCherokeefrontwheelright
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_RightWheel,
+		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCherokeebackwheelleft
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
+		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		shader = vehiclewheel,
+	}
+	model JeepCherokeebackwheelright
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_RightWheel,
+		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		shader = vehiclewheel,
+	}
 	vehicle SC_JeepCherokeeAudubon
 	{
 		mechanicType = 2,
