@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model FordTaurusFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model FordTaurusRearRightWindow
 	{
@@ -54,6 +56,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model FordTaurusRearLeftWindow
 	{
@@ -62,6 +65,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 	model FordTaurusFrontRightDoor
 	{
@@ -208,7 +212,7 @@ module Base
 		}
 
 		extents = 2.7119 1.8644 7.3220,
-		mass = 800,
+		mass = 100,
 		physicsChassisShape = 2.7119 1.8644 7.3220,
 		centerOfMassOffset = 0.0000 0.9492 0.1356,
 		shadowExtents = 2.7965 7.5602,
@@ -398,6 +402,7 @@ module Base
 			xywh = -1.3559 -1.8644 0.0000 0.0000,
 		}
 
+		template = TaurusAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,

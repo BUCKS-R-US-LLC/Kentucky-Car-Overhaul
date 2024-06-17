@@ -3,14 +3,14 @@ module Base
 
 	model K10Bullbar
 	{
-		mesh = vehicles/Vehicle_K10_SC|ExtraBar_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10_SC|ExtraBar_obj,
 		shader = vehiclewheel,
 		scale = 1,
 	}
 
 	model K10WindshieldArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|WindshieldArmor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehiclewheel,
 		scale = 1,
@@ -18,7 +18,7 @@ module Base
 
 	model K10FrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
@@ -28,7 +28,7 @@ module Base
 
 	model K10FrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_K10_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightWindowArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,

@@ -368,6 +368,154 @@ VehicleDistributions.SC_Sport = {
 }
 
 --------------------------------------------------------------------
+VehicleDistributions.MassGenFacGloveBox = {
+    rolls = 4,
+    items = {
+        "AlcoholWipes", 8,
+        "Bandage", 4,
+        "Bandaid", 10,
+        "Battery", 10,
+        "BluePen", 8,
+        "Cigarettes", 8,
+        "Cologne", 4,
+        "Comb", 4,
+        "CreditCard", 4,
+        "Disc_Retail", 2,
+        "DuctTape", 2,
+        "Earbuds", 2,
+        "Eraser", 6,
+        "Lighter", 4,
+        "Lipstick", 6,
+        "Magazine", 10,
+        "MakeupEyeshadow", 6,
+        "MakeupFoundation", 6,
+        "Matches", 8,
+        "Mirror", 4,
+        "Notebook", 10,
+        "Paperclip", 4,
+        "Pen", 8,
+        "Pencil", 10,
+        "Perfume", 4,
+        "Razor", 4,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "Scotchtape", 8,
+        "Tissue", 10,
+        "Twine", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "Camera", 0.03,
+            "CameraDisposable", 0.05,
+            "CameraExpensive", 0.001,
+            "Glasses_Aviators", 0.05,
+            "Glasses_SafetyGoggles", 20,
+            "Glasses_Sun", 0.1,
+            "Gloves_LeatherGloves", 20,
+            "Gloves_LeatherGlovesBlack", 0.05,
+            "HandTorch", 4,
+            "HuntingKnife", 0.1,
+            "LouisvilleMap1", 4,
+            "LouisvilleMap2", 4,
+            "LouisvilleMap3", 4,
+            "LouisvilleMap4", 4,
+            "LouisvilleMap5", 4,
+            "LouisvilleMap6", 4,
+            "LouisvilleMap7", 4,
+            "LouisvilleMap8", 4,
+            "LouisvilleMap9", 4,
+            "MarchRidgeMap", 4,
+            "MuldraughMap", 4,
+            "Pistol", 0.8,
+            "Pistol2", 0.6,
+            "Radio.CDplayer", 2,
+            "Radio.WalkieTalkie2", 2,
+            "Radio.WalkieTalkie3", 1,
+            "Revolver_Short", 0.8,
+            "RiversideMap", 4,
+            "RosewoodMap", 4,
+            "ToiletPaper", 4,
+            "Wallet", 4,
+            "Wallet2", 4,
+            "Wallet3", 4,
+            "Wallet4", 4,
+            "WestpointMap", 4,
+            "WhiskeyFull", 0.5,
+        }
+    }
+}
+
+VehicleDistributions.MassGenFacTruckBed = {
+    rolls = 4,
+    items = {
+        "BallPeenHammer", 10,
+        "BlowTorch", 10,
+        "DuctTape", 8,
+        "EmptyPetrolCan", 10,
+        "EmptySandbag", 4,
+        "Garbagebag", 6,
+        "Glasses_SafetyGoggles", 10,
+        "Hat_DustMask", 10,
+        "Hat_DustMask", 10,
+        "Hat_HardHat", 10,
+        "MetalBar", 20,
+        "MetalBar", 10,
+        "MetalPipe", 20,
+        "MetalPipe", 10,
+        "Plasticbag", 10,
+        "PopBottleEmpty", 4,
+        "PopEmpty", 4,
+        "PropaneTank", 10,
+        "RubberBand", 6,
+        "ScrapMetal", 20,
+        "ScrapMetal", 10,
+        "Screwdriver", 10,
+        "SheetMetal", 20,
+        "SheetMetal", 10,
+        "SmallSheetMetal", 20,
+        "SmallSheetMetal", 10,
+        "Tarp", 10,
+        "Tissue", 10,
+        "ToiletPaper", 6,
+        "Tote", 6,
+        "Twine", 10,
+        "Vest_Foreman", 1,
+        "Vest_HighViz", 4,
+        "WaterBottleEmpty", 4,
+        "WeldingMask", 10,
+        "WeldingRods", 20,
+        "WhiskeyEmpty", 1,
+        "Wire", 20,
+        "Wire", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "BaseballBat", 1,
+            "CarBattery2", 4,
+            "FirstAidKit", 4,
+            "Jack", 2,
+            "LugWrench", 8,
+            "NormalTire2", 10,
+            "PropaneTank", 50,
+            "Screwdriver", 10,
+            "TirePump", 8,
+            "Wrench", 8,
+        }
+    }
+}
+
+VehicleDistributions.MassGenFac = {
+    TruckBed = VehicleDistributions.MassGenFacTruckBed;
+
+    GloveBox = VehicleDistributions.MassGenFacGloveBox;
+
+    SeatRearLeft = VehicleDistributions.Seat;
+    SeatRearRight = VehicleDistributions.Seat;
+}
+
+--------------------------------------------------------------------
 
 VehicleDistributions.SC_Military = {
     TruckBed = VehicleDistributions.SC_MilitaryTruckBed,
@@ -832,6 +980,7 @@ VehicleDistributions.SC_Ambulance = {
 distributionTable["SC_HondaAccord"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_VWRabbit"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_VWRabbitPizza"] = { Normal = VehicleDistributions.SC_Standard}
+distributionTable["PickupVan"] = { Normal = VehicleDistributions.SC_Standard} 
 distributionTable["SC_ChevroletK5Blazer"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletK5BlazerFossoil"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletK5BlazerMcCoys"] = { Normal = VehicleDistributions.SC_Standard}
@@ -850,6 +999,7 @@ distributionTable["SC_ChevroletCaprice85"] = { Normal = VehicleDistributions.SC_
 distributionTable["SC_FordCountrySquire"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletG30Windowless"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletG30Seats"] = { Normal = VehicleDistributions.SC_Standard}
+distributionTable["CarNormal"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_FordCrownVictoria85"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_FordCrownVictoria92"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletSuburban"] = { Normal = VehicleDistributions.SC_Standard}

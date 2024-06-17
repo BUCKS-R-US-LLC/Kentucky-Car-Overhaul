@@ -1,9 +1,167 @@
 module Base
 {
+
+    model TaurusBullbar
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model TaurusWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model TaurusFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model TaurusFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model TaurusRearLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model TaurusRearRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model TaurusFLWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model TaurusFRWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model TaurusRLWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model TaurusRRWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordTaurus86_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
     template vehicle TaurusAttachments
 	{
 
 	    template = FourSeaterFootwellSpace,
+        
+        template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = TaurusBullbar, }
+            itemType = Base.FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = TaurusWindshieldArmor, }
+            itemType = Base.FordTaurusWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = TaurusFRWA, }
+            itemType = Base.FordTaurusDoorArmorSC,
+            requireInstalled = FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = TaurusFLWA, }
+            itemType = Base.FordTaurusWindowArmorSC,
+            requireInstalled = FordTaurusWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = TaurusFrontRightDoorArmor, }
+            itemType = Base.FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = TaurusFrontLeftDoorArmor, }
+            itemType = Base.FordTaurusDoorArmorSC,
+        }
+
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = TaurusRRWA, }
+            itemType = Base.FordTaurusDoorArmorSC,
+            requireInstalled = FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = TaurusRLWA, }
+            itemType = Base.FordTaurusWindowArmorSC,
+            requireInstalled = FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = TaurusRearRightDoorArmor, }
+            itemType = Base.FordTaurusDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = TaurusRearLeftDoorArmor, }
+            itemType = Base.FordTaurusDoorArmorSC,
+        }
         
     }
 }
