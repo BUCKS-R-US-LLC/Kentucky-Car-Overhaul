@@ -91,7 +91,101 @@ module Base
 		scale = 1,
 	}
 
+	model G30AmbulanceBullbar
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|HoodArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
 
+	model G30AmbulanceWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30AmbulanceFrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+
+ template vehicle G30AmbulanceAttachments
+    {
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = G30AmbulanceBullbar, }
+            itemType = Base.ChevyG30BullbarSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = G30AmbulanceFrontRightWindowArmor, }
+            itemType = Base.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = G30AmbulanceFrontLeftWindowArmor, }
+            itemType = Base.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = G30AmbulanceFrontRightDoorArmor, }
+            itemType = Base.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = G30AmbulanceFrontLeftDoorArmor, }
+            itemType = Base.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = G30AmbulanceWindshieldArmor, }
+            itemType = Base.ChevyG30WindshieldArmorSC,
+        }
+    }
+    
     template vehicle G30WindowedAttachments
     {
         template = PassengerVanFootwellSpace,
