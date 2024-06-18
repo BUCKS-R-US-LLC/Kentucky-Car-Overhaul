@@ -105,6 +105,27 @@ module Base
             itemType = Base.ToyotaCamryWindowArmorSC,
         }
 
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CamryRearLeftWindowArmor, }
+            itemType = Base.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CamryRearRightWindowArmor, }
+            itemType = Base.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CamryWindshieldArmor, }
+            itemType = Base.ToyotaCamryWindshieldArmorSC,
+        }
+
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
@@ -117,20 +138,6 @@ module Base
         {
             model Default { file = CamryFrontLeftDoorArmor, }
             itemType = Base.ToyotaCamryDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearRightWindow,
-        part SCArmorRearRightWindow
-        {
-            model Default { file = CamryRearRightWindowArmor, }
-            itemType = Base.ToyotaCamryWindowArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftWindow,
-        part SCArmorRearLeftWindow
-        {
-            model Default { file = CamryRearLeftWindowArmor, }
-            itemType = Base.ToyotaCamryWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
@@ -146,8 +153,8 @@ module Base
             model Default { file = CamryRearLeftDoorArmor, }
             itemType = Base.ToyotaCamryDoorArmorSC,
         }
-
-        template = armorUpgrades/part/SCArmorWindshield,
+		
+	    template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = CamryWindshieldArmor, }

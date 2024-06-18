@@ -189,6 +189,7 @@ module Base
     {
         template = FourSeaterFootwellSpace,
 	    template = armorUpgrades/part/SCArmorBumper,
+        
 	    part SCArmorBumper
 	    {
             model Default { file = VWRabbitBullbar, }
@@ -232,6 +233,20 @@ module Base
             itemType = Base.VWRabbitDoorArmorSC,
         }
 
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = VWRabbitRearRightDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = VWRabbitRearLeftDoorArmor, }
+            itemType = Base.VWRabbitDoorArmorSC,
+        }
+
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
@@ -248,18 +263,5 @@ module Base
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
-        template = armorUpgrades/part/SCArmorRearRightDoor,
-        part SCArmorRearRightDoor
-        {
-            model Default { file = VWRabbitRearRightDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftDoor,
-        part SCArmorRearLeftDoor
-        {
-            model Default { file = VWRabbitRearLeftDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
-        }
 	}	
 }

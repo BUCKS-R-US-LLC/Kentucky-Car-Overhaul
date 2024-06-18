@@ -140,6 +140,22 @@ module Base
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CountrySquireRRWA, }
+            itemType = Base.FordCrownVictoria85WindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CountrySquireRLWA, }
+            itemType = Base.FordCrownVictoria85WindowArmorSC,
+            requireInstalled = FordCrownVictoriaDoorArmorSC,
+        }
+
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
@@ -154,24 +170,7 @@ module Base
             itemType = Base.FordCrownVictoria85DoorArmorSC,
         }
         
-
-        template = armorUpgrades/part/SCArmorRearRightWindow,
-        part SCArmorRearRightWindow
-        {
-            model Default { file = CountrySquireRRWA, }
-            itemType = Base.FordCrownVictoria85DoorArmorSC,
-            requireInstalled = FordCrownVictoriaDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftWindow,
-        part SCArmorRearLeftWindow
-        {
-            model Default { file = CountrySquireRLWA, }
-            itemType = Base.FordCrownVictoria85WindowArmorSC,
-            requireInstalled = FordCrownVictoriaDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearRightDoor,
+		template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = CountrySquireRearRightDoorArmor, }
