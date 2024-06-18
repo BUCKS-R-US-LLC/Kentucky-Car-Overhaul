@@ -27,9 +27,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5Blazer"] = {imgPrefix = "blaze
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5BlazerParkRanger"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5BlazerMcCoys"] = {imgPrefix = "blazer_", x=0,y=0};
 
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCapriceLVPD85"] = {imgPrefix = "caprice_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCapriceParkRanger85"] = {imgPrefix = "caprice_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCapriceStatePolice85"] = {imgPrefix = "caprice_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCaprice85ParkRanger"] = {imgPrefix = "caprice_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCaprice85"] = {imgPrefix = "caprice_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCavalier"] = {imgPrefix = "cavalier_", x=0,y=0};

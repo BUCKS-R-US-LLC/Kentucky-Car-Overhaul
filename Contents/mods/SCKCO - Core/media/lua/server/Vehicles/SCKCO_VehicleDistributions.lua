@@ -368,7 +368,8 @@ VehicleDistributions.SC_Sport = {
 }
 
 --------------------------------------------------------------------
-VehicleDistributions.MassGenFacGloveBox = {
+
+VehicleDistributions.ElectricCompanyGloveBox = {
     rolls = 4,
     items = {
         "AlcoholWipes", 8,
@@ -377,115 +378,39 @@ VehicleDistributions.MassGenFacGloveBox = {
         "Battery", 10,
         "BluePen", 8,
         "Cigarettes", 8,
-        "Cologne", 4,
-        "Comb", 4,
-        "CreditCard", 4,
-        "Disc_Retail", 2,
         "DuctTape", 2,
         "Earbuds", 2,
         "Eraser", 6,
         "Lighter", 4,
-        "Lipstick", 6,
         "Magazine", 10,
-        "MakeupEyeshadow", 6,
-        "MakeupFoundation", 6,
         "Matches", 8,
         "Mirror", 4,
         "Notebook", 10,
         "Paperclip", 4,
         "Pen", 8,
         "Pencil", 10,
-        "Perfume", 4,
-        "Razor", 4,
         "RedPen", 8,
         "RubberBand", 6,
         "Scotchtape", 8,
-        "Tissue", 10,
-        "Twine", 10,
     },
     junk = {
         rolls = 1,
         items = {
-            "Camera", 0.03,
-            "CameraDisposable", 0.05,
-            "CameraExpensive", 0.001,
-            "Glasses_Aviators", 0.05,
-            "Glasses_SafetyGoggles", 20,
-            "Glasses_Sun", 0.1,
             "Gloves_LeatherGloves", 20,
             "Gloves_LeatherGlovesBlack", 0.05,
             "HandTorch", 4,
-            "HuntingKnife", 0.1,
-            "LouisvilleMap1", 4,
-            "LouisvilleMap2", 4,
-            "LouisvilleMap3", 4,
-            "LouisvilleMap4", 4,
-            "LouisvilleMap5", 4,
-            "LouisvilleMap6", 4,
-            "LouisvilleMap7", 4,
-            "LouisvilleMap8", 4,
-            "LouisvilleMap9", 4,
-            "MarchRidgeMap", 4,
-            "MuldraughMap", 4,
-            "Pistol", 0.8,
-            "Pistol2", 0.6,
-            "Radio.CDplayer", 2,
-            "Radio.WalkieTalkie2", 2,
-            "Radio.WalkieTalkie3", 1,
-            "Revolver_Short", 0.8,
-            "RiversideMap", 4,
-            "RosewoodMap", 4,
-            "ToiletPaper", 4,
-            "Wallet", 4,
-            "Wallet2", 4,
-            "Wallet3", 4,
-            "Wallet4", 4,
-            "WestpointMap", 4,
-            "WhiskeyFull", 0.5,
         }
     }
 }
 
-VehicleDistributions.MassGenFacTruckBed = {
+VehicleDistributions.ElectricCompanyTruckBed = {
     rolls = 4,
     items = {
-        "BallPeenHammer", 10,
-        "BlowTorch", 10,
         "DuctTape", 8,
-        "EmptyPetrolCan", 10,
-        "EmptySandbag", 4,
-        "Garbagebag", 6,
-        "Glasses_SafetyGoggles", 10,
-        "Hat_DustMask", 10,
-        "Hat_DustMask", 10,
         "Hat_HardHat", 10,
-        "MetalBar", 20,
-        "MetalBar", 10,
-        "MetalPipe", 20,
-        "MetalPipe", 10,
-        "Plasticbag", 10,
-        "PopBottleEmpty", 4,
-        "PopEmpty", 4,
-        "PropaneTank", 10,
-        "RubberBand", 6,
-        "ScrapMetal", 20,
-        "ScrapMetal", 10,
         "Screwdriver", 10,
-        "SheetMetal", 20,
-        "SheetMetal", 10,
-        "SmallSheetMetal", 20,
-        "SmallSheetMetal", 10,
-        "Tarp", 10,
-        "Tissue", 10,
-        "ToiletPaper", 6,
-        "Tote", 6,
-        "Twine", 10,
         "Vest_Foreman", 1,
         "Vest_HighViz", 4,
-        "WaterBottleEmpty", 4,
-        "WeldingMask", 10,
-        "WeldingRods", 20,
-        "WhiskeyEmpty", 1,
         "Wire", 20,
         "Wire", 10,
     },
@@ -498,7 +423,6 @@ VehicleDistributions.MassGenFacTruckBed = {
             "Jack", 2,
             "LugWrench", 8,
             "NormalTire2", 10,
-            "PropaneTank", 50,
             "Screwdriver", 10,
             "TirePump", 8,
             "Wrench", 8,
@@ -506,11 +430,13 @@ VehicleDistributions.MassGenFacTruckBed = {
     }
 }
 
-VehicleDistributions.MassGenFac = {
-    TruckBed = VehicleDistributions.MassGenFacTruckBed;
-
-    GloveBox = VehicleDistributions.MassGenFacGloveBox;
-
+VehicleDistributions.ElectricCompany = {
+    TruckBed = VehicleDistributions.ElectricCompanyTruckBed;
+    TruckBedOpen = VehicleDistributions.ElectricCompanyTruckBed;
+    FrontFootwellSpace = VehicleDistributions.SC_StandardFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_StandardFootwellSpace,
+    GloveBox = VehicleDistributions.ElectricCompanyGloveBox;
+    BackOfTruck = VehicleDistributions.ElectricCompanyTruckBed;
     SeatRearLeft = VehicleDistributions.Seat;
     SeatRearRight = VehicleDistributions.Seat;
 }
@@ -699,6 +625,165 @@ VehicleDistributions.SC_Militia = {
 
 --------------------------------------------------------------------
 
+VehicleDistributions.SC_StatePoliceGlovebox = {
+    rolls = 4,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "WaterBottleFull", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "Pistol", 8,
+        }
+    }
+}
+
+VehicleDistributions.SC_StatePoliceFootwellSpace = {
+    rolls = 1,
+    items = {
+        "Pen", 1,
+        "RedPen", 1,
+        "RubberBand", 1,
+    }
+}
+
+VehicleDistributions.SC_StatePoliceTruckBed = {
+    rolls = 4,
+    items = {
+        "Mov_RoadCone", 10,
+    }
+}
+
+VehicleDistributions.SC_StatePoliceGunRack = {
+    rolls = 100,
+    items = {
+        "AssaultRifle2", 100,
+        "Shotgun", 100,
+    }
+}
+
+VehicleDistributions.SC_StatePolice = {
+    TruckBed = VehicleDistributions.SC_StatePoliceTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_StatePoliceTruckBed,
+    GunRackSC = VehicleDistributions.SC_StatePoliceGunRack,
+    FrontFootwellSpace = VehicleDistributions.SC_StatePoliceFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_StatePoliceFootwellSpace,
+    GloveBox = VehicleDistributions.SC_StatePoliceGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
+--------------------------------------------------------------------
+
+VehicleDistributions.SC_CityPoliceGlovebox = {
+    rolls = 4,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "WaterBottleFull", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "Pistol", 8,
+        }
+    }
+}
+
+VehicleDistributions.SC_CityPoliceFootwellSpace = {
+    rolls = 1,
+    items = {
+        "Pen", 1,
+        "RedPen", 1,
+        "RubberBand", 1,
+    }
+}
+
+VehicleDistributions.SC_CityPoliceTruckBed = {
+    rolls = 4,
+    items = {
+        "Mov_RoadCone", 10,
+    }
+}
+
+VehicleDistributions.SC_CityPoliceGunRack = {
+    rolls = 100,
+    items = {
+        "AssaultRifle2", 100,
+        "Shotgun", 100,
+    }
+}
+
+VehicleDistributions.SC_CityPolice = {
+    TruckBed = VehicleDistributions.SC_CityPoliceTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_CityPoliceTruckBed,
+    GunRackSC = VehicleDistributions.SC_CityPoliceGunRack,
+    FrontFootwellSpace = VehicleDistributions.SC_CityPoliceFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_CityPoliceFootwellSpace,
+    GloveBox = VehicleDistributions.SC_CityPoliceGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
+--------------------------------------------------------------------
+
+VehicleDistributions.SC_DeputySheriffGlovebox = {
+    rolls = 4,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "WaterBottleFull", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "Pistol", 8,
+        }
+    }
+}
+
+VehicleDistributions.SC_DeputySheriffFootwellSpace = {
+    rolls = 1,
+    items = {
+        "Pen", 1,
+        "RedPen", 1,
+        "RubberBand", 1,
+    }
+}
+
+VehicleDistributions.SC_DeputySheriffTruckBed = {
+    rolls = 4,
+    items = {
+        "Mov_RoadCone", 10,
+    }
+}
+
+VehicleDistributions.SC_DeputySheriffGunRack = {
+    rolls = 100,
+    items = {
+        "AssaultRifle2", 100,
+        "Shotgun", 100,
+    }
+}
+
+VehicleDistributions.SC_DeputySheriff = {
+    TruckBed = VehicleDistributions.SC_DeputySheriffTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_DeputySheriffTruckBed,
+    GunRackSC = VehicleDistributions.SC_DeputySheriffGunRack,
+    FrontFootwellSpace = VehicleDistributions.SC_DeputySheriffFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_DeputySheriffFootwellSpace,
+    GloveBox = VehicleDistributions.SC_DeputySheriffGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
+--------------------------------------------------------------------
+
 VehicleDistributions.SC_PoliceGlovebox = {
     rolls = 4,
     items = {
@@ -746,6 +831,59 @@ VehicleDistributions.SC_Police = {
     FrontFootwellSpace = VehicleDistributions.SC_PoliceFootwellSpace,
     RearFootwellSpace = VehicleDistributions.SC_PoliceFootwellSpace,
     GloveBox = VehicleDistributions.SC_PoliceGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
+--------------------------------------------------------------------
+
+VehicleDistributions.SC_PoliceTacticalGlovebox = {
+    rolls = 4,
+    items = {
+        "Pen", 8,
+        "RedPen", 8,
+        "RubberBand", 6,
+        "WaterBottleFull", 10,
+    },
+    junk = {
+        rolls = 1,
+        items = {
+            "Pistol", 8,
+        }
+    }
+}
+
+VehicleDistributions.SC_PoliceTacticalFootwellSpace = {
+    rolls = 1,
+    items = {
+        "Pen", 1,
+        "RedPen", 1,
+        "RubberBand", 1,
+    }
+}
+
+VehicleDistributions.SC_PoliceTacticalTruckBed = {
+    rolls = 4,
+    items = {
+        "Mov_RoadCone", 10,
+    }
+}
+
+VehicleDistributions.SC_PoliceTacticalGunRack = {
+    rolls = 100,
+    items = {
+        "AssaultRifle", 100,
+        "Shotgun", 100,
+    }
+}
+
+VehicleDistributions.SC_PoliceTactical = {
+    TruckBed = VehicleDistributions.SC_PoliceTacticalTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_PoliceTacticalTruckBed,
+    GunRackSC = VehicleDistributions.SC_PoliceTacticalGunRack,
+    FrontFootwellSpace = VehicleDistributions.SC_PoliceTacticalFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_PoliceTacticalFootwellSpace,
+    GloveBox = VehicleDistributions.SC_PoliceTacticalGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
 }
@@ -1030,27 +1168,39 @@ distributionTable["SC_CadillacBrougham"] = { Normal = VehicleDistributions.SC_Lu
 distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Luxury}
 distributionTable["SC_Mercedes280"] = { Normal = VehicleDistributions.SC_Luxury}
 
-distributionTable["SC_FordMustang90Undercover"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_FordMustang90StatePolice"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_FordMustang90Jefferson"] = { Normal = VehicleDistributions.SC_Police }
-
 distributionTable["SC_FordF700ArmoredBank"] = { Normal = VehicleDistributions.SC_BankCar}
 
-distributionTable["SC_FordF700ArmoredPolice"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_ChevroletP30SWAT"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_FordCrownVictoriaStatePolice85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_FordCrownVictoriaParkRanger85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_FordCrownVictoriaLVPD85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_ChevroletCapriceStatePolice85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_ChevroletCapriceParkRanger85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_ChevroletCapriceLVPD85"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["SC_ChevroletSuburbanStatePolice"] = { Normal = VehicleDistributions.SC_Police }
-distributionTable["PickUpVanLightsPolice"] = { Normal = VehicleDistributions.SC_Police } 
-distributionTable["CarLightsPolice"] = { Normal = VehicleDistributions.SC_Police } 
-distributionTable["CarLights"] = { Normal = VehicleDistributions.SC_Police } 
-distributionTable["PickUpTruckLIghts"] = { Normal = VehicleDistributions.SC_Police } 
-distributionTable["SC_ChevroletK10ParkRanger"] = { Normal = VehicleDistributions.SC_Police } 
-distributionTable["SC_ChevroletK5ParkRanger"] = { Normal = VehicleDistributions.SC_Police } 
+-- City Police
+distributionTable["SC_FordMustang90Undercover"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordMustang90JeffersonPolice"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria85LouisvillePolice"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria85JeffersonPolice"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria85LouisvillePolice"] = { Normal = VehicleDistributions.SC_CityPolice }
+
+-- State Police
+distributionTable["SC_FordMustang90StatePolice"] = { Normal = VehicleDistributions.SC_StatePolice }
+distributionTable["SC_FordCrownVictoriaStatePolice85"] = { Normal = VehicleDistributions.SC_StatePolice }
+distributionTable["SC_ChevroletSuburbanStatePolice"] = { Normal = VehicleDistributions.SC_StatePolice }
+distributionTable["PickUpVanLightsPolice"] = { Normal = VehicleDistributions.SC_StatePolice }
+distributionTable["CarLightsPolice"] = { Normal = VehicleDistributions.SC_StatePolice }
+distributionTable["PickUpTruckLights"] = { Normal = VehicleDistributions.SC_StatePolice }
+
+-- Park Ranger
+distributionTable["SC_FordCrownVictoriaParkRanger85"] = { Normal = VehicleDistributions.SC_ParkRanger }
+distributionTable["SC_ChevroletCapriceParkRanger85"] = { Normal = VehicleDistributions.SC_ParkRanger }
+distributionTable["CarLights"] = { Normal = VehicleDistributions.SC_ParkRanger }
+distributionTable["SC_ChevroletK10ParkRanger"] = { Normal = VehicleDistributions.SC_ParkRanger }
+distributionTable["SC_ChevroletK5ParkRanger"] = { Normal = VehicleDistributions.SC_ParkRanger }
+
+-- Deputy Sheriff
+distributionTable["SC_FordCrownVictoriaJeffersonSheriff92"] = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoriaMeadeSheriff92"] = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoriaMuhlenSheriff92"] = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoriaWarrenSheriff92"] = { Normal = VehicleDistributions.SC_DeputySheriff }
+
+-- Police Tactical
+distributionTable["SC_ChevroletP30SWAT"] = { Normal = VehicleDistributions.SC_PoliceTactical }
+distributionTable["SC_FordF700ArmoredPolice"] = { Normal = VehicleDistributions.SC_PoliceTactical }
 
 distributionTable["SC_HahnPumperRed"] = { Normal = VehicleDistributions.SC_HahnPumper }
 distributionTable["SC_HahnPumperYellow"] = { Normal = VehicleDistributions.SC_HahnPumper }
@@ -1082,3 +1232,6 @@ distributionTable["StepVanMail"] = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["StepVan_Heralds"] = { Normal = VehicleDistributions.SC_PaperCar }
 distributionTable["SC_ChevroletP30Heralds"] = { Normal = VehicleDistributions.SC_PaperCar }
 distributionTable["SC_ChevroletG30Heralds"] = { Normal = VehicleDistributions.SC_PaperCar }
+
+distributionTable["Van_MassGenFac"] = { Normal = VehicleDistributions.SC_ElectricCompany }
+distributionTable["SC_ChevroletG30MassGenFac"] = { Normal = VehicleDistributions.SC_ElectricCompany }

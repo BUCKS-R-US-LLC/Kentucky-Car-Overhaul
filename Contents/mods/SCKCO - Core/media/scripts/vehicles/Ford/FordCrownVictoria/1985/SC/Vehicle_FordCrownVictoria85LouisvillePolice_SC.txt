@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_CrownVictoriaParkRanger85
+	model SC_CrownVictoriaLVPD85
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -147,7 +147,7 @@ module Base
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordCrownVictoriaParkRanger85
+	vehicle SC_FordCrownVictoria85LouisvillePolice
 	{
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
@@ -156,14 +156,14 @@ module Base
 
 		model
 		{
-			file = SC_CrownVictoriaParkRanger85,
+			file = SC_CrownVictoriaLVPD85,
 			scale = 0.5900,
 			offset = 0.0000 -0.0508 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_ParkRanger,
+			texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_LVPD,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
