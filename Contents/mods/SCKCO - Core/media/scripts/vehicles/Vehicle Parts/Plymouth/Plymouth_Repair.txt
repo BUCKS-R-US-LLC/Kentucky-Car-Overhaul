@@ -22,7 +22,7 @@ module Base
 
 	fixing Fix Plymouth Trunk Lid Welding
     {
-       Require : PlymouthVoyagerTrunkLidSC1;PlymouthVoyagerTrunkLidSC1;PlymouthSportTrunkLidSC1,
+       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC1;PlymouthSportTrunkLidSC1,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module Base
 
     fixing Fix Plymouth Trunk Lid
 	{
-       Require : PlymouthVoyagerTrunkLidSC1;PlymouthVoyagerTrunkLidSC1,
+       Require : PlymouthStandardTrunkLidSC1;PlymouthVoyagerTrunkLidSC1;,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
