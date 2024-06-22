@@ -160,7 +160,7 @@ end
 function luaEvents.armorAbsorb(part, damage)
     local armorBehavior = part:getTable("armorBehavior")
     if not armorBehavior then return 1 end
-    local absorptionRate = armorBehavior.damageAbsorptionOneTo
+    local absorptionRate = armorBehavior.damageAbsorptionOneTo or 1
     return damage * absorptionRate
 end
 
