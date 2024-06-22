@@ -157,6 +157,14 @@ function luaEvents.processPartDamages(player, vehicle)
 end
 
 
+function luaEvents.armorAbsorb(part, damage)
+    local armorBehavior = part:getTable("armorBehavior")
+    if not armorBehavior then return 1 end
+    local absorptionRate = armorBehavior.damageAbsorptionOneTo
+    return damage * absorptionRate
+end
+
+
 function luaEvents.applyDamageToArmor(player)
 
     local data = luaEvents.processVehicleHits[player]
@@ -182,7 +190,9 @@ function luaEvents.applyDamageToArmor(player)
             --print("-- applyDamageToArmor: ", armor:getId())
 
             local pCond = math.max(math.min(parent:getCondition()+recordedDamage, 100), 0)
-            local aCond = math.max(math.min(armor:getCondition()-recordedDamage, 100), 0)
+
+            local damageToArmor = luaEvents.armorAbsorb(armor, recordedDamage)
+            local aCond = math.max(math.min(armor:getCondition()-damageToArmor, 100), 0)
 
             sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = parent:getId(), condition=pCond })
             sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = armor:getId(), condition=aCond })
