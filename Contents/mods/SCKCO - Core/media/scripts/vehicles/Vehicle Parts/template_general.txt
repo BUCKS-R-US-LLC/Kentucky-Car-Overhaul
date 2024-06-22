@@ -267,6 +267,12 @@ module Base {
             category = SCUCKarmor,
             mechanicRequireKey = false,
 
+            table armorBehavior
+            {
+                /* 1 : 1 - armor takes all damage, 1 : 0.5 = armor takes 50% */
+                damageAbsorptionOneTo = 1
+            }
+
             table install
             {
                 items {
