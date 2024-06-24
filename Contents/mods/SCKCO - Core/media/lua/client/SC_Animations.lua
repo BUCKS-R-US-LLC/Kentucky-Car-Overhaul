@@ -185,6 +185,8 @@ local vehicleToSeatAnimations = {
 	["Base.SC_FordCrownVictoria92Louisville"] = "Default",
 	["Base.SC_FordCrownVictoria92Warren"] = "Default",
 	["Base.SC_FordCrownVictoria92Muhlen"] = "Default",
+	["Base.SUV"] = "Default",
+	["Base.SC_FordExplorer"] = "Default",
 
 	["Base.SC_M1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_M1010Ambulance"] = "6SideSeater",

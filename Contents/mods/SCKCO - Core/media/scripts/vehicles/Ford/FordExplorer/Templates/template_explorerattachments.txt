@@ -1,8 +1,169 @@
 module Base
 {
 
+	model FordExplorerBullbar
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FordExplorerWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FordExplorerFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model FordExplorerFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+    model FordExplorerRearLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+	model FordExplorerRearRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+	model FordExplorerFLWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+       scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model FordExplorerFRWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model FordExplorerRLWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model FordExplorerRRWA
+	{
+		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
     template vehicle ExplorerAttachments
 	{
-		template = FourSeaterFootwellSpace,
+
+	    template = FourSeaterFootwellSpace,
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = FordExplorerBullbar, }
+            itemType = Base.FordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = FordExplorerWindshieldArmor, }
+            itemType = Base.FordExplorerWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = FordExplorerFRWA, }
+            itemType = Base.FordExplorerDoorArmorSC,
+            requireInstalled = FordFordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = FordExplorerFLWA, }
+            itemType = Base.FordExplorerWindowArmorSC,
+            requireInstalled = FordFordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = FordExplorerFrontRightDoorArmor, }
+            itemType = Base.FordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = FordExplorerFrontLeftDoorArmor, }
+            itemType = Base.FordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = FordExplorerRearRightDoorArmor, }
+            itemType = Base.FordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = FordExplorerRearLeftDoorArmor, }
+            itemType = Base.FordExplorerDoorArmorSC,
+        }
+        
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = FordExplorerRRWA, }
+            itemType = Base.FordExplorerWindowArmorSC,
+            requireInstalled = FordFordExplorerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = FordExplorerRLWA, }
+            itemType = Base.FordExplorerWindowArmorSC,
+            requireInstalled = FordFordExplorerDoorArmorSC,
+        }
+
     }
 }
