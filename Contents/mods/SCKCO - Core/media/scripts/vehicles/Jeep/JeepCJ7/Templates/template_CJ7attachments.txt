@@ -1,8 +1,57 @@
 module Base
 {
+
+    model JeepCJ7Bullbar
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontBumper_obj,
+		shader = vehiclewheel,
+        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+		scale = 1,
+	}
+
+	model JeepCJ7WindshieldArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+		scale = 1,
+	}
+
+	model JeepCJ7FrontLeftDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepCJ7FrontRightDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepCJ7FLWA
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model JeepCJ7FRWA
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
 	model CJ7softtop
 	{
-		mesh = vehicles/Vehicle_JeepCJ7_SC|Softtop_obj,
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Softtop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -10,6 +59,50 @@ module Base
 	template vehicle CJ7Attachments
 	{
         
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = JeepCJ7Bullbar, }
+            itemType = Base.JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = JeepCJ7WindshieldArmor, }
+            itemType = Base.JeepCJ7WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = JeepCJ7FRWA, }
+            itemType = Base.JeepCJ7DoorArmorSC,
+            requireInstalled = JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = JeepCJ7FLWA, }
+            itemType = Base.JeepCJ7WindowArmorSC,
+            requireInstalled = JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = JeepCJ7FrontRightDoorArmor, }
+            itemType = Base.JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = JeepCJ7FrontLeftDoorArmor, }
+            itemType = Base.JeepCJ7DoorArmorSC,
+        }
+
         template = TwoSeaterFootwellSpace,
 
 		part CJ7softtop
