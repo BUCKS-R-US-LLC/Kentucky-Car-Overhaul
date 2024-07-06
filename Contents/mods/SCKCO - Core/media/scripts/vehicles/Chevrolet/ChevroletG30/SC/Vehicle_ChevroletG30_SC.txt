@@ -224,8 +224,8 @@ module Base
 		centerOfMassOffset = 0.0000 1.5593 -0.7966,
 		shadowExtents = 3.3295 8.3058,
 		shadowOffset = -0.0042 -0.8042,
-		maxSpeed = 90f,
-		engineForce = 6500,
+		maxSpeed = 60f,
+		engineForce = 4000,
 		engineQuality = 70,
 		engineLoudness = 100,
 		brakingForce = 60,
@@ -408,7 +408,7 @@ module Base
 		{
 			xywh = 0.0000 -5.5932 3.3220 1.0169,
 		}
-
+		
 		template = G30ThirtyLogo,
 		template = G30WindowlessAttachments,
 		template = Seat/part/SeatFrontLeft,
@@ -416,7 +416,6 @@ module Base
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
-		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
@@ -641,22 +640,12 @@ module Base
 			itemType = Base.ChevyG30WindowSC,
 		}
 
-		template = G30WindowlessAttachments,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
-		part TruckBed
-		{
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-		}
 		part WindowFrontRight
 		{
 			model windowFR
