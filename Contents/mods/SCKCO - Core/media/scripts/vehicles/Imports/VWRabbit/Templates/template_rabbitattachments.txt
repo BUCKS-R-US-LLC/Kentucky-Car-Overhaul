@@ -2,7 +2,7 @@ module Base
 {
 	model PizzaTopper
 	{
-		mesh = vehicles/PizzaTopper,
+		mesh = vehicles/Attachments/PizzaTopper,
 		texture = Vehicles/VWRabbit/PizzaTopper,
 		shader = vehiclewheel,
 		scale = 1,
@@ -10,21 +10,21 @@ module Base
 
 	model VWRabbitBullbar
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontBumper_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model VWRabbitWindshieldArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|WindshieldArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|WindshieldArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
 	model VWRabbitFrontLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -32,7 +32,7 @@ module Base
 
 	model VWRabbitFrontRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -40,7 +40,7 @@ module Base
 
     model VWRabbitRearLeftDoorArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -48,7 +48,7 @@ module Base
 
 	model VWRabbitRearRightDoorArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -56,7 +56,7 @@ module Base
 
 	model VWRabbitFrontLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontLeftWindowArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
         scale = 1,
@@ -64,7 +64,7 @@ module Base
 
 	model VWRabbitFrontRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|FrontRightWindowArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -72,7 +72,7 @@ module Base
     
 	model VWRabbitRearLeftWindowArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearLeftWindowArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -80,7 +80,7 @@ module Base
 
 	model VWRabbitRearRightWindowArmor
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|RearRightWindowArmor_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -88,7 +88,7 @@ module Base
     
     model RabbitTail
 	{
-		mesh = vehicles/Vehicle_VWRabbit_SC|Louver_obj,
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|Louver_obj,
 		shader = vehicle_noreflect,
         static = false,
 		scale = 1,
