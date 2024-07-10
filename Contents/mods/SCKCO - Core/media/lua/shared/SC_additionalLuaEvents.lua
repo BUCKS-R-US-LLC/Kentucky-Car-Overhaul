@@ -122,8 +122,10 @@ function luaEvents.processPartDamages(player, vehicle)
             if string.find(partID, "SCArmor") then
                 local parent = part:getParent()
                 local parentID = parent and parent:getId()
-
                 if parent then dict[vehicleScriptName][partID] = parentID end
+
+            elseif part:getTable("armorBehavior") then
+                dict[vehicleScriptName][partID] = partID
             end
         end
 
@@ -135,14 +137,17 @@ function luaEvents.processPartDamages(player, vehicle)
     if not player:getVehicle() then partsToCheck = {luaEvents.getNearestPart(vehicle, player)} end
 
     if player:getVehicle() then
-        for armorID, parentID in pairs(vehicleArmor) do table.insert(partsToCheck, vehicle:getPartById(armorID)) end
+        for armorID, parentID in pairs(vehicleArmor) do
+            local armor = vehicle:getPartById(armorID)
+            if armor then table.insert(partsToCheck, armor) end
+        end
     end
 
     local alreadyHaveVehicleData = luaEvents.processVehicleHits[player] and luaEvents.processVehicleHits[player].vehicle
     if alreadyHaveVehicleData and alreadyHaveVehicleData ~= vehicle then luaEvents.processVehicleHits[player] = nil end
 
     for _,armor in pairs(partsToCheck) do
-        local parent = luaEvents.getParentIfArmor(armor, vehicleArmor)
+        local parent = armor:getTable("armorBehavior") and armor or luaEvents.getParentIfArmor(armor, vehicleArmor)
         if parent then
             local preHitCond = parent and parent:getCondition()
 
@@ -180,28 +185,31 @@ function luaEvents.applyDamageToArmor(player)
 
         local preHitCond = subData.preHitCond
         local armor = subData.armor
-
         local currentParentCond = parent and parent:getCondition()
-
         local recordedDamage = preHitCond-currentParentCond
         if recordedDamage > 0 then
 
             local pCond = math.max(math.min(parent:getCondition()+recordedDamage, 100), 0)
-
             local damageToArmor = luaEvents.armorAbsorb(armor, recordedDamage)
-            local aCond = math.max(math.min(armor:getCondition()-damageToArmor, 100), 0)
 
-            print("-- parent: ", parent:getId(), "=", armor:getId(), ", recordedDamage:", recordedDamage, "  damageToArmor:", damageToArmor)
+            local currentACond = parent==armor and preHitCond or armor:getCondition()
+            local aCond = math.max(math.min(currentACond-damageToArmor, 100), 0)
 
-            sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = parent:getId(), condition=pCond })
+            if getDebug() then
+                print("---- parent: ", parent and parent.getId and parent:getId(), "=", armor and armor.getId and armor:getId(), ", recordedDamage:", recordedDamage, "  damageToArmor:", damageToArmor)
+            end
+
+            if parent~=armor then
+                sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = parent:getId(), condition=pCond })
+            end
             sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = armor:getId(), condition=aCond })
 
-            parent:setCondition(pCond)
+            if parent~=armor then parent:setCondition(pCond) end
             armor:setCondition(aCond)
         end
     end
     data.ticked = false
-    --luaEvents.processVehicleHits[player] = nil
+    luaEvents.processVehicleHits[player] = nil
 end
 Events.OnPlayerAttackFinished.Add(luaEvents.applyDamageToArmor)
 
