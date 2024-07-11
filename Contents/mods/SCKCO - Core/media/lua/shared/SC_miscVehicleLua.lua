@@ -1,18 +1,17 @@
 --- Created by cytt0rak & Chuck
-local luaEvents =  {}
+local miscVehicleLua =  {}
 
-function luaEvents.M35A1CargoWeightFix(player, part, elapsedMinutes)
+function miscVehicleLua.M35A1CargoWeightFix(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
     if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
         if vehicle:getMass() > 1470 then  vehicle:setMass(1469) end
     end
 end
---- Events.OnPlayerUpdate.Add(luaEvents.M35A1CargoWeightFix)
 
 
 ---@param owner IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param weapon HandWeapon|InventoryItem
-function luaEvents.getHitVehicles(owner, weapon)
+function miscVehicleLua.getHitVehicles(owner, weapon)
     if weapon and weapon:getType() ~= "BareHands" then
 
         local range = (weapon:getMaxRange() * weapon:getRangeMod(owner)) + 0.5
@@ -34,37 +33,35 @@ function luaEvents.getHitVehicles(owner, weapon)
 end
 
 
-function luaEvents.processOnWeaponSwingHitPoint(player, weapon)
+function miscVehicleLua.processOnWeaponSwingHitPoint(player, weapon)
     ---@type BaseVehicle
-    local vehicle = luaEvents.getHitVehicles(player, weapon)
-    if vehicle then luaEvents.processPartDamages(player, vehicle) end
+    local vehicle = miscVehicleLua.getHitVehicles(player, weapon)
+    if vehicle then miscVehicleLua.processPartDamages(player, vehicle) end
 end
-Events.OnWeaponSwingHitPoint.Add(luaEvents.processOnWeaponSwingHitPoint)
 
 
-function luaEvents.processOnPlayerUpdate(player)
+function miscVehicleLua.processOnPlayerUpdate(player)
 
-    local data = luaEvents.processVehicleHits[player]
+    local data = miscVehicleLua.processVehicleHits[player]
     if data and data.ticked then return end
 
     ---@type BaseVehicle
     local vehicle = player:getVehicle()
-    if vehicle then luaEvents.processPartDamages(player, vehicle) end
+    if vehicle then miscVehicleLua.processPartDamages(player, vehicle) end
 end
-Events.OnPlayerUpdate.Add(luaEvents.processOnPlayerUpdate)
 
 
-luaEvents.processVehicleHits = {}
+miscVehicleLua.processVehicleHits = {}
 
 
-function luaEvents.recursivePartChild(part)
+function miscVehicleLua.recursivePartChild(part)
     if part:getChildCount() > 0 then
 
         for i=part:getChildCount()-1, 0, -1 do
             local child = part:getChild(i)
             if child and child:getCondition() > 0 then
                 --print("   ------ child: ", child:getId(), " : ", child:getChildCount())
-                return luaEvents.recursivePartChild(child)
+                return miscVehicleLua.recursivePartChild(child)
             end
         end
     end
@@ -74,7 +71,7 @@ end
 
 ---@param player IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param vehicle BaseVehicle
-function luaEvents.getNearestPart(vehicle, player)
+function miscVehicleLua.getNearestPart(vehicle, player)
     if not vehicle or not player then return end
     for i=vehicle:getPartCount()-1, 0, -1 do
         ---@type VehiclePart
@@ -82,7 +79,7 @@ function luaEvents.getNearestPart(vehicle, player)
 
         if part and (part:getCategory()=="door" or part:getCategory()=="bodywork") and vehicle:isInArea(part:getArea(), player) and part:getCondition() > 0 then
             --print(" - part: ", part:getId(), " : ", part:getChildCount())
-            local truePart = luaEvents.recursivePartChild(part)
+            local truePart = miscVehicleLua.recursivePartChild(part)
             return truePart
         end
     end
@@ -90,7 +87,7 @@ function luaEvents.getNearestPart(vehicle, player)
 end
 
 
-function luaEvents.getParentIfArmor(part, vehicleArmor)
+function miscVehicleLua.getParentIfArmor(part, vehicleArmor)
     local partID = part and part:getId()
     local armorID = partID and vehicleArmor[partID] and partID
     if not armorID then return end
@@ -99,15 +96,15 @@ function luaEvents.getParentIfArmor(part, vehicleArmor)
     return parent
 end
 
-luaEvents.vehicleArmorDictionary = {}
+miscVehicleLua.vehicleArmorDictionary = {}
 ---@param player IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param vehicle BaseVehicle
-function luaEvents.processPartDamages(player, vehicle)
+function miscVehicleLua.processPartDamages(player, vehicle)
     if not vehicle then return end
 
     local vehicleScript = vehicle:getScript()
     local vehicleScriptName = vehicle:getScriptName()
-    local dict = luaEvents.vehicleArmorDictionary
+    local dict = miscVehicleLua.vehicleArmorDictionary
     local vehicleArmor = dict[vehicleScriptName]
 
     if not vehicleArmor then
@@ -134,7 +131,7 @@ function luaEvents.processPartDamages(player, vehicle)
 
     local partsToCheck = {}
 
-    if not player:getVehicle() then partsToCheck = {luaEvents.getNearestPart(vehicle, player)} end
+    if not player:getVehicle() then partsToCheck = { miscVehicleLua.getNearestPart(vehicle, player)} end
 
     if player:getVehicle() then
         for armorID, parentID in pairs(vehicleArmor) do
@@ -143,18 +140,18 @@ function luaEvents.processPartDamages(player, vehicle)
         end
     end
 
-    local alreadyHaveVehicleData = luaEvents.processVehicleHits[player] and luaEvents.processVehicleHits[player].vehicle
-    if alreadyHaveVehicleData and alreadyHaveVehicleData ~= vehicle then luaEvents.processVehicleHits[player] = nil end
+    local alreadyHaveVehicleData = miscVehicleLua.processVehicleHits[player] and miscVehicleLua.processVehicleHits[player].vehicle
+    if alreadyHaveVehicleData and alreadyHaveVehicleData ~= vehicle then miscVehicleLua.processVehicleHits[player] = nil end
 
     for _,armor in pairs(partsToCheck) do
-        local parent = armor:getTable("armorBehavior") and armor or luaEvents.getParentIfArmor(armor, vehicleArmor)
+        local parent = armor:getTable("armorBehavior") and armor or miscVehicleLua.getParentIfArmor(armor, vehicleArmor)
         if parent then
             local preHitCond = parent and parent:getCondition()
 
             if armor and parent and (armor:getCondition() > 1) and armor:getInventoryItem() then
-                luaEvents.processVehicleHits[player] = luaEvents.processVehicleHits[player] or {parts={}}
-                luaEvents.processVehicleHits[player].vehicle = vehicle
-                luaEvents.processVehicleHits[player].parts[parent] = {armor=armor, preHitCond=preHitCond}
+                miscVehicleLua.processVehicleHits[player] = miscVehicleLua.processVehicleHits[player] or { parts={}}
+                miscVehicleLua.processVehicleHits[player].vehicle = vehicle
+                miscVehicleLua.processVehicleHits[player].parts[parent] = { armor=armor, preHitCond=preHitCond}
             end
         end
     end
@@ -162,7 +159,7 @@ function luaEvents.processPartDamages(player, vehicle)
 end
 
 
-function luaEvents.armorAbsorb(part, damage)
+function miscVehicleLua.armorAbsorb(part, damage)
     local armorBehavior = part:getTable("armorBehavior")
     if not armorBehavior then return damage end
     local absorptionRate = armorBehavior.damageAbsorptionOneTo or 1
@@ -170,9 +167,9 @@ function luaEvents.armorAbsorb(part, damage)
 end
 
 
-function luaEvents.applyDamageToArmor(player)
+function miscVehicleLua.applyDamageToArmor(player)
 
-    local data = luaEvents.processVehicleHits[player]
+    local data = miscVehicleLua.processVehicleHits[player]
     if not data then return end
 
     local playerVehicle = player:getVehicle()
@@ -190,7 +187,7 @@ function luaEvents.applyDamageToArmor(player)
         if recordedDamage > 0 then
 
             local pCond = math.max(math.min(parent:getCondition()+recordedDamage, 100), 0)
-            local damageToArmor = luaEvents.armorAbsorb(armor, recordedDamage)
+            local damageToArmor = miscVehicleLua.armorAbsorb(armor, recordedDamage)
 
             local currentACond = parent==armor and preHitCond or armor:getCondition()
             local aCond = math.max(math.min(currentACond-damageToArmor, 100), 0)
@@ -209,17 +206,14 @@ function luaEvents.applyDamageToArmor(player)
         end
     end
     data.ticked = false
-    luaEvents.processVehicleHits[player] = nil
+    miscVehicleLua.processVehicleHits[player] = nil
 end
-Events.OnPlayerAttackFinished.Add(luaEvents.applyDamageToArmor)
 
 
-function luaEvents.applyDamageToArmorOnUpdate(player)
+function miscVehicleLua.applyDamageToArmorOnUpdate(player)
     local vehicle = player:getVehicle()
-    if vehicle then luaEvents.applyDamageToArmor(player) end
+    if vehicle then miscVehicleLua.applyDamageToArmor(player) end
 end
 
-Events.OnPlayerUpdate.Add(luaEvents.applyDamageToArmorOnUpdate)
 
-
-return luaEvents
+return miscVehicleLua
