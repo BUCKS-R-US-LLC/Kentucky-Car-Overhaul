@@ -408,6 +408,21 @@ module Base
 		template = GasTank,
 		template = Battery,
 		template = Engine,
+
+		part Engine
+        {
+            table partVariation
+            {
+                militaryIgnition = true,
+                additionalVehicleFunc = Engine,
+            }
+            lua {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+                update = Vehicles.Update.SCKCO_militaryEngine,
+                checkEngine = Vehicles.CheckEngine.Engine,
+            }
+        }
+
 		template = Muffler,
 
 		part SeatFrontLeft
