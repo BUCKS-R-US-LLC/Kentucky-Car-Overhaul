@@ -37,8 +37,15 @@
 
 require "Vehicles/Vehicles"
 
+local SC_militaryIgnitionUI = {}
+SC_militaryIgnitionUI.knob = getTexture("media/ui/militaryIgnitionUI.png")
+SC_militaryIgnitionUI.panel = {}
+SC_militaryIgnitionUI.panel.texture = getTexture("media/ui/militaryIgnitionUI_panel.png")
+SC_militaryIgnitionUI.panel.width = SC_militaryIgnitionUI.panel.texture:getWidth()
+SC_militaryIgnitionUI.panel.height = SC_militaryIgnitionUI.panel.texture:getHeight()
 
-local SCKCO_militaryEngineTexture = getTexture("media/ui/militaryIgnitionUI.png")
+local modifiedUI = {}
+
 local ISVehicleDashboard_prerender = ISVehicleDashboard.prerender
 function ISVehicleDashboard:prerender()
     if not self.vehicle or not ISUIHandler.allUIVisible then return end
@@ -47,9 +54,27 @@ function ISVehicleDashboard:prerender()
     local part = self.vehicle:getPartById("Engine")
     local partTable = part:getTable("partVariation")
     if partTable and partTable.militaryIgnition then
-        self.ignitionTex.texture = SCKCO_militaryEngineTexture
+        self.ignitionTex.texture = SC_militaryIgnitionUI.knob
         self.ignitionTex.mouseovertext = getText("Tooltip_MilitaryIgnition")
     end
+end
+
+
+local ISVehicleDashboard_render = ISVehicleDashboard.render
+function ISVehicleDashboard:render()
+    if not self.vehicle then return end
+
+    local part = self.vehicle:getPartById("Engine")
+    local partTable = part:getTable("partVariation")
+    if partTable and partTable.militaryIgnition then
+        local panel = SC_militaryIgnitionUI.panel
+        self:drawTexture(panel.texture,
+                self.ignitionTex.x-8,
+                self.ignitionTex.y-8,
+                1, 1, 1, 1)
+    end
+
+    ISVehicleDashboard_render(self)
 end
 
 
