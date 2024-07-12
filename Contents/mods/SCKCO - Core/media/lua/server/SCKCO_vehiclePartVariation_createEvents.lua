@@ -79,13 +79,30 @@ end
 
 
 ---@param vehicle BaseVehicle
-function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
-    if not vehicle:isHotwired() then
-        local partTable = part:getTable("partVariation")
-        if partTable and partTable.militaryIgnition then
-            vehicle:setHotwired(true)
+---@param part VehiclePart
+local function SC_applySpecials(vehicle, part, partTable)
+    partTable = partTable or part:getTable("partVariation")
+    if not partTable then return end
+
+    if partTable.militaryIgnition and not vehicle:isHotwired() then vehicle:setHotwired(true) end
+
+    if partTable.noLockDoors then
+        for i=0, vehicle:getPartCount() do
+            ---@type VehiclePart
+            local partByIndex = vehicle:getPartByIndex(i)
+            local door = partByIndex and partByIndex:getDoor()
+            if door then
+                door:setLocked(false)
+                door:setLockBroken(true)
+            end
         end
     end
+end
+
+
+---@param vehicle BaseVehicle
+function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
+    SC_applySpecials(vehicle, part)
     Vehicles.Update.Engine(vehicle, part, elapsedMinutes)
 end
 
@@ -105,16 +122,11 @@ function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
     local chances = partTable.chances
     local chance = (chances and tonumber(chances[vehicleID] or chances["default"])) --or 0
 
-    print("vehicleID: ",vehicleID," part:", part:getId(), " chance:",chance)
+    --print("vehicleID: ",vehicleID," part:", part:getId(), " chance:",chance)
 
     if (not chance) or (chance and (ZombRand(0, 101) <= chance)) then
 
-        local milIgn = partTable and partTable.militaryIgnition
-        if milIgn then
-            print(" --- --- milIgn")
-            vehicle:setHotwired(true)
-            --vehicle:setHotwiredBroken(true)
-        end
+        SC_applySpecials(vehicle, part, partTable)
         
         local additionalFunc = partTable.additionalVehicleFunc
         local addFunc = (additionalFunc and (Vehicles.Create[additionalFunc])) or Vehicles.Create.Default
