@@ -84,6 +84,8 @@ local function SC_applySpecials(vehicle, part, partTable)
     partTable = partTable or part:getTable("partVariation")
     if not partTable then return end
 
+    print("part: ", part:getId())
+
     if partTable.militaryIgnition and not vehicle:isHotwired() then vehicle:setHotwired(true) end
 
     if partTable.noLockDoors then
@@ -104,6 +106,25 @@ end
 function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
     SC_applySpecials(vehicle, part)
     Vehicles.Update.Engine(vehicle, part, elapsedMinutes)
+end
+
+
+function Vehicles.Create.SCKCO_removeOnCreate(vehicle, part, elapsedMinutes)
+    local removeOnCreate = part:getTable("removeOnCreate")
+    if removeOnCreate then
+        for k,partID in pairs(removeOnCreate) do
+            local removeThis = vehicle:getPartById(partID)
+            if removeThis then
+                removeThis:setInventoryItem(nil)
+                vehicle:transmitPartItem(removeThis)
+            end
+        end
+    end
+
+    if elapsedMinutes then
+        part:setInventoryItem(nil)
+        vehicle:transmitPartItem(part)
+    end
 end
 
 
