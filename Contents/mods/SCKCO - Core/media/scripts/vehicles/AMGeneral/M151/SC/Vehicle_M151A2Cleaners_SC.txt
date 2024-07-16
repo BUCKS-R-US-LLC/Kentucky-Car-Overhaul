@@ -197,7 +197,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 6000,
+		engineForce = 4500,
 		maxSpeed = 60f,
 		engineLoudness = 70,
 		engineQuality = 76,
@@ -439,6 +439,21 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 		}
+
+		part Engine
+        {
+            table partVariation
+            {
+                militaryIgnition = true,
+                additionalVehicleFunc = Engine,
+                noLockDoors = true,
+            }
+            lua {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+                update = Vehicles.Update.SCKCO_militaryEngine,
+                checkEngine = Vehicles.CheckEngine.Engine,
+            }
+        }
 
 		template = EngineDoor,
 
