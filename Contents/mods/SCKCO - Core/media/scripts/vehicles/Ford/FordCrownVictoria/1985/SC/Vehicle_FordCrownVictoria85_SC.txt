@@ -409,21 +409,6 @@ module Base
 		template = Battery,
 		template = Engine,
 
-		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-                noLockDoors = true,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
-
 		template = Muffler,
 
 		part SeatFrontLeft
@@ -605,17 +590,6 @@ module Base
 		template = Window/part/WindowRearLeft,
 		template = Window/part/WindowRearRight,
 
-        part removeParts
-        {
-           category = nodisplay,
-           table removeOnCreate {
-                1=DoorFrontLeft,
-                2=DoorFrontRight,
-                3=DoorRearLeft,
-                4=DoorRearRight,
-           }
-           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
-        }
 
 		part WindowFrontRight
 		{

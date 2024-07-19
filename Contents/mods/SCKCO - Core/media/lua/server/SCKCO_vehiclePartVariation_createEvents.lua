@@ -34,6 +34,32 @@
 --      }
 --  }
 
+--         part removeParts
+--        {
+--           category = nodisplay,
+--           table removeOnCreate {
+--                1=DoorFrontLeft,
+--                2=DoorFrontRight,
+--                3=DoorRearLeft,
+--                4=DoorRearRight,
+--           }
+--           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
+--        }
+--
+--		part Engine
+--        {
+--            table partVariation
+--            {
+--                militaryIgnition = true,
+--                additionalVehicleFunc = Engine,
+--                noLockDoors = true,
+--            }
+--            lua {
+--                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+--                update = Vehicles.Update.SCKCO_militaryEngine,
+--                checkEngine = Vehicles.CheckEngine.Engine,
+--            }
+--        }
 
 require "Vehicles/Vehicles"
 
@@ -44,7 +70,6 @@ SC_militaryIgnitionUI.panel.texture = getTexture("media/ui/militaryIgnitionUI_pa
 SC_militaryIgnitionUI.panel.width = SC_militaryIgnitionUI.panel.texture:getWidth()
 SC_militaryIgnitionUI.panel.height = SC_militaryIgnitionUI.panel.texture:getHeight()
 
-local modifiedUI = {}
 
 local ISVehicleDashboard_prerender = ISVehicleDashboard.prerender
 function ISVehicleDashboard:prerender()
@@ -83,8 +108,6 @@ end
 local function SC_applySpecials(vehicle, part, partTable)
     partTable = partTable or part:getTable("partVariation")
     if not partTable then return end
-
-    print("part: ", part:getId())
 
     if partTable.militaryIgnition and not vehicle:isHotwired() then vehicle:setHotwired(true) end
 
