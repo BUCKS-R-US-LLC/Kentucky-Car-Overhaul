@@ -1,6 +1,57 @@
 module Base
 {
 
+    item HMMWVBumperSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Bumper,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVBumper_WorldItem,
+    }
+
+    item HMMWVWindowArmorSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Window Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVWindowArmor_WorldItem,
+    }
+
+    item HMMWVDoorArmorSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Door Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVDoorArmor_WorldItem,
+    }
+
+    item HMMWVWindshieldArmorSC2
+        {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Windshield Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVWindshieldArmor_WorldItem,
+    }
 
         item M1025SlantDoorSC2
     {
@@ -59,7 +110,7 @@ module Base
         item HMMWVWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	20,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	HMMWV Windshield,
         Icon	=	AMLogo,
@@ -72,7 +123,7 @@ module Base
         item HMMWVSoftSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	HMMWV Soft Side Window,
         Icon	=	AMLogo,
@@ -85,7 +136,7 @@ module Base
         item HMMWVSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	HMMWV Side Window,
         Icon	=	AMLogo,
@@ -98,7 +149,7 @@ module Base
         item HMMWVHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
+        Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	HMMWV Hood,
         Icon	=	AMLogo,

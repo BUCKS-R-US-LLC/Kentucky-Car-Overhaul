@@ -4,6 +4,8 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
 		scale = 1,
 	}
 
@@ -11,7 +13,7 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|BumperAssembly_obj,
 		shader = vehicle_noreflect,
-        static = FALSE,
+        static = TRUE,
 		scale = 1,
 	}
 
@@ -92,76 +94,89 @@ module Base
         template = FourSeaterFootwellSpace,
         template = specials/part/DetroitDieselSC,
 
-        
         template = armorUpgrades/part/SCArmorBumper,
+
+		part BumperAssembly
+		{
+			model Default { file = M1025BumperAssembly, }
+			category = nodisplay,
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
         part SCArmorBumper
         {
             model Default { file = M1025Bullbar, }
             parent = EngineDoor,
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = M1025FrontRightWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1025FrontLeftWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = M1025FrontRightDoorArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = M1025FrontLeftDoorArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = M1025RearRightWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
         part SCArmorRearLeftWindow
         {
             model Default { file = M1025RearLeftWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = M1025RearRightDoorArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
         part SCArmorRearLeftDoor
         {
             model Default { file = M1025RearLeftDoorArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = M1025WindshieldArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = Base.HMMWVWindshieldArmorSC,
         }
 
     }
