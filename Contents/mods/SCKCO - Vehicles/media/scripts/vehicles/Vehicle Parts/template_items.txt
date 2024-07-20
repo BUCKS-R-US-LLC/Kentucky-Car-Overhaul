@@ -1,0 +1,35 @@
+module Base
+{
+    template vehicle itemsInCar
+    {
+
+        part itemSlotOne {
+            model WHEELTEST
+            {
+                file = Vehicles_Wheel,
+                offset = -0.5 0.8 -3.3,
+                rotate = 0.0 0.0 90.0,
+                scale = 3.0,
+            }
+        }
+
+        part itemSlotTwo {
+            model WHEELTEST
+            {
+                file = Vehicles_Wheel,
+                offset = 0.5 0.8 -3.3,
+                rotate = 0.0 0.0 90.0,
+                scale = 3.0,
+            }
+        }
+
+        part itemSlot*
+        {
+            lua {
+                update = Vehicles.Update.SCKCO_Storage,
+                init = Vehicles.Init.SCKCO_Storage,
+            }
+
+        }
+    }
+}

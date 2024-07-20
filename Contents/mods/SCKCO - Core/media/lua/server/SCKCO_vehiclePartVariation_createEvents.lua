@@ -126,9 +126,29 @@ end
 
 
 ---@param vehicle BaseVehicle
+---@param part VehiclePart
 function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
     SC_applySpecials(vehicle, part)
     Vehicles.Update.Engine(vehicle, part, elapsedMinutes)
+end
+
+
+---@param vehicle BaseVehicle
+---@param part VehiclePart
+function Vehicles.Init.SCKCO_Storage(vehicle, part, elapsedMinutes)
+    local partTable = part:getTable("partVariation")
+    if partTable and partTable.storageAltFunc then Vehicles.Init[partTable.storageAltFunc.init](vehicle, part, elapsedMinutes) end
+    part:setModelVisible("WHEELTEST", true)
+    print("Init: ", part:getId())
+end
+
+---@param vehicle BaseVehicle
+---@param part VehiclePart
+function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
+    local partTable = part:getTable("partVariation")
+    if partTable and partTable.storageAltFunc then Vehicles.Update[partTable.storageAltFunc.update](vehicle, part, elapsedMinutes) end
+    part:setModelVisible("WHEELTEST", true)
+    print("Update: ", part:getId())
 end
 
 
