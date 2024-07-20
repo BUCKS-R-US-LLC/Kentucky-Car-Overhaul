@@ -155,7 +155,7 @@ module Base
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M151A2Desert
+	vehicle SC_AMGeneralM151A2Cleaners
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -171,7 +171,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/M151A2/Vehicle_HM151_Tan,
+			texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
 		}
 
 		textureRust = Vehicles/M151A2/Vehicle_HM151_rust,
@@ -197,8 +197,8 @@ module Base
 		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 8500,
-		maxSpeed = 30f,
+		engineForce = 4500,
+		maxSpeed = 60f,
 		engineLoudness = 70,
 		engineQuality = 76,
 		brakingForce = 70,
@@ -574,6 +574,11 @@ module Base
 			itemType = Base.M151FrontWindshieldSC,
 		}
 
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
         part removeParts
         {
            category = nodisplay,
@@ -586,11 +591,6 @@ module Base
            lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
         }
 		
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-
 		part WindowFrontRight
 		{
 			model windowFR

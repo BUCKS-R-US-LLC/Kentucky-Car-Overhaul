@@ -44,6 +44,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
 	model HM1025FrontLeftWindow
 	{
@@ -52,6 +53,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
 	model HM1025RearRightWindow
 	{
@@ -60,6 +62,8 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightArmorBone 1.0,
+		
 	}
 	model HM1025RearLeftWindow
 	{
@@ -68,6 +72,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftArmorBone 1.0,
 	}
 	model HM1025FrontRightDoor
 	{
@@ -155,7 +160,7 @@ module Base
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_M1025Desert
+	vehicle SC_AMGeneralM1025
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.5,
@@ -167,6 +172,36 @@ module Base
 			file = SC_M1025,
 			scale = 0.4000,
 			offset = 0.0000 0.0000 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_3Tone,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_3Tone,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_3Tone,
 		}
 
 		skin
@@ -191,10 +226,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0000 2.0500 10.6500,
+		extents = 5.0667 2.0889 10.7556,
 		mass = 100,
-		physicsChassisShape = 5.0000 2.0500 10.6500,
-		centerOfMassOffset = 0.0000 1.9000 -0.1250,
+		physicsChassisShape = 5.0667 2.0889 10.7556,
+		centerOfMassOffset = 0.0000 1.8889 -0.1111,
 		shadowExtents = 5.0029 10.6739,
 		shadowOffset = -0.0032 0.0064,
 		engineForce = 4800,
@@ -219,7 +254,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 2.1250 0.7500 4.0250,
+			offset = 2.0889 0.7556 4.0222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -227,7 +262,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -2.1250 0.7500 4.0250,
+			offset = -2.0889 0.7556 4.0222,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -235,7 +270,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 2.1250 0.7500 -3.5750,
+			offset = 2.0889 0.7556 -3.5556,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -243,7 +278,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -2.1250 0.7500 -3.5750,
+			offset = -2.0889 0.7556 -3.5556,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -257,13 +292,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5500 2.0250 0.2500,
+				offset = 1.5556 2.0222 0.2444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3750 0.0000 0.7500,
+				offset = 3.3556 0.0000 0.7556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -276,13 +311,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5500 2.0250 0.2500,
+				offset = -1.5556 2.0222 0.2444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3750 0.0000 0.7500,
+				offset = -3.3556 0.0000 0.7556,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -295,13 +330,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.5500 2.0250 -1.4750,
+				offset = 1.5556 2.0222 -1.4667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.3750 0.0000 -1.1750,
+				offset = 3.3556 0.0000 -1.1778,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -314,13 +349,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.5500 2.0250 -1.4750,
+				offset = -1.5556 2.0222 -1.4667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.3750 0.0000 -1.1750,
+				offset = -3.3556 0.0000 -1.1778,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -328,57 +363,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 6.1250 5.0500 1.4000,
+			xywh = 0.0000 6.1111 5.0667 1.4667,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.0250 5.0500 1.2000,
+			xywh = 0.0000 -6.0222 5.0667 1.2000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 3.6500 0.8250 2.0500 2.0500,
+			xywh = 3.6444 0.8222 2.0889 2.0889,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -3.6500 0.8250 2.0500 2.0500,
+			xywh = -3.6444 0.8222 2.0889 2.0889,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 3.6500 -1.2250 2.0500 2.0500,
+			xywh = 3.6444 -1.2222 2.0889 2.0889,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.6500 -1.2250 2.0500 2.0500,
+			xywh = -3.6444 -1.2222 2.0889 2.0889,
 		}
 
 		area GasTank
 		{
-			xywh = -3.2000 -2.5000 1.1500 0.7500,
+			xywh = -3.1778 -2.4889 1.2000 0.8000,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 2.4750 4.0250 0.0000 0.0000,
+			xywh = 2.4667 4.0222 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -2.4750 4.0250 0.0000 0.0000,
+			xywh = -2.4667 4.0222 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.4750 -3.6250 0.0000 0.0000,
+			xywh = 2.4667 -3.6444 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.4750 -3.6250 0.0000 0.0000,
+			xywh = -2.4667 -3.6444 0.0000 0.0000,
 		}
 
 		template = M1025Attachments,
@@ -397,7 +432,6 @@ module Base
 			{
 				file = HM1025Driver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -406,7 +440,6 @@ module Base
 			{
 				file = HM1025Passenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -415,7 +448,6 @@ module Base
 			{
 				file = HM1025RearLeftPassenger,
 			}
-
 		}
 
 		part SeatRearRight
@@ -424,7 +456,6 @@ module Base
 			{
 				file = HM1025RearRightPassenger,
 			}
-
 		}
 
 		part Muffler
@@ -441,19 +472,21 @@ module Base
 		}
 
 		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-                noLockDoors = true,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
 
 		template = EngineDoor,
 
@@ -904,7 +937,6 @@ module Base
 			{
 				file = HMMWVWheelfrontwheelleft,
 			}
-
 		}
 
 		part TireFrontRight
@@ -913,7 +945,6 @@ module Base
 			{
 				file = HMMWVWheelfrontwheelright,
 			}
-
 		}
 
 		part TireRearLeft
@@ -922,7 +953,6 @@ module Base
 			{
 				file = HMMWVWheelbackwheelleft,
 			}
-
 		}
 
 		part TireRearRight
@@ -931,7 +961,6 @@ module Base
 			{
 				file = HMMWVWheelbackwheelright,
 			}
-
 		}
 
 		template = Brake,
