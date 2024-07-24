@@ -5,7 +5,6 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		boneWeight = HoodBone 1.0,
 		scale = 1,
 	}
 
@@ -112,8 +111,10 @@ module Base
         part SCArmorBumper
         {
             model Default { file = M1025Bullbar, }
-            parent = EngineDoor,
+			lua { create = Vehicles.Create.Default, }
             itemType = Base.HMMWVBumperSC,
+
+			requireInstalled = BumperAssembly,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

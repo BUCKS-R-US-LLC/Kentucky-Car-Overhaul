@@ -135,6 +135,7 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
+		boneWeight = FrontBumperBone 1.0,
 	}
 	model HMMWVWheelfrontwheelleft
 	{
@@ -184,6 +185,11 @@ module Base
 			texture = Vehicles/HMMWV/Vehicle_HM1025_3ToneMP,
 		}
 
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_TanMP,
+		}
+		
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
 		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
 		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
@@ -362,6 +368,16 @@ module Base
 		}
 
 		area SeatRearRight
+		{
+			xywh = -3.6444 -1.2222 2.0889 2.0889,
+		}
+
+		area SideContainer1
+		{
+			xywh = 3.6444 -1.2222 2.0889 2.0889,
+		}
+
+		area SideContainer2
 		{
 			xywh = -3.6444 -1.2222 2.0889 2.0889,
 		}
