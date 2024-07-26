@@ -133,22 +133,35 @@ function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
 end
 
 
----@param vehicle BaseVehicle
----@param part VehiclePart
-function Vehicles.Init.SCKCO_Storage(vehicle, part, elapsedMinutes)
-    local partTable = part:getTable("partVariation")
-    if partTable and partTable.storageAltFunc then Vehicles.Init[partTable.storageAltFunc.init](vehicle, part, elapsedMinutes) end
-    part:setModelVisible("WHEELTEST", true)
-    print("Init: ", part:getId())
-end
+Vehicles.SKCO_itemTypesToModels = {
+
+    ["Base.PetrolCan"] = "GasCan",
+    ["Base.EmptyPetrolCan"] = "GasCan",
+    ["Base.Jack"] = "CarJack",
+    ["Base.CarBatteryCharger"] = "CarBatteryCharger",
+}
+
 
 ---@param vehicle BaseVehicle
 ---@param part VehiclePart
 function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
+
+    print("Update: ", part:getId())
+
     local partTable = part:getTable("partVariation")
     if partTable and partTable.storageAltFunc then Vehicles.Update[partTable.storageAltFunc.update](vehicle, part, elapsedMinutes) end
-    part:setModelVisible("WHEELTEST", true)
-    print("Update: ", part:getId())
+
+    ---@type VehiclePart
+    local trunkDoor = vehicle:getPartById("TrunkDoor")
+    local doorObject = trunkDoor:getDoor()
+    if doorObject and (not doorObject:isOpen()) then
+        print("  ---trunkIsClosed")
+        part:setModelVisible("CarJack", false)
+    else
+        print("  ---trunkIsOpen")
+        part:setModelVisible("CarJack", true)
+    end
+
 end
 
 
