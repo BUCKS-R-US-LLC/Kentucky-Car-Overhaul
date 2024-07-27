@@ -170,7 +170,6 @@ function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
     if doorObject and (not doorObject:isOpen()) then return end
 
     for i,num in pairs(slots) do
-                    end
         local model
         for itemNum=items:size()-1, 0, -1 do
             ---@type InventoryItem
