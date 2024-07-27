@@ -133,58 +133,18 @@ function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
 end
 
 
-Vehicles.SKCO_itemTypesToModels = {
 
-    ["Base.PetrolCan"] = "GasCan",
-    ["Base.EmptyPetrolCan"] = "GasCan",
-    ["Base.Jack"] = "CarJack",
-    ["Base.CarBatteryCharger"] = "CarBatteryCharger",
-}
-
-local itemsDisplayed = {}
----@param vehicle BaseVehicle
----@param part VehiclePart
-function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
-    
-    local partTable = part:getTable("partVariation")
-    if partTable and partTable.storageAltFunc then Vehicles.Update[partTable.storageAltFunc.update](vehicle, part, elapsedMinutes) end
-
-    local container = part:getItemContainer()
-
-    ---@type VehiclePart
-    local trunkDoor = vehicle:getPartById("TrunkDoor")
-    local doorObject = trunkDoor:getDoor()
-
-    ---@type ArrayList
-    local items = container and container:getItems()
-    local slots = {"One","Two","Three","Four","Five"}
-    local carID = vehicle:getId()
-
-    itemsDisplayed[carID] = {}
-
-    local slot = vehicle:getPartById("itemSlot")
-    if not slot then return end
-
-    slot:setAllModelsVisible(false)
-
-    if doorObject and (not doorObject:isOpen()) then return end
-
-    for i,num in pairs(slots) do
-        local model
-        for itemNum=items:size()-1, 0, -1 do
-            ---@type InventoryItem
-            local item = items:get(itemNum)
-            local itemID = item:getID()
-            local alreadyDisplayed = itemsDisplayed[carID][itemID]
-            model = (not alreadyDisplayed) and item and Vehicles.SKCO_itemTypesToModels[item:getFullType()]
-            if model then
-                itemsDisplayed[carID][itemID] = true
-                slot:setModelVisible("Slot"..num.."_"..model, true)
-                break
-            end
-        end
-    end
+function Vehicles.Init.TrunkDoorSCKCO_Storage(vehicle, part)
+    SCKCO_VisualStorage.update(vehicle, part, nil, true)
+    Vehicles.Init.Door(vehicle, part)
 end
+
+
+function Vehicles.Use.TrunkDoorSCKCO_Storage(vehicle, part, character)
+    SCKCO_VisualStorage.update(vehicle, part, nil, true)
+    Vehicles.Use.TrunkDoor(vehicle, part, character)
+end
+
 
 
 function Vehicles.Create.SCKCO_removeOnCreate(vehicle, part, elapsedMinutes)

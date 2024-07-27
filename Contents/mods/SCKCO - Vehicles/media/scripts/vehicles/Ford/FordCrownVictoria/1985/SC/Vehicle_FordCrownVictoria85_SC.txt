@@ -823,8 +823,10 @@ module Base
 			itemType = Base.FordCrownVictoria85DoorSC,
 		}
 
-		template = TrunkDoor,
 
+        template = itemsInCar,
+
+		template = TrunkDoor,
 
 		part TrunkDoor
 		{
@@ -875,20 +877,17 @@ module Base
 			}
 
 			itemType = Base.FordCrownVictoria85TrunkLidSC,
+
+			lua
+            {
+                create = Vehicles.Create.TrunkDoor,
+                init = Vehicles.Init.TrunkDoorSCKCO_Storage,
+                update = Vehicles.Update.TrunkDoor,
+                use = Vehicles.Use.TrunkDoorSCKCO_Storage,
+            }
 		}
 
 		template = Trunk/part/TruckBed,
-        template = itemsInCar,
-
-        part TruckBed
-        {
-            lua
-            {
-                create = Vehicles.Create.Default,
-                update = Vehicles.Update.SCKCO_Storage,
-                init = Vehicles.Update.SCKCO_Storage,
-            }
-        }
 
 		template = Tire,
 		template = Axle,
