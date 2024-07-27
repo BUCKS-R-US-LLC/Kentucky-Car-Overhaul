@@ -5,7 +5,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
     model M998HardtopBumperAssembly
@@ -13,7 +13,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|BumperAssembly_obj,
 		shader = vehicle_noreflect,
         static = TRUE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
     model M998HardtopGreen
@@ -21,7 +21,25 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|HardTop_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/HMMWV/ODHardtop,
-		scale = 0.1,
+		scale = 1.0,
+	}
+
+	model HM998RearLeftContainer
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftContainer_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+		boneWeight = RearLeftContainerBone 1.0,
+	}
+	
+	model HM998RearRightContainer
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightContainer_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE
+		boneWeight = RearRightContainerBone 1.0,
 	}
 
 	model M998HardtopWindshieldArmor
@@ -29,7 +47,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|WindshieldArmor_obj,
 		shader = vehiclewheel,
 		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
 	model M998HardtopFrontLeftDoorArmor
@@ -37,7 +55,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
 	model M998HardtopFrontRightDoorArmor
@@ -45,7 +63,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
     model M998HardtopRearLeftDoorArmor
@@ -53,7 +71,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
 	model M998HardtopRearRightDoorArmor
@@ -61,7 +79,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
 	model M998HardtopFrontLeftWindowArmor
@@ -69,7 +87,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-        scale = 0.1,
+        scale = 1.0,
 	}
 
 	model M998HardtopFrontRightWindowArmor
@@ -77,7 +95,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
     
 	model M998HardtopRearLeftWindowArmor
@@ -85,7 +103,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
 	model M998HardtopRearRightWindowArmor
@@ -93,10 +111,10 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-		scale = 0.1,
+		scale = 1.0,
 	}
 
-    template vehicle M998HardtopAttachments
+    template vehicle M998HardtopGreenAttachments
 	{
         template = FourSeaterFootwellSpace,
         template = specials/part/DetroitDieselSC,
@@ -137,7 +155,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
 
 			requireInstalled = BumperAssembly,
@@ -151,7 +169,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
         }
 
@@ -163,7 +181,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
         }
 
@@ -189,7 +207,7 @@ module Base
 			
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
         }
 
@@ -201,7 +219,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
         }
 
@@ -227,9 +245,64 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 0.1,
+                damageAbsorptionOneTo = 1.0,
             }
         }
 
+		part M998RearLeftContainer
+		{
+			model HM998RearLeftContainer
+			{
+				file = HM998RearLeftContainer,
+			}
+
+			area = SideContainer1,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
+
+		part M998RearRightContainer
+		{
+			model HM998RearRightContainer
+			{
+				file = HM998RearRightContainer,
+			}
+
+			area = SideContainer2,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
     }
 }

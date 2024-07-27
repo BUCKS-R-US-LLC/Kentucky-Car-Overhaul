@@ -63,7 +63,6 @@ module Base
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 		boneWeight = RearRightArmorBone 1.0,
-		
 	}
 	model HM998HardtopRearLeftWindow
 	{
@@ -417,7 +416,7 @@ module Base
 			xywh = -2.4750 -3.6250 0.0000 0.0000,
 		}
 
-		template = M998HardtopAttachments,
+		template = M998HardtopGreenAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -948,90 +947,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
-		part M998RearLeftContainer
-		{
-			model HM998RearLeftContainer
-			{
-				file = HM998RearLeftContainer,
-			}
-
-			area = SideContainer1,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = false,
-			repairMechanic = false,
-			container
-			{
-				capacity = 10,
-				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
-		part M998RearRightContainer
-		{
-			model HM998RearRightContainer
-			{
-				file = HM998RearRightContainer,
-			}
-
-			area = SideContainer1,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = false,
-			repairMechanic = false,
-			container
-			{
-				capacity = 10,
-				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
-		part M998RearLeftContainer
-		{
-			model HM998RearLeftContainer
-			{
-				file = HM998RearLeftContainer,
-			}
-
-			area = SideContainer2,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = false,
-			repairMechanic = false,
-			container
-			{
-				capacity = 10,
-				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-						
 			category = SCUCKaccessories,
 			itemType = Base.M1025SlantBaseSC,
 		}
