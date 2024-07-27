@@ -878,8 +878,17 @@ module Base
 		}
 
 		template = Trunk/part/TruckBed,
-
         template = itemsInCar,
+
+        part TruckBed
+        {
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.SCKCO_Storage,
+                init = Vehicles.Update.SCKCO_Storage,
+            }
+        }
 
 		template = Tire,
 		template = Axle,

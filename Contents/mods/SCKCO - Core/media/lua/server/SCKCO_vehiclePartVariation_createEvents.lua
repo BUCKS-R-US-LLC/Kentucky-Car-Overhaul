@@ -141,27 +141,47 @@ Vehicles.SKCO_itemTypesToModels = {
     ["Base.CarBatteryCharger"] = "CarBatteryCharger",
 }
 
-
+local itemsDisplayed = {}
 ---@param vehicle BaseVehicle
 ---@param part VehiclePart
 function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
-
-    print("Update: ", part:getId())
-
+    
     local partTable = part:getTable("partVariation")
     if partTable and partTable.storageAltFunc then Vehicles.Update[partTable.storageAltFunc.update](vehicle, part, elapsedMinutes) end
+
+    local container = part:getItemContainer()
 
     ---@type VehiclePart
     local trunkDoor = vehicle:getPartById("TrunkDoor")
     local doorObject = trunkDoor:getDoor()
-    if doorObject and (not doorObject:isOpen()) then
-        print("  ---trunkIsClosed")
-        part:setModelVisible("CarJack", false)
-    else
-        print("  ---trunkIsOpen")
-        part:setModelVisible("CarJack", true)
-    end
 
+    ---@type ArrayList
+    local items = container and container:getItems()
+    local slots = {"One","Two","Three","Four","Five"}
+    local carID = vehicle:getId()
+
+    itemsDisplayed[carID] = {}
+    for i,num in pairs(slots) do
+        local slot = vehicle:getPartById("itemSlot"..num)
+        if slot then
+            slot:setAllModelsVisible(false)
+            if (not doorObject) or (doorObject and doorObject:isOpen()) then
+                local model
+                for itemNum=items:size()-1, 0, -1 do
+                    ---@type InventoryItem
+                    local item = items:get(itemNum)
+                    local itemID = item:getID()
+                    local alreadyDisplayed = itemsDisplayed[carID][itemID]
+                    model = (not alreadyDisplayed) and item and Vehicles.SKCO_itemTypesToModels[item:getFullType()]
+                    if model then
+                        itemsDisplayed[carID][itemID] = true
+                        slot:setModelVisible(model, true)
+                        break
+                    end
+                end
+            end
+        end
+    end
 end
 
 
