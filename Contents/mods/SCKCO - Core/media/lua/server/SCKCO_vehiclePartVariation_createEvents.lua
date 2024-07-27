@@ -161,24 +161,27 @@ function Vehicles.Update.SCKCO_Storage(vehicle, part, elapsedMinutes)
     local carID = vehicle:getId()
 
     itemsDisplayed[carID] = {}
+
+    local slot = vehicle:getPartById("itemSlot")
+    if not slot then return end
+
+    slot:setAllModelsVisible(false)
+
+    if doorObject and (not doorObject:isOpen()) then return end
+
     for i,num in pairs(slots) do
-        local slot = vehicle:getPartById("itemSlot"..num)
-        if slot then
-            slot:setAllModelsVisible(false)
-            if (not doorObject) or (doorObject and doorObject:isOpen()) then
-                local model
-                for itemNum=items:size()-1, 0, -1 do
-                    ---@type InventoryItem
-                    local item = items:get(itemNum)
-                    local itemID = item:getID()
-                    local alreadyDisplayed = itemsDisplayed[carID][itemID]
-                    model = (not alreadyDisplayed) and item and Vehicles.SKCO_itemTypesToModels[item:getFullType()]
-                    if model then
-                        itemsDisplayed[carID][itemID] = true
-                        slot:setModelVisible(model, true)
-                        break
                     end
-                end
+        local model
+        for itemNum=items:size()-1, 0, -1 do
+            ---@type InventoryItem
+            local item = items:get(itemNum)
+            local itemID = item:getID()
+            local alreadyDisplayed = itemsDisplayed[carID][itemID]
+            model = (not alreadyDisplayed) and item and Vehicles.SKCO_itemTypesToModels[item:getFullType()]
+            if model then
+                itemsDisplayed[carID][itemID] = true
+                slot:setModelVisible("Slot"..num.."_"..model, true)
+                break
             end
         end
     end
