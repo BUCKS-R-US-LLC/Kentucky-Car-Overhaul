@@ -19,12 +19,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1FrontSoftTop
-	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SoftTop_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model M35A1Tarp
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Tarp_obj,
@@ -205,23 +199,23 @@ module Base
 		centerOfMassOffset = 0.0000 1.8983 -0.5085,
 		shadowExtents = 3.6593 10.3884,
 		shadowOffset = 0.0000 -0.4966,
-		engineForce = 15000,
+		engineForce = 9000,
 		engineQuality = 100,
 		engineLoudness = 120,
 		maxSpeed = 70f,
-		brakingForce = 80,
+		brakingForce = 200,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 50,
+		suspensionStiffness = 80,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.20f,
-		wheelFriction = 0.8f,
-		frontEndHealth = 15000,
-		rearEndHealth = 10000,
+		wheelFriction = 1.5f,
+		frontEndHealth = 30000,
+		rearEndHealth = 20000,
 		seats = 6,
 
 		wheel FrontLeft
@@ -775,26 +769,6 @@ module Base
 
 			category = SCUCKaccessories,
 			itemType = Base.M35FrontHardTop,
-		}
-
-		part M35A1FrontSoftTop
-		{
-			model M35A1FrontSoftTop
-			{
-				file = M35A1FrontSoftTop,
-			}
-
-			table install
-			{
-				requireUninstalled = M35A1FrontHardTop,
-			}
-
-			table uninstall
-			{
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M35FrontSoftTop,
 		}
 
 		part M35A1SpareTire
