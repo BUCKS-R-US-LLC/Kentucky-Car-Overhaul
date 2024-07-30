@@ -67,8 +67,10 @@ local SC_militaryIgnitionUI = {}
 SC_militaryIgnitionUI.knob = getTexture("media/ui/militaryIgnitionUI.png")
 SC_militaryIgnitionUI.panel = {}
 SC_militaryIgnitionUI.panel.texture = getTexture("media/ui/militaryIgnitionUI_panel.png")
-SC_militaryIgnitionUI.panel.width = SC_militaryIgnitionUI.panel.texture:getWidth()
-SC_militaryIgnitionUI.panel.height = SC_militaryIgnitionUI.panel.texture:getHeight()
+if SC_militaryIgnitionUI.panel.texture then
+    SC_militaryIgnitionUI.panel.width = SC_militaryIgnitionUI.panel.texture:getWidth()
+    SC_militaryIgnitionUI.panel.height = SC_militaryIgnitionUI.panel.texture:getHeight()
+end
 
 
 local ISVehicleDashboard_prerender = ISVehicleDashboard.prerender
