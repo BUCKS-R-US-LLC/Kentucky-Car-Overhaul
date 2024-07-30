@@ -47,6 +47,13 @@ module Base
 		template = TwoSeaterFootwellSpace,
 		template = armorUpgrades/part/SCArmorGrille,
 
+        part SCArmorBumper
+        {
+            model Default { file = C70SurvivorHead, }
+            itemType = Base.ChevyC70BullbarSC,
+            lua { create = Vehicles.Create.Default, }
+        }
+
 		part SCArmorGrille
         {
             model Default { file = C70SurvivorBullbar, }
