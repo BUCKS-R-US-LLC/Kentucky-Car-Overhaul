@@ -922,35 +922,6 @@ module Base
 			itemType = Base.HMMWVTrunkLidSC,
 		}
 
-
-		part M998HardSlant
-		{
-			parent = TrunkDoor,
-
-			model HM998HardtopSlant
-			{
-				file = HM998HardtopSlant,
-			}
-
-			table install
-			{
-				requireInstalled = TrunkLid,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
