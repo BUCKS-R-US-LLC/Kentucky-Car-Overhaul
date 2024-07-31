@@ -33,6 +33,22 @@ module Base
 		scale = 1.0,
 	}
 
+    model M998TopCoverTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/HMMWV/TanSofttop,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCoverTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/HMMWV/TanCoverHMM,
+		scale = 1.0,
+	}
+
 	model M998SofttopWindshieldArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|WindshieldArmor_obj,
@@ -181,93 +197,9 @@ module Base
                 damageAbsorptionOneTo = 1.0,
             }
         }
-
-		part M998HardSlant
-		{
-			parent = TrunkDoor,
-
-			model HM998SofttopSlant
-			{
-				file = HM998SofttopSlant,
-			}
-
-			table install
-			{
-				requireInstalled = TrunkLid,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
-		part M998RearLeftContainer
-		{
-			model HM998RearLeftContainer
-			{
-				file = HM998RearLeftContainer,
-			}
-
-			area = SideContainer1,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = false,
-			repairMechanic = false,
-			container
-			{
-				capacity = 10,
-				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
-		part M998RearRightContainer
-		{
-			model HM998RearRightContainer
-			{
-				file = HM998RearRightContainer,
-			}
-
-			area = SideContainer2,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = false,
-			repairMechanic = false,
-			container
-			{
-				capacity = 10,
-				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
     }
 
-	template vehicle M998SofttopGreenAttachments
+	template vehicle M998SofttopAttachments
 	{
         template = FourSeaterFootwellSpace,
         template = specials/part/DetroitDieselSC,
@@ -328,6 +260,23 @@ module Base
             }
         }
 
+		part BumperAssembly
+		{
+			model Default { file = M998SofttopBumperAssembly, }
+			category = nodisplay,
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+
+	template vehicle M998GreenSofttops
+	{
+
 		part M998FrontSoftTop
 		{
 			model Default { file = M998TopCoverGreen, }
@@ -351,11 +300,26 @@ module Base
 			}
 
 		}
+    }
 
-		part BumperAssembly
+	template vehicle M998TanSofttops
+	{
+
+		part M998FrontSoftTop
 		{
-			model Default { file = M998SofttopBumperAssembly, }
-			category = nodisplay,
+			model Default { file = M998TopCoverTan, }
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCoverTan, }
 			itemType = Base.ChevyLogo,
 
 			lua

@@ -137,25 +137,25 @@ module Base
 		boneWeight = HoodBone 1.0,
 		boneWeight = FrontBumperBone 1.0,
 	}
-	model HMMWVWheelfrontwheelleft
+	model M1025Wheelfrontwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelfrontwheelright
+	model M1025Wheelfrontwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelleft
+	model M1025Wheelbackwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelright
+	model M1025Wheelbackwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
@@ -926,7 +926,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelleft,
+				file = M1025Wheelfrontwheelleft,
 			}
 		}
 
@@ -934,7 +934,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelright,
+				file = M1025Wheelfrontwheelright,
 			}
 		}
 
@@ -942,7 +942,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelleft,
+				file = M1025Wheelbackwheelleft,
 			}
 		}
 
@@ -950,7 +950,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelright,
+				file = M1025Wheelbackwheelright,
 			}
 		}
 
