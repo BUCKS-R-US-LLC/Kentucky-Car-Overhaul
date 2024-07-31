@@ -1,0 +1,368 @@
+module Base
+{
+ 
+    model M998SofttopBullbar
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M998SofttopBumperAssembly
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|BumperAssembly_obj,
+		shader = vehicle_noreflect,
+        static = TRUE,
+		scale = 1.0,
+	}
+
+    model M998TopCoverGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/HMMWV/ODSofttop,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCoverGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/HMMWV/ODCoverHMM,
+		scale = 1.0,
+	}
+
+	model M998SofttopWindshieldArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|WindshieldArmor_obj,
+		shader = vehiclewheel,
+		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
+		scale = 1.0,
+	}
+
+	model M998SofttopFrontLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M998SofttopFrontRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M998SofttopRearLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M998SofttopRearRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    template vehicle M998SofttopGreenAttachments
+	{
+        template = FourSeaterFootwellSpace,
+        template = specials/part/DetroitDieselSC,
+
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M998SofttopBullbar, }
+			lua { create = Vehicles.Create.Default, }
+            itemType = Base.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M998SofttopFrontRightWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M998SofttopFrontLeftWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M998SofttopFrontRightDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M998SofttopFrontLeftDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = M998SofttopRearRightWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+			
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = M998SofttopRearLeftWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M998SofttopRearRightDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M998SofttopRearLeftDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M998SofttopWindshieldArmor, }
+            itemType = Base.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+		part M998HardSlant
+		{
+			parent = TrunkDoor,
+
+			model HM998SofttopSlant
+			{
+				file = HM998SofttopSlant,
+			}
+
+			table install
+			{
+				requireInstalled = TrunkLid,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
+
+		part M998RearLeftContainer
+		{
+			model HM998RearLeftContainer
+			{
+				file = HM998RearLeftContainer,
+			}
+
+			area = SideContainer1,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
+
+		part M998RearRightContainer
+		{
+			model HM998RearRightContainer
+			{
+				file = HM998RearRightContainer,
+			}
+
+			area = SideContainer2,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
+    }
+
+	template vehicle M998SofttopGreenAttachments
+	{
+        template = FourSeaterFootwellSpace,
+        template = specials/part/DetroitDieselSC,
+
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M998SofttopBullbar, }
+			lua { create = Vehicles.Create.Default, }
+            itemType = Base.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M998SofttopFrontRightDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M998SofttopFrontLeftDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M998SofttopRearRightDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M998SofttopRearLeftDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M998SofttopWindshieldArmor, }
+            itemType = Base.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+		part M998FrontSoftTop
+		{
+			model Default { file = M998TopCoverGreen, }
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCoverGreen, }
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part BumperAssembly
+		{
+			model Default { file = M998SofttopBumperAssembly, }
+			category = nodisplay,
+			itemType = Base.ChevyLogo,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+}
