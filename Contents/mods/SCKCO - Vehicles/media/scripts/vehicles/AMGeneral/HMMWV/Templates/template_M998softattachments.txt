@@ -92,7 +92,7 @@ module Base
     template vehicle M998SofttopGreenAttachments
 	{
         template = FourSeaterFootwellSpace,
-        template = specials/part/DetroitDieselSC,
+        template = specials/part/HumveeDieselSC,
 
         template = armorUpgrades/part/SCArmorBumper,
 
@@ -104,7 +104,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
 
 			requireInstalled = BumperAssembly,
@@ -116,9 +116,9 @@ module Base
             model Default { file = M998SofttopFrontRightWindowArmor, }
             itemType = Base.HMMWVWindowArmorSC,
 
-			table armorBehavior
+			 armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
 
@@ -130,7 +130,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
 
@@ -156,7 +156,7 @@ module Base
 			
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
 
@@ -168,7 +168,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
 
@@ -194,7 +194,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
     }
@@ -214,7 +214,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
 
 			requireInstalled = BumperAssembly,
@@ -256,15 +256,15 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.001,
             }
         }
 
 		part BumperAssembly
 		{
-			model Default { file = M998SofttopBumperAssembly, }
+			model Default { file = M998BumperAssembly, }
 			category = nodisplay,
-			itemType = Base.ChevyLogo,
+			itemType = Base.HMMWVBumperAssemblySC,
 
 			lua
 			{
@@ -280,8 +280,17 @@ module Base
 		part M998FrontSoftTop
 		{
 			model Default { file = M998TopCoverGreen, }
-			itemType = Base.ChevyLogo,
+			itemType = Base.M998SoftTopSC,
+            category = SCUCKaccessories,
 
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
 			lua
 			{
 				create = Vehicles.Create.Default,
@@ -292,7 +301,16 @@ module Base
 		part M998RearSoftTop
 		{
 			model Default { file = M998SoftTopTrunkCoverGreen, }
-			itemType = Base.ChevyLogo,
+			itemType = Base.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
 
 			lua
 			{
@@ -308,7 +326,16 @@ module Base
 		part M998FrontSoftTop
 		{
 			model Default { file = M998TopCoverTan, }
-			itemType = Base.ChevyLogo,
+			itemType = Base.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
 
 			lua
 			{
@@ -320,8 +347,17 @@ module Base
 		part M998RearSoftTop
 		{
 			model Default { file = M998SoftTopTrunkCoverTan, }
-			itemType = Base.ChevyLogo,
+			itemType = Base.M998SoftTopSC,
+            category = SCUCKaccessories,
 
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
 			lua
 			{
 				create = Vehicles.Create.Default,

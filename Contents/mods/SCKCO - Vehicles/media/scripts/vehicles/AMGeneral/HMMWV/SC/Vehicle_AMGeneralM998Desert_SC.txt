@@ -166,7 +166,7 @@ module Base
 		}
 
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
-		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
+		textureMask = Vehicles/HMMWV/Vehicle_HM998Soft_mask,
 		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
 		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
 		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
@@ -484,6 +484,11 @@ module Base
 
 		part Muffler
 		{
+			model HM998Exhaust
+			{
+				file = HM998Exhaust,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -493,7 +498,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,

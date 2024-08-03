@@ -1,6 +1,32 @@
 module Base
 {
 
+    item M998SoftTopSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= M998 Soft Top,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVSoftTop_WorldItem,
+    }
+
+    item HMMWVBumperAssemblySC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= HMMWV Bumper Assembly,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HMMWVBumper_WorldItem,
+    }
+
     item HMMWVBumperSC2
     {
         DisplayCategory = VehicleArmor,
@@ -41,7 +67,7 @@ module Base
     }
 
     item HMMWVWindshieldArmorSC2
-        {
+    {
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         Type	=	Normal,
@@ -53,7 +79,7 @@ module Base
         WorldStaticModel = HMMWVWindshieldArmor_WorldItem,
     }
 
-        item M1025SlantDoorSC2
+    item M1025SlantDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -63,10 +89,10 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5Door_WorldItem,
+        WorldStaticModel = HumveeSlantDoor_WorldItem,
     }
 
-        item M1025SlantBaseSC2
+    item M1025SlantBaseSC2
     {   
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -76,10 +102,10 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5Door_WorldItem,
+        WorldStaticModel = HumveeSlantBase_WorldItem,
     }
 
-        item HMMWVHardDoorSC2
+    item HMMWVHardDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -90,10 +116,10 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_HMMWVSoftDoor,
-        WorldStaticModel = K5Door_WorldItem,
+        WorldStaticModel = HumveeDoor_WorldItem,
     }
 
-        item HMMWVSoftDoorSC2
+    item HMMWVSoftDoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -104,10 +130,10 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_HMMWVSoftDoor,
-        WorldStaticModel = K5Door_WorldItem,
+        WorldStaticModel = HumveeDoor_WorldItem,
     }
 
-        item HMMWVWindshieldSC2
+    item HMMWVWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -117,10 +143,10 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5Windshield_WorldItem,
+        WorldStaticModel = HumveeWindshield_WorldItem,
     }
 
-        item HMMWVSoftSideWindowSC2
+    item HMMWVSoftSideWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -130,23 +156,23 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5SideWindow_WorldItem,
+        WorldStaticModel = HumveeSoftWindow_WorldItem,
     }
 
-        item HMMWVSideWindowSC2
+    item HMMWVWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	HMMWV Side Window,
+        DisplayName	=	HMMWV Window,
         Icon	=	AMLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5SideWindow_WorldItem,
+        WorldStaticModel = HumveeWindow_WorldItem,
     }
 
-        item HMMWVHoodSC2
+    item HMMWVHoodSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -156,10 +182,10 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5Hood_WorldItem,
+        WorldStaticModel = HumveeHood_WorldItem,
     }
 
-        item HMMWVTrunkLidSC2
+    item HMMWVTrunkLidSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -169,7 +195,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5TrunkLid_WorldItem,
+        WorldStaticModel = HumveeTrunkLid_WorldItem,
     }
 
 }

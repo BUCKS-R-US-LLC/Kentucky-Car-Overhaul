@@ -1,183 +1,127 @@
 module Base
 {
-	model SC_M998Hardtop
+	model SC_M997
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
-	model HM998HardtopDriver
+	model HM997Driver
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998HardtopPassenger
+	model HM997Passenger
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998HardtopRearRightPassenger
+	model HM997RearRightPassenger
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998HardtopRearLeftPassenger
+	model HM997RearLeftPassenger
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998HardtopWindshield
+	model HM997Windshield
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998HardtopFrontRightWindow
+	model HM997FrontRightWindow
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightArmorBone 1.0,
 	}
-	model HM998HardtopFrontLeftWindow
+	model HM997FrontLeftWindow
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftArmorBone 1.0,
 	}
-	model HM998HardtopRearRightWindow
+	model HM997FrontRightDoor
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
-		boneWeight = RearRightArmorBone 1.0,
-	}
-	model HM998HardtopRearLeftWindow
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
-		boneWeight = RearLeftArmorBone 1.0,
-	}
-	model HM998HardtopFrontRightDoor
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontRightDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model HM998HardtopFrontLeftDoor
+	model HM997FrontLeftDoor
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model HM998HardtopRearRightDoor
+	model HM997Trunk
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model HM998HardtopRearLeftDoor
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-	model HM998HardtopSlant
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Slant_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-	}
-	model HM998HardtopTrunk
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|TrunkDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone1 1.0,
+		boneWeight = TrunkBone2 1.0,
 	}
-	model HM998RearLeftContainer
+	model HM997Hood
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftContainer_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = TRUE,
-		boneWeight = RearLeftContainerBone 1.0,
-	}
-	model HM998RearRightContainer
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightContainer_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = TRUE
-		boneWeight = RearRightContainerBone 1.0,
-	}
-	model HM998HardtopHood
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 		boneWeight = FrontBumperBone 1.0,
 	}
-	model HM998Exhaust
+	model HM997Exhaust
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = TRUE,
 	}
-	model HMMWVWheelfrontwheelleft
+	model M997Wheelfrontwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelfrontwheelright
+	model M997Wheelfrontwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelleft
+	model M997Wheelbackwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelright
+	model M997Wheelbackwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_AMGeneralM998Hardtop
+	vehicle SC_AMGeneralM9973Tone
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.5,
@@ -186,34 +130,14 @@ module Base
 
 		model
 		{
-			file = SC_M998Hardtop,
+			file = SC_M997,
 			scale = 0.4000,
-			offset = 0.0000 -0.4000 0.0000,
+			offset = 0.0000 -0.4000 0.0750,
 		}
 
 		skin
 		{
-			texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_OD,
-		}
-
-		skin
-		{
-			texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_3Tone,
-		}
-
-		skin
-		{
-			texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_3Tone,
-		}
-
-		skin
-		{
-			texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_3Tone,
-		}
-
-		skin
-		{
-			texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_3Tone,
+			texture = Vehicles/HMMWV/Vehicle_HM997_3Tone,
 		}
 
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
@@ -233,10 +157,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 5.0500 3.2500 10.6000,
+		extents = 5.0500 3.2500 11.4500,
 		mass = 100,
 		physicsChassisShape = 5.0500 3.2500 10.6000,
-		centerOfMassOffset = 0.0000 1.6250 0.0000,
+		centerOfMassOffset = 0.0000 1.6250 -0.3750,
 		shadowExtents = 5.4529 10.8239,
 		shadowOffset = -0.0032 0.0064,
 		engineForce = 4800,
@@ -423,7 +347,8 @@ module Base
 			xywh = -2.4750 -3.6250 0.0000 0.0000,
 		}
 
-		template = M998HardtopGreenAttachments,
+		template = M997Attachments,
+		template = M997AmbulanceTop3Tone,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -434,19 +359,21 @@ module Base
 		template = Muffler,
 
 		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-                noLockDoors = true,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
 
 		part DoorFrontLeft
 		{
@@ -472,71 +399,37 @@ module Base
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
-		part DoorRearLeft
-		{
-			area = SeatRearLeft,
-			category = nodisplay,
-
-			lua
-			{
-			}
-
-			itemType = Base.HMMWVSoftDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			area = SeatRearRight,
-			category = nodisplay,
-
-			lua
-			{
-			}
-
-			itemType = Base.HMMWVSoftDoorSC,
-		}
-
 		part SeatFrontLeft
 		{
 			model seatfrontLeft
 			{
-				file = HM998HardtopDriver,
+				file = HM997Driver,
 			}
-
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = HM998HardtopPassenger,
+				file = HM997Passenger,
 			}
-
 		}
 
 		part SeatRearLeft
 		{
-			model seatrearLeft
-			{
-				file = HM998HardtopRearLeftPassenger,
-			}
-
+			category = nodisplay,
 		}
 
 		part SeatRearRight
 		{
-			model seatrearRight
-			{
-				file = HM998HardtopRearRightPassenger,
-			}
-
+			category = nodisplay,
 		}
 
 		part Muffler
 		{
-			model HM998Exhaust
+			model HM997Exhaust
 			{
-				file = HM998Exhaust,
+				file = HM997Exhaust,
 			}
 
 			table install
@@ -556,7 +449,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = HM998HardtopHood,
+				file = HM997Hood,
 			}
 
 			anim Close
@@ -610,7 +503,8 @@ module Base
 			}
 		}
 
-		template = HumveeAttachments,
+		template = M9973ToneAmbulanceTop,
+		template = M997Attachments,
 		template = Windshield/part/Windshield,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
@@ -625,7 +519,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = HM998HardtopWindshield,
+				file = HM997Windshield,
 			}
 
 			window
@@ -656,7 +550,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = HM998HardtopFrontRightWindow,
+				file = HM997FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -675,7 +569,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = HM998HardtopFrontLeftWindow,
+				file = HM997FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -694,7 +588,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = HM998HardtopRearRightWindow,
+				file = HM997RearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -713,7 +607,7 @@ module Base
 		{
 			model windowRL
 			{
-				file = HM998HardtopRearLeftWindow,
+				file = HM997RearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -732,7 +626,7 @@ module Base
 		{
 			model Default
 			{
-				file = HM998HardtopFrontRightDoor,
+				file = HM997FrontRightDoor,
 			}
 
 			anim Close
@@ -763,14 +657,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HMMWVHardDoorSC,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = HM998HardtopFrontLeftDoor,
+				file = HM997FrontLeftDoor,
 			}
 
 			anim Close
@@ -801,83 +695,19 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HMMWVHardDoorSC,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
 		{
-			model Default
-			{
-				file = HM998HardtopRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
+			category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
 		{
-			model Default
-			{
-				file = HM998HardtopRearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.HMMWVHardDoorSC,
+			category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -896,7 +726,7 @@ module Base
 
 			model Default
 			{
-				file = HM998HardtopTrunk,
+				file = HM997Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -941,36 +771,32 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelleft,
+				file = M997Wheelfrontwheelleft,
 			}
-
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelright,
+				file = M997Wheelfrontwheelright,
 			}
-
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelleft,
+				file = M997Wheelbackwheelleft,
 			}
-
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelright,
+				file = M997Wheelbackwheelright,
 			}
-
 		}
 
 		template = Brake,

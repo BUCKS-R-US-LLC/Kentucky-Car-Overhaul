@@ -131,6 +131,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
+	model HM1025Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+	}
 	model M1025Wheelfrontwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
@@ -429,6 +436,11 @@ module Base
 
 		part Muffler
 		{
+			model HM1025Exhaust
+			{
+				file = HM1025Exhaust,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -573,7 +585,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -592,7 +604,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowRearRight
@@ -611,7 +623,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowRearLeft
@@ -630,7 +642,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part DoorFrontRight
@@ -783,62 +795,6 @@ module Base
 			}
 
 			itemType = Base.HMMWVHardDoorSC,
-		}
-
-		part M1025SlantBase
-		{
-			model HM1025SlantBase
-			{
-				file = HM1025SlantBase,
-			}
-
-			parent = TrunkLid,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				requireUninstalled = M1025Slant,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantDoorSC,
-		}
-
-		part M1025Slant
-		{
-			parent = TrunkDoor,
-
-			model HM1025Slant
-			{
-				file = HM1025Slant,
-			}
-
-			table install
-			{
-				requireInstalled = TrunkLid,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
 		}
 
 		template = TrunkDoor,

@@ -113,6 +113,13 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
+	model HM998Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+	}
 	model HM998Hood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Hood_obj,
@@ -121,6 +128,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 		boneWeight = FrontBumperBone 1.0,
+	}
+	model HM998Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
 	}
 	model M998Wheelfrontwheelleft
 	{
@@ -186,7 +200,7 @@ module Base
 		}
 
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
-		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
+		textureMask = Vehicles/HMMWV/Vehicle_HM998Soft_mask,
 		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
 		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
 		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
@@ -504,6 +518,11 @@ module Base
 
 		part Muffler
 		{
+			model HM998Exhaust
+			{
+				file = HM998Exhaust,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -634,7 +653,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -653,7 +672,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowRearRight
@@ -672,7 +691,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part WindowRearLeft
@@ -691,7 +710,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.HMMWVSideWindowSC,
+			itemType = Base.HMMWVWindowSC,
 		}
 
 		part DoorFrontRight
