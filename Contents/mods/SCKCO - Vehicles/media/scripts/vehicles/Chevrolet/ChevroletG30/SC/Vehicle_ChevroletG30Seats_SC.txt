@@ -105,7 +105,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = SlideDoorBone 1.0,
 	}
 	model G30SeatsTrunk
 	{
@@ -706,7 +705,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanWindowlessFrontRightWindow,
+				file = G30SeatsFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -725,7 +724,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanWindowlessFrontLeftWindow,
+				file = G30SeatsFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -762,7 +761,7 @@ module Base
 			area = SeatMiddleLeft,
 		}
 
-		part WindowRearRight
+		part WindowMiddleRightRight
 		{
 			window
 			{
@@ -771,12 +770,35 @@ module Base
 
 			model windowRR
 			{
+				file = G30SeatsSlidingWindow,
+			}
+			
+			parent = DoorRearRight,
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30DoorSC,
+			area = SeatRearRight,
+		}
+
+		part WindowRearRight
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowRL
+			{
 				file = G30SeatsRearRightWindow,
+			}
+
+			table install
+			{
+				requireInstalled =,
 			}
 
 			category = SCUCKwindows,
 			itemType = Base.ChevyG30DoorSC,
-			area = SeatRearRight,
+			area = SeatRearLeft,
 		}
 
 		part WindowRearLeft
@@ -805,7 +827,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontRightDoor,
+				file = G30SeatsFrontRightDoor,
 			}
 
 			anim Close
@@ -843,7 +865,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontLeftDoor,
+				file = G30SeatsFrontLeftDoor,
 			}
 
 			anim Close
@@ -881,7 +903,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessSlidingRightDoor,
+				file = G30SeatsSlidingRightDoor,
 			}
 
 			anim Close
@@ -914,6 +936,14 @@ module Base
 
 			itemType = Base.ChevyG30DoorSC,
 		}
+
+		part SCArmorRearRightWindow
+        {
+            model Default { file = G30SeatsRearRightWindowArmor, }
+			
+			parent = DoorRearRight,
+            itemType = Base.ChevyG30WindowArmorSC,
+        }
 
 		template = Tire,
 		template = Axle,
