@@ -1,0 +1,247 @@
+module Base
+{
+    model M997Bullbar
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontBumper_obj,
+        shader = vehicle_noreflect,
+        static = FALSE,
+        scale = 1.0,
+    }
+
+    model M997BumperAssembly
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|BumperAssembly_obj,
+        shader = vehicle_noreflect,
+        static = TRUE,
+        scale = 1.0,
+    }
+
+    model M997AmbulanceTop3Tone
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
+        shader = vehiclewheel,
+        texture = Vehicles/HMMWV/ToneBulance,
+        scale = 1.0,
+    }
+
+    model M997AmbulanceTopGreen
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
+        shader = vehiclewheel,
+        texture = Vehicles/HMMWV/OdBulance,
+        scale = 1.0,
+    }
+
+    model M997AmbulanceTopTan
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
+        shader = vehiclewheel,
+        texture = Vehicles/HMMWV/TanBulance,
+        scale = 1.0,
+    }
+
+    model M997WindshieldArmor
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|WindshieldArmor_obj,
+        shader = vehiclewheel,
+        texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
+        scale = 1.0,
+    }
+
+    model M997FrontLeftDoorArmor
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftArmor_obj,
+        shader = vehicle_noreflect,
+        static = FALSE,
+        scale = 1.0,
+    }
+
+    model M997FrontRightDoorArmor
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightArmor_obj,
+        shader = vehicle_noreflect,
+        static = FALSE,
+        scale = 1.0,
+    }
+
+    model M997Stretchers
+    {
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|AmbuStretcher_obj,
+        shader = vehiclewheel,
+        texture = Vehicles/HMMWV/OdBulance,
+        static = TRUE,
+        scale = 1.0,
+    }
+
+    template vehicle M997Attachments
+    {
+        template = FourSeaterFootwellSpace,
+        template = specials/part/HumveeDieselSC,
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part BumperAssembly
+        {
+            model Default { file = M997BumperAssembly, }
+            category = nodisplay,
+            itemType = Base.HMMWVBumperAssemblySC,
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+
+        part SCArmorBumper
+        {
+            model Default { file = M997Bullbar, }
+            lua { create = Vehicles.Create.Default, }
+            itemType = Base.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.001,
+            }
+
+            requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M997FrontRightWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.001,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M997FrontLeftWindowArmor, }
+            itemType = Base.HMMWVWindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.001,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M997FrontRightDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M997FrontLeftDoorArmor, }
+            itemType = Base.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M997WindshieldArmor, }
+            itemType = Base.HMMWVWindshieldArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.001,
+            }
+        }
+
+        part M997Stretchers
+        {
+            model Default { file = M997Stretchers, }
+            itemType = Base.HMMWVDoorArmorSC,
+            category = nodisplay,
+
+            table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+
+    template vehicle M997AmbulanceTopGreen
+    {
+        part M997Top
+        {
+            model Default { file = M997AmbulanceTopGreen, }
+            itemType = Base.HMMWVDoorArmorSC,
+            category = nodisplay,
+
+            table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+
+    template vehicle M997AmbulanceTopTan
+    {
+        part M997Top
+        {
+            model Default { file = M997AmbulanceTopTan, }
+            itemType = Base.HMMWVDoorArmorSC,
+            category = nodisplay,
+
+            table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+
+    template vehicle M997AmbulanceTop3Tone
+    {
+        part M997Top
+        {
+            model Default { file = M997AmbulanceTop3Tone, }
+            itemType = Base.HMMWVDoorArmorSC,
+            category = nodisplay,
+
+            table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+}

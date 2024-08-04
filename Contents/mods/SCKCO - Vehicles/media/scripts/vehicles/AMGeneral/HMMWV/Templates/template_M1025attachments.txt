@@ -91,7 +91,7 @@ module Base
     template vehicle M1025Attachments
 	{
         template = FourSeaterFootwellSpace,
-        template = specials/part/DetroitDieselSC,
+        template = specials/part/HumveeDieselSC,
 
         template = armorUpgrades/part/SCArmorBumper,
 
@@ -99,7 +99,7 @@ module Base
 		{
 			model Default { file = M1025BumperAssembly, }
 			category = nodisplay,
-			itemType = Base.ChevyLogo,
+			itemType = Base.HMMWVBumperAssemblySC,
 
 			lua
 			{
@@ -180,5 +180,60 @@ module Base
             itemType = Base.HMMWVWindshieldArmorSC,
         }
 
+		part M1025SlantBase
+		{
+			model HM1025SlantBase
+			{
+				file = HM1025SlantBase,
+			}
+
+			parent = TrunkLid,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				requireUninstalled = M1025Slant,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantDoorSC,
+		}
+
+		part M1025Slant
+		{
+			parent = TrunkDoor,
+
+			model HM1025Slant
+			{
+				file = HM1025Slant,
+			}
+
+			table install
+			{
+				requireInstalled = TrunkLid,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = Base.M1025SlantBaseSC,
+		}
     }
 }
