@@ -56,7 +56,9 @@ module Base
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|RearRightWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,        
-		static = FALSE,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindowArmor,
+        static = TRUE,
+        boneWeight = SlideDoorBone 1.0,
 	}
 
 	model G30SeatsRearLeftWindowArmor
