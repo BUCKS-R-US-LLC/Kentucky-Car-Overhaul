@@ -49,14 +49,6 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30SeatsMiddleRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|SlideDoorWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = SlideDoorBone 1.0,
-	}
 	model G30SeatsMiddleLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|MiddleLeftWindow_obj,
@@ -263,7 +255,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.5593 -0.7966,
 		shadowExtents = 3.3295 8.3058,
 		shadowOffset = -0.0042 -0.8042,
-		maxSpeed = 90f,
+		maxSpeed = 60f,
 		engineForce = 6500,
 		engineQuality = 70,
 		engineLoudness = 100,
@@ -761,7 +753,7 @@ module Base
 			area = SeatMiddleLeft,
 		}
 
-		part WindowMiddleRightRight
+		part WindowMiddleRight
 		{
 			window
 			{
