@@ -80,27 +80,27 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model M1028frontwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model M1028frontwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model M1028backwheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_M1028A3_RearLeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model M1028backwheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_M1028A3_RearRightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
@@ -655,7 +655,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1028Wheelbackwheelleft,
+				file = M1028backwheelleft,
 			}
 		}
 
@@ -663,7 +663,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1028Wheelbackwheelright,
+				file = M1028backwheelright,
 			}
 		}
 
