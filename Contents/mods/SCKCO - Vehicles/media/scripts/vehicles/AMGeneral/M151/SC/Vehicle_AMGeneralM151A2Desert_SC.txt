@@ -573,18 +573,6 @@ module Base
 			category = SCUCKwindows,
 			itemType = Base.M151FrontWindshieldSC,
 		}
-
-        part removeParts
-        {
-           category = nodisplay,
-           table removeOnCreate {
-                1=DoorFrontLeft,
-                2=DoorFrontRight,
-				3=WindowFrontLeft,
-                4=WindowFrontRight,
-           }
-           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
-        }
 		
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
