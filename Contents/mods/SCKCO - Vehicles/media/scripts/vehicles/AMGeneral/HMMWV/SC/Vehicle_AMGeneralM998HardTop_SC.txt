@@ -121,22 +121,6 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone1 1.0,
 	}
-	model HM998RearLeftContainer
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftContainer_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = TRUE,
-		boneWeight = RearLeftContainerBone 1.0,
-	}
-	model HM998RearRightContainer
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightContainer_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = TRUE
-		boneWeight = RearRightContainerBone 1.0,
-	}
 	model HM998HardtopHood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Hood_obj,
@@ -668,7 +652,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -687,7 +671,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part WindowRearRight
@@ -706,7 +690,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part WindowRearLeft
@@ -725,7 +709,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part DoorFrontRight
