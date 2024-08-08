@@ -716,6 +716,18 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
+        part removeParts
+        {
+           category = nodisplay,
+           table removeOnCreate {
+                1=DoorMiddleLeft,
+                2=DoorMiddleRight,
+				3=DoorRearLeft,
+                4=DoorRearRight,
+           }
+           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
+        }
+
 		part WindowFrontRight
 		{
 			model windowFR
