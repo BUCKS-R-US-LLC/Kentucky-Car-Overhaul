@@ -143,11 +143,6 @@ module Base
 			texture = Vehicles/GrumLLV/Vehicle_Grum_White,
 		}
 
-		skin
-		{
-			texture = Vehicles/GrumLLV/Vehicle_Grum_White,
-		}
-
 		textureMask = Vehicles/GrumLLV/Vehicle_Grum_mask,
 		textureLights = Vehicles/GrumLLV/Vehicle_Grum_lights,
 		textureDamage1Overlay = Vehicles/GrumLLV/Vehicle_Grum_blood,
@@ -165,13 +160,13 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 2.9333 3.1000 6.7333,
-		mass = 50,
-		physicsChassisShape = 2.9000 3.1000 6.7333,
-		centerOfMassOffset = 0.0000 1.5833 0.0000,
+		extents = 2.9333 2.1333 6.7333,
+		mass = 100,
+		physicsChassisShape = 2.9000 2.1333 6.7333,
+		centerOfMassOffset = 0.0000 1.0833 0.0000,
 		shadowExtents = 2.8783 7.6572,
 		shadowOffset = 0.0135 0.0000,
-		engineForce = 2500,
+		engineForce = 4500,
 		engineQuality = 80,
 		engineLoudness = 85,
 		maxSpeed = 70f,
@@ -231,7 +226,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7000 1.3333 0.1667,
+				offset = -0.6667 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -250,13 +245,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7000 1.3333 0.1667,
+				offset = 0.6667 1.3333 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0833 0.0000 0.1667,
+				offset = 2.0667 0.0000 0.1667,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -264,27 +259,27 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.5167 2.4667 2.0000,
+			xywh = 0.0000 4.3667 2.4667 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.3833 2.4667 1.7667,
+			xywh = 0.0000 -4.2500 2.4667 1.7667,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = -2.3000 0.3667 1.3667 1.3667,
+			xywh = 2.1500 0.3667 1.3667 1.3667,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = 2.3000 0.3667 1.3667 1.3667,
+			xywh = -2.1500 0.3667 1.3667 1.3667,
 		}
 
 		area GasTank
 		{
-			xywh = -1.9333 -0.6500 0.6333 0.6667,
+			xywh = -1.7833 -0.6500 0.6333 0.6667,
 		}
 
 		area TireFrontLeft
@@ -307,6 +302,7 @@ module Base
 			xywh = -1.4667 -1.5333 0.0000 0.0000,
 		}
 
+		template = LLVAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -460,7 +456,7 @@ module Base
 			area = SeatFrontRight,
 		}
 
-		part WindowFrontRight
+		part WindowFrontLeft
 		{
 			model windowFL
 			{
@@ -688,6 +684,12 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio*
+		{
+			itemType = Radio.RadioBlack,
+		}
+
 		template = Headlight,
 
 		part PassengerCompartment
@@ -702,14 +704,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.5667 -0.0167,
-			extents = 2.9000 3.1000 6.7000,
+			offset = 0.0000 0.9667 -0.0167,
+			extents = 2.9000 1.8667 6.7000,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.2500 3.3500,
+			offset = 0.0000 0.1167 3.3500,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
