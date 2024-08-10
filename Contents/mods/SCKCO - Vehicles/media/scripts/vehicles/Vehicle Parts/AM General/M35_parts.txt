@@ -11,7 +11,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Bumper_WorldItem,
+            WorldStaticModel = Military6x6Bumper_WorldItem,
         }
 
     item M35WindowArmor2
@@ -24,7 +24,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35WindowArmor_WorldItem,
+            WorldStaticModel = Military6x6WindowArmor_WorldItem,
         }
 
     item M35DoorArmor2
@@ -37,7 +37,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35DoorArmor_WorldItem,
+            WorldStaticModel = Military6x6DoorArmor_WorldItem,
         }
 
     item M35WindshieldArmor2
@@ -50,7 +50,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35WindshieldArmor_WorldItem,
+            WorldStaticModel = Military6x6WindshieldArmor_WorldItem,
         }
 
     item M35Door2
@@ -63,43 +63,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Door_WorldItem,
-        }
-
-    item M35Wheel2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Front Wheel,
-            Icon	=	AMLogo,
-        	MaxCapacity = 35,
-        	ChanceToSpawnDamaged = 0,
-        	WheelFriction = 1.6,
-        	ConditionLowerStandard = 0.08,
-        	ConditionLowerOffroad = 0.10,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35FrontWheel_WorldItem,
-        }
-
-    item M35RearDoubleWheels2
-        {
-            DisplayCategory = VehicleMaintenance,
-            Weight	=	10.0,
-            Type	=	Normal,
-            DisplayName	= M35 Rear Double Wheels,
-            Icon	=	AMLogo,
-        	MaxCapacity = 35,
-        	ChanceToSpawnDamaged = 0,
-        	WheelFriction = 1.6,
-        	ConditionLowerStandard = 0.08,
-        	ConditionLowerOffroad = 0.10,
-            VehicleType =   2,
-            ConditionMax = 100,
-            MechanicsItem = TRUE,
-            WorldStaticModel = M35RearDoubleWheels_WorldItem,
+            WorldStaticModel = Military6x6Door_WorldItem,
         }
 
     item M35Window2
@@ -112,7 +76,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Window_WorldItem,
+            WorldStaticModel = Military6x6Window_WorldItem,
         }
 
     item M35Hood2
@@ -125,7 +89,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Hood_WorldItem,
+            WorldStaticModel = Military6x6Hood_WorldItem,
         }
 
     item M35TailGate2
@@ -138,7 +102,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35TailGate_WorldItem,
+            WorldStaticModel = Military6x6TailGate_WorldItem,
         }
 
     item M35RearWindow2
@@ -151,7 +115,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35RearWindshield_WorldItem,
+            WorldStaticModel = Military6x6RearWindshield_WorldItem,
         }
 
    item M35RearSeat2
@@ -165,7 +129,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = FALSE,
-            WorldStaticModel = M35Seat_WorldItem,
+            WorldStaticModel = Military6x6Seat_WorldItem,
         }
 
     item M35Windshield2
@@ -178,7 +142,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Windshield_WorldItem,
+            WorldStaticModel = Military6x6Windshield_WorldItem,
         }
 
     item M35Tarp2
@@ -191,7 +155,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35Tarp_WorldItem,
+            WorldStaticModel = Military6x6Tarp_WorldItem,
         }
 
     item M35FrontHardTop2
@@ -204,7 +168,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35SoftTop_WorldItem,
+            WorldStaticModel = Military6x6SoftTop_WorldItem,
         }
 
     item M35FrontSoftTop2
@@ -217,7 +181,7 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35HardTop_WorldItem,
+            WorldStaticModel = Military6x6HardTop_WorldItem,
         }
 
     item M35TarpFrame2
@@ -230,6 +194,6 @@ module Base
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = M35TarpFrame_WorldItem,
+            WorldStaticModel = Military6x6TarpFrame_WorldItem,
         }
 }

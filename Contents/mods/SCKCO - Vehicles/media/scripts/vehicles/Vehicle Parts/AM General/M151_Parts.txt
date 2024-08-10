@@ -11,7 +11,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontDoor_WorldItem,
+        WorldStaticModel = M151FrontDoor_WorldItem,
     }
 
         item M151WindshieldFrameSC2
@@ -25,33 +25,33 @@ module Base
         ConditionMax = 100,
         MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
+        WorldStaticModel = M151WindshieldFrame_WorldItem,
     }
 
-        item M151FrontWindshieldSC2
+        item M151WindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         Type	=	Normal,
-        DisplayName	=	M151A2 Front Windshield,
+        DisplayName	=	M151A2 Windshield,
         Icon	=	AMLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontWindshield_WorldItem,
+        WorldStaticModel = M151Windshield_WorldItem,
     }
 
-        item M151FrontSideWindowSC2
+        item M151WindowSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
-        DisplayName	= M151A2 Front Side Window,
+        DisplayName	= M151A2 Soft Window,
         Icon	=	AMLogo,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontSideWindow_WorldItem,
+        WorldStaticModel = M151Window_WorldItem,
     }
 
         item M151AntennaSC2
@@ -65,7 +65,7 @@ module Base
         ConditionMax = 100,
         MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
+        WorldStaticModel = M151Antenna_WorldItem,
     }
 
         item M151TarpFrameSC2
@@ -79,7 +79,7 @@ module Base
         ConditionMax = 100,
         MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
+        WorldStaticModel = M151TarpFrame_WorldItem,
     }
 
         item M151SideTarpSC2
@@ -93,7 +93,7 @@ module Base
         ConditionMax = 100,
         MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
+        WorldStaticModel = M151SideTarp_WorldItem,
     }
 
         item M151SoftTopSC2
@@ -107,21 +107,7 @@ module Base
         ConditionMax = 100,
         MaxCapacity = 10,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
-    }
-
-        item M151AntennaSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        Type	=	Normal,
-        DisplayName	= M151A2 Antenna,
-        Icon	=	AMLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceRearSeat_WorldItem,
+        WorldStaticModel = M151SoftTop_WorldItem,
     }
 
         item M151HoodSC2
@@ -134,7 +120,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = CapriceHood_WorldItem,
+        WorldStaticModel = M151Hood_WorldItem,
     }
 
 }
