@@ -50,7 +50,7 @@ module Base
 
     model M997FrontLeftDoorArmor
     {
-        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftArmor_obj,
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftDoorArmor_obj,
         shader = vehicle_noreflect,
         static = FALSE,
         scale = 1.0,
@@ -58,11 +58,27 @@ module Base
 
     model M997FrontRightDoorArmor
     {
-        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightArmor_obj,
+        mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightDoorArmor_obj,
         shader = vehicle_noreflect,
         static = FALSE,
         scale = 1.0,
     }
+
+	model M997FrontLeftWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1.0,
+	}
+
+	model M997FrontRightWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
 
     model M997Stretchers
     {

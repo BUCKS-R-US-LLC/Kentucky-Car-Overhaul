@@ -231,6 +231,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		passenger RearLeft
@@ -250,6 +258,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		passenger RearRight
@@ -268,6 +284,14 @@ module Base
 				offset = -3.3750 0.3750 -1.1750,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 
@@ -562,45 +586,7 @@ module Base
 			area = SeatFrontLeft,
 			itemType = Base.HMMWVWindowSC,
 		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HM997RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			itemType = Base.HMMWVWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = HM997RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
-			itemType = Base.HMMWVWindowSC,
-		}
-
+		
 		part DoorFrontRight
 		{
 			model Default

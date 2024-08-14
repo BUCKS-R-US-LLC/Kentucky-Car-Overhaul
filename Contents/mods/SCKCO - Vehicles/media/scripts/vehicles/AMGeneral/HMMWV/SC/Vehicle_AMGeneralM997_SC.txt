@@ -299,7 +299,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.1000 3.1000 1.1000,
+			xywh = 0.0000 -7.0000 5.0500 1.8000,
 		}
 
 		area SeatFrontLeft
@@ -581,44 +581,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVHardWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HM997RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			itemType = Base.HMMWVHardWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = HM997RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
 			itemType = Base.HMMWVHardWindowSC,
 		}
 
