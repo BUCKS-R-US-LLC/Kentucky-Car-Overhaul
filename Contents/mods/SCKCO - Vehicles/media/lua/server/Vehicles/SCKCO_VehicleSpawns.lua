@@ -1,6 +1,5 @@
 if VehicleZoneDistribution then
 
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordGalaxie"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_HondaAccord"] = {index = -1, spawnChance = 15};
@@ -15,7 +14,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 0.02};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 0.01};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 0.8};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 5};

@@ -19,6 +19,18 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model HM997RearRightPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997RearLeftPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model HM997Windshield
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Windshield_obj,
@@ -32,6 +44,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
 	model HM997FrontLeftWindow
 	{
@@ -40,6 +53,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
 	model HM997FrontRightDoor
 	{
@@ -75,6 +89,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 		boneWeight = FrontBumperBone 1.0,
+	}
+	model HM997Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
 	}
 	model M997Wheelfrontwheelleft
 	{
@@ -240,7 +261,7 @@ module Base
 
 			position inside
 			{
-				offset = 1.6000 2.0500 -1.4750,
+				offset = 0.0000 2.0500 -1.4750,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -259,7 +280,7 @@ module Base
 
 			position inside
 			{
-				offset = -1.6000 2.0500 -1.4750,
+				offset = 0.0000 2.0500 -3.8250,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -278,7 +299,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.1000 3.1000 1.1000,
+			xywh = 0.0000 -7.0000 5.0500 1.8000,
 		}
 
 		area SeatFrontLeft
@@ -293,12 +314,12 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = 3.8250 -1.2250 2.0500 2.0500,
+			xywh = 3.8250 -4.2000 2.0500 2.0500,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.8000 -1.2250 2.0500 2.0500,
+			xywh = -3.8000 -4.2000 2.0500 2.0500,
 		}
 
 		area GasTank
@@ -406,9 +427,9 @@ module Base
 
 		part Muffler
 		{
-			model HM1025Exhaust
+			model HM997Exhaust
 			{
-				file = HM1025Exhaust,
+				file = HM997Exhaust,
 			}
 
 			table install
@@ -491,8 +512,6 @@ module Base
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part Windshield
 		{
@@ -541,7 +560,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -560,45 +579,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HM997RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			itemType = Base.HMMWVWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = HM997RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
-			itemType = Base.HMMWVWindowSC,
+			itemType = Base.HMMWVHardWindowSC,
 		}
 
 		part DoorFrontRight

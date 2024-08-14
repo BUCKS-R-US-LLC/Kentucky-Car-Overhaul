@@ -121,7 +121,7 @@ module Base
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_AMGeneralM9973Tone
+	vehicle SC_AMGeneralM997
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.5,
@@ -261,7 +261,7 @@ module Base
 
 			position inside
 			{
-				offset = 1.6000 2.0500 -1.4750,
+				offset = 0.0000 2.0500 -1.4750,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -280,7 +280,7 @@ module Base
 
 			position inside
 			{
-				offset = -1.6000 2.0500 -1.4750,
+				offset = 0.0000 2.0500 -3.8250,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -299,7 +299,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.1000 3.1000 1.1000,
+			xywh = 0.0000 -7.0000 5.0500 1.8000,
 		}
 
 		area SeatFrontLeft
@@ -314,12 +314,12 @@ module Base
 
 		area SeatRearLeft
 		{
-			xywh = 3.8250 -1.2250 2.0500 2.0500,
+			xywh = 3.8250 -4.2000 2.0500 2.0500,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.8000 -1.2250 2.0500 2.0500,
+			xywh = -3.8000 -4.2000 2.0500 2.0500,
 		}
 
 		area GasTank
@@ -503,7 +503,7 @@ module Base
 			}
 		}
 
-		template = M9973ToneAmbulanceTop,
+		template = M997AmbulanceTopTan,
 		template = M997Attachments,
 		template = Windshield/part/Windshield,
 		template = Door/part/DoorFrontLeft,
@@ -512,8 +512,6 @@ module Base
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
-		template = Window/part/WindowRearRight,
 
 		part Windshield
 		{
@@ -581,44 +579,6 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVHardWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = HM997RearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			itemType = Base.HMMWVHardWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = HM997RearLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
 			itemType = Base.HMMWVHardWindowSC,
 		}
 
