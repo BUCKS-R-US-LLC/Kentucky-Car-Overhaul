@@ -155,7 +155,7 @@ module Base
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_AMGeneralM151A2Cleaners
+	vehicle SC_AMGeneralM151A2Tan
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -171,7 +171,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+			texture = Vehicles/M151A2/Vehicle_HM151_Tan,
 		}
 
 		textureRust = Vehicles/M151A2/Vehicle_HM151_rust,
@@ -197,8 +197,8 @@ module Base
 		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 4500,
-		maxSpeed = 60f,
+		engineForce = 8500,
+		maxSpeed = 30f,
 		engineLoudness = 70,
 		engineQuality = 76,
 		brakingForce = 70,
@@ -573,12 +573,12 @@ module Base
 			category = SCUCKwindows,
 			itemType = Base.M151WindshieldSC,
 		}
-
+		
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		
+
 		part WindowFrontRight
 		{
 			model windowFR

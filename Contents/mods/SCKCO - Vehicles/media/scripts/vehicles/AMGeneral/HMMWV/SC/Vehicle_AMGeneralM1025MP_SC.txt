@@ -63,7 +63,6 @@ module Base
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
 		boneWeight = RearRightArmorBone 1.0,
-		
 	}
 	model HM1025RearLeftWindow
 	{
@@ -137,31 +136,38 @@ module Base
 		boneWeight = HoodBone 1.0,
 		boneWeight = FrontBumperBone 1.0,
 	}
-	model HMMWVWheelfrontwheelleft
+	model HM1025Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+	}
+	model M1025Wheelfrontwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelfrontwheelright
+	model M1025Wheelfrontwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelleft
+	model M1025Wheelbackwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model HMMWVWheelbackwheelright
+	model M1025Wheelbackwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_AMGeneralM1025MilitaryPolice
+	vehicle SC_AMGeneralM1025MP
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.5,
@@ -187,9 +193,14 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/HMMWV/Vehicle_HM1025_TanMP,
+			texture = Vehicles/HMMWV/Vehicle_HM1025_3ToneMP,
 		}
-		
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_3ToneMP,
+		}
+
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
 		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
 		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
@@ -372,16 +383,6 @@ module Base
 			xywh = -3.6444 -1.2222 2.0889 2.0889,
 		}
 
-		area SideContainer1
-		{
-			xywh = 3.6444 -1.2222 2.0889 2.0889,
-		}
-
-		area SideContainer2
-		{
-			xywh = -3.6444 -1.2222 2.0889 2.0889,
-		}
-
 		area GasTank
 		{
 			xywh = -3.1778 -2.4889 1.2000 0.8000,
@@ -451,6 +452,11 @@ module Base
 
 		part Muffler
 		{
+			model HM1025Exhaust
+			{
+				file = HM1025Exhaust,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -809,62 +815,6 @@ module Base
 			itemType = Base.HMMWVHardDoorSC,
 		}
 
-		part M1025SlantBase
-		{
-			model HM1025SlantBase
-			{
-				file = HM1025SlantBase,
-			}
-
-			parent = TrunkLid,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				requireUninstalled = M1025Slant,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantDoorSC,
-		}
-
-		part M1025Slant
-		{
-			parent = TrunkDoor,
-
-			model HM1025Slant
-			{
-				file = HM1025Slant,
-			}
-
-			table install
-			{
-				requireInstalled = TrunkLid,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
-		}
-
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -926,7 +876,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelleft,
+				file = M1025Wheelfrontwheelleft,
 			}
 		}
 
@@ -934,7 +884,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelfrontwheelright,
+				file = M1025Wheelfrontwheelright,
 			}
 		}
 
@@ -942,7 +892,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelleft,
+				file = M1025Wheelbackwheelleft,
 			}
 		}
 
@@ -950,7 +900,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HMMWVWheelbackwheelright,
+				file = M1025Wheelbackwheelright,
 			}
 		}
 
