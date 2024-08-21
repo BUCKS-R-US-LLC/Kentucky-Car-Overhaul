@@ -12,7 +12,6 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordCrownVictoria92"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 0.001};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 0.02};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 0.01};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 0.5};
@@ -107,7 +106,6 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92Muhlen"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92Warren"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92Meade"] = {index = -1, spawnChance = 30};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordF700ArmoredPolice"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.baseVehicleQuality = 1.1;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
 
@@ -160,6 +158,110 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.junkyard.vehicles["Base.SC_ChevroletG30SpecialForces"] = {index = -1, spawnChance = 5};  
     VehicleZoneDistribution.junkyard.chanceToPartDamage = 60;
     
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1008"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1008TroopCarrier"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1009"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1009MP"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1010Ambulance"] = {index = -1, spawnChance = 5};
+    
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM998"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM998Tan"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025Tan"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025MP"] = {index = -1, spawnChance = 5};
+
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097Tan"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097TroopCarrier"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097TroopCarrierTan"] = {index = -1, spawnChance = 1};
+
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997Tan"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997Green"] = {index = -1, spawnChance = 5};
+
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_HondaAccord"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_VWRabbit"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_MazdaB2000"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85Taxi"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85StatePolice"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85ParkRanger"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 6};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletK5Blazer"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletK5BlazerFossoil"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletK5BlazerMcCoys"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletK5BlazerParkRanger"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletCaprice85"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletSuburban"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletCavalier"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletCamaro87"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30Mail"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30Heralds"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30Scarlet"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30BunnyBread"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletP30Greenes"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30Seats"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30Mail"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30McCoy"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30Spiffo"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30Fossoil"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30LectroMax"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30MassGenFac"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30Ambulance"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30SpecialForces"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletG30BoxVan"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700MacTools"] = {index = -1, spawnChance = 0.1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700GigaMart"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700Greenes"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF700BunnyBread"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_MackDM800Garbage"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletC70GrainTruck"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90JeffersonPolice"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90StatePolice"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85LouisvillePolice"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria92JeffersonSheriff"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ToyotaCamry"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.chanceToPartDamage = 10;
+    VehicleZoneDistribution.trafficjamn.baseVehicleQuality = 1.1;
+	VehicleZoneDistribution.trafficjamn.chanceToSpawnKey = 80;
+
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM35A1"] = {index = -1, spawnChance = 50};
+
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM998"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM998Tan"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1025"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1025Tan"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1025MP"] = {index = -1, spawnChance = 10};
+
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1097"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1097Tan"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1097TroopCarrier"] = {index = -1, spawnChance = 50};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM1097TroopCarrierTan"] = {index = -1, spawnChance = 10};
+
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM997"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM997Tan"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM997Green"] = {index = -1, spawnChance = 10};
+
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordExplorer"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_HondaAccord"] = {index = -1, spawnChance = 15};
@@ -171,7 +273,6 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordCrownVictoria85ParkRanger"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF350Ambulance"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_GrummanLLV"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF700ArmoredBank"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 10};
@@ -220,9 +321,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordCrownVictoria85LouisvillePolice"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordCrownVictoria92JeffersonSheriff"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ToyotaCamry"] = {index = -1, spawnChance = 10};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM35A1Burnt"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM35A1Crashed"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM35A1CrashedTurned"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.chanceToPartDamage = 10;
     VehicleZoneDistribution.trafficjams.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.trafficjams.chanceToSpawnKey = 80;
