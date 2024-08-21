@@ -1,11 +1,18 @@
-ISCarMechanicsOverlay.CarList["Base.SC_M1025"] = {imgPrefix = "m1025_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M1025Desert"] = {imgPrefix = "m1025_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M998"] = {imgPrefix = "m998_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M998Desert"] = {imgPrefix = "m998_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M35A1"] = {imgPrefix = "M35A1_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M151A2"] = {imgPrefix = "m151_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M151A2Desert"] = {imgPrefix = "m151_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_M151A2Cleaners"] = {imgPrefix = "m151_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1025"] = {imgPrefix = "m1025_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1025Tan"] = {imgPrefix = "m1025_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM997"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM997Green"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM997Tan"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Tan"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Hardtop"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998HardtopTan"] = {imgPrefix = "m998_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A1"] = {imgPrefix = "M35A1_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2"] = {imgPrefix = "m151_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2Tan"] = {imgPrefix = "m151_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2Cleaners"] = {imgPrefix = "m151_", x=0,y=0};
+
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A1"] = {imgPrefix = "m151_", x=0,y=0};
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};
