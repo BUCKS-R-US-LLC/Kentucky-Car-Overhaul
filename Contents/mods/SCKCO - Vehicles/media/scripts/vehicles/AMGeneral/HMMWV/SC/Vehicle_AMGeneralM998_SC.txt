@@ -200,7 +200,7 @@ module Base
 		}
 
 		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
-		textureMask = Vehicles/HMMWV/Vehicle_HM998Soft_mask,
+		textureMask = Vehicles/HMMWV/Vehicle_HMSoftDoors_mask,
 		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
 		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
 		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
@@ -358,7 +358,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.1000 3.1000 1.1000,
+			xywh = 0.0000 -6.1250 5.0500 1.1000,
 		}
 
 		area SeatFrontLeft
@@ -418,19 +418,21 @@ module Base
 		template = Muffler,
 
 		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-                noLockDoors = true,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
 
 		part DoorFrontLeft
 		{
@@ -486,7 +488,6 @@ module Base
 			{
 				file = HM998Driver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -495,7 +496,6 @@ module Base
 			{
 				file = HM998Passenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -504,7 +504,6 @@ module Base
 			{
 				file = HM998RearLeftPassenger,
 			}
-
 		}
 
 		part SeatRearRight
@@ -513,7 +512,6 @@ module Base
 			{
 				file = HM998RearRightPassenger,
 			}
-
 		}
 
 		part Muffler
@@ -532,7 +530,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -928,7 +925,6 @@ module Base
 			{
 				file = M998Wheelfrontwheelleft,
 			}
-
 		}
 
 		part TireFrontRight
@@ -937,7 +933,6 @@ module Base
 			{
 				file = M998Wheelfrontwheelright,
 			}
-
 		}
 
 		part TireRearLeft
@@ -946,7 +941,6 @@ module Base
 			{
 				file = M998Wheelbackwheelleft,
 			}
-
 		}
 
 		part TireRearRight
@@ -955,7 +949,6 @@ module Base
 			{
 				file = M998Wheelbackwheelright,
 			}
-
 		}
 
 		template = Brake,

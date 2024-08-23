@@ -194,6 +194,8 @@ local vehicleToSeatAnimations = {
 	["Base.SUV"] = "Default",
 	["Base.SC_FordExplorer"] = "Default",
 
+	["Base.SC_AMGeneralM1097"] = "6SideSeater",
+	["Base.SC_AMGeneralM1097Tan"] = "6SideSeater",
 	["Base.SC_ChevroletM1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_ChevroletM1010Ambulance"] = "6SideSeater",
 	["Base.SC_M35A1"] = "16SideSeater",
@@ -204,6 +206,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_VWRabbitPizza"] = "SmallCar",
 	["Base.SC_HondaAccord"] = "SmallCar",
 	["Base.SC_M151A2"] = "SmallCar",
+	["Base.SC_M151A2Tan"] = "SmallCar",
 	["Base.SC_M151A2Cleaners"] = "SmallCar",
 	["Base.SC_Porsche911G50"] = "SmallCar",
 
