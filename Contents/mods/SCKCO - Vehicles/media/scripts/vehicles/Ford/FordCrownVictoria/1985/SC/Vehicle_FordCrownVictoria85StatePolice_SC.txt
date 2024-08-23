@@ -167,7 +167,7 @@ module Base
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
 		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_mask,
-		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_lights,
+		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_STATElights,
 		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage,
 		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage2,
 		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
@@ -176,6 +176,8 @@ module Base
 		lightbar
 		{
 			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
 		}
 		
 		sound
