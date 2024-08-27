@@ -479,7 +479,6 @@ module Base
 			{
 				militaryIgnition = true,
 				additionalVehicleFunc = Engine,
-				noLockDoors = true,
 			}
 
 			lua
@@ -954,6 +953,13 @@ module Base
 			{
 				update = Vehicles.Update.PassengerCompartment,
 			}
+		}
+
+		part noLocks
+		{
+		    category = nodisplay,
+			table partVariation { noLockDoors = true, }
+			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
 		}
 
 		physics box
