@@ -14,6 +14,19 @@ module Base
         WorldStaticModel = HumveeSoftTop_WorldItem,
     }
 
+    item M1097RearSoftTopSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= M1097 Soft Top,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HumveeRearTop_WorldItem,
+    }
+
     item HMMWVBumperAssemblySC2
     {
         DisplayCategory = VehicleArmor,
@@ -24,7 +37,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = HumveeBumper_WorldItem,
+        WorldStaticModel = HumveeBumperAssembly_WorldItem,
     }
 
     item HMMWVBumperSC2
@@ -116,7 +129,7 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_HMMWVSoftDoor,
-        WorldStaticModel = HumveeDoor_WorldItem,
+        WorldStaticModel = HumveeHardDoor_WorldItem,
     }
 
     item HMMWVSoftDoorSC2
@@ -130,7 +143,7 @@ module Base
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_HMMWVSoftDoor,
-        WorldStaticModel = HumveeDoor_WorldItem,
+        WorldStaticModel = HumveeSoftDoor_WorldItem,
     }
 
     item HMMWVWindshieldSC2
@@ -169,7 +182,7 @@ module Base
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = HumveeWindow_WorldItem,
+        WorldStaticModel = HumveeHardWindow_WorldItem,
     }
 
     item HMMWVHoodSC2
