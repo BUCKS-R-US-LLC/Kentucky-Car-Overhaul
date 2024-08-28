@@ -1294,6 +1294,54 @@ VehicleDistributions.SC_Ambulance = {
     SeatRearRight = VehicleDistributions.Seat, 
 }
 
+VehicleDistributions.SC_FireDepartmentGlovebox = {
+    rolls = 10,
+    items = {
+        "AlcoholWipes", 0.5,
+        "Bandage", 0.5,
+    },
+}
+
+VehicleDistributions.SC_FireDepartmentFootwellSpace = {
+    rolls = 10,
+    items = {
+        "AlcoholWipes", 0.5,
+        "Bandage", 0.5,
+    }
+}
+
+VehicleDistributions.SC_FireDepartmentTruckBed = {
+    rolls = 50,
+    items = {
+        "Bag_MedicalBag", 1,
+        "Axe", 5,
+        "Hat_Fireman", 5,
+        "Jacket_Fireman", 5,
+        "Trousers_Fireman", 5,
+    }
+}
+
+VehicleDistributions.SC_FireDepartment = {
+    
+    SideContainer1 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer2 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer3 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer4 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer5 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer6 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer7 = VehicleDistributions.SC_FireDepartmentTruckBed,
+    SideContainer8 = VehicleDistributions.SC_FireDepartmentTruckBed,
+
+    TruckBed = VehicleDistributions.SC_FireDepartmentTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_FireDepartmentTruckBed,
+    RearVanSpace = VehicleDistributions.SC_FireDepartmentTruckBed,
+    FrontFootwellSpace = VehicleDistributions.SC_FireDepartmentFootwellSpace,
+    RearFootwellSpace = VehicleDistributions.SC_FireDepartmentFootwellSpace,
+    GloveBox = VehicleDistributions.SC_FireDepartmentGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
 distributionTable["SC_HondaAccord"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_VWRabbit"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_VWRabbitPizza"] = { Normal = VehicleDistributions.SC_Standard}
@@ -1399,6 +1447,10 @@ distributionTable["SC_AMGeneralM998HardtopTan"] = { Normal = VehicleDistribution
 distributionTable["SC_AMGeneralM35A1"] = { Normal = VehicleDistributions.SC_Military }
 
 distributionTable["PickUpVanLightsFire"] = { Normal = VehicleDistributions.SC_FireDepartment }
+distributionTable["SC_HahnPumperRed"] = { Normal = VehicleDistributions.SC_FireDepartment }
+distributionTable["SC_HahnPumperYellow"] = { Normal = VehicleDistributions.SC_FireDepartment }
+distributionTable["SC_CrownFireCoachRed"] = { Normal = VehicleDistributions.SC_FireDepartment }
+distributionTable["SC_CrownFireCoachWhite"] = { Normal = VehicleDistributions.SC_FireDepartment }
 
 distributionTable["SC_ChevroletK5BlazerMcCoys"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletK5BlazerFossoil"] = { Normal = VehicleDistributions.SC_Standard}
