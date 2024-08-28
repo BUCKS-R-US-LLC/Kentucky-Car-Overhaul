@@ -56,7 +56,7 @@ module Base
 	model FireCoachFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -64,7 +64,7 @@ module Base
 	model FireCoachFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model FireCoachRightFrontStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightFrontStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightFrontStorageBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model FireCoachRightMiddleStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightMiddleStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightMiddleStorageBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model FireCoachRightRearStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightRearStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightRearStorageBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model FireCoachRightBackStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightBackStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightBackStorageBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model FireCoachLeftFrontStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftFrontStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftFrontStorageBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model FireCoachLeftMiddleStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftMiddleStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftMiddleStorageBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model FireCoachLeftRearStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftRearStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftRearStorageBone 1.0,
@@ -128,7 +128,7 @@ module Base
 	model FireCoachLeftBackStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftBackStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftBackStorageBone 1.0,
@@ -136,7 +136,7 @@ module Base
 	model FireCoachRearWindshield
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RearWindshield_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -309,7 +309,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0635 7.2540 3.8095 1.2698,
+			xywh = 0.0635 7.0794 3.8095 0.9206,
 		}
 
 		area SeatFrontLeft
@@ -324,7 +324,7 @@ module Base
 
 		area GasTank
 		{
-			xywh = 2.7460 -0.7778 1.0794 0.5714,
+			xywh = 2.6349 -0.7778 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -349,50 +349,45 @@ module Base
 
 		area SideContainer1
 		{
-			xywh = -2.4444 1.3810 0.7302 0.8254,
+			xywh = -2.5397 1.3810 1.1111 1.1111,
 		}
 
 		area SideContainer2
 		{
-			xywh = -2.4444 -2.0635 0.7302 0.8254,
+			xywh = -2.5397 -2.0635 1.1111 1.1111,
 		}
 
 		area SideContainer3
 		{
-			xywh = -2.4444 -4.3333 0.7302 0.8254,
+			xywh = -2.5397 -4.3333 1.1111 1.1111,
 		}
 
 		area SideContainer4
 		{
-			xywh = -2.4444 -5.1587 0.7302 0.8254,
+			xywh = -2.5397 -5.1587 1.1111 1.1111,
 		}
 
 		area SideContainer5
 		{
-			xywh = 2.5714 1.3810 0.7302 0.8254,
+			xywh = 2.6667 1.3810 1.1111 1.1111,
 		}
 
 		area SideContainer6
 		{
-			xywh = 2.5714 -2.0635 0.7302 0.8254,
+			xywh = 2.6667 -2.0635 1.1111 1.1111,
 		}
 
 		area SideContainer7
 		{
-			xywh = 2.5714 -4.3333 0.7302 0.8254,
+			xywh = 2.6667 -4.3333 1.1111 1.1111,
 		}
 
 		area SideContainer8
 		{
-			xywh = 2.5714 -5.1587 0.7302 0.8254,
+			xywh = 2.6667 -5.1587 1.1111 1.1111,
 		}
 
 		template = FireCoachAttachments,
-		template = FireCoachArmor/part/FireCoachArmorWindshield,
-		template = FireCoachArmor/part/FireCoachFrontLeftDoorArmor,
-		template = FireCoachArmor/part/FireCoachFrontRightDoorArmor,
-		template = FireCoachArmor/part/FireCoachRearLeftWindowArmor,
-		template = FireCoachArmor/part/FireCoachRearRightWindowArmor,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -409,6 +404,29 @@ module Base
 		template = TrunkFireCoach/part/SideContainer7,
 		template = TrunkFireCoach/part/SideContainer8,
 		template = TrunkDoorFireCoach,
+
+		part Engine
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+		    category = nodisplay,
+			table partVariation { noLockDoors = true, }
+			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
 
 		part TrunkDoor1
 		{
@@ -728,7 +746,6 @@ module Base
 			{
 				file = FireCoachDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -737,7 +754,6 @@ module Base
 			{
 				file = FireCoachPassenger,
 			}
-
 		}
 
 		part Muffler

@@ -1,9 +1,166 @@
 module Base
 {
+
+	model CavalierBullbar
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CavalierWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CavalierFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CavalierFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model CavalierRearLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CavalierRearRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CavalierFLWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CavalierFRWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CavalierRLWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model CavalierRRWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
     template vehicle CavalierAttachments
 	{
 
 	    template = FourSeaterFootwellSpace,
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = CavalierBullbar, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CavalierWindshieldArmor, }
+            itemType = Base.ChevroletCavalierWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CavalierFRWA, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+            requireInstalled = ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CavalierFLWA, }
+            itemType = Base.ChevroletCavalierWindowArmorSC,
+            requireInstalled = ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CavalierFrontRightDoorArmor, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CavalierFrontLeftDoorArmor, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CavalierRearRightDoorArmor, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CavalierRearLeftDoorArmor, }
+            itemType = Base.ChevroletCavalierDoorArmorSC,
+        }
         
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CavalierRRWA, }
+            itemType = Base.ChevroletCavalierWindowArmorSC,
+            requireInstalled = ChevroletCavalierDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CavalierRLWA, }
+            itemType = Base.ChevroletCavalierWindowArmorSC,
+            requireInstalled = ChevroletCavalierDoorArmorSC,
+        }
+
     }
 }
