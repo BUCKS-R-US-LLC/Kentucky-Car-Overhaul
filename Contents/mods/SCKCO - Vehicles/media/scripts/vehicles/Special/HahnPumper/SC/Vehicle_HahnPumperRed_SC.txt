@@ -487,6 +487,29 @@ module Base
 		template = TrunkPumper/part/SideContainer4,
 		template = TrunkDoorPumper,
 
+		part Engine
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+		    category = nodisplay,
+			table partVariation { noLockDoors = true, }
+			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
+		
 		part TrunkDoor1
 		{
 			model Default
