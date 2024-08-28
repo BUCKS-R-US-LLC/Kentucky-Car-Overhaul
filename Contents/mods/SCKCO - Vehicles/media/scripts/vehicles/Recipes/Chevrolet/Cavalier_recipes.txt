@@ -1,0 +1,56 @@
+module Base
+{
+
+recipe Craft '87 Cavalier Bumper
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCavalierBullbarSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Cavalier Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCavalierWindshieldArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Cavalier Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCavalierDoorArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Cavalier Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCavalierWindowArmorSC1,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}
