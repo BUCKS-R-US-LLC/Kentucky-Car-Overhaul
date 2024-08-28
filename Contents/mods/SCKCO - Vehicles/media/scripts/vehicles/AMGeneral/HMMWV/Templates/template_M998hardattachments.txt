@@ -334,4 +334,225 @@ module Base
 			itemType = Base.M1025SlantBaseSC,
 		}
     }
+
+	template vehicle M998HardtopDoors
+	{
+		part TrunkDoor1
+		{
+			area = SideContainer1,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		part TrunkDoor2
+		{
+			category = nodisplay,
+			area = SideContainer2,
+			door
+			{
+			}
+			anim Open
+			{
+				sound = VehicleTrunkOpenStandard,
+			}
+			anim Close
+			{
+				sound = VehicleTrunkCloseStandard,
+			}
+			anim Lock
+			{
+				sound = LockVehicleDoorStandard,
+			}
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorStandard,
+			}
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedStandard,
+			}
+			anim ActorOpen
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.15,
+				angle = 0.0 0.0 0.0,
+			}
+			anim ActorClose
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+				angle = 0.0 0.0 0.0,
+			}
+			itemType = Base.TrunkDoor,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			table install
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Door,
+
+			}
+			table uninstall
+			{
+				items
+				{
+					item
+					{
+						type = Base.Wrench,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:3,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				complete = Vehicles.UninstallComplete.Door,
+			}
+			lua
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.Door,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoor,
+			}
+		}
+		
+				/* FIXME: This should be "TruckBed" */
+		part SideContainer1
+		{
+			area = SideContainer1,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			category = nodisplay,
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SideContainer2
+		{
+			area = SideContainer2,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			category = nodisplay,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
 }
