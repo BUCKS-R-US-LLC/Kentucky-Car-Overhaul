@@ -1,17 +1,17 @@
 module Base
 {
-	model SC_M35A1Crashed
+	model SC_M35A2Crashed
 	{
 		mesh = vehicles/Wrecks/Vehicle_M35A1Crashed_SC,
 		shader = vehicle_multiuv,
 		invertX = FALSE,
 		scale = 0.0087,
 	}
-	vehicle SC_AMGeneralM35A1Crashed
+	vehicle SC_AMGeneralM35A2Crashed
 	{
 		model
 		{
-			file = SC_M35A1Crashed,
+			file = SC_M35A2Crashed,
 			scale = 65.8500,
 			offset = 0.0000 -0.0002 0.0015,
 		}

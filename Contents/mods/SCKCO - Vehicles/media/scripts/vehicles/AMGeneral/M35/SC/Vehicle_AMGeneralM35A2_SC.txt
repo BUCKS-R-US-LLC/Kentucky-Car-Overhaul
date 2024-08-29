@@ -1,74 +1,74 @@
 module Base
 {
-	model SC_M35A1
+	model SC_M35A2
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M35A1GasTank
+	model M35A2GasTank
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FuelTank_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1FrontHardTop
+	model M35A2FrontHardTop
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|HardTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1Tarp
+	model M35A2Tarp
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Tarp_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1TarpFrame
+	model M35A2TarpFrame
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TarpFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1SpareTire
+	model M35A2SpareTire
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SpareTire_obj,
 		texture = vehicles/M35/Vehicle_M35FrontWheel,
 		shader = vehiclewheel,
 		scale = 1,
 	}
-	model M35A1Bumper
+	model M35A2Bumper
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1Driver
+	model M35A2Driver
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1Passenger
+	model M35A2Passenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1Windshield
+	model M35A2Windshield
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1WindshieldRear
+	model M35A2WindshieldRear
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M35A1FrontRightWindow
+	model M35A2FrontRightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -77,7 +77,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model M35A1FrontLeftWindow
+	model M35A2FrontLeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -86,7 +86,7 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model M35A1FrontRightDoor
+	model M35A2FrontRightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -94,7 +94,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M35A1FrontLeftDoor
+	model M35A2FrontLeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -102,7 +102,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M35A1Trunk
+	model M35A2Trunk
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
@@ -110,7 +110,7 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model M35A1Hood
+	model M35A2Hood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -142,7 +142,7 @@ module Base
 		texture = Vehicles/M35/Vehicle_M35RearWheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_AMGeneralM35A1
+	vehicle SC_AMGeneralM35A2
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -151,7 +151,7 @@ module Base
 
 		model
 		{
-			file = SC_M35A1,
+			file = SC_M35A2,
 			scale = 0.6300,
 			offset = 0.0000 0.0159 0.0000,
 		}
@@ -596,8 +596,8 @@ module Base
 			xywh = -1.2698 -1.8889 0.0000 0.0000,
 		}
 
-		template = M35A1Seat,
-		template = M35A1Armor,
+		template = M35A2Seat,
+		template = M35A2Armor,
 		template = specials/part/DetroitDieselSC,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -612,9 +612,9 @@ module Base
 
 		part GasTank
 		{
-			model M35A1GasTank
+			model M35A2GasTank
 			{
-				file = M35A1GasTank,
+				file = M35A2GasTank,
 			}
 		}
 
@@ -622,7 +622,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M35A1Driver,
+				file = M35A2Driver,
 			}
 		}
 
@@ -630,7 +630,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M35A1Passenger,
+				file = M35A2Passenger,
 			}
 		}
 
@@ -683,16 +683,16 @@ module Base
 			}
 		}
 
-		part M35A1Tarp
+		part M35A2Tarp
 		{
 			model Tarp
 			{
-				file = M35A1Tarp,
+				file = M35A2Tarp,
 			}
 
 			table install
 			{
-				requireInstalled = M35A1TarpFrame,
+				requireInstalled = M35A2TarpFrame,
 			}
 
 			table uninstall
@@ -704,7 +704,7 @@ module Base
 				chances =
 				{
 					default = 0,
-					Base.SC_M35A1 = 50,
+					Base.SC_M35A2 = 50,
 				}
 			}
 
@@ -715,25 +715,25 @@ module Base
 
 			category = SCUCKaccessories,
 			itemType = Base.M35Tarp,
-			parent = M35A1TarpFrame,
-			area = M35A1TarpFrame,
+			parent = M35A2TarpFrame,
+			area = M35A2TarpFrame,
 		}
 
-		part M35A1TarpFrame
+		part M35A2TarpFrame
 		{
 			model TarpFrame
 			{
-				file = M35A1TarpFrame,
+				file = M35A2TarpFrame,
 			}
 
 			table install
 			{
-				requireUninstalled - M35A1Tarp,
+				requireUninstalled - M35A2Tarp,
 			}
 
 			table uninstall
 			{
-				requireUninstalled - M35A1Tarp,
+				requireUninstalled - M35A2Tarp,
 			}
 
 			lua
@@ -745,16 +745,16 @@ module Base
 			itemType = Base.M35TarpFrame,
 		}
 
-		part M35A1FrontHardTop
+		part M35A2FrontHardTop
 		{
-			model M35A1FrontHardTop
+			model M35A2FrontHardTop
 			{
-				file = M35A1FrontHardTop,
+				file = M35A2FrontHardTop,
 			}
 
 			table install
 			{
-				requireUninstalled = M35A1FrontSoftTop,
+				requireUninstalled = M35A2FrontSoftTop,
 			}
 
 			table uninstall
@@ -770,11 +770,11 @@ module Base
 			itemType = Base.M35FrontHardTop,
 		}
 
-		part M35A1SpareTire
+		part M35A2SpareTire
 		{
-			model M35A1SpareTire
+			model M35A2SpareTire
 			{
-				file = M35A1SpareTire,
+				file = M35A2SpareTire,
 			}
 
 			table install
@@ -800,7 +800,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M35A1Hood,
+				file = M35A2Hood,
 			}
 
 			anim Close
@@ -861,7 +861,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = M35A1Windshield,
+				file = M35A2Windshield,
 			}
 
 			window
@@ -892,7 +892,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = M35A1WindshieldRear,
+				file = M35A2WindshieldRear,
 			}
 
 			window
@@ -907,7 +907,7 @@ module Base
 
 			table uninstall
 			{
-				requireUninstalled = M35A1FrontHardTop,
+				requireUninstalled = M35A2FrontHardTop,
 			}
 
 			category = SCUCKwindows,
@@ -932,7 +932,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M35A1FrontRightWindow,
+				file = M35A2FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -951,7 +951,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M35A1FrontLeftWindow,
+				file = M35A2FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -970,7 +970,7 @@ module Base
 		{
 			model Default
 			{
-				file = M35A1FrontRightDoor,
+				file = M35A2FrontRightDoor,
 			}
 
 			anim Close
@@ -1008,7 +1008,7 @@ module Base
 		{
 			model Default
 			{
-				file = M35A1FrontLeftDoor,
+				file = M35A2FrontLeftDoor,
 			}
 
 			anim Close
@@ -1046,7 +1046,7 @@ module Base
 		{
 			model Default
 			{
-				file = M35A1FrontRightDoor,
+				file = M35A2FrontRightDoor,
 			}
 
 			anim Close
@@ -1116,7 +1116,7 @@ module Base
 
 			model Default
 			{
-				file = M35A1Trunk,
+				file = M35A2Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
