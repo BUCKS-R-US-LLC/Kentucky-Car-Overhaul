@@ -535,25 +535,25 @@ module Base
 		part SeatMiddleRight
 		{
 			category = nodisplay,
-			itemType = Base.CUCVBackSeatSC,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatMiddleLeft
 		{
 			category = nodisplay,
-			itemType = Base.CUCVBackSeatSC,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
 			category = nodisplay,
-			itemType = Base.CUCVBackSeatSC,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.CUCVBackSeatSC,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part Muffler
@@ -966,6 +966,24 @@ module Base
 		}
 
 		template = Radio,
+		
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Radio.HamRadio2,
+		}
+
 		template = Headlight,
 
 		part PassengerCompartment

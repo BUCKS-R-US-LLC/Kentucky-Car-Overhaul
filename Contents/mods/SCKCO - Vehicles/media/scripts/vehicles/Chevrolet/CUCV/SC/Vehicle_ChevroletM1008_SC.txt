@@ -710,6 +710,17 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio*
+		{
+			model M151Radio
+			{
+				file = M151Radio,
+			}
+			
+			itemType = Radio.HamRadio2,
+		}
+
 		template = Headlight,
 
 		part PassengerCompartment

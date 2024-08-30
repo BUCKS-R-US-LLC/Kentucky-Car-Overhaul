@@ -1,6 +1,6 @@
 module Base
 {
-	template vehicle M35A1Seat
+	template vehicle M35A2Seat
 	{
 		part RearLeftOne
 		{
@@ -9,6 +9,7 @@ module Base
 			{
 				seat = RearLeftOne,
 			}
+		itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightOne
@@ -18,6 +19,7 @@ module Base
 			{
 				seat = RearRightOne,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearLeftTwo
@@ -27,6 +29,7 @@ module Base
 			{
 				seat = RearLeftTwo,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightTwo
@@ -36,6 +39,7 @@ module Base
 			{
 				seat = RearRightTwo,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearLeftThree
@@ -45,6 +49,7 @@ module Base
 			{
 				seat = RearLeftThree,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightThree
@@ -54,6 +59,7 @@ module Base
 			{
 				seat = RearRightThree,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearLeftFour
@@ -63,6 +69,7 @@ module Base
 			{
 				seat = RearLeftFour,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightFour
@@ -72,6 +79,7 @@ module Base
 			{
 				seat = RearRightFour,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearLeftFive
@@ -81,6 +89,7 @@ module Base
 			{
 				seat = RearLeftFive,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightFive
@@ -90,6 +99,7 @@ module Base
 			{
 				seat = RearRightFive,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearLeftSix
@@ -99,6 +109,7 @@ module Base
 			{
 				seat = RearLeftSix,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part RearRightSix
@@ -108,6 +119,7 @@ module Base
 			{
 				seat = RearRightSix,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
         part RearLeftSeven
@@ -117,6 +129,7 @@ module Base
             {
                 seat = RearLeftSeven,
             }
+			itemType = Base.FillerSeatSC,
         }
 
         part RearRightSeven
@@ -126,12 +139,13 @@ module Base
             {
                 seat = RearRightSeven,
             }
+			itemType = Base.FillerSeatSC,
         }
 
 		part Rear*
 		{
 			category = nodisplay,
-			itemType = M35RearSeat,
+			itemType = Base.FillerSeatSC,
 			mechanicRequireKey = true,
 			container
 			{

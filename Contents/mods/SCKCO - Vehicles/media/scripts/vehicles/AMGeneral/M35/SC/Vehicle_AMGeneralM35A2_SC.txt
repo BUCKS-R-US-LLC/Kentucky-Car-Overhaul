@@ -597,7 +597,7 @@ module Base
 		}
 
 		template = M35A2Seat,
-		template = M35A2Armor,
+		template = M35A2Attachments,
 		template = specials/part/DetroitDieselSC,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -1254,6 +1254,24 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Radio.HamRadio2,
+		}
+		
 		template = Headlight,
 
 		part additionalLuaEvents
