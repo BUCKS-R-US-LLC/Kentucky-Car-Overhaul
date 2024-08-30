@@ -139,6 +139,11 @@ module Base
         {
             model Default { file = M998SofttopFrontRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+	
+	            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
@@ -146,6 +151,11 @@ module Base
         {
             model Default { file = M998SofttopFrontLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
@@ -177,6 +187,11 @@ module Base
         {
             model Default { file = M998SofttopRearRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+	
+	        table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
@@ -184,6 +199,12 @@ module Base
         {
             model Default { file = M998SofttopRearLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
