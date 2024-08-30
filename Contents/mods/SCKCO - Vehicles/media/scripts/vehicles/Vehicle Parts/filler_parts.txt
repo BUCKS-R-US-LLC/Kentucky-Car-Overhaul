@@ -1,0 +1,87 @@
+module Base
+{
+
+
+    item FillerPartSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Filler Part,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+
+    item FillerPartSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Filler Part,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+    item FillerPartSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Filler Part,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+    }
+
+     item FillerSeatSC1
+     {
+         DisplayCategory = VehicleMaintenance,
+         Weight	=	10.0,
+         Type	=	Normal,
+         DisplayName	=	Filler Seat,
+         Icon	=	CarSeat,
+         VehicleType =   1,
+         MaxCapacity = 20,
+         ChanceToSpawnDamaged = 70,
+         ConditionMax = 100,
+         MechanicsItem = TRUE,
+         WorldStaticModel = CarSeat,
+     }
+
+     item FillerSeatSC2
+     {
+         DisplayCategory = VehicleMaintenance,
+         Weight	=	10.0,
+         Type	=	Normal,
+         DisplayName	=	Filler Seat,
+         Icon	=	CarSeat,
+         VehicleType =   2,
+         MaxCapacity = 0,
+         ChanceToSpawnDamaged = 70,
+         ConditionMax = 100,
+         MechanicsItem = TRUE,
+         WorldStaticModel = CarSeat,
+     }
+
+      item FillerSeatSC3
+      {
+          DisplayCategory = VehicleMaintenance,
+          Weight	=	10.0,
+          Type	=	Normal,
+          DisplayName	=	Filler Seat,
+          Icon	=	CarSeat,
+          VehicleType =   3,
+          MaxCapacity = 0,
+          ChanceToSpawnDamaged = 70,
+          ConditionMax = 100,
+          MechanicsItem = TRUE,
+          WorldStaticModel = CarSeat,
+      }
+}
+
