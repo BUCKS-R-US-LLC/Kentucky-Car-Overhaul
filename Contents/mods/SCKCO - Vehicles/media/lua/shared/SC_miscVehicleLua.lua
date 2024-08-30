@@ -136,7 +136,7 @@ function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
     if player:getVehicle() then
         for armorID, parentID in pairs(vehicleArmor) do
             local armor = vehicle:getPartById(armorID)
-            if armor then table.insert(partsToCheck, armor) end
+            if armor and armor:getInventoryItem() then table.insert(partsToCheck, armor) end
         end
     end
 
