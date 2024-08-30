@@ -136,7 +136,7 @@ function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
     if player:getVehicle() then
         for armorID, parentID in pairs(vehicleArmor) do
             local armor = vehicle:getPartById(armorID)
-            if armor and armor:getInventoryItem() then table.insert(partsToCheck, armor) end
+            if armor then table.insert(partsToCheck, armor) end
         end
     end
 
@@ -149,10 +149,15 @@ function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
             local dataParent = onUpdate and alreadyHaveVehicleData and alreadyHaveVehicleData.parts and alreadyHaveVehicleData.parts[parent]
             local preHitCond = dataParent and dataParent.preHitCond or parent:getCondition()
 
-            if armor and parent and (armor:getCondition() > 1) then
+            if armor and parent then
                 miscVehicleLua.processVehicleHits[player] = miscVehicleLua.processVehicleHits[player] or { parts={}}
                 miscVehicleLua.processVehicleHits[player].vehicle = vehicle
-                miscVehicleLua.processVehicleHits[player].parts[parent] = { armor=armor, preHitCond=preHitCond}
+
+                if armor:getInventoryItem() and (armor:getCondition() > 1) then
+                    miscVehicleLua.processVehicleHits[player].parts[parent] = { armor=armor, preHitCond=preHitCond}
+                else
+                    miscVehicleLua.processVehicleHits[player].parts[parent] = nil
+                end
             end
         end
     end
@@ -183,6 +188,7 @@ function miscVehicleLua.applyDamageToArmor(player, weapon, playerVehicle)
         local preHitCond = subData.preHitCond
         local armor = subData.armor
         local currentParentCond = parent and parent:getCondition()
+        --local currentArmorCond
         local recordedDamage = preHitCond-currentParentCond
 
         if recordedDamage > 0 then
