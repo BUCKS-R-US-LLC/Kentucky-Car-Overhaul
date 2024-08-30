@@ -47,7 +47,7 @@ function miscVehicleLua.processOnPlayerUpdate(player)
 
     ---@type BaseVehicle
     local vehicle = player:getVehicle()
-    if vehicle then miscVehicleLua.processPartDamages(player, vehicle) end
+    if vehicle then miscVehicleLua.processPartDamages(player, vehicle, true) end
 end
 
 
@@ -99,7 +99,7 @@ end
 miscVehicleLua.vehicleArmorDictionary = {}
 ---@param player IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param vehicle BaseVehicle
-function miscVehicleLua.processPartDamages(player, vehicle)
+function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
     if not vehicle then return end
 
     local vehicleScript = vehicle:getScript()
@@ -140,15 +140,16 @@ function miscVehicleLua.processPartDamages(player, vehicle)
         end
     end
 
-    local alreadyHaveVehicleData = miscVehicleLua.processVehicleHits[player] and miscVehicleLua.processVehicleHits[player].vehicle
-    if alreadyHaveVehicleData and alreadyHaveVehicleData ~= vehicle then miscVehicleLua.processVehicleHits[player] = nil end
+    local alreadyHaveVehicleData = miscVehicleLua.processVehicleHits[player]
 
     for _,armor in pairs(partsToCheck) do
-        local parent = armor:getTable("armorBehavior") and armor or miscVehicleLua.getParentIfArmor(armor, vehicleArmor)
+        local parent = miscVehicleLua.getParentIfArmor(armor, vehicleArmor)
         if parent then
-            local preHitCond = parent and parent:getCondition()
 
-            if armor and parent and (armor:getCondition() > 1) and armor:getInventoryItem() then
+            local dataParent = onUpdate and alreadyHaveVehicleData and alreadyHaveVehicleData.parts and alreadyHaveVehicleData.parts[parent]
+            local preHitCond = dataParent and dataParent.preHitCond or parent:getCondition()
+
+            if armor and parent and (armor:getCondition() > 1) then
                 miscVehicleLua.processVehicleHits[player] = miscVehicleLua.processVehicleHits[player] or { parts={}}
                 miscVehicleLua.processVehicleHits[player].vehicle = vehicle
                 miscVehicleLua.processVehicleHits[player].parts[parent] = { armor=armor, preHitCond=preHitCond}
@@ -167,13 +168,12 @@ function miscVehicleLua.armorAbsorb(part, damage)
 end
 
 
-function miscVehicleLua.applyDamageToArmor(player)
+function miscVehicleLua.applyDamageToArmor(player, weapon, playerVehicle)
 
     local data = miscVehicleLua.processVehicleHits[player]
     if not data then return end
 
-    local playerVehicle = player:getVehicle()
-    if playerVehicle and (not data.ticked) then
+    if (not weapon) and (playerVehicle and data.vehicle == playerVehicle and (not data.ticked)) then
         data.ticked = true
         return
     end
@@ -184,6 +184,7 @@ function miscVehicleLua.applyDamageToArmor(player)
         local armor = subData.armor
         local currentParentCond = parent and parent:getCondition()
         local recordedDamage = preHitCond-currentParentCond
+
         if recordedDamage > 0 then
 
             local pCond = math.max(math.min(parent:getCondition()+recordedDamage, 100), 0)
@@ -205,14 +206,15 @@ function miscVehicleLua.applyDamageToArmor(player)
             armor:setCondition(aCond)
         end
     end
-    data.ticked = false
-    miscVehicleLua.processVehicleHits[player] = nil
+
+    data.ticked = nil
+    --miscVehicleLua.processVehicleHits[player] = nil
 end
 
 
 function miscVehicleLua.applyDamageToArmorOnUpdate(player)
     local vehicle = player:getVehicle()
-    if vehicle then miscVehicleLua.applyDamageToArmor(player) end
+    if vehicle then miscVehicleLua.applyDamageToArmor(player, nil, vehicle) end
 end
 
 
