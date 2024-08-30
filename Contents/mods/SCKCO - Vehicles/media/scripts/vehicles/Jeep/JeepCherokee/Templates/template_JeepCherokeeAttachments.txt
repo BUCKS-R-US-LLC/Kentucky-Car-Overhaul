@@ -21,7 +21,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model JeepCherokeeFrontRightDoorArmor
@@ -30,7 +29,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
 	}
 
     model JeepCherokeeRearLeftDoorArmor
@@ -39,7 +37,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
 	}
 
 	model JeepCherokeeRearRightDoorArmor
@@ -48,7 +45,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
 	}
 
 	model JeepCherokeeFrontLeftWindowArmor
@@ -57,7 +53,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model JeepCherokeeFrontRightWindowArmor
@@ -66,7 +61,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 	model JeepCherokeeRearRightWindowArmor
@@ -75,7 +69,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
         static = FALSE,
-        boneWeight = RearRightDoorBone 1.0,
 	}
 
 	model JeepCherokeeRearLeftWindowArmor
@@ -84,7 +77,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
         static = FALSE,
-        boneWeight = RearLeftDoorBone 1.0,
 	}
 
 	model JeepCherokeeMiddleRightWindowArmor
@@ -99,27 +91,6 @@ module Base
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|MiddleLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-	}
-
-	template vehicle CherokeeRoofRack
-	{
-		part CherokeeRoofRackSC
-		{
-			mechanicRequireKey = true,
-			category = nodisplay,
-
-			area = CherokeeRoofRack,
-			
-			container
-			{
-				capacity = 20,
-				test = Vehicles.ContainerAccess.TruckBedOpen,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 	}
 
 	template vehicle JeepCherokeeAttachments
@@ -177,14 +148,14 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = JeepCherokeeFrontRightWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = JeepCherokeeFrontLeftWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
 
@@ -192,14 +163,14 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = JeepCherokeeRearRightWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
         part SCArmorRearLeftWindow
         {
             model Default { file = JeepCherokeeRearLeftWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
 
@@ -207,15 +178,57 @@ module Base
         part SCArmorMiddleRightWindow
         {
             model Default { file = JeepCherokeeMiddleRightWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorMiddleLeftWindow,
         part SCArmorMiddleLeftWindow
         {
             model Default { file = JeepCherokeeMiddleLeftWindowArmor, }
-            itemType = Base.JeepCherokeeWindowArmor,
+            itemType = Base.JeepCherokeeWindowArmorSC,
         }
 
+		part JeepCherokeeSpareWheel
+        {
+			model jeepspare { file = JeepCJ7SpareWheel, }
+		    area = TruckBed,
+            category = SCUCKaccessories,
+            itemType = Base.NormalTire,
+            mechanicRequireKey = true,
+
+		    table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            table partVariation
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
+
+		part CherokeeRoofRackSC
+		{
+			mechanicRequireKey = true,
+			category = nodisplay,
+
+			area = CherokeeRoofRack,
+			
+			container
+			{
+				capacity = 40,
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
     }
 }
