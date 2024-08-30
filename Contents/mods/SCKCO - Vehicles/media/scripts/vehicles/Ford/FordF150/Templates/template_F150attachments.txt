@@ -29,25 +29,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
-	}
-
-    model F150RearLeftDoorArmor
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-
-	}
-
-	model F150RearRightDoorArmor
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearRightDoorArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-
 	}
 
 	model F150FLWA
@@ -55,7 +36,7 @@ module Base
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-       scale = 1,
+		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
@@ -68,24 +49,6 @@ module Base
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
     
-	model F150RLWA
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowArmorBone 1.0,
-	}
-
-	model F150RRWA
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowArmorBone 1.0,
-	}
-
     template vehicle F150Attachments
 	{
 
@@ -95,7 +58,7 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = F150Bullbar, }
-            itemType = Base.FordF150DoorArmorSC,
+            itemType = Base.FordF150BullbarSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
@@ -110,7 +73,7 @@ module Base
         {
             model Default { file = F150FRWA, }
             itemType = Base.FordF150DoorArmorSC,
-            requireInstalled = FordF150DoorArmorSC,
+            requireInstalled = FordF150WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -118,7 +81,7 @@ module Base
         {
             model Default { file = F150FLWA, }
             itemType = Base.FordF150WindowArmorSC,
-            requireInstalled = FordF150DoorArmorSC,
+            requireInstalled = FordF150WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,

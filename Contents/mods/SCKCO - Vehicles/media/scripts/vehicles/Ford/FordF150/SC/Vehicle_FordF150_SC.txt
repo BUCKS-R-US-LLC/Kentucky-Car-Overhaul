@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_FordF150
+	model SC_FordOBS
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -59,18 +59,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model F150RearRightWindow
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model F150RearLeftWindow
-	{
-		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model F150Trunk
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|TrunkDoor_obj,
@@ -117,7 +105,7 @@ module Base
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordF150
+	vehicle SC_FordOBS
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -126,68 +114,68 @@ module Base
 
 		model
 		{
-			file = SC_FordF150,
+			file = SC_FordOBS,
 			scale = 0.6300,
 			offset = 0.0476 -0.0952 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_Silver,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_SilverBlack,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_SilverBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_BlackGreen,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_BlackGreen,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_Blue,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_BlueBlack,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_Magenta,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_Magenta,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_RedBrown,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_RedBrown,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordF150/Vehicle_F1501992_Red,
+			texture = Vehicles/FordOBS/Vehicle_F1501992_Red,
 		}
 
-		textureRust = Vehicles/FordF150/Vehicle_F1501992_Rust,
-		textureMask = Vehicles/FordF150/Vehicle_F1501992_Masks,
-		textureLights = Vehicles/FordF150/Vehicle_F1501992_Lights,
-		textureDamage1Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
-		textureDamage2Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
-		textureDamage1Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
-		textureDamage2Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
+		textureRust = Vehicles/FordOBS/Vehicle_F1501992_Rust,
+		textureMask = Vehicles/FordOBS/Vehicle_F1501992_Masks,
+		textureLights = Vehicles/FordOBS/Vehicle_F1501992_Lights,
+		textureDamage1Shell = Vehicles/FordOBS/Vehicle_F1501992_scratch,
+		textureDamage2Shell = Vehicles/FordOBS/Vehicle_F1501992_scratch,
+		textureDamage1Overlay = Vehicles/FordOBS/Vehicle_F1501992_Blood,
+		textureDamage2Overlay = Vehicles/FordOBS/Vehicle_F1501992_Blood,
 
 		sound
 		{
@@ -425,7 +413,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordF150HoodSC,
+			itemType = Base.FordOBSHoodSC,
 		}
 
 		part Heater
@@ -469,7 +457,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF150WindshieldSC,
+			itemType = Base.FordOBSWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -500,7 +488,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF150WindshieldSC,
+			itemType = Base.FordOBSWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -524,7 +512,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordF150WindowSC,
+			itemType = Base.FordOBSWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -543,7 +531,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordF150WindowSC,
+			itemType = Base.FordOBSWindowSC,
 		}
 
 		part DoorFrontRight
@@ -581,7 +569,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF150DoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -619,7 +607,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF150DoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -672,7 +660,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF150TrunkLidSC,
+			itemType = Base.FordOBSTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,

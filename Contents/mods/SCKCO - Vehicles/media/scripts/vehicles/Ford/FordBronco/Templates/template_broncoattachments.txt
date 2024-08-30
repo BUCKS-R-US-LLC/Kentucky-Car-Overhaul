@@ -1,8 +1,133 @@
 module Base
 {
 
-	template vehicle BroncoAttachments
-	{       
-        template = FourSeaterFootwellSpace,
+	model BroncoBullbar
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model BroncoWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model BroncoFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model BroncoFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+	model BroncoFLWA
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model BroncoFRWA
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+
+	model BroncoRLWA
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+	model BroncoRRWA
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+    template vehicle BroncoAttachments
+	{
+
+	    template = FourSeaterFootwellSpace,
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = BroncoBullbar, }
+            itemType = Base.FordOBSBullbarSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = BroncoWindshieldArmor, }
+            itemType = Base.FordOBSWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = BroncoFRWA, }
+            itemType = Base.FordOBSWindowArmorSC,
+            requireInstalled = FordF150DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = BroncoFLWA, }
+            itemType = Base.FordOBSWindowArmorSC,
+            requireInstalled = FordF150DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = BroncoRRWA, }
+            itemType = Base.FordOBSWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = BroncoRLWA, }
+            itemType = Base.FordOBSWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = BroncoFrontRightDoorArmor, }
+            itemType = Base.FordOBSDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = BroncoFrontLeftDoorArmor, }
+            itemType = Base.FordOBSDoorArmorSC,
+        }
+
     }
 }

@@ -38,6 +38,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model FordBroncoFrontLeftWindow
 	{
@@ -46,6 +47,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model FordBroncoRearLeftWindow
 	{
@@ -501,7 +503,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordBroncoHoodSC,
+			itemType = Base.FordOBSHoodSC,
 		}
 
 		part Heater
@@ -545,7 +547,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindshieldSC,
+			itemType = Base.FordOBSWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -578,7 +580,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindshieldSC,
+			itemType = Base.FordOBSWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -602,7 +604,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindowSC,
+			itemType = Base.FordOBSWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -621,7 +623,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindowSC,
+			itemType = Base.FordOBSWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -641,7 +643,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindowSC,
+			itemType = Base.FordOBSWindowSC,
 		}
 
 		part WindowRearLeft
@@ -659,7 +661,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordBroncoWindowSC,
+			itemType = Base.FordOBSWindowSC,
 		}
 
 		part DoorFrontRight
@@ -697,7 +699,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordBroncoDoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -735,7 +737,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordBroncoDoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -788,7 +790,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordBroncoTrunkLidSC,
+			itemType = Base.FordOBSTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
