@@ -1,14 +1,14 @@
 module Base
 {
 
-	model M35A1Bullbar
+	model M35A2Bullbar
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
-	model M35A1FrontRightWindowArmor
+	model M35A2FrontRightWindowArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightWindowArmor_obj,
 		shader = vehicle_noreflect,
@@ -16,7 +16,7 @@ module Base
 		static = FALSE,
 	}
 
-	model M35A1FrontLeftWindowArmor
+	model M35A2FrontLeftWindowArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
@@ -24,7 +24,7 @@ module Base
 		static = FALSE,
 	}
 
-	model M35A1FrontRightDoorArmor
+	model M35A2FrontRightDoorArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 
-	model M35A1FrontLeftDoorArmor
+	model M35A2FrontLeftDoorArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
@@ -42,14 +42,14 @@ module Base
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
-	model M35A1WindshieldArmor
+	model M35A2WindshieldArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|WindshieldArmor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 
-    template vehicle M35A1Armor
+    template vehicle M35A2Attachments
     {
 
         template = TwoSeaterFootwellSpace,
@@ -57,7 +57,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = M35A1Bullbar, }
-            itemType = Base.M35Bumper,
+            itemType = Base.M35BumperSC,
             lua { create = Vehicles.Create.Default, }
 
             table armorBehavior
@@ -70,7 +70,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M35A1FrontRightWindowArmor, }
-            itemType = Base.M35WindowArmor,
+            itemType = Base.M35WindowArmorSC,
 
             table armorBehavior
             {
@@ -82,7 +82,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M35A1FrontLeftWindowArmor, }
-            itemType = Base.M35WindowArmor,
+            itemType = Base.M35WindowArmorSC,
 
             table armorBehavior
             {
@@ -94,14 +94,14 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M35A1FrontRightDoorArmor, }
-            itemType = Base.M35DoorArmor,
+            itemType = Base.M35DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = M35A1FrontLeftDoorArmor, }
-            itemType = Base.M35DoorArmor,
+            itemType = Base.M35DoorArmorSC,
 
             table armorBehavior
             {
@@ -113,7 +113,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M35A1WindshieldArmor, }
-            itemType = Base.M35WindshieldArmor,
+            itemType = Base.M35WindshieldArmorSC,
 
             table armorBehavior
             {
