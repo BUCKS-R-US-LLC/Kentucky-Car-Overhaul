@@ -233,6 +233,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
 		}
 
 		passenger FrontRight
@@ -251,6 +259,14 @@ module Base
 				offset = -3.3750 0.3750 0.8000,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
 			}
 		}
 
@@ -271,6 +287,14 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
 		}
 
 		passenger RearRight
@@ -289,6 +313,14 @@ module Base
 				offset = -3.3750 0.3750 -1.1750,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 
@@ -377,24 +409,12 @@ module Base
 		part DoorFrontLeft
 		{
 			area = SeatFrontLeft,
-			category = nodisplay,
-
-			lua
-			{
-			}
-
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontRight
 		{
 			area = SeatFrontRight
-			category = nodisplay,
-
-			lua
-			{
-			}
-
 			itemType = Base.HMMWVSoftDoorSC,
 		}
 
@@ -417,11 +437,13 @@ module Base
 		part SeatRearLeft
 		{
 			category = nodisplay,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
 			category = nodisplay,
+			itemType = Base.FillerSeatSC,
 		}
 
 		part Muffler
@@ -793,6 +815,24 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Radio.HamRadio2,
+		}
+		
 		template = Headlight,
 
 		part PassengerCompartment
@@ -807,9 +847,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		physics box

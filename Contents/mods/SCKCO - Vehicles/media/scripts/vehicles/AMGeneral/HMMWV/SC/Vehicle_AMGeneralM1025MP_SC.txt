@@ -938,6 +938,24 @@ module Base
 		}
 
 		template = Radio,
+
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Radio.HamRadio2,
+		}
+		
 		template = Headlight,
 
 		part PassengerCompartment
