@@ -115,7 +115,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 0.001,
+                damageAbsorptionOneTo = 0.5,
             }
 
             requireInstalled = BumperAssembly,
@@ -129,7 +129,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 0.001,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -141,7 +141,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 0.001,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -150,6 +150,11 @@ module Base
         {
             model Default { file = M997FrontRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
@@ -157,6 +162,11 @@ module Base
         {
             model Default { file = M997FrontLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
@@ -167,7 +177,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 0.001,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 

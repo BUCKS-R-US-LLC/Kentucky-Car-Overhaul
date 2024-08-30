@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model MazdaBFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model MazdaBFrontRightDoor
 	{
@@ -56,18 +58,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model MazdaBRearRightWindow
-	{
-		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model MazdaBRearLeftWindow
-	{
-		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model MazdaBTrunk
 	{

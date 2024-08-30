@@ -155,7 +155,7 @@ module Base
 
             table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
 
 			requireInstalled = BumperAssembly,
@@ -169,7 +169,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -181,7 +181,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -190,6 +190,11 @@ module Base
         {
             model Default { file = M998HardtopFrontRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
@@ -197,6 +202,11 @@ module Base
         {
             model Default { file = M998HardtopFrontLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
@@ -207,7 +217,7 @@ module Base
 			
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -219,7 +229,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 
@@ -228,6 +238,11 @@ module Base
         {
             model Default { file = M998HardtopRearRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
@@ -235,6 +250,11 @@ module Base
         {
             model Default { file = M998HardtopRearLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
@@ -245,7 +265,7 @@ module Base
 
 			table armorBehavior
             {
-                damageAbsorptionOneTo = 1.0,
+                damageAbsorptionOneTo = 0.5,
             }
         }
 

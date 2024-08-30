@@ -114,6 +114,11 @@ module Base
 			lua { create = Vehicles.Create.Default, }
             itemType = Base.HMMWVBumperSC,
 
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+			
 			requireInstalled = BumperAssembly,
         }
 
@@ -122,6 +127,11 @@ module Base
         {
             model Default { file = M1025FrontRightWindowArmor, }
             itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -129,6 +139,11 @@ module Base
         {
             model Default { file = M1025FrontLeftWindowArmor, }
             itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
@@ -136,6 +151,11 @@ module Base
         {
             model Default { file = M1025FrontRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
@@ -143,6 +163,11 @@ module Base
         {
             model Default { file = M1025FrontLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
@@ -150,6 +175,11 @@ module Base
         {
             model Default { file = M1025RearRightWindowArmor, }
             itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
@@ -157,6 +187,11 @@ module Base
         {
             model Default { file = M1025RearLeftWindowArmor, }
             itemType = Base.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
@@ -164,6 +199,11 @@ module Base
         {
             model Default { file = M1025RearRightDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
@@ -171,6 +211,11 @@ module Base
         {
             model Default { file = M1025RearLeftDoorArmor, }
             itemType = Base.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
@@ -178,6 +223,11 @@ module Base
         {
             model Default { file = M1025WindshieldArmor, }
             itemType = Base.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
         }
 
 		part M1025SlantBase

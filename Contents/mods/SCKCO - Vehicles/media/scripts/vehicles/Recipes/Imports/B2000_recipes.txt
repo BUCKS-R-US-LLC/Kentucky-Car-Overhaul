@@ -1,0 +1,56 @@
+module Base
+{
+
+recipe Craft '87 Mazda B2000 Bullbar
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:MazdaB2000BullbarSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Mazda B2000 Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:MazdaB2000WindshieldArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Mazda B2000 Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:MazdaB2000DoorArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Craft '87 Mazda B2000 Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:MazdaB2000WindowArmorSC2,
+		Time:800.0,
+		Category:Car Mods,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+}

@@ -1,0 +1,102 @@
+module Base
+{
+
+	model MazdaBBullbar
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model MazdaBWindshieldArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model MazdaBFrontLeftDoorArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model MazdaBFrontRightDoorArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model MazdaBFLWA
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model MazdaBFRWA
+	{
+		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+    template vehicle B2000Attachments
+	{
+
+	    template = TwoSeaterFootwellSpace,
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = MazdaBBullbar, }
+            itemType = Base.MazdaB2000BullbarSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = MazdaBWindshieldArmor, }
+            itemType = Base.MazdaB2000WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = MazdaBFRWA, }
+            itemType = Base.MazdaB2000WindowArmorSC,
+            requireInstalled = MazdaMazdaBDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = MazdaBFLWA, }
+            itemType = Base.MazdaB2000WindowArmorSC,
+            requireInstalled = MazdaMazdaBDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = MazdaBFrontRightDoorArmor, }
+            itemType = Base.MazdaB2000DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = MazdaBFrontLeftDoorArmor, }
+            itemType = Base.MazdaB2000DoorArmorSC,
+        }
+
+    }
+}
