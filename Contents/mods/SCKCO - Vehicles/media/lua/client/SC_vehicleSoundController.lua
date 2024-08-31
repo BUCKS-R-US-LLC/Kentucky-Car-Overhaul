@@ -15,8 +15,7 @@ vehicleSoundController.library = {
           speedIsGreaterThan = -1,
           speedIsLessThan = 1,
           stopSound = false,
-          --isBraking = true,
-          onEngineIdle = true,
+          onComeToStop = true,
         },
     },
 
@@ -65,9 +64,17 @@ function vehicleSoundController.handleUpdate(player)
                     local notValid = (invertedCase and (not bSpeedLessThan or not bSpeedGreaterThan)) or (not bSpeedLessThan and not bSpeedGreaterThan)
                     local notValidEngineRunning = (data.isEngineRunning and (data.isEngineRunning ~= vehicle:isEngineRunning()))
                     local notValidBraking = (data.isBraking and (data.isBraking ~= vehicle:isBraking()) )
-                    local notValidEngineIdle = (data.onEngineIdle and math.abs(vehicle:getScript():getEngineIdleSpeed()-vehicle:getEngineSpeed()) > 50)
 
-                    local stopSound = data.stopSound or notValid or notValidEngineRunning or notValidBraking or notValidEngineIdle
+                    local validComeToStop = false
+
+                    if data.onComeToStop then
+                        local engineSpeed = vehicle:getEngineSpeed()
+                        local idleSpeed = vehicle:getScript():getEngineIdleSpeed()
+                        local closeToIdle = (engineSpeed-idleSpeed) > 10
+                        validComeToStop = closeToIdle and vehicle:isBraking() and vehicleSpeed > 0
+                    end
+
+                    local stopSound = data.stopSound or notValid or notValidEngineRunning or notValidBraking or (not validComeToStop)
 
                     if stopSound then
                         --print(data.sound, ": STOP - ", data.stop, ", ", notValid , ", ",  notValidEngineRunning , ", ",  notValidBraking)
