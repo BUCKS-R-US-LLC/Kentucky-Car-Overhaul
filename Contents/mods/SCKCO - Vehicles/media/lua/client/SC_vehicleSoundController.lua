@@ -64,23 +64,13 @@ function vehicleSoundController.handleUpdate(player)
                     local notValid = (invertedCase and (not bSpeedLessThan or not bSpeedGreaterThan)) or (not bSpeedLessThan and not bSpeedGreaterThan)
                     local notValidEngineRunning = (data.isEngineRunning and (data.isEngineRunning ~= vehicle:isEngineRunning()))
                     local notValidBraking = (data.isBraking and (data.isBraking ~= vehicle:isBraking()) )
+                    local notValidComeToStop = data.onComeToStop and (not (((vehicle:getEngineSpeed()-vehicle:getScript():getEngineIdleSpeed()) > 10) and vehicle:isBraking() and vehicleSpeed > 0))
 
-                    local validComeToStop = false
-
-                    if data.onComeToStop then
-                        local engineSpeed = vehicle:getEngineSpeed()
-                        local idleSpeed = vehicle:getScript():getEngineIdleSpeed()
-                        local closeToIdle = (engineSpeed-idleSpeed) > 10
-                        validComeToStop = closeToIdle and vehicle:isBraking() and vehicleSpeed > 0
-                    end
-
-                    local stopSound = data.stopSound or notValid or notValidEngineRunning or notValidBraking or (not validComeToStop)
+                    local stopSound = data.stopSound or notValid or notValidEngineRunning or notValidBraking or notValidComeToStop
 
                     if stopSound then
-                        --print(data.sound, ": STOP - ", data.stop, ", ", notValid , ", ",  notValidEngineRunning , ", ",  notValidBraking)
                         if (not doNotStop) and vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:stopSoundByName(data.sound) end
                     else
-                        --print(data.sound, ": PLAY - ", data.stop, ", ", notValid , ", ",  notValidEngineRunning , ", ",  notValidBraking)
                         if not vehicleEmitter:isPlaying(data.sound) then vehicleEmitter:playAmbientLoopedImpl(data.sound) end
                     end
 
