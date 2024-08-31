@@ -18,7 +18,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF15092"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustang90StatePolice"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 0.2};
@@ -73,10 +73,10 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_MazdaB2000"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 35};
-    VehicleZoneDistribution.good.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 35};
+    VehicleZoneDistribution.good.vehicles["Base.SC_FordF15092"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
-    VehicleZoneDistribution.good.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.good.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 25};
     VehicleZoneDistribution.good.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 5};
@@ -89,7 +89,7 @@ if VehicleZoneDistribution then
 
     VehicleZoneDistribution.sport.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 70};
     VehicleZoneDistribution.sport.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 70};
-    VehicleZoneDistribution.sport.vehicles["Base.SC_Porsche911G50"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.sport.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.sport.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 70};
     VehicleZoneDistribution.sport.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 50};
     VehicleZoneDistribution.sport.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 80};
@@ -196,7 +196,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 6};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordF15092"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ChevroletK5Blazer"] = {index = -1, spawnChance = 5};
@@ -279,7 +279,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordBronco"] = {index = -1, spawnChance = 6};
-    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF150"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordF15092"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_FordMustang90Undercover"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletK5Blazer"] = {index = -1, spawnChance = 5};

@@ -1351,7 +1351,7 @@ distributionTable["SC_MazdaB2000"] = { Normal = VehicleDistributions.SC_Standard
 distributionTable["SC_PlymouthVoyager"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletCavalier"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_FordBronco"] = { Normal = VehicleDistributions.SC_Standard}
-distributionTable["SC_FordF150"] = { Normal = VehicleDistributions.SC_Standard}
+distributionTable["SC_FordF15092"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_JeepCJ7"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["OffRoad"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_JeepCherokee"] = { Normal = VehicleDistributions.SC_Standard}
