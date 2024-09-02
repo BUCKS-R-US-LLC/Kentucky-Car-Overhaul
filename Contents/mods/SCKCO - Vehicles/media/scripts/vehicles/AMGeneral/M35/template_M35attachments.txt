@@ -56,7 +56,7 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = M35A1Bullbar, }
+            model Default { file = M35A2Bullbar, }
             itemType = Base.M35BumperSC,
             lua { create = Vehicles.Create.Default, }
 
@@ -69,7 +69,7 @@ module Base
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
-            model Default { file = M35A1FrontRightWindowArmor, }
+            model Default { file = M35A2FrontRightWindowArmor, }
             itemType = Base.M35WindowArmorSC,
 
             table armorBehavior
@@ -81,7 +81,7 @@ module Base
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = M35A1FrontLeftWindowArmor, }
+            model Default { file = M35A2FrontLeftWindowArmor, }
             itemType = Base.M35WindowArmorSC,
 
             table armorBehavior
@@ -93,14 +93,19 @@ module Base
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
-            model Default { file = M35A1FrontRightDoorArmor, }
+            model Default { file = M35A2FrontRightDoorArmor, }
             itemType = Base.M35DoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
-            model Default { file = M35A1FrontLeftDoorArmor, }
+            model Default { file = M35A2FrontLeftDoorArmor, }
             itemType = Base.M35DoorArmorSC,
 
             table armorBehavior
@@ -112,7 +117,7 @@ module Base
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
-            model Default { file = M35A1WindshieldArmor, }
+            model Default { file = M35A2WindshieldArmor, }
             itemType = Base.M35WindshieldArmorSC,
 
             table armorBehavior

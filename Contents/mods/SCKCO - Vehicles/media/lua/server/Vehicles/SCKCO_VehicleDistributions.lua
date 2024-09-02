@@ -1183,22 +1183,17 @@ VehicleDistributions.SC_WorkTruckFootwellSpace = {
 VehicleDistributions.SC_WorkTruckTruckBed = {
     rolls = 50,
     items = {
-        "HottieZ", 00.01,
-        "Magazine", 50,
-        "TVMagazine", 50,
-        "FarmingMag1", 1,
-        "EngineerMagazine1", 1,
-        "EngineerMagazine2", 1,
-        "MagazineCrossword1", 5,
-        "MagazineCrossword2", 5,
-        "MagazineCrossword3", 5,
-        "MagazineWordsearch1", 5,
-        "MagazineWordsearch2", 5,
-        "MagazineWordsearch3", 5,
-        "HuntingMag01", 1,
-        "HuntingMag02", 1,
-        "HuntingMag03", 1,
-        "HuntingMag04", 1,
+        "Sledgehammer", 0.5,
+        "Hammer", 2,
+        "ClubHammer", 1,
+        "Plank", 5,
+        "Tarp", 1,
+        "Hat_Hardhat", 1,
+        "Bag_Toolbag", 1,
+        "NailsBox", 10,
+        "ScrewsBox", 10,
+        "MetalPipe", 10,
+        "Saw", 3,
     }
 }
 
