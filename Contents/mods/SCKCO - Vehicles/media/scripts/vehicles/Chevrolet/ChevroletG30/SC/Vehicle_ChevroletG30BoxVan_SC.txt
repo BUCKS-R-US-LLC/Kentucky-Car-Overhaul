@@ -412,20 +412,11 @@ module Base
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
-		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
 		template = Muffler,
 		template = TrunkDoor,
-
-		part TruckBed
-		{
-			container
-			{
-				capacity = 150,
-			}
-		}
 
 		part TrunkDoor
 		{
@@ -504,6 +495,8 @@ module Base
 			{
 				file = G30VanBoxDriver,
 			}
+			
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearRight
@@ -514,6 +507,7 @@ module Base
 			{
 				file = G30VanBoxPassenger,
 			}
+			itemType = Base.FillerSeatSC,
 		}
 
 		part Muffler
