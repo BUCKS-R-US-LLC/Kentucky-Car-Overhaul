@@ -15,7 +15,7 @@
 --            }
 --
 --- lua Create needs ot be overwritten so the above is true.
---		lua { create = Vehicles.Create.SC_VehiclePartVariation, } }
+--		lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, } }
 
 ---FOR MILITARY IGNITION
 --  template = Engine,
@@ -27,9 +27,9 @@
 --          additionalVehicleFunc = Engine,
 --      }
 --      lua {
---          create = Vehicles.Create.SC_VehiclePartVariation,
---- NOTE: the update is now -> SC_militaryEngine (This corrects previously spawned in cars.)
---          update = Vehicles.Update.SC_militaryEngine,
+--          create = Vehicles.Create.SCKCO_VehiclePartVariation,
+--- NOTE: the update is now -> SCKCO_militaryEngine (This corrects previously spawned in cars.)
+--          update = Vehicles.Update.SCKCO_militaryEngine,
 --          checkEngine = Vehicles.CheckEngine.Engine,
 --      }
 --  }
@@ -43,7 +43,7 @@
 --                3=DoorRearLeft,
 --                4=DoorRearRight,
 --           }
---           lua { init = Vehicles.Create.SC_removeOnCreate, update = Vehicles.Create.SC_removeOnCreate, }
+--           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
 --        }
 --
 --		part Engine
@@ -55,8 +55,8 @@
 --                noLockDoors = true,
 --            }
 --            lua {
---                create = Vehicles.Create.SC_VehiclePartVariation,
---                update = Vehicles.Update.SC_militaryEngine,
+--                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+--                update = Vehicles.Update.SCKCO_militaryEngine,
 --                checkEngine = Vehicles.CheckEngine.Engine,
 --            }
 --        }
@@ -129,27 +129,27 @@ end
 
 ---@param vehicle BaseVehicle
 ---@param part VehiclePart
-function Vehicles.Update.SC_militaryEngine(vehicle, part, elapsedMinutes)
+function Vehicles.Update.SCKCO_militaryEngine(vehicle, part, elapsedMinutes)
     SC_applySpecials(vehicle, part)
     Vehicles.Update.Engine(vehicle, part, elapsedMinutes)
 end
 
 
 
-function Vehicles.Init.TrunkDoorSC_Storage(vehicle, part)
-    SC_VisualStorage.update(vehicle, part, nil, true)
+function Vehicles.Init.TrunkDoorSCKCO_Storage(vehicle, part)
+    SCKCO_VisualStorage.update(vehicle, part, nil, true)
     Vehicles.Init.Door(vehicle, part)
 end
 
 
-function Vehicles.Use.TrunkDoorSC_Storage(vehicle, part, character)
-    SC_VisualStorage.update(vehicle, part, nil, true)
+function Vehicles.Use.TrunkDoorSCKCO_Storage(vehicle, part, character)
+    SCKCO_VisualStorage.update(vehicle, part, nil, true)
     Vehicles.Use.TrunkDoor(vehicle, part, character)
 end
 
 
 
-function Vehicles.Create.SC_removeOnCreate(vehicle, part, elapsedMinutes)
+function Vehicles.Create.SCKCO_removeOnCreate(vehicle, part, elapsedMinutes)
     local removeOnCreate = part:getTable("removeOnCreate")
     if removeOnCreate then
         for k,partID in pairs(removeOnCreate) do
@@ -170,7 +170,7 @@ end
 
 ---@param vehicle BaseVehicle
 ---@param part VehiclePart
-function Vehicles.Create.SC_VehiclePartVariation(vehicle, part)
+function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
 
     local vehicleID = vehicle:getScriptName()
 
