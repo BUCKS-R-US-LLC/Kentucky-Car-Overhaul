@@ -1,6 +1,6 @@
-SCKCO_VisualStorage = {}
+SC_VisualStorage = {}
 
-SCKCO_VisualStorage.itemTypesToModels = {
+SC_VisualStorage.itemTypesToModels = {
 
     ["Base.PetrolCan"] = "GasCan",
     ["Base.EmptyPetrolCan"] = "GasCan",
@@ -12,7 +12,7 @@ local itemsDisplayed = {}
 ---@param vehicle BaseVehicle
 ---@param trunkDoor VehiclePart
 ---@param trunk VehiclePart
-function SCKCO_VisualStorage.update(vehicle, trunkDoor, trunk, inverseCheck)
+function SC_VisualStorage.update(vehicle, trunkDoor, trunk, inverseCheck)
 
     trunk = trunk or vehicle:getPartById("TruckBed")
     local container = trunk and trunk:getItemContainer()
@@ -46,7 +46,7 @@ function SCKCO_VisualStorage.update(vehicle, trunkDoor, trunk, inverseCheck)
             local item = items:get(itemNum)
             local itemID = item:getID()
             local alreadyDisplayed = itemsDisplayed[carID][itemID]
-            model = (not alreadyDisplayed) and item and SCKCO_VisualStorage.itemTypesToModels[item:getFullType()]
+            model = (not alreadyDisplayed) and item and SC_VisualStorage.itemTypesToModels[item:getFullType()]
             if model then
                 itemsDisplayed[carID][itemID] = true
                 slot:setModelVisible("Slot"..num.."_"..model, true)
