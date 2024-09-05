@@ -174,7 +174,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.5593 -0.7966,
 		shadowExtents = 3.3295 8.3058,
 		shadowOffset = -0.0042 -0.8042,
-		maxSpeed = 90f,
+		maxSpeed = 60f,
 		engineForce = 6500,
 		engineQuality = 70,
 		engineLoudness = 100,
@@ -356,16 +356,16 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.5932 3.3220 1.0169,
+			xywh = -0.0169 -5.4915 3.1525 1.0169,
 		}
 
+		template = G30AmbulanceAttachments,
 		template = G30ThirtyLogo,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
-		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
@@ -386,7 +386,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanWindowlessTrunk,
+				file = G30AmbulanceTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -427,7 +427,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = G30VanWindowlessDriver,
+				file = G30AmbulanceDriver,
 			}
 
 		}
@@ -436,17 +436,19 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = G30VanWindowlessPassenger,
+				file = G30AmbulancePassenger,
 			}
 
 		}
 
 		part SeatRearLeft
 		{
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
+			itemType = Base.FillerSeatSC,
 		}
 
 		part Muffler
@@ -468,7 +470,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = G30VanWindowlessHood,
+				file = G30AmbulanceHood,
 			}
 
 			anim Close
@@ -529,7 +531,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = G30VanWindowlessWindshield,
+				file = G30AmbulanceWindshield,
 			}
 
 			window
@@ -560,7 +562,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = G30VanWindowlessRearWindshield,
+				file = G30AmbulanceRearWindshield,
 			}
 
 			window
@@ -595,21 +597,13 @@ module Base
 		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowMiddleRight,
 
-		part TruckBed
-		{
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-		}
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = G30VanWindowlessFrontRightWindow,
+				file = G30AmbulanceFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -628,7 +622,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanWindowlessFrontLeftWindow,
+				file = G30AmbulanceFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -643,11 +637,29 @@ module Base
 			area = SeatFrontLeft,
 		}
 
+		part WindowMiddleRight
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowRR
+			{
+				file = G30AmbulanceSlidingWindow,
+			}
+			
+			parent = DoorRearRight,
+			category = SCUCKwindows,
+			itemType = Base.ChevyG30WindowSC,
+			area = SeatRearRight,
+		}
+
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontRightDoor,
+				file = G30AmbulanceFrontRightDoor,
 			}
 
 			anim Close
@@ -685,7 +697,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessFrontLeftDoor,
+				file = G30AmbulanceFrontLeftDoor,
 			}
 
 			anim Close
@@ -723,7 +735,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanWindowlessSlidingRightDoor,
+				file = G30AmbulanceSlidingRightDoor,
 			}
 
 			anim Close

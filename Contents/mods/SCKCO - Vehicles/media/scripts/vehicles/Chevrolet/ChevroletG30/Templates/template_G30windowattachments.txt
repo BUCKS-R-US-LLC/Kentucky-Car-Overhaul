@@ -149,7 +149,7 @@ module Base
 
     template vehicle G30AmbulanceAttachments
     {
-        template = PassengerVanFootwellSpace,
+        template = CargoVanFootwellSpace,
                 
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
@@ -175,7 +175,6 @@ module Base
         template = armorUpgrades/part/SCArmorMiddleRightWindow,
         part SCArmorMiddleRightWindow
         {
-            parent = WindowRearRight,
             model Default { file = G30AmbulanceRearRightWindowArmor, }
             itemType = Base.ChevyG30WindowArmorSC,
         }

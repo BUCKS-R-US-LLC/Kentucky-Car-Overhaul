@@ -354,6 +354,11 @@ module Base
 			xywh = -1.6610 -3.0169 0.0000 0.0000,
 		}
 
+		area TruckBed
+		{
+			xywh = -0.0169 -5.4915 3.1525 1.0169,
+		}
+
 		template = G30AmbulanceAttachments,
 		template = G30ThirtyLogo,
 		template = Seat/part/SeatFrontLeft,
@@ -438,10 +443,12 @@ module Base
 
 		part SeatRearLeft
 		{
+			itemType = Base.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
+			itemType = Base.FillerSeatSC,
 		}
 
 		part Muffler
