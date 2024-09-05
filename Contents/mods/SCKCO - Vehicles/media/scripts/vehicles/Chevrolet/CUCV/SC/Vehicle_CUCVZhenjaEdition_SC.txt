@@ -9,41 +9,43 @@ module Base
 	}
 	model CUCVZhenjaEditionDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model CUCVZhenjaEditionFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CUCVZhenjaEditionFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -51,7 +53,7 @@ module Base
 	}
 	model CUCVZhenjaEditionFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -59,19 +61,19 @@ module Base
 	}
 	model CUCVZhenjaEditionRearRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|RearRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionRearLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -80,7 +82,7 @@ module Base
 	}
 	model CUCVZhenjaEditionHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_CUCVZhenjaEdition_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
