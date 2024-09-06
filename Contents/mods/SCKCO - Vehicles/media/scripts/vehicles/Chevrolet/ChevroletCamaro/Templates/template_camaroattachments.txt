@@ -55,7 +55,7 @@ module Base
 		scale = 1,
 	}
 
-    template vehicle Camaro85Attachments
+    template vehicle Camaro87ttachments
 	{
 
         template = FourSeaterFootwellSpace,
@@ -64,7 +64,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = CamaroBullbar, }
-            itemType = Base.ChevyCamaro87BumperSC,
+            itemType = Base.ChevyCamaro87BullbarSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
@@ -78,14 +78,14 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CamaroFrontRightDoorArmor, }
-            itemType = Base.ChevyCamaro87WindowArmorSC,
+            itemType = Base.ChevyCamaro87DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = CamaroFrontLeftDoorArmor, }
-            itemType = Base.ChevyCamaro87WindowArmorSC,
+            itemType = Base.ChevyCamaro87DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
