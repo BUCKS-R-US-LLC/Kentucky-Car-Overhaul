@@ -5,52 +5,103 @@ recipe Craft '92 Explorer Bullbar
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordExplorerBullbarSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Explorer Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordExplorerBullbarSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Explorer Windshield Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordExplorerWindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Explorer Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordExplorerWindshieldArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Explorer Door Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordExplorerDoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Explorer Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordExplorerDoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Explorer Window Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordExplorerWindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
+recipe Dismantle '92 Explorer Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordExplorerWindowArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
 }
