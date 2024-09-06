@@ -9,9 +9,22 @@ recipe Craft Firecoach Door Armor
 
 		Result:FireCoachDoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle Firecoach Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FireCoachDoorArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft Firecoach Windshield Armor
@@ -22,11 +35,24 @@ recipe Craft Firecoach Windshield Armor
 
 		Result:FireCoachWindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
+recipe Dismantle Firecoach Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FireCoachWindshieldArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+	
 recipe Craft Firecoach Window Armor
 	{
 		BlowTorch=1,
@@ -35,9 +61,21 @@ recipe Craft Firecoach Window Armor
 
 		Result:FireCoachWindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
+recipe Dismantle Firecoach Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FireCoachWindowArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
 }

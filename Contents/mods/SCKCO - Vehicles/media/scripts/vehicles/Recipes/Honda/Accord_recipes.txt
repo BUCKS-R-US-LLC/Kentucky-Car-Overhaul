@@ -9,9 +9,22 @@ recipe Craft '85 Accord Bumper
 
 		Result:HondaAccordBumperSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 Accord Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HondaAccordBumperSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '85 Accord Windshield Armor
@@ -22,9 +35,22 @@ recipe Craft '85 Accord Windshield Armor
 
 		Result:HondaAccordWindshieldArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 Accord Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HondaAccordBumperSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '85 Accord Door Armor
@@ -35,9 +61,22 @@ recipe Craft '85 Accord Door Armor
 
 		Result:HondaAccordDoorArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 Accord Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HondaAccordDoorArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '85 Accord Window Armor
@@ -48,9 +87,23 @@ recipe Craft '85 Accord Window Armor
 
 		Result:HondaAccordWindowArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
+
+recipe Dismantle '85 Accord Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HondaAccordWindowArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
 
 }

@@ -5,52 +5,103 @@ recipe Craft '88 Fleetwood Bullbar
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:CadillacFleetwoodBullbarSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '88 Fleetwood Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		CadillacFleetwoodBullbarSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		Category:Vehicle Armor,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '88 Fleetwood Windshield Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:CadillacFleetwoodWindshieldArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '88 Fleetwood Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		CadillacFleetwoodWindshieldSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '88 Fleetwood Door Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:CadillacFleetwoodDoorArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '88 Fleetwood Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		CadillacFleetwoodDoorArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		Category:Vehicle Armor,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '88 Fleetwood Window Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:CadillacFleetwoodWindowArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '88 Fleetwood Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		CadillacFleetwoodWindowArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		Category:Vehicle Armor,
+		AnimNode:Disassemble,
 	}
 
 }

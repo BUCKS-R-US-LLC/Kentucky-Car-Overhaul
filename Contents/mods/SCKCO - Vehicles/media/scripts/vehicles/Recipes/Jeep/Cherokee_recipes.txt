@@ -10,9 +10,22 @@ recipe Craft '92 Cherokee Bullbar
 
 		Result:JeepCherokeeBullbarSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Cherokee Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCherokeeBullbarSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Cherokee Windshield Armor
@@ -23,9 +36,22 @@ recipe Craft '92 Cherokee Windshield Armor
 
 		Result:JeepCherokeeWindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Cherokee Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCherokeeBullbarSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Cherokee Door Armor
@@ -36,9 +62,22 @@ recipe Craft '92 Cherokee Door Armor
 
 		Result:JeepCherokeeDoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Cherokee Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCherokeeDoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '92 Cherokee Window Armor
@@ -49,9 +88,22 @@ recipe Craft '92 Cherokee Window Armor
 
 		Result:JeepCherokeeWindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '92 Cherokee Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCherokeeBullbarSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 }

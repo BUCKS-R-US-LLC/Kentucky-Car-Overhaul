@@ -9,9 +9,22 @@ recipe Craft HMMWV Door Armor
 
 		Result:HMMWVDoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle HMMWV Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HMMWVDoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft HMMWV Windshield Armor
@@ -22,9 +35,22 @@ recipe Craft HMMWV Windshield Armor
 
 		Result:HMMWVWindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle HMMWV Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HMMWVWindshieldArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft HMMWV Window Armor
@@ -35,9 +61,22 @@ recipe Craft HMMWV Window Armor
 
 		Result:HMMWVWindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle HMMWV Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		HMMWVWindowArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 }

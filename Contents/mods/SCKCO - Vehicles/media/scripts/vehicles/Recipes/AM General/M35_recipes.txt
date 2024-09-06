@@ -9,35 +9,73 @@ recipe Craft M35 Door Armor
 
 		Result:M35DoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle M35 Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		M35DoorArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft M35 Windshield Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:M35WindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle M35 Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		M35DoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		Category:Vehicle Armor,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft M35 Window Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:M35WindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle M35 Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		M35DoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		Category:Vehicle Armor,
+		AnimNode:Disassemble,
 	}
 
 }

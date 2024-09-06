@@ -5,24 +5,37 @@ recipe Craft '76 CJ-7 Bullbar
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:JeepCJ7BullbarSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '76 CJ-7 Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCJ7BullbarSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '76 CJ-7 Windshield Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:JeepCJ7WindshieldArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
@@ -31,26 +44,53 @@ recipe Craft '76 CJ-7 Door Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:JeepCJ7DoorArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
+recipe Dismantle '76 CJ-7 Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCJ7DoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+	
 recipe Craft '76 CJ-7 Window Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:JeepCJ7WindowArmorSC2,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
+
+recipe Dismantle '76 CJ-7 Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		JeepCJ7WindowArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
 
 }

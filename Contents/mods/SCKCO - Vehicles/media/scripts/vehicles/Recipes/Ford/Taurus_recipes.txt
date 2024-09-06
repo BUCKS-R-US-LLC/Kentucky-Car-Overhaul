@@ -5,11 +5,11 @@ recipe Craft '85 Taurus Bullbar
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordTaurusBullbarSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
@@ -20,8 +20,9 @@ recipe Dismantle '85 Taurus Bullbar
 		keep WeldingMask,
 		BlowTorch=2,
 		FordTaurusBullbarSC1,
-		Result:SheetMetal=3,
+		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
 		Time:800.0,
 		AnimNode:Disassemble,
 	}
@@ -30,11 +31,11 @@ recipe Craft '85 Taurus Windshield Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordTaurusWindshieldArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
@@ -45,9 +46,10 @@ recipe Dismantle '85 Taurus Windshield Armor
 		keep WeldingMask,
 		BlowTorch=2,
 		FordTaurusWindshieldArmorSC1,
-		Result:SheetMetal=3,
+		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,
+		Category:Vehicle Armor,
 		AnimNode:Disassemble,
 	}
 
@@ -55,11 +57,11 @@ recipe Craft '85 Taurus Door Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordTaurusDoorArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
@@ -70,9 +72,10 @@ recipe Dismantle '85 Taurus Door Armor
 		keep WeldingMask,
 		BlowTorch=2,
 		FordTaurusDoorArmorSC1,
-		Result:SheetMetal=3,
+		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,
+		Category:Vehicle Armor,
 		AnimNode:Disassemble,
 	}
 
@@ -80,11 +83,11 @@ recipe Craft '85 Taurus Window Armor
 	{
 		BlowTorch=1,
        	keep WeldingMask,
-		SheetMetal=3,
+		SheetMetal=4,
 
 		Result:FordTaurusWindowArmorSC1,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
@@ -95,9 +98,10 @@ recipe Dismantle '85 Taurus Window Armor
 		keep WeldingMask,
 		BlowTorch=2,
 		FordTaurusBullbarSC1,
-		Result:SheetMetal=3,
+		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,
+		Category:Vehicle Armor,
 		AnimNode:Disassemble,
 	}
 	

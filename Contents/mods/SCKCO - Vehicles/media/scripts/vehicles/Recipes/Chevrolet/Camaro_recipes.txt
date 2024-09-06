@@ -1,17 +1,29 @@
 module Base
 {
 
-recipe Craft '87 Camaro Bumper
+recipe Craft '87 Camaro Bullbar
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=3,
 
-		Result:ChevyCamaro87BumperSC3,
+		Result:ChevyCamaro87BullbarSC3,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '87 Camaro Bullbar
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		ChevyCamaro87BullbarSC3,
+		Result:SheetMetal=3,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '87 Camaro Windshield Armor
@@ -22,9 +34,46 @@ recipe Craft '87 Camaro Windshield Armor
 
 		Result:ChevyCamaro87WindshieldArmorSC3,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '87 Camaro Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		ChevyCamaro87WindshieldArmorSC3,
+		Result:SheetMetal=3,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '87 Camaro Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=3,
+
+		Result:ChevyCamaro87DoorArmorSC3,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '87 Camaro Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		ChevyCamaro87DoorArmorSC3,
+		Result:SheetMetal=3,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
 	}
 
 recipe Craft '87 Camaro Window Armor
@@ -35,9 +84,21 @@ recipe Craft '87 Camaro Window Armor
 
 		Result:ChevyCamaro87WindowArmorSC3,
 		Time:800.0,
-		Category:Car Mods,
+		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
+recipe Dismantle '87 Camaro Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		ChevyCamaro87WindowSC3,
+		Result:SheetMetal=3,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+	
 }
