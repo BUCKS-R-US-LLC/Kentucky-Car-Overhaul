@@ -1,9 +1,9 @@
 module Base
 {
 
-	model P30Bullbar
+	model P30Bumper
 	{
-		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Bullbar_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Bumper_obj,
 		shader = vehiclewheel,
         texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
@@ -70,8 +70,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = P30Bullbar, }
-            itemType = Base.ChevyP30BullbarSC,
+            model Default { file = P30Bumper, }
+            itemType = Base.ChevyP30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

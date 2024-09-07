@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '85 Caprice Bullbar
+recipe Craft '85 Caprice Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:ChevyCaprice85BullbarSC1,
+		Result:ChevyCaprice85BumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '85 Caprice Bullbar
+recipe Dismantle '85 Caprice Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyCaprice85BullbarSC1,
+		ChevyCaprice85BumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,
@@ -97,7 +97,7 @@ recipe Dismantle '85 Caprice Window Armor
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyCaprice85BullbarSC1,
+		ChevyCaprice85BumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

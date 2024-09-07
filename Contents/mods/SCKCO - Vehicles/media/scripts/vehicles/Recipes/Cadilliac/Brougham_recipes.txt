@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '88 Fleetwood Bullbar
+recipe Craft '88 Fleetwood Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:CadillacFleetwoodBullbarSC1,
+		Result:CadillacFleetwoodBumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '88 Fleetwood Bullbar
+recipe Dismantle '88 Fleetwood Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		CadillacFleetwoodBullbarSC1,
+		CadillacFleetwoodBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,

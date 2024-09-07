@@ -1,7 +1,7 @@
 module Base
 {
 
-	model FordExplorerBullbar
+	model FordExplorerBumper
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -94,8 +94,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = FordExplorerBullbar, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            model Default { file = FordExplorerBumper, }
+            itemType = Base.FordExplorerBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

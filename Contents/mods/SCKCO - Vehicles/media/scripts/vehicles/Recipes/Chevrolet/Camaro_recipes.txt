@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '87 Camaro Bullbar
+recipe Craft '87 Camaro Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=3,
 
-		Result:ChevyCamaro87BullbarSC3,
+		Result:ChevyCamaro87BumperSC3,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '87 Camaro Bullbar
+recipe Dismantle '87 Camaro Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyCamaro87BullbarSC3,
+		ChevyCamaro87BumperSC3,
 		Result:SheetMetal=3,
 		CanBeDoneFromFloor:true,
 		Time:800.0,

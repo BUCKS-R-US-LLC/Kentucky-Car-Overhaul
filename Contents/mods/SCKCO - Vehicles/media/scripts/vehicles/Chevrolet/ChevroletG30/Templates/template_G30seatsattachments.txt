@@ -1,7 +1,7 @@
 module Base
 {
 
-	model G30SeatsBullbar
+	model G30SeatsBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|HoodArmor_obj,
 		shader = vehiclewheel,
@@ -92,8 +92,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = G30SeatsBullbar, }
-            itemType = Base.ChevyG30BullbarSC,
+            model Default { file = G30SeatsBumper, }
+            itemType = Base.ChevyG30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

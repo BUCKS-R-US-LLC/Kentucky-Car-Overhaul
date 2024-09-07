@@ -1,7 +1,7 @@
 module Base
 {
 
-	model CrownVictoriaBullbar
+	model CrownVictoriaBumper
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -94,8 +94,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = CrownVictoriaBullbar, }
-            itemType = Base.FordCrownVictoria85DoorArmorSC,
+            model Default { file = CrownVictoriaBumper, }
+            itemType = Base.FordCrownVictoria85BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

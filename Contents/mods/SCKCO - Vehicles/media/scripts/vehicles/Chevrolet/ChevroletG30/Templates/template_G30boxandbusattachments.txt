@@ -1,7 +1,7 @@
 module Base
 {
 
-	model G30BoxVanBullbar
+	model G30BoxVanBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|HoodArmor_obj,
 		shader = vehiclewheel,
@@ -52,7 +52,7 @@ module Base
 	}
 
 
-	model ShortSchoolBullbar
+	model ShortSchoolBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|HoodArmor_obj,
 		shader = vehiclewheel,
@@ -92,8 +92,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = ShortSchoolBullbar, }
-            itemType = Base.ChevyG30BullbarSC,
+            model Default { file = ShortSchoolBumper, }
+            itemType = Base.ChevyG30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -126,8 +126,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = G30BoxVanBullbar, }
-            itemType = Base.ChevyG30BullbarSC,
+            model Default { file = G30BoxVanBumper, }
+            itemType = Base.ChevyG30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

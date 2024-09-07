@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '76 CJ-7 Bullbar
+recipe Craft '76 CJ-7 Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:JeepCJ7BullbarSC2,
+		Result:JeepCJ7BumperSC2,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '76 CJ-7 Bullbar
+recipe Dismantle '76 CJ-7 Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		JeepCJ7BullbarSC2,
+		JeepCJ7BumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

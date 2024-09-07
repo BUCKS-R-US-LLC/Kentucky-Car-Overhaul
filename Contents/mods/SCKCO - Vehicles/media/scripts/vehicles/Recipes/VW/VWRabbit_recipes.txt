@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '82 Rabbit Bullbar
+recipe Craft '82 Rabbit Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:VWRabbitBullbarSC1,
+		Result:VWRabbitBumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '82 Rabbit Bullbar
+recipe Dismantle '82 Rabbit Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		VWRabbitBullbarSC1,
+		VWRabbitBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

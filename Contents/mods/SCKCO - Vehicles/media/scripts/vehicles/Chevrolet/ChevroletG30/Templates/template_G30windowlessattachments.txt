@@ -1,7 +1,7 @@
 module Base
 {
 
-	model G30WindowlessBullbar
+	model G30WindowlessBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|HoodArmor_obj,
 		shader = vehiclewheel,
@@ -57,8 +57,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = G30WindowlessBullbar, }
-            itemType = Base.ChevyG30BullbarSC,
+            model Default { file = G30WindowlessBumper, }
+            itemType = Base.ChevyG30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

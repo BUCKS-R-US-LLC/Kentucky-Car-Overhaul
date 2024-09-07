@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '87 Cavalier Bullbar
+recipe Craft '87 Cavalier Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:ChevyCavalierBullbarSC1,
+		Result:ChevyCavalierBumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '87 Cavalier Bullbar
+recipe Dismantle '87 Cavalier Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyCavalierBullbarSC1,
+		ChevyCavalierBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,
@@ -97,7 +97,7 @@ recipe Dismantle '87 Cavalier Window Armor
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyCavalierBullbarSC1,
+		ChevyCavalierBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,
