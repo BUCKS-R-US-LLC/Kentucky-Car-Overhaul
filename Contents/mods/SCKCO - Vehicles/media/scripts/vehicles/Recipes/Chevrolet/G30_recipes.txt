@@ -2,25 +2,25 @@ module Base
 {
 
 
-recipe Craft '85 G30 Bullbar
+recipe Craft '85 G30 Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:ChevyG30BullbarSC2,
+		Result:ChevyG30BumperSC2,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '85 G30 Bullbar
+recipe Dismantle '85 G30 Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyG30BullbarSC2,
+		ChevyG30BumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,
@@ -95,7 +95,7 @@ recipe Dismantle '85 G30 Window Armor
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		ChevyG30BullbarSC2,
+		ChevyG30BumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,

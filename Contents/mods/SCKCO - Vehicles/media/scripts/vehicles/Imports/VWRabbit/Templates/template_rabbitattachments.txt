@@ -8,7 +8,7 @@ module Base
 		scale = 1,
 	}
 
-	model VWRabbitBullbar
+	model VWRabbitBumper
 	{
 		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -192,8 +192,8 @@ module Base
         
 	    part SCArmorBumper
 	    {
-            model Default { file = VWRabbitBullbar, }
-            itemType = Base.VWRabbitBullbarSC,
+            model Default { file = VWRabbitBumper, }
+            itemType = Base.VWRabbitBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

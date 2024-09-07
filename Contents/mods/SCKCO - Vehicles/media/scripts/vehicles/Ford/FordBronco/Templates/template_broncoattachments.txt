@@ -1,7 +1,7 @@
 module Base
 {
 
-	model BroncoBullbar
+	model BroncoBumper
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -74,8 +74,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = BroncoBullbar, }
-            itemType = Base.FordOBSBullbarSC,
+            model Default { file = BroncoBumper, }
+            itemType = Base.FordOBSBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

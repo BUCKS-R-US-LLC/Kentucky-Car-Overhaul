@@ -1,7 +1,7 @@
 module Base
 {
 
-	model CapriceBullbar
+	model CapriceBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_SC|HoodArmor_obj,
 		shader = vehicle_noreflect,
@@ -87,8 +87,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = CapriceBullbar, }
-            itemType = Base.ChevyCaprice85BullbarSC,
+            model Default { file = CapriceBumper, }
+            itemType = Base.ChevyCaprice85BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

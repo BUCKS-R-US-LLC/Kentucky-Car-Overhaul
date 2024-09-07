@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '87 Mazda B2000 Bullbar
+recipe Craft '87 Mazda B2000 Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=3,
 
-		Result:MazdaB2000BullbarSC2,
+		Result:MazdaB2000BumperSC2,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '87 Mazda B2000 Armor
+recipe Dismantle '87 Mazda B2000 Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		HondaAccordDoorArmorSC2,
+		HondaAccordBumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

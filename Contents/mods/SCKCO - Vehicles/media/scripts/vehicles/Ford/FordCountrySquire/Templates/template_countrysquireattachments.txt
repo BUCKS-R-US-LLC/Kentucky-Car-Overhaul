@@ -1,7 +1,7 @@
 module Base
 {
 
-	model CountrySquireBullbar
+	model CountrySquireBumper
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -113,8 +113,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = CountrySquireBullbar, }
-            itemType = Base.FordCrownVictoria85DoorArmorSC,
+            model Default { file = CountrySquireBumper, }
+            itemType = Base.FordCrownVictoria85BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

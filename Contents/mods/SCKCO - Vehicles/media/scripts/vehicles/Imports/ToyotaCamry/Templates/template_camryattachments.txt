@@ -1,7 +1,7 @@
 module Base
 {
 
-	model CamryBullbar
+	model CamryBumper
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -87,7 +87,7 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = CamryBullbar, }
+            model Default { file = CamryBumper, }
             itemType = Base.ToyotaCamryBumperSC,
         }
 

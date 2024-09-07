@@ -1,7 +1,7 @@
 module Base
 {
 
-	model CamaroBullbar
+	model CamaroBumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -55,7 +55,7 @@ module Base
 		scale = 1,
 	}
 
-    template vehicle Camaro87ttachments
+    template vehicle Camaro87Attachments
 	{
 
         template = FourSeaterFootwellSpace,
@@ -63,8 +63,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = CamaroBullbar, }
-            itemType = Base.ChevyCamaro87BullbarSC,
+            model Default { file = CamaroBumper, }
+            itemType = Base.ChevyCamaro87BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,

@@ -1,7 +1,7 @@
 module Base
 {
 
-	model MazdaBBullbar
+	model MazdaBBumper
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -57,8 +57,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = MazdaBBullbar, }
-            itemType = Base.MazdaB2000BullbarSC,
+            model Default { file = MazdaBBumper, }
+            itemType = Base.MazdaB2000BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

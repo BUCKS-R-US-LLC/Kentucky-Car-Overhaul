@@ -1,7 +1,7 @@
 module Base
 {
 
-    model JeepCJ7Bullbar
+    model JeepCJ7Bumper
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontBumper_obj,
 		shader = vehiclewheel,
@@ -62,8 +62,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = JeepCJ7Bullbar, }
-            itemType = Base.JeepCJ7DoorArmorSC,
+            model Default { file = JeepCJ7Bumper, }
+            itemType = Base.JeepCJ7BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

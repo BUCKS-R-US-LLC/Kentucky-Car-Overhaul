@@ -1,7 +1,7 @@
 module Base
 {
 
-	model JeepCherokeeBullbar
+	model JeepCherokeeBumper
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Bullbar_obj,
 		shader = vehicle_noreflect,
@@ -102,8 +102,8 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = JeepCherokeeBullbar, }
-            itemType = Base.JeepCherokeeBullbarSC,
+            model Default { file = JeepCherokeeBumper, }
+            itemType = Base.JeepCherokeeBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,

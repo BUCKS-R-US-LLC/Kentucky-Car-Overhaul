@@ -1,7 +1,7 @@
 module Base
 {
 
-	model AccordBullbar
+	model AccordBumper
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -69,7 +69,7 @@ module Base
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
-            model Default { file = AccordBullbar, }
+            model Default { file = AccordBumper, }
             itemType = Base.HondaAccordBumperSC,
         }
 

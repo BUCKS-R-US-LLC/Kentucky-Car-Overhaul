@@ -37,6 +37,7 @@ ISCarMechanicsOverlay.CarList["Base.SportsCar"] = {imgPrefix = "camaro_", x=0,y=
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30BoxVan"] = {imgPrefix = "g30box_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30SpecialForces"] = {imgPrefix = "g30box_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30"] = {imgPrefix = "g30windowless_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30Seats"] = {imgPrefix = "g30van_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30Ambulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30Mail"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30McCoy"] = {imgPrefix = "g30windowless_", x=0,y=0};

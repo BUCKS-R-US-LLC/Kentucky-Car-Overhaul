@@ -1,7 +1,7 @@
 module Base
 {
 
-	model F150Bullbar
+	model F150Bumper
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
@@ -57,8 +57,8 @@ module Base
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = F150Bullbar, }
-            itemType = Base.FordF150BullbarSC,
+            model Default { file = F150Bumper, }
+            itemType = Base.FordF150BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
