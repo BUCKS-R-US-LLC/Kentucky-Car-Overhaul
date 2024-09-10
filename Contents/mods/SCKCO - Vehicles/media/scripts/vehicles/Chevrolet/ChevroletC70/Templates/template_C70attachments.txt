@@ -52,7 +52,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = C70SurvivorHead, }
-            itemType = Base.ChevyC70FabricatedBrushGuardSC,
+            itemType = Base.M35BumperSC,
             lua { create = Vehicles.Create.Default, }
         }
 
@@ -60,7 +60,7 @@ module Base
         {
             model Default { file = C70SurvivorBumper, }
             parent = EngineDoor,
-            itemType = Base.M35BumperSC,
+            itemType = Base.ChevyC70FabricatedBrushGuardSC,
             lua { create = Vehicles.Create.Default, }
 		}
 
