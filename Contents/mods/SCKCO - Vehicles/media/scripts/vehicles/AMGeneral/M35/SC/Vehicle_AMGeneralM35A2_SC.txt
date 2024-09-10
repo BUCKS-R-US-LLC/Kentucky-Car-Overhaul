@@ -1001,7 +1001,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35Door,
+			itemType = Base.M35DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1035,44 +1035,6 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.M35DoorSC,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = M35A2FrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
