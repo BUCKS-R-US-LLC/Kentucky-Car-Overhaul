@@ -2,7 +2,7 @@ module Base
 {
 	model C70AgriBumper
 	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|Bumper_obj,
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|Bullbar_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -45,12 +45,14 @@ module Base
     {
 		
 		template = TwoSeaterFootwellSpace,
+		template = cosmetic/part/SCLogo,
 		template = armorUpgrades/part/SCArmorGrille,
+		template = armorUpgrades/part/SCArmorBumper,
 
         part SCArmorBumper
         {
             model Default { file = C70SurvivorHead, }
-            itemType = Base.ChevyC70BumperSC,
+            itemType = Base.ChevyC70FabricatedBrushGuardSC,
             lua { create = Vehicles.Create.Default, }
         }
 
@@ -58,8 +60,16 @@ module Base
         {
             model Default { file = C70SurvivorBumper, }
             parent = EngineDoor,
-            itemType = Base.ChevyC70FabricatedBumperSC,
+            itemType = Base.M35BumperSC,
             lua { create = Vehicles.Create.Default, }
+		}
+
+        part SCLogo
+        {
+			parent = EngineDoor,
+			model Default { file = C70Chevy, }
+            itemType = Base.FillerPartSC,
+			lua { create = Vehicles.Create.Default, }
 		}
 	}
 
@@ -83,7 +93,8 @@ module Base
         {
 			parent = EngineDoor,
 			model Default { file = C70Chevy, }
-            itemType = Base.ChevyLogo,
+            itemType = Base.FillerPartSC,
+			lua { create = Vehicles.Create.Default, }
 		}
 
     }
