@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '85 Crown Victoria Bullbar
+recipe Craft '85 Crown Victoria Bumper
 	{
 		BlowTorch=2,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:FordCrownVictoria85BullbarSC1,
+		Result:FordCrownVictoria85BumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '85 Crown Victoria Bullbar
+recipe Dismantle '85 Crown Victoria Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		FordCrownVictoria85BullbarSC1,
+		FordCrownVictoria85BumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,
