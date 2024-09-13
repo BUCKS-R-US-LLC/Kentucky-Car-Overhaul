@@ -1,6 +1,6 @@
 module Base
 {
-	model SC_FordOBS
+	model SC_FordF150
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
@@ -105,7 +105,7 @@ module Base
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_FordOBS
+	vehicle SC_FordF150
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -114,68 +114,68 @@ module Base
 
 		model
 		{
-			file = SC_FordOBS,
+			file = SC_FordF150,
 			scale = 0.6300,
 			offset = 0.0476 -0.0952 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_Silver,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Silver,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_SilverBlack,
+			texture = Vehicles/FordF150/Vehicle_F1501992_SilverBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_BlackGreen,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlackGreen,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_Blue,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Blue,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueBlack,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_BlueWhite,
+			texture = Vehicles/FordF150/Vehicle_F1501992_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_Magenta,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Magenta,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_RedBrown,
+			texture = Vehicles/FordF150/Vehicle_F1501992_RedBrown,
 		}
 
 		skin
 		{
-			texture = Vehicles/FordOBS/Vehicle_F1501992_Red,
+			texture = Vehicles/FordF150/Vehicle_F1501992_Red,
 		}
 
-		textureRust = Vehicles/FordOBS/Vehicle_F1501992_Rust,
-		textureMask = Vehicles/FordOBS/Vehicle_F1501992_Masks,
-		textureLights = Vehicles/FordOBS/Vehicle_F1501992_Lights,
-		textureDamage1Shell = Vehicles/FordOBS/Vehicle_F1501992_scratch,
-		textureDamage2Shell = Vehicles/FordOBS/Vehicle_F1501992_scratch,
-		textureDamage1Overlay = Vehicles/FordOBS/Vehicle_F1501992_Blood,
-		textureDamage2Overlay = Vehicles/FordOBS/Vehicle_F1501992_Blood,
+		textureRust = Vehicles/FordF150/Vehicle_F1501992_Rust,
+		textureMask = Vehicles/FordF150/Vehicle_F1501992_Masks,
+		textureLights = Vehicles/FordF150/Vehicle_F1501992_Lights,
+		textureDamage1Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
+		textureDamage2Shell = Vehicles/FordF150/Vehicle_F1501992_scratch,
+		textureDamage1Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
+		textureDamage2Overlay = Vehicles/FordF150/Vehicle_F1501992_Blood,
 
 		sound
 		{
