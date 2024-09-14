@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '92 Explorer Bullbar
+recipe Craft '92 Explorer Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:FordExplorerBullbarSC2,
+		Result:FordExplorerBumperSC2,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '92 Explorer Bullbar
+recipe Dismantle '92 Explorer Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		FordExplorerBullbarSC2,
+		FordExplorerBumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

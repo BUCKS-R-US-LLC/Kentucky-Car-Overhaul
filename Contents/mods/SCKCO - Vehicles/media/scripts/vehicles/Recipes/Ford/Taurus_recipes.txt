@@ -1,25 +1,25 @@
 module Base
 {
 
-recipe Craft '85 Taurus Bullbar
+recipe Craft '85 Taurus Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:FordTaurusBullbarSC1,
+		Result:FordTaurusBumperSC1,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '85 Taurus Bullbar
+recipe Dismantle '85 Taurus Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		FordTaurusBullbarSC1,
+		FordTaurusBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,
@@ -97,7 +97,7 @@ recipe Dismantle '85 Taurus Window Armor
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		FordTaurusBullbarSC1,
+		FordTaurusBumperSC1,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Time:800.0,

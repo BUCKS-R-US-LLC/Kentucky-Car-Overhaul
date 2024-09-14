@@ -1,24 +1,24 @@
 module Base
 {
 
-recipe Craft '92 Old Body Style Bullbar
+recipe Craft '92 Old Body Style Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:FordOBSBullbarSC2,
+		Result:FordOBSBumperSC2,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '92 Old Body Style Bullbar
+recipe Dismantle '92 Old Body Style Bumper
 	{
 		keep WeldingMask,
 		BlowTorch=2,
-		FordOBSBullbarSC2,
+		FordOBSBumperSC2,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,

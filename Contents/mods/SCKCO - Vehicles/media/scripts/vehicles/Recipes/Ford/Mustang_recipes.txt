@@ -2,25 +2,25 @@ module Base
 {
 
 
-recipe Craft '90 Mustang Bullbar
+recipe Craft '90 Mustang Bumper
 	{
 		BlowTorch=1,
        	keep WeldingMask,
 		SheetMetal=4,
 
-		Result:FordMustang90BullbarSC3,
+		Result:FordMustang90BumperSC3,
 		Time:800.0,
 		Category:Vehicle Armor,
 		SkillRequired:MetalWelding=4,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 	}
 
-recipe Dismantle '90 Mustang Bullbar
+recipe Dismantle '90 Mustang Bumper
 	{
 		Category:Welding,
 		keep WeldingMask,
 		BlowTorch=2,
-		FordMustangBullbarSC3,
+		FordMustangBumperSC3,
 		Result:SheetMetal=4,
 		CanBeDoneFromFloor:true,
 		Category:Vehicle Armor,
