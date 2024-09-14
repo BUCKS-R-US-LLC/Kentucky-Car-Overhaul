@@ -1432,9 +1432,9 @@ distributionTable["SC_AMGeneralM1097TroopCarrier"] = { Normal = VehicleDistribut
 distributionTable["SC_AMGeneralM1097TroopCarrierTan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025Tan"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM997"] = { Normal = VehicleDistributions.SC_Ambulance }
-distributionTable["SC_AMGeneralM997Green"] = { Normal = VehicleDistributions.SC_Ambulance }
-distributionTable["SC_AMGeneralM997Tan"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_AMGeneralM997Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_AMGeneralM997AmbulanceGreen"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_AMGeneralM997AmbulanceTan"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM998"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Tan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Hardtop"] = { Normal = VehicleDistributions.SC_Military }
