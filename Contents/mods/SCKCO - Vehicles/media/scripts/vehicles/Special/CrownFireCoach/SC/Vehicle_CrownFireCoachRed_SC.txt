@@ -177,7 +177,7 @@ module Base
 		{
 			file = SC_FireCoach,
 			scale = 0.6300,
-			offset = 0.0635 -0.3016 0.0000,
+			offset = 0.0000 -0.3016 0.0000,
 		}
 
 		skin
@@ -212,7 +212,7 @@ module Base
 		extents = 3.8095 4.2222 13.2381,
 		mass = 500,
 		physicsChassisShape = 3.8095 4.0317 13.2381,
-		centerOfMassOffset = 0.0635 2.0317 -0.0317,
+		centerOfMassOffset = 0.0000 2.0317 -0.0317,
 		shadowExtents = 4.5474 14.9292,
 		shadowOffset = 0.0635 0.0222,
 		maxSpeed = 80f,
@@ -423,9 +423,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		part TrunkDoor1
@@ -1058,8 +1066,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 2.0159 -0.0317,
-			extents = 3.7778 4.0159 13.2222,
+			offset = 0.0000 2.0159 -0.0317,
+			extents = 3.8095 4.0159 13.2222,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}

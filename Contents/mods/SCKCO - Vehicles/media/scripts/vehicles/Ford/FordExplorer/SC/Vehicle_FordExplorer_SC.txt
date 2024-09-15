@@ -179,7 +179,7 @@ module Base
 		{
 			file = SC_FordExplorer,
 			scale = 0.7000,
-			offset = 0.0000 -0.1857 0.0000,
+			offset = 0.0000 -0.1857 -0.0286,
 		}
 
 		skin
@@ -229,9 +229,9 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.6000 2.1429 6.4571,
+		extents = 2.6000 2.1429 6.4857,
 		mass = 100,
-		physicsChassisShape = 2.6571 2.1429 6.5429,
+		physicsChassisShape = 2.6000 2.1429 6.4857,
 		centerOfMassOffset = 0.0000 1.1000 0.0000,
 		shadowExtents = 2.6096 6.6255,
 		shadowOffset = -0.0032 0.0031,
@@ -439,7 +439,6 @@ module Base
 			{
 				file = FordExplorerDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -448,7 +447,6 @@ module Base
 			{
 				file = FordExplorerPassenger,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -457,7 +455,6 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
-
 		}
 
 		part SeatRearRight
@@ -466,7 +463,6 @@ module Base
 			{
 				file = FordExplorerDouble,
 			}
-
 		}
 
 		part Muffler
@@ -480,7 +476,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -633,7 +628,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			
 			itemType = Base.FordExplorerWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
@@ -653,7 +647,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-
 			itemType = Base.FordExplorerWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -674,7 +667,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			
 			itemType = Base.FordExplorerWindowSC,
 		}
 
@@ -693,7 +685,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-
 			itemType = Base.FordExplorerWindowSC,
 		}
 
@@ -711,7 +702,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-
 			itemType = Base.FordExplorerWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
@@ -731,7 +721,6 @@ module Base
 			}
 
 			category = SCUCKwindows,
-
 			itemType = Base.FordExplorerWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
@@ -1039,7 +1028,7 @@ module Base
 		physics box
 		{
 			offset = 0.0000 0.9683 0.0159,
-			extents = 3.1111 1.8571 7.6667,
+			extents = 2.6000 1.8571 6.4714,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

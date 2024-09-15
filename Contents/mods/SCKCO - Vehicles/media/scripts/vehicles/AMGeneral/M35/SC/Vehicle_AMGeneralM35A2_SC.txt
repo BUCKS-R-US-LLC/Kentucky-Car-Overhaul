@@ -193,7 +193,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.7778 3.8413 10.5079,
+		extents = 3.7143 3.8413 10.5079,
 		mass = 500,
 		physicsChassisShape = 3.7143 3.8413 10.5079,
 		centerOfMassOffset = 0.0000 1.9048 -0.5079,
@@ -1233,14 +1233,22 @@ module Base
 
 			itemType = Radio.HamRadio2,
 		}
-		
+
 		template = Headlight,
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		attachment trailer

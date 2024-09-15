@@ -210,10 +210,10 @@ module Base
 			ignitionFail = VehiclegnitionFailVan,
 		}
 
-		extents = 2.6032 2.2540 6.2222,
+		extents = 2.5714 2.2540 6.2222,
 		mass = 100,
 		physicsChassisShape = 2.5714 2.2540 6.2222,
-		centerOfMassOffset = 0.0000 1.1270 0.2222,
+		centerOfMassOffset = 0.0000 1.1270 0.2381,
 		shadowExtents = 2.6523 6.7940,
 		shadowOffset = 0.0010 0.2159,
 		maxSpeed = 90f,
@@ -763,7 +763,6 @@ module Base
 			{
 				file = PlymouthVoyagerDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -772,7 +771,6 @@ module Base
 			{
 				file = PlymouthVoyagerPassenger,
 			}
-
 		}
 
 		part SeatMiddleRight
@@ -781,7 +779,6 @@ module Base
 			{
 				file = PlymouthVoyagerRearSeat,
 			}
-
 		}
 
 		part SeatMiddleLeft
@@ -1271,7 +1268,7 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.1270 0.2540,
+			offset = 0.0000 1.1270 0.2381,
 			extents = 2.5714 2.2698 6.2381,
 			rotate = 0.0000 0.0000 0.0000,
 		}

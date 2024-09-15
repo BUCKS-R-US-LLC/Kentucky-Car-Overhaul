@@ -210,7 +210,7 @@ module Base
 
 		extents = 3.0169 1.8644 8.0678,
 		mass = 100,
-		physicsChassisShape = 2.9831 1.8644 8.0678,
+		physicsChassisShape = 3.0169 1.8644 8.0678,
 		centerOfMassOffset = 0.0000 0.9322 -0.1186,
 		shadowExtents = 3.0338 8.9162,
 		shadowOffset = -0.0032 -0.0709,
@@ -410,9 +410,8 @@ module Base
 		template = Engine,
 
 		part Engine
-        {
-			
-        }
+		{
+		}
 
 		template = Muffler,
 
@@ -876,16 +875,15 @@ module Base
 			itemType = Base.FordCrownVictoria85TrunkLidSC,
 
 			lua
-            {
-                create = Vehicles.Create.TrunkDoor,
-                init = Vehicles.Init.TrunkDoorSCKCO_Storage,
-                update = Vehicles.Update.TrunkDoor,
-                use = Vehicles.Use.TrunkDoorSCKCO_Storage,
-            }
+			{
+				create = Vehicles.Create.TrunkDoor,
+				init = Vehicles.Init.TrunkDoorSCKCO_Storage,
+				update = Vehicles.Update.TrunkDoor,
+				use = Vehicles.Use.TrunkDoorSCKCO_Storage,
+			}
 		}
 
 		template = Trunk/part/TruckBed,
-
 		template = Tire,
 		template = Axle,
 
