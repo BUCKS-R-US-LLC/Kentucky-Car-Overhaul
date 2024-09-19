@@ -11,17 +11,6 @@ module Base
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-    	recipe Dismantle Main Rotor Blade
-	{
-		Category:Welding,
-		keep WeldingMask,
-		BlowTorch=2,
-		Bell206RotorBlade1,
-		Result:SmallSheetMetal=3,
-		CanBeDoneFromFloor:true,
-		Time:350,
-		AnimNode:Disassemble,
-	}
 	fixing Fix '85 Crown Victoria Windshield Armor
     {
        Require : FordCrownVictoria85WindshieldArmorSC1,
@@ -34,7 +23,7 @@ module Base
 
 	fixing Fix Ford Hood Welding
 	{
-	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordBroncoExplorerSC2;FordF700HoodSC2;FordMustangHoodSC3,
+	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordF150HoodSC2;FordBroncoExplorerSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -44,7 +33,7 @@ module Base
 
     fixing Fix Ford Hood
 	{
-	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordExplorerHoodSC2;FordF150HoodSC2;FordF350HoodSC2;FordF700HoodSC2;FordMustangHoodSC3,
+	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordExplorerHoodSC2;FordF150HoodSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 

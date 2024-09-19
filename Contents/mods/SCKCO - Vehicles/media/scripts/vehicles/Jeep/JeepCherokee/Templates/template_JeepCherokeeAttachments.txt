@@ -97,7 +97,6 @@ module Base
 	{
 
         template = FourSeaterFootwellSpace,
-		template = CherokeeRoofRack,
 
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
@@ -213,22 +212,5 @@ module Base
             lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
 		}
 
-		part CherokeeRoofRackSC
-		{
-			mechanicRequireKey = true,
-			category = nodisplay,
-
-			area = CherokeeRoofRack,
-			
-			container
-			{
-				capacity = 40,
-				test = Vehicles.ContainerAccess.TruckBedOpen,
-			}
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
     }
 }

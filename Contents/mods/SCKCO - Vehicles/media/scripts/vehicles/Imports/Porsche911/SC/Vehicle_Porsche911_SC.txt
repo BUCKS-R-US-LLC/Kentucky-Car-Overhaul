@@ -115,7 +115,7 @@ module Base
 		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_Porsche911G50
+	vehicle SC_Porsche911
 	{
 		mechanicType = 3,
 		offRoadEfficiency = 1.5,
@@ -196,9 +196,9 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 4.0000 1.6316 10.8421,
+		extents = 4.0000 1.6316 10.7895,
 		mass = 100,
-		physicsChassisShape = 4.0000 1.5789 10.8421,
+		physicsChassisShape = 4.0000 1.6316 10.8421,
 		centerOfMassOffset = 0.0000 0.8158 -0.1316,
 		shadowExtents = 4.7222 12.2541,
 		shadowOffset = -0.0032 -0.1654,
@@ -404,7 +404,6 @@ module Base
 			{
 				file = Porsche911Driver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -413,7 +412,6 @@ module Base
 			{
 				file = Porsche911Passenger,
 			}
-
 		}
 
 		part SeatRearLeft
