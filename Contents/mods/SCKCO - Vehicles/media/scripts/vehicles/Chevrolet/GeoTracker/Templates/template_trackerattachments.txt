@@ -1,8 +1,169 @@
 module Base
 {
+
+	model GeoTrackerBumper
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model GeoTrackerWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model GeoTrackerFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model GeoTrackerFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+    model GeoTrackerRearLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+	model GeoTrackerRearRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+
+	}
+
+	model GeoTrackerFLWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+       scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model GeoTrackerFRWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model GeoTrackerRLWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model GeoTrackerRRWA
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
     template vehicle GeoTrackerAttachments
-    {
-        template = FourSeaterFootwellSpace,
+	{
+
+	    template = FourSeaterFootwellSpace,
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = GeoTrackerBumper, }
+            itemType = Base.GeoTrackerBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = GeoTrackerWindshieldArmor, }
+            itemType = Base.GeoTrackerWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = GeoTrackerFRWA, }
+            itemType = Base.GeoTrackerDoorArmorSC,
+            requireInstalled = GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = GeoTrackerFLWA, }
+            itemType = Base.GeoTrackerWindowArmorSC,
+            requireInstalled = GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = GeoTrackerFrontRightDoorArmor, }
+            itemType = Base.GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = GeoTrackerFrontLeftDoorArmor, }
+            itemType = Base.GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = GeoTrackerRearRightDoorArmor, }
+            itemType = Base.GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = GeoTrackerRearLeftDoorArmor, }
+            itemType = Base.GeoTrackerDoorArmorSC,
+        }
+        
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = GeoTrackerRRWA, }
+            itemType = Base.GeoTrackerWindowArmorSC,
+            requireInstalled = GeoTrackerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = GeoTrackerRLWA, }
+            itemType = Base.GeoTrackerWindowArmorSC,
+            requireInstalled = GeoTrackerDoorArmorSC,
+        }
 
     }
 }

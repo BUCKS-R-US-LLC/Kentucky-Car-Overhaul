@@ -1,0 +1,108 @@
+module Base
+{
+
+recipe Craft '76 280SE Bumper
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:Mercedes280BumperSC1,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '76 280SE Bumper
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		Mercedes280BumperSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '76 280SE Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:Mercedes280WindshieldArmorSC1,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '76 280SE Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		Mercedes280WindshieldArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '76 280SE Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:Mercedes280DoorArmorSC1,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '76 280SE Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		Mercedes280DoorArmorSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '76 280SE Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:Mercedes280WindowArmorSC1,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '76 280SE Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		Mercedes280BumperSC1,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+	
+}

@@ -1,0 +1,108 @@
+module Base
+{
+
+recipe Craft '89 Tracker Bumper
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:GeoTrackerBumperSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '89 Tracker Bumper
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		GeoTrackerBumperSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '89 Tracker Windshield Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:GeoTrackerWindshieldArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '89 Tracker Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		GeoTrackerWindshieldArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '89 Tracker Door Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:GeoTrackerDoorArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '89 Tracker Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		GeoTrackerDoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '89 Tracker Window Armor
+	{
+		BlowTorch=1,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:GeoTrackerWindowArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '89 Tracker Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		GeoTrackerBumperSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+	
+}
