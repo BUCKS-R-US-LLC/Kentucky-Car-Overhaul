@@ -1,10 +1,131 @@
 module Base
 {
-	template vehicle DM800Attachments
+
+	model DM800Bullbar
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model DM800FrontRightWindowArmor
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model DM800FrontLeftWindowArmor
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model DM800FrontRightDoorArmor
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model DM800FrontLeftDoorArmor
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model DM800WindshieldArmor
+	{
+		mesh = vehicles/Mack/Vehicle_MackDM800Garbage_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+    template vehicle DM800Attachments
     {
+
         template = TwoSeaterFootwellSpace,
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
-    }
+        part SCArmorBumper
+        {
+            model Default { file = DM800Bullbar, }
+            itemType = Base.MackDM800BumperSC,
+            lua { create = Vehicles.Create.Default, }
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = DM800FrontRightWindowArmor, }
+            itemType = Base.MackDM800WindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = DM800FrontLeftWindowArmor, }
+            itemType = Base.MackDM800WindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = DM800FrontRightDoorArmor, }
+            itemType = Base.MackDM800DoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = DM800FrontLeftDoorArmor, }
+            itemType = Base.MackDM800DoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = DM800WindshieldArmor, }
+            itemType = Base.MackDM800WindshieldArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+	}
 }

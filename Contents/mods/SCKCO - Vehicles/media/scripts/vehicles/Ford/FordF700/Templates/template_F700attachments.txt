@@ -1,18 +1,143 @@
 module Base
 {
-    model F700Bullbar
+    model F700ArmoredBumper
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Bullbar_obj,
-		shader = vehicle_noreflect,
+		shader = vehiclewheel,
+        static = TRUE,
 		scale = 1,
 	}
 
+    model F700BoxBumper
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|FrontBumper,
+		shader = vehiclewheel,
+        static = TRUE,
+        texture = Vehicles/FordF700/Vehicle_FordF700Armor,
+		scale = 1,
+	}
+
+	model F700BoxFrontRightWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model F700BoxFrontLeftWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model F700BoxFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model F700BoxFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model F700BoxWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|WindshieldArmor_obj,
+        shader = vehiclewheel,
+        static = TRUE,
+        texture = Vehicles/FordF700/Vehicle_FordF700Armor,
+		scale = 1,
+	}
+    
 	template vehicle F700BoxAttachments
 	{       
         template = TwoSeaterFootwellSpace,
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
+
+       part SCArmorBumper
+        {
+            model Default { file = F700BoxBumper, }
+            itemType = Base.FordF700BumperSC,
+            lua { create = Vehicles.Create.Default, }
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = F700BoxFrontRightWindowArmor, }
+            itemType = Base.FordF700WindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = F700BoxFrontLeftWindowArmor, }
+            itemType = Base.FordF700WindowArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = F700BoxFrontRightDoorArmor, }
+            itemType = Base.FordF700DoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = F700BoxFrontLeftDoorArmor, }
+            itemType = Base.FordF700DoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = F700BoxWindshieldArmor, }
+            itemType = Base.FordF700WindshieldArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
     }
 
     template vehicle F700DumpAttachments

@@ -1,0 +1,106 @@
+module Base
+{
+
+recipe Craft '85 F-700 Bumper
+	{
+		BlowTorch=2,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:FordF700BumperSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 F-700 Bumper
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordF700BumperSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '85 F-700 Windshield Armor
+	{
+		BlowTorch=2,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:FordF700WindshieldArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 F-700 Windshield Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordF700WindshieldArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '85 F-700 Door Armor
+	{
+		BlowTorch=2,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:FordF700DoorArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 F-700 Door Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordF700DoorArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+
+recipe Craft '85 F-700 Window Armor
+	{
+		BlowTorch=2,
+       	keep WeldingMask,
+		SheetMetal=4,
+
+		Result:FordF700WindowArmorSC2,
+		Time:800.0,
+		Category:Vehicle Armor,
+		SkillRequired:MetalWelding=4,
+		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+	}
+
+recipe Dismantle '85 F-700 Window Armor
+	{
+		Category:Welding,
+		keep WeldingMask,
+		BlowTorch=2,
+		FordF700WindowArmorSC2,
+		Result:SheetMetal=4,
+		CanBeDoneFromFloor:true,
+		Category:Vehicle Armor,
+		Time:800.0,
+		AnimNode:Disassemble,
+	}
+}

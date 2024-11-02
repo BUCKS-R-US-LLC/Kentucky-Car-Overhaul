@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model F700BoxTruckFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model F700BoxTruckFrontRightDoor
 	{
@@ -56,18 +58,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model F700BoxTruckRearRightWindow
-	{
-		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model F700BoxTruckRearLeftWindow
-	{
-		mesh = vehicles/Ford/Vehicle_FordF700BoxTruck_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model F700BoxTruckTrunk
 	{
@@ -136,11 +126,6 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_BlackZhenja,
-		}
-
-		skin
-		{
 			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Caramel,
 		}
 
@@ -162,11 +147,6 @@ module Base
 		skin
 		{
 			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
-		}
-
-		skin
-		{
-			texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_WhiteZhenja,
 		}
 
 		textureRust = Vehicles/FordF700/Vehicle_FordF700BoxTruck_Rust,

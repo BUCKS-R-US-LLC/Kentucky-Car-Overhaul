@@ -13,7 +13,46 @@ module Base
         MechanicsItem = TRUE,
         WorldStaticModel = 93SUVBumper_WorldItem
     }
-        
+
+    item FordF700WindowArmorSC2
+        {
+            DisplayCategory = VehicleArmor,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= Ford F-700 Window Armor,
+            Icon	=	FordLogo,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = Military6x6WindowArmor_WorldItem,
+        }
+
+    item FordF700DoorArmorSC2
+        {
+            DisplayCategory = VehicleArmor,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= Ford F-700 Door Armor,
+            Icon	=	FordLogo,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = Military6x6DoorArmor_WorldItem,
+        }
+
+    item FordF700WindshieldArmorSC2
+        {
+            DisplayCategory = VehicleArmor,
+            Weight	=	10.0,
+            Type	=	Normal,
+            DisplayName	= Ford F-700 Windshield Armor,
+            Icon	=	FordLogo,
+            VehicleType =   2,
+            ConditionMax = 100,
+            MechanicsItem = TRUE,
+            WorldStaticModel = Military6x6WindshieldArmor_WorldItem,
+        }
+
         item FordF700DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
