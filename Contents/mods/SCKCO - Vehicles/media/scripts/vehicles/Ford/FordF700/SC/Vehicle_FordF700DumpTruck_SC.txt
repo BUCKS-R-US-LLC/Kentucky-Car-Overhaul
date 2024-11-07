@@ -126,7 +126,7 @@ module Base
 		{
 			file = SC_FordF700DumpTruck,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -0.2222,
+			offset = 0.0000 0.1429 -0.2222,
 		}
 
 		skin
@@ -204,7 +204,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3810 0.0159 4.4127,
+			offset = 1.3810 0.3492 4.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -212,7 +212,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.3810 0.0159 4.4127,
+			offset = -1.3810 0.3492 4.4127,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +220,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1746 0.0159 -1.6984,
+			offset = 1.1746 0.3492 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -228,7 +228,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.1746 0.0159 -1.6984,
+			offset = -1.1746 0.3492 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -333,7 +333,6 @@ module Base
 			{
 				file = F700DumpTruckDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -342,7 +341,6 @@ module Base
 			{
 				file = F700DumpTruckPassenger,
 			}
-
 		}
 
 		part Muffler
@@ -356,7 +354,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
