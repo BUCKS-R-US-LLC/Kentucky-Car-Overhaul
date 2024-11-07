@@ -121,7 +121,7 @@ module Base
 		{
 			file = SC_FordF700BoxTruck,
 			scale = 0.6300,
-			offset = 0.0000 0.3175 -0.3175,
+			offset = 0.0000 0.0000 -0.3175,
 		}
 
 		skin
@@ -194,7 +194,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3651 0.0159 4.5079,
+			offset = 1.3651 0.3492 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -202,7 +202,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.3651 0.0159 4.5079,
+			offset = -1.3651 0.3492 4.5079,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -210,7 +210,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1587 0.0159 -1.6984,
+			offset = 1.1587 0.3492 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -218,7 +218,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.1587 0.0159 -1.6984,
+			offset = -1.1587 0.3492 -1.6984,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -323,7 +323,6 @@ module Base
 			{
 				file = F700BoxTruckDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -332,7 +331,6 @@ module Base
 			{
 				file = F700BoxTruckPassenger,
 			}
-
 		}
 
 		part Muffler
@@ -743,8 +741,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 2.4127 -0.2698,
-			extents = 3.1111 2.9683 10.7460,
+			offset = 0.0000 2.3968 -0.2698,
+			extents = 3.1111 3.6349 10.7460,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 

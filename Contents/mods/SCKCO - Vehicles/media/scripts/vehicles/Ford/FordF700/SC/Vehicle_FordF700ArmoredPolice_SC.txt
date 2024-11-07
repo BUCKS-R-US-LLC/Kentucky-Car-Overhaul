@@ -128,7 +128,7 @@ module Base
 		{
 			file = SC_FordF700ArmoredPolice,
 			scale = 0.6300,
-			offset = 0.0000 0.0000 -1.4762,
+			offset = 0.0000 -0.1746 -1.4762,
 		}
 
 		skin
@@ -153,10 +153,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 2.9841 2.7302 7.9048,
+		extents = 2.9841 2.7619 7.9365,
 		mass = 500,
-		physicsChassisShape = 2.9841 2.8254 7.8730,
-		centerOfMassOffset = 0.0000 1.7460 0.0159,
+		physicsChassisShape = 2.9841 2.7619 7.9365,
+		centerOfMassOffset = 0.0000 1.5714 0.0159,
 		shadowExtents = 3.2617 8.5003,
 		shadowOffset = 0.0000 0.0222,
 		engineForce = 9000,
@@ -181,7 +181,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.3175 4.4921,
+			offset = 1.2222 0.3492 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -189,7 +189,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2222 0.3175 4.4921,
+			offset = -1.2222 0.3492 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -197,7 +197,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.1429 0.3175 -1.3016,
+			offset = 1.1429 0.3492 -1.3016,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -205,7 +205,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.1587 0.3175 -1.3016,
+			offset = -1.1587 0.3492 -1.3016,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -805,8 +805,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.7460 0.0000,
-			extents = 2.9841 2.7778 7.9206,
+			offset = 0.0000 1.5714 0.0000,
+			extents = 2.9841 2.7778 7.8889,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
