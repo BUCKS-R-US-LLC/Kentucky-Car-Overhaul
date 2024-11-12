@@ -1,31 +1,31 @@
 module Base
 {
-	model SC_G30VanMcCoy
+	model SC_G30VanMacTools
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanMcCoyDriver
+	model G30VanMacToolsDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanMcCoyPassenger
+	model G30VanMacToolsPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanMcCoyWindshield
+	model G30VanMacToolsWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanMcCoyFrontRightWindow
+	model G30VanMacToolsFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -34,7 +34,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30VanMcCoyFrontLeftWindow
+	model G30VanMacToolsFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -43,7 +43,7 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model G30VanMcCoyFrontRightDoor
+	model G30VanMacToolsFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -51,7 +51,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanMcCoyFrontLeftDoor
+	model G30VanMacToolsFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -59,7 +59,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanMcCoySlidingRightDoor
+	model G30VanMacToolsSlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|SlideDoor_obj,
 		shader = vehicle_noreflect,
@@ -67,7 +67,7 @@ module Base
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
 	}
-	model G30VanMcCoyTrunk
+	model G30VanMacToolsTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
@@ -76,7 +76,7 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30VanMcCoyHood
+	model G30VanMacToolsHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -84,7 +84,7 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanMcCoyRearWindshield
+	model G30VanMacToolsRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
@@ -117,7 +117,7 @@ module Base
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_ChevroletG30McCoy
+	vehicle SC_ChevroletG30MacTools
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -126,19 +126,14 @@ module Base
 
 		model
 		{
-			file = SC_G30VanMcCoy,
+			file = SC_G30VanMacTools,
 			scale = 0.5900,
 			offset = 0.0000 0.1864 0.0508,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_McCoyBrown,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_McCoyGreen,
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_MacTools,
 		}
 
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_rust,
