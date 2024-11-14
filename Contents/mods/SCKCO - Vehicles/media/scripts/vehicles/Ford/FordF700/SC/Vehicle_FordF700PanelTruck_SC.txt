@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model F700PanelTruckFrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model F700PanelTruckFrontRightDoor
 	{
@@ -126,7 +128,7 @@ module Base
 		{
 			file = SC_FordF700PanelTruck,
 			scale = 0.6300,
-			offset = 0.0000 0.1429 -1.1905,
+			offset = 0.0000 0.0159 -1.1905,
 		}
 
 		skin
@@ -185,13 +187,13 @@ module Base
 		engineForce = 9000,
 		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 70f,
+		maxSpeed = 50f,
 		brakingForce = 200,
 		stoppingMovementForce = 3.0f,
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 80,
+		suspensionStiffness = 70,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -514,7 +516,7 @@ module Base
 
 			anim ClosedToOpen
 			{
-				anim = FrontLeftWindowBone,
+				anim = FrontLeftWindowClosing,
 				animate = FALSE,
 			}
 
