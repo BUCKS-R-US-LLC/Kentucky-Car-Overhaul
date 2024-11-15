@@ -1447,7 +1447,7 @@ distributionTable["SportsCar"] = { Normal = VehicleDistributions.SC_Sport}
 distributionTable["SC_ChevroletCamaro87"] = { Normal = VehicleDistributions.SC_Sport}
 distributionTable["SC_FordMustang90"] = { Normal = VehicleDistributions.SC_Sport}
 
-distributionTable["SC_Porsche911G50"] = { Normal = VehicleDistributions.SC_Luxury}
+distributionTable["SC_Porsche911"] = { Normal = VehicleDistributions.SC_Luxury}
 distributionTable["SC_BMW520i"] = { Normal = VehicleDistributions.SC_Luxury}
 distributionTable["SC_CadillacBrougham"] = { Normal = VehicleDistributions.SC_Luxury}
 distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Luxury}

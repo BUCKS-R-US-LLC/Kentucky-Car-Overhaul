@@ -1,0 +1,884 @@
+module Base
+{
+	model SC_M997
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+	model HM997Driver
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997Passenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997RearRightPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997RearLeftPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997Windshield
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model HM997FrontRightWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
+	}
+	model HM997FrontLeftWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
+	}
+	model HM997FrontRightDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model HM997FrontLeftDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model HM997Trunk
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|TrunkDoor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone1 1.0,
+		boneWeight = TrunkBone2 1.0,
+	}
+	model HM997Hood
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+		boneWeight = FrontBumperBone 1.0,
+	}
+	model HM997Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+	}
+	model M997Wheelfrontwheelleft
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		shader = vehiclewheel,
+	}
+	model M997Wheelfrontwheelright
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		shader = vehiclewheel,
+	}
+	model M997Wheelbackwheelleft
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		shader = vehiclewheel,
+	}
+	model M997Wheelbackwheelright
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_AMGeneralM997Ambulance
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.5,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.5,
+
+		model
+		{
+			file = SC_M997,
+			scale = 0.4000,
+			offset = 0.0000 -0.4000 0.0750,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM997_3Tone,
+		}
+
+		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
+		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
+		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
+		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
+		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
+		textureDamage1Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
+		textureDamage2Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
+
+		sound
+		{
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 5.0500 3.2500 10.6000,
+		mass = 100,
+		physicsChassisShape = 5.0500 3.2500 10.6000,
+		centerOfMassOffset = 0.0000 1.6250 -0.3750,
+		shadowExtents = 5.4529 10.8239,
+		shadowOffset = -0.0032 0.0064,
+		engineForce = 4800,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 80f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 80,
+		suspensionCompression = 3.60,
+		suspensionDamping = 2.69,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 2.1500 0.7250 4.0250,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -2.1500 0.7250 4.0250,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 2.1500 0.7250 -3.5750,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -2.1500 0.7250 -3.5750,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.6000 2.0500 0.2750,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 3.3750 0.3750 0.8000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.6000 2.0500 0.2750,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -3.3750 0.3750 0.8000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.0000 2.0500 -1.4750,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 3.3750 0.3750 -1.1750,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.0000 2.0500 -3.8250,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -3.3750 0.3750 -1.1750,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 6.1250 5.0500 1.2000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -6.8750 5.0500 1.2000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 3.8250 0.8250 2.0500 2.0500,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -3.8000 0.8250 2.0500 2.0500,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 3.8250 -4.2000 2.0500 2.0500,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -3.8000 -4.2000 2.0500 2.0500,
+		}
+
+		area GasTank
+		{
+			xywh = -3.3500 -2.5000 1.1500 0.7500,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 2.4750 4.0250 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -2.4750 4.0250 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 2.4750 -3.6250 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -2.4750 -3.6250 0.0000 0.0000,
+		}
+
+		template = M997Attachments,
+		template = M997AmbulanceTop3Tone,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Engine
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			area = SeatFrontLeft,
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		part DoorFrontRight
+		{
+			area = SeatFrontRight
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = HM997Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = HM997Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+			itemType = Base.FillerSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+			itemType = Base.FillerSeatSC,
+		}
+
+		part Muffler
+		{
+			model HM997Exhaust
+			{
+				file = HM997Exhaust,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = HM997Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.HMMWVHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = M997AmbulanceTop3Tone,
+		template = M997Attachments,
+		template = Windshield/part/Windshield,
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = HM997Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.HMMWVWindshieldSC,
+		}
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = HM997FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.HMMWVHardWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = HM997FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.HMMWVHardWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = HM997FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = HM997FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			category = nodisplay,
+			itemType = Base.HMMWVSoftDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = HM997Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.HMMWVTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M997Wheelfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M997Wheelfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M997Wheelbackwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M997Wheelbackwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Radio.HamRadio2,
+		}
+
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 2.0000 -0.0750,
+			extents = 4.9500 4.0000 10.5250,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 1.3250 -5.3750,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 1.3250 5.2750,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
