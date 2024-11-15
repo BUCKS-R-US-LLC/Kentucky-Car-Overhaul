@@ -1,0 +1,984 @@
+module Base
+{
+	model SC_CrownVictoriaPolice92
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model CrownVictoria92PoliceDriver
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoria92PolicePassenger
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoria92PoliceDouble
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoria92PoliceWindshield
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoria92PoliceFrontRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model CrownVictoria92PoliceFrontLeftWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model CrownVictoria92PoliceRearRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+	}
+	model CrownVictoria92PoliceRearLeftWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+	}
+	model CrownVictoria92PoliceFrontRightDoor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model CrownVictoria92PoliceFrontLeftDoor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model CrownVictoria92PoliceRearRightDoor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model CrownVictoria92PoliceRearLeftDoor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model CrownVictoria92PoliceTrunk
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model CrownVictoria92PoliceHood
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model CrownVictoria92PoliceRearWindshield
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoria92Policefrontwheelleft
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_LeftWheel,
+		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
+		shader = vehiclewheel,
+	}
+	model CrownVictoria92Policefrontwheelright
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_RightWheel,
+		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
+		shader = vehiclewheel,
+	}
+	model CrownVictoria92Policebackwheelleft
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_LeftWheel,
+		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
+		shader = vehiclewheel,
+	}
+	model CrownVictoria92Policebackwheelright
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_RightWheel,
+		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_FordCrownVictoria92MeadeSheriff
+	{
+		mechanicType = 1,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_CrownVictoriaPolice92,
+			scale = 0.4800,
+			offset = 0.0000 -0.3333 -0.1458,
+		}
+
+		skin
+		{
+			texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Meade,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+		}
+
+		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVic92_rust,
+		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVic92_maskPOL,
+		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVic92_lightsPOL,
+		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVic92_Scratch,
+		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVic92_Scratch,
+		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVic92_blood,
+		textureDamage2Overlay = Vehicles/CrownVictoria/Vehicle_CrownVic92_blood,
+
+		sound
+		{
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 3.4583 2.3333 9.5833,
+		mass = 800,
+		physicsChassisShape = 3.4583 2.3333 9.5833,
+		centerOfMassOffset = 0.0000 1.1667 0.2083,
+		shadowExtents = 3.4713 10.1870,
+		shadowOffset = -0.0032 0.1166,
+		engineForce = 4201,
+		gearRatioCount = 4,
+		maxSpeed = 110f,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.95f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 70,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1200,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.4583 0.5417 3.3958,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.4583 0.5417 3.3958,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.4583 0.5417 -1.8750,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.4583 0.5417 -1.8750,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7708 0.9583 0.5625,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.2917 0.1042 0.9792,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7708 0.9583 0.5625,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.2917 0.1042 0.9792,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7708 0.9583 -1.1250,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.2917 0.1042 -0.6042,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7708 0.9583 -1.1250,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.2917 0.1042 -0.6042,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 6.1042 3.4583 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -5.6042 3.4583 1.7917,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.5625 0.7292 1.3750 1.3750,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.5625 0.7292 1.3750 1.3750,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.5625 -0.7500 1.3750 1.3750,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.5625 -0.7500 1.3750 1.3750,
+		}
+
+		area GasTank
+		{
+			xywh = 2.2708 -2.6042 1.0833 0.6250,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.5000 2.3750 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.5208 2.3750 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.5208 -2.0625 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.5417 -2.0625 0.0000 0.0000,
+		}
+
+		template = GunRack,
+		template = CrownVic92Attachments,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = CrownVictoria92Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = CrownVictoria92Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = CrownVictoria92Double,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = CrownVictoria92Double,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = CrownVictoria92Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.FordCrownVictoria92HoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = CrownVictoria92Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordCrownVictoria92WindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = CrownVictoria92RearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordCrownVictoria92WindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = CrownVictoria92FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.FordCrownVictoria92WindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = CrownVictoria92FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = Base.FordCrownVictoria92WindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = CrownVictoria92RearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorRearRight,
+			area = SeatRearRight,
+			itemType = Base.FordCrownVictoria92WindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = CrownVictoria92RearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = Base.FordCrownVictoria92WindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = CrownVictoria92FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordCrownVictoria92DoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = CrownVictoria92FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordCrownVictoria92DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = CrownVictoria92RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordCrownVictoria92DoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = CrownVictoria92RearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordCrownVictoria92DoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = CrownVictoria92Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.FordCrownVictoria92TrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		template = Axle,
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CrownVictoria92frontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CrownVictoria92frontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CrownVictoria92backwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CrownVictoria92backwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.1667 0.2292,
+			extents = 3.4583 2.3125 9.5208,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.9792 -4.4375,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.8750 5.1667,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
