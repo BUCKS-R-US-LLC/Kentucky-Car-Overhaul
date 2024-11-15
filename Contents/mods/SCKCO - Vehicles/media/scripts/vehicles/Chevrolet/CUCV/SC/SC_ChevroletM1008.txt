@@ -1,111 +1,121 @@
 module Base
 {
-	model SC_M1028A3
+	model SC_M1008
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1028A3Driver
+	model M1008Driver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1028A3Passenger
+	model M1008Passenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}	
-	model M1028A3Windshield
-	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1028A3FrontRightWindow
+	model M1008Windshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|WindShield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1008FrontRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1028A3FrontLeftWindow
+	model M1008FrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1028A3FrontRightDoor
+	model M1008FrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1028A3FrontLeftDoor
+	model M1008FrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1028A3Trunk
+	model M1008RearRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1008RearLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1008Trunk
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1028A3RearWindshield
+	model M1008RearWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|RearWinshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|RearWinshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1028A3Hood
+	model M1008Hood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|Hood_obj, 
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M1028frontwheelleft
+	model BlazerWheelfrontwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1028frontwheelright
+	model BlazerWheelfrontwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1028backwheelleft
+	model BlazerWheelbackwheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_RearLeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1028backwheelright
+	model BlazerWheelbackwheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1028A3_RearRightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-
-	vehicle SC_ChevroletM1028A3
+	vehicle SC_ChevroletM1008
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -114,14 +124,14 @@ module Base
 
 		model
 		{
-			file = SC_M1028A3,
+			file = SC_M1008,
 			scale = 0.6300,
 			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1028A3_SC,
+			texture = Vehicles/CUCV/Vehicle_M1008_SC,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -141,12 +151,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.8571 3.0794 7.7143,
+		extents = 2.8571 3.0794 6.9841,
 		mass = 100,
-		physicsChassisShape = 2.9524 3.0794 7.7143,
-		centerOfMassOffset = 0.0000 1.5556 -0.4603,
-		shadowExtents = 3.3569 8.1989,
-		shadowOffset = 0.0000 -0.5175,
+		physicsChassisShape = 2.8571 3.0794 6.9841,
+		centerOfMassOffset = 0.0000 1.5556 -0.2222,
+		shadowExtents = 3.0712 7.7704,
+		shadowOffset = -0.0000 -0.1048,
 		engineForce = 4500,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -169,7 +179,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2063 0.0794 2.1587,
+			offset = 1.2222 0.0794 2.1587,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -185,7 +195,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2698 0.0794 -2.4127,
+			offset = 1.2222 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -193,7 +203,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2698 0.0794 -2.4127,
+			offset = -1.2222 0.0794 -2.0317,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -240,27 +250,27 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.4603 2.8571 2.0000,
+			xywh = 0.0000 4.3810 2.8571 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -5.2857 2.8571 1.7460,
+			xywh = 0.0000 -4.7143 2.8571 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.1270 0.2540 1.2381 1.2381,
+			xywh = 2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1111 0.2540 1.2381 1.2381,
+			xywh = -2.1905 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.0317 -1.1111 1.0794 0.5714,
+			xywh = -2.1270 -1.1111 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -282,7 +292,7 @@ module Base
 		{
 			xywh = -1.4286 -2.1270 0.0000 0.0000,
 		}
-
+ 
 		template = ChevyLogo,
 		template = CUCVGunRacks,
 		template = M1008Attachments,
@@ -298,7 +308,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1028A3Driver,
+				file = M1008Driver,
 			}
 		}
 
@@ -306,7 +316,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1028A3Passenger,
+				file = M1008Passenger,
 			}
 		}
 
@@ -329,7 +339,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1028A3Hood,
+				file = M1008Hood,
 			}
 
 			anim Close
@@ -390,7 +400,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M1028A3Windshield,
+				file = M1008Windshield,
 			}
 
 			window
@@ -421,7 +431,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = M1028A3RearWindshield,
+				file = M1008RearWindshield,
 			}
 
 			window
@@ -457,7 +467,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M1028A3FrontRightWindow,
+				file = M1008FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -476,7 +486,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1028A3FrontLeftWindow,
+				file = M1008FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -485,7 +495,6 @@ module Base
 				animate = FALSE,
 			}
 
-			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = Base.KSeriesWindowSC,
@@ -495,7 +504,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1028A3FrontRightDoor,
+				file = M1008FrontRightDoor,
 			}
 
 			anim Close
@@ -533,7 +542,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1028A3FrontLeftDoor,
+				file = M1008FrontLeftDoor,
 			}
 
 			anim Close
@@ -583,7 +592,7 @@ module Base
 
 			model Default
 			{
-				file = M1028A3Trunk,
+				file = M1008Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -631,7 +640,6 @@ module Base
 			container
 			{
 				capacity = 100,
-				conditionAffectsCapacity = false,
 			}
 		}
 
@@ -655,7 +663,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1028backwheelleft,
+				file = BlazerWheelLargefrontwheelleft,
 			}
 		}
 
@@ -663,7 +671,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1028backwheelright,
+				file = BlazerWheelLargefrontwheelright,
 			}
 		}
 
@@ -722,14 +730,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 0.9365 -0.4762,
-			extents = 3.1111 1.8571 7.5397,
+			offset = 0.0794 1.3175 0.2381,
+			extents = 3.1111 1.8571 6.3016,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -4.5238,
+			offset = 0.0000 0.5238 -3.9683,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

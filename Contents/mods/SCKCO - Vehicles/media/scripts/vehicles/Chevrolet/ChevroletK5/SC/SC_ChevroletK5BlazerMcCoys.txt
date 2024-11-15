@@ -1,31 +1,31 @@
 module Base
 {
-	model SC_K5BlazerFossoil
+	model SC_K5BlazerMcCoys
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerFossoilSCDriver
+	model BlazerMcCoysSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerFossoilSCPassenger
+	model BlazerMcCoysSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerFossoilSCWindshield
+	model BlazerMcCoysSCWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerFossoilSCFrontRightWindow
+	model BlazerMcCoysSCFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerFossoilSCFrontLeftWindow
+	model BlazerMcCoysSCFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerFossoilSCFrontRightDoor
+	model BlazerMcCoysSCFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerFossoilSCFrontLeftDoor
+	model BlazerMcCoysSCFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerFossoilSCRearRightWindow
+	model BlazerMcCoysSCRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerFossoilSCRearLeftWindow
+	model BlazerMcCoysSCRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerFossoilSCTrunk
+	model BlazerMcCoysSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,7 +78,7 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model BlazerFossoilSCHood
+	model BlazerMcCoysSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -110,7 +110,7 @@ module Base
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_ChevroletK5BlazerFossoil
+	vehicle SC_ChevroletK5BlazerMcCoys
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -119,14 +119,14 @@ module Base
 
 		model
 		{
-			file = SC_K5BlazerFossoil,
+			file = SC_K5BlazerMcCoys,
 			scale = 0.6300,
 			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/K5/Vehicle_BlazerSC_Fossoil,
+			texture = Vehicles/K5/Vehicle_BlazerSC_McCoy,
 		}
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
@@ -146,9 +146,17 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+
 		extents = 2.9524 2.6032 6.6032,
 		mass = 100,
-		physicsChassisShape = 2.9524 2.6032 6.6349,
+		physicsChassisShape = 2.9524 2.6032 6.6032,
 		centerOfMassOffset = 0.0000 1.3016 0.0000,
 		shadowExtents = 2.9443 6.6116,
 		shadowOffset = 0.0000 0.0063,
@@ -367,20 +375,14 @@ module Base
 
 		part SeatRearLeft
 		{
-			model seatRearLeft
-			{
-				file = BlazerCivilianSCDriver,
-			}
+			category = nodisplay,
 		}
 
 		part SeatRearRight
 		{
-			model seatRearRight
-			{
-				file = BlazerCivilianSCPassenger,
-			}
+			category = nodisplay,
 		}
-		
+
 		part Muffler
 		{
 			table install
@@ -482,6 +484,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			
+			category = SCUCKwindows,
 
 			itemType = Base.KSeriesWindshieldSC,
 		}

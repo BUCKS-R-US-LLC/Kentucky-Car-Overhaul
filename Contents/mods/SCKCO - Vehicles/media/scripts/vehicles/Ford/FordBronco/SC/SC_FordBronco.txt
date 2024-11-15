@@ -1,156 +1,197 @@
 module Base
 {
-	model SC_M1009Police
+	model SC_FordBronco
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		invertX = FALSE,
+		static = TRUE,
 		scale = 1,
 	}
-	model M1009PoliceSCDriver
+	model FordBroncoDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009PoliceSCPassenger
+	model FordBroncoPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightSeat_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009PoliceSCWindshield
+	model FordBroncoRearDouble
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|WindShield_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009PoliceSCFrontRightWindow
+	model FordBroncoWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordBroncoFrontRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model M1009PoliceSCFrontLeftWindow
+	model FordBroncoFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model M1009PoliceSCFrontRightDoor
+	model FordBroncoRearLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordBroncoRearRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model FordBroncoFrontRightDoor
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1009PoliceSCFrontLeftDoor
+	model FordBroncoFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1009PoliceSCRearRightWindow
+	model FordBroncoTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1009PoliceSCRearLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1009PoliceSCTrunk
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
+		boneWeight = RearWindshieldBone 1.0,
 	}
-	model M1009PoliceSCHood
+	model FordBroncoHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSeriesfrontwheelleft
+	model FordBroncoRearWindshield
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearWindshieldBone 1.0,
+	}
+	model FordBroncofrontwheelleft
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	model KSeriesfrontwheelright
+	model FordBroncofrontwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	model KSeriesbackwheelleft
+	model FordBroncobackwheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	model KSeriesbackwheelright
+	model FordBroncobackwheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle PickUpVanLightsPolice
+	vehicle SC_FordBronco
 	{
 		mechanicType = 2,
-		offRoadEfficiency = 1.1,
+		offRoadEfficiency = 1.5,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_M1009Police,
+			file = SC_FordBronco,
 			scale = 0.6300,
-			offset = 0.0000 0.2698 0.0000,
+			offset = 0.0000 -0.3016 -0.0476,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateBlue,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_OJ,
 		}
 
 		
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateWhite,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicBlack,
 		}
 
-		
+		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009_StateBlack,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicRed,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
-		lightbar
+		skin
 		{
-			soundSiren = VehicleSiren,
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicSilver,
 		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_SilverDual,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_RedGreyDual,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_BasicSilver,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_DarkBlueGreyDual,
+		}
+
+		skin
+		{
+			texture = Vehicles/FordBronco/Vehicle_Bronco1992_SVTRed,
+		}
+
+		textureMask = Vehicles/FordBronco/Vehicle_Bronco1992_masks,
+		textureLights = Vehicles/FordBronco/Vehicle_Bronco1992_lights,
+		textureDamage1Overlay = Vehicles/FordBronco/Vehicle_Bronco1992_blood,
+		textureDamage2Overlay = Vehicles/FordBronco/Vehicle_Bronco1992_blood,
+		textureDamage1Shell = Vehicles/FordBronco/Vehicle_Bronco1992_scratch,
+		textureDamage2Shell = Vehicles/FordBronco/Vehicle_Bronco1992_scratch,
+		textureRust = Vehicles/FordBronco/Vehicle_Bronco1992_rust,
 
 		sound
 		{
@@ -161,43 +202,36 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
-		extents = 2.9524 2.6032 6.6032,
+		extents = 2.7302 2.2857 6.3492,
 		mass = 100,
-		physicsChassisShape = 2.9524 2.6032 6.6032,
-		centerOfMassOffset = 0.0000 1.3016 0.0000,
-		shadowExtents = 2.9443 6.6116,
-		shadowOffset = 0.0000 0.0063,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
+		physicsChassisShape = 2.7302 2.2857 6.3492,
+		centerOfMassOffset = 0.0000 1.1429 0.2540,
+		shadowExtents = 2.7302 6.3636,
+		shadowOffset = -0.0032 0.2460,
+		engineForce = 5000,
+		gearRatioCount = 4,
 		maxSpeed = 110f,
-		brakingForce = 100,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 40,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
 		frontEndHealth = 2000,
 		rearEndHealth = 1700,
-		seats = 2,
+		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1587,
+			offset = 1.1587 0.3810 2.3175,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -205,7 +239,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = -1.1429 0.3810 2.3175,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -213,7 +247,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = 1.1587 0.3810 -1.2857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -221,12 +255,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = -1.1429 0.3810 -1.2857,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat4,
 
 		passenger FrontLeft
 		{
@@ -235,13 +269,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.6032 1.3016 0.3016,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.2698 0.0159,
+				offset = 2.0476 0.0000 0.5079,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -254,13 +288,51 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 0.0159,
+				offset = -0.5873 1.3016 0.3016,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.2698 0.1429,
+				offset = -2.1429 0.0000 0.5079,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6032 1.3968 -0.8254,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0476 0.0000 0.5079,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5873 1.3968 -0.7460,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 0.0000 0.5079,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -268,53 +340,66 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.4127 2.9524 2.0000,
+			xywh = 0.0000 4.4444 2.6032 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.2857 2.9524 1.7460,
+			xywh = 0.0000 -4.0000 2.6032 1.7778,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2063 0.2540 1.2381 1.2381,
+			xywh = 2.1746 0.6667 1.3651 1.3651,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 0.2540 1.2381 1.2381,
+			xywh = -2.1746 0.6667 1.3651 1.3651,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.1746 0.6667 1.3651 1.3651,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.1746 0.6667 1.3651 1.3651,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 -2.5397 1.0794 0.5714,
+			xywh = 1.8730 -2.0159 1.1111 0.6349,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5714 2.1587 0.0000 0.0000,
+			xywh = 1.3016 2.3175 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5714 2.1587 0.0000 0.0000,
+			xywh = -1.3016 2.3175 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5714 -1.6032 0.0000 0.0000,
+			xywh = 1.3016 -1.2857 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5714 -1.6032 0.0000 0.0000,
+			xywh = -1.3016 -1.2857 0.0000 0.0000,
 		}
 
-		template = K5Logo,
-		template = K5Attachments,
+		template = BroncoAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -325,16 +410,36 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerCivilianSCDriver,
+				file = FordBroncoDriver,
 			}
+
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = BlazerCivilianSCPassenger,
+				file = FordBroncoPassenger,
 			}
+
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = FordBroncoRearDouble,
+			}
+
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = FordBroncoRearDouble,
+			}
+
 		}
 
 		part Muffler
@@ -348,6 +453,7 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
+			
 		}
 
 		template = EngineDoor,
@@ -356,7 +462,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerCivilianSCHood,
+				file = FordBroncoHood,
 			}
 
 			anim Close
@@ -397,7 +503,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.KSeriesHoodSC,
+			itemType = Base.FordOBSHoodSC,
 		}
 
 		part Heater
@@ -411,12 +517,13 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
 			model windshieldFront
 			{
-				file = BlazerCivilianSCWindshield,
+				file = FordBroncoWindshield,
 			}
 
 			window
@@ -439,7 +546,41 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.KSeriesWindshieldSC,
+			category = SCUCKwindows,
+			itemType = Base.FordOBSWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = FordBroncoRearWindshield,
+			}
+
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordOBSWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -453,7 +594,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerCivilianSCFrontRightWindow,
+				file = FordBroncoFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -463,16 +604,16 @@ module Base
 			}
 
 			category = SCUCKwindows,
+			itemType = Base.FordOBSWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.KSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = BlazerCivilianSCFrontLeftWindow,
+				file = FordBroncoFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -482,39 +623,19 @@ module Base
 			}
 
 			category = SCUCKwindows,
+			itemType = Base.FordOBSWindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.KSeriesWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = BlazerCivilianSCRearLeftWindow,
-			}
-
-			area = TireRearLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BlazerCivilianSCRearRightWindow,
+				file = FordBroncoRearRightWindow,
 			}
 
-			area = TireRearRight,
-			parent =,
+			area = SeatRearRight,
 
 			table install
 			{
@@ -522,14 +643,32 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
+			itemType = Base.FordOBSWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = FordBroncoRearLeftWindow,
+			}
+
+			area = SeatRearLeft,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordOBSWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontRightDoor,
+				file = FordBroncoFrontRightDoor,
 			}
 
 			anim Close
@@ -560,14 +699,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontLeftDoor,
+				file = FordBroncoFrontLeftDoor,
 			}
 
 			anim Close
@@ -598,7 +737,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = Base.FordOBSDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -617,7 +756,7 @@ module Base
 
 			model Default
 			{
-				file = BlazerCivilianSCTrunk,
+				file = FordBroncoTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -651,7 +790,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesTrunkLidSC,
+			itemType = Base.FordOBSTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -664,7 +803,7 @@ module Base
 
 			container
 			{
-				capacity = 100,
+				capacity = 80,
 			}
 		}
 
@@ -672,7 +811,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = FordBroncofrontwheelleft,
 			}
 		}
 
@@ -680,7 +819,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = FordBroncofrontwheelright,
 			}
 		}
 
@@ -688,7 +827,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = FordBroncobackwheelleft,
 			}
 		}
 
@@ -696,7 +835,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = FordBroncobackwheelright,
 			}
 		}
 
@@ -735,7 +874,6 @@ module Base
 		}
 
 		template = Radio,
-		template = Headlight,
 
 		part PassengerCompartment
 		{
@@ -747,23 +885,25 @@ module Base
 			}
 		}
 
+		template = Headlight,
+
 		physics box
 		{
-			offset = 0.0000 1.3016 0.0159,
-			extents = 2.9524 2.5873 6.6190,
+			offset = 0.0000 1.1429 0.2381,
+			extents = 2.7302 2.3016 6.3333,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.1746,
+			offset = 0.0000 0.6714 -2.8714,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.2222,
+			offset = 0.0000 0.6714 3.4286,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

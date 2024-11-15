@@ -1,196 +1,155 @@
 module Base
 {
-	model SC_BMW520i
+	model SC_FordMustangPolice
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model BMW520iDriver
+	model PoliceMustangSCDriver
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iPassenger
+	model PoliceMustangSCPassenger
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iWindshield
+	model PoliceMustangSCRearPassenger
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iFrontRightWindow
+	model PoliceMustangSCWindshield
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model PoliceMustangSCRearWindshield
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model PoliceMustangSCFrontRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
-	model BMW520iFrontLeftWindow
+	model PoliceMustangSCFrontLeftWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
-	model BMW520iRearRightWindow
+	model PoliceMustangSCRearRightWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
 	}
-	model BMW520iRearLeftWindow
+	model PoliceMustangSCRearLeftWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
-		static = FALSE,
 		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model BMW520iFrontRightDoor
+	model PoliceMustangSCFrontRightDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BMW520iFrontLeftDoor
+	model PoliceMustangSCFrontLeftDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BMW520iRearRightDoor
+	model PoliceMustangSCTrunk
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model BMW520iRearLeftDoor
-	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-	model BMW520iTrunk
-	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model BMW520iHood
+	model PoliceMustangSCHood
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BMW520iRearWindshield
+	model MustangWheelfrontwheelleft
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model BMW520ifrontwheelleft
-	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ifrontwheelright
+	model MustangWheelfrontwheelright
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ibackwheelleft
+	model MustangWheelbackwheelleft
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ibackwheelright
+	model MustangWheelbackwheelright
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_BMW520i
+	vehicle SC_FordMustang90StatePolice
 	{
-		mechanicType = 1,
-		offRoadEfficiency = 1.5,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
+		mechanicType = 3,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 6,
+		playerDamageProtection = 0.8,
+		engineRPMType = firebird,
 
 		model
 		{
-			file = SC_BMW520i,
-			scale = 0.3600,
-			offset = 0.0000 -0.1111 -0.0278,
+			file = SC_FordMustangPolice,
+			scale = 0.6800,
+			offset = 0.0000 -0.2500 -0.1618,
 		}
 
 		skin
 		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_White,
+			texture = Vehicles/FordMustang90/Vehicle_Mustang90_StateTroop,
 		}
 
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Glacier,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Purple,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Silver,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Royal,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Red,
-		}
-
-		textureMask = Vehicles/520iBMW/Vehicle_520iBMW_mask,
-		textureLights = Vehicles/520iBMW/Vehicle_520iBMW_lights,
-		textureDamage1Overlay = Vehicles/520iBMW/Vehicle_520iBMW_blood,
-		textureDamage2Overlay = Vehicles/520iBMW/Vehicle_520iBMW_blood,
-		textureDamage1Shell = Vehicles/520iBMW/Vehicle_520iBMW_scratch,
-		textureDamage2Shell = Vehicles/520iBMW/Vehicle_520iBMW_scratch,
-		textureRust = Vehicles/520iBMW/Vehicle_520iBMW_rust,
+		textureRust = Vehicles/FordMustang90/Vehicle_Mustang90_Rust,
+		textureMask = Vehicles/FordMustang90/Vehicle_Mustang90_Mask,
+		textureLights = Vehicles/FordMustang90/Vehicle_Mustang90_lights,
+		textureDamage1Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage2Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage1Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
+		textureDamage2Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 
 		sound
 		{
@@ -201,36 +160,49 @@ module Base
 			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 4.3889 2.9444 11.7778,
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
+		}
+
+		extents = 2.4706 1.5588 6.0588,
 		mass = 100,
-		physicsChassisShape = 4.3889 2.9444 11.7778,
-		centerOfMassOffset = 0.0000 1.5278 0.3333,
-		shadowExtents = 4.8730 12.3723,
-		shadowOffset = -0.0032 0.3452,
-		engineForce = 5000,
-		gearRatioCount = 4,
-		maxSpeed = 125f,
-		engineLoudness = 100,
-		engineQuality = 80,
-		brakingForce = 55,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.95f,
+		physicsChassisShape = 2.4706 1.5588 6.0588,
+		centerOfMassOffset = 0.0000 0.7647 0.0588,
+		shadowExtents = 2.4661 6.7520,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 5700,
+		engineLoudness = 90,
+		engineQuality = 90,
+		maxSpeed = 100f,
+		gearRatioCount = 5,
+		gearRatioR = 3.5,
+		gearRatio1 = 4.11,
+		gearRatio2 = 2.50,
+		gearRatio3 = 1.65,
+		gearRatio4 = 1.25,
+		gearRatio5 = 0.80,
+		gearRatio5 = 0.60,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
 		suspensionStiffness = 90,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 14,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 1.4f,
+		suspensionCompression = 4.1,
+		suspensionDamping = 3.4,
+		maxSuspensionTravelCm = 20,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 1500,
-		rearEndHealth = 1200,
+		rearEndHealth = 900,
 		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.9444 0.2778 4.2222,
+			offset = 1.0000 0.3382 1.8971,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -238,7 +210,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.9444 0.2778 4.2222,
+			offset = -1.0000 0.3382 1.8971,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -246,7 +218,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.9444 0.2778 -2.8056,
+			offset = 1.0000 0.3382 -1.5000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -254,7 +226,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.9444 0.2778 -2.8056,
+			offset = -1.0000 0.3382 -1.5000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -268,13 +240,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.0278 0.8889 0.4722,
+				offset = 0.5735 0.6618 -0.1618,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.1667 -0.4444 0.5278,
+				offset = 1.8529 -0.2206 0.0147,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -287,13 +259,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.0278 0.8889 0.4722,
+				offset = -0.5735 0.6618 -0.1618,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.1667 -0.4444 0.5278,
+				offset = -1.8382 0.2794 0.1471,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -306,13 +278,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.0278 0.8889 -1.1667,
+				offset = 0.3971 0.6029 -1.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.1667 -0.4444 -0.6667,
+				offset = 1.8529 -0.2206 -1.1029,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -325,13 +297,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.0278 0.8889 -1.1667,
+				offset = -0.4118 0.6029 -1.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.1667 -0.4444 -0.6667,
+				offset = -1.8382 -0.2206 -1.1029,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -339,60 +311,61 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 7.4167 4.3889 2.0000,
+			xywh = 0.0000 4.1471 2.4706 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.7222 4.3889 1.7778,
+			xywh = 0.0000 -3.9412 2.4706 1.7941,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 3.0833 0.6944 1.3889 1.3889,
+			xywh = 1.9412 0.2500 1.2059 1.2059,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -3.0833 0.6944 1.3889 1.3889,
+			xywh = -1.9412 0.2500 1.2059 1.2059,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 3.0833 -0.8056 1.3889 1.3889,
+			xywh = 1.9412 -0.9559 1.2059 1.2059,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.0833 -0.8056 1.3889 1.3889,
+			xywh = -1.9412 -0.9559 1.2059 1.2059,
 		}
 
 		area GasTank
 		{
-			xywh = -3.0833 -3.8333 1.1667 0.7222,
+			xywh = -1.8971 -2.3971 1.1176 0.5882,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 2.1944 4.1944 0.0000 0.0000,
+			xywh = 1.2206 1.7941 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -2.2222 4.1944 0.0000 0.0000,
+			xywh = -1.2206 1.7941 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.1944 -2.8056 0.0000 0.0000,
+			xywh = 1.2206 -1.8529 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.2222 -2.8056 0.0000 0.0000,
+			xywh = -1.2206 -1.8529 0.0000 0.0000,
 		}
 
-		template = 520iAttachments,
+		template = GunRack,
+		template = FordMustangAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -405,30 +378,34 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
-				file = BMW520iDriver,
+				file = MustangSCDriver,
 			}
-
 		}
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
 			{
-				file = BMW520iPassenger,
+				file = MustangSCPassenger,
 			}
-
 		}
 
 		part SeatRearLeft
 		{
-			category = nodisplay,
+			model SeatRearLeft
+			{
+				file = MustangSCRearPassenger,
+			}
 		}
 
 		part SeatRearRight
 		{
-			category = nodisplay,
+			model SeatRearRight
+			{
+				file = MustangSCRearPassenger,
+			}
 		}
 
 		part Muffler
@@ -442,7 +419,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -451,7 +427,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BMW520iHood,
+				file = MustangSCHood,
 			}
 
 			anim Close
@@ -492,7 +468,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.BMW520iHoodSC,
+			itemType = Base.FordMustang90HoodSC,
 		}
 
 		part Heater
@@ -512,7 +488,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BMW520iWindshield,
+				file = MustangSCWindshield,
 			}
 
 			window
@@ -536,15 +512,17 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.BMW520iWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model windshieldRear
 			{
-				file = BMW520iRearWindshield,
+				file = MustangSCRearWindshield,
 			}
+
+			parent = TrunkDoor,
 
 			window
 			{
@@ -567,13 +545,11 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.BMW520iWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -583,7 +559,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BMW520iFrontRightWindow,
+				file = MustangSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -592,17 +568,17 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = BMW520iFrontLeftWindow,
+				file = MustangSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -611,55 +587,51 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = BMW520iRearRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearRight,
-			area = SeatRearRight,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
 		}
 
 		part WindowRearLeft
 		{
 			model windowRL
 			{
-				file = BMW520iRearLeftWindow,
+				file = MustangSCRearLeftWindow,
 			}
 
-			anim ClosedToOpen
+			table install
 			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
+				requireInstalled =,
 			}
 
-			parent = DoorRearLeft,
-			area = SeatRearLeft,
 			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
+			itemType = Base.FordMustang90WindowSC,
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = MustangSCRearRightWindow,
+			}
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordMustang90WindowSC,
+			area = SeatFrontRight,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BMW520iFrontRightDoor,
+				file = MustangSCFrontRightDoor,
 			}
 
 			anim Close
@@ -690,14 +662,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BMW520iFrontLeftDoor,
+				file = MustangSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -728,83 +700,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = BMW520iRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.BMW520iDoorSC,
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = BMW520iRearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -823,7 +719,7 @@ module Base
 
 			model Default
 			{
-				file = BMW520iTrunk,
+				file = MustangSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -857,7 +753,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iTrunkLidSC,
+			itemType = Base.FordMustang90TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -868,36 +764,32 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelleft,
+				file = MustangWheelfrontwheelleft,
 			}
-
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelright,
+				file = MustangWheelfrontwheelright,
 			}
-
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelleft,
+				file = MustangWheelbackwheelleft,
 			}
-
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelright,
+				file = MustangWheelbackwheelright,
 			}
-
 		}
 
 		template = Brake,
@@ -949,14 +841,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.5278 0.3333,
-			extents = 4.4167 3.0278 11.7778,
+			offset = 0.0000 0.7647 0.0441,
+			extents = 2.4412 1.5441 6.0294,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3611 6.1111,
+			offset = -0.0147 0.4412 3.0441,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

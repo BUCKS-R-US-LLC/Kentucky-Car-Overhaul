@@ -1,242 +1,200 @@
 module Base
 {
-	model SC_GeoTracker
+	model SC_FordMustang
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model GeoTrackerDriver
+	model MustangSCDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerPassenger
+	model MustangSCPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerRearDouble
+	model MustangSCRearPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerWindshield
+	model MustangSCWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerRearWindshield
+	model MustangSCRearWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		boneWeight = RearBone 1.0,
 	}
-	model GeoTrackerFrontRightWindow
+	model MustangSCFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontRightWindowArmorBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
 	}
-	model GeoTrackerFrontLeftWindow
+	model MustangSCFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
 	}
-	model GeoTrackerRearRightWindow
+	model MustangSCRearRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerRearLeftWindow
+	model MustangSCRearLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model GeoTrackerFrontRightDoor
+	model MustangSCFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model GeoTrackerFrontLeftDoor
+	model MustangSCFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model GeoTrackerTrunk
+	model MustangSCTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|TrunkDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model GeoTrackerHood
+	model MustangSCHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model GeoTrackerfrontwheelleft
+	model MustangWheelfrontwheelleft
 	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
-		scale = 0.8,
 	}
-	model GeoTrackerfrontwheelright
+	model MustangWheelfrontwheelright
 	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
-		scale = 0.8,
 	}
-	model GeoTrackerbackwheelleft
+	model MustangWheelbackwheelleft
 	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
-		scale = 0.8,
 	}
-	model GeoTrackerbackwheelright
+	model MustangWheelbackwheelright
 	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
+		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
-		scale = 0.8,
 	}
-	vehicle SC_GeoTracker
+	vehicle SC_FordMustang90Undercover
 	{
-		mechanicType = 2,
-		offRoadEfficiency = 1.5,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
+		mechanicType = 3,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 6,
+		playerDamageProtection = 0.8,
+		engineRPMType = firebird,
 
 		model
 		{
-			file = SC_GeoTracker,
-			scale = 0.6000,
-			offset = 0.0000 -0.1000 0.0000,
+			file = SC_FordMustang,
+			scale = 0.6800,
+			offset = 0.0000 -0.2500 -0.1618,
 		}
 
 		skin
 		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Red,
+			texture = Vehicles/FordMustang90/Vehicle_Mustang90_Black,
 		}
 
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Pink,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Emerald,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_EmeraldLivery,
-		}
-		
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Banana,
-		}
-
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_BananaLivery1,
-		}
-
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_BananaLivery2,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_PurpleLivery,
-		}
-
-		textureMask = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Masks,
-		textureLights = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Lights,
-		textureDamage1Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blood,
-		textureDamage2Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blood,
-		textureDamage1Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Scratch,
-		textureDamage2Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Scratch,
-		textureRust = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Rust,
+		textureRust = Vehicles/FordMustang90/Vehicle_Mustang90_Rust,
+		textureMask = Vehicles/FordMustang90/Vehicle_Mustang90_Mask,
+		textureLights = Vehicles/FordMustang90/Vehicle_Mustang90_lights,
+		textureDamage1Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage2Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,
+		textureDamage1Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
+		textureDamage2Overlay = Vehicles/FordMustang90/Vehicle_Mustang90_Blood,
 
 		sound
 		{
-			engine = VehicleEngineOffRoad,
-			engineStart = VehicleEngineOffRoad,
-			engineTurnOff = VehicleEngineOffRoad,
-			horn = VehicleHornJeep,
-			ignitionFail = VehicleIgnitionFailOffRoad,
+			engine = VehicleEngineSportsCar,
+			engineStart = VehicleEngineSportsCar,
+			engineTurnOff = VehicleEngineSportsCar,
+			horn = VehicleHornSportsCar,
+			ignitionFail = VehicleIgnitionFailSportsCar,
 		}
 
-		extents = 2.2667 2.1333 4.9667,
-		mass = 50,
-		physicsChassisShape = 2.2667 2.1667 4.9667,
-		centerOfMassOffset = 0.0000 1.0833 -0.0167,
-		shadowExtents = 2.2450 4.9738,
-		shadowOffset = 0.0135 -0.0333,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 85,
-		maxSpeed = 110f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
+		}
+
+		extents = 2.4706 1.5588 6.0588,
+		mass = 100,
+		physicsChassisShape = 2.4706 1.5588 6.0588,
+		centerOfMassOffset = 0.0000 0.7647 0.0588,
+		shadowExtents = 2.4661 6.7520,
+		shadowOffset = 0.0000 0.0063,
+		engineForce = 5700,
+		engineLoudness = 90,
+		engineQuality = 90,
+		maxSpeed = 100f,
+		gearRatioCount = 5,
+		gearRatioR = 3.5,
+		gearRatio1 = 4.11,
+		gearRatio2 = 2.50,
+		gearRatio3 = 1.65,
+		gearRatio4 = 1.25,
+		gearRatio5 = 0.80,
+		gearRatio5 = 0.60,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.7f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		suspensionStiffness = 90,
+		suspensionCompression = 4.1,
+		suspensionDamping = 3.4,
+		maxSuspensionTravelCm = 20,
+		suspensionRestLength = 0.2f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 1500,
 		rearEndHealth = 900,
 		seats = 4,
@@ -244,7 +202,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.9667 0.3667 1.5500,
+			offset = 1.0000 0.3382 1.8971,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -252,7 +210,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.9667 0.3667 1.5500,
+			offset = -1.0000 0.3382 1.8971,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -260,7 +218,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.9667 0.3667 -1.5500,
+			offset = 1.0000 0.3382 -1.5000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -268,7 +226,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.9667 0.3667 -1.5500,
+			offset = -1.0000 0.3382 -1.5000,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -282,13 +240,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5000 1.0333 -0.4333,
+				offset = 0.5735 0.6618 -0.1618,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 1.5833 0.0000 0.0000,
+				offset = 1.8529 -0.2206 0.0147,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -301,13 +259,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5000 1.0333 -0.4333,
+				offset = -0.5735 0.6618 -0.1618,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -1.6000 0.0000 0.0000,
+				offset = -1.8382 0.2794 0.1471,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -320,13 +278,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.5000 1.0333 -1.6167,
+				offset = 0.3971 0.6029 -1.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -1.6000 0.0000 0.0000,
+				offset = 1.8529 -0.2206 -1.1029,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -339,13 +297,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.5000 1.0333 -1.6167,
+				offset = -0.4118 0.6029 -1.1765,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -1.6000 0.0000 0.0000,
+				offset = -1.8382 -0.2206 -1.1029,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -353,60 +311,61 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 3.5500 2.2667 2.0000,
+			xywh = 0.0000 4.1471 2.4706 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -3.5000 2.2667 1.7667,
+			xywh = 0.0000 -3.9412 2.4706 1.7941,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 1.9167 0.0167 1.3667 1.3667,
+			xywh = 1.9412 0.2500 1.2059 1.2059,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -1.9167 0.0167 1.3667 1.3667,
+			xywh = -1.9412 0.2500 1.2059 1.2059,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 1.9167 0.0167 1.3667 1.3667,
+			xywh = 1.9412 -0.9559 1.2059 1.2059,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -1.9167 0.0167 1.3667 1.3667,
+			xywh = -1.9412 -0.9559 1.2059 1.2059,
 		}
 
 		area GasTank
 		{
-			xywh = -1.5500 -2.0000 0.6333 0.6667,
+			xywh = -1.8971 -2.3971 1.1176 0.5882,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.2333 1.5667 0.0000 0.0000,
+			xywh = 1.2206 1.7941 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.2333 1.5667 0.0000 0.0000,
+			xywh = -1.2206 1.7941 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.2333 -1.5333 0.0000 0.0000,
+			xywh = 1.2206 -1.8529 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.2333 -1.5333 0.0000 0.0000,
+			xywh = -1.2206 -1.8529 0.0000 0.0000,
 		}
 
-		template = GeoTrackerAttachments,
+		template = GunRack,
+		template = FordMustangAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -419,33 +378,33 @@ module Base
 
 		part SeatFrontLeft
 		{
-			model seatfrontLeft
+			model SeatfrontLeft
 			{
-				file = GeoTrackerDriver,
+				file = MustangSCDriver,
 			}
 		}
 
 		part SeatFrontRight
 		{
-			model seatfrontRight
+			model SeatfrontRight
 			{
-				file = GeoTrackerPassenger,
+				file = MustangSCPassenger,
 			}
 		}
 
 		part SeatRearLeft
 		{
-			model seatRearLeft
+			model SeatRearLeft
 			{
-				file = GeoTrackerRearDouble,
+				file = MustangSCRearPassenger,
 			}
 		}
 
 		part SeatRearRight
 		{
-			model seatRearRight
+			model SeatRearRight
 			{
-				file = GeoTrackerRearDouble,
+				file = MustangSCRearPassenger,
 			}
 		}
 
@@ -468,7 +427,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = GeoTrackerHood,
+				file = MustangSCHood,
 			}
 
 			anim Close
@@ -509,7 +468,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.GeoTrackerHoodSC,
+			itemType = Base.FordMustang90HoodSC,
 		}
 
 		part Heater
@@ -529,7 +488,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = GeoTrackerWindshield,
+				file = MustangSCWindshield,
 			}
 
 			window
@@ -553,14 +512,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GeoTrackerWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model windshieldRear
 			{
-				file = GeoTrackerRearWindshield,
+				file = MustangSCRearWindshield,
 			}
 
 			parent = TrunkDoor,
@@ -586,7 +545,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GeoTrackerWindshieldSC,
+			itemType = Base.FordMustang90WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -600,7 +559,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = GeoTrackerFrontRightWindow,
+				file = MustangSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -610,7 +569,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GeoTrackerWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -619,7 +578,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = GeoTrackerFrontLeftWindow,
+				file = MustangSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -629,8 +588,25 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.GeoTrackerWindowSC,
+			itemType = Base.FordMustang90WindowSC,
 			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = MustangSCRearLeftWindow,
+			}
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.FordMustang90WindowSC,
 			area = SeatFrontLeft,
 		}
 
@@ -638,7 +614,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = GeoTrackerRearRightWindow,
+				file = MustangSCRearRightWindow,
 			}
 
 			table install
@@ -647,32 +623,15 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			area = SeatRearRight,
-			itemType = Base.GeoTrackerWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = GeoTrackerRearLeftWindow,
-			}
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			category = SCUCKwindows,
-			area = SeatRearLeft,
-			itemType = Base.GeoTrackerWindowSC,
+			itemType = Base.FordMustang90WindowSC,
+			area = SeatFrontRight,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = GeoTrackerFrontRightDoor,
+				file = MustangSCFrontRightDoor,
 			}
 
 			anim Close
@@ -703,14 +662,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.GeoTrackerDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = GeoTrackerFrontLeftDoor,
+				file = MustangSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -741,7 +700,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.GeoTrackerDoorSC,
+			itemType = Base.FordMustang90DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -760,7 +719,7 @@ module Base
 
 			model Default
 			{
-				file = GeoTrackerTrunk,
+				file = MustangSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -794,28 +753,18 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.GeoTrackerTrunkLidSC,
+			itemType = Base.FordMustang90TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
-		part TruckBed
-		{
-			itemType = Base.SmallTrunk,
-
-			container
-			{
-				capacity = 20,
-			}
-		}
-
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerfrontwheelleft,
+				file = MustangWheelfrontwheelleft,
 			}
 		}
 
@@ -823,7 +772,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerfrontwheelright,
+				file = MustangWheelfrontwheelright,
 			}
 		}
 
@@ -831,7 +780,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerbackwheelleft,
+				file = MustangWheelbackwheelleft,
 			}
 		}
 
@@ -839,7 +788,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerbackwheelright,
+				file = MustangWheelbackwheelright,
 			}
 		}
 
@@ -892,21 +841,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.0833 -0.0167,
-			extents = 2.2667 2.1667 4.9667,
+			offset = 0.0000 0.7647 0.0441,
+			extents = 2.4412 1.5441 6.0294,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.8000 -2.5000,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.7000 2.4833,
+			offset = -0.0147 0.4412 3.0441,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

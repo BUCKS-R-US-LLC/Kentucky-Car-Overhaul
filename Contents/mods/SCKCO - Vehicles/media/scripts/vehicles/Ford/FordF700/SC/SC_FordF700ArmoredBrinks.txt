@@ -1,116 +1,123 @@
 module Base
 {
-	model SC_K5BlazerMcCoys
+	model SC_FordF700ArmoredBank
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model BlazerMcCoysSCDriver
+	model F700ArmoredDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerMcCoysSCPassenger
+	model F700ArmoredPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerMcCoysSCWindshield
+	model F700ArmoredWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|WindShield_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerMcCoysSCFrontRightWindow
+	model F700ArmoredFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model BlazerMcCoysSCFrontLeftWindow
+	model F700ArmoredFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model BlazerMcCoysSCFrontRightDoor
+	model F700ArmoredFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BlazerMcCoysSCFrontLeftDoor
+	model F700ArmoredFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BlazerMcCoysSCRearRightWindow
+	model F700ArmoredRearRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerMcCoysSCRearLeftWindow
+	model F700ArmoredRearLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerMcCoysSCTrunk
+	model F700ArmoredRearDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
+		boneWeight = RearDoorBone 1.0,
 	}
-	model BlazerMcCoysSCHood
+	model F700ArmoredRearWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearDoorBone 1.0,
+	}
+	model F700ArmoredHood
+	{
+		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSeriesfrontwheelleft
+	model F700BoxTruckfrontwheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordF700_FrontLeftWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model KSeriesfrontwheelright
+	model F700BoxTruckfrontwheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordF700_FrontRightWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelfront,
 		shader = vehiclewheel,
 	}
-	model KSeriesbackwheelleft
+	model F700BoxTruckrearwheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordF700_RearLeftWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	model KSeriesbackwheelright
+	model F700BoxTruckrearwheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
+		mesh = vehicles/Ford/Vehicle_FordF700_RearRightWheel,
+		texture = vehicles/FordF700/Vehicle_FordF700BoxTruck_wheelrear,
 		shader = vehiclewheel,
 	}
-	vehicle PickUpVanMccoy
+	vehicle SC_FordF700ArmoredBrinks
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -119,70 +126,62 @@ module Base
 
 		model
 		{
-			file = SC_K5BlazerMcCoys,
+			file = SC_FordF700ArmoredBank,
 			scale = 0.6300,
-			offset = 0.0000 0.2698 0.0000,
+			offset = 0.0000 -0.1746 -1.4762,
 		}
 
 		skin
 		{
-			texture = Vehicles/K5/Vehicle_BlazerSC_McCoy,
+			texture = Vehicles/FordF700/Vehicle_FordF700Arm_Brinks,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureRust = Vehicles/FordF700/Vehicle_FordF700Arm_Rust,
+		textureMask = Vehicles/FordF700/Vehicle_FordF700Arm_Mask,
+		textureLights = Vehicles/FordF700/Vehicle_FordF700Arm_lights,
+		textureDamage1Shell = Vehicles/FordF700/Vehicle_FordF700Arm_scratch,
+		textureDamage2Shell = Vehicles/FordF700/Vehicle_FordF700Arm_scratch,
+		textureDamage1Overlay = Vehicles/FordF700/Vehicle_FordF700Arm_Blood,
+		textureDamage2Overlay = Vehicles/FordF700/Vehicle_FordF700Arm_Blood,
 
 		sound
 		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailSUV,
+			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
-		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
-		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
-		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
-		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
-		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
-		extents = 2.9524 2.6032 6.6032,
-		mass = 100,
-		physicsChassisShape = 2.9524 2.6032 6.6032,
-		centerOfMassOffset = 0.0000 1.3016 0.0000,
-		shadowExtents = 2.9443 6.6116,
-		shadowOffset = 0.0000 0.0063,
-		engineForce = 4400,
-		engineQuality = 80,
+		extents = 2.9841 2.7619 7.9365,
+		mass = 500,
+		physicsChassisShape = 2.9841 2.7619 7.9365,
+		centerOfMassOffset = 0.0000 1.5714 0.0159,
+		shadowExtents = 3.2617 8.5003,
+		shadowOffset = 0.0000 0.0222,
+		engineForce = 9000,
+		engineQuality = 100,
 		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
+		maxSpeed = 50f,
+		brakingForce = 200,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.5,
+		suspensionStiffness = 70,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 2000,
-		rearEndHealth = 1700,
-		seats = 2,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.5f,
+		frontEndHealth = 30000,
+		rearEndHealth = 20000,
+		seats = 4,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2698 0.0794 2.1587,
+			offset = 1.2222 0.3492 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -190,7 +189,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2698 0.0794 2.1587,
+			offset = -1.2222 0.3492 4.4921,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +197,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2698 0.0794 -1.6190,
+			offset = 1.1429 0.3492 -1.3016,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -206,7 +205,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2698 0.0794 -1.6190,
+			offset = -1.1587 0.3492 -1.3016,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,13 +219,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 0.0159,
+				offset = 0.9524 1.6349 2.4444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.2698 0.0159,
+				offset = 2.1905 0.0000 2.7937,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -239,13 +238,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 0.0159,
+				offset = -0.9206 1.6349 2.4444,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.2698 0.1429,
+				offset = -2.0159 0.0000 2.9206,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -258,15 +257,15 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 -1.2063,
+				offset = 0.9524 1.8571 -1.0635,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0476 -0.2698 0.0159,
+				offset = 2.1905 0.0000 -3.4286,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontLeft,
+				area = SeatRearLeft,
 			}
 		}
 
@@ -277,67 +276,69 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 -1.2063,
+				offset = -0.9206 1.8571 -1.0635,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 -0.2698 0.1429,
+				offset = -2.0159 0.0000 -3.3016,
 				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontRight,
+				area = SeatRearRight,
 			}
 		}
 
-
 		area Engine
 		{
-			xywh = 0.0000 4.4127 2.9524 2.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -4.2857 2.9524 1.7460,
+			xywh = 0.0000 5.1746 2.9841 2.0000,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2063 0.2540 1.2381 1.2381,
+			xywh = 2.2063 1.4603 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 0.2540 1.2381 1.2381,
+			xywh = -2.2063 1.4603 1.2381 1.2381,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 0.0000 -4.7619 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 -2.5397 1.0794 0.5714,
+			xywh = 2.1270 -1.3016 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.5714 2.1587 0.0000 0.0000,
+			xywh = 1.4921 3.0159 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.5714 2.1587 0.0000 0.0000,
+			xywh = -1.4921 3.0159 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.5714 -1.6032 0.0000 0.0000,
+			xywh = 1.4921 -2.7937 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.5714 -1.6032 0.0000 0.0000,
+			xywh = -1.4921 -2.7937 0.0000 0.0000,
 		}
 
-		template = ChevyLogo,
-		template = K5Logo,
-		template = K5Attachments,
+		template = F700ArmoredAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -352,7 +353,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerCivilianSCDriver,
+				file = F700ArmoredDriver,
 			}
 		}
 
@@ -360,7 +361,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerCivilianSCPassenger,
+				file = F700ArmoredPassenger,
 			}
 		}
 
@@ -393,7 +394,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerCivilianSCHood,
+				file = F700ArmoredHood,
 			}
 
 			anim Close
@@ -434,7 +435,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.KSeriesHoodSC,
+			itemType = Base.FordF700HoodSC,
 		}
 
 		part Heater
@@ -448,12 +449,13 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
-			model windshieldFront
+			model WindshieldFront
 			{
-				file = BlazerCivilianSCWindshield,
+				file = F700ArmoredWindshield,
 			}
 
 			window
@@ -475,66 +477,80 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
-			
-			category = SCUCKwindows,
 
-			itemType = Base.KSeriesWindshieldSC,
+			category = SCUCKwindows,
+			itemType = Base.FordF700WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
 		template = Window/part/WindowRearRight,
 
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = BlazerCivilianSCFrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
+				file = F700ArmoredFrontRightWindow,
 			}
 
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.KSeriesWindowSC,
+			itemType = Base.FordF700WindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = BlazerCivilianSCFrontLeftWindow,
+				file = F700ArmoredFrontLeftWindow,
 			}
 
-			anim ClosedToOpen
+			window
 			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
+				openable = false,
 			}
 
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.KSeriesWindowSC,
+			itemType = Base.FordF700WindowSC,
 		}
 
-		part WindowRearLeft
+		part WindowMiddleRight
 		{
-			model windowRL
+			model windowMR
 			{
-				file = BlazerCivilianSCRearLeftWindow,
+				file = F700ArmoredRearRightWindow,
 			}
 
-			area = TireRearLeft,
-			parent =,
+			window
+			{
+				openable = false,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.FordF700WindowSC,
+		}
+
+		part WindowMiddleLeft
+		{
+			model windowML
+			{
+				file = F700ArmoredRearLeftWindow,
+			}
+
+			window
+			{
+				openable = false,
+			}
 
 			table install
 			{
@@ -542,18 +558,22 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = Base.FordF700WindowSC,
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BlazerCivilianSCRearRightWindow,
+				file = F700ArmoredRearWindow,
 			}
 
-			area = TireRearRight,
-			parent =,
+			window
+			{
+				openable = false,
+			}
 
 			table install
 			{
@@ -561,14 +581,16 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
+			parent = DoorRearRight,
+			area = SeatFrontRight,
+			itemType = Base.FordF700WindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontRightDoor,
+				file = F700ArmoredFrontRightDoor,
 			}
 
 			anim Close
@@ -599,14 +621,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontLeftDoor,
+				file = F700ArmoredFrontLeftDoor,
 			}
 
 			anim Close
@@ -637,73 +659,68 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
-		template = TrunkDoor,
-
-		part TrunkDoor
+		part DoorRearRight
 		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
 			model Default
 			{
-				file = BlazerCivilianSCTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
+				file = F700ArmoredRearDoor,
 			}
 
 			anim Close
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
-				rate = 1.5,
+				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = TrunkClosing,
+				anim = RearDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesTrunkLidSC,
+			itemType = Base.FordF700DoorSC,
 		}
 
-		template = Trunk/part/TruckBed,
 		template = Tire,
 		template = Axle,
 
-		part TruckBed
+		part BackOfTruck
 		{
+			area = TruckBed,
+			category = nodisplay,
 			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
 
 			container
 			{
 				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
 			}
 		}
 
@@ -711,7 +728,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = F700BoxTruckfrontwheelleft,
 			}
 		}
 
@@ -719,7 +736,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = F700BoxTruckfrontwheelright,
 			}
 		}
 
@@ -727,7 +744,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = F700BoxTruckrearwheelleft,
 			}
 		}
 
@@ -735,7 +752,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = F700BoxTruckrearwheelright,
 			}
 		}
 
@@ -788,21 +805,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3016 0.0159,
-			extents = 2.9524 2.5873 6.6190,
+			offset = 0.0000 1.5714 0.0000,
+			extents = 2.9841 2.7778 7.8889,
 			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailer
-		{
-			offset = 0.0000 0.5238 -3.1746,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.2222,
+			offset = -0.0159 0.5397 5.4921,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}

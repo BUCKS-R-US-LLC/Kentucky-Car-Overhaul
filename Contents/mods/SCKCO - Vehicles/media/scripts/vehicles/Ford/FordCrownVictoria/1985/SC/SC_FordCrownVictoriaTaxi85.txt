@@ -1,215 +1,202 @@
 module Base
 {
-	model SC_BMW520i
+	model SC_CrownVictoria85
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|base_mesh,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		invertX = FALSE,
 		scale = 1,
 	}
-	model BMW520iDriver
+	model CrownVictoriaDriver
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|DriverSeat_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iPassenger
+	model CrownVictoriaPassenger
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|PassengerSeat_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontPassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iWindshield
+	model CrownVictoriaDouble
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Windshield_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearPassengerSeatDouble_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520iFrontRightWindow
+	model CrownVictoriaWindshield
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model CrownVictoriaFrontRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model BMW520iFrontLeftWindow
+	model CrownVictoriaFrontLeftWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model BMW520iRearRightWindow
+	model CrownVictoriaRearRightWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
+
 	}
-	model BMW520iRearLeftWindow
+	model CrownVictoriaRearLeftWindow
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftWindow_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+
 	}
-	model BMW520iFrontRightDoor
+	model CrownVictoriaFrontRightDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model BMW520iFrontLeftDoor
+	model CrownVictoriaFrontLeftDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model BMW520iRearRightDoor
+	model CrownVictoriaRearRightDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
-	model BMW520iRearLeftDoor
+	model CrownVictoriaRearLeftDoor
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftDoor_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model BMW520iTrunk
+	model CrownVictoriaTrunk
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Trunk_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model BMW520iHood
+	model CrownVictoriaHood
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Hood_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BMW520iRearWindshield
+	model CrownVictoriaRearWindshield
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearWindshield_obj,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520ifrontwheelleft
+	model CrownVictoriafrontwheelleft
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ifrontwheelright
+	model CrownVictoriafrontwheelright
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ibackwheelleft
+	model CrownVictoriabackwheelleft
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ibackwheelright
+	model CrownVictoriabackwheelright
 	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_BMW520i
+	vehicle SC_FordCrownVictoria85Taxi
 	{
 		mechanicType = 1,
-		offRoadEfficiency = 1.5,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_BMW520i,
-			scale = 0.3600,
-			offset = 0.0000 -0.1111 -0.0278,
+			file = SC_CrownVictoria85,
+			scale = 0.5900,
+			offset = 0.0000 -0.0508 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_White,
+			texture = Vehicles/CrownVictoria/BasicYellow,
 		}
 
 		skin
 		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Black,
+			texture = Vehicles/CrownVictoria/BlackYellow,
 		}
 
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Glacier,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Purple,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Silver,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Royal,
-		}
-
-		skin
-		{
-			texture = Vehicles/520iBMW/Vehicle_520iBMW_Red,
-		}
-
-		textureMask = Vehicles/520iBMW/Vehicle_520iBMW_mask,
-		textureLights = Vehicles/520iBMW/Vehicle_520iBMW_lights,
-		textureDamage1Overlay = Vehicles/520iBMW/Vehicle_520iBMW_blood,
-		textureDamage2Overlay = Vehicles/520iBMW/Vehicle_520iBMW_blood,
-		textureDamage1Shell = Vehicles/520iBMW/Vehicle_520iBMW_scratch,
-		textureDamage2Shell = Vehicles/520iBMW/Vehicle_520iBMW_scratch,
-		textureRust = Vehicles/520iBMW/Vehicle_520iBMW_rust,
+		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_rust,
+		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_mask,
+		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_lights,
+		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage,
+		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_damage2,
+		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
+		textureDamage2Overlay = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_blood,
 
 		sound
 		{
-			engine = VehicleEngineSportsCar,
-			engineStart = VehicleEngineSportsCar,
-			engineTurnOff = VehicleEngineSportsCar,
-			horn = VehicleHornSportsCar,
-			ignitionFail = VehicleIgnitionFailSportsCar,
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
 		}
 
-		extents = 4.3889 2.9444 11.7778,
+		extents = 3.0169 1.8644 8.0678,
 		mass = 100,
-		physicsChassisShape = 4.3889 2.9444 11.7778,
-		centerOfMassOffset = 0.0000 1.5278 0.3333,
-		shadowExtents = 4.8730 12.3723,
-		shadowOffset = -0.0032 0.3452,
-		engineForce = 5000,
+		physicsChassisShape = 3.0169 1.8644 8.0678,
+		centerOfMassOffset = 0.0000 0.9322 -0.1186,
+		shadowExtents = 3.0338 8.9162,
+		shadowOffset = -0.0032 -0.0709,
+		engineForce = 4201,
 		gearRatioCount = 4,
-		maxSpeed = 125f,
+		maxSpeed = 110f,
 		engineLoudness = 100,
 		engineQuality = 80,
 		brakingForce = 55,
@@ -217,7 +204,7 @@ module Base
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 90,
+		suspensionStiffness = 40,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
@@ -230,7 +217,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.9444 0.2778 4.2222,
+			offset = 1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -238,7 +225,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.9444 0.2778 4.2222,
+			offset = -1.1864 0.0847 2.3729,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -246,7 +233,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.9444 0.2778 -2.8056,
+			offset = 1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -254,7 +241,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.9444 0.2778 -2.8056,
+			offset = -1.1864 0.0847 -2.1186,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -268,13 +255,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.0278 0.8889 0.4722,
+				offset = 0.6102 0.5424 0.2034,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.1667 -0.4444 0.5278,
+				offset = 2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -287,13 +274,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.0278 0.8889 0.4722,
+				offset = -0.6102 0.5424 0.2034,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.1667 -0.4444 0.5278,
+				offset = -2.0508 -0.4237 0.1017,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -306,13 +293,13 @@ module Base
 
 			position inside
 			{
-				offset = 1.0278 0.8889 -1.1667,
+				offset = 0.5932 0.5424 -1.1186,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 3.1667 -0.4444 -0.6667,
+				offset = 2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -325,13 +312,13 @@ module Base
 
 			position inside
 			{
-				offset = -1.0278 0.8889 -1.1667,
+				offset = -0.5932 0.5424 -1.1186,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -3.1667 -0.4444 -0.6667,
+				offset = -2.0508 -0.4237 -0.9831,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
@@ -339,60 +326,61 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 7.4167 4.3889 2.0000,
+			xywh = 0.0000 5.1186 3.0508 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.7222 4.3889 1.7778,
+			xywh = 0.0000 -5.1864 3.0508 1.7966,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 3.0833 0.6944 1.3889 1.3889,
+			xywh = 2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -3.0833 0.6944 1.3889 1.3889,
+			xywh = -2.2881 0.4407 1.3559 1.3559,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 3.0833 -0.8056 1.3889 1.3889,
+			xywh = 2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -3.0833 -0.8056 1.3889 1.3889,
+			xywh = -2.2881 -1.0339 1.3559 1.3559,
 		}
 
 		area GasTank
 		{
-			xywh = -3.0833 -3.8333 1.1667 0.7222,
+			xywh = 2.1525 -2.5763 1.0847 0.5763,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 2.1944 4.1944 0.0000 0.0000,
+			xywh = 1.5085 2.3729 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -2.2222 4.1944 0.0000 0.0000,
+			xywh = -1.5254 2.3729 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.1944 -2.8056 0.0000 0.0000,
+			xywh = 1.5254 -2.0678 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.2222 -2.8056 0.0000 0.0000,
+			xywh = -1.5424 -2.0678 0.0000 0.0000,
 		}
 
-		template = 520iAttachments,
+		template = TaxiTopper,
+		template = CrownVic85Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -407,28 +395,32 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BMW520iDriver,
+				file = CrownVictoriaDriver,
 			}
-
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = BMW520iPassenger,
+				file = CrownVictoriaPassenger,
 			}
-
 		}
 
 		part SeatRearLeft
 		{
-			category = nodisplay,
+			model seatrearLeft
+			{
+				file = CrownVictoriaDouble,
+			}
 		}
 
 		part SeatRearRight
 		{
-			category = nodisplay,
+			model seatrearRight
+			{
+				file = CrownVictoriaDouble,
+			}
 		}
 
 		part Muffler
@@ -442,7 +434,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
 		}
 
 		template = EngineDoor,
@@ -451,7 +442,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BMW520iHood,
+				file = CrownVictoriaHood,
 			}
 
 			anim Close
@@ -492,7 +483,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.BMW520iHoodSC,
+			itemType = Base.FordCrownVictoria85HoodSC,
 		}
 
 		part Heater
@@ -512,7 +503,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BMW520iWindshield,
+				file = CrownVictoriaWindshield,
 			}
 
 			window
@@ -536,14 +527,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.BMW520iWindshieldSC,
+			itemType = Base.FordCrownVictoria85WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model windshieldRear
 			{
-				file = BMW520iRearWindshield,
+				file = CrownVictoriaRearWindshield,
 			}
 
 			window
@@ -567,9 +558,10 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.BMW520iWindshieldSC,
+			itemType = Base.FordCrownVictoria85WindshieldSC,
 		}
 
+		template = CrownVic85Attachments,
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearLeft,
@@ -583,7 +575,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = BMW520iFrontRightWindow,
+				file = CrownVictoriaFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -592,17 +584,17 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
+			itemType = Base.FordCrownVictoria85WindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = BMW520iFrontLeftWindow,
+				file = CrownVictoriaFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -611,17 +603,17 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
+			itemType = Base.FordCrownVictoria85WindowSC,
 		}
 
 		part WindowRearRight
 		{
 			model windowRR
 			{
-				file = BMW520iRearRightWindow,
+				file = CrownVictoriaRearRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -630,17 +622,17 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorRearRight,
 			area = SeatRearRight,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
+			itemType = Base.FordCrownVictoria85WindowSC,
 		}
 
 		part WindowRearLeft
 		{
 			model windowRL
 			{
-				file = BMW520iRearLeftWindow,
+				file = CrownVictoriaRearLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -649,17 +641,17 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
-			category = SCUCKwindows,
-			itemType = Base.BMW520iWindowSC,
+			itemType = Base.FordCrownVictoria85WindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = BMW520iFrontRightDoor,
+				file = CrownVictoriaFrontRightDoor,
 			}
 
 			anim Close
@@ -690,14 +682,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordCrownVictoria85DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = BMW520iFrontLeftDoor,
+				file = CrownVictoriaFrontLeftDoor,
 			}
 
 			anim Close
@@ -728,14 +720,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordCrownVictoria85DoorSC,
 		}
 
 		part DoorRearRight
 		{
 			model Default
 			{
-				file = BMW520iRearRightDoor,
+				file = CrownVictoriaRearRightDoor,
 			}
 
 			anim Close
@@ -766,14 +758,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordCrownVictoria85DoorSC,
 		}
 
 		part DoorRearLeft
 		{
 			model Default
 			{
-				file = BMW520iRearLeftDoor,
+				file = CrownVictoriaRearLeftDoor,
 			}
 
 			anim Close
@@ -804,7 +796,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iDoorSC,
+			itemType = Base.FordCrownVictoria85DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -823,7 +815,7 @@ module Base
 
 			model Default
 			{
-				file = BMW520iTrunk,
+				file = CrownVictoriaTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -857,7 +849,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.BMW520iTrunkLidSC,
+			itemType = Base.FordCrownVictoria85TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -868,36 +860,32 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelleft,
+				file = CrownVictoriafrontwheelleft,
 			}
-
 		}
 
 		part TireFrontRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelright,
+				file = CrownVictoriafrontwheelright,
 			}
-
 		}
 
 		part TireRearLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelleft,
+				file = CrownVictoriabackwheelleft,
 			}
-
 		}
 
 		part TireRearRight
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelright,
+				file = CrownVictoriabackwheelright,
 			}
-
 		}
 
 		template = Brake,
@@ -949,14 +937,21 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.5278 0.3333,
-			extents = 4.4167 3.0278 11.7778,
+			offset = 0.0000 0.9322 -0.1186,
+			extents = 3.0169 1.8644 8.0508,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.3898 -4.1864,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3611 6.1111,
+			offset = 0.0000 0.3898 3.9831,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
