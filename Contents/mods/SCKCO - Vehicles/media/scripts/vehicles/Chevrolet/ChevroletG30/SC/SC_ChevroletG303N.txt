@@ -352,6 +352,7 @@ module Base
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
+		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
@@ -415,7 +416,6 @@ module Base
 			{
 				file = G30VanWindowlessDriver,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -429,16 +429,16 @@ module Base
 
 		part SeatRearLeft
 		{
-			category = nodisplay,
 			itemType = Base.FillerSeatSC,
+			category = nodisplay,
 		}
 
 		part SeatRearRight
 		{
-			category = nodisplay,
 			itemType = Base.FillerSeatSC,
+			category = nodisplay,
 		}
-		
+
 		part Muffler
 		{
 			table install
@@ -586,6 +586,16 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
+		part TruckBed
+		{
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+		}
+		
 		part WindowFrontRight
 		{
 			model windowFR

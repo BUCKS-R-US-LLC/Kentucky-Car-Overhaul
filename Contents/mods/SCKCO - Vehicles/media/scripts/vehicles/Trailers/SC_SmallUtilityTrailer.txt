@@ -38,7 +38,7 @@ module Base
 		{
 			file = SC_SmallUtilityTrailer,
 			scale = 0.8100,
-			offset = 0.0000 0.2947 -0.0105,
+			offset = 0.0000 0.2963 0.0494,
 		}
 
 		spawnOffsetY = 0.19392952,
@@ -55,10 +55,10 @@ module Base
 		textureDamage1Shell = Vehicles/Veh_Damage1,
 		textureDamage2Shell = Vehicles/Veh_Damage2,
 		textureRust = Vehicles/Veh_Rust,
-		extents = 1.5158 0.2316 2.2737,
+		extents = 1.5309 0.2469 2.2716,
 		mass = 100,
-		physicsChassisShape = 1.5158 0.2316 2.2737,
-		centerOfMassOffset = 0.0000 0.2211 0.0211,
+		physicsChassisShape = 1.5309 0.2469 2.2716,
+		centerOfMassOffset = 0.0000 0.2222 0.0247,
 		shadowExtents = 1.5217 2.2752,
 		shadowOffset = 0.0000 0.0183,
 		engineForce = 3600,
@@ -82,28 +82,28 @@ module Base
 
 		physics box
 		{
-			offset = 0.4563 0.4078 -1.3981,
-			extents = 0.0549 0.0549 0.5385,
-			rotate = 0.0000 46.0000 0.0000,
+			offset = 0.4568 0.4074 1.3704,
+			extents = 0.1235 0.8148 0.5432,
+			rotate = 0.0000 -48.0000 0.0000,
 		}
 
 		physics box
 		{
-			offset = -0.4175 0.4078 -1.3981,
+			offset = -0.4444 0.4074 1.3704,
 			extents = 0.0549 0.0549 0.5385,
-			rotate = 180.0000 47.0000 -180.0000,
+			rotate = -180.0000 -47.0000 -180.0000,
 		}
 
 		physics sphere
 		{
-			offset = 0.0000 0.4078 -2.0097,
+			offset = 0.0000 0.4074 1.8025,
 			radius = 0.0549,
 		}
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.8842 -0.2316 0.0000,
+			offset = 0.8889 -0.2346 0.0000,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -111,24 +111,24 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.8842 -0.2316 0.0000,
+			offset = -0.8889 -0.2346 0.0000,
 			radius = 0.15f,
 			width = 0.2f,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 1.5579 1.5158 0.8211,
+			xywh = 0.0000 -1.5309 1.5309 0.8395,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 0.5368 0.0000 0.4421 0.5263,
+			xywh = 0.5309 0.0000 0.4444 0.5432,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -0.5368 0.0000 0.4421 0.5263,
+			xywh = -0.5309 0.0000 0.4444 0.5432,
 		}
 
 		template = Trunk/part/TrailerTrunk,
@@ -204,12 +204,19 @@ module Base
 			}
 		}
 
+		part additionalLuaEvents
+		{
+		    category = nodisplay,
+			table partVariation { noLockDoors = true, }
+			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
+
 		template = Suspension/part/SuspensionFrontLeft,
 		template = Suspension/part/SuspensionFrontRight,
 
 		attachment trailer
 		{
-			offset = 0.0000 0.1068 -2.4466,
+			offset = 0.0000 0.1111 2.4074,
 			rotate = 0.0000 0.0000 0.0000,
 			canAttach = trailer,
 			updateconstraint = false,

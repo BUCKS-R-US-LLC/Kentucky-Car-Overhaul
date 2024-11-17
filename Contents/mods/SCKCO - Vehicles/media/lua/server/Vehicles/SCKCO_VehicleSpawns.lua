@@ -183,16 +183,11 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_ChevroletM1010Ambulance"] = {index = -1, spawnChance = 5};
     
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM998"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM998Tan"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025Tan"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1025MP"] = {index = -1, spawnChance = 5};
 
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097Tan"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097TroopCarrier"] = {index = -1, spawnChance = 5};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM1097TroopCarrierTan"] = {index = -1, spawnChance = 1};
-
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997Ambulance"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997Tan"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_AMGeneralM997Green"] = {index = -1, spawnChance = 5};

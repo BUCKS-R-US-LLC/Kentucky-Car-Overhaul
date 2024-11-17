@@ -366,6 +366,7 @@ module Base
 		template = Seat/part/SeatRearLeft,
 		template = Seat/part/SeatRearRight,
 		template = GloveBox,
+		template = Trunk/part/TruckBed,
 		template = GasTank,
 		template = Battery,
 		template = Engine,
@@ -599,6 +600,16 @@ module Base
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowMiddleRight,
 
+		part TruckBed
+		{
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+		}
+		
 		part WindowFrontRight
 		{
 			model windowFR

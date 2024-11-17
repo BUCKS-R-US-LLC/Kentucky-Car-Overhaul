@@ -38,44 +38,6 @@ VehicleDistributions.SC_StandardGlovebox = {
     },
 }
 
-VehicleDistributions.SC_StandardFootwellSpace = {
-    rolls = 10,
-    items = {
-        "AlcoholWipes", 0.5,
-        "Bandage", 0.5,
-        "Bandaid", 0.5,
-        "Battery", 0.5,
-        "BluePen", 0.5,
-        "Cigarettes", 0.5,
-        "Cologne", 0.5,
-        "Comb", 0.5,
-        "CreditCard", 0.5,
-        "Disc_Retail", 0.5,
-        "DuctTape", 0.5,
-        "Earbuds", 0.5,
-        "Eraser", 0.5,
-        "Lighter", 0.5,
-        "Lipstick", 0.5,
-        "Magazine", 0.5,
-        "MakeupEyeshadow", 0.5,
-        "MakeupFoundation", 0.5,
-        "Matches", 0.5,
-        "Mirror", 0.5,
-        "Notebook", 0.5,
-        "Paperclip", 0.5,
-        "Pen", 0.5,
-        "Pencil", 0.5,
-        "Perfume", 0.5,
-        "Razor", 0.5,
-        "RedPen", 0.5,
-        "RubberBand", 0.5,
-        "SewingKit", 0.5,
-        "Scotchtape", 0.5,
-        "Tissue", 0.5,
-        "Twine", 0.5,
-    }
-}
-
 VehicleDistributions.SC_StandardTruckBed = {
     rolls = 10,
     items = {
@@ -115,8 +77,6 @@ VehicleDistributions.SC_Standard = {
     TruckBed = VehicleDistributions.SC_StandardTruckBed,
     TruckBedOpen = VehicleDistributions.SC_StandardTruckBed,
     RearVanSpace = VehicleDistributions.SC_StandardTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_StandardFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_StandardFootwellSpace,
     GloveBox = VehicleDistributions.SC_StandardGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -162,44 +122,6 @@ VehicleDistributions.SC_LuxuryGlovebox = {
     },
 }
 
-VehicleDistributions.SC_LuxuryFootwellSpace = {
-    rolls = 10,
-    items = {
-        "AlcoholWipes", 0.5,
-        "Bandage", 0.5,
-        "Bandaid", 0.5,
-        "Battery", 0.5,
-        "BluePen", 0.5,
-        "Cigarettes", 0.5,
-        "Cologne", 0.5,
-        "Comb", 0.5,
-        "CreditCard", 0.5,
-        "Disc_Retail", 0.5,
-        "DuctTape", 0.5,
-        "Earbuds", 0.5,
-        "Eraser", 0.5,
-        "Lighter", 0.5,
-        "Lipstick", 0.5,
-        "Magazine", 0.5,
-        "MakeupEyeshadow", 0.5,
-        "MakeupFoundation", 0.5,
-        "Matches", 0.5,
-        "Mirror", 0.5,
-        "Notebook", 0.5,
-        "Paperclip", 0.5,
-        "Pen", 0.5,
-        "Pencil", 0.5,
-        "Perfume", 0.5,
-        "Razor", 0.5,
-        "RedPen", 0.5,
-        "RubberBand", 0.5,
-        "SewingKit", 0.5,
-        "Scotchtape", 0.5,
-        "Tissue", 0.5,
-        "Twine", 0.5,
-    }
-}
-
 VehicleDistributions.SC_LuxuryTruckBed = {
     rolls = 10,
     items = {
@@ -238,8 +160,6 @@ VehicleDistributions.SC_LuxuryTruckBed = {
 VehicleDistributions.SC_Luxury = {
     TruckBed = VehicleDistributions.SC_LuxuryTruckBed,
     TruckBedOpen = VehicleDistributions.SC_LuxuryTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_LuxuryFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_LuxuryFootwellSpace,
     GloveBox = VehicleDistributions.SC_LuxuryGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -285,44 +205,6 @@ VehicleDistributions.SC_SportGlovebox = {
     },
 }
 
-VehicleDistributions.SC_SportFootwellSpace = {
-    rolls = 10,
-    items = {
-        "AlcoholWipes", 0.5,
-        "Bandage", 0.5,
-        "Bandaid", 0.5,
-        "Battery", 0.5,
-        "BluePen", 0.5,
-        "Cigarettes", 0.5,
-        "Cologne", 0.5,
-        "Comb", 0.5,
-        "CreditCard", 0.5,
-        "Disc_Retail", 0.5,
-        "DuctTape", 0.5,
-        "Earbuds", 0.5,
-        "Eraser", 0.5,
-        "Lighter", 0.5,
-        "Lipstick", 0.5,
-        "Magazine", 0.5,
-        "MakeupEyeshadow", 0.5,
-        "MakeupFoundation", 0.5,
-        "Matches", 0.5,
-        "Mirror", 0.5,
-        "Notebook", 0.5,
-        "Paperclip", 0.5,
-        "Pen", 0.5,
-        "Pencil", 0.5,
-        "Perfume", 0.5,
-        "Razor", 0.5,
-        "RedPen", 0.5,
-        "RubberBand", 0.5,
-        "SewingKit", 0.5,
-        "Scotchtape", 0.5,
-        "Tissue", 0.5,
-        "Twine", 0.5,
-    }
-}
-
 VehicleDistributions.SC_SportTruckBed = {
     rolls = 10,
     items = {
@@ -361,8 +243,6 @@ VehicleDistributions.SC_SportTruckBed = {
 VehicleDistributions.SC_Sport = {
     TruckBed = VehicleDistributions.SC_SportTruckBed,
     TruckBedOpen = VehicleDistributions.SC_SportTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_SportFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_SportFootwellSpace,
     GloveBox = VehicleDistributions.SC_SportGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -524,8 +404,6 @@ VehicleDistributions.SC_Military = {
     TruckBedOpen = VehicleDistributions.SC_MilitaryTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitaryGunRack,
     BackOfTruck = VehicleDistributions.SC_MilitaryBackTruck,
-    FrontFootwellSpace = VehicleDistributions.SC_MilitaryFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_MilitaryFootwellSpace,
     GloveBox = VehicleDistributions.SC_MilitaryGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -544,15 +422,6 @@ VehicleDistributions.SC_MilitiaGlovebox = {
         items = {
             "Pistol", 8,
         }
-    }
-}
-
-VehicleDistributions.SC_MilitiaFootwellSpace = {
-    rolls = 1,
-    items = {
-        "HandTorch", 1,
-        "Bag_ShotgunBag", 1,
-        "Bag_MedicalBag", 1,
     }
 }
 
@@ -593,15 +462,6 @@ VehicleDistributions.SC_MilitaryGlovebox = {
     }
 }
 
-VehicleDistributions.SC_MilitaryFootwellSpace = {
-    rolls = 1,
-    items = {
-        "HandTorch", 1,
-        "556Clip", 1,
-        "556Bullets", 1,
-    }
-}
-
 VehicleDistributions.SC_MilitaryTruckBed = {
     rolls = 4,
     items = {
@@ -636,8 +496,6 @@ VehicleDistributions.SC_Military = {
     TruckBedOpen = VehicleDistributions.SC_MilitaryTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitaryGunRack,
     BackOfTruck = VehicleDistributions.SC_MilitaryBackTruck,
-    FrontFootwellSpace = VehicleDistributions.SC_MilitaryFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_MilitaryFootwellSpace,
     GloveBox = VehicleDistributions.SC_MilitaryGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -658,15 +516,6 @@ VehicleDistributions.SC_MilitiaGlovebox = {
         items = {
             "Pistol", 8,
         }
-    }
-}
-
-VehicleDistributions.SC_MilitiaFootwellSpace = {
-    rolls = 1,
-    items = {
-        "HandTorch", 1,
-        "Bag_ShotgunBag", 1,
-        "Bag_MedicalBag", 1,
     }
 }
 
@@ -692,8 +541,6 @@ VehicleDistributions.SC_Militia = {
     TruckBed = VehicleDistributions.SC_MilitiaTruckBed,
     TruckBedOpen = VehicleDistributions.SC_MilitiaTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitiaGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_MilitiaFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_MilitiaFootwellSpace,
     GloveBox = VehicleDistributions.SC_MilitiaGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -745,8 +592,6 @@ VehicleDistributions.SC_StatePolice = {
     TruckBed = VehicleDistributions.SC_StatePoliceTruckBed,
     TruckBedOpen = VehicleDistributions.SC_StatePoliceTruckBed,
     GunRackSC = VehicleDistributions.SC_StatePoliceGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_StatePoliceFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_StatePoliceFootwellSpace,
     GloveBox = VehicleDistributions.SC_StatePoliceGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -771,15 +616,6 @@ VehicleDistributions.SC_DeputySheriffGlovebox = {
     }
 }
 
-VehicleDistributions.SC_DeputySheriffFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 1,
-        "RedPen", 1,
-        "RubberBand", 1,
-    }
-}
-
 VehicleDistributions.SC_DeputySheriffTruckBed = {
     rolls = 4,
     items = {
@@ -799,8 +635,6 @@ VehicleDistributions.SC_DeputySheriff = {
     TruckBed = VehicleDistributions.SC_DeputySheriffTruckBed,
     TruckBedOpen = VehicleDistributions.SC_DeputySheriffTruckBed,
     GunRackSC = VehicleDistributions.SC_DeputySheriffGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_DeputySheriffFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_DeputySheriffFootwellSpace,
     GloveBox = VehicleDistributions.SC_DeputySheriffGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -824,15 +658,6 @@ VehicleDistributions.SC_CityPoliceGlovebox = {
     }
 }
 
-VehicleDistributions.SC_CityPoliceFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 1,
-        "RedPen", 1,
-        "RubberBand", 1,
-    }
-}
-
 VehicleDistributions.SC_CityPoliceTruckBed = {
     rolls = 4,
     items = {
@@ -852,8 +677,6 @@ VehicleDistributions.SC_CityPolice = {
     TruckBed = VehicleDistributions.SC_CityPoliceTruckBed,
     TruckBedOpen = VehicleDistributions.SC_CityPoliceTruckBed,
     GunRackSC = VehicleDistributions.SC_CityPoliceGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_CityPoliceFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_CityPoliceFootwellSpace,
     GloveBox = VehicleDistributions.SC_CityPoliceGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -877,15 +700,6 @@ VehicleDistributions.SC_ParkRangerGlovebox = {
     }
 }
 
-VehicleDistributions.SC_ParkRangerFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 1,
-        "RedPen", 1,
-        "RubberBand", 1,
-    }
-}
-
 VehicleDistributions.SC_ParkRangerTruckBed = {
     rolls = 4,
     items = {
@@ -905,8 +719,6 @@ VehicleDistributions.SC_ParkRanger = {
     TruckBed = VehicleDistributions.SC_ParkRangerTruckBed,
     TruckBedOpen = VehicleDistributions.SC_ParkRangerTruckBed,
     GunRackSC = VehicleDistributions.SC_ParkRangerGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_ParkRangerFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_ParkRangerFootwellSpace,
     GloveBox = VehicleDistributions.SC_ParkRangerGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -921,15 +733,6 @@ VehicleDistributions.SC_FireDepartmentGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_FireDepartmentFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -958,7 +761,6 @@ VehicleDistributions.SC_FireDepartmentTruckBed = {
 VehicleDistributions.SC_FireDepartment = {
     TruckBed = VehicleDistributions.SC_FireDepartmentTruckBed,
     BackOfTruck = VehicleDistributions.SC_FireDepartmentTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_FireDepartmentFootwellSpace,
     GloveBox = VehicleDistributions.SC_FireDepartmentGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -982,13 +784,6 @@ VehicleDistributions.SC_BubbaGlovebox = {
     }
 }
 
-VehicleDistributions.SC_BubbaFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Bag_ShotgunBag", 1,
-    }
-}
-
 VehicleDistributions.SC_BubbaTruckBed = {
     rolls = 4,
     items = {
@@ -1008,8 +803,6 @@ VehicleDistributions.SC_Bubba = {
     TruckBed = VehicleDistributions.SC_BubbaTruckBed,
     TruckBedOpen = VehicleDistributions.SC_BubbaTruckBed,
     GunRackSC = VehicleDistributions.SC_BubbaGunRack,
-    FrontFootwellSpace = VehicleDistributions.SC_BubbaFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_BubbaFootwellSpace,
     GloveBox = VehicleDistributions.SC_BubbaGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1027,15 +820,6 @@ VehicleDistributions.SC_BankCarGlovebox = {
     }
 }
 
-VehicleDistributions.SC_BankCarFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
-    }
-}
-
 VehicleDistributions.SC_BankCarTruckBed = {
     rolls = 500,
     items = {
@@ -1050,7 +834,6 @@ VehicleDistributions.SC_BankCarTruckBed = {
 
 VehicleDistributions.SC_BankCar = {
     BackOfTruck = VehicleDistributions.SC_BankCarTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_BankCarFootwellSpace,
     GloveBox = VehicleDistributions.SC_BankCarGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1065,15 +848,6 @@ VehicleDistributions.SC_MailCarGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_MailCarFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -1102,7 +876,6 @@ VehicleDistributions.SC_MailCarTruckBed = {
 VehicleDistributions.SC_MailCar = {
     TruckBed = VehicleDistributions.SC_MailCarTruckBed,
     BackOfTruck = VehicleDistributions.SC_MailCarTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_MailCarFootwellSpace,
     GloveBox = VehicleDistributions.SC_MailCarGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1117,15 +890,6 @@ VehicleDistributions.SC_PowerCompanyGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_PowerCompanyFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -1154,7 +918,6 @@ VehicleDistributions.SC_PowerCompanyTruckBed = {
 VehicleDistributions.SC_PowerCompany = {
     TruckBed = VehicleDistributions.SC_PowerCompanyTruckBed,
     BackOfTruck = VehicleDistributions.SC_PowerCompanyTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_PowerCompanyFootwellSpace,
     GloveBox = VehicleDistributions.SC_PowerCompanyGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1169,15 +932,6 @@ VehicleDistributions.SC_McCoyGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_McCoyFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -1206,7 +960,6 @@ VehicleDistributions.SC_McCoyTruckBed = {
 VehicleDistributions.SC_McCoy = {
     TruckBed = VehicleDistributions.SC_McCoyTruckBed,
     BackOfTruck = VehicleDistributions.SC_McCoyTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_McCoyFootwellSpace,
     GloveBox = VehicleDistributions.SC_McCoyGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1221,15 +974,6 @@ VehicleDistributions.SC_WorkTruckGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_WorkTruckFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -1253,7 +997,6 @@ VehicleDistributions.SC_WorkTruckTruckBed = {
 VehicleDistributions.SC_WorkTruck = {
     TruckBed = VehicleDistributions.SC_WorkTruckTruckBed,
     BackOfTruck = VehicleDistributions.SC_WorkTruckTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_WorkTruckFootwellSpace,
     GloveBox = VehicleDistributions.SC_WorkTruckGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1271,15 +1014,6 @@ VehicleDistributions.SC_PaperCarGlovebox = {
     }
 }
 
-VehicleDistributions.SC_PaperCarFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
-    }
-}
-
 VehicleDistributions.SC_PaperCarTruckBed = {
     rolls = 50,
     items = {
@@ -1294,7 +1028,6 @@ VehicleDistributions.SC_PaperCarTruckBed = {
 
 VehicleDistributions.SC_PaperCar = {
     BackOfTruck = VehicleDistributions.SC_PaperCarTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_PaperCarFootwellSpace,
     GloveBox = VehicleDistributions.SC_PaperCarGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1309,15 +1042,6 @@ VehicleDistributions.SC_AmbulanceGlovebox = {
         "RedPen", 8,
         "RubberBand", 6,
         "WaterBottleFull", 10,
-    }
-}
-
-VehicleDistributions.SC_AmbulanceFootwellSpace = {
-    rolls = 1,
-    items = {
-        "Pen", 8,
-        "RedPen", 8,
-        "RubberBand", 6,
     }
 }
 
@@ -1336,7 +1060,6 @@ VehicleDistributions.SC_AmbulanceTruckBed = {
 VehicleDistributions.SC_Ambulance = {
     TruckBed = VehicleDistributions.SC_AmbulanceTruckBed,
     BackOfTruck = VehicleDistributions.SC_AmbulanceTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_AmbulanceFootwellSpace,
     GloveBox = VehicleDistributions.SC_AmbulanceGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
@@ -1348,14 +1071,6 @@ VehicleDistributions.SC_FireDepartmentGlovebox = {
         "AlcoholWipes", 0.5,
         "Bandage", 0.5,
     },
-}
-
-VehicleDistributions.SC_FireDepartmentFootwellSpace = {
-    rolls = 10,
-    items = {
-        "AlcoholWipes", 0.5,
-        "Bandage", 0.5,
-    }
 }
 
 VehicleDistributions.SC_FireDepartmentTruckBed = {
@@ -1383,9 +1098,32 @@ VehicleDistributions.SC_FireDepartment = {
     TruckBed = VehicleDistributions.SC_FireDepartmentTruckBed,
     TruckBedOpen = VehicleDistributions.SC_FireDepartmentTruckBed,
     RearVanSpace = VehicleDistributions.SC_FireDepartmentTruckBed,
-    FrontFootwellSpace = VehicleDistributions.SC_FireDepartmentFootwellSpace,
-    RearFootwellSpace = VehicleDistributions.SC_FireDepartmentFootwellSpace,
     GloveBox = VehicleDistributions.SC_FireDepartmentGlovebox,
+    SeatRearLeft = VehicleDistributions.Seat,  
+    SeatRearRight = VehicleDistributions.Seat, 
+}
+
+VehicleDistributions.SC_SpiffoGlovebox = {
+    rolls = 10,
+    items = {
+        "AlcoholWipes", 0.5,
+        "Bandage", 0.5,
+    },
+}
+
+VehicleDistributions.SC_SpiffoTruckBed = {
+    rolls = 1,
+    items = {
+        "SpiffoBig", 1,
+    }
+}
+
+VehicleDistributions.SC_Spiffo = {
+    
+    TruckBed = VehicleDistributions.SC_SpiffoTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_SpiffoTruckBed,
+    RearVanSpace = VehicleDistributions.SC_SpiffoTruckBed,
+    GloveBox = VehicleDistributions.SC_SpiffoGlovebox,
     SeatRearLeft = VehicleDistributions.Seat,  
     SeatRearRight = VehicleDistributions.Seat, 
 }
@@ -1441,7 +1179,7 @@ distributionTable["SC_ChevroletC70Survivalist"] = { Normal = VehicleDistribution
 distributionTable["VanAmbulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_ChevroletG30Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_FordF350Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
-distributionTable["SC_M1010Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_ChevroletM1010Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 
 distributionTable["SportsCar"] = { Normal = VehicleDistributions.SC_Sport}
 distributionTable["SC_ChevroletCamaro87"] = { Normal = VehicleDistributions.SC_Sport}
@@ -1492,7 +1230,6 @@ distributionTable["SC_ChevroletM1010Ambulance"] = { Normal = VehicleDistribution
 distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Limo }
 
 distributionTable["SC_AMGeneralM151A2"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM151A2Tan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM151A2Cleaners"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097Tan"] = { Normal = VehicleDistributions.SC_Military }
@@ -1522,8 +1259,12 @@ distributionTable["SC_ChevroletG30BoxVan"] = { Normal = VehicleDistributions.SC_
 distributionTable["SC_ChevroletG30MassGenFac"] = { Normal = VehicleDistributions.SC_WorkTruck }
 distributionTable["Van_MassGenFac"] = { Normal = VehicleDistributions.SC_WorkTruck}
 distributionTable["SC_ChevroletG30LectroMax"] = { Normal = VehicleDistributions.SC_WorkTruck }
-distributionTable["SC_ChevroletG30Spiffo"] = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["VanSpiffo"] = { Normal = VehicleDistributions.SC_Spiffo }
+distributionTable["SC_ChevroletG30Spiffo"] = { Normal = VehicleDistributions.SC_Spiffo }
 distributionTable["SC_ChevroletG30McCoy"] = { Normal = VehicleDistributions.SC_McCoy }
+
+distributionTable["SC_ChevroletG30LBMW"] = { Normal = VehicleDistributions.Radio }
+distributionTable["SC_ChevroletG303N"] = { Normal = VehicleDistributions.Radio }
 
 distributionTable["SC_ChevroletG30Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 
