@@ -1232,18 +1232,14 @@ distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Limo }
 distributionTable["SC_AMGeneralM151A2"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM151A2Cleaners"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097Tan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097TroopCarrier"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097TroopCarrierTan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1025Tan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM997Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM997AmbulanceGreen"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM997AmbulanceTan"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM998"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Tan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Hardtop"] = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM998HardtopTan"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM35A2"] = { Normal = VehicleDistributions.SC_Military }
 
 distributionTable["PickUpVanLightsFire"] = { Normal = VehicleDistributions.SC_FireDepartment }
