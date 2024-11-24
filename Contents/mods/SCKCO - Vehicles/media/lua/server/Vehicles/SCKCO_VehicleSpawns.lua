@@ -256,6 +256,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_SmallUtilityTrailer"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_MediumEnclosedTrailer"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_MediumLivestockTrailer"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamn.chanceToPartDamage = 10;
     VehicleZoneDistribution.trafficjamn.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.trafficjamn.chanceToSpawnKey = 80;
@@ -341,6 +342,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_AMGeneralM35A1CrashedTurned"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_SmallUtilityTrailer"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.vehicles["Base.SC_MediumEnclosedTrailer"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjams.vehicles["Base.SC_MediumLivestockTrailer"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjams.chanceToPartDamage = 10;
     VehicleZoneDistribution.trafficjams.baseVehicleQuality = 1.1;
 	VehicleZoneDistribution.trafficjams.chanceToSpawnKey = 80;

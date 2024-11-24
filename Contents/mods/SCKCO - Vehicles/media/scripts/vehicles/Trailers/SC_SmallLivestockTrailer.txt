@@ -1,0 +1,483 @@
+module Base
+{
+	model SC_MediumLivestockTrailer
+	{
+		mesh = Vehicles/Trailer/Vehicle_LivestockTrailer|base_mesh,
+		shader = vehicle_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockTrailerTrunk
+	{
+		mesh = Vehicles/Trailer/Vehicle_LivestockTrailer|TrunkDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone2 1.0,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockWindshield
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockFrontRightWindow
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockFrontLeftWindow
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockFrontRightDoor
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model SC_MediumLivestockRearWindshield
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		scale = 0.01,
+	}
+	model SC_MediumLivestockSpareTire
+	{
+		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|SpareTire_obj,
+		texture = Vehicles/Trailer/Vehicle_LivestockWheel,
+		shader = vehiclewheel,
+		scale = 0.01,
+	}
+	model LivestockWheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_Livestock_LeftWheel,
+		texture = Vehicles/Trailer/Vehicle_LivestockWheel,
+		shader = vehiclewheel,
+	}
+	model LivestockWheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_Livestock_RightWheel,
+		texture = Vehicles/Trailer/Vehicle_LivestockWheel,
+		shader = vehiclewheel,
+	}
+	vehicle SC_MediumLivestockTrailer
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.8,
+
+		model
+		{
+			file = SC_MediumLivestockTrailer,
+			scale = 0.8500,
+			offset = 0.0000 0.1529 -0.8588,
+		}
+
+		spawnOffsetY = 0.19392952,
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_LivestockTrailer,
+		}
+
+		textureMask = Vehicles/vehicle_utilitytrailer_mask,
+		textureLights = Vehicles/vehicle_utilitytrailer_lights,
+		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
+		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
+		textureDamage1Shell = Vehicles/Veh_Damage1,
+		textureDamage2Shell = Vehicles/Veh_Damage2,
+		textureRust = Vehicles/Veh_Rust,
+		extents = 1.9059 2.1647 3.2235,
+		mass = 50,
+		physicsChassisShape = 1.8824 1.8118 3.2235,
+		centerOfMassOffset = 0.0000 1.0824 -0.2588,
+		shadowExtents = 2.3086 3.2051,
+		shadowOffset = 0.0000 -0.2572,
+		engineForce = 3600,
+		engineQuality = 60,
+		engineLoudness = 55,
+		maxSpeed = 70f,
+		brakingForce = 1,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 1.0f,
+		steeringIncrement = 0.03,
+		steeringClamp = 0.3,
+		suspensionStiffness = 90,
+		suspensionCompression = 2.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2,
+		wheelFriction = 4.0f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 2,
+
+		physics box
+		{
+			offset = 0.2706 0.2941 2.0824,
+			extents = 0.1176 1.0353 0.5294,
+			rotate = 180.0000 23.0000 180.0000,
+		}
+
+		physics box
+		{
+			offset = -0.2706 0.2941 2.0824,
+			extents = 0.1176 1.0353 0.5176,
+			rotate = 0.0000 23.0000 0.0000,
+		}
+
+		physics sphere
+		{
+			offset = 0.0000 0.5200 2.5900,
+			radius = 0.0549,
+		}
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.9882 -0.3059 0.3882,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.9882 -0.3059 0.3882,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.9882 -0.3059 -0.4353,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.9882 -0.3059 -0.4353,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		area DoorFrontRight
+		{
+			xywh = -1.7882 0.4941 1.6000 0.8706,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -2.6118 1.6000 0.8706,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.5412 -0.8353 0.5176 0.5882,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.5412 -0.8353 0.5176 0.5882,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.5412 -1.4118 0.5176 0.5882,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.5412 -1.4118 0.5176 0.5882,
+		}
+		
+		template = TrunkDoor,
+		template = Trunk/part/TrailerTrunk,
+		template = Tire/part/TireFrontLeft,
+		template = Tire/part/TireFrontRight,
+		template = Tire/part/TireRearLeft,
+		template = Tire/part/TireRearRight,
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Door/part/DoorFrontRight,
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = SC_MediumLivestockFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.TrailerDoorSC,
+		}
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = SC_MediumLivestockFrontRightWindow,
+			}
+
+			itemType = Base.TrailerWindowSC,
+			category = SCUCKwindows,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFR
+			{
+				file = SC_MediumLivestockFrontLeftWindow,
+			}
+
+			itemType = Base.TrailerWindowSC,
+			category = SCUCKwindows,
+			area = SeatFrontLeft,
+		}
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = SC_MediumLivestockWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.TrailerWindowSC,
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+
+			model windshieldRear
+			{
+				file = SC_MediumLivestockRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.TrailerWindowSC,
+		}
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = SC_MediumLivestockTrailerTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			category = nodisplay,
+			itemType = Base.FillerPartSC,
+		}
+
+		part SpareTire
+		{
+			model SC_MediumLivestockSpareTire
+			{
+				file = SC_MediumLivestockSpareTire,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = Base.NormalTire,
+			category = SCUCKaccessories,
+		}
+
+		part TireFrontLeft
+		{
+			model LivestockWheelleft
+			{
+				file = LivestockWheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model LivestockWheelright
+			{
+				file = LivestockWheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model LivestockWheelleft
+			{
+				file = LivestockWheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model LivestockWheelright
+			{
+				file = LivestockWheelright,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+
+		template = Suspension/part/SuspensionFrontLeft,
+		template = Suspension/part/SuspensionFrontRight,
+		template = Suspension/part/SuspensionRearLeft,
+		template = Suspension/part/SuspensionRearRight,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.0353 3.6353,
+			rotate = 0.0000 0.0000 0.0000,
+			canAttach = trailer,
+			updateconstraint = false,
+		}
+	}
+}

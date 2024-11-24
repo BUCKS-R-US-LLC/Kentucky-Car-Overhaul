@@ -1,0 +1,43 @@
+module Base
+{
+
+        item TrailerDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	= Trailer Door,
+        Icon	=	JeepLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = 93JeepCJDoor_WorldItem,
+    }
+
+        item TrailerTrunkLidSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk Lid,
+        Icon	=	JeepLogo,
+        VehicleType =  2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = 93JeepCJTrunkLid_WorldItem,
+    }
+
+        item TrailerWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Window,
+        Icon	= JeepLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = 93JeepCJWindow_WorldItem,
+    }
+
+}
