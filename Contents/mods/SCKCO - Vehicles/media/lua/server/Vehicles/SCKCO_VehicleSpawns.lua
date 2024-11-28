@@ -95,7 +95,6 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.good.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordMustang90"] = {index = -1, spawnChance = 25};
-    VehicleZoneDistribution.good.vehicles["Base.SC_CadillacBrougham"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.good.vehicles["Base.SC_BMW520i"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordTaurus"] = {index = -1, spawnChance = 25};
