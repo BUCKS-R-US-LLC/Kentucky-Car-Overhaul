@@ -250,8 +250,8 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90JeffersonPolice"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordMustang90StatePolice"] = {index = -1, spawnChance = 3};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85"] = {index = -1, spawnChance = 3};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85LouisvillePolice"] = {index = -1, spawnChance = 3};
-    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria92JeffersonSheriff"] = {index = -1, spawnChance = 3};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria85LouisvillePolice"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_FordCrownVictoria92JeffersonSheriff"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ToyotaCamry"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 10};
