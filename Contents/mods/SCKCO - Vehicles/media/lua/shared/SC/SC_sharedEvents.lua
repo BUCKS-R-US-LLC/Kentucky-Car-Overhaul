@@ -1,4 +1,4 @@
-local miscVehicleLua = require("SC_miscVehicleLua.lua")
+local miscVehicleLua = require("SC/SC_miscVehicleLua.lua")
 
 --- Events.OnPlayerUpdate.Add(miscVehicleLua.M35A1CargoWeightFix)
 Events.OnWeaponSwingHitPoint.Add(miscVehicleLua.processOnWeaponSwingHitPoint)
