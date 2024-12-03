@@ -31,21 +31,21 @@ module Base
         static = TRUE,
 		scale = 0.01,
 	}
-	model M998Wheelfrontwheelleft
+	model M1011wheelleft
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M1101Trailer_LeftWheel,
+		texture = Vehicles/Trailer/Vehicle_M1101_wheel,
 		shader = vehiclewheel,
-		scale = 0.3,
+		scale = 0.01,
 	}
-	model M998Wheelfrontwheelright
+	model M1011wheelright
 	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		mesh = vehicles/Wheels/Vehicle_M1101Trailer_RightWheel,
+		texture = Vehicles/Trailer/Vehicle_M1101_wheel,
 		shader = vehiclewheel,
-		scale = 0.3,
+		scale = 0.01,
 	}
-	vehicle SC_M1101Trailer
+	vehicle SC_M1101TrailerSurplus
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 0.8,
@@ -85,6 +85,32 @@ module Base
 		{
 			texture = Vehicles\Trailer\Vehicle_M1101_OD,
 		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Black,
+		}
+
 
 		textureMask = Vehicles/vehicle_utilitytrailer_mask,
 		textureLights = Vehicles/vehicle_utilitytrailer_lights,
@@ -264,17 +290,17 @@ module Base
 
 		part TireFrontLeft
 		{
-			model InflatedTirePlusWheel
+			model M1101wheelleft
 			{
-				file = M998Wheelfrontwheelleft,
+				file = M1011wheelleft,
 			}
 		}
 
 		part TireFrontRight
 		{
-			model InflatedTirePlusWheel
+			model M1101wheelright
 			{
-				file = M998Wheelfrontwheelright,
+				file = M1011wheelright,
 			}
 		}
 
