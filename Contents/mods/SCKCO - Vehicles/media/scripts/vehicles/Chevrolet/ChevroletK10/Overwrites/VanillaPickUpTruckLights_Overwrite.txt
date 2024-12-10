@@ -92,28 +92,16 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model KSerieswheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model KSerieswheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelbackwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelbackwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle PickUpTruckLights
@@ -657,7 +645,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -665,7 +653,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 
@@ -673,7 +661,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -681,7 +669,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 

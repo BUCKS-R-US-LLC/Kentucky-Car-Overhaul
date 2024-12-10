@@ -102,27 +102,15 @@ module Base
 		scale = 1,
 		static = TRUE,
 	}
-	model M1097Wheelfrontwheelleft
+	model HMMWVwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model M1097Wheelfrontwheelright
+	model HMMWVwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
-		shader = vehiclewheel,
-	}
-	model M1097Wheelbackwheelleft
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
-		shader = vehiclewheel,
-	}
-	model M1097Wheelbackwheelright
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
@@ -905,7 +893,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1097Wheelfrontwheelleft,
+				file = HMMWVwheelleft,
 			}
 		}
 
@@ -913,7 +901,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1097Wheelfrontwheelright,
+				file = HMMWVwheelright,
 			}
 		}
 
@@ -921,7 +909,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1097Wheelbackwheelleft,
+				file = HMMWVwheelleft,
 			}
 		}
 
@@ -929,7 +917,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M1097Wheelbackwheelright,
+				file = HMMWVwheelright,
 			}
 		}
 

@@ -57,18 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model CUCVZhenjaEditionRearRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model CUCVZhenjaEditionRearLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model CUCVZhenjaEditionTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Trunk_obj,
@@ -92,25 +80,25 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BlazerWheelfrontwheelleft
+	model CUCVwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model CUCVwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model CUCVwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model CUCVwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
@@ -704,7 +692,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -712,7 +700,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 
@@ -720,7 +708,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -728,7 +716,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 

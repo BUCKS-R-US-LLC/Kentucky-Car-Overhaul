@@ -37,7 +37,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model HM998FrontRightWindow
+	model HM998RightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -46,7 +46,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowBone1 1.0,
 	}
-	model HM998FrontLeftWindow
+	model HM998LeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -73,7 +73,7 @@ module Base
 		boneWeight = RearLeftWindowBone 1.0,
 		boneWeight = RearLeftWindowBone1 1.0,
 	}
-	model HM998FrontRightDoor
+	model HM998RightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -81,7 +81,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model HM998FrontLeftDoor
+	model HM998LeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -136,27 +136,15 @@ module Base
 		scale = 1,
 		static = TRUE,
 	}
-	model M998Wheelfrontwheelleft
+	model HMMWVwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
-	model M998Wheelfrontwheelright
+	model HMMWVwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
-		shader = vehiclewheel,
-	}
-	model M998Wheelbackwheelleft
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_RearLeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
-		shader = vehiclewheel,
-	}
-	model M998Wheelbackwheelright
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM_RearRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 	}
@@ -637,7 +625,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = HM998FrontRightWindow,
+				file = HM998RightWindow,
 			}
 
 			anim ClosedToOpen
@@ -656,7 +644,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = HM998FrontLeftWindow,
+				file = HM998LeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -713,7 +701,7 @@ module Base
 		{
 			model Default
 			{
-				file = HM998FrontRightDoor,
+				file = HM998RightDoor,
 			}
 
 			anim Close
@@ -751,7 +739,7 @@ module Base
 		{
 			model Default
 			{
-				file = HM998FrontLeftDoor,
+				file = HM998LeftDoor,
 			}
 
 			anim Close
@@ -922,7 +910,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelfrontwheelleft,
+				file = HMMWVwheelleft,
 			}
 		}
 
@@ -930,7 +918,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelfrontwheelright,
+				file = HMMWVwheelright,
 			}
 		}
 
@@ -938,7 +926,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelbackwheelleft,
+				file = HMMWVwheelleft,
 			}
 		}
 
@@ -946,7 +934,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelbackwheelright,
+				file = HMMWVwheelright,
 			}
 		}
 

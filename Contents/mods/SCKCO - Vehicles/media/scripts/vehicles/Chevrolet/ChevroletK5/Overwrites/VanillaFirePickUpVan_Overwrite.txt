@@ -86,25 +86,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSeriesfrontwheelleft
+	model KSerieswheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	model KSeriesfrontwheelright
-	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		shader = vehiclewheel,
-	}
-	model KSeriesbackwheelleft
-	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		shader = vehiclewheel,
-	}
-	model KSeriesbackwheelright
+	model KSerieswheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
@@ -677,7 +665,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesWheelfrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -685,7 +673,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesWheelfrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 
@@ -693,7 +681,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesWheelfrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -701,7 +689,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesWheelfrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 

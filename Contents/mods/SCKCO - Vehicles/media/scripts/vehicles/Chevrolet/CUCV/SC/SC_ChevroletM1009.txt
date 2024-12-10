@@ -7,25 +7,25 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1009SCDriver
+	model M1009Driver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCPassenger
+	model M1009Passenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCWindshield
+	model M1009Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCFrontRightWindow
+	model M1009FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -33,7 +33,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1009SCFrontLeftWindow
+	model M1009FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -41,7 +41,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1009SCFrontRightDoor
+	model M1009FrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -49,7 +49,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1009SCFrontLeftDoor
+	model M1009FrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -57,19 +57,19 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1009SCRearRightWindow
+	model M1009RearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCRearLeftWindow
+	model M1009RearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1009SCTrunk
+	model M1009Trunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Trunk_obj,
 		shader = vehicle_noreflect,
@@ -78,7 +78,7 @@ module Base
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model M1009SCHood
+	model M1009Hood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -86,25 +86,25 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelfrontwheelleft
+	model CUCVwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelfrontwheelright
+	model CUCVwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelleft
+	model CUCVwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelbackwheelright
+	model CUCVwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
@@ -712,7 +712,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -720,7 +720,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 
@@ -728,7 +728,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -736,7 +736,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 

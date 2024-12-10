@@ -82,7 +82,7 @@ module Base
 		{
 			file = SC_MediumLivestockTrailer,
 			scale = 0.8500,
-			offset = 0.0000 0.1529 -0.8588,
+			offset = 0.0000 0.1765 -0.8588,
 		}
 
 		spawnOffsetY = 0.19392952,
@@ -99,10 +99,10 @@ module Base
 		textureDamage1Shell = Vehicles/Veh_Damage1,
 		textureDamage2Shell = Vehicles/Veh_Damage2,
 		textureRust = Vehicles/Veh_Rust,
-		extents = 1.9059 2.1647 3.2235,
+		extents = 1.9059 1.8118 3.2235,
 		mass = 50,
 		physicsChassisShape = 1.8824 1.8118 3.2235,
-		centerOfMassOffset = 0.0000 1.0824 -0.2588,
+		centerOfMassOffset = 0.0000 0.9059 -0.2588,
 		shadowExtents = 2.3086 3.2051,
 		shadowOffset = 0.0000 -0.2572,
 		engineForce = 3600,
@@ -114,11 +114,11 @@ module Base
 		rollInfluence = 1.0f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 90,
-		suspensionCompression = 2.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 10,
-		suspensionRestLength = 0.2,
+		suspensionStiffness = 80,
+		suspensionCompression = 4.00,
+		suspensionDamping = 1.00,
+		maxSuspensionTravelCm = 4,
+		suspensionRestLength = 0.02,
 		wheelFriction = 4.0f,
 		frontEndHealth = 150,
 		rearEndHealth = 150,
@@ -126,28 +126,22 @@ module Base
 
 		physics box
 		{
-			offset = 0.2706 0.2941 2.0824,
-			extents = 0.1176 1.0353 0.5294,
+			offset = 0.2706 0.2000 2.0824,
+			extents = 0.1176 0.4000 0.8118,
 			rotate = 180.0000 23.0000 180.0000,
 		}
 
 		physics box
 		{
-			offset = -0.2706 0.2941 2.0824,
-			extents = 0.1176 1.0353 0.5176,
+			offset = -0.2706 0.2000 2.0824,
+			extents = 0.1176 0.4000 0.8000,
 			rotate = 0.0000 23.0000 0.0000,
-		}
-
-		physics sphere
-		{
-			offset = 0.0000 0.5200 2.5900,
-			radius = 0.0549,
 		}
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 0.9882 -0.3059 0.3882,
+			offset = 0.9882 -0.1882 0.3882,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -155,7 +149,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -0.9882 -0.3059 0.3882,
+			offset = -0.9882 -0.1882 0.3882,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -163,7 +157,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.9882 -0.3059 -0.4353,
+			offset = 0.9882 -0.1882 -0.4353,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -171,7 +165,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -0.9882 -0.3059 -0.4353,
+			offset = -0.9882 -0.1882 -0.4353,
 			radius = 0.15f,
 			width = 0.2f,
 		}
@@ -183,7 +177,7 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -2.6118 1.6000 0.8706,
+			xywh = 0.0000 -2.3647 1.9059 0.8706,
 		}
 
 		area TireFrontLeft
@@ -205,7 +199,7 @@ module Base
 		{
 			xywh = -0.5412 -1.4118 0.5176 0.5882,
 		}
-		
+
 		template = TrunkDoor,
 		template = Trunk/part/TrailerTrunk,
 		template = Tire/part/TireFrontLeft,

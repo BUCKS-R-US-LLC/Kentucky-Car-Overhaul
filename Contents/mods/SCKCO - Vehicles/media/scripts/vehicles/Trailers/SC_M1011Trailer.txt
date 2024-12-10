@@ -31,14 +31,14 @@ module Base
         static = TRUE,
 		scale = 0.01,
 	}
-	model M998Wheelfrontwheelleft
+	model M1011wheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		shader = vehiclewheel,
 		scale = 0.3,
 	}
-	model M998Wheelfrontwheelright
+	model M1011wheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
@@ -266,7 +266,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelfrontwheelleft,
+				file = M1011wheelleft,
 			}
 		}
 
@@ -274,7 +274,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M998Wheelfrontwheelright,
+				file = M1011wheelright,
 			}
 		}
 

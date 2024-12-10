@@ -92,28 +92,16 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model BlazerWheelLargefrontwheelleft
+	model KSerieswheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	model BlazerWheelLargefrontwheelright
+	model KSerieswheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelLargebackwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLarge_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model BlazerWheelLargebackwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLarge_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
+		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_ChevroletK10ParkRanger
@@ -661,7 +649,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -669,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 
@@ -677,7 +665,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -685,7 +673,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 

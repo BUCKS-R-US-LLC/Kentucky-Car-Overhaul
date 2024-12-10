@@ -82,15 +82,15 @@ module Base
 
 		physics box
 		{
-			offset = 0.4568 0.4074 1.3704,
-			extents = 0.1235 0.8148 0.5432,
-			rotate = 0.0000 -48.0000 0.0000,
+			offset = 0.3580 0.4074 1.4444,
+			extents = 0.1235 0.8148 0.8395,
+			rotate = 0.0000 -47.0000 0.0000,
 		}
 
 		physics box
 		{
-			offset = -0.4444 0.4074 1.3704,
-			extents = 0.0549 0.0549 0.5385,
+			offset = -0.3580 0.4074 1.4321,
+			extents = 0.1235 0.1235 0.8642,
 			rotate = -180.0000 -47.0000 -180.0000,
 		}
 
@@ -206,9 +206,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		template = Suspension/part/SuspensionFrontLeft,
