@@ -255,6 +255,10 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_ToyotaCamry"] = {index = -1, spawnChance = 10};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_Mercedes280"] = {index = -1, spawnChance = 10};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_HahnPumperRed"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_HahnPumperYellow"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_CrownFirecoachRed"] = {index = -1, spawnChance = 0.5};
+    VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_CrownFirecoachWhite"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1Burnt"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1Crashed"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.trafficjamn.vehicles["Base.SC_M35A1CrashedTurned"] = {index = -1, spawnChance = 5};
