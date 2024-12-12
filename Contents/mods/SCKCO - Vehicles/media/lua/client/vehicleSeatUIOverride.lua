@@ -123,10 +123,10 @@ function ISVehicleSeatUI:render()
 
             --if seat is being interacted with
             local mouseOver = (mouseX >= x and mouseX < x + sizeX and mouseY >= y and mouseY < y + sizeY)
-            local joyPadOver = (self.joyfocus and self.joypadSeat == seat)
+            local joyPadOver = (self.joyfocus and self.joypadSeat == seat + 1)
             local mouseOrJoyPadOver = mouseOver or joyPadOver
 
-            if mouseOrJoyPadOver then self.mouseOverSeat = seat end
+            if mouseOrJoyPadOver then self.mouseOverSeat = seat - 1 end
 
             local fillR, fillG, fillB = 0.0, 0.0, 0.0
             local outlineR, outlineG, outlineB = 0.0, 1.0, 0.0
@@ -213,7 +213,7 @@ function ISVehicleSeatUI:render()
             if canSwitch and posn then
                 local offset = posn:getOffset()
 
-                local joyPadInUse = self.joyfocus and self.joypadSeat == seat
+                local joyPadInUse = self.joyfocus and self.joypadSeat == seat + 1
 
                 local buttonTexture = joyPadInUse and Joypad.Texture.XButton or getTexture("media/ui/vehicles/vehicle_exit.png")
                 local texW,texH = buttonTexture:getWidthOrig()*aspect,buttonTexture:getHeightOrig()*aspect
@@ -221,7 +221,7 @@ function ISVehicleSeatUI:render()
                 local y = self:getHeight() / 2 - offset:get(2) * scaleY - texH / 2 + (SeatOffsetY[scriptName] or 0)
 
                 local mouseOver = not joyPadInUse and (mouseX >= x and mouseX < x + texW and mouseY >= y and mouseY < y + texH) or joyPadInUse
-                if mouseOver then self.mouseOverExit = seat end
+                if mouseOver then self.mouseOverExit = seat - 1 end
 
                 self:drawTextureScaledUniform(buttonTexture, x, y, aspect, 1,1,1,1)
 
