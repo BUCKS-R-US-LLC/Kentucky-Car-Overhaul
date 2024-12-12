@@ -322,7 +322,7 @@ local function fetchAnimForVehicle(vehicle, player)
 end
 
 
-local CharVisuals = require "SC_CharacterVisuals"
+local CharVisuals = require "SC/SC_CharacterVisuals"
 
 local enter_start = ISEnterVehicle.start
 function ISEnterVehicle:start()
