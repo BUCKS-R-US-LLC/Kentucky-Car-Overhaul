@@ -1,136 +1,98 @@
 module Base
 {
-	model SC_ChevroletSuburbanStatePolice
+	model SC_M1009Police
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model SuburbanPoliceSCDriver
+	model M1009PoliceSCDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model SuburbanPoliceSCPassenger
+	model M1009PoliceSCPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model SuburbanPoliceSCRearSeat
+	model M1009PoliceSCWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearDoubleSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|WindShield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model SuburbanPoliceSCWindshield
+	model M1009PoliceSCFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|WindShield_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model SuburbanPoliceSCFrontRightDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model SuburbanPoliceSCFrontLeftDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model SuburbanPoliceSCRearRightDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model SuburbanPoliceSCRearLeftDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
-	model SuburbanPoliceSCFrontRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model SuburbanPoliceSCFrontLeftWindow
+	model M1009PoliceSCFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model SuburbanPoliceSCMiddleRightWindow
+	model M1009PoliceSCFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|MiddleRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model SuburbanPoliceSCMiddleLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|MiddleLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model SuburbanPoliceSCRearRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightWindowBone 1.0,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model SuburbanPoliceSCRearLeftWindow
+	model M1009PoliceSCFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model M1009PoliceSCRearRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|RearRightWindow_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
-		static = FALSE,
-		boneWeight = RearLeftWindowBone 1.0,
 	}
-	model SuburbanPoliceSCTrunk
+	model M1009PoliceSCRearLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1009PoliceSCTrunk
+	{
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model SuburbanPoliceSCHood
+	model M1009PoliceSCHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLights_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSeriesfrontwheelleft
+	model KSerieswheelleft
 	{
 		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	model KSeriesfrontwheelright
+	model KSerieswheelright
 	{
 		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
@@ -148,7 +110,7 @@ module Base
 		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
 		shader = vehiclewheel,
 	}
-	vehicle SC_ChevroletSuburbanStatePolice
+	vehicle PickUpVanLightsPolice
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -157,28 +119,33 @@ module Base
 
 		model
 		{
-			file = SC_ChevroletSuburbanStatePolice,
+			file = SC_M1009Police,
 			scale = 0.6300,
-			offset = 0.0000 0.2698 0.5873,
+			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/Suburban/Vehicle_SuburbState,
+			texture = Vehicles/CUCV/Vehicle_M1009_StateBlue,
 		}
 
-		skin
+		
 		{
-			texture = Vehicles/Suburban/Vehicle_SuburbStateWhite,
+			texture = Vehicles/CUCV/Vehicle_M1009_StateWhite,
 		}
 
-		textureRust = Vehicles/Suburban/Vehicle_Suburb86_rust,
-		textureMask = Vehicles/Suburban/Vehicle_SuburbState_mask,
-		textureLights = Vehicles/Suburban/Vehicle_SuburbState_lights,
-		textureDamage1Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
-		textureDamage2Shell = Vehicles/Suburban/Vehicle_Suburb86_scratch,
-		textureDamage1Overlay = Vehicles/Suburban/Vehicle_Suburb86_blood,
-		textureDamage2Overlay = Vehicles/Suburban/Vehicle_Suburb86_blood,
+		
+		{
+			texture = Vehicles/CUCV/Vehicle_M1009_StateBlack,
+		}
+
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
 
 		lightbar
 		{
@@ -194,11 +161,19 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.9524 2.6032 7.7778,
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+
+		extents = 2.9524 2.6032 6.6032,
 		mass = 100,
-		physicsChassisShape = 2.9524 2.6032 7.7778,
+		physicsChassisShape = 2.9524 2.6032 6.6032,
 		centerOfMassOffset = 0.0000 1.3016 0.0000,
-		shadowExtents = 2.9443 7.7862,
+		shadowExtents = 2.9443 6.6116,
 		shadowOffset = 0.0000 0.0063,
 		engineForce = 4400,
 		engineQuality = 80,
@@ -217,7 +192,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 2000,
 		rearEndHealth = 1700,
-		seats = 4,
+		seats = 2,
 
 		wheel FrontLeft
 		{
@@ -238,7 +213,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2698 0.0794 -2.5397,
+			offset = 1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -246,12 +221,12 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2698 0.0794 -2.5397,
+			offset = -1.2698 0.0794 -1.6190,
 			radius = 0.50f,
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -291,107 +266,55 @@ module Base
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7460 0.9683 -1.2222,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0476 -0.2698 -1.2222,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7460 0.9683 -1.2222,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.2698 -1.0952,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
-			xywh = 0.0000 5.0476 2.9524 2.0000,
+			xywh = 0.0000 4.4127 2.9524 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.9365 2.9524 1.7460,
+			xywh = 0.0000 -4.2857 2.9524 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2063 0.8730 1.2381 1.2381,
+			xywh = 2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 0.8730 1.2381 1.2381,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.2063 -0.3651 1.2381 1.2381,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.2063 -0.3651 1.2381 1.2381,
+			xywh = -2.2063 0.2540 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 -2.7619 1.0794 0.5714,
+			xywh = -2.1270 -2.5397 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4762 2.7619 0.0000 0.0000,
+			xywh = 1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.4762 2.7619 0.0000 0.0000,
+			xywh = -1.5714 2.1587 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4762 -1.9841 0.0000 0.0000,
+			xywh = 1.5714 -1.6032 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4762 -1.9841 0.0000 0.0000,
+			xywh = -1.5714 -1.6032 0.0000 0.0000,
 		}
 
-		template = GunRack,
-		template = ChevyLogo,
-		template = SuburbanLogo,
-		template = SuburbanAttachments,
+		template = K5Logo,
+		template = K5Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -402,7 +325,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = SuburbanPoliceSCDriver,
+				file = BlazerCivilianSCDriver,
 			}
 		}
 
@@ -410,23 +333,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = SuburbanPoliceSCPassenger,
-			}
-		}
-
-		part SeatRearLeft
-		{
-			model seatrearLeft
-			{
-				file = SuburbanPoliceSCRearSeat,
-			}
-		}
-
-		part SeatRearRight
-		{
-			model seatrearRight
-			{
-				file = SuburbanPoliceSCRearSeat,
+				file = BlazerCivilianSCPassenger,
 			}
 		}
 
@@ -449,7 +356,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = SuburbanPoliceSCHood,
+				file = BlazerCivilianSCHood,
 			}
 
 			anim Close
@@ -504,41 +411,13 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
 			model windshieldFront
 			{
-				file = SuburbanPoliceSCWindshield,
+				file = BlazerCivilianSCWindshield,
 			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			itemType = Base.KSeriesWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
 
 			window
 			{
@@ -565,12 +444,8 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearLeft,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowMiddleLeft,
-		template = Window/part/WindowMiddleRight,
 		template = Window/part/WindowRearLeft,
 		template = Window/part/WindowRearRight,
 
@@ -578,7 +453,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = SuburbanPoliceSCFrontRightWindow,
+				file = BlazerCivilianSCFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -597,7 +472,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = SuburbanPoliceSCFrontLeftWindow,
+				file = BlazerCivilianSCFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -612,64 +487,21 @@ module Base
 			itemType = Base.KSeriesWindowSC,
 		}
 
-		part WindowMiddleRight
-		{
-			model windowMR
-			{
-				file = SuburbanPoliceSCMiddleRightWindow,
-			}
-
-
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			area = TireRearRight,
-			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
-		}
-
-		part WindowMiddleLeft
-		{
-			model windowML
-			{
-				file = SuburbanPoliceSCMiddleLeftWindow,
-			}
-
-
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			area = TireRearLeft,
-			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
-		}
-
 		part WindowRearLeft
 		{
 			model windowRL
 			{
-				file = SuburbanPoliceSCRearLeftWindow,
+				file = BlazerCivilianSCRearLeftWindow,
 			}
 
-			anim ClosedToOpen
-			{
-				anim = RearLeftWindowClosing,
-				animate = FALSE,
-			}
+			area = TireRearLeft,
+			parent =,
 
 			table install
 			{
 				requireInstalled =,
 			}
 
-			parent = DoorRearLeft,
-            area = DoorRearLeft,
 			category = SCUCKwindows,
 			itemType = Base.KSeriesWindowSC,
 		}
@@ -678,23 +510,17 @@ module Base
 		{
 			model windowRR
 			{
-				file = SuburbanPoliceSCRearRightWindow,
+				file = BlazerCivilianSCRearRightWindow,
 			}
 
-			anim ClosedToOpen
-			{
-				anim = RearRightWindowClosing,
-				animate = FALSE,
-			}
-
-			parent = DoorRearRight,
+			area = TireRearRight,
+			parent =,
 
 			table install
 			{
 				requireInstalled =,
 			}
 
-            area = DoorRearRight,
 			category = SCUCKwindows,
 			itemType = Base.KSeriesWindowSC,
 		}
@@ -703,7 +529,7 @@ module Base
 		{
 			model Default
 			{
-				file = SuburbanPoliceSCFrontRightDoor,
+				file = BlazerCivilianSCFrontRightDoor,
 			}
 
 			anim Close
@@ -741,7 +567,7 @@ module Base
 		{
 			model Default
 			{
-				file = SuburbanPoliceSCFrontLeftDoor,
+				file = BlazerCivilianSCFrontLeftDoor,
 			}
 
 			anim Close
@@ -768,82 +594,6 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.KSeriesDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = SuburbanPoliceSCRearRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = Base.KSeriesDoorSC,
-		}
-
-		part DoorRearLeft
-		{
-			model Default
-			{
-				file = SuburbanPoliceSCRearLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -867,7 +617,7 @@ module Base
 
 			model Default
 			{
-				file = SuburbanPoliceSCTrunk,
+				file = BlazerCivilianSCTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -922,7 +672,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -930,7 +680,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 
@@ -938,7 +688,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelleft,
+				file = KSerieswheelleft,
 			}
 		}
 
@@ -946,7 +696,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSeriesfrontwheelright,
+				file = KSerieswheelright,
 			}
 		}
 
@@ -1000,20 +750,20 @@ module Base
 		physics box
 		{
 			offset = 0.0000 1.3016 0.0159,
-			extents = 2.9524 2.5873 7.7937,
+			extents = 2.9524 2.5873 6.6190,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -4.5079,
+			offset = 0.0000 0.5238 -3.1746,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.5397 3.3175,
+			offset = -0.0159 0.5397 3.2222,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
