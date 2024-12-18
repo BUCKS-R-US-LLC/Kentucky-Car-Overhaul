@@ -1,0 +1,751 @@
+module Base
+{
+	model SC_ChevroletC70Survivalist
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model C70SurvivorDriver
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorPassenger
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorWindshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Windshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorFrontRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model C70SurvivorFrontLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model C70SurvivorFrontRightDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model C70SurvivorFrontLeftDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model C70SurvivorRearRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorRearLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorTrunk
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|TrunkDoor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model C70SurvivorRearWindshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model C70SurvivorHood
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model C70Survivorfrontwheelleft
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_FrontLeftWheel,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
+		shader = vehiclewheel,
+	}
+	model C70Survivorfrontwheelright
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_FrontRightWheel,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
+		shader = vehiclewheel,
+	}
+	model C70Survivorrearwheelleft
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_RearLeftDual,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
+		shader = vehiclewheel,
+	}
+	model C70Survivorrearwheelright
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_RearLeftDual,
+		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
+		shader = vehiclewheel,
+	}
+	vehicle SC_ChevroletC70Survivalist
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 6.0,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_ChevroletC70Survivalist,
+			scale = 0.6300,
+			offset = 0.0000 -0.1111 1.0317,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_Tan,
+		}
+
+		textureRust = Vehicles/ChevroletC70/Vehicle_C70Survivor_Rust,
+		textureMask = Vehicles/ChevroletC70/Vehicle_C70Survivor_Masks,
+		textureLights = Vehicles/ChevroletC70/Vehicle_C70Survivor_lights,
+		textureDamage1Shell = Vehicles/ChevroletC70/Vehicle_C70Survivor_scratch,
+		textureDamage2Shell = Vehicles/ChevroletC70/Vehicle_C70Survivor_scratch,
+		textureDamage1Overlay = Vehicles/ChevroletC70/Vehicle_C70Survivor_Blood,
+		textureDamage2Overlay = Vehicles/ChevroletC70/Vehicle_C70Survivor_Blood,
+
+		sound
+		{
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailStepVan,
+		}
+
+		extents = 3.4603 3.2381 9.4921,
+		mass = 800,
+		physicsChassisShape = 3.4603 3.2381 9.4921,
+		centerOfMassOffset = 0.0000 1.6190 0.1270,
+		shadowExtents = 3.9759 10.3575,
+		shadowOffset = 0.0000 0.2125,
+		engineForce = 9000,
+		engineQuality = 100,
+		engineLoudness = 120,
+		maxSpeed = 20f,
+		brakingForce = 200,
+		stoppingMovementForce = 3.0f,
+		rollInfluence = 0.20f,
+		steeringIncrement = 0.02,
+		steeringClamp = 0.5,
+		suspensionStiffness = 60,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.5f,
+		frontEndHealth = 15000,
+		rearEndHealth = 10000,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.3810 0.3968 2.9683,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.3810 0.3968 2.9683,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.0000 0.3968 -2.3810,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = 0.0000 0.3968 -4.2063,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat2,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6190 2.0317 1.2381,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0794 0.0000 1.3651,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.6190 2.0317 1.2381,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 0.0000 1.4921,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.2222 4.7619 1.2063,
+		}
+
+		area TruckBed
+		{
+			xywh = -0.0159 -5.5556 3.5556 1.5873,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.5079 2.3810 1.2381 1.2381,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.5079 2.3810 1.2381 1.2381,
+		}
+
+		area GasTank
+		{
+			xywh = -2.4286 2.5714 1.0794 0.5714,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.4921 4.0317 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.3651 4.0317 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.4286 -3.1746 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.4286 -1.3333 0.0000 0.0000,
+		}
+
+		template = GunRack,
+		template = C70SurvivorAttachments,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = C70SurvivorDriver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = C70SurvivorPassenger,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = C70SurvivorHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.ChevyC70HoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model WindshieldFront
+			{
+				file = C70SurvivorWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyC70WindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model WindshieldRear
+			{
+				file = C70SurvivorRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyC70WindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = C70SurvivorFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyC70WindowSC,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = C70SurvivorFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = Base.ChevyC70WindowSC,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = C70SurvivorFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyC70DoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = C70SurvivorFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyC70DoorSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = C70SurvivorTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = Base.ChevyC70TailGate,
+		}
+
+		part TruckBed
+		{
+			itemType = Base.BigTrunk,
+
+			container
+			{
+				capacity = 300,
+				conditionAffectsCapacity = false,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = C70Survivorfrontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = C70Survivorfrontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = C70Survivorrearwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = C70Survivorrearwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.6190 0.1270,
+			extents = 3.4603 3.2222 9.5079,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 1.2381 -5.6508,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = -0.0159 0.9841 4.1270,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
