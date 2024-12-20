@@ -93,25 +93,13 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30Vanfrontwheelleft
+	model G30Vanwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30_LeftWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		shader = vehiclewheel,
 	}
-	model G30Vanfrontwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30_RightWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
-		shader = vehiclewheel,
-	}
-	model G30Vanrearwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30_LeftWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
-		shader = vehiclewheel,
-	}
-	model G30Vanrearwheelright
+	model G30Vanwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30_RightWheel,
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
@@ -745,7 +733,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelleft,
+				file = G30Vanwheelleft,
 			}
 		}
 
@@ -753,7 +741,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanfrontwheelright,
+				file = G30Vanwheelright,
 			}
 		}
 
@@ -761,7 +749,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanrearwheelleft,
+				file = G30Vanwheelleft,
 			}
 		}
 
@@ -769,7 +757,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = G30Vanrearwheelright,
+				file = G30Vanwheelright,
 			}
 		}
 
