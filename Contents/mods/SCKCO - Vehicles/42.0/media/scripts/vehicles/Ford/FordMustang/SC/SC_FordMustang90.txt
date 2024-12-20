@@ -99,25 +99,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model MustangWheelfrontwheelleft
+	model MustangWheelwheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
 		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 		shader = vehiclewheel,
 	}
-	model MustangWheelfrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
-		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
-		shader = vehiclewheel,
-	}
-	model MustangWheelbackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_FordMustang90_LeftWheel,
-		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
-		shader = vehiclewheel,
-	}
-	model MustangWheelbackwheelright
+	model MustangWheelwheelright
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
 		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
@@ -791,7 +779,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MustangWheelfrontwheelleft,
+				file = MustangWheelwheelleft,
 			}
 		}
 
@@ -799,7 +787,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MustangWheelfrontwheelright,
+				file = MustangWheelwheelright,
 			}
 		}
 
@@ -807,7 +795,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MustangWheelbackwheelleft,
+				file = MustangWheelwheelleft,
 			}
 		}
 
@@ -815,7 +803,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MustangWheelbackwheelright,
+				file = MustangWheelwheelright,
 			}
 		}
 

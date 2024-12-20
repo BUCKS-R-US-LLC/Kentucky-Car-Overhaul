@@ -81,25 +81,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model F150frontwheelleft
+	model F150wheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	model F150frontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		shader = vehiclewheel,
-	}
-	model F150backwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		shader = vehiclewheel,
-	}
-	model F150backwheelright
+	model F150wheelright
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
@@ -681,7 +669,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelleft,
+				file = F150wheelleft,
 			}
 		}
 
@@ -689,7 +677,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelright,
+				file = F150wheelright,
 			}
 		}
 
@@ -697,7 +685,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelleft,
+				file = F150wheelleft,
 			}
 		}
 
@@ -705,7 +693,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = F150frontwheelright,
+				file = F150wheelright,
 			}
 		}
 

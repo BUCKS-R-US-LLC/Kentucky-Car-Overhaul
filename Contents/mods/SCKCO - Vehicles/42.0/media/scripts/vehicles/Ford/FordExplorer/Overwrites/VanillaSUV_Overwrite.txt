@@ -147,25 +147,13 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model FordExplorerfrontwheelleft
+	model FordExplorerwheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_LeftWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordExplorerfrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_FordExplorer_RightWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordExplorerbackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_FordExplorer_LeftWheel,
-		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordExplorerbackwheelright
+	model FordExplorerwheelright
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_RightWheel,
 		texture = vehicles/FordExplorer/Vehicle_FordExplorer_Wheel,
@@ -963,7 +951,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelleft,
+				file = FordExplorerwheelleft,
 			}
 		}
 
@@ -971,7 +959,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerfrontwheelright,
+				file = FordExplorerwheelright,
 			}
 		}
 
@@ -979,7 +967,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelleft,
+				file = FordExplorerwheelleft,
 			}
 		}
 
@@ -987,7 +975,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordExplorerbackwheelright,
+				file = FordExplorerwheelright,
 			}
 		}
 

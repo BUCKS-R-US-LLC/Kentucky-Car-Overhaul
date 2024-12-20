@@ -128,25 +128,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model FordCountrySquirefrontwheelleft
+	model FordCountrySquirewheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordCountrySquirefrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordCountrySquirebackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordCountrySquirebackwheelright
+	model FordCountrySquirewheelright
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
@@ -943,7 +931,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordCountrySquirefrontwheelleft,
+				file = FordCountrySquirewheelleft,
 			}
 		}
 
@@ -951,7 +939,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordCountrySquirefrontwheelright,
+				file = FordCountrySquirewheelright,
 			}
 		}
 
@@ -959,7 +947,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordCountrySquirebackwheelleft,
+				file = FordCountrySquirewheelleft,
 			}
 		}
 
@@ -967,7 +955,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordCountrySquirebackwheelright,
+				file = FordCountrySquirewheelright,
 			}
 		}
 

@@ -117,25 +117,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model CrownVictoria92frontwheelleft
+	model CrownVictoria92wheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_LeftWheel,
 		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
 		shader = vehiclewheel,
 	}
-	model CrownVictoria92frontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92_RightWheel,
-		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
-		shader = vehiclewheel,
-	}
-	model CrownVictoria92backwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92_LeftWheel,
-		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
-		shader = vehiclewheel,
-	}
-	model CrownVictoria92backwheelright
+	model CrownVictoria92wheelright
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_RightWheel,
 		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_Wheel,
@@ -877,7 +865,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92frontwheelleft,
+				file = CrownVictoria92wheelleft,
 			}
 		}
 
@@ -885,7 +873,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92frontwheelright,
+				file = CrownVictoria92wheelright,
 			}
 		}
 
@@ -893,7 +881,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92backwheelleft,
+				file = CrownVictoria92wheelleft,
 			}
 		}
 
@@ -901,7 +889,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoria92backwheelright,
+				file = CrownVictoria92wheelright,
 			}
 		}
 

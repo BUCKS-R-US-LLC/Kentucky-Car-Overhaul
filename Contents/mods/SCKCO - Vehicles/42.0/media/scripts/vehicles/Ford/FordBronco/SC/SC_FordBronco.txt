@@ -102,25 +102,13 @@ module Base
 		static = FALSE,
 		boneWeight = RearWindshieldBone 1.0,
 	}
-	model FordBroncofrontwheelleft
+	model FordBroncowheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordBroncofrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordBroncobackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordBroncobackwheelright
+	model FordBroncowheelright
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
@@ -811,7 +799,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordBroncofrontwheelleft,
+				file = FordBroncowheelleft,
 			}
 		}
 
@@ -819,7 +807,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordBroncofrontwheelright,
+				file = FordBroncowheelright,
 			}
 		}
 
@@ -827,7 +815,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordBroncobackwheelleft,
+				file = FordBroncowheelleft,
 			}
 		}
 
@@ -835,7 +823,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordBroncobackwheelright,
+				file = FordBroncowheelright,
 			}
 		}
 

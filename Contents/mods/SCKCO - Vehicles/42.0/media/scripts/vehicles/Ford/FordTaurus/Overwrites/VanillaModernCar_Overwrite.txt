@@ -121,25 +121,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model FordTaurusfrontwheelleft
+	model FordTauruswheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_FordTaurus86_LeftWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
 		shader = vehiclewheel,
 	}
-	model FordTaurusfrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_FordTaurus86_RightWheel,
-		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordTaurusbackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_FordTaurus86_LeftWheel,
-		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
-		shader = vehiclewheel,
-	}
-	model FordTaurusbackwheelright
+	model FordTauruswheelright
 	{
 		mesh = vehicles/Ford/Vehicle_FordTaurus86_RightWheel,
 		texture = vehicles/Taurus86/Vehicle_FordTaurus86_Wheel,
@@ -881,7 +869,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordTaurusfrontwheelleft,
+				file = FordTauruswheelleft,
 			}
 		}
 
@@ -889,7 +877,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordTaurusfrontwheelright,
+				file = FordTauruswheelright,
 			}
 		}
 
@@ -897,7 +885,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordTaurusbackwheelleft,
+				file = FordTauruswheelleft,
 			}
 		}
 
@@ -905,7 +893,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FordTaurusbackwheelright,
+				file = FordTauruswheelright,
 			}
 		}
 
