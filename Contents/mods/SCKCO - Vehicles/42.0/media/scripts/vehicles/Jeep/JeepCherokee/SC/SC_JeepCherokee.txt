@@ -154,25 +154,13 @@ module Base
 		shader = vehiclewheel,
 		scale = 1,
 	}
-	model JeepCherokeefrontwheelleft
+	model JeepCherokeewheelleft
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
 		shader = vehiclewheel,
 	}
-	model JeepCherokeefrontwheelright
-	{
-		mesh = vehicles/Jeep/Vehicle_JeepCherokee_RightWheel,
-		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		shader = vehiclewheel,
-	}
-	model JeepCherokeebackwheelleft
-	{
-		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
-		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		shader = vehiclewheel,
-	}
-	model JeepCherokeebackwheelright
+	model JeepCherokeewheelright
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_RightWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
@@ -959,7 +947,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCherokeefrontwheelleft,
+				file = JeepCherokeewheelleft,
 			}
 		}
 
@@ -967,7 +955,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCherokeefrontwheelright,
+				file = JeepCherokeewheelright,
 			}
 		}
 
@@ -975,7 +963,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCherokeebackwheelleft,
+				file = JeepCherokeewheelleft,
 			}
 		}
 
@@ -983,7 +971,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCherokeebackwheelright,
+				file = JeepCherokeewheelright,
 			}
 		}
 

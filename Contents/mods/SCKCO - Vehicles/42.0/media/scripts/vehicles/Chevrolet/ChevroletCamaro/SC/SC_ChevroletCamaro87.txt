@@ -101,25 +101,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CamaroWheelfrontwheelleft
+	model Camarowheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_LeftWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
 		shader = vehiclewheel,
 	}
-	model CamaroWheelfrontwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_RightWheel,
-		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
-		shader = vehiclewheel,
-	}
-	model CamaroWheelbackwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_LeftWheel,
-		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
-		shader = vehiclewheel,
-	}
-	model CamaroWheelbackwheelright
+	model Camarowheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_RightWheel,
 		texture = Vehicles/CamaroTTop/Vehicle_CamaroTTop_Wheel,
@@ -779,7 +767,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CamaroWheelfrontwheelleft,
+				file = Camarowheelleft,
 			}
 		}
 
@@ -787,7 +775,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CamaroWheelfrontwheelright,
+				file = Camarowheelright,
 			}
 		}
 
@@ -795,7 +783,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CamaroWheelbackwheelleft,
+				file = Camarowheelleft,
 			}
 		}
 
@@ -803,7 +791,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CamaroWheelbackwheelright,
+				file = Camarowheelright,
 			}
 		}
 

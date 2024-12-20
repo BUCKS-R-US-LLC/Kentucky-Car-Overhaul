@@ -131,25 +131,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M151frontwheelleft
+	model M151wheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
-	model M151frontwheelright
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		shader = vehiclewheel,
-	}
-	model M151backwheelleft
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		shader = vehiclewheel,
-	}
-	model M151backwheelright
+	model M151wheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
@@ -759,7 +747,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151frontwheelleft,
+				file = M151wheelleft,
 			}
 		}
 
@@ -767,7 +755,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151frontwheelright,
+				file = M151wheelright,
 			}
 		}
 
@@ -775,7 +763,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151backwheelleft,
+				file = M151wheelleft,
 			}
 		}
 
@@ -783,7 +771,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151backwheelright,
+				file = M151wheelright,
 			}
 		}
 

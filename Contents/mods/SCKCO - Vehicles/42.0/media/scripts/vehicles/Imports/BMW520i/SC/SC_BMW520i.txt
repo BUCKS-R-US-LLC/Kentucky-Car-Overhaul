@@ -111,25 +111,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model BMW520ifrontwheelleft
+	model BMW520iwheelleft
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
 		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
 		shader = vehiclewheel,
 	}
-	model BMW520ifrontwheelright
-	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
-		shader = vehiclewheel,
-	}
-	model BMW520ibackwheelleft
-	{
-		mesh = vehicles/BMW/Vehicle_520iBMW_LeftWheel,
-		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
-		shader = vehiclewheel,
-	}
-	model BMW520ibackwheelright
+	model BMW520iwheelright
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_RightWheel,
 		texture = Vehicles/520iBMW/Vehicle_520iBMW_Wheel,
@@ -868,7 +856,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelleft,
+				file = BMW520iwheelleft,
 			}
 
 		}
@@ -877,7 +865,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ifrontwheelright,
+				file = BMW520iwheelright,
 			}
 
 		}
@@ -886,7 +874,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelleft,
+				file = BMW520iwheelleft,
 			}
 
 		}
@@ -895,7 +883,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BMW520ibackwheelright,
+				file = BMW520iwheelright,
 			}
 
 		}

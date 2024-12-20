@@ -106,25 +106,13 @@ module Base
 		static = FALSE,
 		boneWeight = WheelBone 1.0,
 	}
-	model JeepCJ7frontwheelleft
+	model JeepCJ7wheelleft
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_LeftWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		shader = vehiclewheel,
 	}
-	model JeepCJ7frontwheelright
-	{
-		mesh = vehicles/Jeep/Vehicle_JeepCJ7_RightWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		shader = vehiclewheel,
-	}
-	model JeepCJ7backwheelleft
-	{
-		mesh = vehicles/Jeep/Vehicle_JeepCJ7_LeftWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		shader = vehiclewheel,
-	}
-	model JeepCJ7backwheelright
+	model JeepCJ7wheelright
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_RightWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
@@ -662,7 +650,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7frontwheelleft,
+				file = JeepCJ7wheelleft,
 			}
 		}
 
@@ -670,7 +658,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7frontwheelright,
+				file = JeepCJ7wheelright,
 			}
 		}
 
@@ -678,7 +666,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7backwheelleft,
+				file = JeepCJ7wheelleft,
 			}
 		}
 
@@ -686,7 +674,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = JeepCJ7backwheelright,
+				file = JeepCJ7wheelright,
 			}
 		}
 

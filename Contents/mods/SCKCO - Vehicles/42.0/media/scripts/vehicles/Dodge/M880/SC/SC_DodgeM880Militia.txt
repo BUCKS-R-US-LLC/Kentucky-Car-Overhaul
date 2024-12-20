@@ -91,25 +91,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M880Wheelfrontwheelleft
+	model M880wheelleft
 	{
 		mesh = vehicles/Dodge/Vehicle_M880_LeftWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 		shader = vehiclewheel,
 	}
-	model M880Wheelfrontwheelright
-	{
-		mesh = vehicles/Dodge/Vehicle_M880_RightWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
-		shader = vehiclewheel,
-	}
-	model M880Wheelbackwheelleft
-	{
-		mesh = vehicles/Dodge/Vehicle_M880_LeftWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
-		shader = vehiclewheel,
-	}
-	model M880Wheelbackwheelright
+	model M880wheelright
 	{
 		mesh = vehicles/Dodge/Vehicle_M880_RightWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
@@ -669,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880Wheelfrontwheelleft,
+				file = M880wheelleft,
 			}
 		}
 
@@ -677,7 +665,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880Wheelfrontwheelright,
+				file = M880wheelright,
 			}
 		}
 
@@ -685,7 +673,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880Wheelfrontwheelleft,
+				file = M880wheelleft,
 			}
 		}
 
@@ -693,7 +681,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880Wheelfrontwheelright,
+				file = M880wheelright,
 			}
 		}
 

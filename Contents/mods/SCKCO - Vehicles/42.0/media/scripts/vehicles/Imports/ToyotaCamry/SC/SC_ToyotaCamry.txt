@@ -121,25 +121,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model ToyotaCamryfrontwheelleft
+	model ToyotaCamrywheelleft
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_LeftWheel,
 		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
 		shader = vehiclewheel,
 	}
-	model ToyotaCamryfrontwheelright
-	{
-		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_RightWheel,
-		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
-		shader = vehiclewheel,
-	}
-	model ToyotaCamrybackwheelleft
-	{
-		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_LeftWheel,
-		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
-		shader = vehiclewheel,
-	}
-	model ToyotaCamrybackwheelright
+	model ToyotaCamrywheelright
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_RightWheel,
 		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
@@ -875,7 +863,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ToyotaCamryfrontwheelleft,
+				file = ToyotaCamrywheelleft,
 			}
 		}
 
@@ -883,7 +871,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ToyotaCamryfrontwheelright,
+				file = ToyotaCamrywheelright,
 			}
 		}
 
@@ -891,7 +879,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ToyotaCamrybackwheelleft,
+				file = ToyotaCamrywheelleft,
 			}
 		}
 
@@ -899,7 +887,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = ToyotaCamrybackwheelright,
+				file = ToyotaCamrywheelright,
 			}
 		}
 

@@ -113,25 +113,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Capricefrontwheelleft
+	model Capricewheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Capricefrontwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model Capricebackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-		shader = vehiclewheel,
-	}
-	model Capricebackwheelright
+	model Capricewheelright
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
 		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
@@ -868,7 +856,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelleft,
+				file = Caprice9C1wheelleft,
 			}
 		}
 
@@ -876,7 +864,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1frontwheelright,
+				file = Caprice9C1wheelright,
 			}
 		}
 
@@ -884,7 +872,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelleft,
+				file = Caprice9C1wheelleft,
 			}
 		}
 
@@ -892,7 +880,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Caprice9C1backwheelright,
+				file = Caprice9C1wheelright,
 			}
 		}
 

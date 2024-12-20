@@ -120,25 +120,13 @@ module Base
 		static = false,
 		scale = 1,
 	}
-	model PlymouthVoyagerfrontwheelleft
+	model PlymouthVoyagerwheelleft
 	{
 		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_LeftWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 		shader = vehiclewheel,
 	}
-	model PlymouthVoyagerfrontwheelright
-	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_RightWheel,
-		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
-		shader = vehiclewheel,
-	}
-	model PlymouthVoyagerbackwheelleft
-	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_LeftWheel,
-		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
-		shader = vehiclewheel,
-	}
-	model PlymouthVoyagerbackwheelright
+	model PlymouthVoyagerwheelright
 	{
 		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_RightWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
@@ -1191,7 +1179,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = PlymouthVoyagerfrontwheelleft,
+				file = PlymouthVoyagerwheelleft,
 			}
 		}
 
@@ -1199,7 +1187,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = PlymouthVoyagerfrontwheelright,
+				file = PlymouthVoyagerwheelright,
 			}
 		}
 
@@ -1207,7 +1195,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = PlymouthVoyagerbackwheelleft,
+				file = PlymouthVoyagerwheelleft,
 			}
 		}
 
@@ -1215,7 +1203,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = PlymouthVoyagerbackwheelright,
+				file = PlymouthVoyagerwheelright,
 			}
 		}
 

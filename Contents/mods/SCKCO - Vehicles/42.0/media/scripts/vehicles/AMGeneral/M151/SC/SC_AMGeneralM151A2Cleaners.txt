@@ -37,7 +37,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M151FrontRightWindow
+	model M151RightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -45,7 +45,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M151FrontLeftWindow
+	model M151LeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -105,7 +105,7 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M151FrontRightDoor
+	model M151RightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -114,7 +114,7 @@ module Base
 		boneWeight = FrontRightDoor1 1.0,
 		boneWeight = FrontRightDoor2 1.0,
 	}
-	model M151FrontLeftDoor
+	model M151LeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -131,25 +131,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M151frontwheelleft
+	model M151wheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
 		shader = vehiclewheel,
 	}
-	model M151frontwheelright
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		shader = vehiclewheel,
-	}
-	model M151backwheelleft
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		shader = vehiclewheel,
-	}
-	model M151backwheelright
+	model M151wheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
@@ -582,7 +570,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M151FrontRightWindow,
+				file = M151RightWindow,
 			}
 
 			anim ClosedToOpen
@@ -606,7 +594,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M151FrontLeftWindow,
+				file = M151LeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -630,7 +618,7 @@ module Base
 		{
 			model Default
 			{
-				file = M151FrontRightDoor,
+				file = M151RightDoor,
 			}
 
 			anim Close
@@ -668,7 +656,7 @@ module Base
 		{
 			model Default
 			{
-				file = M151FrontLeftDoor,
+				file = M151LeftDoor,
 			}
 
 			anim Close
@@ -709,7 +697,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151frontwheelleft,
+				file = M151wheelleft,
 			}
 		}
 
@@ -717,7 +705,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151frontwheelright,
+				file = M151wheelright,
 			}
 		}
 
@@ -725,7 +713,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151backwheelleft,
+				file = M151wheelleft,
 			}
 		}
 
@@ -733,7 +721,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M151backwheelright,
+				file = M151wheelright,
 			}
 		}
 

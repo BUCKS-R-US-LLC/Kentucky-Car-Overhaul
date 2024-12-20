@@ -101,25 +101,13 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model HondaAccordfrontwheelleft
+	model HondaAccordwheelleft
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_LeftWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
 		shader = vehiclewheel,
 	}
-	model HondaAccordfrontwheelright
-	{
-		mesh = vehicles/Honda/Vehicle_HondaAccord_RightWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
-		shader = vehiclewheel,
-	}
-	model HondaAccordbackwheelleft
-	{
-		mesh = vehicles/Honda/Vehicle_HondaAccord_LeftWheel,
-		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
-		shader = vehiclewheel,
-	}
-	model HondaAccordbackwheelright
+	model HondaAccordwheelright
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_RightWheel,
 		texture = vehicles/HondaAccord/Vehicle_HondaAccord_SC_Wheel,
@@ -187,7 +175,7 @@ module Base
 		}
 
 		extents = 2.2727 1.5758 5.7273,
-		mass = 50,
+		mass = 500,
 		physicsChassisShape = 2.2727 1.5758 5.7273,
 		centerOfMassOffset = 0.0000 0.8182 0.1818,
 		shadowExtents = 2.2749 5.7541,
@@ -786,7 +774,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelleft,
+				file = HondaAccordwheelleft,
 			}
 		}
 
@@ -794,7 +782,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordfrontwheelright,
+				file = HondaAccordwheelright,
 			}
 		}
 
@@ -802,7 +790,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelleft,
+				file = HondaAccordwheelleft,
 			}
 		}
 
@@ -810,7 +798,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = HondaAccordbackwheelright,
+				file = HondaAccordwheelright,
 			}
 		}
 

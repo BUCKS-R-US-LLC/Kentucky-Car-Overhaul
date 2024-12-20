@@ -121,25 +121,13 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model Mercedes280frontwheelleft
+	model Mercedes280wheelleft
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_LeftWheel,
 		texture = vehicles/Mercedes280/Vehicle_Mercedes280_SC_Wheel,
 		shader = vehiclewheel,
 	}
-	model Mercedes280frontwheelright
-	{
-		mesh = vehicles/Mercedes/Vehicle_Mercedes280_RightWheel,
-		texture = vehicles/Mercedes280/Vehicle_Mercedes280_SC_Wheel,
-		shader = vehiclewheel,
-	}
-	model Mercedes280backwheelleft
-	{
-		mesh = vehicles/Mercedes/Vehicle_Mercedes280_LeftWheel,
-		texture = vehicles/Mercedes280/Vehicle_Mercedes280_SC_Wheel,
-		shader = vehiclewheel,
-	}
-	model Mercedes280backwheelright
+	model Mercedes280wheelright
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_RightWheel,
 		texture = vehicles/Mercedes280/Vehicle_Mercedes280_SC_Wheel,
@@ -886,7 +874,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Mercedes280frontwheelleft,
+				file = Mercedes280wheelleft,
 			}
 		}
 
@@ -894,7 +882,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Mercedes280frontwheelright,
+				file = Mercedes280wheelright,
 			}
 		}
 
@@ -902,7 +890,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Mercedes280backwheelleft,
+				file = Mercedes280wheelleft,
 			}
 		}
 
@@ -910,7 +898,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Mercedes280backwheelright,
+				file = Mercedes280wheelright,
 			}
 		}
 
