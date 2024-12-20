@@ -123,25 +123,13 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model VWRabbitfrontwheelleft
+	model VWRabbitwheelleft
 	{
 		mesh = vehicles/VW/Vehicle_VWRabbit_LeftWheel,
 		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
 		shader = vehiclewheel,
 	}
-	model VWRabbitfrontwheelright
-	{
-		mesh = vehicles/VW/Vehicle_VWRabbit_RightWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
-		shader = vehiclewheel,
-	}
-	model VWRabbitbackwheelleft
-	{
-		mesh = vehicles/VW/Vehicle_VWRabbit_LeftWheel,
-		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
-		shader = vehiclewheel,
-	}
-	model VWRabbitbackwheelright
+	model VWRabbitwheelright
 	{
 		mesh = vehicles/VW/Vehicle_VWRabbit_RightWheel,
 		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
@@ -894,7 +882,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitfrontwheelleft,
+				file = VWRabbitwheelleft,
 			}
 		}
 
@@ -902,7 +890,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitfrontwheelright,
+				file = VWRabbitwheelright,
 			}
 		}
 
@@ -910,7 +898,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitbackwheelleft,
+				file = VWRabbitwheelleft,
 			}
 		}
 
@@ -918,7 +906,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = VWRabbitbackwheelright,
+				file = VWRabbitwheelright,
 			}
 		}
 

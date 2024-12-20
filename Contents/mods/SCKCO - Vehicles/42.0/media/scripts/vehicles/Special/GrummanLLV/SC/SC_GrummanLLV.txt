@@ -96,28 +96,14 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model GrummanLLVfrontwheelleft
+	model GrummanLLVwheelleft
 	{
 		mesh = vehicles/Special/Vehicle_Grum_LeftWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
 		shader = vehiclewheel,
 		scale = 0.8,
 	}
-	model GrummanLLVfrontwheelright
-	{
-		mesh = vehicles/Special/Vehicle_Grum_RightWheel,
-		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
-		shader = vehiclewheel,
-		scale = 0.8,
-	}
-	model GrummanLLVbackwheelleft
-	{
-		mesh = vehicles/Special/Vehicle_Grum_LeftWheel,
-		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
-		shader = vehiclewheel,
-		scale = 0.8,
-	}
-	model GrummanLLVbackwheelright
+	model GrummanLLVwheelright
 	{
 		mesh = vehicles/Special/Vehicle_Grum_RightWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
@@ -621,7 +607,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GrummanLLVfrontwheelleft,
+				file = GrummanLLVwheelleft,
 			}
 		}
 
@@ -629,7 +615,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GrummanLLVfrontwheelright,
+				file = GrummanLLVwheelright,
 			}
 		}
 
@@ -637,7 +623,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GrummanLLVbackwheelleft,
+				file = GrummanLLVwheelleft,
 			}
 		}
 
@@ -645,7 +631,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GrummanLLVbackwheelright,
+				file = GrummanLLVwheelright,
 			}
 		}
 

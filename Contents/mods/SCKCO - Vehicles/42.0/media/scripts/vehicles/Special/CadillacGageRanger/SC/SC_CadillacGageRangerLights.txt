@@ -93,25 +93,13 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CadillacGageRangerLightsWheelfrontwheelleft
+	model CadillacGageRangerLightswheelleft
 	{
 		mesh = vehicles/Special/Vehicle_Ranger_LeftWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
 		shader = vehiclewheel,
 	}
-	model CadillacGageRangerLightsWheelfrontwheelright
-	{
-		mesh = vehicles/Special/Vehicle_Ranger_RightWheel,
-		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
-		shader = vehiclewheel,
-	}
-	model CadillacGageRangerLightsWheelbackwheelleft
-	{
-		mesh = vehicles/Special/Vehicle_Ranger_LeftWheel,
-		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
-		shader = vehiclewheel,
-	}
-	model CadillacGageRangerLightsWheelbackwheelright
+	model CadillacGageRangerLightswheelright
 	{
 		mesh = vehicles/Special/Vehicle_Ranger_RightWheel,
 		texture = Vehicles/CadillacRang/Vehicle_RangerSC_wheel,
@@ -842,7 +830,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacGageRangerLightsWheelfrontwheelleft,
+				file = CadillacGageRangerLightswheelleft,
 			}
 		}
 
@@ -850,7 +838,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacGageRangerLightsWheelfrontwheelright,
+				file = CadillacGageRangerLightswheelright,
 			}
 		}
 
@@ -858,7 +846,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacGageRangerLightsWheelbackwheelleft,
+				file = CadillacGageRangerLightswheelleft,
 			}
 		}
 
@@ -866,7 +854,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacGageRangerLightsWheelbackwheelright,
+				file = CadillacGageRangerLightswheelright,
 			}
 		}
 

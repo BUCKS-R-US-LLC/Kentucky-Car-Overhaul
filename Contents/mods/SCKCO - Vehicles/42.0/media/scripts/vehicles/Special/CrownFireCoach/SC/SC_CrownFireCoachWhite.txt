@@ -142,28 +142,16 @@ module Base
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model FireCoachfrontwheelwhiteleft
+	model FireCoachwheelwhiteleft
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_FrontLeft,
 		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteFrontWheel,
 		shader = vehiclewheel,
 	}
-	model FireCoachfrontwheelwhiteright
+	model FireCoachwheelwhiteright
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_FrontRight,
 		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteFrontWheel,
-		shader = vehiclewheel,
-	}
-	model FireCoachbackwheelwhiteleft
-	{
-		mesh = vehicles/Special/Vehicle_FireCoach_RearLeft,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteRearWheel,
-		shader = vehiclewheel,
-	}
-	model FireCoachbackwheelwhiteright
-	{
-		mesh = vehicles/Special/Vehicle_FireCoach_RearRight,
-		texture = vehicles/FireCoach/Vehicle_FireCoach_WhiteRearWheel,
 		shader = vehiclewheel,
 	}
 	vehicle SC_CrownFireCoachWhite
@@ -991,7 +979,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachfrontwheelwhiteleft,
+				file = FireCoachwheelwhiteleft,
 			}
 		}
 
@@ -999,7 +987,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachfrontwheelwhiteright,
+				file = FireCoachwheelwhiteright,
 			}
 		}
 
@@ -1007,7 +995,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachbackwheelwhiteleft,
+				file = FireCoachwheelwhiteleft,
 			}
 		}
 
@@ -1015,7 +1003,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = FireCoachbackwheelwhiteright,
+				file = FireCoachwheelwhiteright,
 			}
 		}
 
