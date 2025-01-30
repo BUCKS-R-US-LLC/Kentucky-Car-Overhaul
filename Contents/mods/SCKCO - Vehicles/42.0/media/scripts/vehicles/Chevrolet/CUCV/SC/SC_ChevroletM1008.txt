@@ -95,25 +95,11 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		
 	}
 	model CUCVwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		
-	}
-	model CUCVwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_LeftWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		
-	}
-	model CUCVwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
-		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
-		
 	}
 	vehicle SC_ChevroletM1008
 	{
@@ -647,7 +633,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -655,7 +641,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 
@@ -663,7 +649,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelleft,
+				file = CUCVwheelleft,
 			}
 		}
 
@@ -671,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = BlazerWheelLargefrontwheelright,
+				file = CUCVwheelright,
 			}
 		}
 
