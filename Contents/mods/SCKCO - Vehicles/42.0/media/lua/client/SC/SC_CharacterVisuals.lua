@@ -103,8 +103,10 @@ function characterVisualHandler.process(character)
             charModData.sc_storedHairModel = charModData.sc_storedHairModel or charHairModel
         end
         character:resetModel()
-        sendVisual(character)
-        sendClothing(character)
+        --TODO: WAIT FOR B42-MP TO TOUCH THIS
+        ---IN B41 THESE METHODS ARE FIRED FROM CLIENT, IN B42 IT SUGGESTS BEING FIRED FROM SERVER
+        --sendVisual(character)
+        --sendClothing(character)
     end
 
     wornItems:copyFrom(_wornItems)
@@ -115,8 +117,10 @@ function characterVisualHandler.process(character)
             charModData.sc_storedHairModel = nil
         end
         character:resetModel()
-        sendVisual(character)
-        sendClothing(character)
+        --TODO: WAIT FOR B42-MP TO TOUCH THIS
+        ---IN B41 THESE METHODS ARE FIRED FROM CLIENT, IN B42 IT SUGGESTS BEING FIRED FROM SERVER
+        --sendVisual(character)
+        --sendClothing(character)
     end
 
 end
