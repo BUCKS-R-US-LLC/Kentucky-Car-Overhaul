@@ -57,21 +57,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = MazdaBBumper, }
-            itemType = Base.MazdaB2000BumperSC,
+            itemType = SCKCO.MazdaB2000BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = MazdaBWindshieldArmor, }
-            itemType = Base.MazdaB2000WindshieldArmorSC,
+            itemType = SCKCO.MazdaB2000WindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = MazdaBFRWA, }
-            itemType = Base.MazdaB2000WindowArmorSC,
+            itemType = SCKCO.MazdaB2000WindowArmorSC,
             requireInstalled = MazdaMazdaBDoorArmorSC,
         }
 
@@ -79,7 +79,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = MazdaBFLWA, }
-            itemType = Base.MazdaB2000WindowArmorSC,
+            itemType = SCKCO.MazdaB2000WindowArmorSC,
             requireInstalled = MazdaMazdaBDoorArmorSC,
         }
 
@@ -87,14 +87,14 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = MazdaBFrontRightDoorArmor, }
-            itemType = Base.MazdaB2000DoorArmorSC,
+            itemType = SCKCO.MazdaB2000DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = MazdaBFrontLeftDoorArmor, }
-            itemType = Base.MazdaB2000DoorArmorSC,
+            itemType = SCKCO.MazdaB2000DoorArmorSC,
         }
 
     }

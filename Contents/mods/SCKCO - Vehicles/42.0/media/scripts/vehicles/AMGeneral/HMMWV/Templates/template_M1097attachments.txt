@@ -124,7 +124,7 @@ module Base
         {
             model Default { file = M1097Bullbar, }
 			lua { create = Vehicles.Create.Default, }
-            itemType = Base.HMMWVBumperSC,
+            itemType = SCKCO.HMMWVBumperSC,
 
 			table armorBehavior
             {
@@ -138,7 +138,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1097FrontRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -150,7 +150,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1097FrontLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -162,7 +162,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M1097FrontRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -174,7 +174,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M1097FrontLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -186,7 +186,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = M1097RearRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 			
 			table armorBehavior
             {
@@ -198,7 +198,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = M1097RearLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -210,7 +210,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M1097RearRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -222,7 +222,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M1097RearLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -234,7 +234,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M1097WindshieldArmor, }
-            itemType = Base.HMMWVWindshieldArmorSC,
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
 
 			table armorBehavior
             {
@@ -253,7 +253,7 @@ module Base
         {
             model Default { file = M1097Bullbar, }
 			lua { create = Vehicles.Create.Default, }
-            itemType = Base.HMMWVBumperSC,
+            itemType = SCKCO.HMMWVBumperSC,
 
 			table armorBehavior
             {
@@ -267,7 +267,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M1097FrontRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -279,7 +279,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M1097FrontLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 			
 			table armorBehavior
             {
@@ -291,7 +291,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M1097WindshieldArmor, }
-            itemType = Base.HMMWVWindshieldArmorSC,
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
 
 			table armorBehavior
             {
@@ -303,7 +303,7 @@ module Base
 		{
 			model Default { file = M1097BumperAssembly, }
 			category = nodisplay,
-			itemType = Base.HMMWVBumperAssemblySC,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
 
 			lua
 			{
@@ -315,7 +315,7 @@ module Base
 		part M1097RearCurtain
 		{
 			model Default { file = M1097RearCurtain, }
-			itemType = Base.M1097RearCurtainSC,
+			itemType = SCKCO.M1097RearCurtainSC,
             category = SCUCKaccessories,
 
 			table install
@@ -336,7 +336,7 @@ module Base
 		part M1097TarpCage
 		{
 			model Default { file = M1097TarpCage, }
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
             category = SCUCKaccessories,
 
 			table install
@@ -358,7 +358,7 @@ module Base
 		{
 			model Default { file = M1097RearSeats, }
 			category = nodisplay,
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
 
 			table install
 			{
@@ -382,7 +382,7 @@ module Base
 		part M1097FrontSoftTop
 		{
 			model Default { file = M1097TopCoverGreen, }
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
             category = SCUCKaccessories,
 
 			table install
@@ -403,7 +403,7 @@ module Base
 		part M1097RearSoftTop
 		{
 			model Default { file = M1097RearTarpGreen, }
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
             category = SCUCKaccessories,
 
 			table install
@@ -428,7 +428,7 @@ module Base
 		part M1097FrontSoftTop
 		{
 			model Default { file = M1097TopCoverTan, }
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
             category = SCUCKaccessories,
 
 			table install
@@ -449,7 +449,7 @@ module Base
 		part M1097RearSoftTop
 		{
 			model Default { file = M1097RearTarpTan, }
-			itemType = Base.M998SoftTopSC,
+			itemType = SCKCO.M998SoftTopSC,
             category = SCUCKaccessories,
 
 			table install

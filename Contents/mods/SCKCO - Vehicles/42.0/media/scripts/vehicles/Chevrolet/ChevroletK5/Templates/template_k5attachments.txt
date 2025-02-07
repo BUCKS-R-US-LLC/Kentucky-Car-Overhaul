@@ -57,7 +57,7 @@ module Base
 				}
 		area = Engine,
         category = nodisplay,
-        itemType = Base.NormalCarSeat,
+        itemType = SCKCO.NormalCarSeat,
         mechanicRequireKey = false,
 		table install
             {
@@ -104,7 +104,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = K5Bullbar, }
-            itemType = Base.KSeriesBumperSC,
+            itemType = SCKCO.KSeriesBumperSC,
 
             table partVariation
             {
@@ -120,21 +120,21 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = K5FrontRightWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = K5FrontLeftWindowArmor, }
-            itemType = Base.KSeriesWindowArmorSC,
+            itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = K5WindshieldArmor, }
-            itemType = Base.KSeriesWindshieldArmorSC,
+            itemType = SCKCO.KSeriesWindshieldArmorSC,
         }
     }
 }

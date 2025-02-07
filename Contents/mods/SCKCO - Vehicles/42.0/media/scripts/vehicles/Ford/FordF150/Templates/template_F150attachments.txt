@@ -56,21 +56,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = F150Bumper, }
-            itemType = Base.FordF150BumperSC,
+            itemType = SCKCO.FordF150BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = F150WindshieldArmor, }
-            itemType = Base.FordF150WindshieldArmorSC,
+            itemType = SCKCO.FordF150WindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = F150FRWA, }
-            itemType = Base.FordF150DoorArmorSC,
+            itemType = SCKCO.FordF150DoorArmorSC,
             requireInstalled = FordF150WindowArmorSC,
         }
 
@@ -78,7 +78,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = F150FLWA, }
-            itemType = Base.FordF150WindowArmorSC,
+            itemType = SCKCO.FordF150WindowArmorSC,
             requireInstalled = FordF150WindowArmorSC,
         }
 
@@ -86,14 +86,14 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = F150FrontRightDoorArmor, }
-            itemType = Base.FordF150DoorArmorSC,
+            itemType = SCKCO.FordF150DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = F150FrontLeftDoorArmor, }
-            itemType = Base.FordF150DoorArmorSC,
+            itemType = SCKCO.FordF150DoorArmorSC,
         }
 
     }

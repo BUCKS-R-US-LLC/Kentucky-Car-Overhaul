@@ -367,7 +367,7 @@ module Base
 		{
 			area = SeatRearRight,
 			category = nodisplay,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 
@@ -480,7 +480,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyP30HoodSC,
+			itemType = SCKCO.ChevyP30HoodSC,
 		}
 
 		part Heater
@@ -519,7 +519,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyP30WindshieldSC,
+			itemType = SCKCO.ChevyP30WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -547,7 +547,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyP30WindowSC,
+			itemType = SCKCO.ChevyP30WindowSC,
 		}
 
 		template = P30Attachments,
@@ -573,7 +573,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.ChevyP30WindowSC,
+			itemType = SCKCO.ChevyP30WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -591,7 +591,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.ChevyP30WindowSC,
+			itemType = SCKCO.ChevyP30WindowSC,
 		}
 
 		part DoorFrontRight
@@ -629,7 +629,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyP30DoorSC,
+			itemType = SCKCO.ChevyP30DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -667,7 +667,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyP30DoorSC,
+			itemType = SCKCO.ChevyP30DoorSC,
 		}
 
 		part DoorRearRight
@@ -705,13 +705,13 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyP30DoorSC,
+			itemType = SCKCO.ChevyP30DoorSC,
 		}
 
 		part DoorRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.ChevyP30DoorSC,
+			itemType = SCKCO.ChevyP30DoorSC,
 		}
 
 		template = Tire,

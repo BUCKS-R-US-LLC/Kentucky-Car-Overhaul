@@ -324,8 +324,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -375,7 +373,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordF700HoodSC,
+			itemType = SCKCO.FordF700HoodSC,
 		}
 
 		part Heater
@@ -419,7 +417,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF700WindshieldSC,
+			itemType = SCKCO.FordF700WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -450,7 +448,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordF700WindshieldSC,
+			itemType = SCKCO.FordF700WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -474,7 +472,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordF700WindowSC,
+			itemType = SCKCO.FordF700WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -493,7 +491,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordF700WindowSC,
+			itemType = SCKCO.FordF700WindowSC,
 		}
 
 		part DoorFrontRight
@@ -531,7 +529,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = SCKCO.FordF700DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -569,7 +567,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700DoorSC,
+			itemType = SCKCO.FordF700DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -622,7 +620,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordF700BoxTruckRollUpDoorSC,
+			itemType = SCKCO.FordF700BoxTruckRollUpDoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -631,8 +629,6 @@ module Base
 
 		part TruckBed
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 300,

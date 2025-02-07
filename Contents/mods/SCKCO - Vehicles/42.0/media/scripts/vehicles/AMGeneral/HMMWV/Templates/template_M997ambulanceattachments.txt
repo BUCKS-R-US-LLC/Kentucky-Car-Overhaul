@@ -98,7 +98,7 @@ module Base
         {
             model Default { file = M997BumperAssembly, }
             category = nodisplay,
-            itemType = Base.HMMWVBumperAssemblySC,
+            itemType = SCKCO.HMMWVBumperAssemblySC,
 
             lua
             {
@@ -110,7 +110,7 @@ module Base
         {
             model Default { file = M997Bullbar, }
             lua { create = Vehicles.Create.Default, }
-            itemType = Base.HMMWVBumperSC,
+            itemType = SCKCO.HMMWVBumperSC,
 
             table armorBehavior
             {
@@ -124,7 +124,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M997FrontRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
             {
@@ -136,7 +136,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M997FrontLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
             {
@@ -148,7 +148,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M997FrontRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
             {
@@ -160,7 +160,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M997FrontLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
             {
@@ -172,7 +172,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M997WindshieldArmor, }
-            itemType = Base.HMMWVWindshieldArmorSC,
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
 
             table armorBehavior
             {
@@ -183,7 +183,7 @@ module Base
         part M997Stretchers
         {
             model Default { file = M997Stretchers, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
             category = nodisplay,
 
             table install
@@ -206,7 +206,7 @@ module Base
         part M997Top
         {
             model Default { file = M997AmbulanceTopGreen, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
             category = nodisplay,
 
             table install
@@ -229,7 +229,7 @@ module Base
         part M997Top
         {
             model Default { file = M997AmbulanceTopTan, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
             category = nodisplay,
 
             table install
@@ -252,7 +252,7 @@ module Base
         part M997Top
         {
             model Default { file = M997AmbulanceTop3Tone, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
             category = nodisplay,
 
             table install

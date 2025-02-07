@@ -401,7 +401,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.FordOBSHoodSC,
+			itemType = SCKCO.FordOBSHoodSC,
 		}
 
 		part Heater
@@ -445,7 +445,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordOBSWindshieldSC,
+			itemType = SCKCO.FordOBSWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -476,7 +476,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.FordOBSWindshieldSC,
+			itemType = SCKCO.FordOBSWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -500,7 +500,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.FordOBSWindowSC,
+			itemType = SCKCO.FordOBSWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -519,7 +519,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.FordOBSWindowSC,
+			itemType = SCKCO.FordOBSWindowSC,
 		}
 
 		part DoorFrontRight
@@ -557,7 +557,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordOBSDoorSC,
+			itemType = SCKCO.FordOBSDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -595,7 +595,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordOBSDoorSC,
+			itemType = SCKCO.FordOBSDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -648,7 +648,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.FordOBSTrunkLidSC,
+			itemType = SCKCO.FordOBSTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -657,8 +657,6 @@ module Base
 
 		part TruckBedOpen
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 100,

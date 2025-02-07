@@ -73,21 +73,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = BroncoBumper, }
-            itemType = Base.FordOBSBumperSC,
+            itemType = SCKCO.FordOBSBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = BroncoWindshieldArmor, }
-            itemType = Base.FordOBSWindshieldArmorSC,
+            itemType = SCKCO.FordOBSWindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = BroncoFRWA, }
-            itemType = Base.FordOBSWindowArmorSC,
+            itemType = SCKCO.FordOBSWindowArmorSC,
             requireInstalled = FordF150DoorArmorSC,
         }
 
@@ -95,7 +95,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = BroncoFLWA, }
-            itemType = Base.FordOBSWindowArmorSC,
+            itemType = SCKCO.FordOBSWindowArmorSC,
             requireInstalled = FordF150DoorArmorSC,
         }
 
@@ -103,28 +103,28 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = BroncoRRWA, }
-            itemType = Base.FordOBSWindowArmorSC,
+            itemType = SCKCO.FordOBSWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
         part SCArmorRearLeftWindow
         {
             model Default { file = BroncoRLWA, }
-            itemType = Base.FordOBSWindowArmorSC,
+            itemType = SCKCO.FordOBSWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = BroncoFrontRightDoorArmor, }
-            itemType = Base.FordOBSDoorArmorSC,
+            itemType = SCKCO.FordOBSDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = BroncoFrontLeftDoorArmor, }
-            itemType = Base.FordOBSDoorArmorSC,
+            itemType = SCKCO.FordOBSDoorArmorSC,
         }
 
     }

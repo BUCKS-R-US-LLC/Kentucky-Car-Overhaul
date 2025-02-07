@@ -57,7 +57,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = G30WindowlessBumper, }
-            itemType = Base.ChevyG30BumperSC,
+            itemType = SCKCO.ChevyG30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
@@ -65,7 +65,7 @@ module Base
         {
             parent = WindowFrontRight,
             model Default { file = G30WindowlessFrontRightWindowArmor, }
-            itemType = Base.ChevyG30WindowArmorSC,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -73,28 +73,28 @@ module Base
         {
             parent = WindowFrontLeft,
             model Default { file = G30WindowlessFrontLeftWindowArmor, }
-            itemType = Base.ChevyG30WindowArmorSC,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = G30WindowlessFrontRightDoorArmor, }
-            itemType = Base.ChevyG30DoorArmorSC,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = G30WindowlessFrontLeftDoorArmor, }
-            itemType = Base.ChevyG30DoorArmorSC,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = G30WindowlessWindshieldArmor, }
-            itemType = Base.ChevyG30WindshieldArmorSC,
+            itemType = SCKCO.ChevyG30WindshieldArmorSC,
         }
     }
 

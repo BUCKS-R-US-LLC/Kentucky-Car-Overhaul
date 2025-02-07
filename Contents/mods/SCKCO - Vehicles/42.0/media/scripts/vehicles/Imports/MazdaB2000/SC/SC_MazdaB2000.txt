@@ -334,8 +334,6 @@ module Base
 			{
 				recipes = Intermediate Mechanics,
 			}
-
-			itemType = Base.NormalCarMuffler,
 		}
 
 		template = EngineDoor,
@@ -385,7 +383,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.MazdaB2000HoodSC,
+			itemType = SCKCO.MazdaB2000HoodSC,
 		}
 
 		part Heater
@@ -429,7 +427,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.MazdaB2000WindshieldSC,
+			itemType = SCKCO.MazdaB2000WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -460,7 +458,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.MazdaB2000WindshieldSC,
+			itemType = SCKCO.MazdaB2000WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -484,7 +482,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.MazdaB2000WindowSC,
+			itemType = SCKCO.MazdaB2000WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -503,7 +501,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.MazdaB2000WindowSC,
+			itemType = SCKCO.MazdaB2000WindowSC,
 		}
 
 		part DoorFrontRight
@@ -541,7 +539,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.MazdaB2000DoorSC,
+			itemType = SCKCO.MazdaB2000DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -579,7 +577,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.MazdaB2000DoorSC,
+			itemType = SCKCO.MazdaB2000DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -632,23 +630,12 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.MazdaB2000TrunkLidSC,
+			itemType = SCKCO.MazdaB2000TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		
-
-		part TruckBedOpen
-		{
-			itemType = Base.BigTrunk,
-
-			container
-			{
-				capacity = 100,
-			}
-		}
-
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel

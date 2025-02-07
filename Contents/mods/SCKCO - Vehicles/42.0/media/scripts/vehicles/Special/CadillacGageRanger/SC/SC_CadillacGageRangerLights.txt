@@ -495,7 +495,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.CadillacGageRangerHoodSC,
+			itemType = SCKCO.CadillacGageRangerHoodSC,
 		}
 
 		part Heater
@@ -539,7 +539,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.CadillacGageRangerWindshieldSC,
+			itemType = SCKCO.CadillacGageRangerWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -599,7 +599,7 @@ module Base
 
 			parent = TrunkDoor,
 			category = SCUCKwindows,
-			itemType = Base.CadillacGageRangerWindshieldSC,
+			itemType = SCKCO.CadillacGageRangerWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -628,7 +628,7 @@ module Base
 			parent = DoorFrontRight,
 			category = SCUCKwindows,
 			area = SeatFrontRight,
-			itemType = Base.CadillacGageRangerWindowSC,
+			itemType = SCKCO.CadillacGageRangerWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -652,7 +652,7 @@ module Base
 			parent = DoorFrontLeft,
 			category = SCUCKwindows,
 			area = SeatFrontLeft,
-			itemType = Base.CadillacGageRangerWindowSC,
+			itemType = SCKCO.CadillacGageRangerWindowSC,
 		}
 
 		part DoorFrontRight
@@ -690,7 +690,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CadillacGageRangerDoorSC,
+			itemType = SCKCO.CadillacGageRangerDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -728,7 +728,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CadillacGageRangerDoorSC,
+			itemType = SCKCO.CadillacGageRangerDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -781,7 +781,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.CadillacGageRangerDoorSC,
+			itemType = SCKCO.CadillacGageRangerDoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -790,8 +790,6 @@ module Base
 
 		part TruckBed
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 50,

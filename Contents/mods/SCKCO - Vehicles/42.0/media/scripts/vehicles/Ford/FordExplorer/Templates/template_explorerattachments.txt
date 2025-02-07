@@ -94,21 +94,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = FordExplorerBumper, }
-            itemType = Base.FordExplorerBumperSC,
+            itemType = SCKCO.FordExplorerBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = FordExplorerWindshieldArmor, }
-            itemType = Base.FordExplorerWindshieldArmorSC,
+            itemType = SCKCO.FordExplorerWindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = FordExplorerFRWA, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            itemType = SCKCO.FordExplorerDoorArmorSC,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -116,7 +116,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = FordExplorerFLWA, }
-            itemType = Base.FordExplorerWindowArmorSC,
+            itemType = SCKCO.FordExplorerWindowArmorSC,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -124,35 +124,35 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = FordExplorerFrontRightDoorArmor, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = FordExplorerFrontLeftDoorArmor, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = FordExplorerRearRightDoorArmor, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
         part SCArmorRearLeftDoor
         {
             model Default { file = FordExplorerRearLeftDoorArmor, }
-            itemType = Base.FordExplorerDoorArmorSC,
+            itemType = SCKCO.FordExplorerDoorArmorSC,
         }
         
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = FordExplorerRRWA, }
-            itemType = Base.FordExplorerWindowArmorSC,
+            itemType = SCKCO.FordExplorerWindowArmorSC,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -160,7 +160,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = FordExplorerRLWA, }
-            itemType = Base.FordExplorerWindowArmorSC,
+            itemType = SCKCO.FordExplorerWindowArmorSC,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 

@@ -498,7 +498,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.JeepCherokeeHoodSC,
+			itemType = SCKCO.JeepCherokeeHoodSC,
 		}
 
 		part Heater
@@ -542,7 +542,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindshieldSC,
+			itemType = SCKCO.JeepCherokeeWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -575,7 +575,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindshieldSC,
+			itemType = SCKCO.JeepCherokeeWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -605,7 +605,7 @@ module Base
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -624,7 +624,7 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 		}
 
 		part WindowMiddleRight
@@ -642,7 +642,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 		}
 
 		part WindowMiddleLeft
@@ -660,7 +660,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 		}
 
 		part WindowRearRight
@@ -677,7 +677,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 			parent = DoorRearRight,
 			area = SeatRearRight,
 		}
@@ -696,7 +696,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.JeepCherokeeWindowSC,
+			itemType = SCKCO.JeepCherokeeWindowSC,
 			parent = DoorRearLeft,
 			area = SeatRearLeft,
 		}
@@ -736,7 +736,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepCherokeeDoorSC,
+			itemType = SCKCO.JeepCherokeeDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -774,7 +774,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepCherokeeDoorSC,
+			itemType = SCKCO.JeepCherokeeDoorSC,
 		}
 
 		part DoorRearRight
@@ -812,7 +812,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepCherokeeDoorSC,
+			itemType = SCKCO.JeepCherokeeDoorSC,
 		}
 
 		part DoorRearLeft
@@ -850,7 +850,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepCherokeeDoorSC,
+			itemType = SCKCO.JeepCherokeeDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -903,7 +903,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.JeepCherokeeTrunkLidSC,
+			itemType = SCKCO.JeepCherokeeTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -912,7 +912,7 @@ module Base
 
 		part TruckBed
 		{
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 
 			container
 			{
@@ -972,7 +972,6 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.ModernTire,
 		}
 
 		template = Brake,

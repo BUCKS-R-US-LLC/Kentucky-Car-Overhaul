@@ -98,7 +98,7 @@ module Base
 		{
 			model Default { file = M1025BumperAssembly, }
 			category = nodisplay,
-			itemType = Base.HMMWVBumperAssemblySC,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
 
 			lua
 			{
@@ -111,7 +111,7 @@ module Base
         {
             model Default { file = M1025Bullbar, }
 			lua { create = Vehicles.Create.Default, }
-            itemType = Base.HMMWVBumperSC,
+            itemType = SCKCO.HMMWVBumperSC,
 
 			table armorBehavior
             {
@@ -125,7 +125,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1025FrontRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -137,7 +137,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1025FrontLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -149,7 +149,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M1025FrontRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -161,7 +161,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M1025FrontLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -173,7 +173,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = M1025RearRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -185,7 +185,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = M1025RearLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -197,7 +197,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M1025RearRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -209,7 +209,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M1025RearLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -221,7 +221,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M1025WindshieldArmor, }
-            itemType = Base.HMMWVWindshieldArmorSC,
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
 
 			table armorBehavior
             {
@@ -254,7 +254,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantDoorSC,
+			itemType = SCKCO.M1025SlantDoorSC,
 		}
 
 		part M1025Slant
@@ -282,7 +282,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
+			itemType = SCKCO.M1025SlantBaseSC,
 		}
     }
 }

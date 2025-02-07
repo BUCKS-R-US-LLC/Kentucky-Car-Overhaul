@@ -101,7 +101,7 @@ module Base
 			model PizzaTopper { file = PizzaTopper, }
 		    area = Engine,
             category = SCUCKaccessories,
-            itemType = Base.PizzaTopperSC,
+            itemType = SCKCO.PizzaTopperSC,
             mechanicRequireKey = false,
 
 		    table install
@@ -139,7 +139,7 @@ module Base
         {
             model Default { file = RabbitTail, }
             parent = TrunkDoor,
-            itemType = Base.VWRabbitLouversSC,
+            itemType = SCKCO.VWRabbitLouversSC,
 
 			table install
 			{
@@ -168,7 +168,7 @@ module Base
         {
             model Default { file = RabbitTail, }
             parent = TrunkDoor,
-            itemType = Base.VWRabbitLouversSC,
+            itemType = SCKCO.VWRabbitLouversSC,
 
 			table install
 			{
@@ -192,21 +192,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = VWRabbitBumper, }
-            itemType = Base.VWRabbitBumperSC,
+            itemType = SCKCO.VWRabbitBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = VWRabbitWindshieldArmor, }
-            itemType = Base.VWRabbitWindshieldArmorSC,
+            itemType = SCKCO.VWRabbitWindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = VWRabbitFrontRightWindowArmor, }
-            itemType = Base.VWRabbitWindowArmorSC,
+            itemType = SCKCO.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -214,7 +214,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = VWRabbitFrontLeftWindowArmor, }
-            itemType = Base.VWRabbitWindowArmorSC,
+            itemType = SCKCO.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -222,35 +222,35 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = VWRabbitFrontRightDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = VWRabbitFrontLeftDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = VWRabbitRearRightDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
         part SCArmorRearLeftDoor
         {
             model Default { file = VWRabbitRearLeftDoorArmor, }
-            itemType = Base.VWRabbitDoorArmorSC,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = VWRabbitRearRightWindowArmor, }
-            itemType = Base.VWRabbitWindowArmorSC,
+            itemType = SCKCO.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -258,7 +258,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = VWRabbitRearLeftWindowArmor, }
-            itemType = Base.VWRabbitWindowArmorSC,
+            itemType = SCKCO.VWRabbitWindowArmorSC,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 

@@ -1,4 +1,4 @@
-module Base {
+module SCKCO {
 
 	template vehicle specials
 	{
@@ -6,7 +6,7 @@ module Base {
         part DetroitDieselSC
         {
             category = nodisplay,
-            itemType = Base.DetroitDieselSC,
+            itemType = SCKCO.DetroitDieselSC,
             mechanicRequireKey = false,
             lua { create = Vehicles.Create.Default, }
         }
@@ -15,7 +15,7 @@ module Base {
         part BackUpAlarmSC
         {
             category = nodisplay,
-            itemType = Base.BackUpAlarmSC,
+            itemType = SCKCO.BackUpAlarmSC,
             mechanicRequireKey = false,
 
             table install
@@ -48,7 +48,7 @@ module Base {
         part AirBrakeSC
         {
             category = nodisplay,
-            itemType = Base.NormalBrake,
+            itemType = SCKCO.NormalBrake,
             mechanicRequireKey = false,
             lua { create = Vehicles.Create.Default, }
         }

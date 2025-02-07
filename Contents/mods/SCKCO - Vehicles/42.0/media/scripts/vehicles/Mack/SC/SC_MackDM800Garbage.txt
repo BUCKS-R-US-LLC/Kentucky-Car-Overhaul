@@ -413,7 +413,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.MackDM800HoodSC,
+			itemType = SCKCO.MackDM800HoodSC,
 		}
 
 		part Heater
@@ -457,7 +457,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.MackDM800WindshieldSC,
+			itemType = SCKCO.MackDM800WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -488,7 +488,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.MackDM800WindshieldSC,
+			itemType = SCKCO.MackDM800WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -512,7 +512,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.MackDM800WindowSC,
+			itemType = SCKCO.MackDM800WindowSC,
 		}
 
 		part WindowFrontLeft
@@ -531,7 +531,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.MackDM800WindowSC,
+			itemType = SCKCO.MackDM800WindowSC,
 		}
 
 		part DoorFrontRight
@@ -569,7 +569,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.MackDM800DoorSC,
+			itemType = SCKCO.MackDM800DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -607,7 +607,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.MackDM800DoorSC,
+			itemType = SCKCO.MackDM800DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -631,8 +631,6 @@ module Base
 
 		part TruckBedOpen
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 400,

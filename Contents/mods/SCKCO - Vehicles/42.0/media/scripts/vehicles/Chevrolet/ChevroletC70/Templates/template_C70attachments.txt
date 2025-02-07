@@ -51,7 +51,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = C70SurvivorHead, }
-            itemType = Base.M35BumperSC,
+            itemType = SCKCO.M35BumperSC,
             lua { create = Vehicles.Create.Default, }
         }
 
@@ -59,7 +59,7 @@ module Base
         {
             model Default { file = C70SurvivorBumper, }
             parent = EngineDoor,
-            itemType = Base.ChevyC70FabricatedBrushGuardSC,
+            itemType = SCKCO.ChevyC70FabricatedBrushGuardSC,
             lua { create = Vehicles.Create.Default, }
 		}
 
@@ -67,7 +67,7 @@ module Base
         {
 			parent = EngineDoor,
 			model Default { file = C70Chevy, }
-            itemType = Base.FillerPartSC,
+            itemType = SCKCO.FillerPartSC,
 			lua { create = Vehicles.Create.Default, }
 		}
 	}
@@ -82,7 +82,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = C70AgriBumper, }
-            itemType = Base.ChevyC70BumperSC,
+            itemType = SCKCO.ChevyC70BumperSC,
             lua { create = Vehicles.Create.Default, }
         }
 
@@ -91,7 +91,7 @@ module Base
         {
 			parent = EngineDoor,
 			model Default { file = C70Chevy, }
-            itemType = Base.FillerPartSC,
+            itemType = SCKCO.FillerPartSC,
 			lua { create = Vehicles.Create.Default, }
 		}
 

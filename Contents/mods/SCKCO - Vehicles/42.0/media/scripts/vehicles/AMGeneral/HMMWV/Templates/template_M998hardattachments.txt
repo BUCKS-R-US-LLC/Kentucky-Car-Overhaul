@@ -124,7 +124,7 @@ module Base
 		{
 			model Default { file = M998HardtopBumperAssembly, }
 			category = nodisplay,
-			itemType = Base.HMMWVBumperAssemblySC,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
 			
 			lua
 			{
@@ -137,7 +137,7 @@ module Base
 		{
 			model Default { file = M998HardtopGreen, }
 			category = nodisplay,
-			itemType = Base.ChevyLogo,
+			itemType = SCKCO.ChevyLogo,
 
 			lua
 			{
@@ -150,7 +150,7 @@ module Base
         {
             model Default { file = M998HardtopBullbar, }
 			lua { create = Vehicles.Create.Default, }
-            itemType = Base.HMMWVBumperSC,
+            itemType = SCKCO.HMMWVBumperSC,
 
             table armorBehavior
             {
@@ -164,7 +164,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M998HardtopFrontRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -176,7 +176,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M998HardtopFrontLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -188,7 +188,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M998HardtopFrontRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -200,7 +200,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M998HardtopFrontLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -212,7 +212,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = M998HardtopRearRightWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 			
 			table armorBehavior
             {
@@ -224,7 +224,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = M998HardtopRearLeftWindowArmor, }
-            itemType = Base.HMMWVWindowArmorSC,
+            itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
             {
@@ -236,7 +236,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M998HardtopRearRightDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -248,7 +248,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M998HardtopRearLeftDoorArmor, }
-            itemType = Base.HMMWVDoorArmorSC,
+            itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
             {
@@ -260,7 +260,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = M998HardtopWindshieldArmor, }
-            itemType = Base.HMMWVWindshieldArmorSC,
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
 
 			table armorBehavior
             {
@@ -294,7 +294,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
+			itemType = SCKCO.M1025SlantBaseSC,
 		}
 
 		part M998RearLeftContainer
@@ -306,7 +306,7 @@ module Base
 
 			area = SideContainer1,
 			category = nodisplay,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -322,7 +322,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
+			itemType = SCKCO.M1025SlantBaseSC,
 		}
 
 		part M998RearRightContainer
@@ -334,7 +334,7 @@ module Base
 
 			area = SideContainer2,
 			category = nodisplay,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -350,7 +350,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M1025SlantBaseSC,
+			itemType = SCKCO.M1025SlantBaseSC,
 		}
     }
 
@@ -394,7 +394,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = Base.TrunkDoor,
+			itemType = SCKCO.TrunkDoor,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
@@ -481,7 +481,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = Base.TrunkDoor,
+			itemType = SCKCO.TrunkDoor,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
@@ -534,7 +534,7 @@ module Base
 		part SideContainer1
 		{
 			area = SideContainer1,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			category = nodisplay,
@@ -555,7 +555,7 @@ module Base
 		{
 			area = SideContainer2,
 			category = nodisplay,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			category = nodisplay,

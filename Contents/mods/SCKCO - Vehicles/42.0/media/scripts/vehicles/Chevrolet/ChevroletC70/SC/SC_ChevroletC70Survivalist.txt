@@ -384,7 +384,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.ChevyC70HoodSC,
+			itemType = SCKCO.ChevyC70HoodSC,
 		}
 
 		part Heater
@@ -428,7 +428,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70WindshieldSC,
+			itemType = SCKCO.ChevyC70WindshieldSC,
 		}
 
 		part WindshieldRear
@@ -459,7 +459,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70WindshieldSC,
+			itemType = SCKCO.ChevyC70WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -481,7 +481,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70WindowSC,
+			itemType = SCKCO.ChevyC70WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -500,7 +500,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.ChevyC70WindowSC,
+			itemType = SCKCO.ChevyC70WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -540,7 +540,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyC70DoorSC,
+			itemType = SCKCO.ChevyC70DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -578,7 +578,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyC70DoorSC,
+			itemType = SCKCO.ChevyC70DoorSC,
 		}
 
 		template = Trunk/part/TruckBed,
@@ -634,17 +634,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.ChevyC70TailGate,
+			itemType = SCKCO.ChevyC70TailGate,
 		}
 
-		part TruckBed
+		part TruckBedOpen
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 300,
-				conditionAffectsCapacity = false,
 			}
 		}
 

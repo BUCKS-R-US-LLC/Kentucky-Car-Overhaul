@@ -94,21 +94,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = GeoTrackerBumper, }
-            itemType = Base.GeoTrackerBumperSC,
+            itemType = SCKCO.GeoTrackerBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = GeoTrackerWindshieldArmor, }
-            itemType = Base.GeoTrackerWindshieldArmorSC,
+            itemType = SCKCO.GeoTrackerWindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = GeoTrackerFRWA, }
-            itemType = Base.GeoTrackerDoorArmorSC,
+            itemType = SCKCO.GeoTrackerDoorArmorSC,
             requireInstalled = GeoTrackerDoorArmorSC,
         }
 
@@ -116,7 +116,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = GeoTrackerFLWA, }
-            itemType = Base.GeoTrackerWindowArmorSC,
+            itemType = SCKCO.GeoTrackerWindowArmorSC,
             requireInstalled = GeoTrackerDoorArmorSC,
         }
 
@@ -124,35 +124,35 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = GeoTrackerFrontRightDoorArmor, }
-            itemType = Base.GeoTrackerDoorArmorSC,
+            itemType = SCKCO.GeoTrackerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = GeoTrackerFrontLeftDoorArmor, }
-            itemType = Base.GeoTrackerDoorArmorSC,
+            itemType = SCKCO.GeoTrackerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = GeoTrackerRearRightDoorArmor, }
-            itemType = Base.GeoTrackerDoorArmorSC,
+            itemType = SCKCO.GeoTrackerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftDoor,
         part SCArmorRearLeftDoor
         {
             model Default { file = GeoTrackerRearLeftDoorArmor, }
-            itemType = Base.GeoTrackerDoorArmorSC,
+            itemType = SCKCO.GeoTrackerDoorArmorSC,
         }
         
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = GeoTrackerRRWA, }
-            itemType = Base.GeoTrackerWindowArmorSC,
+            itemType = SCKCO.GeoTrackerWindowArmorSC,
             requireInstalled = GeoTrackerDoorArmorSC,
         }
 
@@ -160,7 +160,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = GeoTrackerRLWA, }
-            itemType = Base.GeoTrackerWindowArmorSC,
+            itemType = SCKCO.GeoTrackerWindowArmorSC,
             requireInstalled = GeoTrackerDoorArmorSC,
         }
 

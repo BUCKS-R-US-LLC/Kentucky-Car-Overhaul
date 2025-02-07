@@ -69,28 +69,28 @@ module Base
         part SCArmorBumper
         {
             model Default { file = P30Bumper, }
-            itemType = Base.ChevyP30BumperSC,
+            itemType = SCKCO.ChevyP30BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = P30FrontRightWindowArmor, }
-            itemType = Base.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = P30FrontLeftWindowArmor, }
-            itemType = Base.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorSide,
         part SCArmorSide
         {
             model Default { file = P30SideArmor, }
-            itemType = Base.ChevyP30WindshieldArmorSC,
+            itemType = SCKCO.ChevyP30WindshieldArmorSC,
             /*TO-DO: CHANGE?*/
         }
 
@@ -99,7 +99,7 @@ module Base
         {
             model Default { file = P30HoodArmor, }
             parent = EngineDoor,
-            itemType = Base.ChevyP30HoodArmorSC,
+            itemType = SCKCO.ChevyP30HoodArmorSC,
             /*TO-DO: CHANGE?*/
         }
 
@@ -107,7 +107,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = P30RearDoorArmor, }
-            itemType = Base.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC,
             /*TO-DO: CHANGE?*/
         }
 
@@ -115,7 +115,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = P30RearDoorArmor, }
-            itemType = Base.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC,
             /*TO-DO: CHANGE?*/
         }
 
@@ -123,7 +123,7 @@ module Base
         part SCArmorWindshield
         {
             model Default { file = P30WindshieldArmor, }
-            itemType = Base.ChevyP30WindshieldArmorSC,
+            itemType = SCKCO.ChevyP30WindshieldArmorSC,
         }
 
     }

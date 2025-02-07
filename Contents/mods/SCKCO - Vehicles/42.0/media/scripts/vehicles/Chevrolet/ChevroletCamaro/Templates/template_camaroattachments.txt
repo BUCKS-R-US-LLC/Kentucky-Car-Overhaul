@@ -63,42 +63,42 @@ module Base
         part SCArmorBumper
         {
             model Default { file = CamaroBumper, }
-            itemType = Base.ChevyCamaro87BumperSC,
+            itemType = SCKCO.ChevyCamaro87BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = CamaroFrontRightWindowArmor, }
-            itemType = Base.ChevyCamaro87WindowArmorSC,
+            itemType = SCKCO.ChevyCamaro87WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = CamaroFrontRightDoorArmor, }
-            itemType = Base.ChevyCamaro87DoorArmorSC,
+            itemType = SCKCO.ChevyCamaro87DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = CamaroFrontLeftDoorArmor, }
-            itemType = Base.ChevyCamaro87DoorArmorSC,
+            itemType = SCKCO.ChevyCamaro87DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = CamaroFrontLeftWindowArmor, }
-            itemType = Base.ChevyCamaro87WindowArmorSC,
+            itemType = SCKCO.ChevyCamaro87WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = CamaroWindshieldArmor, }
-            itemType = Base.ChevyCamaro87WindshieldArmorSC,
+            itemType = SCKCO.ChevyCamaro87WindshieldArmorSC,
         }
 
         part CamaroLouvers
@@ -106,7 +106,7 @@ module Base
             model Default { file = CamaroTail, }
             parent = TrunkDoor,
             requireInstalled = TrunkDoor,
-            itemType = Base.ChevyCamaro87LouversSC,
+            itemType = SCKCO.ChevyCamaro87LouversSC,
 
 			table install
 			{

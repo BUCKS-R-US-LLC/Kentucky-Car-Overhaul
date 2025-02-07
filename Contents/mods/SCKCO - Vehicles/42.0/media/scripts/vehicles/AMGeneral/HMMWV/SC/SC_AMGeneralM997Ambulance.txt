@@ -397,13 +397,13 @@ module Base
 		part DoorFrontLeft
 		{
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontRight
 		{
 			area = SeatFrontRight
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		part SeatFrontLeft
@@ -425,13 +425,13 @@ module Base
 		part SeatRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part Muffler
@@ -499,7 +499,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.HMMWVHoodSC,
+			itemType = SCKCO.HMMWVHoodSC,
 		}
 
 		part Heater
@@ -550,7 +550,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.HMMWVWindshieldSC,
+			itemType = SCKCO.HMMWVWindshieldSC,
 		}
 
 		part WindowFrontRight
@@ -569,7 +569,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.HMMWVHardWindowSC,
+			itemType = SCKCO.HMMWVHardWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -588,7 +588,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.HMMWVHardWindowSC,
+			itemType = SCKCO.HMMWVHardWindowSC,
 		}
 
 		part DoorFrontRight
@@ -626,7 +626,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -664,19 +664,19 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearRight
 		{
 			category = nodisplay,
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		part DoorRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.HMMWVSoftDoorSC,
+			itemType = SCKCO.HMMWVSoftDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -729,7 +729,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.HMMWVTrunkLidSC,
+			itemType = SCKCO.HMMWVTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,

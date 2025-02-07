@@ -63,21 +63,21 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = JeepCJ7Bumper, }
-            itemType = Base.JeepCJ7BumperSC,
+            itemType = SCKCO.JeepCJ7BumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = JeepCJ7WindshieldArmor, }
-            itemType = Base.JeepCJ7WindshieldArmorSC,
+            itemType = SCKCO.JeepCJ7WindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = JeepCJ7FRWA, }
-            itemType = Base.JeepCJ7DoorArmorSC,
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
             requireInstalled = JeepCJ7DoorArmorSC,
         }
 
@@ -85,7 +85,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = JeepCJ7FLWA, }
-            itemType = Base.JeepCJ7WindowArmorSC,
+            itemType = SCKCO.JeepCJ7WindowArmorSC,
             requireInstalled = JeepCJ7DoorArmorSC,
         }
 
@@ -93,14 +93,14 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = JeepCJ7FrontRightDoorArmor, }
-            itemType = Base.JeepCJ7DoorArmorSC,
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = JeepCJ7FrontLeftDoorArmor, }
-            itemType = Base.JeepCJ7DoorArmorSC,
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
         }
 
 
@@ -110,7 +110,7 @@ module Base
 			model CJ7softtop { file = CJ7softtop, }
 		    area = TruckBed,
             category = SCUCKaccessories,
-            itemType = Base.CJ7softtop,
+            itemType = SCKCO.CJ7softtop,
             mechanicRequireKey = false,
             table install
             {

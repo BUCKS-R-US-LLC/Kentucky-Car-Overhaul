@@ -383,7 +383,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.DodgePowerWagonHoodSC,
+			itemType = SCKCO.DodgePowerWagonHoodSC,
 		}
 
 		part Heater
@@ -427,7 +427,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.DodgePowerWagonWindshieldSC,
+			itemType = SCKCO.DodgePowerWagonWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -458,7 +458,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.DodgePowerWagonWindshieldSC,
+			itemType = SCKCO.DodgePowerWagonWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -482,7 +482,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.DodgePowerWagonWindowSC,
+			itemType = SCKCO.DodgePowerWagonWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -500,7 +500,7 @@ module Base
 
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.DodgePowerWagonWindowSC,
+			itemType = SCKCO.DodgePowerWagonWindowSC,
 		}
 
 		part DoorFrontRight
@@ -538,7 +538,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.DodgePowerWagonDoorSC,
+			itemType = SCKCO.DodgePowerWagonDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -576,7 +576,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.DodgePowerWagonDoorSC,
+			itemType = SCKCO.DodgePowerWagonDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -629,7 +629,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.DodgePowerWagonTrunkLidSC,
+			itemType = SCKCO.DodgePowerWagonTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -638,8 +638,6 @@ module Base
 
 		part TruckBedOpen
 		{
-			itemType = Base.BigTrunk,
-
 			container
 			{
 				capacity = 100,

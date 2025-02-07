@@ -637,25 +637,25 @@ module Base
 		part SeatMiddleRight
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part SeatMiddleLeft
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part SeatRearRight
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
-			itemType = Base.FillerSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part Muffler
@@ -718,7 +718,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M35TarpSC,
+			itemType = SCKCO.M35TarpSC,
 			parent = M35A2TarpFrame,
 			area = M35A2TarpFrame,
 		}
@@ -746,7 +746,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M35TarpFrameSC,
+			itemType = SCKCO.M35TarpFrameSC,
 		}
 
 		part M35A2FrontHardTop
@@ -771,7 +771,7 @@ module Base
 			}
 
 			category = SCUCKaccessories,
-			itemType = Base.M35FrontHardTopSC,
+			itemType = SCKCO.M35FrontHardTopSC,
 		}
 
 		part M35A2SpareTire
@@ -794,7 +794,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.NormalTire,
+			itemType = SCKCO.NormalTire,
 			category = SCUCKaccessories,
 		}
 
@@ -835,7 +835,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35HoodSC,
+			itemType = SCKCO.M35HoodSC,
 
 			table install
 			{
@@ -884,7 +884,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.M35WindshieldSC,
+			itemType = SCKCO.M35WindshieldSC,
 
 			lua
 			{
@@ -915,7 +915,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.M35WindowSC,
+			itemType = SCKCO.M35WindowSC,
 
 			lua
 			{
@@ -946,7 +946,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.M35WindowSC,
+			itemType = SCKCO.M35WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -965,7 +965,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.M35WindowSC,
+			itemType = SCKCO.M35WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
@@ -1005,7 +1005,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35DoorSC,
+			itemType = SCKCO.M35DoorSC,
 		}
 
 		part DoorFrontLeft
@@ -1043,7 +1043,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35DoorSC,
+			itemType = SCKCO.M35DoorSC,
 		}
 
 		part DoorMiddleLeft
@@ -1116,14 +1116,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.M35TailGateSC,
+			itemType = SCKCO.M35TailGateSC,
 		}
 
 		part BackOfTruck
 		{
 			area = TruckBed,
 			category = nodisplay,
-			itemType = Base.NormalTrunk,
+			itemType = SCKCO.NormalTrunk,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 

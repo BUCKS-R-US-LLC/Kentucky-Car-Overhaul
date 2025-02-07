@@ -446,7 +446,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.KSeriesHoodSC,
+			itemType = SCKCO.KSeriesHoodSC,
 		}
 
 		part Heater
@@ -488,7 +488,7 @@ module Base
 				create = Vehicles.Create.Default,
 			}
 
-			itemType = Base.KSeriesWindshieldSC,
+			itemType = SCKCO.KSeriesWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -514,7 +514,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = Base.KSeriesWindowSC,
+			itemType = SCKCO.KSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -533,7 +533,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = Base.KSeriesWindowSC,
+			itemType = SCKCO.KSeriesWindowSC,
 		}
 
 		part WindowRearLeft
@@ -552,7 +552,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
+			itemType = SCKCO.KSeriesWindowSC,
 		}
 
 		part WindowRearRight
@@ -571,7 +571,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = Base.KSeriesWindowSC,
+			itemType = SCKCO.KSeriesWindowSC,
 		}
 
 		part DoorFrontRight
@@ -609,7 +609,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = SCKCO.KSeriesDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -647,7 +647,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesDoorSC,
+			itemType = SCKCO.KSeriesDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -700,23 +700,12 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = Base.KSeriesTrunkLidSC,
+			itemType = SCKCO.KSeriesTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
 		
-
-		part TruckBed
-		{
-			itemType = Base.NormalTrunk,
-
-			container
-			{
-				capacity = 100,
-			}
-		}
-
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
