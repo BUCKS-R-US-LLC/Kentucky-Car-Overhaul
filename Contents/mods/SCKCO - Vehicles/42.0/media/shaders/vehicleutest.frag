@@ -193,7 +193,7 @@ void main()
 	fragHSV.y = clamp(fragHSV.y + TexturePainColor.y - 0.5, 0.0, 0.9999);
     fragHSV.z = clamp(fragHSV.z + TexturePainColor.z - 0.5, 0.0, 0.9999);
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
-	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage2Shell.a*t3en);
+	col = mix(col, lighting*TintColourNew, texColorDamage2Shell.a*t3en);
 	col = mix(col, texColorDamage2Overlay.xyz*lighting*TintColourNew, texColorDamage2Overlay.a*t3en);
 	
 	col = mix(col, vec3(0.2), t4en);
