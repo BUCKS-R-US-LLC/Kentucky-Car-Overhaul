@@ -28,9 +28,9 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordF700ArmoredDunbar"] = {imgPrefix = "f
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700ArmoredBrinks"] = {imgPrefix = "f700dump_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700ArmoredTransport"] = {imgPrefix = "f700dump_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90"] = {imgPrefix = "fordmustang90_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90JeffersonPolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90Undercover"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90StatePolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90JeffersonPolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordTaurus"] = {imgPrefix = "taurus86_", x=0,y=0};
 
 --
