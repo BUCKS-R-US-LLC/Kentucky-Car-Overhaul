@@ -7,22 +7,12 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10"] = {imgPrefix = "k10_", x=0
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10McCoy"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10ParkRanger"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10Dixie"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruck"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruckMccoy"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruck"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruckLights"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpTruckLightsFire"] = {imgPrefix = "k10_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1009MP"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1009"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5BlazerFossoil"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletSuburban"] = {imgPrefix = "suburb86_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletSuburbanStatePolice"] = {imgPrefix = "suburb86_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsPolice"] = {imgPrefix = "suburb86_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanLightsFire"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVanLights"] = {imgPrefix = "blazer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.PickUpVan"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5Blazer"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5BlazerParkRanger"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK5BlazerMcCoys"] = {imgPrefix = "blazer_", x=0,y=0};
@@ -32,7 +22,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCaprice85"] = {imgPrefix = "capr
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCavalier"] = {imgPrefix = "cavalier_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletCamaro87"] = {imgPrefix = "camaro_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SportsCar"] = {imgPrefix = "camaro_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30BoxVan"] = {imgPrefix = "g30box_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30SpecialForces"] = {imgPrefix = "g30box_", x=0,y=0};
@@ -49,18 +38,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30Transit"] = {imgPrefix = "g30
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30Spiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG303N"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30LBMW"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanAmbulance"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSpecial"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSeats"] = {imgPrefix = "g30van_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_MassGenFac"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_KnoxDisti"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_Transit"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.Van_LectroMax"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanSpiffo"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanRadio"] = {imgPrefix = "g30windowless_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.VanRadio_3N"] = {imgPrefix = "g30windowless_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30Greenes"] = {imgPrefix = "p30_", x=0,y=0};
@@ -69,10 +46,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30Scarlet"] = {imgPrefix = "p30
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30Heralds"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30Mail"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30SWAT"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVanMail"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan_Heralds"] = {imgPrefix = "p30_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.StepVan_Scarlet"] = {imgPrefix = "p30_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletC70GrainTruck"] = {imgPrefix = "c70agri_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletC70Survivalist"] = {imgPrefix = "c70survivor_", x=0,y=0};

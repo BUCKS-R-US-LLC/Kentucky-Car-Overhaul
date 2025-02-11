@@ -1,5 +1,4 @@
 ISCarMechanicsOverlay.CarList["Base.SC_ToyotaCamry"] = {imgPrefix = "camry_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.ModernCar02"] = {imgPrefix = "camry_", x=0,y=0};
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};

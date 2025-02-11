@@ -1,4 +1,11 @@
+ISCarMechanicsOverlay.CarList["Base.SC_HahnPumperRed"] = {imgPrefix = "hahnpump_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_HahnPumperYellow"] = {imgPrefix = "hahnpump_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_CrownFirecoach"] = {imgPrefix = "firecoach_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_Oliver2050"] = {imgPrefix = "oliver2050_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_GrummanLLV"] = {imgPrefix = "grum_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_CadillacGageRanger"] = {imgPrefix = "ranger_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_CadillacGageRangerLights"] = {imgPrefix = "ranger_", x=0,y=0};
+
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};

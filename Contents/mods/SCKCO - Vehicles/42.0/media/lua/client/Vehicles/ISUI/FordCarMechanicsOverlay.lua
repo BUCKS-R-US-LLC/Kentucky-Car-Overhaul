@@ -9,13 +9,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85Taxi"] = {imgPrefix = 
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85LouisvillePolice"] = {imgPrefix = "crownvic85_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85StatePolice"] = {imgPrefix = "crownvic85_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85ParkRanger"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarNormal"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarLightsPolice"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarLights"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarTaxi"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarTaxi2"] = {imgPrefix = "crownvic85_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarStationWagon"] = {imgPrefix = "squire_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.CarStationWagon2"] = {imgPrefix = "squire_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCountrySquire"] = {imgPrefix = "squire_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordExplorer"] = {imgPrefix = "explorer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordBronco"] = {imgPrefix = "bronco1992_", x=0,y=0};
@@ -39,8 +32,6 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90Undercover"] = {imgPrefix = 
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90StatePolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90JeffersonPolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordTaurus"] = {imgPrefix = "taurus86_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SUV"] = {imgPrefix = "explorer_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.ModernCar"] = {imgPrefix = "taurus86_", x=0,y=0};
 
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
