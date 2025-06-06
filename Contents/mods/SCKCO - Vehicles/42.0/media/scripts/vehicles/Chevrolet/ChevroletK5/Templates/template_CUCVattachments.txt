@@ -4,7 +4,6 @@ module Base
 	model M1008Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|ExtraBar_obj,
-		
 		scale = 1,
 	}
 
@@ -12,7 +11,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -22,6 +20,7 @@ module Base
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
 		scale = 1,
 	}
 
@@ -31,13 +30,13 @@ module Base
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
 		scale = 1,
 	}
 
 	model M1009Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|ExtraBar_obj,
-		
 		scale = 1,
 	}
 
@@ -45,7 +44,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -55,6 +53,7 @@ module Base
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
 		scale = 1,
 	}
 
@@ -64,13 +63,13 @@ module Base
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
 		scale = 1,
 	}
 
 	model M1010Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|ExtraBar_obj,
-		
 		scale = 1,
 	}
 
@@ -78,7 +77,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -89,7 +87,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model M1010FrontRightWindowArmor
@@ -99,7 +97,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 
@@ -126,6 +124,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1010FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -133,6 +132,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1010FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -168,6 +168,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1008FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -175,6 +176,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1008FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -263,6 +265,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1009FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -270,6 +273,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1009FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 

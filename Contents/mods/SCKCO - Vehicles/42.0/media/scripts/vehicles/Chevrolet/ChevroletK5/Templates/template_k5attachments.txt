@@ -4,7 +4,6 @@ module Base
 	model K5Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|ExtraBar_obj,
-		
 		scale = 1,
 	}
 
@@ -12,7 +11,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -23,7 +21,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model K5FrontRightWindowArmor
@@ -33,14 +31,13 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 
 	model KSeriesRearSeat
 	{
 		mesh = vehicles/Attachments/KSeriesDoubleSeat,
 		texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
-		
 		scale = 1,
 	}
 
@@ -120,6 +117,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = K5FrontRightWindowArmor, }
+    		parent = DoorFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -127,6 +125,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = K5FrontLeftWindowArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 

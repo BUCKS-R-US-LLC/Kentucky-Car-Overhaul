@@ -21,7 +21,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model K10FrontRightWindowArmor
@@ -31,7 +31,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 
     template vehicle K10Attachments
@@ -49,6 +49,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = K10FrontRightWindowArmor, }
+            	parent = DoorFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -56,6 +57,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = K10FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
