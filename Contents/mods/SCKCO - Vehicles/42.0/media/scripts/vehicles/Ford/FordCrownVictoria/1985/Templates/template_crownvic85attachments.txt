@@ -55,7 +55,7 @@ module Base
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-       scale = 1,
+		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
@@ -108,6 +108,7 @@ module Base
         {
             model Default { file = CrownVicFRWA, }
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -116,6 +117,7 @@ module Base
         {
             model Default { file = CrownVicFLWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -123,6 +125,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CrownVictoriaFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 
@@ -130,6 +133,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CrownVictoriaFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 
@@ -137,6 +141,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = CrownVictoriaRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 
@@ -144,6 +149,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = CrownVictoriaRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
         
@@ -152,6 +158,7 @@ module Base
         {
             model Default { file = CrownVicRRWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowRearRight,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -160,6 +167,7 @@ module Base
         {
             model Default { file = CrownVicRLWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 

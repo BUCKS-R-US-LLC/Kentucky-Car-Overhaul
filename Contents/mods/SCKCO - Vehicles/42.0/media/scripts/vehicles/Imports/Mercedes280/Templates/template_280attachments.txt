@@ -29,7 +29,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
     model Mercedes280RearLeftDoorArmor
@@ -38,7 +37,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
 	model Mercedes280RearRightDoorArmor
@@ -47,7 +45,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
 	model Mercedes280FLWA
@@ -55,7 +52,7 @@ module Base
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontLeftWindowArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
-       scale = 1,
+		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
@@ -88,8 +85,7 @@ module Base
 
     template vehicle 280Attachments
 	{
-
-
+		
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
@@ -109,6 +105,7 @@ module Base
         {
             model Default { file = Mercedes280FRWA, }
             itemType = SCKCO.Mercedes280DoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = Mercedes280DoorArmorSC,
         }
 
@@ -117,6 +114,7 @@ module Base
         {
             model Default { file = Mercedes280FLWA, }
             itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = Mercedes280DoorArmorSC,
         }
 
@@ -124,6 +122,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = Mercedes280FrontRightDoorArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.Mercedes280DoorArmorSC,
         }
 
@@ -131,6 +130,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = Mercedes280FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.Mercedes280DoorArmorSC,
         }
 
@@ -138,6 +138,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = Mercedes280RearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.Mercedes280DoorArmorSC,
         }
 
@@ -145,6 +146,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = Mercedes280RearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.Mercedes280DoorArmorSC,
         }
         
@@ -153,6 +155,7 @@ module Base
         {
             model Default { file = Mercedes280RRWA, }
             itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = DoorRearRight,
             requireInstalled = Mercedes280DoorArmorSC,
         }
 
@@ -161,6 +164,7 @@ module Base
         {
             model Default { file = Mercedes280RLWA, }
             itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = Mercedes280DoorArmorSC,
         }
 

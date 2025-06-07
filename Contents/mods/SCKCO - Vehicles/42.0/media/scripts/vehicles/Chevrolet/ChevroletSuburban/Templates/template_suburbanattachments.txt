@@ -5,7 +5,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Chevy_obj,
         texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
-		
 		scale = 1,
 	}
 
@@ -13,7 +12,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|ExtraBar_obj,
         texture = Vehicles/K5/Vehicle_BlazerSC_White,
-		
 		scale = 1,
 	}
 
@@ -21,7 +19,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -88,6 +85,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = SuburbanFrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -95,6 +93,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = SuburbanFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -102,6 +101,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = SuburbanRearRightWindowArmor, }
+			parent = WindowRearRight,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 
@@ -109,6 +109,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = SuburbanRearLeftWindowArmor, }
+			parent = WindowRearLeft,
             itemType = SCKCO.KSeriesWindowArmorSC,
         }
 

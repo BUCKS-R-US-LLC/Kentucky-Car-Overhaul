@@ -106,7 +106,8 @@ module Base
         {
             model Default { file = CadillacBroughamFRWA, }
             itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
-            requireInstalled = FordBroughamDoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = CadillacBroughamDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -114,13 +115,15 @@ module Base
         {
             model Default { file = CadillacBroughamFLWA, }
             itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
-            requireInstalled = FordBroughamDoorArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = CadillacBroughamDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = CadillacBroughamFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
         }
 
@@ -128,6 +131,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CadillacBroughamFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
         }
 
@@ -135,6 +139,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = CadillacBroughamRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
         }
 
@@ -142,6 +147,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = CadillacBroughamRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
         }
         
@@ -150,7 +156,8 @@ module Base
         {
             model Default { file = CadillacBroughamRRWA, }
             itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
-            requireInstalled = FordBroughamDoorArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = CadillacBroughamDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
@@ -158,7 +165,8 @@ module Base
         {
             model Default { file = CadillacBroughamRLWA, }
             itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
-            requireInstalled = FordBroughamDoorArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = CadillacBroughamDoorArmorSC,
         }
 
     }

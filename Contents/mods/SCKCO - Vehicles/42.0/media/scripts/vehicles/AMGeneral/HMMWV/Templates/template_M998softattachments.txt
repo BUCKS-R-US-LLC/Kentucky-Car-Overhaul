@@ -20,7 +20,6 @@ module Base
     model M998TopCoverGreen
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
-		
 		texture = Vehicles/HMMWV/ODSofttop,
 		scale = 1.0,
 	}
@@ -28,7 +27,6 @@ module Base
 	model M998SoftTopTrunkCoverGreen
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
-		
 		texture = Vehicles/HMMWV/ODCoverHMM,
 		scale = 1.0,
 	}
@@ -36,7 +34,6 @@ module Base
     model M998TopCoverTan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
-		
 		texture = Vehicles/HMMWV/TanSofttop,
 		scale = 1.0,
 	}
@@ -44,7 +41,6 @@ module Base
 	model M998SoftTopTrunkCoverTan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
-		
 		texture = Vehicles/HMMWV/TanCoverHMM,
 		scale = 1.0,
 	}
@@ -52,7 +48,6 @@ module Base
 	model M998SofttopWindshieldArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|WindshieldArmor_obj,
-		
 		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
 		scale = 1.0,
 	}
@@ -92,7 +87,6 @@ module Base
     template vehicle M998SofttopGreenAttachments
 	{
         template = specials/part/HumveeDieselSC,
-
         template = armorUpgrades/part/SCArmorBumper,
 
         part SCArmorBumper
@@ -113,6 +107,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M998SofttopFrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			 armorBehavior
@@ -125,6 +120,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M998SofttopFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -137,6 +133,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M998SofttopFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 	
 	            table armorBehavior
@@ -161,6 +158,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = M998SofttopRearRightWindowArmor, }
+			parent = WindowRearRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 			
 			table armorBehavior
@@ -173,6 +171,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = M998SofttopRearLeftWindowArmor, }
+			parent = WindowRearLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -185,6 +184,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M998SofttopRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 	
 	        table armorBehavior
@@ -197,6 +197,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M998SofttopRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
@@ -222,7 +223,6 @@ module Base
 	template vehicle M998SofttopAttachments
 	{
         template = specials/part/DetroitDieselSC,
-
         template = armorUpgrades/part/SCArmorBumper,
 
         part SCArmorBumper
@@ -243,6 +243,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M998SofttopFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
         }
 
@@ -250,6 +251,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M998SofttopFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
         }
 
@@ -257,6 +259,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M998SofttopRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
         }
 
@@ -264,6 +267,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M998SofttopRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
         }
 

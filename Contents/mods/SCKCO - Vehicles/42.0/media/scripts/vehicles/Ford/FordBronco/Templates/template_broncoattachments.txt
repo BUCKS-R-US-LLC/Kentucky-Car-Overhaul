@@ -88,6 +88,7 @@ module Base
         {
             model Default { file = BroncoFRWA, }
             itemType = SCKCO.FordOBSWindowArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordF150DoorArmorSC,
         }
 
@@ -96,6 +97,7 @@ module Base
         {
             model Default { file = BroncoFLWA, }
             itemType = SCKCO.FordOBSWindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordF150DoorArmorSC,
         }
 
@@ -103,6 +105,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = BroncoRRWA, }
+			parent = WindowRearRight,
             itemType = SCKCO.FordOBSWindowArmorSC,
         }
 
@@ -110,6 +113,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = BroncoRLWA, }
+			parent = WindowRearLeft,
             itemType = SCKCO.FordOBSWindowArmorSC,
         }
 
@@ -117,6 +121,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = BroncoFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordOBSDoorArmorSC,
         }
 
@@ -124,6 +129,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = BroncoFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordOBSDoorArmorSC,
         }
 

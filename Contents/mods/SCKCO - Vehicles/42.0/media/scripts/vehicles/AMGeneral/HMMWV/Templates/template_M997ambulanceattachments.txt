@@ -124,6 +124,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M997FrontRightWindowArmor, }
+            parent = WindowFrontRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
@@ -136,6 +137,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M997FrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
@@ -148,6 +150,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M997FrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
@@ -160,6 +163,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M997FrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
