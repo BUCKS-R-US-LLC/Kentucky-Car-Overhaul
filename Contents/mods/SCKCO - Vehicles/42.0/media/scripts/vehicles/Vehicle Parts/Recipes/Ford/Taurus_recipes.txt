@@ -1,0 +1,96 @@
+module Base
+{
+    craftRecipe FordTaurus.MakeWindshieldArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SheetMetal],
+            item 2 [Base.SmallSheetMetal],
+            item 6 [Base.MetalPipe],
+            item 2 [Base.Screws],
+            item 1 [Base.LightBulb],
+			item 9 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordTaurusWindshieldArmorSC1,
+        }
+	}
+
+    craftRecipe FordTaurus.MakeDoorArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordTaurusDoorArmorSC1,
+        }
+	}
+
+    craftRecipe FordTaurus.MakeWindowArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordTaurusWindowArmorSC1,
+        }
+	}
+
+    craftRecipe FordTaurus.MakeBumper
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordTaurusBumperSC1,
+        }
+	}
+}

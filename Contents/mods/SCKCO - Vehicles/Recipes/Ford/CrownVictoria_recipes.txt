@@ -2,107 +2,179 @@
 module Base
 {
 
-recipe Craft '85 Crown Victoria Bumper
+	craftRecipe Craft85CrownVicBumper
 	{
-		BlowTorch=2,
-       	keep WeldingMask,
-		SheetMetal=4,
-
-		Result:FordCrownVictoria85BumperSC1,
-		Time:800.0,
-		Category:Vehicle Armor,
-		SkillRequired:MetalWelding=4,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 4 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 SCKCO.FordCrownVictoria85BumperSC1,
+		}
 	}
 
-recipe Dismantle '85 Crown Victoria Bumper
+	craftRecipe Dismantle85CrownVicBumper
 	{
-		Category:Welding,
-		keep WeldingMask,
-		BlowTorch=2,
-		FordCrownVictoria85BumperSC1,
-		Result:SheetMetal=4,
-		CanBeDoneFromFloor:true,
-		Time:800.0,
-		AnimNode:Disassemble,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [SCKCO.FordCrownVictoria85BumperSC1] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 4 Base.SmallSheetMetal,
+		}
 	}
 
-recipe Craft '85 Crown Victoria Windshield Armor
+	craftRecipe Craft85CrownVicWindshieldArmor
 	{
-		BlowTorch=2,
-       	keep WeldingMask,
-		SheetMetal=4,
-
-		Result:FordCrownVictoria85WindshieldArmorSC1,
-		Time:800.0,
-		Category:Vehicle Armor,
-		SkillRequired:MetalWelding=4,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 4 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 SCKCO.FordCrownVictoria85WindshieldArmorSC1,
+		}
 	}
 
-recipe Dismantle '85 Crown Victoria Windshield Armor
+	craftRecipe Dismantle85CrownVicWindshieldArmor
 	{
-		Category:Welding,
-		keep WeldingMask,
-		BlowTorch=2,
-		FordCrownVictoria85WindshieldArmorSC1,
-		Result:SheetMetal=4,
-		CanBeDoneFromFloor:true,
-		Category:Vehicle Armor,
-		Time:800.0,
-		AnimNode:Disassemble,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [SCKCO.FordCrownVictoria85WindshieldArmorSC1] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 4 Base.SmallSheetMetal,
+		}
 	}
 
-recipe Craft '85 Crown Victoria Door Armor
+	craftRecipe Craft85CrownVicDoorArmor
 	{
-		BlowTorch=2,
-       	keep WeldingMask,
-		SheetMetal=4,
-
-		Result:FordCrownVictoria85DoorArmorSC1,
-		Time:800.0,
-		Category:Vehicle Armor,
-		SkillRequired:MetalWelding=4,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 4 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 SCKCO.FordCrownVictoria85DoorArmorSC1,
+		}
 	}
 
-recipe Dismantle '85 Crown Victoria Door Armor
+	craftRecipe Dismantle85CrownVicDoorArmor
 	{
-		Category:Welding,
-		keep WeldingMask,
-		BlowTorch=2,
-		FordCrownVictoria85DoorArmorSC1,
-		Result:SheetMetal=4,
-		CanBeDoneFromFloor:true,
-		Category:Vehicle Armor,
-		Time:800.0,
-		AnimNode:Disassemble,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [SCKCO.FordCrownVictoria85DoorArmorSC1] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 4 Base.SmallSheetMetal,
+		}
+	}
+	craftRecipe Craft85CrownVicWindowArmor
+	{
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 4 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 SCKCO.FordCrownVictoria85WindowArmorSC1,
+		}
 	}
 
-recipe Craft '85 Crown Victoria Window Armor
+	craftRecipe Dismantle85CrownVicWindowArmor
 	{
-		BlowTorch=2,
-       	keep WeldingMask,
-		SheetMetal=4,
-
-		Result:FordCrownVictoria85WindowArmorSC1,
-		Time:800.0,
-		Category:Vehicle Armor,
-		SkillRequired:MetalWelding=4,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
-	}
-
-recipe Dismantle '85 Crown Victoria Window Armor
-	{
-		Category:Welding,
-		keep WeldingMask,
-		BlowTorch=2,
-		FordCrownVictoria85WindowArmorSC1,
-		Result:SheetMetal=4,
-		CanBeDoneFromFloor:true,
-		Category:Vehicle Armor,
-		Time:800.0,
-		AnimNode:Disassemble,
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [SCKCO.FordCrownVictoria85WindowArmorSC1] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 4 Base.SmallSheetMetal,
+		}
 	}
 }
 */

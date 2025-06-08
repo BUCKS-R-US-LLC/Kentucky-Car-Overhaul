@@ -1,0 +1,96 @@
+module Base
+{
+    craftRecipe FordOBS.MakeWindshieldArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SheetMetal],
+            item 2 [Base.SmallSheetMetal],
+            item 6 [Base.MetalPipe],
+            item 2 [Base.Screws],
+            item 1 [Base.LightBulb],
+			item 9 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordOBSWindshieldArmorSC2,
+        }
+	}
+
+    craftRecipe FordOBS.MakeWindowArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordOBSWindowArmorSC2,
+        }
+	}
+
+    craftRecipe FordOBS.MakeDoorArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordOBSDoorArmorSC2,
+        }
+	}
+
+    craftRecipe FordOBS.MakeBumper
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.FordOBSBumperSC2,
+        }
+	}
+}

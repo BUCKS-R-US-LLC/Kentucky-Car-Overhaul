@@ -101,7 +101,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = K5Bullbar, }
-            itemType = SCKCO.KSeriesBumperSC,
+            itemType = SCKCO.ChevyKSeriesBumperSC,
 
             table partVariation
             {
@@ -118,7 +118,7 @@ module Base
         {
             model Default { file = K5FrontRightWindowArmor, }
     		parent = DoorFrontRight,
-            itemType = SCKCO.KSeriesWindowArmorSC,
+            itemType = SCKCO.ChevyKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -126,14 +126,14 @@ module Base
         {
             model Default { file = K5FrontLeftWindowArmor, }
 			parent = DoorFrontLeft,
-            itemType = SCKCO.KSeriesWindowArmorSC,
+            itemType = SCKCO.ChevyKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = K5WindshieldArmor, }
-            itemType = SCKCO.KSeriesWindshieldArmorSC,
+            itemType = SCKCO.ChevyKSeriesWindshieldArmorSC,
         }
     }
 }
