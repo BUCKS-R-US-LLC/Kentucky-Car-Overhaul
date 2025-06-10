@@ -62,54 +62,60 @@ module Base
 	    template = FourSeaterFootwellSpace,
         template = specials/part/AirBrakeSC,
         template = specials/part/BackUpAlarmSC,
-		
         template = armorUpgrades/part/SCArmorWindshield,
+
         part SCArmorWindshield
         {
             model Default { file = FirecoachWindshieldArmor, }
-            itemType = SCKCO.FireCoachWindshieldArmorSC,
+            itemType = SCKCO.CrownFirecoachWindshieldArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = FirecoachFRWA, }
-            itemType = SCKCO.FireCoachWindowArmorSC,
+			parent = WindowFrontRight,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = FirecoachFLWA, }
-            itemType = SCKCO.FireCoachWindowArmorSC,
+			parent = WindowFrontLeft,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = FirecoachRRWA, }
-            itemType = SCKCO.FireCoachWindowArmorSC,
+			parent = WindowRearRight,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
         part SCArmorRearLeftWindow
         {
             model Default { file = FirecoachRLWA, }
-            itemType = SCKCO.FireCoachWindowArmorSC,
+			parent = WindowRearLeft,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = FirecoachFrontRightDoorArmor, }
-            itemType = SCKCO.FireCoachDoorArmorSC,
+			parent = DoorFrontRight,
+            itemType = SCKCO.CrownFirecoachDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
             model Default { file = FirecoachFrontLeftDoorArmor, }
-            itemType = SCKCO.FireCoachDoorArmorSC,
+			parent = DoorFrontLeft,
+            itemType = SCKCO.CrownFirecoachDoorArmorSC,
         }
         
     }
