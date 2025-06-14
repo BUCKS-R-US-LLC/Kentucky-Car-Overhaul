@@ -1,0 +1,83 @@
+module Base
+{
+
+	model CUCVwheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_LeftWheel,
+		texture = Vehicles/K5/Vehicle_K5BlazerLarge_Wheel,
+	}
+
+	model CUCVwheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_K5BlazerLarge_RightWheel,
+		texture = Vehicles/K5/Vehicle_K5BlazerLarge_Wheel,
+	}
+
+    template vehicle CKPartsWheels
+    {
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CUCVwheelleft,
+			}
+	
+			area = TireFrontLeft,
+			wheel = FrontLeft,
+
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CUCVwheelright,
+			}
+
+			area = TireFrontRight,
+			wheel = FrontRight,
+			
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CUCVwheelleft,
+			}
+
+			area = TireRearLeft,
+			wheel = RearLeft,
+
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CUCVwheelright,
+			}
+
+			area = TireRearRight,
+			wheel = RearRight,
+			
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+    }
+}

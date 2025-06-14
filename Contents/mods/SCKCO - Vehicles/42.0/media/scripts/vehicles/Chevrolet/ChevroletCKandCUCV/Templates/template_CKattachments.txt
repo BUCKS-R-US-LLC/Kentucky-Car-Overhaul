@@ -41,7 +41,19 @@ module Base
 		scale = 1,
 	}
 
-    template vehicle K5Attachments
+	model CKSerieswheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
+	}
+
+	model CKSerieswheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
+	}
+
+    template vehicle CKPartsArmor
     {
         template = armorUpgrades/part/SCArmorBumper,
         
@@ -75,7 +87,7 @@ module Base
                 complete = Vehicles.InstallComplete.Window,
             }
 
-            		table uninstall
+            table uninstall
             {
                 items
                 {
@@ -88,8 +100,8 @@ module Base
                    }
                 }
                 time = 1000,
-                  skills = Mechanics:1,
-                  recipes = Basic Mechanics,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
             }
 		lua

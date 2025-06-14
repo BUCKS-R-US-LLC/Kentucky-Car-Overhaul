@@ -1,0 +1,83 @@
+module Base
+{
+
+	model CKSerieswheelleft
+	{
+		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
+	}
+
+	model CKSerieswheelright
+	{
+		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
+	}
+
+    template vehicle CKPartsWheels
+    {
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CKSerieswheelleft,
+			}
+	
+			area = TireFrontLeft,
+			wheel = FrontLeft,
+
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CKSerieswheelright,
+			}
+
+			area = TireFrontRight,
+			wheel = FrontRight,
+			
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CKSerieswheelleft,
+			}
+
+			area = TireRearLeft,
+			wheel = RearLeft,
+
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = CKSerieswheelright,
+			}
+
+			area = TireRearRight,
+			wheel = RearRight,
+			
+			table install
+			{
+				requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+			}
+		}
+    }
+}
