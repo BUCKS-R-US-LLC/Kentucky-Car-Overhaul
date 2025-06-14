@@ -64,7 +64,6 @@ module Base
     template vehicle AccordAttachments
 	{
 
-
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
@@ -76,6 +75,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = AccordFrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.HondaAccordWindowArmorSC,
         }
 
@@ -83,6 +83,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = AccordFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.HondaAccordWindowArmorSC,
         }
 
@@ -90,6 +91,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = AccordFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.HondaAccordDoorArmorSC,
         }
 
@@ -97,6 +99,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = AccordFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.HondaAccordDoorArmorSC,
         }
 
@@ -104,6 +107,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = AccordRearRightWindowArmor, }
+			parent = WindowRearRight,
             itemType = SCKCO.HondaAccordWindowArmorSC,
         }
 
@@ -111,6 +115,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = AccordRearLeftWindowArmor, }
+			parent = WindowRearLeft,
             itemType = SCKCO.HondaAccordWindowArmorSC,
         }
 

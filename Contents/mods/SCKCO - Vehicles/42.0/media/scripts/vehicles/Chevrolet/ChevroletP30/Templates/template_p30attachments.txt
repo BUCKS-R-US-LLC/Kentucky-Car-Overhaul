@@ -4,7 +4,6 @@ module Base
 	model P30Bumper
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Bullbar_obj,
-		
         texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
 	}
@@ -12,7 +11,6 @@ module Base
 	model P30WindshieldArmor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|WindshieldArmor_obj,
-		
         texture = Vehicles/StepVanP30/P30StaticArmorParts,
 		scale = 1,
 	}
@@ -76,6 +74,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = P30FrontRightWindowArmor, }
+            parent = WindowFrontRight,
             itemType = SCKCO.ChevyP30WindowArmorSC,
         }
 
@@ -83,6 +82,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = P30FrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.ChevyP30WindowArmorSC,
         }
 
@@ -107,6 +107,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = P30RearDoorArmor, }
+            parent = DoorRearLeft,
             itemType = SCKCO.ChevyP30WindowArmorSC,
             /*TO-DO: CHANGE?*/
         }
@@ -115,6 +116,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = P30RearDoorArmor, }
+            parent = DoorRearRight,
             itemType = SCKCO.ChevyP30WindowArmorSC,
             /*TO-DO: CHANGE?*/
         }

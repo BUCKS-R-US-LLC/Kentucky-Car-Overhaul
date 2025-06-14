@@ -86,7 +86,6 @@ module Base
     template vehicle CavalierAttachments
 	{
 
-
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
@@ -106,6 +105,7 @@ module Base
         {
             model Default { file = CavalierFRWA, }
             itemType = SCKCO.ChevyCavalierDoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = ChevroletCavalierDoorArmorSC,
         }
 
@@ -114,6 +114,7 @@ module Base
         {
             model Default { file = CavalierFLWA, }
             itemType = SCKCO.ChevyCavalierWindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = ChevroletCavalierDoorArmorSC,
         }
 
@@ -121,6 +122,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CavalierFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.ChevyCavalierDoorArmorSC,
         }
 
@@ -128,6 +130,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CavalierFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.ChevyCavalierDoorArmorSC,
         }
 
@@ -135,6 +138,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = CavalierRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.ChevyCavalierDoorArmorSC,
         }
 
@@ -142,6 +146,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = CavalierRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.ChevyCavalierDoorArmorSC,
         }
         
@@ -150,6 +155,7 @@ module Base
         {
             model Default { file = CavalierRRWA, }
             itemType = SCKCO.ChevyCavalierWindowArmorSC,
+			parent = WindowRearRight,
             requireInstalled = ChevroletCavalierDoorArmorSC,
         }
 
@@ -158,6 +164,7 @@ module Base
         {
             model Default { file = CavalierRLWA, }
             itemType = SCKCO.ChevyCavalierWindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = ChevroletCavalierDoorArmorSC,
         }
 

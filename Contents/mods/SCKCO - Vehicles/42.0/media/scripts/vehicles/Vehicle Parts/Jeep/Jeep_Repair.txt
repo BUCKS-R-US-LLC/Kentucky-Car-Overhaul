@@ -3,7 +3,7 @@ module SCKCO
 
 	fixing Fix Hood Welding
 	{
-	   Require : JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
+	   Require : JeepGrandWagoneerSC2;JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 
@@ -13,7 +13,7 @@ module SCKCO
 
     fixing Fix Hood
 	{
-	   Require : JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
+	   Require : JeepWagonnerHoodSC2;JeepCherokeeHoodSC2;JeepCJ7HoodSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -22,7 +22,7 @@ module SCKCO
 
 	fixing Fix Trunk Lid Welding
     {
-       Require : JeepCherokeeTrunkLidSC2;JeepCJ7TrunkLidSC2,
+       Require : JeepWagoneerTrunkLidSC2;JeepCherokeeTrunkLidSC2;JeepCJ7TrunkLidSC2,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -32,7 +32,7 @@ module SCKCO
 
     fixing Fix Trunk Lid
 	{
-       Require : JeepCherokeeTrunkLidSC2,
+       Require : JeepGrandWagoneerSC2;JeepCherokeeTrunkLidSC2,
 	   GlobalItem : Screws=8,
 	   ConditionModifier : 0.5,
 
@@ -41,7 +41,7 @@ module SCKCO
 
 	fixing Fix Door Welding
 	{
-	   Require : JeepCherokeeDoorSC2;JeepCJ7DoorSC2,
+	   Require : JeepGrandWagoneerDoorSC2;JeepCherokeeDoorSC2;JeepCJ7DoorSC2,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 

@@ -17,6 +17,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_Porsche911"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCJ7"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_JeepGrandWagoneer"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GMCJimmyS15"] = {index = -1, spawnChance = 5};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_NissanPathfinder"] = {index = -1, spawnChance = 5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_PlymouthVoyager"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_VWRabbitPizza"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 5};
@@ -88,6 +91,9 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.good.vehicles["Base.SC_ChevroletP30BunnyBread"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.good.vehicles["Base.SC_ChevroletCaprice85"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_JeepCherokee"] = {index = -1, spawnChance = 35};
+    VehicleZoneDistribution.good.vehicles["Base.SC_JeepGrandWagoneer"] = {index = -1, spawnChance = 35};
+    VehicleZoneDistribution.good.vehicles["Base.SC_GMCJimmyS15"] = {index = -1, spawnChance = 35};
+    VehicleZoneDistribution.good.vehicles["Base.SC_NissanPathfinder"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_MazdaB2000"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_GeoTracker"] = {index = -1, spawnChance = 35};
     VehicleZoneDistribution.good.vehicles["Base.SC_FordF15092"] = {index = -1, spawnChance = 35};

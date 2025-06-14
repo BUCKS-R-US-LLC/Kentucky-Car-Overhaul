@@ -71,6 +71,7 @@ module Base
         {
             model Default { file = F150FRWA, }
             itemType = SCKCO.FordF150DoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordF150WindowArmorSC,
         }
 
@@ -79,6 +80,7 @@ module Base
         {
             model Default { file = F150FLWA, }
             itemType = SCKCO.FordF150WindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordF150WindowArmorSC,
         }
 
@@ -86,6 +88,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = F150FrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordF150DoorArmorSC,
         }
 
@@ -93,6 +96,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = F150FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordF150DoorArmorSC,
         }
 

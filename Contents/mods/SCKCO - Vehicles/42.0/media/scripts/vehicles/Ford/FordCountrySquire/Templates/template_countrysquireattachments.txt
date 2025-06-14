@@ -105,6 +105,7 @@ module Base
         {
             model Default { file = CountrySquireFRWA, }
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -113,6 +114,7 @@ module Base
         {
             model Default { file = CountrySquireFLWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -121,6 +123,7 @@ module Base
         {
             model Default { file = CountrySquireRRWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowRearRight,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -129,6 +132,7 @@ module Base
         {
             model Default { file = CountrySquireRLWA, }
             itemType = SCKCO.FordCrownVictoria85WindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = FordCrownVictoriaDoorArmorSC,
         }
 
@@ -136,6 +140,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CountrySquireFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 
@@ -143,6 +148,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CountrySquireFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
         
@@ -150,6 +156,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = CountrySquireRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 
@@ -157,6 +164,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = CountrySquireRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.FordCrownVictoria85DoorArmorSC,
         }
 

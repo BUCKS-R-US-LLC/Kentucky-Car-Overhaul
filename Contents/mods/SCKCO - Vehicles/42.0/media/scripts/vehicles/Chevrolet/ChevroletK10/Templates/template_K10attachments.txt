@@ -21,7 +21,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftArmorBone 1.0,
+		boneWeight = FrontLeftDoorBone 1.0,
 	}
 
 	model K10FrontRightWindowArmor
@@ -31,39 +31,40 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightArmorBone 1.0,
+		boneWeight = FrontRightDoorBone 1.0,
 	}
 
     template vehicle K10Attachments
     {
 
-
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
             model Default { file = K10Bullbar, }
-            itemType = SCKCO.KSeriesBumperSC,
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = K10FrontRightWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+            	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = K10FrontLeftWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = K10WindshieldArmor, }
-            itemType = SCKCO.KSeriesWindshieldArmorSC,
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
         }
 
     }

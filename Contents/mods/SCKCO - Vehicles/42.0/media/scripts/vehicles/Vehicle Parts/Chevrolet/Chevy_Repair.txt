@@ -1,7 +1,7 @@
 module SCKCO
 {
 
-	fixing Fix Chevrolet Bullbar
+	fixing Fix Bullbar
     {
        Require : KSeriesStandardBullbar2,
        GlobalItem : BlowTorch=5,
@@ -11,7 +11,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-	fixing Fix Chevrolet Hood Welding
+	fixing Fix Hood Welding
 	{
 	   Require : ChevyCaprice85HoodSC1;ChevyCavalierHoodSC1;ChevyBlazerHoodSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroHoodSC3,
 	   GlobalItem : BlowTorch=5,
@@ -21,7 +21,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
 	}
 
-    fixing Fix Chevrolet Hood
+    fixing Fix Hood
 	{
 	   Require : ChevyCaprice85HoodSC1;ChevyCavalierHoodSC1;ChevyBlazerHoodSC2;ChevyCamaroHoodSC3;ChevyC70HoodSC,
 	   GlobalItem : Screws=8,
@@ -30,7 +30,7 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Chevrolet Trunk Lid Welding
+	fixing Fix Trunk Lid Welding
     {
        Require : ChevyCaprice85TrunkLidSC1;ChevyCavalierTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyCamaroTrunkLidSC3;
        GlobalItem : BlowTorch=5,
@@ -40,7 +40,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-    fixing Fix Chevrolet Trunk Lid
+    fixing Fix Trunk Lid
 	{
        Require : ChevyCaprice85TrunkLidSC1;ChevyCavalierTrunkLidSC1;ChevyBlazerTrunkLidSC2;ChevyP30HoodSC2;ChevyG30HoodSC2;ChevyCamaroTrunkLidSC3,ChevyC70TailGateSC2,
 	   GlobalItem : Screws=8,
@@ -49,7 +49,7 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Chevrolet Door Welding
+	fixing Fix Door Welding
 	{
 	   Require : ChevyCaprice85DoorSC1;ChevyCavalierTrunkLidSC1;ChevyBlazerDoorSC2;ChevyG30FrontDoorSC2;ChevyP30DoorSC2;ChevyG30SideDoorSC2;ChevyCamaroDoorSC3,
 	   GlobalItem : BlowTorch=5,

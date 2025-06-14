@@ -19,7 +19,6 @@ module Base
 	model M1025WindshieldArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|WindshieldArmor_obj,
-		
 		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
 		scale = 1,
 	}
@@ -91,7 +90,6 @@ module Base
     template vehicle M1025Attachments
 	{
         template = specials/part/HumveeDieselSC,
-
         template = armorUpgrades/part/SCArmorBumper,
 
 		part BumperAssembly
@@ -111,6 +109,7 @@ module Base
         {
             model Default { file = M1025Bullbar, }
 			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
             itemType = SCKCO.HMMWVBumperSC,
 
 			table armorBehavior
@@ -125,6 +124,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M1025FrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -137,6 +137,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M1025FrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -149,6 +150,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M1025FrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
@@ -161,6 +163,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M1025FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
@@ -173,6 +176,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = M1025RearRightWindowArmor, }
+			parent = WindowRearRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -185,6 +189,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = M1025RearLeftWindowArmor, }
+			parent = WindowRearLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
 			table armorBehavior
@@ -197,6 +202,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = M1025RearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
@@ -209,6 +215,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = M1025RearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior

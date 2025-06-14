@@ -159,6 +159,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = G30AmbulanceFrontRightWindowArmor, }
+            parent = WindowFrontRight,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -166,6 +167,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = G30AmbulanceFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -173,6 +175,7 @@ module Base
         part SCArmorMiddleRightWindow
         {
             model Default { file = G30AmbulanceRearRightWindowArmor, }
+            parent = WindowMiddleRight,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -180,6 +183,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = G30AmbulanceFrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 
@@ -187,6 +191,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = G30AmbulanceFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 
@@ -213,6 +218,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = G30WindowedFrontRightWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -220,14 +226,15 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = G30WindowedFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorMiddleRightWindow,
         part SCArmorMiddleRightWindow
         {
-            parent = WindowRearRight,
             model Default { file = G30WindowedMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -235,6 +242,7 @@ module Base
         part SCArmorMiddleLeftWindow
         {
             model Default { file = G30WindowedMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -242,6 +250,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = G30WindowedRearRightWindowArmor, }
+            parent = WindowRearRight,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -249,6 +258,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = G30WindowedRearLeftWindowArmor, }
+            parent = WindowRearLeft,
             itemType = SCKCO.ChevyG30WindowArmorSC,
         }
 
@@ -256,6 +266,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = G30WindowedFrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 
@@ -263,6 +274,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = G30WindowedFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.ChevyG30DoorArmorSC,
         }
 

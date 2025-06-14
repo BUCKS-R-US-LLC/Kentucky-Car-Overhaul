@@ -297,7 +297,7 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0635 7.0794 3.8095 0.9206,
+			xywh = 1.3646 3.1905 3.8095 0.9206,
 		}
 
 		area SeatFrontLeft
@@ -429,8 +429,8 @@ module Base
 			model Default
 			{
 				file = FireCoachRightFrontStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -468,8 +468,8 @@ module Base
 			model Default
 			{
 				file = FireCoachRightMiddleStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -507,8 +507,8 @@ module Base
 			model Default
 			{
 				file = FireCoachRightRearStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -546,8 +546,8 @@ module Base
 			model Default
 			{
 				file = FireCoachRightBackStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -585,8 +585,8 @@ module Base
 			model Default
 			{
 				file = FireCoachLeftFrontStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -624,8 +624,8 @@ module Base
 			model Default
 			{
 				file = FireCoachLeftMiddleStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -663,8 +663,8 @@ module Base
 			model Default
 			{
 				file = FireCoachLeftRearStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -702,8 +702,8 @@ module Base
 			model Default
 			{
 				file = FireCoachLeftBackStorage,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -741,6 +741,8 @@ module Base
 			model seatfrontLeft
 			{
 				file = FireCoachDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -749,6 +751,8 @@ module Base
 			model seatfrontRight
 			{
 				file = FireCoachPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -797,6 +801,8 @@ module Base
 			model windshieldFront
 			{
 				file = FireCoachWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -820,7 +826,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FireCoachWindshieldSC,
+			itemType = SCKCO.CrownFirecoachWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -840,10 +846,12 @@ module Base
 			model windowFR
 			{
 				file = FireCoachFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FireCoachWindowSC,
+			itemType = SCKCO.CrownFirecoachWindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 		}
@@ -858,9 +866,11 @@ module Base
 			model windowFL
 			{
 				file = FireCoachFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
-			itemType = SCKCO.FireCoachWindowSC,
+			itemType = SCKCO.CrownFirecoachWindowSC,
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
@@ -871,6 +881,8 @@ module Base
 			model windowRL
 			{
 				file = FireCoachRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			area = TireFrontLeft,
@@ -882,7 +894,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FireCoachWindowSC,
+			itemType = SCKCO.CrownFirecoachWindowSC,
 		}
 
 		part WindowRearRight
@@ -890,6 +902,8 @@ module Base
 			model windowRR
 			{
 				file = FireCoachRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			area = TireFrontRight,
@@ -901,7 +915,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FireCoachWindowSC,
+			itemType = SCKCO.CrownFirecoachWindowSC,
 		}
 
 		part DoorFrontRight
@@ -909,6 +923,8 @@ module Base
 			model Default
 			{
 				file = FireCoachFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -939,7 +955,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.FireCoachDoorSC,
+			itemType = SCKCO.CrownFirecoachDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -947,6 +963,8 @@ module Base
 			model Default
 			{
 				file = FireCoachFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -977,17 +995,18 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.FireCoachDoorSC,
+			itemType = SCKCO.CrownFirecoachDoorSC,
 		}
 
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = FireCoachwheelredleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -996,6 +1015,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FireCoachwheelredright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -1004,6 +1025,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FireCoachwheelredleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -1012,6 +1035,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FireCoachwheelredright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 

@@ -72,6 +72,7 @@ module Base
         {
             model Default { file = MazdaBFRWA, }
             itemType = SCKCO.MazdaB2000WindowArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = MazdaMazdaBDoorArmorSC,
         }
 
@@ -80,6 +81,7 @@ module Base
         {
             model Default { file = MazdaBFLWA, }
             itemType = SCKCO.MazdaB2000WindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = MazdaMazdaBDoorArmorSC,
         }
 
@@ -87,6 +89,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = MazdaBFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.MazdaB2000DoorArmorSC,
         }
 
@@ -94,6 +97,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = MazdaBFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.MazdaB2000DoorArmorSC,
         }
 

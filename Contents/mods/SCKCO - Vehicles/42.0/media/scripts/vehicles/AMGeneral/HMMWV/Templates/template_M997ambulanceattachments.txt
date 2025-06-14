@@ -19,7 +19,6 @@ module Base
     model M997AmbulanceTop3Tone
     {
         mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
-        
         texture = Vehicles/HMMWV/ToneBulance,
         scale = 1.0,
     }
@@ -27,7 +26,6 @@ module Base
     model M997AmbulanceTopGreen
     {
         mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
-        
         texture = Vehicles/HMMWV/OdBulance,
         scale = 1.0,
     }
@@ -35,7 +33,6 @@ module Base
     model M997AmbulanceTopTan
     {
         mesh = vehicles/AMGeneral/Vehicle_HM997_SC|M997Case_obj,
-        
         texture = Vehicles/HMMWV/TanBulance,
         scale = 1.0,
     }
@@ -43,7 +40,6 @@ module Base
     model M997WindshieldArmor
     {
         mesh = vehicles/AMGeneral/Vehicle_HM997_SC|WindshieldArmor_obj,
-        
         texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
         scale = 1.0,
     }
@@ -83,7 +79,6 @@ module Base
     model M997Stretchers
     {
         mesh = vehicles/AMGeneral/Vehicle_HM997_SC|AmbuStretcher_obj,
-        
         texture = Vehicles/HMMWV/OdBulance,
         static = TRUE,
         scale = 1.0,
@@ -110,6 +105,7 @@ module Base
         {
             model Default { file = M997Bullbar, }
             lua { create = Vehicles.Create.Default, }
+            parent = EngineDoor,
             itemType = SCKCO.HMMWVBumperSC,
 
             table armorBehavior
@@ -124,6 +120,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = M997FrontRightWindowArmor, }
+            parent = WindowFrontRight,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
@@ -136,6 +133,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = M997FrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.HMMWVWindowArmorSC,
 
             table armorBehavior
@@ -148,6 +146,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = M997FrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior
@@ -160,6 +159,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = M997FrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
             table armorBehavior

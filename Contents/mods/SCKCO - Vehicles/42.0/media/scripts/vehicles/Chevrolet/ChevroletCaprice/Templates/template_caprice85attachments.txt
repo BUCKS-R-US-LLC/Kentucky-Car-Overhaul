@@ -93,6 +93,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = CapriceFrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.ChevyCaprice85WindowArmorSC,
         }
 
@@ -100,6 +101,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = CapriceFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.ChevyCaprice85WindowArmorSC,
         }
 
@@ -107,6 +109,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CapriceFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.ChevyCaprice85DoorArmorSC,
         }
 
@@ -114,6 +117,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CapriceFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.ChevyCaprice85DoorArmorSC,
         }
 
@@ -121,6 +125,7 @@ module Base
         part SCArmorRearRightWindow
         {
             model Default { file = CapriceRearRightWindowArmor, }
+			parent = WindowRearRight,
             itemType = SCKCO.ChevyCaprice85WindowArmorSC,
         }
 
@@ -128,6 +133,7 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = CapriceRearLeftWindowArmor, }
+			parent = WindowRearLeft,
             itemType = SCKCO.ChevyCaprice85WindowArmorSC,
         }
 
@@ -135,6 +141,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = CapriceRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.ChevyCaprice85DoorArmorSC,
         }
 
@@ -142,6 +149,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = CapriceRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.ChevyCaprice85DoorArmorSC,
         }
 

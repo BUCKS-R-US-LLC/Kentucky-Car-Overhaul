@@ -109,6 +109,7 @@ module Base
         {
             model Default { file = FordExplorerFRWA, }
             itemType = SCKCO.FordExplorerDoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -117,6 +118,7 @@ module Base
         {
             model Default { file = FordExplorerFLWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -124,6 +126,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = FordExplorerFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
@@ -131,6 +134,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = FordExplorerFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
@@ -138,6 +142,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = FordExplorerRearRightDoorArmor, }
+			parent = RearFrontRight,
             itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
@@ -145,6 +150,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = FordExplorerRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.FordExplorerDoorArmorSC,
         }
         
@@ -153,6 +159,7 @@ module Base
         {
             model Default { file = FordExplorerRRWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
+			parent = WindowRearRight
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 
@@ -161,6 +168,7 @@ module Base
         {
             model Default { file = FordExplorerRLWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = FordFordExplorerDoorArmorSC,
         }
 

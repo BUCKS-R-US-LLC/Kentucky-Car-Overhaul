@@ -1,7 +1,7 @@
 module SCKCO
 {
 
-	fixing Fix Honda Hood Welding
+	fixing Fix Hood Welding
 	{
 	   Require : HondaAccordHoodSC1,
 	   GlobalItem : BlowTorch=5,
@@ -11,7 +11,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
 	}
 
-    fixing Fix Honda Hood
+    fixing Fix Hood
 	{
 	   Require : HondaAccordHoodSC1;
 	   GlobalItem : Screws=8,
@@ -20,7 +20,7 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Honda Trunk Lid Welding
+	fixing Fix Trunk Lid Welding
     {
        Require : HondaAccordTrunkLidSC1,
        GlobalItem : BlowTorch=5,
@@ -30,7 +30,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-    fixing Fix Honda Trunk Lid
+    fixing Fix Trunk Lid
 	{
        Require : HondaAccordTrunkLidSC1,
 	   GlobalItem : Screws=8,
@@ -39,7 +39,7 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Honda Door Welding
+	fixing Fix Door Welding
 	{
 	   Require : HondaAccordDoorSC1,
 	   GlobalItem : BlowTorch=5,

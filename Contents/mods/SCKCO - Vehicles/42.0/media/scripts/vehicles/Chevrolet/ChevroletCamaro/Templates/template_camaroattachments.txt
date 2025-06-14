@@ -58,7 +58,6 @@ module Base
     template vehicle Camaro87Attachments
 	{
 
-
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
@@ -70,6 +69,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = CamaroFrontRightWindowArmor, }
+			parent = WindowFrontRight,
             itemType = SCKCO.ChevyCamaro87WindowArmorSC,
         }
 
@@ -77,6 +77,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = CamaroFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.ChevyCamaro87DoorArmorSC,
         }
 
@@ -84,6 +85,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = CamaroFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.ChevyCamaro87DoorArmorSC,
         }
 
@@ -91,6 +93,7 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = CamaroFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
             itemType = SCKCO.ChevyCamaro87WindowArmorSC,
         }
 

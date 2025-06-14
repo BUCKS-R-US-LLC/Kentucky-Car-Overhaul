@@ -71,6 +71,7 @@ module Base
         {
             model Default { file = DM800FrontRightWindowArmor, }
             itemType = SCKCO.MackDM800WindowArmorSC,
+            parent = WindowFrontRight,
 
             table armorBehavior
             {
@@ -83,6 +84,7 @@ module Base
         {
             model Default { file = DM800FrontLeftWindowArmor, }
             itemType = SCKCO.MackDM800WindowArmorSC,
+            parent = WindowFrontLeft,
 
             table armorBehavior
             {
@@ -95,6 +97,7 @@ module Base
         {
             model Default { file = DM800FrontRightDoorArmor, }
             itemType = SCKCO.MackDM800DoorArmorSC,
+            parent = DoorFrontRight,
 
             table armorBehavior
             {
@@ -107,6 +110,7 @@ module Base
         {
             model Default { file = DM800FrontLeftDoorArmor, }
             itemType = SCKCO.MackDM800DoorArmorSC,
+            parent = DoorFrontLeft,
 
             table armorBehavior
             {

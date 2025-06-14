@@ -5,7 +5,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Chevy_obj,
         texture = Vehicles/Suburban/Vehicle_Suburb86_BlackRed,
-		
 		scale = 1,
 	}
 
@@ -13,7 +12,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|ExtraBar_obj,
         texture = Vehicles/K5/Vehicle_BlazerSC_White,
-		
 		scale = 1,
 	}
 
@@ -21,7 +19,6 @@ module Base
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|WindshieldArmor_obj,
         texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
-		
 		scale = 1,
 	}
 
@@ -73,7 +70,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = SuburbanBullbar, }
-            itemType = SCKCO.KSeriesBumperSC,
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
 			
 			table partVariation
             {
@@ -88,35 +85,39 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = SuburbanFrontRightWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+			parent = WindowFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
             model Default { file = SuburbanFrontLeftWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+			parent = WindowFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = SuburbanRearRightWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+			parent = WindowRearRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
         part SCArmorRearLeftWindow
         {
             model Default { file = SuburbanRearLeftWindowArmor, }
-            itemType = SCKCO.KSeriesWindowArmorSC,
+			parent = WindowRearLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = SuburbanWindshieldArmor, }
-            itemType = SCKCO.KSeriesWindshieldArmorSC,
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
         }
         
     }

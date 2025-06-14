@@ -57,18 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model K10RearRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model K10RearLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model K10Trunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Trunk_obj,
@@ -92,17 +80,15 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSerieswheelleft
+	model CKSerieswheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
-	model KSerieswheelright
+	model CKSerieswheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	vehicle SC_ChevroletK10McCoy
 	{
@@ -378,7 +364,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = SCKCO.KSeriesHoodSC,
+			itemType = SCKCO.ChevyKSeriesHoodSC,
 		}
 
 		part Heater
@@ -422,7 +408,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.KSeriesWindshieldSC,
+			itemType = SCKCO.ChevyKSeriesWindshieldSC,
 		}
 
 		part WindshieldRear
@@ -453,7 +439,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.KSeriesWindshieldSC,
+			itemType = SCKCO.ChevyKSeriesWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -477,7 +463,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = SCKCO.KSeriesWindowSC,
+			itemType = SCKCO.ChevyKSeriesWindowSC,
 		}
 
 		part WindowFrontLeft
@@ -496,7 +482,7 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = SCKCO.KSeriesWindowSC,
+			itemType = SCKCO.ChevyKSeriesWindowSC,
 		}
 
 		part DoorFrontRight
@@ -534,7 +520,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.KSeriesDoorSC,
+			itemType = SCKCO.ChevyKSeriesDoorSC,
 		}
 
 		part DoorFrontLeft
@@ -572,7 +558,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.KSeriesDoorSC,
+			itemType = SCKCO.ChevyKSeriesDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -625,7 +611,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.KSeriesTrunkLidSC,
+			itemType = SCKCO.ChevyKSeriesTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,

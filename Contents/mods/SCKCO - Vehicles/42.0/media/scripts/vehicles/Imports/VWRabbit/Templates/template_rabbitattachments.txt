@@ -4,7 +4,6 @@ module Base
 	{
 		mesh = vehicles/Attachments/PizzaTopper,
 		texture = Vehicles/VWRabbit/PizzaTopper,
-		
 		scale = 1,
 	}
 
@@ -207,6 +206,7 @@ module Base
         {
             model Default { file = VWRabbitFrontRightWindowArmor, }
             itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowFrontRight,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -215,6 +215,7 @@ module Base
         {
             model Default { file = VWRabbitFrontLeftWindowArmor, }
             itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowFrontLeft,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -222,6 +223,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = VWRabbitFrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
@@ -229,6 +231,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = VWRabbitFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
@@ -236,6 +239,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = VWRabbitRearRightDoorArmor, }
+            parent = DoorRearRight,
             itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
@@ -243,6 +247,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = VWRabbitRearLeftDoorArmor, }
+            parent = DoorRearLeft,
             itemType = SCKCO.VWRabbitDoorArmorSC,
         }
 
@@ -251,6 +256,7 @@ module Base
         {
             model Default { file = VWRabbitRearRightWindowArmor, }
             itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowRearRight,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 
@@ -259,6 +265,7 @@ module Base
         {
             model Default { file = VWRabbitRearLeftWindowArmor, }
             itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowRearLeft,
             requireInstalled = VWRabbitDoorArmorSC,
         }
 

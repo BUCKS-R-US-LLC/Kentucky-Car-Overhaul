@@ -1,9 +1,9 @@
 module SCKCO
 {
 
-	fixing Fix '85 Crown Victoria Bullbar
+	fixing Fix Bumper
     {
-       Require : FordCrownVictoria85BullbarSC1,
+       Require : FordCrownVictoria85BumperSC1,
        GlobalItem : BlowTorch=5,
        ConditionModifier : 1.2,
 
@@ -11,7 +11,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-	fixing Fix '85 Crown Victoria Windshield Armor
+	fixing Fix Windshield Armor
     {
        Require : FordCrownVictoria85WindshieldArmorSC1,
        GlobalItem : BlowTorch=5,
@@ -21,7 +21,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-	fixing Fix Ford Hood Welding
+	fixing Fix Hood Welding
 	{
 	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordF150HoodSC2;FordBroncoExplorerSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : BlowTorch=5,
@@ -31,7 +31,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
 	}
 
-    fixing Fix Ford Hood
+    fixing Fix Hood
 	{
 	   Require : FordCrownVictoria85HoodSC1;FordCrownVictoria92HoodSC1;FordTaurusHoodSC1;FordBroncoHoodSC2;FordExplorerHoodSC2;FordF150HoodSC2;FordF700HoodSC2;FordMustangHoodSC3,
 	   GlobalItem : Screws=8,
@@ -40,7 +40,7 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Ford Trunk Lid Welding
+	fixing Fix Trunk Lid Welding
     {
        Require : FordCrownVictoria85TrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordBroncoTrunkLidSC2;FordExplorerTrunkLidSC2;FordF350RearDoorsSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
        GlobalItem : BlowTorch=5,
@@ -50,7 +50,7 @@ module SCKCO
        Fixer : SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
     }
 
-    fixing Fix Ford Trunk Lid
+    fixing Fix Trunk Lid
 	{
        Require : FordCrownVictoria85TrunkLidSC1;FordCrownVictoria92TrunkLidSC1;FordTaurusTrunkLidSC1;FordExplorerTrunkLidSC2;FordBroncoTrunkLidSC2;FordF350TrunkLidSC2;FordF150TrunkLidSC2;FordF700PanelTruckGateSC2;FordF700BoxTruckRollUpDoorSC2;FordMustangTrunkLidSC3,
 	   GlobalItem : Screws=8,
@@ -59,9 +59,9 @@ module SCKCO
        Fixer : SheetMetal; Mechanics=2,
 	}
 
-	fixing Fix Ford Door Welding
+	fixing Fix Door Welding
 	{
-	   Require : FordCrownVictoria85DoorSC1;FordCrownVictoria85RearDoorSC1;FordCrownVictoria92DoorSC1;FordCrownVictoria92RearDoorSC1;FordTaurusDoorSC1;FordTaurusRearDoorSC1;FordExplorerFrontDoorSC2;FordBroncoDoorSC2;FordF150DoorSC2;FordF350FrontDoorSC2;FordF700DoorSC2;FordMustangDoorSC3,
+	   Require : FordCrownVictoria85DoorSC1;FordCrownVictoria92DoorSC1;FordTaurusDoorSC1;FordTaurusRearDoorSC1;FordBroncoDoorSC2;FordF150DoorSC2;FordF350DoorSC2;FordF700DoorSC2;FordMustangDoorSC3,
 	   GlobalItem : BlowTorch=5,
 	   ConditionModifier : 1.2,
 

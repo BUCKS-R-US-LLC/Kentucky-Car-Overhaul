@@ -4,7 +4,6 @@ module Base
     model JeepCJ7Bumper
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontBumper_obj,
-		
         texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
 		scale = 1,
 	}
@@ -12,7 +11,6 @@ module Base
 	model JeepCJ7WindshieldArmor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindshieldArmor_obj,
-		
         texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
 		scale = 1,
 	}
@@ -22,6 +20,7 @@ module Base
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontLeftWindowArmorDoorBone 1.0,
 		scale = 1,
 	}
 
@@ -30,6 +29,7 @@ module Base
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
+		boneWeight = FrontRightWindowArmorDoorBone 1.0,
 		scale = 1,
 	}
 
@@ -78,6 +78,7 @@ module Base
         {
             model Default { file = JeepCJ7FRWA, }
             itemType = SCKCO.JeepCJ7DoorArmorSC,
+            parent = WindowFrontRight,
             requireInstalled = JeepCJ7DoorArmorSC,
         }
 
@@ -86,6 +87,7 @@ module Base
         {
             model Default { file = JeepCJ7FLWA, }
             itemType = SCKCO.JeepCJ7WindowArmorSC,
+            parent = WindowFrontLeft,
             requireInstalled = JeepCJ7DoorArmorSC,
         }
 
@@ -93,6 +95,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = JeepCJ7FrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.JeepCJ7DoorArmorSC,
         }
 
@@ -100,6 +103,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = JeepCJ7FrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.JeepCJ7DoorArmorSC,
         }
 

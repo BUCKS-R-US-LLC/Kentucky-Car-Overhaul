@@ -1,0 +1,104 @@
+module Base
+{
+
+	model PathfinderBumper
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderWindshieldArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderFrontLeftDoorArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PathfinderFrontRightDoorArmor
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PathfinderFLWA
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model PathfinderFRWA
+	{
+		mesh = vehicles/Mazda/Vehicle_Pathfinder_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+    template vehicle PathfinderAttachments
+	{
+		
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = PathfinderBumper, }
+            itemType = SCKCO.NissanPathfinderBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = PathfinderWindshieldArmor, }
+            itemType = SCKCO.NissanPathfinderWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = PathfinderFRWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = PathfinderFLWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = PathfinderFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.NissanPathfinderDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = PathfinderFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.NissanPathfinderDoorArmorSC,
+        }
+
+    }
+}

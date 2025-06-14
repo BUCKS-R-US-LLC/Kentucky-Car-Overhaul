@@ -147,13 +147,6 @@ module Base
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model JeepCherokeeSpareTire
-	{
-		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|SpareTire_obj,
-		texture = vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		
-		scale = 1,
-	}
 	model JeepCherokeewheelleft
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
@@ -164,7 +157,6 @@ module Base
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_RightWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		
 	}
 	vehicle SC_JeepCherokee
 	{
@@ -973,28 +965,6 @@ module Base
 			{
 				file = JeepCherokeewheelright,
 			}
-		}
-
-		part JeepCherokeeSpareTire
-		{
-			model JeepCherokeeSpareTire
-			{
-				file = JeepCherokeeSpareTire,
-			}
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
 		}
 
 		template = Brake,

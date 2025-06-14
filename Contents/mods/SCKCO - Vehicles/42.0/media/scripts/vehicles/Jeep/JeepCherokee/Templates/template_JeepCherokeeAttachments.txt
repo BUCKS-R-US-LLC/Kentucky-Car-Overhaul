@@ -93,6 +93,13 @@ module Base
 		scale = 1,
 	}
 
+	model JeepCherokeeSpareTire
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|SpareTire_obj,
+		texture = vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
+		scale = 1,
+	}
+
 	template vehicle JeepCherokeeAttachments
 	{
 
@@ -111,11 +118,11 @@ module Base
             itemType = SCKCO.JeepCherokeeWindshieldArmorSC,
         }
 
-
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
             model Default { file = JeepCherokeeFrontRightDoorArmor, }
+            parent = DoorFrontRight,
             itemType = SCKCO.JeepCherokeeDoorArmorSC,
         }
 
@@ -123,14 +130,15 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = JeepCherokeeFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
             itemType = SCKCO.JeepCherokeeDoorArmorSC,
         }
-
 
         template = armorUpgrades/part/SCArmorRearRightDoor,
         part SCArmorRearRightDoor
         {
             model Default { file = JeepCherokeeRearRightDoorArmor, }
+            parent = DoorRearRight,
             itemType = SCKCO.JeepCherokeeDoorArmorSC,
         }
 
@@ -138,14 +146,15 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = JeepCherokeeRearLeftDoorArmor, }
+            parent = DoorRearLeft,
             itemType = SCKCO.JeepCherokeeDoorArmorSC,
         }
-
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
             model Default { file = JeepCherokeeFrontRightWindowArmor, }
+            parent = WindowFrontRight,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
 
@@ -153,14 +162,15 @@ module Base
         part SCArmorFrontLeftWindow
         {
             model Default { file = JeepCherokeeFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
-
 
         template = armorUpgrades/part/SCArmorRearRightWindow,
         part SCArmorRearRightWindow
         {
             model Default { file = JeepCherokeeRearRightWindowArmor, }
+            parent = WindowRearRight,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
 
@@ -168,14 +178,15 @@ module Base
         part SCArmorRearLeftWindow
         {
             model Default { file = JeepCherokeeRearLeftWindowArmor, }
+            parent = WindowRearLeft,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
-
 
         template = armorUpgrades/part/SCArmorMiddleRightWindow,
         part SCArmorMiddleRightWindow
         {
             model Default { file = JeepCherokeeMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
 
@@ -183,12 +194,13 @@ module Base
         part SCArmorMiddleLeftWindow
         {
             model Default { file = JeepCherokeeMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
             itemType = SCKCO.JeepCherokeeWindowArmorSC,
         }
 
 		part JeepCherokeeSpareWheel
         {
-			model jeepspare { file = JeepCJ7SpareWheel, }
+			model jeepspare { file = JeepCherokeeSpareWheel, }
 		    area = TruckBed,
             category = SCUCKaccessories,
             itemType = Base.NormalTire,

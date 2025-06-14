@@ -105,6 +105,7 @@ module Base
         {
             model Default { file = TaurusFRWA, }
             itemType = SCKCO.FordTaurusDoorArmorSC,
+			parent = WindowFrontRight,
             requireInstalled = FordTaurusDoorArmorSC,
         }
 
@@ -113,6 +114,7 @@ module Base
         {
             model Default { file = TaurusFLWA, }
             itemType = SCKCO.FordTaurusWindowArmorSC,
+			parent = WindowFrontLeft,
             requireInstalled = FordTaurusWindowArmorSC,
         }
 
@@ -121,6 +123,7 @@ module Base
         {
             model Default { file = TaurusRRWA, }
             itemType = SCKCO.FordTaurusWindowArmorSC,
+			parent = WindowRearRight,
             requireInstalled = FordTaurusDoorArmorSC,
         }
 
@@ -129,6 +132,7 @@ module Base
         {
             model Default { file = TaurusRLWA, }
             itemType = SCKCO.FordTaurusWindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = FordTaurusWindowArmorSC,
         }
 		
@@ -136,6 +140,7 @@ module Base
         part SCArmorFrontRightDoor
         {
             model Default { file = TaurusFrontRightDoorArmor, }
+			parent = DoorFrontRight,
             itemType = SCKCO.FordTaurusDoorArmorSC,
         }
 
@@ -143,6 +148,7 @@ module Base
         part SCArmorFrontLeftDoor
         {
             model Default { file = TaurusFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
             itemType = SCKCO.FordTaurusDoorArmorSC,
         }
 
@@ -150,6 +156,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = TaurusRearRightDoorArmor, }
+			parent = DoorRearRight,
             itemType = SCKCO.FordTaurusDoorArmorSC,
         }
 
@@ -157,6 +164,7 @@ module Base
         part SCArmorRearLeftDoor
         {
             model Default { file = TaurusRearLeftDoorArmor, }
+			parent = DoorRearLeft,
             itemType = SCKCO.FordTaurusDoorArmorSC,
         }
         
