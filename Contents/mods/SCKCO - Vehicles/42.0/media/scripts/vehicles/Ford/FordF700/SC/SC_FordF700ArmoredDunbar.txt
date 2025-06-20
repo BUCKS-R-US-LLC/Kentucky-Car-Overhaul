@@ -128,7 +128,7 @@ module Base
 		{
 			file = SC_FordF700ArmoredBank,
 			scale = 0.6300,
-			offset = 0.0000 -0.1746 -1.4762,
+			offset = 0.0000 0.3154 -1.4762,
 		}
 
 		skin
@@ -156,7 +156,7 @@ module Base
 		extents = 2.9841 2.7619 7.9365,
 		mass = 500,
 		physicsChassisShape = 2.9841 2.7619 7.9365,
-		centerOfMassOffset = 0.0000 1.5714 0.0159,
+		centerOfMassOffset = 0.0000 2.0755 0.0159,
 		shadowExtents = 3.2617 8.5003,
 		shadowOffset = 0.0000 0.0222,
 		engineForce = 9000,
@@ -182,7 +182,7 @@ module Base
 		{
 			front = true,
 			offset = 1.2222 0.3492 4.4921,
-			radius = 0.50f,
+			radius = 0.64f,
 			width = 0.30f,
 		}
 
@@ -190,7 +190,7 @@ module Base
 		{
 			front = true,
 			offset = -1.2222 0.3492 4.4921,
-			radius = 0.50f,
+			radius = 0.64f,
 			width = 0.30f,
 		}
 
@@ -198,7 +198,7 @@ module Base
 		{
 			front = false,
 			offset = 1.1429 0.3492 -1.3016,
-			radius = 0.50f,
+			radius = 0.64f,
 			width = 0.30f,
 		}
 
@@ -206,7 +206,7 @@ module Base
 		{
 			front = false,
 			offset = -1.1587 0.3492 -1.3016,
-			radius = 0.50f,
+			radius = 0.64f,
 			width = 0.30f,
 		}
 
@@ -354,6 +354,8 @@ module Base
 			model seatfrontLeft
 			{
 				file = F700ArmoredDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -362,6 +364,8 @@ module Base
 			model seatfrontRight
 			{
 				file = F700ArmoredPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -395,6 +399,8 @@ module Base
 			model engineDoor
 			{
 				file = F700ArmoredHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -456,6 +462,8 @@ module Base
 			model WindshieldFront
 			{
 				file = F700ArmoredWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -496,6 +504,8 @@ module Base
 			model windowFR
 			{
 				file = F700ArmoredFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			category = SCUCKwindows,
@@ -509,6 +519,8 @@ module Base
 			model windowFL
 			{
 				file = F700ArmoredFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -527,6 +539,8 @@ module Base
 			model windowMR
 			{
 				file = F700ArmoredRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -545,6 +559,8 @@ module Base
 			model windowML
 			{
 				file = F700ArmoredRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -568,6 +584,8 @@ module Base
 			model windowRR
 			{
 				file = F700ArmoredRearWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -591,6 +609,8 @@ module Base
 			model Default
 			{
 				file = F700ArmoredFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -629,6 +649,8 @@ module Base
 			model Default
 			{
 				file = F700ArmoredFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -667,6 +689,8 @@ module Base
 			model Default
 			{
 				file = F700ArmoredRearDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -701,7 +725,6 @@ module Base
 		}
 
 		template = Tire,
-		
 
 		part BackOfTruck
 		{
@@ -729,6 +752,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = F700BoxTruckfrontwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -737,6 +762,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = F700BoxTruckfrontwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -745,6 +772,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = F700BoxTruckrearwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -753,6 +782,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = F700BoxTruckrearwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
