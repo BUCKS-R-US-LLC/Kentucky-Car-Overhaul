@@ -160,7 +160,7 @@ module Base
 		{
 			file = SC_M998Hardtop,
 			scale = 0.4000,
-			offset = 0.0000 -0.4000 0.0000,
+			offset = 0.0000 -0.0749 0.0000,
 		}
 
 		skin
@@ -234,7 +234,7 @@ module Base
 		{
 			front = true,
 			offset = 2.1500 0.7250 4.0250,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -242,7 +242,7 @@ module Base
 		{
 			front = true,
 			offset = -2.1500 0.7250 4.0250,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -250,7 +250,7 @@ module Base
 		{
 			front = false,
 			offset = 2.1500 0.7250 -3.5750,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -258,7 +258,7 @@ module Base
 		{
 			front = false,
 			offset = -2.1500 0.7250 -3.5750,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -406,18 +406,20 @@ module Base
 		template = Muffler,
 
 		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
 
 		part DoorFrontLeft
 		{
@@ -472,8 +474,9 @@ module Base
 			model seatfrontLeft
 			{
 				file = HM998HardtopDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -481,8 +484,9 @@ module Base
 			model seatfrontRight
 			{
 				file = HM998HardtopPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -490,8 +494,9 @@ module Base
 			model seatrearLeft
 			{
 				file = HM998HardtopRearLeftPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatRearRight
@@ -499,8 +504,9 @@ module Base
 			model seatrearRight
 			{
 				file = HM998HardtopRearRightPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part Muffler
@@ -508,6 +514,8 @@ module Base
 			model HM998Exhaust
 			{
 				file = HM998Exhaust,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			table install
@@ -528,6 +536,8 @@ module Base
 			model engineDoor
 			{
 				file = HM998HardtopHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -597,6 +607,8 @@ module Base
 			model windshieldFront
 			{
 				file = HM998HardtopWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -628,6 +640,8 @@ module Base
 			model windowFR
 			{
 				file = HM998HardtopFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -647,6 +661,8 @@ module Base
 			model windowFL
 			{
 				file = HM998HardtopFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -666,6 +682,8 @@ module Base
 			model windowRR
 			{
 				file = HM998HardtopRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -685,6 +703,8 @@ module Base
 			model windowRL
 			{
 				file = HM998HardtopRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -868,8 +888,8 @@ module Base
 			model Default
 			{
 				file = HM998HardtopTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -906,15 +926,15 @@ module Base
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part TireFrontRight
@@ -922,8 +942,9 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part TireRearLeft
@@ -931,8 +952,9 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part TireRearRight
@@ -940,8 +962,9 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		template = Brake,
@@ -996,7 +1019,7 @@ module Base
 
 			itemType = Base.HamRadio2,
 		}
-		
+
 		template = Headlight,
 
 		part PassengerCompartment
@@ -1011,9 +1034,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		physics box

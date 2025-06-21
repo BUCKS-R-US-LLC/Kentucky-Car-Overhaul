@@ -159,7 +159,7 @@ module Base
 		{
 			file = SC_M998,
 			scale = 0.4000,
-			offset = 0.0000 -0.4000 0.0000,
+			offset = 0.0000 -0.2917 0.0000,
 		}
 
 		skin
@@ -205,7 +205,7 @@ module Base
 		}
 
 		extents = 5.0500 3.2500 10.6000,
-		mass = 100,
+		mass = 800,
 		physicsChassisShape = 5.0500 3.2500 10.6000,
 		centerOfMassOffset = 0.0000 1.6250 0.0000,
 		shadowExtents = 5.4529 10.8239,
@@ -216,7 +216,7 @@ module Base
 		maxSpeed = 80f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		rollInfluence = 0.80f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
 		suspensionStiffness = 80,
@@ -233,7 +233,7 @@ module Base
 		{
 			front = true,
 			offset = 2.1500 0.7250 4.0250,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -241,7 +241,7 @@ module Base
 		{
 			front = true,
 			offset = -2.1500 0.7250 4.0250,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -249,7 +249,7 @@ module Base
 		{
 			front = false,
 			offset = 2.1500 0.7250 -3.5750,
-			radius = 0.50f,
+			radius = 0.80f,
 			width = 0.30f,
 		}
 
@@ -257,7 +257,7 @@ module Base
 		{
 			front = false,
 			offset = -2.1500 0.7250 -3.5750,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -474,6 +474,8 @@ module Base
 			model seatfrontLeft
 			{
 				file = HM998Driver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -482,6 +484,8 @@ module Base
 			model seatfrontRight
 			{
 				file = HM998Passenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -490,6 +494,8 @@ module Base
 			model seatrearLeft
 			{
 				file = HM998RearLeftPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -498,6 +504,8 @@ module Base
 			model seatrearRight
 			{
 				file = HM998RearRightPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -506,6 +514,8 @@ module Base
 			model HM998Exhaust
 			{
 				file = HM998Exhaust,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			table install
@@ -526,6 +536,8 @@ module Base
 			model engineDoor
 			{
 				file = HM998Hood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -595,6 +607,8 @@ module Base
 			model windshieldFront
 			{
 				file = HM998Windshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -626,6 +640,8 @@ module Base
 			model windowFR
 			{
 				file = HM998RightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -645,6 +661,8 @@ module Base
 			model windowFL
 			{
 				file = HM998LeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -664,6 +682,8 @@ module Base
 			model windowRR
 			{
 				file = HM998RearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -683,6 +703,8 @@ module Base
 			model windowRL
 			{
 				file = HM998RearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -866,8 +888,8 @@ module Base
 			model Default
 			{
 				file = HM998Trunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -904,13 +926,14 @@ module Base
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -919,6 +942,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -927,6 +952,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -935,6 +962,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = HMMWVwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -990,7 +1019,7 @@ module Base
 
 			itemType = Base.HamRadio2,
 		}
-		
+
 		template = Headlight,
 
 		part PassengerCompartment
@@ -1005,9 +1034,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		physics box
