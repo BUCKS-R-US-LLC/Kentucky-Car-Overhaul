@@ -144,7 +144,7 @@ module Base
 		{
 			file = SC_FordTaurus,
 			scale = 0.5900,
-			offset = 0.0000 -0.3559 0.3559,
+			offset = 0.0000 -0.1644 0.3559,
 		}
 
 		skin
@@ -229,7 +229,7 @@ module Base
 		{
 			front = true,
 			offset = 1.1864 0.4237 1.9492,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -237,7 +237,7 @@ module Base
 		{
 			front = true,
 			offset = -1.1864 0.4237 1.9492,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -245,7 +245,7 @@ module Base
 		{
 			front = false,
 			offset = 1.1864 0.4237 -2.2203,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -253,7 +253,7 @@ module Base
 		{
 			front = false,
 			offset = -1.1864 0.4237 -2.2203,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -406,6 +406,8 @@ module Base
 			model seatfrontLeft
 			{
 				file = FordTaurusDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -414,6 +416,8 @@ module Base
 			model seatfrontRight
 			{
 				file = FordTaurusPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -422,6 +426,8 @@ module Base
 			model seatrearLeft
 			{
 				file = FordTaurusDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -430,6 +436,8 @@ module Base
 			model seatrearRight
 			{
 				file = FordTaurusDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -453,6 +461,8 @@ module Base
 			model engineDoor
 			{
 				file = FordTaurusHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -514,6 +524,8 @@ module Base
 			model windshieldFront
 			{
 				file = FordTaurusWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -545,6 +557,8 @@ module Base
 			model windshieldRear
 			{
 				file = FordTaurusRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -585,6 +599,8 @@ module Base
 			model windowFR
 			{
 				file = FordTaurusFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -604,6 +620,8 @@ module Base
 			model windowFL
 			{
 				file = FordTaurusFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -623,6 +641,8 @@ module Base
 			model windowRR
 			{
 				file = FordTaurusRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -642,6 +662,8 @@ module Base
 			model windowRL
 			{
 				file = FordTaurusRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -661,6 +683,8 @@ module Base
 			model Default
 			{
 				file = FordTaurusFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -699,6 +723,8 @@ module Base
 			model Default
 			{
 				file = FordTaurusFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -737,6 +763,8 @@ module Base
 			model Default
 			{
 				file = FordTaurusRearRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -775,6 +803,8 @@ module Base
 			model Default
 			{
 				file = FordTaurusRearLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -825,8 +855,8 @@ module Base
 			model Default
 			{
 				file = FordTaurusTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -863,13 +893,14 @@ module Base
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = FordTauruswheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -878,6 +909,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FordTauruswheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -886,6 +919,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FordTauruswheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -894,6 +929,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = FordTauruswheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
