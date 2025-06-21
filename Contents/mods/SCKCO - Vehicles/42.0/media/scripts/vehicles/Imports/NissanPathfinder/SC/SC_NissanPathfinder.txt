@@ -43,6 +43,19 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
+
+	model PathfinderRearRightWindow
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
+	model PathfinderRearLeftWindow
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
 	model PathfinderFrontRightDoor
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightDoor_obj,
@@ -83,12 +96,12 @@ module Base
 	}
 	model PathfinderWheelleft
 	{
-		mesh = vehicles/Nissan/Vehicle_Pathfinder_LeftWheel,
+		mesh = vehicles/Wheels/Vehicle_Pathfinder_LeftWheel,
 		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
 	model PathfinderWheelright
 	{
-		mesh = vehicles/Nissan/Vehicle_Pathfinder_RightWheel,
+		mesh = vehicles/Wheels/Vehicle_Pathfinder_RightWheel,
 		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
 	vehicle SC_NissanPathFinder
@@ -102,7 +115,7 @@ module Base
 		{
 			file = SC_NissanPathFinder,
 			scale = 0.6300,
-			offset = 0.0000 -0.1587 0.0794,
+			offset = 0.0000 0.5238 0.0794,
 		}
 
 		skin
@@ -180,7 +193,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.0476 0.3810 2.0000,
+			offset = 1.0476 -0.4232 2.1429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -188,7 +201,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.0476 0.3810 2.0000,
+			offset = -1.0476 -0.4232 2.1429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -196,7 +209,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.0476 0.3810 -2.0317,
+			offset = 1.0476 -0.4232 -1.8889,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -204,7 +217,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.0476 0.3810 -2.0317,
+			offset = -1.0476 -0.4232 -1.8889,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -218,7 +231,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 0.9683 0.0159,
+				offset = 0.5714 0.3810 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -237,7 +250,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5714 0.9683 0.0159,
+				offset = -0.5714 0.3810 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -308,8 +321,9 @@ module Base
 			model seatfrontLeft
 			{
 				file = PathfinderDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -317,8 +331,9 @@ module Base
 			model seatfrontRight
 			{
 				file = PathfinderPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part Muffler
@@ -341,6 +356,8 @@ module Base
 			model engineDoor
 			{
 				file = PathfinderHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -402,6 +419,8 @@ module Base
 			model WindshieldFront
 			{
 				file = PathfinderWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -433,6 +452,8 @@ module Base
 			model WindshieldRear
 			{
 				file = PathfinderRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -469,6 +490,8 @@ module Base
 			model windowFR
 			{
 				file = PathfinderFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -488,6 +511,8 @@ module Base
 			model windowFL
 			{
 				file = PathfinderFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -502,11 +527,56 @@ module Base
 			itemType = SCKCO.NissanPathfinderWindowSC,
 		}
 
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = PathfinderRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.NissanPathfinderWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = PathfinderRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.NissanPathfinderWindowSC,
+		}
+
+
 		part DoorFrontRight
 		{
 			model Default
 			{
 				file = PathfinderFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -545,6 +615,8 @@ module Base
 			model Default
 			{
 				file = PathfinderFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -595,8 +667,8 @@ module Base
 			model Default
 			{
 				file = PathfinderTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -633,12 +705,14 @@ module Base
 
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
-		
+
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = PathfinderWheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -647,6 +721,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = PathfinderWheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -655,6 +731,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = PathfinderWheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -663,6 +741,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = PathfinderWheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 

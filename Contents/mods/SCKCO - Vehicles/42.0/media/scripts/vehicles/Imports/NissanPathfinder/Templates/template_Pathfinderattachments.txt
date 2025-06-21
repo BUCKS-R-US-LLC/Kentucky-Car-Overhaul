@@ -48,7 +48,30 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-    
+
+	model PathfinderFLWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model PathfinderRRWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderRLWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
     template vehicle PathfinderAttachments
 	{
 		
@@ -81,6 +104,24 @@ module Base
             model Default { file = PathfinderFLWA, }
             itemType = SCKCO.NissanPathfinderWindowArmorSC,
 			parent = WindowFrontLeft,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = PathfinderRRWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = PathfinderRLWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowRearLeft,
             requireInstalled = MazdaPathfinderDoorArmorSC,
         }
 
