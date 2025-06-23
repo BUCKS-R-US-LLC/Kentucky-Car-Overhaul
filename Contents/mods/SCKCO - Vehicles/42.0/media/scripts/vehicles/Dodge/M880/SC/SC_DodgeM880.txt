@@ -57,18 +57,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M880RearRightWindow
-	{
-		mesh = vehicles/Dodge/Vehicle_M880_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M880RearLeftWindow
-	{
-		mesh = vehicles/Dodge/Vehicle_M880_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model M880Trunk
 	{
 		mesh = vehicles/Dodge/Vehicle_M880_SC|TrunkDoor_obj,
@@ -93,15 +81,13 @@ module Base
 	}
 	model M880wheelleft
 	{
-		mesh = vehicles/Dodge/Vehicle_M880_LeftWheel,
+		mesh = vehicles/Wheels/Vehicle_M880_LeftWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
-		
 	}
 	model M880wheelright
 	{
-		mesh = vehicles/Dodge/Vehicle_M880_RightWheel,
+		mesh = vehicles/Wheels/Vehicle_M880_RightWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
-		
 	}
 	vehicle SC_DodgeM880
 	{
@@ -155,7 +141,7 @@ module Base
 		}
 
 		extents = 2.9474 3.0877 8.6667,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.9474 3.0877 8.6667,
 		centerOfMassOffset = 0.0000 1.5614 -0.4737,
 		shadowExtents = 2.9576 8.6826,
@@ -183,7 +169,7 @@ module Base
 		{
 			front = true,
 			offset = 1.2632 0.3860 2.4386,
-			radius = 0.20f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -191,7 +177,7 @@ module Base
 		{
 			front = true,
 			offset = -1.2632 0.3860 2.4386,
-			radius = 0.20f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -199,7 +185,7 @@ module Base
 		{
 			front = false,
 			offset = 1.2632 0.3860 -3.0351,
-			radius = 0.20f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -207,7 +193,7 @@ module Base
 		{
 			front = false,
 			offset = -1.2632 0.3860 -3.0351,
-			radius = 0.20f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -635,7 +621,6 @@ module Base
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		
-
 		part TruckBedOpen
 		{
 			container
