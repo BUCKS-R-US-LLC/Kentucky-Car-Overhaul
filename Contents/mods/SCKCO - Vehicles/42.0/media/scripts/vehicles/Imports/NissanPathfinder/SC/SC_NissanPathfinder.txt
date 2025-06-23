@@ -2,32 +2,32 @@ module Base
 {
 	model SC_NissanPathFinder
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|base_mesh,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model PathfinderDriver
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|DriverSeat_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderPassenger
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|PassengerSeat_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderWindshield
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Windshield_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderFrontRightWindow
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontRightWindow_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -36,16 +36,29 @@ module Base
 	}
 	model PathfinderFrontLeftWindow
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
+
+	model PathfinderRearRightWindow
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
+	model PathfinderRearLeftWindow
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
 	model PathfinderFrontRightDoor
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontRightDoor_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -53,7 +66,7 @@ module Base
 	}
 	model PathfinderFrontLeftDoor
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -61,7 +74,7 @@ module Base
 	}
 	model PathfinderTrunk
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Trunk_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -69,31 +82,29 @@ module Base
 	}
 	model PathfinderRearWindshield
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|RearWindshield_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderHood
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Hood_obj,
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model MazdaWheelleft
+	model PathfinderWheelleft
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_LeftWheel,
-		texture = Vehicles/Nissan/Vehicle_MazdaB_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_Pathfinder_LeftWheel,
+		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
-	model MazdaWheelright
+	model PathfinderWheelright
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_RightWheel,
-		texture = Vehicles/Nissan/Vehicle_MazdaB_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_Pathfinder_RightWheel,
+		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
-	vehicle SC_MazdaB2000
+	vehicle SC_NissanPathFinder
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -102,48 +113,48 @@ module Base
 
 		model
 		{
-			file = SC_MazdaB,
+			file = SC_NissanPathFinder,
 			scale = 0.6300,
-			offset = 0.0000 -0.1587 0.0794,
+			offset = 0.0000 0.5238 0.0794,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_Red,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Pewter,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_HardBlue,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_BlackPewter,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_Black,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Black,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_Green,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Red,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_Cream,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Bluemist,
 		}
 
 		skin
 		{
-			texture = Vehicles/Nissan/Vehicle_MazdaB_Silver,
+			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
 		}
 
-		textureRust = Vehicles/Nissan/Vehicle_MazdaB_Rust,
-		textureMask = Vehicles/Nissan/Vehicle_MazdaB_Mask,
-		textureLights = Vehicles/Nissan/Vehicle_MazdaB_Lights,
-		textureDamage1Shell = Vehicles/Nissan/Vehicle_MazdaB_Scratch,
-		textureDamage2Shell = Vehicles/Nissan/Vehicle_MazdaB_Scratch,
-		textureDamage1Overlay = Vehicles/Nissan/Vehicle_MazdaB_Blood,
-		textureDamage2Overlay = Vehicles/Nissan/Vehicle_MazdaB_Blood,
+		textureRust = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
+		textureMask = Vehicles/Pathfinder87/Vehicle_Pathfinder_mask,
+		textureLights = Vehicles/Pathfinder87/Vehicle_Pathfinder_lights,
+		textureDamage1Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
+		textureDamage2Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
+		textureDamage1Overlay = Vehicles/Pathfinder87/Vehicle_Pathfidner_Blood,
+		textureDamage2Overlay = Vehicles/Pathfinder87/Vehicle_Pathfidner_Blood,
 
 		sound
 		{
@@ -182,7 +193,7 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.0476 0.3810 2.0000,
+			offset = 1.0476 -0.4232 2.1429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -190,7 +201,7 @@ module Base
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.0476 0.3810 2.0000,
+			offset = -1.0476 -0.4232 2.1429,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -198,7 +209,7 @@ module Base
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.0476 0.3810 -2.0317,
+			offset = 1.0476 -0.4232 -1.8889,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -206,7 +217,7 @@ module Base
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.0476 0.3810 -2.0317,
+			offset = -1.0476 -0.4232 -1.8889,
 			radius = 0.50f,
 			width = 0.30f,
 		}
@@ -220,7 +231,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 0.9683 0.0159,
+				offset = 0.5714 0.3810 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -239,7 +250,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.5714 0.9683 0.0159,
+				offset = -0.5714 0.3810 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -296,7 +307,7 @@ module Base
 			xywh = -1.2222 -1.9524 0.0000 0.0000,
 		}
 
-		template = B2000Attachments,
+		template = PathfinderAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -309,18 +320,20 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = MazdaBDriver,
+				file = PathfinderDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = MazdaBPassenger,
+				file = PathfinderPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part Muffler
@@ -342,7 +355,9 @@ module Base
 		{
 			model engineDoor
 			{
-				file = MazdaBHood,
+				file = PathfinderHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -383,7 +398,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = SCKCO.MazdaB2000HoodSC,
+			itemType = SCKCO.NissanPathfinderHoodSC,
 		}
 
 		part Heater
@@ -403,7 +418,9 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = MazdaBWindshield,
+				file = PathfinderWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -427,14 +444,16 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.MazdaB2000WindshieldSC,
+			itemType = SCKCO.NissanPathfinderWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model WindshieldRear
 			{
-				file = MazdaBRearWindshield,
+				file = PathfinderRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -458,7 +477,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.MazdaB2000WindshieldSC,
+			itemType = SCKCO.NissanPathfinderWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -470,7 +489,9 @@ module Base
 		{
 			model windowFR
 			{
-				file = MazdaBFrontRightWindow,
+				file = PathfinderFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -482,14 +503,16 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = SCKCO.MazdaB2000WindowSC,
+			itemType = SCKCO.NissanPathfinderWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = MazdaBFrontLeftWindow,
+				file = PathfinderFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -501,14 +524,59 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = SCKCO.MazdaB2000WindowSC,
+			itemType = SCKCO.NissanPathfinderWindowSC,
 		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = PathfinderRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = TireRearLeft,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.NissanPathfinderWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = PathfinderRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = TireRearRight,
+			parent =,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.NissanPathfinderWindowSC,
+		}
+
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = MazdaBFrontRightDoor,
+				file = PathfinderFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -539,14 +607,16 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000DoorSC,
+			itemType = SCKCO.NissanPathfinderDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = MazdaBFrontLeftDoor,
+				file = PathfinderFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -577,7 +647,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000DoorSC,
+			itemType = SCKCO.NissanPathfinderDoorSC,
 		}
 
 		template = TrunkDoor,
@@ -596,9 +666,9 @@ module Base
 
 			model Default
 			{
-				file = MazdaBTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				file = PathfinderTrunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -630,17 +700,19 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000TrunkLidSC,
+			itemType = SCKCO.NissanPathfinderTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
-		
+
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = PathfinderWheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -648,7 +720,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = PathfinderWheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -656,7 +730,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = PathfinderWheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -664,7 +740,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = PathfinderWheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
