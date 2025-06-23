@@ -75,28 +75,24 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Radio_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Radio,
-		
 		scale = 1,
 	}
 	model M151SpareWheel
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|SpareWheel_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_wheel,
-		
 		scale = 1,
 	}
 	model M151Antenna
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RadioAntenna_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
-		
 		scale = 1,
 	}
 	model M151JerryCan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RightJerryCan_obj,
 		texture = vehicles/M151A2/GIJerryCan,
-		
 		scale = 1,
 	}
 	model M151Windshield
@@ -154,7 +150,7 @@ module Base
 		{
 			file = SC_M151A2,
 			scale = 0.2500,
-			offset = 0.0000 -0.3731 -0.0400,
+			offset = 0.0000 -0.1868 -0.0400,
 		}
 
 		skin
@@ -234,27 +230,27 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 5.6800 5.6000 10.8000,
-		mass = 500,
-		physicsChassisShape = 5.6800 5.6000 10.8000,
-		centerOfMassOffset = 0.0000 2.8400 0.2000,
+		extents = 5.6800 2.3200 10.8000,
+		mass = 100,
+		physicsChassisShape = 5.6800 2.3200 10.8000,
+		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
+		engineForce = 6000,
+		maxSpeed = 50f,
+		engineLoudness = 70,
+		engineQuality = 76,
+		brakingForce = 70,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
+		rollInfluence = 0.95f,
+		steeringIncrement = 0.06,
+		steeringClamp = 0.8,
+		suspensionStiffness = 180,
+		suspensionCompression = 8.00,
 		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 1200,
 		rearEndHealth = 750,
 		seats = 4,
@@ -263,23 +259,23 @@ module Base
 		{
 			front = true,
 			offset = 2.4000 0.8800 4.2800,
-			radius = 0.90f,
-			width = 1.00f,
+			radius = 1.30f,
+			width = 0.30f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
 			offset = -2.4000 0.8800 4.2800,
-			radius = 0.90f,
-			width = 1.00f,
+			radius = 1.30f,
+			width = 0.30f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
 			offset = 2.4000 0.8800 -3.4000,
-			radius = 0.55f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 
@@ -287,7 +283,7 @@ module Base
 		{
 			front = false,
 			offset = -2.4000 0.8800 -3.4000,
-			radius = 0.55f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 

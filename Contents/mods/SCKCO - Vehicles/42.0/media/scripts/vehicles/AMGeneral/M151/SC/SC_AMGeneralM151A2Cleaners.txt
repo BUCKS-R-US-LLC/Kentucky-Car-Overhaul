@@ -175,13 +175,13 @@ module Base
 		}
 
 		extents = 5.6800 2.3200 10.8000,
-		mass = 500,
+		mass = 100,
 		physicsChassisShape = 5.6800 2.3200 10.8000,
 		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 4500,
-		maxSpeed = 60f,
+		engineForce = 6000,
+		maxSpeed = 50f,
 		engineLoudness = 70,
 		engineQuality = 76,
 		brakingForce = 70,
@@ -189,8 +189,8 @@ module Base
 		rollInfluence = 0.95f,
 		steeringIncrement = 0.06,
 		steeringClamp = 0.8,
-		suspensionStiffness = 80,
-		suspensionCompression = 1.83,
+		suspensionStiffness = 180,
+		suspensionCompression = 8.00,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 14,
 		suspensionRestLength = 0.20f,
@@ -203,7 +203,7 @@ module Base
 		{
 			front = true,
 			offset = 2.4000 0.8800 4.2800,
-			radius = 0.50f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 
@@ -211,7 +211,7 @@ module Base
 		{
 			front = true,
 			offset = -2.4000 0.8800 4.2800,
-			radius = 0.50f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 
@@ -219,7 +219,7 @@ module Base
 		{
 			front = false,
 			offset = 2.4000 0.8800 -3.4000,
-			radius = 0.55f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 
@@ -227,7 +227,7 @@ module Base
 		{
 			front = false,
 			offset = -2.4000 0.8800 -3.4000,
-			radius = 0.55f,
+			radius = 1.30f,
 			width = 0.30f,
 		}
 

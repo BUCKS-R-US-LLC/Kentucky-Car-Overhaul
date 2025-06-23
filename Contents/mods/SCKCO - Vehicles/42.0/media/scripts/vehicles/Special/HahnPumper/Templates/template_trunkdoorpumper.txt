@@ -4,6 +4,7 @@ module Base
 	{
 		part TrunkDoor1
 		{
+			category = nodisplay,
 			area = SideContainer1,
 			door
 			{
@@ -40,7 +41,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = SCKCO.TrunkDoor,
+			itemType = SCKCO.FillerPartSC,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
@@ -127,7 +128,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = SCKCO.TrunkDoor,
+			itemType = SCKCO.FillerPartSC,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
