@@ -82,21 +82,18 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|SpareWheel_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_wheel,
-		
 		scale = 1,
 	}
 	model M151Antenna
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RadioAntenna_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
-		
 		scale = 1,
 	}
 	model M151JerryCan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RightJerryCan_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
-		
 		scale = 1,
 	}
 	model M151Windshield
@@ -135,13 +132,11 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		
 	}
 	model M151wheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
 		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
-		
 	}
 	vehicle SC_AMGeneralM151A2Cleaners
 	{
@@ -180,7 +175,7 @@ module Base
 		}
 
 		extents = 5.6800 2.3200 10.8000,
-		mass = 50,
+		mass = 500,
 		physicsChassisShape = 5.6800 2.3200 10.8000,
 		centerOfMassOffset = 0.0000 1.9200 0.2000,
 		shadowExtents = 5.6749 10.9541,
@@ -224,7 +219,7 @@ module Base
 		{
 			front = false,
 			offset = 2.4000 0.8800 -3.4000,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -232,7 +227,7 @@ module Base
 		{
 			front = false,
 			offset = -2.4000 0.8800 -3.4000,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 

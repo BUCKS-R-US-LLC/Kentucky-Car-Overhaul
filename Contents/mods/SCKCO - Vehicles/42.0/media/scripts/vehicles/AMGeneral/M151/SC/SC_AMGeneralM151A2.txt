@@ -154,7 +154,7 @@ module Base
 		{
 			file = SC_M151A2,
 			scale = 0.2500,
-			offset = 0.0000 -0.6800 -0.0400,
+			offset = 0.0000 -0.3731 -0.0400,
 		}
 
 		skin
@@ -234,27 +234,27 @@ module Base
 			ignitionFail = VehicleIgnitionFailOffRoad,
 		}
 
-		extents = 5.6800 2.3200 10.8000,
-		mass = 50,
-		physicsChassisShape = 5.6800 2.3200 10.8000,
-		centerOfMassOffset = 0.0000 1.9200 0.2000,
+		extents = 5.6800 5.6000 10.8000,
+		mass = 500,
+		physicsChassisShape = 5.6800 5.6000 10.8000,
+		centerOfMassOffset = 0.0000 2.8400 0.2000,
 		shadowExtents = 5.6749 10.9541,
 		shadowOffset = -0.0032 0.2167,
-		engineForce = 4500,
-		maxSpeed = 60f,
-		engineLoudness = 70,
-		engineQuality = 76,
-		brakingForce = 70,
+		engineForce = 4400,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 110f,
+		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.95f,
-		steeringIncrement = 0.06,
-		steeringClamp = 0.8,
-		suspensionStiffness = 80,
-		suspensionCompression = 1.83,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 14,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 2.0f,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
 		frontEndHealth = 1200,
 		rearEndHealth = 750,
 		seats = 4,
@@ -263,23 +263,23 @@ module Base
 		{
 			front = true,
 			offset = 2.4000 0.8800 4.2800,
-			radius = 0.50f,
-			width = 0.30f,
+			radius = 0.90f,
+			width = 1.00f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
 			offset = -2.4000 0.8800 4.2800,
-			radius = 0.50f,
-			width = 0.30f,
+			radius = 0.90f,
+			width = 1.00f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
 			offset = 2.4000 0.8800 -3.4000,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -287,7 +287,7 @@ module Base
 		{
 			front = false,
 			offset = -2.4000 0.8800 -3.4000,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -434,8 +434,9 @@ module Base
 			model seatfrontLeft
 			{
 				file = M151Driver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -443,8 +444,9 @@ module Base
 			model seatfrontRight
 			{
 				file = M151Passenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatRearLeft
@@ -452,8 +454,9 @@ module Base
 			model seatrearLeft
 			{
 				file = M151Double,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatRearRight
@@ -461,8 +464,9 @@ module Base
 			model seatrearRight
 			{
 				file = M151Double,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part Muffler
@@ -479,18 +483,20 @@ module Base
 		}
 
 		part Engine
-        {
-            table partVariation
-            {
-                militaryIgnition = true,
-                additionalVehicleFunc = Engine,
-            }
-            lua {
-                create = Vehicles.Create.SCKCO_VehiclePartVariation,
-                update = Vehicles.Update.SCKCO_militaryEngine,
-                checkEngine = Vehicles.CheckEngine.Engine,
-            }
-        }
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
 
 		template = EngineDoor,
 
@@ -499,6 +505,8 @@ module Base
 			model engineDoor
 			{
 				file = M151Hood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -559,6 +567,8 @@ module Base
 			model WindshieldFrame
 			{
 				file = M151WindshieldFrame,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			table install
@@ -584,6 +594,8 @@ module Base
 			model windshieldFront
 			{
 				file = M151Windshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -621,6 +633,8 @@ module Base
 			model windowFR
 			{
 				file = M151FrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -645,6 +659,8 @@ module Base
 			model windowFL
 			{
 				file = M151FrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -669,6 +685,8 @@ module Base
 			model Default
 			{
 				file = M151FrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -707,6 +725,8 @@ module Base
 			model Default
 			{
 				file = M151FrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -739,15 +759,16 @@ module Base
 
 			itemType = SCKCO.M151DoorSC,
 		}
-		
+
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = M151wheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -756,6 +777,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = M151wheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -764,6 +787,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = M151wheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -772,6 +797,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = M151wheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -815,7 +842,7 @@ module Base
 			{
 				file = M151Radio,
 			}
-			
+
 			itemType = Base.HamRadio2,
 		}
 
@@ -834,9 +861,17 @@ module Base
 
 		part additionalLuaEvents
 		{
-		    category = nodisplay,
-			table partVariation { noLockDoors = true, }
-			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
 		}
 
 		physics box
