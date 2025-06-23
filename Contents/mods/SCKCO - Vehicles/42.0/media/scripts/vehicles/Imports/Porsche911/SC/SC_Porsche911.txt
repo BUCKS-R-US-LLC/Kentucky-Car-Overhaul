@@ -3,32 +3,32 @@ module Base
 	model SC_Porsche911
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
 	model Porsche911Driver
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911Passenger
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911Windshield
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911FrontRightWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model Porsche911FrontLeftWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,19 +44,19 @@ module Base
 	model Porsche911RearRightWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911RearLeftWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911FrontRightDoor
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -64,7 +64,7 @@ module Base
 	model Porsche911FrontLeftDoor
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model Porsche911Trunk
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model Porsche911Hood
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -88,20 +88,18 @@ module Base
 	model Porsche911RearWindshield
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911wheelleft
 	{
 		mesh = vehicles/Porsche/Vehicle_PorscheG911G50_LeftWheel,
 		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
-		
 	}
 	model Porsche911wheelright
 	{
 		mesh = vehicles/Porsche/Vehicle_PorscheG911G50_RightWheel,
 		texture = vehicles/911G50/Vehicle_Porsche911G50_Wheel,
-		
 	}
 	vehicle SC_Porsche911
 	{
@@ -185,7 +183,7 @@ module Base
 		}
 
 		extents = 4.0000 1.6316 10.7895,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 4.0000 1.6316 10.7895,
 		centerOfMassOffset = 0.0000 0.8158 -0.1316,
 		shadowExtents = 4.7222 12.2541,
@@ -214,7 +212,7 @@ module Base
 		{
 			front = true,
 			offset = 1.8421 0.3421 3.0263,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -222,7 +220,7 @@ module Base
 		{
 			front = true,
 			offset = -1.7895 0.3421 3.0263,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -230,7 +228,7 @@ module Base
 		{
 			front = false,
 			offset = 1.8421 0.3421 -3.1316,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
@@ -238,7 +236,7 @@ module Base
 		{
 			front = false,
 			offset = -1.7895 0.3421 -3.1316,
-			radius = 0.50f,
+			radius = 0.90f,
 			width = 0.30f,
 		}
 
