@@ -1,34 +1,34 @@
 module Base
 {
-	model SC_NissanPathFinder
+	model SC_NissanPathfinder
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model PathfinderDriver
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderPassenger
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderFrontRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,13 +37,12 @@ module Base
 	model PathfinderFrontLeftWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-
 	model PathfinderRearRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindow_obj,
@@ -59,7 +58,7 @@ module Base
 	model PathfinderFrontRightDoor
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -67,7 +66,7 @@ module Base
 	model PathfinderFrontLeftDoor
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -75,7 +74,7 @@ module Base
 	model PathfinderTrunk
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -83,16 +82,34 @@ module Base
 	model PathfinderRearWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
 	}
 	model PathfinderHood
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
+	}
+	model PathfinderSpareWheelAssembly
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|SPAssembly_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkDoor 1.0,
+		boneWeight = TrunkAssemblyBone 1.0,
+	}
+	model PathfinderSpareWheel
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|SpareTire_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
 	}
 	model PathfinderWheelleft
 	{
@@ -104,7 +121,7 @@ module Base
 		mesh = vehicles/Wheels/Vehicle_Pathfinder_RightWheel,
 		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
-	vehicle SC_NissanPathFinder
+	vehicle SC_NissanPathfinder
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -113,7 +130,7 @@ module Base
 
 		model
 		{
-			file = SC_NissanPathFinder,
+			file = SC_NissanPathfinder,
 			scale = 0.6300,
 			offset = 0.0000 0.5238 0.0794,
 		}
@@ -148,13 +165,13 @@ module Base
 			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
 		}
 
-		textureRust = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
+		textureRust = Vehicles/Pathfinder87/Vehicle_Pathfinder_rust,
 		textureMask = Vehicles/Pathfinder87/Vehicle_Pathfinder_mask,
 		textureLights = Vehicles/Pathfinder87/Vehicle_Pathfinder_lights,
 		textureDamage1Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
 		textureDamage2Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
-		textureDamage1Overlay = Vehicles/Pathfinder87/Vehicle_Pathfidner_Blood,
-		textureDamage2Overlay = Vehicles/Pathfinder87/Vehicle_Pathfidner_Blood,
+		textureDamage1Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
+		textureDamage2Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
 
 		sound
 		{
@@ -456,6 +473,8 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
+			parent = TrunkDoor,
+
 			window
 			{
 				openable = false,
@@ -544,6 +563,11 @@ module Base
 				requireInstalled =,
 			}
 
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
 			category = SCUCKwindows,
 			itemType = SCKCO.NissanPathfinderWindowSC,
 		}
@@ -563,6 +587,11 @@ module Base
 			table install
 			{
 				requireInstalled =,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
 			}
 
 			category = SCUCKwindows,
@@ -744,6 +773,74 @@ module Base
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
+		}
+
+		part PathfinderSpareWheel
+        {
+			model Default { file = PathfinderSpareWheel, }
+		    area = TruckBed,
+            category = SCUCKaccessories,
+            itemType = Base.NormalTire,
+            mechanicRequireKey = true,
+
+		    table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+			
+			parent = TrunkDoor,
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
+
+		part PathfinderSpareWheelAssembly
+        {
+			model Default { file = PathfinderSpareWheelAssembly, }
+		    area = TruckBed,
+            category = nodisplay,
+            itemType = Base.NormalTire,
+            mechanicRequireKey = true,
+
+			anim Close
+			{
+				anim = Closing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = Closing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+		    table install
+            {
+            }
+
+            table uninstall
+            {
+            }
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+			
+			parent = TrunkDoor,
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
 		}
 
 		template = Brake,
