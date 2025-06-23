@@ -184,7 +184,7 @@ module Base
 		centerOfMassOffset = 0.0000 1.5556 -0.3016,
 		shadowExtents = 3.2617 9.4846,
 		shadowOffset = 0.0000 -0.3112,
-		engineForce = 9000,
+		engineForce = 4000,
 		engineQuality = 100,
 		engineLoudness = 120,
 		maxSpeed = 50f,
@@ -193,7 +193,7 @@ module Base
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 70,
+		suspensionStiffness = 60,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -206,32 +206,32 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.3492 4.5079,
-			radius = 0.50f,
+			offset = 1.3810 0.3492 4.4127,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2222 0.3492 4.5079,
-			radius = 0.50f,
+			offset = -1.3810 0.3492 4.4127,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2222 0.3492 -1.8254,
-			radius = 0.50f,
+			offset = 1.1746 0.3492 -1.6984,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2222 0.3492 -1.8254,
-			radius = 0.50f,
+			offset = -1.1746 0.3492 -1.6984,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
