@@ -3,38 +3,38 @@ module Base
 	model SC_ChevroletSuburban
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model SuburbanSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCRearSeat
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model SuburbanSCFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -50,7 +50,7 @@ module Base
 	model SuburbanSCRearRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -58,7 +58,7 @@ module Base
 	model SuburbanSCRearLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model SuburbanSCFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -74,7 +74,7 @@ module Base
 	model SuburbanSCFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -82,19 +82,19 @@ module Base
 	model SuburbanSCMiddleRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|MiddleRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCMiddleLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|MiddleLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model SuburbanSCRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightWindowBone 1.0,
@@ -102,7 +102,7 @@ module Base
 	model SuburbanSCRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -110,7 +110,7 @@ module Base
 	model SuburbanSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -119,22 +119,20 @@ module Base
 	model SuburbanSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model KSerieswheelleft
+	model CKSerieswheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_LeftWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
-	model KSerieswheelright
+	model CKSerieswheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_KSeries_RightWheel,
-		texture = Vehicles/K5/Vehicle_Kseries_Wheel,
-		
+		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	vehicle SC_ChevroletSuburban
 	{
@@ -927,7 +925,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelleft,
+				file = CKSerieswheelleft,
 			}
 		}
 
@@ -935,7 +933,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelright,
+				file = CKSerieswheelright,
 			}
 		}
 
@@ -943,7 +941,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelleft,
+				file = CKSerieswheelleft,
 			}
 		}
 
@@ -951,7 +949,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelright,
+				file = CKSerieswheelright,
 			}
 		}
 
