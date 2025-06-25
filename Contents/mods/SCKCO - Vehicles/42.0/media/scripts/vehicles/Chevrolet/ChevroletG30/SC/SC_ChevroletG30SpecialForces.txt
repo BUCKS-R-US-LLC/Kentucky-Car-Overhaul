@@ -160,13 +160,13 @@ module Base
 		}
 
 		extents = 3.2881 3.0847 9.0169,
-		mass = 500,
+		mass = 600,
 		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
 		shadowExtents = 3.8942 10.2210,
 		shadowOffset = 0.0635 -0.3636,
-		maxSpeed = 70f,
-		engineForce = 4000,
+		maxSpeed = 60f,
+		engineForce = 5500,
 		engineQuality = 70,
 		engineLoudness = 100,
 		brakingForce = 60,
@@ -179,7 +179,7 @@ module Base
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
+		wheelFriction = 2.0f,
 		frontEndHealth = 4500,
 		rearEndHealth = 3500,
 		seats = 6,
@@ -188,32 +188,32 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2373 0.0847 1.9661,
-			radius = 0.50f,
+			offset = 1.2712 0.0847 1.9322,
+			radius = 0.63f,
 			width = 0.30f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.2373 0.0847 1.9492,
-			radius = 0.50f,
+			offset = -1.2712 0.0847 1.9153,
+			radius = 0.63f,
 			width = 0.30f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2373 0.0847 -3.7119,
-			radius = 0.50f,
+			offset = 1.2712 0.0847 -3.7340,
+			radius = 0.63f,
 			width = 0.30f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2542 0.0847 -3.7119,
-			radius = 0.50f,
+			offset = -1.2712 0.0847 -3.7340,
+			radius = 0.63f,
 			width = 0.30f,
 		}
 
@@ -440,8 +440,8 @@ module Base
 			model Default
 			{
 				file = ShortBusTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -481,8 +481,9 @@ module Base
 			model SeatFrontLeft
 			{
 				file = ShortBusDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
-
 		}
 
 		part SeatFrontRight
@@ -511,6 +512,8 @@ module Base
 			model SeatRearRight
 			{
 				file = ShortBusPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -534,6 +537,8 @@ module Base
 			model engineDoor
 			{
 				file = ShortBusHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -595,6 +600,8 @@ module Base
 			model windshieldFront
 			{
 				file = ShortBusWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -626,6 +633,8 @@ module Base
 			model windshieldRear
 			{
 				file = ShortBusRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -669,6 +678,8 @@ module Base
 			model windowFR
 			{
 				file = ShortBusFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -688,6 +699,8 @@ module Base
 			model windowFL
 			{
 				file = ShortBusFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -707,6 +720,8 @@ module Base
 			model Default
 			{
 				file = ShortBusFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -745,6 +760,8 @@ module Base
 			model Default
 			{
 				file = ShortBusFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -783,6 +800,8 @@ module Base
 			model Default
 			{
 				file = ShortBusRearRightWindows,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -800,6 +819,8 @@ module Base
 			model Default
 			{
 				file = ShortBusRearLeftWindows,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -813,13 +834,14 @@ module Base
 		}
 
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = ShortBusfrontwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -828,6 +850,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = ShortBusfrontwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -836,6 +860,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = ShortBusrearwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -844,6 +870,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = ShortBusrearwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 

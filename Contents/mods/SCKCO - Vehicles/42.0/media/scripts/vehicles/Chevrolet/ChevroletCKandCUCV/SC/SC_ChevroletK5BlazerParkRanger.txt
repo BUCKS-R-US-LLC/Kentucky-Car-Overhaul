@@ -134,6 +134,13 @@ module Base
 			xywh = -0.8095 0.2063 0.4762 0.5714,
 		}
 
+		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
+		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
+		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,
+		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
+		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
+		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
 		sound
 		{
 			engine = VehicleEngineSUV,
@@ -150,9 +157,8 @@ module Base
 		textureDamage2Shell = Vehicles/K5/Vehicle_Blazer_damage2,
 		textureDamage1Overlay = Vehicles/K5/Vehicle_Blazer_blood,
 		textureDamage2Overlay = Vehicles/K5/Vehicle_Blazer_blood,
-
 		extents = 2.9524 2.6032 6.6032,
-		mass = 100,
+		mass = 600,
 		physicsChassisShape = 2.9524 2.6032 6.6032,
 		centerOfMassOffset = 0.0000 1.3016 0.0000,
 		shadowExtents = 2.9443 6.6116,
@@ -255,7 +261,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.7460 0.9683 -1.2063,
+				offset = 0.7460 0.9683 -1.4921,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -274,7 +280,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7460 0.9683 -1.2063,
+				offset = -0.7460 0.9683 -1.4921,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -285,7 +291,6 @@ module Base
 				area = SeatFrontRight,
 			}
 		}
-
 
 		area Engine
 		{
@@ -344,7 +349,8 @@ module Base
 
 		template = ChevyLogo,
 		template = K5Logo,
-		template = K5Attachments,
+		template = CKPartsArmor,
+		template = CKPartsWheels,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearLeft,
@@ -359,7 +365,9 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = BlazerCivilianSCDriver,
+				file = K5BlazerDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -367,7 +375,9 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = BlazerCivilianSCPassenger,
+				file = K5BlazerPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -375,7 +385,6 @@ module Base
 		{
 			model seatRearLeft
 			{
-				file = BlazerCivilianSCDriver,
 			}
 		}
 
@@ -383,9 +392,9 @@ module Base
 		{
 			model seatRearRight
 			{
-				file = BlazerCivilianSCPassenger,
 			}
 		}
+
 		part Muffler
 		{
 			table install
@@ -405,7 +414,9 @@ module Base
 		{
 			model engineDoor
 			{
-				file = BlazerCivilianSCHood,
+				file = K5BlazerHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -465,7 +476,9 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = BlazerCivilianSCWindshield,
+				file = K5BlazerWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -502,7 +515,9 @@ module Base
 		{
 			model windowFR
 			{
-				file = BlazerCivilianSCFrontRightWindow,
+				file = K5BlazerFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -521,7 +536,9 @@ module Base
 		{
 			model windowFL
 			{
-				file = BlazerCivilianSCFrontLeftWindow,
+				file = K5BlazerFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -540,7 +557,9 @@ module Base
 		{
 			model windowRL
 			{
-				file = BlazerCivilianSCRearLeftWindow,
+				file = K5BlazerRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			area = TireRearLeft,
@@ -559,7 +578,9 @@ module Base
 		{
 			model windowRR
 			{
-				file = BlazerCivilianSCRearRightWindow,
+				file = K5BlazerRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			area = TireRearRight,
@@ -578,7 +599,9 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontRightDoor,
+				file = K5BlazerFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -616,7 +639,9 @@ module Base
 		{
 			model Default
 			{
-				file = BlazerCivilianSCFrontLeftDoor,
+				file = K5BlazerFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -666,9 +691,9 @@ module Base
 
 			model Default
 			{
-				file = BlazerCivilianSCTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				file = K5BlazerTrunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -705,12 +730,14 @@ module Base
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
-		
+
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelleft,
+				file = CKSerieswheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -718,7 +745,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelright,
+				file = CKSerieswheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -726,7 +755,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelleft,
+				file = CKSerieswheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -734,7 +765,9 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = KSerieswheelright,
+				file = CKSerieswheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -787,9 +820,37 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.3016 0.0159,
-			extents = 2.9524 2.5873 6.6190,
+			offset = 0.0000 1.1337 0.0159,
+			extents = 2.9524 1.0317 6.6190,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 2.1005 -0.3492,
+			extents = 2.9524 0.8889 2.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.7402 0.5556,
+			extents = 2.9524 1.1746 1.1111,
+			rotate = -37.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.9365 -2.6243,
+			extents = 2.9524 0.8571 0.6984,
+			rotate = 20.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 2.0635 -2.0476,
+			extents = 2.9524 0.8889 1.4603,
+			rotate = -3.0000 0.0000 0.0000,
 		}
 
 		attachment trailer

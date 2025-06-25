@@ -1,31 +1,31 @@
 module Base
 {
-	model SC_G30VanFedex
+	model SC_G30VanWindowless
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanFedexDriver
+	model G30VanWindowlessDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanFedexPassenger
+	model G30VanWindowlessPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanFedexWindshield
+	model G30VanWindowlessWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanFedexFrontRightWindow
+	model G30VanWindowlessFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
@@ -34,7 +34,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30VanFedexFrontLeftWindow
+	model G30VanWindowlessFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
@@ -43,7 +43,7 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model G30VanFedexFrontRightDoor
+	model G30VanWindowlessFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
@@ -51,7 +51,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanFedexFrontLeftDoor
+	model G30VanWindowlessFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
@@ -59,7 +59,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanFedexSlidingRightDoor
+	model G30VanWindowlessSlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|SlideDoor_obj,
 		shader = vehicle_noreflect,
@@ -67,7 +67,7 @@ module Base
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
 	}
-	model G30VanFedexTrunk
+	model G30VanWindowlessTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
@@ -76,7 +76,7 @@ module Base
 		boneWeight = RearDoorRightBone 1.0,
 		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model G30VanFedexHood
+	model G30VanWindowlessHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Hood_obj,
 		shader = vehicle_noreflect,
@@ -84,7 +84,7 @@ module Base
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanFedexRearWindshield
+	model G30VanWindowlessRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
 		shader = vehicle_noreflect,
@@ -105,19 +105,7 @@ module Base
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		
 	}
-	model G30Vanwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30_LeftWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
-		
-	}
-	model G30Vanwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30_RightWheel,
-		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
-		
-	}
-	vehicle SC_ChevroletG30FedEx
+	vehicle SC_ChevroletG30SouthCentralBell
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -126,14 +114,14 @@ module Base
 
 		model
 		{
-			file = SC_G30VanFedex,
+			file = SC_G30VanWindowless,
 			scale = 0.5900,
 			offset = 0.0000 0.1864 0.0508,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_Fedex,
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_Bell,
 		}
 
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanWindowlessSC_rust,
