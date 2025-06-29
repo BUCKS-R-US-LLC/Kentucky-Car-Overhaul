@@ -1,0 +1,194 @@
+module Base
+{
+
+	model JeepGrandWagoneerBumper
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Bullbar_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerWindshieldArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerFrontLeftDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerFrontRightDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model JeepGrandWagoneerRearLeftDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerRearRightDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerFrontLeftWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerFrontRightWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerRearRightWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+        static = FALSE,
+	}
+
+	model JeepGrandWagoneerRearLeftWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+        static = FALSE,
+	}
+
+	model JeepGrandWagoneerMiddleRightWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model JeepGrandWagoneerMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle GrandWagoneerAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = JeepGrandWagoneerBumper, }
+            itemType = SCKCO.JeepGrandWagoneerBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = JeepGrandWagoneerWindshieldArmor, }
+            itemType = SCKCO.JeepGrandWagoneerWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = JeepGrandWagoneerFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.JeepGrandWagoneerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = JeepGrandWagoneerFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.JeepGrandWagoneerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = JeepGrandWagoneerRearRightDoorArmor, }
+            parent = DoorRearRight,
+            itemType = SCKCO.JeepGrandWagoneerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = JeepGrandWagoneerRearLeftDoorArmor, }
+            parent = DoorRearLeft,
+            itemType = SCKCO.JeepGrandWagoneerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = JeepGrandWagoneerFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = JeepGrandWagoneerFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = JeepGrandWagoneerRearRightWindowArmor, }
+            parent = WindowRearRight,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = JeepGrandWagoneerRearLeftWindowArmor, }
+            parent = WindowRearLeft,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            model Default { file = JeepGrandWagoneerMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = JeepGrandWagoneerMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
+            itemType = SCKCO.JeepGrandWagoneerWindowArmorSC,
+        }
+
+    }
+}
