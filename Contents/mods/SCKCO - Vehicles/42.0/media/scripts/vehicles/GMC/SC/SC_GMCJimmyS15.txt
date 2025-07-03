@@ -2,32 +2,32 @@ module Base
 {
 	model SC_GMCJimmyS15
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|base_mesh,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model GMCJimmyS15Driver
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|DriverSeat_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15Passenger
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|PassengerSeat_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15Windshield
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Windshield_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15FrontRightWindow
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontRightWindow_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -36,7 +36,7 @@ module Base
 	}
 	model GMCJimmyS15FrontLeftWindow
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -45,7 +45,7 @@ module Base
 	}
 	model GMCJimmyS15FrontRightDoor
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontRightDoor_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -53,7 +53,7 @@ module Base
 	}
 	model GMCJimmyS15FrontLeftDoor
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -61,7 +61,7 @@ module Base
 	}
 	model GMCJimmyS15Trunk
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Trunk_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -69,27 +69,27 @@ module Base
 	}
 	model GMCJimmyS15RearWindshield
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|RearWindshield_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearWindshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15Hood
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_SC|Hood_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model MazdaWheelleft
+	model GMCJimmyWheelleft
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_LeftWheel,
-		texture = Vehicles/NissanB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/GMC/Vehicle_GMCJim_LeftWheel,
+		texture = Vehicles/GMC/Vehicle_GMCJim_Wheel,
 	}
-	model MazdaWheelright
+	model GMCJimmyWheelright
 	{
-		mesh = vehicles/Nissan/Vehicle_MazdaB_RightWheel,
-		texture = Vehicles/NissanB/Vehicle_MazdaB_Wheel,
+		mesh = vehicles/GMC/Vehicle_GMCJim_RightWheel,
+		texture = Vehicles/GMC/Vehicle_GMCJim_Wheel,
 	}
 	vehicle SC_GMCJimmyS15
 	{
@@ -107,41 +107,56 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_Red,
+			texture = Vehicles/GMC/Vehicle_GMCJim_BlackGrey,
 		}
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_HardBlue,
+			texture = Vehicles/GMC/Vehicle_GMCJim_BlueBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_Black,
+			texture = Vehicles/GMC/Vehicle_GMCJim_BlueGrey,
 		}
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_Green,
+			texture = Vehicles/GMC/Vehicle_GMCJim_BlueOnBlue,
 		}
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_Cream,
+			texture = Vehicles/GMC/Vehicle_GMCJim_GoldBlack,
 		}
 
 		skin
 		{
-			texture = Vehicles/NissanB/Vehicle_MazdaB_Silver,
+			texture = Vehicles/GMC/Vehicle_GMCJim_GoldOnTan,
 		}
 
-		textureRust = Vehicles/NissanB/Vehicle_MazdaB_Rust,
-		textureMask = Vehicles/NissanB/Vehicle_MazdaB_Mask,
-		textureLights = Vehicles/NissanB/Vehicle_MazdaB_Lights,
-		textureDamage1Shell = Vehicles/NissanB/Vehicle_MazdaB_Scratch,
-		textureDamage2Shell = Vehicles/NissanB/Vehicle_MazdaB_Scratch,
-		textureDamage1Overlay = Vehicles/NissanB/Vehicle_MazdaB_Blood,
-		textureDamage2Overlay = Vehicles/NissanB/Vehicle_MazdaB_Blood,
+		skin
+		{
+			texture = Vehicles/GMC/Vehicle_GMCJim_RedBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/GMC/Vehicle_GMCJim_WhiteBlack,
+		}
+
+		skin
+		{
+			texture = Vehicles/GMC/Vehicle_GMCJim_WhiteTan,
+		}
+
+		textureRust = Vehicles/GMC/Vehicle_GMCJim_Rust,
+		textureMask = Vehicles/GMC/Vehicle_GMCJim_Mask,
+		textureLights = Vehicles/GMC/Vehicle_GMCJim_Lights,
+		textureDamage1Shell = Vehicles/GMC/Vehicle_GMCJim_Scratch,
+		textureDamage2Shell = Vehicles/GMC/Vehicle_GMCJim_Scratch,
+		textureDamage1Overlay = Vehicles/GMC/Vehicle_GMCJim_Blood,
+		textureDamage2Overlay = Vehicles/GMC/Vehicle_GMCJim_Blood,
 
 		sound
 		{
@@ -153,7 +168,7 @@ module Base
 		}
 
 		extents = 2.4444 2.0635 6.6349,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.4444 2.0635 6.6349,
 		centerOfMassOffset = 0.0000 1.0317 -0.2222,
 		shadowExtents = 2.4522 6.6434,
@@ -294,7 +309,7 @@ module Base
 			xywh = -1.2222 -1.9524 0.0000 0.0000,
 		}
 
-		template = B2000Attachments,
+		template = S15Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -307,7 +322,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = MazdaBDriver,
+				file = GMCJimDriver,
 			}
 
 		}
@@ -316,7 +331,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = MazdaBPassenger,
+				file = GMCJimPassenger,
 			}
 
 		}
@@ -340,7 +355,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = MazdaBHood,
+				file = GMCJimHood,
 			}
 
 			anim Close
@@ -381,7 +396,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = SCKCO.MazdaB2000HoodSC,
+			itemType = SCKCO.GMCJimmyS15HoodSC,
 		}
 
 		part Heater
@@ -401,7 +416,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = MazdaBWindshield,
+				file = GMCJimWindshield,
 			}
 
 			window
@@ -425,14 +440,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.MazdaB2000WindshieldSC,
+			itemType = SCKCO.GMCJimmyS15WindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model WindshieldRear
 			{
-				file = MazdaBRearWindshield,
+				file = GMCJimRearWindshield,
 			}
 
 			window
@@ -456,7 +471,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.MazdaB2000WindshieldSC,
+			itemType = SCKCO.GMCJimmyS15WindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -468,7 +483,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = MazdaBFrontRightWindow,
+				file = GMCJimFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -480,14 +495,14 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
-			itemType = SCKCO.MazdaB2000WindowSC,
+			itemType = SCKCO.GMCJimmyS15WindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = MazdaBFrontLeftWindow,
+				file = GMCJimFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -499,14 +514,14 @@ module Base
 			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
-			itemType = SCKCO.MazdaB2000WindowSC,
+			itemType = SCKCO.GMCJimmyS15WindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = MazdaBFrontRightDoor,
+				file = GMCJimFrontRightDoor,
 			}
 
 			anim Close
@@ -537,14 +552,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000DoorSC,
+			itemType = SCKCO.GMCJimmyS15DoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = MazdaBFrontLeftDoor,
+				file = GMCJimFrontLeftDoor,
 			}
 
 			anim Close
@@ -575,7 +590,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000DoorSC,
+			itemType = SCKCO.GMCJimmyS15DoorSC,
 		}
 
 		template = TrunkDoor,
@@ -594,7 +609,7 @@ module Base
 
 			model Default
 			{
-				file = MazdaBTrunk,
+				file = GMCJimTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -628,7 +643,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.MazdaB2000TrunkLidSC,
+			itemType = SCKCO.GMCJimmyS15TrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,
@@ -638,7 +653,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = GMCJimmyWheelleft,
 			}
 		}
 
@@ -646,7 +661,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = GMCJimmyWheelright,
 			}
 		}
 
@@ -654,7 +669,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelleft,
+				file = GMCJimmyWheelleft,
 			}
 		}
 
@@ -662,7 +677,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = MazdaWheelright,
+				file = GMCJimmyWheelright,
 			}
 		}
 
