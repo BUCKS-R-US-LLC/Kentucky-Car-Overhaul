@@ -3,7 +3,7 @@ module Base
 
 	model GMCJimmyS15Bumper
 	{
-		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontBumper_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Bullbar_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -17,7 +17,7 @@ module Base
 
 	model GMCJimmyS15FrontLeftDoorArmor
 	{
-		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftArmor_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -25,7 +25,7 @@ module Base
 
 	model GMCJimmyS15FrontRightDoorArmor
 	{
-		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightArmor_obj,
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -48,56 +48,166 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-    
+
+	model GMCJimmyS15FLWA
+	{
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model GMCJimmyS15RRWA
+	{
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model GMCJimmyS15RLWA
+	{
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model GMCJimmyRearSeat
+	{
+		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
     template vehicle S15Attachments
 	{
-		
+
+        part GMCJimmyRearSeat
+        	{
+
+			model GMCJimmyRearSeat
+				{
+                		file = GMCJimmyRearSeat,
+				}
+		area = Engine,
+        category = nodisplay,
+        itemType = Base.NormalCarSeat,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
-            model Default { file = S15Bumper, }
+            model Default { file = GMCJimmyS15Bumper, }
             itemType = SCKCO.GMCJimmyS15BumperSC,
+			category = SCUCKarmor,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
-            model Default { file = S15WindshieldArmor, }
+            model Default { file = GMCJimmyS15WindshieldArmor, }
             itemType = SCKCO.GMCJimmyS15WindshieldArmorSC,
+			category = SCUCKarmor,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
-            model Default { file = S15FRWA, }
+            model Default { file = GMCJimmyS15FRWA, }
             itemType = SCKCO.GMCJimmyS15WindowArmorSC,
 			parent = WindowFrontRight,
-            requireInstalled = GMCS15DoorArmorSC,
+            requireInstalled = GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = S15FLWA, }
+            model Default { file = GMCJimmyS15FLWA, }
             itemType = SCKCO.GMCJimmyS15WindowArmorSC,
 			parent = WindowFrontLeft,
-            requireInstalled = GMCS15DoorArmorSC,
+            requireInstalled = GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = GMCJimmyS15RRWA, }
+            itemType = SCKCO.GMCJimmyS15WindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = GMCJimmyS15RLWA, }
+            itemType = SCKCO.GMCJimmyS15WindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
         part SCArmorFrontRightDoor
         {
-            model Default { file = S15FrontRightDoorArmor, }
+            model Default { file = GMCJimmyS15FrontRightDoorArmor, }
 			parent = DoorFrontRight,
             itemType = SCKCO.GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftDoor,
         part SCArmorFrontLeftDoor
         {
-            model Default { file = S15FrontLeftDoorArmor, }
+            model Default { file = GMCJimmyS15FrontLeftDoorArmor, }
 			parent = DoorFrontLeft,
             itemType = SCKCO.GMCJimmyS15DoorArmorSC,
+			category = SCUCKarmor,
         }
 
     }
