@@ -3,8 +3,7 @@ module Base
 	model SC_CadillacBrougham
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
-		static = TRUE,
+		shader = vehicle_norandom_multiuv,
 		scale = 1,
 	}
 	model CadillacBroughamDriver
@@ -28,19 +27,19 @@ module Base
 	model CadillacBroughamWindshield
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CadillacBroughamRearWindshield
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CadillacBroughamFrontRightWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -49,7 +48,7 @@ module Base
 	model CadillacBroughamFrontLeftWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -58,7 +57,7 @@ module Base
 	model CadillacBroughamRearRightWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -67,7 +66,7 @@ module Base
 	model CadillacBroughamRearLeftWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -76,7 +75,7 @@ module Base
 	model CadillacBroughamFrontRightDoor
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -84,7 +83,7 @@ module Base
 	model CadillacBroughamFrontLeftDoor
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -92,7 +91,7 @@ module Base
 	model CadillacBroughamRearRightDoor
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -100,7 +99,7 @@ module Base
 	model CadillacBroughamRearLeftDoor
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -108,7 +107,7 @@ module Base
 	model CadillacBroughamTrunk
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -116,34 +115,20 @@ module Base
 	model CadillacBroughamHood
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model CadillacBroughamfrontwheelleft
+	model CadillacBroughamwheelleft
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFlet86_LeftWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
-		
 	}
-	model CadillacBroughamfrontwheelright
+	model CadillacBroughamwheelright
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFlet86_RightWheel,
 		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
-		
-	}
-	model CadillacBroughambackwheelleft
-	{
-		mesh = vehicles/Cadillac/Vehicle_CadillacFlet86_LeftWheel,
-		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
-		
-	}
-	model CadillacBroughambackwheelright
-	{
-		mesh = vehicles/Cadillac/Vehicle_CadillacFlet86_RightWheel,
-		texture = vehicles/CadillacFlet86/Vehicle_CadillacFlet86_Wheel,
-		
 	}
 	vehicle SC_CadillacFleetwoodBrougham
 	{
@@ -207,7 +192,7 @@ module Base
 		}
 
 		extents = 2.7541 1.7377 8.0328,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.7541 1.7377 8.0328,
 		centerOfMassOffset = 0.0000 0.8852 -0.0328,
 		shadowExtents = 2.7754 9.2815,
@@ -880,7 +865,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughamfrontwheelleft,
+				file = CadillacBroughamwheelleft,
 			}
 		}
 
@@ -888,7 +873,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughamfrontwheelright,
+				file = CadillacBroughamwheelright,
 			}
 		}
 
@@ -896,7 +881,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughambackwheelleft,
+				file = CadillacBroughamwheelleft,
 			}
 		}
 
@@ -904,7 +889,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CadillacBroughambackwheelright,
+				file = CadillacBroughamwheelright,
 			}
 		}
 
