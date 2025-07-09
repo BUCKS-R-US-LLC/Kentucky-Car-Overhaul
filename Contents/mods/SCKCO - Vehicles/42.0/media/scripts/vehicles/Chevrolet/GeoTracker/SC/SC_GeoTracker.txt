@@ -3,7 +3,7 @@ module Base
 	model SC_GeoTracker
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,20 +28,20 @@ module Base
 	model GeoTrackerWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		boneWeight = RearBone 1.0,
 	}
 	model GeoTrackerFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -50,7 +50,7 @@ module Base
 	model GeoTrackerFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -59,19 +59,19 @@ module Base
 	model GeoTrackerRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -79,7 +79,7 @@ module Base
 	model GeoTrackerFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -95,37 +95,21 @@ module Base
 	model GeoTrackerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model GeoTrackerfrontwheelleft
+	model GeoTrackerwheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		
 		scale = 0.8,
 	}
-	model GeoTrackerfrontwheelright
+	model GeoTrackerwheelright
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
 		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		
-		scale = 0.8,
-	}
-	model GeoTrackerbackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		
-		scale = 0.8,
-	}
-	model GeoTrackerbackwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
-		
 		scale = 0.8,
 	}
 	vehicle SC_GeoTracker
@@ -217,7 +201,7 @@ module Base
 		}
 
 		extents = 2.2667 2.1333 4.9667,
-		mass = 50,
+		mass = 500,
 		physicsChassisShape = 2.2667 2.1333 4.9667,
 		centerOfMassOffset = 0.0000 1.0833 -0.0167,
 		shadowExtents = 2.2450 4.9738,
@@ -813,7 +797,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerfrontwheelleft,
+				file = GeoTrackerwheelleft,
 			}
 		}
 
@@ -821,7 +805,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerfrontwheelright,
+				file = GeoTrackerwheelright,
 			}
 		}
 
@@ -829,7 +813,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerbackwheelleft,
+				file = GeoTrackerwheelleft,
 			}
 		}
 
@@ -837,7 +821,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = GeoTrackerbackwheelright,
+				file = GeoTrackerwheelright,
 			}
 		}
 

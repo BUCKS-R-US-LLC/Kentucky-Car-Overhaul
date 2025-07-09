@@ -3,7 +3,7 @@ module Base
 	model SC_JeepCherokee
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model JeepCherokeeWindshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model JeepCherokeeFrontRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model JeepCherokeeFrontLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -50,19 +50,19 @@ module Base
 	model JeepCherokeeMiddleRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|MiddleRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model JeepCherokeeMiddleLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|MiddleLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model JeepCherokeeRearRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model JeepCherokeeRearLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model JeepCherokeeFrontRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -86,7 +86,7 @@ module Base
 	model JeepCherokeeFrontLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model JeepCherokeeRearRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -102,7 +102,7 @@ module Base
 	model JeepCherokeeRearLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -110,7 +110,7 @@ module Base
 	model JeepCherokeeTrunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -118,7 +118,7 @@ module Base
 	model JeepCherokeeHood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -126,7 +126,7 @@ module Base
 	model JeepCherokeeRearWindshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -135,7 +135,6 @@ module Base
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_LeftWheel,
 		texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_Wheel,
-		
 	}
 	model JeepCherokeewheelright
 	{

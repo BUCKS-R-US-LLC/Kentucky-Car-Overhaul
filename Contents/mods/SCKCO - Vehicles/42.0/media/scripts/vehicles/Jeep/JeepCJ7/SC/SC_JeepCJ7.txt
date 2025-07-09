@@ -3,7 +3,7 @@ module Base
 	model SC_JeepCJ7
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		scale = 1,
 	}
 	model JeepCJ7Driver
@@ -21,13 +21,13 @@ module Base
 	model JeepCJ7Windshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model JeepCJ7FrontRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model JeepCJ7FrontLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -45,7 +45,7 @@ module Base
 	model JeepCJ7FrontRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -53,7 +53,7 @@ module Base
 	model JeepCJ7FrontLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -61,7 +61,7 @@ module Base
 	model JeepCJ7Trunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model JeepCJ7Hood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -79,7 +79,6 @@ module Base
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|SpareWheel_obj,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		
 		scale = 1,
 		static = FALSE,
 		boneWeight = WheelBone 1.0,
@@ -88,13 +87,11 @@ module Base
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_LeftWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		
 	}
 	model JeepCJ7wheelright
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_RightWheel,
 		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
-		
 	}
 	vehicle SC_JeepCJ7
 	{
@@ -173,7 +170,7 @@ module Base
 		}
 
 		extents = 2.4746 2.0000 5.1864,
-		mass = 50,
+		mass = 500,
 		physicsChassisShape = 2.4746 2.0000 5.1864,
 		centerOfMassOffset = 0.0000 1.0169 0.0678,
 		shadowExtents = 2.7117 5.7404,
@@ -184,7 +181,7 @@ module Base
 		maxSpeed = 110f,
 		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		rollInfluence = 0.60f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
 		suspensionStiffness = 90,
@@ -201,7 +198,7 @@ module Base
 		{
 			front = true,
 			offset = 1.0000 0.2203 2.0169,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -209,7 +206,7 @@ module Base
 		{
 			front = true,
 			offset = -1.0169 0.2203 2.0169,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -217,7 +214,7 @@ module Base
 		{
 			front = false,
 			offset = 1.0000 0.2203 -1.5424,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
@@ -225,7 +222,7 @@ module Base
 		{
 			front = false,
 			offset = -1.0169 0.2203 -1.5424,
-			radius = 0.50f,
+			radius = 0.60f,
 			width = 0.30f,
 		}
 
