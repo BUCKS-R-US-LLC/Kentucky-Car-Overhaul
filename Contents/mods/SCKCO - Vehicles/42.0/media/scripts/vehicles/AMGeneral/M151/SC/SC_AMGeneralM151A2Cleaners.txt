@@ -34,7 +34,7 @@ module Base
 	model M151Windshield
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model M151RightWindow
@@ -75,7 +75,6 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Radio_obj,
 		texture = vehicles/M151A2/Vehicle_HM151_Radio,
-		
 		scale = 1,
 	}
 	model M151SpareWheel

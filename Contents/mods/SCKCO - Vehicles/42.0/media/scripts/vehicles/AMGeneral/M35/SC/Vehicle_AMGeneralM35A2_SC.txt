@@ -35,7 +35,6 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SpareTire_obj,
 		texture = vehicles/M35/Vehicle_M35FrontWheel,
-		
 		scale = 1,
 	}
 	model M35A2Bumper
@@ -65,13 +64,13 @@ module Base
 	model M35A2WindshieldRear
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model M35A2FrontRightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -80,7 +79,7 @@ module Base
 	model M35A2FrontLeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -89,7 +88,7 @@ module Base
 	model M35A2FrontRightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -97,7 +96,7 @@ module Base
 	model M35A2FrontLeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -122,25 +121,21 @@ module Base
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontLeftWheel,
 		texture = Vehicles/M35/Vehicle_M35FrontWheel,
-		
 	}
 	model M35Wheelfrontwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontRightWheel,
 		texture = Vehicles/M35/Vehicle_M35FrontWheel,
-		
 	}
 	model M35Wheelbackwheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearLeftDoubleWheel,
 		texture = Vehicles/M35/Vehicle_M35RearWheel,
-		
 	}
 	model M35Wheelbackwheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearRightDoubleWheel,
 		texture = Vehicles/M35/Vehicle_M35RearWheel,
-		
 	}
 	vehicle SC_AMGeneralM35A2
 	{
