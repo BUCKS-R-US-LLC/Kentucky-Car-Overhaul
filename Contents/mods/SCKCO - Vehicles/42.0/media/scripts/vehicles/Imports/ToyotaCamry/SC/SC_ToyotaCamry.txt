@@ -3,7 +3,7 @@ module Base
 	model SC_ToyotaCamry
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model ToyotaCamryWindshield
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model ToyotaCamryFrontRightWindow
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model ToyotaCamryFrontLeftWindow
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model ToyotaCamryRearRightWindow
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -61,7 +61,7 @@ module Base
 	model ToyotaCamryRearLeftWindow
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model ToyotaCamryFrontRightDoor
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model ToyotaCamryFrontLeftDoor
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -86,7 +86,7 @@ module Base
 	model ToyotaCamryRearRightDoor
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model ToyotaCamryRearLeftDoor
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -102,7 +102,7 @@ module Base
 	model ToyotaCamryTrunk
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -110,7 +110,7 @@ module Base
 	model ToyotaCamryHood
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -118,20 +118,18 @@ module Base
 	model ToyotaCamryRearWindshield
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model ToyotaCamrywheelleft
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_LeftWheel,
 		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
-		
 	}
 	model ToyotaCamrywheelright
 	{
 		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_RightWheel,
 		texture = vehicles/ToyotaCamry/Vehicle_ToyotaCamry_Wheel,
-		
 	}
 	vehicle SC_ToyotaCamry
 	{
@@ -190,7 +188,7 @@ module Base
 		}
 
 		extents = 2.5574 1.8689 6.6557,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.5574 1.8689 6.6557,
 		centerOfMassOffset = 0.0000 0.9180 0.0000,
 		shadowExtents = 2.5295 7.1994,

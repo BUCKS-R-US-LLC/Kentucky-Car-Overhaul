@@ -3,38 +3,38 @@ module Base
 	model SC_GrummanLLV
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
 	model GrummanLLVDriver
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVPassenger
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVRearDouble
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVWindshield
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVFrontRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model GrummanLLVFrontLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -50,19 +50,19 @@ module Base
 	model GrummanLLVRearRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVRearLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model GrummanLLVFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model GrummanLLVTrunk
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorBone 1.0,
@@ -91,7 +91,7 @@ module Base
 	model GrummanLLVHood
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -100,14 +100,12 @@ module Base
 	{
 		mesh = vehicles/Special/Vehicle_Grum_LeftWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
-		
 		scale = 0.8,
 	}
 	model GrummanLLVwheelright
 	{
 		mesh = vehicles/Special/Vehicle_Grum_RightWheel,
 		texture = vehicles/GrumLLV/Vehicle_Grum_Wheel,
-		
 		scale = 0.8,
 	}
 	vehicle SC_GrummanLLV
