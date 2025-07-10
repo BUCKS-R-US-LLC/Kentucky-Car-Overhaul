@@ -195,7 +195,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_AMGeneralM1097Tan"] = "6SideSeater",
 	["Base.SC_ChevroletM1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_ChevroletM1010Ambulance"] = "6SideSeater",
-	["Base.SC_M35A2"] = "16SideSeater",
+	["Base.SC_AMGeneralM35A2"] = "16SideSeater",
 	
 	["Base.SmallCar"] = "SmallCar",
 	["Base.SmallCar02"] = "SmallCar",
