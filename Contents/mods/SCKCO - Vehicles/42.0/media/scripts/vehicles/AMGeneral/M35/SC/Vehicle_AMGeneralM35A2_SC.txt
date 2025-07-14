@@ -34,7 +34,7 @@ module Base
 	model M35A2SpareTire
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|SpareTire_obj,
-		texture = vehicles/M35/Vehicle_M35FrontWheel,
+		texture = vehicles/M35A2/Vehicle_M35FrontWheel,
 		scale = 1,
 	}
 	model M35A2Bumper
@@ -119,23 +119,23 @@ module Base
 	}
 	model M35frontwheelleft
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontLeftWheel,
-		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_FrontLeftWheel,
+		texture = Vehicles/M35A2/Vehicle_M35FrontWheel,
 	}
 	model M35frontwheelright
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontRightWheel,
-		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_FrontRightWheel,
+		texture = Vehicles/M35A2/Vehicle_M35FrontWheel,
 	}
 	model M35backwheelleft
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearLeftDoubleWheel,
-		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_RearLeftDoubleWheel,
+		texture = Vehicles/M35A2/Vehicle_M35RearWheel,
 	}
 	model M35backwheelright
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearRightDoubleWheel,
-		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_RearRightDoubleWheel,
+		texture = Vehicles/M35A2/Vehicle_M35RearWheel,
 	}
 	vehicle SC_AMGeneralM35A2
 	{
@@ -201,13 +201,13 @@ module Base
 			texture = Vehicles/M35A2/Vehicle_M35A2_Winter2,
 		}
 
-		textureRust = Vehicles/M35/Vehicle_M35A1Rust,
-		textureMask = Vehicles/M35/Vehicle_M35A1Mask,
-		textureLights = Vehicles/M35/Vehicle_M35A1Lights,
-		textureDamage1Shell = Vehicles/M35/Vehicle_M35A1Damage,
-		textureDamage2Shell = Vehicles/M35/Vehicle_M35A1Damage,
-		textureDamage1Overlay = Vehicles/M35/Vehicle_M35A1Blood,
-		textureDamage2Overlay = Vehicles/M35/Vehicle_M35A1Blood,
+		textureRust = Vehicles/M35A2/Vehicle_M35A2Rust,
+		textureMask = Vehicles/M35A2/Vehicle_M35A2Mask,
+		textureLights = Vehicles/M35A2/Vehicle_M35A2Lights,
+		textureDamage1Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
+		textureDamage2Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
+		textureDamage1Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
+		textureDamage2Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
 
 		sound
 		{
