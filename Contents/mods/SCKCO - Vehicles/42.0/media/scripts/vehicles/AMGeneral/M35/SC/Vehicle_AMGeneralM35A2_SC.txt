@@ -2,74 +2,74 @@ module Base
 {
 	model SC_M35A2
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|base_mesh,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model M35A2GasTank
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FuelTank_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FuelTank_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2FrontHardTop
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|HardTop_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|HardTop_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2Tarp
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Tarp_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|Tarp_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2TarpFrame
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TarpFrame_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|TarpFrame_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2SpareTire
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|SpareTire_obj,
-		texture = vehicles/M35/Vehicle_M35FrontWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|SpareTire_obj,
+		texture = vehicles/M35A2/Vehicle_M35FrontWheel,
 		scale = 1,
 	}
 	model M35A2Bumper
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontBumper_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2Driver
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|DriverSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2Passenger
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|PassengerSeat_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2Windshield
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Windshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model M35A2WindshieldRear
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|RearWindshield_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|RearWindshield_obj,
 		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model M35A2FrontRightWindow
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontRightWindow_obj,
 		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
@@ -78,7 +78,7 @@ module Base
 	}
 	model M35A2FrontLeftWindow
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftWindow_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontLeftWindow_obj,
 		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
@@ -87,23 +87,23 @@ module Base
 	}
 	model M35A2FrontRightDoor
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 	model M35A2FrontLeftDoor
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 	model M35A2Trunk
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|TrunkDoor_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -111,31 +111,31 @@ module Base
 	}
 	model M35A2Hood
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_SC|Hood_obj,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M35Wheelfrontwheelleft
+	model M35frontwheelleft
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontLeftWheel,
-		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_FrontLeftWheel,
+		texture = Vehicles/M35A2/Vehicle_M35FrontWheel,
 	}
-	model M35Wheelfrontwheelright
+	model M35frontwheelright
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_FrontRightWheel,
-		texture = Vehicles/M35/Vehicle_M35FrontWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_FrontRightWheel,
+		texture = Vehicles/M35A2/Vehicle_M35FrontWheel,
 	}
-	model M35Wheelbackwheelleft
+	model M35backwheelleft
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearLeftDoubleWheel,
-		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_RearLeftDoubleWheel,
+		texture = Vehicles/M35A2/Vehicle_M35RearWheel,
 	}
-	model M35Wheelbackwheelright
+	model M35backwheelright
 	{
-		mesh = vehicles/AMGeneral/Vehicle_M35A1_RearRightDoubleWheel,
-		texture = Vehicles/M35/Vehicle_M35RearWheel,
+		mesh = vehicles/AMGeneral/Vehicle_M35A2_RearRightDoubleWheel,
+		texture = Vehicles/M35A2/Vehicle_M35RearWheel,
 	}
 	vehicle SC_AMGeneralM35A2
 	{
@@ -153,31 +153,61 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/M35/Vehicle_M35A1_OD,
+			texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		}
 
 		skin
 		{
-			texture = Vehicles/M35/Vehicle_M35A1_3tone,
+			texture = Vehicles/M35A2/Vehicle_M35A2_3tone,
 		}
 
 		skin
 		{
-			texture = Vehicles/M35/Vehicle_M35A1_Summer,
+			texture = Vehicles/M35A2/Vehicle_M35A2_3tone2,
 		}
 
 		skin
 		{
-			texture = Vehicles/M35/Vehicle_M35A1_Winter,
+			texture = Vehicles/M35A2/Vehicle_M35A2_3tone3,
 		}
 
-		textureRust = Vehicles/M35/Vehicle_M35A1Rust,
-		textureMask = Vehicles/M35/Vehicle_M35A1Mask,
-		textureLights = Vehicles/M35/Vehicle_M35A1Lights,
-		textureDamage1Shell = Vehicles/M35/Vehicle_M35A1Damage,
-		textureDamage2Shell = Vehicles/M35/Vehicle_M35A1Damage,
-		textureDamage1Overlay = Vehicles/M35/Vehicle_M35A1Blood,
-		textureDamage2Overlay = Vehicles/M35/Vehicle_M35A1Blood,
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Summer,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Summer1,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Summer2,
+		}
+		
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Winter,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Winter1,
+		}
+
+		skin
+		{
+			texture = Vehicles/M35A2/Vehicle_M35A2_Winter2,
+		}
+
+		textureRust = Vehicles/M35A2/Vehicle_M35A2Rust,
+		textureMask = Vehicles/M35A2/Vehicle_M35A2Mask,
+		textureLights = Vehicles/M35A2/Vehicle_M35A2Lights,
+		textureDamage1Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
+		textureDamage2Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
+		textureDamage1Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
+		textureDamage2Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
 
 		sound
 		{
@@ -189,7 +219,7 @@ module Base
 		}
 
 		extents = 3.7143 3.8413 10.5079,
-		mass = 500,
+		mass = 1000,
 		physicsChassisShape = 3.7143 3.8413 10.5079,
 		centerOfMassOffset = 0.0000 1.9048 -0.5079,
 		shadowExtents = 3.6593 10.3884,
@@ -203,7 +233,7 @@ module Base
 		rollInfluence = 0.20f,
 		steeringIncrement = 0.02,
 		steeringClamp = 0.5,
-		suspensionStiffness = 80,
+		suspensionStiffness = 60,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
 		maxSuspensionTravelCm = 12,
@@ -217,7 +247,7 @@ module Base
 		{
 			front = true,
 			offset = 1.4127 0.5079 2.9524,
-			radius = 0.70f,
+			radius = 0.75f,
 			width = 0.20f,
 		}
 
@@ -225,7 +255,7 @@ module Base
 		{
 			front = true,
 			offset = -1.4127 0.5079 2.9524,
-			radius = 0.70f,
+			radius = 0.75f,
 			width = 0.20f,
 		}
 
@@ -233,7 +263,7 @@ module Base
 		{
 			front = false,
 			offset = -0.0159 0.5079 -3.6984,
-			radius = 0.70f,
+			radius = 0.75f,
 			width = 0.20f,
 		}
 
@@ -241,7 +271,7 @@ module Base
 		{
 			front = false,
 			offset = 0.0000 0.5079 -1.9048,
-			radius = 0.70f,
+			radius = 0.75f,
 			width = 0.20f,
 		}
 
@@ -1152,7 +1182,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35Wheelfrontwheelleft,
+				file = M35frontwheelleft,
 			}
 		}
 
@@ -1160,7 +1190,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35Wheelfrontwheelright,
+				file = M35frontwheelright,
 			}
 		}
 
@@ -1168,7 +1198,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35Wheelbackwheelleft,
+				file = M35backwheelleft,
 			}
 		}
 
@@ -1176,7 +1206,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M35Wheelbackwheelright,
+				file = M35backwheelright,
 			}
 		}
 

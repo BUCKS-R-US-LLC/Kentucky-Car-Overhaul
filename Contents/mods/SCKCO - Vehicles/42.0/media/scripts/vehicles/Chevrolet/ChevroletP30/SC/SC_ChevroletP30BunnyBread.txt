@@ -3,7 +3,7 @@ module Base
 	model SC_StepVanP30Civ
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30Civ_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model StepVanP30Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model StepVanP30FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model StepVanP30FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,7 +44,7 @@ module Base
 	model StepVanP30FrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model StepVanP30FrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model StepVanP30RearRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -69,7 +69,7 @@ module Base
 	model StepVanP30Trunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -77,7 +77,7 @@ module Base
 	model StepVanP30Hood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -85,7 +85,7 @@ module Base
 	model StepVanP30RearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,

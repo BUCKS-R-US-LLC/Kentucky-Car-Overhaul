@@ -1,9 +1,9 @@
 --- Created by cytt0rak & Chuck
 local miscVehicleLua =  {}
 
-function miscVehicleLua.M35A1CargoWeightFix(player, part, elapsedMinutes)
+function miscVehicleLua.M35A2CargoWeightFix(player, part, elapsedMinutes)
     local vehicle = player:getVehicle()
-    if (vehicle and string.find( vehicle:getScriptName(), "M35A1" )) then
+    if (vehicle and string.find( vehicle:getScriptName(), "SC_AMGeneralM35A2" )) then
         if vehicle:getMass() > 1470 then  vehicle:setMass(1469) end
     end
 end

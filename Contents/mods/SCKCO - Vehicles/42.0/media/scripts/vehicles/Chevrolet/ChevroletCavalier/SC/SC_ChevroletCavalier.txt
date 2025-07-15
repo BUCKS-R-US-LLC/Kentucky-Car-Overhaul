@@ -3,38 +3,38 @@ module Base
 	model SC_ChevroletCavalier
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|base_mesh,
-		shader = vehicle_norandom_multiuv_noreflect,
+		shader = vehicle_norandom_multiuv,
 		static = TRUE,
 		scale = 1,
 	}
 	model CavalierDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CavalierPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CavalierDouble
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CavalierWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CavalierFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model CavalierFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model CavalierRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -61,7 +61,7 @@ module Base
 	model CavalierRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model CavalierFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model CavalierFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -86,7 +86,7 @@ module Base
 	model CavalierRearRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model CavalierRearLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -102,7 +102,7 @@ module Base
 	model CavalierTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -110,7 +110,7 @@ module Base
 	model CavalierHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -118,20 +118,18 @@ module Base
 	model CavalierRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Cavalierwheelleft
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_LeftWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
-		
 	}
 	model Cavalierwheelright
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevCava_RightWheel,
 		texture = vehicles/ChevCava/Vehicle_ChevCava_Wheels,
-		
 	}
 	vehicle SC_ChevroletCavalier
 	{
