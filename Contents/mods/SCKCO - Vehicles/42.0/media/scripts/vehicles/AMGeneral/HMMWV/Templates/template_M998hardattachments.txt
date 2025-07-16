@@ -23,6 +23,13 @@ module Base
 		scale = 1.0,
 	}
 
+    model M998Hardtop3Tone
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|HardTop_obj,
+		texture = Vehicles/HMMWV/3ToneHardtop,
+		scale = 1.0,
+	}
+
 	model HM998RearLeftContainer
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftContainer_obj,
@@ -135,7 +142,248 @@ module Base
 		{
 			model Default { file = M998HardtopGreen, }
 			category = nodisplay,
-			itemType = SCKCO.ChevyLogo,
+			itemType = SCKCO.FillerPartSC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+        part SCArmorBumper
+        {
+            model Default { file = M998HardtopBullbar, }
+			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
+            itemType = SCKCO.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M998HardtopFrontRightWindowArmor, }
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M998HardtopFrontLeftWindowArmor, }
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M998HardtopFrontRightDoorArmor, }
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M998HardtopFrontLeftDoorArmor, }
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = M998HardtopRearRightWindowArmor, }
+            itemType = SCKCO.HMMWVWindowArmorSC,
+			
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = M998HardtopRearLeftWindowArmor, }
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M998HardtopRearRightDoorArmor, }
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M998HardtopRearLeftDoorArmor, }
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M998HardtopWindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+		part M998HardSlant
+		{
+			parent = TrunkDoor,
+			category = nodisplay,
+			
+			model HM998HardtopSlant
+			{
+				file = HM998HardtopSlant,
+			}
+
+			table install
+			{
+				requireInstalled = TrunkLid,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1025SlantBaseSC,
+		}
+
+		part M998RearLeftContainer
+		{
+			model HM998RearLeftContainer
+			{
+				file = HM998RearLeftContainer,
+			}
+
+			area = SideContainer1,
+			category = nodisplay,
+			itemType = SCKCO.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1025SlantBaseSC,
+		}
+
+		part M998RearRightContainer
+		{
+			model HM998RearRightContainer
+			{
+				file = HM998RearRightContainer,
+			}
+
+			area = SideContainer2,
+			category = nodisplay,
+			itemType = SCKCO.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			container
+			{
+				capacity = 10,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1025SlantBaseSC,
+		}
+    }
+
+    template vehicle M998Hardtop3ToneAttachments
+	{
+        template = specials/part/DetroitDieselSC,
+
+        template = armorUpgrades/part/SCArmorBumper,
+
+		part BumperAssembly
+		{
+			model Default { file = M998HardtopBumperAssembly, }
+			category = nodisplay,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998Hardtop
+		{
+			model Default { file = M998Hardtop3Tone, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
 
 			lua
 			{

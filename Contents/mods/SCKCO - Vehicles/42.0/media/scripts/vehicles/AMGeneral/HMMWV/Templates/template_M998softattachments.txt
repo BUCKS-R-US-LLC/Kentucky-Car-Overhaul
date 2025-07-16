@@ -31,6 +31,20 @@ module Base
 		scale = 1.0,
 	}
 
+    model M998TopCover3Tone
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		shader = vehicle_noreflect,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCover3Tone
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		texture = Vehicles/HMMWV/3ToneCoverHMM,
+		scale = 1.0,
+	}
+
     model M998TopCoverTan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
@@ -344,6 +358,52 @@ module Base
 		}
     }
 
+	template vehicle M9983ToneSofttops
+	{
+
+		part M998FrontSoftTop
+		{
+			model Default { file = M998TopCover3Tone, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCover3Tone, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+	
 	template vehicle M998TanSofttops
 	{
 
