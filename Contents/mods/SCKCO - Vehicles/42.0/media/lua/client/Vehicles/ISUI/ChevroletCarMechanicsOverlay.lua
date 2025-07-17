@@ -4,9 +4,9 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1008"] = {imgPrefix = "k10_", x
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1008TroopCarrier"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1010Ambulance"] = {imgPrefix = "k10_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10McCoy"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10ParkRanger"] = {imgPrefix = "k10_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10Dixie"] = {imgPrefix = "k10_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10_McCoy"] = {imgPrefix = "k10_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10_ParkRanger"] = {imgPrefix = "k10_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletK10_Dixie"] = {imgPrefix = "k10_", x=0,y=0};
 
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1009MP"] = {imgPrefix = "blazer_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletM1009"] = {imgPrefix = "blazer_", x=0,y=0};

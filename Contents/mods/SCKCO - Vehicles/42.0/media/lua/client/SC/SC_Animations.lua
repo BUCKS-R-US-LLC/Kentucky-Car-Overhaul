@@ -131,9 +131,6 @@ local seatAnimationsProfiles = {
 
 local vehicleToSeatAnimations = {
 
-	["Base.SC_ChevroletK5BlazerFossoil"] = "Default",
-	["Base.SC_ChevroletK5BlazerMcCoy"] = "Default",
-	
 	["Base.PickUpVanMccoy"] = "Default",
 	["Base.PickUpVanLights"] = "Default",
 	["Base.PickUpVanLightsFire"] = "Default",
@@ -152,18 +149,19 @@ local vehicleToSeatAnimations = {
 	["Base.CarLights"] = "Default",
 	["Base.CarLightsPolice"] = "Default",
 	["Base.SC_ChevroletK10"] = "Default",
-	["Base.SC_ChevroletK10Dixie"] = "Default",
-	["Base.SC_ChevroletK10McCoy"] = "Default",
-	["Base.SC_ChevroletK10ParkRanger"] = "Default",
+	["Base.SC_ChevroletK10_Dixie"] = "Default",
+	["Base.SC_ChevroletK10_McCoy"] = "Default",
+	["Base.SC_ChevroletK5Blazer_Fossoil"] = "Default",
+	["Base.SC_ChevroletK10_ParkRanger"] = "Default",
 	["Base.SC_ChevroletM1008"] = "Default",
 	["Base.SC_ChevroletM1009"] = "Default",
 	["Base.SC_ChevroletM1009MP"] = "Default",
 	["Base.SC_FordCountrySquire"] = "Default",
 	
 	["Base.SC_FordCrownVictoria85"] = "Default",
-	["Base.SC_FordCrownVictoria85StatePolice"] = "Default",
-	["Base.SC_FordCrownVictoria85LVPD"] = "Default",
-	["Base.SC_FordCrownVictoria85ParkRanger"] = "Default",
+	["Base.SC_FordCrownVictoria85_StatePolice"] = "Default",
+	["Base.SC_FordCrownVictoria85_LVPD"] = "Default",
+	["Base.SC_FordCrownVictoria85_ParkRanger"] = "Default",
 	["Base.SC_ChevroletCaprice85"] = "Default",
 	["Base.SC_ChevroletCaprice85ParkRanger"] = "Default",
 
@@ -184,26 +182,28 @@ local vehicleToSeatAnimations = {
 	["Base.SC_GeoTracker"] = "Default",
 	["Base.SC_BMW520i"] = "Default",
     ["Base.SC_FordCrownVictoria92"] = "Default",
-    ["Base.SC_FordCrownVictoria92Jefferson"] = "Default",
-	["Base.SC_FordCrownVictoria92Louisville"] = "Default",
-	["Base.SC_FordCrownVictoria92Warren"] = "Default",
-	["Base.SC_FordCrownVictoria92Muhlen"] = "Default",
+    ["Base.SC_FordCrownVictoria92_Jefferson"] = "Default",
+	["Base.SC_FordCrownVictoria92_Louisville"] = "Default",
+	["Base.SC_FordCrownVictoria92_Warren"] = "Default",
+	["Base.SC_FordCrownVictoria92_Muhlen"] = "Default",
 	["Base.SUV"] = "Default",
 	["Base.SC_FordExplorer"] = "Default",
+	["Base.SC_JeepCherokee"] = "Default",
+	["Base.SC_JeepCherokee_AudubonPD"] = "Default",
+	["Base.SC_JeepGrandWagoneer"] = "Default",
 
 	["Base.SC_AMGeneralM1097"] = "6SideSeater",
 	["Base.SC_AMGeneralM1097Tan"] = "6SideSeater",
 	["Base.SC_ChevroletM1008TroopCarrier"] = "6SideSeater",
 	["Base.SC_ChevroletM1010Ambulance"] = "6SideSeater",
-	["Base.SC_AMGeneralM35A2"] = "16SideSeater",
-	
+	["Base.SC_AMGeneralM35A2_3ToneOD"] = "16SideSeater",
+	["Base.SC_AMGeneralM35A2_MERDC"] = "16SideSeater",
+
 	["Base.SmallCar"] = "SmallCar",
 	["Base.SmallCar02"] = "SmallCar",
 	["Base.SC_VWRabbit"] = "SmallCar",
-	["Base.SC_VWRabbitPizza"] = "SmallCar",
+	["Base.SC_VWRabbit_Pizza"] = "SmallCar",
 	["Base.SC_HondaAccord"] = "SmallCar",
-	["Base.SC_M151A2"] = "SmallCar",
-	["Base.SC_M151A2Cleaners"] = "SmallCar",
 	["Base.SC_Porsche911"] = "SmallCar",
 
 	["Base.SportsCar"] = "midSized",
@@ -223,40 +223,51 @@ local vehicleToSeatAnimations = {
 	["Base.SC_FordBronco"] = "2Seater",
 	["Base.SC_GrummanLLV"] = "2Seater",
 	["Base.SC_MackDM800Garbage"] = "2Seater",
-	["Base.SC_CrownFirecoachRed"] = "2Seater",
-	["Base.SC_CrownFirecoachWhite"] = "2Seater",
+	["Base.SC_CrownFirecoach_Red"] = "2Seater",
+	["Base.SC_CrownFirecoach_White"] = "2Seater",
 	["Base.SC_DodgeM880"] = "2Seater",
-	["Base.SC_DodgeM880Bubba"] = "2Seater",
-	["Base.SC_DodgeM880Militia"] = "2Seater",
+	["Base.SC_DodgeM880_Bubba"] = "2Seater",
 
 	["Base.SC_ChevroletP30"] = "4Seater",
-	["Base.SC_ChevroletP30Heralds"] = "4Seater",
-	["Base.SC_ChevroletP30Mail"] = "4Seater",
-	["Base.SC_ChevroletP30Scarlet"] = "4Seater",
-	["Base.SC_ChevroletP30SWAT"] = "4Seater",
-	["Base.SC_ChevroletP30BunnyBread"] = "4Seater",
-	["Base.SC_ChevroletP30Greenes"] = "4Seater",
+	["Base.SC_ChevroletP30_Heralds"] = "4Seater",
+	["Base.SC_ChevroletP30_Mail"] = "4Seater",
+	["Base.SC_ChevroletP30_Scarlet"] = "4Seater",
+	["Base.SC_ChevroletP30_SWAT"] = "4Seater",
+	["Base.SC_ChevroletP30_BunnyBread"] = "4Seater",
+	["Base.SC_ChevroletP30_Greenes"] = "4Seater",
 	["Base.StepVan"] = "4Seater",
 	["Base.StepVan_Scarlet"] = "4Seater",
 	["Base.StepVan_Heralds"] = "4Seater",
 	["Base.StepVanMail"] = "4Seater",
 
 	["Base.SC_CadillacFuneralCoach"] = "4SeatUtility",
-	["Base.SC_FordMustang90Undercover"] = "4SeatUtility",
+	["Base.SC_FordMustang90_Undercover"] = "4SeatUtility",
 
 	["Base.SC_FordF350Ambulance"] = "4SeatSport",
-	["Base.SC_FordMustang90Undercover"] = "4SeatSport",
-	["Base.SC_FordMustang90JeffersonCounty"] = "4SeatSport",
-	["Base.SC_FordMustang90UndercoverStatePolice"] = "4SeatSport",
+	["Base.SC_FordMustang90_Undercover"] = "4SeatSport",
+	["Base.SC_FordMustang90_JeffersonCounty"] = "4SeatSport",
+	["Base.SC_FordMustang90_StatePolice"] = "4SeatSport",
 
-	["Base.SC_HahnPumperRed"] = "6Seater",
-	["Base.SC_HahnPumperYellow"] = "6Seater",
+	["Base.SC_HahnPumper_Red"] = "6Seater",
+	["Base.SC_HahnPumper_Yellow"] = "6Seater",
 	["Base.SC_PlymouthVoyager"] = "6Seater",
 
 	["Base.SC_ChevroletG30Ambulance"] = "Ambulance",
 	["Base.VanAmbulance"] = "Ambulance",
 
-	["Base.SC_M151A2"] = {
+	["Base.SC_M151A2_3ToneOD"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seatDefault"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SC_M151A2_Tan"] = {
+		["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seatDefault"]="Shark_Idle_RearPassenger",
+	},
+
+	["Base.SC_M151A2_MERDC"] = {
 		["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
 		["seatDefault"]="Shark_Idle_RearPassenger",
@@ -282,14 +293,28 @@ local vehicleToSeatAnimations = {
 		["seat3"]="Bob_SitGround_Idle",
 	},
 
-	["Base.SC_FordF700ArmoredPolice"] = {
+	["Base.SC_FordF700Armored_Police"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
 		["seat2"]="Shark_Idle_SidePassenger",
 		["seat3"]="Shark_Idle_SidePassenger2",
 	},
 
-	["Base.SC_FordF700ArmoredBank"] = {
+	["Base.SC_FordF700Armored_Bank"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_FordF700Armored_Dunbar"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
+	["Base.SC_FordF700Armored_Transport"] = {
         ["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_Passenger",
 		["seat2"]="Shark_Idle_SidePassenger",
