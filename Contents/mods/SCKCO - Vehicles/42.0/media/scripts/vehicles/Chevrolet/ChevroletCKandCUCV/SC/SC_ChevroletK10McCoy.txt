@@ -82,12 +82,12 @@ module Base
 	}
 	model CKSerieswheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_CKSeries_LeftWheel,
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	model CKSerieswheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_CKSeries_RightWheel,
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	vehicle SC_ChevroletK10McCoy
@@ -134,7 +134,7 @@ module Base
 		}
 		
 		extents = 2.9524 3.0794 7.0159,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.9524 3.0794 7.0159,
 		centerOfMassOffset = 0.0000 1.5556 -0.2222,
 		shadowExtents = 2.9601 7.7704,
@@ -611,7 +611,7 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.ChevyKSeriesTrunkLidSC,
+			itemType = SCKCO.ChevyCKSeriesTrunkLidSC,
 		}
 
 		template = Trunk/part/TruckBedOpen,

@@ -10,25 +10,25 @@ module Base
 	model PathfinderDriver
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|DriverSeat_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderPassenger
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|PassengerSeat_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Windshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderFrontRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model PathfinderFrontLeftWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,19 +46,19 @@ module Base
 	model PathfinderRearRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderRearLeftWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderFrontRightDoor
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model PathfinderFrontLeftDoor
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -74,7 +74,7 @@ module Base
 	model PathfinderTrunk
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|TrunkDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -82,7 +82,7 @@ module Base
 	model PathfinderRearWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearWindshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -90,7 +90,7 @@ module Base
 	model PathfinderHood
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Hood_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -183,7 +183,7 @@ module Base
 		}
 
 		extents = 2.4444 2.0635 6.6349,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.4444 2.0635 6.6349,
 		centerOfMassOffset = 0.0000 1.0317 -0.2222,
 		shadowExtents = 2.4522 6.6434,

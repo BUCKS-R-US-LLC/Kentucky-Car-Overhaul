@@ -28,13 +28,13 @@ module Base
 	model CamaroSCWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Windshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RearWindshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model CamaroSCFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -51,7 +51,7 @@ module Base
 	model CamaroSCFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model CamaroSCFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -68,7 +68,7 @@ module Base
 	model CamaroSCFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -76,19 +76,19 @@ module Base
 	model CamaroSCRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RightTTop_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|LeftTTop_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Trunk_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model CamaroSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Hood_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -180,7 +180,7 @@ module Base
 		}
 
 		extents = 2.5970 1.5522 6.7761,
-		mass = 100,
+		mass = 500,
 		physicsChassisShape = 2.5970 1.5522 6.7761,
 		centerOfMassOffset = 0.0000 0.5075 -0.0299,
 		shadowExtents = 2.6015 6.7777,

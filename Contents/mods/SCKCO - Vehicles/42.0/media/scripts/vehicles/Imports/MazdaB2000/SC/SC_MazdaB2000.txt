@@ -22,13 +22,13 @@ module Base
 	model MazdaBWindshield
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Windshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBFrontRightWindow
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model MazdaBFrontLeftWindow
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model MazdaBFrontRightDoor
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model MazdaBFrontLeftDoor
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model MazdaBTrunk
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Trunk_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,13 +70,13 @@ module Base
 	model MazdaBRearWindshield
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|RearWindshield_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBHood
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Hood_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

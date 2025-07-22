@@ -36,7 +36,7 @@ module Base
 	model K5BlazerFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model K5BlazerTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Trunk_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -81,19 +81,19 @@ module Base
 	model K5BlazerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Hood_obj,
-		shader = vehicleutest,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
 	model CKSerieswheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_CKSeries_LeftWheel,
+		mesh = vehicles/Chevrolet/Vehicle_CKSeries_LeftWheel,
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	model CKSerieswheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_CKSeries_RightWheel,
+		mesh = vehicles/Chevrolet/Vehicle_CKSeries_RightWheel,
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 	vehicle SC_ChevroletK5Blazer

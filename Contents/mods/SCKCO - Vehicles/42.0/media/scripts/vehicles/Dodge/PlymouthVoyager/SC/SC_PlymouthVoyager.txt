@@ -2,132 +2,132 @@ module Base
 {
 	model SC_PlymouthVoyager
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|base_mesh,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model PlymouthVoyagerDriver
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|DriverSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|DriverSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerPassenger
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|PassengerSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|PassengerSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerRearSeat
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|RearDoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearDoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerWindshield
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|Windshield_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|Windshield_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerFrontRightWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
 	model PlymouthVoyagerFrontLeftWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = false,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
 	model PlymouthVoyagerMiddleRightWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|MiddleRightWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|MiddleRightWindow_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerMiddleLeftWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|MiddleLeftWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|MiddleLeftWindow_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerRearLeftWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|RearLeftWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearLeftWindow_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PlymouthVoyagerFrontRightDoor
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerFrontLeftDoor
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 	model PlymouthVoyagerSlidingRightDoor
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|RearRightDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerSlidingWindow
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|RearRightWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearRightWindow_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
 	}
 	model PlymouthVoyagerTrunk
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|TrunkDoor_obj,
+		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
 		boneWeight = TrunkBone 1.0,
 	}
 	model PlymouthVoyagerHood
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|Hood_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|Hood_obj,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
 	model PlymouthVoyagerRearWindshield
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_SC|RearWindshield_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearWindshield_obj,
+		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
 	}
 	model PlymouthVoyagerwheelleft
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_LeftWheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_LeftWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 	}
 	model PlymouthVoyagerwheelright
 	{
-		mesh = vehicles/Dodge/Vehicle_PlymouthVoyager_RightWheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_RightWheel,
 		texture = vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_Wheel,
 	}
 	vehicle SC_PlymouthVoyager
