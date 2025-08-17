@@ -1178,7 +1178,9 @@ distributionTable["SC_ChevroletC70Survivalist"] = { Normal = VehicleDistribution
 
 distributionTable["VanAmbulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_ChevroletG30Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
-distributionTable["SC_FordF350Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_FordF350Ambulance_StPeregrin"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_FordF350Ambulance_Meade"] = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_FordF350Ambulance_Life"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_ChevroletM1010Ambulance"] = { Normal = VehicleDistributions.SC_Ambulance }
 
 distributionTable["SportsCar"] = { Normal = VehicleDistributions.SC_Sport}

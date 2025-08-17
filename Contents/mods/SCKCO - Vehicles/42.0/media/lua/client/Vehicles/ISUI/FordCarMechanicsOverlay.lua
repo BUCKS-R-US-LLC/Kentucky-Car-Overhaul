@@ -14,6 +14,9 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordExplorer"] = {imgPrefix = "explorer_"
 ISCarMechanicsOverlay.CarList["Base.SC_FordBronco"] = {imgPrefix = "bronco1992_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF150"] = {imgPrefix = "f150_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF350Ambulance"] = {imgPrefix = "f350ambu_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordF350Ambulance_StPeregrin"] = {imgPrefix = "f350ambu_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordF350Ambulance_Meade"] = {imgPrefix = "f350ambu_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordF350Ambulance_Life"] = {imgPrefix = "f350ambu_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700BoxTruck"] = {imgPrefix = "f700box_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700BoxTruck_Greenes"] = {imgPrefix = "f700box_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700BoxTruck_MacTools"] = {imgPrefix = "f700box_", x=0,y=0};
