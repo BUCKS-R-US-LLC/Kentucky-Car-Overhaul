@@ -1,0 +1,972 @@
+module Base
+{
+	model SC_M1025
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+	model M1025Driver
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1025Passenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1025RearRightPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1025RearLeftPassenger
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1025Windshield
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Windshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+	}
+	model M1025FrontRightWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightArmorBone 1.0,
+	}
+	model M1025FrontLeftWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftArmorBone 1.0,
+	}
+	model M1025RearRightWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightArmorBone 1.0,
+	}
+	model M1025RearLeftWindow
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftArmorBone 1.0,
+	}
+	model M1025FrontRightDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightDoor_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model M1025FrontLeftDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model M1025RearRightDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model M1025RearLeftDoor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model M1025Trunk
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|TrunkDoor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone1 1.0,
+	}
+	model M1025SlantBase
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|SlantBase_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model M1025Slant
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Slant_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+	model M1025Hood
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+		boneWeight = FrontBumperBone 1.0,
+	}
+	model M1025Exhaust
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Exhaust_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = TRUE,
+	}
+	model HMMWVwheelleft
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_FrontLeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		
+	}
+	model HMMWVwheelright
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM_FrontRightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		
+	}
+	vehicle SC_AMGeneralM1025_Tan
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.5,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.5,
+
+		model
+		{
+			file = SC_M1025,
+			scale = 0.4000,
+			offset = 0.0000 0.0000 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+		}
+
+		textureRust = Vehicles/HMMWV/Vehicle_HM1025_rust,
+		textureMask = Vehicles/HMMWV/Vehicle_HM1025_mask,
+		textureLights = Vehicles/HMMWV/Vehicle_HM1025_lights,
+		textureDamage1Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
+		textureDamage2Shell = Vehicles/HMMWV/Vehicle_HM1025_scratch,
+		textureDamage1Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
+		textureDamage2Overlay = Vehicles/HMMWV/Vehicle_HM1025_blood,
+
+		sound
+		{
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 5.0500 3.2500 10.6000,
+		mass = 800,
+		physicsChassisShape = 5.0500 3.2500 10.6000,
+		centerOfMassOffset = 0.0000 1.6250 0.0000,
+		shadowExtents = 5.4529 10.8239,
+		shadowOffset = -0.0032 0.0064,
+		engineForce = 4800,
+		engineQuality = 80,
+		engineLoudness = 120,
+		maxSpeed = 50f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.80f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 80,
+		suspensionCompression = 3.60,
+		suspensionDamping = 2.69,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.6f,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 2.1500 0.7250 4.0250,
+			radius = 1.00f,
+			width = 0.50,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -2.1500 0.7250 4.0250,
+			radius = 1.00f,
+			width = 0.50,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 2.1500 0.7250 -3.5750,
+			radius = 1.00f,
+			width = 0.50,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -2.1500 0.7250 -3.5750,
+			radius = 1.00f,
+			width = 0.50,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.5556 2.0222 0.2444,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 3.3556 0.0000 0.7556,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.5556 2.0222 0.2444,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -3.3556 0.0000 0.7556,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.5556 2.0222 -1.4667,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 3.3556 0.0000 -1.1778,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.5556 2.0222 -1.4667,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -3.3556 0.0000 -1.1778,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 6.1111 5.0667 1.4667,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -6.0222 5.0667 1.2000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 3.6444 0.8222 2.0889 2.0889,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -3.6444 0.8222 2.0889 2.0889,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 3.6444 -1.2222 2.0889 2.0889,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -3.6444 -1.2222 2.0889 2.0889,
+		}
+
+		area GasTank
+		{
+			xywh = -3.1778 -2.4889 1.2000 0.8000,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 2.4667 4.0222 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -2.4667 4.0222 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 2.4667 -3.6444 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -2.4667 -3.6444 0.0000 0.0000,
+		}
+
+		template = M1025Attachments,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = HM1025Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = HM1025Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = HM1025RearLeftPassenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = HM1025RearRightPassenger,
+			}
+		}
+
+		part Muffler
+		{
+			model M1025Exhaust
+			{
+				file = HM1025Exhaust,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		part Engine
+		{
+			table partVariation
+			{
+				militaryIgnition = true,
+				additionalVehicleFunc = Engine,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+				update = Vehicles.Update.SCKCO_militaryEngine,
+				checkEngine = Vehicles.CheckEngine.Engine,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = HM1025Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = SCKCO.HMMWVHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = HM1025Windshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.HMMWVWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = HM1025FrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = SCKCO.HMMWVHardWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = HM1025FrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = SCKCO.HMMWVHardWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = HM1025RearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorRearRight,
+			area = SeatRearRight,
+			itemType = SCKCO.HMMWVHardWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = HM1025RearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = SCKCO.HMMWVHardWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = HM1025FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.HMMWVHardDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = HM1025FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.HMMWVHardDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = HM1025RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.HMMWVHardDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = HM1025RearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.HMMWVHardDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = HM1025Trunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.HMMWVTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HMMWVwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HMMWVwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HMMWVwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = HMMWVwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part Radio
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = Base.HamRadio2,
+		}
+		
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+		    category = nodisplay,
+			table partVariation { noLockDoors = true, }
+			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+		}
+
+		physics box
+		{
+			offset = 0.0000 2.2750 -0.1500,
+			extents = 5.0000 3.3500 10.4250,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 1.3250 -5.3750,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 1.3250 5.2750,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
