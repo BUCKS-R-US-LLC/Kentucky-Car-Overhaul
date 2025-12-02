@@ -1,0 +1,944 @@
+module Base
+{
+	model SC_VWRabbit
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model VWRabbitDriver
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model VWRabbitPassenger
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model VWRabbitDouble
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model VWRabbitWindshield
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|Windshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+	}
+	model VWRabbitFrontRightWindow
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+	model VWRabbitFrontLeftWindow
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+	model VWRabbitRearRightWindow
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+	model VWRabbitRearLeftWindow
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+	model VWRabbitFrontRightDoor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model VWRabbitFrontLeftDoor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model VWRabbitRearRightDoor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model VWRabbitRearLeftDoor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model VWRabbitTrunk
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|Trunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VWRabbitHood
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|Hood_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model VWRabbitRearWindshield
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearWindshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model VWRabbitwheelleft
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_LeftWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+	}
+	model VWRabbitwheelright
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_RightWheel,
+		texture = vehicles/VWRabbit/Vehicle_VWRabbit_Wheel,
+	}
+	vehicle SC_VWRabbit_Pizza
+	{
+		mechanicType = 1,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_VWRabbit,
+			scale = 0.6100,
+			offset = 0.0000 -0.3607 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/VWRabbit/Vehicle_VWRabbit_Pizza,
+		}
+
+		textureRust = Vehicles/VWRabbit/Vehicle_VWRabbit_rust,
+		textureMask = Vehicles/VWRabbit/Vehicle_VWRabbit_mask,
+		textureLights = Vehicles/VWRabbit/Vehicle_VWRabbit_lights,
+		textureDamage1Shell = Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
+		textureDamage2Shell= Vehicles/VWRabbit/Vehicle_VWRabbit_scratch,
+		textureDamage1Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
+		textureDamage2Overlay = Vehicles/VWRabbit/Vehicle_VWRabbit_blood,
+
+		sound
+		{
+			engine = VehicleEngineCarNormal,
+			engineStart = VehicleEngineCarNormal,
+			engineTurnOff = VehicleEngineCarNormal,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailCarNormal,
+		}
+
+		extents = 2.5574 1.7049 5.5410,
+		mass = 700,
+		physicsChassisShape = 2.5574 1.7049 5.5410,
+		centerOfMassOffset = 0.0000 0.8689 0.1311,
+		shadowExtents = 2.5762 6.2891,
+		shadowOffset = -0.0032 0.0986,
+		engineForce = 4201,
+		gearRatioCount = 4,
+		maxSpeed = 110f,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.95f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
+		frontEndHealth = 1500,
+		rearEndHealth = 1350,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.0820 0.3443 1.8852,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.0820 0.3443 1.8852,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.0820 0.3443 -1.7377,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.0820 0.3443 -1.7377,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.6066 0.8033 -0.3443,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0492 -0.4262 0.0984,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5902 0.8033 -0.3443,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1967 -0.4262 0.0984,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5246 0.6885 -1.5738,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0492 -0.4262 -0.9836,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5246 0.6885 -1.5738,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.2131 -0.4262 -0.9836,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.0492 2.5574 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -3.6230 2.5574 1.8033,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.0492 0.4426 1.3770 1.3770,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.0492 0.4426 1.3770 1.3770,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.0492 -1.0328 1.3770 1.3770,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.0492 -1.0328 1.3770 1.3770,
+		}
+
+		area GasTank
+		{
+			xywh = -1.9016 -2.0328 1.0820 0.5902,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.5082 1.8852 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.5246 1.8852 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.5246 -1.7377 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.5410 -1.7377 0.0000 0.0000,
+		}
+
+		template = RabbitAttachments,
+		template = RabbitLouversRemoved,
+		template = PizzaTopper,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = VWRabbitDriver,
+			}
+
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = VWRabbitPassenger,
+			}
+
+		}
+
+		part SeatRearLeft
+		{
+			model seatrearLeft
+			{
+				file = VWRabbitDouble,
+			}
+
+		}
+
+		part SeatRearRight
+		{
+			model seatrearRight
+			{
+				file = VWRabbitDouble,
+			}
+
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = VWRabbitHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = SCKCO.VWRabbitHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = VWRabbitWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.VWRabbitWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			parent = TrunkDoor,
+
+			model windshieldRear
+			{
+				file = VWRabbitRearWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.VWRabbitWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = VWRabbitFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.VWRabbitWindowSC,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = VWRabbitFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.VWRabbitWindowSC,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = VWRabbitRearRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitWindowSC,
+			parent = DoorRearRight,
+			area = SeatRearRight,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = VWRabbitRearLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.VWRabbitWindowSC,
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = VWRabbitFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = VWRabbitFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = VWRabbitRearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = VWRabbitRearLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = VWRabbitTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.VWRabbitTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+		
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = VWRabbitwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = VWRabbitwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = VWRabbitwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = VWRabbitwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.8525 0.1311,
+			extents = 2.6230 1.7213 5.5246,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.6557 -2.7213,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.7213 2.9672,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

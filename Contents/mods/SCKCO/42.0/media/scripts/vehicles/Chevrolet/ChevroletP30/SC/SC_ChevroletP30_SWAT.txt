@@ -1,0 +1,803 @@
+module Base
+{
+	model StepVanP30Police
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		invertX = FALSE,
+		scale = 1,
+	}
+	model StepVanP30Driver
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model StepVanP30Passenger
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model StepVanP30Windshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Windshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+	}
+	model StepVanP30FrontRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+	model StepVanP30FrontLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+	model StepVanP30FrontRightDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model StepVanP30FrontLeftDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model StepVanP30RearRightDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearDoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model StepVanP30Trunk
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Trunk_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model StepVanP30Hood
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Hood_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model StepVanP30RearWindshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearWindshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model StepVanP30frontwheelleft
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_FrontLeft,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
+		
+	}
+	model StepVanP30frontwheelright
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_FrontRight,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
+		
+	}
+	model StepVanP30backwheelleft
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_RearLeft,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
+		
+	}
+	model StepVanP30backwheelright
+	{
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_RearRight,
+		texture = vehicles/StepVanP30/Vehicle_StepVanP30_Wheel,
+		
+	}
+	vehicle SC_ChevroletP30_SWAT
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.1,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = StepVanP30Police,
+			scale = 0.5700,
+			offset = 0.0000 0.1930 0.0877,
+		}
+
+		skin
+		{
+			texture = Vehicles/StepVanP30/Vehicle_StepVanP30Police_SC,
+		}
+
+		textureRust = Vehicles/StepVanP30/Vehicle_StepVanP30_rust,
+		textureMask = Vehicles/StepVanP30/Vehicle_StepVanP30_mask,
+		textureLights = Vehicles/StepVanP30/Vehicle_StepVanP30_lights,
+		textureDamage1Shell = Vehicles/StepVanP30/Vehicle_StepVanP30_damage,
+		textureDamage2Shell= Vehicles/StepVanP30/Vehicle_StepVanP30_damage2,
+		textureDamage1Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
+		textureDamage2Overlay = Vehicles/StepVanP30/Vehicle_StepVanP30_blood,
+
+		sound
+		{
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehicleIgnitionFailStepVan,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+		}
+
+		extents = 3.1930 3.7193 8.1754,
+		mass = 1000,
+		physicsChassisShape = 3.1930 3.7193 8.1754,
+		centerOfMassOffset = 0.0000 1.8596 -0.6491,
+		shadowExtents = 3.2617 9.8004,
+		shadowOffset = -0.0067 -0.6921,
+		maxSpeed = 70f,
+		engineForce = 4000,
+		engineQuality = 70,
+		engineLoudness = 100,
+		brakingForce = 60,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 2700,
+		rearEndHealth = 1900,
+		seats = 4,
+		isSmallVehicle = false,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.2632 0.0877 2.0877,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.2632 0.0877 2.0877,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.1404 0.0877 -2.8772,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.1404 0.0877 -2.8772,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7368 1.3860 1.0175,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.3684 -0.5789 1.5614,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7368 1.3860 1.0175,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.3684 -0.5789 1.5614,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7193 1.7544 -3.6140,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.1754 -0.5965 -5.7193,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7193 1.7544 -3.6140,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.1579 -0.5965 -5.7193,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 4.6667 3.2281 2.0000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 2.2456 0.7895 1.1228 1.1228,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -2.2456 0.7895 1.1228 1.1228,
+		}
+
+		area SeatRearRight
+		{
+			xywh = 0.0000 -5.4035 1.1228 1.1228,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.0000 -5.4035 1.1228 1.1228,
+		}
+
+		area GasTank
+		{
+			xywh = 2.2456 -3.4386 1.0877 0.5965,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.6140 2.1754 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.6140 2.1754 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.6140 -2.7895 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.6140 -2.7895 0.0000 0.0000,
+		}
+
+		template = P30Attachments,
+		template = specials/part/BackUpAlarmSC,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part BackOfTruck
+		{
+			area = SeatRearRight,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+
+			container
+			{
+				capacity = 150,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SeatFrontLeft
+		{
+			model SeatfrontLeft
+			{
+				file = StepVanP30Driver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model SeatfrontRight
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			model SeatRearLeft
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			model SeatRearRight
+			{
+				file = StepVanP30Passenger,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = StepVanP30Hood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = SCKCO.ChevyP30HoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = StepVanP30Windshield,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.ChevyP30WindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = StepVanP30RearWindshield,
+			}
+
+			parent = DoorRearRight,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.ChevyP30WindowSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearRight,
+		template = Door/part/DoorRearLeft,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+
+		part WindowFrontRight
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowFR
+			{
+				file = StepVanP30FrontRightWindow,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			itemType = SCKCO.ChevyP30WindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			window
+			{
+				openable = false,
+			}
+
+			model windowFL
+			{
+				file = StepVanP30FrontLeftWindow,
+			}
+
+			category = SCUCKwindows,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			itemType = SCKCO.ChevyP30WindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = StepVanP30FrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyP30DoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = StepVanP30FrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyP30DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = StepVanP30RearRightDoor,
+			}
+
+			anim Close
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyP30DoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			category = nodisplay,
+			itemType = SCKCO.ChevyP30DoorSC,
+		}
+
+		template = Tire,
+		
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = StepVanP30frontwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = StepVanP30frontwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = StepVanP30backwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = StepVanP30backwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.8596 -0.6491,
+			extents = 3.1754 3.7193 8.1930,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.0000 3.6032,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

@@ -1,0 +1,306 @@
+module Base
+{
+	model SC_M1101
+	{
+		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|base_mesh,
+		shader = vehicle_noreflect,
+		invertX = FALSE,
+		scale = 0.01,
+	}
+	model SC_M1101Trunk
+	{
+		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|Trunkdoor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkBone1 1.0,
+		boneWeight = TrunkBone2 1.0,
+		scale = 1,
+	}
+	model M1011Bowkit
+	{
+		mesh = vehicles/Trailer/Vehicle_M1101Trailer|Bowkit_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model M1011Tarp
+	{
+		mesh = vehicles/Trailer/Vehicle_M1101Trailer|Tarp_obj,
+		shader = vehicle_noreflect,
+        static = TRUE,
+		scale = 0.01,
+	}
+	model M1011wheelleft
+	{
+		mesh = vehicles/Trailer/Vehicle_M1011Trailer_LeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		scale = 0.01,
+	}
+	model M1011wheelright
+	{
+		mesh = vehicles/Trailer/Vehicle_M1011Trailer_RightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		scale = 0.01,
+	}
+	vehicle SC_M1101Trailer
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.8,
+
+		model
+		{
+			file = SC_M1101,
+			scale = 1.2900,
+			offset = 0.0000 -0.3429 -0.2636,
+		}
+
+		spawnOffsetY = 0.19392952,
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Tan,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_OD,
+		}
+
+		textureMask = Vehicles/vehicle_utilitytrailer_mask,
+		textureLights = Vehicles/vehicle_utilitytrailer_lights,
+		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
+		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
+		textureDamage1Shell = Vehicles/Veh_Damage1,
+		textureDamage2Shell = Vehicles/Veh_Damage2,
+		textureRust = Vehicles/Veh_Rust,
+		extents = 1.5504 0.6822 1.6279,
+		mass = 250,
+		physicsChassisShape = 1.5504 1.5194 1.6279,
+		centerOfMassOffset = 0.0000 0.7597 0.1163,
+		shadowExtents = 1.6613 1.7232,
+		shadowOffset = 0.0000 0.1121,
+		engineForce = 3600,
+		engineQuality = 60,
+		engineLoudness = 55,
+		maxSpeed = 70f,
+		brakingForce = 1,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.4f,
+		steeringIncrement = 0.03,
+		steeringClamp = 0.3,
+		suspensionStiffness = 60,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 4.0f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = false,
+			offset = 0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = false,
+			offset = -0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 1.3643 1.5504 0.8682,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.5349 0.0000 0.4651 0.5581,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.5349 0.0000 0.4651 0.5581,
+		}
+
+		template = Trunk/part/TrailerTrunk,
+		template = Tire/part/TireFrontLeft,
+		template = Tire/part/TireFrontRight,
+		template = TrunkDoor,
+
+		part M1011Tarp
+		{
+			model Default
+			{
+				file = M1011Tarp,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			requireInstalled = SCKCO.M1101TarpSC,
+			itemType = SCKCO.M1011BowkitSC,
+			category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part M1011Bowkit
+		{
+			model Default
+			{
+				file = M1011Bowkit,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			itemType = SCKCO.M1011BowkitSC,
+			category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = SC_M1101Trunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				scale = 0.01,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M1011wheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M1011wheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part additionalLuaEvents
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+
+		template = Suspension/part/SuspensionFrontLeft,
+		template = Suspension/part/SuspensionFrontRight,
+
+		attachment trailer
+		{
+			offset = 0.0000 0.5313 -1.1667,
+			rotate = 0.0000 0.0000 0.0000,
+			canAttach = trailer,
+			updateconstraint = false,
+		}
+	}
+}

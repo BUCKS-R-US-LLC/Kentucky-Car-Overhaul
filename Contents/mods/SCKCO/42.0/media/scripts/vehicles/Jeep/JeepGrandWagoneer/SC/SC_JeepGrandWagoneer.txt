@@ -1,0 +1,1066 @@
+module Base
+{
+	model SC_JeepGrandWagoneer
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|base_mesh,
+		shader = vehicle_norandom_multiuv,
+		scale = 1,
+	}
+	model JeepGrandWagoneerDriver
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|DriverSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepGrandWagoneerPassenger
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|PassengerSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepGrandWagoneerDouble
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearDoubleSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model JeepGrandWagoneerWindshield
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Windshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+	}
+	model JeepGrandWagoneerFrontRightWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+	model JeepGrandWagoneerFrontLeftWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+	model JeepGrandWagoneerMiddleRightWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleRightWindow_obj,
+		shader = vehicle,
+		scale = 1,
+	}
+	model JeepGrandWagoneerMiddleLeftWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleLeftWindow_obj,
+		shader = vehicle,
+		scale = 1,
+	}
+	model JeepGrandWagoneerRearRightWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+	model JeepGrandWagoneerRearLeftWindow
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftWindow_obj,
+		shader = vehicleonlywindow,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+	model JeepGrandWagoneerFrontRightDoor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model JeepGrandWagoneerFrontLeftDoor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model JeepGrandWagoneerRearRightDoor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightDoorBone 1.0,
+	}
+	model JeepGrandWagoneerRearLeftDoor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftDoor_obj,
+		shader = vehicle,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftDoorBone 1.0,
+	}
+	model JeepGrandWagoneerTrunk
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Trunk_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = RearWindshieldBone 1.0,
+		boneWeight = TrunkBone 1.0,
+	}
+	model JeepGrandWagoneerHood
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Hood_obj,
+		shader = vehicle,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model JeepGrandWagoneerRearWindshield
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearWindshield_obj,
+		shader = vehicleonlywindow,
+		scale = 1,
+		static = FALSE,
+	}
+	model JeepGrandWagoneerwheelleft
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_LeftWheel,
+		texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Tire,
+	}
+	model JeepGrandWagoneerwheelright
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_RightWheel,
+		texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Tire,
+	}
+	vehicle SC_JeepGrandWagoneer
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.5,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_JeepGrandWagoneer,
+			scale = 0.7000,
+			offset = 0.0000 -0.2571 -0.1571,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Beige,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_DeepNightB,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Sterling,
+		}
+
+		skin
+		{
+			texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_Garnet,
+		}
+
+		textureRust = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_rust,
+		textureMask = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_masks,
+		textureLights = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_lights,
+		textureDamage1Shell = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_scratch,
+		textureDamage2Shell= Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_scratch,
+		textureDamage1Overlay = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_blood,
+		textureDamage2Overlay = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_blood,
+
+		sound
+		{
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
+			horn = VehicleHornStandard,
+			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		extents = 2.4857 1.9429 6.2857,
+		mass = 1000,
+		physicsChassisShape = 2.2571 1.9714 5.6857,
+		centerOfMassOffset = 0.0000 1.1571 0.0000,
+		shadowExtents = 2.6525 6.3826,
+		shadowOffset = -0.0032 0.0031,
+		engineForce = 5000,
+		gearRatioCount = 4,
+		maxSpeed = 112f,
+		engineLoudness = 100,
+		engineQuality = 80,
+		brakingForce = 55,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.95f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 1.4f,
+		frontEndHealth = 1700,
+		rearEndHealth = 1000,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 1.0000 0.3286 2.2429,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -1.0000 0.3286 2.2429,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 1.0000 0.3286 -1.4714,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -1.0000 0.3286 -1.4714,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5857 1.0000 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0429 -0.4286 0.5143,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5714 1.0000 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 -0.4286 0.5143,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5714 1.0000 -0.9714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 2.0429 -0.4286 -0.6429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5714 1.0000 -0.9714,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.1429 -0.4286 -0.6429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 3.6571 2.2571 0.8000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -3.5857 2.2571 0.6000,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.9286 0.3571 1.1714 1.1714,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.9571 0.3571 1.1714 1.1714,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9286 -0.8000 1.1714 1.1714,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9571 -0.8000 1.1714 1.1714,
+		}
+
+		area GasTank
+		{
+			xywh = 1.9143 -2.0143 1.1143 0.6571,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.2000 2.0571 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.2000 2.0571 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.2000 -1.5714 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.2000 -1.5714 0.0000 0.0000,
+		}
+
+		template = GrandWagoneerAttachments,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
+		template = GasTank,
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = JeepGrandWagoneerDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = JeepGrandWagoneerPassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model SeatRearLeft
+			{
+				file = JeepGrandWagoneerDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model SeatRearRight
+			{
+				file = JeepGrandWagoneerDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = JeepGrandWagoneerHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = JeepGrandWagoneerWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = JeepGrandWagoneerRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowMiddleLeft,
+		template = Window/part/WindowMiddleRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = JeepGrandWagoneerFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = JeepGrandWagoneerFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+		}
+
+		part WindowMiddleRight
+		{
+			model windowMR
+			{
+				file = JeepGrandWagoneerMiddleRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = SeatRearRight,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+		}
+
+		part WindowMiddleLeft
+		{
+			model windowML
+			{
+				file = JeepGrandWagoneerMiddleLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			area = SeatRearLeft,
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = JeepGrandWagoneerRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+			parent = DoorRearRight,
+			area = SeatRearRight,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = JeepGrandWagoneerRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = RearLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.JeepGrandWagoneerWindowSC,
+			parent = DoorRearLeft,
+			area = SeatRearLeft,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = JeepGrandWagoneerFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = JeepGrandWagoneerFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerDoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = JeepGrandWagoneerRearRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerDoorSC,
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = JeepGrandWagoneerRearLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = RearLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = RearLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = JeepGrandWagoneerTrunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.JeepGrandWagoneerTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Tire,
+
+		part TruckBed
+		{
+			itemType = Base.NormalTrunk,
+
+			container
+			{
+				capacity = 50,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepGrandWagoneerwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepGrandWagoneerwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepGrandWagoneerwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = JeepGrandWagoneerwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = Radio,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		template = Headlight,
+
+		physics box
+		{
+			offset = 0.0000 0.9714 0.0000,
+			extents = 2.2571 1.9429 5.7000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.7870 -3.0461,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.8171 3.2265,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

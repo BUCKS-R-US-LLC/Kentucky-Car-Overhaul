@@ -1,0 +1,104 @@
+module Base
+{
+
+	model F150Bumper
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model F150WindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model F150FrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model F150FrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model F150FLWA
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model F150FRWA
+	{
+		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+    template vehicle F150Attachments
+	{
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = F150Bumper, }
+            itemType = SCKCO.FordOBSBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = F150WindshieldArmor, }
+            itemType = SCKCO.FordOBSWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = F150FRWA, }
+            itemType = SCKCO.FordOBSDoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = FordF150WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = F150FLWA, }
+            itemType = SCKCO.FordOBSWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = FordF150WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = F150FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.FordOBSDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = F150FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.FordOBSDoorArmorSC,
+        }
+
+    }
+}
