@@ -22,13 +22,13 @@ module Base
 	model F700ArmoredWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model F700ArmoredFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model F700ArmoredFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model F700ArmoredRearRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model F700ArmoredRearLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model F700ArmoredRearDoor
@@ -80,7 +80,7 @@ module Base
 	model F700ArmoredRearWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700Armored_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorBone 1.0,

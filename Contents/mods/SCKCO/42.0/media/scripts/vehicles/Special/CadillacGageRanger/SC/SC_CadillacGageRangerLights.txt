@@ -22,13 +22,13 @@ module Base
 	model CadillacGageRangerLightsWindshield
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsFrontRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model CadillacGageRangerLightsFrontLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model CadillacGageRangerLightsRearRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsRearLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsTrunk
@@ -81,7 +81,7 @@ module Base
 	model CadillacGageRangerLightsRearWindshield
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 		static = FALSE,
 	}
