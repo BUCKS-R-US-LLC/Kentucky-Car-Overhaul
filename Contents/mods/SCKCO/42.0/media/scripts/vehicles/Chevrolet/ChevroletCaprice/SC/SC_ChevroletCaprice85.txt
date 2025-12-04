@@ -409,6 +409,8 @@ module Base
 			model seatfrontLeft
 			{
 				file = CapriceDriver,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -417,6 +419,8 @@ module Base
 			model seatfrontRight
 			{
 				file = CapricePassenger,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -425,6 +429,8 @@ module Base
 			model seatrearLeft
 			{
 				file = CapriceDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -433,6 +439,8 @@ module Base
 			model seatrearRight
 			{
 				file = CapriceDouble,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -456,6 +464,8 @@ module Base
 			model engineDoor
 			{
 				file = CapriceHood,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -517,6 +527,8 @@ module Base
 			model windshieldFront
 			{
 				file = CapriceWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -548,6 +560,8 @@ module Base
 			model windshieldRear
 			{
 				file = CapriceRearWindshield,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			window
@@ -588,6 +602,8 @@ module Base
 			model windowFR
 			{
 				file = CapriceFrontRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -607,6 +623,8 @@ module Base
 			model windowFL
 			{
 				file = CapriceFrontLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -626,6 +644,8 @@ module Base
 			model windowRR
 			{
 				file = CapriceRearRightWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -645,6 +665,8 @@ module Base
 			model windowRL
 			{
 				file = CapriceRearLeftWindow,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim ClosedToOpen
@@ -664,6 +686,8 @@ module Base
 			model Default
 			{
 				file = CapriceFrontRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -702,6 +726,8 @@ module Base
 			model Default
 			{
 				file = CapriceFrontLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -740,6 +766,8 @@ module Base
 			model Default
 			{
 				file = CapriceRearRightDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -778,6 +806,8 @@ module Base
 			model Default
 			{
 				file = CapriceRearLeftDoor,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			anim Close
@@ -828,8 +858,8 @@ module Base
 			model Default
 			{
 				file = CapriceTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 1.0,
 			}
 
@@ -866,13 +896,14 @@ module Base
 
 		template = Trunk/part/TruckBed,
 		template = Tire,
-		
 
 		part TireFrontLeft
 		{
 			model InflatedTirePlusWheel
 			{
 				file = Capricefrontwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -881,6 +912,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = Capricefrontwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -889,6 +922,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = Capricebackwheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -897,6 +932,8 @@ module Base
 			model InflatedTirePlusWheel
 			{
 				file = Capricebackwheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
@@ -956,14 +993,14 @@ module Base
 
 		attachment trailer
 		{
-			offset = 0.0000 0.3934 -4.0984,
+			offset = 0.0000 0.1914 -4.0984,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = 0.0000 0.3934 3.8689,
+			offset = 0.0000 0.1914 3.8689,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
