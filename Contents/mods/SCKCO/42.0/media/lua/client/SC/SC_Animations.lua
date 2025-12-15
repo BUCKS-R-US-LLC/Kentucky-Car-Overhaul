@@ -297,14 +297,14 @@ local vehicleToSeatAnimations = {
 	},
 
 	["Base.SC_CadillacGageRanger"] = {
-		["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Bob_SitGround_Idle",
         ["seat2"]="Bob_SitGround_Idle",
 		["seat3"]="Bob_SitGround_Idle",
 	},
 
 	["Base.SC_CadillacGageRangerLights"] = {
-		["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Bob_SitGround_Idle",
         ["seat2"]="Bob_SitGround_Idle",
 		["seat3"]="Bob_SitGround_Idle",
