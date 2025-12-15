@@ -103,7 +103,7 @@ local seatAnimationsProfiles = {
 	},
 
 	["SmallCar"] = {
-		["seat0"]="Shark_Idle_SmallCarDriver",
+		["seat0"]="Bob_Idle_Driver",
 		["seat1"]="Shark_Idle_PassengerRelaxed",
 		["seatDefault"]="Shark_Idle_RearPassenger",
 	},

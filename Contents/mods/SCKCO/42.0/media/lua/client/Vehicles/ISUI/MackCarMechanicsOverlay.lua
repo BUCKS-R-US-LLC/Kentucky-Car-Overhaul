@@ -1,4 +1,4 @@
-ISCarMechanicsOverlay.CarList["Base.SC_MackDM800Garbage"] = {imgPrefix = "mackgarbage_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_MackDM800_Garbage"] = {imgPrefix = "mackgarbage_", x=0,y=0};
 
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
