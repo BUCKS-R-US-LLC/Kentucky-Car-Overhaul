@@ -122,15 +122,17 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.sport.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletP30_SWAT"] = {index = -1, spawnChance = 1};
-    VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletSuburbanStatePolice"] = {index = -1, spawnChance = 15};
+    VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletSuburban_StatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90_JeffersonPolice"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90_StatePolice"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90_Undercover"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria85_StatePolice"] = {index = -1, spawnChance = 50};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_Jefferson"] = {index = -1, spawnChance = 30};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_Muhlen"] = {index = -1, spawnChance = 30};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_Warren"] = {index = -1, spawnChance = 30};
-    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_Meade"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_LouisvillePD"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_JeffersonPD"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_JeffersonSheriff"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_MuhlenSheriff"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_WarrenSheriff"] = {index = -1, spawnChance = 30};
+    VehicleZoneDistribution.police.vehicles["Base.SC_FordCrownVictoria92_MeadeSheriff"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.baseVehicleQuality = 1.1;
     VehicleZoneDistribution.police.chanceToPartDamage = 5;
 

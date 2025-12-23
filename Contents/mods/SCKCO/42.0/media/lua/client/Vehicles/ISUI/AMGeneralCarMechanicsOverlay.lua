@@ -1,3 +1,6 @@
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1097TroopCarrier_3Tone"] = {imgPrefix = "m1025_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1097TroopCarrier_OD"] = {imgPrefix = "m1025_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1097TroopCarrier_Tan"] = {imgPrefix = "m1025_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1025_3Tone"] = {imgPrefix = "m1025_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1025_OD"] = {imgPrefix = "m1025_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM1025_Tan"] = {imgPrefix = "m1025_", x=0,y=0};
