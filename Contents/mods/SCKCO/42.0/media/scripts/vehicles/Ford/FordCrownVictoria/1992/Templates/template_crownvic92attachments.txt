@@ -1,8 +1,172 @@
 module Base
 {
+
+	model CrownVic92Bumper
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CrownVic92WindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CrownVic92FrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CrownVic92FrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model CrownVic92RearLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CrownVic92RearRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CrownVic92FLWA
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CrownVic92FRWA
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CrownVic92RLWA
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model CrownVic92RRWA
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
     template vehicle CrownVic92Attachments
 	{
 
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = CrownVic92Bumper, }
+            itemType = SCKCO.FordCrownVictoria92BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CrownVic92WindshieldArmor, }
+            itemType = SCKCO.FordCrownVictoria92WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CrownVic92FRWA, }
+            itemType = SCKCO.FordCrownVictoria92DoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CrownVic92FLWA, }
+            itemType = SCKCO.FordCrownVictoria92WindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CrownVic92FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CrownVic92FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CrownVic92RearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CrownVic92RearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.FordCrownVictoria92DoorArmorSC,
+        }
         
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CrownVic92RRWA, }
+            itemType = SCKCO.FordCrownVictoria92WindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = FordCrownVictoria92DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CrownVic92RLWA, }
+            itemType = SCKCO.FordCrownVictoria92WindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = FordCrownVictoria92DoorArmorSC,
+        }
+
     }
 }
