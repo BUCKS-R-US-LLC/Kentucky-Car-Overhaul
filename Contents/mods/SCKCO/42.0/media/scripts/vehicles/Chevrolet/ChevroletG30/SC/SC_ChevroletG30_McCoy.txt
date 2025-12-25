@@ -22,13 +22,13 @@ module Base
 	model G30VanMcCoyWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model G30VanMcCoyFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model G30VanMcCoyFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model G30VanMcCoyFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model G30VanMcCoyFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model G30VanMcCoySlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|SlideDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,

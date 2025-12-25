@@ -22,13 +22,13 @@ module Base
 	model G30AmbulanceWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 	}
 	model G30AmbulanceFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model G30AmbulanceFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model G30AmbulanceFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model G30AmbulanceFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model G30AmbulanceSlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|SlideDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model G30AmbulanceSlidingWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|SlideDoorWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model G30AmbulanceTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -87,7 +87,7 @@ module Base
 	model G30AmbulanceHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = vehicle,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -95,7 +95,7 @@ module Base
 	model G30AmbulanceRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|RearDoorWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleonlywindow,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
