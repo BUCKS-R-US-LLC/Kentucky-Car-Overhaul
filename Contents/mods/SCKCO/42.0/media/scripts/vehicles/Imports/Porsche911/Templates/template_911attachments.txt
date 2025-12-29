@@ -1,9 +1,126 @@
 module Base
 {
 
+	model 911Bumper
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model 911WindshieldArmor
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model 911FrontLeftDoorArmor
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 911FrontRightDoorArmor
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 911FrontLeftWindowArmor
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model 911FrontRightWindowArmor
+	{
+		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightWindorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
     template vehicle Porsche911Attachments
-    {
+	{
 
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = 911Bumper, }
+            itemType = SCKCO.Porsche911BumperSC,
+        }
 
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = 911FrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.Porsche911WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = 911FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.Porsche911DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = 911FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.Porsche911DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = 911FrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.Porsche911WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = 911WindshieldArmor, }
+            itemType = SCKCO.Porsche911WindshieldArmorSC,
+        }
+
+        part 911Louvers
+        {
+            model Default { file = 911Tail, }
+            parent = TrunkDoor,
+            requireInstalled = TrunkDoor,
+            itemType = SCKCO.Porsche911LouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+            
+            table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
     }
+
 }
