@@ -1,9 +1,165 @@
 module Base
 {
 
-    template vehicle 520iAttachments
-    {
+	model 520iBumper
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 
+	model 520iWindshieldArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model 520iFrontLeftDoorArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 520iFrontRightDoorArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model 520iRearLeftDoorArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 520iRearRightDoorArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 520iFrontLeftWindowArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model 520iFrontRightWindowArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model 520iRearLeftWindowArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model 520iRearRightWindowArmor
+	{
+		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    template vehicle 520iAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = 520iBumper, }
+            itemType = SCKCO.BMW520iBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = 520iFrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.BMW520iWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = 520iFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.BMW520iWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = 520iFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.BMW520iDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = 520iFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.BMW520iDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = 520iRearRightWindowArmor, }
+			parent = WindowRearRight,
+            itemType = SCKCO.BMW520iWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = 520iRearLeftWindowArmor, }
+			parent = WindowRearLeft,
+            itemType = SCKCO.BMW520iWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = 520iRearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.BMW520iDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = 520iRearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.BMW520iDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = 520iWindshieldArmor, }
+            itemType = SCKCO.BMW520iWindshieldArmorSC,
+        }
 
     }
+
 }

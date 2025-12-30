@@ -1,0 +1,95 @@
+module Base
+{
+    craftRecipe GrummanLLV.MakeWindshieldArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:20,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SheetMetal],
+            item 2 [Base.SmallSheetMetal],
+            item 6 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 9 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.GrummanLLVWindshieldArmorSC2,
+        }
+	}
+
+    craftRecipe GrummanLLV.MakeDoorArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.GrummanLLVDoorArmorSC2,
+        }
+	}
+
+    craftRecipe GrummanLLV.MakeWindowArmor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.GrummanLLVWindowArmorSC2,
+        }
+	}
+
+    craftRecipe GrummanLLV.MakeBumper
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 2 [Base.SmallSheetMetal],
+            item 4 [Base.MetalPipe],
+            item 2 [Base.Screws],
+			item 7 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.GrummanLLVBumperSC2,
+        }
+	}
+}
