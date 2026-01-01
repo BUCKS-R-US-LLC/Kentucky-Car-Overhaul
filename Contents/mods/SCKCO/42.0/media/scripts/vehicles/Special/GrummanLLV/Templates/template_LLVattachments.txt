@@ -30,22 +30,6 @@ module Base
 		static = FALSE,
 		scale = 1,
 	}
-
-	model LLVFrontLeftWindowArmor
-	{
-		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-        scale = 1,
-	}
-
-	model LLVFrontRightWindowArmor
-	{
-		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-	}
     
     template vehicle LLVAttachments
 	{
@@ -60,33 +44,17 @@ module Base
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
-            model Default { file = LLVFrontRightWindowArmor, }
-			parent = WindowFrontRight,
-            itemType = SCKCO.GrummanLLVWindowArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorFrontRightDoor,
-        part SCArmorFrontRightDoor
-        {
             model Default { file = LLVFrontRightDoorArmor, }
-			parent = DoorFrontRight,
-            itemType = SCKCO.GrummanLLVDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorFrontLeftDoor,
-        part SCArmorFrontLeftDoor
-        {
-            model Default { file = LLVFrontLeftDoorArmor, }
-			parent = DoorFrontLeft,
+			parent = WindowFrontRight,
             itemType = SCKCO.GrummanLLVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
         part SCArmorFrontLeftWindow
         {
-            model Default { file = LLVFrontLeftWindowArmor, }
+            model Default { file = LLVFrontLeftDoorArmor, }
 			parent = WindowFrontLeft,
-            itemType = SCKCO.GrummanLLVWindowArmorSC,
+            itemType = SCKCO.GrummanLLVDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
