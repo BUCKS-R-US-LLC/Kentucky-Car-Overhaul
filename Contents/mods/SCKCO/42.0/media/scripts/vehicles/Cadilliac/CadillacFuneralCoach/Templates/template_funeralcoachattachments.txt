@@ -1,8 +1,139 @@
 module Base
 {
 
+	model CadillacFuneralCoachBullbar
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontBumper_obj,
+        texture = Vehicles/CadillacFuneralCoach/FuneralCoachBumper,
+		scale = 1,
+	}
+
+	model CadillacFuneralCoachWindshieldArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CadillacFuneralCoachFrontLeftDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontLeftArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacFuneralCoachFrontRightDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontRightArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacFuneralCoachFLWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CadillacFuneralCoachFRWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model CadillacFuneralCoachRLWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacFuneralCoachRRWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
     template vehicle FuneralCoachAttachments
     {
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = CadillacFuneralCoachBullbar, }
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CadillacFuneralCoachWindshieldArmor, }
+            itemType = SCKCO.CadillacFleetwoodWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CadillacFuneralCoachFRWA, }
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = CadillacFuneralCoachDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CadillacFuneralCoachFLWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = CadillacFuneralCoachDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CadillacFuneralCoachFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CadillacFuneralCoachFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+        
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CadillacFuneralCoachRRWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = CadillacFuneralCoachDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CadillacFuneralCoachRLWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = CadillacFuneralCoachDoorArmorSC,
+        }
+
     }
 
 }

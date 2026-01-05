@@ -3,7 +3,7 @@ module Base
 	model SC_CadillacFuneralCoach
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -40,6 +40,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model FuneralCoachSCFrontLeftWindow
 	{
@@ -48,6 +49,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model FuneralCoachSCFrontRightDoor
 	{
