@@ -167,7 +167,7 @@ void main()
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
 	col = mix(col, hsv2rgb(fragHSV), 1.0-tex.a);
 	
-	float ref_en = step(0.5, texen2[0][0] + texen1[1][2] + texen1[1][3] + texen1[2][0] + texen1[2][1] + texen1[2][2] + texen1[2][3]);
+	float ref_en = texen2[0][0] + texen1[1][2] + texen1[1][3] + texen1[2][0] + texen1[2][1] + texen1[2][2] + texen1[2][3];
     vec2 refTexCoord = SphereMap( normalize(normal), positionEye.xyz );
 	vec3 texRefA = texture2D(TextureReflectionA, refTexCoord).xyz;
 	vec3 texRefB = texture2D(TextureReflectionB, refTexCoord).xyz;
@@ -193,7 +193,7 @@ void main()
 	fragHSV.y = clamp(fragHSV.y + TexturePainColor.y - 0.5, 0.0, 0.9999);
     fragHSV.z = clamp(fragHSV.z + TexturePainColor.z - 0.5, 0.0, 0.9999);
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
-	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage2Shell.a*t3en);
+	col = mix(col, lighting*TintColourNew, texColorDamage2Shell.a*t3en);
 	col = mix(col, texColorDamage2Overlay.xyz*lighting*TintColourNew, texColorDamage2Overlay.a*t3en);
 	
 	col = mix(col, vec3(0.2), t4en);
