@@ -17,7 +17,7 @@ module Base
 
 	model F350AmbulanceFrontLeftDoorArmor
 	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftArmor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -25,29 +25,10 @@ module Base
 
 	model F350AmbulanceFrontRightDoorArmor
 	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightArmor_obj,
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightDoorArmor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
-	}
-
-    model F350AmbulanceRearLeftDoorArmor
-	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearLeftArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-
-	}
-
-	model F350AmbulanceRearRightDoorArmor
-	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearRightArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-
 	}
 
 	model F350AmbulanceFLWA
@@ -56,7 +37,7 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
+		boneWeight = FrontLeftWindowBone 1.0,
 	}
 
 	model F350AmbulanceFRWA
@@ -65,30 +46,11 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightWindowArmorBone 1.0,
+		boneWeight = FrontRightWindowBone 1.0,
 	}
     
-	model F350AmbulanceRLWA
-	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowArmorBone 1.0,
-	}
-
-	model F350AmbulanceRRWA
-	{
-		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowArmorBone 1.0,
-	}
-
     template vehicle F350AmbulanceAttachments
 	{
-
 
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
@@ -137,40 +99,5 @@ module Base
 			parent = DoorFrontLeft,
             itemType = SCKCO.FordOBSDoorArmorSC,
         }
-
-        template = armorUpgrades/part/SCArmorRearRightDoor,
-        part SCArmorRearRightDoor
-        {
-            model Default { file = F350AmbulanceRearRightDoorArmor, }
-			parent = RearFrontRight,
-            itemType = SCKCO.FordOBSDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftDoor,
-        part SCArmorRearLeftDoor
-        {
-            model Default { file = F350AmbulanceRearLeftDoorArmor, }
-			parent = DoorRearLeft,
-            itemType = SCKCO.FordOBSDoorArmorSC,
-        }
-        
-        template = armorUpgrades/part/SCArmorRearRightWindow,
-        part SCArmorRearRightWindow
-        {
-            model Default { file = F350AmbulanceRRWA, }
-            itemType = SCKCO.FordOBSWindowArmorSC,
-			parent = WindowRearRight
-            requireInstalled = FordF350AmbulanceDoorArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftWindow,
-        part SCArmorRearLeftWindow
-        {
-            model Default { file = F350AmbulanceRLWA, }
-            itemType = SCKCO.FordOBSWindowArmorSC,
-			parent = WindowRearLeft,
-            requireInstalled = FordF350AmbulanceDoorArmorSC,
-        }
-
     }
 }

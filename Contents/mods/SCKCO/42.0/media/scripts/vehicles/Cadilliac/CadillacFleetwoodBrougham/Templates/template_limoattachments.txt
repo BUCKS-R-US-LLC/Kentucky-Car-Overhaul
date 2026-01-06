@@ -1,6 +1,208 @@
 module Base
 {
+
+	model CadillacLimoBullbar
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontBumper_obj,
+        texture = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_Armor,
+		scale = 1,
+	}
+
+	model CadillacLimoWindshieldArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|WindshieldArmor_obj,
+        texture = Vehicles/CadillacBrougham/Vehicle_CadiLimo88_Armor,
+		scale = 1,
+	}
+
+	model CadillacLimoFrontLeftDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacLimoFrontRightDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model CadillacLimoRearLeftDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacLimoRearRightDoorArmor
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CadillacLimoFLWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model CadillacLimoFRWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+
+    model CadillacLimoMLWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|MiddleLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+	model CadillacLimoMRWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|MiddleRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+	model CadillacLimoRLWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model CadillacLimoRRWA
+	{
+		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
+
     template vehicle LimoAttachments
     {
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = CadillacLimoBullbar, }
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CadillacLimoWindshieldArmor, }
+            itemType = SCKCO.CadillacFleetwoodWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CadillacLimoFRWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CadillacLimoFLWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CadillacLimoFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CadillacLimoFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CadillacLimoRearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CadillacLimoRearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            model Default { file = CadillacLimoMRWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = CadillacLimoMLWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CadillacLimoRRWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CadillacLimoRLWA, }
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = CadillacLimoDoorArmorSC,
+        }
+
     }
+
 }

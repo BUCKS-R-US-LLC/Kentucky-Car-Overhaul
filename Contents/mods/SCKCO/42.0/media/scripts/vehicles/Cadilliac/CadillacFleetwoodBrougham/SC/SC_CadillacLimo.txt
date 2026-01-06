@@ -3,7 +3,7 @@ module Base
 	model SC_CadillacLimo
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiLimo88_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -51,6 +51,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model CadillacLimoFrontLeftWindow
 	{
@@ -59,6 +60,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model CadillacLimoRearRightWindow
 	{
@@ -67,6 +69,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
+		boneWeight = RearRightWindowArmorBone 1.0,
 	}
 	model CadillacLimoRearLeftWindow
 	{
@@ -75,6 +78,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
+		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
 	model CadillacLimoFrontRightDoor
 	{
