@@ -58,13 +58,13 @@ module Base
 	model M35A2Windshield
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M35A2WindshieldRear
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M35A2FrontRightWindow
@@ -88,7 +88,7 @@ module Base
 	model M35A2FrontRightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model M35A2FrontLeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -1275,3 +1275,4 @@ module Base
 		}
 	}
 }
+

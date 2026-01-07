@@ -3,7 +3,7 @@ module Base
 	model SC_GMCJimmyS15
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model GMCJimmyS15Windshield
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GMCJimmyS15FrontRightWindow
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model GMCJimmyS15FrontLeftWindow
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,19 +46,19 @@ module Base
 	model GMCJimmyS15RearRightWindow
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GMCJimmyS15RearLeftWindow
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GMCJimmyS15FrontRightDoor
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model GMCJimmyS15FrontLeftDoor
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -74,7 +74,7 @@ module Base
 	model GMCJimmyS15Trunk
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -83,7 +83,7 @@ module Base
 	model GMCJimmyS15RearWindshield
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -92,7 +92,7 @@ module Base
 	model GMCJimmyS15Hood
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -954,3 +954,6 @@ module Base
 		}
 	}
 }
+
+
+

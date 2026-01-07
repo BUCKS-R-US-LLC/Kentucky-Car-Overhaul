@@ -3,7 +3,7 @@ module Base
 	model SC_FordExplorer
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model FordExplorerWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordExplorerFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model FordExplorerFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model FordExplorerFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -61,13 +61,13 @@ module Base
 	model FordExplorerMiddleRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordExplorerMiddleLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|MiddleLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordExplorerRearRightWindow
@@ -82,7 +82,7 @@ module Base
 	model FordExplorerRearLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -91,7 +91,7 @@ module Base
 	model FordExplorerFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -99,7 +99,7 @@ module Base
 	model FordExplorerFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -107,7 +107,7 @@ module Base
 	model FordExplorerRearRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightDoor__obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -115,7 +115,7 @@ module Base
 	model FordExplorerRearLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -123,7 +123,7 @@ module Base
 	model FordExplorerTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -131,7 +131,7 @@ module Base
 	model FordExplorerHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -139,7 +139,7 @@ module Base
 	model FordExplorerRearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -1035,3 +1035,6 @@ module Base
 		}
 	}
 }
+
+
+

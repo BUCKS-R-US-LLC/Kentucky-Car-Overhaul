@@ -22,13 +22,13 @@ module Base
 	model FuneralCoachSCWindshield
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FuneralCoachSCRearWindshield
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model FuneralCoachSCFrontRightWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -45,7 +45,7 @@ module Base
 	model FuneralCoachSCFrontLeftWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -86,7 +86,7 @@ module Base
 	model FuneralCoachSCRearRightWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = false,
 		boneWeight = RearRightDoorBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model FuneralCoachSCRearLeftWindow
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -958,3 +958,4 @@ module Base
 		}
 	}
 }
+

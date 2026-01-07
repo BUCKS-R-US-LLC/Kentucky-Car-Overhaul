@@ -3,7 +3,7 @@ module Base
 	model SC_FordF150
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model F150Windshield
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model F150FrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model F150FrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model F150FrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model F150FrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model F150Trunk
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,13 +70,13 @@ module Base
 	model F150RearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model F150Hood
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -764,3 +764,6 @@ module Base
 		}
 	}
 }
+
+
+

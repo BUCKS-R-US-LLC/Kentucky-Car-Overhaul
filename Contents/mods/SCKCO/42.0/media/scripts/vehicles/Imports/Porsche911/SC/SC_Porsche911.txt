@@ -3,7 +3,7 @@ module Base
 	model SC_Porsche911
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model Porsche911Windshield
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911FrontRightWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model Porsche911FrontLeftWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,19 +46,19 @@ module Base
 	model Porsche911RearRightWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911RearLeftWindow
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911FrontRightDoor
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model Porsche911FrontLeftDoor
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -74,7 +74,7 @@ module Base
 	model Porsche911Trunk
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -82,7 +82,7 @@ module Base
 	model Porsche911Hood
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -90,7 +90,7 @@ module Base
 	model Porsche911RearWindshield
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model Porsche911wheelleft
@@ -858,3 +858,6 @@ module Base
 		}
 	}
 }
+
+
+

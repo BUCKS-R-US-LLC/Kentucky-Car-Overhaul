@@ -3,7 +3,7 @@ module Base
 	model SC_K10Lights
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model K10ParkRangerWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K10ParkRangerFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightWindow_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model K10ParkRangerFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftWindow_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,7 +44,7 @@ module Base
 	model K10ParkRangerFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model K10ParkRangerFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model K10ParkRangerTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -69,13 +69,13 @@ module Base
 	model K10ParkRangerRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|RearWinshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K10ParkRangerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -723,3 +723,6 @@ module Base
 		}
 	}
 }
+
+
+

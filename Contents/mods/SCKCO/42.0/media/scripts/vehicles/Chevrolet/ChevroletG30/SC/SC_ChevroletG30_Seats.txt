@@ -3,7 +3,7 @@ module Base
 	model SC_G30Seats
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -1029,3 +1029,4 @@ module Base
 		}
 	}
 }
+
