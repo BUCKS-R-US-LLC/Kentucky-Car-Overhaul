@@ -3,7 +3,7 @@ module Base
 	model SC_FordBronco
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model FordBroncoWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordBroncoFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model FordBroncoFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -52,19 +52,19 @@ module Base
 	model FordBroncoRearLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordBroncoRearRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FordBroncoFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model FordBroncoFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model FordBroncoTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -89,7 +89,7 @@ module Base
 	model FordBroncoHood
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -97,7 +97,7 @@ module Base
 	model FordBroncoRearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearWindshieldBone 1.0,
@@ -897,3 +897,6 @@ module Base
 		}
 	}
 }
+
+
+

@@ -4,34 +4,35 @@ module SCKCO
     {
         part itemSlot {
             /* GENERAL ITEM SLOT*/
-            model CarBatteryCharger { file = CarBatteryCharger, offset = -0.05 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model GasCan { file = GasCan, offset = -0.05 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model CarJack { file = CarJack, offset = -0.05 0.8 -3.3, rotate = 0.0 0.0 0.0, scale = 3.0, shader=vehicle,}
+            model CarBatteryCharger { file = CarBatteryCharger, offset = -0.05 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model GasCan { file = GasCan, offset = -0.05 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model CarJack { file = CarJack, offset = -0.05 0.8 -3.3, rotate = 0.0 0.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
 
             /*SLOT ONE*/
-            model SlotOne_CarBatteryCharger { file = CarBatteryCharger, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotOne_GasCan { file = GasCan, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotOne_CarJack { file = CarJack, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
+            model SlotOne_CarBatteryCharger { file = CarBatteryCharger, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotOne_GasCan { file = GasCan, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotOne_CarJack { file = CarJack, offset = 0.90 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
 
             /*SLOT TWO*/
-            model SlotTwo_CarBatteryCharger { file = CarBatteryCharger, offset = 0.60 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotTwo_GasCan { file = GasCan, offset = 0.40 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotTwo_CarJack { file = CarJack, offset = 0.40 0.8 -3.5, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
+            model SlotTwo_CarBatteryCharger { file = CarBatteryCharger, offset = 0.60 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotTwo_GasCan { file = GasCan, offset = 0.40 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotTwo_CarJack { file = CarJack, offset = 0.40 0.8 -3.5, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
 
             /*SLOT THREE*/
-            model SlotThree_CarBatteryCharger { file = CarBatteryCharger, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotThree_GasCan { file = GasCan, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotThree_CarJack { file = CarJack, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
+            model SlotThree_CarBatteryCharger { file = CarBatteryCharger, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotThree_GasCan { file = GasCan, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotThree_CarJack { file = CarJack, offset = -0.2 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
 
             /*SLOT FOUR*/
-            model SlotFour_CarBatteryCharger { file = CarBatteryCharger, offset = -0.70 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotFour_GasCan { file = GasCan, offset = -0.70 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotFour_CarJack { file = CarJack, offset = -0.40 0.8 -3.5, rotate = 0.0 270.0 0.0, scale = 3.0, shader=vehicle,}
+            model SlotFour_CarBatteryCharger { file = CarBatteryCharger, offset = -0.70 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotFour_GasCan { file = GasCan, offset = -0.70 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotFour_CarJack { file = CarJack, offset = -0.40 0.8 -3.5, rotate = 0.0 270.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
 
             /*SLOT FIVE*/
-            model SlotFive_CarBatteryCharger { file = CarBatteryCharger, offset = -1.20 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotFive_GasCan { file = GasCan, offset = -1.20 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader=vehicle,}
-            model SlotFive_CarJack { file = CarJack, offset = -0.90 0.8 -3.3, rotate = 0.0 270.0 0.0, scale = 3.0, shader=vehicle,}
+            model SlotFive_CarBatteryCharger { file = CarBatteryCharger, offset = -1.20 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotFive_GasCan { file = GasCan, offset = -1.20 0.8 -3.3, rotate = 0.0 90.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
+            model SlotFive_CarJack { file = CarJack, offset = -0.90 0.8 -3.3, rotate = 0.0 270.0 0.0, scale = 3.0, shader = vehicle_noreflect,}
         }
     }
 }
+

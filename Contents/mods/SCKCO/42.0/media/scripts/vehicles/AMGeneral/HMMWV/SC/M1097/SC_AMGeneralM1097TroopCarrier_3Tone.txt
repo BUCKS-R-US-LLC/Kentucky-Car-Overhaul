@@ -34,13 +34,13 @@ module Base
 	model HM1097Windshield
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097Flatbed_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model HM1097FrontRightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097Flatbed_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -49,7 +49,7 @@ module Base
 	model HM1097FrontLeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097Flatbed_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -1003,3 +1003,4 @@ module Base
 		}
 	}
 }
+

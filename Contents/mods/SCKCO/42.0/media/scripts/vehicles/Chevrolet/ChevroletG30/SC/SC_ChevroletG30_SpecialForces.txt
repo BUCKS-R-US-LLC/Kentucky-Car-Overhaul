@@ -3,7 +3,7 @@ module Base
 	model SC_G30SpecialForces
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model ShortBusWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model ShortBusFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideBone1 1.0,
@@ -37,7 +37,7 @@ module Base
 	model ShortBusFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model ShortBusFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideBone1 1.0,
@@ -55,21 +55,21 @@ module Base
 	model ShortBusRearRightWindows
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = TRUE,
 		scale = 1,
 	}
 	model ShortBusRearLeftWindows
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = TRUE,
 		scale = 1,
 	}
 	model ShortBusFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -77,7 +77,7 @@ module Base
 	model ShortBusTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -85,7 +85,7 @@ module Base
 	model ShortBusHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -93,7 +93,7 @@ module Base
 	model ShortBusRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -933,3 +933,6 @@ module Base
 		}
 	}
 }
+
+
+

@@ -3,7 +3,7 @@ module Base
 	model K5BlazerParkRanger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model K5BlazerParkRangerWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K5BlazerParkRangerFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model K5BlazerParkRangerFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,7 +44,7 @@ module Base
 	model K5BlazerParkRangerFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model K5BlazerParkRangerFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,19 +60,19 @@ module Base
 	model K5BlazerParkRangerRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K5BlazerParkRangerRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K5BlazerParkRangerTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -81,7 +81,7 @@ module Base
 	model K5BlazerParkRangerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5BlazerLightsUtility_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -866,3 +866,6 @@ module Base
 		}
 	}
 }
+
+
+

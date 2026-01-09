@@ -22,13 +22,13 @@ module Base
 	model StepVanP30Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model StepVanP30FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model StepVanP30FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -85,7 +85,7 @@ module Base
 	model StepVanP30RearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -816,3 +816,4 @@ module Base
 		}
 	}
 }
+

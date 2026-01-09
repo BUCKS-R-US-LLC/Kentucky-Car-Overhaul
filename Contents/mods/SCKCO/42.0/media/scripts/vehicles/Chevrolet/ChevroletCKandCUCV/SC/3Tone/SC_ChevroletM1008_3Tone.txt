@@ -22,13 +22,13 @@ module Base
 	model M1008Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1008FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M1008FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -68,7 +68,7 @@ module Base
 	model M1008RearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|RearWinshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1008Hood
@@ -723,3 +723,4 @@ module Base
 		}
 	}
 }
+

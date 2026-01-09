@@ -3,7 +3,7 @@ module Base
 	model SC_JeepGrandWagoneer
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model JeepGrandWagoneerDriver
@@ -27,13 +27,13 @@ module Base
 	model JeepGrandWagoneerWindshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model JeepGrandWagoneerFrontRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model JeepGrandWagoneerFrontLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -51,19 +51,19 @@ module Base
 	model JeepGrandWagoneerMiddleRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleRightWindow_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepGrandWagoneerMiddleLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|MiddleLeftWindow_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepGrandWagoneerRearRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model JeepGrandWagoneerRearLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -81,7 +81,7 @@ module Base
 	model JeepGrandWagoneerFrontRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -89,7 +89,7 @@ module Base
 	model JeepGrandWagoneerFrontLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -97,7 +97,7 @@ module Base
 	model JeepGrandWagoneerRearRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -105,7 +105,7 @@ module Base
 	model JeepGrandWagoneerRearLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -113,7 +113,7 @@ module Base
 	model JeepGrandWagoneerTrunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearWindshieldBone 1.0,
@@ -122,7 +122,7 @@ module Base
 	model JeepGrandWagoneerHood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -130,7 +130,7 @@ module Base
 	model JeepGrandWagoneerRearWindshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepGrandWag_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 	}
@@ -1064,3 +1064,6 @@ module Base
 		}
 	}
 }
+
+
+

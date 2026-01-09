@@ -7,6 +7,48 @@ module Base
 		scale = 1,
 	}
 
+	model C70AgriFrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model C70AgriFrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model C70AgriFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model C70AgriFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model C70AgriWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|WindshieldArmor_obj,
+        static = TRUE,
+        texture = Vehicles/ChevroletC70/Vehicle_C70Armor,
+		scale = 1,
+	}
+
     model C70Chevy
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Chevy_obj,
@@ -41,9 +83,50 @@ module Base
 		scale = 1,
 	}
 
+	model C70SurvivorFrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model C70SurvivorFrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+	}
+
+	model C70SurvivorFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model C70SurvivorFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model C70SurvivorWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|WindshieldArmor_obj,
+        static = TRUE,
+        texture = Vehicles/ChevroletC70/Vehicle_C70Armor,
+		scale = 1,
+	}
+
 	template vehicle C70SurvivorAttachments
     {
-		
 		template = cosmetic/part/SCLogo,
 		template = armorUpgrades/part/SCArmorGrille,
 		template = armorUpgrades/part/SCArmorBumper,
@@ -70,8 +153,71 @@ module Base
             itemType = SCKCO.FillerPartSC,
 			lua { create = Vehicles.Create.Default, }
 		}
-	}
 
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = C70SurvivorFrontRightWindowArmor, }
+            itemType = SCKCO.ChevyC70WindowArmorSC,
+            parent = WindowFrontRight,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = C70SurvivorFrontLeftWindowArmor, }
+            itemType = SCKCO.ChevyC70WindowArmorSC,
+            parent = WindowFrontLeft,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = C70SurvivorFrontRightDoorArmor, }
+            itemType = SCKCO.ChevyC70DoorArmorSC,
+            parent = DoorFrontRight,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = C70SurvivorFrontLeftDoorArmor, }
+            itemType = SCKCO.ChevyC70DoorArmorSC,
+            parent = DoorFrontLeft,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = C70AgriWindshieldArmor, }
+            itemType = SCKCO.ChevyC70WindshieldArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+	}
 
 	template vehicle C70Attachments
 	{
@@ -79,6 +225,7 @@ module Base
         template = specials/part/BackUpAlarmSC,
         template = specials/part/DetroitDieselSC,
 		template = armorUpgrades/part/SCArmorBumper,
+
         part SCArmorBumper
         {
             model Default { file = C70AgriBumper, }
@@ -95,5 +242,68 @@ module Base
 			lua { create = Vehicles.Create.Default, }
 		}
 
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = C70AgriFrontRightWindowArmor, }
+            itemType = SCKCO.ChevyC70WindowArmorSC,
+            parent = WindowFrontRight,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = C70AgriFrontLeftWindowArmor, }
+            itemType = SCKCO.ChevyC70WindowArmorSC,
+            parent = WindowFrontLeft,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = C70AgriFrontRightDoorArmor, }
+            itemType = SCKCO.ChevyC70DoorArmorSC,
+            parent = DoorFrontRight,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = C70AgriFrontLeftDoorArmor, }
+            itemType = SCKCO.ChevyC70DoorArmorSC,
+            parent = DoorFrontLeft,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = C70AgriWindshieldArmor, }
+            itemType = SCKCO.ChevyC70WindshieldArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 1.0,
+            }
+        }
     }
 }

@@ -3,7 +3,7 @@ module Base
 	model SC_GeoTracker
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,20 +28,20 @@ module Base
 	model GeoTrackerWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		boneWeight = RearBone 1.0,
 	}
 	model GeoTrackerFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -50,7 +50,7 @@ module Base
 	model GeoTrackerFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -59,19 +59,19 @@ module Base
 	model GeoTrackerRearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GeoTrackerFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -79,7 +79,7 @@ module Base
 	model GeoTrackerFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -87,7 +87,7 @@ module Base
 	model GeoTrackerTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -95,7 +95,7 @@ module Base
 	model GeoTrackerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -894,3 +894,6 @@ module Base
 		}
 	}
 }
+
+
+

@@ -22,13 +22,13 @@ module Base
 	model M880Windshield
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M880FrontRightWindow
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M880FrontLeftWindow
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -68,7 +68,7 @@ module Base
 	model M880RearWindshield
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M880Hood
@@ -730,3 +730,4 @@ module Base
 		}
 	}
 }
+

@@ -3,7 +3,7 @@ module Base
 	model SC_CrownVictoriaLVPD85
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model CrownVictoria85PoliceWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CrownVictoria85PoliceFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model CrownVictoria85PoliceFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model CrownVictoria85PoliceRearRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model CrownVictoria85PoliceRearLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model CrownVictoria85PoliceFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model CrownVictoria85PoliceFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model CrownVictoria85PoliceRearRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|RearRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model CrownVictoria85PoliceRearLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|RearLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model CrownVictoria85PoliceTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model CrownVictoria85PoliceHood
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model CrownVictoria85PoliceRearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoriaPolice_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CrownVictoriawheelleft
@@ -978,3 +978,6 @@ module Base
 		}
 	}
 }
+
+
+

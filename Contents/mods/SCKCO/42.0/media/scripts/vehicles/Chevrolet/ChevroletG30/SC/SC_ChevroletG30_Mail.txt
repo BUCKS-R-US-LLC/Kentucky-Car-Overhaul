@@ -3,7 +3,7 @@ module Base
 	model SC_G30VanMail
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model G30VanMailWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model G30VanMailFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model G30VanMailFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model G30VanMailFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model G30VanMailFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoor_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model G30VanMailSlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|SlideDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model G30VanMailTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -79,7 +79,7 @@ module Base
 	model G30VanMailHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -87,7 +87,7 @@ module Base
 	model G30VanMailRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|RearDoorWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -837,3 +837,6 @@ module Base
 		}
 	}
 }
+
+
+

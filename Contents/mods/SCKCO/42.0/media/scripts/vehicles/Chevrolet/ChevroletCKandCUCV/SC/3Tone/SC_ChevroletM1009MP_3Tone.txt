@@ -22,13 +22,13 @@ module Base
 	model M1009Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M1009FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model M1009RearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009RearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009Trunk
@@ -803,3 +803,4 @@ module Base
 		}
 	}
 }
+

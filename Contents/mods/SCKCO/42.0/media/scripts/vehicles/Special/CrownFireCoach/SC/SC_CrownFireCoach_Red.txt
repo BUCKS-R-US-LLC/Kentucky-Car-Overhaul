@@ -3,7 +3,7 @@ module Base
 	model SC_FireCoach
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model FireCoachWindshield
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FireCoachFrontRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model FireCoachFrontLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,19 +44,19 @@ module Base
 	model FireCoachRearRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FireCoachRearLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model FireCoachFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -64,7 +64,7 @@ module Base
 	model FireCoachFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model FireCoachRightFrontStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightFrontStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightFrontStorageBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model FireCoachRightMiddleStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightMiddleStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightMiddleStorageBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model FireCoachRightRearStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightRearStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightRearStorageBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model FireCoachRightBackStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RightBackStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RightBackStorageBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model FireCoachLeftFrontStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftFrontStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftFrontStorageBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model FireCoachLeftMiddleStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftMiddleStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftMiddleStorageBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model FireCoachLeftRearStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftRearStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftRearStorageBone 1.0,
@@ -128,7 +128,7 @@ module Base
 	model FireCoachLeftBackStorage
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|LeftBackStorage_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = LeftBackStorageBone 1.0,
@@ -136,7 +136,7 @@ module Base
 	model FireCoachRearWindshield
 	{
 		mesh = vehicles/Special/Vehicle_FireCoach_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -1083,3 +1083,6 @@ module Base
 		}
 	}
 }
+
+
+

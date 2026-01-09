@@ -3,7 +3,7 @@ module Base
 	model SC_FordF700PanelTruck
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model F700PanelTruckWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model F700PanelTruckFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model F700PanelTruckFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model F700PanelTruckFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model F700PanelTruckFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model F700PanelTruckTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|TrunkDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,13 +70,13 @@ module Base
 	model F700PanelTruckRearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model F700PanelTruckHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordF700PanelTruck_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -757,3 +757,6 @@ module Base
 		}
 	}
 }
+
+
+

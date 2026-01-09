@@ -3,7 +3,7 @@ module Base
 	model SC_FordMustangPolice
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -28,19 +28,19 @@ module Base
 	model PoliceMustangSCWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PoliceMustangSCRearWindshield
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PoliceMustangSCFrontRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -49,7 +49,7 @@ module Base
 	model PoliceMustangSCFrontLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -58,19 +58,19 @@ module Base
 	model PoliceMustangSCRearRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PoliceMustangSCRearLeftWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PoliceMustangSCFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model PoliceMustangSCFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -86,7 +86,7 @@ module Base
 	model PoliceMustangSCTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model PoliceMustangSCHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -844,3 +844,6 @@ module Base
 		}
 	}
 }
+
+
+

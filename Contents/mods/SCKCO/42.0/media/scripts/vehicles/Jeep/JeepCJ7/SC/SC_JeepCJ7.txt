@@ -3,7 +3,7 @@ module Base
 	model SC_JeepCJ7
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Driver
@@ -21,13 +21,13 @@ module Base
 	model JeepCJ7Windshield
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model JeepCJ7FrontRightWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model JeepCJ7FrontLeftWindow
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -45,7 +45,7 @@ module Base
 	model JeepCJ7FrontRightDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -53,7 +53,7 @@ module Base
 	model JeepCJ7FrontLeftDoor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -61,7 +61,7 @@ module Base
 	model JeepCJ7Trunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model JeepCJ7Hood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -722,3 +722,6 @@ module Base
 		}
 	}
 }
+
+
+

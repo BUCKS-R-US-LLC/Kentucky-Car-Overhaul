@@ -3,7 +3,7 @@ module Base
 	model SC_K10
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model K10Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K10FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model K10FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,7 +44,7 @@ module Base
 	model K10FrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model K10FrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model K10Trunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -69,13 +69,13 @@ module Base
 	model K10RearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|RearWinshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model K10Hood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -849,3 +849,6 @@ module Base
 		}
 	}
 }
+
+
+

@@ -3,7 +3,7 @@ module Base
 	model SC_BMW520i
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -22,13 +22,13 @@ module Base
 	model BMW520iWindshield
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model BMW520iFrontRightWindow
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model BMW520iFrontLeftWindow
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model BMW520iRearRightWindow
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowBone 1.0,
@@ -55,7 +55,7 @@ module Base
 	model BMW520iRearLeftWindow
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowBone 1.0,
@@ -64,7 +64,7 @@ module Base
 	model BMW520iFrontRightDoor
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -72,7 +72,7 @@ module Base
 	model BMW520iFrontLeftDoor
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model BMW520iRearRightDoor
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model BMW520iRearLeftDoor
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model BMW520iTrunk
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Trunk_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model BMW520iHood
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model BMW520iRearWindshield
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model BMW520iwheelleft
@@ -952,3 +952,6 @@ module Base
 		}
 	}
 }
+
+
+

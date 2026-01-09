@@ -3,7 +3,7 @@ module Base
 	model SC_CamaroTTop
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model CamaroSCWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CamaroSCRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model CamaroSCFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -51,7 +51,7 @@ module Base
 	model CamaroSCFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -82,7 +82,7 @@ module Base
 	model CamaroSCRearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|LeftTTop_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CamaroSCTrunk
@@ -890,3 +890,5 @@ module Base
 		}
 	}
 }
+
+

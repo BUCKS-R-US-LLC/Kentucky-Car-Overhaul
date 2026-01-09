@@ -3,7 +3,7 @@ module Base
 	model SC_HahnPumper
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
@@ -46,13 +46,13 @@ module Base
 	model HahnPumperWindshield
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model HahnPumperFrontRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -60,7 +60,7 @@ module Base
 	model HahnPumperFrontLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -68,19 +68,19 @@ module Base
 	model HahnPumperMiddleRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model HahnPumperMiddleLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model HahnPumperRearRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model HahnPumperRearLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model HahnPumperFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model HahnPumperFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model HahnPumperRearRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model HahnPumperRearLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -128,7 +128,7 @@ module Base
 	model HahnPumperRightStorage
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RightStorageArea_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
 		boneWeight = RightStorage 1.0,
@@ -140,7 +140,7 @@ module Base
 	model HahnPumperLeftStorage
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|LeftStorageArea_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = false,
 		scale = 1,
 		boneWeight = LeftStorage 1.0,
@@ -152,7 +152,7 @@ module Base
 	model HahnPumperRearWindshield
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -1165,3 +1165,6 @@ module Base
 		}
 	}
 }
+
+
+

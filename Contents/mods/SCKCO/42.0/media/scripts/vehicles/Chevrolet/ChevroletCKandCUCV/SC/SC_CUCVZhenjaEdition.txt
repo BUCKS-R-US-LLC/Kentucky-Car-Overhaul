@@ -22,13 +22,13 @@ module Base
 	model CUCVZhenjaEditionWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model CUCVZhenjaEditionFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model CUCVZhenjaEditionFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -764,3 +764,4 @@ module Base
 		}
 	}
 }
+

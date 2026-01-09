@@ -3,7 +3,7 @@ module Base
 	model SC_GrummanLLV
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|base_mesh,
-		shader = vehicle_norandom_multiuv,
+		shader = vehicle_norandom_multiuv_noreflect,
 		static = TRUE,
 		scale = 1,
 	}
@@ -28,13 +28,13 @@ module Base
 	model GrummanLLVWindshield
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|Windshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model GrummanLLVFrontRightWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -42,7 +42,7 @@ module Base
 	model GrummanLLVFrontLeftWindow
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -50,7 +50,7 @@ module Base
 	model GrummanLLVFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -58,7 +58,7 @@ module Base
 	model GrummanLLVFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model GrummanLLVTrunk
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoor_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorBone 1.0,
@@ -79,7 +79,7 @@ module Base
 	model GrummanLLVHood
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|Hood_obj,
-		shader = vehicle,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -683,3 +683,6 @@ module Base
 		}
 	}
 }
+
+
+

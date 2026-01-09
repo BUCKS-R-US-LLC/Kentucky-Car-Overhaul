@@ -22,13 +22,13 @@ module Base
 	model M1010AmbulanceWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|WindShield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1010AmbulanceFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M1010AmbulanceFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftWindow_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -69,7 +69,7 @@ module Base
 	model M1010AmbulanceRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|RearWindshield_obj,
-		shader = vehicleonlywindow,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -875,3 +875,4 @@ module Base
 		}
 	}
 }
+
