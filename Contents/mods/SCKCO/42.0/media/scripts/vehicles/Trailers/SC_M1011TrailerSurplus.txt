@@ -33,16 +33,14 @@ module Base
 	}
 	model M1011wheelleft
 	{
-		mesh = vehicles/Wheels/Vehicle_M1101Trailer_LeftWheel,
-		texture = Vehicles/Trailer/Vehicle_M1101_wheel,
-		
+		mesh = vehicles/Trailer/Vehicle_M1011Trailer_LeftWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		scale = 0.01,
 	}
 	model M1011wheelright
 	{
-		mesh = vehicles/Wheels/Vehicle_M1101Trailer_RightWheel,
-		texture = Vehicles/Trailer/Vehicle_M1101_wheel,
-		
+		mesh = vehicles/Trailer/Vehicle_M1011Trailer_RightWheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
 		scale = 0.01,
 	}
 	vehicle SC_M1101TrailerSurplus
@@ -56,7 +54,7 @@ module Base
 		{
 			file = SC_M1101,
 			scale = 1.2900,
-			offset = 0.0000 -0.3178 -0.2636,
+			offset = 0.0000 -0.3429 -0.2636,
 		}
 
 		spawnOffsetY = 0.19392952,
@@ -88,41 +86,20 @@ module Base
 
 		skin
 		{
-			texture = Vehicles\Trailer\Vehicle_M1101_OD,
-		}
-
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_OD,
-		}
-
-		skin
-		{
 			texture = Vehicles\Trailer\Vehicle_M1101_Black,
 		}
 
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_Black,
-		}
-
-
-		textureMask = Vehicles/vehicle_utilitytrailer_mask,
-		textureLights = Vehicles/vehicle_utilitytrailer_lights,
-		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
-		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
-		textureDamage1Shell = Vehicles/Veh_Damage1,
-		textureDamage2Shell = Vehicles/Veh_Damage2,
-		textureRust = Vehicles/Veh_Rust,
-		extents = 1.5504 0.2481 1.6279,
-		mass = 50,
-		physicsChassisShape = 1.5504 0.2481 1.6279,
-		centerOfMassOffset = 0.0000 0.1240 0.1163,
+		textureMask = nil,
+		textureLights = nil,
+		textureDamage1Overlay = nil,
+		textureDamage2Overlay = nil,
+		textureDamage1Shell = nil,
+		textureDamage2Shell = nil,
+		textureRust = nil,
+		extents = 1.5504 0.6822 1.6279,
+		mass = 250,
+		physicsChassisShape = 1.5504 1.5194 1.6279,
+		centerOfMassOffset = 0.0000 0.7597 0.1163,
 		shadowExtents = 1.6613 1.7232,
 		shadowOffset = 0.0000 0.1121,
 		engineForce = 3600,
@@ -131,40 +108,33 @@ module Base
 		maxSpeed = 70f,
 		brakingForce = 1,
 		stoppingMovementForce = 2.0f,
-		rollInfluence = 1.0f,
+		rollInfluence = 0.4f,
 		steeringIncrement = 0.03,
 		steeringClamp = 0.3,
-		suspensionStiffness = 50,
-		suspensionCompression = 1.00,
-		suspensionDamping = 1.00,
-		maxSuspensionTravelCm = 4,
-		suspensionRestLength = 0.02,
+		suspensionStiffness = 60,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
 		wheelFriction = 4.0f,
 		frontEndHealth = 150,
 		rearEndHealth = 150,
 		seats = 2,
 
-		physics box
-		{
-			offset = 0.0000 0.2083 -0.9667,
-			extents = 0.0833 0.4167 0.5417,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
 		wheel FrontLeft
 		{
-			front = true,
-			offset = 0.5814 0.3178 0.5426,
-			radius = 0.15f,
-			width = 0.2f,
+			front = false,
+			offset = 0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
 		}
 
 		wheel FrontRight
 		{
-			front = true,
-			offset = -0.5814 0.3178 0.5426,
-			radius = 0.15f,
-			width = 0.2f,
+			front = false,
+			offset = -0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
 		}
 
 		area TruckBed
@@ -192,6 +162,8 @@ module Base
 			model Default
 			{
 				file = M1011Tarp,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			requireInstalled = SCKCO.M1101TarpSC,
@@ -217,6 +189,8 @@ module Base
 			model Default
 			{
 				file = M1011Bowkit,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			itemType = SCKCO.M1011BowkitSC,
@@ -251,8 +225,8 @@ module Base
 			model Default
 			{
 				file = SC_M1101Trunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 				scale = 0.01,
 			}
 
@@ -290,17 +264,21 @@ module Base
 
 		part TireFrontLeft
 		{
-			model M1101wheelleft
+			model InflatedTirePlusWheel
 			{
 				file = M1011wheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
 		part TireFrontRight
 		{
-			model M1101wheelright
+			model InflatedTirePlusWheel
 			{
 				file = M1011wheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
 			}
 		}
 
