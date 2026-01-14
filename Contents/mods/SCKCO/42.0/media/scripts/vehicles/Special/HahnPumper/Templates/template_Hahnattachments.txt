@@ -1,8 +1,161 @@
 module Base
 {
-    template vehicle HahnAttachments
+
+	model HahnBumper
 	{
-        template = specials/part/AirBrakeSC,
-        template = specials/part/BackUpAlarmSC,
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontBumper_obj,
+		scale = 1,
 	}
+
+	model HahnWindshieldArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|WindshieldArmor_obj,
+		scale = 1,
+	}
+
+	model HahnFrontLeftDoorArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        boneWeight = FrontLeftDoorBone 1.0,
+		scale = 1,
+	}
+
+	model HahnFrontRightDoorArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        boneWeight = FrontRightDoorBone 1.0,
+		scale = 1,
+	}
+
+	model HahnFrontLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model HahnFrontRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model HahnRearRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,        
+		static = FALSE,
+	}
+
+	model HahnRearLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearLeftWindowArmor_obj,
+		scale = 1,
+        static = TRUE,
+	}
+
+	model HahnMiddleRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleRightWindowArmor_obj,
+		scale = 1,
+	}
+
+	model HahnMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleLeftWindowArmor_obj,
+		scale = 1,
+	}
+
+ template vehicle HahnAttachments
+    {
+
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = HahnBumper, }
+            itemType = SCKCO.ChevyG30BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = HahnFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = HahnFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = HahnFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = HahnFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = HahnRearRightWindowArmor, }
+            parent = WindowRearRight,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = HahnRearLeftWindowArmor, }
+            parent = WindowRearLeft,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            parent = DoorRearRight,
+            model Default { file = G30WindowedMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = G30WindowedMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = HahnWindshieldArmor, }
+            itemType = SCKCO.ChevyG30WindshieldArmorSC,
+        }
+    }
+
 }
