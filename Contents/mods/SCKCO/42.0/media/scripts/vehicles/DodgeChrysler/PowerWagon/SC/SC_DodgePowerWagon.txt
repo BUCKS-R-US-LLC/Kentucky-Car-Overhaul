@@ -1,205 +1,199 @@
 module Base
 {
-	model SC_ChevroletC70Survivalist
+	model SC_PowerWagon
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|base_mesh,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model C70SurvivorDriver
+	model PowerWagonDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|DriverSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model C70SurvivorPassenger
+	model PowerWagonPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|PassengerSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model C70SurvivorWindshield
+	model PowerWagonWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Windshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Windshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model C70SurvivorFrontRightWindow
+	model PowerWagonFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model C70SurvivorFrontLeftWindow
+	model PowerWagonFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model C70SurvivorFrontRightDoor
+	model PowerWagonFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model C70SurvivorFrontLeftDoor
+	model PowerWagonFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftDoor_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model C70SurvivorTrunk
+	model PowerWagonTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|TrunkDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model C70SurvivorRearWindshield
+	model PowerWagonRearWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearWindshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model C70SurvivorHood
+	model PowerWagonHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Hood_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model C70Survivorfrontwheelleft
+	model PowerWagonwheelleft
 	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_FrontLeftWheel,
-		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
-		
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_LeftWheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
 	}
-	model C70Survivorfrontwheelright
+	model PowerWagonwheelright
 	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_FrontRightWheel,
-		texture = vehicles/ChevroletC70/Vehicle_C70_Front,
-		
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_RightWheel,
+		texture = Vehicles/M880/Vehicle_M880_Wheel,
 	}
-	model C70Survivorrearwheelleft
-	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_RearLeftDual,
-		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
-		
-	}
-	model C70Survivorrearwheelright
-	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70_RearLeftDual,
-		texture = vehicles/ChevroletC70/Vehicle_C70_Rear,
-		
-	}
-	vehicle SC_ChevroletC70Survivalist
+	vehicle SC_DodgePowerWagon
 	{
 		mechanicType = 2,
-		offRoadEfficiency = 6.0,
+		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
 		playerDamageProtection = 1.3,
 
 		model
 		{
-			file = SC_ChevroletC70Survivalist,
-			scale = 0.6300,
-			offset = 0.0000 -0.1111 1.0317,
+			file = SC_PowerWagon,
+			scale = 0.5700,
+			offset = 0.0000 -0.2281 0.1053,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
+			texture = Vehicles/M880/Vehicle_M880_3Tone,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_Tan,
+			texture = Vehicles/M880/Vehicle_M880_MERDC1,
 		}
 
-		textureRust = Vehicles/ChevroletC70/Vehicle_C70Survivor_rust,
-		textureMask = Vehicles/ChevroletC70/Vehicle_C70Survivor_masks,
-		textureLights = Vehicles/ChevroletC70/Vehicle_C70Survivor_lights,
-		textureDamage1Shell = Vehicles/ChevroletC70/Vehicle_C70Survivor_scratch,
-		textureDamage2Shell = Vehicles/ChevroletC70/Vehicle_C70Survivor_scratch,
-		textureDamage1Overlay = Vehicles/ChevroletC70/Vehicle_C70Survivor_Blood,
-		textureDamage2Overlay = Vehicles/ChevroletC70/Vehicle_C70Survivor_Blood,
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_MERDC2,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_OD,
+		}
+
+		textureRust = Vehicles/M880/Vehicle_M880_Rust,
+		textureMask = Vehicles/M880/Vehicle_M880_Masks,
+		textureLights = Vehicles/M880/Vehicle_M880_Lights,
+		textureDamage1Shell = Vehicles/M880/Vehicle_M880_Scratch,
+		textureDamage2Shell = Vehicles/M880/Vehicle_M880_Scratch,
+		textureDamage1Overlay = Vehicles/M880/Vehicle_M880_Blood,
+		textureDamage2Overlay = Vehicles/M880/Vehicle_M880_Blood,
 
 		sound
 		{
-			engine = VehicleEngineStepVan,
-			engineStart = VehicleEngineStepVan,
-			engineTurnOff = VehicleEngineStepVan,
+			engine = VehicleEngineSUV,
+			engineStart = VehicleEngineSUV,
+			engineTurnOff = VehicleEngineSUV,
 			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailStepVan,
+			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 3.4603 3.3016 9.1429,
+		extents = 2.9474 3.0877 8.6667,
 		mass = 1000,
-		physicsChassisShape = 3.4603 3.3016 9.1429,
-		centerOfMassOffset = 0.0000 1.6508 0.3016,
-		shadowExtents = 3.9759 10.3575,
-		shadowOffset = 0.0000 0.2125,
-		engineForce = 4000,
-		engineQuality = 100,
+		physicsChassisShape = 2.9474 3.0877 8.6667,
+		centerOfMassOffset = 0.0000 1.5614 -0.4737,
+		shadowExtents = 2.9576 8.6826,
+		shadowOffset = 0.0000 -0.4857,
+		engineForce = 4400,
+		engineQuality = 80,
 		engineLoudness = 120,
-		maxSpeed = 50f,
-		brakingForce = 200,
-		stoppingMovementForce = 3.0f,
-		rollInfluence = 0.20f,
-		steeringIncrement = 0.02,
-		steeringClamp = 0.5,
-		suspensionStiffness = 60,
-		suspensionCompression = 4.83,
-		suspensionDamping = 3.88,
+		maxSpeed = 110f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 90,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 1.5f,
-		frontEndHealth = 15000,
-		rearEndHealth = 10000,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 1700,
+		rearEndHealth = 1000,
 		seats = 2,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.3810 0.3968 2.9683,
-			radius = 0.78f,
+			offset = 1.2632 0.3860 2.4386,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.3810 0.3968 2.9683,
-			radius = 0.78f,
+			offset = -1.2632 0.3860 2.4386,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 0.0000 0.3968 -2.3810,
-			radius = 0.78f,
+			offset = 1.2632 0.3860 -3.0351,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.0000 0.3968 -4.2063,
-			radius = 0.78f,
+			offset = -1.2632 0.3860 -3.0351,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -212,13 +206,13 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 2.0317 1.2381,
+				offset = 0.7544 1.5088 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 2.0794 0.0000 1.3651,
+				offset = 2.1930 0.2281 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
@@ -231,13 +225,13 @@ module Base
 
 			position inside
 			{
-				offset = -0.6190 2.0317 1.2381,
+				offset = -0.6842 1.5088 0.0175,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = -2.0476 0.0000 1.4921,
+				offset = -2.1930 0.2105 0.1404,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -245,51 +239,50 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.2222 4.7619 1.2063,
+			xywh = 0.0000 4.9825 2.9474 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = -0.0159 -5.5556 3.5556 1.5873,
+			xywh = 0.0000 -5.8070 2.9474 1.7544,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.5079 2.3810 1.2381 1.2381,
+			xywh = 2.2105 0.5614 1.2281 1.2632,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.5079 2.3810 1.2381 1.2381,
+			xywh = -2.2105 0.5614 1.2632 1.2632,
 		}
 
 		area GasTank
 		{
-			xywh = -2.4286 2.5714 1.0794 0.5714,
+			xywh = -2.1228 -1.1053 1.0877 0.5965,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 4.0317 0.0000 0.0000,
+			xywh = 1.4912 2.1579 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 4.0317 0.0000 0.0000,
+			xywh = -1.3684 2.1579 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 1.4286 -3.1746 0.0000 0.0000,
+			xywh = 1.4737 -2.1228 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -1.4286 -1.3333 0.0000 0.0000,
+			xywh = -1.3860 -2.1228 0.0000 0.0000,
 		}
 
-		template = GunRack,
-		template = C70SurvivorAttachments,
+		template = PowerWagonAttachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,
@@ -302,16 +295,18 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = C70SurvivorDriver,
+				file = M880Driver,
 			}
+
 		}
 
 		part SeatFrontRight
 		{
 			model seatfrontRight
 			{
-				file = C70SurvivorPassenger,
+				file = M880Passenger,
 			}
+
 		}
 
 		part Muffler
@@ -333,7 +328,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = C70SurvivorHood,
+				file = M880Hood,
 			}
 
 			anim Close
@@ -374,7 +369,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = SCKCO.ChevyC70HoodSC,
+			itemType = SCKCO.DodgePowerWagonHoodSC,
 		}
 
 		part Heater
@@ -394,7 +389,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = C70SurvivorWindshield,
+				file = M880Windshield,
 			}
 
 			window
@@ -418,14 +413,14 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.ChevyC70WindshieldSC,
+			itemType = SCKCO.DodgePowerWagonWindshieldSC,
 		}
 
 		part WindshieldRear
 		{
 			model WindshieldRear
 			{
-				file = C70SurvivorRearWindshield,
+				file = M880RearWindshield,
 			}
 
 			window
@@ -449,7 +444,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.ChevyC70WindshieldSC,
+			itemType = SCKCO.DodgePowerWagonWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -461,7 +456,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = C70SurvivorFrontRightWindow,
+				file = M880FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -471,16 +466,16 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.ChevyC70WindowSC,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
+			itemType = SCKCO.DodgePowerWagonWindowSC,
 		}
 
 		part WindowFrontLeft
 		{
 			model windowFL
 			{
-				file = C70SurvivorFrontLeftWindow,
+				file = M880FrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -489,17 +484,16 @@ module Base
 				animate = FALSE,
 			}
 
-			category = SCUCKwindows,
-			itemType = SCKCO.ChevyC70WindowSC,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
+			itemType = SCKCO.DodgePowerWagonWindowSC,
 		}
 
 		part DoorFrontRight
 		{
 			model Default
 			{
-				file = C70SurvivorFrontRightDoor,
+				file = M880FrontRightDoor,
 			}
 
 			anim Close
@@ -530,14 +524,14 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.ChevyC70DoorSC,
+			itemType = SCKCO.DodgePowerWagonDoorSC,
 		}
 
 		part DoorFrontLeft
 		{
 			model Default
 			{
-				file = C70SurvivorFrontLeftDoor,
+				file = M880FrontLeftDoor,
 			}
 
 			anim Close
@@ -568,12 +562,9 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.ChevyC70DoorSC,
+			itemType = SCKCO.DodgePowerWagonDoorSC,
 		}
 
-		template = Trunk/part/TruckBedOpen,
-		template = Tire,
-		
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -590,7 +581,7 @@ module Base
 
 			model Default
 			{
-				file = C70SurvivorTrunk,
+				file = M880Trunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -624,14 +615,17 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.ChevyC70TailGate,
+			itemType = SCKCO.DodgePowerWagonTrunkLidSC,
 		}
 
+		template = Trunk/part/TruckBedOpen,
+		template = Tire,
+		
 		part TruckBedOpen
 		{
 			container
 			{
-				capacity = 300,
+				capacity = 100,
 			}
 		}
 
@@ -639,7 +633,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = C70Survivorfrontwheelleft,
+				file = M880wheelleft,
 			}
 		}
 
@@ -647,7 +641,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = C70Survivorfrontwheelright,
+				file = M880wheelright,
 			}
 		}
 
@@ -655,7 +649,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = C70Survivorrearwheelleft,
+				file = M880wheelleft,
 			}
 		}
 
@@ -663,7 +657,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = C70Survivorrearwheelright,
+				file = M880wheelright,
 			}
 		}
 
@@ -716,23 +710,24 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.6190 0.1270,
-			extents = 3.4603 3.2222 9.5079,
+			offset = 0.0794 1.5714 -0.4286,
+			extents = 3.1111 2.1429 8.5873,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 1.2381 -5.6508,
+			offset = 0.0000 0.9298 -5.0175,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}
 
 		attachment trailerfront
 		{
-			offset = -0.0159 0.9841 4.1270,
+			offset = -0.0175 0.8596 3.6316,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = 1.0000,
 		}
 	}
 }
+

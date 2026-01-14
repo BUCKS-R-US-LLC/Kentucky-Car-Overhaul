@@ -67,6 +67,13 @@ module Base
 		scale = 1,
 	}
 
+	model M1010Placards
+	{
+		mesh = vehicles/Chevrolet/CUCVPlacard,
+        texture = Vehicles/CUCV/CUCVPlacard,
+		scale = 1,
+	}
+
 	model M1010Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|ExtraBar_obj,
@@ -106,6 +113,20 @@ module Base
         
         template = specials/part/DetroitDieselSC,
 
+        part M1010Placards
+        {
+            model Default { file = M1010Placards, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
         template = armorUpgrades/part/SCArmorBumper,
         part SCArmorBumper
         {
@@ -120,6 +141,7 @@ module Base
 
             lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
+
         template = armorUpgrades/part/SCArmorFrontRightWindow,
         part SCArmorFrontRightWindow
         {
