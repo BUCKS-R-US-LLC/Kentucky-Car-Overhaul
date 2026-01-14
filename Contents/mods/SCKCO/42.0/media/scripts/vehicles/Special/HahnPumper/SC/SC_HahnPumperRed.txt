@@ -83,7 +83,7 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
 	}
 	model HahnPumperRearLeftWindow
 	{
@@ -934,82 +934,6 @@ module Base
 			itemType = SCKCO.HahnPumperDoorSC,
 		}
 
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = HahnPumperFrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.HahnPumperDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = HahnPumperFrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.HahnPumperDoorSC,
-		}
-
 		part DoorRearRight
 		{
 			model Default
@@ -1057,28 +981,28 @@ module Base
 
 			anim Close
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}

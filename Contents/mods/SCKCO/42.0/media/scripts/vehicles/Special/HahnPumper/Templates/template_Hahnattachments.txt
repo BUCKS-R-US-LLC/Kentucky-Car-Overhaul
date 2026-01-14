@@ -1,8 +1,129 @@
 module Base
 {
-    template vehicle HahnAttachments
+
+	model HahnBumper
 	{
-        template = specials/part/AirBrakeSC,
-        template = specials/part/BackUpAlarmSC,
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontBumper_obj,
+		scale = 1,
 	}
+
+	model HahnWindshieldArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|WindshieldArmor_obj,
+		scale = 1,
+	}
+
+	model HahnFrontLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model HahnFrontRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model HahnRearRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,        
+	}
+
+	model HahnRearLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+        static = FALSE,
+		scale = 1,
+	}
+
+	model HahnMiddleRightWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleRightWindowArmor_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
+	model HahnMiddleLeftWindowArmor
+	{
+		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|MiddleLeftWindowArmor_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
+ template vehicle HahnAttachments
+    {
+
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = HahnBumper, }
+            itemType = SCKCO.HahnPumperBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = HahnFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = HahnFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = HahnRearRightWindowArmor, }
+            parent = WindowRearRight,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = HahnRearLeftWindowArmor, }
+            parent = WindowRearLeft,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            model Default { file = HahnMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = HahnMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
+            itemType = SCKCO.HahnPumperWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = HahnWindshieldArmor, }
+            itemType = SCKCO.HahnPumperWindshieldArmorSC,
+        }
+    }
+
 }

@@ -83,7 +83,7 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
-		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearRightWindowBone 1.0,
 	}
 	model HahnPumperRearLeftWindow
 	{
@@ -161,22 +161,22 @@ module Base
 	model HahnPumperYellowWheelLeft
 	{
 		mesh = vehicles/Special/Vehicle_HahnPump_FrontLeft,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_Yellowwheelfront,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelfront,
 	}
 	model HahnPumperYellowWheelRight
 	{
 		mesh = vehicles/Special/Vehicle_HahnPump_FrontRight,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_Yellowwheelfront,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelfront,
 	}
 	model HahnPumperYellowRearWheelLeft
 	{
 		mesh = vehicles/Special/Vehicle_HahnPump_RearLeft,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_Yellowwheelrear,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelrear,
 	}
 	model HahnPumperYellowRearWheelRight
 	{
 		mesh = vehicles/Special/Vehicle_HahnPump_RearRight,
-		texture = vehicles/HahnPumper/Vehicle_Hahn_Yellowwheelrear,
+		texture = vehicles/HahnPumper/Vehicle_Hahn_yellowwheelrear,
 	}
 	vehicle SC_HahnPumper_Yellow
 	{
@@ -200,10 +200,10 @@ module Base
 		textureRust = Vehicles/HahnPumper/Vehicle_Hahn86Pump_rust,
 		textureMask = Vehicles/HahnPumper/Vehicle_Hahn86Pump_mask,
 		textureLights = Vehicles/HahnPumper/Vehicle_Hahn86Pump_lights,
-		textuYellowamage1Shell = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Scratch,
-		textuYellowamage2Shell= Vehicles/HahnPumper/Vehicle_Hahn86Pump_Scratch,
-		textuYellowamage1Overlay = Vehicles/HahnPumper/Vehicle_Hahn86Pump_blood,
-		textuYellowamage2Overlay = Vehicles/HahnPumper/Vehicle_Hahn86Pump_blood,
+		textureDamage1Shell = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Scratch,
+		textureDamage2Shell= Vehicles/HahnPumper/Vehicle_Hahn86Pump_Scratch,
+		textureDamage1Overlay = Vehicles/HahnPumper/Vehicle_Hahn86Pump_blood,
+		textureDamage2Overlay = Vehicles/HahnPumper/Vehicle_Hahn86Pump_blood,
 
 		sound
 		{
@@ -220,7 +220,7 @@ module Base
 			leftCol = 1;0;0,
 			rightCol = 1;0;0,
 		}
-		
+
 		extents = 3.8095 4.0000 13.0794,
 		mass = 1000,
 		physicsChassisShape = 3.8095 4.0000 13.0794,
@@ -498,14 +498,14 @@ module Base
 				checkEngine = Vehicles.CheckEngine.Engine,
 			}
 		}
-		
+
 		part additionalLuaEvents
 		{
 		    category = nodisplay,
 			table partVariation { noLockDoors = true, }
 			lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
 		}
-
+		
 		part TrunkDoor1
 		{
 			model Default
@@ -934,82 +934,6 @@ module Base
 			itemType = SCKCO.HahnPumperDoorSC,
 		}
 
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = HahnPumperFrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.HahnPumperDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = HahnPumperFrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.HahnPumperDoorSC,
-		}
-
 		part DoorRearRight
 		{
 			model Default
@@ -1057,28 +981,28 @@ module Base
 
 			anim Close
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = FrontLeftDoorClosing,
+				anim = RearLeftDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
