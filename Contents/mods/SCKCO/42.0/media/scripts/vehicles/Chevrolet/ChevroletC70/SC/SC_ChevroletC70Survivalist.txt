@@ -22,13 +22,13 @@ module Base
 	model C70SurvivorWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model C70SurvivorFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model C70SurvivorFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model C70SurvivorFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,22 +54,10 @@ module Base
 	model C70SurvivorFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model C70SurvivorRearRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model C70SurvivorRearLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model C70SurvivorTrunk
 	{
@@ -82,7 +70,7 @@ module Base
 	model C70SurvivorRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model C70SurvivorHood
@@ -158,10 +146,10 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.4603 3.2381 9.4921,
-		mass = 800,
-		physicsChassisShape = 3.4603 3.2381 9.4921,
-		centerOfMassOffset = 0.0000 1.6190 0.1270,
+		extents = 3.4603 3.3016 9.1429,
+		mass = 1000,
+		physicsChassisShape = 3.4603 3.3016 9.1429,
+		centerOfMassOffset = 0.0000 1.6508 0.3016,
 		shadowExtents = 3.9759 10.3575,
 		shadowOffset = 0.0000 0.2125,
 		engineForce = 4000,
@@ -583,7 +571,7 @@ module Base
 			itemType = SCKCO.ChevyC70DoorSC,
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		
 		template = TrunkDoor,

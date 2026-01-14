@@ -159,7 +159,7 @@ module Base
 		{
 			front = true,
 			offset = 1.2063 0.0794 2.1587,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -167,7 +167,7 @@ module Base
 		{
 			front = true,
 			offset = -1.2222 0.0794 2.1587,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -175,7 +175,7 @@ module Base
 		{
 			front = false,
 			offset = 1.2063 0.0794 -2.5873,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -183,7 +183,7 @@ module Base
 		{
 			front = false,
 			offset = -1.2222 0.0794 -2.5873,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -732,27 +732,6 @@ module Base
 			}
 
 			itemType = SCKCO.ChevyCKSeriesDoorSC,
-		}
-
-		part BackOfTruck
-		{
-			area = TruckBed,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
 		}
 
 		template = Tire,

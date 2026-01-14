@@ -1,9 +1,163 @@
 module Base
 {
 
-    template vehicle VoyagerAttachments
-    {
-        template = PassengerVanFootwellSpace,
+	model VoyagerBumper
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontBumper_obj,
+		scale = 1,
+	}
 
+	model VoyagerWindshieldArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|WindshieldArmor_obj,
+		scale = 1,
+	}
+
+	model VoyagerFrontLeftDoorArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        boneWeight = FrontLeftDoorBone 1.0,
+		scale = 1,
+	}
+
+	model VoyagerFrontRightDoorArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+        boneWeight = FrontRightDoorBone 1.0,
+		scale = 1,
+	}
+
+	model VoyagerFrontLeftWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VoyagerFrontRightWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VoyagerRearRightWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,        
+		static = FALSE,
+	}
+
+	model VoyagerRearLeftWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|RearLeftWindowArmor_obj,
+        texture = Vehicles/DodgeChryslerG30/Vehicle_G30WindowArmor,
+		scale = 1,
+        static = TRUE,
+	}
+
+	model VoyagerMiddleRightWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|MiddleRightWindowArmor_obj,
+        texture = Vehicles/DodgeChryslerG30/Vehicle_G30WindowArmor,
+		scale = 1,
+	}
+
+	model VoyagerMiddleLeftWindowArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PlymouthVoyager_SC|MiddleLeftWindowArmor_obj,
+        texture = Vehicles/DodgeChryslerG30/Vehicle_G30WindowArmor,
+		scale = 1,
+	}
+
+ template vehicle VoyagerAttachments
+    {
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = VoyagerBumper, }
+            itemType = SCKCO.PlymouthVoyagerBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = VoyagerFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = VoyagerFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = VoyagerFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.PlymouthVoyagerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = VoyagerFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.PlymouthVoyagerDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = VoyagerRearRightWindowArmor, }
+            parent = WindowRearRight,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = VoyagerRearLeftWindowArmor, }
+            parent = WindowRearLeft,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleRightWindow,
+        part SCArmorMiddleRightWindow
+        {
+            parent = DoorRearRight,
+            model Default { file = VoyagerMiddleRightWindowArmor, }
+            parent = WindowMiddleRight,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorMiddleLeftWindow,
+        part SCArmorMiddleLeftWindow
+        {
+            model Default { file = VoyagerMiddleLeftWindowArmor, }
+            parent = WindowMiddleLeft,
+            itemType = SCKCO.PlymouthVoyagerWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = VoyagerWindshieldArmor, }
+            itemType = SCKCO.PlymouthVoyagerWindshieldArmorSC,
+        }
     }
+
 }

@@ -22,13 +22,13 @@ module Base
 	model C70GrainTruckWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model C70GrainTruckFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model C70GrainTruckFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model C70GrainTruckFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,22 +54,10 @@ module Base
 	model C70GrainTruckFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model C70GrainTruckRearRightWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model C70GrainTruckRearLeftWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
 	}
 	model C70GrainTruckTrunk
 	{
@@ -82,7 +70,7 @@ module Base
 	model C70GrainTruckRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model C70GrainTruckHood
@@ -641,7 +629,6 @@ module Base
 		template = Trunk/part/TruckBedOpen,
 		template = Tire,
 		
-
 		part TruckBedOpen
 		{
 			container
@@ -649,7 +636,6 @@ module Base
 				capacity = 300,
 			}
 		}
-
 
 		part TireFrontLeft
 		{
