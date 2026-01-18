@@ -37,21 +37,23 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M151RightWindow
+	model M151FrontRightWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model M151LeftWindow
+	model M151FrontLeftWindow
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model M151SoftTop
 	{

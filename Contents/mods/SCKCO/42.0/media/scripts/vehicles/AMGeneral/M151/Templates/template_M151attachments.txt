@@ -1,9 +1,121 @@
 module Base
 {
 
+ 
+    model M151Bullbar
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		static = TRUE,
+		scale = 1.0,
+	}
+
+	model M151WindshieldArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|WindshieldArmor_obj,
+		texture = Vehicles/M151/M151WindshieldArmor,
+		scale = 1.0,
+	}
+
+	model M151FrontLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M151FrontRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
 	template vehicle M151Attachments
 	{
 
+       template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M151Bullbar, }
+			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
+            itemType = SCKCO.M151BumperSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M151FrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.M151WindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M151FrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.M151WindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M151FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.M151DoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M151FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.M151DoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M151WindshieldArmor, }
+            itemType = SCKCO.M151WindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
 
 		area FuelCanHolder
 		{
