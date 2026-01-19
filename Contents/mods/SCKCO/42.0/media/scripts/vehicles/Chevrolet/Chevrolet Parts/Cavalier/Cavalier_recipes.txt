@@ -1,5 +1,72 @@
 module Base
 {
+
+    craftRecipe ChevyCavalier.MakeHood
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 10 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyCavalierHoodSC1,
+        }
+	}
+
+    craftRecipe ChevyCavalier.MakeDoor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 5 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyCavalierDoorSC1,
+        }
+	}
+
+    craftRecipe ChevyCavalier.MakeTrunkLid
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 5 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyCavalierTrunkLidSC1,
+        }
+	}
+
     craftRecipe ChevyCavalier.MakeWindshieldArmor
 	{
         timedAction = Welding,

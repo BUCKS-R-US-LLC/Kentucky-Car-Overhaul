@@ -1,6 +1,72 @@
 module Base
 {
 
+    craftRecipe ChevyC70.MakeHood
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 10 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyC70HoodSC2,
+        }
+	}
+
+    craftRecipe ChevyC70.MakeDoor
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 5 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyC70DoorSC2,
+        }
+	}
+
+    craftRecipe ChevyC70.MakeTailGate
+	{
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Parts,
+        xpAward = MetalWelding:15,
+        SkillRequired = MetalWelding:4,
+
+        inputs
+        {
+            item 5 [Base.SheetMetal],
+            item 2 [Base.Screws],
+			item 10 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+            item 1 SCKCO.ChevyC70TailGateSC2,
+        }
+	}
+
     craftRecipe ChevyC70.MakeBumper
 	{
         timedAction = Welding,
