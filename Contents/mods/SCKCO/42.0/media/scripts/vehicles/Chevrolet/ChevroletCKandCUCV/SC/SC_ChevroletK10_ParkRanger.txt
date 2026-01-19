@@ -1,80 +1,80 @@
 module Base
 {
-	model SC_K10
+	model SC_K10Lights
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model K10Driver
+	model K10ParkRangerDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Passenger
+	model K10ParkRangerPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model K10Windshield
+	model K10ParkRangerWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|WindShield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model K10FrontRightWindow
+	model K10ParkRangerFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightWindow_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model K10FrontLeftWindow
+	model K10ParkRangerFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftWindow_obj,
+		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model K10FrontRightDoor
+	model K10ParkRangerFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model K10FrontLeftDoor
+	model K10ParkRangerFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model K10Trunk
+	model K10ParkRangerTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = RearWindShieldBone 1.0,
 	}
-	model K10RearWindshield
+	model K10ParkRangerRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10_SC|RearWinshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model K10Hood
+	model K10ParkRangerHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_K10_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -90,10 +90,10 @@ module Base
 		mesh = vehicles/Chevrolet/Vehicle_CKSeries_RightWheel,
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
-	vehicle SC_ChevroletK10Dixie
+	vehicle SC_ChevroletK10_ParkRanger
 	{
-	    zombieType = Redneck,
-	    specialKeyRing = KeyRing_EagleFlag,
+	    zombieType = Ranger,
+	    specialKeyRing = KeyRing_EagleFlag;KeyRing_PineTree,
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
@@ -101,19 +101,19 @@ module Base
 
 		model
 		{
-			file = SC_K10,
+			file = SC_K10Lights,
 			scale = 0.6300,
 			offset = 0.0000 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/K10/Vehicle_K10_Flag,
+			texture = Vehicles/K10/Vehicle_K10_ParkRanger,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
-		textureMask = Vehicles/K10/Vehicle_K10Mask,
-		textureLights = Vehicles/K10/Vehicle_K10Lights,
+		textureMask = Vehicles/K10/Vehicle_K10Lights_Mask,
+		textureLights = Vehicles/K10/Vehicle_K10OrangeLights,
 		textureDamage1Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage2Shell = Vehicles/K10/Vehicle_K10Damage,
 		textureDamage1Overlay = Vehicles/K10/Vehicle_K10Blood,
@@ -124,8 +124,15 @@ module Base
 			engine = VehicleEngineSUV,
 			engineStart = VehicleEngineSUV,
 			engineTurnOff = VehicleEngineSUV,
-			horn = DixieHorn,
+			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
+			leftCol = 1;0.73;0.2,
+			rightCol = 1;0.73;0.2,
 		}
 
 		extents = 2.9524 3.0794 7.0159,
@@ -288,6 +295,8 @@ module Base
 			{
 				file = K10Driver,
 			}
+
+			itemType = SCKCO.ChevyCKSeriesFrontSeatSC,
 		}
 
 		part SeatFrontRight
@@ -296,6 +305,8 @@ module Base
 			{
 				file = K10Passenger,
 			}
+
+			itemType = SCKCO.ChevyCKSeriesFrontSeatSC,
 		}
 
 		part Muffler

@@ -1277,7 +1277,7 @@ distributionTable["SC_HahnPumper_Yellow"] = { Normal = VehicleDistributions.SC_F
 distributionTable["SC_CrownFireCoach_Red"] = { Normal = VehicleDistributions.SC_FireDepartment }
 distributionTable["SC_CrownFireCoach_White"] = { Normal = VehicleDistributions.SC_FireDepartment }
 
-distributionTable["SC_ChevroletK5Blazer_McCoys"] = { Normal = VehicleDistributions.SC_Standard}
+distributionTable["SC_ChevroletK5Blazer_McCoy"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletK5Blazer_Fossoil"] = { Normal = VehicleDistributions.SC_Standard}
 distributionTable["SC_ChevroletG30_Fossoil"] = { Normal = VehicleDistributions.SC_WorkTruck }
 distributionTable["SC_ChevroletG30BoxVan"] = { Normal = VehicleDistributions.SC_WorkTruck }
