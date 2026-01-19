@@ -121,15 +121,15 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model CrownVictoriaTaxiwheelleft
+	model CrownVictoriaPolicewheelleft
 	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVicCop_LeftWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVic_NewWheel,
 	}
-	model CrownVictoriaTaxiwheelright
+	model CrownVictoriaPolicewheelright
 	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Ford/Vehicle_CrownVicCop_RightWheel,
+		texture = vehicles/CrownVictoria/Vehicle_CrownVic_NewWheel,
 	}
 	vehicle SC_FordCrownVictoria85_Taxi
 	{
@@ -844,7 +844,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriaTaxiwheelleft,
+				file = CrownVictoriaPolicewheelleft,
 			}
 		}
 
@@ -852,7 +852,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriaTaxiwheelright,
+				file = CrownVictoriaPolicewheelright,
 			}
 		}
 
@@ -860,7 +860,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriaTaxiwheelleft,
+				file = CrownVictoriaPolicewheelleft,
 			}
 		}
 
@@ -868,7 +868,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = CrownVictoriaTaxiwheelright,
+				file = CrownVictoriaPolicewheelright,
 			}
 		}
 

@@ -31,7 +31,7 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model CapriceFrontRightWindow
+	model CapriceCivRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
@@ -40,7 +40,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightArmorBone 1.0,
 	}
-	model CapriceFrontLeftWindow
+	model CapriceCivLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
@@ -67,7 +67,7 @@ module Base
 		boneWeight = RearLeftWindowBone 1.0,
 		boneWeight = RearLeftArmorBone 1.0,
 	}
-	model CapriceFrontRightDoor
+	model CapriceCivRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_SC|FrontRightDoor_obj,
 		shader = vehicleutest,
@@ -75,7 +75,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model CapriceFrontLeftDoor
+	model CapriceCivLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_SC|FrontLeftDoor_obj,
 		shader = vehicleutest,
@@ -121,25 +121,15 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model Capricefrontwheelleft
+	model CapriceCivwheelleft
 	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_LeftWheel,
+		texture = vehicles/Caprice/Vehicle_CapriceNewTire,
 	}
-	model Capricefrontwheelright
+	model CapriceCivwheelright
 	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-	}
-	model Capricebackwheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_LeftWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
-	}
-	model Capricebackwheelright
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVictoria_RightWheel,
-		texture = vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_Wheel,
+		mesh = vehicles/Chevrolet/Vehicle_CapriceCiv_RightWheel,
+		texture = vehicles/Caprice/Vehicle_CapriceNewTire,
 	}
 	vehicle SC_ChevroletCaprice85
 	{
@@ -601,7 +591,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = CapriceFrontRightWindow,
+				file = CapriceCivRightWindow,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -622,7 +612,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = CapriceFrontLeftWindow,
+				file = CapriceCivLeftWindow,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -685,7 +675,7 @@ module Base
 		{
 			model Default
 			{
-				file = CapriceFrontRightDoor,
+				file = CapriceCivRightDoor,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -725,7 +715,7 @@ module Base
 		{
 			model Default
 			{
-				file = CapriceFrontLeftDoor,
+				file = CapriceCivLeftDoor,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -901,7 +891,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Capricefrontwheelleft,
+				file = CapriceCivwheelleft,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -911,7 +901,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Capricefrontwheelright,
+				file = CapriceCivwheelright,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -921,7 +911,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Capricebackwheelleft,
+				file = CapriceCivwheelleft,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
@@ -931,7 +921,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = Capricebackwheelright,
+				file = CapriceCivwheelright,
 				offset = 0.0000 0.0000 0.0000,
 				rotate = 0.0000 0.0000 0.0000,
 			}
