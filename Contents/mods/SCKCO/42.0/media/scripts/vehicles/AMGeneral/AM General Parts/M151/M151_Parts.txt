@@ -1,6 +1,58 @@
 module SCKCO
 {
 
+   item M151BumperSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        DisplayName	= M151 Bumper,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HumveeBumper_WorldItem,
+    }
+
+    item M151WindowArmorSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        DisplayName	= M151 Window Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HumveeWindowArmor_WorldItem,
+    }
+
+    item M151DoorArmorSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        DisplayName	= M151 Door Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HumveeDoorArmor_WorldItem,
+    }
+
+    item M151WindshieldArmorSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        DisplayName	= M151 Windshield Armor,
+        Icon	=	AMLogo,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = HumveeWindshieldArmor_WorldItem,
+    }
+
         item M151DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
