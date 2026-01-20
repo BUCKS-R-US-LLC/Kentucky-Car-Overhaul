@@ -19,16 +19,28 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
+	model PathfinderRearLeftSeat
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+	model PathfinderRearRightSeat
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightSeat_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
 	model PathfinderWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderFrontRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +49,7 @@ module Base
 	model PathfinderFrontLeftWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,13 +58,13 @@ module Base
 	model PathfinderRearRightWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderRearLeftWindow
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model PathfinderFrontRightDoor
@@ -78,11 +90,13 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
+		boneWeight = TrunkDoor 1.0,
+		boneWeight = TrunkAssemblyBone 1.0,
 	}
 	model PathfinderRearWindshield
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -101,8 +115,6 @@ module Base
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkDoor 1.0,
-		boneWeight = TrunkAssemblyBone 1.0,
 	}
 	model PathfinderSpareWheel
 	{
@@ -122,668 +134,743 @@ module Base
 		texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Wheel,
 	}
 	vehicle SC_NissanPathfinder
-	{
-		mechanicType = 2,
-		offRoadEfficiency = 1.1,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
-
-		model
-		{
-			file = SC_NissanPathfinder,
-			scale = 0.6300,
-			offset = 0.0000 0.5238 0.0794,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Pewter,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_BlackPewter,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Black,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Red,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Bluemist,
-		}
-
-		skin
-		{
-			texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
-		}
-
-		textureRust = Vehicles/Pathfinder87/Vehicle_Pathfinder_rust,
-		textureMask = Vehicles/Pathfinder87/Vehicle_Pathfinder_mask,
-		textureLights = Vehicles/Pathfinder87/Vehicle_Pathfinder_lights,
-		textureDamage1Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
-		textureDamage2Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
-		textureDamage1Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
-		textureDamage2Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
-
-		sound
-		{
-			engine = VehicleEnginePickUpTruck,
-			engineStart = VehicleEnginePickUpTruck,
-			engineTurnOff = VehicleEnginePickUpTruck,
-			horn = VehicleHornStandard,
-			ignitionFail = VehicleIgnitionFailPickUpTruck,
-		}
-
-		extents = 2.4444 2.0635 6.6349,
-		mass = 1000,
-		physicsChassisShape = 2.4444 2.0635 6.6349,
-		centerOfMassOffset = 0.0000 1.0317 -0.2222,
-		shadowExtents = 2.4522 6.6434,
-		shadowOffset = 0.0000 -0.2318,
-		engineForce = 4400,
-		engineQuality = 80,
-		engineLoudness = 120,
-		maxSpeed = 110f,
-		brakingForce = 100,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 1500,
-		rearEndHealth = 1000,
-		seats = 2,
-
-		wheel FrontLeft
-		{
-			front = true,
-			offset = 1.0476 -0.4232 2.1429,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel FrontRight
-		{
-			front = true,
-			offset = -1.0476 -0.4232 2.1429,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel RearLeft
-		{
-			front = false,
-			offset = 1.0476 -0.4232 -1.8889,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel RearRight
-		{
-			front = false,
-			offset = -1.0476 -0.4232 -1.8889,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		template = PassengerSeat2,
-
-		passenger FrontLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.5714 0.3810 0.0159,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0794 -0.6984 0.0159,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontLeft,
-			}
-		}
-
-		passenger FrontRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.5714 0.3810 0.0159,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 0.1429,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontRight,
-			}
-		}
-
-		area Engine
-		{
-			xywh = 0.0000 4.2698 2.4444 2.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -4.6032 2.4444 1.7460,
-		}
-
-		area SeatFrontLeft
-		{
-			xywh = 2.0159 0.2540 1.2381 1.2381,
-		}
-
-		area SeatFrontRight
-		{
-			xywh = -2.0159 0.2540 1.2381 1.2381,
-		}
-
-		area GasTank
-		{
-			xywh = -1.9365 -1.4921 1.0794 0.5714,
-		}
-
-		area TireFrontLeft
-		{
-			xywh = 1.2222 2.0794 0.0000 0.0000,
-		}
-
-		area TireFrontRight
-		{
-			xywh = -1.2222 2.0794 0.0000 0.0000,
-		}
-
-		area TireRearLeft
-		{
-			xywh = 1.2222 -1.9524 0.0000 0.0000,
-		}
-
-		area TireRearRight
-		{
-			xywh = -1.2222 -1.9524 0.0000 0.0000,
-		}
-
-		template = PathfinderAttachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = GloveBox,
-		template = GasTank,
-		template = Battery,
-		template = Engine,
-		template = Muffler,
-
-		part SeatFrontLeft
-		{
-			model seatfrontLeft
-			{
-				file = PathfinderDriver,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part SeatFrontRight
-		{
-			model seatfrontRight
-			{
-				file = PathfinderPassenger,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part Muffler
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			model engineDoor
-			{
-				file = PathfinderHood,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			anim Close
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			itemType = SCKCO.NissanPathfinderHoodSC,
-		}
-
-		part Heater
-		{
-			category = engine,
-
-			lua
-			{
-				update = Vehicles.Update.Heater,
-			}
-		}
-
-		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
-
-		part Windshield
-		{
-			model WindshieldFront
-			{
-				file = PathfinderWindshield,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.NissanPathfinderWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			model WindshieldRear
-			{
-				file = PathfinderRearWindshield,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			parent = TrunkDoor,
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.NissanPathfinderWindshieldSC,
-		}
-
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = PathfinderFrontRightWindow,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-			itemType = SCKCO.NissanPathfinderWindowSC,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = PathfinderFrontLeftWindow,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-			itemType = SCKCO.NissanPathfinderWindowSC,
-		}
-
-		part WindowRearLeft
-		{
-			model windowRL
-			{
-				file = PathfinderRearLeftWindow,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			area = TireRearLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.NissanPathfinderWindowSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = PathfinderRearRightWindow,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			area = TireRearRight,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.NissanPathfinderWindowSC,
-		}
-
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = PathfinderFrontRightDoor,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.NissanPathfinderDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = PathfinderFrontLeftDoor,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.NissanPathfinderDoorSC,
-		}
-
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = PathfinderTrunk,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.NissanPathfinderTrunkLidSC,
-		}
-
-		template = Trunk/part/TruckBedOpen,
-		template = Tire,
-
-		part TireFrontLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = PathfinderWheelleft,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part TireFrontRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = PathfinderWheelright,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part TireRearLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = PathfinderWheelleft,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part TireRearRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = PathfinderWheelright,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-		}
-
-		part PathfinderSpareWheel
+    {
+        mechanicType = 2,
+        offRoadEfficiency = 1.1,
+        engineRepairLevel = 4,
+        playerDamageProtection = 1.3,
+
+        model
         {
-			model Default { file = PathfinderSpareWheel, }
-		    area = TruckBed,
+            file = SC_NissanPathfinder,
+            scale = 0.6300,
+            offset = 0.0000 0.5238 0.0794,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Pewter,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_BlackPewter,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Black,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Red,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_Bluemist,
+        }
+
+        skin
+        {
+            texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+        }
+
+        textureRust = Vehicles/Pathfinder87/Vehicle_Pathfinder_rust,
+        textureMask = Vehicles/Pathfinder87/Vehicle_Pathfinder_mask,
+        textureLights = Vehicles/Pathfinder87/Vehicle_Pathfinder_lights,
+        textureDamage1Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
+        textureDamage2Shell = Vehicles/Pathfinder87/Vehicle_Pathfinder_scratch,
+        textureDamage1Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
+        textureDamage2Overlay = Vehicles/Pathfinder87/Vehicle_Pathfinder_blood,
+
+        sound
+        {
+            engine = VehicleEnginePickUpTruck,
+            engineStart = VehicleEnginePickUpTruck,
+            engineTurnOff = VehicleEnginePickUpTruck,
+            horn = VehicleHornStandard,
+            ignitionFail = VehicleIgnitionFailPickUpTruck,
+        }
+
+        extents = 2.4444 2.0635 6.6349,
+        mass = 1000,
+        physicsChassisShape = 2.4444 2.0635 6.6349,
+        centerOfMassOffset = 0.0000 1.0317 -0.2222,
+        shadowExtents = 2.4522 6.6434,
+        shadowOffset = 0.0000 -0.2318,
+        engineForce = 4400,
+        engineQuality = 80,
+        engineLoudness = 120,
+        maxSpeed = 110f,
+        brakingForce = 100,
+        stoppingMovementForce = 4.0f,
+        rollInfluence = 0.50f,
+        steeringIncrement = 0.04,
+        steeringClamp = 0.3,
+        suspensionStiffness = 45,
+        suspensionCompression = 3.83,
+        suspensionDamping = 2.88,
+        maxSuspensionTravelCm = 12,
+        suspensionRestLength = 0.5,
+        wheelFriction = 1.6f,
+        frontEndHealth = 1500,
+        rearEndHealth = 1000,
+        seats = 4,
+
+        wheel FrontLeft
+        {
+            front = true,
+            offset = 1.0476 -0.4286 2.1429,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel FrontRight
+        {
+            front = true,
+            offset = -1.0476 -0.4286 2.1429,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel RearLeft
+        {
+            front = false,
+            offset = 1.0476 -0.4286 -1.8889,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel RearRight
+        {
+            front = false,
+            offset = -1.0476 -0.4286 -1.8889,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        template = PassengerSeat4,
+
+        passenger FrontLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.5714 0.3810 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.0794 -0.6984 0.0159,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontLeft,
+            }
+        }
+
+        passenger FrontRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.5714 0.3810 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.0476 -0.1905 0.1429,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontRight,
+            }
+        }
+
+        passenger RearLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.5714 0.3810 -1.0337,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.0794 -0.6984 0.0159,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearLeft,
+            }
+        }
+
+        passenger RearRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.5714 0.3810 -1.0337,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.0476 -0.1905 0.1429,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearRight,
+            }
+        }
+
+        area Engine
+        {
+            xywh = 0.0000 4.2698 2.4444 2.0000,
+        }
+
+        area TruckBed
+        {
+            xywh = 0.0000 -4.6032 2.4444 1.7460,
+        }
+
+        area SeatFrontLeft
+        {
+            xywh = 2.0159 0.2540 1.2381 1.2381,
+        }
+
+        area SeatFrontRight
+        {
+            xywh = -2.0159 0.2540 1.2381 1.2381,
+        }
+
+        area SeatRearLeft
+        {
+            xywh = 2.0159 0.2540 1.2381 1.2381,
+        }
+
+        area SeatRearRight
+        {
+            xywh = -2.0159 0.2540 1.2381 1.2381,
+        }
+
+        area GasTank
+        {
+            xywh = -1.9365 -1.4921 1.0794 0.5714,
+        }
+
+        area TireFrontLeft
+        {
+            xywh = 1.2222 2.0794 0.0000 0.0000,
+        }
+
+        area TireFrontRight
+        {
+            xywh = -1.2222 2.0794 0.0000 0.0000,
+        }
+
+        area TireRearLeft
+        {
+            xywh = 1.2222 -1.9524 0.0000 0.0000,
+        }
+
+        area TireRearRight
+        {
+            xywh = -1.2222 -1.9524 0.0000 0.0000,
+        }
+
+        template = PathfinderAttachments,
+        template = Seat/part/SeatFrontLeft,
+        template = Seat/part/SeatFrontRight,
+        template = Seat/part/SeatRearLeft,
+        template = Seat/part/SeatRearRight,
+        template = GloveBox,
+        template = GasTank,
+        template = Battery,
+        template = Engine,
+        template = Muffler,
+
+        part SeatFrontLeft
+        {
+            model seatfrontLeft
+            {
+                file = PathfinderDriver,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part SeatFrontRight
+        {
+            model seatfrontRight
+            {
+                file = PathfinderPassenger,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part SeatRearLeft
+        {
+            model seatrearLeft
+            {
+                file = PathfinderRearLeftSeat,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part SeatRearRight
+        {
+            model seatRearRight
+            {
+                file = PathfinderRearRightSeat,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part Muffler
+        {
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = EngineDoor,
+
+        part EngineDoor
+        {
+            model engineDoor
+            {
+                file = PathfinderHood,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            itemType = SCKCO.NissanPathfinderHoodSC,
+        }
+
+        part Heater
+        {
+            category = engine,
+
+            lua
+            {
+                update = Vehicles.Update.Heater,
+            }
+        }
+
+        template = Windshield/part/Windshield,
+        template = Windshield/part/WindshieldRear,
+
+        part Windshield
+        {
+            model WindshieldFront
+            {
+                file = PathfinderWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.NissanPathfinderWindshieldSC,
+        }
+
+        part WindshieldRear
+        {
+            model WindshieldRear
+            {
+                file = PathfinderRearWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            parent = TrunkDoor,
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.NissanPathfinderWindshieldSC,
+        }
+
+        template = Door/part/DoorFrontLeft,
+        template = Door/part/DoorFrontRight,
+        template = Window/part/WindowFrontLeft,
+        template = Window/part/WindowFrontRight,
+
+        part WindowFrontRight
+        {
+            model windowFR
+            {
+                file = PathfinderFrontRightWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontRightWindowClosing,
+                animate = FALSE,
+            }
+
+            category = SCUCKwindows,
+            parent = DoorFrontRight,
+            area = SeatFrontRight,
+            itemType = SCKCO.NissanPathfinderWindowSC,
+        }
+
+        part WindowFrontLeft
+        {
+            model windowFL
+            {
+                file = PathfinderFrontLeftWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontLeftWindowClosing,
+                animate = FALSE,
+            }
+
+            category = SCUCKwindows,
+            parent = DoorFrontLeft,
+            area = SeatFrontLeft,
+            itemType = SCKCO.NissanPathfinderWindowSC,
+        }
+
+        part WindowRearLeft
+        {
+            model windowRL
+            {
+                file = PathfinderRearLeftWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            area = TireRearLeft,
+            parent =,
+
+            table install
+            {
+                requireInstalled =,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.NissanPathfinderWindowSC,
+        }
+
+        part WindowRearRight
+        {
+            model windowRR
+            {
+                file = PathfinderRearRightWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            area = TireRearRight,
+            parent =,
+
+            table install
+            {
+                requireInstalled =,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.NissanPathfinderWindowSC,
+        }
+
+        part DoorFrontRight
+        {
+            model Default
+            {
+                file = PathfinderFrontRightDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.NissanPathfinderDoorSC,
+        }
+
+        part DoorFrontLeft
+        {
+            model Default
+            {
+                file = PathfinderFrontLeftDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.NissanPathfinderDoorSC,
+        }
+
+        template = TrunkDoor,
+
+        part TrunkDoor
+        {
+            table install
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            model Default
+            {
+                file = PathfinderTrunk,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+                scale = 1.0,
+            }
+
+            anim Close
+            {
+                anim = TrunkClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = TrunkClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = TrunkClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = TrunkClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.NissanPathfinderTrunkLidSC,
+        }
+
+        template = Trunk/part/TruckBedOpen,
+        template = Tire,
+
+        part TireFrontLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = PathfinderWheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireFrontRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = PathfinderWheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = PathfinderWheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = PathfinderWheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part PathfinderSpareWheel
+        {
+            model Default
+            {
+                file = PathfinderSpareWheel,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            area = TruckBed,
             category = SCUCKaccessories,
             itemType = Base.NormalTire,
             mechanicRequireKey = true,
 
-		    table install
+            table install
             {
             }
 
@@ -793,38 +880,50 @@ module Base
 
             table partVariation
             {
-                chances = { default = 100, }
-                additionalVehicleFunc = Default
+                chances =
+                {
+                    default = 100,
+                }
             }
-			
-			parent = TrunkDoor,
 
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
-		}
+            parent = TrunkDoor,
 
-		part PathfinderSpareWheelAssembly
+            lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
+
+        part PathfinderSpareWheelAssembly
         {
-			model Default { file = PathfinderSpareWheelAssembly, }
-		    area = TruckBed,
+            model Default
+            {
+                file = PathfinderSpareWheelAssembly,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            area = TruckBed,
+            parent = TrunkDoor,
             category = nodisplay,
             itemType = Base.NormalTire,
             mechanicRequireKey = true,
 
-			anim Close
-			{
-				anim = Closing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
+            anim Close
+            {
+                anim = Closing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
 
-			anim Open
-			{
-				anim = Closing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
+            anim Open
+            {
+                anim = Closing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
 
-		    table install
+            table install
             {
             }
 
@@ -834,82 +933,86 @@ module Base
 
             table partVariation
             {
-                chances = { default = 100, }
-                additionalVehicleFunc = Default
+                chances =
+                {
+                    default = 100,
+                }
             }
-			
-			parent = TrunkDoor,
 
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
-		}
+            parent = TrunkDoor,
 
-		template = Brake,
+            lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
 
-		part Brake*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
+        template = Brake,
 
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
+        part Brake*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
 
-		template = Suspension,
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
 
-		part Suspension*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
+        template = Suspension,
 
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
+        part Suspension*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
 
-		template = Radio,
-		template = Headlight,
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
 
-		part PassengerCompartment
-		{
-			category = nodisplay,
+        template = Radio,
+        template = Headlight,
 
-			lua
-			{
-				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
+        part PassengerCompartment
+        {
+            category = nodisplay,
 
-		physics box
-		{
-			offset = 0.0000 1.0159 -0.2381,
-			extents = 2.4444 2.0476 6.6190,
-			rotate = 0.0000 0.0000 0.0000,
-		}
+            lua
+            {
+                update = Vehicles.Update.PassengerCompartment,
+            }
+        }
 
-		attachment trailer
-		{
-			offset = 0.0000 0.5238 -3.5873,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = -1.0000,
-		}
+        physics box
+        {
+            offset = 0.0000 1.0159 -0.2381,
+            extents = 2.4444 2.0476 6.6190,
+            rotate = 0.0000 0.0000 0.0000,
+        }
 
-		attachment trailerfront
-		{
-			offset = 0.0000 0.5397 3.0159,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
-		}
-	}
+        attachment trailer
+        {
+            offset = 0.0000 0.5238 -3.5873,
+            rotate = 0.0000 0.0000 0.0000,
+            zoffset = -1.0000,
+        }
+
+        attachment trailerfront
+        {
+            offset = 0.0000 0.5397 3.0159,
+            rotate = 0.0000 0.0000 0.0000,
+            zoffset = 1.0000,
+        }
+    }
 }
-
