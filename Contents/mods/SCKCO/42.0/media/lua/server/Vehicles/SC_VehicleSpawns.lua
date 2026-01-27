@@ -53,8 +53,10 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_Fossoil"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_LectroMax"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_MassGenFac"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_ChurchVan"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_Ambulance"] = {index = -1, spawnChance = 0.001};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_SpecialForces"] = {index = -1, spawnChance = 0.1};
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_ChurchBus"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_ChevroletG30_BoxVan"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700BoxTruck"] = {index = -1, spawnChance = 0.5};
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700BoxTruck_MacTools"] = {index = -1, spawnChance = 0.5};       
@@ -122,6 +124,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.sport.chanceToPartDamage = 5;
 
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletP30_SWAT"] = {index = -1, spawnChance = 1};
+    VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletG30_JeffersonSWAT"] = {index = -1, spawnChance = 1};
     VehicleZoneDistribution.police.vehicles["Base.SC_ChevroletSuburban_StatePolice"] = {index = -1, spawnChance = 15};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90_JeffersonPolice"] = {index = -1, spawnChance = 30};
     VehicleZoneDistribution.police.vehicles["Base.SC_FordMustang90_StatePolice"] = {index = -1, spawnChance = 30};
