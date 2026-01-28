@@ -1,92 +1,83 @@
 module Base
 {
-	model SC_M1008TroopCarrier
+	model SC_M1010Ambulance
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M1008TroopCarrierDriver
+	model M1010AmbulanceDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008TroopCarrierPassenger
+	model M1010AmbulancePassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M1008TroopCarrierWindshield
+	model M1010AmbulanceWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|WindShield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|WindShield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M1008TroopCarrierFrontRightWindow
+	model M1010AmbulanceFrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M1008TroopCarrierFrontLeftWindow
+	model M1010AmbulanceFrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M1008TroopCarrierFrontRightDoor
+	model M1010AmbulanceFrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightDoor_obj,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M1008TroopCarrierFrontLeftDoor
+	model M1010AmbulanceFrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftDoor_obj,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M1008TroopCarrierTarpFrame
+	model M1010AmbulanceTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|TarpFrame_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1008TroopCarrierTarp
-	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|Tarp_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model M1008TroopCarrierTrunk
-	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|RearDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-		boneWeight = RearWindShieldBone 1.0,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model M1008TroopCarrierRearWindshield
+	model M1010AmbulanceRearWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|RearWinshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
+		static = FALSE,
+		boneWeight = RearDoorRightBone 1.0,
+		boneWeight = RearDoorLeftBone 1.0,
 	}
-	model M1008TroopCarrierHood
+	model M1010AmbulanceHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -102,7 +93,8 @@ module Base
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 	}
-	vehicle SC_ChevroletM1008TroopCarrier_OD
+
+	vehicle SC_ChevroletM1010Ambulance_OD
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -111,14 +103,14 @@ module Base
 
 		model
 		{
-			file = SC_M1008TroopCarrier,
+			file = SC_M1010Ambulance,
 			scale = 0.6300,
-			offset = 0.0000 0.2698 0.0000,
+			offset = 0.0000 0.2698 0.7143,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1008Troop_OD,
+			texture = Vehicles/CUCV/Vehicle_M1010Ambulance_OD,
 		}
 
 		textureRust = Vehicles/K10/Vehicle_K10Rust,
@@ -138,12 +130,12 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.9841 3.0794 6.9841,
+		extents = 2.9841 3.0794 7.8730,
 		mass = 1000,
-		physicsChassisShape = 2.9841 3.0794 6.9841,
-		centerOfMassOffset = 0.0000 1.5556 -0.2222,
-		shadowExtents = 3.0712 7.2942,
-		shadowOffset = 0.0000 -0.2159,
+		physicsChassisShape = 2.9841 3.0794 7.8730,
+		centerOfMassOffset = 0.0000 1.5556 0.0000,
+		shadowExtents = 3.0712 8.8815,
+		shadowOffset = 0.0000 -0.0572,
 		engineForce = 4500,
 		engineQuality = 80,
 		engineLoudness = 120,
@@ -166,8 +158,8 @@ module Base
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.2222 0.0794 2.1587,
-			radius = 0.50f,
+			offset = 1.2063 0.0794 2.1587,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -175,23 +167,23 @@ module Base
 		{
 			front = true,
 			offset = -1.2222 0.0794 2.1587,
-			radius = 0.50f,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = 1.2222 0.0794 -2.0317,
-			radius = 0.50f,
+			offset = 1.2063 0.0794 -2.5873,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = -1.2222 0.0794 -2.0317,
-			radius = 0.50f,
+			offset = -1.2222 0.0794 -2.5873,
+			radius = 0.55f,
 			width = 0.30f,
 		}
 
@@ -214,22 +206,6 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
-
-			switchSeat MiddleLeft
-			{
-			}
-
-			switchSeat MiddleRight
-			{
-			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
-			}
 		}
 
 		passenger FrontRight
@@ -249,22 +225,6 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
-
-			switchSeat MiddleLeft
-			{
-			}
-
-			switchSeat MiddleRight
-			{
-			}
-
-			switchSeat RearLeft
-			{
-			}
-
-			switchSeat RearRight
-			{
-			}
 		}
 
 		passenger MiddleRight
@@ -274,7 +234,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7937 1.3651 -1.4286,
+				offset = -0.9524 1.5397 -1.4286,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -283,14 +243,6 @@ module Base
 				offset = -2.0476 -0.1905 -1.6032,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
 			}
 		}
 
@@ -301,23 +253,15 @@ module Base
 
 			position inside
 			{
-				offset = 0.7937 1.3651 -1.4286,
+				offset = 0.9524 1.5397 -1.4286,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 1.9048 -0.1905 -1.6032,
+				offset = 2.0476 -0.1905 -1.6032,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
 			}
 		}
 
@@ -328,7 +272,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.7937 1.3651 -2.6984,
+				offset = -0.9524 1.5397 -2.6984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -337,14 +281,6 @@ module Base
 				offset = -2.0476 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
 			}
 		}
 
@@ -355,79 +291,71 @@ module Base
 
 			position inside
 			{
-				offset = 0.7937 1.3651 -2.6984,
+				offset = 0.9524 1.5397 -2.6984,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
 			position outside
 			{
-				offset = 1.9048 -0.1905 -3.1587,
+				offset = 2.0476 -0.1905 -3.1587,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
 			}
 		}
 
 		area Engine
 		{
-			xywh = 0.0000 4.3968 2.9841 2.0000,
+			xywh = 0.0000 5.0635 2.9841 2.0000,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.6984 2.9841 1.7460,
+			xywh = 0.0000 -4.9206 2.9841 1.7460,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2222 0.2540 1.2381 1.2381,
+			xywh = 2.2063 1.0317 1.2381 1.2381,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2063 0.2540 1.2381 1.2381,
+			xywh = -2.2063 1.0317 1.2381 1.2381,
 		}
 
 		area SeatMiddleLeft
 		{
-			xywh = 2.2222 -1.2857 1.2381 1.2381,
+			xywh = 2.2063 -1.3175 1.2381 1.2381,
 		}
 
 		area SeatMiddleRight
 		{
-			xywh = -2.2063 -1.2857 1.2381 1.2381,
+			xywh = -2.2063 -1.3175 1.2381 1.2381,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.2222 -3.1111 1.2381 1.2381,
+			xywh = 2.2063 -2.9683 1.2381 1.2381,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.2063 -3.1111 1.2381 1.2381,
+			xywh = -2.2063 -2.9683 1.2381 1.2381,
 		}
 
 		area GasTank
 		{
-			xywh = -2.1270 -1.1111 1.0794 0.5714,
+			xywh = 2.1270 -0.3492 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.4921 2.1587 0.0000 0.0000,
+			xywh = 1.4921 2.8730 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.3651 2.1587 0.0000 0.0000,
+			xywh = -1.3651 2.8730 0.0000 0.0000,
 		}
 
 		area TireRearLeft
@@ -437,12 +365,11 @@ module Base
 
 		area TireRearRight
 		{
-			xywh = -1.3810 -2.1270 0.0000 0.0000,
+			xywh = -1.5079 -2.1270 0.0000 0.0000,
 		}
 
 		template = ChevyLogo,
-		template = CUCVGunRacks,
-		template = M1008Attachments,
+		template = M1010Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatMiddleLeft,
@@ -459,7 +386,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M1008Driver,
+				file = M1010AmbulanceDriver,
 			}
 		}
 
@@ -467,32 +394,32 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M1008Passenger,
+				file = M1010AmbulancePassenger,
 			}
-		}
-
-		part SeatMiddleRight
-		{
-			category = nodisplay,
-			itemType = SCKCO.CUCVBackSeatSC,
 		}
 
 		part SeatMiddleLeft
 		{
 			category = nodisplay,
-			itemType = SCKCO.CUCVBackSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
-		part SeatRearRight
+		part SeatMiddleRight
 		{
 			category = nodisplay,
-			itemType = SCKCO.CUCVBackSeatSC,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part SeatRearLeft
 		{
 			category = nodisplay,
-			itemType = SCKCO.CUCVBackSeatSC,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
 		}
 
 		part Muffler
@@ -514,7 +441,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M1008Hood,
+				file = M1010AmbulanceHood,
 			}
 
 			anim Close
@@ -575,7 +502,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M1008Windshield,
+				file = M1010AmbulanceWindshield,
 			}
 
 			window
@@ -604,15 +531,12 @@ module Base
 
 		part WindshieldRear
 		{
-			model WindshieldRear
+			model windshieldRear
 			{
-				file = M1008RearWindshield,
+				file = M1010AmbulanceRearWindshield,
 			}
 
-			window
-			{
-				openable = false,
-			}
+			parent = TrunkDoor,
 
 			table install
 			{
@@ -630,55 +554,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.ChevyCKSeriesWindshieldSC,
-		}
-
-		part M1008TarpFrame
-		{
-			model M1008TroopCarrierTarpFrame
-			{
-				file = M1008TarpFrame,
-			}
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = nodisplay,
-			itemType = SCKCO.M1008TarpFrameSC,
-		}
-
-		part M1008Tarp
-		{
-			model M1008TroopCarrierTarp
-			{
-				file = M1008Tarp,
-			}
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKaccessories,
-			itemType = SCKCO.M1008TarpSC,
+			itemType = SCKCO.ChevyCKSeriesWindowSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -690,23 +566,11 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
-        part removeParts
-        {
-           category = nodisplay,
-           table removeOnCreate {
-                1=DoorMiddleLeft,
-                2=DoorMiddleRight,
-				3=DoorRearLeft,
-                4=DoorRearRight,
-           }
-           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
-        }
-
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = M1008FrontRightWindow,
+				file = M1010AmbulanceFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -715,6 +579,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontRight,
 			area = SeatFrontRight,
 			itemType = SCKCO.ChevyCKSeriesWindowSC,
@@ -724,7 +589,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M1008FrontLeftWindow,
+				file = M1010AmbulanceFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -733,6 +598,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 			itemType = SCKCO.ChevyCKSeriesWindowSC,
@@ -742,7 +608,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontRightDoor,
+				file = M1010AmbulanceFrontRightDoor,
 			}
 
 			anim Close
@@ -773,6 +639,7 @@ module Base
 				animate = FALSE,
 			}
 
+			category = SCUCKwindows,
 			itemType = SCKCO.ChevyCKSeriesDoorSC,
 		}
 
@@ -780,7 +647,7 @@ module Base
 		{
 			model Default
 			{
-				file = M1008FrontLeftDoor,
+				file = M1010AmbulanceFrontLeftDoor,
 			}
 
 			anim Close
@@ -812,30 +679,6 @@ module Base
 			}
 
 			itemType = SCKCO.ChevyCKSeriesDoorSC,
-		}
-
-		part DoorMiddleRight
-		{
-			category = nodisplay,
-			mechanicRequireKey = false,
-		}
-
-		part DoorMiddleLeft
-		{
-			category = nodisplay,
-			mechanicRequireKey = false,
-		}
-
-		part DoorRearRight
-		{
-			category = nodisplay,
-			mechanicRequireKey = false,
-		}
-
-		part DoorRearLeft
-		{
-			category = nodisplay,
-			mechanicRequireKey = false,
 		}
 
 		template = TrunkDoor,
@@ -854,7 +697,7 @@ module Base
 
 			model Default
 			{
-				file = M1008Trunk,
+				file = M1010AmbulanceTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -888,32 +731,11 @@ module Base
 				animate = FALSE,
 			}
 
-			itemType = SCKCO.ChevyCKSeriesTrunkLidSC,
+			itemType = SCKCO.ChevyCKSeriesDoorSC,
 		}
 
 		template = Tire,
 		
-
-		part BackOfTruck
-		{
-			area = TruckBed,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 
 		part TireFrontLeft
 		{
@@ -1002,14 +824,14 @@ module Base
 
 		physics box
 		{
-			offset = 0.0794 1.3175 0.0635,
-			extents = 3.1111 1.8571 6.3016,
+			offset = 0.0000 1.3175 -0.1111,
+			extents = 3.1111 1.8571 8.1429,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment trailer
 		{
-			offset = 0.0000 0.5238 -3.9683,
+			offset = 0.0000 0.5238 -3.5397,
 			rotate = 0.0000 0.0000 0.0000,
 			zoffset = -1.0000,
 		}

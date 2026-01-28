@@ -1,8 +1,8 @@
 module Base
 {
-	model SC_M1009MilitaryPolice
+	model SC_M1009
 	{
-		mesh = vehicles/Chevrolet/Vehicle_M1009MPOL_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
@@ -22,13 +22,13 @@ module Base
 	model M1009Windshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindShield_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009FrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model M1009FrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -44,7 +44,7 @@ module Base
 	model M1009FrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model M1009FrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -60,13 +60,13 @@ module Base
 	model M1009RearRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009RearLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|RearLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 	}
 	model M1009Trunk
@@ -96,8 +96,7 @@ module Base
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_RightWheel,
 		texture = Vehicles/K5/Vehicle_BlazerSC_Wheel,
 	}
-	
-	vehicle SC_ChevroletM1009MP_DesertMERDC
+	vehicle SC_ChevroletM1009_OD
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -106,14 +105,14 @@ module Base
 
 		model
 		{
-			file = SC_M1009MilitaryPolice,
+			file = SC_M1009,
 			scale = 0.6300,
-			offset = 0.0000 0.2698 0.0000,
+			offset = 0.0635 0.2698 0.0000,
 		}
 
 		skin
 		{
-			texture = Vehicles/CUCV/Vehicle_M1009MPOL_MERDC,
+			texture = Vehicles/CUCV/Vehicle_M1009_OD,
 		}
 
 		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
@@ -131,11 +130,6 @@ module Base
 			engineTurnOff = VehicleEngineSUV,
 			horn = VehicleHornStandard,
 			ignitionFail = VehicleIgnitionFailSUV,
-		}
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
 		}
 
 		extents = 2.9524 2.6032 6.6032,
@@ -329,6 +323,7 @@ module Base
 		}
 
 		template = ChevyLogo,
+		template = CUCVGunRacks,
 		template = M1009Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
@@ -365,6 +360,7 @@ module Base
 		{
 			category = nodisplay,
 		}
+
 
 		part Muffler
 		{
@@ -793,3 +789,4 @@ module Base
 		}
 	}
 }
+
