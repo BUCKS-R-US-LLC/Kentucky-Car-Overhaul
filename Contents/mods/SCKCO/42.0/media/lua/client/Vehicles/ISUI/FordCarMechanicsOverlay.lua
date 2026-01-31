@@ -4,6 +4,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_JeffersonPD"] = {imgP
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_JeffersonSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_WarrenSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_MuhlenSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_BullittSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_LouisvillePD"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_BrandenburgPD"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85"] = {imgPrefix = "crownvic85_", x=0,y=0};
@@ -34,7 +35,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordF700Armored_Dunbar"] = {imgPrefix = "
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700Armored_Brinks"] = {imgPrefix = "f700dump_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordF700Armored_Transport"] = {imgPrefix = "f700dump_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90"] = {imgPrefix = "fordmustang90_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90_JeffersonPolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90_JeffersonPD"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90_Undercover"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordMustang90_StatePolice"] = {imgPrefix = "fordmustang90_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordTaurus"] = {imgPrefix = "taurus86_", x=0,y=0};
