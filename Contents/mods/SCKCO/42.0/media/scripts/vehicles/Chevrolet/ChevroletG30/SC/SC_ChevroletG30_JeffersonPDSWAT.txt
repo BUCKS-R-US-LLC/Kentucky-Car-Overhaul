@@ -1,33 +1,33 @@
 module Base
 {
-	model SC_G30BoxVan
+	model SC_G30BoxVanSWAT
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|base_mesh,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30VanBoxDriver
+	model G30VanBoxSWATDriver
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontLeftSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontLeftSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanBoxPassenger
+	model G30VanBoxSWATPassenger
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontRightSeat_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontRightSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model G30VanBoxWindshield
+	model G30VanBoxSWATWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|Windshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|Windshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
 	model G30VanfrontRightWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontRightWindow_obj.001,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontRightWindow_obj.001,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
@@ -36,7 +36,7 @@ module Base
 	}
 	model G30VanfrontLeftWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontLeftWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
@@ -45,7 +45,7 @@ module Base
 	}
 	model G30VanfrontRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontRightDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontRightDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
@@ -53,48 +53,48 @@ module Base
 	}
 	model G30VanfrontLeftDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|FrontLeftDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontLeftDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanBoxSlidingRightDoor
+	model G30VanBoxSWATSlidingRightDoor
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|RearSlidingDoor_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|RearSlidingDoor_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearSlideDoorBone 1.0,
 	}
-	model G30VanBoxSlidingWindow
+	model G30VanBoxSWATSlidingWindow
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|RearSlidingWindow_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|RearSlidingWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearSlideDoorBone 1.0,
 	}
-	model G30VanBoxTrunk
+	model G30VanBoxSWATTrunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|Trunk_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
-	model G30VanBoxHood
+	model G30VanBoxSWATHood
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|Hood_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model G30VanBoxRearWindshield
+	model G30VanBoxSWATRearWindshield
 	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|RearWindshield_obj,
+		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
@@ -125,7 +125,7 @@ module Base
 		texture = vehicles/ChevroletG30/Vehicle_G30Van_Wheel,
 		
 	}
-	vehicle SC_ChevroletG30BoxVan
+	vehicle SC_ChevroletG30_JeffersonPD
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -134,39 +134,19 @@ module Base
 
 		model
 		{
-			file = SC_G30BoxVan,
+			file = SC_G30BoxVanSWAT,
 			scale = 0.5900,
 			offset = 0.0000 0.1864 0.0847,
 		}
 
 		skin
 		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Green,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Blue,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Brown,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_DarkBlue,
-		}
-
-		skin
-		{
-			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Red,
+			texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_SWAT,
 		}
 
 		textureRust = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Rust,
-		textureMask = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Mask,
-		textureLights = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Lights,
+		textureMask = Vehicles/ChevroletG30/Vehicle_G30VanSWATSC_Mask,
+		textureLights = Vehicles/ChevroletG30/Vehicle_G30VanSWATSC_Lights,
 		textureDamage1Shell = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Scratch,
 		textureDamage2Shell= Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Scratch,
 		textureDamage1Overlay = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Blood,
@@ -179,6 +159,11 @@ module Base
 			engineTurnOff = VehicleEngineVan,
 			horn = VehicleHornVan,
 			ignitionFail = VehicleIgnitionFailVan,
+		}
+
+		lightbar
+		{
+			soundSiren = VehicleSiren,
 		}
 
 		extents = 3.1186 3.0847 8.4068,
@@ -432,7 +417,7 @@ module Base
 
 			model Default
 			{
-				file = G30VanBoxTrunk,
+				file = G30VanBoxSWATTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -473,7 +458,7 @@ module Base
 		{
 			model SeatFrontLeft
 			{
-				file = G30VanBoxDriver,
+				file = G30VanBoxSWATDriver,
 			}
 
 		}
@@ -482,7 +467,7 @@ module Base
 		{
 			model SeatFrontRight
 			{
-				file = G30VanBoxPassenger,
+				file = G30VanBoxSWATPassenger,
 			}
 
 		}
@@ -493,7 +478,7 @@ module Base
 
 			model SeatRearLeft
 			{
-				file = G30VanBoxDriver,
+				file = G30VanBoxSWATDriver,
 			}
 			
 			itemType = SCKCO.FillerSeatSC,
@@ -505,7 +490,7 @@ module Base
 
 			model SeatRearRight
 			{
-				file = G30VanBoxPassenger,
+				file = G30VanBoxSWATPassenger,
 			}
 			itemType = SCKCO.FillerSeatSC,
 		}
@@ -529,7 +514,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = G30VanBoxHood,
+				file = G30VanBoxSWATHood,
 			}
 
 			anim Close
@@ -590,7 +575,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = G30VanBoxWindshield,
+				file = G30VanBoxSWATWindshield,
 			}
 
 			window
@@ -621,7 +606,7 @@ module Base
 		{
 			model windshieldRear
 			{
-				file = G30VanBoxRearWindshield,
+				file = G30VanBoxSWATRearWindshield,
 			}
 
 			window
@@ -775,7 +760,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanBoxSlidingRightDoor,
+				file = G30VanBoxSWATSlidingRightDoor,
 			}
 
 			anim Close
@@ -813,7 +798,7 @@ module Base
 		{
 			model windowRR
 			{
-				file = G30VanBoxSlidingWindow,
+				file = G30VanBoxSWATSlidingWindow,
 			}
 
 			window
