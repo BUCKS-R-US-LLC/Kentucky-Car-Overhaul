@@ -95,32 +95,6 @@ module Base
             model Default { file = 911WindshieldArmor, }
             itemType = SCKCO.Porsche911WindshieldArmorSC,
         }
-
-        part 911Louvers
-        {
-            model Default { file = 911Tail, }
-            parent = TrunkDoor,
-            requireInstalled = TrunkDoor,
-            itemType = SCKCO.Porsche911LouversSC,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-            
-            table partVariation
-            {
-                chances = { default = 30, }
-                additionalVehicleFunc = Default
-            }
-
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
-        }
     }
 
 }

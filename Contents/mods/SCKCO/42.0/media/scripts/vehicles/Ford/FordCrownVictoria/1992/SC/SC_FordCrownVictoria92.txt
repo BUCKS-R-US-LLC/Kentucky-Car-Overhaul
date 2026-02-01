@@ -67,6 +67,20 @@ module Base
 		boneWeight = RearLeftWindowBone 1.0,
 		boneWeight = RearLeftWindowArmorBone 1.0,
 	}
+	model CrownVictoria92BackRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|BackRightWindow_obj,
+		shader = vehicleutest,
+		static = TRUE,
+		scale = 1,
+	}
+	model CrownVictoria92BackLeftWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|BackLeftWindow_obj,
+		shader = vehicleutest,
+		static = TRUE,
+		scale = 1,
+	}
 	model CrownVictoria92FrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|FrontRightDoor_obj,
@@ -229,7 +243,7 @@ module Base
 		{
 			front = true,
 			offset = 1.4583 0.5417 3.3958,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -237,7 +251,7 @@ module Base
 		{
 			front = true,
 			offset = -1.4583 0.5417 3.3958,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -245,7 +259,7 @@ module Base
 		{
 			front = false,
 			offset = 1.4583 0.5417 -1.8750,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -253,7 +267,7 @@ module Base
 		{
 			front = false,
 			offset = -1.4583 0.5417 -1.8750,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -652,6 +666,40 @@ module Base
 
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = SCKCO.FordCrownVictoria92WindowSC,
+		}
+
+		part FakeWindowRight
+		{
+			model windowMR
+			{
+				file = CrownVictoria92BackRightWindow,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			area = SeatRearRight,
+			itemType = SCKCO.FordCrownVictoria92WindowSC,
+		}
+
+		part FakeWindowLeft
+		{
+			model windowML
+			{
+				file = CrownVictoria92BackLeftWindow,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
 			area = SeatRearLeft,
 			itemType = SCKCO.FordCrownVictoria92WindowSC,
 		}

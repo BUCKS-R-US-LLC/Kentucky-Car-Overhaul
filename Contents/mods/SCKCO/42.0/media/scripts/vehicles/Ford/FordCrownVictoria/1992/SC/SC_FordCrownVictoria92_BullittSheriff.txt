@@ -95,6 +95,20 @@ module Base
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
 	}
+	model CrownVictoria92PoliceBackRightWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|BackRightWindow_obj,
+		shader = vehicleutest,
+		static = TRUE,
+		scale = 1,
+	}
+	model CrownVictoria92PoliceBackLeftWindow
+	{
+		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|BackLeftWindow_obj,
+		shader = vehicleutest,
+		static = TRUE,
+		scale = 1,
+	}
 	model CrownVictoria92PoliceTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Trunk_obj,
@@ -131,8 +145,6 @@ module Base
 	}
 	vehicle SC_FordCrownVictoria92_BullittSheriff
 	{
-	    zombieType = Sheriff_Deputy,
-	    specialKeyRing = KeyRing_EagleFlag,
 		mechanicType = 1,
 		offRoadEfficiency = 1.1,
 		engineRepairLevel = 4,
@@ -153,11 +165,13 @@ module Base
 		lightbar
 		{
 			soundSiren = VehicleSiren,
+			leftCol = 0;0;1,
+			rightCol = 0;0;1,
 		}
 
 		textureRust = Vehicles/CrownVictoria/Vehicle_CrownVic92_rust,
 		textureMask = Vehicles/CrownVictoria/Vehicle_CrownVic92_maskPOL,
-		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVic92_lightsPOL,
+		textureLights = Vehicles/CrownVictoria/Vehicle_CrownVic92_lightsSTATE,
 		textureDamage1Shell = Vehicles/CrownVictoria/Vehicle_CrownVic92_Scratch,
 		textureDamage2Shell= Vehicles/CrownVictoria/Vehicle_CrownVic92_Scratch,
 		textureDamage1Overlay = Vehicles/CrownVictoria/Vehicle_CrownVic92_blood,
@@ -203,7 +217,7 @@ module Base
 		{
 			front = true,
 			offset = 1.4583 0.5417 3.3958,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -211,7 +225,7 @@ module Base
 		{
 			front = true,
 			offset = -1.4583 0.5417 3.3958,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -219,7 +233,7 @@ module Base
 		{
 			front = false,
 			offset = 1.4583 0.5417 -1.8750,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -227,7 +241,7 @@ module Base
 		{
 			front = false,
 			offset = -1.4583 0.5417 -1.8750,
-			radius = 0.60f,
+			radius = 0.65f,
 			width = 0.30f,
 		}
 
@@ -659,6 +673,40 @@ module Base
 
 			category = SCUCKwindows,
 			parent = DoorRearLeft,
+			area = SeatRearLeft,
+			itemType = SCKCO.FordCrownVictoria92WindowSC,
+		}
+
+		part FakeWindowRight
+		{
+			model windowMR
+			{
+				file = CrownVictoria92PoliceBackRightWindow,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			area = SeatRearRight,
+			itemType = SCKCO.FordCrownVictoria92WindowSC,
+		}
+
+		part FakeWindowLeft
+		{
+			model windowML
+			{
+				file = CrownVictoria92PoliceBackLeftWindow,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
 			area = SeatRearLeft,
 			itemType = SCKCO.FordCrownVictoria92WindowSC,
 		}
