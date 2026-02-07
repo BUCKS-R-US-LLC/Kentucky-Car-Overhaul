@@ -29,7 +29,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
     model FordExplorerRearLeftDoorArmor
@@ -38,7 +37,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
 	model FordExplorerRearRightDoorArmor
@@ -47,7 +45,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-
 	}
 
 	model FordExplorerFLWA
@@ -89,7 +86,6 @@ module Base
     template vehicle ExplorerAttachments
 	{
 
-
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
@@ -110,7 +106,7 @@ module Base
             model Default { file = FordExplorerFRWA, }
             itemType = SCKCO.FordExplorerDoorArmorSC,
 			parent = WindowFrontRight,
-            requireInstalled = FordFordExplorerDoorArmorSC,
+            requireInstalled = FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -119,7 +115,7 @@ module Base
             model Default { file = FordExplorerFLWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
 			parent = WindowFrontLeft,
-            requireInstalled = FordFordExplorerDoorArmorSC,
+            requireInstalled = FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightDoor,
@@ -142,7 +138,7 @@ module Base
         part SCArmorRearRightDoor
         {
             model Default { file = FordExplorerRearRightDoorArmor, }
-			parent = RearFrontRight,
+			parent = DoorRearRight,
             itemType = SCKCO.FordExplorerDoorArmorSC,
         }
 
@@ -159,8 +155,8 @@ module Base
         {
             model Default { file = FordExplorerRRWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
-			parent = WindowRearRight
-            requireInstalled = FordFordExplorerDoorArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = FordExplorerDoorArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,
@@ -169,7 +165,7 @@ module Base
             model Default { file = FordExplorerRLWA, }
             itemType = SCKCO.FordExplorerWindowArmorSC,
 			parent = WindowRearLeft,
-            requireInstalled = FordFordExplorerDoorArmorSC,
+            requireInstalled = FordExplorerDoorArmorSC,
         }
 
     }

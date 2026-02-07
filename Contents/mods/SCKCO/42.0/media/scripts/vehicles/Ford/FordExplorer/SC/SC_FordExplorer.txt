@@ -49,15 +49,6 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model FordExplorerFrontRightWindow
-	{
-		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontRightWindowArmorBone 1.0,
-	}
 	model FordExplorerMiddleRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|MiddleRightWindow_obj,
@@ -107,7 +98,7 @@ module Base
 	model FordExplorerRearRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordExplorer_SC|RearRightDoor__obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -647,8 +638,6 @@ module Base
 				file = FordExplorerMiddleRightWindow,
 			}
 
-			area = SeatRearRight,
-
 			table install
 			{
 				requireInstalled =,
@@ -664,8 +653,6 @@ module Base
 			{
 				file = FordExplorerMiddleLeftWindow,
 			}
-
-			area = SeatRearLeft,
 
 			table install
 			{
