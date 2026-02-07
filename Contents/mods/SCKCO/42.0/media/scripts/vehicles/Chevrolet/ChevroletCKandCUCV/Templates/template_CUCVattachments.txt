@@ -34,6 +34,20 @@ module Base
 		scale = 1,
 	}
 
+	model M1008Tarp
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|Tarp_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
+	model M1008TarpFrame
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|TarpFrame_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
 	model M1009Bullbar
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|ExtraBar_obj,
@@ -207,6 +221,89 @@ module Base
         {
             model Default { file = M1008WindshieldArmor, }
             itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+        template = specials/part/DetroitDieselSC,
+    }
+
+   template vehicle M1008TroopAttachments
+    {
+
+        template = armorUpgrades/part/SCArmorBumper,
+        
+        part SCArmorBumper
+        {
+            model Default { file = M1009Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+        
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1008FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1008FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1008WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+        part M1008Tarp
+        {
+            model Default { file = M1008Tarp, }
+            itemType = SCKCO.M1008TarpSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+			table install
+			{
+				requireInstalled = M1008TarpFrame,
+			}
+
+			table uninstall
+			{
+			}
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        part M1008TarpFrame
+        {
+            model Default { file = M1008TarpFrame, }
+            itemType = SCKCO.M1008TarpFrameSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
 
         template = specials/part/DetroitDieselSC,
