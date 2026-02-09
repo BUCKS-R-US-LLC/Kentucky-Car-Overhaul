@@ -80,13 +80,17 @@ function characterVisualHandler.process(character)
 
             if not prevent or (hideWornItem and hideWornItem~=true) then
                 local wornItemItemVisual = wornItemItem:getVisual()
-                wornItemItemVisual:setInventoryItem(wornItemItem)
+                
+                -- FIX: Check if visual exists before using it (Build 42 compatibility)
+                if wornItemItemVisual then
+                    wornItemItemVisual:setInventoryItem(wornItemItem)
 
-                if hideWornItem then
-                    wornItemItemVisual:setItemType((inVehicle and hideWornItem) or wornItemFullType)
+                    if hideWornItem then
+                        wornItemItemVisual:setItemType((inVehicle and hideWornItem) or wornItemFullType)
+                    end
+
+                    itemVisuals:add(wornItemItemVisual)
                 end
-
-                itemVisuals:add(wornItemItemVisual)
             end
         end
     end
