@@ -18,47 +18,68 @@ SCKCO.Data.Tab = {
 	},
 
 	["Base.ModernCar"] = {
-		General = {  -- Default for all regions
-			{ vehicleName = "Base.SC_FordCrownVictoria85", chance = 30 },
-			{ vehicleName = "Base.SC_FordCrownVictoria92", chance = 30 },
+		General = {  
 			{ vehicleName = "Base.SC_FordTaurus", chance = 30 },
 			{ vehicleName = "Base.SC_ToyotaCamry", chance = 30 },
-			{ vehicleName = "Base.SC_ToyotaCamry", chance = 30 },
+			{ vehicleName = "Base.SC_ChevroletCavalier", chance = 30 },
 		}
 	},
 
 	["Base.ModernCar02"] = {
-		General = {  -- Default for all regions
-			{ vehicleName = "Base.SC_FordCrownVictoria85", chance = 30 },
-			{ vehicleName = "Base.SC_FordCrownVictoria92", chance = 30 },
+		General = {  
 			{ vehicleName = "Base.SC_FordTaurus", chance = 30 },
 			{ vehicleName = "Base.SC_ToyotaCamry", chance = 30 },
-			{ vehicleName = "Base.SC_ChevroletCaprice85", chance = 30 },
-			{ vehicleName = "Base.SC_ToyotaCamry", chance = 30 },
+			{ vehicleName = "Base.SC_ChevroletCavalier", chance = 30 },
+		}
+	},
+
+	["Base.SmallCar"] = {
+		General = {  
+			{ vehicleName = "Base.SC_HondaAccord", chance = 30 },
+			{ vehicleName = "Base.SC_VWRabbit", chance = 30 },
+			{ vehicleName = "Base.SC_VWRabbit_Pizza", chance = 30 },
+		}
+	},
+
+	["Base.SmallCar02"] = {
+		General = {  
+			{ vehicleName = "Base.SC_HondaAccord", chance = 30 },
+			{ vehicleName = "Base.SC_VWRabbit", chance = 30 },
+			{ vehicleName = "Base.SC_VWRabbit_Pizza", chance = 30 },
 		}
 	},
 
 	["Base.CarTaxi"] = {
-		General = {  -- Default for all regions
-			{ vehicleName = "Base.SC_FordCrownVictoria85_Taxi", chance = 10 },
+		General = {  
+			{ vehicleName = "Base.SC_FordCrownVictoria85_Taxi", chance = 100 },
 		}
 	},
 	
 	["Base.CarTaxi2"] = {
-		General = {  -- Default for all regions
-			{ vehicleName = "Base.SC_FordCrownVictoria85_Taxi", chance = 10 },
+		General = {  
+			{ vehicleName = "Base.SC_FordCrownVictoria85_Taxi", chance = 100 },
 		}
 	},
 
 	["Base.CarStationWagon"] = {
-		General = {  -- Default for all regions
+		General = {  
 			{ vehicleName = "Base.SC_FordCountrySquire", chance = 100 },
 		}
 	},
 	
 	["Base.CarStationWagon2"] = {
-		General = {  -- Default for all regions
+		General = {  
 			{ vehicleName = "Base.SC_FordCountrySquire", chance = 100 },
+		}
+	},
+
+	["Base.CarLuxury"] = {
+		General = {  
+			{ vehicleName = "Base.SC_Mercedes280", chance = 30 },
+			{ vehicleName = "Base.SC_CadillacFleetwoodBrougham", chance = 30 },
+			{ vehicleName = "Base.SC_CadillacLimo", chance = 5 },
+			{ vehicleName = "Base.SC_Porsche911", chance = 30 },
+			{ vehicleName = "Base.SC_BMW520i", chance = 30 },
 		}
 	},
 
@@ -91,10 +112,26 @@ SCKCO.Data.Tab = {
 
 	["Base.VanSeats"] = {
 		General = {
-			{ vehicleName = "Base.SC_ChevroletG30_PassengerVan", chance = 100 },
-			{ vehicleName = "Base.SC_ChevroletG30_ChurchVan", chance = 30 },
-			{ vehicleName = "Base.SC_ChevroletG30_ChurchBus", chance = 30 },
-			{ vehicleName = "Base.SC_PlymouthVoyager", chance = 50 },
+			{ vehicleName = "Base.SC_ChevroletG30_PassengerVan", chance = 80 },
+			{ vehicleName = "Base.SC_ChevroletG30_ChurchVan", chance = 5 },
+			{ vehicleName = "Base.SC_ChevroletG30_ChurchBus", chance = 5 },
+			{ vehicleName = "Base.SC_PlymouthVoyager", chance = 30 },
+		}
+	},
+
+	["Base.VanAmbulance"] = {
+		General = {
+			{ vehicleName = "Base.SC_ChevroletG30_Ambulance", chance = 30 },
+			{ vehicleName = "Base.SC_FordF350Ambulance_Life", chance = 30 },
+			{ vehicleName = "Base.SC_FordF350Ambulance_Meade", chance = 30 },
+			{ vehicleName = "Base.SC_FordF350Ambulance_Peregrin", chance = 30 },
+		}
+	},
+
+	["Base.VanRadio"] = {
+		General = {
+			{ vehicleName = "Base.SC_ChevroletG30_LBMW", chance = 50 },
+			{ vehicleName = "Base.SC_ChevroletG30_3N", chance = 50 },
 		}
 	},
 
@@ -127,13 +164,13 @@ SCKCO.Data.Tab = {
 
 	["Base.PickUpVan_Camo"] = {
 		General = {
-			{ vehicleName = "Base.SC_DodgeM880_Bubba", chance = 30 },
+			{ vehicleName = "Base.SC_DodgeM880_Bubba", chance = 100 },
 		}
 	},
 
 	["Base.SUV"] = {
 		General = {
-			{ vehicleName = "Base.SC_FordBronco", chance = 30 },
+			{ vehicleName = "Base.SC_FordBronco", chance = 50 },
 			{ vehicleName = "Base.SC_FordExplorer", chance = 30 },
 			{ vehicleName = "Base.SC_NissanPathfinder", chance = 30 },
 			{ vehicleName = "Base.SC_JeepCherokee", chance = 30 },
@@ -161,7 +198,6 @@ SCKCO.Data.Tab = {
 			{ vehicleName = "Base.SC_ChevroletG30_JeffersonPD", chance = 50 },
 		}
 	},
-
 	-- Park Rangers
 	["Base.CarLightsRanger"] = {
 		General = {
@@ -196,11 +232,12 @@ SCKCO.Data.Tab = {
 			{ vehicleName = "Base.SC_FordCrownVictoria92_StatePolice", chance = 50 },
 		}
 	},
-	-- Jefferson County Police
+	-- Jefferson County & Audubon PD 
 	["Base.CarLightsLouisvilleCounty"] = {
 		General = {
 			{ vehicleName = "Base.SC_FordCrownVictoria92_JeffersonPD", chance = 90 },
 			{ vehicleName = "Base.SC_FordMustang90_JeffersonPD", chance = 10 },
+			{ vehicleName = "Base.SC_JeepCherokee_AudubonPD", chance = 5 },
 		}
 	},
 	-- Louisville PD
@@ -219,7 +256,8 @@ SCKCO.Data.Tab = {
 	-- Meade County
 	["Base.ModernCarLightsMeadeSheriff"] = {
 		General = {
-			{ vehicleName = "Base.SC_FordCrownVictoria92_MeadeSheriff", chance = 100 },
+			{ vehicleName = "Base.SC_FordCrownVictoria92_MeadeSheriff", chance = 50 },
+			{ vehicleName = "Base.SC_FordCrownVictoria92_BrandenburgPD", chance = 50 },
 		}
 	},
 }
@@ -238,15 +276,18 @@ SCKCO.Replace.IsVanilla = function(vehicle)
 		["Base.CarNormal"] = true,
 		["Base.CarTaxi"] = true,
 		["Base.CarTaxi2"] = true,
+		["Base.SmallCar"] = true,
+		["Base.SmallCar02"] = true,
 		["Base.CarStationWagon"] = true,
 		["Base.CarStationWagon2"] = true,
-		["Base.SmallCar"] = true,
 		["Base.CarLuxury"] = true,
 		["Base.PickUpTruck"] = true,
 		["Base.PickUpTruck_Camo"] = true,
 		["Base.PickUpTruckLightsRanger"] = true,
 		["Base.Van"] = true,
 		["Base.VanSeats"] = true,
+		["Base.VanRadio"] = true,
+		["Base.VanAmbulance"] = true,
 		["Base.SUV"] = true,
 		["Base.OffRoad"] = true,
 		["Base.StepVan"] = true,
