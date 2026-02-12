@@ -10,8 +10,17 @@
 --                    SC_FordMustang = 50,
 --                }
 --- Make sure to include the original `additionalVehicleFunc` this is different depending on part type, most use 'Default'.
---- If no `additionalVehicleFunc` is provided it will default to `Default`.
+--- If no `additationalVehicleFunc` is provided it will default to `Default`.
 --                additionalVehicleFunc = Default
+--
+--- removeOnCreate removes a list of parts when the vehicle spawns. Supports chance rolls -- parts are only
+--- removed if the chance check passes. Can be combined with any other partVariation options.
+--                removeOnCreate = {
+--                    1 = DoorFrontLeft,
+--                    2 = DoorFrontRight,
+--                    3 = DoorRearLeft,
+--                    4 = DoorRearRight,
+--                }
 --            }
 --
 --- lua Create needs ot be overwritten so the above is true.
@@ -46,6 +55,7 @@
 --           lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
 --        }
 --
+---  OR, use removeOnCreate directly inside partVariation (supports chance rolls):
 --		part Engine
 --        {
 --            table partVariation
@@ -53,6 +63,12 @@
 --                militaryIgnition = true,
 --                additionalVehicleFunc = Engine,
 --                noLockDoors = true,
+--                removeOnCreate = {
+--                    1 = DoorFrontLeft,
+--                    2 = DoorFrontRight,
+--                    3 = DoorRearLeft,
+--                    4 = DoorRearRight,
+--                }
 --            }
 --            lua {
 --                create = Vehicles.Create.SCKCO_VehiclePartVariation,
@@ -121,6 +137,16 @@ local function SC_applySpecials(vehicle, part, partTable)
             if door then
                 door:setLocked(false)
                 door:setLockBroken(true)
+            end
+        end
+    end
+
+    if partTable.removeOnCreate then
+        for _, partID in pairs(partTable.removeOnCreate) do
+            local removeThis = vehicle:getPartById(partID)
+            if removeThis then
+                removeThis:setInventoryItem(nil)
+                vehicle:transmitPartItem(removeThis)
             end
         end
     end
