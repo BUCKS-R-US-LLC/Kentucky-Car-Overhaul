@@ -32,6 +32,20 @@ SC_VehicleFixer.vehicleListGood = {
     "SC_JeepCherokee_AudubonPD",
     "SC_BMW520i",
     "SC_Porsche911",
+    -- To unfuck vanilla spawns being damaged and rusted
+    "StepVan_LouisvilleSWAT",
+    "PickUpVanLightsRanger",
+    "PickUpVanLightsPolice",
+    "PickUpVanLightsStatePolice",
+    "CarLightsRanger",
+    "CarLightsKST",
+    "CarLightsPolice",
+    "CarLightsMuldraughPolice",
+    "CarLightsLouisvilleCounty",
+    "CarLightsBulletinSheriff",
+    "ModernCarLightsWestPoint",
+    "ModernCarLightsCityLouisvillePD",
+    "ModernCarLightsMeadeSheriff",
 }
 
 -- Vehicles that spawn with 60-80% part condition (worse condition)
@@ -92,7 +106,6 @@ function SC_VehicleFixer.scanVehicles()
                 
                 -- If vehicle matches either list, fix it
                 if conditionMin then
-                    -- Remove rust
                     if vehicle.setRust then
                         vehicle:setRust(0)
                     end
@@ -101,7 +114,8 @@ function SC_VehicleFixer.scanVehicles()
                         vehicle:setRustOverlay(0)
                     end
                     
-                    -- Set all parts to random condition in the specified range
+                    vehicle:update()
+                    
                     for j = 0, vehicle:getPartCount() - 1 do
                         local part = vehicle:getPartByIndex(j)
                         if part and part:getInventoryItem() then
@@ -116,9 +130,11 @@ function SC_VehicleFixer.scanVehicles()
                     end
                     
                     vehicle:update()
-                    fixedVehicles[vehicleID] = true
                     print("Fixed spawned vehicle: " .. scriptName .. " (ID: " .. vehicleID .. ") with condition range " .. conditionMin .. "-" .. (conditionMax-1))
                 end
+                
+                -- Mark vehicle as fixed (even if it didn't match the lists)
+                fixedVehicles[vehicleID] = true
             end
         end
     end
@@ -127,6 +143,3 @@ end
 Events.OnPlayerUpdate.Add(SC_VehicleFixer.scanVehicles)
 
 print("SC_VehicleFixer loaded")
-
-local vehicleSoundController = require("SC/SC_vehicleSoundController.lua")
-Events.OnPlayerUpdate.Add(vehicleSoundController.handleUpdate)
