@@ -1260,6 +1260,27 @@ module Base
 			}
 		}
 
+		part tarpVariation
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				chances = {
+					default = 40,
+				}
+				removeOnCreate = {
+					1 = M35A2TarpFrame,
+					2 = M35A2Tarp,
+				}
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+
 		attachment trailer
 		{
 			offset = 0.0000 1.0317 -5.7143,

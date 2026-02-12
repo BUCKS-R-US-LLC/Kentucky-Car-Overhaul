@@ -702,6 +702,27 @@ module Base
            lua { init = Vehicles.Create.SCKCO_removeOnCreate, update = Vehicles.Create.SCKCO_removeOnCreate, }
         }
 
+		part tarpVariation
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				chances = {
+					default = 40,
+				}
+				removeOnCreate = {
+					1 = M1008TarpFrame,
+					2 = M1008Tarp,
+				}
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+
 		part WindowFrontRight
 		{
 			model windowFR

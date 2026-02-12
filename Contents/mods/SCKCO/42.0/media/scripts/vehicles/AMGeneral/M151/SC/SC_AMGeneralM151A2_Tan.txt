@@ -808,6 +808,15 @@ module Base
 			table partVariation
 			{
 				noLockDoors = true,
+				chances = {
+					default = 40,
+				}
+				removeOnCreate = {
+					1 = DoorFrontLeft,
+					2 = DoorFrontRight,
+					3 = WindowFrontLeft,
+					4 = WindowFrontRight,
+				}
 			}
 
 			lua
