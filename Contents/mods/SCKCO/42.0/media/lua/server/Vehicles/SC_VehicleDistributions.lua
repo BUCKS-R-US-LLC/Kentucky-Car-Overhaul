@@ -78,8 +78,6 @@ VehicleDistributions.SC_Standard = {
     TruckBedOpen = VehicleDistributions.SC_StandardTruckBed,
     RearVanSpace = VehicleDistributions.SC_StandardTruckBed,
     GloveBox = VehicleDistributions.SC_StandardGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -161,8 +159,6 @@ VehicleDistributions.SC_Luxury = {
     TruckBed = VehicleDistributions.SC_LuxuryTruckBed,
     TruckBedOpen = VehicleDistributions.SC_LuxuryTruckBed,
     GloveBox = VehicleDistributions.SC_LuxuryGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -244,8 +240,6 @@ VehicleDistributions.SC_Sport = {
     TruckBed = VehicleDistributions.SC_SportTruckBed,
     TruckBedOpen = VehicleDistributions.SC_SportTruckBed,
     GloveBox = VehicleDistributions.SC_SportGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -393,8 +387,6 @@ VehicleDistributions.MassGenFac = {
 
     GloveBox = VehicleDistributions.MassGenFacGloveBox;
 
-    SeatRearLeft = VehicleDistributions.Seat;
-    SeatRearRight = VehicleDistributions.Seat;
 }
 
 --------------------------------------------------------------------
@@ -403,10 +395,7 @@ VehicleDistributions.SC_Military = {
     TruckBed = VehicleDistributions.SC_MilitaryTruckBed,
     TruckBedOpen = VehicleDistributions.SC_MilitaryTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitaryGunRack,
-    BackOfTruck = VehicleDistributions.SC_MilitaryBackTruck,
     GloveBox = VehicleDistributions.SC_MilitaryGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 VehicleDistributions.SC_MilitiaGlovebox = {
@@ -495,10 +484,7 @@ VehicleDistributions.SC_Military = {
     TruckBed = VehicleDistributions.SC_MilitaryTruckBed,
     TruckBedOpen = VehicleDistributions.SC_MilitaryTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitaryGunRack,
-    BackOfTruck = VehicleDistributions.SC_MilitaryBackTruck,
     GloveBox = VehicleDistributions.SC_MilitaryGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -542,8 +528,6 @@ VehicleDistributions.SC_Militia = {
     TruckBedOpen = VehicleDistributions.SC_MilitiaTruckBed,
     GunRackSC = VehicleDistributions.SC_MilitiaGunRack,
     GloveBox = VehicleDistributions.SC_MilitiaGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -593,8 +577,6 @@ VehicleDistributions.SC_StatePolice = {
     TruckBedOpen = VehicleDistributions.SC_StatePoliceTruckBed,
     GunRackSC = VehicleDistributions.SC_StatePoliceGunRack,
     GloveBox = VehicleDistributions.SC_StatePoliceGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 
@@ -636,8 +618,6 @@ VehicleDistributions.SC_DeputySheriff = {
     TruckBedOpen = VehicleDistributions.SC_DeputySheriffTruckBed,
     GunRackSC = VehicleDistributions.SC_DeputySheriffGunRack,
     GloveBox = VehicleDistributions.SC_DeputySheriffGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -678,8 +658,6 @@ VehicleDistributions.SC_CityPolice = {
     TruckBedOpen = VehicleDistributions.SC_CityPoliceTruckBed,
     GunRackSC = VehicleDistributions.SC_CityPoliceGunRack,
     GloveBox = VehicleDistributions.SC_CityPoliceGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -720,8 +698,6 @@ VehicleDistributions.SC_ParkRanger = {
     TruckBedOpen = VehicleDistributions.SC_ParkRangerTruckBed,
     GunRackSC = VehicleDistributions.SC_ParkRangerGunRack,
     GloveBox = VehicleDistributions.SC_ParkRangerGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -760,10 +736,7 @@ VehicleDistributions.SC_FireDepartmentTruckBed = {
 
 VehicleDistributions.SC_FireDepartment = {
     TruckBed = VehicleDistributions.SC_FireDepartmentTruckBed,
-    BackOfTruck = VehicleDistributions.SC_FireDepartmentTruckBed,
     GloveBox = VehicleDistributions.SC_FireDepartmentGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -804,8 +777,6 @@ VehicleDistributions.SC_Bubba = {
     TruckBedOpen = VehicleDistributions.SC_BubbaTruckBed,
     GunRackSC = VehicleDistributions.SC_BubbaGunRack,
     GloveBox = VehicleDistributions.SC_BubbaGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -833,10 +804,7 @@ VehicleDistributions.SC_BankCarTruckBed = {
 }
 
 VehicleDistributions.SC_BankCar = {
-    BackOfTruck = VehicleDistributions.SC_BankCarTruckBed,
     GloveBox = VehicleDistributions.SC_BankCarGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -875,10 +843,7 @@ VehicleDistributions.SC_MailCarTruckBed = {
 
 VehicleDistributions.SC_MailCar = {
     TruckBed = VehicleDistributions.SC_MailCarTruckBed,
-    BackOfTruck = VehicleDistributions.SC_MailCarTruckBed,
     GloveBox = VehicleDistributions.SC_MailCarGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -917,10 +882,7 @@ VehicleDistributions.SC_PowerCompanyTruckBed = {
 
 VehicleDistributions.SC_PowerCompany = {
     TruckBed = VehicleDistributions.SC_PowerCompanyTruckBed,
-    BackOfTruck = VehicleDistributions.SC_PowerCompanyTruckBed,
     GloveBox = VehicleDistributions.SC_PowerCompanyGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -959,10 +921,7 @@ VehicleDistributions.SC_McCoyTruckBed = {
 
 VehicleDistributions.SC_McCoy = {
     TruckBed = VehicleDistributions.SC_McCoyTruckBed,
-    BackOfTruck = VehicleDistributions.SC_McCoyTruckBed,
     GloveBox = VehicleDistributions.SC_McCoyGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -996,10 +955,7 @@ VehicleDistributions.SC_WorkTruckTruckBed = {
 
 VehicleDistributions.SC_WorkTruck = {
     TruckBed = VehicleDistributions.SC_WorkTruckTruckBed,
-    BackOfTruck = VehicleDistributions.SC_WorkTruckTruckBed,
     GloveBox = VehicleDistributions.SC_WorkTruckGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -1027,10 +983,7 @@ VehicleDistributions.SC_PaperCarTruckBed = {
 }
 
 VehicleDistributions.SC_PaperCar = {
-    BackOfTruck = VehicleDistributions.SC_PaperCarTruckBed,
     GloveBox = VehicleDistributions.SC_PaperCarGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 --------------------------------------------------------------------
@@ -1059,10 +1012,7 @@ VehicleDistributions.SC_AmbulanceTruckBed = {
 
 VehicleDistributions.SC_Ambulance = {
     TruckBed = VehicleDistributions.SC_AmbulanceTruckBed,
-    BackOfTruck = VehicleDistributions.SC_AmbulanceTruckBed,
     GloveBox = VehicleDistributions.SC_AmbulanceGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 VehicleDistributions.SC_FireDepartmentGlovebox = {
@@ -1099,8 +1049,6 @@ VehicleDistributions.SC_FireDepartment = {
     TruckBedOpen = VehicleDistributions.SC_FireDepartmentTruckBed,
     RearVanSpace = VehicleDistributions.SC_FireDepartmentTruckBed,
     GloveBox = VehicleDistributions.SC_FireDepartmentGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 VehicleDistributions.SC_SpiffoGlovebox = {
@@ -1124,8 +1072,6 @@ VehicleDistributions.SC_Spiffo = {
     TruckBedOpen = VehicleDistributions.SC_SpiffoTruckBed,
     RearVanSpace = VehicleDistributions.SC_SpiffoTruckBed,
     GloveBox = VehicleDistributions.SC_SpiffoGlovebox,
-    SeatRearLeft = VehicleDistributions.Seat,  
-    SeatRearRight = VehicleDistributions.Seat, 
 }
 
 distributionTable["SC_HondaAccord"] = { Normal = VehicleDistributions.SC_Standard}
