@@ -223,6 +223,7 @@ SCKCO.Data.Tab = {
 		General = {
 			{ vehicleName = "Base.SC_FordCrownVictoria85_StatePolice", chance = 50 },
 			{ vehicleName = "Base.SC_FordCrownVictoria92_StatePolice", chance = 50 },
+			{ vehicleName = "Base.SC_FordCrownVictoria92_MeadeSheriff", chance = 50 },
 		}
 	},
 	-- West Point Cops (Can't find the real liveries)
@@ -230,6 +231,7 @@ SCKCO.Data.Tab = {
 		General = {
 			{ vehicleName = "Base.SC_FordCrownVictoria85_StatePolice", chance = 50 },
 			{ vehicleName = "Base.SC_FordCrownVictoria92_StatePolice", chance = 50 },
+			{ vehicleName = "Base.SC_FordCrownVictoria92_BullittSheriff", chance = 50 },
 		}
 	},
 	-- Jefferson County & Audubon PD 
