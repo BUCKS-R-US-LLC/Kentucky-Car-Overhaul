@@ -53,19 +53,19 @@ local FLEET_CONFIG = {
 }
 
 local FLEET_KEYS = {
-    [88888801] = "SCKCO.85StatePoliceFleetKey",
-    [88888802] = "SCKCO.85LouisvillePDFleetKey",
-    [88888803] = "SCKCO.85ParkRangerFleetKey",
-    [88888804] = "SCKCO.92StatePoliceFleetKey",
-    [88888805] = "SCKCO.92LouisvillePDFleetKey",
-    [88888806] = "SCKCO.92JeffersonPDFleetKey",
-    [88888807] = "SCKCO.92JeffersonSheriffFleetKey",
-    [88888808] = "SCKCO.92MeadeSheriffFleetKey",
-    [88888809] = "SCKCO.92MuhlenSheriffFleetKey",
-    [88888810] = "SCKCO.92WarrenSheriffFleetKey",
-    [88888811] = "SCKCO.92BullittSheriffFleetKey",
-    [88888812] = "SCKCO.92BrandenburgPDFleetKey",
-    [88888813] = "SCKCO.85TaxiFleetKey",
+    [88888801] = "SCKCO.85CrownVicStatePoliceFleetKey",
+    [88888802] = "SCKCO.85CrownVicLouisvillePDFleetKey",
+    [88888803] = "SCKCO.85CrownVicParkRangerFleetKey",
+    [88888804] = "SCKCO.92CrownVicStatePoliceFleetKey",
+    [88888805] = "SCKCO.92CrownVicLouisvillePDFleetKey",
+    [88888806] = "SCKCO.92CrownVicJeffersonPDFleetKey",
+    [88888807] = "SCKCO.92CrownVicJeffersonSheriffFleetKey",
+    [88888808] = "SCKCO.92CrownVicMeadeSheriffFleetKey",
+    [88888809] = "SCKCO.92CrownVicMuhlenSheriffFleetKey",
+    [88888810] = "SCKCO.92CrownVicWarrenSheriffFleetKey",
+    [88888811] = "SCKCO.92CrownVicBullittSheriffFleetKey",
+    [88888812] = "SCKCO.92CrownVicBrandenburgPDFleetKey",
+    [88888813] = "SCKCO.85CrownVicTaxiFleetKey",
     [88888814] = "SCKCO.CUCVFleetKey",
 }
 
