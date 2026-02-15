@@ -1,95 +1,97 @@
 module Base
 {
-	model SC_M880
+	model SC_M880Ambulance
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|base_mesh,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M880Driver
+	model M880AmbulanceDriver
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M880Passenger
+	model M880AmbulancePassenger
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M880Windshield
+	model M880AmbulanceWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Windshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|Windshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M880FrontRightWindow
+	model M880AmbulanceFrontRightWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model M880FrontLeftWindow
+	model M880AmbulanceFrontLeftWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model M880FrontRightDoor
+	model M880AmbulanceFrontRightDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontRightDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M880FrontLeftDoor
+	model M880AmbulanceFrontLeftDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontLeftDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M880Trunk
+	model M880AmbulanceTrunk
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|TrunkDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model M880RearWindshield
+	model M880AmbulanceRearWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|RearWindshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M880Hood
+	model M880AmbulanceHood
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Hood_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M880wheelleft
+	model M880Ambulancewheelleft
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_LeftWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_LeftWheel,
+		texture = Vehicles/M880/Vehicle_M880Ambulance_Wheel,
 	}
-	model M880wheelright
+	model M880Ambulancewheelright
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_RightWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_RightWheel,
+		texture = Vehicles/M880/Vehicle_M880Ambulance_Wheel,
 	}
-	vehicle SC_DodgeM880_Bubba
+	vehicle SC_DodgeM880Ambulance
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -98,49 +100,39 @@ module Base
 
 		model
 		{
-			file = SC_M880,
+			file = SC_M880Ambulance,
 			scale = 0.5700,
 			offset = 0.0000 -0.2281 0.1053,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_BCamo1,
+			texture = Vehicles/M880/Vehicle_M880Ambu_BubbaBleach,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_BCamo2,
+			texture = Vehicles/M880/Vehicle_M880Ambu_BubbaDiarrhea,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_BubbaBleach,
+			texture = Vehicles/M880/Vehicle_M880Ambu_BubbaDusty,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_BubbaDiarrhea,
+			texture = Vehicles/M880/Vehicle_M880Ambu_BubbaMerdc,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_BubbaDusty,
-		}
-
-		skin
-		{
-			texture = Vehicles/M880/Vehicle_M880_BubbaMerdc,
-		}
-
-		skin
-		{
-			texture = Vehicles/M880/Vehicle_M880_BubbaTylenol,
+			texture = Vehicles/M880/Vehicle_M880Ambu_BubbaTylenol,
 		}
 
 		textureRust = Vehicles/M880/Vehicle_M880_Rust,
-		textureMask = Vehicles/M880/Vehicle_M880_Masks,
-		textureLights = Vehicles/M880/Vehicle_M880_Lights,
+		textureMask = Vehicles/M880/Vehicle_M880Ambu_Masks,
+		textureLights = Vehicles/M880/Vehicle_M880Ambu_Lights,
 		textureDamage1Shell = Vehicles/M880/Vehicle_M880_Scratch,
 		textureDamage2Shell = Vehicles/M880/Vehicle_M880_Scratch,
 		textureDamage1Overlay = Vehicles/M880/Vehicle_M880_Blood,
@@ -297,7 +289,7 @@ module Base
 			xywh = -1.3860 -2.1228 0.0000 0.0000,
 		}
 
-		template = PowerWagonAttachments,
+		template = M880Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,

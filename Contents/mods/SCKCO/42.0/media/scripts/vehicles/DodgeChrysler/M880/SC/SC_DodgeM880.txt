@@ -32,6 +32,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model M880FrontLeftWindow
 	{
@@ -40,6 +41,7 @@ module Base
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model M880FrontRightDoor
 	{
@@ -105,22 +107,37 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_3Tone,
+			texture = Vehicles/M880/Vehicle_M880_BCamo1,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_MERDC1,
+			texture = Vehicles/M880/Vehicle_M880_BCamo2,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_MERDC2,
+			texture = Vehicles/M880/Vehicle_M880_BubbaBleach,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_OD,
+			texture = Vehicles/M880/Vehicle_M880_BubbaDiarrhea,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_BubbaDusty,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_BubbaMerdc,
+		}
+
+		skin
+		{
+			texture = Vehicles/M880/Vehicle_M880_BubbaTylenol,
 		}
 
 		textureRust = Vehicles/M880/Vehicle_M880_Rust,
@@ -282,7 +299,7 @@ module Base
 			xywh = -1.3860 -2.1228 0.0000 0.0000,
 		}
 
-		template = PowerWagonAttachments,
+		template = M880Attachments,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = GloveBox,

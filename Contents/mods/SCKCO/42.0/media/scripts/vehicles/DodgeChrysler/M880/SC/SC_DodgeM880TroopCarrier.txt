@@ -2,94 +2,93 @@ module Base
 {
 	model SC_M880
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|base_mesh,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M880Driver
+	model M880TroopCarrierDriver
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M880Passenger
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+	model M880TroopCarrierPassenger
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model M880Windshield
+	model M880TroopCarrierWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Windshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Windshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M880FrontRightWindow
+	model M880TroopCarrierFrontRightWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
 	}
-	model M880FrontLeftWindow
+	model M880TroopCarrierFrontLeftWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
 	}
-	model M880FrontRightDoor
+	model M880TroopCarrierFrontRightDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|FrontRightDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model M880FrontLeftDoor
+	model M880TroopCarrierFrontLeftDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|FrontLeftDoor_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model M880Trunk
+	model M880TroopCarrierTrunk
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|TrunkDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 	}
-	model M880RearWindshield
+	model M880TroopCarrierRearWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|RearWindshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model M880Hood
+	model M880TroopCarrierHood
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Hood_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
 	}
-	model M880wheelleft
+	model M880TroopCarrierwheelleft
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_LeftWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 	}
-	model M880wheelright
+	model M880TroopCarrierwheelright
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_RightWheel,
 		texture = Vehicles/M880/Vehicle_M880_Wheel,
 	}
-	vehicle SC_DodgeM880_Bubba
+	vehicle SC_DodgeM880TroopCarrier
 	{
 		mechanicType = 2,
 		offRoadEfficiency = 1.1,
@@ -141,8 +140,8 @@ module Base
 		textureRust = Vehicles/M880/Vehicle_M880_Rust,
 		textureMask = Vehicles/M880/Vehicle_M880_Masks,
 		textureLights = Vehicles/M880/Vehicle_M880_Lights,
-		textureDamage1Shell = Vehicles/M880/Vehicle_M880_Scratch,
-		textureDamage2Shell = Vehicles/M880/Vehicle_M880_Scratch,
+		textureDamage1Shell = Vehicles/M880/Vehicle_M880Troop_Scratch,
+		textureDamage2Shell = Vehicles/M880/Vehicle_M880Troop_Scratch,
 		textureDamage1Overlay = Vehicles/M880/Vehicle_M880_Blood,
 		textureDamage2Overlay = Vehicles/M880/Vehicle_M880_Blood,
 
@@ -178,7 +177,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 1700,
 		rearEndHealth = 1000,
-		seats = 2,
+		seats = 6,
 
 		wheel FrontLeft
 		{
@@ -212,7 +211,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat2,
+		template = PassengerSeat6,
 
 		passenger FrontLeft
 		{
@@ -231,6 +230,23 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
+
+			switchSeat MiddleLeft
+			{
+			}
+
+			switchSeat MiddleRight
+			{
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+
 		}
 
 		passenger FrontRight
@@ -249,6 +265,130 @@ module Base
 				offset = -2.1930 0.2105 0.1404,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
+			}
+
+			switchSeat MiddleLeft
+			{
+			}
+
+			switchSeat MiddleRight
+			{
+			}
+
+			switchSeat RearLeft
+			{
+			}
+
+			switchSeat RearRight
+			{
+			}
+		}
+
+		passenger MiddleRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7937 1.3651 -1.4286,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -1.6032,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7937 1.3651 -1.4286,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.9048 -0.1905 -1.6032,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatMiddleLeft,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.7937 1.3651 -2.6984,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -2.0476 -0.1905 -3.1587,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.7937 1.3651 -2.6984,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.9048 -0.1905 -3.1587,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+
+			switchSeat FrontLeft
+			{
+			}
+
+			switchSeat FrontRight
+			{
 			}
 		}
 
@@ -270,6 +410,26 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.2105 0.5614 1.2632 1.2632,
+		}
+
+		area SeatMiddleLeft
+		{
+			xywh = 2.2222 -1.2857 1.2381 1.2381,
+		}
+
+		area SeatMiddleRight
+		{
+			xywh = -2.2063 -1.2857 1.2381 1.2381,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 2.2222 -3.1111 1.2381 1.2381,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -2.2063 -3.1111 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -297,9 +457,14 @@ module Base
 			xywh = -1.3860 -2.1228 0.0000 0.0000,
 		}
 
-		template = PowerWagonAttachments,
+		template = M880Attachments,
+		template = M880TarpOD,
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
 		template = GloveBox,
 		template = GasTank,
 		template = Battery,
@@ -467,6 +632,27 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
+		part tarpVariation
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				chances = {
+					default = 40,
+				}
+				removeOnCreate = {
+					1 = M880TarpFrame,
+					2 = M880Tarp,
+				}
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+		
 		part WindowFrontRight
 		{
 			model windowFR

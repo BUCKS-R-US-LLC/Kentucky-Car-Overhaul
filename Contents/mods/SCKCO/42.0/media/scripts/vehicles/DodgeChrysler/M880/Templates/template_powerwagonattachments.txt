@@ -1,8 +1,621 @@
 module Base
 {
 
-    template vehicle PowerWagonAttachments
-    {
+	model PowerWagonBumper
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PowerWagonWindshieldArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|WindshieldArmor_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PowerWagonFrontLeftDoorArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PowerWagonFrontRightDoorArmor
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightDoorArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PowerWagonFLWA
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model PowerWagonFRWA
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindowArmor_obj,
+		shader = vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+
+	model M880TroopCarrierTarpFrame
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|TarpFrame_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model M880TroopCarrierSeats
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|SeatAssembly_obj,
+        texture = Vehicles/M880/Vehicle_M880Tarp_Blue,
+		scale = 1,
+	}
+
+	model M880TarpBlue
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Tarp_obj,
+        texture = Vehicles/M880/Vehicle_M880Tarp_Blue,
+		scale = 1,
+	}
+
+	model M880TarpOD
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Tarp_obj,
+        texture = Vehicles/M880/Vehicle_M880Tarp_OD,
+		scale = 1,
+	}
+
+	model M880TarpBrown
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Tarp_obj,
+        texture = Vehicles/M880/Vehicle_M880Tarp_Brown,
+		scale = 1,
+	}
+
+	model M880TarpTan
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Tarp_obj,
+        texture = Vehicles/M880/Vehicle_M880Tarp_Tan,
+		scale = 1,
+	}
+
+    template vehicle M880Attachments
+	{
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = PowerWagonBumper, }
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+            itemType = SCKCO.DodgePowerWagonBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = PowerWagonWindshieldArmor, }
+            itemType = SCKCO.DodgePowerWagonWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = PowerWagonFRWA, }
+            itemType = SCKCO.DodgePowerWagonWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = PowerWagonFLWA, }
+            itemType = SCKCO.DodgePowerWagonWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = PowerWagonFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = PowerWagonFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.DodgePowerWagonDoorArmorSC,
+        }
 
     }
+
+    template vehicle M880TarpBlue
+	{
+
+		part M880TroopCarrierSeats
+		{
+			model M880TroopCarrierSeats
+			{
+				file = M880TroopCarrierSeats,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part M880TarpFrame
+		{
+			model M880TroopCarrierTarpFrame
+			{
+				file = M880TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part M880Tarp
+		{
+			model M880TarpBlue
+			{
+				file = M880TarpBlue,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1008TarpSC,
+		}
+
+    }
+
+    template vehicle M880TarpOD
+	{
+
+		part M880TroopCarrierSeats
+		{
+			model M880TroopCarrierSeats
+			{
+				file = M880TroopCarrierSeats,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+		
+		part M880TarpFrame
+		{
+			model M880TroopCarrierTarpFrame
+			{
+				file = M880TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part M880Tarp
+		{
+			model M880TarpOD
+			{
+				file = M880TarpOD,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1008TarpSC,
+		}
+
+    }
+
+    template vehicle M880TarpBrown
+	{
+
+		part M880TroopCarrierSeats
+		{
+			model M880TroopCarrierSeats
+			{
+				file = M880TroopCarrierSeats,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+		
+		part M880TarpFrame
+		{
+			model M880TroopCarrierTarpFrame
+			{
+				file = M880TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part M880Tarp
+		{
+			model M880TarpBrown
+			{
+				file = M880TarpBrown,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1008TarpSC,
+		}
+
+    }
+
+    template vehicle M880TarpTan
+	{
+
+		part M880TroopCarrierSeats
+		{
+			model M880TroopCarrierSeats
+			{
+				file = M880TroopCarrierSeats,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part SeatMiddleRight
+		{
+			category = nodisplay,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatMiddleLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearRight
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+
+		part SeatRearLeft
+		{
+			category = nodisplay,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			itemType = SCKCO.CUCVBackSeatSC,
+		}
+		
+		part M880TarpFrame
+		{
+			model M880TroopCarrierTarpFrame
+			{
+				file = M880TarpFrame,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			itemType = SCKCO.M1008TarpFrameSC,
+		}
+
+		part M880Tarp
+		{
+			model M880TarpTan
+			{
+				file = M880TarpTan,
+			}
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1008TarpSC,
+		}
+
+    }
+
 }
