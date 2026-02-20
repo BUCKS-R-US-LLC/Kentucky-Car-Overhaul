@@ -1,9 +1,16 @@
 module Base
 {
 
-	model PowerWagonBumper
+	model M880Bumper
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontBumper_obj,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PowerWagonBumper
+	{
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|FrontBumper_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
@@ -37,7 +44,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 
 	model PowerWagonFRWA
@@ -46,7 +52,6 @@ module Base
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
-		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 
 	model M880TroopCarrierTarpFrame
@@ -91,13 +96,66 @@ module Base
 		scale = 1,
 	}
 
-    template vehicle M880Attachments
+   template vehicle PowerWagonAttachments
 	{
 
 	    template = armorUpgrades/part/SCArmorBumper,
 	    part SCArmorBumper
 	    {
             model Default { file = PowerWagonBumper, }
+            itemType = SCKCO.DodgePowerWagonBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = PowerWagonWindshieldArmor, }
+            itemType = SCKCO.DodgePowerWagonWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = PowerWagonFRWA, }
+            itemType = SCKCO.DodgePowerWagonWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = PowerWagonFLWA, }
+            itemType = SCKCO.DodgePowerWagonWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = PowerWagonFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.DodgePowerWagonDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = PowerWagonFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.DodgePowerWagonDoorArmorSC,
+        }
+
+    }
+
+    template vehicle M880Attachments
+	{
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = M880Bumper, }
 			
 			lua
 			{

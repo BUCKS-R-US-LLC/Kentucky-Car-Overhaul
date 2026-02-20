@@ -2,64 +2,66 @@ module Base
 {
 	model SC_PowerWagon
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|base_mesh,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|base_mesh,
 		shader = vehicle_norandom_multiuv_noreflect,
 		invertX = FALSE,
 		scale = 1,
 	}
 	model PowerWagonDriver
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PowerWagonPassenger
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|DoubleSeat_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|DoubleSeat_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model PowerWagonWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Windshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|Windshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
 	model PowerWagonFrontRightWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|FrontRightWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
 	model PowerWagonFrontLeftWindow
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftWindow_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
 	model PowerWagonFrontRightDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|FrontRightDoor_obj,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
 	model PowerWagonFrontLeftDoor
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|FrontLeftDoor_obj,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
 	model PowerWagonTrunk
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|TrunkDoor_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|TrunkDoor_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -67,13 +69,13 @@ module Base
 	}
 	model PowerWagonRearWindshield
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|RearWindshield_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
 	}
 	model PowerWagonHood
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_SC|Hood_obj,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|Hood_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
@@ -81,13 +83,13 @@ module Base
 	}
 	model PowerWagonwheelleft
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_LeftWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_LeftWheel,
+		texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_Wheel,
 	}
 	model PowerWagonwheelright
 	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880_RightWheel,
-		texture = Vehicles/M880/Vehicle_M880_Wheel,
+		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_RightWheel,
+		texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_Wheel,
 	}
 	vehicle SC_DodgePowerWagon
 	{
@@ -105,31 +107,41 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_3Tone,
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_MERDC1,
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlueWhite,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_MERDC2,
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_Brown,
 		}
 
 		skin
 		{
-			texture = Vehicles/M880/Vehicle_M880_OD,
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BrownBrown,
 		}
 
-		textureRust = Vehicles/M880/Vehicle_M880_Rust,
-		textureMask = Vehicles/M880/Vehicle_M880_Masks,
-		textureLights = Vehicles/M880/Vehicle_M880_Lights,
-		textureDamage1Shell = Vehicles/M880/Vehicle_M880_Scratch,
-		textureDamage2Shell = Vehicles/M880/Vehicle_M880_Scratch,
-		textureDamage1Overlay = Vehicles/M880/Vehicle_M880_Blood,
-		textureDamage2Overlay = Vehicles/M880/Vehicle_M880_Blood,
+		skin
+		{
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_DarkBlueWhite,
+		}
+
+		skin
+		{
+			texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_GreenWhite,
+		}
+
+		textureRust = Vehicles/PowerWag79/Vehicle_PowerWag1979_Rust,
+		textureMask = Vehicles/PowerWag79/Vehicle_PowerWag1979_Mask,
+		textureLights = Vehicles/PowerWag79/Vehicle_PowerWag1979_Light,
+		textureDamage1Shell = Vehicles/PowerWag79/Vehicle_PowerWag1979_Scratch,
+		textureDamage2Shell = Vehicles/PowerWag79/Vehicle_PowerWag1979_Scratch,
+		textureDamage1Overlay = Vehicles/PowerWag79/Vehicle_PowerWag1979_Blood,
+		textureDamage2Overlay = Vehicles/PowerWag79/Vehicle_PowerWag1979_Blood,
 
 		sound
 		{
@@ -295,7 +307,7 @@ module Base
 		{
 			model seatfrontLeft
 			{
-				file = M880Driver,
+				file = PowerWagonDriver,
 			}
 
 		}
@@ -304,7 +316,7 @@ module Base
 		{
 			model seatfrontRight
 			{
-				file = M880Passenger,
+				file = PowerWagonPassenger,
 			}
 
 		}
@@ -328,7 +340,7 @@ module Base
 		{
 			model engineDoor
 			{
-				file = M880Hood,
+				file = PowerWagonHood,
 			}
 
 			anim Close
@@ -389,7 +401,7 @@ module Base
 		{
 			model WindshieldFront
 			{
-				file = M880Windshield,
+				file = PowerWagonWindshield,
 			}
 
 			window
@@ -420,7 +432,7 @@ module Base
 		{
 			model WindshieldRear
 			{
-				file = M880RearWindshield,
+				file = PowerWagonRearWindshield,
 			}
 
 			window
@@ -456,7 +468,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M880FrontRightWindow,
+				file = PowerWagonFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -475,7 +487,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M880FrontLeftWindow,
+				file = PowerWagonFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -493,7 +505,7 @@ module Base
 		{
 			model Default
 			{
-				file = M880FrontRightDoor,
+				file = PowerWagonFrontRightDoor,
 			}
 
 			anim Close
@@ -531,7 +543,7 @@ module Base
 		{
 			model Default
 			{
-				file = M880FrontLeftDoor,
+				file = PowerWagonFrontLeftDoor,
 			}
 
 			anim Close
@@ -581,7 +593,7 @@ module Base
 
 			model Default
 			{
-				file = M880Trunk,
+				file = PowerWagonTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
@@ -633,7 +645,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880wheelleft,
+				file = PowerWagonwheelleft,
 			}
 		}
 
@@ -641,7 +653,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880wheelright,
+				file = PowerWagonwheelright,
 			}
 		}
 
@@ -649,7 +661,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880wheelleft,
+				file = PowerWagonwheelleft,
 			}
 		}
 
@@ -657,7 +669,7 @@ module Base
 		{
 			model InflatedTirePlusWheel
 			{
-				file = M880wheelright,
+				file = PowerWagonwheelright,
 			}
 		}
 
