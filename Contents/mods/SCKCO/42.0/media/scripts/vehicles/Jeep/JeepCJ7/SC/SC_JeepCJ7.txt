@@ -700,6 +700,30 @@ module Base
 			}
 		}
 
+		part additionalLuaEvents
+		{
+			category = nodisplay,
+
+			table partVariation
+			{
+				noLockDoors = true,
+				chances = {
+					default = 40,
+				}
+				removeOnCreate = {
+					1 = DoorFrontLeft,
+					2 = DoorFrontRight,
+					3 = WindowFrontLeft,
+					4 = WindowFrontRight,
+				}
+			}
+
+			lua
+			{
+				create = Vehicles.Create.SCKCO_VehiclePartVariation,
+			}
+		}
+		
 		physics box
 		{
 			offset = 0.0000 1.0169 0.0678,
