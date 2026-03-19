@@ -53,7 +53,7 @@ module Base
 		texture = Vehicles/K5/Vehicle_CKseries_Wheel,
 	}
 
-    template vehicle CKPartsArmor
+    template vehicle BlazerAttachments
     {
         template = armorUpgrades/part/SCArmorBumper,
         
@@ -114,13 +114,7 @@ module Base
         {
             model Default { file = K5Bullbar, }
             itemType = SCKCO.ChevyCKSeriesBumperSC,
-
-            table partVariation
-            {
-                chances = { default = 30, }
-                additionalVehicleFunc = Default
-            }
-
+            
             lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
         }
 
