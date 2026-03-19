@@ -1124,26 +1124,6 @@ module Base
 			itemType = SCKCO.M35TailGateSC,
 		}
 
-		part BackOfTruck
-		{
-			area = TruckBed,
-			category = nodisplay,
-			itemType = Base.NormalTrunk,
-			mechanicRequireKey = true,
-			repairMechanic = true,
-
-			container
-			{
-				capacity = 300,
-				conditionAffectsCapacity = false,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
 
 		template = Tire,
 		
