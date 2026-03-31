@@ -1,4 +1,4 @@
-module SCKCO {
+module Base {
 
 	template vehicle specials
 	{
@@ -48,7 +48,7 @@ module SCKCO {
         part AirBrakeSC
         {
             category = nodisplay,
-            itemType = SCKCO.NormalBrake,
+            itemType = Base.NormalBrake,
             mechanicRequireKey = false,
             lua { create = Vehicles.Create.Default, }
         }
@@ -265,7 +265,6 @@ module SCKCO {
             area = Engine,
             category = SCUCKarmor,
             mechanicRequireKey = false,
-            lua { }
 
             table install
             {
