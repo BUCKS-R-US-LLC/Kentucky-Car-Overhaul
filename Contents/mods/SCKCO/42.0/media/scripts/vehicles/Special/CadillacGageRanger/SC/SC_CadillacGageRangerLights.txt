@@ -44,7 +44,7 @@ module Base
 	model CadillacGageRangerLightsFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model CadillacGageRangerLightsFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -129,7 +129,7 @@ module Base
 			texture = Vehicles/CadillacRang/Vehicle_RangerSC_GreenPolice,
 		}
 
-		textureRust = Vehicles/CadillacRang/Vehicle_RangerSC_rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/CadillacRang/Vehicle_RangerSC_mask,
 		textureLights = Vehicles/CadillacRang/Vehicle_RangerSC_lights,
 		textureDamage1Shell = Vehicles/CadillacRang/Vehicle_RangerSC_scratch,

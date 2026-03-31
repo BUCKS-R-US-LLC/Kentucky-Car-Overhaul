@@ -70,7 +70,7 @@ module Base
 	model MustangSCFrontRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model MustangSCFrontLeftDoor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -131,7 +131,7 @@ module Base
 			texture = Vehicles/FordMustang90/Vehicle_Mustang90_BlackPolice,
 		}
 
-		textureRust = Vehicles/FordMustang90/Vehicle_Mustang90_Rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/FordMustang90/Vehicle_Mustang90_Mask,
 		textureLights = Vehicles/FordMustang90/Vehicle_Mustang90_lights,
 		textureDamage1Shell = Vehicles/FordMustang90/Vehicle_Mustang90_scratches,

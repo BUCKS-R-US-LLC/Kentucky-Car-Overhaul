@@ -106,7 +106,7 @@ module Base
 	model M151FrontRightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoor1 1.0,
@@ -115,7 +115,7 @@ module Base
 	model M151FrontLeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoor1 1.0,
@@ -166,7 +166,7 @@ module Base
 			texture = Vehicles/M151A2/Vehicle_HM151_MERDCWin,
 		}
 
-		textureRust = Vehicles/M151A2/Vehicle_HM151_rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/M151A2/Vehicle_HM151_mask,
 		textureLights = Vehicles/M151A2/Vehicle_HM151_lights,
 		textureDamage1Shell = Vehicles/M151A2/Vehicle_HM151_scratch,

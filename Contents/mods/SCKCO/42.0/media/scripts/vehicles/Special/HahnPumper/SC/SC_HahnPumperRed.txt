@@ -96,7 +96,7 @@ module Base
 	model HahnPumperFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model HahnPumperFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -112,7 +112,7 @@ module Base
 	model HahnPumperRearRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -120,7 +120,7 @@ module Base
 	model HahnPumperRearLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_HahnPumper86_SC|RearLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -197,7 +197,7 @@ module Base
 			texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Red,
 		}
 
-		textureRust = Vehicles/HahnPumper/Vehicle_Hahn86Pump_rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/HahnPumper/Vehicle_Hahn86Pump_mask,
 		textureLights = Vehicles/HahnPumper/Vehicle_Hahn86Pump_lights,
 		textureDamage1Shell = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Scratch,

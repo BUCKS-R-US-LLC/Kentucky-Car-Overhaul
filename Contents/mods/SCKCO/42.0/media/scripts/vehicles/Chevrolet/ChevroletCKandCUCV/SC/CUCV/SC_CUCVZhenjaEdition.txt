@@ -44,7 +44,7 @@ module Base
 	model CUCVZhenjaEditionFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -52,7 +52,7 @@ module Base
 	model CUCVZhenjaEditionFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -109,7 +109,7 @@ module Base
 			texture = Vehicles/CUCV/Vehicle_CUCVZhenjaEdition_SC,
 		}
 
-		textureRust = Vehicles/K5/Vehicle_Blazer_rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/K5/Vehicle_Blazer_mask,
 		textureLights = Vehicles/K5/Vehicle_Blazer_lights,
 		textureDamage1Shell = Vehicles/K5/Vehicle_Blazer_damage,

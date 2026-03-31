@@ -50,7 +50,7 @@ module Base
 	model GrummanLLVFrontRightDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -58,7 +58,7 @@ module Base
 	model GrummanLLVFrontLeftDoor
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -121,7 +121,7 @@ module Base
 		textureDamage2Overlay = Vehicles/GrumLLV/Vehicle_Grum_blood,
 		textureDamage1Shell = Vehicles/GrumLLV/Vehicle_Grum_scratch,
 		textureDamage2Shell = Vehicles/GrumLLV/Vehicle_Grum_scratch,
-		textureRust = Vehicles/GrumLLV/Vehicle_Grum_rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 
 		sound
 		{

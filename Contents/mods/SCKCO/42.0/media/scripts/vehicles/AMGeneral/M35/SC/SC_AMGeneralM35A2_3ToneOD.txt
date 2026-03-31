@@ -88,7 +88,7 @@ module Base
 	model M35A2FrontRightDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model M35A2FrontLeftDoor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -171,7 +171,7 @@ module Base
 			texture = Vehicles/M35A2/Vehicle_M35A2_3tone3,
 		}
 
-		textureRust = Vehicles/M35A2/Vehicle_M35A2Rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/M35A2/Vehicle_M35A2Mask,
 		textureLights = Vehicles/M35A2/Vehicle_M35A2Lights,
 		textureDamage1Shell = Vehicles/M35A2/Vehicle_M35A2Damage,

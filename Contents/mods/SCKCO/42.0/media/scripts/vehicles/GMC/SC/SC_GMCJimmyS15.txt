@@ -58,7 +58,7 @@ module Base
 	model GMCJimmyS15FrontRightDoor
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -66,7 +66,7 @@ module Base
 	model GMCJimmyS15FrontLeftDoor
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|FrontLeftDoor_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -166,7 +166,7 @@ module Base
 			texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteTan,
 		}
 
-		textureRust = Vehicles/GMCJim/Vehicle_GMCJim_Rust,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/GMCJim/Vehicle_GMCJim_Mask,
 		textureLights = Vehicles/GMCJim/Vehicle_GMCJim_Lights,
 		textureDamage1Shell = Vehicles/GMCJim/Vehicle_GMCJim_Scratch,
