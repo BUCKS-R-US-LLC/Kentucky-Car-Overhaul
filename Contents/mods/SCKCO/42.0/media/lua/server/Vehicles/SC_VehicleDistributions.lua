@@ -467,7 +467,7 @@ VehicleDistributions.SC_MilitaryTruckBed = {
 VehicleDistributions.SC_MilitaryGunRack = {
     rolls = 100,
     items = {
-        "AssaultRifle", 100,
+        "ColtM16A2_kitted", 100,
     }
 }
 

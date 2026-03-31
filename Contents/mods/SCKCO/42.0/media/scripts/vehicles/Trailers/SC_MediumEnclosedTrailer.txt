@@ -50,13 +50,14 @@ module Base
 			texture = Vehicles\Trailer\Vehicle_MediumEnclosedTrailer,
 		}
 
-		textureMask = Vehicles/vehicle_utilitytrail er_mask,
-		textureLights = Vehicles/vehicle_utilitytrailer_lights,
-		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
-		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
-		textureDamage1Shell = Vehicles/Veh_Damage1,
-		textureDamage2Shell = Vehicles/Veh_Damage2,
-		textureRust = Vehicles/Veh_Rust,
+		textureMask = nil,
+		textureLights = nil,
+		textureDamage1Overlay = nil,
+		textureDamage2Overlay = nil,
+		textureDamage1Shell = nil,
+		textureDamage2Shell = nil,
+	    textureRust = Vehicles/SharedTextures/vehicle_norust,
+
 		extents = 1.9600 1.8000 3.4800,
 		mass = 300,
 		physicsChassisShape = 1.9600 1.8000 3.4800,
