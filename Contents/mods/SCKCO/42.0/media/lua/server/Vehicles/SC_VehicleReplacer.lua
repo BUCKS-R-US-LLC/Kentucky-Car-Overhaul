@@ -62,6 +62,8 @@ SCKCO.Data = {
 
 	["Base.Van"] = { vehicle("Base.SC_ChevroletG30", 100) },
 
+	["Base.VanSpiffo"] = { vehicle("Base.SC_ChevroletG30_Spiffo", 100) },
+		
 	["Base.VanSeats"] = {
 		vehicle("Base.SC_ChevroletG30_PassengerVan", 80),
 		vehicle("Base.SC_ChevroletG30_ChurchVan", 5),
