@@ -110,7 +110,7 @@ module Base
 	model SuburbanPoliceSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = vehicleutest,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -492,7 +492,6 @@ module Base
 		}
 
 		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
 
 		part Windshield
 		{
@@ -500,33 +499,6 @@ module Base
 			{
 				file = SuburbanPoliceSCWindshield,
 			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			itemType = SCKCO.ChevyCKSeriesWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			parent = TrunkDoor,
 
 			window
 			{

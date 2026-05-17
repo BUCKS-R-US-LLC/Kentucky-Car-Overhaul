@@ -19,6 +19,7 @@ SCKCO.Data = {
 		vehicle("Base.SC_ToyotaCamry", 30),
 		vehicle("Base.SC_ChevroletCavalier", 30),
 	},
+	
 	["Base.ModernCar02"] = {
 		vehicle("Base.SC_FordTaurus", 30),
 		vehicle("Base.SC_ToyotaCamry", 30),
@@ -30,6 +31,7 @@ SCKCO.Data = {
 		vehicle("Base.SC_VWRabbit", 30),
 		vehicle("Base.SC_VWRabbit_Pizza", 30),
 	},
+
 	["Base.SmallCar02"] = {
 		vehicle("Base.SC_HondaAccord", 30),
 		vehicle("Base.SC_VWRabbit", 30),
@@ -62,6 +64,8 @@ SCKCO.Data = {
 
 	["Base.Van"] = { vehicle("Base.SC_ChevroletG30", 100) },
 
+	["Base.VanSpiffo"] = { vehicle("Base.SC_ChevroletG30_Spiffo", 100) },
+		
 	["Base.VanSeats"] = {
 		vehicle("Base.SC_ChevroletG30_PassengerVan", 80),
 		vehicle("Base.SC_ChevroletG30_ChurchVan", 5),
@@ -122,6 +126,7 @@ SCKCO.Data = {
 		vehicle("Base.SC_FordCrownVictoria85_StatePolice", 50),
 		vehicle("Base.SC_FordCrownVictoria92_StatePolice", 50),
 	},
+	
 	["Base.CarLightsPolice"] = {
 		vehicle("Base.SC_FordCrownVictoria85_StatePolice", 50),
 		vehicle("Base.SC_FordCrownVictoria92_StatePolice", 50),
