@@ -56,7 +56,41 @@ module Base
     template vehicle BlazerAttachments
     {
         template = armorUpgrades/part/SCArmorBumper,
-        
+
+        part SCArmorBumper
+        {
+            model Default { file = K5Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+            
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = K5FrontRightWindowArmor, }
+    		parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = K5FrontLeftWindowArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = K5WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+    }
+
+    template vehicle BlazerRearSeat
+    {
         part CKSeriesRearSeat
         	{
 
@@ -109,36 +143,5 @@ module Base
                 create = Vehicles.Create.Default,
             }
 		}
-
-        part SCArmorBumper
-        {
-            model Default { file = K5Bullbar, }
-            itemType = SCKCO.ChevyCKSeriesBumperSC,
-            
-            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
-        }
-
-        template = armorUpgrades/part/SCArmorFrontRightWindow,
-        part SCArmorFrontRightWindow
-        {
-            model Default { file = K5FrontRightWindowArmor, }
-    		parent = DoorFrontRight,
-            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorFrontLeftWindow,
-        part SCArmorFrontLeftWindow
-        {
-            model Default { file = K5FrontLeftWindowArmor, }
-			parent = DoorFrontLeft,
-            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
-        }
-
-        template = armorUpgrades/part/SCArmorWindshield,
-        part SCArmorWindshield
-        {
-            model Default { file = K5WindshieldArmor, }
-            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
-        }
     }
 }
