@@ -1,0 +1,18 @@
+VERSION = 1,
+
+option SCKCO.BackfireEnabled       { type = boolean, default = true,  page = SCKCO, translation = SCKCO_BackfireEnabled, }
+option SCKCO.BackfireMinSpeed      { type = integer, default = 20,  min = 0,   max = 120, page = SCKCO, translation = SCKCO_BackfireMinSpeed, }
+option SCKCO.BackfireDecelDrop     { type = integer, default = 6,   min = 1,   max = 50,  page = SCKCO, translation = SCKCO_BackfireDecelDrop, }
+option SCKCO.BackfireDecelChance   { type = integer, default = 12,  min = 0,   max = 100, page = SCKCO, translation = SCKCO_BackfireDecelChance, }
+option SCKCO.BackfireWearScale     { type = double,  default = 0.25, min = 0.0, max = 2.0, page = SCKCO, translation = SCKCO_BackfireWearScale, }
+option SCKCO.BackfireAmbient       { type = boolean, default = true,  page = SCKCO, translation = SCKCO_BackfireAmbient, }
+option SCKCO.BackfireSputterMinWear { type = integer, default = 50,  min = 0,   max = 100, page = SCKCO, translation = SCKCO_BackfireSputterMinWear, }
+option SCKCO.BackfireAmbientScale  { type = double,  default = 0.02, min = 0.0, max = 1.0, page = SCKCO, translation = SCKCO_BackfireAmbientScale, }
+option SCKCO.BackfireMufflerDamage { type = integer, default = 3,   min = 0,   max = 50,  page = SCKCO, translation = SCKCO_BackfireMufflerDamage, }
+option SCKCO.BackfireEngineDamage  { type = integer, default = 1,   min = 0,   max = 50,  page = SCKCO, translation = SCKCO_BackfireEngineDamage, }
+option SCKCO.BackfireNoiseRadius   { type = integer, default = 30,  min = 0,   max = 150, page = SCKCO, translation = SCKCO_BackfireNoiseRadius, }
+option SCKCO.CruiseNoiseRadius     { type = integer, default = 25,  min = 0,   max = 150, page = SCKCO, translation = SCKCO_CruiseNoiseRadius, }
+option SCKCO.CruiseNoiseMinWear    { type = integer, default = 40,  min = 0,   max = 100, page = SCKCO, translation = SCKCO_CruiseNoiseMinWear, }
+option SCKCO.StartNoiseRadius      { type = integer, default = 20,  min = 0,   max = 150, page = SCKCO, translation = SCKCO_StartNoiseRadius, }
+option SCKCO.LighterEnabled        { type = boolean, default = true,  page = SCKCO, translation = SCKCO_LighterEnabled, }
+option SCKCO.LighterMinCharge      { type = integer, default = 5,   min = 0,   max = 100, page = SCKCO, translation = SCKCO_LighterMinCharge, }
