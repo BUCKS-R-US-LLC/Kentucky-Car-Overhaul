@@ -1,9 +1,9 @@
 #version 330
 
-varying vec3 vertColour;
-varying vec3 vertNormal;
-varying vec2 texCoords;
-varying vec2 texCoords1; // fallback = UV0; skinned format has no uv2 attribute, body damage uses static path
+out vec3 vertColour;
+out vec3 vertNormal;
+out vec2 texCoords;
+out vec2 texCoords1; // fallback = UV0; skinned format has no uv2 attribute, body damage uses static path
 //varying vec2 refTexCoord;
 
 layout (location = 0) in vec4 vertex;
