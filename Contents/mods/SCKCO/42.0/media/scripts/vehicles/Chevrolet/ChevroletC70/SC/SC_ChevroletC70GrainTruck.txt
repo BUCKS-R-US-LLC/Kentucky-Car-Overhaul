@@ -10,13 +10,13 @@ module Base
 	model C70GrainTruckDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model C70GrainTruckPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model C70GrainTruckWindshield
@@ -62,7 +62,7 @@ module Base
 	model C70GrainTruckTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model C70GrainTruckHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

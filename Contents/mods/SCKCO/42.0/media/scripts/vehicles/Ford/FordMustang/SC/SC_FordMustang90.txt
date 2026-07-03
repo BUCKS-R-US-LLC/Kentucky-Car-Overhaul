@@ -10,19 +10,19 @@ module Base
 	model MustangSCDriver
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model MustangSCPassenger
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model MustangSCRearPassenger
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model MustangSCWindshield
@@ -86,7 +86,7 @@ module Base
 	model MustangSCTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model MustangSCHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

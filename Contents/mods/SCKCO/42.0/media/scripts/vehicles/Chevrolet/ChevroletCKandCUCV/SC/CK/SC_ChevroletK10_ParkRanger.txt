@@ -10,13 +10,13 @@ module Base
 	model K10ParkRangerDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model K10ParkRangerPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model K10ParkRangerWindshield
@@ -60,7 +60,7 @@ module Base
 	model K10ParkRangerTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -75,7 +75,7 @@ module Base
 	model K10ParkRangerHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K10Lights_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

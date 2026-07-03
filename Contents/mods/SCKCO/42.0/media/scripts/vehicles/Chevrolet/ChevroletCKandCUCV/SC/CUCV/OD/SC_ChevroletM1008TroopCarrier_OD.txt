@@ -10,13 +10,13 @@ module Base
 	model M1008TroopCarrierDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1008TroopCarrierPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1008TroopCarrierWindshield
@@ -60,19 +60,19 @@ module Base
 	model M1008TroopCarrierTarpFrame
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|TarpFrame_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1008TroopCarrierTarp
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|Tarp_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1008TroopCarrierTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -87,7 +87,7 @@ module Base
 	model M1008TroopCarrierHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

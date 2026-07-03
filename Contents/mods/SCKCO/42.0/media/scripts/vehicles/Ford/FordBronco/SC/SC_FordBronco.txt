@@ -10,19 +10,19 @@ module Base
 	model FordBroncoDriver
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoPassenger
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoRearDouble
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordBroncoWindshield
@@ -80,7 +80,7 @@ module Base
 	model FordBroncoTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -89,7 +89,7 @@ module Base
 	model FordBroncoHood
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

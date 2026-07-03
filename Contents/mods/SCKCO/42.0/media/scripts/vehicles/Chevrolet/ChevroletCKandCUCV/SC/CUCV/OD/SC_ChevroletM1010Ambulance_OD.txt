@@ -10,13 +10,13 @@ module Base
 	model M1010AmbulanceDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1010AmbulancePassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1010AmbulanceWindshield
@@ -60,7 +60,7 @@ module Base
 	model M1010AmbulanceTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearRightDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model M1010AmbulanceHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

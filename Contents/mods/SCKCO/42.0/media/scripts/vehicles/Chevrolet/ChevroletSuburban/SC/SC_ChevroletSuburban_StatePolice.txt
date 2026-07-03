@@ -10,19 +10,19 @@ module Base
 	model SuburbanPoliceSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanPoliceSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanPoliceSCRearSeat
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanPoliceSCWindshield
@@ -119,7 +119,7 @@ module Base
 	model SuburbanPoliceSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86Police_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

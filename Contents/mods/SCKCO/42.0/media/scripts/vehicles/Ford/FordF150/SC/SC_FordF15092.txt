@@ -10,13 +10,13 @@ module Base
 	model F150Driver
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Passenger
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model F150Windshield
@@ -62,7 +62,7 @@ module Base
 	model F150Trunk
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model F150Hood
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

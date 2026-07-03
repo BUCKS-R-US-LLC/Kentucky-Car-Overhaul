@@ -10,13 +10,13 @@ module Base
 	model M1028A3Driver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1028A3Passenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}	
 	model M1028A3Windshield
@@ -60,7 +60,7 @@ module Base
 	model M1028A3Trunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -75,7 +75,7 @@ module Base
 	model M1028A3Hood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_M1028A3_SC|Hood_obj, 
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

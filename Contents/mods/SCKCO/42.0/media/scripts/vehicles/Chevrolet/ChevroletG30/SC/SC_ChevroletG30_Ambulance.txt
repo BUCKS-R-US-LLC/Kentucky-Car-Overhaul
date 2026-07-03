@@ -10,13 +10,13 @@ module Base
 	model G30AmbulanceDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model G30AmbulancePassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model G30AmbulanceWindshield
@@ -62,7 +62,7 @@ module Base
 	model G30AmbulanceSlidingRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|SlideDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = SlideDoorBone 1.0,
@@ -78,7 +78,7 @@ module Base
 	model G30AmbulanceTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorRightBone 1.0,
@@ -87,7 +87,7 @@ module Base
 	model G30AmbulanceHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30Ambulance_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

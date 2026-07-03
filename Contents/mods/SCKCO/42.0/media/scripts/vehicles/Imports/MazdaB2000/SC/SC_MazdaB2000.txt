@@ -10,13 +10,13 @@ module Base
 	model MazdaBDriver
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBPassenger
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model MazdaBWindshield
@@ -62,7 +62,7 @@ module Base
 	model MazdaBTrunk
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model MazdaBHood
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

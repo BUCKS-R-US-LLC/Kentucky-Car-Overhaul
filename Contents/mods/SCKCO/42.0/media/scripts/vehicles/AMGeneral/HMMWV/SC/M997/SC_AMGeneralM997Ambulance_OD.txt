@@ -10,25 +10,25 @@ module Base
 	model HM997Driver
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM997Passenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM997RearRightPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM997RearLeftPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|RearLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM997Windshield
@@ -74,7 +74,7 @@ module Base
 	model HM997Trunk
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -84,7 +84,7 @@ module Base
 	model HM997Hood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM997_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -93,7 +93,7 @@ module Base
 	model HM997Exhaust
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = TRUE,
 	}

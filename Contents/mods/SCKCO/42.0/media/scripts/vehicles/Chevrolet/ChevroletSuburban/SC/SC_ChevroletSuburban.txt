@@ -10,19 +10,19 @@ module Base
 	model SuburbanSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCRearSeat
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model SuburbanSCWindshield
@@ -119,7 +119,7 @@ module Base
 	model SuburbanSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_Suburb86_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

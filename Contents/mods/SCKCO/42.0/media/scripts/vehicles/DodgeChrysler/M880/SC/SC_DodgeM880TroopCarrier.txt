@@ -10,13 +10,13 @@ module Base
 	model M880TroopCarrierDriver
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|DoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M880TroopCarrierPassenger
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|DoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M880TroopCarrierWindshield
@@ -62,7 +62,7 @@ module Base
 	model M880TroopCarrierTrunk
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model M880TroopCarrierHood
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Troop_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

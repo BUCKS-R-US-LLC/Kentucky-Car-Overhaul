@@ -10,25 +10,25 @@ module Base
 	model PathfinderDriver
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderPassenger
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderRearLeftSeat
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderRearRightSeat
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PathfinderWindshield
@@ -86,7 +86,7 @@ module Base
 	model PathfinderTrunk
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model PathfinderHood
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -112,14 +112,14 @@ module Base
 	model PathfinderSpareWheelAssembly
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|SPAssembly_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}
 	model PathfinderSpareWheel
 	{
 		mesh = vehicles/Nissan/Vehicle_Pathfinder87|SpareTire_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}

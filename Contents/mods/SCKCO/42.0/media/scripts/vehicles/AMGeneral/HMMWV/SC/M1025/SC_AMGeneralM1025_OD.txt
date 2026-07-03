@@ -10,25 +10,25 @@ module Base
 	model M1025Driver
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1025Passenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1025RearRightPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1025RearLeftPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1025Windshield
@@ -108,7 +108,7 @@ module Base
 	model M1025Trunk
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -117,20 +117,20 @@ module Base
 	model M1025SlantBase
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|SlantBase_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model M1025Slant
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Slant_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}
 	model M1025Hood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -139,7 +139,7 @@ module Base
 	model M1025Exhaust
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|Exhaust_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = TRUE,
 	}

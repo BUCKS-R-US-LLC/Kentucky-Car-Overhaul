@@ -10,13 +10,13 @@ module Base
 	model CadillacGageRangerLightsDriver
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsPassenger
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearDouble_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacGageRangerLightsWindshield
@@ -72,7 +72,7 @@ module Base
 	model CadillacGageRangerLightsTrunk
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = false,
 		boneWeight = RearLeftDoorBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model CadillacGageRangerLightsHood
 	{
 		mesh = vehicles/Special/Vehicle_RangerPol_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

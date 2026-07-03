@@ -10,19 +10,19 @@ module Base
 	model JeepCherokeePoliceDriver
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePolicePassenger
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceDouble
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePoliceWindshield
@@ -110,7 +110,7 @@ module Base
 	model JeepCherokeePoliceTrunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -118,7 +118,7 @@ module Base
 	model JeepCherokeePoliceHood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokeePolice_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

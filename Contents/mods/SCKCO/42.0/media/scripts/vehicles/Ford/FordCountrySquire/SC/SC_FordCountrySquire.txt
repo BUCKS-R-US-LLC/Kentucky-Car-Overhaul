@@ -10,19 +10,19 @@ module Base
 	model FordCountrySquireDriver
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquirePassenger
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|FrontPassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireDouble
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|RearPassengerSeatDouble_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FordCountrySquireWindshield
@@ -114,7 +114,7 @@ module Base
 	model FordCountrySquireTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -123,7 +123,7 @@ module Base
 	model FordCountrySquireHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordCountrySquire_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

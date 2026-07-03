@@ -10,13 +10,13 @@ module Base
 	model BlazerFossoilSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerFossoilSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model BlazerFossoilSCWindshield
@@ -72,7 +72,7 @@ module Base
 	model BlazerFossoilSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -81,7 +81,7 @@ module Base
 	model BlazerFossoilSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

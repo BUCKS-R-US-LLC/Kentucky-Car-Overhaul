@@ -10,13 +10,13 @@ module Base
 	model FuneralCoachSCDriver
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCPassenger
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model FuneralCoachSCWindshield
@@ -102,7 +102,7 @@ module Base
 	model FuneralCoachSCTrunk
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -110,7 +110,7 @@ module Base
 	model FuneralCoachSCHood
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadillacFuneralCoach_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

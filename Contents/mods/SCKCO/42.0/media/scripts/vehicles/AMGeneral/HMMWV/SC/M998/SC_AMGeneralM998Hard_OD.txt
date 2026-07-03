@@ -10,25 +10,25 @@ module Base
 	model HM998HardtopDriver
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998HardtopPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998HardtopRearRightPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998HardtopRearLeftPassenger
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|RearLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HM998HardtopWindshield
@@ -108,14 +108,14 @@ module Base
 	model HM998HardtopSlant
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Slant_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 	}
 	model HM998HardtopTrunk
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -124,7 +124,7 @@ module Base
 	model HM998HardtopHood
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -133,7 +133,7 @@ module Base
 	model HM998Exhaust
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|Exhaust_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = TRUE,
 	}

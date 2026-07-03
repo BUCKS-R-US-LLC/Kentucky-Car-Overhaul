@@ -10,13 +10,13 @@ module Base
 	model GMCJimmyS15Driver
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15Passenger
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model GMCJimmyS15Windshield
@@ -74,7 +74,7 @@ module Base
 	model GMCJimmyS15Trunk
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -92,7 +92,7 @@ module Base
 	model GMCJimmyS15Hood
 	{
 		mesh = vehicles/GMC/Vehicle_GMCJim_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

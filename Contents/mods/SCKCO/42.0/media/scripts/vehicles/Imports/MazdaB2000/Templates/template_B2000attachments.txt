@@ -4,21 +4,21 @@ module Base
 	model MazdaBBumper
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontBumper_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model MazdaBWindshieldArmor
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model MazdaBFrontLeftDoorArmor
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -26,7 +26,7 @@ module Base
 	model MazdaBFrontRightDoorArmor
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -34,7 +34,7 @@ module Base
 	model MazdaBFLWA
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model MazdaBFRWA
 	{
 		mesh = vehicles/Mazda/Vehicle_MazdaB_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowArmorBone 1.0,

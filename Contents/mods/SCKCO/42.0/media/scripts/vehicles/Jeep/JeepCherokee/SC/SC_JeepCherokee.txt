@@ -10,19 +10,19 @@ module Base
 	model JeepCherokeeDriver
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeePassenger
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeDouble
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCherokeeWindshield
@@ -110,7 +110,7 @@ module Base
 	model JeepCherokeeTrunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -118,7 +118,7 @@ module Base
 	model JeepCherokeeHood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCherokee_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

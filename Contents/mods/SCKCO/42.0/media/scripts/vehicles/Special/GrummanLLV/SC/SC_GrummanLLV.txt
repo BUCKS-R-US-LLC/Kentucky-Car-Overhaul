@@ -10,19 +10,19 @@ module Base
 	model GrummanLLVDriver
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVPassenger
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVRearDouble
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model GrummanLLVWindshield
@@ -66,7 +66,7 @@ module Base
 	model GrummanLLVTrunk
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = RearDoorBone 1.0,
@@ -79,7 +79,7 @@ module Base
 	model GrummanLLVHood
 	{
 		mesh = vehicles/Special/Vehicle_Grum_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

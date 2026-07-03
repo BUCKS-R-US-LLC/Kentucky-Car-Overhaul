@@ -4,21 +4,21 @@ module Base
 	model F150Bumper
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontBumper_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model F150WindshieldArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model F150FrontLeftDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -26,7 +26,7 @@ module Base
 	model F150FrontRightDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -34,7 +34,7 @@ module Base
 	model F150FLWA
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model F150FRWA
 	{
 		mesh = vehicles/Ford/Vehicle_F1501992_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowArmorBone 1.0,

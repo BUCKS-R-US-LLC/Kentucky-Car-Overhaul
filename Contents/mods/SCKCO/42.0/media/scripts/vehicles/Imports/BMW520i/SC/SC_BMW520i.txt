@@ -10,13 +10,13 @@ module Base
 	model BMW520iDriver
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model BMW520iPassenger
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model BMW520iWindshield
@@ -96,7 +96,7 @@ module Base
 	model BMW520iTrunk
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -104,7 +104,7 @@ module Base
 	model BMW520iHood
 	{
 		mesh = vehicles/BMW/Vehicle_520iBMW_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

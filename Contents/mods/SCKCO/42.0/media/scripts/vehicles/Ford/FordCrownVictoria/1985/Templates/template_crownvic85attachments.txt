@@ -4,21 +4,21 @@ module Base
 	model CrownVictoriaBumper
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontBumper_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model CrownVictoriaWindshieldArmor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model CrownVictoriaFrontLeftDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -26,7 +26,7 @@ module Base
 	model CrownVictoriaFrontRightDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 
@@ -35,7 +35,7 @@ module Base
     model CrownVictoriaRearLeftDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 
@@ -44,7 +44,7 @@ module Base
 	model CrownVictoriaRearRightDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 
@@ -53,7 +53,7 @@ module Base
 	model CrownVicFLWA
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
@@ -62,7 +62,7 @@ module Base
 	model CrownVicFRWA
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowArmorBone 1.0,
@@ -71,7 +71,7 @@ module Base
 	model CrownVicRLWA
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearLeftWindowArmorBone 1.0,
@@ -80,7 +80,7 @@ module Base
 	model CrownVicRRWA
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVictoria_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightWindowArmorBone 1.0,

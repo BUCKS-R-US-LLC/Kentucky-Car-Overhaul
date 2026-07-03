@@ -3,14 +3,14 @@ module Base
 	model SC_M1101
 	{
 		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|base_mesh,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 	model SC_M1101Trunk
 	{
 		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|Trunkdoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone1 1.0,
@@ -20,14 +20,14 @@ module Base
 	model M1011Bowkit
 	{
 		mesh = vehicles/Trailer/Vehicle_M1101Trailer|Bowkit_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model M1011Tarp
 	{
 		mesh = vehicles/Trailer/Vehicle_M1101Trailer|Tarp_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
         static = TRUE,
 		scale = 0.01,
 	}

@@ -10,13 +10,13 @@ module Base
 	model Porsche911Driver
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model Porsche911Passenger
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model Porsche911Windshield
@@ -74,7 +74,7 @@ module Base
 	model Porsche911Trunk
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -82,7 +82,7 @@ module Base
 	model Porsche911Hood
 	{
 		mesh = vehicles/Porsche/Vehicle_Porsche911G50_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

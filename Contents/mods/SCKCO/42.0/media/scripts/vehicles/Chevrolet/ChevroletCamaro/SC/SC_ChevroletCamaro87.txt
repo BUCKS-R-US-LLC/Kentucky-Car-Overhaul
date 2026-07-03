@@ -10,19 +10,19 @@ module Base
 	model CamaroSCDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|FrontPassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCRearPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|RearPassengerSeatDouble_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CamaroSCWindshield
@@ -88,7 +88,7 @@ module Base
 	model CamaroSCTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -96,7 +96,7 @@ module Base
 	model CamaroSCHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_CamaroTTop_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

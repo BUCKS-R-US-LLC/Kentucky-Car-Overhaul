@@ -10,13 +10,13 @@ module Base
 	model F350AmbulanceDriver
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulancePassenger
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model F350AmbulanceWindshield
@@ -68,7 +68,7 @@ module Base
 	model F350AmbulanceSlidingRightDoor
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|RearRightDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = RearRightDoorBone 1.0,
@@ -84,7 +84,7 @@ module Base
 	model F350AmbulanceHood
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -92,7 +92,7 @@ module Base
 	model F350AmbulanceTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone1 1.0,

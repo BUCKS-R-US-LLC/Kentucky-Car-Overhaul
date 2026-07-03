@@ -10,19 +10,19 @@ module Base
 	model HondaAccordDriver
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordPassenger
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|FrontPassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordDouble
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|RearPassengerSeatDouble_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model HondaAccordWindshield
@@ -80,7 +80,7 @@ module Base
 	model HondaAccordTrunk
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -88,7 +88,7 @@ module Base
 	model HondaAccordHood
 	{
 		mesh = vehicles/Honda/Vehicle_HondaAccord_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

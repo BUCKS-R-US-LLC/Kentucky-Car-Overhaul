@@ -3,14 +3,14 @@ module Base
 	model SC_SmallUtilityTrailer
 	{
 		mesh = Vehicles/Trailer/Vehicle_SmallUtilityTrailer|base_mesh,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 	model SC_SmallUtilityTrailerTrunk
 	{
 		mesh = Vehicles/Trailer/Vehicle_SmallUtilityTrailer|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		scale = 0.01,

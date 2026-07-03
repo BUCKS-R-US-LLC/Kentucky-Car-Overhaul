@@ -4,21 +4,21 @@ module Base
 	model F350AmbulanceBumper
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontBumper_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model F350AmbulanceWindshieldArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model F350AmbulanceFrontLeftDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -26,7 +26,7 @@ module Base
 	model F350AmbulanceFrontRightDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 	}
@@ -34,7 +34,7 @@ module Base
 	model F350AmbulanceFLWA
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -43,7 +43,7 @@ module Base
 	model F350AmbulanceFRWA
 	{
 		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,

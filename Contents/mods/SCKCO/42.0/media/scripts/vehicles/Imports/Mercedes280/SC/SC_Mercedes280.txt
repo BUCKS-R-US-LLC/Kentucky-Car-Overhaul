@@ -10,19 +10,19 @@ module Base
 	model Mercedes280Driver
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model Mercedes280Passenger
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontPassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model Mercedes280Double
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|RearPassengerSeatDouble_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model Mercedes280Windshield
@@ -110,7 +110,7 @@ module Base
 	model Mercedes280Hood
 	{
 		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

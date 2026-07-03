@@ -3,14 +3,14 @@ module Base
 	model SC_MediumLivestockTrailer
 	{
 		mesh = Vehicles/Trailer/Vehicle_LivestockTrailer|base_mesh,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 	model SC_MediumLivestockTrailerTrunk
 	{
 		mesh = Vehicles/Trailer/Vehicle_LivestockTrailer|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		boneWeight = TrunkBone2 1.0,
@@ -19,20 +19,20 @@ module Base
 	model SC_MediumLivestockWindshield
 	{
 		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|Windshield_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 0.01,
 	}
 	model SC_MediumLivestockFrontRightWindow
 	{
 		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|FrontRightWindow_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = TRUE,
 		scale = 0.01,
 	}
 	model SC_MediumLivestockFrontLeftWindow
 	{
 		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|FrontLeftWindow_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = TRUE,
 		scale = 0.01,
 	}
@@ -47,7 +47,7 @@ module Base
 	model SC_MediumLivestockRearWindshield
 	{
 		mesh = vehicles/Trailer/Vehicle_LivestockTrailer|RearWindshield_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
 		scale = 0.01,

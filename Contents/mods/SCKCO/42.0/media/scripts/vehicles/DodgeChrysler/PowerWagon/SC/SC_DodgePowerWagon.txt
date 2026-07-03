@@ -10,13 +10,13 @@ module Base
 	model PowerWagonDriver
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|DoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PowerWagonPassenger
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|DoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PowerWagonWindshield
@@ -62,7 +62,7 @@ module Base
 	model PowerWagonTrunk
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|TrunkDoor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -76,7 +76,7 @@ module Base
 	model PowerWagonHood
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_PowerWag1979_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

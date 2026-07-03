@@ -9,19 +9,19 @@ module Base
 	model CadillacBroughamDriver
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamPassenger
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamDouble
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CadillacBroughamWindshield
@@ -107,7 +107,7 @@ module Base
 	model CadillacBroughamTrunk
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -115,7 +115,7 @@ module Base
 	model CadillacBroughamHood
 	{
 		mesh = vehicles/Cadillac/Vehicle_CadiBrough88_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

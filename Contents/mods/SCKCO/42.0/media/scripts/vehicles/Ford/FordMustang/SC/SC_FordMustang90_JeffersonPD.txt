@@ -10,19 +10,19 @@ module Base
 	model PoliceMustangSCDriver
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PoliceMustangSCPassenger
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PoliceMustangSCRearPassenger
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model PoliceMustangSCWindshield
@@ -86,7 +86,7 @@ module Base
 	model PoliceMustangSCTrunk
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -94,7 +94,7 @@ module Base
 	model PoliceMustangSCHood
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

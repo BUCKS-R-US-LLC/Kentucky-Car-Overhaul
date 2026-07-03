@@ -4,21 +4,21 @@ module Base
 	model FordMustangBumper
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Bullbar_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model FordMustangWindshieldArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|WindshieldArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 
 	model FordMustangFrontLeftDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -27,7 +27,7 @@ module Base
 	model FordMustangFrontRightDoorArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightDoorArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -36,7 +36,7 @@ module Base
 	model FordMustangFrontLeftWindowArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftArmorBone 1.0,
@@ -45,7 +45,7 @@ module Base
 	model FordMustangFrontRightWindowArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightArmorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model FordMustangRearRightWindowArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearRightWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
         static = TRUE,
 	}
@@ -62,7 +62,7 @@ module Base
 	model FordMustangRearLeftWindowArmor
 	{
 		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearLeftWindowArmor_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
         static = TRUE,
 	}

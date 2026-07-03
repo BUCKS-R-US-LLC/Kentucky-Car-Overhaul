@@ -10,19 +10,19 @@ module Base
 	model CrownVictoria92Driver
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|DriverSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoria92Passenger
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|PassengerSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoria92Double
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|RearDoubleSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model CrownVictoria92Windshield
@@ -116,7 +116,7 @@ module Base
 	model CrownVictoria92Trunk
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -124,7 +124,7 @@ module Base
 	model CrownVictoria92Hood
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,

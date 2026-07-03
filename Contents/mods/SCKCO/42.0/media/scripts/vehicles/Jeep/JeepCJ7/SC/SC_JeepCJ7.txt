@@ -9,13 +9,13 @@ module Base
 	model JeepCJ7Driver
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Passenger
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
 	model JeepCJ7Windshield
@@ -61,7 +61,7 @@ module Base
 	model JeepCJ7Trunk
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Trunk_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model JeepCJ7Hood
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Hood_obj,
-		shader = vehicle_noreflect,
+		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
