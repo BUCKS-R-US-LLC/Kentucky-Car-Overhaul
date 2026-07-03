@@ -2,7 +2,6 @@
 varying vec3 vertColour;
 varying vec3 vertNormal;
 varying vec2 texCoords;
-varying vec2 texCoords1; // rust + damage authored against second UV set
 
 uniform sampler2D Texture0;
 uniform vec4 TexturePainColor;
@@ -70,10 +69,10 @@ void main() {
     float dotprod;
 
     vec4 texColorMask         = texture2D(TextureMask,         texCoords);
+    vec4 texColorRust         = texture2D(TextureRust,         texCoords);
     vec4 texColorLights       = texture2D(TextureLights,       texCoords);
-    vec4 texColorRust         = texture2D(TextureRust,         texCoords1);
-    vec4 texColorDamage1Shell = texture2D(TextureDamage1Shell, texCoords1);
-    vec4 texColorDamage2Shell = texture2D(TextureDamage2Shell, texCoords1);
+    vec4 texColorDamage1Shell = texture2D(TextureDamage1Shell, texCoords);
+    vec4 texColorDamage2Shell = texture2D(TextureDamage2Shell, texCoords);
 
     // Lighting
     vec3 lighting = AmbientColour;

@@ -3,7 +3,6 @@
 out vec3 vertColour;
 out vec3 vertNormal;
 out vec2 texCoords;
-out vec2 texCoords1; // second UV set: rust + damage atlas
 out vec4 positionEye;
 
 layout (location = 0) in vec4 vertex;
@@ -33,7 +32,6 @@ void main()
 	vec4 normal = vec4(normal.xyz, 0);
 
 	texCoords = uv.st;
-	texCoords1 = uv2.st;
 
 	vertNormal = (transform * normal).xyz;
 	vertColour = vec3(1,1,1);

@@ -169,14 +169,14 @@ void main()
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
 	col = mix(col, hsv2rgb(fragHSV), 1.0-tex.a);
 	
-	float ref_en = step(0.5, texen2[0][0] + texen1[1][2] + texen1[1][3] + texen1[2][0] + texen1[2][1] + texen1[2][2] + texen1[2][3]);
+	float ref_en = texen2[0][0] + texen1[1][2] + texen1[1][3] + texen1[2][0] + texen1[2][1] + texen1[2][2] + texen1[2][3];
     vec2 refTexCoord = SphereMap( normalize(normal), positionEye.xyz );
 	vec3 texRefA = texture2D(TextureReflectionA, refTexCoord).xyz;
 	vec3 texRefB = texture2D(TextureReflectionB, refTexCoord).xyz;
 	vec3 texRef = mix(texRefB, texRefA, ReflectionParam.x);
 	
 	col = mix(col, texRef, ref_en*(0.1+ReflectionParam.y*0.5)); // 0.6 max 0.1 min
-	// col = mix(col, texRef/4.0, (1.0-ref_en)*(0.05 + ReflectionParam.z*0.3)); // 0.2 max 
+	col = mix(col, texRef/4.0, (1.0-ref_en)*(0.05 + ReflectionParam.z*0.3)); // 0.2 max 
 	
 	col = mix(col, texColorLights.xyz, texColorLights.a*t1en);
 	

@@ -3,7 +3,6 @@
 varying vec3 vertColour; 
 varying vec3 vertNormal;
 varying vec2 texCoords;
-varying vec2 texCoords1; // rust + damage authored against second UV set
 varying vec4 positionEye;
 
 uniform sampler2D Texture0;
@@ -91,12 +90,12 @@ void main()
 	float pixelVal = (col.x + col.y + col.z) / 3.0;
 	
 	vec4 texColorMask = texture2D(TextureMask, texCoords);
+	vec4 texColorRust = texture2D(TextureRust, texCoords);
 	vec4 texColorLights = texture2D(TextureLights, texCoords);
-	vec4 texColorRust = texture2D(TextureRust, texCoords1);
-	vec4 texColorDamage1Overlay = texture2D(TextureDamage1Overlay, texCoords1);
-	vec4 texColorDamage1Shell = texture2D(TextureDamage1Shell, texCoords1);
-	vec4 texColorDamage2Overlay = texture2D(TextureDamage2Overlay, texCoords1);
-	vec4 texColorDamage2Shell = texture2D(TextureDamage2Shell, texCoords1);
+	vec4 texColorDamage1Overlay = texture2D(TextureDamage1Overlay, texCoords);
+	vec4 texColorDamage1Shell = texture2D(TextureDamage1Shell, texCoords);
+	vec4 texColorDamage2Overlay = texture2D(TextureDamage2Overlay, texCoords);
+	vec4 texColorDamage2Shell = texture2D(TextureDamage2Shell, texCoords);
 
 	vec3 lighting = AmbientColour;
 	dotprod = max(dot(normal, normalize(Light0Direction)), 0.0);
@@ -159,7 +158,6 @@ void main()
 	float t2en = step(0.5, dommat4(texen1, TextureDamage1Enables1) + dommat4(texen2, TextureDamage1Enables2) );
 	float t3en = step(0.5, dommat4(texen1, TextureDamage2Enables1) + dommat4(texen2, TextureDamage2Enables2) );
 	float t4en = step(0.5, dommat4(texen1, TextureUninstall1) + dommat4(texen2, TextureUninstall2) );
-	float windowAlpha = clamp(texen1[1][2] + texen1[1][3] + texen1[2][0] + texen1[2][1] + texen1[2][2] + texen1[2][3], 0.0, 1.0);
 	
 	col = col*lighting*TintColourNew;
     vec3 fragHSV = rgb2hsv(col.rgb).xyz;
@@ -187,8 +185,7 @@ void main()
 	fragHSV.y = clamp(fragHSV.y + TexturePainColor.y - 0.5, 0.0, 0.9999);
     fragHSV.z = clamp(fragHSV.z + TexturePainColor.z - 0.5, 0.0, 0.9999);
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
-	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage1Shell.a*t2en*(1.0-windowAlpha));
-	col = mix(col, texColorDamage1Shell.xyz*lighting, texColorDamage1Shell.a*t2en*windowAlpha); // window cracks natural, no paint hue
+	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage1Shell.a*t2en);
 	col = mix(col, texColorDamage1Overlay.xyz*lighting*TintColourNew, texColorDamage1Overlay.a*t2en);
 	
 	fragHSV = rgb2hsv(texColorDamage2Shell.xyz).xyz;
@@ -196,8 +193,7 @@ void main()
 	fragHSV.y = clamp(fragHSV.y + TexturePainColor.y - 0.5, 0.0, 0.9999);
     fragHSV.z = clamp(fragHSV.z + TexturePainColor.z - 0.5, 0.0, 0.9999);
     fragHSV.xyz = mod(fragHSV.xyz, 1.0);
-	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage2Shell.a*t3en*(1.0-windowAlpha));
-	col = mix(col, texColorDamage2Shell.xyz*lighting, texColorDamage2Shell.a*t3en*windowAlpha); // window cracks natural, no paint hue
+	col = mix(col, hsv2rgb(fragHSV)*lighting*TintColourNew, texColorDamage2Shell.a*t3en);
 	col = mix(col, texColorDamage2Overlay.xyz*lighting*TintColourNew, texColorDamage2Overlay.a*t3en);
 	
 	col = mix(col, vec3(0.2), t4en);

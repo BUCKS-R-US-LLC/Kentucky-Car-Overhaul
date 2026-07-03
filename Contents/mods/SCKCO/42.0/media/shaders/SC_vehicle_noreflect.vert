@@ -1,11 +1,10 @@
 #version 330
 
-out vec3 vertColour;
-out vec3 vertNormal;
-out vec2 texCoords;
-out vec2 texCoords1; // fallback = UV0; see note if skinned parts show scrambled damage
-//out vec2 refTexCoord;
-out vec4 positionEye;
+varying vec3 vertColour;
+varying vec3 vertNormal;
+varying vec2 texCoords;
+varying vec2 texCoords1; // fallback = UV0; skinned format has no uv2 attribute, body damage uses static path
+//varying vec2 refTexCoord;
 
 layout (location = 0) in vec4 vertex;
 layout (location = 1) in vec4 normal;
@@ -14,8 +13,8 @@ layout (location = 3) in vec4 boneIndices;
 layout (location = 4) in vec2 uv;
 
 uniform mat4 ModelViewProjection;
-uniform mat4 MatrixPalette[60];
 uniform float targetDepth = 0.5;
+uniform mat4 MatrixPalette[60];
 
 vec2 SphereMap(in vec3 normal, in vec3 ecPosition3)
 {
@@ -35,7 +34,7 @@ void main()
 	vec4 normal = vec4(normal.xyz, 0.0);
 
 	texCoords = uv.st;
-	texCoords1 = uv.st; // no uv2 attribute in the skinned format; body damage uses the static path
+	texCoords1 = uv.st;
 
 	mat4 boneEffect = mat4(0.0);
 	if(boneWeights.x > 0.0)
@@ -50,15 +49,13 @@ void main()
 	normal = boneEffect * normal;
 	vertNormal = normal.xyz;
 	vertColour = vec3(1.0,1.0,1.0);
-	positionEye = (ModelViewProjection * boneEffect * position) - vec4(-0.2, 0.2, 0.2, 0);
 
 	vec4 o = ModelViewProjection * boneEffect * position;
 	float clip = ((o.z+1.0) / 2.0); // -1,+1 -> 0,2 -> 0,1
 	clip += targetDepth - 0.5;
 	o.z = (clip*2)-1; // 0-1 -> 0-2 -> -1,+1
 	gl_Position = o;
-
-//	vec3 posEyeRaw = vec3(0.5, 0.5, 0) - position.xyz;
-//	vec4 PositionEye = ModelViewProjection * vec4(posEyeRaw, 1.0);
-//	refTexCoord = SphereMap( normalize(normal.xyz), PositionEye.xyz );
+	
+//	vec3 PositionEye = ModelViewProjection * (vec3(0.5, 0.5, 0) - position);
+//	refTexCoord = SphereMap( normalize(normal.xyz), PositionEye );
 }

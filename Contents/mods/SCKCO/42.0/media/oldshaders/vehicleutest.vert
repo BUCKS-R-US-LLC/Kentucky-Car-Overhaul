@@ -3,7 +3,6 @@
 out vec3 vertColour;
 out vec3 vertNormal;
 out vec2 texCoords;
-out vec2 texCoords1; // fallback = UV0; see note if skinned parts show scrambled damage
 //out vec2 refTexCoord;
 out vec4 positionEye;
 
@@ -35,7 +34,6 @@ void main()
 	vec4 normal = vec4(normal.xyz, 0.0);
 
 	texCoords = uv.st;
-	texCoords1 = uv.st; // no uv2 attribute in the skinned format; body damage uses the static path
 
 	mat4 boneEffect = mat4(0.0);
 	if(boneWeights.x > 0.0)

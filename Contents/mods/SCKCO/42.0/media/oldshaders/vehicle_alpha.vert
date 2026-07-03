@@ -3,7 +3,6 @@
 varying vec3 vertColour;
 varying vec3 vertNormal;
 varying vec2 texCoords;
-varying vec2 texCoords1;
 //varying vec2 refTexCoord;
 
 attribute vec4 boneIndices;
@@ -29,11 +28,6 @@ void main()
 	vec4 normal = vec4(gl_Normal.xyz, 0.0);
 
 	texCoords = gl_MultiTexCoord0.st;
-#ifdef MULTI_UV
-	texCoords1 = gl_MultiTexCoord1.st;
-#else
-	texCoords1 = gl_MultiTexCoord0.st;
-#endif
 
 	mat4 boneEffect = mat4(0.0);
 	if(boneWeights.x > 0.0)
