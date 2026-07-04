@@ -1798,7 +1798,7 @@ addEntry("SC_FordMustang90",     VehicleDistributions.SC_Sport, { Sport_T, Sport
 -- Luxury
 addEntry("SC_Porsche911",       VehicleDistributions.SC_Luxury, { Lux_E, Lux_B, LuxAdv, Sport_T })
 addEntry("SC_BMW520i",          VehicleDistributions.SC_Luxury, { Lux_B, Lux_E, Commuter })
-addEntry("SC_CadillacBrougham", VehicleDistributions.SC_Luxury, { Lux_E, Drinker, Smoker })
+addEntry("SC_CadillacFleetwoodBrougham", VehicleDistributions.SC_Luxury, { Lux_E, Drinker, Smoker })
 addEntry("SC_CadillacLimo",     VehicleDistributions.SC_Luxury, { Lux_E })
 addEntry("SC_Mercedes280",      VehicleDistributions.SC_Luxury, { Lux_B, Lux_E, LuxAdv })
 
@@ -1843,7 +1843,7 @@ addEntry("SC_ChevroletC70Survivalist", VehicleDistributions.SC_Militia, { Surviv
 --  AMBULANCE
 -- ============================================================
 addEntry("VanAmbulance",                     VehicleDistributions.SC_Ambulance, nil)
-addEntry("SC_ChevroletG30Ambulance",         VehicleDistributions.SC_Ambulance, nil)
+addEntry("SC_ChevroletG30_Ambulance",         VehicleDistributions.SC_Ambulance, nil)
 addEntry("SC_FordF350Ambulance_StPeregrin",  VehicleDistributions.SC_Ambulance, nil)
 addEntry("SC_FordF350Ambulance_Meade",       VehicleDistributions.SC_Ambulance, nil)
 addEntry("SC_FordF350Ambulance_Life",        VehicleDistributions.SC_Ambulance, nil)
@@ -1855,7 +1855,6 @@ distributionTable["SC_FordF700Armored_Brinks"]    = { Normal = VehicleDistributi
 distributionTable["SC_FordF700Armored_Transport"] = { Normal = VehicleDistributions.SC_BankCar }
 
 -- SWAT
-distributionTable["SC_FordF700Armored_Police"] = { Normal = VehicleDistributions.SC_SWAT }
 distributionTable["SC_ChevroletP30_SWAT"]      = { Normal = VehicleDistributions.SC_SWAT }
 
 -- State Police
@@ -1874,15 +1873,15 @@ distributionTable["SC_ChevroletK10_ParkRanger"]          = { Normal = VehicleDis
 distributionTable["SC_ChevroletK5Blazer_ParkRanger"]     = { Normal = VehicleDistributions.SC_ParkRanger }
 
 -- City Police
-distributionTable["SC_FordCrownVictoria85LouisvillePolice"] = { Normal = VehicleDistributions.SC_CityPolice }
-distributionTable["SC_FordCrownVictoria92LouisvillePolice"] = { Normal = VehicleDistributions.SC_CityPolice }
-distributionTable["SC_FordCrownVictoria92JeffersonPolice"]  = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria85_LouisvillePD"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria92_LouisvillePD"] = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_FordCrownVictoria92_JeffersonPD"]  = { Normal = VehicleDistributions.SC_CityPolice }
 
 -- Sheriff
-distributionTable["SC_FordCrownVictoria92JeffersonSheriff"] = { Normal = VehicleDistributions.SC_DeputySheriff }
-distributionTable["SC_FordCrownVictoria92MuhlenSheriff"]    = { Normal = VehicleDistributions.SC_DeputySheriff }
-distributionTable["SC_FordCrownVictoria92WarrenSheriff"]    = { Normal = VehicleDistributions.SC_DeputySheriff }
-distributionTable["SC_FordCrownVictoria92MeadeSheriff"]     = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoria92_JeffersonSheriff"] = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoria92_MuhlenSheriff"]    = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoria92_WarrenSheriff"]    = { Normal = VehicleDistributions.SC_DeputySheriff }
+distributionTable["SC_FordCrownVictoria92_MeadeSheriff"]     = { Normal = VehicleDistributions.SC_DeputySheriff }
 
 -- Military
 distributionTable["SC_DodgeM880"]                           = { Normal = VehicleDistributions.SC_Military }
@@ -1905,22 +1904,16 @@ distributionTable["SC_CadillacLimo"] = { Normal = VehicleDistributions.SC_Limo }
 
 distributionTable["SC_AMGeneralM151A2_3Tone"]      = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM151A2_Tan"]        = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM151A2_OD"]         = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM151A2_MERDC"]      = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM151A2_Cleaners"]   = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097_3Tone"]       = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097_OD"]          = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097_Tan"]         = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097TroopCarrier_3Tone"] = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1097TroopCarrier_OD"]   = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM1097TroopCarrier_Tan"]  = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025_3Tone"]       = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025_OD"]          = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025_Tan"]         = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025MP_3Tone"]     = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025MP_OD"]        = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM1025MP_Tan"]       = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM997Ambulance_3Tone"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM997Ambulance_OD"]  = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM997Ambulance_Tan"] = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_AMGeneralM998Soft_3Tone"]    = { Normal = VehicleDistributions.SC_Military }
@@ -1928,9 +1921,7 @@ distributionTable["SC_AMGeneralM998Soft_OD"]       = { Normal = VehicleDistribut
 distributionTable["SC_AMGeneralM998Soft_Tan"]      = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Hard_3Tone"]    = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM998Hard_OD"]       = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM998Hard_Tan"]      = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM35A2_3Tone"]       = { Normal = VehicleDistributions.SC_Military }
-distributionTable["SC_AMGeneralM35A2_OD"]          = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_AMGeneralM35A2"]              = { Normal = VehicleDistributions.SC_Military }
 distributionTable["SC_AMGeneralM35A2_MERDC"]       = { Normal = VehicleDistributions.SC_Military }
 
 -- Fire
@@ -1953,11 +1944,11 @@ distributionTable["SC_ChevroletG30_Spiffo"]        = { Normal = VehicleDistribut
 distributionTable["SC_ChevroletG30_McCoy"]         = { Normal = VehicleDistributions.SC_McCoy }
 distributionTable["SC_ChevroletG30_LBMW"]          = { Normal = VehicleDistributions.Radio }
 distributionTable["SC_ChevroletG30_3N"]            = { Normal = VehicleDistributions.Radio }
-distributionTable["SC_ChevroletG30Ambulance"]      = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_ChevroletG30_Ambulance"]      = { Normal = VehicleDistributions.SC_Ambulance }
 distributionTable["SC_GrummanLLV"]                 = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["SC_ChevroletG30_Mail"]          = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["SC_ChevroletG30_FedEx"]         = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["StepVanMail"]                   = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["StepVan_Heralds"]               = { Normal = VehicleDistributions.SC_PaperCar }
 distributionTable["SC_ChevroletP30_Heralds"]       = { Normal = VehicleDistributions.SC_PaperCar }
-distributionTable["SC_ChevroletG30_Heralds"]       = { Normal = VehicleDistributions.SC_PaperCar }
+distributionTable["SC_ChevroletP30_Heralds"]       = { Normal = VehicleDistributions.SC_PaperCar }
