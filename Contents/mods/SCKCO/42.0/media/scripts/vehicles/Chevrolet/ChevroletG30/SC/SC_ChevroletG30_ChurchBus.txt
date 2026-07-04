@@ -171,7 +171,7 @@ module Base
 		}
 
 		extents = 3.2881 3.0847 9.0169,
-		mass = 600,
+		mass = 1175,
 		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
 		shadowExtents = 3.8942 10.2210,
@@ -798,6 +798,44 @@ module Base
 			anim Opened
 			{
 				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyG30DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = G30SeatsSlidingRightDoor,
+			}
+
+			anim Close
+			{
+				anim = SlideDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = SlideDoorClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
