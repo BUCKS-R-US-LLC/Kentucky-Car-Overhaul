@@ -339,16 +339,16 @@ module Base
 		
 		template = G30ThirtyLogo,
 		template = G30WindowlessAttachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
 		template = GloveBox,
 		template = Trunk/part/TruckBed,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerNormal,
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -740,7 +740,7 @@ module Base
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 
-		template = Tire,
+		template = SCTireNormal,
 		
 
 		part TireFrontLeft
@@ -792,7 +792,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionNormal,
 
 		part Suspension*
 		{
@@ -809,7 +809,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		part PassengerCompartment

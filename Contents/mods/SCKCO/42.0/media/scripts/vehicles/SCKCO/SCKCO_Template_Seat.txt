@@ -1,0 +1,110 @@
+module Base
+{
+    template vehicle SCSeat
+    {
+        part SeatFrontLeft
+        {
+            mechanicArea = Interior,
+            area = SeatFrontLeft,
+            container
+            {
+                seat = FrontLeft,
+            }
+        }
+        part SeatFrontRight
+        {
+            mechanicArea = Interior,
+            area = SeatFrontRight,
+            container
+            {
+                seat = FrontRight,
+            }
+        }
+        part SeatMiddleLeft
+        {
+            mechanicArea = Interior,
+            area = SeatMiddleLeft,
+            container
+            {
+                seat = MiddleLeft,
+            }
+        }
+        part SeatMiddleRight
+        {
+            mechanicArea = Interior,
+            area = SeatMiddleRight,
+            container
+            {
+                seat = MiddleRight,
+            }
+        }
+        part SeatRearLeft
+        {
+            mechanicArea = Interior,
+            area = SeatRearLeft,
+            container
+            {
+                seat = RearLeft,
+            }
+        }
+        part SeatRearRight
+        {
+            mechanicArea = Interior,
+            area = SeatRearRight,
+            container
+            {
+                seat = RearRight,
+            }
+        }
+        part Seat*
+        {
+            category = seat,
+            itemType = SCKCO.NormalCarSeatSC,
+            mechanicRequireKey = true,
+            durability = 3,
+            container
+            {
+                test = Vehicles.ContainerAccess.Seat,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                requireEmpty = true,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+}

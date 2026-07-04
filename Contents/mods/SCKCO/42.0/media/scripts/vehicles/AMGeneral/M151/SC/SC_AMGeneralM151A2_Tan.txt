@@ -363,14 +363,14 @@ module Base
 		}
 
 		template = M151Attachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
-		template = GasTank,
-		template = Battery,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
+		template = SCGasTankSmall,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerModern,
 
 		part SeatFrontLeft
 		{
@@ -703,7 +703,7 @@ module Base
 			itemType = SCKCO.M151DoorSC,
 		}
 
-		template = Tire,
+		template = SCTireModern,
 
 		part TireFrontLeft
 		{
@@ -762,7 +762,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionModern,
 
 		part Suspension*
 		{
@@ -779,17 +779,59 @@ module Base
 			}
 		}
 
-		part Radio*
+		part Radio
 		{
 			model M151Radio
 			{
 				file = M151Radio,
 			}
 
-			itemType = Base.HamRadio2,
+			mechanicArea = Engine,
+			area = Engine,
+			itemType = SCKCO.HamRadio1SC;SCKCO.HamRadio2SC,
+			specificItem = false,
+			durability = 2,
+			table install
+			{
+				items
+				{
+					1
+					{
+						tags = base:screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.InstallTest.Default,
+				complete = Vehicles.InstallComplete.Radio,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						tags = base:screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+				test = Vehicles.UninstallTest.Default,
+			}
+			lua
+			{
+				create = Vehicles.Create.Radio_HAM,
+				update = Vehicles.Update.Radio,
+			}
 		}
 
-		template = Radio,
+		template = SCRadio_HAM,
 		template = Headlight,
 
 		part PassengerCompartment

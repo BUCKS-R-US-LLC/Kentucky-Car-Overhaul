@@ -1,0 +1,339 @@
+module Base
+{
+    template vehicle SCTireOld
+    {
+        part TireFrontLeft
+        {
+            mechanicArea = Left,
+            area = TireFrontLeft,
+            wheel = FrontLeft,
+            table install
+            {
+                requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+            }
+        }
+        part TireFrontRight
+        {
+            mechanicArea = Right,
+            area = TireFrontRight,
+            wheel = FrontRight,
+            table install
+            {
+                requireInstalled = BrakeFrontRight;SuspensionFrontRight,
+            }
+        }
+        part TireRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            wheel = RearLeft,
+            table install
+            {
+                requireInstalled = BrakeRearLeft;SuspensionRearLeft,
+            }
+        }
+        part TireRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            wheel = RearRight,
+            table install
+            {
+                requireInstalled = BrakeRearRight;SuspensionRearRight,
+            }
+        }
+        part Tire*
+        {
+            category = tire,
+            itemType = SCKCO.OldTireSC,
+            durability = 2,
+            container
+            {
+                test = Vehicles.ContainerAccess.Tire,
+                contentType = Air,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Tire,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Tire,
+            }
+            lua
+            {
+                create = Vehicles.Create.Tire,
+                init = Vehicles.Init.Tire,
+                checkOperate = Vehicles.CheckOperate.Tire,
+                update = Vehicles.Update.Tire,
+            }
+            model InflatedTirePlusWheel
+            {
+                file = Vehicles_Wheel,
+            }
+        }
+    }
+
+    template vehicle SCTireNormal
+    {
+        part TireFrontLeft
+        {
+            mechanicArea = Left,
+            area = TireFrontLeft,
+            wheel = FrontLeft,
+            table install
+            {
+                requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+            }
+        }
+        part TireFrontRight
+        {
+            mechanicArea = Right,
+            area = TireFrontRight,
+            wheel = FrontRight,
+            table install
+            {
+                requireInstalled = BrakeFrontRight;SuspensionFrontRight,
+            }
+        }
+        part TireRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            wheel = RearLeft,
+            table install
+            {
+                requireInstalled = BrakeRearLeft;SuspensionRearLeft,
+            }
+        }
+        part TireRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            wheel = RearRight,
+            table install
+            {
+                requireInstalled = BrakeRearRight;SuspensionRearRight,
+            }
+        }
+        part Tire*
+        {
+            category = tire,
+            itemType = SCKCO.NormalTireSC,
+            durability = 2,
+            container
+            {
+                test = Vehicles.ContainerAccess.Tire,
+                contentType = Air,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Tire,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Tire,
+            }
+            lua
+            {
+                create = Vehicles.Create.Tire,
+                init = Vehicles.Init.Tire,
+                checkOperate = Vehicles.CheckOperate.Tire,
+                update = Vehicles.Update.Tire,
+            }
+            model InflatedTirePlusWheel
+            {
+                file = Vehicles_Wheel,
+            }
+        }
+    }
+
+    template vehicle SCTireModern
+    {
+        part TireFrontLeft
+        {
+            mechanicArea = Left,
+            area = TireFrontLeft,
+            wheel = FrontLeft,
+            table install
+            {
+                requireInstalled = BrakeFrontLeft;SuspensionFrontLeft,
+            }
+        }
+        part TireFrontRight
+        {
+            mechanicArea = Right,
+            area = TireFrontRight,
+            wheel = FrontRight,
+            table install
+            {
+                requireInstalled = BrakeFrontRight;SuspensionFrontRight,
+            }
+        }
+        part TireRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            wheel = RearLeft,
+            table install
+            {
+                requireInstalled = BrakeRearLeft;SuspensionRearLeft,
+            }
+        }
+        part TireRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            wheel = RearRight,
+            table install
+            {
+                requireInstalled = BrakeRearRight;SuspensionRearRight,
+            }
+        }
+        part Tire*
+        {
+            category = tire,
+            itemType = SCKCO.ModernTireSC,
+            durability = 2,
+            container
+            {
+                test = Vehicles.ContainerAccess.Tire,
+                contentType = Air,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Tire,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:lugwrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 400,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Tire,
+            }
+            lua
+            {
+                create = Vehicles.Create.Tire,
+                init = Vehicles.Init.Tire,
+                checkOperate = Vehicles.CheckOperate.Tire,
+                update = Vehicles.Update.Tire,
+            }
+            model InflatedTirePlusWheel
+            {
+                file = Vehicles_Wheel,
+            }
+        }
+    }
+
+}

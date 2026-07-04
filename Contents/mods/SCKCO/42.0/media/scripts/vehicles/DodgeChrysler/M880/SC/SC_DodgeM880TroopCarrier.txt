@@ -463,17 +463,17 @@ module Base
 
 		template = M880Attachments,
 		template = M880TarpOD,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatMiddleLeft,
+		template = SCSeat/part/SeatMiddleRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerModern,
 
 		part SeatFrontLeft
 		{
@@ -824,7 +824,7 @@ module Base
 		}
 
 		template = Trunk/part/TruckBedOpen,
-		template = Tire,
+		template = SCTireModern,
 		
 		part TruckBedOpen
 		{
@@ -883,7 +883,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionModern,
 
 		part Suspension*
 		{
@@ -900,7 +900,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		part PassengerCompartment

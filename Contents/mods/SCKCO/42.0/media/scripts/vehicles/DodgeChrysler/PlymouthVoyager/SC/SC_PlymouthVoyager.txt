@@ -438,18 +438,18 @@ module Base
 		}
 
 		template = VoyagerAttachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatMiddleLeft,
+		template = SCSeat/part/SeatMiddleRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
 		template = Trunk/part/TruckBed,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankNormal,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerNormal,
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -680,18 +680,18 @@ module Base
 			itemType = SCKCO.PlymouthVoyagerWindowSC,
 		}
 
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatMiddleLeft,
+		template = SCSeat/part/SeatMiddleRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
 		template = Trunk/part/TruckBed,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankNormal,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerNormal,
 		template = TrunkDoor,
 
 		part TrunkDoor
@@ -1172,7 +1172,7 @@ module Base
 			itemType = SCKCO.PlymouthVoyagerDoorSC,
 		}
 
-		template = Tire,
+		template = SCTireNormal,
 		
 
 		part TireFrontLeft
@@ -1224,7 +1224,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionNormal,
 
 		part Suspension*
 		{
@@ -1241,7 +1241,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		part PassengerCompartment

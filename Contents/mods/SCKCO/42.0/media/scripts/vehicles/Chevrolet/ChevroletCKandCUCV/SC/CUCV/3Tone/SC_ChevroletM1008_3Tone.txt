@@ -281,13 +281,13 @@ module Base
 		template = ChevyLogo,
 		template = CUCVGunRacks,
 		template = M1008Attachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerModern,
 
 		part SeatFrontLeft
 		{
@@ -615,7 +615,7 @@ module Base
 		}
 
 		template = Trunk/part/TruckBedOpen,
-		template = Tire,
+		template = SCTireModern,
 		
 		part TireFrontLeft
 		{
@@ -666,7 +666,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionModern,
 
 		part Suspension*
 		{
@@ -683,12 +683,7 @@ module Base
 			}
 		}
 
-		template = Radio,
-
-		part Radio*
-		{			
-			itemType = Base.HamRadio2,
-		}
+		template = SCRadio_HAM,
 
 		template = Headlight,
 

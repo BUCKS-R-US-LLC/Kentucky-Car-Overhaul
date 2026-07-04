@@ -605,16 +605,16 @@ module Base
 		template = M35A2Seat,
 		template = M35A2Attachments,
 		template = specials/part/DetroitDieselSC,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
-		template = GasTank,
-		template = Battery,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatMiddleLeft,
+		template = SCSeat/part/SeatMiddleRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerModern,
 
 		part GasTank
 		{
@@ -1126,7 +1126,7 @@ module Base
 		}
 
 
-		template = Tire,
+		template = SCTireModern,
 		
 
 		part PassengerCompartment
@@ -1188,7 +1188,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionModern,
 
 		part Suspension*
 		{
@@ -1205,7 +1205,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio_HAM,
 
 		part Radio
 		{
@@ -1221,7 +1221,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.HamRadio2,
+			itemType = SCKCO.HamRadio1SC;SCKCO.HamRadio2SC,
 		}
 
 		template = Headlight,

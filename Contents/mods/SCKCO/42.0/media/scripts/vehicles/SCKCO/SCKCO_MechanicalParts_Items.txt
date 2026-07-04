@@ -1,0 +1,740 @@
+module SCKCO
+{
+    item RadioBlackSC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 1.5,
+        Icon = RadioBlack,
+        BaseVolumeRange = 10,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = false,
+        IsPortable = true,
+        IsTelevision = false,
+        MaxChannel = 108000,
+        MicRange = 0,
+        MinChannel = 88000,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 0,
+        TwoWay = false,
+        UseDelta = 0.007,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldObjectSprite = appliances_radio_01_0,
+        WorldStaticModel = RadioBlack_Ground,
+        DisplayName = Car Radio (Black),
+    }
+
+    item RadioRedSC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 1.5,
+        Icon = RadioRed,
+        AcceptMediaType = 0,
+        BaseVolumeRange = 15,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = false,
+        IsPortable = true,
+        IsTelevision = false,
+        MaxChannel = 108000,
+        MicRange = 0,
+        MinChannel = 88000,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 0,
+        TwoWay = false,
+        UseDelta = 0.009,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldObjectSprite = appliances_radio_01_8,
+        WorldStaticModel = RadioRed_Ground,
+        DisplayName = Car Radio (Red),
+    }
+
+    item HamRadio1SC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 15.0,
+        Icon = HamRadioCivilian,
+        BaseVolumeRange = 10,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = false,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 500000,
+        MicRange = 5,
+        MinChannel = 10000,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 7500,
+        TwoWay = true,
+        UseDelta = 0.01,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldObjectSprite = appliances_com_01_0,
+        DisplayName = Ham Radio,
+    }
+
+    item HamRadio2SC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 15.0,
+        Icon = HamRadioMilitary,
+        BaseVolumeRange = 15,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = true,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 20000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldObjectSprite = appliances_com_01_8,
+        DisplayName = Military Ham Radio,
+    }
+
+    item NormalCarSeatSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Car Seat,
+        Icon = CarSeat,
+        VehicleType = 1,
+        MaxCapacity = 20,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        MechanicsItem = true,
+        WorldStaticModel = CarSeat,
+    }
+
+    item NormalCarSeatSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Car Seat,
+        Icon = CarSeat,
+        VehicleType = 2,
+        MaxCapacity = 20,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        MechanicsItem = true,
+        WorldStaticModel = CarSeat,
+    }
+
+    item NormalCarSeatSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Car Seat,
+        Icon = CarSeat,
+        VehicleType = 3,
+        MaxCapacity = 20,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        MechanicsItem = true,
+        WorldStaticModel = CarSeat,
+    }
+
+    item NormalSuspensionSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 2.0,
+        ItemType = base:normal,
+        DisplayName = Suspension,
+        Icon = CarSuspension,
+        VehicleType = 1,
+        ChanceToSpawnDamaged = 30,
+        suspensionDamping = 2.88,
+        suspensionCompression = 3.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item NormalSuspensionSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 2.0,
+        ItemType = base:normal,
+        DisplayName = Suspension,
+        Icon = CarSuspension,
+        VehicleType = 2,
+        ChanceToSpawnDamaged = 30,
+        suspensionDamping = 3.88,
+        suspensionCompression = 4.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.15,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item NormalSuspensionSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 2.0,
+        ItemType = base:normal,
+        DisplayName = Suspension,
+        Icon = CarSuspension,
+        VehicleType = 3,
+        ChanceToSpawnDamaged = 30,
+        suspensionDamping = 3.4,
+        suspensionCompression = 4.1,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspensionSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 3.0,
+        ItemType = base:normal,
+        DisplayName = Heavy-Duty Suspension,
+        Icon = CarSuspension,
+        VehicleType = 1,
+        ChanceToSpawnDamaged = 20,
+        suspensionDamping = 2.88,
+        suspensionCompression = 3.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspensionSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 3.0,
+        ItemType = base:normal,
+        DisplayName = Heavy-Duty Suspension,
+        Icon = CarSuspension,
+        VehicleType = 2,
+        ChanceToSpawnDamaged = 20,
+        suspensionDamping = 3.88,
+        suspensionCompression = 4.83,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.1,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item ModernSuspensionSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 3.0,
+        ItemType = base:normal,
+        DisplayName = Heavy-Duty Suspension,
+        Icon = CarSuspension,
+        VehicleType = 3,
+        ChanceToSpawnDamaged = 20,
+        suspensionDamping = 3.4,
+        suspensionCompression = 4.1,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = true,
+        WorldStaticModel = Suspension,
+    }
+
+    item SmallGasTankSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 11.0,
+        ItemType = base:normal,
+        DisplayName = Small Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 1,
+        MaxCapacity = 39,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item SmallGasTankSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 14.0,
+        ItemType = base:normal,
+        DisplayName = Small Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 2,
+        MaxCapacity = 55,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item SmallGasTankSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Small Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 3,
+        MaxCapacity = 35,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+    }
+
+    item NormalGasTankSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 13.0,
+        ItemType = base:normal,
+        DisplayName = Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 1,
+        MaxCapacity = 49,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = GasTank,
+    }
+
+    item NormalGasTankSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 17.0,
+        ItemType = base:normal,
+        DisplayName = Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 2,
+        MaxCapacity = 65,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = GasTank,
+    }
+
+    item NormalGasTankSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 12.0,
+        ItemType = base:normal,
+        DisplayName = Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 3,
+        MaxCapacity = 45,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = GasTank,
+    }
+
+    item BigGasTankSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Large Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 1,
+        MaxCapacity = 59,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = BigGasTank,
+    }
+
+    item BigGasTankSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 22.0,
+        ItemType = base:normal,
+        DisplayName = Large Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 2,
+        MaxCapacity = 75,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = BigGasTank,
+    }
+
+    item BigGasTankSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 14.0,
+        ItemType = base:normal,
+        DisplayName = Large Gas Tank,
+        Icon = CarGastank,
+        VehicleType = 3,
+        MaxCapacity = 55,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 60,
+        MechanicsItem = true,
+        WorldStaticModel = BigGasTank,
+    }
+
+    item OldCarMufflerSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Worn Muffler,
+        Icon = CarMuffler,
+        VehicleType = 1,
+        engineLoudness = 80.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item OldCarMufflerSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Worn Muffler,
+        Icon = CarMuffler,
+        VehicleType = 2,
+        engineLoudness = 80.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.35,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item OldCarMufflerSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Worn Muffler,
+        Icon = CarMuffler,
+        VehicleType = 3,
+        engineLoudness = 80.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.4,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item NormalCarMufflerSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Muffler,
+        Icon = CarMuffler,
+        VehicleType = 1,
+        engineLoudness = 100.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.015,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item NormalCarMufflerSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Muffler,
+        Icon = CarMuffler,
+        VehicleType = 2,
+        engineLoudness = 100.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.015,
+        ConditionLowerOffroad = 0.25,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item NormalCarMufflerSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Muffler,
+        Icon = CarMuffler,
+        VehicleType = 3,
+        engineLoudness = 100.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.015,
+        ConditionLowerOffroad = 0.35,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item ModernCarMufflerSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Performance Muffler,
+        Icon = CarMuffler,
+        VehicleType = 1,
+        engineLoudness = 120.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.01,
+        ConditionLowerOffroad = 0.25,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item ModernCarMufflerSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Performance Muffler,
+        Icon = CarMuffler,
+        VehicleType = 2,
+        engineLoudness = 120.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.01,
+        ConditionLowerOffroad = 0.15,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item ModernCarMufflerSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Performance Muffler,
+        Icon = CarMuffler,
+        VehicleType = 3,
+        engineLoudness = 120.0,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.01,
+        ConditionLowerOffroad = 0.3,
+        MechanicsItem = true,
+        WorldStaticModel = Muffler,
+    }
+
+    item OldTireSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Worn Tire,
+        Icon = CarTire,
+        VehicleType = 1,
+        MaxCapacity = 30,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.04,
+        ConditionLowerOffroad = 0.5,
+        wheelFriction = 1.2,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item OldTireSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Worn Tire,
+        Icon = CarTire,
+        VehicleType = 2,
+        MaxCapacity = 30,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.04,
+        ConditionLowerOffroad = 0.35,
+        wheelFriction = 1.3,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item OldTireSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Worn Tire,
+        Icon = CarTire,
+        VehicleType = 3,
+        MaxCapacity = 30,
+        ChanceToSpawnDamaged = 70,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.08,
+        ConditionLowerOffroad = 0.5,
+        wheelFriction = 1.3,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item NormalTireSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Tire,
+        Icon = CarTire,
+        VehicleType = 1,
+        MaxCapacity = 35,
+        ChanceToSpawnDamaged = 50,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.4,
+        wheelFriction = 1.4,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item NormalTireSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Tire,
+        Icon = CarTire,
+        VehicleType = 2,
+        MaxCapacity = 35,
+        ChanceToSpawnDamaged = 50,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.03,
+        ConditionLowerOffroad = 0.25,
+        wheelFriction = 1.5,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item NormalTireSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Tire,
+        Icon = CarTire,
+        VehicleType = 3,
+        MaxCapacity = 35,
+        ChanceToSpawnDamaged = 50,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.05,
+        ConditionLowerOffroad = 0.4,
+        wheelFriction = 1.6,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item ModernTireSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Performance Tire,
+        Icon = CarTire,
+        VehicleType = 1,
+        MaxCapacity = 40,
+        ChanceToSpawnDamaged = 30,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.35,
+        wheelFriction = 1.6,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item ModernTireSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Performance Tire,
+        Icon = CarTire,
+        VehicleType = 2,
+        MaxCapacity = 40,
+        ChanceToSpawnDamaged = 30,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.15,
+        wheelFriction = 1.6,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+    item ModernTireSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 15.0,
+        ItemType = base:normal,
+        DisplayName = Performance Tire,
+        Icon = CarTire,
+        VehicleType = 3,
+        MaxCapacity = 40,
+        ChanceToSpawnDamaged = 30,
+        ConditionMax = 100,
+        ConditionLowerStandard = 0.02,
+        ConditionLowerOffroad = 0.35,
+        wheelFriction = 1.8,
+        MechanicsItem = true,
+        WorldStaticModel = Wheel,
+        Tags = base:isfirefuel;base:hasmetal;base:wholetire,
+        FireFuelRatio = 0.25,
+        Researchablerecipes = MakeTireForearmArmor;MakeTireShinArmor,
+    }
+
+}

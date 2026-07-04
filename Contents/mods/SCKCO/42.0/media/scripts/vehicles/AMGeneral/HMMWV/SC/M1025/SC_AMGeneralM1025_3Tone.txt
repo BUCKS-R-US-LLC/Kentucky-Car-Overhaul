@@ -393,14 +393,14 @@ module Base
 		}
 
 		template = M1025Attachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
-		template = GasTank,
-		template = Battery,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerModern,
 
 		part SeatFrontLeft
 		{
@@ -852,7 +852,7 @@ module Base
 		}
 
 		template = Trunk/part/TruckBed,
-		template = Tire,
+		template = SCTireModern,
 		
 
 		part TireFrontLeft
@@ -904,7 +904,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionModern,
 
 		part Suspension*
 		{
@@ -921,7 +921,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio_HAM,
 
 		part Radio
 		{
@@ -937,7 +937,7 @@ module Base
 				recipes = Intermediate Mechanics,
 			}
 
-			itemType = Base.HamRadio2,
+			itemType = SCKCO.HamRadio1SC;SCKCO.HamRadio2SC,
 		}
 		
 		template = Headlight,

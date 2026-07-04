@@ -374,16 +374,16 @@ module Base
 			xywh = -1.3947 -2.1316 0.0000 0.0000,
 		}
 
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
-		template = Seat/part/SeatMiddleLeft,
-		template = Seat/part/SeatMiddleRight,
-		template = Seat/part/SeatRearLeft,
-		template = Seat/part/SeatRearRight,
-		template = GasTank,
-		template = Battery,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatMiddleLeft,
+		template = SCSeat/part/SeatMiddleRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerNormal,
 
 		part SeatFrontLeft
 		{
@@ -778,7 +778,7 @@ module Base
 		}
 
 		template = Trunk/part/TruckBed,
-		template = Tire,
+		template = SCTireNormal,
 		
 
 		part TruckBed
@@ -866,7 +866,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionNormal,
 
 		part Suspension*
 		{
@@ -883,7 +883,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		part PassengerCompartment

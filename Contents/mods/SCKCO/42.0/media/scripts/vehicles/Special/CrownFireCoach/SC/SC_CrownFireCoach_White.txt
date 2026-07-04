@@ -377,13 +377,13 @@ module Base
 		}
 
 		template = FireCoachAttachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerOld,
 		template = TrunkFireCoach/part/SideContainer1,
 		template = TrunkFireCoach/part/SideContainer2,
 		template = TrunkFireCoach/part/SideContainer3,
@@ -973,7 +973,7 @@ module Base
 			itemType = SCKCO.CrownFirecoachDoorSC,
 		}
 
-		template = Tire,
+		template = SCTireOld,
 		
 
 		part TireFrontLeft
@@ -1025,7 +1025,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionNormal,
 
 		part Suspension*
 		{
@@ -1042,7 +1042,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		physics box

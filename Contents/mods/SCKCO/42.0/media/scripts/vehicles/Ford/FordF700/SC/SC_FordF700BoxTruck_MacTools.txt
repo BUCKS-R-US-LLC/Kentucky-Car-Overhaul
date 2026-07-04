@@ -289,13 +289,13 @@ module Base
 		}
 
 		template = F700BoxAttachments,
-		template = Seat/part/SeatFrontLeft,
-		template = Seat/part/SeatFrontRight,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
 		template = GloveBox,
-		template = GasTank,
-		template = Battery,
+		template = SCGasTankBig,
+		template = SCBattery,
 		template = Engine,
-		template = Muffler,
+		template = SCMufflerNormal,
 
 		part SeatFrontLeft
 		{
@@ -627,7 +627,7 @@ module Base
 		}
 
 		template = Trunk/part/TruckBed,
-		template = Tire,
+		template = SCTireNormal,
 		
 
 		part TruckBed
@@ -688,7 +688,7 @@ module Base
 			}
 		}
 
-		template = Suspension,
+		template = SCSuspensionNormal,
 
 		part Suspension*
 		{
@@ -705,7 +705,7 @@ module Base
 			}
 		}
 
-		template = Radio,
+		template = SCRadio,
 		template = Headlight,
 
 		part PassengerCompartment

@@ -1,0 +1,225 @@
+module Base
+{
+    template vehicle SCGasTankSmall
+    {
+        part GasTank
+        {
+            mechanicArea = Back,
+            area = GasTank,
+            category = gastank,
+            itemType = SCKCO.SmallGasTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            container
+            {
+                test = Vehicles.ContainerAccess.GasTank,
+                contentType = Gasoline,
+                conditionAffectsCapacity = true,
+            }
+            lua
+            {
+                create = Vehicles.Create.GasTank,
+                update = Vehicles.Update.GasTank,
+                checkEngine = Vehicles.CheckEngine.GasTank,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                requireEmpty = true,
+            }
+        }
+    }
+
+    template vehicle SCGasTankNormal
+    {
+        part GasTank
+        {
+            mechanicArea = Back,
+            area = GasTank,
+            category = gastank,
+            itemType = SCKCO.NormalGasTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            container
+            {
+                test = Vehicles.ContainerAccess.GasTank,
+                contentType = Gasoline,
+                conditionAffectsCapacity = true,
+            }
+            lua
+            {
+                create = Vehicles.Create.GasTank,
+                update = Vehicles.Update.GasTank,
+                checkEngine = Vehicles.CheckEngine.GasTank,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                requireEmpty = true,
+            }
+        }
+    }
+
+    template vehicle SCGasTankBig
+    {
+        part GasTank
+        {
+            mechanicArea = Back,
+            area = GasTank,
+            category = gastank,
+            itemType = SCKCO.BigGasTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            container
+            {
+                test = Vehicles.ContainerAccess.GasTank,
+                contentType = Gasoline,
+                conditionAffectsCapacity = true,
+            }
+            lua
+            {
+                create = Vehicles.Create.GasTank,
+                update = Vehicles.Update.GasTank,
+                checkEngine = Vehicles.CheckEngine.GasTank,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                requireEmpty = true,
+            }
+        }
+    }
+
+}
