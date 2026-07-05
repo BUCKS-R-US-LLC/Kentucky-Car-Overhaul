@@ -59,22 +59,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30VanBoxSWATSlidingRightDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|RearSlidingDoor_obj,
-		shader = SC_vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
-	}
-	model G30VanBoxSWATSlidingWindow
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|RearSlidingWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearSlideDoorBone 1.0,
-	}
 	model G30VanBoxSWATTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|Trunk_obj,
@@ -224,7 +208,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -280,59 +264,7 @@ module Base
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
 
-			position inside
-			{
-				offset = 0.8475 1.1186 -2.8814,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 0.0000 -0.1864 -5.4576,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.8644 1.1356 -2.8814,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.3051 -0.1864 -0.6441,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-
-			switchSeat FrontLeft
-			{
-			}
-
-			switchSeat FrontRight
-			{
-			}
-		}
 
 		area Engine
 		{
@@ -349,15 +281,7 @@ module Base
 			xywh = -2.2373 0.7797 1.1186 1.1186,
 		}
 
-		area SeatRearRight
-		{
-			xywh = -2.2373 -0.5763 1.1186 1.0847,
-		}
 
-		area SeatRearLeft
-		{
-			xywh = -2.2373 -0.5763 1.1186 1.0847,
-		}
 
 		area GasTank
 		{
@@ -394,12 +318,7 @@ module Base
 		template = specials/part/BackUpAlarmSC,
 		template = SCSeat/part/SeatFrontLeft,
 		template = SCSeat/part/SeatFrontRight,
-		template = SCFloorSpace/part/FloorSpaceFrontRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCFloorSpace/part/FloorSpaceRearLeft,
-		template = SCSeat/part/SeatRearRight,
-		template = SCFloorSpace/part/FloorSpaceRearRight,
-		template = SCGloveBox,
+						template = SCGloveBox,
 		template = SCGasTankBig,
 		template = SCBattery,
 		template = Engine,
@@ -475,28 +394,7 @@ module Base
 
 		}
 
-		part SeatRearLeft
-		{
-			category = nodisplay,
 
-			model SeatRearLeft
-			{
-				file = G30VanBoxSWATDriver,
-			}
-			
-			itemType = SCKCO.FillerSeatSC,
-		}
-
-		part SeatRearRight
-		{
-			category = nodisplay,
-
-			model SeatRearRight
-			{
-				file = G30VanBoxSWATPassenger,
-			}
-			itemType = SCKCO.FillerSeatSC,
-		}
 
 		part Muffler
 		{
@@ -640,7 +538,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearRight,
@@ -759,61 +656,7 @@ module Base
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = G30VanBoxSWATSlidingRightDoor,
-			}
 
-			anim Close
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearSlidingDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.ChevyG30DoorSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = G30VanBoxSWATSlidingWindow,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			itemType = SCKCO.ChevyG30WindowSC,
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatFrontRight,
-		}
 
 		template = SCTireNormal,
 		

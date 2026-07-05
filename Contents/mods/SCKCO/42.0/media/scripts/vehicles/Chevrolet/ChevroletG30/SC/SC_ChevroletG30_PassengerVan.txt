@@ -83,14 +83,6 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model G30SeatsSlidingRightDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|SlideDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = SlideDoorBone 1.0,
-	}
 	model G30SeatsSlidingWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|SlideDoorWindow_obj,
@@ -432,11 +424,8 @@ module Base
 		template = G30SeatsAttachments,
 		template = SCSeat/part/SeatFrontLeft,
 		template = SCSeat/part/SeatFrontRight,
-		template = SCFloorSpace/part/FloorSpaceFrontRight,
 		template = SCSeat/part/SeatRearLeft,
-		template = SCFloorSpace/part/FloorSpaceRearLeft,
 		template = SCSeat/part/SeatRearRight,
-		template = SCFloorSpace/part/FloorSpaceRearRight,
 		template = SCGloveBox,
 		template = Trunk/part/TruckBed,
 		template = SCGasTankBig,
@@ -666,7 +655,6 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowMiddleLeft,
@@ -744,23 +732,6 @@ module Base
 			area = SeatMiddleLeft,
 		}
 
-		part WindowMiddleRight
-		{
-			window
-			{
-				openable = false,
-			}
-
-			model windowRR
-			{
-				file = G30SeatsSlidingWindow,
-			}
-			
-			parent = DoorRearRight,
-			category = SCUCKwindows,
-			itemType = SCKCO.ChevyG30WindowSC,
-			area = SeatRearRight,
-		}
 
 		part WindowRearRight
 		{
@@ -882,51 +853,7 @@ module Base
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = G30SeatsSlidingRightDoor,
-			}
 
-			anim Close
-			{
-				anim = SlideDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = SlideDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = SlideDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = SlideDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.ChevyG30DoorSC,
-		}
-
-		part SCArmorRearRightWindow
-        {
-            model Default { file = G30SeatsRearRightWindowArmor, }
-			
-			parent = DoorRearRight,
-            itemType = SCKCO.ChevyG30WindowArmorSC,
-        }
 
 		template = SCTireNormal,
 		
