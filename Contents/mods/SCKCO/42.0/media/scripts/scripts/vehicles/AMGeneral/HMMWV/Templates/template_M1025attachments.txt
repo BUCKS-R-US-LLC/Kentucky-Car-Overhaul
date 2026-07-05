@@ -1,0 +1,294 @@
+module Base
+{
+    	model M1025Bullbar
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model M1025BumperAssembly
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|BumperAssembly_obj,
+		shader = SC_vehicle_noreflect,
+        static = TRUE,
+		scale = 1,
+	}
+
+	model M1025WindshieldArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|WindshieldArmor_obj,
+		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
+		scale = 1,
+	}
+
+	model M1025FrontLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model M1025FrontRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model M1025RearLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model M1025RearRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model M1025FrontLeftWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model M1025FrontRightWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model M1025RearLeftWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model M1025RearRightWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1025_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    template vehicle M1025Attachments
+	{
+        template = armorUpgrades/part/SCArmorBumper,
+
+		part BumperAssembly
+		{
+			model Default { file = M1025BumperAssembly, }
+			category = nodisplay,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+        part SCArmorBumper
+        {
+            model Default { file = M1025Bullbar, }
+			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
+            itemType = SCKCO.HMMWVBumperSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+			
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1025FrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1025FrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M1025FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M1025FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = M1025RearRightWindowArmor, }
+			parent = WindowRearRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = M1025RearLeftWindowArmor, }
+			parent = WindowRearLeft,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M1025RearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M1025RearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1025WindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+		part M1025SlantBase
+		{
+			model HM1025SlantBase
+			{
+				file = HM1025SlantBase,
+			}
+
+			parent = TrunkLid,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				requireUninstalled = M1025Slant,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1025SlantDoorSC,
+		}
+
+		part M1025Slant
+		{
+			parent = TrunkDoor,
+
+			model HM1025Slant
+			{
+				file = HM1025Slant,
+			}
+
+			table install
+			{
+				requireInstalled = TrunkLid,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKaccessories,
+			itemType = SCKCO.M1025SlantBaseSC,
+		}
+    }
+}

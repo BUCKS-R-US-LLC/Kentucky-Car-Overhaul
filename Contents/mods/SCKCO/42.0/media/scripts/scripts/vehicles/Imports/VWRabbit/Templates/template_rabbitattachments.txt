@@ -1,0 +1,273 @@
+module Base
+{
+	model PizzaTopper
+	{
+		mesh = vehicles/Attachments/PizzaTopper,
+		texture = Vehicles/VWRabbit/PizzaTopper,
+		scale = 1,
+	}
+
+	model VWRabbitBumper
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model VWRabbitWindshieldArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model VWRabbitFrontLeftDoorArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitFrontRightDoorArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model VWRabbitRearLeftDoorArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitRearRightDoorArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitFrontLeftWindowArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model VWRabbitFrontRightWindowArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model VWRabbitRearLeftWindowArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model VWRabbitRearRightWindowArmor
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+    model RabbitTail
+	{
+		mesh = vehicles/VW/Vehicle_VWRabbit_SC|Louver_obj,
+		shader = SC_vehicle_noreflect,
+        static = false,
+		scale = 1,
+	}
+
+	template vehicle PizzaTopper
+	{
+		part PizzaTopper
+        {
+			model PizzaTopper { file = PizzaTopper, }
+		    area = Engine,
+            category = SCUCKaccessories,
+            itemType = SCKCO.PizzaTopperSC,
+            mechanicRequireKey = false,
+
+		    table install
+            {
+                items
+                {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            
+		    lua { create = Vehicles.Create.Default, }
+		}
+    }
+
+    template vehicle RabbitLouvers
+    {
+        part RabbitLouvers
+        {
+            model Default { file = RabbitTail, }
+            parent = TrunkDoor,
+            itemType = SCKCO.VWRabbitLouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+            
+                table partVariation
+            {
+                chances = { default = 30, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+    }
+
+    template vehicle RabbitLouversRemoved
+    {
+        part RabbitLouvers
+        {
+            model Default { file = RabbitTail, }
+            parent = TrunkDoor,
+            itemType = SCKCO.VWRabbitLouversSC,
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+        
+            lua { }
+        }
+
+    }
+
+    template vehicle RabbitAttachments
+    {
+	    template = armorUpgrades/part/SCArmorBumper,
+        
+	    part SCArmorBumper
+	    {
+            model Default { file = VWRabbitBumper, }
+            itemType = SCKCO.VWRabbitBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = VWRabbitWindshieldArmor, }
+            itemType = SCKCO.VWRabbitWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = VWRabbitFrontRightWindowArmor, }
+            itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowFrontRight,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = VWRabbitFrontLeftWindowArmor, }
+            itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowFrontLeft,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = VWRabbitFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = VWRabbitFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = VWRabbitRearRightDoorArmor, }
+            parent = DoorRearRight,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = VWRabbitRearLeftDoorArmor, }
+            parent = DoorRearLeft,
+            itemType = SCKCO.VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = VWRabbitRearRightWindowArmor, }
+            itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowRearRight,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = VWRabbitRearLeftWindowArmor, }
+            itemType = SCKCO.VWRabbitWindowArmorSC,
+            parent = WindowRearLeft,
+            requireInstalled = VWRabbitDoorArmorSC,
+        }
+
+	}	
+}

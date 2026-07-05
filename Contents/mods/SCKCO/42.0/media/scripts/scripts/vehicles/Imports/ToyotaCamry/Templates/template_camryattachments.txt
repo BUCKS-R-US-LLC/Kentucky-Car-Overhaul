@@ -1,0 +1,173 @@
+module Base
+{
+
+	model CamryBumper
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CamryWindshieldArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model CamryFrontLeftDoorArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamryFrontRightDoorArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model CamryRearLeftDoorArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamryRearRightDoorArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamryFrontLeftWindowArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model CamryFrontRightWindowArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model CamryRearLeftWindowArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model CamryRearRightWindowArmor
+	{
+		mesh = vehicles/Toyota/Vehicle_ToyotaCamry_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    template vehicle CamryAttachments
+	{
+
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = CamryBumper, }
+            itemType = SCKCO.ToyotaCamryBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = CamryFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = CamryFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = CamryRearLeftWindowArmor, }
+            parent = WindowRearLeft,
+            itemType = SCKCO.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = CamryRearRightWindowArmor, }
+            parent = WindowRearRight,
+            itemType = SCKCO.ToyotaCamryWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CamryWindshieldArmor, }
+            itemType = SCKCO.ToyotaCamryWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = CamryFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.ToyotaCamryDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = CamryFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.ToyotaCamryDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = CamryRearRightDoorArmor, }
+            parent = DoorRearRight,
+            itemType = SCKCO.ToyotaCamryDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = CamryRearLeftDoorArmor, }
+            parent = DoorRearLeft,
+            itemType = SCKCO.ToyotaCamryDoorArmorSC,
+        }
+		
+	    template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = CamryWindshieldArmor, }
+            itemType = SCKCO.ToyotaCamryWindshieldArmorSC,
+        }
+
+    }
+
+}

@@ -1,0 +1,153 @@
+module Base
+{
+
+	model PathfinderBumper
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|Bullbar_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderWindshieldArmor
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderFrontLeftDoorArmor
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PathfinderFrontRightDoorArmor
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model PathfinderFLWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model PathfinderFRWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+
+	model PathfinderFLWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model PathfinderRRWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model PathfinderRLWA
+	{
+		mesh = vehicles/Nissan/Vehicle_Pathfinder87|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+    template vehicle PathfinderAttachments
+	{
+		
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = PathfinderBumper, }
+            itemType = SCKCO.NissanPathfinderBumperSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = PathfinderWindshieldArmor, }
+            itemType = SCKCO.NissanPathfinderWindshieldArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = PathfinderFRWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = PathfinderFLWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = PathfinderRRWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowRearRight,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = PathfinderRLWA, }
+            itemType = SCKCO.NissanPathfinderWindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = MazdaPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = PathfinderFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.NissanPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = PathfinderFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.NissanPathfinderDoorArmorSC,
+			category = SCUCKarmor,
+        }
+
+    }
+}

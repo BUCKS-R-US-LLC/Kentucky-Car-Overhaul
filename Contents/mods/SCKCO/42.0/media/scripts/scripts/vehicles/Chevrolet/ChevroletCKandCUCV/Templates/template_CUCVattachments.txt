@@ -1,0 +1,408 @@
+module Base
+{
+
+	model M1008Bullbar
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|ExtraBar_obj,
+		scale = 1,
+	}
+
+	model M1008WindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|WindshieldArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		scale = 1,
+	}
+
+	model M1008FrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontLeftWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+		scale = 1,
+	}
+
+	model M1008FrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008_SC|FrontRightWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+		scale = 1,
+	}
+
+	model M1008Tarp
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|Tarp_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
+	model M1008TarpFrame
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1008Troop_SC|TarpFrame_obj,
+        static = TRUE,
+		scale = 1,
+	}
+
+	model M1009Bullbar
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|ExtraBar_obj,
+		scale = 1,
+	}
+
+	model M1009WindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|WindshieldArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		scale = 1,
+	}
+
+	model M1009FrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontLeftWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontLeftDoorBone 1.0,
+		scale = 1,
+	}
+
+	model M1009FrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1009_SC|FrontRightWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontRightDoorBone 1.0,
+		scale = 1,
+	}
+
+	model M1010Placards
+	{
+		mesh = vehicles/Chevrolet/CUCVPlacard,
+        texture = Vehicles/CUCV/CUCVPlacard,
+		scale = 1,
+	}
+
+	model M1010Bullbar
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|ExtraBar_obj,
+		scale = 1,
+	}
+
+	model M1010WindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|WindshieldArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		scale = 1,
+	}
+
+	model M1010FrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontLeftWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model M1010FrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_M1010Ambulance_SC|FrontRightWindowArmor_obj,
+        texture = Vehicles/K5/Vehicle_BlazerArmor_parts,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+
+    template vehicle M1010Attachments
+    {
+        
+        template = specials/part/DetroitDieselSC,
+
+        part M1010Placards
+        {
+            model Default { file = M1010Placards, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = M1010Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1010FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1010FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1010WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+    }
+    
+   template vehicle M1008Attachments
+    {
+
+        template = armorUpgrades/part/SCArmorBumper,
+        
+        part SCArmorBumper
+        {
+            model Default { file = M1009Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+        
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1008FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1008FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1008WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+        template = specials/part/DetroitDieselSC,
+    }
+
+   template vehicle M1008TroopAttachments
+    {
+
+        template = armorUpgrades/part/SCArmorBumper,
+        
+        part SCArmorBumper
+        {
+            model Default { file = M1009Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+        
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1008FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1008FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1008WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+        part M1008Tarp
+        {
+            model Default { file = M1008Tarp, }
+            itemType = SCKCO.M1008TarpSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+			table install
+			{
+				requireInstalled = M1008TarpFrame,
+			}
+
+			table uninstall
+			{
+			}
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        part M1008TarpFrame
+        {
+            model Default { file = M1008TarpFrame, }
+            itemType = SCKCO.M1008TarpFrameSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+
+        template = specials/part/DetroitDieselSC,
+    }
+
+    template vehicle M1009Attachments
+    {
+        
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = M1009Bullbar, }
+            itemType = SCKCO.ChevyCKSeriesBumperSC,
+
+            table partVariation
+            {
+                chances = { default = 100, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+        }
+        
+        part KSeriesRearSeat
+        	{
+
+			model KSeriesRearSeat
+				{
+                		file = KSeriesRearSeat,
+				}
+		area = Engine,
+        category = nodisplay,
+        itemType = Base.NormalCarSeat,
+        mechanicRequireKey = false,
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Wrench,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 1000,
+                skills = Mechanics:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		lua
+            {
+                create = Vehicles.Create.Default,
+            }
+		}
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1009FrontRightWindowArmor, }
+        	parent = DoorFrontRight,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1009FrontLeftWindowArmor, }
+        	parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyCKSeriesWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1009WindshieldArmor, }
+            itemType = SCKCO.ChevyCKSeriesWindshieldArmorSC,
+        }
+
+        template = specials/part/DetroitDieselSC,
+    }
+}

@@ -1,0 +1,451 @@
+module Base
+{
+ 
+    model M998SofttopBullbar
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M998SofttopBumperAssembly
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|BumperAssembly_obj,
+		shader = SC_vehicle_noreflect,
+        static = TRUE,
+		scale = 1.0,
+	}
+
+    model M998TopCoverGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		texture = Vehicles/HMMWV/ODSofttop,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCoverGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		texture = Vehicles/HMMWV/ODCoverHMM,
+		scale = 1.0,
+	}
+
+    model M998TopCover3Tone
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCover3Tone
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		texture = Vehicles/HMMWV/3ToneCoverHMM,
+		scale = 1.0,
+	}
+
+    model M998TopCoverTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TopCover_obj,
+		texture = Vehicles/HMMWV/TanSofttop,
+		scale = 1.0,
+	}
+
+	model M998SoftTopTrunkCoverTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|TrunkCover_obj,
+		texture = Vehicles/HMMWV/TanCoverHMM,
+		scale = 1.0,
+	}
+
+	model M998SofttopWindshieldArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|WindshieldArmor_obj,
+		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
+		scale = 1.0,
+	}
+
+	model M998SofttopFrontLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M998SofttopFrontRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|FrontRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M998SofttopRearLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M998SofttopRearRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998_SC|RearRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    template vehicle M998SofttopGreenAttachments
+	{
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M998SofttopBullbar, }
+			lua { create = Vehicles.Create.Default, }
+            itemType = SCKCO.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M998SofttopFrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			 armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M998SofttopFrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M998SofttopFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+	
+	            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M998SofttopFrontLeftDoorArmor, }
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = M998SofttopRearRightWindowArmor, }
+			parent = WindowRearRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+			
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = M998SofttopRearLeftWindowArmor, }
+			parent = WindowRearLeft,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M998SofttopRearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+	
+	        table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M998SofttopRearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M998SofttopWindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+    }
+
+	template vehicle M998SofttopAttachments
+	{
+        template = specials/part/DetroitDieselSC,
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M998SofttopBullbar, }
+			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
+            itemType = SCKCO.HMMWVBumperSC,
+
+            table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M998SofttopFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M998SofttopFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M998SofttopRearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M998SofttopRearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M998SofttopWindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+		part BumperAssembly
+		{
+			model Default { file = M998SofttopBumperAssembly, }
+			category = nodisplay,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+
+	template vehicle M998GreenSofttops
+	{
+
+		part M998FrontSoftTop
+		{
+			model Default { file = M998TopCoverGreen, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCoverGreen, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+
+	template vehicle M9983ToneSofttops
+	{
+
+		part M998FrontSoftTop
+		{
+			model Default { file = M998TopCover3Tone, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCover3Tone, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+	
+	template vehicle M998TanSofttops
+	{
+
+		part M998FrontSoftTop
+		{
+			model Default { file = M998TopCoverTan, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M998RearSoftTop
+		{
+			model Default { file = M998SoftTopTrunkCoverTan, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+}

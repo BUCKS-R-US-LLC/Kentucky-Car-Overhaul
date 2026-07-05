@@ -1,0 +1,472 @@
+module Base
+{
+ 
+    model M1097Bullbar
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M1097BumperAssembly
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|BumperAssembly_obj,
+		shader = SC_vehicle_noreflect,
+        static = TRUE,
+		scale = 1.0,
+	}
+
+	model M1097RearCurtain
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearCurtain_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_ODCab,
+		static = TRUE,
+		scale = 1.0,
+	}
+
+	model M1097TarpCage
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|TarpCage_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_RearOD,
+		scale = 1.0,
+	}
+
+	model M1097RearSeats
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearSeats_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_RearOD,
+		scale = 1.0,
+	}
+
+    model M1097TopCoverGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|TopCover_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_ODCab,
+		scale = 1.0,
+	}
+
+	model M1097RearTarpGreen
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearTarp_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_ODFlatbed,
+		scale = 1.0,
+	}
+
+    model M1097TopCoverTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|TopCover_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_TanFlatbed,
+		scale = 1.0,
+	}
+
+	model M1097RearTarpTan
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearTarp_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_TanFlatbed,
+		scale = 1.0,
+	}
+
+	model M1097WindshieldArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|WindshieldArmor_obj,
+		texture = Vehicles/HMMWV/HMMWVWindshieldArmor,
+		scale = 1.0,
+	}
+
+	model M1097FrontLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|FrontLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M1097FrontRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|FrontRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    model M1097RearLeftDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M1097RearRightDoorArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+    template vehicle M1097GreenAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M1097Bullbar, }
+			lua { create = Vehicles.Create.Default, }
+			parent = EngineDoor,
+            itemType = SCKCO.HMMWVBumperSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = M1097FrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = M1097FrontLeftWindowArmor, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M1097FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M1097FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = M1097RearRightWindowArmor, }
+			parent = WindowRearRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+			
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = M1097RearLeftWindowArmor, }
+			parent = WindowRearRight,
+            itemType = SCKCO.HMMWVWindowArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = M1097RearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = M1097RearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1097WindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+    }
+
+	template vehicle M1097Attachments
+	{
+        template = specials/part/DetroitDieselSC,
+
+        template = armorUpgrades/part/SCArmorBumper,
+
+        part SCArmorBumper
+        {
+            model Default { file = M1097Bullbar, }
+			lua { create = Vehicles.Create.Default, }
+            itemType = SCKCO.HMMWVBumperSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+
+			requireInstalled = BumperAssembly,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = M1097FrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = M1097FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.HMMWVDoorArmorSC,
+			
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = M1097WindshieldArmor, }
+            itemType = SCKCO.HMMWVWindshieldArmorSC,
+
+			table armorBehavior
+            {
+                damageAbsorptionOneTo = 0.5,
+            }
+        }
+
+		part BumperAssembly
+		{
+			model Default { file = M1097BumperAssembly, }
+			category = nodisplay,
+			itemType = SCKCO.HMMWVBumperAssemblySC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+			
+		}
+
+		part M1097RearCurtain
+		{
+			model Default { file = M1097RearCurtain, }
+			itemType = SCKCO.M1097RearCurtainSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M1097TarpCage
+		{
+			model Default { file = M1097TarpCage, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M1097RearSeats
+		{
+			model Default { file = M1097RearSeats, }
+			category = nodisplay,
+			itemType = SCKCO.M998SoftTopSC,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+
+	template vehicle M1097GreenSofttops
+	{
+
+		part M1097FrontSoftTop
+		{
+			model Default { file = M1097TopCoverGreen, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M1097RearSoftTop
+		{
+			model Default { file = M1097RearTarpGreen, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+
+	template vehicle M1097TanSofttops
+	{
+
+		part M1097FrontSoftTop
+		{
+			model Default { file = M1097TopCoverTan, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		part M1097RearSoftTop
+		{
+			model Default { file = M1097RearTarpTan, }
+			itemType = SCKCO.M998SoftTopSC,
+            category = SCUCKaccessories,
+
+			table install
+			{
+			}
+
+			table uninstall
+			{
+			}
+            
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+    }
+}

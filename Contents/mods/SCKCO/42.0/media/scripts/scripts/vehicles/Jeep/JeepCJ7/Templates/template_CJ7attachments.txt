@@ -1,0 +1,145 @@
+module Base
+{
+
+    model JeepCJ7Bumper
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontBumper_obj,
+        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+		scale = 1,
+	}
+
+	model JeepCJ7WindshieldArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindshieldArmor_obj,
+        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+		scale = 1,
+	}
+
+	model JeepCJ7FrontLeftDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontLeftWindowArmorDoorBone 1.0,
+		scale = 1,
+	}
+
+	model JeepCJ7FrontRightDoorArmor
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		boneWeight = FrontRightWindowArmorDoorBone 1.0,
+		scale = 1,
+	}
+
+	model JeepCJ7FLWA
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+        scale = 1,
+	}
+
+	model JeepCJ7FRWA
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+    
+	model CJ7softtop
+	{
+		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|Softtop_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle CJ7Attachments
+	{
+        
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = JeepCJ7Bumper, }
+            itemType = SCKCO.JeepCJ7BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = JeepCJ7WindshieldArmor, }
+            itemType = SCKCO.JeepCJ7WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = JeepCJ7FRWA, }
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
+            parent = WindowFrontRight,
+            requireInstalled = JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = JeepCJ7FLWA, }
+            itemType = SCKCO.JeepCJ7WindowArmorSC,
+            parent = WindowFrontLeft,
+            requireInstalled = JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = JeepCJ7FrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = JeepCJ7FrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.JeepCJ7DoorArmorSC,
+        }
+
+
+		part CJ7softtop
+        {
+
+			model CJ7softtop { file = CJ7softtop, }
+		    area = TruckBed,
+            category = SCUCKaccessories,
+            itemType = SCKCO.CJ7softtop,
+            mechanicRequireKey = false,
+            table install
+            {
+                items { }
+                time = 300,
+                category = SCUCKaccessories,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            table uninstall
+            {
+                items { }
+                time = 300,
+                test = Vehicles.UninstallTest.Default,
+            }
+
+            table partVariation
+            {
+                chances = { default = 50, }
+                additionalVehicleFunc = Default
+            }
+
+            lua { create = Vehicles.Create.SCKCO_VehiclePartVariation, }
+
+		}
+	}
+}

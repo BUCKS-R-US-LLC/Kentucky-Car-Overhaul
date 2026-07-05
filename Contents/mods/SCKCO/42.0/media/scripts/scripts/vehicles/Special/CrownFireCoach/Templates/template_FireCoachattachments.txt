@@ -1,0 +1,121 @@
+module Base
+{
+
+	model FirecoachWindshieldArmor
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|ArmorWindshield_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FirecoachFrontLeftDoorArmor
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model FirecoachFrontRightDoorArmor
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model FirecoachFLWA
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+       scale = 1,
+	}
+
+	model FirecoachFRWA
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model FirecoachRLWA
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+	model FirecoachRRWA
+	{
+		mesh = vehicles/Special/Vehicle_Firecoach_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+
+    template vehicle FireCoachAttachments
+	{
+
+        template = specials/part/AirBrakeSC,
+        template = specials/part/BackUpAlarmSC,
+        template = armorUpgrades/part/SCArmorWindshield,
+
+        part SCArmorWindshield
+        {
+            model Default { file = FirecoachWindshieldArmor, }
+            itemType = SCKCO.CrownFirecoachWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = FirecoachFRWA, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = FirecoachFLWA, }
+			parent = WindowFrontLeft,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = FirecoachRRWA, }
+			parent = WindowRearRight,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = FirecoachRLWA, }
+			parent = WindowRearLeft,
+            itemType = SCKCO.CrownFirecoachWindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = FirecoachFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.CrownFirecoachDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = FirecoachFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.CrownFirecoachDoorArmorSC,
+        }
+        
+    }
+}

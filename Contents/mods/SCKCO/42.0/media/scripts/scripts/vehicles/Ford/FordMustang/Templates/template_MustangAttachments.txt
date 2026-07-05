@@ -1,0 +1,134 @@
+module Base
+{
+
+	model FordMustangBumper
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Bullbar_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FordMustangWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model FordMustangFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+
+	model FordMustangFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+
+	model FordMustangFrontLeftWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftArmorBone 1.0,
+	}
+
+	model FordMustangFrontRightWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightArmorBone 1.0,
+	}
+
+	model FordMustangRearRightWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+        static = TRUE,
+	}
+
+	model FordMustangRearLeftWindowArmor
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+        static = TRUE,
+	}
+
+	template vehicle FordMustangAttachments
+	{
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = FordMustangBullbar, }
+            itemType = SCKCO.FordMustang90BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = FordMustangWindshieldArmor, }
+            itemType = SCKCO.FordMustang90WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = FordMustangFrontRightWindowArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.FordMustang90WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = FordMustangFrontLeftWindowArmor, }
+				parent = WindowFrontLeft,
+            itemType = SCKCO.FordMustang90WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = FordMustangRearRightWindowArmor, }
+            itemType = SCKCO.FordMustang90WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = FordMustangRearLeftWindowArmor, }
+            itemType = SCKCO.FordMustang90WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = FordMustangFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.FordMustang90DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = FordMustangFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.FordMustang90DoorArmorSC,
+        }
+
+    }
+}

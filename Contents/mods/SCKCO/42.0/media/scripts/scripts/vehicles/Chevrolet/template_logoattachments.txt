@@ -1,0 +1,155 @@
+module Base
+{
+
+	model ChevyLogo
+	{
+		mesh = vehicles/Chevrolet/Vehicle_K5Blazer_SC|Chevy_obj,
+		texture = Vehicles/K5/Vehicle_BlazerSC_White,
+		
+		scale = 1,
+	}
+
+	model K5Attachment
+	{
+		mesh = vehicles/attachments/K5LOGO,
+		texture = Vehicles/K5/K5SideLogo,
+		
+		scale = 1,
+	}
+
+	model K10Attachment
+	{
+		mesh = vehicles/attachments/K10LOGO,
+		texture = Vehicles/K10/K10SideLogo,
+		
+		scale = 1,
+	}
+
+	model SuburbanAttachment
+	{
+		mesh = vehicles/attachments/K10LOGO,
+		texture = Vehicles/Suburban/SuburbanLogo,
+		
+		scale = 1,
+	}
+
+	model G30SportAttachment
+	{
+		mesh = vehicles/attachments/SportsVAN,
+		texture = Vehicles/ChevroletG30/ChevyVan,
+		
+		scale = 1,
+	}
+
+	model G30ThirtyAttachment
+	{
+		mesh = vehicles/attachments/Chevy30,
+		texture = Vehicles/ChevroletG30/Chevy30Badge,
+		
+		scale = 1,
+	}
+
+
+	template vehicle ChevyLogo
+	{
+		template = cosmetic/part/SCLogo,
+        part ChevyLogo
+		{
+			model Default { file = ChevyLogo, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+	}
+
+	template vehicle K5Logo
+	{
+		template = cosmetic/part/SCLogo,
+
+        part SCLogo
+		{
+			model Default { file = K5Attachment, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+	}
+
+	template vehicle K10Logo
+	{
+		template = cosmetic/part/SCLogo,
+        part SCLogo
+		{
+			model Default { file = K10Attachment, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+	}
+
+	template vehicle SuburbanLogo
+	{
+		template = cosmetic/part/SCLogo,
+        part SCLogo
+		{
+			model Default { file = SuburbanAttachment, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+	}
+
+	template vehicle G30SportLogo
+	{
+		template = cosmetic/part/SCLogo,
+        part G30SportLogo
+		{
+			model Default { file = G30SportAttachment, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+			
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+
+	template vehicle G30ThirtyLogo
+	{
+		template = cosmetic/part/SCLogo,
+		part SCLogo
+		{
+			model Default { file = G30ThirtyAttachment, }
+			category = nodisplay,
+			itemType = SCKCO.FillerPartSC,
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+		}
+
+		}
+	}

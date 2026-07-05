@@ -1,0 +1,103 @@
+module Base
+{
+
+	model G30WindowlessBumper
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|HoodArmor_obj,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30WindowlessWindshieldArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|WindshieldArmor_obj,
+        texture = Vehicles/ChevroletG30/Vehicle_G30WindBull,
+		scale = 1,
+	}
+
+	model G30WindowlessFrontLeftDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30WindowlessFrontRightDoorArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30WindowlessFrontLeftWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model G30WindowlessFrontRightWindowArmor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30Windowless_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+ template vehicle G30WindowlessAttachments
+    {
+
+
+        template = armorUpgrades/part/SCArmorBumper,
+        part SCArmorBumper
+        {
+            model Default { file = G30WindowlessBumper, }
+            itemType = SCKCO.ChevyG30BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            parent = WindowFrontRight,
+            model Default { file = G30WindowlessFrontRightWindowArmor, }
+            parent = WindowFrontRight,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            parent = WindowFrontLeft,
+            model Default { file = G30WindowlessFrontLeftWindowArmor, }
+            parent = WindowFrontLeft,
+            itemType = SCKCO.ChevyG30WindowArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = G30WindowlessFrontRightDoorArmor, }
+            parent = DoorFrontRight,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = G30WindowlessFrontLeftDoorArmor, }
+            parent = DoorFrontLeft,
+            itemType = SCKCO.ChevyG30DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = G30WindowlessWindshieldArmor, }
+            itemType = SCKCO.ChevyG30WindshieldArmorSC,
+        }
+    }
+
+}

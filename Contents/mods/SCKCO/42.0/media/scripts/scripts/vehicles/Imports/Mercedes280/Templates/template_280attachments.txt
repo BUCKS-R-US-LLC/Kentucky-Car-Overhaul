@@ -1,0 +1,172 @@
+module Base
+{
+
+	model Mercedes280Bumper
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|Bumper_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model Mercedes280WindshieldArmor
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model Mercedes280FrontLeftDoorArmor
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model Mercedes280FrontRightDoorArmor
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+    model Mercedes280RearLeftDoorArmor
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|RearLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model Mercedes280RearRightDoorArmor
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|RearRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model Mercedes280FLWA
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+
+	model Mercedes280FRWA
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+    
+	model Mercedes280RLWA
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|RearLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearLeftWindowArmorBone 1.0,
+	}
+
+	model Mercedes280RRWA
+	{
+		mesh = vehicles/Mercedes/Vehicle_Mercedes280_SC|RearRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = RearRightWindowArmorBone 1.0,
+	}
+
+    template vehicle 280Attachments
+	{
+		
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = Mercedes280Bumper, }
+            itemType = SCKCO.Mercedes280BumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = Mercedes280WindshieldArmor, }
+            itemType = SCKCO.Mercedes280WindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = Mercedes280FRWA, }
+            itemType = SCKCO.Mercedes280DoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = Mercedes280FLWA, }
+            itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = Mercedes280FrontRightDoorArmor, }
+			parent = WindowFrontRight,
+            itemType = SCKCO.Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = Mercedes280FrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearRightDoor,
+        part SCArmorRearRightDoor
+        {
+            model Default { file = Mercedes280RearRightDoorArmor, }
+			parent = DoorRearRight,
+            itemType = SCKCO.Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftDoor,
+        part SCArmorRearLeftDoor
+        {
+            model Default { file = Mercedes280RearLeftDoorArmor, }
+			parent = DoorRearLeft,
+            itemType = SCKCO.Mercedes280DoorArmorSC,
+        }
+        
+        template = armorUpgrades/part/SCArmorRearRightWindow,
+        part SCArmorRearRightWindow
+        {
+            model Default { file = Mercedes280RRWA, }
+            itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = DoorRearRight,
+            requireInstalled = Mercedes280DoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorRearLeftWindow,
+        part SCArmorRearLeftWindow
+        {
+            model Default { file = Mercedes280RLWA, }
+            itemType = SCKCO.Mercedes280WindowArmorSC,
+			parent = WindowRearLeft,
+            requireInstalled = Mercedes280DoorArmorSC,
+        }
+
+    }
+}

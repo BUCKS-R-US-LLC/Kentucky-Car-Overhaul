@@ -1,0 +1,176 @@
+module Base
+{
+	template vehicle M35A2Seat
+	{
+		part RearLeftOne
+		{
+			area = RearLeftOne,
+			container
+			{
+				seat = RearLeftOne,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightOne
+		{
+			area = RearRightOne,
+			container
+			{
+				seat = RearRightOne,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearLeftTwo
+		{
+			area = RearLeftTwo,
+			container
+			{
+				seat = RearLeftTwo,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightTwo
+		{
+			area = RearRightTwo,
+			container
+			{
+				seat = RearRightTwo,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearLeftThree
+		{
+			area = RearLeftThree,
+			container
+			{
+				seat = RearLeftThree,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightThree
+		{
+			area = RearRightThree,
+			container
+			{
+				seat = RearRightThree,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearLeftFour
+		{
+			area = RearLeftFour,
+			container
+			{
+				seat = RearLeftFour,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightFour
+		{
+			area = RearRightFour,
+			container
+			{
+				seat = RearRightFour,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearLeftFive
+		{
+			area = RearLeftFive,
+			container
+			{
+				seat = RearLeftFive,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightFive
+		{
+			area = RearRightFive,
+			container
+			{
+				seat = RearRightFive,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearLeftSix
+		{
+			area = RearLeftSix,
+			container
+			{
+				seat = RearLeftSix,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+		part RearRightSix
+		{
+			area = RearRightSix,
+			container
+			{
+				seat = RearRightSix,
+			}
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+		}
+
+        part RearLeftSeven
+        {
+            area = RearLeftSeven,
+            container
+            {
+                seat = RearLeftSeven,
+            }
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+        }
+
+        part RearRightSeven
+        {
+            area = RearRightSeven,
+            container
+            {
+                seat = RearRightSeven,
+            }
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+        }
+
+		part Rear*
+		{
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+			mechanicRequireKey = true,
+			container
+			{
+				test = Vehicles.ContainerAccess.Seat,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+	}
+}

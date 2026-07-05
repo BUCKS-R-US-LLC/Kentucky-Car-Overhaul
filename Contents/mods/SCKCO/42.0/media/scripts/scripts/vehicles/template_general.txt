@@ -1,0 +1,296 @@
+module Base {
+
+	template vehicle specials
+	{
+	    /* template = specials/part/DetroitDieselSC, */
+        part DetroitDieselSC
+        {
+            category = nodisplay,
+            itemType = SCKCO.DetroitDieselSC,
+            mechanicRequireKey = false,
+            lua { create = Vehicles.Create.Default, }
+        }
+
+        /* template = specials/part/BackUpAlarmSC, */
+        part BackUpAlarmSC
+        {
+            category = nodisplay,
+            itemType = SCKCO.BackUpAlarmSC,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 500,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+
+            table uninstall {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 50,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
+            }
+
+            lua { create = Vehicles.Create.Default, }
+        }
+
+        /* template = specials/part/AirBrakeSC, */
+        part AirBrakeSC
+        {
+            category = nodisplay,
+            itemType = Base.NormalBrake,
+            mechanicRequireKey = false,
+            lua { create = Vehicles.Create.Default, }
+        }
+    }
+
+
+    /* template = cosmetic/part/SCLogo, */
+    template vehicle cosmetic
+    {
+        part SCLogo
+        {
+		    area = Engine,
+		    category = nodisplay,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+
+            table uninstall
+            {
+                items
+                {
+                    1 { type = Base.Screwdriver, count = 1, keep = true, equip = primary, }
+                }
+                time = 300,
+                skills = Mechanics:1,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
+            }
+        }
+    }
+
+
+/*
+        /* EXAMPLE USE */
+        template = armorUpgrades/part/PART_LOCATION,
+        /* SCARMORBumper - SCARMORFrontRightWindow - SCARMORFrontLeftWindow - SCARMORFrontRightDoor - SCARMORFrontLeftDoor - SCARMORWindshield */
+        part PART_LOCATION
+        {
+            model Default { file = MODEL, }
+            itemType = MODULE.ITEMTYPE,
+        }
+*/
+
+	template vehicle armorUpgrades {
+
+		part SCArmorBumper
+		{
+            area = Engine,
+            parent = EngineDoor,
+            lua { }
+        }
+
+		part SCArmorGrille
+		{
+            area = Engine,
+            parent = EngineDoor,
+            lua { }
+        }
+
+        part SCArmorHood
+        {
+            area = Engine,
+            parent = EngineDoor,
+            lua { }
+        }
+
+		part SCArmorFrontRightWindow
+		{
+			anim ClosedToOpen { anim = FrontRightWindowClosing, animate = FALSE, }
+            area = DoorFrontRight,
+            parent = WindowFrontRight,
+            lua { }
+        }
+
+		part SCArmorFrontLeftWindow
+		{
+			anim ClosedToOpen { anim = FrontLeftWindowClosing, animate = FALSE, }
+            area = DoorFrontLeft,
+            parent = WindowFrontLeft,
+            lua { }
+        }
+
+        part SCArmorMiddleRightWindow
+        {
+            anim ClosedToOpen { anim = MiddleRightWindowClosing, animate = FALSE, }
+            area = DoorMiddleRight,
+            parent = WindowMiddleRight,
+            lua { }
+        }
+
+        part SCArmorMiddleLeftWindow
+        {
+            anim ClosedToOpen { anim = MiddleLeftWindowClosing, animate = FALSE, }
+            area = DoorMiddleLeft,
+            parent = WindowMiddleLeft,
+            lua { }
+        }
+
+        part SCArmorRearRightWindow
+        {
+            anim ClosedToOpen { anim = RearRightWindowClosing, animate = FALSE, }
+            area = DoorRearRight,
+            parent = WindowRearRight,
+            lua { }
+        }
+
+        part SCArmorRearLeftWindow
+        {
+            anim ClosedToOpen { anim = RearLeftWindowClosing, animate = FALSE, }
+            area = DoorRearLeft,
+            parent = WindowRearLeft,
+            lua { }
+        }
+
+		part SCArmorFrontRightDoor
+		{
+            area = DoorFrontRight,
+            parent = DoorFrontRight,
+            lua { }
+
+            anim Close { anim = FrontRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = FrontRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = FrontRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = FrontRightDoorClosing, reverse = TRUE, animate = FALSE, }
+        }
+
+		part SCArmorFrontLeftDoor
+		{
+            area = DoorFrontLeft,
+            parent = DoorFrontLeft,
+            lua { }
+
+            anim Close { anim = FrontLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = FrontLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = FrontLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = FrontLeftDoorClosing, reverse = TRUE, animate = FALSE, }
+		}
+
+		part SCArmorMiddleRightDoor
+		{
+            area = DoorMiddleRight,
+            parent = DoorMiddleRight,
+            lua { }
+
+            anim Close { anim = MiddleRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = MiddleRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = MiddleRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = MiddleRightDoorClosing, reverse = TRUE, animate = FALSE, }
+        }
+
+		part SCArmorMiddleLeftDoor
+		{
+            area = DoorMiddleLeft,
+            parent = DoorMiddleLeft,
+            lua { }
+
+            anim Close { anim = MiddleLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = MiddleLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = MiddleLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = MiddleLeftDoorClosing, reverse = TRUE, animate = FALSE, }
+		}
+
+		part SCArmorRearRightDoor
+		{
+            area = DoorRearRight,
+            parent = DoorRearRight,
+            lua { }
+
+            anim Close { anim = RearRightDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = RearRightDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = RearRightDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = RearRightDoorClosing, reverse = TRUE, animate = FALSE, }
+        }
+
+		part SCArmorRearLeftDoor
+		{
+            area = DoorRearLeft,
+            parent = DoorRearLeft,
+            lua { }
+
+            anim Close { anim = RearLeftDoorClosing, reverse = TRUE, rate = 2.0, }
+            anim Open { anim = RearLeftDoorClosing, reverse = FALSE, rate = 1.0, }
+            anim Closed { anim = RearLeftDoorClosing, reverse = FALSE, animate = FALSE, }
+            anim Opened { anim = RearLeftDoorClosing, reverse = TRUE, animate = FALSE, }
+		}
+
+        part SCArmorSide
+        {
+            area = Engine,
+            lua { }
+        }
+
+		part SCArmorWindshield
+		{
+            area = Engine,
+            parent = Windshield,
+            lua { }
+		}
+
+
+        /* wild-card */
+		part SCArmor* {
+
+            area = Engine,
+            category = SCUCKarmor,
+            mechanicRequireKey = false,
+
+            table install
+            {
+                items {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                    }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+
+            table uninstall
+            {
+                items {
+                    1 { type = Base.Wrench, count = 1, keep = true, equip = primary, }
+                    }
+                time = 1000,
+                skills = Mechanics:2;Metalworking:1,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
+            }
+        }
+
+
+    }
+}

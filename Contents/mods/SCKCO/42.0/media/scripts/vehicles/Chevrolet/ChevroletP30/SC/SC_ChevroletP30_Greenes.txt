@@ -57,22 +57,14 @@ module Base
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
 	}
-	model StepVanP30RearRightDoor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
 	model StepVanP30Trunk
 	{
-		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|Trunk_obj,
+		mesh = vehicles/Chevrolet/Vehicle_StepVanP30_SC|RearDoor_obj,
 		shader = SC_vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
-		boneWeight = TrunkBone 1.0,
+		boneWeight = RearRightDoorBone 1.0,
+		boneWeight = RearLeftDoorBone 1.0,
 	}
 	model StepVanP30Hood
 	{
@@ -209,7 +201,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -249,44 +241,6 @@ module Base
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7193 1.7544 -3.6140,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 1.1754 -0.5965 -5.7193,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7193 1.7544 -3.6140,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -1.1579 -0.5965 -5.7193,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
 			xywh = 0.0000 4.6667 3.2281 2.0000,
@@ -302,14 +256,9 @@ module Base
 			xywh = -2.2456 0.7895 1.1228 1.1228,
 		}
 
-		area SeatRearRight
+		area TruckBed
 		{
-			xywh = 0.0000 -5.4035 1.1228 1.1228,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 0.0000 -5.4035 1.1228 1.1228,
+			xywh = 0.0037 -5.4737 3.1579 1.1228,
 		}
 
 		area GasTank
@@ -341,13 +290,23 @@ module Base
 		template = specials/part/BackUpAlarmSC,
 		template = SCSeat/part/SeatFrontLeft,
 		template = SCSeat/part/SeatFrontRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCSeat/part/SeatRearRight,
-		template = GloveBox,
+		template = SCFloorSpace/part/FloorSpaceFrontRight,
+		template = SCGloveBox,
+		template = Trunk/part/TruckBed,
 		template = SCGasTankBig,
 		template = SCBattery,
 		template = Engine,
 		template = SCMufflerNormal,
+
+		part TruckBedOpen
+		{
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+		}
 
 
 		part SeatFrontLeft
@@ -361,26 +320,6 @@ module Base
 		part SeatFrontRight
 		{
 			model SeatfrontRight
-			{
-				file = StepVanP30Passenger,
-			}
-		}
-
-		part SeatRearLeft
-		{
-			category = nodisplay,
-
-			model SeatRearLeft
-			{
-				file = StepVanP30Passenger,
-			}
-		}
-
-		part SeatRearRight
-		{
-			category = nodisplay,
-
-			model SeatRearRight
 			{
 				file = StepVanP30Passenger,
 			}
@@ -495,7 +434,7 @@ module Base
 				file = StepVanP30RearWindshield,
 			}
 
-			parent = DoorRearRight,
+			parent = TrunkDoor,
 
 			table install
 			{
@@ -523,6 +462,7 @@ module Base
 		template = Door/part/DoorRearLeft,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
+		template = TrunkDoor,
 
 		part WindowFrontRight
 		{
@@ -560,125 +500,143 @@ module Base
 			itemType = SCKCO.ChevyP30DoorSC,
 		}
 
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = StepVanP30FrontRightDoor,
-			}
+        part DoorFrontRight
+        {
+            model Default
+            {
+                file = StepVanP30FrontRightDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
 
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
+            anim Close
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
 
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
+            anim Open
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
 
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
+            anim Closed
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
 
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
+            anim Opened
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
 
-			itemType = SCKCO.ChevyP30DoorSC,
-		}
+            itemType = SCKCO.ChevyP30DoorSC,
+        }
 
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = StepVanP30FrontLeftDoor,
-			}
+        part DoorFrontLeft
+        {
+            model Default
+            {
+                file = StepVanP30FrontLeftDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
 
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
+            anim Close
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
 
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
+            anim Open
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
 
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
+            anim Closed
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
 
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
+            anim Opened
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
 
-			itemType = SCKCO.ChevyP30DoorSC,
-		}
+            itemType = SCKCO.ChevyP30DoorSC,
+        }
 
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = StepVanP30RearRightDoor,
-			}
+        part TrunkDoor
+        {
+            model Default
+            {
+                file = StepVanP30Trunk,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
 
-			anim Close
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
+            anim Close
+            {
+                anim = RearDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
 
-			anim Open
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
+            anim Open
+            {
+                anim = RearDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
 
-			anim Closed
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
+            anim Closed
+            {
+                anim = RearDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
 
-			anim Opened
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
+            anim Opened
+            {
+                anim = RearDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
 
-			itemType = SCKCO.ChevyP30DoorSC,
-		}
+            itemType = SCKCO.ChevyP30DoorSC,
+        }
 
-		part DoorRearLeft
-		{
-			category = nodisplay,
-			itemType = SCKCO.ChevyP30DoorSC,
-		}
+        part DoorRearLeft
+        {
+            category = nodisplay,
+            itemType = SCKCO.ChevyP30DoorSC,
+        }
+
+        part TruckBed
+        {
+            area = TruckBed,
+
+            container
+            {
+                capacity = 100,
+                conditionAffectsCapacity = FALSE,
+                test = Vehicles.ContainerAccess.BackOfTruck,
+            }
+        }
 
 		template = SCTireNormal,
 		

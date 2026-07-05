@@ -1,0 +1,49 @@
+module Base
+{
+	template vehicle TrunkPumper
+	{
+		
+		/* FIXME: This should be "TruckBed" */
+		part SideContainer1
+		{
+			area = SideContainer1,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			category = nodisplay,
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SideContainer2
+		{
+			area = SideContainer2,
+			category = nodisplay,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = false,
+			category = nodisplay,
+
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}

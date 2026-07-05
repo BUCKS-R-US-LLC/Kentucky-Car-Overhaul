@@ -1,0 +1,899 @@
+module Base
+{
+	model SC_GeoTracker
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|base_mesh,
+		shader = vehicle_norandom_multiuv_noreflect,
+		static = TRUE,
+		scale = 1,
+	}
+	model GeoTrackerDriver
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|DriverSeat_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+	model GeoTrackerPassenger
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|PassengerSeat_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+	model GeoTrackerRearDouble
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearDoubleSeat_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+	model GeoTrackerWindshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Windshield_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
+	model GeoTrackerRearWindshield
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+		boneWeight = RearBone 1.0,
+	}
+	model GeoTrackerFrontRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightWindow_obj,
+		shader = vehicleutest,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+		boneWeight = FrontRightWindowArmorBone 1.0,
+	}
+	model GeoTrackerFrontLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftWindow_obj,
+		shader = vehicleutest,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+		boneWeight = FrontLeftWindowArmorBone 1.0,
+	}
+	model GeoTrackerRearRightWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearRightWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
+	model GeoTrackerRearLeftWindow
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|RearLeftWindow_obj,
+		shader = vehicleutest,
+		scale = 1,
+	}
+	model GeoTrackerFrontRightDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontRightDoor_obj,
+		shader = vehicleutest,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightDoorBone 1.0,
+	}
+	model GeoTrackerFrontLeftDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|FrontLeftDoor_obj,
+		shader = vehicleutest,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftDoorBone 1.0,
+	}
+	model GeoTrackerTrunk
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|TrunkDoor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = TrunkBone 1.0,
+	}
+	model GeoTrackerHood
+	{
+		mesh = vehicles/Chevrolet/Vehicle_GeoTracker89_SC|Hood_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+		static = FALSE,
+		boneWeight = HoodBone 1.0,
+	}
+	model GeoTrackerwheelleft
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		scale = 0.8,
+	}
+	model GeoTrackerwheelright
+	{
+		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
+		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		scale = 0.8,
+	}
+	vehicle SC_GeoTracker
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 1.5,
+		engineRepairLevel = 4,
+		playerDamageProtection = 1.3,
+
+		model
+		{
+			file = SC_GeoTracker,
+			scale = 0.6000,
+			offset = 0.0000 -0.1000 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Red,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Pink,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Black,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Emerald,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_EmeraldLivery,
+		}
+		
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Banana,
+		}
+
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_BananaLivery1,
+		}
+
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_BananaLivery2,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Brown,
+		}
+
+		skin
+		{
+			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_PurpleLivery,
+		}
+
+		textureMask = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Masks,
+		textureLights = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Lights,
+		textureDamage1Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blood,
+		textureDamage2Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blood,
+		textureDamage1Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Scratch,
+		textureDamage2Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Scratch,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
+
+		sound
+		{
+			engine = VehicleEngineOffRoad,
+			engineStart = VehicleEngineOffRoad,
+			engineTurnOff = VehicleEngineOffRoad,
+			horn = VehicleHornJeep,
+			ignitionFail = VehicleIgnitionFailOffRoad,
+		}
+
+		extents = 2.2667 2.1333 4.9667,
+		mass = 500,
+		physicsChassisShape = 2.2667 2.1333 4.9667,
+		centerOfMassOffset = 0.0000 1.0833 -0.0167,
+		shadowExtents = 2.2450 4.9738,
+		shadowOffset = 0.0135 -0.0333,
+		engineForce = 3200,
+		engineQuality = 75,
+		engineLoudness = 85,
+		maxSpeed = 100f,
+		brakingForce = 100,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 0.50f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 45,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 12,
+		suspensionRestLength = 0.5,
+		wheelFriction = 1.6f,
+		frontEndHealth = 450,
+		rearEndHealth = 270,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.9667 0.3667 1.5500,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.9667 0.3667 1.5500,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.9667 0.3667 -1.5500,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.9667 0.3667 -1.5500,
+			radius = 0.50f,
+			width = 0.30f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5000 1.0333 -0.4333,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 1.5833 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5000 1.0333 -0.4333,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.6000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 0.5000 1.0333 -1.6167,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.6000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -0.5000 1.0333 -1.6167,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -1.6000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 3.5500 2.2667 2.0000,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -3.5000 2.2667 1.7667,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -1.9167 0.0167 1.3667 1.3667,
+		}
+
+		area GasTank
+		{
+			xywh = -1.5500 -2.0000 0.6333 0.6667,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 1.2333 1.5667 0.0000 0.0000,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -1.2333 1.5667 0.0000 0.0000,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 1.2333 -1.5333 0.0000 0.0000,
+		}
+
+		area TireRearRight
+		{
+			xywh = -1.2333 -1.5333 0.0000 0.0000,
+		}
+
+		template = GeoTrackerAttachments,
+		template = SCSeat/part/SeatFrontLeft,
+		template = SCSeat/part/SeatFrontRight,
+		template = SCSeat/part/SeatRearLeft,
+		template = SCSeat/part/SeatRearRight,
+		template = SCGloveBox,
+		template = SCGasTankSmall,
+		template = SCBattery,
+		template = Engine,
+		template = SCMufflerNormal,
+
+		part SeatFrontLeft
+		{
+			model seatfrontLeft
+			{
+				file = GeoTrackerDriver,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			model seatfrontRight
+			{
+				file = GeoTrackerPassenger,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			model seatRearLeft
+			{
+				file = GeoTrackerRearDouble,
+			}
+		}
+
+		part SeatRearRight
+		{
+			model seatRearRight
+			{
+				file = GeoTrackerRearDouble,
+			}
+		}
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			model engineDoor
+			{
+				file = GeoTrackerHood,
+			}
+
+			anim Close
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = HoodClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = HoodClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			itemType = SCKCO.GeoTrackerHoodSC,
+		}
+
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield
+		{
+			model windshieldFront
+			{
+				file = GeoTrackerWindshield,
+			}
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.GeoTrackerWindshieldSC,
+		}
+
+		part WindshieldRear
+		{
+			model windshieldRear
+			{
+				file = GeoTrackerRearWindshield,
+			}
+
+			parent = TrunkDoor,
+
+			window
+			{
+				openable = false,
+			}
+
+			table install
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Intermediate Mechanics,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.GeoTrackerWindshieldSC,
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part WindowFrontRight
+		{
+			model windowFR
+			{
+				file = GeoTrackerFrontRightWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontRightWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.GeoTrackerWindowSC,
+			parent = DoorFrontRight,
+			area = SeatFrontRight,
+		}
+
+		part WindowFrontLeft
+		{
+			model windowFL
+			{
+				file = GeoTrackerFrontLeftWindow,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = FrontLeftWindowClosing,
+				animate = FALSE,
+			}
+
+			category = SCUCKwindows,
+			itemType = SCKCO.GeoTrackerWindowSC,
+			parent = DoorFrontLeft,
+			area = SeatFrontLeft,
+		}
+
+		part WindowRearRight
+		{
+			model windowRR
+			{
+				file = GeoTrackerRearRightWindow,
+			}
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			area = SeatRearRight,
+			itemType = SCKCO.GeoTrackerWindowSC,
+		}
+
+		part WindowRearLeft
+		{
+			model windowRL
+			{
+				file = GeoTrackerRearLeftWindow,
+			}
+
+			table install
+			{
+				requireInstalled =,
+			}
+
+			category = SCUCKwindows,
+			area = SeatRearLeft,
+			itemType = SCKCO.GeoTrackerWindowSC,
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = GeoTrackerFrontRightDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontRightDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontRightDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.GeoTrackerDoorSC,
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = GeoTrackerFrontLeftDoor,
+			}
+
+			anim Close
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = FrontLeftDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.GeoTrackerDoorSC,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = GeoTrackerTrunk,
+				offset = 0 0 0,
+				rotate = 0 0 0,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				rate = 1.5,
+			}
+
+			anim Open
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = TrunkClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = TrunkClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.GeoTrackerTrunkLidSC,
+		}
+
+		template = Trunk/part/TruckBed,
+		template = SCTireNormal,
+		
+
+		part TruckBed
+		{
+			container
+			{
+				capacity = 20,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = GeoTrackerwheelleft,
+			}
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = GeoTrackerwheelright,
+			}
+		}
+
+		part TireRearLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = GeoTrackerwheelleft,
+			}
+		}
+
+		part TireRearRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = GeoTrackerwheelright,
+			}
+		}
+
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = SCSuspensionNormal,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:4,
+				recipes = Intermediate Mechanics,
+			}
+		}
+
+		template = SCRadio,
+		template = Headlight,
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		physics box
+		{
+			offset = 0.0000 1.0833 -0.0167,
+			extents = 2.2667 2.1667 4.9667,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 0.8000 -2.5000,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 0.7000 2.4833,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}
+
+
+

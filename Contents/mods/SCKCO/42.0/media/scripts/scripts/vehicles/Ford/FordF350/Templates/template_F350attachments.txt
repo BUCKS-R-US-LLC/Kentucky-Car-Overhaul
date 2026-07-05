@@ -1,0 +1,103 @@
+module Base
+{
+
+	model F350AmbulanceBumper
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontBumper_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model F350AmbulanceWindshieldArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|WindshieldArmor_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
+	model F350AmbulanceFrontLeftDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model F350AmbulanceFrontRightDoorArmor
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightDoorArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+	}
+
+	model F350AmbulanceFLWA
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontLeftWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontLeftWindowBone 1.0,
+	}
+
+	model F350AmbulanceFRWA
+	{
+		mesh = vehicles/Ford/Vehicle_F350Ambulance_SC|FrontRightWindowArmor_obj,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1,
+		boneWeight = FrontRightWindowBone 1.0,
+	}
+    
+    template vehicle F350AmbulanceAttachments
+	{
+
+	    template = armorUpgrades/part/SCArmorBumper,
+	    part SCArmorBumper
+	    {
+            model Default { file = F350AmbulanceBumper, }
+            itemType = SCKCO.FordOBSBumperSC,
+        }
+
+        template = armorUpgrades/part/SCArmorWindshield,
+        part SCArmorWindshield
+        {
+            model Default { file = F350AmbulanceWindshieldArmor, }
+            itemType = SCKCO.FordOBSWindshieldArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightWindow,
+        part SCArmorFrontRightWindow
+        {
+            model Default { file = F350AmbulanceFRWA, }
+            itemType = SCKCO.FordOBSDoorArmorSC,
+			parent = WindowFrontRight,
+            requireInstalled = FordF350AmbulanceDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftWindow,
+        part SCArmorFrontLeftWindow
+        {
+            model Default { file = F350AmbulanceFLWA, }
+            itemType = SCKCO.FordOBSWindowArmorSC,
+			parent = WindowFrontLeft,
+            requireInstalled = FordF350AmbulanceDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontRightDoor,
+        part SCArmorFrontRightDoor
+        {
+            model Default { file = F350AmbulanceFrontRightDoorArmor, }
+			parent = DoorFrontRight,
+            itemType = SCKCO.FordOBSDoorArmorSC,
+        }
+
+        template = armorUpgrades/part/SCArmorFrontLeftDoor,
+        part SCArmorFrontLeftDoor
+        {
+            model Default { file = F350AmbulanceFrontLeftDoorArmor, }
+			parent = DoorFrontLeft,
+            itemType = SCKCO.FordOBSDoorArmorSC,
+        }
+    }
+}
