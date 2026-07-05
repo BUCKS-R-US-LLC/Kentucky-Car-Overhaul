@@ -1,5 +1,13 @@
 module Base
 {
+	model G30VanBoxSlidingRightDoor
+	{
+		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|RearSlidingDoor_obj,
+		shader = SC_vehicle_noreflect,
+		static = TRUE,
+		scale = 1,
+		boneWeight = RearSlideDoorBone 1.0,
+	}
 	model SC_G30BoxVan
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanBox_SC|base_mesh,
@@ -389,6 +397,23 @@ module Base
 				animate = FALSE,
 			}
 
+			itemType = SCKCO.ChevyG30DoorSC,
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = G30VanBoxSlidingRightDoor,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+
+			category = nodisplay,
+			area = SeatRearRight,
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 

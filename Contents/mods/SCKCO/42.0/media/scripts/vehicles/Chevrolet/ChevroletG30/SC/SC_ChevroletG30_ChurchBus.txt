@@ -10,13 +10,13 @@ module Base
 	model ShortBusDriver
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|FrontLeftSeat_obj,
-		shader = SC_vehicle_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ShortBusPassenger
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|PassengerSeat_obj,
-		shader = SC_vehicle_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model ShortBusWindshield
@@ -77,7 +77,7 @@ module Base
 	model ShortBusTrunk
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|TrunkDoor_obj,
-		shader = SC_vehicle_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -85,7 +85,7 @@ module Base
 	model ShortBusHood
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ShortSchool_SC|Hood_obj,
-		shader = SC_vehicle_noreflect,
+		shader = vehicle_noreflect,
 		scale = 1,
 		static = FALSE,
 		boneWeight = HoodBone 1.0,
@@ -171,7 +171,7 @@ module Base
 		}
 
 		extents = 3.2881 3.0847 9.0169,
-		mass = 1175,
+		mass = 600,
 		physicsChassisShape = 3.2881 3.0847 9.0169,
 		centerOfMassOffset = 0.0000 1.5593 -0.5254,
 		shadowExtents = 3.8942 10.2210,
@@ -185,14 +185,14 @@ module Base
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
 		steeringClamp = 0.3,
-		suspensionStiffness = 45,
+		suspensionStiffness = 90,
 		suspensionCompression = 3.83,
 		suspensionDamping = 2.88,
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
 		wheelFriction = 2.0f,
-		frontEndHealth = 510,
-		rearEndHealth = 390,
+		frontEndHealth = 4500,
+		rearEndHealth = 3500,
 		seats = 6,
 		isSmallVehicle = false,
 
@@ -412,18 +412,18 @@ module Base
 		template = ShortBusAttachments,
 		template = G30ThirtyLogo,
 		template = specials/part/BackUpAlarmSC,
-		template = SCSeat/part/SeatFrontLeft,
-		template = SCSeat/part/SeatFrontRight,
-		template = SCSeat/part/SeatMiddleLeft,
-		template = SCSeat/part/SeatMiddleRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCSeat/part/SeatRearRight,
-		template = SCGloveBox,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatMiddleLeft,
+		template = Seat/part/SeatMiddleRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+		template = GloveBox,
 		template = Trunk/part/TruckBed,
-		template = SCGasTankBig,
-		template = SCBattery,
+		template = GasTank,
+		template = Battery,
 		template = Engine,
-		template = SCMufflerNormal,
+		template = Muffler,
 		template = TrunkDoor,
 
 		part TruckBed
@@ -677,6 +677,45 @@ module Base
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = G30SeatsSlidingRightDoor,
+			}
+
+			anim Close
+			{
+				anim = SlideDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = SlideDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyG30DoorSC,
+		}
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -804,7 +843,6 @@ module Base
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 
-
 		part WindowRearRight
 		{
 			model Default
@@ -843,7 +881,7 @@ module Base
 			area = SeatRearLeft,
 		}
 
-		template = SCTireNormal,
+		template = Tire,
 
 		part TireFrontLeft
 		{
@@ -902,7 +940,7 @@ module Base
 			}
 		}
 
-		template = SCSuspensionNormal,
+		template = Suspension,
 
 		part Suspension*
 		{
@@ -919,7 +957,7 @@ module Base
 			}
 		}
 
-		template = SCRadio,
+		template = Radio,
 		template = Headlight,
 
 		part PassengerCompartment
