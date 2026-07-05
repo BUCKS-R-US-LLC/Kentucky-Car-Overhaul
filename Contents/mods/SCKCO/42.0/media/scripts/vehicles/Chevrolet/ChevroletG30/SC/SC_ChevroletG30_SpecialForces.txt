@@ -663,6 +663,7 @@ module Base
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
 		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 		template = Window/part/WindowRearLeft,
@@ -790,6 +791,43 @@ module Base
 			itemType = SCKCO.ChevyG30DoorSC,
 		}
 
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = G30SeatsSlidingRightDoor,
+			}
+
+			anim Close
+			{
+				anim = SlideDoorClosing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Open
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				rate = 1.0,
+			}
+
+			anim Closed
+			{
+				anim = SlideDoorClosing,
+				reverse = FALSE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = SlideDoorClosing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			itemType = SCKCO.ChevyG30DoorSC,
+		}
 
 		part WindowRearRight
 		{
