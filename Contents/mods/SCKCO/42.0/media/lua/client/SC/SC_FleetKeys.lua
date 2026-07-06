@@ -198,9 +198,13 @@ end
 
 local function assignVehicleKeys()
     local vehicles = getCell():getVehicles()
-    
-    for i = 0, vehicles:size() - 1 do
-        local vehicle = vehicles:get(i)
+    if not vehicles then return end
+
+    -- getVehicles() is a non-List collection in B42: size() exists, get(i) is nil.
+    -- iterate via Java iterator instead of index access
+    local it = vehicles:iterator()
+    while it:hasNext() do
+        local vehicle = it:next()
         if vehicle then
             local fleetKeyId = FLEET_CONFIG[vehicle:getScriptName()]
             if fleetKeyId then
@@ -222,8 +226,11 @@ local function syncNearbyVehicles()
     if not square then return end
     
     local vehicles = getCell():getVehicles()
-    for i = 0, vehicles:size() - 1 do
-        local vehicle = vehicles:get(i)
+    if not vehicles then return end
+
+    local it = vehicles:iterator()
+    while it:hasNext() do
+        local vehicle = it:next()
         if vehicle and vehicle:getSquare() then
             if square:DistToProper(vehicle:getSquare()) <= 3 then
                 local fleetKeyId = FLEET_CONFIG[vehicle:getScriptName()]
@@ -248,7 +255,9 @@ end
 -- ========================================
 
 Events.OnRefreshInventoryWindowContainers.Add(assignFleetKeyIds)
-Events.OnPlayerMove.Add(syncNearbyVehicles)
+-- disabled: getCell():getVehicles():get(i) resolves nil in this context (size ok, get nil).
+-- assignVehicleKeys covers assignment via OnTick/OnGameStart. re-enable after accessor confirmed.
+-- Events.OnPlayerMove.Add(syncNearbyVehicles)
 
 Events.OnGameStart.Add(function()
     print("SC_FleetKeys loaded")
@@ -262,4 +271,4 @@ Events.OnTick.Add(function()
         assignVehicleKeys()
         tickCounter = 0
     end
-end)
+end)
