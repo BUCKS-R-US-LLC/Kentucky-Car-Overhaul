@@ -67,7 +67,7 @@ module Base
         part SCArmorBumper
         {
             model Default { file = P30Bumper, }
-            itemType = SCKCO.ChevyP30BumperSC,
+            itemType = SCKCO.ChevyP30BumperSC2,
         }
 
         template = armorUpgrades/part/SCArmorFrontRightWindow,
@@ -75,7 +75,7 @@ module Base
         {
             model Default { file = P30FrontRightWindowArmor, }
             parent = WindowFrontRight,
-            itemType = SCKCO.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC2,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -83,14 +83,14 @@ module Base
         {
             model Default { file = P30FrontLeftWindowArmor, }
             parent = WindowFrontLeft,
-            itemType = SCKCO.ChevyP30WindowArmorSC,
+            itemType = SCKCO.ChevyP30WindowArmorSC2,
         }
 
         template = armorUpgrades/part/SCArmorSide,
         part SCArmorSide
         {
             model Default { file = P30SideArmor, }
-            itemType = SCKCO.ChevyP30WindshieldArmorSC,
+            itemType = SCKCO.ChevyP30WindshieldArmorSC2,
             /*TO-DO: CHANGE?*/
         }
 
@@ -99,7 +99,7 @@ module Base
         {
             model Default { file = P30HoodArmor, }
             parent = EngineDoor,
-            itemType = SCKCO.ChevyP30HoodArmorSC,
+            itemType = SCKCO.ChevyP30HoodArmorSC2,
             /*TO-DO: CHANGE?*/
         }
 
@@ -108,15 +108,14 @@ module Base
         {
             model Default { file = P30RearDoorArmor, }
             parent = TrunkDoor,
-            itemType = SCKCO.ChevyP30WindowArmorSC,
-            /*TO-DO: CHANGE?*/
+            itemType = SCKCO.ChevyP30RearWindowsArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
         part SCArmorWindshield
         {
             model Default { file = P30WindshieldArmor, }
-            itemType = SCKCO.ChevyP30WindshieldArmorSC,
+            itemType = SCKCO.ChevyP30WindshieldArmorSC2,
         }
 
     }
