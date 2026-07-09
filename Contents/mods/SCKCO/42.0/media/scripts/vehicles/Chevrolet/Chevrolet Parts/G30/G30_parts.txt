@@ -6,11 +6,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30WindshieldArmor,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanBumper_WorldItem,
+        WorldStaticModel = ChevyG30Bumper_WorldItem,
     }
 
         item ChevyG30DoorArmorSC2
@@ -18,11 +18,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30DoorArmor,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanDoorArmor_WorldItem,
+        WorldStaticModel = ChevyG30DoorArmor_WorldItem,
     }
 
         item ChevyG30WindshieldArmorSC2
@@ -30,11 +30,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30WindshieldArmor,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanWindshieldArmor_WorldItem,
+        WorldStaticModel = ChevyG30WindshieldArmor_WorldItem,
     }
 
         item ChevyG30WindowArmorSC2
@@ -42,11 +42,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30WindowArmor,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanWindshieldArmor_WorldItem,
+        WorldStaticModel = ChevyG30WindshieldArmor_WorldItem,
     }
 
         item ChevyG30WindowSC2
@@ -54,23 +54,59 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30WindowArmor,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanWindshieldArmor_WorldItem,
+        WorldStaticModel = ChevyG30WindshieldArmor_WorldItem,
     }
 
+        item ChevyG30WindowSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30WindowArmor,
+        VehicleType = 2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyG30WindshieldArmor_WorldItem,
+    }
+    
         item ChevyG30DoorSC2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	= ChevyLogo,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30Door,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanDoor_WorldItem,
+        WorldStaticModel = ChevyG30Door_WorldItem,
+    }
+
+        item ChevyG30RearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30RearDoors,
+        VehicleType = 2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyG30RearDoors_WorldItem,
+    }
+
+        item ChevyG30BoxVanRearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30BoxVanRearDoors,
+        VehicleType = 2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyG30BoxVanRearDoors_WorldItem,
     }
 
         item ChevyG30HoodSC2
@@ -78,11 +114,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	= ChevyLogo,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30Hood,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanHood_WorldItem,
+        WorldStaticModel = ChevyG30Hood_WorldItem,
     }
 
         item ChevyG30WindshieldSC2
@@ -90,11 +126,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshieldArmor,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletG30Windshield,
         VehicleType = 2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyVanWindshield_WorldItem,
+        WorldStaticModel = ChevyG30Windshield_WorldItem,
     }
 
 }

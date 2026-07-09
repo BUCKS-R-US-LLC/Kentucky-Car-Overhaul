@@ -10,19 +10,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanWindshieldArmor_WorldItem,
-    }
-
-        item ChevyP30DoorArmorSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        ItemType = base:normal,
-        Icon	=	SCKCO/Parts/Chevrolet/ChevroletP30DoorArmor,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanDoorArmor_WorldItem,
+        WorldStaticModel = ChevyP30WindshieldArmor_WorldItem,
     }
     
         item ChevyP30WindowArmorSC2
@@ -34,7 +22,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanWindowArmor_WorldItem,
+        WorldStaticModel = ChevyP30WindowArmor_WorldItem,
     }
 
         item ChevyP30HoodArmorSC2
@@ -46,7 +34,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanHoodArmor_WorldItem,
+        WorldStaticModel = ChevyP30HoodArmor_WorldItem,
     }
 
         item ChevyP30BumperSC2
@@ -58,7 +46,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanBumper_WorldItem,
+        WorldStaticModel = ChevyP30Bumper_WorldItem,
     }
 
         item ChevyP30DoorSC2
@@ -70,7 +58,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanDoor_WorldItem,
+        WorldStaticModel = ChevyP30Door_WorldItem,
     }
 
         item ChevyP30WindshieldSC2
@@ -82,7 +70,7 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanWindshield_WorldItem,
+        WorldStaticModel = ChevyP30Windshield_WorldItem,
     }
 
         item ChevyP30WindowSC2
@@ -94,9 +82,33 @@ module SCKCO
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevyStepVanWindow_WorldItem,
+        WorldStaticModel = ChevyP30Window_WorldItem,
     }
     
+        item ChevyP30RearWindowsSC
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletP30RearArmor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyP30RearWindows_WorldItem,
+    }
+
+        item ChevyP30RearWindowsArmorSC
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletP30RearArmor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyP30RearWindowsArmor_WorldItem,
+    }
+
         item ChevyP30HoodSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -106,7 +118,7 @@ module SCKCO
         Icon	=	SCKCO/Parts/Chevrolet/ChevroletP30Hood,
         ConditionMax = 100,
         MechanicsItem = TRUE,      
-        WorldStaticModel = 93ChevyStepVanHood_WorldItem,
+        WorldStaticModel = ChevyP30Hood_WorldItem,
     }
 
 }
