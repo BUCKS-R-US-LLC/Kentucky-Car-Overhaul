@@ -81,6 +81,31 @@ module SCKCO
         DisplayName = Ham Radio,
     }
 
+    item RT524SC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 15.0,
+        Icon = HamRadioMilitary,
+        BaseVolumeRange = 15,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = true,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 20000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldStaticModel = RT524_WorldItem,
+    }
+
     item PRC119SC
     {
         DisplayCategory = Communications,
