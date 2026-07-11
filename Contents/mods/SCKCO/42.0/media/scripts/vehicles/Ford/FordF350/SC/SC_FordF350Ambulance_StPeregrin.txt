@@ -232,7 +232,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat4,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -272,44 +272,6 @@ module Base
 			}
 		}
 
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.8305 1.3729 -3.3559,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 0.0000 -0.1864 -5.4576,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.8136 1.3729 -3.3559,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.3051 -0.1864 -0.6441,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
 		area Engine
 		{
 			xywh = 0.0000 4.5254 3.3898 0.9153,
@@ -323,16 +285,6 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.3390 0.7797 1.1186 1.1186,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.3390 -1.5424 1.1186 1.0847,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = -2.3390 -1.5424 1.1186 1.0847,
 		}
 
 		area GasTank
@@ -368,8 +320,6 @@ module Base
 		template = F350AmbulanceAttachments,
 		template = SCSeat/part/SeatFrontLeft,
 		template = SCSeat/part/SeatFrontRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCSeat/part/SeatRearRight,
 		template = Trunk/part/TruckBed,
 		template = SCGloveBox,
 		template = SCGasTankBig,
@@ -445,14 +395,14 @@ module Base
 			}
 		}
 
-		part SeatRearLeft
+		part TruckBed
 		{
-			category = nodisplay,
-		}
-
-		part SeatRearRight
-		{
-			category = nodisplay,
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
 		}
 
 		part Muffler

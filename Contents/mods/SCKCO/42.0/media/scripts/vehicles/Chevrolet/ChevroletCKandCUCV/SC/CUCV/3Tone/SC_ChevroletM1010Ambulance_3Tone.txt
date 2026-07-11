@@ -198,7 +198,7 @@ module Base
 			width = 0.30f,
 		}
 
-		template = PassengerSeat6,
+		template = PassengerSeat2,
 
 		passenger FrontLeft
 		{
@@ -238,82 +238,6 @@ module Base
 			}
 		}
 
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.9524 1.5397 -1.4286,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleRight,
-			}
-		}
-
-		passenger MiddleLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.9524 1.5397 -1.4286,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0476 -0.1905 -1.6032,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatMiddleLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.9524 1.5397 -2.6984,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.0476 -0.1905 -3.1587,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.9524 1.5397 -2.6984,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.0476 -0.1905 -3.1587,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
 		area Engine
 		{
 			xywh = 0.0000 5.0635 2.9841 2.0000,
@@ -332,26 +256,6 @@ module Base
 		area SeatFrontRight
 		{
 			xywh = -2.2063 1.0317 1.2381 1.2381,
-		}
-
-		area SeatMiddleLeft
-		{
-			xywh = 2.2063 -1.3175 1.2381 1.2381,
-		}
-
-		area SeatMiddleRight
-		{
-			xywh = -2.2063 -1.3175 1.2381 1.2381,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 2.2063 -2.9683 1.2381 1.2381,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -2.2063 -2.9683 1.2381 1.2381,
 		}
 
 		area GasTank
@@ -383,11 +287,8 @@ module Base
 		template = M1010Attachments,
 		template = SCSeat/part/SeatFrontLeft,
 		template = SCSeat/part/SeatFrontRight,
-		template = SCSeat/part/SeatMiddleLeft,
-		template = SCSeat/part/SeatMiddleRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCSeat/part/SeatRearRight,
 		template = SCGloveBox,
+		template = Trunk/part/TruckBed,
 		template = SCGasTankBig,
 		template = SCBattery,
 		template = Engine,
@@ -409,28 +310,14 @@ module Base
 			}
 		}
 
-		part SeatMiddleLeft
+		part TruckBed
 		{
-			category = nodisplay,
-			itemType = SCKCO.FillerSeatSC,
-		}
-
-		part SeatMiddleRight
-		{
-			category = nodisplay,
-			itemType = SCKCO.FillerSeatSC,
-		}
-
-		part SeatRearLeft
-		{
-			category = nodisplay,
-			itemType = SCKCO.FillerSeatSC,
-		}
-
-		part SeatRearRight
-		{
-			category = nodisplay,
-			itemType = SCKCO.FillerSeatSC,
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
 		}
 
 		part Muffler

@@ -124,6 +124,11 @@ end
 ---@param vehicle BaseVehicle
 ---@param part VehiclePart
 local function SC_applySpecials(vehicle, part, partTable)
+    -- Part update fires on VirtualVehicle instances (streamed-out cars) via VirtualVehicleManager.
+    -- Those lack BaseVehicle-only methods (isHotwired/setHotwired/getDoor/transmitPartItem), so the
+    -- specials are skipped until the vehicle is physically loaded; the update re-fires once it is.
+    if not instanceof(vehicle, "BaseVehicle") then return end
+
     partTable = partTable or part:getTable("partVariation")
     if not partTable then return end
 
