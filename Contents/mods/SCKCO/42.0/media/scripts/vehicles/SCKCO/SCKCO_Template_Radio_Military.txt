@@ -1,0 +1,54 @@
+module Base
+{
+    template vehicle SCRadio_Military
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.HamRadio1SC;SCKCO.HamRadio2SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+}
