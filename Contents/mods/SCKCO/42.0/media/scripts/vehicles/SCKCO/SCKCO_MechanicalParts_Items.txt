@@ -81,6 +81,81 @@ module SCKCO
         DisplayName = Ham Radio,
     }
 
+    item MicorRadioSC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 12.0,
+        Icon = HamRadioMilitary,
+        BaseVolumeRange = 12,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = false,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 8000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldStaticModel = MicorRadio_WorldItem,
+    }
+
+    item SpectraRadioSC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 12.0,
+        Icon = HamRadioMilitary,
+        BaseVolumeRange = 12,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = false,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 10000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldStaticModel = SpectraRadio_WorldItem,
+    }
+
+    item SyntorX9000SC
+    {
+        DisplayCategory = Communications,
+        ItemType = base:radio,
+        Weight = 12.0,
+        Icon = HamRadioMilitary,
+        BaseVolumeRange = 12,
+        ConditionMax = 100,
+        DisappearOnUse = false,
+        IsHighTier = true,
+        IsPortable = false,
+        IsTelevision = false,
+        MaxChannel = 1000000,
+        MicRange = 5,
+        MinChannel = 200,
+        Tags = base:usesbattery,
+        Tooltip = Tooltip_item_Radio,
+        TransmitRange = 12000,
+        TwoWay = true,
+        UseDelta = 0.014,
+        UseWhileEquipped = false,
+        UsesBattery = true,
+        WorldStaticModel = SyntorX9000_WorldItem,
+    }
+
     item RT524SC
     {
         DisplayCategory = Communications,
