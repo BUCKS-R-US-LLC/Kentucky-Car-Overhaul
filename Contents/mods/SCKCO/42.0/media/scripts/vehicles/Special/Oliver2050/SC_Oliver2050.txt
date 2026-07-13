@@ -7,41 +7,37 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model Oliver2050Driver
+	model SC_Oliver2050Driver
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_SC|DriverSeat_obj,
 		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
-	model Oliver2050Exhaust
+	model SC_Oliver2050Exhaust
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_SC|Exhaust_obj,
 		shader = SC_vehicle_noreflect,
 		scale = 1,
 	}
-	model Oliver2050Wheelfrontwheelleft
+	model SC_Oliver2050WheelFrontLeft
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_FrontLeftWheel,
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_front,
-		
 	}
-	model Oliver2050Wheelfrontwheelright
+	model SC_Oliver2050WheelFrontRight
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_FrontRightWheel,
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_front,
-		
 	}
-	model Oliver2050Wheelbackwheelleft
+	model SC_Oliver2050WheelRearLeft
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_RearLeftWheel,
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
-		
 	}
-	model Oliver2050Wheelbackwheelright
+	model SC_Oliver2050WheelRearRight
 	{
 		mesh = vehicles/Special/Vehicle_Oliver2050_RearRightWheel,
 		texture = Vehicles/Oliver2050/Vehicle_Oliver2050_rear,
-		
 	}
 	vehicle SC_Oliver2050
     {
@@ -54,7 +50,7 @@ module Base
         {
             file = SC_Oliver2050,
             scale = 0.1100,
-            offset = 0.0000 5.4237 0.0000,
+            offset = 0.0000 3.8182 0.0000,
         }
 
         skin
@@ -78,11 +74,11 @@ module Base
             ignitionFail = VehicleIgnitionFailSUV,
         }
 
-        extents = 8.9091 9.0909 24.9091,
+        extents = 8.9091 8.9091 24.1818,
         mass = 1900,
-        physicsChassisShape = 8.9091 9.0909 24.9091,
+        physicsChassisShape = 8.9091 8.9091 24.1818,
         centerOfMassOffset = 0.0000 4.5455 0.0000,
-        shadowExtents = 10.6506 24.9398,
+        shadowExtents = 12.7415 24.9398,
         shadowOffset = 0.0000 0.0143,
         engineForce = 5000,
         engineQuality = 80,
@@ -106,23 +102,23 @@ module Base
         wheel FrontLeft
         {
             front = true,
-            offset = -6.7273 -7.2727 9.0909,
+            offset = -6.7273 -3.6364 9.0909,
             radius = 3.00f,
-            width = 0.30f,
+            width = 1.30f,
         }
 
         wheel FrontRight
         {
             front = true,
-            offset = 6.7273 -7.2727 9.0909,
+            offset = 6.7273 -3.6364 9.0909,
             radius = 3.00f,
-            width = 0.30f,
+            width = 1.30f,
         }
 
         wheel RearLeft
         {
             front = false,
-            offset = -7.0000 -4.5455 -8.0000,
+            offset = -7.0000 -1.0909 -8.0000,
             radius = 6.00f,
             width = 1.30f,
         }
@@ -130,25 +126,27 @@ module Base
         wheel RearRight
         {
             front = false,
-            offset = 7.0000 -4.5455 -8.0000,
+            offset = 7.0000 -1.0909 -8.0000,
             radius = 6.00f,
             width = 1.30f,
         }
 
         passenger FrontLeft
         {
+            door = DoorFrontLeft,
+            area = SeatFrontLeft,
             showPassenger = true,
-            hasRoof = true,
+            hasRoof = false,
 
             position inside
             {
-                offset = 0.0000 4.5455 -5.9091,
+                offset = 0.0000 5.9706 -5.9091,
                 rotate = 0.0000 0.0000 0.0000,
             }
 
             position outside
             {
-                offset = 8.9091 0.2727 2.0909,
+                offset = 8.9091 -3.9091 -5.9091,
                 rotate = 0.0000 0.0000 0.0000,
                 area = SeatFrontLeft,
             }
@@ -156,7 +154,7 @@ module Base
 
         area SeatFrontLeft
         {
-            xywh = 7.4545 0.0000 4.7273 4.7273,
+            xywh = 7.8182 -1.7273 5.4545 8.1818,
         }
 
         area Engine
@@ -166,27 +164,27 @@ module Base
 
         area GasTank
         {
-            xywh = 5.2727 3.0000 1.6364 1.2727,
+            xywh = 6.0909 3.3636 2.0000 2.0000,
         }
 
         area TireFrontLeft
         {
-            xywh = 4.4545 9.0909 0.0000 0.0000,
+            xywh = -8.5455 9.0909 1.4545 1.4545,
         }
 
         area TireFrontRight
         {
-            xywh = -4.4545 9.0909 0.0000 0.0000,
+            xywh = 8.5455 9.0909 1.4545 1.4545,
         }
 
         area TireRearLeft
         {
-            xywh = 4.4545 -7.0909 0.0000 0.0000,
+            xywh = -10.0000 -8.0000 1.4545 1.4545,
         }
 
         area TireRearRight
         {
-            xywh = -4.4545 -7.0909 0.0000 0.0000,
+            xywh = 10.0000 -8.0000 1.4545 1.4545,
         }
 
         template = Seat/part/SeatFrontLeft,
@@ -205,7 +203,7 @@ module Base
         {
             model seatfrontLeft
             {
-                file = Oliver2050Driver,
+                file = SC_Oliver2050Driver,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
@@ -215,7 +213,7 @@ module Base
         {
             model Oliver2050Exhaust
             {
-                file = Oliver2050Exhaust,
+                file = SC_Oliver2050Exhaust,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
@@ -231,27 +229,22 @@ module Base
             }
         }
 
-        template = Door/part/DoorFrontLeft,
-        template = Window/part/WindowFrontLeft,
-
-        part WindowFrontLeft
-        {
-            category = nodisplay,
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-        }
-
         part DoorFrontLeft
         {
+            itemType = nil,
+            area = SeatFrontLeft,
             category = nodisplay,
 
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
+            door
+            {
+            }
+
+            lua
+            {
+                create = SCKCO.Create.Blank,
+                init = SCKCO.Create.Blank,
+                use = Vehicles.Use.Door,
+            }
         }
 
         template = Tire,
@@ -260,7 +253,7 @@ module Base
         {
             model InflatedTirePlusWheel
             {
-                file = Oliver2050Wheelfrontwheelleft,
+                file = SC_Oliver2050WheelFrontLeft,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
@@ -270,7 +263,7 @@ module Base
         {
             model InflatedTirePlusWheel
             {
-                file = Oliver2050Wheelfrontwheelright,
+                file = SC_Oliver2050WheelFrontRight,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
@@ -280,7 +273,7 @@ module Base
         {
             model InflatedTirePlusWheel
             {
-                file = Oliver2050Wheelbackwheelleft,
+                file = SC_Oliver2050WheelRearLeft,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
@@ -290,7 +283,7 @@ module Base
         {
             model InflatedTirePlusWheel
             {
-                file = Oliver2050Wheelbackwheelright,
+                file = SC_Oliver2050WheelRearRight,
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
