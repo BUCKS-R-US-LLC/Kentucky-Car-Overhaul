@@ -109,6 +109,13 @@ module Base
 		mesh = vehicles/Ford/Vehicle_FordMustang90Civ_RightWheel,
 		texture = Vehicles/FordMustang90/Vehicle_Mustang90_NewWheel,
 	}
+	model MustangSCMuffler
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90_SC|Exhaust_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
 	vehicle SC_FordMustang90
 	{
 		mechanicType = 3,
@@ -424,6 +431,11 @@ module Base
 
 		part Muffler
 		{
+			model Default
+			{
+				file = MustangSCMuffler,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -559,7 +571,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindshieldSC,
+			itemType = SCKCO.FordMustang90RearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -620,7 +632,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindowSC,
+			itemType = SCKCO.FordMustang90RearWindowSC,
 			area = SeatFrontLeft,
 		}
 
@@ -637,7 +649,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindowSC,
+			itemType = SCKCO.FordMustang90RearWindowSC,
 			area = SeatFrontRight,
 		}
 

@@ -172,7 +172,7 @@ module Base
 		wheelFriction = 1.6f,
 		frontEndHealth = 1350,
 		rearEndHealth = 1050,
-		seats = 6,
+		seats = 8,
 
 		wheel FrontLeft
 		{
@@ -225,6 +225,20 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontLeft,
 			}
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		passenger FrontRight
@@ -244,6 +258,20 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		passenger MiddleLeft
@@ -263,6 +291,20 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleLeft,
 			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		passenger MiddleRight
@@ -282,6 +324,20 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatMiddleRight,
 			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		passenger RearLeft
@@ -301,6 +357,20 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		passenger RearRight
@@ -320,6 +390,88 @@ module Base
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearRight,
 			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+		}
+
+		passenger BackLeft
+		{
+			door = SCSeatDoorLeft,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = 1.6000 2.9000 -5.0250,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.8000 0.3750 -6.1441,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearStep,
+			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+		}
+
+		passenger BackRight
+		{
+			door = SCSeatDoorRight,
+			showPassenger = true,
+			hasRoof = true,
+
+			position inside
+			{
+				offset = -1.6000 2.9000 -5.0250,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.8000 0.3750 -6.1441,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearStep,
+			}
+
+			switchSeat FrontLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat FrontRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat MiddleRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat RearRight { anim = Climb_WindowB, rate = 0.23, sound = , }
+
+			switchSeat BackLeft { anim = Climb_WindowB, rate = 0.23, sound = , }
 		}
 
 		area Engine
@@ -329,7 +481,12 @@ module Base
 
 		area TruckBed
 		{
-			xywh = 0.0000 -6.1250 5.0500 1.2000,
+			xywh = 0.0000 -6.6250 5.0500 2.2000,
+		}
+
+		area RearStep
+		{
+			xywh = 0.0000 -6.1441 5.0500 1.2381,
 		}
 
 		area SeatFrontLeft
@@ -395,6 +552,42 @@ module Base
 		template = SCSeat/part/SeatMiddleRight,
 		template = SCSeat/part/SeatRearLeft,
 		template = SCSeat/part/SeatRearRight,
+
+		part SeatBackLeft
+		{
+			area = RearStep,
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+			mechanicRequireKey = true,
+			container
+			{
+				seat = BackLeft,
+				test = Vehicles.ContainerAccess.Seat,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SeatBackRight
+		{
+			area = RearStep,
+			category = nodisplay,
+			itemType = SCKCO.FillerSeatSC,
+			mechanicRequireKey = true,
+			container
+			{
+				seat = BackRight,
+				test = Vehicles.ContainerAccess.Seat,
+			}
+
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
 		template = SCGasTankBig,
 		template = SCBattery,
 		template = Engine,
@@ -481,6 +674,38 @@ module Base
 			}
 
 			itemType = SCKCO.HMMWVSoftDoorSC,
+		}
+
+		part SCSeatDoorLeft
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRight
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
 		}
 
 		part SeatFrontLeft
@@ -864,7 +1089,17 @@ module Base
 			itemType = SCKCO.HMMWVTrunkLidSC,
 		}
 
-		template = Trunk/part/TruckBed,
+		template = Trunk/part/TruckBedOpen,
+
+		part TruckBedOpen
+		{
+			area = TruckBed,
+			container
+			{
+				capacity = 100,
+				test = SCKCO.ContainerAccess.BedOrSeat,
+			}
+		}
 		template = SCTireModern,
 		
 

@@ -104,17 +104,29 @@ module Base {
 
 	template vehicle armorUpgrades {
 
+		/* FRONT ASSEMBLY
+		   Restructured so each plate maps to a DISTINCT vehicle part. Previously Bumper,
+		   Grille and Hood all had parent = EngineDoor: the Lua keys damage by parent, so
+		   two of the three plates registered against an already-restored condition and
+		   absorbed nothing. Hood -> EngineDoor (the hood IS the engine door). Bumper and
+		   Grille -> Engine.
+		   NOTE: Bumper and Grille still share Engine as parent, so only one of them draws
+		   per hit. There is no distinct vanilla radiator/grille part to parent Grille to.
+		   To make all three independent, add a custom hidden front part and repoint Grille
+		   to it, or merge Grille into Bumper. Left both defined intentionally. */
+
 		part SCArmorBumper
 		{
             area = Engine,
-            parent = EngineDoor,
+            parent = Engine,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, damageThreshold = 5, }
         }
 
 		part SCArmorGrille
 		{
             area = Engine,
-            parent = EngineDoor,
+            parent = Engine,
             lua { }
         }
 
@@ -131,6 +143,7 @@ module Base {
             area = DoorFrontRight,
             parent = WindowFrontRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
 		part SCArmorFrontLeftWindow
@@ -139,6 +152,7 @@ module Base {
             area = DoorFrontLeft,
             parent = WindowFrontLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
         part SCArmorMiddleRightWindow
@@ -147,6 +161,7 @@ module Base {
             area = DoorMiddleRight,
             parent = WindowMiddleRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
         part SCArmorMiddleLeftWindow
@@ -155,6 +170,7 @@ module Base {
             area = DoorMiddleLeft,
             parent = WindowMiddleLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
         part SCArmorRearRightWindow
@@ -163,6 +179,7 @@ module Base {
             area = DoorRearRight,
             parent = WindowRearRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
         part SCArmorRearLeftWindow
@@ -171,6 +188,7 @@ module Base {
             area = DoorRearLeft,
             parent = WindowRearLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
         }
 
 		part SCArmorFrontRightDoor
@@ -178,6 +196,7 @@ module Base {
             area = DoorFrontRight,
             parent = DoorFrontRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = FrontRightDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = FrontRightDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -190,6 +209,7 @@ module Base {
             area = DoorFrontLeft,
             parent = DoorFrontLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = FrontLeftDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = FrontLeftDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -202,6 +222,7 @@ module Base {
             area = DoorMiddleRight,
             parent = DoorMiddleRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = MiddleRightDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = MiddleRightDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -214,6 +235,7 @@ module Base {
             area = DoorMiddleLeft,
             parent = DoorMiddleLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = MiddleLeftDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = MiddleLeftDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -226,6 +248,7 @@ module Base {
             area = DoorRearRight,
             parent = DoorRearRight,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = RearRightDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = RearRightDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -238,6 +261,7 @@ module Base {
             area = DoorRearLeft,
             parent = DoorRearLeft,
             lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
 
             anim Close { anim = RearLeftDoorClosing, reverse = TRUE, rate = 2.0, }
             anim Open { anim = RearLeftDoorClosing, reverse = FALSE, rate = 1.0, }
@@ -245,16 +269,101 @@ module Base {
             anim Opened { anim = RearLeftDoorClosing, reverse = TRUE, animate = FALSE, }
 		}
 
+        /* WARNING: DISABLED - protects nothing.
+           SCArmorSide has no parent, so getParent() returns nil and the Lua dictionary
+           build skips it entirely (the SCArmor branch requires a real parent; it never
+           falls through to the armorBehavior self-branch). Installing it gave zero
+           protection. There is no distinct vanilla "side" part to parent to - side
+           coverage is already provided by the door plates. Assign a real parent part
+           below and uncomment to enable, or leave disabled. Kept defined-but-disabled so
+           existing template includes referencing it still resolve. */
+        /*
         part SCArmorSide
         {
             area = Engine,
+            parent = PARENT_PART_HERE,
             lua { }
         }
+        */
 
 		part SCArmorWindshield
 		{
             area = Engine,
             parent = Windshield,
+            lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
+		}
+
+
+		/* ---------------------------------------------------------------------------
+		   GAP CLOSERS
+		   These cover parts that previously had no armor path (rear glass, tyres, fuel,
+		   trunk, truck bed). Each maps to a DISTINCT parent so they wear independently.
+
+		   VERIFY the parent tokens against each target vehicle's own script before
+		   shipping - B42 part names vary and a plate whose parent does not exist on the
+		   vehicle simply will not attach. Only include a plate on vehicles that actually
+		   have that parent (e.g. TruckBed on trucks, TrunkDoor on sedans).
+
+		   These route through the IN-VEHICLE damage path (collision / gunfire while
+		   seated), not external melee - getNearestPart only selects door/bodywork parents,
+		   so tyre/fuel/engine plates are not reachable by melee-from-outside. That matches
+		   expected behaviour (you don't melee your own tyres). ---------------------------- */
+
+		part SCArmorRearWindshield
+		{
+            area = Engine,
+            parent = WindshieldRear,   /* verify: rear glass part name */
+            lua { }
+            table armorBehavior { damageAbsorptionOneTo = 0.2, }
+		}
+
+		part SCArmorGasTank
+		{
+            area = Engine,
+            parent = GasTank,          /* verify */
+            lua { }
+		}
+
+		part SCArmorTrunk              /* sedans */
+		{
+            area = TrunkDoor,
+            parent = TrunkDoor,        /* verify */
+            lua { }
+		}
+
+		part SCArmorTruckBed           /* trucks */
+		{
+            area = TruckBed,
+            parent = TruckBed,         /* verify */
+            lua { }
+		}
+
+		part SCArmorTireFrontLeft
+		{
+            area = TireFrontLeft,
+            parent = TireFrontLeft,    /* verify tyre part naming */
+            lua { }
+		}
+
+		part SCArmorTireFrontRight
+		{
+            area = TireFrontRight,
+            parent = TireFrontRight,
+            lua { }
+		}
+
+		part SCArmorTireRearLeft
+		{
+            area = TireRearLeft,
+            parent = TireRearLeft,
+            lua { }
+		}
+
+		part SCArmorTireRearRight
+		{
+            area = TireRearRight,
+            parent = TireRearRight,
             lua { }
 		}
 
@@ -265,6 +374,14 @@ module Base {
             area = Engine,
             category = SCUCKarmor,
             mechanicRequireKey = false,
+
+            /* Absorption rate read by miscVehicleLua.armorAbsorb.
+               damageToArmor = absorbedDamage * damageAbsorptionOneTo.
+               1.0 = plate wears 1:1 with damage it blocks. <1.0 = more durable.
+               >1.0 = sacrificial. Without this table the Lua returned full damage and no
+               plate had any durability advantage. Override per-part for tougher/weaker
+               plates (e.g. thin windows > 1.0, hull plate < 0.5). */
+            table armorBehavior { damageAbsorptionOneTo = 0.4, damageThreshold = 5, }
 
             table install
             {
