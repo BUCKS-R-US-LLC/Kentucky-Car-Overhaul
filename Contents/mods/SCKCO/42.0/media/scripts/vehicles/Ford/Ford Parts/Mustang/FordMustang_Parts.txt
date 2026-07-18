@@ -1,16 +1,27 @@
 module SCKCO
 {
-
         item FordMustang90WindshieldSC3
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90FrontWindshield,
         VehicleType =   3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarWindshield_WorldItem,
+        WorldStaticModel = FordMustang90Windshield_WorldItem,
+    }
+
+        item FordMustang90RearWindshieldSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordMustang90FrontWindshield,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordMustang90RearWindshield_WorldItem,
     }
 
         item FordMustang90WindowSC3
@@ -18,11 +29,23 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90FrontWindow,
         VehicleType =   3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarWindow_WorldItem,
+        WorldStaticModel = FordMustang90Window_WorldItem,
+    }
+
+        item FordMustang90RearWindowSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordMustang90FrontWindow,
+        VehicleType =   3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordMustang90RearWindow_WorldItem,
     }
 
         item FordMustang90HoodSC3
@@ -30,11 +53,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90Hood,
         VehicleType =   3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarHood_WorldItem,
+        WorldStaticModel = FordMustang90Hood_WorldItem,
     }
 
         item FordMustang90DoorSC3
@@ -42,11 +65,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90Door,
         VehicleType =  3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarTrunkLid_WorldItem,
+        WorldStaticModel = FordMustang90Door_WorldItem,
     }
 
         item FordMustang90TrunkLidSC3
@@ -54,11 +77,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90TrunkLid,
         VehicleType =   3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarFrontSeat_WorldItem,
+        WorldStaticModel = FordMustang90TrunkLid_WorldItem,
     }
 
         item FordMustang90BumperSC3
@@ -66,11 +89,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90Bumper,
         VehicleType = 3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarBumper_WorldItem,
+        WorldStaticModel = FordMustang90Bumper_WorldItem,
     }
 
         item FordMustang90DoorArmorSC3
@@ -78,11 +101,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight  =  10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90DoorArmor,
         VehicleType = 3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarDoorArmor_WorldItem,
+        WorldStaticModel = FordMustang90DoorArmor_WorldItem,
     }
 
         item FordMustang90WindshieldArmorSC3
@@ -90,11 +113,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight  =  10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90WindshieldArmor,
         VehicleType = 3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarWindshieldArmor_WorldItem,
+        WorldStaticModel = FordMustang90WindshieldArmor_WorldItem,
     }
 
         item FordMustang90WindowArmorSC3
@@ -102,10 +125,22 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordMustang90WindowArmor,
         VehicleType = 3,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSportsCarWindshieldArmor_WorldItem,
+        WorldStaticModel = FordMustang90WindowArmor_WorldItem,
+    }
+
+        item FordMustang90RearWindowArmorSC3
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordMustang90WindowArmor,
+        VehicleType = 3,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordMustang90RearWindowArmor_WorldItem,
     }
 }

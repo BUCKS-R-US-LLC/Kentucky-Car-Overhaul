@@ -136,7 +136,7 @@ module Base
 
         part RearLeftSeven
         {
-            area = RearLeftSeven,
+            area = RearStep,
             container
             {
                 seat = RearLeftSeven,
@@ -147,7 +147,7 @@ module Base
 
         part RearRightSeven
         {
-            area = RearRightSeven,
+            area = RearStep,
             container
             {
                 seat = RearRightSeven,
@@ -169,6 +169,264 @@ module Base
 			lua
 			{
 				create = Vehicles.Create.Default,
+			}
+		}
+
+
+
+		part SCSeatDoorLeftOne
+		{
+			itemType = nil,
+			area = RearLeftOne,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftTwo
+		{
+			itemType = nil,
+			area = RearLeftTwo,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftThree
+		{
+			itemType = nil,
+			area = RearLeftThree,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftFour
+		{
+			itemType = nil,
+			area = RearLeftFour,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftFive
+		{
+			itemType = nil,
+			area = RearLeftFive,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftSix
+		{
+			itemType = nil,
+			area = RearLeftSix,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeftSeven
+		{
+			itemType = nil,
+			area = RearLeftSeven,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightOne
+		{
+			itemType = nil,
+			area = RearRightOne,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightTwo
+		{
+			itemType = nil,
+			area = RearRightTwo,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightThree
+		{
+			itemType = nil,
+			area = RearRightThree,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightFour
+		{
+			itemType = nil,
+			area = RearRightFour,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightFive
+		{
+			itemType = nil,
+			area = RearRightFive,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightSix
+		{
+			itemType = nil,
+			area = RearRightSix,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRightSeven
+		{
+			itemType = nil,
+			area = RearRightSeven,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorLeft
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRight
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
 			}
 		}
 

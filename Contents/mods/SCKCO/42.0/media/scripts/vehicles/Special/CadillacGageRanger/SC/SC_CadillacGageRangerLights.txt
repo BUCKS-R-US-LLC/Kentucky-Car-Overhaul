@@ -106,816 +106,842 @@ module Base
 		
 	}
 	vehicle SC_CadillacGageRangerLights
-	{
-		mechanicType = 2,
-		offRoadEfficiency = 1.1,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
-
-		model
-		{
-			file = SC_CadillacGageRangerLights,
-			scale = 0.3800,
-			offset = 0.0000 -0.5000 -0.6053,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
-		}
-
-		skin
-		{
-			texture = Vehicles/CadillacRang/Vehicle_RangerSC_GreenPolice,
-		}
-
-		textureRust = Vehicles/SharedTextures/vehicle_norust,
-		textureMask = Vehicles/CadillacRang/Vehicle_RangerSC_mask,
-		textureLights = Vehicles/CadillacRang/Vehicle_RangerSC_lights,
-		textureDamage1Shell = Vehicles/CadillacRang/Vehicle_RangerSC_scratch,
-		textureDamage2Shell = Vehicles/CadillacRang/Vehicle_RangerSC_scratch,
-		textureDamage1Overlay = Vehicles/CadillacRang/Vehicle_RangerSC_blood,
-		textureDamage2Overlay = Vehicles/CadillacRang/Vehicle_RangerSC_blood,
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-			leftCol = 1;0;0,
-			rightCol = 1;0;0,
-		}
-
-		sound
-		{
-			engine = VehicleEngineSUV,
-			engineStart = VehicleEngineSUV,
-			engineTurnOff = VehicleEngineSUV,
-			horn = CUCVhorn,
-			ignitionFail = VehicleIgnitionFailSUV,
-		}
-
-		extents = 4.5263 3.7368 9.7368,
-		mass = 1800,
-		physicsChassisShape = 4.5263 3.7368 9.7368,
-		centerOfMassOffset = 0.0000 1.8684 -0.4211,
-		shadowExtents = 4.5256 10.0357,
-		shadowOffset = 0.0000 -0.4068,
-		engineForce = 4800,
-		engineQuality = 100,
-		engineLoudness = 120,
-		maxSpeed = 70f,
-		brakingForce = 55,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.95f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 70,
-		suspensionCompression = 1.00,
-		suspensionDamping = 1.50,
-		maxSuspensionTravelCm = 10,
-		suspensionRestLength = 0.50f,
-		wheelFriction = 1.5f,
-		frontEndHealth = 30000,
-		rearEndHealth = 25000,
-		seats = 6,
-
-		wheel FrontLeft
-		{
-			front = true,
-			offset = 1.9737 0.8158 3.3421,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel FrontRight
-		{
-			front = true,
-			offset = -1.9737 0.8158 3.3421,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel RearLeft
-		{
-			front = false,
-			offset = 1.9737 0.8158 -2.5000,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		wheel RearRight
-		{
-			front = false,
-			offset = -1.9737 0.8158 -2.5000,
-			radius = 0.50f,
-			width = 0.30f,
-		}
-
-		template = PassengerSeat6,
-
-		passenger FrontLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7632 2.4211 0.0789,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.1842 0.2368 0.0263,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontLeft,
-			}
-		}
-
-		passenger FrontRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7632 2.0000 0.0789,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.1842 0.2105 0.1316,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontRight,
-			}
-		}
-
-		passenger MiddleLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7632 2.0526 -1.6316,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.1842 0.2368 0.0263,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger MiddleRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7632 2.0526 -1.6316,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.1842 0.2105 0.1316,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
-		passenger RearLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.7632 2.0526 -3.3421,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.1842 0.2368 0.0263,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearLeft,
-			}
-		}
-
-		passenger RearRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.7632 2.0526 -3.3421,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.1842 0.2105 0.1316,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatRearRight,
-			}
-		}
-
-		area Engine
-		{
-			xywh = 0.0000 5.6316 2.9474 2.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -6.3684 2.9474 1.7368,
-		}
-
-		area SeatFrontLeft
-		{
-			xywh = 3.0526 0.7895 1.2632 1.2632,
-		}
-
-		area SeatFrontRight
-		{
-			xywh = -3.0526 0.7895 1.2632 1.2632,
-		}
-
-		area SeatRearLeft
-		{
-			xywh = 3.0526 0.7895 1.2632 1.2632,
-		}
-
-		area SeatRearRight
-		{
-			xywh = -3.0526 0.7895 1.2632 1.2632,
-		}
-
-		area GasTank
-		{
-			xywh = -2.9737 -1.1053 1.1053 0.6316,
-		}
-
-		area TireFrontLeft
-		{
-			xywh = 1.5000 2.1579 0.0000 0.0000,
-		}
-
-		area TireFrontRight
-		{
-			xywh = -1.3684 2.1579 0.0000 0.0000,
-		}
-
-		area TireRearLeft
-		{
-			xywh = 1.4737 -2.1316 0.0000 0.0000,
-		}
-
-		area TireRearRight
-		{
-			xywh = -1.3947 -2.1316 0.0000 0.0000,
-		}
-
-		template = SCSeat/part/SeatFrontLeft,
-		template = SCSeat/part/SeatFrontRight,
-		template = SCSeat/part/SeatMiddleLeft,
-		template = SCSeat/part/SeatMiddleRight,
-		template = SCSeat/part/SeatRearLeft,
-		template = SCSeat/part/SeatRearRight,
-		template = SCGasTankBig,
-		template = SCBattery,
-		template = Engine,
-		template = SCMufflerNormal,
-
-		part SeatFrontLeft
-		{
-			model seatfrontLeft
-			{
-				file = CadillacGageRangerLightsDriver,
-			}
-		}
-
-		part SeatFrontRight
-		{
-			model seatfrontRight
-			{
-				file = CadillacGageRangerLightsPassenger,
-			}
-
-			category = nodisplay,
-		}
-
-		part SeatMiddleLeft
-		{
-			category = nodisplay,
-		}
-
-		part SeatMiddleRight
-		{
-			category = nodisplay,
-		}
-
-		part SeatRearLeft
-		{
-			category = nodisplay,
-		}
-
-		part SeatRearRight
-		{
-			model seatfrontRight
-			{
-				file = CadillacGageRangerLightsPassenger,
-			}
-
-			category = nodisplay,
-		}
-
-		part Muffler
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			model engineDoor
-			{
-				file = CadillacGageRangerLightsHood,
-			}
-
-			anim Close
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			itemType = SCKCO.CadillacGageRangerHoodSC,
-		}
-
-		part Heater
-		{
-			category = engine,
-
-			lua
-			{
-				update = Vehicles.Update.Heater,
-			}
-		}
-
-		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
-
-		part Windshield
-		{
-			model WindshieldFront
-			{
-				file = CadillacGageRangerLightsWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.CadillacGageRangerWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			model WindshieldRear
-			{
-				file = CadillacGageRangerLightsRearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			anim Close
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			parent = TrunkDoor,
-			category = SCUCKwindows,
-			itemType = SCKCO.CadillacGageRangerWindshieldSC,
-		}
-
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = CadillacGageRangerLightsFrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			parent = DoorFrontRight,
-			category = SCUCKwindows,
-			area = SeatFrontRight,
-			itemType = SCKCO.CadillacGageRangerWindowSC,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = CadillacGageRangerLightsFrontLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			parent = DoorFrontLeft,
-			category = SCUCKwindows,
-			area = SeatFrontLeft,
-			itemType = SCKCO.CadillacGageRangerWindowSC,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = CadillacGageRangerLightsFrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.CadillacGageRangerDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = CadillacGageRangerLightsFrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.CadillacGageRangerDoorSC,
-		}
-
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = CadillacGageRangerLightsTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.CadillacGageRangerDoorSC,
-		}
-
-		template = Trunk/part/TruckBed,
-		template = SCTireNormal,
-		
-
-		part TruckBed
-		{
-			container
-			{
-				capacity = 50,
-			}
-
-			anim Close
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-		}
-
-		part TireFrontLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = CadillacGageRangerLightswheelleft,
-			}
-		}
-
-		part TireFrontRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = CadillacGageRangerLightswheelright,
-			}
-		}
-
-		part TireRearLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = CadillacGageRangerLightswheelleft,
-			}
-		}
-
-		part TireRearRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = CadillacGageRangerLightswheelright,
-			}
-		}
-
-		template = Brake,
-
-		part Brake*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = SCSuspensionNormal,
-
-		part Suspension*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = SCRadio_Military_119,
-		template = Headlight,
-
-		part PassengerCompartment
-		{
-			category = nodisplay,
-
-			lua
-			{
-				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
-
-		physics box
-		{
-			offset = 0.0000 1.8684 -0.4211,
-			extents = 4.5526 3.7105 9.7368,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailerfront
-		{
-			offset = -0.0175 0.8596 3.6316,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
-		}
-	}
+    {
+        mechanicType = 2,
+        offRoadEfficiency = 1.1,
+        engineRepairLevel = 4,
+        playerDamageProtection = 1.3,
+
+        model
+        {
+            file = SC_CadillacGageRangerLights,
+            scale = 0.3800,
+            offset = 0.0000 -0.2107 -0.6053,
+        }
+
+        skin
+        {
+            texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
+        }
+
+        skin
+        {
+            texture = Vehicles/CadillacRang/Vehicle_RangerSC_GreenPolice,
+        }
+
+        textureRust = Vehicles/SharedTextures/vehicle_norust,
+        textureMask = Vehicles/CadillacRang/Vehicle_RangerSC_mask,
+        textureLights = Vehicles/CadillacRang/Vehicle_RangerSC_lights,
+        textureDamage1Shell = Vehicles/CadillacRang/Vehicle_RangerSC_scratch,
+        textureDamage2Shell = Vehicles/CadillacRang/Vehicle_RangerSC_scratch,
+        textureDamage1Overlay = Vehicles/CadillacRang/Vehicle_RangerSC_blood,
+        textureDamage2Overlay = Vehicles/CadillacRang/Vehicle_RangerSC_blood,
+
+        lightbar
+        {
+            soundSiren = VehicleSiren,
+            leftCol = 1;0;0,
+            rightCol = 1;0;0,
+        }
+
+        sound
+        {
+            engine = VehicleEngineSUV,
+            engineStart = VehicleEngineSUV,
+            engineTurnOff = VehicleEngineSUV,
+            horn = CUCVhorn,
+            ignitionFail = VehicleIgnitionFailSUV,
+        }
+
+        extents = 4.5263 3.7368 9.7368,
+        mass = 1800,
+        physicsChassisShape = 4.5263 3.7368 9.7368,
+        centerOfMassOffset = 0.0000 1.8684 -0.4211,
+        shadowExtents = 4.5256 10.0357,
+        shadowOffset = 0.0000 -0.4068,
+        engineForce = 4800,
+        engineQuality = 100,
+        engineLoudness = 120,
+        maxSpeed = 70f,
+        brakingForce = 55,
+        stoppingMovementForce = 4.0f,
+        rollInfluence = 0.95f,
+        steeringIncrement = 0.04,
+        steeringClamp = 0.3,
+        suspensionStiffness = 70,
+        suspensionCompression = 1.00,
+        suspensionDamping = 1.50,
+        maxSuspensionTravelCm = 10,
+        suspensionRestLength = 0.50f,
+        wheelFriction = 1.5f,
+        frontEndHealth = 30000,
+        rearEndHealth = 25000,
+        seats = 6,
+
+        wheel FrontLeft
+        {
+            front = true,
+            offset = 1.9737 0.8158 3.3421,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel FrontRight
+        {
+            front = true,
+            offset = -1.9737 0.8158 3.3421,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel RearLeft
+        {
+            front = false,
+            offset = 1.9737 0.8158 -2.5000,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        wheel RearRight
+        {
+            front = false,
+            offset = -1.9737 0.8158 -2.5000,
+            radius = 0.50f,
+            width = 0.30f,
+        }
+
+        template = PassengerSeat6,
+
+        passenger FrontLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.7632 2.4211 0.0789,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.1842 0.2368 0.0263,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontLeft,
+            }
+        }
+
+        passenger FrontRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.7632 2.0000 0.0789,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.1842 0.2105 0.1316,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontRight,
+            }
+        }
+
+        passenger MiddleLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.7632 2.0526 -1.6316,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.1842 0.2368 0.0263,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearLeft,
+            }
+        }
+
+        passenger MiddleRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.7632 2.0526 -1.6316,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.1842 0.2105 0.1316,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearRight,
+            }
+        }
+
+        passenger RearLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.7632 2.0526 -3.3421,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.1842 0.2368 0.0263,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearLeft,
+            }
+        }
+
+        passenger RearRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.7632 2.0526 -3.3421,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.1842 0.2105 0.1316,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatRearRight,
+            }
+        }
+
+        area Engine
+        {
+            xywh = 0.0000 5.6316 2.9474 2.0000,
+        }
+
+        area TruckBed
+        {
+            xywh = 0.0000 -6.3684 2.9474 1.7368,
+        }
+
+        area SeatFrontLeft
+        {
+            xywh = 3.0526 0.7895 1.2632 1.2632,
+        }
+
+        area SeatFrontRight
+        {
+            xywh = -3.0526 0.7895 1.2632 1.2632,
+        }
+
+        area SeatRearLeft
+        {
+            xywh = 3.0526 0.7895 1.2632 1.2632,
+        }
+
+        area SeatRearRight
+        {
+            xywh = -3.0526 0.7895 1.2632 1.2632,
+        }
+
+        area GasTank
+        {
+            xywh = -2.9737 -1.1053 1.1053 0.6316,
+        }
+
+        area TireFrontLeft
+        {
+            xywh = 1.5000 2.1579 0.0000 0.0000,
+        }
+
+        area TireFrontRight
+        {
+            xywh = -1.3684 2.1579 0.0000 0.0000,
+        }
+
+        area TireRearLeft
+        {
+            xywh = 1.4737 -2.1316 0.0000 0.0000,
+        }
+
+        area TireRearRight
+        {
+            xywh = -1.3947 -2.1316 0.0000 0.0000,
+        }
+
+        template = SCSeat/part/SeatFrontLeft,
+        template = SCSeat/part/SeatFrontRight,
+        template = SCSeat/part/SeatMiddleLeft,
+        template = SCSeat/part/SeatMiddleRight,
+        template = SCSeat/part/SeatRearLeft,
+        template = SCSeat/part/SeatRearRight,
+        template = SCGasTankBig,
+        template = SCBattery,
+        template = Engine,
+        template = SCMufflerNormal,
+
+        part SeatFrontLeft
+        {
+            model seatfrontLeft
+            {
+                file = CadillacGageRangerLightsDriver,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part SeatFrontRight
+        {
+            model seatfrontRight
+            {
+                file = CadillacGageRangerLightsPassenger,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            category = nodisplay,
+        }
+
+        part SeatMiddleLeft
+        {
+            category = nodisplay,
+        }
+
+        part SeatMiddleRight
+        {
+            category = nodisplay,
+        }
+
+        part SeatRearLeft
+        {
+            category = nodisplay,
+        }
+
+        part SeatRearRight
+        {
+            model seatfrontRight
+            {
+                file = CadillacGageRangerLightsPassenger,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            category = nodisplay,
+        }
+
+        part Muffler
+        {
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = EngineDoor,
+
+        part EngineDoor
+        {
+            model engineDoor
+            {
+                file = CadillacGageRangerLightsHood,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            itemType = SCKCO.CadillacGageRangerHoodSC,
+        }
+
+        part Heater
+        {
+            category = engine,
+
+            lua
+            {
+                update = Vehicles.Update.Heater,
+            }
+        }
+
+        template = Windshield/part/Windshield,
+        template = Windshield/part/WindshieldRear,
+
+        part Windshield
+        {
+            model WindshieldFront
+            {
+                file = CadillacGageRangerLightsWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.CadillacGageRangerWindshieldSC,
+        }
+
+        part WindshieldRear
+        {
+            model WindshieldRear
+            {
+                file = CadillacGageRangerLightsRearWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            anim Close
+            {
+                anim = RearLeftDoorClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = RearLeftDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = RearLeftDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = RearLeftDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            parent = TrunkDoor,
+            category = SCUCKwindows,
+            itemType = SCKCO.CadillacGageRangerWindshieldSC,
+        }
+
+        template = Door/part/DoorFrontLeft,
+        template = Door/part/DoorFrontRight,
+        template = Window/part/WindowFrontLeft,
+        template = Window/part/WindowFrontRight,
+
+        part WindowFrontRight
+        {
+            model windowFR
+            {
+                file = CadillacGageRangerLightsFrontRightWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontRightWindowClosing,
+                animate = FALSE,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            parent = DoorFrontRight,
+            category = SCUCKwindows,
+            area = SeatFrontRight,
+            itemType = SCKCO.CadillacGageRangerWindowSC,
+        }
+
+        part WindowFrontLeft
+        {
+            model windowFL
+            {
+                file = CadillacGageRangerLightsFrontLeftWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontLeftWindowClosing,
+                animate = FALSE,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            parent = DoorFrontLeft,
+            category = SCUCKwindows,
+            area = SeatFrontLeft,
+            itemType = SCKCO.CadillacGageRangerWindowSC,
+        }
+
+        part DoorFrontRight
+        {
+            model Default
+            {
+                file = CadillacGageRangerLightsFrontRightDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.CadillacGageRangerDoorSC,
+        }
+
+        part DoorFrontLeft
+        {
+            model Default
+            {
+                file = CadillacGageRangerLightsFrontLeftDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.CadillacGageRangerDoorSC,
+        }
+
+        template = TrunkDoor,
+
+        part TrunkDoor
+        {
+            table install
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            model Default
+            {
+                file = CadillacGageRangerLightsTrunk,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+                scale = 1.0,
+            }
+
+            anim Close
+            {
+                anim = RearRightDoorClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = RearRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = RearRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = RearRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.CadillacGageRangerDoorSC,
+        }
+
+        template = Trunk/part/TruckBed,
+        template = SCTireNormal,
+
+        part TruckBed
+        {
+            container
+            {
+                capacity = 50,
+            }
+
+            anim Close
+            {
+                anim = RearDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = RearDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = RearDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = RearDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+        }
+
+        part TireFrontLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = CadillacGageRangerLightswheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireFrontRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = CadillacGageRangerLightswheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = CadillacGageRangerLightswheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = CadillacGageRangerLightswheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        template = Brake,
+
+        part Brake*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = SCSuspensionNormal,
+
+        part Suspension*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = SCRadio_Military_119,
+        template = Headlight,
+
+        part PassengerCompartment
+        {
+            category = nodisplay,
+
+            lua
+            {
+                update = Vehicles.Update.PassengerCompartment,
+            }
+        }
+
+        physics box
+        {
+            offset = 0.0000 1.8684 -0.4211,
+            extents = 4.5526 3.7105 9.7368,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment trailerfront
+        {
+            offset = -0.0175 0.8596 3.6316,
+            rotate = 0.0000 0.0000 0.0000,
+            zoffset = 1.0000,
+        }
+    }
 }
-

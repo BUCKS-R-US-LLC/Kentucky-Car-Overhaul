@@ -109,6 +109,13 @@ module Base
 		mesh = vehicles/Ford/Vehicle_FordMustang90_RightWheel,
 		texture = Vehicles/FordMustang90/Vehicle_Mustang90_Wheel,
 	}
+	model PoliceMustangSCMuffler
+	{
+		mesh = vehicles/Ford/Vehicle_FordMustang90Police_SC|Exhaust_obj,
+		shader = SC_vehicle_noreflect,
+		scale = 1,
+	}
+
 	vehicle SC_FordMustang90_StatePolice
 	{
 	    zombieType = PoliceState,
@@ -399,6 +406,11 @@ module Base
 
 		part Muffler
 		{
+			model Default
+			{
+				file = PoliceMustangSCMuffler,
+			}
+
 			table install
 			{
 				recipes = Intermediate Mechanics,
@@ -534,7 +546,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindshieldSC,
+			itemType = SCKCO.FordMustang90RearWindshieldSC,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -595,7 +607,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindowSC,
+			itemType = SCKCO.FordMustang90RearWindowSC,
 			area = SeatFrontLeft,
 		}
 
@@ -612,7 +624,7 @@ module Base
 			}
 
 			category = SCUCKwindows,
-			itemType = SCKCO.FordMustang90WindowSC,
+			itemType = SCKCO.FordMustang90RearWindowSC,
 			area = SeatFrontRight,
 		}
 

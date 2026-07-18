@@ -6,11 +6,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150WindshieldArmor,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSWindshieldArmor_WorldItem,
+        WorldStaticModel = FordOBSWindshieldArmor_WorldItem,
     }
 
         item FordOBSDoorArmorSC2
@@ -18,11 +18,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150DoorArmor,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSDoorArmor_WorldItem,
+        WorldStaticModel = FordOBSDoorArmor_WorldItem,
     }
 
         item FordOBSWindowArmorSC2
@@ -30,11 +30,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85WindowArmor,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSWindowArmor_WorldItem,
+        WorldStaticModel = FordOBSWindowArmor_WorldItem,
     }
 
         item FordOBSBumperSC2
@@ -42,11 +42,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150Bumper,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSBumper_WorldItem,
+        WorldStaticModel = FordOBSBumper_WorldItem,
     }
 
         item FordOBSDoorSC2
@@ -54,11 +54,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150Door,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSDoor_WorldItem,
+        WorldStaticModel = FordOBSDoor_WorldItem,
     }
 
         item FordOBSWindshieldSC2
@@ -66,11 +66,23 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150Windshield,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSWindshield_WorldItem,
+        WorldStaticModel = FordOBSWindshield_WorldItem,
+    }
+
+        item FordOBSRearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordF150RearWindshield,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordOBSRearWindshield_WorldItem,
     }
 
         item FordOBSWindowSC2
@@ -78,11 +90,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150Window,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSWindow_WorldItem,
+        WorldStaticModel = FordOBSWindow_WorldItem,
     }
 
         item FordOBSHoodSC2
@@ -90,11 +102,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150Hood,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSHood_WorldItem,
+        WorldStaticModel = FordOBSHood_WorldItem,
     }
     
         item FordOBSTrunkLidSC2
@@ -102,10 +114,58 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordF150TrunkLid,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordOBSTrunkLid_WorldItem,
+        WorldStaticModel = FordOBSTrunkLid_WorldItem,
+    }
+
+        item FordF350AmbulanceSideDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordF350AmbulanceSideDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF350AmbulanceSideDoor_WorldItem,
+    }
+
+        item FordF350AmbulanceSideWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordF350AmbulanceSideWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF350AmbulanceSideWindow_WorldItem,
+    }
+
+        item FordF350AmbulanceRearDoorsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordF350AmbulanceBackDoors,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF350AmbulanceBackDoors_WorldItem,
+    }
+
+        item FordF350AmbulanceRearWindowsSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordF350AmbulanceBackWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF350AmbulanceBackWindows_WorldItem,
     }
 }

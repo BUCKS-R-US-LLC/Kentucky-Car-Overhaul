@@ -140,9 +140,9 @@ module Base
 	vehicle SC_AMGeneralM35A2_MERDC
 	{
 		mechanicType = 2,
-		offRoadEfficiency = 1.1,
+		offRoadEfficiency = 1.2,
 		engineRepairLevel = 4,
-		playerDamageProtection = 0.5,
+		playerDamageProtection = 1.3,
 		neverSpawnKey = true,
 
 		model
@@ -199,8 +199,8 @@ module Base
 			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
-		extents = 3.7143 3.8413 10.5079,
-		mass = 3200,
+		extents = 2.5111 1.0667 6.6444,
+		mass = 2200,
 		physicsChassisShape = 3.7143 3.8413 10.5079,
 		centerOfMassOffset = 0.0000 1.9048 -0.5079,
 		shadowExtents = 3.6593 10.3884,
@@ -209,51 +209,51 @@ module Base
 		engineQuality = 100,
 		engineLoudness = 120,
 		maxSpeed = 70f,
-		brakingForce = 200,
+		brakingForce = 80,
 		stoppingMovementForce = 3.0f,
-		rollInfluence = 0.20f,
-		steeringIncrement = 0.02,
-		steeringClamp = 0.5,
-		suspensionStiffness = 60,
+		rollInfluence = 0.25f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.30,
+		suspensionStiffness = 90,
 		suspensionCompression = 4.83,
 		suspensionDamping = 3.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 1.5f,
+		maxSuspensionTravelCm = 15,
+		suspensionRestLength = 0.12f,
+		wheelFriction = 1.6f,
 		frontEndHealth = 9000,
 		rearEndHealth = 6000,
-		seats = 6,
+		seats = 16,
 
 		wheel FrontLeft
 		{
 			front = true,
-			offset = 1.4127 0.5079 2.9524,
-			radius = 0.75f,
-			width = 0.20f,
+			offset = 1.4127 0.8200 2.9524,
+			radius = 1.50f,
+			width = 1.00f,
 		}
 
 		wheel FrontRight
 		{
 			front = true,
-			offset = -1.4127 0.5079 2.9524,
-			radius = 0.75f,
-			width = 0.20f,
+			offset = -1.4127 0.8200 2.9524,
+			radius = 1.50f,
+			width = 1.00f,
 		}
 
 		wheel RearLeft
 		{
 			front = false,
-			offset = -0.0159 0.5079 -3.6984,
-			radius = 0.75f,
-			width = 0.20f,
+			offset = 1.4127 0.8200 -2.8016,
+			radius = 1.50f,
+			width = 1.00f,
 		}
 
 		wheel RearRight
 		{
 			front = false,
-			offset = 0.0000 0.5079 -1.9048,
-			radius = 0.75f,
-			width = 0.20f,
+			offset = -1.4127 0.8200 -2.8016,
+			radius = 1.50f,
+			width = 1.00f,
 		}
 
 		template = PassengerSeat14,
@@ -301,8 +301,6 @@ module Base
 			category = nodisplay,
 			showPassenger = true,
 			hasRoof = true,
-			area = SeatMiddleLeft,
-
 			position inside
 			{
 				offset = 1.4603 2.3968 -0.6349,
@@ -311,6 +309,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -0.6349,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftOne,
 			}
 		}
 
@@ -319,8 +320,6 @@ module Base
 			category = nodisplay,
 			showPassenger = true,
 			hasRoof = true,
-			area = SeatMiddleLeft,
-
 			position inside
 			{
 				offset = -1.4603 2.3968 -0.6349,
@@ -329,6 +328,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -0.6349,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightOne,
 			}
 		}
 
@@ -346,6 +348,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -1.3492,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftTwo,
 			}
 		}
 
@@ -363,6 +368,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -1.3492,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightTwo,
 			}
 		}
 
@@ -380,6 +388,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -1.8571,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftThree,
 			}
 		}
 
@@ -397,6 +408,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -1.8571,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightThree,
 			}
 		}
 
@@ -414,6 +428,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -2.3175,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftFour,
 			}
 		}
 
@@ -431,6 +448,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -2.3175,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightFour,
 			}
 		}
 
@@ -448,6 +468,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -3.2222,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftFive,
 			}
 		}
 
@@ -465,6 +488,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -3.2222,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightFive,
 			}
 		}
 
@@ -482,6 +508,9 @@ module Base
 
 			position outside
 			{
+				offset = 2.3016 -0.0159 -4.1429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearLeftSix,
 			}
 		}
 
@@ -499,6 +528,9 @@ module Base
 
 			position outside
 			{
+				offset = -2.3016 -0.0159 -4.1429,
+				rotate = 0.0000 0.0000 0.0000,
+				area = RearRightSix,
 			}
 		}
 
@@ -600,6 +632,76 @@ module Base
 		area TireRearRight
 		{
 			xywh = -1.2698 -1.8889 0.0000 0.0000,
+		}
+
+		area RearLeftOne
+		{
+			xywh = 2.7143 -0.6349 1.4921 1.4921,
+		}
+
+		area RearLeftTwo
+		{
+			xywh = 2.7143 -1.3492 1.4921 1.4921,
+		}
+
+		area RearLeftThree
+		{
+			xywh = 2.7143 -1.8571 1.4921 1.4921,
+		}
+
+		area RearLeftFour
+		{
+			xywh = 2.7143 -2.3175 1.4921 1.4921,
+		}
+
+		area RearLeftFive
+		{
+			xywh = 2.7143 -3.2222 1.4921 1.4921,
+		}
+
+		area RearLeftSix
+		{
+			xywh = 2.7143 -4.1429 1.4921 1.4921,
+		}
+
+		area RearLeftSeven
+		{
+			xywh = 2.7143 -5.1111 1.4921 1.4921,
+		}
+
+		area RearRightOne
+		{
+			xywh = -2.7143 -0.6349 1.4921 1.4921,
+		}
+
+		area RearRightTwo
+		{
+			xywh = -2.7143 -1.3492 1.4921 1.4921,
+		}
+
+		area RearRightThree
+		{
+			xywh = -2.7143 -1.8571 1.4921 1.4921,
+		}
+
+		area RearRightFour
+		{
+			xywh = -2.7143 -2.3175 1.4921 1.4921,
+		}
+
+		area RearRightFive
+		{
+			xywh = -2.7143 -3.2222 1.4921 1.4921,
+		}
+
+		area RearRightSix
+		{
+			xywh = -2.7143 -4.1429 1.4921 1.4921,
+		}
+
+		area RearRightSeven
+		{
+			xywh = -2.7143 -5.1111 1.4921 1.4921,
 		}
 
 		template = M35A2Seat,
@@ -1072,10 +1174,13 @@ module Base
 			category = nodisplay,
 		}
 
+		template = Trunk/part/TruckBedOpen,
+
 		template = TrunkDoor,
 
 		part TrunkDoor
 		{
+			area = TruckBed,
 			table install
 			{
 				recipes = Advanced Mechanics,
@@ -1093,6 +1198,8 @@ module Base
 				rotate = 0 0 0,
 				scale = 1.0,
 			}
+
+			itemType = SCKCO.M35TailGateSC,
 
 			anim Close
 			{
@@ -1121,8 +1228,16 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+		}
 
-			itemType = SCKCO.M35TailGateSC,
+		part TruckBedOpen
+		{
+			area = TruckBed,
+			container
+			{
+				capacity = 250,
+				test = SCKCO.ContainerAccess.BedOrSeat,
+			}
 		}
 
 
@@ -1277,4 +1392,5 @@ module Base
 		}
 	}
 }
+        useChassisPhysicsCollision = false,
 
