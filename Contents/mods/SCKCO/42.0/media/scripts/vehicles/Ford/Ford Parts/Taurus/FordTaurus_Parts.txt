@@ -6,11 +6,12 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordTaurusWindshieldArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanDoor_WorldItem,
+        WorldStaticModel = FordTaurusWindshieldArmor_WorldItem,
     }
 
         item FordTaurusDoorArmorSC1
@@ -18,11 +19,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusDoorArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanDoor_WorldItem,
+        WorldStaticModel = FordTaurusDoorArmor_WorldItem,
     }
 
         item FordTaurusWindowArmorSC1
@@ -30,23 +31,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusWindowArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SeForddanWindow_WorldItem,
-    }
-
-        item FordTaurusWindowArmorSC1
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        ItemType = base:normal,
-        Icon = FordLogo,
-        VehicleType =   1,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = 93SeForddanWindow_WorldItem,
+        WorldStaticModel = FordTaurusWindowArmor_WorldItem,
     }
 
         item FordTaurusBumperSC1
@@ -54,11 +43,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusBumper,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SeForddanWindow_WorldItem,
+        WorldStaticModel = FordTaurusBumper_WorldItem,
     }
 
         item FordTaurusDoorSC1
@@ -66,11 +55,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusBumper,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanDoor_WorldItem,
+        WorldStaticModel = FordTaurusDoorArmor_WorldItem,
     }
 
         item FordTaurusWindshieldSC1
@@ -78,23 +67,35 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SedanWFordindshield_WorldItem,
+        WorldStaticModel = FordTaurusWindshield_WorldItem,
     }
 
-        item FordTaurusWindowSC1
+        item FordTaurusFrontWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusFrontWindow,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SeForddanWindow_WorldItem,
+        WorldStaticModel = FordTaurusFrontWindow_WorldItem,
+    }
+
+        item FordTaurusRearWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordTaurusRearWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordTaurusRearWindow_WorldItem,
     }
 
         item FordTaurusHoodSC1
@@ -102,11 +103,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusHood,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanHood_WorldItem,
+        WorldStaticModel = FordTaurusHoodArmor_WorldItem,
     }
 
         item FordTaurusTrunkLidSC1
@@ -114,11 +115,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon               = SCKCO/Parts/Ford/FordTaurusTrunkLid,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SedaFordnTrunkLid_WorldItem,
+        WorldStaticModel = FordTaurusTrunkLid_WorldItem,
     }
 
 }

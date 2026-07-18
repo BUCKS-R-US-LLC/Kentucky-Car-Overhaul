@@ -4,7 +4,7 @@ module Base
 	{
 		part RearLeftOne
 		{
-			area = RearLeftOne,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftOne,
@@ -15,7 +15,7 @@ module Base
 
 		part RearRightOne
 		{
-			area = RearRightOne,
+			area = RearStep,
 			container
 			{
 				seat = RearRightOne,
@@ -26,7 +26,7 @@ module Base
 
 		part RearLeftTwo
 		{
-			area = RearLeftTwo,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftTwo,
@@ -37,7 +37,7 @@ module Base
 
 		part RearRightTwo
 		{
-			area = RearRightTwo,
+			area = RearStep,
 			container
 			{
 				seat = RearRightTwo,
@@ -48,7 +48,7 @@ module Base
 
 		part RearLeftThree
 		{
-			area = RearLeftThree,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftThree,
@@ -59,7 +59,7 @@ module Base
 
 		part RearRightThree
 		{
-			area = RearRightThree,
+			area = RearStep,
 			container
 			{
 				seat = RearRightThree,
@@ -70,7 +70,7 @@ module Base
 
 		part RearLeftFour
 		{
-			area = RearLeftFour,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftFour,
@@ -81,7 +81,7 @@ module Base
 
 		part RearRightFour
 		{
-			area = RearRightFour,
+			area = RearStep,
 			container
 			{
 				seat = RearRightFour,
@@ -92,7 +92,7 @@ module Base
 
 		part RearLeftFive
 		{
-			area = RearLeftFive,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftFive,
@@ -103,7 +103,7 @@ module Base
 
 		part RearRightFive
 		{
-			area = RearRightFive,
+			area = RearStep,
 			container
 			{
 				seat = RearRightFive,
@@ -114,7 +114,7 @@ module Base
 
 		part RearLeftSix
 		{
-			area = RearLeftSix,
+			area = RearStep,
 			container
 			{
 				seat = RearLeftSix,
@@ -125,7 +125,7 @@ module Base
 
 		part RearRightSix
 		{
-			area = RearRightSix,
+			area = RearStep,
 			container
 			{
 				seat = RearRightSix,
@@ -136,7 +136,7 @@ module Base
 
         part RearLeftSeven
         {
-            area = RearLeftSeven,
+            area = RearStep,
             container
             {
                 seat = RearLeftSeven,
@@ -147,7 +147,7 @@ module Base
 
         part RearRightSeven
         {
-            area = RearRightSeven,
+            area = RearStep,
             container
             {
                 seat = RearRightSeven,
@@ -169,6 +169,38 @@ module Base
 			lua
 			{
 				create = Vehicles.Create.Default,
+			}
+		}
+
+		part SCSeatDoorLeft
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
+			}
+		}
+
+		part SCSeatDoorRight
+		{
+			itemType = nil,
+			area = RearStep,
+			category = nodisplay,
+			door
+			{
+			}
+			lua
+			{
+				create = SCKCO.Create.Blank,
+				init = SCKCO.Create.Blank,
+				use = Vehicles.Use.Door,
 			}
 		}
 

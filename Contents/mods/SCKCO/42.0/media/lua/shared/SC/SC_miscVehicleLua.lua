@@ -146,17 +146,19 @@ function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
         local parent = miscVehicleLua.getParentIfArmor(armor, vehicleArmor)
         if parent then
 
-            local dataParent = onUpdate and alreadyHaveVehicleData and alreadyHaveVehicleData.parts and alreadyHaveVehicleData.parts[parent]
-            local preHitCond = dataParent and dataParent.preHitCond or parent:getCondition()
+            -- key by armor, not parent: several plates may map to the same parent
+            -- (Bumper/Grille both -> Engine). Keying by parent overwrote all but the last
+            local prevData = onUpdate and alreadyHaveVehicleData and alreadyHaveVehicleData.parts and alreadyHaveVehicleData.parts[armor]
+            local preHitCond = prevData and prevData.preHitCond or parent:getCondition()
 
             if armor and parent then
                 miscVehicleLua.processVehicleHits[player] = miscVehicleLua.processVehicleHits[player] or { parts={}}
                 miscVehicleLua.processVehicleHits[player].vehicle = vehicle
 
                 if armor:getInventoryItem() and (armor:getCondition() > 1) then
-                    miscVehicleLua.processVehicleHits[player].parts[parent] = { armor=armor, preHitCond=preHitCond}
+                    miscVehicleLua.processVehicleHits[player].parts[armor] = { parent=parent, armor=armor, preHitCond=preHitCond}
                 else
-                    miscVehicleLua.processVehicleHits[player].parts[parent] = nil
+                    miscVehicleLua.processVehicleHits[player].parts[armor] = nil
                 end
             end
         end
@@ -165,11 +167,20 @@ function miscVehicleLua.processPartDamages(player, vehicle, onUpdate)
 end
 
 
+-- fallback used when a plate's armorBehavior table omits damageThreshold, so metal
+-- behaviour holds even if template table-merge drops the per-part value.
+miscVehicleLua.defaultDamageThreshold = 5
+
 function miscVehicleLua.armorAbsorb(part, damage)
     local armorBehavior = part:getTable("armorBehavior")
     if not armorBehavior then return damage end
+    local threshold = armorBehavior.damageThreshold or miscVehicleLua.defaultDamageThreshold
     local absorptionRate = armorBehavior.damageAbsorptionOneTo or 1
-    return damage * absorptionRate
+    -- hits at or below the threshold do not wear the plate (zombie claws log as ~3
+    -- condition); only the overmatch above it scales into plate wear.
+    local effective = damage - threshold
+    if effective <= 0 then return 0 end
+    return effective * absorptionRate
 end
 
 
@@ -183,10 +194,12 @@ function miscVehicleLua.applyDamageToArmor(player, weapon, playerVehicle)
         return
     end
 
-    for parent, subData in pairs(data.parts) do
+    -- parts is now keyed by armor part; parent and armor both live in subData.
+    for _, subData in pairs(data.parts) do
 
         local preHitCond = subData.preHitCond
         local armor = subData.armor
+        local parent = subData.parent
         local currentParentCond = parent and parent:getCondition()
         --local currentArmorCond
         local recordedDamage = preHitCond-currentParentCond
@@ -203,13 +216,21 @@ function miscVehicleLua.applyDamageToArmor(player, weapon, playerVehicle)
                 print("---- parent: ", parent and parent.getId and parent:getId(), "=", armor and armor.getId and armor:getId(), ", recordedDamage:", recordedDamage, "  damageToArmor:", damageToArmor)
             end
 
+            -- always restore the protected part; an intact plate keeps it pristine
             if parent~=armor then
                 sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = parent:getId(), condition=pCond })
+                parent:setCondition(pCond)
             end
-            sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = armor:getId(), condition=aCond })
 
-            if parent~=armor then parent:setCondition(pCond) end
-            armor:setCondition(aCond)
+            -- only write the plate when it actually wears (armorAbsorb returns 0 below
+            -- threshold); skips the constant network spam from minor hits
+            if damageToArmor > 0 or parent==armor then
+                sendClientCommand("vehicle", "setPartCondition", { vehicle = data.vehicle:getId(), part = armor:getId(), condition=aCond })
+                armor:setCondition(aCond)
+            end
+
+            -- re-baseline so a second code path this frame cannot re-apply the same drop
+            subData.preHitCond = pCond
         end
     end
 
