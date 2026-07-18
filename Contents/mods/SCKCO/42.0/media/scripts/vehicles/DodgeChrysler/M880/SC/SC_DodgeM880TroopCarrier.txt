@@ -761,6 +761,10 @@ module Base
 
 		template = Door/part/DoorFrontLeft,
 		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorMiddleLeft,
+		template = Door/part/DoorMiddleRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
@@ -897,6 +901,30 @@ module Base
 
 			itemType = SCKCO.DodgePowerWagonDoorSC,
 		}
+		part DoorMiddleLeft
+		{
+			category = nodisplay,
+			mechanicRequireKey = false,
+		}
+
+		part DoorMiddleRight
+		{
+			category = nodisplay,
+			mechanicRequireKey = false,
+		}
+
+		part DoorRearLeft
+		{
+			category = nodisplay,
+			mechanicRequireKey = false,
+		}
+
+		part DoorRearRight
+		{
+			category = nodisplay,
+			mechanicRequireKey = false,
+		}
+
 
 		part DoorMiddleLeft
 		{
