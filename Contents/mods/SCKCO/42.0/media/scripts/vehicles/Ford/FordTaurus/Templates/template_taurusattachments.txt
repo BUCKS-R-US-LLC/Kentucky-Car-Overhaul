@@ -104,9 +104,9 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = TaurusFRWA, }
-            itemType = SCKCO.FordTaurusDoorArmorSC,
+            itemType = SCKCO.FordTaurusWindowArmorSC,
 			parent = WindowFrontRight,
-            requireInstalled = FordTaurusDoorArmorSC,
+            requireInstalled = FordTaurusWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorFrontLeftWindow,
@@ -124,7 +124,7 @@ module Base
             model Default { file = TaurusRRWA, }
             itemType = SCKCO.FordTaurusWindowArmorSC,
 			parent = WindowRearRight,
-            requireInstalled = FordTaurusDoorArmorSC,
+            requireInstalled = FordTaurusWindowArmorSC,
         }
 
         template = armorUpgrades/part/SCArmorRearLeftWindow,

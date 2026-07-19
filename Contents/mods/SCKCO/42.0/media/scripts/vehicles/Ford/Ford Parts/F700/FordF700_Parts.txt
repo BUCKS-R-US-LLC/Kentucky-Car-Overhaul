@@ -6,11 +6,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon	=	SCKCO/Parts/Ford/FordF700Bumper,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVBumper_WorldItem
+        WorldStaticModel = FordF700Bumper_WorldItem,
     }
 
     item FordF700WindowArmorSC2
@@ -18,11 +18,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	FordLogo,
+            Icon	=	SCKCO/Parts/Ford/FordF700WindowArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6WindowArmor_WorldItem,
+            WorldStaticModel = FordF700WindowArmor_WorldItem,
         }
 
     item FordF700DoorArmorSC2
@@ -30,11 +30,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	FordLogo,
+            Icon	=	SCKCO/Parts/Ford/FordF700DoorArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6DoorArmor_WorldItem,
+            WorldStaticModel = FordF700DoorArmor_WorldItem,
         }
 
     item FordF700WindshieldArmorSC2
@@ -42,11 +42,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	FordLogo,
+            Icon	=	SCKCO/Parts/Ford/FordF700BoxWindshieldArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6WindshieldArmor_WorldItem,
+            WorldStaticModel = FordF700BoxWindshieldArmor_WorldItem,
         }
 
         item FordF700DoorSC2
@@ -54,11 +54,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	FordLogo,
+        Icon	=	SCKCO/Parts/Ford/FordF700Door,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVDoor_WorldItem,
+        WorldStaticModel = FordF700Door_WorldItem,
     }
 
         item FordF700WindshieldSC2
@@ -66,11 +66,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon = SCKCO/Parts/Ford/FordF700BoxWindshield,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVArmoredWindows_WorldItem,
+        WorldStaticModel = FordF700BoxWindshield_WorldItem,
     }
 
         item FordF700WindowSC2
@@ -78,11 +78,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon = SCKCO/Parts/Ford/FordF700Window,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVSideWindow_WorldItem,
+        WorldStaticModel = FordF700Window_WorldItem,
     }
 
         item FordF700HoodSC2
@@ -90,11 +90,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon = SCKCO/Parts/Ford/FordF700Hood,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVHood_WorldItem,
+        WorldStaticModel = FordF700Hood_WorldItem,
     }
 
         item FordF700PanelTruckGateSC2
@@ -102,11 +102,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon = SCKCO/Parts/Ford/FordF700PanelTruckRearDoor,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVTrunkLid_WorldItem,
+        WorldStaticModel = FordF700PanelTruckRearDoor_WorldItem,
     }
 
         item FordF700BoxTruckRollUpDoorSC2
@@ -114,10 +114,106 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = FordLogo,
+        Icon = SCKCO/Parts/Ford/FordF700BoxRollUpDoor,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93SUVTrunkLid_WorldItem,
+        WorldStaticModel = FordF700BoxRollUpDoor_WorldItem,
+    }
+
+        item FordF700RearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon = SCKCO/Parts/Ford/FordF700RearWindshield,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700RearWindshield_WorldItem,
+    }
+
+        item FordF700ArmoredBumperSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredBumper,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredBumper_WorldItem,
+    }
+
+        item FordF700ArmoredDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredDoor_WorldItem,
+    }
+
+        item FordF700ArmoredRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredRearDoor_WorldItem,
+    }
+
+        item FordF700ArmoredHoodSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredHood,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredHood_WorldItem,
+    }
+
+        item FordF700ArmoredWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredWindshield,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredWindshield_WorldItem,
+    }
+
+        item FordF700ArmoredWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredWindows,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredSideWindows_WorldItem,
+    }
+
+        item FordF700ArmoredRearWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Ford/FordF700ArmoredRearWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordF700ArmoredRearWindows_WorldItem,
     }
 }

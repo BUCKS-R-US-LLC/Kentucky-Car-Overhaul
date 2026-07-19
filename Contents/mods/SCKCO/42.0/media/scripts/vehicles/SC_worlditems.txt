@@ -15,26 +15,140 @@ module SCKCO
 		scale = 0.5,
 	}
 
-		model F700Door_WorldItem
-	{
-		mesh = WorldItems/Ford/Explorer/F700Door_WorldItem,
-		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
-		scale = 0.5,
-	}
-	
-		model F700Hood_WorldItem
-	{
-		mesh = WorldItems/Ford/Explorer/F700Hood_WorldItem,
-		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
-		scale = 0.5,
-	}
-	
-		model F700Bullbar_WorldItem
-	{
-		mesh = WorldItems/Ford/Explorer/F700Bullbar_WorldItem,
-		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
-		scale = 0.5,
-	}
+	model FordF700ArmoredBumper_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredBumper_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredDoor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredDoor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredRearDoor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredRearDoor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredHood_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredHood_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredWindshield_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredSideWindows_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredSideWindows_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700ArmoredRearWindows_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700ArmoredRearWindows_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_Armored,
+	scale = 0.5,
+}
+
+	model FordF700Bumper_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700Bumper_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Armor,
+	scale = 0.5,
+}
+
+	model FordF700Door_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700Door_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700DoorArmor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700DoorArmor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700Hood_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700Hood_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700Window_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700Window_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700WindowArmor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700WindowArmor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700BoxWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700BoxWindshield_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700BoxWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700BoxWindshieldArmor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700Armor,
+	scale = 0.5,
+}
+
+	model FordF700RearWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700RearWindshield_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700BoxRearWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700BoxRearWindshield_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700BoxRollUpDoor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700BoxRollUpDoor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	scale = 0.5,
+}
+
+	model FordF700PanelTruckRearDoor_WorldItem
+{
+	mesh = WorldItems/Ford/F700/FordF700PanelTruckRearDoor_WorldItem,
+	texture = Vehicles/FordF700/Vehicle_FordF700PanelTruck_White,
+	scale = 0.5,
+}
+
+
 
 		model ChevyCKDoor_WorldItem
 	{
@@ -554,9 +668,16 @@ model ChevyCamaroLouvers_WorldItem
 		scale = 0.5,
 	}
 
-		model FordTaurusWindow_WorldItem
+		model FordTaurusFrontWindow_WorldItem
 	{
-		mesh = WorldItems/Ford/Taurus/FordTaurusWindow_WorldItem,
+		mesh = WorldItems/Ford/Taurus/FordTaurusFrontWindow_WorldItem,
+		texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Grey,
+		scale = 0.5,
+	}
+
+	model FordTaurusRearWindow_WorldItem
+	{
+		mesh = WorldItems/Ford/Taurus/FordTaurusRearWindow_WorldItem,
 		texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Grey,
 		scale = 0.5,
 	}
@@ -568,9 +689,9 @@ model ChevyCamaroLouvers_WorldItem
 	scale = 0.5,
 }
 
-	model FordTaurusDoorArmor_WorldItem
+	model FordTaurusFrontDoorArmor_WorldItem
 {
-	mesh = WorldItems/Ford/Taurus/FordTaurusDoorArmor_WorldItem,
+	mesh = WorldItems/Ford/Taurus/FordTaurusFrontDoorArmor_WorldItem,
 	texture = Vehicles/Taurus86/Vehicle_FordTaurus86_Grey,
 	scale = 0.5,
 }
@@ -1107,6 +1228,3 @@ model ChevyCamaroLouvers_WorldItem
 		scale = 0.5,
 	}
 }
-
-
-

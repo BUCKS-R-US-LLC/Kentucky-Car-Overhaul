@@ -6,7 +6,6 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        ItemType = base:normal,
         Icon               = SCKCO/Parts/Ford/FordTaurusWindshieldArmor,
         VehicleType =   1,
         ConditionMax = 100,
@@ -23,7 +22,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = FordTaurusDoorArmor_WorldItem,
+        WorldStaticModel = FordTaurusFrontDoorArmor_WorldItem,
     }
 
         item FordTaurusWindowArmorSC1
@@ -50,16 +49,28 @@ module SCKCO
         WorldStaticModel = FordTaurusBumper_WorldItem,
     }
 
-        item FordTaurusDoorSC1
+        item FordTaurusFrontDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Ford/FordTaurusBumper,
+        Icon               = SCKCO/Parts/Ford/FordTaurusFrontDoor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = FordTaurusDoorArmor_WorldItem,
+        WorldStaticModel = FordTaurusFrontDoor_WorldItem,
+    }
+
+        item FordTaurusRearDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordTaurusRearDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordTaurusRearDoor_WorldItem,
     }
 
         item FordTaurusWindshieldSC1
@@ -71,7 +82,19 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = FordTaurusWindshield_WorldItem,
+        WorldStaticModel = FordTaurusFrontWindshield_WorldItem,
+    }
+
+        item FordTaurusRearWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordTaurusWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordTaurusRearWindshield_WorldItem,
     }
 
         item FordTaurusFrontWindowSC1
@@ -91,7 +114,7 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Ford/FordTaurusRearWindow,
+        Icon               = SCKCO/Parts/Ford/FordTaurusFrontWindow,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
@@ -107,7 +130,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = FordTaurusHoodArmor_WorldItem,
+        WorldStaticModel = FordTaurusHood_WorldItem,
     }
 
         item FordTaurusTrunkLidSC1
