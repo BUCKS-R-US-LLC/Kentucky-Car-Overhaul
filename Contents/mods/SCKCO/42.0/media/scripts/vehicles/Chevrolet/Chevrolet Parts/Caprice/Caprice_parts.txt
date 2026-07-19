@@ -49,7 +49,7 @@ module SCKCO
         WorldStaticModel = ChevyCapriceBumper_WorldItem,
     }
 
-        item ChevyCaprice85DoorSC1
+        item ChevyCaprice85FrontDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -58,10 +58,46 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = ChevyCapriceDoor_WorldItem,
+        WorldStaticModel = ChevyCapriceFrontDoor_WorldItem,
     }
 
-        item ChevyCaprice85WindshieldSC1
+        item ChevyCaprice85RearDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceDoor,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyCapriceRearDoor_WorldItem,
+    }
+
+        item ChevyCaprice85FrontWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyCapriceWindshield_WorldItem,
+    }
+
+        item ChevyCaprice85RearWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletCapriceWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevyCapriceRearWindshield_WorldItem,
+    }
+
+        item ChevyCaprice85FrontWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -70,10 +106,10 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = ChevyCapriceWindshield_WorldItem,
+        WorldStaticModel = ChevyCapriceWindow_WorldItem,
     }
 
-        item ChevyCaprice85WindowSC1
+        item ChevyCaprice85RearWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
