@@ -15,6 +15,27 @@ module SCKCO
 		scale = 0.5,
 	}
 
+		model F700Door_WorldItem
+	{
+		mesh = WorldItems/Ford/Explorer/F700Door_WorldItem,
+		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+	
+		model F700Hood_WorldItem
+	{
+		mesh = WorldItems/Ford/Explorer/F700Hood_WorldItem,
+		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+	
+		model F700Bullbar_WorldItem
+	{
+		mesh = WorldItems/Ford/Explorer/F700Bullbar_WorldItem,
+		texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
+		scale = 0.5,
+	}
+
 	model FordF700ArmoredBumper_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700ArmoredBumper_WorldItem,
@@ -74,42 +95,42 @@ module SCKCO
 	model FordF700Door_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700Door_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700DoorArmor_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700DoorArmor_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700Hood_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700Hood_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700Window_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700Window_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700WindowArmor_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700WindowArmor_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700BoxWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700BoxWindshield_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
@@ -123,14 +144,14 @@ module SCKCO
 	model FordF700RearWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700RearWindshield_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
 	model FordF700BoxRearWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/F700/FordF700BoxRearWindshield_WorldItem,
-	texture = Vehicles/FordF700/Vehicle_FordF700BoxTruck_White,
+	texture = Vehicles/FordF700/Vehicle_FordF700Arm_WhiteBankTruck,
 	scale = 0.5,
 }
 
@@ -1227,4 +1248,89 @@ model ChevyCamaroLouvers_WorldItem
 		texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_White,
 		scale = 0.5,
 	}
+
+	model FordCrownVic85Bumper_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85Bumper_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85FrontDoor_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85FrontDoor_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85RearDoor_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85RearDoor_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85DoorArmor_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85DoorArmor_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85FrontWindow_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85FrontWindow_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85RearWindow_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85RearWindow_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85WindowArmor_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85WindowArmor_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85FrontWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85FrontWindshield_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85RearWindshield_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85RearWindshield_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85WindshieldArmor_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85Hood_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85Hood_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
+	model FordCrownVic85TrunkLid_WorldItem
+{
+	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic85TrunkLid_WorldItem,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVictoriaSC_White,
+	scale = 0.5,
+}
+
 }

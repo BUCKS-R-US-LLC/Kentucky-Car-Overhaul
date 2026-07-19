@@ -23,7 +23,7 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicArmor,
-        WorldStaticModel = 93FordSedanWindshieldArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85WindshieldArmor_WorldItem,
     }
 
         item FordCrownVictoria85DoorArmorSC1
@@ -36,7 +36,7 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicArmor,
-        WorldStaticModel = 93FordSedanDoorArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85DoorArmor_WorldItem,
     }
 
         item FordCrownVictoria85WindowArmorSC1
@@ -49,7 +49,7 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicArmor,
-        WorldStaticModel = 93FordSedanWindowArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85WindowArmor_WorldItem,
     }
 
         item FordCrownVictoria85BumperSC1
@@ -62,10 +62,10 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicArmor,
-        WorldStaticModel = 93FordSedanBumper_WorldItem,
+        WorldStaticModel = FordCrownVic85Bumper_WorldItem,
     }
 
-        item FordCrownVictoria85DoorSC1
+        item FordCrownVictoria85FrontDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -75,10 +75,23 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanDoor_WorldItem,
+        WorldStaticModel = FordCrownVic85FrontDoor_WorldItem,
     }
 
-        item FordCrownVictoria85WindshieldSC1
+        item FordCrownVictoria85RearDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Door,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordVicParts,
+        WorldStaticModel = FordCrownVic85RearDoor_WorldItem,
+    }
+
+        item FordCrownVictoria85FrontWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -88,10 +101,23 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanWindshield_WorldItem,
+        WorldStaticModel = FordCrownVic85FrontWindshield_WorldItem,
     }
 
-        item FordCrownVictoria85WindowSC1
+        item FordCrownVictoria85RearWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Windshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordVicParts,
+        WorldStaticModel = FordCrownVic85RearWindshield_WorldItem,
+    }
+
+        item FordCrownVictoria85FrontWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -101,10 +127,10 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanWindow_WorldItem,
+        WorldStaticModel = FordCrownVic85FrontWindow_WorldItem,
     }
 
-        item FordCrownVictoria85WindowSC1
+        item FordCrownVictoria85RearWindowSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -114,7 +140,7 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanWindow_WorldItem,
+        WorldStaticModel = FordCrownVic85RearWindow_WorldItem,
     }
 
         item FordCrownVictoria85HoodSC1
@@ -127,7 +153,7 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanHood_WorldItem,
+        WorldStaticModel = FordCrownVic85Hood_WorldItem,
     }
 
         item FordCrownVictoria85TrunkLidSC1
@@ -140,10 +166,10 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanTrunkLid_WorldItem,
+        WorldStaticModel = FordCrownVic85TrunkLid_WorldItem,
     }
 
-        item FordCrownVictoria92DoorSC1
+        item FordCrownVictoria92FrontDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -153,10 +179,23 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         Tooltip = Tooltip_FordVicParts,
-        WorldStaticModel = 93FordSedanDoor_WorldItem,
+        WorldStaticModel = FordCrownVic85FrontDoor_WorldItem,
     }
 
-        item FordCrownVictoria92WindshieldSC1
+        item FordCrownVictoria92RearDoorSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Door,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        Tooltip = Tooltip_FordVicParts,
+        WorldStaticModel = FordCrownVic85RearDoor_WorldItem,
+    }
+
+        item FordCrownVictoria92FrontWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -165,20 +204,46 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanWindshield_WorldItem,
+        WorldStaticModel = FordCrownVic85FrontWindshield_WorldItem,
     }
 
-        item FordCrownVictoria92WindowSC1
+        item FordCrownVictoria92RearWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon               = SCKCO/Parts/Ford/FordCrownVic85WindowArmor,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Windshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanWindow_WorldItem,
+        WorldStaticModel = FordCrownVic85RearWindshield_WorldItem,
     }
+
+
+        item FordCrownVictoria92FrontWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Window,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordCrownVic85FrontWindow_WorldItem,
+    }
+
+        item FordCrownVictoria92RearWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Ford/FordCrownVic85Window,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = FordCrownVic85RearWindow_WorldItem,
+    }
+
 
         item FordCrownVictoria92HoodSC1
     {
@@ -189,7 +254,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanHood_WorldItem,
+        WorldStaticModel = FordCrownVic85Hood_WorldItem,
     }
 
         item FordCrownVictoria92TrunkLidSC1
@@ -201,7 +266,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanTrunkLid_WorldItem,
+        WorldStaticModel = FordCrownVic85TrunkLid_WorldItem,
     }
 
         item FordCrownVictoria92WindshieldArmorSC1
@@ -213,7 +278,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanWindshieldArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85WindshieldArmor_WorldItem,
     }
 
         item FordCrownVictoria92DoorArmorSC1
@@ -225,7 +290,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanDoorArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85DoorArmor_WorldItem,
     }
 
         item FordCrownVictoria92WindowArmorSC1
@@ -237,7 +302,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanWindowArmor_WorldItem,
+        WorldStaticModel = FordCrownVic85WindowArmor_WorldItem,
     }
 
         item FordCrownVictoria92BumperSC1
@@ -249,7 +314,7 @@ module SCKCO
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93FordSedanBumper_WorldItem,
+        WorldStaticModel = FordCrownVic85Bumper_WorldItem,
     }
 
 }
