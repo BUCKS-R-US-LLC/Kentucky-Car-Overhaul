@@ -1,0 +1,96 @@
+module Base
+{
+    template vehicle SCLighter
+    {
+        part SCLighter
+        {
+            mechanicArea = Interior,
+            area = SeatFrontRight,
+            itemType = SCKCO.CigaretteLighterSC,
+            category = nodisplay,
+            durability = 1,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 60,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 60,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+
+    template vehicle SCLighterSurplus
+    {
+        part SCLighter
+        {
+            mechanicArea = Interior,
+            area = SeatFrontRight,
+            itemType = SCKCO.CigaretteLighterSC,
+            category = nodisplay,
+            durability = 1,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 60,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 60,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = SCKCO.Create.LighterDelete,
+            }
+        }
+    }
+}

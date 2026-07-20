@@ -245,4 +245,18 @@ function miscVehicleLua.applyDamageToArmorOnUpdate(player)
 end
 
 
+
+-- Vehicle script part hooks resolve against the global SCKCO namespace, not this module
+-- table, so guard-merge rather than assign. Surplus fleet spawns with the lighter socket
+-- fitted but empty; the part stays installable so a scavenged CigaretteLighterSC retrofits.
+SCKCO = SCKCO or {}
+SCKCO.Create = SCKCO.Create or {}
+
+---@param vehicle BaseVehicle
+---@param part VehiclePart
+function SCKCO.Create.LighterDelete(vehicle, part)
+    part:setInventoryItem(nil)
+end
+
+
 return miscVehicleLua
