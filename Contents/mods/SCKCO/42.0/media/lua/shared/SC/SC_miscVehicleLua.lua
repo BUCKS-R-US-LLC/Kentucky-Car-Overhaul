@@ -8,25 +8,6 @@ function miscVehicleLua.M35A2CargoWeightFix(player, part, elapsedMinutes)
     end
 end
 
-SCKCO = SCKCO or {}
-SCKCO.ContainerAccess = SCKCO.ContainerAccess or {}
-
--- container part id -> lid part id that gates it
-local SCKCO_CargoLid = {
-	SCCargoRearLeft = "SCCargoLidRearLeft",
-	SCCargoRearRight = "SCCargoLidRearRight",
-}
-
-function SCKCO.ContainerAccess.CargoLid(vehicle, part, playerObj)
-	local lid = vehicle:getPartById(SCKCO_CargoLid[part:getId()])
-	-- lid uninstalled: nothing left to block access
-	if not lid or not lid:getInventoryItem() then return true end
-
-	local door = lid:getDoor()
-	if not door then return true end
-	return door:isOpen()
-end
-
 ---@param owner IsoGameCharacter|IsoPlayer|IsoMovingObject
 ---@param weapon HandWeapon|InventoryItem
 function miscVehicleLua.getHitVehicles(owner, weapon)
