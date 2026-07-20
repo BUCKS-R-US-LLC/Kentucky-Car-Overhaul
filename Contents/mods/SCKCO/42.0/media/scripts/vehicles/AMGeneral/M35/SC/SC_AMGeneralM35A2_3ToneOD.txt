@@ -144,14 +144,13 @@ module Base
         engineRepairLevel = 4,
         playerDamageProtection = 0.5,
         neverSpawnKey = true,
-
         useChassisPhysicsCollision = false,
 
         model
         {
             file = SC_M35A2,
             scale = 0.6300,
-            offset = 0.0000 -0.3105 0.0000,
+            offset = 0.0000 -0.3175 0.0000,
         }
 
         skin
@@ -219,7 +218,7 @@ module Base
         wheel FrontLeft
         {
             front = true,
-            offset = 1.4127 0.8200 2.9524,
+            offset = 1.4127 0.8254 2.9524,
             radius = 1.50f,
             width = 1.00f,
         }
@@ -227,7 +226,7 @@ module Base
         wheel FrontRight
         {
             front = true,
-            offset = -1.4127 0.8200 2.9524,
+            offset = -1.4127 0.8254 2.9524,
             radius = 1.50f,
             width = 1.00f,
         }
@@ -235,7 +234,7 @@ module Base
         wheel RearLeft
         {
             front = false,
-            offset = 1.4127 0.8200 -2.8016,
+            offset = 0.0000 0.8254 -1.9829,
             radius = 1.50f,
             width = 1.00f,
         }
@@ -243,7 +242,7 @@ module Base
         wheel RearRight
         {
             front = false,
-            offset = -1.4127 0.8200 -2.8016,
+            offset = 0.0054 0.8254 -3.7143,
             radius = 1.50f,
             width = 1.00f,
         }

@@ -1,40 +1,76 @@
 module SCKCO
 {
 
-        item ChevyCavalierDoorSC1
+        item ChevyCavalierFrontDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierFrontDoor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanDoor_WorldItem,
+        WorldStaticModel = CavalierFrontDoor_WorldItem,
     }
 
-        item ChevyCavalierWindshieldSC1
+        item ChevyCavalierRearDoorSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierRearDoor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanWindshield_WorldItem,
+        WorldStaticModel = CavalierRearDoor_WorldItem,
     }
 
-        item ChevyCavalierWindowSC1
+        item ChevyCavalierFrontWindshieldSC1
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierFrontWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanWindow_WorldItem,
+        WorldStaticModel = CavalierFrontWindshield_WorldItem,
+    }
+
+        item ChevyCavalierRearWindshieldSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierRearWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CavalierRearWindshield_WorldItem,
+    }
+
+        item ChevyCavalierFrontWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierFrontWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CavalierFrontWindow_WorldItem,
+    }
+
+        item ChevyCavalierRearWindowSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierRearWindow,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CavalierRearWindow_WorldItem,
     }
     
         item ChevyCavalierHoodSC1
@@ -42,11 +78,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierHood,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanHood_WorldItem,
+        WorldStaticModel = CavalierHood_WorldItem,
     }
 
         item ChevyCavalierTrunkLidSC1
@@ -54,11 +90,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletCavalierTrunkLid,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanTrunkLid_WorldItem,
+        WorldStaticModel = CavalierTrunkLid_WorldItem,
     }
 
         item ChevyCavalierWindshieldArmorSC1
@@ -66,11 +102,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = ChevyLogo,
+        Icon = SCKCO/Parts/Chevrolet/ChevroletCavalierWindshieldArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanDoor_WorldItem,
+        WorldStaticModel = CavalierWindshieldArmor_WorldItem,
     }
 
         item ChevyCavalierDoorArmorSC1
@@ -78,11 +114,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = ChevyLogo,
+        Icon = SCKCO/Parts/Chevrolet/ChevroletCavalierDoorArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanDoor_WorldItem,
+        WorldStaticModel = CavalierDoorArmor_WorldItem,
     }
 
         item ChevyCavalierWindowArmorSC1
@@ -90,11 +126,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = ChevyLogo,
+        Icon = SCKCO/Parts/Chevrolet/ChevroletCavalierWindowArmor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanWindow_WorldItem,
+        WorldStaticModel = CavalierFrontWindowArmor_WorldItem,
     }
 
         item ChevyCavalierBumperSC1
@@ -102,11 +138,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon = ChevyLogo,
+        Icon = SCKCO/Parts/Chevrolet/ChevroletCavalierBumper,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93ChevySedanWindow_WorldItem,
+        WorldStaticModel = CavalierBumper_WorldItem,
     }
 
 }

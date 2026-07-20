@@ -157,6 +157,13 @@ module SCKCO
 		scale = 0.5,
 	}
 
+		model ChevySuburbanRearDoor_WorldItem
+	{
+		mesh = WorldItems/Chevrolet/KSeries/SuburbanRearDoor_WorldItem,
+		texture = Vehicles/Suburban/Vehicle_Suburb86_GreyBlue,
+		scale = 0.5,
+	}
+
 		model ChevyCKWindshield_WorldItem
 	{
 		mesh = WorldItems/Chevrolet/KSeries/K5WindShield_WorldItem,
@@ -175,6 +182,13 @@ module SCKCO
 	{
 		mesh = WorldItems/Chevrolet/KSeries/K5Window_WorldItem,
 		texture = Vehicles/K5/Vehicle_BlazerSC_White,
+		scale = 0.5,
+	}
+
+		model ChevySuburbanRearWindow_WorldItem
+	{
+		mesh = WorldItems/Chevrolet/KSeries/SuburbanRearWindow_WorldItem,
+		texture = Vehicles/Suburban/Vehicle_Suburb86_GreyBlue,
 		scale = 0.5,
 	}
 
@@ -752,9 +766,16 @@ model ChevyCamaroLouvers_WorldItem
 		scale = 0.5,
 	}
 
-		model ChevyCapriceWindow_WorldItem
+		model ChevyCapriceFrontWindow_WorldItem
 	{
-		mesh = WorldItems/Chevrolet/Caprice/CapriceWindow_WorldItem,
+		mesh = WorldItems/Chevrolet/Caprice/CapriceFrontWindow_WorldItem,
+		texture = Vehicles/Caprice/Vehicle_CapriceSC_White,
+		scale = 0.5,
+	}
+
+		model ChevyCapriceRearWindow_WorldItem
+	{
+		mesh = WorldItems/Chevrolet/Caprice/CapriceRearWindow_WorldItem,
 		texture = Vehicles/Caprice/Vehicle_CapriceSC_White,
 		scale = 0.5,
 	}
@@ -1470,6 +1491,181 @@ model ChevyCamaroLouvers_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerTrunkLid_WorldItem,
 	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	scale = 0.5,
+}
+
+	model CavalierBumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierBumper_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierFrontDoor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierFrontDoor_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierRearDoor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierRearDoor_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierDoorArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierDoorArmor_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierFrontWindow_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierFrontWindow_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierRearWindow_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierRearWindow_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierFrontWindowArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierFrontWindowArmor_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierFrontWindshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierFrontWindshield_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierRearWindshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierRearWindshield_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierWindshieldArmor_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierHood_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierHood_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model CavalierTrunkLid_WorldItem
+{
+	mesh = WorldItems/Chevrolet/Cavalier/CavalierTrunkLid_WorldItem,
+	texture = Vehicles/ChevCava/Vehicle_ChevCava_White,
+	scale = 0.5,
+}
+
+	model C70Bumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70Bumper_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70CraftedBumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70FrontBumper_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_C70Armor,
+	scale = 0.5,
+}
+
+	model C70SurvivorBumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70SurvivorBumper_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
+	scale = 0.5,
+}
+
+	model C70SurvivorWinchBumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70SurvivorWinchBumper_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
+	scale = 0.5,
+}
+
+	model C70Door_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70Door_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70DoorArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70DoorArmor_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70Window_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70Window_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70WindowArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70WindowArmor_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70Windshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70Windshield_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70RearWindshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70RearWindshield_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70WindshieldArmor_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_C70Armor,
+	scale = 0.5,
+}
+
+	model C70Hood_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70Hood_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_White,
+	scale = 0.5,
+}
+
+	model C70SurvivorTrunkLid_WorldItem
+{
+	mesh = WorldItems/Chevrolet/C70/C70SurvivorTrunkLid_WorldItem,
+	texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
 	scale = 0.5,
 }
 

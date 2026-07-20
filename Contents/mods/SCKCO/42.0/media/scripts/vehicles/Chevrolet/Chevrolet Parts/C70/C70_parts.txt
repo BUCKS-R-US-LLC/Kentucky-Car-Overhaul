@@ -6,11 +6,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70SurvivorBumper,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = F700Bullbar_WorldItem
+        WorldStaticModel = C70SurvivorBumper_WorldItem,
     }
 
     item ChevyC70WindowArmorSC2
@@ -18,11 +18,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	ChevyLogo,
+            Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70WindowArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6WindowArmor_WorldItem,
+            WorldStaticModel = C70WindowArmor_WorldItem,
         }
 
     item ChevyC70DoorArmorSC2
@@ -30,11 +30,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	ChevyLogo,
+            Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70DoorArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6DoorArmor_WorldItem,
+            WorldStaticModel = C70DoorArmor_WorldItem,
         }
 
     item ChevyC70WindshieldArmorSC2
@@ -42,11 +42,11 @@ module SCKCO
             DisplayCategory = VehicleArmor,
             Weight	=	10.0,
             ItemType = base:normal,
-            Icon	=	ChevyLogo,
+            Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70WindshieldArmor,
             VehicleType =   2,
             ConditionMax = 100,
             MechanicsItem = TRUE,
-            WorldStaticModel = Military6x6WindshieldArmor_WorldItem,
+            WorldStaticModel = C70WindshieldArmor_WorldItem,
         }
 
         item ChevyC70BumperSC2
@@ -54,11 +54,11 @@ module SCKCO
         DisplayCategory = VehicleArmor,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70FrontBumper,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = F700Bullbar_WorldItem
+        WorldStaticModel = C70CraftedBumper_WorldItem,
     }
         
         item ChevyC70DoorSC2
@@ -66,11 +66,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70Door,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = F700Door_WorldItem,
+        WorldStaticModel = C70Door_WorldItem,
     }
 
         item ChevyC70WindshieldSC2
@@ -78,11 +78,23 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70Windshield,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = F700ArmoredWindows_WorldItem,
+        WorldStaticModel = C70Windshield_WorldItem,
+    }
+
+        item ChevyC70RearWindshieldSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	20.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70RearWindshield,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = C70RearWindshield_WorldItem,
     }
 
         item ChevyC70WindowSC2
@@ -90,11 +102,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70Window,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5SideWindow_WorldItem,
+        WorldStaticModel = C70Window_WorldItem,
     }
 
         item ChevyC70HoodSC2
@@ -102,11 +114,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70Hood,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = K5Hood_WorldItem,
+        WorldStaticModel = C70Hood_WorldItem,
     }
 
         item ChevyC70TailGate2
@@ -114,10 +126,34 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	ChevyLogo,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70SurvivorTrunkLid,
         VehicleType =   2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = M35TailGate_WorldItem,
+        WorldStaticModel = C70SurvivorTrunkLid_WorldItem,
+    }
+
+        item ChevyC70SurvivorBumperSC2
+    {
+        DisplayCategory = VehicleArmor,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70SurvivorWinchBumper,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = C70SurvivorWinchBumper_WorldItem,
+    }
+
+        item ChevyC70StockBumperSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon	=	SCKCO/Parts/Chevrolet/ChevroletC70Bumper,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = C70Bumper_WorldItem,
     }
 }

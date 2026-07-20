@@ -61,6 +61,18 @@ module SCKCO
         WorldStaticModel = ChevyCKDoor_WorldItem,
     }
 
+        item ChevySuburbanRearDoorSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletSuburbanRearDoor,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevySuburbanRearDoor_WorldItem,
+    }
+
         item ChevyCKSeriesWindshieldSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -83,6 +95,18 @@ module SCKCO
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = ChevyCKWindow_WorldItem,
+    }
+
+        item ChevySuburbanRearWindowSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        ItemType = base:normal,
+        Icon               = SCKCO/Parts/Chevrolet/ChevroletSuburbanRearWindow,
+        VehicleType =   2,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = ChevySuburbanRearWindow_WorldItem,
     }
 
         item ChevyCKSeriesHoodSC2
