@@ -914,30 +914,6 @@ module Base
         }
 
         template = Trunk/part/TruckBed,
-
-        part SCCargoRearLeft
-        {
-            area = SeatRearLeft,
-            category = nodisplay,
-
-            container
-            {
-                capacity = 20,
-                test = SCKCO.ContainerAccess.RearDoorCargo,
-            }
-        }
-
-        part SCCargoRearRight
-        {
-            area = SeatRearRight,
-            category = nodisplay,
-
-            container
-            {
-                capacity = 20,
-                test = SCKCO.ContainerAccess.RearDoorCargo,
-            }
-        }
         template = SCTireModern,
 
         part TireFrontLeft
