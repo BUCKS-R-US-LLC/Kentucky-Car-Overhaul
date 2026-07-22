@@ -366,11 +366,45 @@ end
 
 local CharVisuals = require "SC/SC_CharacterVisuals"
 
+SCKCO = SCKCO or {}
+SCKCO.FastEnter = SCKCO.FastEnter or {}
+local FastCfg = SCKCO.FastEnter
+FastCfg.instantEnter = true
+FastCfg.instantExit = true
+FastCfg.enterTransition = "Default"
+
 local enter_start = ISEnterVehicle.start
 function ISEnterVehicle:start()
     enter_start(self)
     self.character:SetVariable("SCUCK_Anim", "True")
-	self.character:SetVariable("SCUCK_AnimTransition", "Default")
+	self.character:SetVariable("SCUCK_AnimTransition", FastCfg.enterTransition)
+end
+
+-- Vanilla update() spins on EnterAnimationFinished before forceComplete. The seat is already
+-- taken by vehicle:enter() in start(), so completing early is safe once getCharacter confirms
+-- it. Falls through to vanilla when start() hit its 2-tile early return and never entered.
+local enter_update = ISEnterVehicle.update
+function ISEnterVehicle:update()
+	if FastCfg.instantEnter and self.vehicle:getCharacter(self.seat) == self.character then
+		self.character:ClearVariable("EnterAnimationFinished")
+		self.character:ClearVariable("bEnteringVehicle")
+		self:forceComplete()
+		return
+	end
+	enter_update(self)
+end
+
+-- Exit is symmetric but vehicle:exit() lives in perform(), not start(), so the character is
+-- still seated for the whole action. isValid already asserts a vehicle and a stopped one.
+local exit_update = ISExitVehicle.update
+function ISExitVehicle:update()
+	if FastCfg.instantExit and self.character:getVehicle() then
+		self.character:ClearVariable("ExitAnimationFinished")
+		self.character:ClearVariable("bExitingVehicle")
+		self:forceComplete()
+		return
+	end
+	exit_update(self)
 end
 
 
