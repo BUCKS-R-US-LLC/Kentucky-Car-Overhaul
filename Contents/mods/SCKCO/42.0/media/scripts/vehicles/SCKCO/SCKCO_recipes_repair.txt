@@ -1,0 +1,105 @@
+module SCKCO
+{
+    /* Repair for uninstalled parts.
+
+       The recipe supplies the crafting UI, the tool and material requirements and the
+       skill gate. OnCreate hands off to SCKCORepairOnCreate, which applies the same
+       condition maths, ceiling decay and SCKCO_Repairs counter the installed-part path
+       uses -- without that bridge a stock fixing recipe would bump vanilla's repair
+       counter instead of ours, and uninstall/repair/reinstall would never degrade.
+
+       Tag-driven, so these four entries cover every part rather than one recipe per item.
+       Armor items carry ArmorGlass / ArmorDoor / ArmorBody; tires already carry the
+       vanilla wholetire tag.
+
+       Tools are referenced by explicit type where the tag has no items behind it
+       (base:blowtorch is registered but empty, and an empty input tag is a hard script
+       load error). WeldingMask does have items, so it stays a tag. */
+
+    craftRecipe RepairArmorGlass
+    {
+        timedAction = Welding,
+        time = 200,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        SkillRequired = MetalWelding:2,
+        xpAward = MetalWelding:10,
+        OnCreate = SCKCORepairOnCreate.armor,
+        Tooltip = Tooltip_SCKCO_RepairLoose,
+        inputs
+        {
+            item 1 tags[ArmorGlass] mode:keep flags[Prop2;IsDamaged],
+            item 1 [Base.SmallSheetMetal],
+            item 2 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe RepairArmorDoor
+    {
+        timedAction = Welding,
+        time = 260,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        SkillRequired = MetalWelding:3,
+        xpAward = MetalWelding:15,
+        OnCreate = SCKCORepairOnCreate.armor,
+        Tooltip = Tooltip_SCKCO_RepairLoose,
+        inputs
+        {
+            item 1 tags[ArmorDoor] mode:keep flags[Prop2;IsDamaged],
+            item 1 [Base.SheetMetal],
+            item 3 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe RepairArmorBody
+    {
+        timedAction = Welding,
+        time = 240,
+        Tags = InHandCraft;Welding,
+        category = Vehicle Armor,
+        SkillRequired = MetalWelding:3,
+        xpAward = MetalWelding:12,
+        OnCreate = SCKCORepairOnCreate.armor,
+        Tooltip = Tooltip_SCKCO_RepairLoose,
+        inputs
+        {
+            item 1 tags[ArmorBody] mode:keep flags[Prop2;IsDamaged],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.MetalPipe],
+            item 3 [Base.BlowTorch],
+            item 1 tags[WeldingMask] mode:keep,
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe PatchTire
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        category = Vehicle Armor,
+        SkillRequired = Mechanics:1,
+        xpAward = Mechanics:10,
+        OnCreate = SCKCORepairOnCreate.tire,
+        Tooltip = Tooltip_SCKCO_RepairLoose,
+        inputs
+        {
+            item 1 tags[wholetire] mode:keep flags[Prop2;IsDamaged],
+            item 1 [SCKCO.TirePatchKit] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+        }
+    }
+}
