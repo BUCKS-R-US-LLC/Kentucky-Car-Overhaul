@@ -1,4 +1,331 @@
 VERSION = 1,
 
-option SCKCO.LighterEnabled        { type = boolean, default = true,  page = SCKCO, translation = SCKCO_LighterEnabled, }
-option SCKCO.LighterMinCharge      { type = integer, default = 5,   min = 0,   max = 100, page = SCKCO, translation = SCKCO_LighterMinCharge, }
+option SCKCO.RepairEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_RepairEnabled,
+}
+
+option SCKCO.BodyRepairEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_BodyRepairEnabled,
+}
+
+option SCKCO.BodyReplaceVanilla
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_BodyReplaceVanilla,
+}
+
+option SCKCO.RepairHideUnusable
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_RepairHideUnusable,
+}
+
+option SCKCO.SeatRepairEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_SeatRepairEnabled,
+}
+
+option SCKCO.RepairMaterialScale
+{
+	type = double,
+	min = 0.0,
+	max = 5.0,
+	default = 1.0,
+	page = SCKCO,
+	translation = SCKCO_RepairMaterialScale,
+}
+
+option SCKCO.ScrapEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_ScrapEnabled,
+}
+
+option SCKCO.ScrapYieldScale
+{
+	type = double,
+	min = 0.0,
+	max = 5.0,
+	default = 1.0,
+	page = SCKCO,
+	translation = SCKCO_ScrapYieldScale,
+}
+
+option SCKCO.ScrapLossBase
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 40,
+	page = SCKCO,
+	translation = SCKCO_ScrapLossBase,
+}
+
+option SCKCO.ScrapLossPerSkill
+{
+	type = integer,
+	min = 0,
+	max = 20,
+	default = 3,
+	page = SCKCO,
+	translation = SCKCO_ScrapLossPerSkill,
+}
+
+option SCKCO.ScrapUseRecipes
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_ScrapUseRecipes,
+}
+
+option SCKCO.SeatAllowTape
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_SeatAllowTape,
+}
+
+option SCKCO.SeatTapeFailPenalty
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 25,
+	page = SCKCO,
+	translation = SCKCO_SeatTapeFailPenalty,
+}
+
+option SCKCO.TireRepairEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_TireRepairEnabled,
+}
+
+option SCKCO.TireFlatThreshold
+{
+	type = double,
+	min = 0.0,
+	max = 1.0,
+	default = 0.1,
+	page = SCKCO,
+	translation = SCKCO_TireFlatThreshold,
+}
+
+option SCKCO.RepairSkillMode
+{
+	type = enum,
+	numValues = 3,
+	default = 3,
+	page = SCKCO,
+	translation = SCKCO_RepairSkillMode,
+	valueTranslation = SCKCO_RepairSkillMode,
+}
+
+option SCKCO.RepairMinSkill
+{
+	type = integer,
+	min = 0,
+	max = 10,
+	default = 0,
+	page = SCKCO,
+	translation = SCKCO_RepairMinSkill,
+}
+
+option SCKCO.RepairCloseFraction
+{
+	type = double,
+	min = 0.0,
+	max = 1.0,
+	default = 0.25,
+	page = SCKCO,
+	translation = SCKCO_RepairCloseFraction,
+}
+
+option SCKCO.RepairCloseFractionPerSkill
+{
+	type = double,
+	min = 0.0,
+	max = 1.0,
+	default = 0.05,
+	page = SCKCO,
+	translation = SCKCO_RepairCloseFractionPerSkill,
+}
+
+option SCKCO.RepairDegradePerPass
+{
+	type = integer,
+	min = 0,
+	max = 50,
+	default = 3,
+	page = SCKCO,
+	translation = SCKCO_RepairDegradePerPass,
+}
+
+option SCKCO.RepairScrapCeiling
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 25,
+	page = SCKCO,
+	translation = SCKCO_RepairScrapCeiling,
+}
+
+option SCKCO.RepairTotalLossThreshold
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 0,
+	page = SCKCO,
+	translation = SCKCO_RepairTotalLossThreshold,
+}
+
+option SCKCO.RepairMinGap
+{
+	type = integer,
+	min = 1,
+	max = 50,
+	default = 1,
+	page = SCKCO,
+	translation = SCKCO_RepairMinGap,
+}
+
+option SCKCO.MetalRequireMask
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_MetalRequireMask,
+}
+
+option SCKCO.RepairBaseTime
+{
+	type = integer,
+	min = 10,
+	max = 2000,
+	default = 120,
+	page = SCKCO,
+	translation = SCKCO_RepairBaseTime,
+}
+
+option SCKCO.RepairTimePerDamage
+{
+	type = integer,
+	min = 0,
+	max = 50,
+	default = 4,
+	page = SCKCO,
+	translation = SCKCO_RepairTimePerDamage,
+}
+
+option SCKCO.RepairTimePerSkillLevel
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 8,
+	page = SCKCO,
+	translation = SCKCO_RepairTimePerSkillLevel,
+}
+
+option SCKCO.RepairFailBase
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 5,
+	page = SCKCO,
+	translation = SCKCO_RepairFailBase,
+}
+
+option SCKCO.RepairFailPerDamage
+{
+	type = double,
+	min = 0.0,
+	max = 5.0,
+	default = 0.6,
+	page = SCKCO,
+	translation = SCKCO_RepairFailPerDamage,
+}
+
+option SCKCO.RepairFailPerSkill
+{
+	type = integer,
+	min = 0,
+	max = 20,
+	default = 4,
+	page = SCKCO,
+	translation = SCKCO_RepairFailPerSkill,
+}
+
+option SCKCO.RepairFailMax
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 75,
+	page = SCKCO,
+	translation = SCKCO_RepairFailMax,
+}
+
+option SCKCO.RepairBotchChance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 30,
+	page = SCKCO,
+	translation = SCKCO_RepairBotchChance,
+}
+
+option SCKCO.RepairBotchDamage
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 8,
+	page = SCKCO,
+	translation = SCKCO_RepairBotchDamage,
+}
+
+option SCKCO.RepairXP
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 5,
+	page = SCKCO,
+	translation = SCKCO_RepairXP,
+}
+
+option SCKCO.RepairXPPerDamage
+{
+	type = double,
+	min = 0.0,
+	max = 5.0,
+	default = 0.2,
+	page = SCKCO,
+	translation = SCKCO_RepairXPPerDamage,
+}
