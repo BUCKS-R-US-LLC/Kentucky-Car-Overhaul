@@ -1,0 +1,16 @@
+module SCKCO
+{
+    /* UseDelta 0.1 = 10 uses, which is what getCurrentUses() reports and what
+       consumeUses() spends against. */
+
+    item TirePatchKit
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:drainable,
+        Weight = 0.6,
+        Icon = DuctTape,
+        UseDelta = 0.1,
+        Tags = TirePatchKit,
+        Tooltip = Tooltip_SCKCO_TirePatchKit,
+    }
+}
