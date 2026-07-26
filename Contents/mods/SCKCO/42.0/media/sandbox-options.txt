@@ -16,12 +16,20 @@ option SCKCO.BodyRepairEnabled
 	translation = SCKCO_BodyRepairEnabled,
 }
 
-option SCKCO.BodyReplaceVanilla
+option SCKCO.ArmorRepairEnabled
 {
 	type = boolean,
 	default = true,
 	page = SCKCO,
-	translation = SCKCO_BodyReplaceVanilla,
+	translation = SCKCO_ArmorRepairEnabled,
+}
+
+option SCKCO.ReplaceVanillaRepair
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_ReplaceVanillaRepair,
 }
 
 option SCKCO.RepairHideUnusable
@@ -48,6 +56,22 @@ option SCKCO.RepairMaterialScale
 	default = 1.0,
 	page = SCKCO,
 	translation = SCKCO_RepairMaterialScale,
+}
+
+option SCKCO.RestrictToSCVehicles
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_RestrictToSCVehicles,
+}
+
+option SCKCO.RepairLooseParts
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_RepairLooseParts,
 }
 
 option SCKCO.ScrapEnabled

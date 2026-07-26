@@ -152,43 +152,43 @@ module Base
             offset = 0.0000 -0.2222 0.4921,
         }
 
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Summer,
-		}
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Summer,
+        }
 
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Summer1,
-		}
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Summer1,
+        }
 
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Summer2,
-		}
-		
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Winter,
-		}
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Summer2,
+        }
 
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Winter1,
-		}
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Winter,
+        }
 
-		skin
-		{
-			texture = Vehicles/M35A2/Vehicle_M35A2_Winter2,
-		}
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Winter1,
+        }
+
+        skin
+        {
+            texture = Vehicles/M35A2/Vehicle_M35A2_Winter2,
+        }
 
         textureRust = Vehicles/SharedTextures/vehicle_norust,
         textureMask = Vehicles/M35A2/Vehicle_M35A2Mask,
         textureLights = Vehicles/M35A2/Vehicle_M35A2Lights,
-        textureDamage1Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
-        textureDamage2Shell = Vehicles/M35A2/Vehicle_M35A2Damage,
-        textureDamage1Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
-        textureDamage2Overlay = Vehicles/M35A2/Vehicle_M35A2Blood,
+        textureDamage1Shell = Vehicles/M35A2/Vehicle_M35A2_damage1,
+        textureDamage2Shell = Vehicles/M35A2/Vehicle_M35A2_damage2,
+        textureDamage1Overlay = Vehicles/M35A2/Vehicle_M35A2_blood,
+        textureDamage2Overlay = Vehicles/M35A2/Vehicle_M35A2_blood,
 
         sound
         {
@@ -203,7 +203,7 @@ module Base
         mass = 1000,
         physicsChassisShape = 3.7143 3.8413 10.5079,
         centerOfMassOffset = 0.0000 1.9206 0.0000,
-        shadowExtents = 3.7069 11.5313,
+        shadowExtents = 3.3894 11.5313,
         shadowOffset = 0.0000 -0.0628,
         engineForce = 4350,
         engineQuality = 82,
@@ -708,7 +708,6 @@ module Base
 
         template = M35A2Seat,
         template = M35A2Attachments,
-        template = specials/part/DetroitDieselSC,
         template = SCSeat/part/SeatFrontLeft,
         template = SCSeat/part/SeatFrontRight,
         template = SCSeat/part/SeatMiddleLeft,

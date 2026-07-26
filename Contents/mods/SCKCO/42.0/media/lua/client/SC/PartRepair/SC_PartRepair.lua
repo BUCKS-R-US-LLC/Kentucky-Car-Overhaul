@@ -54,24 +54,28 @@ AR.SKILL_MECHANICS, AR.SKILL_WELDING, AR.SKILL_HIGHEST = 1, 2, 3
 AR.profiles = {
     armor = {
         prefix = "IGUI_SCKCO_Armor", botchParent = true,
+        enable = "ArmorRepairEnabled",
         buildCost = { { "Base.SheetMetal", 2 }, { "Base.ScrapMetal", 2 } },
         verb = "IGUI_SCKCO_RepairVerb", header = "IGUI_SCKCO_RepairArmor",
         sound = "BlowTorch", anim = "VehicleWorkOnMid",
     },
     body = {
         prefix = "IGUI_SCKCO_Body",
+        enable = "BodyRepairEnabled", replaceVanilla = true,
         buildCost = { { "Base.SheetMetal", 1 }, { "Base.ScrapMetal", 2 } },
         verb = "IGUI_SCKCO_WeldVerb", header = "IGUI_SCKCO_RepairBody",
         sound = "BlowTorch", anim = "VehicleWorkOnMid",
     },
     tire = {
         prefix = "IGUI_SCKCO_Tire",
+        enable = "TireRepairEnabled",
         verb = "IGUI_SCKCO_PatchVerb", header = "IGUI_SCKCO_RepairTire",
         sound = "RepairWithGlue", anim = "VehicleWorkOnMid",
         skill = "Mechanics",
     },
     seat = {
         prefix = "IGUI_SCKCO_Seat",
+        enable = "SeatRepairEnabled",
         verb = "IGUI_SCKCO_StitchVerb", header = "IGUI_SCKCO_RepairSeat",
         sound = nil, anim = "VehicleWorkOnMid",
         skill = "Tailoring",
@@ -89,6 +93,7 @@ end
 AR.classOrder = { "armor", "body", "tire", "seat" }
 
 
+
 function AR.getProfile(part)
     local cls = AR.getPartClass(part)
     if cls == nil then return nil end
@@ -99,6 +104,7 @@ end
 -- this table by gen_sandbox.py. gen_sandbox.py --check gates drift.
 local defaults = {
     RepairEnabled = true,
+    RestrictToSCVehicles = true,
     RepairMaterialScale = 1.0,
     ScrapEnabled = true,
     ScrapYieldScale = 1.0,
@@ -107,8 +113,9 @@ local defaults = {
     ScrapLossPerSkill = 3,
     RepairSkillMode = 3,
     RepairMinSkill = 0,
+    ArmorRepairEnabled = true,
     BodyRepairEnabled = true,
-    BodyReplaceVanilla = true,
+    ReplaceVanillaRepair = true,
 
     -- tires: Mechanics-gated, patch kit or crude cement-and-boot
     RepairHideUnusable = true,
@@ -154,6 +161,31 @@ local function sv(key)
     return defaults[key]
 end
 AR.getOption = sv
+
+-- Vehicle scoping. Script names read as "Base.SC_ChevroletCaprice85", so the prefix after
+-- the module is the discriminator. BaseVehicle:getScriptName() is public API.
+-- Matching is on the name after the module prefix, so a script declared in any module
+-- still matches. An unreadable name is treated as unsupported: better to do nothing on a
+-- vehicle we cannot identify than to claim parts on someone else's.
+AR.vehiclePrefixes = { "SC_" }
+
+-- getScriptName is confirmed public API. Do NOT probe for it with vehicle.getScriptName:
+-- indexing Java userdata with a field name throws rather than returning nil.
+function AR.getVehicleScriptName(vehicle)
+    if vehicle == nil then return nil end
+    return vehicle:getScriptName()
+end
+
+function AR.isSupportedVehicle(vehicle)
+    if not sv("RestrictToSCVehicles") then return true end
+    local name = AR.getVehicleScriptName(vehicle)
+    if name == nil then return false end
+    local short = string.match(name, "%.(.+)$") or name
+    for _, prefix in ipairs(AR.vehiclePrefixes) do
+        if string.sub(short, 1, #prefix) == prefix then return true end
+    end
+    return false
+end
 
 -- Per-pass material costs. These were six separate sandbox options that nobody tunes
 -- individually; RepairMaterialScale multiplies all of them instead.
@@ -268,27 +300,89 @@ function AR.isArmorPart(part)
 end
 
 function AR.isBodyPart(part)
-    if not part or not sv("BodyRepairEnabled") then return false end
+    if not part then return false end
     if AR.bodyExclude[part:getId()] then return false end
     return AR.bodyCategories[part:getCategory()] == true
 end
 
+-- identification predicates are pure: they answer "is this that kind of part", not
+-- "is that kind of part switched on". Enablement is applied once, in getPartClass.
 function AR.isSeatPart(part)
-    if not part or not sv("SeatRepairEnabled") then return false end
+    if not part then return false end
     return AR.seatCategories[part:getCategory()] == true
 end
 
 function AR.isTirePart(part)
-    if not part or not sv("TireRepairEnabled") then return false end
+    if not part then return false end
     return string.sub(part:getId(), 1, #AR.tirePrefix) == AR.tirePrefix
 end
 
+-- every class carries its own enable option; RepairEnabled is the master above them
+function AR.isClassEnabled(cls)
+    if not sv("RepairEnabled") then return false end
+    local profile = AR.profiles[cls]
+    if profile == nil or profile.enable == nil then return true end
+    return sv(profile.enable) == true
+end
+
 -- tire checked first: a tire must never fall through to the metal toolset
-function AR.getPartClass(part)
+local function rawPartClass(part)
     if AR.isTirePart(part) then return "tire" end
     if AR.isSeatPart(part) then return "seat" end
     if AR.isArmorPart(part) then return "armor" end
     if AR.isBodyPart(part) then return "body" end
+end
+
+-- Classify an uninstalled part sitting in inventory. Installed parts are classified by
+-- category/id; a loose item has neither, so this keys off the item type instead.
+-- buildCost is the exact armor list, which also covers bumpers (armor despite the name).
+function AR.getItemClass(item)
+    if item == nil then return nil end
+    local full = item:getFullType()
+    if AR.buildCost[full] then return "armor" end
+    local name = item:getType()
+    if string.find(name, "Armor") then return "armor" end
+    local tireTag = AR.getTagValue("WHOLE_TIRE")
+    if tireTag and item:hasTag(tireTag) then return "tire" end
+    if string.find(name, "Tire") then return "tire" end
+    if string.find(name, "Seat") then return "seat" end
+    if string.find(name, "Door") or string.find(name, "Hood") or string.find(name, "TrunkLid") then
+        return "body"
+    end
+    return nil
+end
+
+-- A loose item wearing just enough of the VehiclePart surface for the repair math, so
+-- quality, cost, time and failure are computed identically to an installed part.
+-- getVehicle() returning nil is what makes perform() skip the MP transmit calls, and what
+-- makes an armor botch damage the plate itself rather than a parent it no longer has.
+function AR.itemAsPart(item)
+    local cls = AR.getItemClass(item)
+    if cls == nil then return nil end
+    return {
+        looseClass = cls,
+        looseItem = item,
+        getCondition = function(self) return self.looseItem:getCondition() end,
+        setCondition = function(self, v) self.looseItem:setCondition(v) end,
+        getInventoryItem = function(self) return self.looseItem end,
+        getId = function(self) return self.looseItem:getType() end,
+        getCategory = function(self) return nil end,
+        getVehicle = function(self) return nil end,
+        getScriptPart = function(self) return nil end,
+    }
+end
+
+function AR.isLoose(part)
+    return type(part) == "table" and part.looseClass ~= nil
+end
+
+function AR.getPartClass(part)
+    if AR.isLoose(part) then
+        if AR.isClassEnabled(part.looseClass) then return part.looseClass end
+        return nil
+    end
+    local cls = rawPartClass(part)
+    if cls and AR.isClassEnabled(cls) then return cls end
 end
 
 -- B42 models tire pressure as container contents, not a separate inflation field:
@@ -310,7 +404,12 @@ end
 
 -- claimed parts must carry an inventory item: the ceiling/decay state lives on the item
 function AR.isClaimed(part)
-    return part ~= nil and part:getInventoryItem() ~= nil and AR.getPartClass(part) ~= nil
+    if part == nil or part:getInventoryItem() == nil then return false end
+    -- a loose part is scoped by its item type, not by a vehicle it is no longer on.
+    -- the shim is a Lua table; a real VehiclePart is userdata, so type() separates them
+    -- without indexing Java objects for fields they do not have.
+    if not AR.isLoose(part) and not AR.isSupportedVehicle(part:getVehicle()) then return false end
+    return AR.getPartClass(part) ~= nil
 end
 
 -- a class with a fixed skill ignores the metal skill mode entirely
@@ -667,6 +766,8 @@ function AR.auditScrap(vehicle)
         print("[SCKCO PartRepair] auditScrap: pass a vehicle or sit in one")
         return
     end
+    print("[SCKCO PartRepair] vehicle script: " .. tostring(AR.getVehicleScriptName(vehicle))
+        .. "  supported: " .. tostring(AR.isSupportedVehicle(vehicle)))
     local tally = {}
     for i = 0, vehicle:getPartCount() - 1 do
         local part = vehicle:getPartByIndex(i)
@@ -836,7 +937,7 @@ function ISSCKCORepairPart:perform()
         end
         if victim then
             victim:setCondition(clamp(victim:getCondition() - sv("RepairBotchDamage"), 0))
-            self.vehicle:transmitPartCondition(victim)
+            if self.vehicle then self.vehicle:transmitPartCondition(victim) end
             self.character:setHaloNote(AR.text(self.part, "Botched"), 255, 60, 60, 300)
         else
             self.character:setHaloNote(AR.text(self.part, "Failed"), 255, 160, 60, 300)
@@ -847,8 +948,10 @@ function ISSCKCORepairPart:perform()
             self.part:getCondition() + AR.getPassAmount(self.character, self.part, item), ceiling))
         -- decay is charged per SUCCESSFUL pass, driving the part toward scrap
         AR.addRepair(item)
-        self.vehicle:transmitPartCondition(self.part)
-        self.vehicle:transmitPartItem(self.part)
+        if self.vehicle then
+            self.vehicle:transmitPartCondition(self.part)
+            self.vehicle:transmitPartItem(self.part)
+        end
 
         local xp = sv("RepairXP") + missing * sv("RepairXPPerDamage")
         local prof = AR.getProfile(self.part)
@@ -940,6 +1043,7 @@ end
 -- getText resolves IGUI_VehiclePart<Id> from this mod for SCArmor* parts and from vanilla
 -- for stock body parts; an unresolved key returns itself, so fall back to the bare id.
 function AR.getPartName(part)
+    if AR.isLoose(part) then return part.looseItem:getDisplayName() end
     local key = "IGUI_VehiclePart" .. part:getId()
     local name = getText(key)
     if name == key then return part:getId() end
@@ -1018,6 +1122,7 @@ function AR.addMenu(playerIndex, context, vehicle)
     if not sv("RepairEnabled") then return end
     local character = getSpecificPlayer(playerIndex)
     if not character or character:getVehicle() then return end
+    if not AR.isSupportedVehicle(vehicle) then return end
 
     local groups = {}
     for _, cls in ipairs(AR.classOrder) do groups[cls] = {} end
@@ -1057,7 +1162,10 @@ function ISVehicleMechanics:doPartContextMenu(part, x, y)
         or (isClient() and (isAdmin() or getAccessLevel() == "moderator"))) then return end
 
     -- replace rather than duplicate vanilla's repair for parts we claim
-    if AR.isClaimed(part) and sv("BodyReplaceVanilla") then
+    -- only classes that actually replace a vanilla repair path suppress it. armor has no
+    -- vanilla equivalent, and vanilla offers no seat or tire repair to remove.
+    local profile = AR.isClaimed(part) and AR.getProfile(part)
+    if profile and profile.replaceVanilla and sv("ReplaceVanillaRepair") then
         self.context:removeOptionByName(getText("ContextMenu_Repair"))
     end
     AR.addPartOption(playerObj, self.context, part)
@@ -1103,7 +1211,7 @@ local function selfCheck()
         if profile == nil then
             warn("class '" .. cls .. "' in classOrder has no profile")
         else
-            for _, field in ipairs({ "prefix", "verb", "header", "anim", "block", "consume" }) do
+            for _, field in ipairs({ "prefix", "verb", "header", "anim", "block", "consume", "enable" }) do
                 if profile[field] == nil then
                     warn("profile '" .. cls .. "' is missing " .. field)
                 end
