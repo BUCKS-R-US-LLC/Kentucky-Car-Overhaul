@@ -1,0 +1,151 @@
+module Base
+{
+	vehicle SC_M149WaterBuffalo
+	{
+		mechanicType = 2,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.8,
+
+		model
+		{
+			file = SC_M1101,
+			scale = 1.2900,
+			offset = 0.0000 -0.3429 -0.2636,
+		}
+
+		spawnOffsetY = 0.19392952,
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_3tone,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Tan,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_OD,
+		}
+
+		skin
+		{
+			texture = Vehicles\Trailer\Vehicle_M1101_Black,
+		}
+
+		textureMask = nil,
+		textureLights = nil,
+		textureDamage1Overlay = nil,
+		textureDamage2Overlay = nil,
+		textureDamage1Shell = nil,
+		textureDamage2Shell = nil,
+		textureRust = Vehicles/SharedTextures/vehicle_norust,
+
+		extents = 1.5504 0.6822 1.6279,
+		mass = 320,
+		physicsChassisShape = 1.5504 1.5194 1.6279,
+		centerOfMassOffset = 0.0000 0.7597 0.1163,
+		shadowExtents = 1.6613 1.7232,
+		shadowOffset = 0.0000 0.1121,
+		engineForce = 3600,
+		engineQuality = 60,
+		engineLoudness = 55,
+		maxSpeed = 70f,
+		brakingForce = 1,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 0.4f,
+		steeringIncrement = 0.03,
+		steeringClamp = 0.3,
+		suspensionStiffness = 60,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 14,
+		suspensionRestLength = 0.20f,
+		wheelFriction = 4.0f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 2,
+
+		wheel FrontLeft
+		{
+			front = false,
+			offset = 0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
+		}
+
+		wheel FrontRight
+		{
+			front = false,
+			offset = -0.6589 0.3178 0.5426,
+			radius = 0.32f,
+			width = 0.30f,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 1.3643 1.5504 0.8682,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.5349 0.0000 0.4651 0.5581,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.5349 0.0000 0.4651 0.5581,
+		}
+
+		template = Trunk/part/TrailerTrunk,
+		template = Tire/part/TireFrontLeft,
+		template = Tire/part/TireFrontRight,
+		template = SCWaterTank,
+
+		part WaterTankSC
+		{
+			itemType = SCKCO.WaterTankSC,
+			category = nodisplay,
+			lua
+			{
+				create = SCKCO.Create.WaterTankFull,
+			}
+		}
+
+		part TireFrontLeft
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M1011wheelleft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+			itemType = SCKCO.NormalTireSC,
+		}
+
+		part TireFrontRight
+		{
+			model InflatedTirePlusWheel
+			{
+				file = M1011wheelright,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+			itemType = SCKCO.NormalTireSC,
+		}
+
+		template = Suspension/part/SuspensionFrontLeft,
+		template = Suspension/part/SuspensionFrontRight,
+
+		attachment trailer
+		{
+			offset = 0.0000 0.5313 -1.1667,
+			rotate = 0.0000 0.0000 0.0000,
+			canAttach = trailer,
+			updateconstraint = false,
+		}
+	}
+}
