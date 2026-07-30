@@ -212,7 +212,7 @@ module Base
 			engineStart = VehicleEngineStepVan,
 			engineTurnOff = VehicleEngineStepVan,
 			horn = FireTruckHorn,
-			ignitionFail = VehiclegnitionFailStepVan,
+			ignitionFail = VehicleIgnitionFailStepVan,
 		}
 
 		lightbar
@@ -234,14 +234,14 @@ module Base
 		engineLoudness = 150,
 		brakingForce = 90,
 		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
+		rollInfluence = 0.25f,
 		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 45,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
+		steeringClamp = 0.25,
+		suspensionStiffness = 75,
+		suspensionCompression = 4.83,
+		suspensionDamping = 3.88,
+		maxSuspensionTravelCm = 15,
+		suspensionRestLength = 0.16f,
 		wheelFriction = 1.6f,
 		frontEndHealth = 1950,
 		rearEndHealth = 1350,
@@ -771,13 +771,7 @@ module Base
 				openable = false,
 			}
 
-			area = TireRearLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
+			area = SeatMiddleLeft,
 
 			category = SCUCKwindows,
 			itemType = SCKCO.HahnPumperWindowSC,
@@ -795,13 +789,7 @@ module Base
 				openable = false,
 			}
 
-			area = TireRearRight,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
+			area = SeatMiddleRight,
 
 			category = SCUCKwindows,
 			itemType = SCKCO.HahnPumperWindowSC,
@@ -819,14 +807,7 @@ module Base
 				openable = false,
 			}
 
-			area = TireFrontLeft,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
+			area = SeatRearLeft,
 			parent = DoorRearLeft,
 			category = SCUCKwindows,
 			itemType = SCKCO.HahnPumperWindowSC,
@@ -844,14 +825,7 @@ module Base
 				openable = false,
 			}
 
-			area = TireFrontRight,
-			parent =,
-
-			table install
-			{
-				requireInstalled =,
-			}
-
+			area = SeatRearRight,
 			parent = DoorRearRight,
 			category = SCUCKwindows,
 			itemType = SCKCO.HahnPumperWindowSC,
