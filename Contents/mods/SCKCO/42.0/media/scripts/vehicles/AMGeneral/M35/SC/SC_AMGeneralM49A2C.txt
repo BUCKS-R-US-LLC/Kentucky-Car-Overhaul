@@ -137,7 +137,7 @@ module Base
 		mesh = vehicles/AMGeneral/Vehicle_M35A2_RearRightDoubleWheel,
 		texture = Vehicles/M35A2/Vehicle_M35RearWheel,
 	}
-	vehicle SC_AMGeneralM35A2
+	vehicle SC_AMGeneralM49A2C
     {
         mechanicType = 2,
         offRoadEfficiency = 1.2,
@@ -149,7 +149,7 @@ module Base
         {
             file = SC_M35A2,
             scale = 0.6300,
-            offset = 0.0000 -0.2445 0.4921,
+            offset = 0.0000 -0.1798 0.4921,
         }
 
         skin
@@ -212,7 +212,7 @@ module Base
         wheelFriction = 1.6f,
         frontEndHealth = 3001,
         rearEndHealth = 1500,
-        seats = 16,
+        seats = 2,
 
         wheel FrontLeft
         {
@@ -286,286 +286,6 @@ module Base
             }
         }
 
-        passenger RearLeftOne
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -0.6349,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -0.6349,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftOne,
-            }
-        }
-
-        passenger RearRightOne
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -0.6349,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -0.6349,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightOne,
-            }
-        }
-
-        passenger RearLeftTwo
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -1.3492,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -1.3492,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftTwo,
-            }
-        }
-
-        passenger RearRightTwo
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -1.3492,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -1.3492,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightTwo,
-            }
-        }
-
-        passenger RearLeftThree
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -1.8571,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -1.8571,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftThree,
-            }
-        }
-
-        passenger RearRightThree
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -1.8571,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -1.8571,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightThree,
-            }
-        }
-
-        passenger RearLeftFour
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -2.3175,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -2.3175,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftFour,
-            }
-        }
-
-        passenger RearRightFour
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -2.3175,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -2.3175,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightFour,
-            }
-        }
-
-        passenger RearLeftFive
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -3.2222,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -3.2222,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftFive,
-            }
-        }
-
-        passenger RearRightFive
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -3.2222,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -3.2222,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightFive,
-            }
-        }
-
-        passenger RearLeftSix
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -4.1429,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 2.3016 -0.0159 -4.1429,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearLeftSix,
-            }
-        }
-
-        passenger RearRightSix
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -4.1429,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -2.3016 -0.0159 -4.1429,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearRightSix,
-            }
-        }
-
-        passenger RearLeftSeven
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = 1.4603 2.3968 -5.1111,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = 1.1905 -0.0159 -6.3968,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearStep,
-            }
-        }
-
-        passenger RearRightSeven
-        {
-            category = nodisplay,
-            showPassenger = true,
-            hasRoof = true,
-
-            position inside
-            {
-                offset = -1.4603 2.3968 -5.1111,
-                rotate = 0.0000 0.0000 0.0000,
-            }
-
-            position outside
-            {
-                offset = -1.1587 -0.0159 -6.3968,
-                rotate = 0.0000 0.0000 0.0000,
-                area = RearStep,
-            }
-        }
-
         area Engine
         {
             xywh = 0.0000 5.5397 3.7778 1.4286,
@@ -626,88 +346,14 @@ module Base
             xywh = -1.2698 -1.8889 0.0000 0.0000,
         }
 
-        area RearLeftOne
-        {
-            xywh = 2.7143 -0.6349 1.4921 1.4921,
-        }
-
-        area RearLeftTwo
-        {
-            xywh = 2.7143 -1.3492 1.4921 1.4921,
-        }
-
-        area RearLeftThree
-        {
-            xywh = 2.7143 -1.8571 1.4921 1.4921,
-        }
-
-        area RearLeftFour
-        {
-            xywh = 2.7143 -2.3175 1.4921 1.4921,
-        }
-
-        area RearLeftFive
-        {
-            xywh = 2.7143 -3.2222 1.4921 1.4921,
-        }
-
-        area RearLeftSix
-        {
-            xywh = 2.7143 -4.1429 1.4921 1.4921,
-        }
-
-        area RearLeftSeven
-        {
-            xywh = 2.7143 -5.1111 1.4921 1.4921,
-        }
-
-        area RearRightOne
-        {
-            xywh = -2.7143 -0.6349 1.4921 1.4921,
-        }
-
-        area RearRightTwo
-        {
-            xywh = -2.7143 -1.3492 1.4921 1.4921,
-        }
-
-        area RearRightThree
-        {
-            xywh = -2.7143 -1.8571 1.4921 1.4921,
-        }
-
-        area RearRightFour
-        {
-            xywh = -2.7143 -2.3175 1.4921 1.4921,
-        }
-
-        area RearRightFive
-        {
-            xywh = -2.7143 -3.2222 1.4921 1.4921,
-        }
-
-        area RearRightSix
-        {
-            xywh = -2.7143 -4.1429 1.4921 1.4921,
-        }
-
-        area RearRightSeven
-        {
-            xywh = -2.7143 -5.1111 1.4921 1.4921,
-        }
-
-        template = M35A2Seat,
         template = M35A2Attachments,
         template = SCSeat/part/SeatFrontLeft,
         template = SCSeat/part/SeatFrontRight,
-        template = SCSeat/part/SeatMiddleLeft,
-        template = SCSeat/part/SeatMiddleRight,
-        template = SCSeat/part/SeatRearLeft,
-        template = SCSeat/part/SeatRearRight,
         template = SCGasTankBig,
         template = SCBattery,
         template = Engine,
         template = SCMufflerModern,
+        template = SCMediumFuelTank,
 
         part GasTank
         {
@@ -737,30 +383,6 @@ module Base
                 offset = 0.0000 0.0000 0.0000,
                 rotate = 0.0000 0.0000 0.0000,
             }
-        }
-
-        part SeatMiddleRight
-        {
-            category = nodisplay,
-            itemType = SCKCO.FillerSeatSC,
-        }
-
-        part SeatMiddleLeft
-        {
-            category = nodisplay,
-            itemType = SCKCO.FillerSeatSC,
-        }
-
-        part SeatRearRight
-        {
-            category = nodisplay,
-            itemType = SCKCO.FillerSeatSC,
-        }
-
-        part SeatRearLeft
-        {
-            category = nodisplay,
-            itemType = SCKCO.FillerSeatSC,
         }
 
         part Muffler

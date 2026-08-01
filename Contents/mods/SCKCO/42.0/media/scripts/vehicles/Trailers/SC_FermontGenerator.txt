@@ -1,166 +1,168 @@
 module Base
 {
 	vehicle SC_FermontGenerator
-	{
-		mechanicType = 2,
-		offRoadEfficiency = 0.8,
-		engineRepairLevel = 4,
-		playerDamageProtection = 0.8,
+    {
+        mechanicType = 2,
+        offRoadEfficiency = 0.8,
+        engineRepairLevel = 4,
+        playerDamageProtection = 0.8,
 
-		model
-		{
-			file = SC_M1101,
-			scale = 1.2900,
-			offset = 0.0000 -0.3429 -0.2636,
-		}
+        model
+        {
+            file = SC_M1101,
+            scale = 1.2900,
+            offset = 0.0000 -0.3023 -0.2093,
+        }
 
-		spawnOffsetY = 0.19392952,
+        spawnOffsetY = 0.19392952,
 
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_3tone,
-		}
+        skin
+        {
+            texture = Vehicles\Trailer\Vehicle_M1101_3tone,
+        }
 
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_Tan,
-		}
+        skin
+        {
+            texture = Vehicles\Trailer\Vehicle_M1101_Tan,
+        }
 
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_OD,
-		}
+        skin
+        {
+            texture = Vehicles\Trailer\Vehicle_M1101_OD,
+        }
 
-		skin
-		{
-			texture = Vehicles\Trailer\Vehicle_M1101_Black,
-		}
+        skin
+        {
+            texture = Vehicles\Trailer\Vehicle_M1101_Black,
+        }
 
-		textureMask = nil,
-		textureLights = nil,
-		textureDamage1Overlay = nil,
-		textureDamage2Overlay = nil,
-		textureDamage1Shell = nil,
-		textureDamage2Shell = nil,
-		textureRust = Vehicles/SharedTextures/vehicle_norust,
+        textureMask = nil,
+        textureLights = nil,
+        textureDamage1Overlay = nil,
+        textureDamage2Overlay = nil,
+        textureDamage1Shell = nil,
+        textureDamage2Shell = nil,
+        textureRust = Vehicles/SharedTextures/vehicle_norust,
+        extents = 1.5504 1.5194 2.2481,
+        mass = 320,
+        physicsChassisShape = 1.5504 0.4806 2.2481,
+        centerOfMassOffset = 0.0000 0.4112 -0.1163,
+        shadowExtents = 1.5528 2.1961,
+        shadowOffset = 0.0000 -0.1653,
+        engineForce = 3600,
+        engineQuality = 60,
+        engineLoudness = 55,
+        maxSpeed = 70f,
+        brakingForce = 1,
+        stoppingMovementForce = 2.0f,
+        rollInfluence = 0.4f,
+        steeringIncrement = 0.03,
+        steeringClamp = 0.3,
+        suspensionStiffness = 60,
+        suspensionCompression = 4.83,
+        suspensionDamping = 3.88,
+        maxSuspensionTravelCm = 14,
+        suspensionRestLength = 0.20f,
+        wheelFriction = 4.0f,
+        frontEndHealth = 150,
+        rearEndHealth = 150,
+        seats = 2,
 
-		extents = 1.5504 0.6822 1.6279,
-		mass = 320,
-		physicsChassisShape = 1.5504 1.5194 1.6279,
-		centerOfMassOffset = 0.0000 0.7597 0.1163,
-		shadowExtents = 1.6613 1.7232,
-		shadowOffset = 0.0000 0.1121,
-		engineForce = 3600,
-		engineQuality = 60,
-		engineLoudness = 55,
-		maxSpeed = 70f,
-		brakingForce = 1,
-		stoppingMovementForce = 2.0f,
-		rollInfluence = 0.4f,
-		steeringIncrement = 0.03,
-		steeringClamp = 0.3,
-		suspensionStiffness = 60,
-		suspensionCompression = 4.83,
-		suspensionDamping = 3.88,
-		maxSuspensionTravelCm = 14,
-		suspensionRestLength = 0.20f,
-		wheelFriction = 4.0f,
-		frontEndHealth = 150,
-		rearEndHealth = 150,
-		seats = 2,
+        wheel FrontLeft
+        {
+            front = false,
+            offset = 0.6589 0.3178 0.5426,
+            radius = 0.32f,
+            width = 0.30f,
+        }
 
-		wheel FrontLeft
-		{
-			front = false,
-			offset = 0.6589 0.3178 0.5426,
-			radius = 0.32f,
-			width = 0.30f,
-		}
+        wheel FrontRight
+        {
+            front = false,
+            offset = -0.6589 0.3178 0.5426,
+            radius = 0.32f,
+            width = 0.30f,
+        }
 
-		wheel FrontRight
-		{
-			front = false,
-			offset = -0.6589 0.3178 0.5426,
-			radius = 0.32f,
-			width = 0.30f,
-		}
+        area TruckBed
+        {
+            xywh = 0.0000 1.3643 1.5504 0.8682,
+        }
 
-		area TruckBed
-		{
-			xywh = 0.0000 1.3643 1.5504 0.8682,
-		}
+        area TireFrontLeft
+        {
+            xywh = 0.5349 0.3249 0.4651 0.5581,
+        }
 
-		area TireFrontLeft
-		{
-			xywh = 0.5349 0.0000 0.4651 0.5581,
-		}
+        area TireFrontRight
+        {
+            xywh = -0.5349 0.3249 0.4651 0.5581,
+        }
 
-		area TireFrontRight
-		{
-			xywh = -0.5349 0.0000 0.4651 0.5581,
-		}
+        template = Tire/part/TireFrontLeft,
+        template = Tire/part/TireFrontRight,
+        template = SCGenerator,
 
-		template = Tire/part/TireFrontLeft,
-		template = Tire/part/TireFrontRight,
-		template = SCGenerator,
+        part GeneratorSC
+        {
+            itemType = SCKCO.GeneratorSC,
+            category = nodisplay,
 
-		part GeneratorSC
-		{
-			itemType = SCKCO.GeneratorSC,
-			category = nodisplay,
-			lua
-			{
-				create = SCKCO.Create.GeneratorFuelFull,
-				update = SCKCO.Update.Generator,
-			}
-		}
+            lua
+            {
+                create = SCKCO.Create.GeneratorFuelFull,
+                update = SCKCO.Update.Generator,
+            }
+        }
 
-		part TireFrontLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = M1011wheelleft,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-			itemType = SCKCO.NormalTireSC,
-		}
+        part TireFrontLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = M1011wheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
 
-		part TireFrontRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = M1011wheelright,
-				offset = 0.0000 0.0000 0.0000,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-			itemType = SCKCO.NormalTireSC,
-		}
+            itemType = SCKCO.NormalTireSC,
+        }
 
-		part additionalLuaEvents
-		{
-			category = nodisplay,
+        part TireFrontRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = M1011wheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
 
-			table partVariation
-			{
-				noLockDoors = true,
-			}
+            itemType = SCKCO.NormalTireSC,
+        }
 
-			lua
-			{
-				create = Vehicles.Create.SCKCO_VehiclePartVariation,
-			}
-		}
+        part additionalLuaEvents
+        {
+            category = nodisplay,
 
-		template = Suspension/part/SuspensionFrontLeft,
-		template = Suspension/part/SuspensionFrontRight,
+            table partVariation
+            {
+                noLockDoors = true,
+            }
 
-		attachment trailer
-		{
-			offset = 0.0000 0.5313 -1.1667,
-			rotate = 0.0000 0.0000 0.0000,
-			canAttach = trailer,
-			updateconstraint = false,
-		}
-	}
+            lua
+            {
+                create = Vehicles.Create.SCKCO_VehiclePartVariation,
+            }
+        }
+
+        template = Suspension/part/SuspensionFrontLeft,
+        template = Suspension/part/SuspensionFrontRight,
+
+        attachment trailer
+        {
+            offset = 0.0000 0.5313 -1.1942,
+            rotate = 0.0000 0.0000 0.0000,
+            canAttach = trailer,
+            updateconstraint = false,
+        }
+    }
 }
