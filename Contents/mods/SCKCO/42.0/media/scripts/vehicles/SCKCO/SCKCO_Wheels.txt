@@ -1,3 +1,6 @@
+-- SCKCO_Wheels.txt
+-- Merged: Template_Tire + TireRepairItems + Template_Suspension
+
 module Base
 {
     template vehicle SCTireOld
@@ -332,6 +335,253 @@ module Base
             model InflatedTirePlusWheel
             {
                 file = Vehicles_Wheel,
+            }
+        }
+    }
+
+}
+
+module SCKCO
+{
+    /* UseDelta 0.1 = 10 uses, which is what getCurrentUses() reports and what
+       consumeUses() spends against. */
+
+    item TirePatchKit
+    {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:drainable,
+        Weight = 0.6,
+        Icon = DuctTape,
+        UseDelta = 0.1,
+        Tags = TirePatchKit,
+        Tooltip = Tooltip_SCKCO_TirePatchKit,
+    }
+}
+
+module Base
+{
+    template vehicle SCSuspensionNormal
+    {
+        part SuspensionFrontLeft
+        {
+            mechanicArea = Left,
+            area = TireFrontLeft,
+            table install
+            {
+                requireUninstalled = TireFrontLeft,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireFrontLeft,
+            }
+        }
+        part SuspensionFrontRight
+        {
+            mechanicArea = Right,
+            area = TireFrontRight,
+            table install
+            {
+                requireUninstalled = TireFrontRight,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireFrontRight,
+            }
+        }
+        part SuspensionRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            table install
+            {
+                requireUninstalled = TireRearLeft,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireRearLeft,
+            }
+        }
+        part SuspensionRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            table install
+            {
+                requireUninstalled = TireRearRight,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireRearRight,
+            }
+        }
+        part Suspension*
+        {
+            category = suspension,
+            itemType = SCKCO.NormalSuspensionSC,
+            durability = 5,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Suspension,
+            }
+        }
+    }
+
+    template vehicle SCSuspensionModern
+    {
+        part SuspensionFrontLeft
+        {
+            mechanicArea = Left,
+            area = TireFrontLeft,
+            table install
+            {
+                requireUninstalled = TireFrontLeft,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireFrontLeft,
+            }
+        }
+        part SuspensionFrontRight
+        {
+            mechanicArea = Right,
+            area = TireFrontRight,
+            table install
+            {
+                requireUninstalled = TireFrontRight,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireFrontRight,
+            }
+        }
+        part SuspensionRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            table install
+            {
+                requireUninstalled = TireRearLeft,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireRearLeft,
+            }
+        }
+        part SuspensionRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            table install
+            {
+                requireUninstalled = TireRearRight,
+            }
+            table uninstall
+            {
+                requireUninstalled = TireRearRight,
+            }
+        }
+        part Suspension*
+        {
+            category = suspension,
+            itemType = SCKCO.ModernSuspensionSC,
+            durability = 5,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Jack,
+                        count = 1,
+                        keep = true,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Suspension,
             }
         }
     }

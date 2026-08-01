@@ -1,0 +1,422 @@
+-- SCKCO_Radios.txt
+-- Merged: Radio + Radio_HAM + Radio_Military + Radio_Police
+
+module Base
+{
+    template vehicle SCRadio
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.RadioBlackSC;SCKCO.RadioRedSC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+}
+
+module Base
+{
+    template vehicle SCRadio_HAM
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.HamRadio1SC;SCKCO.HamRadio2SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+}
+
+module Base
+{
+    template vehicle SCRadio_Military_113
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.PRC113SC;SCKCO.PRC119SC;SCKCO.RT524SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+
+    template vehicle SCRadio_Military_119
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.PRC119SC;SCKCO.PRC113SC;SCKCO.RT524SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+
+    template vehicle SCRadio_Military_RT524
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.RT524SC;SCKCO.PRC113SC;SCKCO.PRC119SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+}
+
+module Base
+{
+    template vehicle SCRadio_Police_Sheriff
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.MicorRadioSC;SCKCO.SpectraRadioSC;SCKCO.SyntorX9000SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+
+    template vehicle SCRadio_Police_PD
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.SpectraRadioSC;SCKCO.MicorRadioSC;SCKCO.SyntorX9000SC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+
+    template vehicle SCRadio_Police_SWAT
+    {
+        part Radio
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.SyntorX9000SC;SCKCO.SpectraRadioSC;SCKCO.MicorRadioSC,
+            specificItem = false,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Radio_HAM,
+                update = Vehicles.Update.Radio,
+            }
+        }
+    }
+}

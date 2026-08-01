@@ -1,3 +1,6 @@
+-- SCKCO_FuelSystem.txt
+-- Merged: Template_GasTank + Template_Muffler
+
 module Base
 {
     template vehicle SCGasTankSmall
@@ -218,6 +221,166 @@ module Base
                 recipes = Basic Mechanics,
                 test = Vehicles.UninstallTest.Default,
                 requireEmpty = true,
+            }
+        }
+    }
+
+}
+
+module Base
+{
+    template vehicle SCMufflerOld
+    {
+        part Muffler
+        {
+            mechanicArea = Under,
+            area = TruckBed,
+            itemType = SCKCO.OldCarMufflerSC,
+            category = engine,
+            durability = 3,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Muffler,
+            }
+        }
+    }
+
+    template vehicle SCMufflerNormal
+    {
+        part Muffler
+        {
+            mechanicArea = Under,
+            area = TruckBed,
+            itemType = SCKCO.NormalCarMufflerSC,
+            category = engine,
+            durability = 3,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Muffler,
+            }
+        }
+    }
+
+    template vehicle SCMufflerModern
+    {
+        part Muffler
+        {
+            mechanicArea = Under,
+            area = TruckBed,
+            itemType = SCKCO.ModernCarMufflerSC,
+            category = engine,
+            durability = 3,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Muffler,
             }
         }
     }
