@@ -1,0 +1,89 @@
+module SCKCO
+{
+    imports
+    {
+        Base
+    }
+
+
+    item SmallCisternSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 10.0,
+        ItemType = base:normal,
+        DisplayName = Small Water Cistern,
+        Icon = WaterTank,
+        VehicleType = 2,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+        component FluidContainer
+        {
+            ContainerName = SmallCisternSC2,
+            Capacity = 500.0,
+            TransferRate = 20.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+            Fluids
+            {
+                fluid = Water:1.0,
+                fluid = TaintedWater:1.0,
+            }
+        }
+    }
+
+    item MediumCisternSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 25.0,
+        ItemType = base:normal,
+        DisplayName = Medium Water Cistern,
+        Icon = WaterTank,
+        VehicleType = 2,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+        component FluidContainer
+        {
+            ContainerName = MediumCisternSC2,
+            Capacity = 2000.0,
+            TransferRate = 20.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+            Fluids
+            {
+                fluid = Water:1.0,
+                fluid = TaintedWater:1.0,
+            }
+        }
+    }
+
+    item LargeCisternSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 45.0,
+        ItemType = base:normal,
+        DisplayName = Large Water Cistern,
+        Icon = WaterTank,
+        VehicleType = 2,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 20,
+        MechanicsItem = true,
+        WorldStaticModel = SmallGasTank,
+        component FluidContainer
+        {
+            ContainerName = LargeCisternSC2,
+            Capacity = 5000.0,
+            TransferRate = 20.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+            Fluids
+            {
+                fluid = Water:1.0,
+                fluid = TaintedWater:1.0,
+            }
+        }
+    }
+}

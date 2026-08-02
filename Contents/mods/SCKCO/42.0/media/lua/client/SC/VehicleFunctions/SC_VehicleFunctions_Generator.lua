@@ -337,7 +337,7 @@ local function nearestTankerFor(target)
             local sq = cell:getGridSquare(tx + dx, ty + dy, tz)
             local v = sq and sq:getVehicleContainer()
             if v and v ~= target then
-                local part, item = VehicleFunctions.markerAny(v, FUELTANK_PARTS)
+                local part, item = VehicleFunctions.markerAny(v, VehicleFunctions.FUELTANK_PARTS)
                 local fc = item and item:getFluidContainer()
                 if fc and not fc:isEmpty() and fc:isPrimaryFluidType("Petrol") then
                     local ddx, ddy = v:getX() - target:getX(), v:getY() - target:getY()

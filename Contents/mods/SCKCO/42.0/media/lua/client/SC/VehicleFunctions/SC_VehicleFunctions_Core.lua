@@ -64,6 +64,16 @@ SCKCO.VehicleFunctions.Config = SCKCO.VehicleFunctions.Config or {
 }
 local Config = SCKCO.VehicleFunctions.Config
 
+-- Part id lists shared across files. Any station action that operates on a tank looks these up.
+VehicleFunctions.TANK_PARTS = {
+    "WaterTankSC",
+    "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC",
+    "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC",
+}
+VehicleFunctions.CISTERN_PARTS  = { "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC" }
+VehicleFunctions.FUELTANK_PARTS = { "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC" }
+
+
 --------------------------------------------------------------------------------
 -- Shared core
 --------------------------------------------------------------------------------

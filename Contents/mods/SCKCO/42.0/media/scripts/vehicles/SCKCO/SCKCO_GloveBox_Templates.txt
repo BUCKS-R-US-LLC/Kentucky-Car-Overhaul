@@ -1,0 +1,22 @@
+module Base
+{
+    template vehicle SCGloveBox
+    {
+        part GloveBox
+        {
+            mechanicArea = Interior,
+            area = SeatFrontRight,
+            itemType = SCKCO.GloveBoxSC,
+            mechanicRequireKey = true,
+            durability = 3,
+            container
+            {
+                test = Vehicles.ContainerAccess.GloveBox,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+    }
+}

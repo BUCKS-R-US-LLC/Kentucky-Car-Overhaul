@@ -1,0 +1,46 @@
+module SCKCO
+{
+    imports
+    {
+        Base
+    }
+
+    item GloveBoxSC1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 3.0,
+        ItemType = base:normal,
+        DisplayName = Glove Box,
+        Icon = GloveBox,
+        VehicleType = 1,
+        MaxCapacity = 3,
+        ConditionMax = 100,
+        MechanicsItem = true,
+    }
+
+    item GloveBoxSC2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 4.0,
+        ItemType = base:normal,
+        DisplayName = Glove Box,
+        Icon = GloveBox,
+        VehicleType = 2,
+        MaxCapacity = 10,
+        ConditionMax = 100,
+        MechanicsItem = true,
+    }
+
+    item GloveBoxSC3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 2.0,
+        ItemType = base:normal,
+        DisplayName = Glove Box,
+        Icon = GloveBox,
+        VehicleType = 3,
+        MaxCapacity = 5,
+        ConditionMax = 100,
+        MechanicsItem = true,
+    }
+}

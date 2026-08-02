@@ -1,0 +1,66 @@
+module Base
+{
+    template vehicle SCWaterTank
+    {
+        part WaterTankSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+            itemType = SCKCO.WaterTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = secondary,
+                    }
+                    2
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+}

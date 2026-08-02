@@ -1,0 +1,51 @@
+module Base
+{
+    template vehicle SCBattery
+    {
+        part Battery
+        {
+            mechanicArea = Engine,
+            area = Engine,
+            itemType = SCKCO.CarBatterySC,
+            mechanicRequireKey = true,
+            category = engine,
+            durability = 2,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.InstallTest.Default,
+                door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.UninstallTest.Battery,
+            }
+            lua
+            {
+                create = Vehicles.Create.Battery,
+                update = Vehicles.Update.Battery,
+            }
+        }
+    }
+}

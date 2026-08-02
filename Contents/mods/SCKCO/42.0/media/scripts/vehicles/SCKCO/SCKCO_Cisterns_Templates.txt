@@ -1,0 +1,96 @@
+module Base
+{
+    template vehicle SCSmallCistern
+    {
+        part SmallCisternSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+
+            itemType = SCKCO.SmallCisternSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+    template vehicle SCMediumCistern
+    {
+        part MediumCisternSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+
+            itemType = SCKCO.MediumCisternSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+    template vehicle SCLargeCistern
+    {
+        part LargeCisternSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+
+            itemType = SCKCO.LargeCisternSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+}

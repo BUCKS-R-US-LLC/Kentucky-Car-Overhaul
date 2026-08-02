@@ -1,0 +1,93 @@
+module Base
+{
+    template vehicle SCSmallFuelTank
+    {
+        part SmallFuelTankSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+            itemType = SCKCO.SmallFuelTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+    template vehicle SCMediumFuelTank
+    {
+        part MediumFuelTankSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+            itemType = SCKCO.MediumFuelTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+    template vehicle SCLargeFuelTank
+    {
+        part LargeFuelTankSC
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+            itemType = SCKCO.LargeFuelTankSC,
+            mechanicRequireKey = true,
+            durability = 5,
+            lua { create = Vehicles.Create.Default, }
+            table install
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.InstallTest.Default,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1 { tags = base:screwdriver, count = 1, keep = true, equip = secondary, }
+                    2 { tags = base:wrench, count = 1, keep = true, equip = primary, }
+                }
+                time = 500, skills = Mechanics:5, recipes = Basic Mechanics, test = Vehicles.UninstallTest.Default,
+            }
+        }
+    }
+}

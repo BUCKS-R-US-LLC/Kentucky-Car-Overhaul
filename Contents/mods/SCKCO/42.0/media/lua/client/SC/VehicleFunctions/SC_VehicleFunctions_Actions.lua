@@ -14,13 +14,7 @@ local VehicleFunctions = SCKCO.VehicleFunctions
 -- to other clients. Options appear on the vehicle (world) and on any fluid container in an
 -- inventory/trunk while near the tank.
 
-local TANK_PARTS = {
-    "WaterTankSC",
-    "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC",
-    "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC",
-}
-local CISTERN_PARTS  = { "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC" }
-local FUELTANK_PARTS = { "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC" }
+-- Tank part id lists live on VehicleFunctions (Core file) so the Generator file can also read them.
 -- Fluid transfer rate/ceiling come from Config.
 
 local function tankContainer(item)
@@ -66,7 +60,7 @@ function SCKCO_FluidXfer:stop()
 end
 
 function SCKCO_FluidXfer:isValid()
-    local part, item = VehicleFunctions.markerAny(self.vehicle, TANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
     return part ~= nil and tankContainer(item) ~= nil
         and self.target:getFluidContainer() ~= nil
         and self.character:getInventory():contains(self.target)
@@ -75,7 +69,7 @@ end
 
 function SCKCO_FluidXfer:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, TANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
     if not part then return end
     local tankFC = tankContainer(item)
     local itemFC = self.target:getFluidContainer()
@@ -116,7 +110,7 @@ end
 local function tankFor(vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.FluidsEnabled == false then return nil end
-    local part, item = VehicleFunctions.markerAny(vehicle, TANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.TANK_PARTS)
     if not part then return nil end
     return tankContainer(item)
 end
@@ -202,7 +196,7 @@ local function nearestTankVehicle(source)
             local sq = cell:getGridSquare(sx + dx, sy + dy, sz)
             local v = sq and sq:getVehicleContainer()
             if v and v ~= source then
-                local tp, ti = VehicleFunctions.markerAny(v, TANK_PARTS)
+                local tp, ti = VehicleFunctions.markerAny(v, VehicleFunctions.TANK_PARTS)
                 local tfc = ti and ti:getFluidContainer()
                 if tfc and not tfc:isFull() then
                     local ddx, ddy = v:getX() - source:getX(), v:getY() - source:getY()
@@ -236,8 +230,8 @@ function SCKCO_TankXfer:stop()
 end
 
 function SCKCO_TankXfer:isValid()
-    local sp, si = VehicleFunctions.markerAny(self.vehicle, TANK_PARTS)
-    local tp, ti = VehicleFunctions.markerAny(self.target, TANK_PARTS)
+    local sp, si = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
+    local tp, ti = VehicleFunctions.markerAny(self.target, VehicleFunctions.TANK_PARTS)
     if not sp or not tp then return false end
     local sfc, tfc = si:getFluidContainer(), ti:getFluidContainer()
     return sfc ~= nil and tfc ~= nil and not sfc:isEmpty() and not tfc:isFull()
@@ -246,8 +240,8 @@ end
 
 function SCKCO_TankXfer:update()
     VehicleFunctions.updatePumpSound(self)
-    local sp, si = VehicleFunctions.markerAny(self.vehicle, TANK_PARTS)
-    local tp, ti = VehicleFunctions.markerAny(self.target, TANK_PARTS)
+    local sp, si = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
+    local tp, ti = VehicleFunctions.markerAny(self.target, VehicleFunctions.TANK_PARTS)
     if not sp or not tp then return end
     local sfc, tfc = si:getFluidContainer(), ti:getFluidContainer()
     if VehicleFunctions.stepTransfer(sfc, tfc, self, Config.rate_tank_to_tank) > 0 then
@@ -275,7 +269,7 @@ local function onTankXfer(player, vehicle, target)
 end
 
 local function contentsTransferContext(context, player, vehicle)
-    local part, item = VehicleFunctions.markerAny(vehicle, TANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.TANK_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isEmpty() then return end
@@ -395,7 +389,7 @@ end
 
 function SCKCO_FuelDispense:isValid()
     if not (self.vehicle and self.target and self.character) then return false end
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     local fc = part and item and item:getFluidContainer()
     if not fc or fc:isEmpty() then return false end                                       -- source dry
     if not fc:isPrimaryFluidType("Petrol") then return false end                          -- wrong fluid
@@ -407,7 +401,7 @@ end
 
 function SCKCO_FuelDispense:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
     local srcFC = item:getFluidContainer()
     local gas = findGasTankPart(self.target)
@@ -451,7 +445,7 @@ end
 local function fuelPumpContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.FuelPumpEnabled == false then return end
-    local part, item = VehicleFunctions.markerAny(vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
 
     local target = nearestFuelTarget(vehicle)
@@ -486,7 +480,7 @@ SCKCO_TankerToGenerator = ISBaseTimedAction:derive("SCKCO_TankerToGenerator")
 
 function SCKCO_TankerToGenerator:isValid()
     if not (self.vehicle and self.character and self.entry and self.entry.gen) then return false end
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     local fc = part and item and item:getFluidContainer()
     if not fc or fc:isEmpty() or not fc:isPrimaryFluidType("Petrol") then return false end
     if self.entry.gen:getFuel() >= 100 then return false end
@@ -511,7 +505,7 @@ end
 
 function SCKCO_TankerToGenerator:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     local gen = self.entry and self.entry.gen
@@ -550,7 +544,7 @@ end
 local function tankerToGenContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.FuelPumpEnabled == false then return end
-    local part, item = VehicleFunctions.markerAny(vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isEmpty() or not fc:isPrimaryFluidType("Petrol") then return end
@@ -694,7 +688,7 @@ function SCKCO_HydrantFill:stop()
 end
 
 function SCKCO_HydrantFill:isValid()
-    local part, item = VehicleFunctions.markerAny(self.vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return false end
     local fc = item:getFluidContainer()
     return fc ~= nil and not fc:isFull()
@@ -704,7 +698,7 @@ end
 
 function SCKCO_HydrantFill:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isFull() then return end
@@ -743,7 +737,7 @@ end
 local function hydrantContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.HydrantEnabled == false then return end
-    local part, item = VehicleFunctions.markerAny(vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isFull() then return end
@@ -823,7 +817,7 @@ end
 
 function SCKCO_Draft:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isFull() then return end
@@ -835,7 +829,7 @@ function SCKCO_Draft:update()
 end
 
 function SCKCO_Draft:isValid()
-    local part, item = VehicleFunctions.markerAny(self.vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return false end
     local fc = item:getFluidContainer()
     return fc ~= nil and not fc:isFull()
@@ -862,7 +856,7 @@ end
 local function draftContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.DraftEnabled == false then return end
-    local part, item = VehicleFunctions.markerAny(vehicle, CISTERN_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.CISTERN_PARTS)
     if not part then return end
     local fc = item:getFluidContainer()
     if not fc or fc:isFull() then return end
@@ -952,7 +946,7 @@ function SCKCO_PumpToTanker:stop()
 end
 
 function SCKCO_PumpToTanker:isValid()
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return false end
     local dstFC = item:getFluidContainer()
     if not dstFC or dstFC:isFull() then return false end
@@ -967,7 +961,7 @@ end
 
 function SCKCO_PumpToTanker:update()
     VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
     local dstFC = item:getFluidContainer()
     if not dstFC or dstFC:isFull() then return end
@@ -1022,7 +1016,7 @@ end
 local function pumpToTankerContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
     if sv.PumpRefuelEnabled == false then return end
-    local part, item = VehicleFunctions.markerAny(vehicle, FUELTANK_PARTS)
+    local part, item = VehicleFunctions.markerAny(vehicle, VehicleFunctions.FUELTANK_PARTS)
     if not part then return end
     local dstFC = item:getFluidContainer()
     if not dstFC or dstFC:isFull() then return end
