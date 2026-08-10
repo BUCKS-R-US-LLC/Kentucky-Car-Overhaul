@@ -36,3 +36,4 @@ ISCarMechanicsOverlay.PartList["Engine"].vehicles["all_"] = {x=0,y=0,x2=0,y2=0};
 --
 ISCarMechanicsOverlay.PartList["Muffler"].vehicles = ISCarMechanicsOverlay.PartList["Muffler"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Muffler"].vehicles["all_"] = {x=0,y=0,x2=00,y2=0};
+ISCarMechanicsOverlay.CarList["Base.SC_VWRabbit_Pizza"] = {imgPrefix = "rabbit_", x=0,y=0};

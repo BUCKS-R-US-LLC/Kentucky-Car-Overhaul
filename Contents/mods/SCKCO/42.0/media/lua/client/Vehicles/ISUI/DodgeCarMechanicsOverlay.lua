@@ -1,5 +1,8 @@
 ISCarMechanicsOverlay.CarList["Base.SC_DodgeM880"] = {imgPrefix = "powerwagon_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_DodgeM880_Bubba"] = {imgPrefix = "powerwagon_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_DodgeM880Ambulance"] = {imgPrefix = "powerwagon_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_DodgeM880TroopCarrier"] = {imgPrefix = "powerwagon_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_DodgePowerWagon"] = {imgPrefix = "powerwagon_", x=0,y=0}; 
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};

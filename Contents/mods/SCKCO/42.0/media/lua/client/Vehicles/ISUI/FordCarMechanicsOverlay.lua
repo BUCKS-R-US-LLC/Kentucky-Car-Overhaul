@@ -7,6 +7,8 @@ ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_MuhlenSheriff"] = {im
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_BullittSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_LouisvillePD"] = {imgPrefix = "crownvic92_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_BrandenburgPD"] = {imgPrefix = "crownvic92_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria92_MeadeSheriff"] = {imgPrefix = "crownvic92_", x=0,y=0};
+
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85"] = {imgPrefix = "crownvic85_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85_Taxi"] = {imgPrefix = "crownvic85_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_FordCrownVictoria85_LouisvillePD"] = {imgPrefix = "crownvic85_", x=0,y=0};

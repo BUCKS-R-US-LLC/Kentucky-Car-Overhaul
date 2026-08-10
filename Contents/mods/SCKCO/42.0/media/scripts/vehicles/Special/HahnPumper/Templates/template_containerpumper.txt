@@ -15,8 +15,7 @@ module Base
 			{
 				capacity = 100,
 				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
+				test = SCKCO.ContainerAccess.DoorInArea,
 			}
 			lua
 			{
@@ -37,8 +36,7 @@ module Base
 			{
 				capacity = 100,
 				conditionAffectsCapacity = false,
-				/* FIXME: This should be "ContainerAccess.TruckBed" */
-				test = Vehicles.ContainerAccess.TruckBed,
+				test = SCKCO.ContainerAccess.DoorInArea,
 			}
 			lua
 			{

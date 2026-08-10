@@ -55,6 +55,11 @@ ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30_LBMW"] = {imgPrefix = "g30wi
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30_SouthCentralBell"] = {imgPrefix = "g30windowless_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30_PennHam"] = {imgPrefix = "g30windowless_", x=0,y=0};
 
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30BoxVan"] = {imgPrefix = "g30box_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30PassengerVan"] = {imgPrefix = "g30van_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30_ChurchVan"] = {imgPrefix = "g30van_", x=0,y=0};  -- van vs bus body - verify
+ISCarMechanicsOverlay.CarList["Base.SC_ChevroletG30_KnoxDisti"] = {imgPrefix = "g30windowless_", x=0,y=0};
+
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30_Greenes"] = {imgPrefix = "p30_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_ChevroletP30_BunnyBread"] = {imgPrefix = "p30_", x=0,y=0};

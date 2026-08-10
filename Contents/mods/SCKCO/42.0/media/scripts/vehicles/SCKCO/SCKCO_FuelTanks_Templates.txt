@@ -9,6 +9,7 @@ module Base
             itemType = SCKCO.SmallFuelTankSC,
             mechanicRequireKey = true,
             durability = 5,
+            category = nodisplay,
             lua { create = Vehicles.Create.Default, }
             table install
             {
@@ -39,6 +40,7 @@ module Base
             itemType = SCKCO.MediumFuelTankSC,
             mechanicRequireKey = true,
             durability = 5,
+            category = nodisplay,
             lua { create = Vehicles.Create.Default, }
             table install
             {
@@ -69,6 +71,7 @@ module Base
             itemType = SCKCO.LargeFuelTankSC,
             mechanicRequireKey = true,
             durability = 5,
+            category = nodisplay,
             lua { create = Vehicles.Create.Default, }
             table install
             {

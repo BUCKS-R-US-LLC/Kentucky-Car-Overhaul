@@ -1,5 +1,6 @@
-ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoachRed"] = {imgPrefix = "firecoach_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoachWhite"] = {imgPrefix = "firecoach_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoach_Red"] = {imgPrefix = "firecoach_", x=0,y=0};  -- name-mismatch fix
+ISCarMechanicsOverlay.CarList["Base.SC_CrownFireCoach_White"] = {imgPrefix = "firecoach_", x=0,y=0};  -- name-mismatch fix
+
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};
