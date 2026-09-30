@@ -57,7 +57,6 @@ module Base
         textureDamage1Shell = Vehicles/Veh_Damage1,
         textureDamage2Shell = Vehicles/Veh_Damage2,
         textureRust = Vehicles/SharedTextures/vehicle_norust,
-
         extents = 1.5504 1.1163 2.7907,
         mass = 320,
         physicsChassisShape = 1.5504 1.1163 2.7907,
@@ -87,7 +86,7 @@ module Base
         {
             front = false,
             offset = 0.6589 0.2326 -0.4651,
-            radius = 0.32f,
+            radius = 0.35f,
             width = 0.30f,
         }
 
@@ -95,7 +94,7 @@ module Base
         {
             front = false,
             offset = -0.6589 0.2326 -0.4651,
-            radius = 0.32f,
+            radius = 0.35f,
             width = 0.30f,
         }
 
@@ -157,14 +156,14 @@ module Base
 
         physics box
         {
-            offset = 0.0000 0.4109 0.6861,
-            extents = 0.7752 0.7752 0.4031,
+            offset = 0.0000 0.3885 0.6899,
+            extents = 0.7752 0.7752 0.0775,
             rotate = 0.0000 0.0000 0.0000,
         }
 
         attachment trailer
         {
-            offset = 0.0000 0.2707 1.9375,
+            offset = 0.0000 0.3872 1.9375,
             rotate = 0.0000 0.0000 0.0000,
             canAttach = trailer,
             updateconstraint = false,
