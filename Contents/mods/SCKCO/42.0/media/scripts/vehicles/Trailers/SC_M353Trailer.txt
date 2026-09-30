@@ -57,6 +57,7 @@ module Base
         textureDamage1Shell = Vehicles/Veh_Damage1,
         textureDamage2Shell = Vehicles/Veh_Damage2,
         textureRust = Vehicles/SharedTextures/vehicle_norust,
+
         extents = 1.5504 1.1163 2.7907,
         mass = 320,
         physicsChassisShape = 1.5504 1.1163 2.7907,
@@ -98,11 +99,6 @@ module Base
             width = 0.30f,
         }
 
-        area TruckBed
-        {
-            xywh = 0.0000 0.8450 1.2248 0.3101,
-        }
-
         area TireFrontLeft
         {
             xywh = 1.0078 -0.5736 0.4651 0.5581,
@@ -116,59 +112,6 @@ module Base
         template = SCMediumFuelTank,
         template = Tire/part/TireFrontLeft,
         template = Tire/part/TireFrontRight,
-        template = TrunkDoor,
-
-        part TrunkDoor
-        {
-            table install
-            {
-                recipes = Advanced Mechanics,
-            }
-
-            table uninstall
-            {
-                recipes = Advanced Mechanics,
-            }
-
-            model Default
-            {
-                file = SC_M353Trunk,
-                offset = 0.0000 0.0000 0.0000,
-                rotate = 0.0000 0.0000 0.0000,
-                scale = 0.01,
-            }
-
-            anim Close
-            {
-                anim = TrunkClosing,
-                reverse = TRUE,
-                rate = 1.5,
-            }
-
-            anim Open
-            {
-                anim = TrunkClosing,
-                reverse = FALSE,
-                rate = 1.0,
-            }
-
-            anim Closed
-            {
-                anim = TrunkClosing,
-                reverse = FALSE,
-                animate = FALSE,
-            }
-
-            anim Opened
-            {
-                anim = TrunkClosing,
-                reverse = TRUE,
-                animate = FALSE,
-            }
-
-            category = nodisplay,
-            itemType = SCKCO.FillerPartSC,
-        }
 
         part TireFrontLeft
         {
