@@ -22,13 +22,13 @@ module Base
 	model C70GrainTruckWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|Windshield_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		scale = 1,
 	}
 	model C70GrainTruckFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightWindowBone 1.0,
@@ -37,7 +37,7 @@ module Base
 	model C70GrainTruckFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftWindowBone 1.0,
@@ -46,7 +46,7 @@ module Base
 	model C70GrainTruckFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
@@ -54,7 +54,7 @@ module Base
 	model C70GrainTruckFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		static = FALSE,
 		scale = 1,
 		boneWeight = FrontLeftDoorBone 1.0,
@@ -70,7 +70,7 @@ module Base
 	model C70GrainTruckRearWindshield
 	{
 		mesh = vehicles/Chevrolet/Vehicle_ChevroletC70Agri_SC|RearWindshield_obj,
-		shader = vehicleutest,
+		shader = SC_vehicle_onlywindow,
 		scale = 1,
 	}
 	model C70GrainTruckHood
@@ -185,7 +185,7 @@ module Base
 		}
 
 		textureRust = Vehicles/SharedTextures/vehicle_norust,
-		textureMask = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Masks,
+		textureMask = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_Mask,
 		textureLights = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_lights,
 		textureDamage1Shell = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_damage1,
 		textureDamage2Shell = Vehicles/ChevroletC70/Vehicle_ChevroletC70Agri_damage2,
