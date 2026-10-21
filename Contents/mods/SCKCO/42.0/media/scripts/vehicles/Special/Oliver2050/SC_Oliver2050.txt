@@ -65,6 +65,7 @@ module Base
         textureDamage2Shell = Vehicles/Oliver2050/Vehicle_Oliver2050_damage2,
         textureDamage1Overlay = Vehicles/Oliver2050/Vehicle_Oliver2050_blood,
         textureDamage2Overlay = Vehicles/Oliver2050/Vehicle_Oliver2050_blood,
+        textureShadow = Vehicles/Oliver2050/Vehicle_Oliver2050_shadow,
 
         sound
         {
@@ -78,8 +79,8 @@ module Base
         mass = 1900,
         physicsChassisShape = 8.9091 8.9091 24.1818,
         centerOfMassOffset = 0.0000 4.5455 0.0000,
-        shadowExtents = 12.7415 24.9398,
-        shadowOffset = 0.0000 0.0143,
+        shadowExtents = 23.7415 39.9398,
+        shadowOffset = 0.0000 -3.5095,
         engineForce = 5000,
         engineQuality = 80,
         engineLoudness = 20,
@@ -140,7 +141,7 @@ module Base
 
             position inside
             {
-                offset = 0.0000 5.9706 -5.9091,
+                offset = 0.0000 6.0000 -5.9091,
                 rotate = 0.0000 0.0000 0.0000,
             }
 

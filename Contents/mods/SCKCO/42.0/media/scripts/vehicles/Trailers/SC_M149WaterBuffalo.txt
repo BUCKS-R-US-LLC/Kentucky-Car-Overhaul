@@ -45,14 +45,13 @@ module Base
         textureDamage1Shell = Vehicles/Veh_Damage1,
         textureDamage2Shell = Vehicles/Veh_Damage2,
         textureRust = Vehicles/SharedTextures/vehicle_norust,
-		textureShadow = Vehicles/Vehicle_WaterBuffalo_shadow,
-
+        textureShadow = Vehicles/Trailer/Vehicle_WaterBuffalo_shadow,
         extents = 1.4419 1.1163 2.1085,
         mass = 320,
         physicsChassisShape = 1.4419 1.1163 2.1085,
         centerOfMassOffset = 0.0000 0.5581 -0.1938,
-        shadowExtents = 1.4443 2.1108,
-        shadowOffset = 0.0000 -0.1970,
+        shadowExtents = 1.4986 3.3899,
+        shadowOffset = 0.0000 0.1620,
         engineForce = 3600,
         engineQuality = 60,
         engineLoudness = 55,
@@ -75,7 +74,7 @@ module Base
         wheel FrontLeft
         {
             front = false,
-            offset = 0.6589 0.2201 -0.4651,
+            offset = 0.6589 0.2171 -0.4651,
             radius = 0.35f,
             width = 0.30f,
         }
@@ -83,7 +82,7 @@ module Base
         wheel FrontRight
         {
             front = false,
-            offset = -0.6589 0.2201 -0.4651,
+            offset = -0.6589 0.2171 -0.4651,
             radius = 0.35f,
             width = 0.30f,
         }

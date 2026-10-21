@@ -132,725 +132,754 @@ module Base
 		
 	}
 	vehicle SC_FordF350Ambulance_Life
-	{
-		mechanicType = 2,
-		offRoadEfficiency = 1.1,
-		engineRepairLevel = 4,
-		playerDamageProtection = 1.3,
-
-		model
-		{
-			file = SC_F350Ambulance,
-			scale = 0.5900,
-			offset = 0.0000 0.0000 0.5424,
-		}
-
-		skin
-		{
-			texture = Vehicles/F350Ambu/Vehicle_F350Ambu_Life,
-		}
-
-		textureRust = Vehicles/SharedTextures/vehicle_norust,
-		textureMask = Vehicles/FordF350/Vehicle_F350Ambu_mask,
-		textureLights = Vehicles/FordF350/Vehicle_F350Ambu_lights,
-		textureDamage1Shell = Vehicles/FordF350/Vehicle_F350Ambu_damage1,
-		textureDamage2Shell = Vehicles/FordF350/Vehicle_F350Ambu_damage2,
-		textureDamage1Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
-		textureDamage2Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
-
-		sound
-		{
-			engine = VehicleEngineVan,
-			engineStart = VehicleEngineVan,
-			engineTurnOff = VehicleEngineVan,
-			horn = VehicleHornVan,
-			ignitionFail = VehicleIgnitionFailVan,
-		}
-
-		lightbar
-		{
-			soundSiren = VehicleSiren,
-			leftCol = 0;0;1,
-			rightCol = 0;0;1,
-		}
-
-		extents = 3.3898 3.4576 9.0508,
-		mass = 2000,
-		physicsChassisShape = 3.3898 3.4576 9.0508,
-		centerOfMassOffset = 0.0000 1.7288 -0.5254,
-		shadowExtents = 3.2617 9.5431,
-		shadowOffset = 0.0635 -0.6856,
-		maxSpeed = 70f,
-		engineForce = 4500,
-		engineQuality = 100,
-		engineLoudness = 100,
-		brakingForce = 60,
-		stoppingMovementForce = 4.0f,
-		rollInfluence = 0.50f,
-		steeringIncrement = 0.04,
-		steeringClamp = 0.3,
-		suspensionStiffness = 55,
-		suspensionCompression = 3.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 12,
-		suspensionRestLength = 0.5,
-		wheelFriction = 1.6f,
-		frontEndHealth = 810,
-		rearEndHealth = 570,
-		seats = 4,
-		isSmallVehicle = false,
-
-		wheel FrontLeft
-		{
-			front = true,
-			offset = 1.1356 0.2034 2.3220,
-			radius = 0.70f,
-			width = 0.30f,
-		}
-
-		wheel FrontRight
-		{
-			front = true,
-			offset = -1.1356 0.2034 2.3051,
-			radius = 0.70f,
-			width = 0.30f,
-		}
-
-		wheel RearLeft
-		{
-			front = false,
-			offset = 1.3559 0.2034 -3.6441,
-			radius = 0.70f,
-			width = 0.30f,
-		}
-
-		wheel RearRight
-		{
-			front = false,
-			offset = -1.3559 0.2034 -3.6441,
-			radius = 0.70f,
-			width = 0.30f,
-		}
-
-		template = PassengerSeat2,
-
-		passenger FrontLeft
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = 0.6102 1.2373 0.1695,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = 2.3559 -0.5763 1.5593,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontLeft,
-			}
-		}
-
-		passenger FrontRight
-		{
-			showPassenger = true,
-			hasRoof = true,
-
-			position inside
-			{
-				offset = -0.6102 1.2373 0.1695,
-				rotate = 0.0000 0.0000 0.0000,
-			}
-
-			position outside
-			{
-				offset = -2.3559 -0.5763 1.5593,
-				rotate = 0.0000 0.0000 0.0000,
-				area = SeatFrontRight,
-			}
-		}
-
-		area Engine
-		{
-			xywh = 0.0000 4.5254 3.3898 0.9153,
-		}
-
-		area SeatFrontLeft
-		{
-			xywh = 2.3390 0.7797 1.1186 1.1186,
-		}
-
-		area SeatFrontRight
-		{
-			xywh = -2.3390 0.7797 1.1186 1.1186,
-		}
-
-		area GasTank
-		{
-			xywh = 2.3390 -3.9322 1.0169 0.5763,
-		}
-
-		area TireFrontLeft
-		{
-			xywh = 1.0000 2.8814 0.0000 0.0000,
-		}
-
-		area TireFrontRight
-		{
-			xywh = -1.0000 2.8814 0.0000 0.0000,
-		}
-
-		area TireRearLeft
-		{
-			xywh = 2.0000 -3.1356 0.0000 0.0000,
-		}
-
-		area TireRearRight
-		{
-			xywh = -2.0000 -3.1356 0.0000 0.0000,
-		}
-
-		area TruckBed
-		{
-			xywh = 0.0000 -5.6441 3.3898 1.0169,
-		}
-
-		template = F350AmbulanceAttachments,
-		template = SCSeat/part/SeatFrontLeft,
-		template = SCSeat/part/SeatFrontRight,
-		template = Trunk/part/TruckBed,
-		template = SCGloveBox,
-		template = SCGasTankBig,
-		template = SCBattery,
-		template = SCLighter,
-		template = Engine,
-		template = SCMufflerNormal,
-		template = TrunkDoor,
-
-		part TrunkDoor
-		{
-			table install
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Advanced Mechanics,
-			}
-
-			model Default
-			{
-				file = F350AmbulanceTrunk,
-				offset = 0 0 0,
-				rotate = 0 0 0,
-				scale = 1.0,
-			}
-
-			anim Close
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = TrunkClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = TrunkClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.FordOBSDoorSC,
-		}
-
-		part SeatFrontLeft
-		{
-			model seatfrontLeft
-			{
-				file = F350AmbulanceDriver,
-			}
-		}
-
-		part SeatFrontRight
-		{
-			model seatfrontRight
-			{
-				file = F350AmbulancePassenger,
-			}
-		}
-
-		part TruckBed
-		{
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-		}
-
-		part Muffler
-		{
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = EngineDoor,
-
-		part EngineDoor
-		{
-			model engineDoor
-			{
-				file = F350AmbulanceHood,
-			}
-
-			anim Close
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = HoodClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = HoodClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			itemType = SCKCO.FordOBSHoodSC,
-		}
-
-		part Heater
-		{
-			category = engine,
-
-			lua
-			{
-				update = Vehicles.Update.Heater,
-			}
-		}
-
-		template = Windshield/part/Windshield,
-		template = Windshield/part/WindshieldRear,
-
-		part Windshield
-		{
-			model windshieldFront
-			{
-				file = F350AmbulanceWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.FordOBSFrontWindshieldSC,
-		}
-
-		part WindshieldRear
-		{
-			model windshieldrear
-			{
-				file = F350AmbulanceRearWindshield,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.FordOBSRearWindshieldSC,
-		}
-
-		part RearWindows
-		{
-			model RearWindows
-			{
-				file = F350AmbulanceRearWindows,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			parent = TrunkDoor,
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-			category = SCUCKwindows,
-			itemType = SCKCO.FordOBSWindowSC,
-		}
-
-		template = Door/part/DoorFrontLeft,
-		template = Door/part/DoorFrontRight,
-		template = Door/part/DoorRearRight,
-		template = Window/part/WindowFrontLeft,
-		template = Window/part/WindowFrontRight,
-		template = Window/part/WindowRearRight,
-
-		part WindowFrontRight
-		{
-			model windowFR
-			{
-				file = F350AmbulanceFrontRightWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontRightWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontRight,
-			area = SeatFrontRight,
-			itemType = SCKCO.FordOBSWindowSC,
-		}
-
-		part WindowFrontLeft
-		{
-			model windowFL
-			{
-				file = F350AmbulanceFrontLeftWindow,
-			}
-
-			anim ClosedToOpen
-			{
-				anim = FrontLeftWindowClosing,
-				animate = FALSE,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorFrontLeft,
-			area = SeatFrontLeft,
-			itemType = SCKCO.FordOBSWindowSC,
-		}
-
-		part DoorFrontRight
-		{
-			model Default
-			{
-				file = F350AmbulanceFrontRightDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.FordOBSDoorSC,
-		}
-
-		part DoorFrontLeft
-		{
-			model Default
-			{
-				file = F350AmbulanceFrontLeftDoor,
-			}
-
-			anim Close
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = FrontLeftDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.FordOBSDoorSC,
-		}
-
-		part DoorRearRight
-		{
-			model Default
-			{
-				file = F350AmbulanceSlidingRightDoor,
-			}
-
-			anim Close
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				rate = 2.0,
-			}
-
-			anim Open
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = RearRightDoorClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = RearRightDoorClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			itemType = SCKCO.FordOBSDoorSC,
-		}
-
-		part WindowRearRight
-		{
-			model windowRR
-			{
-				file = F350AmbulanceSlidingWindow,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			category = SCUCKwindows,
-			parent = DoorRearRight,
-			area = SeatFrontRight,
-			itemType = SCKCO.FordOBSWindowSC,
-		}
-
-		template = SCTireNormal,
-		
-
-		part TireFrontLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = F350Ambulancefrontwheelleft,
-			}
-		}
-
-		part TireFrontRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = F350Ambulancefrontwheelright,
-			}
-		}
-
-		part TireRearLeft
-		{
-			model InflatedTirePlusWheel
-			{
-				file = F350Ambulancebackwheelleft,
-			}
-		}
-
-		part TireRearRight
-		{
-			model InflatedTirePlusWheel
-			{
-				file = F350Ambulancebackwheelright,
-			}
-		}
-
-		template = Brake,
-
-		part Brake*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = SCSuspensionNormal,
-
-		part Suspension*
-		{
-			table install
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				skills = Mechanics:4,
-				recipes = Intermediate Mechanics,
-			}
-		}
-
-		template = SCRadio,
-		template = Headlight,
-
-		part PassengerCompartment
-		{
-			category = nodisplay,
-
-			lua
-			{
-				update = Vehicles.Update.PassengerCompartment,
-			}
-		}
-
-		physics box
-		{
-			offset = 0.0000 1.7288 -0.5254,
-			extents = 2.6780 3.4407 9.0339,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment trailerfront
-		{
-			offset = 0.0000 0.8305 3.3051,
-			rotate = 0.0000 0.0000 0.0000,
-			zoffset = 1.0000,
-		}
-	}
+    {
+        mechanicType = 2,
+        offRoadEfficiency = 1.1,
+        engineRepairLevel = 4,
+        playerDamageProtection = 1.3,
+
+        model
+        {
+            file = SC_F350Ambulance,
+            scale = 0.5900,
+            offset = 0.0000 -0.0178 0.5424,
+        }
+
+        skin
+        {
+            texture = Vehicles/F350Ambu/Vehicle_F350Ambu_Life,
+        }
+
+        textureRust = Vehicles/SharedTextures/vehicle_norust,
+        textureMask = Vehicles/FordF350/Vehicle_F350Ambu_mask,
+        textureLights = Vehicles/FordF350/Vehicle_F350Ambu_lights,
+        textureDamage1Shell = Vehicles/FordF350/Vehicle_F350Ambu_damage1,
+        textureDamage2Shell = Vehicles/FordF350/Vehicle_F350Ambu_damage2,
+        textureDamage1Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
+        textureDamage2Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
+        textureShadow = Vehicles/F350Ambu/Vehicle_F350Ambulance_shadow,
+
+        sound
+        {
+            engine = VehicleEngineVan,
+            engineStart = VehicleEngineVan,
+            engineTurnOff = VehicleEngineVan,
+            horn = VehicleHornVan,
+            ignitionFail = VehicleIgnitionFailVan,
+        }
+
+        lightbar
+        {
+            soundSiren = VehicleSiren,
+            leftCol = 0;0;1,
+            rightCol = 0;0;1,
+        }
+
+        extents = 3.3898 3.4576 9.0508,
+        mass = 1500,
+        physicsChassisShape = 3.3898 3.4576 9.0508,
+        centerOfMassOffset = 0.0000 1.7150 -0.5254,
+        shadowExtents = 5.2278 19.2719,
+        shadowOffset = 0.0635 -0.6856,
+        maxSpeed = 90f,
+        engineForce = 4800,
+        engineQuality = 80,
+        engineLoudness = 120,
+        brakingForce = 100,
+        stoppingMovementForce = 4.0f,
+        rollInfluence = 0.50f,
+        steeringIncrement = 0.04,
+        steeringClamp = 0.3,
+        suspensionStiffness = 60,
+        suspensionCompression = 3.83,
+        suspensionDamping = 2.88,
+        maxSuspensionTravelCm = 12,
+        suspensionRestLength = 0.5,
+        wheelFriction = 1.6f,
+        frontEndHealth = 600,
+        rearEndHealth = 510,
+        seats = 4,
+        isSmallVehicle = false,
+
+        wheel FrontLeft
+        {
+            front = true,
+            offset = 1.1356 0.2034 2.3220,
+            radius = 0.70f,
+            width = 0.30f,
+        }
+
+        wheel FrontRight
+        {
+            front = true,
+            offset = -1.1356 0.2034 2.3051,
+            radius = 0.70f,
+            width = 0.30f,
+        }
+
+        wheel RearLeft
+        {
+            front = false,
+            offset = 1.3559 0.2034 -3.6441,
+            radius = 0.70f,
+            width = 0.30f,
+        }
+
+        wheel RearRight
+        {
+            front = false,
+            offset = -1.3559 0.2034 -3.6441,
+            radius = 0.70f,
+            width = 0.30f,
+        }
+
+        template = PassengerSeat2,
+
+        passenger FrontLeft
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = 0.6102 1.2373 0.1695,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = 2.3559 -0.5763 1.5593,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontLeft,
+            }
+        }
+
+        passenger FrontRight
+        {
+            showPassenger = true,
+            hasRoof = true,
+
+            position inside
+            {
+                offset = -0.6102 1.2373 0.1695,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            position outside
+            {
+                offset = -2.3559 -0.5763 1.5593,
+                rotate = 0.0000 0.0000 0.0000,
+                area = SeatFrontRight,
+            }
+        }
+
+        area Engine
+        {
+            xywh = 0.0000 4.5254 3.3898 0.9153,
+        }
+
+        area SeatFrontLeft
+        {
+            xywh = 2.3390 0.7797 1.1186 1.1186,
+        }
+
+        area SeatFrontRight
+        {
+            xywh = -2.3390 0.7797 1.1186 1.1186,
+        }
+
+        area GasTank
+        {
+            xywh = 2.3390 -3.9322 1.0169 0.5763,
+        }
+
+        area TireFrontLeft
+        {
+            xywh = 1.0000 2.8814 0.0000 0.0000,
+        }
+
+        area TireFrontRight
+        {
+            xywh = -1.0000 2.8814 0.0000 0.0000,
+        }
+
+        area TireRearLeft
+        {
+            xywh = 2.0000 -3.1356 0.0000 0.0000,
+        }
+
+        area TireRearRight
+        {
+            xywh = -2.0000 -3.1356 0.0000 0.0000,
+        }
+
+        area TruckBed
+        {
+            xywh = 0.0000 -5.6441 3.3898 1.0169,
+        }
+
+        template = F350AmbulanceAttachments,
+        template = SCSeat/part/SeatFrontLeft,
+        template = SCSeat/part/SeatFrontRight,
+        template = Trunk/part/TruckBed,
+        template = SCGloveBox,
+        template = SCGasTankBig,
+        template = SCBattery,
+        template = SCLighter,
+        template = Engine,
+        template = SCMufflerNormal,
+        template = TrunkDoor,
+
+        part TrunkDoor
+        {
+            table install
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Advanced Mechanics,
+            }
+
+            model Default
+            {
+                file = F350AmbulanceTrunk,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+                scale = 1.0,
+            }
+
+            anim Close
+            {
+                anim = TrunkClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = TrunkClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = TrunkClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = TrunkClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.FordOBSDoorSC,
+        }
+
+        part SeatFrontLeft
+        {
+            model seatfrontLeft
+            {
+                file = F350AmbulanceDriver,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part SeatFrontRight
+        {
+            model seatfrontRight
+            {
+                file = F350AmbulancePassenger,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TruckBed
+        {
+            container
+            {
+                capacity = 100,
+                conditionAffectsCapacity = FALSE,
+                test = Vehicles.ContainerAccess.BackOfTruck,
+            }
+        }
+
+        part Muffler
+        {
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = EngineDoor,
+
+        part EngineDoor
+        {
+            model engineDoor
+            {
+                file = F350AmbulanceHood,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                rate = 1.5,
+            }
+
+            anim Open
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = HoodClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = HoodClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            itemType = SCKCO.FordOBSHoodSC,
+        }
+
+        part Heater
+        {
+            category = engine,
+
+            lua
+            {
+                update = Vehicles.Update.Heater,
+            }
+        }
+
+        template = Windshield/part/Windshield,
+        template = Windshield/part/WindshieldRear,
+
+        part Windshield
+        {
+            model windshieldFront
+            {
+                file = F350AmbulanceWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.FordOBSFrontWindshieldSC,
+        }
+
+        part WindshieldRear
+        {
+            model windshieldrear
+            {
+                file = F350AmbulanceRearWindshield,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.FordOBSRearWindshieldSC,
+        }
+
+        part RearWindows
+        {
+            model RearWindows
+            {
+                file = F350AmbulanceRearWindows,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            parent = TrunkDoor,
+
+            table install
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                recipes = Intermediate Mechanics,
+            }
+
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+
+            category = SCUCKwindows,
+            itemType = SCKCO.FordOBSWindowSC,
+        }
+
+        template = Door/part/DoorFrontLeft,
+        template = Door/part/DoorFrontRight,
+        template = Door/part/DoorRearRight,
+        template = Window/part/WindowFrontLeft,
+        template = Window/part/WindowFrontRight,
+        template = Window/part/WindowRearRight,
+
+        part WindowFrontRight
+        {
+            model windowFR
+            {
+                file = F350AmbulanceFrontRightWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontRightWindowClosing,
+                animate = FALSE,
+            }
+
+            category = SCUCKwindows,
+            parent = DoorFrontRight,
+            area = SeatFrontRight,
+            itemType = SCKCO.FordOBSWindowSC,
+        }
+
+        part WindowFrontLeft
+        {
+            model windowFL
+            {
+                file = F350AmbulanceFrontLeftWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim ClosedToOpen
+            {
+                anim = FrontLeftWindowClosing,
+                animate = FALSE,
+            }
+
+            category = SCUCKwindows,
+            parent = DoorFrontLeft,
+            area = SeatFrontLeft,
+            itemType = SCKCO.FordOBSWindowSC,
+        }
+
+        part DoorFrontRight
+        {
+            model Default
+            {
+                file = F350AmbulanceFrontRightDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.FordOBSDoorSC,
+        }
+
+        part DoorFrontLeft
+        {
+            model Default
+            {
+                file = F350AmbulanceFrontLeftDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = FrontLeftDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.FordOBSDoorSC,
+        }
+
+        part DoorRearRight
+        {
+            model Default
+            {
+                file = F350AmbulanceSlidingRightDoor,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            anim Close
+            {
+                anim = RearRightDoorClosing,
+                reverse = TRUE,
+                rate = 2.0,
+            }
+
+            anim Open
+            {
+                anim = RearRightDoorClosing,
+                reverse = FALSE,
+                rate = 1.0,
+            }
+
+            anim Closed
+            {
+                anim = RearRightDoorClosing,
+                reverse = FALSE,
+                animate = FALSE,
+            }
+
+            anim Opened
+            {
+                anim = RearRightDoorClosing,
+                reverse = TRUE,
+                animate = FALSE,
+            }
+
+            itemType = SCKCO.FordOBSDoorSC,
+        }
+
+        part WindowRearRight
+        {
+            model windowRR
+            {
+                file = F350AmbulanceSlidingWindow,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+
+            window
+            {
+                openable = false,
+            }
+
+            category = SCUCKwindows,
+            parent = DoorRearRight,
+            area = SeatFrontRight,
+            itemType = SCKCO.FordOBSWindowSC,
+        }
+
+        template = SCTireNormal,
+
+        part TireFrontLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = F350Ambulancefrontwheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireFrontRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = F350Ambulancefrontwheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearLeft
+        {
+            model InflatedTirePlusWheel
+            {
+                file = F350Ambulancebackwheelleft,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        part TireRearRight
+        {
+            model InflatedTirePlusWheel
+            {
+                file = F350Ambulancebackwheelright,
+                offset = 0.0000 0.0000 0.0000,
+                rotate = 0.0000 0.0000 0.0000,
+            }
+        }
+
+        template = Brake,
+
+        part Brake*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = SCSuspensionNormal,
+
+        part Suspension*
+        {
+            table install
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+
+            table uninstall
+            {
+                skills = Mechanics:4,
+                recipes = Intermediate Mechanics,
+            }
+        }
+
+        template = SCRadio,
+        template = Headlight,
+
+        part PassengerCompartment
+        {
+            category = nodisplay,
+
+            lua
+            {
+                update = Vehicles.Update.PassengerCompartment,
+            }
+        }
+
+        physics box
+        {
+            offset = 0.0000 1.4793 -0.5254,
+            extents = 2.6780 2.0851 9.0339,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment trailerfront
+        {
+            offset = 0.0000 0.8305 3.3051,
+            rotate = 0.0000 0.0000 0.0000,
+            zoffset = 1.0000,
+        }
+    }
 }
-
-
-

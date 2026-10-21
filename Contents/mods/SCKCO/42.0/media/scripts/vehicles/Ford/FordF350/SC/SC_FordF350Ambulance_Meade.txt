@@ -157,6 +157,7 @@ module Base
 		textureDamage2Shell = Vehicles/FordF350/Vehicle_F350Ambu_damage2,
 		textureDamage1Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
 		textureDamage2Overlay = Vehicles/FordF350/Vehicle_F350Ambu_blood,
+        textureShadow = Vehicles/F350Ambu/Vehicle_F350Ambulance_shadow,
 
 		sound
 		{
@@ -178,13 +179,13 @@ module Base
 		mass = 2000,
 		physicsChassisShape = 3.3898 3.4576 9.0508,
 		centerOfMassOffset = 0.0000 1.7288 -0.5254,
-		shadowExtents = 3.2617 9.5431,
-		shadowOffset = 0.0635 -0.6856,
-		maxSpeed = 70f,
-		engineForce = 4500,
-		engineQuality = 100,
-		engineLoudness = 100,
-		brakingForce = 60,
+        shadowExtents = 5.2278 19.2719,
+        shadowOffset = 0.0635 -0.6856,
+		maxSpeed = 90f,
+		engineForce = 4800,
+		engineQuality = 80,
+		engineLoudness = 120,
+		brakingForce = 100,
 		stoppingMovementForce = 4.0f,
 		rollInfluence = 0.50f,
 		steeringIncrement = 0.04,
@@ -195,8 +196,8 @@ module Base
 		maxSuspensionTravelCm = 12,
 		suspensionRestLength = 0.5,
 		wheelFriction = 1.6f,
-		frontEndHealth = 810,
-		rearEndHealth = 570,
+		frontEndHealth = 600,
+		rearEndHealth = 510,
 		seats = 4,
 		isSmallVehicle = false,
 
@@ -838,8 +839,8 @@ module Base
 
 		physics box
 		{
-			offset = 0.0000 1.7288 -0.5254,
-			extents = 2.6780 3.4407 9.0339,
+			offset = 0.0000 1.4793 -0.5254,
+			extents = 2.6780 2.0851 9.0339,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
