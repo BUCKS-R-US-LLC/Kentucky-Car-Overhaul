@@ -227,12 +227,6 @@ module SCKCO
 		scale = 0.5,
 	}
 
-		model ChevyCKBumper_WorldItem
-	{
-		mesh = WorldItems/Chevrolet/KSeries/K5BullBar_WorldItem,
-		texture = Vehicles/K5/Vehicle_BlazerSC_White,
-		scale = 0.5,
-	}
 
 		model ChevyP30Door_WorldItem
 	{
@@ -558,7 +552,7 @@ model ChevyCamaroLouvers_WorldItem
 
 		model FordOBSRearWindshield_WorldItem
 	{
-		mesh = WorldItems/Ford/F150/F150RearWindshield_WorldItem,
+		mesh = WorldItems/Ford/F150/F150WindshieldRear_WorldItem,
 		texture = Vehicles/FordF150/Vehicle_F1501992_WhiteBlue,
 		scale = 0.5,
 	}
@@ -811,42 +805,30 @@ model ChevyCamaroLouvers_WorldItem
 		model ChevyG30Hood_WorldItem
 	{
 		mesh = WorldItems/Chevrolet/G30/G30Hood_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
+		texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
 		scale = 0.5,
 	}
 
 		model ChevyG30Door_WorldItem
 	{
-		mesh = WorldItems/Chevrolet/G30/G30FrontDoor_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
+		mesh = WorldItems/Chevrolet/G30/G30Door_WorldItem,
+		texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
 		scale = 0.5,
 	}
 
 		model ChevyG30Window_WorldItem
 	{
 		mesh = WorldItems/Chevrolet/G30/G30SideWindow_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
+		texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
 		scale = 0.5,
 	}
 
-	    model ChevyG30Window_WorldItem
-	{
-		mesh = WorldItems/Chevrolet/G30/G30SideWindow_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
-		scale = 0.5,
-	}
 	
-		model ChevyG30Door_WorldItem
-	{
-		mesh = WorldItems/Chevrolet/G30/G30FrontDoor_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
-		scale = 0.5,
-	}
 
 		model ChevyG30SideDoor_WorldItem
 	{
 		mesh = WorldItems/Chevrolet/G30/G30SideDoor_WorldItem,
-		texture = Vehicles/G30VanNormal/Vehicle_G30VanNormalSC_White,
+		texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
 		scale = 0.5,
 	}
 
@@ -901,7 +883,7 @@ model ChevyCamaroLouvers_WorldItem
 
 	model JeepCJ7WindshieldArmor_WorldItem
 {
-	mesh = WorldItems/Jeep/CJ7/CJ7WindshieldArmor_WorldItem,
+	mesh = WorldItems/Jeep/JeepCJ7WindshieldArmor_WorldItem,
 	texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_WhiteDual,
 	scale = 0.5,
 }
@@ -999,29 +981,29 @@ model ChevyCamaroLouvers_WorldItem
 
 		model CrownFiretruckWindshield_WorldItem
 	{
-		mesh = WorldItems/Firecoach/FireCoachWindshield_WorldItem,
-		texture = Vehicles/Firecoach/Vehicle_FireCoach,
+		mesh = WorldItems/Firecoach/FirecoachWindshield_WorldItem,
+		texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
 		scale = 0.5,
 	}
 
 		model CrownFiretruckDoorArmor_WorldItem
 	{
-		mesh = WorldItems/Firecoach/FireCoachDoorArmor_WorldItem,
-		texture = Vehicles/Firecoach/Vehicle_FireCoach,
+		mesh = WorldItems/Firecoach/FirecoachDoorArmor_WorldItem,
+		texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
 		scale = 0.5,
 	}
 
 		model CrownFiretruckWindshieldArmor_WorldItem
 	{
-		mesh = WorldItems/Firecoach/FireCoachWindshieldArmor_WorldItem,
-		texture = Vehicles/Firecoach/Vehicle_FireCoach,
+		mesh = WorldItems/Firecoach/FirecoachWindshieldArmor_WorldItem,
+		texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
 		scale = 0.5,
 	}
 
 		model CrownFiretruckWindowArmor_WorldItem
 	{
-		mesh = WorldItems/Firecoach/FireCoachWIndowArmor_WorldItem,
-		texture = WorldItems/Firecoach/Vehicle_FireCoach,
+		mesh = WorldItems/Firecoach/FirecoachWindowArmor_WorldItem,
+		texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
 		scale = 0.5,
 	}
 
@@ -1097,7 +1079,7 @@ model ChevyCamaroLouvers_WorldItem
 
 		model HumveeWindowArmor_WorldItem
 	{
-		mesh = WorldItems/HMMWV/HumveeWindowArmor_WorldItem,
+		mesh = WorldItems/AMGeneral/HMMWV/HMMWVWindowArmor_WorldItem,
 		texture = Vehicles/HMMWV/Vehicle_HM1025_OD,
 		scale = 0.5,
 	}
@@ -1126,21 +1108,21 @@ model ChevyCamaroLouvers_WorldItem
 		model M35WindshieldArmor_WorldItem
 	{
 		mesh = WorldItems/M35/M35WindshieldArmor_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 		model M35TarpFrame_WorldItem
 	{
 		mesh = WorldItems/M35/M35TarpFrame_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 		model M35Tarp_WorldItem
 	{
 		mesh = WorldItems/M35/M35Tarp_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
@@ -1154,7 +1136,7 @@ model ChevyCamaroLouvers_WorldItem
 		model M35HardTop_WorldItem
 	{
 		mesh = WorldItems/M35/M35HardTop_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
@@ -1168,63 +1150,57 @@ model ChevyCamaroLouvers_WorldItem
         model M35Window_WorldItem
 	{
 		mesh = WorldItems/M35/M35Window_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 	 
 	    model M35WindowArmor_WorldItem
 	{
 		mesh = WorldItems/M35/M35WindowArmor_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 	    model M35DoorArmor_WorldItem
 	{
 		mesh = WorldItems/M35/M35DoorArmor_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 	
         model M35Bumper_WorldItem
 	{
 		mesh = WorldItems/M35/M35Bumper_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 	    model M35TailGate_WorldItem
 	{
 		mesh = WorldItems/M35/M35TailGate_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 	    model M35Hood_WorldItem
 	{
 		mesh = WorldItems/M35/M35Hood_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
-	    model M35TailGate_WorldItem
-	{
-		mesh = WorldItems/M35/M35TailGate_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
-		scale = 0.5,
-	}
 
 	    model M35Windshield_WorldItem
 	{
 		mesh = WorldItems/M35/M35Windshield_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
 		model M35Door_WorldItem
 	{
 		mesh = WorldItems/M35/M35Door_WorldItem,
-		texture = vehicles/M35/Vehicle_M35A1_OD,
+		texture = Vehicles/M35A2/Vehicle_M35A2_OD,
 		scale = 0.5,
 	}
 
@@ -1336,161 +1312,161 @@ model ChevyCamaroLouvers_WorldItem
 	model FordCrownVic92Bumper_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92Bumper_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92FrontDoor_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92FrontDoor_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92RearDoor_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92RearDoor_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92DoorArmor_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92DoorArmor_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92FrontWindow_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92FrontWindow_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92RearWindow_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92RearWindow_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92WindowArmor_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92WindowArmor_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92RearWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92RearWindshield_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92WindshieldArmor_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92WindshieldArmor_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92Hood_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92Hood_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordCrownVic92TrunkLid_WorldItem
 {
 	mesh = WorldItems/Ford/CrownVictoria/FordCrownVic92TrunkLid_WorldItem,
-	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_White,
+	texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_white,
 	scale = 0.5,
 }
 
 	model FordExplorerBumper_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerBumper_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerFrontDoor_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerFrontDoor_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerRearDoor_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerRearDoor_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerDoorArmor_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerDoorArmor_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerFrontWindow_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerFrontWindow_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerRearWindow_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerRearWindow_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerWindowArmor_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerWindowArmor_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerFrontWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerFrontWindshield_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerRearWindshield_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerRearWindshield_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerWindshieldArmor_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerWindshieldArmor_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerHood_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerHood_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
 	model FordExplorerTrunkLid_WorldItem
 {
 	mesh = WorldItems/Ford/Explorer/FordExplorerTrunkLid_WorldItem,
-	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_Silver,
+	texture = Vehicles/FordExplorer/Vehicle_FordExplorer_silver,
 	scale = 0.5,
 }
 
@@ -1666,6 +1642,1413 @@ model ChevyCamaroLouvers_WorldItem
 {
 	mesh = WorldItems/Chevrolet/C70/C70SurvivorTrunkLid_WorldItem,
 	texture = Vehicles/ChevroletC70/Vehicle_C70Survivor_OD,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonWindshieldArmor_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonDoorArmor_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonDoorArmor_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonWindowArmor_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonWindowArmor_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonBumper_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonBumper_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonDoor_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonDoor_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonWindshield_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonWindshield_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonWindow_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonWindow_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonHood_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonHood_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model DodgePowerWagonTrunkLid_WorldItem
+{
+	mesh = WorldItems/Dodge/DodgePowerWagonTrunkLid_WorldItem,
+	texture = Vehicles/PowerWag79/Vehicle_PowerWag1979_BlackWhite,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerBumper_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerBumper_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerDoorArmor_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerDoorArmor_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerWindshieldArmor_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerWindowArmor_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerWindowArmor_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerDoor_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerDoor_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerHood_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerHood_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerTrunkLid_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerTrunkLid_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerWindshield_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerWindshield_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model PlymouthVoyagerWindow_WorldItem
+{
+	mesh = WorldItems/Plymouth/PlymouthVoyagerWindow_WorldItem,
+	texture = Vehicles/PlymouthVoyager/Vehicle_PlymouthVoyager_White,
+	scale = 0.5,
+}
+
+	model M151Bumper_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Bumper_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151DoorArmor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151DoorArmor_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151WindshieldArmor_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151Door_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Door_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151WindshieldFrame_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151WindshieldFrame_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151Windshield_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Windshield_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151Window_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Window_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_OD,
+	scale = 0.5,
+}
+
+	model M151Antenna_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Antenna_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151TarpFrame_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151TarpFrame_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151SideTarp_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151SideTarp_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151SoftTop_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151SoftTop_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M151Hood_WorldItem
+{
+	mesh = WorldItems/AMGeneral/M151/M151Hood_WorldItem,
+	texture = Vehicles/M151A2/Vehicle_HM151_ODHazard,
+	scale = 0.5,
+}
+
+	model M998SoftTop_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/M998SoftTop_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM998_Tan,
+	scale = 0.5,
+}
+
+	model M1097RearCurtain_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/M1097RearCurtain_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_OD,
+	scale = 0.5,
+}
+
+	model HMMWVBumperAssembly_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVBumperAssembly_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVBumper_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVBumper_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVWindowArmor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVWindowArmor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVDoorArmor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVDoorArmor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVWindshieldArmor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model M1025SlantDoor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/M1025SlantDoor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model M1025SlantBase_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/M1025SlantBase_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVHardDoor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVHardDoor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_OD,
+	scale = 0.5,
+}
+
+	model HMMWVSoftDoor_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVSoftDoor_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM998_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVWindshield_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVWindshield_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVSoftWindow_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVSoftWindow_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM998_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVHardWindow_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVHardWindow_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_OD,
+	scale = 0.5,
+}
+
+	model HMMWVHood_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVHood_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model HMMWVTrunkLid_WorldItem
+{
+	mesh = WorldItems/AMGeneral/HMMWV/HMMWVTrunkLid_WorldItem,
+	texture = Vehicles/HMMWV/Vehicle_HM1025_Tan,
+	scale = 0.5,
+}
+
+	model CadillacFuneralCoachDoor_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFuneralCoachDoor_WorldItem,
+	texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+	scale = 0.5,
+}
+
+	model CadillacFuneralCoachWindshield_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFuneralCoachWindshield_WorldItem,
+	texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+	scale = 0.5,
+}
+
+	model CadillacFuneralCoachWindow_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFuneralCoachWindow_WorldItem,
+	texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+	scale = 0.5,
+}
+
+	model CadillacFuneralCoachHood_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFuneralCoachHood_WorldItem,
+	texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+	scale = 0.5,
+}
+
+	model CadillacFuneralCoachTrunkLid_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFuneralCoachTrunkLid_WorldItem,
+	texture = Vehicles/CadillacFuneralCoach/Vehicle_CadillacFuneralCoach_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodWindshieldArmor_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodDoorArmor_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodDoorArmor_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodWindowArmor_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodWindowArmor_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodDoor_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodDoor_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodWindshield_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodWindshield_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodWindow_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodWindow_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodHood_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodHood_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model CadillacFleetwoodTrunkLid_WorldItem
+{
+	mesh = WorldItems/Cadillac/CadillacFleetwoodTrunkLid_WorldItem,
+	texture = Vehicles/CadillacBrougham/Vehicle_CadiBrough88_White,
+	scale = 0.5,
+}
+
+	model MackDM800Bumper_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800Bumper_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800WindowArmor_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800WindowArmor_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800DoorArmor_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800DoorArmor_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800WindshieldArmor_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800Door_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800Door_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800Windshield_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800Windshield_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800Window_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800Window_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MackDM800Hood_WorldItem
+{
+	mesh = WorldItems/Mack/MackDM800Hood_WorldItem,
+	texture = Vehicles/MackDM800/Vehicle_MackGarbageBlue_SC,
+	scale = 0.5,
+}
+
+	model MazdaB2000WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000WindshieldArmor_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000DoorArmor_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000DoorArmor_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000WindowArmor_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000WindowArmor_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000Bumper_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000Bumper_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000Door_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000Door_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000Windshield_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000Windshield_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000Window_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000Window_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000Hood_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000Hood_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model MazdaB2000TrunkLid_WorldItem
+{
+	mesh = WorldItems/Mazda/MazdaB2000TrunkLid_WorldItem,
+	texture = Vehicles/MazdaB/Vehicle_MazdaB_Silver,
+	scale = 0.5,
+}
+
+	model BMW520iWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iWindshieldArmor_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iDoorArmor_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iDoorArmor_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iWindowArmor_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iWindowArmor_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iBumper_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iBumper_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iDoor_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iDoor_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iWindshield_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iWindshield_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iWindow_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iWindow_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iHood_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iHood_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model BMW520iTrunkLid_WorldItem
+{
+	mesh = WorldItems/BMW/BMW520iTrunkLid_WorldItem,
+	texture = Vehicles/520iBMW/Vehicle_520iBMW_white,
+	scale = 0.5,
+}
+
+	model VWRabbitLouvers_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitLouvers_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitDoor_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitDoor_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitWindshield_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitWindshield_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitWindow_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitWindow_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitHood_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitHood_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitTrunkLid_WorldItem
+{
+	mesh = WorldItems/Volkswagen/VWRabbitTrunkLid_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitBumper_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitBumper_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitWindshieldArmor_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitDoorArmor_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitDoorArmor_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model VWRabbitWindowArmor_WorldItem
+{
+	mesh = WorldItems/Rabbit/RabbitWindowArmor_WorldItem,
+	texture = Vehicles/VWRabbit/Vehicle_VWRabbit_White,
+	scale = 0.5,
+}
+
+	model HondaAccordWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Accord/AccordWindshieldArmor_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordDoorArmor_WorldItem
+{
+	mesh = WorldItems/Accord/AccordDoorArmor_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordWindowArmor_WorldItem
+{
+	mesh = WorldItems/Accord/AccordWindowArmor_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordBumper_WorldItem
+{
+	mesh = WorldItems/Accord/AccordBumper_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordDoor_WorldItem
+{
+	mesh = WorldItems/Accord/AccordDoor_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordWindshield_WorldItem
+{
+	mesh = WorldItems/Accord/AccordWindshield_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordWindow_WorldItem
+{
+	mesh = WorldItems/Accord/AccordWindow_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordHood_WorldItem
+{
+	mesh = WorldItems/Accord/AccordHood_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model HondaAccordTrunkLid_WorldItem
+{
+	mesh = WorldItems/Honda/HondaAccordTrunkLid_WorldItem,
+	texture = Vehicles/HondaAccord/Vehicle_HondaAccord_SC_White,
+	scale = 0.5,
+}
+
+	model Porsche911Door_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911Door_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911Windshield_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911Windshield_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911Window_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911Window_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911Hood_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911Hood_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911TrunkLid_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911TrunkLid_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911WindshieldArmor_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911WindowArmor_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911WindowArmor_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911DoorArmor_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911DoorArmor_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Porsche911Bumper_WorldItem
+{
+	mesh = WorldItems/Porsche/Porsche911Bumper_WorldItem,
+	texture = Vehicles/911G50/Vehicle_Porsche911G50_White,
+	scale = 0.5,
+}
+
+	model Mercedes280WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280WindshieldArmor_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280DoorArmor_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280DoorArmor_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280WindowArmor_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280WindowArmor_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280Bumper_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280Bumper_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280Door_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280Door_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280Windshield_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280Windshield_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280Window_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280Window_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280Hood_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280Hood_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model Mercedes280TrunkLid_WorldItem
+{
+	mesh = WorldItems/Mercedes/Mercedes280TrunkLid_WorldItem,
+	texture = Vehicles/Mercedes280/Vehicle_Mercedes280_SC_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderWindshieldArmor_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderDoorArmor_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderDoorArmor_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderWindowArmor_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderWindowArmor_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderBumper_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderBumper_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderDoor_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderDoor_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderWindshield_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderWindshield_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderWindow_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderWindow_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderHood_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderHood_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model NissanPathfinderTrunkLid_WorldItem
+{
+	mesh = WorldItems/Nissan/NissanPathfinderTrunkLid_WorldItem,
+	texture = Vehicles/Pathfinder87/Vehicle_Pathfinder_White,
+	scale = 0.5,
+}
+
+	model TrailerDoor_WorldItem
+{
+	mesh = WorldItems/Trailer/TrailerDoor_WorldItem,
+	texture = Vehicles/Trailer/Vehicle_LivestockTrailer,
+	scale = 0.5,
+}
+
+	model TrailerWindow_WorldItem
+{
+	mesh = WorldItems/Trailer/TrailerWindow_WorldItem,
+	texture = Vehicles/Trailer/Vehicle_LivestockTrailer,
+	scale = 0.5,
+}
+
+	model M1011Bowkit_WorldItem
+{
+	mesh = WorldItems/Trailer/M1011Bowkit_WorldItem,
+	texture = Vehicles/Trailer/Vehicle_M1101_OD,
+	scale = 0.5,
+}
+
+	model M1008Tarp_WorldItem
+{
+	mesh = WorldItems/Chevrolet/CKSeries/M1008Tarp_WorldItem,
+	texture = Vehicles/CUCV/Vehicle_M1008Troop_OD,
+	scale = 0.5,
+}
+
+	model M1008TarpFrame_WorldItem
+{
+	mesh = WorldItems/Chevrolet/CKSeries/M1008TarpFrame_WorldItem,
+	texture = Vehicles/CUCV/Vehicle_M1008Troop_OD,
+	scale = 0.5,
+}
+
+	model ChevyCKSeriesWindshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/CKSeries/ChevyCKSeriesWindshield_WorldItem,
+	texture = Vehicles/K10/Vehicle_K10_ParkRanger,
+	scale = 0.5,
+}
+
+	model ChevyG30Bumper_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/G30Bumper_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
+	scale = 0.5,
+}
+
+	model ChevyG30DoorArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/ChevyG30DoorArmor_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30Ambulance_SC,
+	scale = 0.5,
+}
+
+	model ChevyG30WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/G30WindshieldArmor_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
+	scale = 0.5,
+}
+
+	model ChevyG30WindowArmor_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/G30WindowArmor_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
+	scale = 0.5,
+}
+
+	model ChevyG30RearDoors_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/G30RearDoors_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
+	scale = 0.5,
+}
+
+	model ChevyG30BoxVanRearDoors_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/ChevyG30BoxVanRearDoors_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanBoxSC_Blue,
+	scale = 0.5,
+}
+
+	model ChevyG30Windshield_WorldItem
+{
+	mesh = WorldItems/Chevrolet/G30/G30Windshield_WorldItem,
+	texture = Vehicles/ChevroletG30/Vehicle_G30VanNormalSC_White,
+	scale = 0.5,
+}
+
+	model GeoTrackerWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerWindshieldArmor_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerDoorArmor_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerDoorArmor_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerWindowArmor_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerWindowArmor_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerBumper_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerBumper_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerDoor_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerDoor_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerWindshield_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerWindshield_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerWindow_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerWindow_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerHood_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerHood_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model GeoTrackerTrunkLid_WorldItem
+{
+	mesh = WorldItems/Geo/GeoTrackerTrunkLid_WorldItem,
+	texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Blue,
+	scale = 0.5,
+}
+
+	model CJ7softtop2_WorldItem
+{
+	mesh = WorldItems/Jeep/CJ7/CJ7Tarp_WorldItem,
+	texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_WhiteDual,
+	scale = 0.5,
+}
+
+	model JeepCherokeeBumper_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeBullbar_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeDoorArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeDoorArmor_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeWindshieldArmor_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeWindowArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeWindowArmor_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeDoor_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeDoor_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeWindshield_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeWindshield_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeWindow_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeWindow_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeHood_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeHood_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepCherokeeTrunkLid_WorldItem
+{
+	mesh = WorldItems/Jeep/Cherokee/CherokeeTrunkLid_WorldItem,
+	texture = Vehicles/JeepCherokee/Vehicle_JeepCherokee_White,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerBumper_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerBumper_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerDoorArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerDoorArmor_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerWindshieldArmor_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerWindowArmor_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerWindowArmor_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerDoor_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerDoor_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerWindshield_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerWindshield_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerWindow_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerWindow_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerHood_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerHood_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model JeepGrandWagoneerTrunkLid_WorldItem
+{
+	mesh = WorldItems/Jeep/JeepGrandWagoneerTrunkLid_WorldItem,
+	texture = Vehicles/JeepGrandWag/Vehicle_JeepGrandWag_OlympWhite,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15WindshieldArmor_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15WindshieldArmor_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15DoorArmor_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15DoorArmor_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15WindowArmor_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15WindowArmor_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15Bumper_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15Bumper_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15Door_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15Door_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15Windshield_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15Windshield_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15Window_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15Window_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15Hood_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15Hood_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GMCJimmyS15TrunkLid_WorldItem
+{
+	mesh = WorldItems/GMC/GMCJimmyS15TrunkLid_WorldItem,
+	texture = Vehicles/GMCJim/Vehicle_GMCJim_WhiteBlack,
+	scale = 0.5,
+}
+
+	model GrummanLLVDoor_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVDoor_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVWindshield_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVWindshield_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVWindow_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVWindow_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVHood_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVHood_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVRollUpDoor_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVRollUpDoor_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVBumper_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVBumper_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVDoorArmor_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVDoorArmor_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model GrummanLLVWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Grumman/GrummanLLVWindshieldArmor_WorldItem,
+	texture = Vehicles/GrumLLV/Vehicle_Grum_White,
+	scale = 0.5,
+}
+
+	model HahnPumperBumper_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperBumper_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model HahnPumperWindshieldArmor_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperWindshieldArmor_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model HahnPumperWindowArmor_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperWindowArmor_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model HahnPumperWindshield_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperWindshield_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model HahnPumperDoor_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperDoor_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model HahnPumperWindow_WorldItem
+{
+	mesh = WorldItems/Hahn/HahnPumperWindow_WorldItem,
+	texture = Vehicles/HahnPumper/Vehicle_Hahn86Pump_Yellow,
+	scale = 0.5,
+}
+
+	model CadillacGageRangerDoor_WorldItem
+{
+	mesh = WorldItems/CadillacGage/CadillacGageRangerDoor_WorldItem,
+	texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
+	scale = 0.5,
+}
+
+	model CadillacGageRangerWindshield_WorldItem
+{
+	mesh = WorldItems/CadillacGage/CadillacGageRangerWindshield_WorldItem,
+	texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
+	scale = 0.5,
+}
+
+	model CadillacGageRangerWindow_WorldItem
+{
+	mesh = WorldItems/CadillacGage/CadillacGageRangerWindow_WorldItem,
+	texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
+	scale = 0.5,
+}
+
+	model CadillacGageRangerHood_WorldItem
+{
+	mesh = WorldItems/CadillacGage/CadillacGageRangerHood_WorldItem,
+	texture = Vehicles/CadillacRang/Vehicle_RangerSC_BlackPolice,
+	scale = 0.5,
+}
+
+	model CrownFirecoachDoor_WorldItem
+{
+	mesh = WorldItems/Firecoach/FirecoachDoor_WorldItem,
+	texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
+	scale = 0.5,
+}
+
+	model CrownFirecoachWindow_WorldItem
+{
+	mesh = WorldItems/Firecoach/FirecoachWindow_WorldItem,
+	texture = Vehicles/FireCoach/Vehicle_FireCoachRed,
 	scale = 0.5,
 }
 
