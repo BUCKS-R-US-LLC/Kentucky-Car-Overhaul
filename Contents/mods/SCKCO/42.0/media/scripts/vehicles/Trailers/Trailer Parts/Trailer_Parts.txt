@@ -18,11 +18,11 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	JeepLogo,
+        Icon	=	SCKCO/Parts/Trailer/TrailerTrunkLid,
         VehicleType =  2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93JeepCJTrunkLid_WorldItem,
+        WorldStaticModel = TrailerTrunkLid_WorldItem,
     }
 
         item TrailerWindowSC2
@@ -54,10 +54,10 @@ module SCKCO
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
         ItemType = base:normal,
-        Icon	=	JeepLogo,
+        Icon	=	SCKCO/Parts/Trailer/M1011Tarp,
         VehicleType =  2,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = 93JeepCJTrunkLid_WorldItem,
+        WorldStaticModel = M1011Tarp_WorldItem,
     }
 }
