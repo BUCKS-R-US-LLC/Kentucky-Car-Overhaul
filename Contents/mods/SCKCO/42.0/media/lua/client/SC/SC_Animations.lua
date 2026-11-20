@@ -332,6 +332,13 @@ local vehicleToSeatAnimations = {
 		["seat3"]="Shark_Idle_SidePassenger2",
 	},
 
+	["Base.SC_FordF700Armored_Bubba"] = {
+        ["seat0"]="Bob_Idle_Driver",
+		["seat1"]="Shark_Idle_Passenger",
+		["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
+
 	["Base.SC_Oliver2050"] = {
         ["seat0"]="Bob_Idle_Driver",
 	},

@@ -70,6 +70,7 @@ if VehicleZoneDistribution then
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700Armored_Dunbar"] = {index = -1, spawnChance = 0.1}
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700Armored_Brinks"] = {index = -1, spawnChance = 0.1}
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700Armored_Transport"] = {index = -1, spawnChance = 0.1}
+    VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700Armored_Bubba"] = {index = -1, spawnChance = 0.05}
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_FordF700DumpTruck"] = {index = -1, spawnChance = 0.5};    
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_MackDM800_Garbage"] = {index = -1, spawnChance = 0.2};       
     VehicleZoneDistribution.parkingstall.vehicles["Base.SC_SmallUtilityTrailer"] = {index = -1, spawnChance = 1};   
