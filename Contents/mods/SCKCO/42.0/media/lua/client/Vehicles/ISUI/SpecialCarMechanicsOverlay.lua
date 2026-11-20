@@ -6,6 +6,15 @@ ISCarMechanicsOverlay.CarList["Base.SC_Oliver2050"] = {imgPrefix = "oliver2050_"
 ISCarMechanicsOverlay.CarList["Base.SC_GrummanLLV"] = {imgPrefix = "grum_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CadillacGageRanger"] = {imgPrefix = "ranger_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_CadillacGageRangerLights"] = {imgPrefix = "ranger_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_NissanPathfinder"] = {imgPrefix = "pathfinder_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_M1101Trailer"] = {imgPrefix = "m1101_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_M1101TrailerSurplus"] = {imgPrefix = "m1101_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_FermontGenerator"] = {imgPrefix = "m1101_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_M149Trailer"] = {imgPrefix = "m149_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_M353Trailer"] = {imgPrefix = "m353_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_MediumEnclosedTrailer"] = {imgPrefix = "enclosedtrailer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_MediumLivestockTrailer"] = {imgPrefix = "livestocktrailer_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_SmallUtilityTrailer"] = {imgPrefix = "utilitytrailer_", x=0,y=0};
 
 --
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};

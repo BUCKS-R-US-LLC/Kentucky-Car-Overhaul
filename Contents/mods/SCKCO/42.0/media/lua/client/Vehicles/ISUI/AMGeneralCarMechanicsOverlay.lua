@@ -17,12 +17,13 @@ ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Soft_Tan"] = {imgPrefix = "m
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Hard_3Tone"] = {imgPrefix = "m998_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Hard_OD"] = {imgPrefix = "m998_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM998Hard_Tan"] = {imgPrefix = "m998_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A2"] = {imgPrefix = "M35A1_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A2_MERDC"] = {imgPrefix = "M35A1_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A2"] = {imgPrefix = "m35a1_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM35A2_MERDC"] = {imgPrefix = "m35a1_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_3Tone"] = {imgPrefix = "m151_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_Tan"] = {imgPrefix = "m151_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_MERDC"] = {imgPrefix = "m151_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_Cleaners"] = {imgPrefix = "m151_", x=0,y=0};
+ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM49A2C"] = {imgPrefix = "m35a1_", x=0,y=0};
 
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};
