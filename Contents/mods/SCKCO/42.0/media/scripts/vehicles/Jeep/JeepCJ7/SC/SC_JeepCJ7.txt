@@ -78,7 +78,7 @@ module Base
 	model JeepCJ7SpareWheel
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|SpareWheel_obj,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 		scale = 1,
 		static = FALSE,
 		boneWeight = WheelBone 1.0,
@@ -86,12 +86,12 @@ module Base
 	model JeepCJ7wheelleft
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_LeftWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 	}
 	model JeepCJ7wheelright
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_RightWheel,
-		texture = vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
+		texture = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Wheel,
 	}
 	vehicle SC_JeepCJ7
 	{
@@ -154,10 +154,10 @@ module Base
 
 		textureMask = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Mask,
 		textureLights = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Lights,
-		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_blood,
-		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_blood,
-		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_damage1,
-		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_damage2,
+		textureDamage1Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage2Overlay = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Blood,
+		textureDamage1Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Damage1,
+		textureDamage2Shell = Vehicles/JeepCJ7/Vehicle_JeepCJ7_Damage2,
 	    textureRust = Vehicles/SharedTextures/vehicle_norust,
 
 		sound

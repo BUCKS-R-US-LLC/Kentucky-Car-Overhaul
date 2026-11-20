@@ -103,13 +103,13 @@ module Base
 	model GeoTrackerwheelleft
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_LeftWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		texture = Vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		scale = 0.8,
 	}
 	model GeoTrackerwheelright
 	{
 		mesh = vehicles/Ford/Vehicle_Bronco1992_RightWheel,
-		texture = vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
+		texture = Vehicles/FordBronco/Vehicle_Bronco1992_Wheel,
 		scale = 0.8,
 	}
 	vehicle SC_GeoTracker
@@ -183,12 +183,12 @@ module Base
 			texture = Vehicles/GeoTracker89/Vehicle_GeoTracker89_PurpleLivery,
 		}
 
-		textureMask = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Masks,
-		textureLights = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Lights,
+		textureMask = Vehicles/GeoTracker89/Vehicle_GeoTracker89_masks,
+		textureLights = Vehicles/GeoTracker89/Vehicle_GeoTracker89_lights,
 		textureDamage1Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_blood,
 		textureDamage2Overlay = Vehicles/GeoTracker89/Vehicle_GeoTracker89_blood,
-		textureDamage1Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_damage1,
-		textureDamage2Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_damage2,
+		textureDamage1Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Damage1,
+		textureDamage2Shell = Vehicles/GeoTracker89/Vehicle_GeoTracker89_Damage2,
 		textureRust = Vehicles/SharedTextures/vehicle_norust,
 
 		sound

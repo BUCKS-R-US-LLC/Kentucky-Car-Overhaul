@@ -1,6 +1,13 @@
 module SCKCO
 {
 
+	model RT524_WorldItem
+	{
+		mesh = WorldItems/Radios/RT524_WorldItem,
+		texture = Vehicles/M151A2/Vehicle_HM151_Radio,
+		scale = 0.5,
+	}
+
 		model PRC113_WorldItem
 	{
 		mesh = WorldItems/Radios/PRC113_WorldItem,
@@ -166,7 +173,7 @@ module SCKCO
 
 		model ChevyCKWindshield_WorldItem
 	{
-		mesh = WorldItems/Chevrolet/KSeries/K5WindShield_WorldItem,
+		mesh = WorldItems/Chevrolet/KSeries/K5Windshield_WorldItem,
 		texture = Vehicles/K5/Vehicle_BlazerSC_White,
 		scale = 0.5,
 	}
@@ -1214,7 +1221,7 @@ model ChevyCamaroLouvers_WorldItem
 		model M1010RearWindows_WorldItem
 	{
 		mesh = WorldItems/CUCV/M1010RearWindows_WorldItem,
-		texture = vehicles/CUCV/Vehicle_M1010Ambulance_SC,
+		texture = Vehicles/CUCV/Vehicle_M1010Ambulance_SC,
 		scale = 0.5,
 	}
 

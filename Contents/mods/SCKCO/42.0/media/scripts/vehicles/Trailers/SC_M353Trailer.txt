@@ -2,7 +2,7 @@ module Base
 {
 	model SC_M353FuelTank
 	{
-		mesh = Vehicles/Trailer/Vehicle_M353Fuel|M353,
+		mesh = vehicles/Trailer/Vehicle_M353Fuel|M353,
 		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
@@ -10,13 +10,13 @@ module Base
 	model M353wheelleft
 	{
 		mesh = vehicles/Trailer/Vehicle_M353Fuel_LeftWheel,
-		texture = Vehicles/Trailer/Vehicle_M353Fuel_Wheel,
+		texture = Vehicles/Trailer/Vehicle_M353Fuel_wheel,
 		scale = 0.01,
 	}
 	model M353wheelright
 	{
 		mesh = vehicles/Trailer/Vehicle_M353Fuel_RightWheel,
-		texture = Vehicles/Trailer/Vehicle_M353Fuel_Wheel,
+		texture = Vehicles/Trailer/Vehicle_M353Fuel_wheel,
 		scale = 0.01,
 	}
 	vehicle SC_M353Trailer
@@ -37,7 +37,7 @@ module Base
 
         skin
         {
-            texture = Vehicles\Trailer\Vehicle_M353Fuel_3tone,
+            texture = Vehicles/Trailer/Vehicle_M353Fuel_3Tone,
         }
 
         skin

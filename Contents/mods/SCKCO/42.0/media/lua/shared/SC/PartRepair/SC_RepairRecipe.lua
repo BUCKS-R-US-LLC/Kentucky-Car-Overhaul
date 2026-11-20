@@ -16,7 +16,7 @@
     character's inventory for the most damaged item of the expected class.
 ]]
 
-require "SCKCO_PartRepair"
+require "SC/PartRepair/SC_PartRepair"
 
 -- Flat global, matching vanilla's RecipeCodeOnCreate.<fn> shape. OnCreate resolves a
 -- single-level namespace; SCKCO.RepairRecipe.armor would be two levels deep.
@@ -85,12 +85,14 @@ function RR.repair(craftRecipeData, character, cls)
 
     local ceiling = AR.getConditionCeiling(item)
     if part:getCondition() >= ceiling then
-        character:setHaloNote(getText("IGUI_SCKCO_AlreadyFull"), 255, 160, 60, 300)
+        AR.notify(character, "IGUI_SCKCO_AlreadyFull", 255, 160, 60)
         return
     end
 
+    -- OnCreate runs on the server in MP, so the roll and the item changes below are
+    -- authoritative there; syncItemFields carries condition and ModData to the owner
     if ZombRand(100) < AR.getFailChance(character, part, item) then
-        character:setHaloNote(AR.text(part, "Failed"), 255, 160, 60, 300)
+        AR.notify(character, AR.textKey(part, "Failed"), 255, 160, 60)
         return
     end
 
@@ -100,11 +102,12 @@ function RR.repair(craftRecipeData, character, cls)
 
     -- the counter is the whole point: without it the bench path never decays the ceiling
     AR.addRepair(item)
+    syncItemFields(character, item)
 
     local xp = SCKCO.PartRepair.getOption("RepairXP")
     local profile = AR.getProfile(part)
     if profile and profile.skill then
-        character:getXp():AddXP(Perks[profile.skill], xp)
+        addXp(character, Perks[profile.skill], xp)
     end
 end
 

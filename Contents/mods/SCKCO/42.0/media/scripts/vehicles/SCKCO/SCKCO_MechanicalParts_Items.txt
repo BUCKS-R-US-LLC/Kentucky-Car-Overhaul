@@ -103,7 +103,6 @@ module SCKCO
         UseDelta = 0.014,
         UseWhileEquipped = false,
         UsesBattery = true,
-        WorldStaticModel = MicorRadio_WorldItem,
     }
 
     item SpectraRadioSC
@@ -128,7 +127,6 @@ module SCKCO
         UseDelta = 0.014,
         UseWhileEquipped = false,
         UsesBattery = true,
-        WorldStaticModel = SpectraRadio_WorldItem,
     }
 
     item SyntorX9000SC
@@ -153,7 +151,6 @@ module SCKCO
         UseDelta = 0.014,
         UseWhileEquipped = false,
         UsesBattery = true,
-        WorldStaticModel = SyntorX9000_WorldItem,
     }
 
     item RT524SC
@@ -161,7 +158,7 @@ module SCKCO
         DisplayCategory = Communications,
         ItemType = base:radio,
         Weight = 15.0,
-        Icon = HamRadioMilitary,
+        Icon = SCKCO/Parts/Radios/RT524,
         BaseVolumeRange = 15,
         ConditionMax = 100,
         DisappearOnUse = false,

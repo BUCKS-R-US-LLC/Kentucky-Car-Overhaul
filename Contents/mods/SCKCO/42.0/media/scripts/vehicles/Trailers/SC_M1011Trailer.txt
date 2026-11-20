@@ -2,14 +2,14 @@ module Base
 {
 	model SC_M1101
 	{
-		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|base_mesh,
+		mesh = vehicles/Trailer/Vehicle_M1101Trailer|base_mesh,
 		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 	model SC_M1101Trunk
 	{
-		mesh = Vehicles/Trailer/Vehicle_M1101Trailer|Trunkdoor_obj,
+		mesh = vehicles/Trailer/Vehicle_M1101Trailer|Trunkdoor_obj,
 		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkBone 1.0,
@@ -34,13 +34,13 @@ module Base
 	model M1011wheelleft
 	{
 		mesh = vehicles/Trailer/Vehicle_M1011Trailer_LeftWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
 		scale = 0.01,
 	}
 	model M1011wheelright
 	{
 		mesh = vehicles/Trailer/Vehicle_M1011Trailer_RightWheel,
-		texture = Vehicles/HMMWV/Vehicle_HM1025_Wheel,
+		texture = Vehicles/HMMWV/Vehicle_HM1025_wheel,
 		scale = 0.01,
 	}
 	vehicle SC_M1101Trailer

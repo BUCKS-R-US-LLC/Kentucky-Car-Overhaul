@@ -72,7 +72,7 @@ module Base
 	    part SCArmorBumper
 	    {
             model Default { file = CadillacFuneralCoachBullbar, }
-            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+            itemType = SCKCO.CadillacFleetwoodBumperSC,
         }
 
         template = armorUpgrades/part/SCArmorWindshield,
@@ -86,7 +86,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = CadillacFuneralCoachFRWA, }
-            itemType = SCKCO.CadillacFleetwoodDoorArmorSC,
+            itemType = SCKCO.CadillacFleetwoodWindowArmorSC,
 			parent = WindowFrontRight,
             requireInstalled = CadillacFuneralCoachDoorArmorSC,
         }

@@ -19,14 +19,14 @@ module Base
     model M998HardtopGreen
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|HardTop_obj,
-		texture = Vehicles/HMMWV/ODHardtop,
+		texture = Vehicles/HMMWV/ODHardTop,
 		scale = 1.0,
 	}
 
     model M998Hardtop3Tone
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|HardTop_obj,
-		texture = Vehicles/HMMWV/3ToneHardtop,
+		texture = Vehicles/HMMWV/3ToneHardTop,
 		scale = 1.0,
 	}
 
@@ -312,7 +312,7 @@ module Base
 
 			area = SideContainer1,
 			category = nodisplay,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -340,7 +340,7 @@ module Base
 
 			area = SideContainer2,
 			category = nodisplay,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -553,7 +553,7 @@ module Base
 
 			area = SideContainer1,
 			category = nodisplay,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -581,7 +581,7 @@ module Base
 
 			area = SideContainer2,
 			category = nodisplay,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			container
@@ -641,7 +641,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = SCKCO.TrunkDoor,
+			itemType = Base.TrunkDoor,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
@@ -728,7 +728,7 @@ module Base
 				rate = 0.3,
 				angle = 0.0 0.0 0.0,
 			}
-			itemType = SCKCO.TrunkDoor,
+			itemType = Base.TrunkDoor,
 			mechanicRequireKey = true,
 			repairMechanic = true,
 			table install
@@ -781,7 +781,7 @@ module Base
 		part SideContainer1
 		{
 			area = SideContainer1,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			category = nodisplay,
@@ -802,7 +802,7 @@ module Base
 		{
 			area = SideContainer2,
 			category = nodisplay,
-			itemType = SCKCO.NormalTrunk,
+			itemType = Base.NormalTrunk,
 			mechanicRequireKey = false,
 			repairMechanic = false,
 			category = nodisplay,

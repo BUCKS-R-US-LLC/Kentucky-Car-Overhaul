@@ -2,14 +2,14 @@ module Base
 {
 	model SC_MediumEnclosedTrailer
 	{
-		mesh = Vehicles/Trailer/Vehicle_MediumEnclosedTrailer|base_mesh,
+		mesh = vehicles/Trailer/Vehicle_MediumEnclosedTrailer|base_mesh,
 		shader = SC_vehicle_noreflect,
 		invertX = FALSE,
 		scale = 0.01,
 	}
 	model SC_MediumEnclosedTrailerTrunk
 	{
-		mesh = Vehicles/Trailer/Vehicle_MediumEnclosedTrailer|TrunkDoor_obj,
+		mesh = vehicles/Trailer/Vehicle_MediumEnclosedTrailer|TrunkDoor_obj,
 		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		boneWeight = TrunkLeftBone 1.0,

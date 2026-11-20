@@ -4,14 +4,14 @@ module Base
     model JeepCJ7Bumper
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|FrontBumper_obj,
-        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+        texture = Vehicles/JeepCJ7/JeepCJ7ArmorParts1,
 		scale = 1,
 	}
 
 	model JeepCJ7WindshieldArmor
 	{
 		mesh = vehicles/Jeep/Vehicle_JeepCJ7_SC|WindshieldArmor_obj,
-        texture = vehicles/JeepCJ7/JeepCJ7ArmorParts1,
+        texture = Vehicles/JeepCJ7/JeepCJ7ArmorParts1,
 		scale = 1,
 	}
 
@@ -77,7 +77,7 @@ module Base
         part SCArmorFrontRightWindow
         {
             model Default { file = JeepCJ7FRWA, }
-            itemType = SCKCO.JeepCJ7DoorArmorSC,
+            itemType = SCKCO.JeepCJ7WindowArmorSC,
             parent = WindowFrontRight,
             requireInstalled = JeepCJ7DoorArmorSC,
         }

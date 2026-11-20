@@ -76,25 +76,25 @@ module Base
 	model M151Radio
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|Radio_obj,
-		texture = vehicles/M151A2/Vehicle_HM151_Radio,
+		texture = Vehicles/M151A2/Vehicle_HM151_Radio,
 		scale = 1,
 	}
 	model M151SpareWheel
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|SpareWheel_obj,
-		texture = vehicles/M151A2/Vehicle_HM151_wheel,
+		texture = Vehicles/M151A2/Vehicle_HM151_wheel,
 		scale = 1,
 	}
 	model M151Antenna
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RadioAntenna_obj,
-		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
+		texture = Vehicles/M151A2/Vehicle_HM151_Antenna,
 		scale = 1,
 	}
 	model M151JerryCan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RightJerryCan_obj,
-		texture = vehicles/M151A2/GIJerryCan,
+		texture = Vehicles/M151A2/GIJerryCan,
 		scale = 1,
 	}
 	model M151Windshield
@@ -132,13 +132,13 @@ module Base
 	model M151wheelleft
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_LeftWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
+		texture = Vehicles/M151A2/Vehicle_HM151_wheel,
 		
 	}
 	model M151wheelright
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_RightWheel,
-		texture = vehicles/M151A2/Vehicle_HM151_Wheel,
+		texture = Vehicles/M151A2/Vehicle_HM151_wheel,
 		
 	}
 	vehicle SC_AMGeneralM151A2_MERDC
@@ -170,8 +170,8 @@ module Base
 		textureRust = Vehicles/SharedTextures/vehicle_norust,
 		textureMask = Vehicles/M151A2/Vehicle_HM151_mask,
 		textureLights = Vehicles/M151A2/Vehicle_HM151_lights,
-		textureDamage1Shell = Vehicles/M151A2/Vehicle_HM151_damage1,
-		textureDamage2Shell= Vehicles/M151A2/Vehicle_HM151_damage2,
+		textureDamage1Shell = Vehicles/M151A2/Vehicle_HM151_Damage1,
+		textureDamage2Shell= Vehicles/M151A2/Vehicle_HM151_Damage2,
 		textureDamage1Overlay = Vehicles/M151A2/Vehicle_HM151_blood,
 		textureDamage2Overlay = Vehicles/M151A2/Vehicle_HM151_blood,
 
