@@ -69,6 +69,11 @@ end
 
 -- One pass, using the same maths the installed-part path uses.
 function RR.repair(craftRecipeData, character, cls)
+    -- a craftRecipe cannot be hidden by a sandbox option, so the option is enforced here
+    if not AR.getOption("RepairLooseParts") then
+        AR.notify(character, "IGUI_SCKCO_LooseRepairDisabled", 255, 160, 60)
+        return
+    end
     local item, how = RR.resolveTarget(craftRecipeData, character, cls)
     if item == nil then
         print(TAG .. "no " .. tostring(cls) .. " item resolved; nothing repaired")
