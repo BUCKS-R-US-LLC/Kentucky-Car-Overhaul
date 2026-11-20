@@ -1804,6 +1804,7 @@ addEntry("SC_Mercedes280",      VehicleDistributions.SC_Luxury, { Lux_B, Lux_E, 
 
 -- Bubba
 addEntry("SC_ChevroletK10_Dixie", VehicleDistributions.SC_Bubba, { Hunter, Drinker, Smoker })
+addEntry("SC_JeepCJ7_Bubba", VehicleDistributions.SC_Bubba, { Hunter, Drinker, Smoker })
 
 -- ============================================================
 --  VANILLA SHARED NAMES — patch Specific onto existing entries

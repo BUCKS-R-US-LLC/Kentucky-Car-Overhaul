@@ -108,6 +108,7 @@ SCKCO.Data = {
 
 	["Base.OffRoad"] = {
 		vehicle("Base.SC_JeepCJ7", 50),
+		vehicle("Base.SC_JeepCJ7_Bubba", 10),
 		vehicle("Base.SC_GeoTracker", 50),
 	},
 
