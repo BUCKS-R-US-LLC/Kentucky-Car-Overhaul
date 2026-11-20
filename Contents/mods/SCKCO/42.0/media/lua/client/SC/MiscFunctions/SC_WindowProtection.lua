@@ -5,6 +5,7 @@ SCKCO.UnbreakableWindowVehicles = {
 	["Base.SC_FordF700Armored_Brinks"] = true,
 	["Base.SC_FordF700Armored_Dunbar"] = true,
 	["Base.SC_FordF700Armored_Transport"] = true,
+	["Base.SC_FordF700Armored_Bubba"] = true,
 	["Base.SC_CadillacGageRanger"] = true,
 	["Base.SC_CadillacGageRangerLights"] = true,
 	["Base.SC_AMGeneralM151A2_3Tone"] = true,
