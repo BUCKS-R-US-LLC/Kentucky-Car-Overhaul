@@ -139,7 +139,6 @@ local vehicleToSeatAnimations = {
 	["Base.PickUpTruckMccoy"] = "Default",
 	["Base.PickUpTruckLights"] = "Default",
 	["Base.PickUpTruckLightsFire"] = "Default",
-	["Base.PickUpTruck"] = "Default",
 	["Base.ModernCar"] = "Default",	
 	["Base.CarNormal"] = "Default",
 	["Base.CarTaxi"] = "Default",
@@ -208,7 +207,7 @@ local vehicleToSeatAnimations = {
 	["Base.SC_AMGeneralM1097"] = "6SideSeater",
 	["Base.SC_AMGeneralM1097Tan"] = "6SideSeater",
 	["Base.SC_ChevroletM1008TroopCarrier"] = "6SideSeater",
-	["Base.SC_ChevroletM1010Ambulance"] = "6SideSeater",
+	["Base.SC_ChevroletM1010Ambulance_3Tone"] = "Default",
 	["Base.SC_ChevroletM1010Ambulance_OD"] = "Default",
 	["Base.SC_ChevroletM1010Ambulance_DesertMERDC"] = "Default",
 	["Base.SC_AMGeneralM35A2_3ToneOD"] = "16SideSeater",
@@ -228,10 +227,6 @@ local vehicleToSeatAnimations = {
 
 	["Base.SC_ChevroletC70GrainTruck"] = "2Seater",
 	["Base.SC_ChevroletC70Survivalist"] = "2Seater",
-	["Base.SC_FordF700BoxTruck"] = "2Seater",
-	["Base.SC_FordF700PanelTruck"] = "2Seater",
-	["Base.SC_FordF700BoxTruck"] = "2Seater",
-	["Base.SC_FordF700PanelTruck"] = "2Seater",
 	["Base.SC_FordF700BoxTruck"] = "2Seater",
 	["Base.SC_FordF700PanelTruck"] = "2Seater",
 	["Base.SC_FordF15092"] = "2Seater",
@@ -256,7 +251,6 @@ local vehicleToSeatAnimations = {
 	["Base.StepVanMail"] = "4Seater",
 
 	["Base.SC_CadillacFuneralCoach"] = "4SeatUtility",
-	["Base.SC_FordMustang90_Undercover"] = "4SeatUtility",
 
 	["Base.SC_FordF350Ambulance_StPeregrin"] = "4SeatSport",
 	["Base.SC_FordF350Ambulance_Meade"] = "4SeatSport",

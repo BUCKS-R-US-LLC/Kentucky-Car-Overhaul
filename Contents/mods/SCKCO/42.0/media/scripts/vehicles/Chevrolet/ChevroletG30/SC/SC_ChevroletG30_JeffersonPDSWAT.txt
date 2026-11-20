@@ -33,7 +33,7 @@ module Base
 		shader = vehicleutest,
 		scale = 1,
 	}
-	model G30VanfrontRightWindow
+	model G30VanBoxSWATFrontRightWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontRightWindow_obj.001,
 		shader = vehicleutest,
@@ -42,7 +42,7 @@ module Base
 		boneWeight = FrontRightWindowBone 1.0,
 		boneWeight = FrontRightWindowArmorBone 1.0,
 	}
-	model G30VanfrontLeftWindow
+	model G30VanBoxSWATFrontLeftWindow
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontLeftWindow_obj,
 		shader = vehicleutest,
@@ -51,7 +51,7 @@ module Base
 		boneWeight = FrontLeftWindowBone 1.0,
 		boneWeight = FrontLeftWindowArmorBone 1.0,
 	}
-	model G30VanfrontRightDoor
+	model G30VanBoxSWATFrontRightDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontRightDoor_obj,
 		shader = vehicleutest,
@@ -59,7 +59,7 @@ module Base
 		scale = 1,
 		boneWeight = FrontRightDoorBone 1.0,
 	}
-	model G30VanfrontLeftDoor
+	model G30VanBoxSWATFrontLeftDoor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanSWAT_SC|FrontLeftDoor_obj,
 		shader = vehicleutest,
@@ -572,7 +572,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = G30VanfrontRightWindow,
+				file = G30VanBoxSWATFrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -591,7 +591,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = G30VanfrontLeftWindow,
+				file = G30VanBoxSWATFrontLeftWindow,
 			}
 
 			anim ClosedToOpen
@@ -610,7 +610,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanfrontRightDoor,
+				file = G30VanBoxSWATFrontRightDoor,
 			}
 
 			anim Close
@@ -648,7 +648,7 @@ module Base
 		{
 			model Default
 			{
-				file = G30VanfrontLeftDoor,
+				file = G30VanBoxSWATFrontLeftDoor,
 			}
 
 			anim Close

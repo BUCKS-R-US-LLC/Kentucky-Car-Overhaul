@@ -1,7 +1,6 @@
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCJ7"] = {imgPrefix = "jeepcj7_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCJ7_Bubba"] = {imgPrefix = "jeepcj7_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCherokee"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
-ISCarMechanicsOverlay.CarList["Base.SC_JeepCherokee_Audubon"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepGrandWagoneer"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_JeepCherokee_AudubonPD"] = {imgPrefix = "jeepcherokee_", x=0,y=0};
 
