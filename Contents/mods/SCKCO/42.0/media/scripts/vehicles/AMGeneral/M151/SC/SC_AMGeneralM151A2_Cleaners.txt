@@ -94,7 +94,7 @@ module Base
 	model M151JerryCan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM151A2_SC|RightJerryCan_obj,
-		texture = vehicles/M151A2/Vehicle_HM151_Antenna,
+		texture = vehicles/M151A2/GIJerryCan,
 		scale = 1,
 	}
 	model M151Windshield
@@ -567,7 +567,7 @@ module Base
 		{
 			model windowFR
 			{
-				file = M151RightWindow,
+				file = M151FrontRightWindow,
 			}
 
 			anim ClosedToOpen
@@ -591,7 +591,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = M151LeftWindow,
+				file = M151FrontLeftWindow,
 			}
 
 			anim ClosedToOpen

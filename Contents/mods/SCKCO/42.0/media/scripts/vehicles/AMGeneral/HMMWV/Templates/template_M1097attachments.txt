@@ -56,14 +56,32 @@ module Base
     model M1097TopCoverTan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|TopCover_obj,
-		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_TanFlatbed,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_DesertCab,
 		scale = 1.0,
 	}
 
 	model M1097RearTarpTan
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearTarp_obj,
-		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_TanFlatbed,
+		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_DesertFlatbed,
+		scale = 1.0,
+	}
+
+	model M1097FrontLeftWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftWindowArmor_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_OD,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
+		scale = 1.0,
+	}
+
+	model M1097FrontRightWindowArmor
+	{
+		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontRightWindowArmor_obj,
+		texture = Vehicles/HMMWV/Vehicle_HM998Hardtop_OD,
+		shader = SC_vehicle_noreflect,
+		static = FALSE,
 		scale = 1.0,
 	}
 
@@ -85,22 +103,6 @@ module Base
 	model M1097FrontRightDoorArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|FrontRightArmor_obj,
-		shader = SC_vehicle_noreflect,
-		static = FALSE,
-		scale = 1.0,
-	}
-
-    model M1097RearLeftDoorArmor
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearLeftArmor_obj,
-		shader = SC_vehicle_noreflect,
-		static = FALSE,
-		scale = 1.0,
-	}
-
-	model M1097RearRightDoorArmor
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM1097FlatBed_SC|RearRightArmor_obj,
 		shader = SC_vehicle_noreflect,
 		static = FALSE,
 		scale = 1.0,
@@ -170,58 +172,6 @@ module Base
         {
             model Default { file = M1097FrontLeftDoorArmor, }
 			parent = DoorFrontLeft,
-            itemType = SCKCO.HMMWVDoorArmorSC,
-
-			table armorBehavior
-            {
-                damageAbsorptionOneTo = 0.5,
-            }
-        }
-
-        template = armorUpgrades/part/SCArmorRearRightWindow,
-        part SCArmorRearRightWindow
-        {
-            model Default { file = M1097RearRightWindowArmor, }
-			parent = WindowRearRight,
-            itemType = SCKCO.HMMWVWindowArmorSC,
-			
-			table armorBehavior
-            {
-                damageAbsorptionOneTo = 0.5,
-            }
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftWindow,
-        part SCArmorRearLeftWindow
-        {
-            model Default { file = M1097RearLeftWindowArmor, }
-			parent = WindowRearRight,
-            itemType = SCKCO.HMMWVWindowArmorSC,
-
-			table armorBehavior
-            {
-                damageAbsorptionOneTo = 0.5,
-            }
-        }
-
-        template = armorUpgrades/part/SCArmorRearRightDoor,
-        part SCArmorRearRightDoor
-        {
-            model Default { file = M1097RearRightDoorArmor, }
-			parent = DoorRearRight,
-            itemType = SCKCO.HMMWVDoorArmorSC,
-
-			table armorBehavior
-            {
-                damageAbsorptionOneTo = 0.5,
-            }
-        }
-
-        template = armorUpgrades/part/SCArmorRearLeftDoor,
-        part SCArmorRearLeftDoor
-        {
-            model Default { file = M1097RearLeftDoorArmor, }
-			parent = DoorRearLeft,
             itemType = SCKCO.HMMWVDoorArmorSC,
 
 			table armorBehavior
