@@ -97,13 +97,15 @@ local function SC_applySpecials(vehicle, part, partTable)
     if partTable.militaryIgnition and not vehicle:isHotwired() then vehicle:setHotwired(true) end
 
     if partTable.noLockDoors then
-        for i=0, vehicle:getPartCount() do
+        for i=0, vehicle:getPartCount()-1 do
             ---@type VehiclePart
             local partByIndex = vehicle:getPartByIndex(i)
             local door = partByIndex and partByIndex:getDoor()
-            if door then
+            -- runs every part update: only write and sync when the state actually differs
+            if door and (door:isLocked() or not door:isLockBroken()) then
                 door:setLocked(false)
                 door:setLockBroken(true)
+                vehicle:transmitPartDoor(partByIndex)
             end
         end
     end
@@ -178,7 +180,8 @@ function Vehicles.Create.SCKCO_VehiclePartVariation(vehicle, part)
 
     --print("vehicleID: ",vehicleID," part:", part:getId(), " chance:",chance)
 
-    if (not chance) or (chance and (ZombRand(0, 101) <= chance)) then
+    -- ZombRand(100) is 0..99, so chance 0 never passes and chance 100 always does
+    if (not chance) or (ZombRand(100) < chance) then
 
         SC_applySpecials(vehicle, part, partTable)
         

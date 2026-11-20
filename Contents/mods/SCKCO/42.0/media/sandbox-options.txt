@@ -353,3 +353,21 @@ option SCKCO.RepairXPPerDamage
 	page = SCKCO,
 	translation = SCKCO_RepairXPPerDamage,
 }
+
+option SCKCO.LighterEnabled
+{
+	type = boolean,
+	default = true,
+	page = SCKCO,
+	translation = SCKCO_LighterEnabled,
+}
+
+option SCKCO.LighterMinCharge
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 5,
+	page = SCKCO,
+	translation = SCKCO_LighterMinCharge,
+}

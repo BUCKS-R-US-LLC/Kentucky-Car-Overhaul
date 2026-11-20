@@ -20,9 +20,13 @@ local function hasLighter(vehicle)
     return p ~= nil and p:getInventoryItem() ~= nil and p:getCondition() > 0
 end
 
+-- charge as a percentage (0-100), matching the LighterMinCharge option. A broken battery or an
+-- empty slot reads as 0. Condition alone is not charge: a good battery can be flat.
 local function batteryCharge(vehicle)
     local b = vehicle:getPartById("Battery")
-    return b and b:getCondition() or 0
+    local item = b and b:getInventoryItem()
+    if not item or b:getCondition() <= 0 then return 0 end
+    return item:getCurrentUsesFloat() * 100
 end
 
 -- EatType rather than a tag query: InventoryItem:hasTag is not exposed to Lua in B42.
@@ -95,12 +99,12 @@ local function onContext(playerNum, context, worldObjects, test)
     if #smokes == 0 then return end
 
     if #smokes == 1 then
-        context:addOption("Light " .. smokes[1]:getName() .. " with dashboard lighter", player,
+        context:addOption(getText("IGUI_SCKCO_LighterLight", smokes[1]:getName()), player,
             onUseLighter, vehicle, smokes[1], minCharge)
         return
     end
 
-    local option = context:addOption("Use dashboard lighter", nil, nil)
+    local option = context:addOption(getText("IGUI_SCKCO_LighterMenu"), nil, nil)
     local sub = ISContextMenu:getNew(context)
     context:addSubMenu(option, sub)
     for i = 1, #smokes do

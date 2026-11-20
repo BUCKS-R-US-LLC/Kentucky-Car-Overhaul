@@ -48,49 +48,9 @@ function VehicleFunctions.clickedVehicle(vehicle)
     return false
 end
 
---------------------------------------------------------------------------------
--- Config
---------------------------------------------------------------------------------
--- All tunables live here. Rates are per update tick (empirically calibrated so a full
--- 2000 L transfer takes about 1 minute of real time at the game's actual update rate).
--- Times are ceilings; the action ends earlier when the source runs dry or the target fills.
-SCKCO.VehicleFunctions.Config = SCKCO.VehicleFunctions.Config or {
-    -- transfer rates (litres per tick)
-    rate_container      = 0.33,   -- container <-> tank (fill/draw a jerry can, etc.)
-    rate_tank_to_tank   = 0.33,   -- vehicle-to-vehicle content transfer
-    rate_fuel_dispense  = 0.02,   -- tanker -> vehicle gas tank; vanilla-equivalent (~50 ticks/L)
-    rate_hydrant        = 0.33,   -- hydrant -> cistern; matches pump->tanker feel
-    rate_draft          = 0.33,   -- river/lake -> cistern; matches pump->tanker feel
-    rate_pump_refuel    = 0.33,   -- gas pump -> tanker
-    rate_drain          = 0.33,   -- drain tank to ground (fluid discarded); 1:1 with fill rates
-    -- action ceilings (ticks). Kept large; actions end when source/target hits limits.
-    time_ceiling        = 6000,
-    -- proximity radii (tiles)
-    proximity_action    = 6,      -- how close the player must be to a station vehicle
-    proximity_hydrant   = 4,      -- hydrant search around cistern
-    proximity_draft     = 4,      -- water tile search around cistern
-    proximity_pump      = 3,      -- pump search around tanker
-    proximity_target    = 3,      -- target vehicle search around source
-    -- sounds & animations (mirroring vanilla ISTakeGasolineFromPump / ISTakeGasolineFromVehicle)
-    pump_sound          = "VehicleAddFuelFromGasPump",
-    pump_anim           = "fill_container_tap",
-    container_sound     = "GeneratorAddFuel",         -- vanilla ISAddFuel start sound
-    container_anim      = "refuelgascan",          -- vanilla can-refuel animation state  -- vanilla ISRefuelFromGasPump anim state
-    dispense_sound      = "VehicleAddFuelFromGasPump",
-    dispense_anim       = "fill_container_tap",
-    dispense_icon       = "media/ui/vehicles/vehicle_refuel_from_pump.png",
-    dispense_label      = "ContextMenu_VehicleRefuelFromPump",
-}
+-- Config, part lists, helpers and the converted actions live in
+-- shared/SC/VehicleFunctions/SC_VehicleStations_Core.lua so the server has them.
 local Config = SCKCO.VehicleFunctions.Config
-
--- Part id lists shared across files. Any station action that operates on a tank looks these up.
-VehicleFunctions.TANK_PARTS = {
-    "WaterTankSC",
-    "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC",
-    "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC",
-}
-VehicleFunctions.CISTERN_PARTS  = { "SmallCisternSC",  "MediumCisternSC",  "LargeCisternSC" }
-VehicleFunctions.FUELTANK_PARTS = { "SmallFuelTankSC", "MediumFuelTankSC", "LargeFuelTankSC" }
 
 
 --------------------------------------------------------------------------------
@@ -118,95 +78,6 @@ function VehicleFunctions.contextVehicle(player, worldobjects)
         end
     end
     return nil
-end
-
--- Marker gate: returns part,item when the marker part is installed with condition>0 and holds
--- its item; otherwise nil.
-function VehicleFunctions.marker(vehicle, partId)
-    local p = vehicle and vehicle:getPartById(partId)
-    if not p or p:getCondition() <= 0 then return nil, nil end
-    local item = p:getInventoryItem()
-    if not item then return nil, nil end
-    return p, item
-end
-
--- First installed marker part from a list; returns part, item, id.
-function VehicleFunctions.markerAny(vehicle, ids)
-    for i = 1, #ids do
-        local part, item = VehicleFunctions.marker(vehicle, ids[i])
-        if part then return part, item, ids[i] end
-    end
-    return nil
-end
-
--- Vanilla ISTakeGasolineFromVehicle uses character:playSound + stopOrTriggerSound for the
--- sound lifecycle, not the emitter. Mirroring that here so the pump sound actually plays.
-function VehicleFunctions.startPumpSound(action)
-    if action.character and not action.pumpSound then
-        action.pumpSound = action.character:playSound(Config.pump_sound)
-    end
-end
-
--- Kept as a no-op for backwards compatibility with existing update() calls; the character
--- sound handle persists for the whole action, so no per-tick retrigger is needed.
-function VehicleFunctions.updatePumpSound(action) end
-
--- Incremental fluid transfer: move a bounded amount per call, so partial progress is kept if
--- the action is interrupted. maxTime scales the intended total; step is per-update. Returns
--- the amount actually moved (0 when there's no room / nothing to move).
-function VehicleFunctions.stepTransfer(srcFC, dstFC, action, rate)
-    if not (srcFC and dstFC) then return 0 end
-    if srcFC.isEmpty and srcFC:isEmpty() then return 0 end
-    if dstFC.isFull and dstFC:isFull() then return 0 end
-    local perTick = rate or Config.rate_container
-    local amount = math.min(perTick, srcFC:getAmount(), dstFC:getFreeCapacity())
-    if amount <= 0 then return 0 end
-    -- Measure the actual add: addFluid(Fluid object) can silently no-op on some builds when the
-    -- destination is empty; measuring and subtracting the delta keeps source and dest in sync.
-    local before = dstFC:getAmount()
-    dstFC:addFluid(srcFC:getPrimaryFluid(), amount)
-    local moved = dstFC:getAmount() - before
-    if moved > 0 then
-        srcFC:removeFluid(moved)
-    end
-    return moved
-end
-
-function VehicleFunctions.stopPumpSound(action)
-    if action.character and action.pumpSound then
-        action.character:stopOrTriggerSound(action.pumpSound)
-        action.pumpSound = nil
-    end
-end
-
--- Container-refuel sound: prefer the vanilla can-refuel clip; fall back to the pump loop if
--- the primary id returns nil (build/mod may not ship RefuelWithCan).
-function VehicleFunctions.startContainerSound(action)
-    if not action.character or action.pumpSound then return end
-    local snd = action.character:playSound(Config.container_sound)
-    if snd == nil or snd == 0 or snd == -1 then
-        snd = action.character:playSound(Config.pump_sound)
-    end
-    action.pumpSound = snd
-end
-
--- Within ~4 tiles of the vehicle origin.
-function VehicleFunctions.near(player, vehicle)
-    local dx, dy = vehicle:getX() - player:getX(), vehicle:getY() - player:getY()
-    local r = Config.proximity_action
-    return dx * dx + dy * dy < r * r
-end
-
-function VehicleFunctions.get(item, key, default)
-    local v = item:getModData()[key]
-    if v == nil then return default end
-    return v
-end
-
--- Writes state onto the part's installed item and transmits it for MP.
-function VehicleFunctions.set(vehicle, part, item, key, value)
-    item:getModData()[key] = value
-    vehicle:transmitPartItem(part)
 end
 
 
@@ -258,7 +129,6 @@ Events.OnFillWorldObjectContextMenu.Add(onContext)
 --------------------------------------------------------------------------------
 
 -- SCKCO VehicleFunctions actions: fluids, tank-to-tank, fuel pump, hydrant, drafting, gas pump -> tanker.
--- Depends on SC_VehicleFunctions_1_Core.lua (loaded first alphabetically).
 
 --------------------------------------------------------------------------------
 -- Fluids (any liquid)
@@ -269,102 +139,13 @@ Events.OnFillWorldObjectContextMenu.Add(onContext)
 -- to other clients. Options appear on the vehicle (world) and on any fluid container in an
 -- inventory/trunk while near the tank.
 
--- Tank part id lists live on VehicleFunctions (Core file) so the Generator file can also read them.
--- Fluid transfer rate/ceiling come from Config.
-
 local function tankContainer(item)
     return item:getFluidContainer()
 end
 
--- Seed hook (test convenience): fill with water once on spawn.
---   part WaterTankSC { lua { create = SCKCO.Create.WaterTankFull } }
--- Test seed: run the vanilla default create (which installs the part), then fill with water once.
--- Production vehicles just use create = Vehicles.Create.Default in the template.
-function SCKCO.Create.WaterTankFull(vehicle, part)
-    Vehicles.Create.Default(vehicle, part)
-    local item = part:getInventoryItem()
-    if not item then return end
-    local md = item:getModData()
-    if md.SCTankSeeded then return end
-    md.SCTankSeeded = true
-    local fc = item:getFluidContainer()
-    if fc and fc:isEmpty() then
-        fc:addFluid("Water", fc:getCapacity())
-        if vehicle and vehicle.transmitPartItem then vehicle:transmitPartItem(part) end
-    end
-end
 
-SCKCO_FluidXfer = ISBaseTimedAction:derive("SCKCO_FluidXfer")
+-- SCKCO_FluidXfer (container <-> tank) is defined in SC_VehicleStations_Core.lua (shared).
 
-function SCKCO_FluidXfer:getSoundRadius() return 15 end
-
-function SCKCO_FluidXfer:start()
-    -- Mirror vanilla ISAddFuel: refuelgascan animation with the container held in the primary hand.
-    if self.setActionAnim then self:setActionAnim(Config.container_anim) end
-    if self.setOverrideHandModels and self.target then
-        local model = self.target.getStaticModel and self.target:getStaticModel() or nil
-        self:setOverrideHandModels(model, nil)
-    end
-    VehicleFunctions.startContainerSound(self)
-end
-
-function SCKCO_FluidXfer:waitToStart()
-    if self.vehicle then self.character:faceThisObject(self.vehicle) end
-    return self.character:shouldBeTurning()
-end
-
-function SCKCO_FluidXfer:stop()
-    VehicleFunctions.stopPumpSound(self)
-    ISBaseTimedAction.stop(self)
-end
-
-function SCKCO_FluidXfer:isValid()
-    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
-    if not part then return false end
-    local tankFC = tankContainer(item)
-    local itemFC = self.target and self.target:getFluidContainer()
-    if not tankFC or not itemFC then return false end
-    if not self.character:getInventory():contains(self.target) then return false end
-    if not VehicleFunctions.near(self.character, self.vehicle) then return false end
-    -- Stop as soon as the transfer has nothing left to move.
-    if self.fromTank then
-        if tankFC:isEmpty() or itemFC:isFull() then return false end
-    else
-        if itemFC:isEmpty() or tankFC:isFull() then return false end
-    end
-    return true
-end
-
-function SCKCO_FluidXfer:update()
-    VehicleFunctions.updatePumpSound(self)
-    local part, item = VehicleFunctions.markerAny(self.vehicle, VehicleFunctions.TANK_PARTS)
-    if not part then return end
-    local tankFC = tankContainer(item)
-    local itemFC = self.target:getFluidContainer()
-    if not tankFC or not itemFC then return end
-    local moved
-    if self.fromTank then
-        moved = VehicleFunctions.stepTransfer(tankFC, itemFC, self, Config.rate_container)
-    else
-        moved = VehicleFunctions.stepTransfer(itemFC, tankFC, self, Config.rate_container)
-    end
-    if moved > 0 then self.vehicle:transmitPartItem(part) end
-end
-
-function SCKCO_FluidXfer:perform()
-    VehicleFunctions.stopPumpSound(self)
-    ISBaseTimedAction.perform(self)
-end
-
-function SCKCO_FluidXfer:new(character, vehicle, target, fromTank)
-    local o = ISBaseTimedAction.new(self, character)
-    o.vehicle          = vehicle
-    o.target           = target
-    o.fromTank         = fromTank
-    o.maxTime          = Config.time_ceiling
-    o.forceProgressBar = true
-    return o
-end
 
 local function onDraw(player, vehicle, item)
     ISTimedActionQueue.add(SCKCO_FluidXfer:new(player, vehicle, item, true))
@@ -389,7 +170,7 @@ local function fluidsContext(context, player, vehicle)
     if not tankFC then return end
 
     if VehicleFunctions.clickedVehicle(vehicle) then
-        context:addOption(string.format("Liquid tank: %.0f / %.0f L", tankFC:getAmount(), tankFC:getCapacity()), nil, nil)
+        context:addOption(getText("IGUI_SCKCO_TankLevel", string.format("%.0f", tankFC:getAmount()), string.format("%.0f", tankFC:getCapacity())), nil, nil)
     end
 
 
@@ -399,7 +180,7 @@ local function fluidsContext(context, player, vehicle)
             return fc ~= nil and not fc:isFull() and not fc:isInputLocked()
         end)
         if #recv > 0 then
-            VehicleFunctions.addSub(context, "Fill from tank", recv, player, vehicle, onDraw)
+            VehicleFunctions.addSub(context, getText("IGUI_SCKCO_FillFromTank"), recv, player, vehicle, onDraw)
         end
     end
     if not tankFC:isFull() then
@@ -408,7 +189,7 @@ local function fluidsContext(context, player, vehicle)
             return fc ~= nil and not fc:isEmpty()
         end)
         if #give > 0 then
-            VehicleFunctions.addSub(context, "Empty into tank", give, player, vehicle, onFill)
+            VehicleFunctions.addSub(context, getText("IGUI_SCKCO_EmptyIntoTank"), give, player, vehicle, onFill)
         end
     end
 end
@@ -508,10 +289,10 @@ local function onInvContext(playerNum, context, items)
         local fc = it and it:getFluidContainer()
         if fc then
             if not fc:isEmpty() and not tankFC:isFull() then
-                context:addOption("Empty into liquid tank", player, onFill, vehicle, it)
+                context:addOption(getText("IGUI_SCKCO_EmptyIntoTank"), player, onFill, vehicle, it)
             end
             if not fc:isFull() and not fc:isInputLocked() and not tankFC:isEmpty() then
-                context:addOption("Fill from liquid tank", player, onDraw, vehicle, it)
+                context:addOption(getText("IGUI_SCKCO_FillFromTank"), player, onDraw, vehicle, it)
             end
             break
         end
@@ -684,34 +465,6 @@ function ISVehicleMenu.FillPartMenu(playerIndex, context, slice, vehicle)
     end
 end
 
--- Test seeds for the new tanks (install via default, then fill once).
-function SCKCO.Create.CisternFull(vehicle, part)
-    Vehicles.Create.Default(vehicle, part)
-    local item = part:getInventoryItem()
-    if not item then return end
-    local md = item:getModData()
-    if md.SCTankSeeded then return end
-    md.SCTankSeeded = true
-    local fc = item:getFluidContainer()
-    if fc and fc:isEmpty() then
-        fc:addFluid("Water", fc:getCapacity())
-        if vehicle and vehicle.transmitPartItem then vehicle:transmitPartItem(part) end
-    end
-end
-
-function SCKCO.Create.FuelTankFull(vehicle, part)
-    Vehicles.Create.Default(vehicle, part)
-    local item = part:getInventoryItem()
-    if not item then return end
-    local md = item:getModData()
-    if md.SCTankSeeded then return end
-    md.SCTankSeeded = true
-    local fc = item:getFluidContainer()
-    if fc and fc:isEmpty() then
-        fc:addFluid("Petrol", fc:getCapacity())
-        if vehicle and vehicle.transmitPartItem then vehicle:transmitPartItem(part) end
-    end
-end
 
 --------------------------------------------------------------------------------
 -- Fuel pump (mobile gas station)
@@ -1674,18 +1427,6 @@ local function q(kind)
 end
 local qHookup, qDisconnect, qStart, qStop, qRefuel = q("hookup"), q("disconnect"), q("start"), q("stop"), q("refuel")
 
--- Test seed: vanilla default create (installs the part), then full fuel once. Production
--- vehicles just use create = Vehicles.Create.Default in the template.
-function SCKCO.Create.GeneratorFuelFull(vehicle, part)
-    Vehicles.Create.Default(vehicle, part)
-    local item = part:getInventoryItem()
-    if not item then return end
-    local md = item:getModData()
-    if md.SCGenSeeded then return end
-    md.SCGenSeeded = true
-    md.SCGenFuel = 100
-    if vehicle and vehicle.transmitPartItem then vehicle:transmitPartItem(part) end
-end
 
 local function generatorContext(context, player, vehicle)
     local sv = SandboxVars.SCKCO or {}
