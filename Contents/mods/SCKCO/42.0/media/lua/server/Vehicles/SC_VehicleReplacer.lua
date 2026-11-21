@@ -59,7 +59,7 @@ SCKCO.Data = {
 		vehicle("Base.SC_MazdaB2000", 30),
 	},
 
-	["Base.PickUpTruck_Camo"]        = { vehicle("Base.SC_DodgeM880_Bubba", 100) },
+	["Base.PickUpTruck_Camo"]        = { vehicle("Base.SC_DodgeM880", 100) },
 	["Base.PickUpTruckLightsRanger"] = { vehicle("Base.SC_ChevroletK10_ParkRanger", 100) },
 
 	["Base.Van"] = { vehicle("Base.SC_ChevroletG30", 100) },
@@ -67,7 +67,7 @@ SCKCO.Data = {
 	["Base.VanSpiffo"] = { vehicle("Base.SC_ChevroletG30_Spiffo", 100) },
 		
 	["Base.VanSeats"] = {
-		vehicle("Base.SC_ChevroletG30_PassengerVan", 80),
+		vehicle("Base.SC_ChevroletG30PassengerVan", 80),
 		vehicle("Base.SC_ChevroletG30_ChurchVan", 5),
 		vehicle("Base.SC_ChevroletG30_ChurchBus", 5),
 		vehicle("Base.SC_PlymouthVoyager", 30),
@@ -77,7 +77,7 @@ SCKCO.Data = {
 		vehicle("Base.SC_ChevroletG30_Ambulance", 30),
 		vehicle("Base.SC_FordF350Ambulance_Life", 30),
 		vehicle("Base.SC_FordF350Ambulance_Meade", 30),
-		vehicle("Base.SC_FordF350Ambulance_Peregrin", 30),
+		vehicle("Base.SC_FordF350Ambulance_StPeregrin", 30),
 	},
 
 	["Base.VanRadio"] = {
@@ -95,7 +95,7 @@ SCKCO.Data = {
 	["Base.PickUpVanLightsRanger"]      = { vehicle("Base.SC_ChevroletK5Blazer_ParkRanger", 100) },
 	["Base.PickUpVanLightsPolice"]      = { vehicle("Base.SC_ChevroletSuburban_StatePolice", 100) },
 	["Base.PickUpVanLightsStatePolice"] = { vehicle("Base.SC_ChevroletSuburban_StatePolice", 100) },
-	["Base.PickUpVan_Camo"]             = { vehicle("Base.SC_DodgeM880_Bubba", 100) },
+	["Base.PickUpVan_Camo"]             = { vehicle("Base.SC_DodgeM880", 100) },
 
 	["Base.SUV"] = {
 		vehicle("Base.SC_FordBronco", 50),
@@ -156,7 +156,7 @@ SCKCO.Data = {
 
 	-- Louisville PD
 	["Base.ModernCarLightsCityLouisvillePD"] = {
-		vehicle("Base.SC_FordCrownVictoria85_LouisvillePolice", 50),
+		vehicle("Base.SC_FordCrownVictoria85_LouisvillePD", 50),
 		vehicle("Base.SC_FordCrownVictoria92_LouisvillePD", 50),
 	},
 
@@ -181,12 +181,16 @@ end
 SCKCO.Replace.GetRandomVehicle = function(scriptName)
 	local pool = SCKCO.Data[scriptName]
 	if not pool then return nil end
-	local roll = ZombRandFloat(0, 100)
+	-- Chances are relative weights; the roll spans the pool total so every pool resolves.
+	local total = 0
+	for _, entry in ipairs(pool) do total = total + (entry.chance or 100) end
+	local roll = ZombRandFloat(0, total)
 	local cumulative = 0
 	for _, entry in ipairs(pool) do
 		cumulative = cumulative + (entry.chance or 100)
 		if roll <= cumulative then return entry end
 	end
+	return pool[#pool]
 end
 
 SCKCO.Replace.SetSkin = function(v, entry)

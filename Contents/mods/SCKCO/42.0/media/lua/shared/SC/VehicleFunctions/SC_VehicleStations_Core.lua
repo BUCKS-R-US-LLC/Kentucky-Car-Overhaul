@@ -221,6 +221,7 @@ end
 -- state can lag the server, so only the server (or SP) applies the fluid checks.
 function SCKCO_FluidXfer:isValidStart()
     if isClient() then return true end
+    if (SandboxVars.SCKCO or {}).FluidsEnabled == false then return false end
     local src, dst = self:endpoints()
     return src ~= nil and self.units > 0 and FluidContainer.CanTransfer(src, dst)
 end
