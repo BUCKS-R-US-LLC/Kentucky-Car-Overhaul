@@ -7,63 +7,11 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model M880AmbulanceDriver
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|DoubleSeat_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-	}
-	model M880AmbulancePassenger
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|DoubleSeat_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-	}
-	model M880AmbulanceWindshield
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|Windshield_obj,
-		shader = vehicleutest,
-		scale = 1,
-	}
 	model M880AmbulanceRearWindshield
 	{
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
-	}
-	model M880AmbulanceFrontRightWindow
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-		boneWeight = FrontRightWindowArmorBone 1.0,
-	}
-	model M880AmbulanceFrontLeftWindow
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-		boneWeight = FrontLeftWindowArmorBone 1.0,
-	}
-	model M880AmbulanceFrontRightDoor
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model M880AmbulanceFrontLeftDoor
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
 	}
 	model M880AmbulanceTrunk
 	{
@@ -80,24 +28,6 @@ module Base
 		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|RearWindshield_obj,
 		shader = vehicleutest,
 		scale = 1,
-	}
-	model M880AmbulanceHood
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_SC|Hood_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = HoodBone 1.0,
-	}
-	model M880Ambulancewheelleft
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_LeftWheel,
-		texture = Vehicles/M880/Vehicle_M880Ambulance_Wheel,
-	}
-	model M880Ambulancewheelright
-	{
-		mesh = vehicles/DodgeChrysler/Vehicle_M880Ambulance_RightWheel,
-		texture = Vehicles/M880/Vehicle_M880Ambulance_Wheel,
 	}
 	vehicle SC_DodgeM880Ambulance
     {

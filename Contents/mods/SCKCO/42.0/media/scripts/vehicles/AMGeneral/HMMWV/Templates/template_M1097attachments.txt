@@ -53,20 +53,6 @@ module Base
 		scale = 1.0,
 	}
 
-    model M1097TopCoverTan
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM1097Flatbed_SC|TopCover_obj,
-		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_DesertCab,
-		scale = 1.0,
-	}
-
-	model M1097RearTarpTan
-	{
-		mesh = vehicles/AMGeneral/Vehicle_HM1097Flatbed_SC|RearTarp_obj,
-		texture = Vehicles/HMMWV/Vehicle_HM1097Flatbed_DesertFlatbed,
-		scale = 1.0,
-	}
-
 	model M1097FrontLeftWindowArmor
 	{
 		mesh = vehicles/AMGeneral/Vehicle_HM998Hardtop_SC|FrontLeftWindowArmor_obj,
@@ -374,49 +360,4 @@ module Base
 		}
     }
 
-	template vehicle M1097TanSofttops
-	{
-
-		part M1097FrontSoftTop
-		{
-			model Default { file = M1097TopCoverTan, }
-			itemType = SCKCO.M998SoftTopSC,
-            category = SCUCKaccessories,
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-		}
-
-		part M1097RearSoftTop
-		{
-			model Default { file = M1097RearTarpTan, }
-			itemType = SCKCO.M998SoftTopSC,
-            category = SCUCKaccessories,
-
-			table install
-			{
-			}
-
-			table uninstall
-			{
-			}
-            
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-
-		}
-    }
 }

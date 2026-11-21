@@ -74,15 +74,6 @@ module Base
 		scale = 1,
 	}
 
-    model C70ChevySurvivor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|Chevy_obj,
-		shader = SC_vehicle_noreflect,
-        static = FALSE,
-		boneWeight = HoodBone 1.0,
-		scale = 1,
-	}
-
 	model C70SurvivorFrontRightWindowArmor
 	{
 		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|FrontRightWindowArmor_obj,
@@ -115,14 +106,6 @@ module Base
 		scale = 1,
 		static = FALSE,
 		boneWeight = FrontLeftDoorBone 1.0,
-	}
-
-	model C70SurvivorWindshieldArmor
-	{
-		mesh = vehicles/Chevrolet/Vehicle_C70Survivor_SC|WindshieldArmor_obj,
-        static = TRUE,
-        texture = Vehicles/ChevroletC70/Vehicle_C70Armor,
-		scale = 1,
 	}
 
 	template vehicle C70SurvivorAttachments

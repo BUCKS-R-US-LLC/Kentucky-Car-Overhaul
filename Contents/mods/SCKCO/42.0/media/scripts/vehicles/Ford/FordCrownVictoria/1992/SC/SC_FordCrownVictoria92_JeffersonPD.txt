@@ -7,94 +7,6 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model CrownVictoria92PoliceDriver
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|DriverSeat_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-	}
-	model CrownVictoria92PolicePassenger
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|PassengerSeat_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-	}
-	model CrownVictoria92PoliceDouble
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearDoubleSeat_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-	}
-	model CrownVictoria92PoliceWindshield
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Windshield_obj,
-		shader = vehicleutest,
-		scale = 1,
-	}
-	model CrownVictoria92PoliceFrontRightWindow
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontRightWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightWindowBone 1.0,
-	}
-	model CrownVictoria92PoliceFrontLeftWindow
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontLeftWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftWindowBone 1.0,
-	}
-	model CrownVictoria92PoliceRearRightWindow
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearRightWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightWindowBone 1.0,
-	}
-	model CrownVictoria92PoliceRearLeftWindow
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearLeftWindow_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftWindowBone 1.0,
-	}
-	model CrownVictoria92PoliceFrontRightDoor
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontRightDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontRightDoorBone 1.0,
-	}
-	model CrownVictoria92PoliceFrontLeftDoor
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|FrontLeftDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = FrontLeftDoorBone 1.0,
-	}
-	model CrownVictoria92PoliceRearRightDoor
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearRightDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearRightDoorBone 1.0,
-	}
-	model CrownVictoria92PoliceRearLeftDoor
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearLeftDoor_obj,
-		shader = vehicleutest,
-		static = FALSE,
-		scale = 1,
-		boneWeight = RearLeftDoorBone 1.0,
-	}
 	model CrownVictoria92PoliceBackRightWindow
 	{
 		mesh = vehicles/Ford/Vehicle_CrownVic92_SC|BackRightWindow_obj,
@@ -108,40 +20,6 @@ module Base
 		shader = vehicleutest,
 		static = TRUE,
 		scale = 1,
-	}
-	model CrownVictoria92PoliceTrunk
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Trunk_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = TrunkBone 1.0,
-	}
-	model CrownVictoria92PoliceHood
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|Hood_obj,
-		shader = SC_vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = HoodBone 1.0,
-	}
-	model CrownVictoria92PoliceRearWindshield
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92POL_SC|RearWindshield_obj,
-		shader = vehicleutest,
-		scale = 1,
-	}
-	model CrownVictoria92Policewheelleft
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92_LeftWheel,
-		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_wheel,
-		
-	}
-	model CrownVictoria92Policewheelright
-	{
-		mesh = vehicles/Ford/Vehicle_CrownVic92_RightWheel,
-		texture = Vehicles/CrownVictoria/Vehicle_CrownVic92_wheel,
-		
 	}
 	vehicle SC_FordCrownVictoria92_JeffersonPD
 	{

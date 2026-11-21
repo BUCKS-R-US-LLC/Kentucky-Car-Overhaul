@@ -7,28 +7,10 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model G30SeatsDriver
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|FrontLeftSeat_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model G30SeatsPassenger
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|FrontRightSeat_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-	}
 	model G30SeatsRear
 	{
 		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|RearSeat_obj,
 		shader = vehicle_noreflect,
-		scale = 1,
-	}
-	model G30SeatsWindshield
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|Windshield_obj,
-		shader = vehicleutest,
 		scale = 1,
 	}
 	model G30SeatsFrontLeftWindow
@@ -97,32 +79,6 @@ module Base
 		shader = vehicleutest,
 		static = FALSE,
 		scale = 1,
-	}
-	model G30SeatsTrunk
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|RearDoor_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
-	}
-	model G30SeatsHood
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|Hood_obj,
-		shader = vehicle_noreflect,
-		scale = 1,
-		static = FALSE,
-		boneWeight = HoodBone 1.0,
-	}
-	model G30SeatsRearWindshield
-	{
-		mesh = vehicles/Chevrolet/Vehicle_G30VanNormal_SC|RearDoorWindow_obj,
-		shader = vehicleutest,
-		scale = 1,
-		static = FALSE,
-		boneWeight = RearDoorRightBone 1.0,
-		boneWeight = RearDoorLeftBone 1.0,
 	}
 	model G30Vanwheelleft
 	{
