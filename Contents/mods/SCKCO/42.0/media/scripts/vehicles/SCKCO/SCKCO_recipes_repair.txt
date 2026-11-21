@@ -31,7 +31,7 @@ module SCKCO
             item 1 tags[ArmorGlass] mode:keep flags[Prop2;IsDamaged],
             item 1 [Base.SmallSheetMetal],
             item 2 [Base.BlowTorch],
-            item 1 tags[WeldingMask] mode:keep,
+            item 1 tags[base:weldingmask] mode:keep,
         }
         outputs
         {
@@ -53,7 +53,7 @@ module SCKCO
             item 1 tags[ArmorDoor] mode:keep flags[Prop2;IsDamaged],
             item 1 [Base.SheetMetal],
             item 3 [Base.BlowTorch],
-            item 1 tags[WeldingMask] mode:keep,
+            item 1 tags[base:weldingmask] mode:keep,
         }
         outputs
         {
@@ -76,7 +76,7 @@ module SCKCO
             item 1 [Base.SmallSheetMetal],
             item 1 [Base.MetalPipe],
             item 3 [Base.BlowTorch],
-            item 1 tags[WeldingMask] mode:keep,
+            item 1 tags[base:weldingmask] mode:keep,
         }
         outputs
         {
@@ -95,7 +95,7 @@ module SCKCO
         Tooltip = Tooltip_SCKCO_RepairLoose,
         inputs
         {
-            item 1 tags[wholetire] mode:keep flags[Prop2;IsDamaged],
+            item 1 tags[base:wholetire] mode:keep flags[Prop2;IsDamaged],
             item 1 [SCKCO.TirePatchKit] flags[Prop1],
         }
         outputs
