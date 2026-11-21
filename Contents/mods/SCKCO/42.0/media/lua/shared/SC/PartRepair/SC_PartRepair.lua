@@ -171,10 +171,6 @@ local defaults = {
 
     -- bench repair of uninstalled parts (SCKCO_recipes_repair.txt via SC_RepairRecipe.lua)
     RepairLooseParts = true,
-
-    -- dashboard lighter (SC_VehicleLighter.lua); listed here so gen_sandbox.py emits them
-    LighterEnabled = true,
-    LighterMinCharge = 5,
 }
 
 -- read at call time: MP clients receive sandbox vars after Lua parses, so caching at
