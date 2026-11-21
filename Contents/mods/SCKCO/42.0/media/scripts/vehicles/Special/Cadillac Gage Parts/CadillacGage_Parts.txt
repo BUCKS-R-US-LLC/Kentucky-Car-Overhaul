@@ -49,28 +49,4 @@ module SCKCO
         WorldStaticModel = CadillacGageRangerHood_WorldItem,
     }
 
-        item CadillacGageRangerPushbarSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        ItemType = base:normal,
-        Icon	=	CadillacGageLogo,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CapriceFrontDoor_WorldItem,
-    }
-
-        item CadillacGageRangerRearDoorsSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	5.0,
-        ItemType = base:normal,
-        Icon	=	SCKCO/Parts/CadillacGage/CadillacGageRangerRearDoors,
-        VehicleType =   2,
-        ConditionMax = 100,
-        MaxCapacity = 10,
-        MechanicsItem = TRUE,
-        WorldStaticModel = CadillacGageRangerRearDoors_WorldItem,
-    }
 }

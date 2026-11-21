@@ -28,13 +28,6 @@ vehicleSoundController.library = {
         },
     },
 
-    ["FourCylinderEngineSC"] = {
-        { sound = "FourCylinderEngine",
-          speedIsGreaterThan = 1,
-          speedIsLessThan = -1,
-          isEngineRunning = true,
-        },
-    },
 
 }
 

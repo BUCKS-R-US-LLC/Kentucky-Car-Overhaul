@@ -23,6 +23,7 @@ ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_MERDC"] = {imgPrefix = "m
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM151A2_Cleaners"] = {imgPrefix = "m151_", x=0,y=0};
 ISCarMechanicsOverlay.CarList["Base.SC_AMGeneralM49A2C"] = {imgPrefix = "m35a1_", x=0,y=0};
 
+-- Default overlay positions shared by every SCKCO vehicle; defined once here.
 ISCarMechanicsOverlay.PartList["Battery"].vehicles = ISCarMechanicsOverlay.PartList["Battery"].vehicles or {};
 ISCarMechanicsOverlay.PartList["Battery"].vehicles["all_"] = {img="battery", x=0,y=0,x2=0,y2=0};
 --

@@ -13,18 +13,6 @@ module SCKCO
         WorldStaticModel = TrailerDoor_WorldItem,
     }
 
-        item TrailerTrunkLidSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        ItemType = base:normal,
-        Icon	=	SCKCO/Parts/Trailer/TrailerTrunkLid,
-        VehicleType =  2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = TrailerTrunkLid_WorldItem,
-    }
-
         item TrailerWindowSC2
     {
         DisplayCategory = VehicleMaintenance,
@@ -49,15 +37,4 @@ module SCKCO
         WorldStaticModel = M1011Bowkit_WorldItem,
     }
 
-        item M1011TarpSC2
-    {
-        DisplayCategory = VehicleMaintenance,
-        Weight	=	10.0,
-        ItemType = base:normal,
-        Icon	=	SCKCO/Parts/Trailer/M1011Tarp,
-        VehicleType =  2,
-        ConditionMax = 100,
-        MechanicsItem = TRUE,
-        WorldStaticModel = M1011Tarp_WorldItem,
-    }
 }
