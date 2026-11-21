@@ -333,6 +333,18 @@ module Base
 		template = SCMufflerNormal,
 		template = TrunkDoor,
 
+		template = Trunk/part/TruckBed,
+
+		part TruckBed
+		{
+			container
+			{
+				capacity = 100,
+				conditionAffectsCapacity = FALSE,
+				test = Vehicles.ContainerAccess.BackOfTruck,
+			}
+		}
+
 		part TrunkDoor
 		{
 			table install

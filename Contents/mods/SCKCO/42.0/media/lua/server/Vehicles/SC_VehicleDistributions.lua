@@ -147,6 +147,7 @@ VehicleDistributions.SC_Standard = {
     TruckBedOpen = VehicleDistributions.SC_StandardTrunkBase,
     RearVanSpace = VehicleDistributions.SC_StandardTrunkBase,
     GloveBox    = VehicleDistributions.SC_StandardGlovebox,
+    TrailerTrunk = VehicleDistributions.SC_StandardTrunkBase,
 }
 
 -- ============================================================
@@ -1162,6 +1163,9 @@ VehicleDistributions.SC_Military = {
     TruckBedOpen = VehicleDistributions.SC_MilitaryTruckBed,
     GunRackSC   = VehicleDistributions.SC_MilitaryGunRack,
     GloveBox    = VehicleDistributions.SC_MilitaryGlovebox,
+    TrailerTrunk = VehicleDistributions.SC_MilitaryTruckBed,
+    M998RearLeftContainer = VehicleDistributions.SC_MilitaryTruckBed,
+    M998RearRightContainer = VehicleDistributions.SC_MilitaryTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1211,6 +1215,7 @@ VehicleDistributions.SC_MilitiaGunRack = {
 VehicleDistributions.SC_Militia = {
     TruckBed    = VehicleDistributions.SC_MilitiaTruckBed,
     TruckBedOpen = VehicleDistributions.SC_MilitiaTruckBed,
+    TrailerTrunk = VehicleDistributions.SC_MilitiaTruckBed,
     GunRackSC   = VehicleDistributions.SC_MilitiaGunRack,
     GloveBox    = VehicleDistributions.SC_MilitiaGlovebox,
 }
@@ -1488,6 +1493,7 @@ VehicleDistributions.SC_BankCarTruckBed = {
 
 VehicleDistributions.SC_BankCar = {
     GloveBox = VehicleDistributions.SC_BankCarGlovebox,
+    TruckBed = VehicleDistributions.SC_BankCarTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1527,6 +1533,7 @@ VehicleDistributions.SC_MailCarTruckBed = {
 VehicleDistributions.SC_MailCar = {
     TruckBed = VehicleDistributions.SC_MailCarTruckBed,
     GloveBox = VehicleDistributions.SC_MailCarGlovebox,
+    TruckBedOpen = VehicleDistributions.SC_MailCarTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1556,6 +1563,7 @@ VehicleDistributions.SC_PowerCompanyTruckBed = {
 VehicleDistributions.SC_PowerCompany = {
     TruckBed = VehicleDistributions.SC_PowerCompanyTruckBed,
     GloveBox = VehicleDistributions.SC_PowerCompanyGlovebox,
+    TruckBedOpen = VehicleDistributions.SC_PowerCompanyTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1585,6 +1593,7 @@ VehicleDistributions.SC_McCoyTruckBed = {
 VehicleDistributions.SC_McCoy = {
     TruckBed = VehicleDistributions.SC_McCoyTruckBed,
     GloveBox = VehicleDistributions.SC_McCoyGlovebox,
+    TruckBedOpen = VehicleDistributions.SC_McCoyTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1619,6 +1628,7 @@ VehicleDistributions.SC_WorkTruckTruckBed = {
 VehicleDistributions.SC_WorkTruck = {
     TruckBed = VehicleDistributions.SC_WorkTruckTruckBed,
     GloveBox = VehicleDistributions.SC_WorkTruckGlovebox,
+    TruckBedOpen = VehicleDistributions.SC_WorkTruckTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1647,6 +1657,8 @@ VehicleDistributions.SC_PaperCarTruckBed = {
 
 VehicleDistributions.SC_PaperCar = {
     GloveBox = VehicleDistributions.SC_PaperCarGlovebox,
+    TruckBed = VehicleDistributions.SC_PaperCarTruckBed,
+    TruckBedOpen = VehicleDistributions.SC_PaperCarTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1678,6 +1690,7 @@ VehicleDistributions.SC_AmbulanceTruckBed = {
 VehicleDistributions.SC_Ambulance = {
     TruckBed = VehicleDistributions.SC_AmbulanceTruckBed,
     GloveBox = VehicleDistributions.SC_AmbulanceGlovebox,
+    TruckBedOpen = VehicleDistributions.SC_AmbulanceTruckBed,
 }
 
 --------------------------------------------------------------------
@@ -1960,3 +1973,40 @@ distributionTable["SC_ChevroletG30_FedEx"]         = { Normal = VehicleDistribut
 distributionTable["StepVanMail"]                   = { Normal = VehicleDistributions.SC_MailCar }
 distributionTable["StepVan_Heralds"]               = { Normal = VehicleDistributions.SC_PaperCar }
 distributionTable["SC_ChevroletP30_Heralds"]       = { Normal = VehicleDistributions.SC_PaperCar }
+
+-- ============================================================
+--  Previously unassigned
+-- ============================================================
+addEntry("SC_ChevroletK10",          Std, { Outdoorsy, DIY, Farmer, Hunter, Drinker, Smoker })
+addEntry("SC_DodgePowerWagon",       Std, { Outdoorsy, DIY, Farmer, Hunter })
+addEntry("SC_GMCJimmyS15",           Std, { Outdoorsy, Commuter, Camper, RoadTrip, Drinker })
+addEntry("SC_ToyotaCamry",           Std, { Commuter, Groceries, Drinker, Nurse, RoadTrip })
+addEntry("SC_ChevroletG30_ChurchVan", Std, { Commuter, RoadTrip })
+addEntry("SC_ChevroletG30_ChurchBus", Std, { Commuter, RoadTrip })
+addEntry("SC_ChevroletG30_Transit",  Std, nil)
+addEntry("SC_ChevroletP30_Scarlet",  Std, nil)
+addEntry("SC_FordF700BoxTruck_Mayflower", Std, nil)
+addEntry("SC_CadillacFuneralCoach",  Std, nil)
+addEntry("SC_SmallUtilityTrailer",   Std, { DIY, PackRat })
+addEntry("SC_MediumEnclosedTrailer", Std, { DIY, PackRat, Camper })
+addEntry("SC_MediumLivestockTrailer", Std, { Farmer })
+
+distributionTable["SC_ChevroletK10_McCoy"]            = { Normal = VehicleDistributions.SC_McCoy }
+distributionTable["SC_ChevroletG30_KnoxDisti"]        = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["SC_ChevroletG30_PennHam"]          = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["SC_FordF700DumpTruck"]             = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["SC_FordF700PanelTruck"]            = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["SC_MackDM800_Garbage"]             = { Normal = VehicleDistributions.SC_WorkTruck }
+distributionTable["SC_ChevroletG30_SouthCentralBell"] = { Normal = VehicleDistributions.SC_PowerCompany }
+distributionTable["SC_AMGeneralM997Ambulance_3Tone"]  = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_DodgeM880Ambulance"]            = { Normal = VehicleDistributions.SC_Ambulance }
+distributionTable["SC_CadillacGageRangerLights"]      = { Normal = VehicleDistributions.SC_CityPolice }
+distributionTable["SC_CadillacGageRanger"]            = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_ChevroletG30_SpecialForces"]    = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_DodgeM880TroopCarrier"]         = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_AMGeneralM49A2C"]               = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_ChevroletM1028A3_3Tone"]        = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_ChevroletM1028A3_OD"]           = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_ChevroletM1028A3_DesertMERDC"]  = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_M1101Trailer"]                  = { Normal = VehicleDistributions.SC_Military }
+distributionTable["SC_M1101TrailerSurplus"]           = { Normal = VehicleDistributions.SC_Militia }
