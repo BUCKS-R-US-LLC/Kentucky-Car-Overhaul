@@ -423,6 +423,8 @@ function AR.getTirePressure(part)
 end
 
 function AR.isFlat(part)
+    -- an uninstalled tire holds no pressure, so it is never "flat" for repair purposes
+    if AR.isLoose(part) then return false end
     local frac = AR.getTirePressure(part)
     if frac == nil then return false end
     return frac <= sv("TireFlatThreshold")
@@ -982,7 +984,7 @@ function ISSCKCORepairPart:complete()
         end
         if victim then
             victim:setCondition(clamp(victim:getCondition() - sv("RepairBotchDamage"), 0))
-            self.vehicle:transmitPartCondition(victim)
+            self:syncPart(victim)
             AR.notify(self.character, AR.textKey(self.part, "Botched"), 255, 60, 60)
         else
             AR.notify(self.character, AR.textKey(self.part, "Failed"), 255, 160, 60)
@@ -995,8 +997,7 @@ function ISSCKCORepairPart:complete()
         self.part:getCondition() + AR.getPassAmount(self.character, self.part, item), ceiling))
     -- decay is charged per SUCCESSFUL pass, driving the part toward scrap
     AR.addRepair(item)
-    self.vehicle:transmitPartCondition(self.part)
-    self.vehicle:transmitPartItem(self.part)
+    self:syncPart(self.part)
 
     local xp = sv("RepairXP") + missing * sv("RepairXPPerDamage")
     if profile and profile.skill then
@@ -1007,6 +1008,48 @@ function ISSCKCORepairPart:complete()
         if mode ~= AR.SKILL_MECHANICS then addXp(self.character, Perks.MetalWelding, xp) end
     end
     return true
+end
+
+function ISSCKCORepairPart:syncPart(part)
+    self.vehicle:transmitPartCondition(part)
+    self.vehicle:transmitPartItem(part)
+end
+
+-- Same pass as ISSCKCORepairPart on an uninstalled part. new() takes the InventoryItem
+-- itself so the server can rebuild the action in MP; the item must be carried, which is
+-- why the ground menu queues a pickup first. The shim is rebuilt on each side from it.
+ISSCKCORepairLoose = ISSCKCORepairPart:derive("ISSCKCORepairLoose")
+
+function ISSCKCORepairLoose:new(character, item)
+    local o = ISBaseTimedAction.new(self, character)
+    o.item = item
+    o.part = AR.itemAsPart(item)
+    o.stopOnWalk, o.stopOnRun = true, true
+    o.maxTime = o:getDuration()
+    return o
+end
+
+function ISSCKCORepairLoose:isValid()
+    return AR.getOption("RepairLooseParts")
+        and self.part ~= nil
+        and self.character:getInventory():contains(self.item)
+        and ISSCKCORepairPart.isValid(self)
+end
+
+function ISSCKCORepairLoose:waitToStart()
+    return false
+end
+
+function ISSCKCORepairLoose:perform()
+    if self.sound then self.character:stopOrTriggerSound(self.sound) end
+    ISBaseTimedAction.perform(self)
+    if AR.getBlockReason(self.character, self.part) == nil then
+        ISTimedActionQueue.add(ISSCKCORepairLoose:new(self.character, self.item))
+    end
+end
+
+function ISSCKCORepairLoose:syncPart(part)
+    syncItemFields(self.character, self.item)
 end
 
 ISSCKCOScrapPart = ISBaseTimedAction:derive("ISSCKCOScrapPart")
@@ -1082,6 +1125,10 @@ end
 
 function AR.onScrapPart(character, part)
     ISTimedActionQueue.add(ISSCKCOScrapPart:new(character, part))
+end
+
+function AR.onRepairLoose(character, item)
+    ISTimedActionQueue.add(ISSCKCORepairLoose:new(character, item))
 end
 
 function AR.onRepairPart(character, part)

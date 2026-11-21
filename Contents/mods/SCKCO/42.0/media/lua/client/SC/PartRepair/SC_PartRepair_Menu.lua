@@ -40,9 +40,9 @@ end
 
 -- single builder for both entry points (mechanics panel and world menu) so their
 -- labels, availability and tooltips cannot drift apart
-local function addRepairOption(context, character, part, withCondition)
+local function addRepairOption(context, character, part, withCondition, onSelect, arg)
     local option = context:addOption(AR.getRepairLabel(part, withCondition),
-        character, AR.onRepairPart, part)
+        character, onSelect or AR.onRepairPart, arg or part)
     local reason = AR.getBlockReason(character, part)
     local tooltip = ISWorldObjectContextMenu.addToolTip()
     if reason then
@@ -129,6 +129,78 @@ function ISVehicleMenu.FillMenuOutsideVehicle(playerIndex, context, vehicle, tes
     AR.addMenu(playerIndex, context, vehicle)
 end
 
+-- Loose parts. A ground part is picked up first (the vanilla grab, same MP split as
+-- onGrabWItem) so the repair action can take a carried InventoryItem the server resolves.
+local function grabThenRepair(character, worldItem)
+    local item = worldItem:getItem()
+    local square = worldItem:getSquare()
+    if not item or not square or not luautils.walkAdj(character, square) then return end
+    if isClient() then
+        ISTimedActionQueue.add(ISInventoryTransferUtil.newInventoryTransferAction(character, item,
+            item:getContainer(), character:getInventory()))
+    else
+        ISTimedActionQueue.add(ISGrabItemAction:new(character, worldItem,
+            ISWorldObjectContextMenu.grabItemTime(character, worldItem)))
+    end
+    AR.onRepairLoose(character, item)
+end
+
+local function looseEnabled()
+    return sv("RepairEnabled") and sv("RepairLooseParts")
+end
+
+local function looseWorldParts(worldobjects)
+    local found, seenSquare, seenItem = {}, {}, {}
+    for _, obj in ipairs(worldobjects) do
+        local square = obj:getSquare()
+        if square and not seenSquare[square] then
+            seenSquare[square] = true
+            local wobs = square:getWorldObjects()
+            for i = 0, wobs:size() - 1 do
+                local wob = wobs:get(i)
+                local item = wob:getItem()
+                if item and not seenItem[item] then
+                    seenItem[item] = true
+                    local part = AR.itemAsPart(item)
+                    if part and AR.getPartClass(part) then
+                        found[#found + 1] = { world = wob, part = part }
+                    end
+                end
+            end
+        end
+    end
+    return found
+end
+
+local function onFillWorldObjectContextMenu(playerIndex, context, worldobjects, test)
+    if test or not looseEnabled() then return end
+    local character = getSpecificPlayer(playerIndex)
+    if not character or character:getVehicle() then return end
+    for _, entry in ipairs(looseWorldParts(worldobjects)) do
+        addRepairOption(context, character, entry.part, true, grabThenRepair, entry.world)
+    end
+end
+Events.OnFillWorldObjectContextMenu.Add(onFillWorldObjectContextMenu)
+
+-- carried parts: main inventory only, matching ISSCKCORepairLoose:isValid
+local function onFillInventoryObjectContextMenu(playerIndex, context, items)
+    if not looseEnabled() then return end
+    local character = getSpecificPlayer(playerIndex)
+    if not character then return end
+    local inv = character:getInventory()
+    for _, entry in ipairs(items) do
+        local item = entry
+        if type(entry) == "table" then item = entry.items and entry.items[1] end
+        if item and inv:contains(item) then
+            local part = AR.itemAsPart(item)
+            if part and AR.getPartClass(part) then
+                addRepairOption(context, character, part, true, AR.onRepairLoose, item)
+            end
+        end
+    end
+end
+Events.OnFillInventoryObjectContextMenu.Add(onFillInventoryObjectContextMenu)
+
 -- guards mirror vanilla doPartContextMenu: on its early returns self.context is a stale
 -- menu from a previous open and must not be appended to
 local original_doPartContextMenu = ISVehicleMechanics.doPartContextMenu
@@ -167,6 +239,10 @@ local function selfCheck()
     end
     if ISContextMenu == nil or ISContextMenu.removeOptionByName == nil then
         warn("ISContextMenu.removeOptionByName missing; vanilla Repair will not be suppressed")
+    end
+    if ISGrabItemAction == nil or ISInventoryTransferUtil == nil
+        or ISWorldObjectContextMenu == nil or ISWorldObjectContextMenu.grabItemTime == nil then
+        warn("grab helpers missing; ground-part repair cannot pick the part up")
     end
     if getText("ContextMenu_Repair") == "ContextMenu_Repair" then
         warn("ContextMenu_Repair unresolved; vanilla Repair suppression will no-op")
