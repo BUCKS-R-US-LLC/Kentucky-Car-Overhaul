@@ -363,7 +363,10 @@ end
 -- category/id; a loose item has neither, so this keys off the item type instead.
 -- buildCost is the exact armor list, which also covers bumpers (armor despite the name).
 function AR.getItemClass(item)
-    if item == nil then return nil end
+    if item == nil or instanceof(item, "InventoryContainer") then return nil end
+    -- only vehicle parts: name matching alone also hits bags and clothing ("Hood", "Armor")
+    local script = item:getScriptItem()
+    if script == nil or (script:getVehicleType() or 0) <= 0 then return nil end
     local full = item:getFullType()
     if AR.buildCost[full] then return "armor" end
     local name = item:getType()
