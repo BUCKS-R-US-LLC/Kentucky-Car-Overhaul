@@ -302,15 +302,6 @@ module Base
 		template = Engine,
 		template = SCMufflerNormal,
 
-		part TruckBedOpen
-		{
-			container
-			{
-				capacity = 100,
-				conditionAffectsCapacity = FALSE,
-				test = Vehicles.ContainerAccess.BackOfTruck,
-			}
-		}
 
 
 		part SeatFrontLeft
