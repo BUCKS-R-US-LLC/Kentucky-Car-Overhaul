@@ -362,12 +362,23 @@ end
 -- Classify an uninstalled part sitting in inventory. Installed parts are classified by
 -- category/id; a loose item has neither, so this keys off the item type instead.
 -- buildCost is the exact armor list, which also covers bumpers (armor despite the name).
+-- Vehicle parts sit in these display categories; name matching alone also hits bags,
+-- clothing and weapons ("Hood", "Armor"). The few non-parts in them that match a name
+-- are listed out.
+AR.looseCategories = { VehicleMaintenance = true, VehicleArmor = true }
+AR.looseExclude = {
+    ["SCKCO.TirePatchKit"] = true,
+    ["Base.TirePump"] = true,
+    ["Base.HoodOrnament_Badger"] = true,
+    ["Base.HoodOrnament_Beaver"] = true,
+    ["Base.HoodOrnament_Spiffo"] = true,
+}
+
 function AR.getItemClass(item)
     if item == nil or instanceof(item, "InventoryContainer") then return nil end
-    -- only vehicle parts: name matching alone also hits bags and clothing ("Hood", "Armor")
-    local script = item:getScriptItem()
-    if script == nil or (script:getVehicleType() or 0) <= 0 then return nil end
+    if not AR.looseCategories[item:getDisplayCategory()] then return nil end
     local full = item:getFullType()
+    if AR.looseExclude[full] then return nil end
     if AR.buildCost[full] then return "armor" end
     local name = item:getType()
     if string.find(name, "Armor") then return "armor" end
